@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eleven: table tennis news, results and rankings</title>
-<meta name="description" content="Table tennis news from around the world, translated from Chinese, Japanese, Korean, German and French sources, with results, rankings and fixtures.">
+<meta name="description" content="Table tennis news from around the world, including stories translated from Chinese, Japanese, Korean, German and French sources, with results, rankings and fixtures.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="masthead">
   <div class="wrap masthead-inner">
-    <a class="wordmark" href="/" aria-label="Eleven home"><span class="site-name">Eleven</span><span class="ball" aria-hidden="true"></span></a>
+    <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
     <nav aria-label="Sections">
       <ul class="sections" id="tabs">
         <li><button data-cat="All" aria-pressed="true">Home</button></li>
@@ -26,32 +26,32 @@
   </div>
 </header>
 
-<div id="live" class="live" hidden></div>
+<section class="ticker" aria-label="Latest scores">
+  <div class="wrap ticker-inner" id="ticker"></div>
+</section>
 
-<main>
-  <section class="wrap" aria-label="Lead stories">
-    <div class="table" id="table">
-      <div class="half half-left" id="lead"></div>
-      <div class="net" aria-hidden="true"></div>
-      <div class="half half-right" id="second"></div>
-    </div>
-    <p class="updated" id="updated"></p>
+<main class="wrap">
+  <div id="live" class="live" hidden></div>
+
+  <section class="top" aria-label="Top stories">
+    <div id="lead"></div>
+    <div id="second" class="second"></div>
   </section>
 
-  <div class="wrap layout">
+  <div class="layout">
     <section aria-labelledby="latest-h">
-      <h2 id="latest-h" class="section-title">Latest</h2>
-      <div id="stories" class="stories"></div>
-      <p id="empty" class="empty" hidden>Nothing new in this section. Check back after the next update.</p>
+      <h2 id="latest-h" class="section-title">Latest news</h2>
+      <div id="stories" class="cards"></div>
+      <p id="empty" class="empty" hidden>Nothing more in this section yet. New stories arrive with each update.</p>
     </section>
 
     <aside>
-      <section class="panel" aria-labelledby="results-h">
-        <h2 id="results-h" class="section-title">Results</h2>
-        <div id="results"></div>
+      <section class="panel author" id="about" aria-labelledby="about-h">
+        <div class="author-head"><span id="author-avatar"></span><div><p class="small-label">Editor</p><h2 id="about-h" class="panel-title"></h2></div></div>
+        <p id="author-bio"></p>
       </section>
       <section class="panel" aria-labelledby="rank-h">
-        <h2 id="rank-h" class="section-title">World rankings</h2>
+        <h2 id="rank-h" class="panel-title">World rankings</h2>
         <div class="toggle" id="rank-toggle" role="group" aria-label="Rankings">
           <button data-g="men" aria-pressed="true">Men</button>
           <button data-g="women" aria-pressed="false">Women</button>
@@ -60,15 +60,19 @@
         <p class="small" id="rank-week"></p>
       </section>
       <section class="panel" aria-labelledby="events-h">
-        <h2 id="events-h" class="section-title">Coming up</h2>
+        <h2 id="events-h" class="panel-title">Coming up</h2>
         <ul id="events" class="events"></ul>
       </section>
     </aside>
   </div>
 </main>
 
-<footer class="wrap footer">
-  <p>Stories are short summaries written for this site, with links to the original reporting. Stories marked as translated come from non-English sources. Fixtures can change, so check with organisers.</p>
+<footer class="footer">
+  <div class="wrap">
+    <p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
+    <p id="updated"></p>
+    <p>Stories are short summaries written for this site, with links to the original reporting. Stories marked as translated come from non-English sources. Fixtures can change, so check with organisers.</p>
+  </div>
 </footer>
 
 <script src="app.js"></script>

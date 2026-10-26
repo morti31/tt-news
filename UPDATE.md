@@ -19,6 +19,7 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
    - `category` is one of International, England, Clubs, Equipment.
    - Write the headline and a summary of one to three sentences in your own words. No copied sentences, and any quote under 15 words.
    - Link every source used. Leave out anything sources contradict rather than guessing.
+   - For a story about a single match result, add `"score"` (for example `"3-2"`), which appears on the story's artwork.
    - Mark the single biggest story `"top": true` and remove the flag from the previous one.
 4. Remove stories older than 14 days. Keep at most 30.
 5. Update `results` with finished matches from events on now or just ended (finals and semi-finals for WTT events, title-deciders for club competitions). Keep the three most recent events.
