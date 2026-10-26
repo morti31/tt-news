@@ -1,0 +1,572 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Eleven//Table tennis calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Eleven: table tennis
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:Major table tennis tournaments\, club competitions and session
+  times. Updated by Eleven: https://tt-news.tommorti.workers.dev
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:wtt-champions-montpellier-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261102
+SUMMARY:WTT Champions Montpellier
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:mltt-week4-houston-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261102
+SUMMARY:Major League Table Tennis\, Week 4
+DESCRIPTION:US franchise league. Prestige 2/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Houston\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-champions-frankfurt-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261109
+SUMMARY:WTT Champions Frankfurt
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Frankfurt\, Germany
+END:VEVENT
+BEGIN:VEVENT
+UID:tleague-2026-11-07@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261109
+SUMMARY:Japan T.League weekend
+DESCRIPTION:Japanese pro league. Prestige 3/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-contender-istanbul-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261116
+SUMMARY:WTT Contender Istanbul
+DESCRIPTION:WTT Contender. Prestige 1.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Istanbul\, Türkiye
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-women-s2r1-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261112
+SUMMARY:ETTU Champions League Women\, Stage 2 Round 1
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-men-r16-1-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261116
+SUMMARY:ETTU Champions League Men\, Round of 16 first leg
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-women-s2r2-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+SUMMARY:ETTU Champions League Women\, Stage 2 Round 2
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tleague-2026-11-14@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261116
+SUMMARY:Japan T.League weekend
+DESCRIPTION:Japanese pro league. Prestige 3/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-star-contender-muscat-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261122
+SUMMARY:WTT Star Contender Muscat
+DESCRIPTION:WTT Star Contender. Prestige 2/5. News\, results and schedule: 
+ https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Muscat\, Oman
+END:VEVENT
+BEGIN:VEVENT
+UID:mixed-team-world-cup-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261207
+SUMMARY:Mixed Team World Cup
+DESCRIPTION:Mixed team world event. Prestige 4/5. News\, results and schedu
+ le: https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Chengdu\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-finals-hong-kong-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261214
+SUMMARY:WTT Finals
+DESCRIPTION:Season finals. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Hong Kong\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:tleague-2026-12-10@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261214
+SUMMARY:Japan T.League
+DESCRIPTION:Japanese pro league. Prestige 3/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-women-s2r3-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261217
+SUMMARY:ETTU Champions League Women\, Stage 2 Round 3
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-men-r16-2-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261221
+SUMMARY:ETTU Champions League Men\, Round of 16 second leg
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tleague-2026-12-18@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261221
+SUMMARY:Japan T.League
+DESCRIPTION:Japanese pro league. Prestige 3/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-women-s2r4-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261221
+SUMMARY:ETTU Champions League Women\, Stage 2 Round 4
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tleague-2026-12-23@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261225
+SUMMARY:Japan T.League
+DESCRIPTION:Japanese pro league. Prestige 3/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:cttsl-finals-2026@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261228
+SUMMARY:China Super League Finals
+DESCRIPTION:Chinese top division. Prestige 4.5/5. News\, results and schedu
+ le: https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Guangzhou\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:liebherr-pokal-final4-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270103
+DTEND;VALUE=DATE:20270104
+SUMMARY:German Cup Final4 (Liebherr Pokal)
+DESCRIPTION:German cup. Prestige 3/5. News\, results and schedule: https://
+ tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Ulm/Neu-Ulm\, Germany
+END:VEVENT
+BEGIN:VEVENT
+UID:tleague-runin-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270109
+DTEND;VALUE=DATE:20270308
+SUMMARY:Japan T.League regular-season run-in
+DESCRIPTION:Japanese pro league. Prestige 3/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-men-qf-1-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270114
+SUMMARY:ETTU Champions League Men\, quarter-final first leg
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:europe-top16-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270201
+SUMMARY:Europe Top 16 Cup
+DESCRIPTION:European elite. Prestige 2.5/5. News\, results and schedule: ht
+ tps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Montreux\, Switzerland
+END:VEVENT
+BEGIN:VEVENT
+UID:singapore-smash-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270218
+DTEND;VALUE=DATE:20270301
+SUMMARY:Singapore Smash
+DESCRIPTION:Grand Smash. Prestige 4/5. News\, results and schedule: https:/
+ /tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Singapore\, Singapore
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-men-qf-2-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270307
+SUMMARY:ETTU Champions League Men\, quarter-final second leg
+DESCRIPTION:European club. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-champions-chongqing-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270315
+SUMMARY:WTT Champions Chongqing
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Chongqing\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:singles-world-cup-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270405
+SUMMARY:Singles World Cup
+DESCRIPTION:World Cup. Prestige 5/5. News\, results and schedule: https://t
+ t-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:doubles-world-cup-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270426
+SUMMARY:Doubles World Cup
+DESCRIPTION:World Cup. Prestige 4/5. News\, results and schedule: https://t
+ t-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Macao\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-women-final4-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270503
+SUMMARY:ETTU Champions League Women Final 4
+DESCRIPTION:European club final. Prestige 4/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Metz\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:ettu-cl-men-final4-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270510
+SUMMARY:ETTU Champions League Men Final 4
+DESCRIPTION:European club final. Prestige 4/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Saarbrücken\, Germany
+END:VEVENT
+BEGIN:VEVENT
+UID:world-championships-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270531
+SUMMARY:World Championships
+DESCRIPTION:World Championships. Prestige 5/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Astana\, Kazakhstan
+END:VEVENT
+BEGIN:VEVENT
+UID:european-games-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270623
+SUMMARY:European Games
+DESCRIPTION:Continental games. Prestige 3.5/5. News\, results and schedule:
+  https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Istanbul\, Türkiye
+END:VEVENT
+BEGIN:VEVENT
+UID:us-smash-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270705
+SUMMARY:United States Smash
+DESCRIPTION:Grand Smash. Prestige 4/5. News\, results and schedule: https:/
+ /tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:United States\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:europe-smash-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270816
+SUMMARY:Europe Smash
+DESCRIPTION:Grand Smash. Prestige 4/5. News\, results and schedule: https:/
+ /tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-champions-astana-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270824
+DTEND;VALUE=DATE:20270830
+SUMMARY:WTT Champions Astana
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Astana\, Kazakhstan
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-champions-japan-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270831
+DTEND;VALUE=DATE:20270906
+SUMMARY:WTT Champions Japan
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Japan\, Japan
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-champions-asia-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270914
+DTEND;VALUE=DATE:20270920
+SUMMARY:WTT Champions Asia
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:china-smash-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271011
+SUMMARY:China Smash
+DESCRIPTION:Grand Smash. Prestige 4/5. News\, results and schedule: https:/
+ /tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:China\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:european-team-championships-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20271017
+DTEND;VALUE=DATE:20271025
+SUMMARY:European Team Championships
+DESCRIPTION:European teams. Prestige 4/5. News\, results and schedule: http
+ s://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Porto\, Portugal
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-champions-france-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20271102
+DTEND;VALUE=DATE:20271108
+SUMMARY:WTT Champions France
+DESCRIPTION:WTT Champions. Prestige 3/5. News\, results and schedule: https
+ ://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:France\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:mixed-team-world-cup-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20271128
+DTEND;VALUE=DATE:20271206
+SUMMARY:Mixed Team World Cup
+DESCRIPTION:Mixed team world event. Prestige 4/5. News\, results and schedu
+ le: https://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Chengdu\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:wtt-finals-hong-kong-2027@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART;VALUE=DATE:20271207
+DTEND;VALUE=DATE:20271213
+SUMMARY:WTT Finals
+DESCRIPTION:Season finals. Prestige 3.5/5. News\, results and schedule: htt
+ ps://tt-news.tommorti.workers.dev/schedule.html
+TRANSP:TRANSPARENT
+LOCATION:Hong Kong\, China
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-27-s1@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261027T110000Z
+DTEND:20261027T150000Z
+SUMMARY:WTT Champions Montpellier: day 1\, session 1
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-27-s2@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261027T173000Z
+DTEND:20261027T213000Z
+SUMMARY:WTT Champions Montpellier: day 1\, session 2
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-28-s1@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261028T110000Z
+DTEND:20261028T150000Z
+SUMMARY:WTT Champions Montpellier: day 2\, session 1
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-28-s2@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261028T173000Z
+DTEND:20261028T213000Z
+SUMMARY:WTT Champions Montpellier: day 2\, session 2
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-29-s1@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261029T110000Z
+DTEND:20261029T150000Z
+SUMMARY:WTT Champions Montpellier: day 3\, session 1
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-29-s2@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261029T173000Z
+DTEND:20261029T213000Z
+SUMMARY:WTT Champions Montpellier: day 3\, session 2
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-30-s1@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261030T110000Z
+DTEND:20261030T150000Z
+SUMMARY:WTT Champions Montpellier: day 4\, session 1
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-30-s2@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261030T173000Z
+DTEND:20261030T213000Z
+SUMMARY:WTT Champions Montpellier: day 4\, session 2
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-31-s1@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261031T110000Z
+DTEND:20261031T150000Z
+SUMMARY:WTT Champions Montpellier: day 5\, session 1
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-10-31-s2@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261031T170000Z
+DTEND:20261031T210000Z
+SUMMARY:WTT Champions Montpellier: day 5\, session 2
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-11-01-s1@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261101T100000Z
+DTEND:20261101T140000Z
+SUMMARY:WTT Champions Montpellier: finals day\, session 1
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+BEGIN:VEVENT
+UID:montpellier-2026-11-01-s2@eleven-tt
+DTSTAMP:20261026T161100Z
+DTSTART:20261101T163000Z
+DTEND:20261101T193000Z
+SUMMARY:WTT Champions Montpellier: finals day\, session 2
+DESCRIPTION:Live scores: https://www.worldtabletennis.com/
+LOCATION:Sud de France Arena\, Montpellier\, France
+END:VEVENT
+END:VCALENDAR

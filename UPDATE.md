@@ -30,8 +30,12 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
 4. Remove stories older than 14 days. Keep at most 30.
 5. Update `results` with finished matches from events on now or just ended (finals and semi-finals for WTT events, title-deciders for club competitions). Keep the three most recent events.
 6. Update `rankings` when a new ITTF ranking week has been published.
-7. Remove finished `events` and add newly confirmed ones from the ITTF and club calendars.
-8. Set `updated` to the current UTC time, check the JSON parses, then commit with a message like `Update 2026-10-27 09:00` and push.
+7. Keep the schedule in `data/schedule.json` current (`data/news.json` no longer holds events):
+   - Add newly confirmed tournaments and club competitions from the ITTF/WTT, ETTU, TTBL, T.League, CTTSL and UTT calendars, and move anything in `tbc` into `events` once dates are published. Leave past events in place; the site hides them.
+   - Add `fixtures` with real times (UTC, ISO format, with `event_id`, `name`, `start`, `end`, `source`) for any event within the next 14 days: session times as soon as the organiser publishes them, then notable matches once the draw is out, for example `"WTT Champions Frankfurt: Lebrun v Moregard, quarter-final"`. Use times from the organiser, live-score sites (WTT, Flashscore, SofaScore) or the federation, and convert local times to UTC. Keep each fixture's `id` stable when updating its time, so subscribers' calendars update rather than duplicate.
+   - Remove fixtures more than 7 days old.
+   - Run `python3 tools/build_calendar.py` to rebuild `calendar.ics`, and commit both files.
+8. Set `updated` in both JSON files to the current UTC time, check the JSON parses, then commit with a message like `Update 2026-10-27 09:00` and push.
 
 ## Schedule
 

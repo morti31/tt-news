@@ -8,6 +8,10 @@
   try {
     const res = await fetch("data/news.json", { cache: "no-store" });
     data = await res.json();
+    try {
+      const sch = await fetch("data/schedule.json", { cache: "no-store" }).then((r) => r.json());
+      data.events = sch.events;
+    } catch (e) { /* fall back to events in news.json */ }
   } catch (e) {
     $("lead").innerHTML = '<div class="card"><div class="card-body"><p>The news didn\'t load. Refresh the page to try again.</p></div></div>';
     return;
@@ -118,7 +122,10 @@
     document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     render(b.dataset.cat);
   });
-  render("All");
+  const fromHash = decodeURIComponent(location.hash.slice(1));
+  const startCat = ["International", "England", "Clubs", "Equipment"].includes(fromHash) ? fromHash : "All";
+  document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === startCat)));
+  render(startCat);
 
   // Rankings
   const ranks = (g) => { $("rankings").innerHTML = data.rankings[g].map((p) => `<li><span>${esc(p.name)}</span><span class="nat">${esc(p.nat)}</span></li>`).join(""); };

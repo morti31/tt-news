@@ -1,0 +1,589 @@
+{
+  "updated": "2026-10-26T16:10:00Z",
+  "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
+  "events": [
+    {
+      "id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier",
+      "start": "2026-10-27",
+      "end": "2026-11-01",
+      "city": "Montpellier",
+      "country": "France",
+      "venue": "Sud de France Arena",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "mltt-week4-houston-2026",
+      "name": "Major League Table Tennis, Week 4",
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "city": "Houston",
+      "country": "USA",
+      "series": "Clubs",
+      "type": "US franchise league",
+      "prestige": 2
+    },
+    {
+      "id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "tleague-2026-11-07",
+      "name": "Japan T.League weekend",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "Clubs",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "city": "Istanbul",
+      "country": "Türkiye",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
+      "id": "ettu-cl-women-s2r1-2026",
+      "name": "ETTU Champions League Women, Stage 2 Round 1",
+      "start": "2026-11-10",
+      "end": "2026-11-11",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men, Round of 16 first leg",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "ettu-cl-women-s2r2-2026",
+      "name": "ETTU Champions League Women, Stage 2 Round 2",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "tleague-2026-11-14",
+      "name": "Japan T.League weekend",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "Clubs",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat",
+      "start": "2026-11-16",
+      "end": "2026-11-21",
+      "city": "Muscat",
+      "country": "Oman",
+      "series": "WTT",
+      "type": "WTT Star Contender",
+      "prestige": 2
+    },
+    {
+      "id": "mixed-team-world-cup-2026",
+      "name": "Mixed Team World Cup",
+      "start": "2026-11-29",
+      "end": "2026-12-06",
+      "city": "Chengdu",
+      "country": "China",
+      "series": "Majors",
+      "type": "Mixed team world event",
+      "prestige": 4
+    },
+    {
+      "id": "wtt-finals-hong-kong-2026",
+      "name": "WTT Finals",
+      "start": "2026-12-08",
+      "end": "2026-12-13",
+      "city": "Hong Kong",
+      "country": "China",
+      "series": "WTT",
+      "type": "Season finals",
+      "prestige": 3.5
+    },
+    {
+      "id": "tleague-2026-12-10",
+      "name": "Japan T.League",
+      "start": "2026-12-10",
+      "end": "2026-12-13",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "Clubs",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "id": "ettu-cl-women-s2r3-2026",
+      "name": "ETTU Champions League Women, Stage 2 Round 3",
+      "start": "2026-12-15",
+      "end": "2026-12-16",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "ettu-cl-men-r16-2-2026",
+      "name": "ETTU Champions League Men, Round of 16 second leg",
+      "start": "2026-12-18",
+      "end": "2026-12-20",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "tleague-2026-12-18",
+      "name": "Japan T.League",
+      "start": "2026-12-18",
+      "end": "2026-12-20",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "Clubs",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "id": "ettu-cl-women-s2r4-2026",
+      "name": "ETTU Champions League Women, Stage 2 Round 4",
+      "start": "2026-12-19",
+      "end": "2026-12-20",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "tleague-2026-12-23",
+      "name": "Japan T.League",
+      "start": "2026-12-23",
+      "end": "2026-12-24",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "Clubs",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "id": "cttsl-finals-2026",
+      "name": "China Super League Finals",
+      "start": "2026-12-25",
+      "end": "2026-12-27",
+      "city": "Guangzhou",
+      "country": "China",
+      "series": "Clubs",
+      "type": "Chinese top division",
+      "prestige": 4.5
+    },
+    {
+      "id": "liebherr-pokal-final4-2027",
+      "name": "German Cup Final4 (Liebherr Pokal)",
+      "start": "2027-01-03",
+      "end": "2027-01-03",
+      "city": "Ulm/Neu-Ulm",
+      "country": "Germany",
+      "series": "Clubs",
+      "type": "German cup",
+      "prestige": 3
+    },
+    {
+      "id": "tleague-runin-2027",
+      "name": "Japan T.League regular-season run-in",
+      "start": "2027-01-09",
+      "end": "2027-03-07",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "Clubs",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "id": "ettu-cl-men-qf-1-2027",
+      "name": "ETTU Champions League Men, quarter-final first leg",
+      "start": "2027-01-12",
+      "end": "2027-01-13",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "europe-top16-2027",
+      "name": "Europe Top 16 Cup",
+      "start": "2027-01-28",
+      "end": "2027-01-31",
+      "city": "Montreux",
+      "country": "Switzerland",
+      "series": "Majors",
+      "type": "European elite",
+      "prestige": 2.5
+    },
+    {
+      "id": "singapore-smash-2027",
+      "name": "Singapore Smash",
+      "start": "2027-02-18",
+      "end": "2027-02-28",
+      "city": "Singapore",
+      "country": "Singapore",
+      "series": "Majors",
+      "type": "Grand Smash",
+      "prestige": 4
+    },
+    {
+      "id": "ettu-cl-men-qf-2-2027",
+      "name": "ETTU Champions League Men, quarter-final second leg",
+      "start": "2027-03-05",
+      "end": "2027-03-06",
+      "city": "Europe",
+      "country": "",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "id": "wtt-champions-chongqing-2027",
+      "name": "WTT Champions Chongqing",
+      "start": "2027-03-09",
+      "end": "2027-03-14",
+      "city": "Chongqing",
+      "country": "China",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "singles-world-cup-2027",
+      "name": "Singles World Cup",
+      "start": "2027-03-29",
+      "end": "2027-04-04",
+      "city": "Montpellier",
+      "country": "France",
+      "series": "Majors",
+      "type": "World Cup",
+      "prestige": 5
+    },
+    {
+      "id": "doubles-world-cup-2027",
+      "name": "Doubles World Cup",
+      "start": "2027-04-19",
+      "end": "2027-04-25",
+      "city": "Macao",
+      "country": "China",
+      "series": "Majors",
+      "type": "World Cup",
+      "prestige": 4
+    },
+    {
+      "id": "ettu-cl-women-final4-2027",
+      "name": "ETTU Champions League Women Final 4",
+      "start": "2027-05-01",
+      "end": "2027-05-02",
+      "city": "Metz",
+      "country": "France",
+      "series": "Clubs",
+      "type": "European club final",
+      "prestige": 4
+    },
+    {
+      "id": "ettu-cl-men-final4-2027",
+      "name": "ETTU Champions League Men Final 4",
+      "start": "2027-05-08",
+      "end": "2027-05-09",
+      "city": "Saarbrücken",
+      "country": "Germany",
+      "series": "Clubs",
+      "type": "European club final",
+      "prestige": 4
+    },
+    {
+      "id": "world-championships-2027",
+      "name": "World Championships",
+      "start": "2027-05-22",
+      "end": "2027-05-30",
+      "city": "Astana",
+      "country": "Kazakhstan",
+      "series": "Majors",
+      "type": "World Championships",
+      "prestige": 5
+    },
+    {
+      "id": "european-games-2027",
+      "name": "European Games",
+      "start": "2027-06-16",
+      "end": "2027-06-22",
+      "city": "Istanbul",
+      "country": "Türkiye",
+      "series": "Majors",
+      "type": "Continental games",
+      "prestige": 3.5
+    },
+    {
+      "id": "us-smash-2027",
+      "name": "United States Smash",
+      "start": "2027-06-25",
+      "end": "2027-07-04",
+      "city": "United States",
+      "country": "USA",
+      "series": "Majors",
+      "type": "Grand Smash",
+      "prestige": 4
+    },
+    {
+      "id": "europe-smash-2027",
+      "name": "Europe Smash",
+      "start": "2027-08-05",
+      "end": "2027-08-15",
+      "city": "Europe",
+      "country": "",
+      "series": "Majors",
+      "type": "Grand Smash",
+      "prestige": 4
+    },
+    {
+      "id": "wtt-champions-astana-2027",
+      "name": "WTT Champions Astana",
+      "start": "2027-08-24",
+      "end": "2027-08-29",
+      "city": "Astana",
+      "country": "Kazakhstan",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "wtt-champions-japan-2027",
+      "name": "WTT Champions Japan",
+      "start": "2027-08-31",
+      "end": "2027-09-05",
+      "city": "Japan",
+      "country": "Japan",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "wtt-champions-asia-2027",
+      "name": "WTT Champions Asia",
+      "start": "2027-09-14",
+      "end": "2027-09-19",
+      "city": "Asia",
+      "country": "",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "china-smash-2027",
+      "name": "China Smash",
+      "start": "2027-09-30",
+      "end": "2027-10-10",
+      "city": "China",
+      "country": "China",
+      "series": "Majors",
+      "type": "Grand Smash",
+      "prestige": 4
+    },
+    {
+      "id": "european-team-championships-2027",
+      "name": "European Team Championships",
+      "start": "2027-10-17",
+      "end": "2027-10-24",
+      "city": "Porto",
+      "country": "Portugal",
+      "series": "Majors",
+      "type": "European teams",
+      "prestige": 4
+    },
+    {
+      "id": "wtt-champions-france-2027",
+      "name": "WTT Champions France",
+      "start": "2027-11-02",
+      "end": "2027-11-07",
+      "city": "France",
+      "country": "France",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "id": "mixed-team-world-cup-2027",
+      "name": "Mixed Team World Cup",
+      "start": "2027-11-28",
+      "end": "2027-12-05",
+      "city": "Chengdu",
+      "country": "China",
+      "series": "Majors",
+      "type": "Mixed team world event",
+      "prestige": 4
+    },
+    {
+      "id": "wtt-finals-hong-kong-2027",
+      "name": "WTT Finals",
+      "start": "2027-12-07",
+      "end": "2027-12-12",
+      "city": "Hong Kong",
+      "country": "China",
+      "series": "WTT",
+      "type": "Season finals",
+      "prestige": 3.5
+    }
+  ],
+  "tbc": [
+    {
+      "name": "TTBL Final4 (German league final)",
+      "year": 2027,
+      "series": "Clubs"
+    },
+    {
+      "name": "Japan T.League playoffs",
+      "year": 2027,
+      "series": "Clubs"
+    },
+    {
+      "name": "China Table Tennis Super League",
+      "year": 2027,
+      "series": "Clubs"
+    },
+    {
+      "name": "Ultimate Table Tennis Season 8 (India)",
+      "year": 2027,
+      "series": "Clubs"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "montpellier-2026-10-27-s1",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 1, session 1",
+      "start": "2026-10-27T11:00:00Z",
+      "end": "2026-10-27T15:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-27-s2",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 1, session 2",
+      "start": "2026-10-27T17:30:00Z",
+      "end": "2026-10-27T21:30:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-28-s1",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 2, session 1",
+      "start": "2026-10-28T11:00:00Z",
+      "end": "2026-10-28T15:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-28-s2",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 2, session 2",
+      "start": "2026-10-28T17:30:00Z",
+      "end": "2026-10-28T21:30:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-29-s1",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 3, session 1",
+      "start": "2026-10-29T11:00:00Z",
+      "end": "2026-10-29T15:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-29-s2",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 3, session 2",
+      "start": "2026-10-29T17:30:00Z",
+      "end": "2026-10-29T21:30:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-30-s1",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 4, session 1",
+      "start": "2026-10-30T11:00:00Z",
+      "end": "2026-10-30T15:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-30-s2",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 4, session 2",
+      "start": "2026-10-30T17:30:00Z",
+      "end": "2026-10-30T21:30:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-31-s1",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 5, session 1",
+      "start": "2026-10-31T11:00:00Z",
+      "end": "2026-10-31T15:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-10-31-s2",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: day 5, session 2",
+      "start": "2026-10-31T17:00:00Z",
+      "end": "2026-10-31T21:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-11-01-s1",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: finals day, session 1",
+      "start": "2026-11-01T10:00:00Z",
+      "end": "2026-11-01T14:00:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "montpellier-2026-11-01-s2",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: finals day, session 2",
+      "start": "2026-11-01T16:30:00Z",
+      "end": "2026-11-01T19:30:00Z",
+      "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    }
+  ]
+}

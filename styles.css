@@ -52,12 +52,12 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .wordmark { display: inline-flex; align-items: flex-start; font-size: 34px; font-weight: 800; text-decoration: none; line-height: 1; }
 .ball { width: .28em; height: .28em; border-radius: 50%; background: var(--ball); margin: .06em 0 0 .06em; flex: none; }
 .sections { display: flex; gap: 4px; margin: 0; padding: 0; list-style: none; overflow-x: auto; scrollbar-width: none; }
-.sections button {
+.sections button, .sections a {
   border: 0; background: none; color: var(--muted); cursor: pointer; white-space: nowrap;
   font: 600 15px "Figtree", sans-serif; padding: 8px 14px; border-radius: 999px;
 }
-.sections button:hover { color: var(--ink); background: var(--bg); }
-.sections button[aria-pressed="true"] { background: var(--ink); color: var(--card); }
+.sections button:hover, .sections a:hover { color: var(--ink); background: var(--bg); }
+.sections button[aria-pressed="true"], .sections a[aria-current="page"] { background: var(--ink); color: var(--card); }
 @media (max-width: 640px) {
   .masthead-inner { display: block; padding-top: 12px; padding-bottom: 10px; }
   .sections { margin: 10px -16px 0; padding: 0 12px; }
@@ -168,3 +168,54 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .art.cartoon { overflow: hidden; }
 .art.cartoon svg { display: block; width: 100%; height: 100%; }
 .second .art.photo figcaption { font-size: 9.5px; padding: 14px 8px 5px; }
+
+.sections a { display: inline-block; text-decoration: none; }
+
+/* Schedule page */
+.sched-head { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 28px; align-items: end; padding: 36px 0 24px; }
+@media (max-width: 900px) { .sched-head { grid-template-columns: minmax(0, 1fr); } }
+.sched-head h1 { font-size: clamp(40px, 6vw, 64px); line-height: 1; margin: 0 0 12px; font-weight: 800; }
+.lede { font-size: 18px; color: var(--muted); max-width: 52ch; margin: 0; }
+.subscribe { margin: 0; }
+.sub-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--rule); background: var(--card); color: var(--ink);
+  border-radius: 999px; padding: 9px 16px; font: 600 14px "Figtree", sans-serif; text-decoration: none; cursor: pointer;
+}
+.btn:hover { border-color: var(--ink); }
+.btn-primary { background: var(--International); border-color: var(--International); color: #fff; }
+.btn-primary:hover { filter: brightness(1.08); border-color: var(--International); }
+.copy-row { display: flex; gap: 8px; margin-top: 12px; }
+.copy-row input { flex: 1; min-width: 0; border: 1px solid var(--rule); border-radius: 999px; padding: 8px 14px; font: 13px "Figtree", sans-serif; color: var(--muted); background: var(--bg); }
+.sched-filter { max-width: 480px; margin: 8px 0 8px; }
+.month { margin-top: 32px; }
+.sched-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.sched-item {
+  display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; align-items: start;
+  background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 14px 18px; border-left: 4px solid transparent;
+}
+.sched-item.s-Majors { border-left-color: var(--ball); }
+.sched-item.s-WTT { border-left-color: var(--International); }
+.sched-item.s-Clubs { border-left-color: var(--Clubs); }
+.sched-item .cal { padding: 8px 0; }
+.sched-item.now .cal { background: var(--live); color: #fff; }
+.sched-item.now .cal span { color: #fff; }
+.sched-top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.sched-top h3 { font-size: 20px; font-weight: 800; margin: 0; line-height: 1.2; }
+.on-now { font-size: 12px; font-weight: 600; color: var(--live); }
+.sched-meta { margin: 2px 0 0; font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.series { font-weight: 600; }
+.level { display: inline-flex; gap: 3px; }
+.level i { width: 7px; height: 7px; border-radius: 50%; background: var(--rule); }
+.level i.on { background: var(--ball); }
+.sessions { margin-top: 10px; font-size: 14px; }
+.sessions summary { cursor: pointer; font-weight: 600; color: var(--International); }
+.sessions ul { list-style: none; margin: 8px 0 0; padding: 0; }
+.sessions li { display: grid; grid-template-columns: 150px 1fr; gap: 10px; padding: 6px 0; border-top: 1px solid var(--rule); }
+.sessions li span:first-child { font-variant-numeric: tabular-nums; font-weight: 600; }
+.tbc { margin-top: 36px; }
+.tbc-list { list-style: none; margin: 0; padding: 0; }
+.tbc-list li { display: flex; justify-content: space-between; padding: 8px 0; border-top: 1px solid var(--rule); }
+.tbc-list li:first-child { border-top: 0; }
+.tbc-list span { color: var(--muted); }
+.panel-link { display: inline-block; margin-top: 12px; font-weight: 600; font-size: 14px; color: var(--International); text-decoration: none; }

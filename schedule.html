@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule: Eleven</title>
+<meta name="description" content="Every major table tennis tournament and club competition, with session times. Subscribe in Google Calendar, Apple Calendar or Outlook and it stays up to date.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
+    <nav aria-label="Sections">
+      <ul class="sections">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#International">International</a></li>
+        <li><a href="/#England">England</a></li>
+        <li><a href="/#Clubs">Clubs</a></li>
+        <li><a href="/#Equipment">Equipment</a></li>
+        <li><a href="/schedule.html" aria-current="page">Schedule</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="sched-head">
+    <div>
+      <h1>Schedule</h1>
+      <p class="lede">Every major tournament and club competition, with session times once they're published. Add it to your calendar and new dates and times appear on their own.</p>
+    </div>
+    <div class="subscribe panel" aria-labelledby="sub-h">
+      <h2 id="sub-h" class="panel-title">Add to your calendar</h2>
+      <div class="sub-buttons">
+        <a class="btn btn-primary" id="sub-google" target="_blank" rel="noopener">Google Calendar</a>
+        <a class="btn" id="sub-apple">Apple Calendar</a>
+        <a class="btn" id="sub-outlook" target="_blank" rel="noopener">Outlook</a>
+      </div>
+      <p class="small">Or <a href="/calendar.ics" download>download the .ics file</a> to import once. Subscribing is better, because it keeps updating.</p>
+      <div class="copy-row">
+        <input id="feed-url" readonly aria-label="Calendar feed address">
+        <button class="btn" id="copy">Copy link</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="toggle sched-filter" id="filter" role="group" aria-label="Filter">
+    <button data-s="All" aria-pressed="true">Everything</button>
+    <button data-s="Majors" aria-pressed="false">Majors</button>
+    <button data-s="WTT" aria-pressed="false">WTT tour</button>
+    <button data-s="Clubs" aria-pressed="false">Clubs</button>
+  </div>
+
+  <div id="months" class="months"></div>
+
+  <section class="panel tbc" aria-labelledby="tbc-h">
+    <h2 id="tbc-h" class="panel-title">Dates still to be announced</h2>
+    <ul id="tbc" class="tbc-list"></ul>
+  </section>
+  <p class="small" id="sched-note"></p>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
+    <p>Times are shown in your own time zone. Fixtures can change, so check with organisers before travelling.</p>
+  </div>
+</footer>
+
+<script src="schedule.js"></script>
+</body>
+</html>
