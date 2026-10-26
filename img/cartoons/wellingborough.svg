@@ -1,69 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cartoon of a Wellingborough street with terraced houses, a church spire and bunting, two trophies on a table tennis table and a pigeon">
-  <defs>
-    <filter id="wel-wob"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
-  </defs>
-  <rect width="640" height="360" fill="#cfe2ec"/>
-  <g filter="url(#wel-wob)" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
-    <!-- clouds -->
-    <path d="M40 70 Q50 44 80 52 Q96 30 124 46 Q150 40 150 66 Q156 84 132 86 L52 86 Q30 84 40 70 Z" fill="#fff"/>
-    <path d="M470 50 Q480 30 506 38 Q522 20 546 34 Q574 30 572 54 Q578 70 556 72 L482 72 Q460 70 470 50 Z" fill="#fff"/>
-    <!-- church spire -->
-    <rect x="300" y="120" width="56" height="120" fill="#c9b98f"/>
-    <path d="M296 122 L328 20 L360 122 Z" fill="#b5a273"/>
-    <path d="M318 160 Q328 146 338 160 L338 186 L318 186 Z" fill="#4b4f5a"/>
-    <!-- terraced houses -->
-    <g fill="#b4553e">
-      <rect x="20" y="160" width="100" height="140"/>
-      <rect x="120" y="150" width="100" height="150" fill="#c4674c"/>
-      <rect x="220" y="168" width="80" height="132"/>
-      <rect x="356" y="160" width="100" height="140" fill="#c4674c"/>
-      <rect x="456" y="152" width="90" height="148"/>
-      <rect x="546" y="166" width="94" height="134" fill="#c4674c"/>
-    </g>
-    <g fill="#4b4f5a">
-      <path d="M14 162 L70 128 L126 162 Z"/><path d="M114 152 L170 118 L226 152 Z"/><path d="M216 170 L260 140 L304 170 Z"/>
-      <path d="M350 162 L406 128 L462 162 Z"/><path d="M450 154 L501 122 L552 154 Z"/><path d="M540 168 L593 134 L646 168 Z"/>
-    </g>
-    <g fill="#fdf3d8">
-      <rect x="40" y="186" width="24" height="28"/><rect x="78" y="186" width="24" height="28"/><rect x="140" y="178" width="24" height="28"/><rect x="178" y="178" width="24" height="28"/>
-      <rect x="240" y="192" width="22" height="26"/><rect x="376" y="186" width="24" height="28"/><rect x="414" y="186" width="24" height="28"/>
-      <rect x="474" y="178" width="22" height="28"/><rect x="510" y="178" width="22" height="28"/><rect x="566" y="190" width="24" height="28"/><rect x="604" y="190" width="24" height="28"/>
-    </g>
-    <rect x="152" y="236" width="30" height="64" fill="#2f5fd0"/>
-    <rect x="482" y="236" width="30" height="64" fill="#23895c"/>
-    <!-- club sign -->
-    <rect x="228" y="226" width="62" height="26" fill="#fff"/>
-    <!-- bunting -->
-    <path d="M0 120 Q160 160 300 128" fill="none" stroke-width="2.5"/>
-    <path d="M356 128 Q500 166 640 124" fill="none" stroke-width="2.5"/>
-    <g stroke-width="2">
-      <path d="M30 128 L44 156 L56 134 Z" fill="#d23a48"/><path d="M80 140 L92 168 L106 144 Z" fill="#fff"/><path d="M134 148 L144 176 L160 150 Z" fill="#2f5fd0"/>
-      <path d="M190 150 L198 178 L216 148 Z" fill="#d23a48"/><path d="M244 142 L250 170 L268 138 Z" fill="#fff"/>
-      <path d="M390 140 L402 168 L416 144 Z" fill="#2f5fd0"/><path d="M444 150 L454 178 L470 150 Z" fill="#d23a48"/><path d="M500 152 L508 180 L526 150 Z" fill="#fff"/>
-      <path d="M556 146 L562 174 L580 142 Z" fill="#2f5fd0"/><path d="M606 136 L610 164 L628 130 Z" fill="#d23a48"/>
-    </g>
-    <!-- street -->
-    <rect x="0" y="298" width="640" height="62" fill="#9aa1ab"/>
-    <!-- table -->
-    <path d="M190 296 L450 296 L470 330 L170 330 Z" fill="#2f5fd0"/>
-    <path d="M320 296 L320 330" stroke="#fff" stroke-width="3"/>
-    <path d="M316 282 L316 300 M324 282 L324 300" stroke-width="3"/>
-    <path d="M180 330 L180 356 M460 330 L460 356"/>
-    <!-- trophies -->
-    <path d="M232 260 L262 260 Q262 284 247 286 Q232 284 232 260 Z" fill="#f6c343"/>
-    <path d="M241 286 L253 286 L255 296 L239 296 Z" fill="#f6c343"/>
-    <path d="M378 260 L408 260 Q408 284 393 286 Q378 284 378 260 Z" fill="#f6c343"/>
-    <path d="M387 286 L399 286 L401 296 L385 296 Z" fill="#f6c343"/>
-    <!-- pigeon -->
-    <ellipse cx="560" cy="318" rx="30" ry="20" fill="#9ea7b3"/>
-    <circle cx="534" cy="300" r="13" fill="#7d8796"/>
-    <path d="M522 300 L512 304 L522 306 Z" fill="#f0a24a"/>
-    <circle cx="531" cy="297" r="2.5" fill="#1d1d22"/>
-    <path d="M556 338 L552 352 M568 338 L570 352"/>
-  </g>
-  <text x="259" y="244" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-weight="700" font-size="11" fill="#1d1d22">TT CLUB</text>
-  <g>
-    <path d="M430 196 L626 196 Q636 196 636 206 L636 244 Q636 254 626 254 L560 254 L540 280 L540 254 L430 254 Q420 254 420 244 L420 206 Q420 196 430 196 Z" fill="#fff" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round"/>
-    <text x="528" y="232" text-anchor="middle" font-family="Patrick Hand, Comic Sans MS, cursive" font-size="24" textLength="190" lengthAdjust="spacingAndGlyphs" fill="#1d1d22">Same again, then?</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Line drawing of a Wellingborough street with terraced houses and a church spire, with two trophies on a table tennis table">
+<defs><pattern id="wel-r" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(0)"><line x1="0" y1="0" x2="0" y2="3" stroke="currentColor" stroke-width="0.5"/></pattern><pattern id="wel-s" width="2.6" height="2.6" patternUnits="userSpaceOnUse" patternTransform="rotate(0)"><line x1="0" y1="0" x2="0" y2="2.6" stroke="currentColor" stroke-width="0.5"/></pattern><pattern id="wel-b" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="4" stroke="currentColor" stroke-width="0.35"/></pattern></defs>
+<g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+<rect x="296" y="128" width="48" height="134" fill="url(#wel-b)"/>
+<path d="M292 130 L320 22 L348 130 Z" fill="url(#wel-s)"/>
+<path d="M314 52 L320 46 L326 52 L326 64 L314 64 Z" stroke-width=".7" fill="var(--art-bg, #fff)"/>
+<path d="M310 170 Q320 156 330 170 L330 200 L310 200 Z" fill="currentColor"/>
+<line x1="296" y1="140" x2="344" y2="140" stroke-width=".7"/>
+<rect x="0" y="160" width="72" height="102" fill="var(--art-bg, #fff)"/>
+<path d="M-3 160 L36.0 128 L75 160 Z" fill="url(#wel-r)"/>
+<rect x="50" y="126" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="14.0" y="178.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="14.0" y1="192.0" x2="32.0" y2="192.0" stroke-width=".4"/>
+<rect x="40.0" y="178.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="40.0" y1="192.0" x2="58.0" y2="192.0" stroke-width=".4"/>
+<rect x="27.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M25.0 218 L47.0 218" stroke-width="1"/>
+<rect x="6.0" y="218.0" width="18.0" height="36.0" stroke-width=".7"/>
+<line x1="6.0" y1="236.0" x2="24.0" y2="236.0" stroke-width=".4"/>
+<rect x="72" y="150" width="72" height="112" fill="var(--art-bg, #fff)"/>
+<path d="M69 150 L108.0 118 L147 150 Z" fill="url(#wel-r)"/>
+<rect x="122" y="116" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="86.0" y="168.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="86.0" y1="182.0" x2="104.0" y2="182.0" stroke-width=".4"/>
+<rect x="112.0" y="168.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="112.0" y1="182.0" x2="130.0" y2="182.0" stroke-width=".4"/>
+<rect x="99.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M97.0 218 L119.0 218" stroke-width="1"/>
+<rect x="78.0" y="218.0" width="18.0" height="36.0" stroke-width=".7"/>
+<line x1="78.0" y1="236.0" x2="96.0" y2="236.0" stroke-width=".4"/>
+<rect x="144" y="164" width="72" height="98" fill="var(--art-bg, #fff)"/>
+<path d="M141 164 L180.0 132 L219 164 Z" fill="url(#wel-r)"/>
+<rect x="194" y="130" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="158.0" y="182.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="158.0" y1="196.0" x2="176.0" y2="196.0" stroke-width=".4"/>
+<rect x="184.0" y="182.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="184.0" y1="196.0" x2="202.0" y2="196.0" stroke-width=".4"/>
+<rect x="171.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M169.0 218 L191.0 218" stroke-width="1"/>
+<rect x="150.0" y="218.0" width="18.0" height="36.0" stroke-width=".7"/>
+<line x1="150.0" y1="236.0" x2="168.0" y2="236.0" stroke-width=".4"/>
+<rect x="216" y="156" width="80" height="106" fill="var(--art-bg, #fff)"/>
+<path d="M213 156 L256.0 124 L299 156 Z" fill="url(#wel-r)"/>
+<rect x="274" y="122" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="230.0" y="174.0" width="22.0" height="28.0" stroke-width=".7"/>
+<line x1="230.0" y1="188.0" x2="252.0" y2="188.0" stroke-width=".4"/>
+<rect x="260.0" y="174.0" width="22.0" height="28.0" stroke-width=".7"/>
+<line x1="260.0" y1="188.0" x2="282.0" y2="188.0" stroke-width=".4"/>
+<rect x="247.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M245.0 218 L267.0 218" stroke-width="1"/>
+<rect x="222.0" y="218.0" width="22.0" height="36.0" stroke-width=".7"/>
+<line x1="222.0" y1="236.0" x2="244.0" y2="236.0" stroke-width=".4"/>
+<rect x="344" y="156" width="80" height="106" fill="var(--art-bg, #fff)"/>
+<path d="M341 156 L384.0 124 L427 156 Z" fill="url(#wel-r)"/>
+<rect x="402" y="122" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="358.0" y="174.0" width="22.0" height="28.0" stroke-width=".7"/>
+<line x1="358.0" y1="188.0" x2="380.0" y2="188.0" stroke-width=".4"/>
+<rect x="388.0" y="174.0" width="22.0" height="28.0" stroke-width=".7"/>
+<line x1="388.0" y1="188.0" x2="410.0" y2="188.0" stroke-width=".4"/>
+<rect x="375.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M373.0 218 L395.0 218" stroke-width="1"/>
+<rect x="350.0" y="218.0" width="22.0" height="36.0" stroke-width=".7"/>
+<line x1="350.0" y1="236.0" x2="372.0" y2="236.0" stroke-width=".4"/>
+<rect x="416" y="166" width="72" height="96" fill="var(--art-bg, #fff)"/>
+<path d="M413 166 L452.0 134 L491 166 Z" fill="url(#wel-r)"/>
+<rect x="466" y="132" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="430.0" y="184.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="430.0" y1="198.0" x2="448.0" y2="198.0" stroke-width=".4"/>
+<rect x="456.0" y="184.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="456.0" y1="198.0" x2="474.0" y2="198.0" stroke-width=".4"/>
+<rect x="443.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M441.0 218 L463.0 218" stroke-width="1"/>
+<rect x="422.0" y="218.0" width="18.0" height="36.0" stroke-width=".7"/>
+<line x1="422.0" y1="236.0" x2="440.0" y2="236.0" stroke-width=".4"/>
+<rect x="488" y="150" width="72" height="112" fill="var(--art-bg, #fff)"/>
+<path d="M485 150 L524.0 118 L563 150 Z" fill="url(#wel-r)"/>
+<rect x="538" y="116" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="502.0" y="168.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="502.0" y1="182.0" x2="520.0" y2="182.0" stroke-width=".4"/>
+<rect x="528.0" y="168.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="528.0" y1="182.0" x2="546.0" y2="182.0" stroke-width=".4"/>
+<rect x="515.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M513.0 218 L535.0 218" stroke-width="1"/>
+<rect x="494.0" y="218.0" width="18.0" height="36.0" stroke-width=".7"/>
+<line x1="494.0" y1="236.0" x2="512.0" y2="236.0" stroke-width=".4"/>
+<rect x="560" y="160" width="72" height="102" fill="var(--art-bg, #fff)"/>
+<path d="M557 160 L596.0 128 L635 160 Z" fill="url(#wel-r)"/>
+<rect x="610" y="126" width="10" height="18" fill="var(--art-bg, #fff)"/>
+<rect x="574.0" y="178.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="574.0" y1="192.0" x2="592.0" y2="192.0" stroke-width=".4"/>
+<rect x="600.0" y="178.0" width="18.0" height="28.0" stroke-width=".7"/>
+<line x1="600.0" y1="192.0" x2="618.0" y2="192.0" stroke-width=".4"/>
+<rect x="587.0" y="220" width="18" height="42" fill="currentColor"/>
+<path d="M585.0 218 L607.0 218" stroke-width="1"/>
+<rect x="566.0" y="218.0" width="18.0" height="36.0" stroke-width=".7"/>
+<line x1="566.0" y1="236.0" x2="584.0" y2="236.0" stroke-width=".4"/>
+<path d="M0 108 Q150 140 292 112" stroke-width=".6"/>
+<path d="M348 112 Q500 144 640 106" stroke-width=".6"/>
+<path d="M19 114 L24 124 L29 114" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M59 122 L64 132 L69 122" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M99 128 L104 138 L109 128" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M139 131 L144 141 L149 131" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M179 130 L184 140 L189 130" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M219 125 L224 135 L229 125" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M259 118 L264 128 L269 118" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M371 118 L376 128 L381 118" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M411 126 L416 136 L421 126" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M451 131 L456 141 L461 131" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M491 132 L496 142 L501 132" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M531 128 L536 138 L541 128" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M571 120 L576 130 L581 120" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<path d="M611 111 L616 121 L621 111" stroke-width=".6" fill="var(--art-bg, #fff)"/>
+<line x1="0" y1="262" x2="640" y2="262" stroke-width="1.4"/>
+<path d="M0 268 L640 268" stroke-width=".5"/>
+<path d="M140 300 L540 300 L520 314 L120 314 Z" fill="var(--art-bg, #fff)" stroke-width="1.6"/>
+<path d="M144 301.5 L536 301.5 L517 312.5 L123 312.5 Z" stroke-width=".6"/>
+<line x1="144" y1="307.0" x2="536" y2="307.0" stroke-width=".5" transform="translate(-10.0 0)"/>
+<path d="M120 314 L520 314 L520 319 L120 319 Z" fill="currentColor" stroke-width="1"/>
+<path d="M340.0 300 L340.0 287 L320.0 301 L320.0 314" stroke-width="1.2"/>
+<line x1="336.7" y1="302.3" x2="336.7" y2="289.3" stroke-width=".4"/>
+<line x1="333.3" y1="304.7" x2="333.3" y2="291.7" stroke-width=".4"/>
+<line x1="330.0" y1="307.0" x2="330.0" y2="294.0" stroke-width=".4"/>
+<line x1="326.7" y1="309.3" x2="326.7" y2="296.3" stroke-width=".4"/>
+<line x1="323.3" y1="311.7" x2="323.3" y2="298.7" stroke-width=".4"/>
+<path d="M150 319 L146 358 M170 319 L174 358" stroke-width="1.4"/>
+<path d="M470 319 L466 358 M490 319 L494 358" stroke-width="1.4"/>
+<line x1="150" y1="342" x2="170" y2="342" stroke-width=".8"/>
+<line x1="470" y1="342" x2="490" y2="342" stroke-width=".8"/>
+<path d="M211 278 L229 278 Q229 292 220 294 Q211 292 211 278 Z" fill="var(--art-bg, #fff)" stroke-width="1.1"/>
+<path d="M211 281 Q205 281 206 286 Q207 290 213 290 M229 281 Q235 281 234 286 Q233 290 227 290" stroke-width=".8"/>
+<path d="M218 294 L222 294 L223 300 L217 300 Z M213 300 L227 300" stroke-width="1"/>
+<path d="M411 278 L429 278 Q429 292 420 294 Q411 292 411 278 Z" fill="var(--art-bg, #fff)" stroke-width="1.1"/>
+<path d="M411 281 Q405 281 406 286 Q407 290 413 290 M429 281 Q435 281 434 286 Q433 290 427 290" stroke-width=".8"/>
+<path d="M418 294 L422 294 L423 300 L417 300 Z M413 300 L427 300" stroke-width="1"/>
+</g>
 </svg>

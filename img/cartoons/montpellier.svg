@@ -1,63 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cartoon of a sunny Montpellier square with a fountain, shuttered buildings, a table tennis table, an empty reserved chair and a seagull">
-  <defs>
-    <filter id="mon-wob"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="15"/><feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
-  </defs>
-  <rect width="640" height="360" fill="#8fd0f0"/>
-  <g filter="url(#mon-wob)" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
-    <circle cx="80" cy="52" r="30" fill="#ffd84a"/>
-    <path d="M80 8 L80 -2 M124 52 L136 52 M112 20 L120 12 M48 20 L40 12 M36 52 L24 52" stroke-width="3"/>
-    <!-- buildings -->
-    <rect x="0" y="110" width="200" height="180" fill="#f2e3c6"/>
-    <rect x="200" y="140" width="170" height="150" fill="#ead2a8"/>
-    <rect x="370" y="104" width="160" height="186" fill="#f2e3c6"/>
-    <rect x="530" y="130" width="110" height="160" fill="#ead2a8"/>
-    <path d="M-4 110 L204 110 L196 96 L4 96 Z" fill="#c9714d"/>
-    <path d="M366 104 L534 104 L526 90 L374 90 Z" fill="#c9714d"/>
-    <g fill="#3d7fbf">
-      <rect x="24" y="136" width="14" height="40"/><rect x="62" y="136" width="14" height="40"/>
-      <rect x="116" y="136" width="14" height="40"/><rect x="154" y="136" width="14" height="40"/>
-      <rect x="226" y="164" width="12" height="36"/><rect x="262" y="164" width="12" height="36"/><rect x="300" y="164" width="12" height="36"/><rect x="336" y="164" width="12" height="36"/>
-      <rect x="392" y="130" width="14" height="40"/><rect x="430" y="130" width="14" height="40"/><rect x="474" y="130" width="14" height="40"/><rect x="512" y="130" width="10" height="40"/>
-      <rect x="552" y="156" width="12" height="36"/><rect x="600" y="156" width="12" height="36"/>
-    </g>
-    <g fill="#5b4b3e"><rect x="38" y="136" width="24" height="40"/><rect x="130" y="136" width="24" height="40"/><rect x="238" y="164" width="24" height="36"/><rect x="312" y="164" width="24" height="36"/><rect x="406" y="130" width="24" height="40"/><rect x="488" y="130" width="24" height="40"/><rect x="564" y="156" width="36" height="36"/></g>
-    <!-- tricolore bunting -->
-    <path d="M0 210 Q320 250 640 206" fill="none" stroke-width="2.5"/>
-    <g stroke-width="2">
-      <path d="M40 214 L52 238 L64 218 Z" fill="#2f4fa8"/><path d="M100 222 L110 246 L124 224 Z" fill="#fff"/><path d="M160 228 L168 252 L184 228 Z" fill="#d23a48"/>
-      <path d="M220 232 L226 256 L244 232 Z" fill="#2f4fa8"/><path d="M400 232 L406 256 L422 230 Z" fill="#fff"/><path d="M460 228 L466 252 L482 226 Z" fill="#d23a48"/>
-      <path d="M520 222 L524 246 L542 218 Z" fill="#2f4fa8"/><path d="M580 214 L584 238 L600 210 Z" fill="#fff"/>
-    </g>
-    <!-- square -->
-    <rect x="0" y="288" width="640" height="72" fill="#e8d2a6"/>
-    <!-- fountain -->
-    <ellipse cx="320" cy="300" rx="64" ry="14" fill="#9ad3ea"/>
-    <rect x="310" y="232" width="20" height="66" fill="#d8cdb8"/>
-    <ellipse cx="320" cy="232" rx="34" ry="9" fill="#d8cdb8"/>
-    <path d="M320 222 Q300 196 292 226 M320 222 Q340 196 348 226 M320 222 L320 200" fill="none" stroke="#3d9ed0" stroke-width="3"/>
-    <!-- table -->
-    <path d="M40 306 L230 306 L250 336 L20 336 Z" fill="#2f5fd0"/>
-    <path d="M135 306 L135 336" stroke="#fff" stroke-width="3"/>
-    <path d="M30 336 L30 358 M240 336 L240 358"/>
-    <!-- croissant -->
-    <rect x="150" y="292" width="70" height="14" rx="7" fill="#e8a64a" transform="rotate(-6 185 299)"/>
-    <path d="M162 296 L168 302 M178 294 L184 300 M194 292 L200 298" stroke-width="2.5" transform="rotate(-6 185 299)"/>
-    <!-- empty chair with reserved sign -->
-    <path d="M420 270 L420 340 M470 270 L470 340 M420 306 L470 306 M420 270 L470 270" stroke-width="4"/>
-    <path d="M420 306 L470 306 L476 314 L414 314 Z" fill="#c9714d"/>
-    <path d="M414 314 L414 352 M476 314 L476 352" stroke-width="4"/>
-    <rect x="426" y="276" width="38" height="22" fill="#fff" stroke-width="2.5"/>
-    <!-- seagull -->
-    <path d="M556 300 Q580 280 604 300 Q600 316 580 318 Q560 316 556 300 Z" fill="#fff"/>
-    <circle cx="560" cy="290" r="11" fill="#fff"/>
-    <path d="M550 290 L538 294 L550 296 Z" fill="#f0a24a"/>
-    <circle cx="558" cy="287" r="2.2" fill="#1d1d22"/>
-    <path d="M590 300 L612 292" stroke-width="3"/>
-    <path d="M574 318 L572 334 M586 318 L588 334" stroke="#f0a24a"/>
-  </g>
-  <text x="445" y="291" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-weight="700" font-size="8.5" fill="#1d1d22">RÉSERVÉ</text>
-  <g>
-    <path d="M440 22 L616 22 Q628 22 628 34 L628 74 Q628 86 616 86 L580 86 L566 110 L560 86 L440 86 Q428 86 428 74 L428 34 Q428 22 440 22 Z" fill="#fff" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round"/>
-    <text x="528" y="62" text-anchor="middle" font-family="Patrick Hand, Comic Sans MS, cursive" font-size="24" textLength="176" lengthAdjust="spacingAndGlyphs" fill="#1d1d22">Pas ce soir, mon ami</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Line drawing of the Opéra Comédie in Montpellier with a fountain, a table tennis table and an empty chair">
+<defs><pattern id="mon-r" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(0)"><line x1="0" y1="0" x2="0" y2="3" stroke="currentColor" stroke-width="0.5"/></pattern><pattern id="mon-d" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="3" stroke="currentColor" stroke-width="0.5"/></pattern><pattern id="mon-v" width="3.4" height="3.4" patternUnits="userSpaceOnUse" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="3.4" stroke="currentColor" stroke-width="0.45"/></pattern></defs>
+<g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+<rect x="150" y="96" width="340" height="166" fill="var(--art-bg, #fff)" stroke-width="1.4"/>
+<rect x="144" y="88" width="352" height="8" fill="url(#mon-r)"/>
+<path d="M190 88 L190 70 L450 70 L450 88" fill="url(#mon-v)"/>
+<path d="M202.0 70 L202.0 58 M199.5 60 L204.5 60" stroke-width="1.1"/><circle cx="202.0" cy="55" r="2" fill="currentColor"/>
+<path d="M231.5 70 L231.5 58 M229.0 60 L234.0 60" stroke-width="1.1"/><circle cx="231.5" cy="55" r="2" fill="currentColor"/>
+<path d="M261.0 70 L261.0 58 M258.5 60 L263.5 60" stroke-width="1.1"/><circle cx="261.0" cy="55" r="2" fill="currentColor"/>
+<path d="M290.5 70 L290.5 58 M288.0 60 L293.0 60" stroke-width="1.1"/><circle cx="290.5" cy="55" r="2" fill="currentColor"/>
+<path d="M320.0 70 L320.0 58 M317.5 60 L322.5 60" stroke-width="1.1"/><circle cx="320.0" cy="55" r="2" fill="currentColor"/>
+<path d="M349.5 70 L349.5 58 M347.0 60 L352.0 60" stroke-width="1.1"/><circle cx="349.5" cy="55" r="2" fill="currentColor"/>
+<path d="M379.0 70 L379.0 58 M376.5 60 L381.5 60" stroke-width="1.1"/><circle cx="379.0" cy="55" r="2" fill="currentColor"/>
+<path d="M408.5 70 L408.5 58 M406.0 60 L411.0 60" stroke-width="1.1"/><circle cx="408.5" cy="55" r="2" fill="currentColor"/>
+<path d="M438.0 70 L438.0 58 M435.5 60 L440.5 60" stroke-width="1.1"/><circle cx="438.0" cy="55" r="2" fill="currentColor"/>
+<line x1="150" y1="188" x2="490" y2="188" stroke-width="1.2"/><line x1="150" y1="192" x2="490" y2="192" stroke-width=".6"/>
+<line x1="157.0" y1="104" x2="157.0" y2="184" stroke-width=".9"/><line x1="163.0" y1="104" x2="163.0" y2="184" stroke-width=".9"/>
+<rect x="154.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M171.0 176 L171.0 128 Q180.0 116 189.0 128 L189.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="197.0" y1="104" x2="197.0" y2="184" stroke-width=".9"/><line x1="203.0" y1="104" x2="203.0" y2="184" stroke-width=".9"/>
+<rect x="194.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M211.0 176 L211.0 128 Q220.0 116 229.0 128 L229.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="237.0" y1="104" x2="237.0" y2="184" stroke-width=".9"/><line x1="243.0" y1="104" x2="243.0" y2="184" stroke-width=".9"/>
+<rect x="234.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M251.0 176 L251.0 128 Q260.0 116 269.0 128 L269.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="277.0" y1="104" x2="277.0" y2="184" stroke-width=".9"/><line x1="283.0" y1="104" x2="283.0" y2="184" stroke-width=".9"/>
+<rect x="274.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M291.0 176 L291.0 128 Q300.0 116 309.0 128 L309.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="317.0" y1="104" x2="317.0" y2="184" stroke-width=".9"/><line x1="323.0" y1="104" x2="323.0" y2="184" stroke-width=".9"/>
+<rect x="314.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M331.0 176 L331.0 128 Q340.0 116 349.0 128 L349.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="357.0" y1="104" x2="357.0" y2="184" stroke-width=".9"/><line x1="363.0" y1="104" x2="363.0" y2="184" stroke-width=".9"/>
+<rect x="354.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M371.0 176 L371.0 128 Q380.0 116 389.0 128 L389.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="397.0" y1="104" x2="397.0" y2="184" stroke-width=".9"/><line x1="403.0" y1="104" x2="403.0" y2="184" stroke-width=".9"/>
+<rect x="394.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M411.0 176 L411.0 128 Q420.0 116 429.0 128 L429.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="437.0" y1="104" x2="437.0" y2="184" stroke-width=".9"/><line x1="443.0" y1="104" x2="443.0" y2="184" stroke-width=".9"/>
+<rect x="434.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M451.0 176 L451.0 128 Q460.0 116 469.0 128 L469.0 176 Z" fill="url(#mon-v)" stroke-width=".8"/>
+<line x1="477.0" y1="104" x2="477.0" y2="184" stroke-width=".9"/><line x1="483.0" y1="104" x2="483.0" y2="184" stroke-width=".9"/>
+<rect x="474.0" y="100" width="12" height="4" stroke-width=".7"/>
+<path d="M158.0 262 L158.0 224 Q174.28571428571428 200 190.57142857142856 224 L190.57142857142856 262" fill="url(#mon-d)" stroke-width="1"/>
+<path d="M206.57142857142856 262 L206.57142857142856 224 Q222.85714285714283 200 239.1428571428571 224 L239.1428571428571 262" fill="url(#mon-d)" stroke-width="1"/>
+<path d="M255.14285714285714 262 L255.14285714285714 224 Q271.42857142857144 200 287.7142857142857 224 L287.7142857142857 262" fill="url(#mon-d)" stroke-width="1"/>
+<path d="M303.7142857142857 262 L303.7142857142857 224 Q320.0 200 336.2857142857143 224 L336.2857142857143 262" fill="url(#mon-d)" stroke-width="1"/>
+<path d="M352.2857142857143 262 L352.2857142857143 224 Q368.57142857142856 200 384.85714285714283 224 L384.85714285714283 262" fill="url(#mon-d)" stroke-width="1"/>
+<path d="M400.85714285714283 262 L400.85714285714283 224 Q417.1428571428571 200 433.4285714285714 224 L433.4285714285714 262" fill="url(#mon-d)" stroke-width="1"/>
+<path d="M449.42857142857144 262 L449.42857142857144 224 Q465.7142857142857 200 482.0 224 L482.0 262" fill="url(#mon-d)" stroke-width="1"/>
+<rect x="0" y="128" width="140" height="134" fill="var(--art-bg, #fff)"/>
+<line x1="0" y1="124" x2="140" y2="124" stroke-width="1.2"/>
+<rect x="18.0" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="18.0" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="56.7" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="56.7" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="95.3" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="95.3" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="500" y="128" width="140" height="134" fill="var(--art-bg, #fff)"/>
+<line x1="500" y1="124" x2="640" y2="124" stroke-width="1.2"/>
+<rect x="518.0" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="518.0" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="556.7" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="556.7" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="595.3" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect x="595.3" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<line x1="0" y1="262" x2="640" y2="262" stroke-width="1.4"/>
+<ellipse cx="572" cy="300" rx="46" ry="9" fill="var(--art-bg, #fff)" stroke-width="1.2"/>
+<path d="M526 300 L528 310 Q572 322 616 310 L618 300" stroke-width="1.2"/>
+<rect x="566" y="244" width="12" height="54" fill="url(#mon-r)" stroke-width="1"/>
+<ellipse cx="572" cy="244" rx="20" ry="5" fill="var(--art-bg, #fff)"/>
+<path d="M572 239 Q558 216 548 246 M572 239 Q586 216 596 246 M572 239 L572 222" stroke-width=".7" stroke-dasharray="2 2"/>
+<path d="M80 300 L480 300 L460 314 L60 314 Z" fill="var(--art-bg, #fff)" stroke-width="1.6"/>
+<path d="M84 301.5 L476 301.5 L457 312.5 L63 312.5 Z" stroke-width=".6"/>
+<line x1="84" y1="307.0" x2="476" y2="307.0" stroke-width=".5" transform="translate(-10.0 0)"/>
+<path d="M60 314 L460 314 L460 319 L60 319 Z" fill="currentColor" stroke-width="1"/>
+<path d="M280.0 300 L280.0 287 L260.0 301 L260.0 314" stroke-width="1.2"/>
+<line x1="276.7" y1="302.3" x2="276.7" y2="289.3" stroke-width=".4"/>
+<line x1="273.3" y1="304.7" x2="273.3" y2="291.7" stroke-width=".4"/>
+<line x1="270.0" y1="307.0" x2="270.0" y2="294.0" stroke-width=".4"/>
+<line x1="266.7" y1="309.3" x2="266.7" y2="296.3" stroke-width=".4"/>
+<line x1="263.3" y1="311.7" x2="263.3" y2="298.7" stroke-width=".4"/>
+<path d="M90 319 L86 358 M110 319 L114 358" stroke-width="1.4"/>
+<path d="M410 319 L406 358 M430 319 L434 358" stroke-width="1.4"/>
+<line x1="90" y1="342" x2="110" y2="342" stroke-width=".8"/>
+<line x1="410" y1="342" x2="430" y2="342" stroke-width=".8"/>
+</g>
 </svg>

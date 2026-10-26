@@ -9,6 +9,7 @@
   --live: #e0333f;
   --shadow: 0 1px 2px rgba(23, 40, 70, .05), 0 6px 20px rgba(23, 40, 70, .06);
   --radius: 16px;
+  --art-bg: #fafaf8;
 
   /* category: strong colour, soft tint */
   --International: #2f5fd0; --International-tint: #e7eefc;
@@ -24,6 +25,7 @@
     --muted: #9aa4b4;
     --rule: #2a313c;
     --shadow: none;
+    --art-bg: #161b22;
     --International: #7ea0ee; --International-tint: #1c2a47;
     --England: #f0767f;       --England-tint: #3a1f25;
     --Clubs: #5cc495;         --Clubs-tint: #173328;
@@ -85,7 +87,7 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 
 /* Cards and artwork */
 .card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
-.art { display: block; width: 100%; aspect-ratio: 16 / 9; }
+.art { display: block; width: 100%; aspect-ratio: 16 / 9; color: var(--ink); background: var(--art-bg); }
 .card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
 .tag { font-size: 13px; font-weight: 600; }
 .translated { font-weight: 500; color: var(--muted); }
@@ -157,12 +159,12 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 
 /* Photos and cartoons */
 .art.photo { position: relative; margin: 0; overflow: hidden; background: var(--rule); }
-.art.photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.art.photo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.06); }
 .art.photo figcaption {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 12px 7px; font-size: 11px; line-height: 1.35; color: #fff;
   background: linear-gradient(transparent, rgba(0,0,0,.6));
 }
 .art.photo figcaption a { color: #fff; }
-.art.cartoon { background: var(--International-tint); overflow: hidden; }
+.art.cartoon { overflow: hidden; }
 .art.cartoon svg { display: block; width: 100%; height: 100%; }
 .second .art.photo figcaption { font-size: 9.5px; padding: 14px 8px 5px; }

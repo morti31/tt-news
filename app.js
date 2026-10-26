@@ -26,26 +26,26 @@
         <figcaption>${im.caption ? esc(im.caption) + ". " : ""}Photo: <a href="${esc(im.page)}" target="_blank" rel="noopener">${esc(im.credit)}</a>, <a href="${esc(im.licence_url)}" target="_blank" rel="noopener">${esc(im.licence)}</a></figcaption></figure>`;
     }
     if (im && im.type === "cartoon") return `<div class="art cartoon" data-cartoon="${esc(im.src)}"></div>`;
+    // Fallback: a line drawing of the table, with the ball's flight varied per story
     const h = hash(s.id);
-    const rot = ((h % 25) - 12);
-    const side = h & 1 ? 1 : -1;
-    const bx = 160 + side * (40 + (h >> 3) % 50), by = 52 + (h >> 7) % 70;
-    const c = `var(--${s.category}, var(--International))`, t = `var(--${s.category}-tint, var(--International-tint))`;
-    const score = s.score && showScore ? `<g transform="translate(18 18)"><rect width="${22 + s.score.length * 15}" height="40" rx="12" fill="#fff"/><text x="${11 + s.score.length * 7.5}" y="28" text-anchor="middle" font-family="Bricolage Grotesque, system-ui, sans-serif" font-weight="800" font-size="24" fill="#17202b">${esc(s.score.replace("-", "–"))}</text></g>` : "";
-    return `<svg class="art" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a table tennis table">
-      <rect width="320" height="180" fill="${t}"/>
-      <g transform="translate(160 96) scale(.86) rotate(${rot}) translate(-160 -96)">
-        <rect x="58" y="44" width="204" height="112" rx="4" fill="${c}"/>
-        <rect x="61" y="47" width="198" height="106" rx="2" fill="none" stroke="#fff" stroke-width="3"/>
-        <line x1="61" y1="100" x2="259" y2="100" stroke="#fff" stroke-width="1.5"/>
-        <line x1="160" y1="36" x2="160" y2="164" stroke="#17202b" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
-        <line x1="160" y1="36" x2="160" y2="164" stroke="#fff" stroke-width="1.2" stroke-dasharray="2 3"/>
-      </g>
-      <path d="M${160 - side * 120} ${150 - (h >> 5) % 40} Q 160 ${by - 50} ${bx} ${by}" fill="none" stroke="#17202b" stroke-opacity=".28" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/>
-      <circle cx="${bx}" cy="${by + 10}" r="7" fill="#17202b" fill-opacity=".07"/>
-      <circle cx="${bx}" cy="${by}" r="8" fill="#f37021"/>
-      <circle cx="${bx - 2.5}" cy="${by - 2.5}" r="2.5" fill="#fff" fill-opacity=".55"/>
-      ${score}
+    const flip = h & 1;
+    const x0 = 120, y0 = 250, L = 400, dx = 20, dy = 14, mx = x0 + L / 2;
+    const net = [1, 2, 3, 4, 5].map((i) => { const t = i / 6, px = mx + dx - dx * t, py = y0 + dy * t; return `<line x1="${px}" y1="${py}" x2="${px}" y2="${py - 13}" stroke-width=".4"/>`; }).join("");
+    const legs = [x0 + 40, x0 + L - 40].map((lx) => `<path d="M${lx - 10} ${y0 + dy + 5} L${lx - 14} ${y0 + dy + 44} M${lx + 10} ${y0 + dy + 5} L${lx + 14} ${y0 + dy + 44}" stroke-width="1.4"/>`).join("");
+    const fx = flip ? 180 + (h >> 4) % 60 : 400 + (h >> 4) % 60, fy = y0 - 4;
+    const bx = flip ? 380 + (h >> 9) % 90 : 160 + (h >> 9) % 90, by = 150 + (h >> 13) % 70;
+    const score = s.score && showScore
+      ? `<text x="40" y="96" font-family="Bricolage Grotesque, system-ui, sans-serif" font-weight="600" font-size="64" fill="currentColor" stroke="none" letter-spacing="-.02em">${esc(s.score.replace("-", "–"))}</text>` : "";
+    return `<svg class="art" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Line drawing of a table tennis table">
+      <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="0" y1="${y0 + dy + 44}" x2="640" y2="${y0 + dy + 44}" stroke-width=".6"/>
+        <path d="M${x0 + dx} ${y0} L${x0 + L + dx} ${y0} L${x0 + L} ${y0 + dy} L${x0} ${y0 + dy} Z" fill="var(--art-bg)" stroke-width="1.6"/>
+        <line x1="${x0 + 14}" y1="${y0 + dy / 2}" x2="${x0 + L + 6}" y2="${y0 + dy / 2}" stroke-width=".5"/>
+        <path d="M${x0} ${y0 + dy} L${x0 + L} ${y0 + dy} L${x0 + L} ${y0 + dy + 5} L${x0} ${y0 + dy + 5} Z" fill="currentColor" stroke-width="1"/>
+        <path d="M${mx + dx} ${y0} L${mx + dx} ${y0 - 13} L${mx} ${y0 + dy - 13} L${mx} ${y0 + dy}" stroke-width="1.2"/>${net}${legs}
+        <path d="M${fx} ${fy} Q${(fx + bx) / 2} ${by - 60} ${bx} ${by}" stroke-width=".8" stroke-dasharray="1 5"/>
+        <circle cx="${bx}" cy="${by}" r="5.5" fill="var(--art-bg)" stroke-width="1.3"/>
+      </g>${score}
     </svg>`;
   }
 
@@ -103,7 +103,7 @@
       try {
         cartoonCache[src] ??= fetch(src).then((r) => r.text());
         el.innerHTML = await cartoonCache[src];
-        el.querySelector("svg")?.setAttribute("preserveAspectRatio", el.closest(".second") ? "xMaxYMid slice" : "xMidYMid slice");
+        el.querySelector("svg")?.setAttribute("preserveAspectRatio", "xMidYMid slice");
         el.classList.add("filled");
       } catch (e) { /* leave the tinted panel showing */ }
     }
