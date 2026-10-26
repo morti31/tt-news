@@ -262,3 +262,13 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .card { position: relative; }
 .card .meta a, .card .byline { position: relative; z-index: 1; }
 .card p.read-more { font-size: 14px; font-weight: 600; color: var(--International); margin: -4px 0 12px; }
+
+/* Prestige tiers: colour rises with importance */
+:root { --tier-1: #9aa4b4; --tier-2: #2aa198; --tier-3: #2f5fd0; --tier-4: #f37021; --tier-5: #d8263a; }
+.level.tier-1 i.on { background: var(--tier-1); }
+.level.tier-2 i.on { background: var(--tier-2); }
+.level.tier-3 i.on { background: var(--tier-3); }
+.level.tier-4 i.on { background: var(--tier-4); }
+.level.tier-5 i.on { background: var(--tier-5); }
+.tier-key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); margin: 14px 0 0; }
+.tier-key > span { display: inline-flex; align-items: center; gap: 6px; }

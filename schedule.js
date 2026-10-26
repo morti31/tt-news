@@ -31,7 +31,8 @@
   const fixtures = data.fixtures || [];
   const timeFmt = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
   const place = (e) => [e.venue, e.city !== e.country ? e.city : "", e.country].filter(Boolean).join(", ");
-  const dots = (p) => [1, 2, 3, 4, 5].map((n) => `<i class="${p >= n - 0.25 ? "on" : ""}"></i>`).join("");
+  const tier = (p) => [1, 2, 3, 4, 5].filter((n) => p >= n - 0.25).length || 1;
+  const dots = (p) => [1, 2, 3, 4, 5].map((n) => `<i class="${n <= tier(p) ? "on" : ""}"></i>`).join("");
 
   function render(series) {
     const list = series === "All" ? events : events.filter((e) => e.series === series);
@@ -49,7 +50,7 @@
             <div class="sched-body">
               <div class="sched-top"><h3>${esc(e.name)}</h3>${now ? '<span class="on-now">On now</span>' : ""}</div>
               <p class="sched-meta">${when}${place(e) ? `, ${esc(place(e))}` : ""}</p>
-              <p class="sched-meta"><span class="series">${esc(e.type)}</span><span class="level" title="Prestige ${e.prestige} out of 5">${dots(e.prestige)}</span></p>
+              <p class="sched-meta"><span class="series">${esc(e.type)}</span><span class="level tier-${tier(e.prestige)}" title="Prestige ${e.prestige} out of 5">${dots(e.prestige)}</span></p>
               ${fx.length ? `<details class="sessions"><summary>${fx.length} session times</summary><ul>${fx.map((f) =>
                 `<li><span>${timeFmt.format(new Date(f.start))}</span><span>${esc(f.name.split(": ").pop())}</span></li>`).join("")}</ul></details>` : ""}
             </div>
