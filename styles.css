@@ -261,4 +261,4 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .card a.stretch::after { content: ""; position: absolute; inset: 0; }
 .card { position: relative; }
 .card .meta a, .card .byline { position: relative; z-index: 1; }
-.read-more { font-size: 14px; font-weight: 600; color: var(--International); margin: -4px 0 12px; }
+.card p.read-more { font-size: 14px; font-weight: 600; color: var(--International); margin: -4px 0 12px; }

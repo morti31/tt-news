@@ -29,7 +29,8 @@
         "licence_url": "https://creativecommons.org/licenses/by/4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg",
         "caption": "Harimoto at Paris 2024"
-      }
+      },
+      "author": "michael"
     },
     {
       "id": "asian-ws-final-2026",
@@ -43,7 +44,8 @@
           "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
         }
       ],
-      "score": "3-0"
+      "score": "3-0",
+      "author": "michael"
     },
     {
       "id": "asian-teams-2026",
@@ -61,7 +63,8 @@
           "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
         }
       ],
-      "score": "3-0"
+      "score": "3-0",
+      "author": "michael"
     },
     {
       "id": "montpellier-preview-2026",
@@ -83,7 +86,8 @@
       "image": {
         "type": "cartoon",
         "src": "img/cartoons/montpellier.svg"
-      }
+      },
+      "author": "tom"
     },
     {
       "id": "americas-champs-2026",
@@ -107,7 +111,8 @@
         "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
         "page": "https://commons.wikimedia.org/wiki/File:Hugocalderano.jpg",
         "caption": "Calderano in Lima, 2019"
-      }
+      },
+      "author": "michael"
     },
     {
       "id": "u21-national-cup-2026",
@@ -124,7 +129,8 @@
       "image": {
         "type": "cartoon",
         "src": "img/cartoons/wellingborough.svg"
-      }
+      },
+      "author": "michelle"
     },
     {
       "id": "world-hopes-sheffield-2026",
@@ -137,7 +143,8 @@
           "name": "Table Tennis England",
           "url": "https://www.tabletennisengland.co.uk/news/2026/big-learning-curve-for-english-duo-at-ittf-world-hopes-week/"
         }
-      ]
+      ],
+      "author": "tom"
     },
     {
       "id": "mltt-houston-2026",
@@ -154,7 +161,8 @@
       "image": {
         "type": "cartoon",
         "src": "img/cartoons/houston.svg"
-      }
+      },
+      "author": "michelle"
     },
     {
       "id": "dimpled-ball-2026",
@@ -171,7 +179,8 @@
       "image": {
         "type": "cartoon",
         "src": "img/cartoons/dimpled-ball.svg"
-      }
+      },
+      "author": "michael"
     }
   ],
   "results": [
@@ -358,10 +367,25 @@
     ]
   },
   "site_name": "Eleven",
-  "author": {
-    "name": "Tom Mortimer",
-    "photo": "",
-    "bio": "Tom Mortimer is a freelance journalist based in Birmingham, writing about sport, politics and where the two meet, with a particular interest in Hungarian football. His work has appeared in The Guardian and The Independent. He started Eleven because table tennis news is scattered across dozens of sites in half a dozen languages, and plays his own table tennis at Stirchley Baths in south Birmingham."
-  },
-  "events": []
+  "events": [],
+  "authors": {
+    "tom": {
+      "name": "Tom Mortimer",
+      "bio": "Tom Mortimer is a freelance journalist based in Birmingham, writing about sport, politics and where the two meet, with a particular interest in Hungarian football. His work has appeared in The Guardian and The Independent. He started Eleven because table tennis news is scattered across dozens of sites in half a dozen languages, and plays his own table tennis at Stirchley Baths in south Birmingham.",
+      "photo": "",
+      "colour": "#17202b"
+    },
+    "michael": {
+      "name": "Michael Dobbs",
+      "bio": "",
+      "photo": "",
+      "colour": "#2f5fd0"
+    },
+    "michelle": {
+      "name": "Michelle Dobbs-Nemeth",
+      "bio": "",
+      "photo": "",
+      "colour": "#23895c"
+    }
+  }
 }

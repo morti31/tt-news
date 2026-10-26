@@ -82,12 +82,19 @@
   // Stories
   const stories = [...data.stories].sort((a, b) => b.date.localeCompare(a.date));
   const tag = (s) => `<span class="tag" style="color:var(--${s.category}, var(--ink))">${esc(s.category)}${s.lang ? `<span class="translated">, translated from ${esc(s.lang)}</span>` : ""}</span>`;
-  const au = data.author || { name: "Eleven" };
-  const avatar = (size) => au.photo
+  const authors = data.authors || {};
+  const who = (s) => authors[s.author] || authors.tom || { name: "Eleven" };
+  const avatar = (au, size) => au.photo
     ? `<img class="avatar" src="${esc(au.photo)}" alt="" width="${size}" height="${size}">`
-    : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px" aria-hidden="true">${esc(au.name.split(" ").map((w) => w[0]).join("").slice(0, 2))}</span>`;
-  const byline = `<span class="byline">${avatar(26)}<span>By ${esc(au.name)}</span></span>`;
-  const meta = (s) => `${byline}<div class="meta">${fmt(s.date)}</div>`;
+    : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px;background:${esc(au.colour || "var(--ink)")};color:#fff" aria-hidden="true">${esc(au.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`;
+  const when = (s) => {
+    const full = (data.articles || {})[s.id];
+    if (full && full.published) {
+      return new Date(full.published).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }).replace(",", ",");
+    }
+    return fmt(s.date);
+  };
+  const meta = (s) => { const au = who(s); return `<span class="byline">${avatar(au, 26)}<span>By ${esc(au.name)}</span></span><div class="meta">${when(s)}</div>`; };
   const card = (s, heading = "h3", sc = true) => {
     const full = (data.articles || {})[s.id];
     const link = full ? full.url : (s.sources[0] || {}).url;

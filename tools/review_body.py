@@ -10,7 +10,7 @@ out = [f"**{len(files)} article{'s' if len(files) != 1 else ''} waiting.** Read 
 for i, f in enumerate(files, 1):
     a = json.load(open(f, encoding="utf-8"))
     words = sum(len(p.split()) for p in a["body"])
-    tags = [a["category"], f"{words} words"] + ([f"translated from {a['lang']}"] if a.get("lang") else [])
+    tags = [a["category"], f"{words} words", "by " + {"michael": "Michael Dobbs", "michelle": "Michelle Dobbs-Nemeth"}.get(a.get("author"), "Tom Mortimer")] + ([f"translated from {a['lang']}"] if a.get("lang") else [])
     out.append("---\n")
     out.append(f"### {i}. {a['title']}\n")
     out.append(f"_{' · '.join(tags)}_\n")

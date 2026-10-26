@@ -11,7 +11,11 @@ import json, os, glob, html, datetime as dt
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
 NEWS = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))
-AUTHOR = NEWS.get("author", {"name": "Eleven"})
+AUTHORS = NEWS.get("authors", {"tom": {"name": "Eleven"}})
+
+
+def author_of(a):
+    return AUTHORS.get(a.get("author", "tom"), AUTHORS.get("tom", {"name": "Eleven"}))
 e = html.escape
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
@@ -28,19 +32,36 @@ FOOT = """<footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<s
 <p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
 
 
+try:
+    from zoneinfo import ZoneInfo
+    UK = ZoneInfo("Europe/London")
+except Exception:  # no tz database: fall back to UTC
+    UK = dt.timezone.utc
+
+
 def long_date(iso):
     d = dt.date.fromisoformat(iso[:10])
     return f"{d.day} {d:%B %Y}"
+
+
+def pub_time(a):
+    """Publication time in UK time, e.g. '26 October 2026, 16:46'."""
+    raw = a.get("published")
+    if not raw:
+        return long_date(a["date"])
+    t = dt.datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(UK)
+    return f"{t.day} {t:%B %Y}, {t:%H:%M}"
 
 
 def initials(name):
     return "".join(w[0] for w in name.split())[:2]
 
 
-def avatar(size):
-    if AUTHOR.get("photo"):
-        return f'<img class="avatar" src="{e(AUTHOR["photo"])}" alt="" width="{size}" height="{size}">'
-    return f'<span class="avatar" style="width:{size}px;height:{size}px;font-size:{size*0.4:.0f}px" aria-hidden="true">{e(initials(AUTHOR["name"]))}</span>'
+def avatar(au, size):
+    if au.get("photo"):
+        return f'<img class="avatar" src="{e(au["photo"])}" alt="" width="{size}" height="{size}">'
+    return (f'<span class="avatar" style="width:{size}px;height:{size}px;font-size:{size*0.4:.0f}px;background:{e(au.get("colour", "var(--ink)"))};color:#fff" '
+            f'aria-hidden="true">{e(initials(au["name"]))}</span>')
 
 
 def hero(a):
@@ -93,11 +114,12 @@ def load_articles():
         a = json.load(open(f, encoding="utf-8"))
         a.setdefault("slug", os.path.splitext(os.path.basename(f))[0])
         arts.append(a)
-    arts.sort(key=lambda a: (a["date"], a.get("time", "")), reverse=True)
+    arts.sort(key=lambda a: a.get("published", a["date"]), reverse=True)
     return arts
 
 
 def article_page(a, others):
+    AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
     words = sum(len(p.split()) for p in a["body"])
     tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(a["category"])}'
@@ -106,7 +128,7 @@ def article_page(a, others):
     tag += "</span>"
     paras = "\n".join(f"<p>{e(p)}</p>" for p in a["body"])
     sources = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in a["sources"])
-    more = "".join(f'<li><a href="/news/{e(o["slug"])}.html">{e(o["title"])}</a><span>{long_date(o["date"])}</span></li>' for o in others[:5])
+    more = "".join(f'<li><a href="/news/{e(o["slug"])}.html">{e(o["title"])}</a><span>{pub_time(o)}</span></li>' for o in others[:5])
     img = a.get("image") or {}
     ld = {
         "@context": "https://schema.org", "@type": "NewsArticle",
@@ -125,7 +147,7 @@ def article_page(a, others):
   {tag}
   <h1>{e(a['title'])}</h1>
   <p class="standfirst">{e(a['standfirst'])}</p>
-  <div class="article-byline"><span class="byline">{avatar(36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a['date'])}">{long_date(a['date'])}</time></div>
+  <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
   {hero(a)}
   <div class="article-body">
 {paras}
@@ -133,7 +155,7 @@ def article_page(a, others):
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
 </article>
 <aside class="article-side">
-  <section class="panel author"><div class="author-head">{avatar(56)}<div><p class="small-label">Editor</p><h2 class="panel-title">{e(AUTHOR['name'])}</h2></div></div><p class="author-bio">{e(AUTHOR.get('bio', ''))}</p></section>
+  {f'<section class="panel author"><div class="author-head">{avatar(AUTHOR, 56)}<div><p class="small-label">Writer</p><h2 class="panel-title">{e(AUTHOR["name"])}</h2></div></div><p class="author-bio">{e(AUTHOR["bio"])}</p></section>' if AUTHOR.get("bio") else ""}
   {f'<section class="panel"><h2 class="panel-title">More news</h2><ul class="more-list">{more}</ul></section>' if more else ''}
 </aside>
 </main>"""
@@ -149,13 +171,13 @@ def main():
         open(os.path.join(ROOT, "news", a["slug"] + ".html"), "w", encoding="utf-8").write(article_page(a, others))
 
     items = "".join(f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(a['category'])}</span>
-<h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a['date'])}">{long_date(a['date'])}</time></a></li>""" for a in arts)
+<h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a></li>""" for a in arts)
     archive = f"""<main class="wrap"><section class="sched-head"><div><h1>Archive</h1><p class="lede">Every full article published on Eleven, newest first.</p></div></section>
 <ul class="archive">{items or '<li class="empty">No full articles yet.</li>'}</ul></main>"""
     open(os.path.join(ROOT, "news", "index.html"), "w", encoding="utf-8").write(
         page("Archive | Eleven", "Every full table tennis article published on Eleven.", f"{SITE}/news/", archive, news_cur=True))
 
-    index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html"} for a in arts}
+    index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html", "published": a.get("published")} for a in arts}
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     today = dt.date.today().isoformat()
