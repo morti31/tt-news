@@ -80,7 +80,7 @@ def hero(a):
     return ""
 
 
-def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=None, og_type="website"):
+def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=None, og_type="website", robots=None):
     og_img = f'<meta property="og:image" content="{e(og_image)}">' if og_image else ""
     return f"""<!doctype html>
 <html lang="en-GB">
@@ -88,7 +88,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
-<meta name="description" content="{e(desc)}">
+<meta name="description" content="{e(desc)}">{f'<meta name="robots" content="{robots}">' if robots else ""}
 <link rel="canonical" href="{e(canonical)}">
 <meta property="og:type" content="{og_type}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{e(canonical)}"><meta property="og:site_name" content="Eleven">{og_img}
@@ -120,7 +120,7 @@ def load_articles():
     return arts
 
 
-def article_page(a, others):
+def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
     words = sum(len(p.split()) for p in a["body"])
@@ -148,7 +148,7 @@ def article_page(a, others):
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/#{e(a['category'])}">{e(a['category'])}</a></nav>
   {tag}
   <h1>{e(a['title'])}</h1>
-  <p class="standfirst">{e(a['standfirst'])}</p>
+  {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
   {hero(a)}
   <div class="article-body">
@@ -167,7 +167,10 @@ def article_page(a, others):
 </aside>
 </main>"""
     og = img.get("url") if img.get("type") == "photo" else None
-    return page(f"{a['title']} | Eleven", a["standfirst"], url, body, head, og_image=og, og_type="article")
+    desc = a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
+    # Short stories stay readable and shareable but are kept out of Google's index as thin pages
+    return page(f"{a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
+                robots="noindex, follow" if brief else None)
 
 
 def main():
@@ -185,6 +188,20 @@ def main():
         page("Archive | Eleven", "Every full table tennis article published on Eleven.", f"{SITE}/news/", archive, news_cur=True))
 
     index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html", "published": a.get("published")} for a in arts}
+
+    # Short stories without a full article get a short page of their own
+    briefs = 0
+    for s in NEWS.get("stories", []):
+        if s["id"] in index:
+            continue
+        brief = {"slug": s["id"], "title": s["headline"], "standfirst": "", "category": s["category"], "date": s["date"],
+                 "body": s.get("body") or [s["summary"]], "sources": s.get("sources", []), "author": s.get("author", "tom")}
+        for k in ("lang", "image", "published"):
+            if s.get(k):
+                brief[k] = s[k]
+        open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))
+        index[s["id"]] = {"slug": s["id"], "url": f"/news/{s['id']}.html", "brief": True}
+        briefs += 1
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
     today = dt.date.today().isoformat()
@@ -205,7 +222,7 @@ def main():
                    f"<pubDate>{rfc822(a)}</pubDate><description>{e(a['standfirst'])}</description></item>")
     rss.append("</channel></rss>")
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write("\n".join(rss) + "\n")
-    print(f"built {len(arts)} articles, archive, sitemap ({len(urls)} URLs), robots.txt, feed.xml")
+    print(f"built {len(arts)} articles, {briefs} short pages, archive, sitemap ({len(urls)} URLs), robots.txt, feed.xml")
 
 
 def check_schedule():
