@@ -12,6 +12,9 @@
       const sch = await fetch("data/schedule.json", { cache: "no-store" }).then((r) => r.json());
       data.events = sch.events;
     } catch (e) { /* fall back to events in news.json */ }
+    try {
+      data.articles = await fetch("data/article-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {}));
+    } catch (e) { data.articles = {}; }
   } catch (e) {
     $("lead").innerHTML = '<div class="card"><div class="card-body"><p>The news didn\'t load. Refresh the page to try again.</p></div></div>';
     return;
@@ -88,7 +91,11 @@
   $("author-bio").textContent = au.bio || "";
   const byline = `<a class="byline" href="#about">${avatar(26)}<span>By ${esc(au.name)}</span></a>`;
   const meta = (s) => `${byline}<div class="meta">${fmt(s.date)}, via ${s.sources.map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join(" and ")}</div>`;
-  const card = (s, heading = "h3", sc = true) => `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${esc(s.headline)}</${heading}><p>${esc(s.summary)}</p>${meta(s)}</div></article>`;
+  const card = (s, heading = "h3", sc = true) => {
+    const full = (data.articles || {})[s.id];
+    const title = full ? `<a class="stretch" href="${esc(full.url)}">${esc(s.headline)}</a>` : esc(s.headline);
+    return `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${title}</${heading}><p>${esc(s.summary)}</p>${full ? '<p class="read-more">Read the full story</p>' : ""}${meta(s)}</div></article>`;
+  };
 
   function render(cat) {
     const list = cat === "All" ? stories : stories.filter((s) => s.category === cat);
