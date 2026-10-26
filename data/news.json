@@ -10,8 +10,14 @@
       "date": "2026-10-25",
       "top": true,
       "sources": [
-        {"name": "tabletennis.media", "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"},
-        {"name": "Butterfly", "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"}
+        {
+          "name": "tabletennis.media",
+          "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"
+        },
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
+        }
       ]
     },
     {
@@ -21,7 +27,10 @@
       "summary": "China's Chen Yi beat Japan's Miwa Harimoto 3-0 in the women's singles final as China and Japan shared the seven titles between them, four to three.",
       "date": "2026-10-25",
       "sources": [
-        {"name": "Butterfly", "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"}
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
+        }
       ]
     },
     {
@@ -31,20 +40,33 @@
       "summary": "China's men won the team final 3-0 against a Korean side that had knocked out world No. 1 Sora Matsushima's Japan in the semi-final. It was Korea's first men's team silver since 2019. Japan won the women's team event.",
       "date": "2026-10-23",
       "sources": [
-        {"name": "Star News Korea", "url": "https://www.starnewskorea.com/en/sports/2026/10/23/2026102314230912197"},
-        {"name": "Butterfly", "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"}
+        {
+          "name": "Star News Korea",
+          "url": "https://www.starnewskorea.com/en/sports/2026/10/23/2026102314230912197"
+        },
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
+        }
       ]
     },
     {
       "id": "montpellier-preview-2026",
       "category": "International",
-      "headline": "Wang Chuqin and the Lebrun brothers headline WTT Champions Montpellier",
-      "summary": "The event runs 27 October to 1 November at the Sud de France Arena. World champion Wang Chuqin, Félix and Alexis Lebrun and Sora Matsushima are confirmed. In the women's draw, Wang Manyu arrives back at world No. 1 and Wang Yidi defends her title.",
-      "date": "2026-10-24",
+      "headline": "Wang Chuqin pulls out of Montpellier injured as Sun Yingsha returns",
+      "summary": "Chinese media report that the world champion has withdrawn from WTT Champions Montpellier (27 October to 1 November) with an injury, with Korea's An Jae-hyun taking his place. Lin Shidong leads China's men and Sun Yingsha heads a six-strong women's squad. Félix and Alexis Lebrun lead the home challenge.",
+      "date": "2026-10-23",
       "sources": [
-        {"name": "Montpellier En Commun", "url": "https://encommun.montpellier.fr/articles/2026-10-24-wtt-2026-le-retour-des-meilleurs-pongistes-mondiaux-montpellier"},
-        {"name": "FFTT", "url": "https://www.fftt.com/actualites/wtt/suivre-le-wtt-champions-de-montpellier-2026/"}
-      ]
+        {
+          "name": "NetEase (Chinese)",
+          "url": "https://www.163.com/dy/article/L9UUNJ8U0556923K.html"
+        },
+        {
+          "name": "Montpellier En Commun (French)",
+          "url": "https://encommun.montpellier.fr/articles/2026-10-24-wtt-2026-le-retour-des-meilleurs-pongistes-mondiaux-montpellier"
+        }
+      ],
+      "lang": "Chinese"
     },
     {
       "id": "americas-champs-2026",
@@ -53,7 +75,10 @@
       "summary": "Hugo Calderano beat fellow Brazilian Guilherme Teodoro 4-1 in Lima, and Puerto Rico's Adriana Diaz beat Canada's Mo Zhang 4-2. The USA women won the team event, beating Puerto Rico 3-0 in the final.",
       "date": "2026-10-25",
       "sources": [
-        {"name": "Butterfly", "url": "https://butterflyonline.com/venezuela-and-usa-take-team-titles-as-parity-prevails-at-americas-championships/"}
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/venezuela-and-usa-take-team-titles-as-parity-prevails-at-americas-championships/"
+        }
       ]
     },
     {
@@ -63,7 +88,10 @@
       "summary": "Ella Pashley went unbeaten at Highfields TTC in Wellingborough, beating Sophie Earley 3-0 in the final round. Larry Trumpauskas dropped one match on his way to keeping the men's title.",
       "date": "2026-10-26",
       "sources": [
-        {"name": "Table Tennis England", "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"}
+        {
+          "name": "Table Tennis England",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
+        }
       ]
     },
     {
@@ -73,7 +101,10 @@
       "summary": "The ITTF's development camp for leading under-12s came to Sheffield. English pair Sai Prasanna Kumar and Isabella Xiao Xu took part, facing playing styles from around the world.",
       "date": "2026-10-23",
       "sources": [
-        {"name": "Table Tennis England", "url": "https://www.tabletennisengland.co.uk/news/2026/big-learning-curve-for-english-duo-at-ittf-world-hopes-week/"}
+        {
+          "name": "Table Tennis England",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/big-learning-curve-for-english-duo-at-ittf-world-hopes-week/"
+        }
       ]
     },
     {
@@ -83,7 +114,10 @@
       "summary": "The US franchise league's fourth season continues in Houston from 30 October to 1 November, with four teams in action.",
       "date": "2026-10-25",
       "sources": [
-        {"name": "Butterfly", "url": "https://butterflyonline.com/mltt-week-4-preview-the-pros-head-to-houston/"}
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/mltt-week-4-preview-the-pros-head-to-houston/"
+        }
       ]
     },
     {
@@ -93,7 +127,10 @@
       "summary": "Ray D'Alonzo has published a mathematical paper on golf-style dimples on a table tennis ball. His model suggests less drag and more speed retained across the table, though the effects on spin and bounce would need real prototypes to test.",
       "date": "2026-10-23",
       "sources": [
-        {"name": "Table Tennis England", "url": "https://www.tabletennisengland.co.uk/news/2026/a-table-tennis-ball-with-dimples-that-could-be-a-whole-new-ball-game/"}
+        {
+          "name": "Table Tennis England",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/a-table-tennis-ball-with-dimples-that-could-be-a-whole-new-ball-game/"
+        }
       ]
     }
   ],
@@ -103,13 +140,48 @@
       "ended": "2026-10-25",
       "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/",
       "matches": [
-        {"round": "Men's singles final", "winner": "Tomokazu Harimoto (JPN)", "loser": "Li Tianyang (CHN)", "score": "3-2"},
-        {"round": "Women's singles final", "winner": "Chen Yi (CHN)", "loser": "Miwa Harimoto (JPN)", "score": "3-0"},
-        {"round": "Men's doubles final", "winner": "Lin Shidong / Huang Youzheng (CHN)", "loser": "Wen Ruibo / Yuan Licen (CHN)", "score": "3-1"},
-        {"round": "Women's doubles final", "winner": "Kuai Man / Wang Yidi (CHN)", "loser": "M. Harimoto / H. Hayata (JPN)", "score": ""},
-        {"round": "Mixed doubles", "winner": "M. Harimoto / S. Matsushima (JPN)", "loser": "", "score": "Gold"},
-        {"round": "Men's team final", "winner": "China", "loser": "Korea", "score": "3-0"},
-        {"round": "Women's team", "winner": "Japan", "loser": "", "score": "Gold"}
+        {
+          "round": "Men's singles final",
+          "winner": "Tomokazu Harimoto (JPN)",
+          "loser": "Li Tianyang (CHN)",
+          "score": "3-2"
+        },
+        {
+          "round": "Women's singles final",
+          "winner": "Chen Yi (CHN)",
+          "loser": "Miwa Harimoto (JPN)",
+          "score": "3-0"
+        },
+        {
+          "round": "Men's doubles final",
+          "winner": "Lin Shidong / Huang Youzheng (CHN)",
+          "loser": "Wen Ruibo / Yuan Licen (CHN)",
+          "score": "3-1"
+        },
+        {
+          "round": "Women's doubles final",
+          "winner": "Kuai Man / Wang Yidi (CHN)",
+          "loser": "M. Harimoto / H. Hayata (JPN)",
+          "score": ""
+        },
+        {
+          "round": "Mixed doubles",
+          "winner": "M. Harimoto / S. Matsushima (JPN)",
+          "loser": "",
+          "score": "Gold"
+        },
+        {
+          "round": "Men's team final",
+          "winner": "China",
+          "loser": "Korea",
+          "score": "3-0"
+        },
+        {
+          "round": "Women's team",
+          "winner": "Japan",
+          "loser": "",
+          "score": "Gold"
+        }
       ]
     },
     {
@@ -117,9 +189,24 @@
       "ended": "2026-10-25",
       "url": "https://butterflyonline.com/venezuela-and-usa-take-team-titles-as-parity-prevails-at-americas-championships/",
       "matches": [
-        {"round": "Men's singles final", "winner": "Hugo Calderano (BRA)", "loser": "Guilherme Teodoro (BRA)", "score": "4-1"},
-        {"round": "Women's singles final", "winner": "Adriana Diaz (PUR)", "loser": "Mo Zhang (CAN)", "score": "4-2"},
-        {"round": "Women's team final", "winner": "USA", "loser": "Puerto Rico", "score": "3-0"}
+        {
+          "round": "Men's singles final",
+          "winner": "Hugo Calderano (BRA)",
+          "loser": "Guilherme Teodoro (BRA)",
+          "score": "4-1"
+        },
+        {
+          "round": "Women's singles final",
+          "winner": "Adriana Diaz (PUR)",
+          "loser": "Mo Zhang (CAN)",
+          "score": "4-2"
+        },
+        {
+          "round": "Women's team final",
+          "winner": "USA",
+          "loser": "Puerto Rico",
+          "score": "3-0"
+        }
       ]
     },
     {
@@ -127,8 +214,18 @@
       "ended": "2026-10-25",
       "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/",
       "matches": [
-        {"round": "Women's champion", "winner": "Ella Pashley", "loser": "", "score": "Unbeaten"},
-        {"round": "Men's champion", "winner": "Larry Trumpauskas", "loser": "", "score": "Retained"}
+        {
+          "round": "Women's champion",
+          "winner": "Ella Pashley",
+          "loser": "",
+          "score": "Unbeaten"
+        },
+        {
+          "round": "Men's champion",
+          "winner": "Larry Trumpauskas",
+          "loser": "",
+          "score": "Retained"
+        }
       ]
     }
   ],
@@ -136,47 +233,210 @@
     "week": "ITTF Week 42, 12 October 2026",
     "url": "https://butterflyonline.com/world-top-20/",
     "men": [
-      {"name": "Sora Matsushima", "nat": "JPN"},
-      {"name": "Félix Lebrun", "nat": "FRA"},
-      {"name": "Tomokazu Harimoto", "nat": "JPN"},
-      {"name": "Truls Moregard", "nat": "SWE"},
-      {"name": "Wang Chuqin", "nat": "CHN"},
-      {"name": "Lin Yun-Ju", "nat": "TPE"},
-      {"name": "Hugo Calderano", "nat": "BRA"},
-      {"name": "Alexis Lebrun", "nat": "FRA"},
-      {"name": "Lin Shidong", "nat": "CHN"},
-      {"name": "Jang Woojin", "nat": "KOR"}
+      {
+        "name": "Sora Matsushima",
+        "nat": "JPN"
+      },
+      {
+        "name": "Félix Lebrun",
+        "nat": "FRA"
+      },
+      {
+        "name": "Tomokazu Harimoto",
+        "nat": "JPN"
+      },
+      {
+        "name": "Truls Moregard",
+        "nat": "SWE"
+      },
+      {
+        "name": "Wang Chuqin",
+        "nat": "CHN"
+      },
+      {
+        "name": "Lin Yun-Ju",
+        "nat": "TPE"
+      },
+      {
+        "name": "Hugo Calderano",
+        "nat": "BRA"
+      },
+      {
+        "name": "Alexis Lebrun",
+        "nat": "FRA"
+      },
+      {
+        "name": "Lin Shidong",
+        "nat": "CHN"
+      },
+      {
+        "name": "Jang Woojin",
+        "nat": "KOR"
+      }
     ],
     "women": [
-      {"name": "Wang Manyu", "nat": "CHN"},
-      {"name": "Sun Yingsha", "nat": "CHN"},
-      {"name": "Miwa Harimoto", "nat": "JPN"},
-      {"name": "Wang Yidi", "nat": "CHN"},
-      {"name": "Kuai Man", "nat": "CHN"},
-      {"name": "Hina Hayata", "nat": "JPN"},
-      {"name": "Chen Xingtong", "nat": "CHN"},
-      {"name": "Hitomi Sato", "nat": "JPN"},
-      {"name": "Sabine Winter", "nat": "GER"},
-      {"name": "Chen Yi", "nat": "CHN"}
+      {
+        "name": "Wang Manyu",
+        "nat": "CHN"
+      },
+      {
+        "name": "Sun Yingsha",
+        "nat": "CHN"
+      },
+      {
+        "name": "Miwa Harimoto",
+        "nat": "JPN"
+      },
+      {
+        "name": "Wang Yidi",
+        "nat": "CHN"
+      },
+      {
+        "name": "Kuai Man",
+        "nat": "CHN"
+      },
+      {
+        "name": "Hina Hayata",
+        "nat": "JPN"
+      },
+      {
+        "name": "Chen Xingtong",
+        "nat": "CHN"
+      },
+      {
+        "name": "Hitomi Sato",
+        "nat": "JPN"
+      },
+      {
+        "name": "Sabine Winter",
+        "nat": "GER"
+      },
+      {
+        "name": "Chen Yi",
+        "nat": "CHN"
+      }
     ]
   },
   "events": [
-    {"name": "WTT Champions Montpellier", "start": "2026-10-27", "end": "2026-11-01", "type": "WTT Champions", "prestige": 3},
-    {"name": "MLTT Week 4, Houston", "start": "2026-10-30", "end": "2026-11-01", "type": "US franchise league", "prestige": 2},
-    {"name": "WTT Champions Frankfurt", "start": "2026-11-03", "end": "2026-11-08", "type": "WTT Champions", "prestige": 3},
-    {"name": "Japan T.League weekend", "start": "2026-11-07", "end": "2026-11-08", "type": "Japanese pro league", "prestige": 3},
-    {"name": "WTT Contender Istanbul", "start": "2026-11-10", "end": "2026-11-15", "type": "WTT Contender", "prestige": 1.5},
-    {"name": "ETTU Champions League Women, Stage 2 R1", "start": "2026-11-10", "end": "2026-11-11", "type": "European club", "prestige": 3.5},
-    {"name": "ETTU Champions League Men, R16 leg 1", "start": "2026-11-13", "end": "2026-11-15", "type": "European club", "prestige": 3.5},
-    {"name": "ETTU Champions League Women, Stage 2 R2", "start": "2026-11-14", "end": "2026-11-15", "type": "European club", "prestige": 3.5},
-    {"name": "Japan T.League weekend", "start": "2026-11-14", "end": "2026-11-15", "type": "Japanese pro league", "prestige": 3},
-    {"name": "WTT Star Contender Muscat", "start": "2026-11-16", "end": "2026-11-21", "type": "WTT Star Contender", "prestige": 2},
-    {"name": "Mixed Team World Cup, Chengdu", "start": "2026-11-29", "end": "2026-12-06", "type": "Mixed team world", "prestige": 4},
-    {"name": "WTT Finals, Hong Kong", "start": "2026-12-08", "end": "2026-12-13", "type": "Season finals", "prestige": 3.5},
-    {"name": "ETTU Champions League Women, Stage 2 R3", "start": "2026-12-15", "end": "2026-12-16", "type": "European club", "prestige": 3.5},
-    {"name": "ETTU Champions League Men, R16 leg 2", "start": "2026-12-18", "end": "2026-12-20", "type": "European club", "prestige": 3.5},
-    {"name": "ETTU Champions League Women, Stage 2 R4", "start": "2026-12-19", "end": "2026-12-20", "type": "European club", "prestige": 3.5},
-    {"name": "China Super League Finals, Guangzhou", "start": "2026-12-25", "end": "2026-12-27", "type": "Chinese top division", "prestige": 4.5},
-    {"name": "German Cup Final4, Ulm/Neu-Ulm", "start": "2027-01-03", "end": "2027-01-03", "type": "German Cup", "prestige": 3}
-  ]
+    {
+      "name": "WTT Champions Montpellier",
+      "start": "2026-10-27",
+      "end": "2026-11-01",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "name": "MLTT Week 4, Houston",
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "type": "US franchise league",
+      "prestige": 2
+    },
+    {
+      "name": "WTT Champions Frankfurt",
+      "start": "2026-11-03",
+      "end": "2026-11-08",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
+      "name": "Japan T.League weekend",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "name": "WTT Contender Istanbul",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
+      "name": "ETTU Champions League Women, Stage 2 R1",
+      "start": "2026-11-10",
+      "end": "2026-11-11",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "name": "ETTU Champions League Men, R16 leg 1",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "name": "ETTU Champions League Women, Stage 2 R2",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "name": "Japan T.League weekend",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "type": "Japanese pro league",
+      "prestige": 3
+    },
+    {
+      "name": "WTT Star Contender Muscat",
+      "start": "2026-11-16",
+      "end": "2026-11-21",
+      "type": "WTT Star Contender",
+      "prestige": 2
+    },
+    {
+      "name": "Mixed Team World Cup, Chengdu",
+      "start": "2026-11-29",
+      "end": "2026-12-06",
+      "type": "Mixed team world",
+      "prestige": 4
+    },
+    {
+      "name": "WTT Finals, Hong Kong",
+      "start": "2026-12-08",
+      "end": "2026-12-13",
+      "type": "Season finals",
+      "prestige": 3.5
+    },
+    {
+      "name": "ETTU Champions League Women, Stage 2 R3",
+      "start": "2026-12-15",
+      "end": "2026-12-16",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "name": "ETTU Champions League Men, R16 leg 2",
+      "start": "2026-12-18",
+      "end": "2026-12-20",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "name": "ETTU Champions League Women, Stage 2 R4",
+      "start": "2026-12-19",
+      "end": "2026-12-20",
+      "type": "European club",
+      "prestige": 3.5
+    },
+    {
+      "name": "China Super League Finals, Guangzhou",
+      "start": "2026-12-25",
+      "end": "2026-12-27",
+      "type": "Chinese top division",
+      "prestige": 4.5
+    },
+    {
+      "name": "German Cup Final4, Ulm/Neu-Ulm",
+      "start": "2027-01-03",
+      "end": "2027-01-03",
+      "type": "German Cup",
+      "prestige": 3
+    }
+  ],
+  "site_name": "Eleven"
 }
