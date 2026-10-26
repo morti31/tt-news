@@ -66,19 +66,6 @@
     $("live").hidden = false;
   }
 
-  // Scores strip
-  const cards = [];
-  data.results.forEach((r) => r.matches.forEach((m) => {
-    const sc = /^(\d+)-(\d+)$/.exec(m.score || "");
-    if (!sc || !m.loser) return;
-    cards.push(`<a class="score-card" href="${esc(r.url)}" target="_blank" rel="noopener">
-      <span class="ev" title="${esc(r.event)}">${esc(m.round)}, ${esc((r.event.split(", ")[1] || r.event))}</span>
-      <span class="row won"><span>${esc(m.winner)}</span><b>${sc[1]}</b></span>
-      <span class="row"><span>${esc(m.loser)}</span><b>${sc[2]}</b></span></a>`);
-  }));
-  $("ticker").innerHTML = cards.join("");
-  if (!cards.length) $("ticker").parentElement.hidden = true;
-
   // Stories
   const stories = [...data.stories].sort((a, b) => b.date.localeCompare(a.date));
   const tag = (s) => `<span class="tag" style="color:var(--${s.category}, var(--ink))">${esc(s.category)}${s.lang ? `<span class="translated">, translated from ${esc(s.lang)}</span>` : ""}</span>`;
@@ -140,23 +127,4 @@
   document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === startCat)));
   render(startCat);
 
-  // Rankings
-  const ranks = (g) => { $("rankings").innerHTML = data.rankings[g].map((p) => `<li><span>${esc(p.name)}</span><span class="nat">${esc(p.nat)}</span></li>`).join(""); };
-  $("rank-week").innerHTML = `${esc(data.rankings.week)}. <a href="${esc(data.rankings.url)}" target="_blank" rel="noopener">See the full list</a>`;
-  $("rank-toggle").addEventListener("click", (e) => {
-    const b = e.target.closest("button");
-    if (!b) return;
-    document.querySelectorAll("#rank-toggle button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    ranks(b.dataset.g);
-  });
-  ranks("men");
-
-  // Coming up
-  const upcoming = data.events.filter((e) => e.end >= today).sort((a, b) => a.start.localeCompare(b.start)).slice(0, 7);
-  $("events").innerHTML = upcoming.map((e) => {
-    const now = e.start <= today;
-    const when = now ? `On now, until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
-    return `<li class="${now ? "now" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
-      <div><span class="name">${esc(e.name)}</span><span class="when">${when}</span></div></li>`;
-  }).join("");
 })();

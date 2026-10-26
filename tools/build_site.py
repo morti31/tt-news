@@ -101,8 +101,10 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 </head>
 <body>
 {NAV.format(news_cur=' aria-current="page"' if news_cur else "")}
+<section class="ticker" aria-label="Latest scores"><div class="wrap ticker-inner" id="ticker"></div></section>
 {body}
 {FOOT}
+<script src="/widgets.js"></script>
 </body>
 </html>
 """
@@ -157,6 +159,11 @@ def article_page(a, others):
 <aside class="article-side">
   {f'<section class="panel author"><div class="author-head">{avatar(AUTHOR, 56)}<div><p class="small-label">Writer</p><h2 class="panel-title">{e(AUTHOR["name"])}</h2></div></div><p class="author-bio">{e(AUTHOR["bio"])}</p></section>' if AUTHOR.get("bio") else ""}
   {f'<section class="panel"><h2 class="panel-title">More news</h2><ul class="more-list">{more}</ul></section>' if more else ''}
+  <section class="panel"><h2 class="panel-title">World rankings</h2>
+    <div class="toggle" id="rank-toggle" role="group" aria-label="Rankings"><button data-g="men" aria-pressed="true">Men</button><button data-g="women" aria-pressed="false">Women</button></div>
+    <ol id="rankings" class="rankings"></ol><p class="small" id="rank-week"></p></section>
+  <section class="panel"><h2 class="panel-title">Coming up</h2><ul id="events" class="events" data-count="5"></ul>
+    <a class="panel-link" href="/schedule.html">Full schedule and calendar</a></section>
 </aside>
 </main>"""
     og = img.get("url") if img.get("type") == "photo" else None

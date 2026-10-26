@@ -272,3 +272,7 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .level.tier-5 i.on { background: var(--tier-5); }
 .tier-key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); margin: 14px 0 0; }
 .tier-key > span { display: inline-flex; align-items: center; gap: 6px; }
+
+.live-card .ev { display: inline-flex; align-items: center; gap: 6px; color: var(--live); font-weight: 600; }
+.live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--live); animation: pulse 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
