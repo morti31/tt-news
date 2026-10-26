@@ -20,6 +20,12 @@
   // Artwork: a table seen from above, with a ball in flight. Each story gets its own angle and flight path.
   const hash = (str) => { let h = 2166136261; for (const c of str) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; };
   function art(s, showScore = true) {
+    const im = s.image;
+    if (im && im.type === "photo") {
+      return `<figure class="art photo"><img src="${esc(im.url)}" alt="${esc(im.alt || "")}" loading="lazy">
+        <figcaption>${im.caption ? esc(im.caption) + ". " : ""}Photo: <a href="${esc(im.page)}" target="_blank" rel="noopener">${esc(im.credit)}</a>, <a href="${esc(im.licence_url)}" target="_blank" rel="noopener">${esc(im.licence)}</a></figcaption></figure>`;
+    }
+    if (im && im.type === "cartoon") return `<div class="art cartoon" data-cartoon="${esc(im.src)}"></div>`;
     const h = hash(s.id);
     const rot = ((h % 25) - 12);
     const side = h & 1 ? 1 : -1;
@@ -89,6 +95,22 @@
     $("stories").innerHTML = rest.slice(3).map((s) => card(s)).join("");
     $("empty").hidden = rest.length > 3;
   }
+  // Cartoons are inlined so their speech bubbles use the page's hand-lettered font
+  const cartoonCache = {};
+  async function fillCartoons() {
+    for (const el of document.querySelectorAll("[data-cartoon]:not(.filled)")) {
+      const src = el.dataset.cartoon;
+      try {
+        cartoonCache[src] ??= fetch(src).then((r) => r.text());
+        el.innerHTML = await cartoonCache[src];
+        el.querySelector("svg")?.setAttribute("preserveAspectRatio", el.closest(".second") ? "xMaxYMid slice" : "xMidYMid slice");
+        el.classList.add("filled");
+      } catch (e) { /* leave the tinted panel showing */ }
+    }
+  }
+  const _render = render;
+  render = (cat) => { _render(cat); fillCartoons(); };
+
   $("tabs").addEventListener("click", (e) => {
     const b = e.target.closest("button");
     if (!b) return;

@@ -19,7 +19,17 @@
           "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
         }
       ],
-      "score": "3-2"
+      "score": "3-2",
+      "image": {
+        "type": "photo",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg/1280px-Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg",
+        "alt": "Tomokazu Harimoto playing at the Paris 2024 Olympics",
+        "credit": "Daieuxetdailleurs",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg",
+        "caption": "Harimoto at Paris 2024"
+      }
     },
     {
       "id": "asian-ws-final-2026",
@@ -69,7 +79,11 @@
           "url": "https://encommun.montpellier.fr/articles/2026-10-24-wtt-2026-le-retour-des-meilleurs-pongistes-mondiaux-montpellier"
         }
       ],
-      "lang": "Chinese"
+      "lang": "Chinese",
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/montpellier.svg"
+      }
     },
     {
       "id": "americas-champs-2026",
@@ -83,7 +97,17 @@
           "url": "https://butterflyonline.com/venezuela-and-usa-take-team-titles-as-parity-prevails-at-americas-championships/"
         }
       ],
-      "score": "4-1"
+      "score": "4-1",
+      "image": {
+        "type": "photo",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Hugocalderano.jpg/1280px-Hugocalderano.jpg",
+        "alt": "Hugo Calderano playing at the 2019 Pan American Games in Lima",
+        "credit": "Abelardo Mendes Jr",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Hugocalderano.jpg",
+        "caption": "Calderano in Lima, 2019"
+      }
     },
     {
       "id": "u21-national-cup-2026",
@@ -96,7 +120,11 @@
           "name": "Table Tennis England",
           "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
         }
-      ]
+      ],
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/wellingborough.svg"
+      }
     },
     {
       "id": "world-hopes-sheffield-2026",
@@ -122,7 +150,11 @@
           "name": "Butterfly",
           "url": "https://butterflyonline.com/mltt-week-4-preview-the-pros-head-to-houston/"
         }
-      ]
+      ],
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/houston.svg"
+      }
     },
     {
       "id": "dimpled-ball-2026",
@@ -135,7 +167,11 @@
           "name": "Table Tennis England",
           "url": "https://www.tabletennisengland.co.uk/news/2026/a-table-tennis-ball-with-dimples-that-could-be-a-whole-new-ball-game/"
         }
-      ]
+      ],
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/dimpled-ball.svg"
+      }
     }
   ],
   "results": [

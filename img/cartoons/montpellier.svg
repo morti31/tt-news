@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cartoon of a sunny Montpellier square with a fountain, shuttered buildings, a table tennis table, an empty reserved chair and a seagull">
+  <defs>
+    <filter id="mon-wob"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="15"/><feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="#8fd0f0"/>
+  <g filter="url(#mon-wob)" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="80" cy="52" r="30" fill="#ffd84a"/>
+    <path d="M80 8 L80 -2 M124 52 L136 52 M112 20 L120 12 M48 20 L40 12 M36 52 L24 52" stroke-width="3"/>
+    <!-- buildings -->
+    <rect x="0" y="110" width="200" height="180" fill="#f2e3c6"/>
+    <rect x="200" y="140" width="170" height="150" fill="#ead2a8"/>
+    <rect x="370" y="104" width="160" height="186" fill="#f2e3c6"/>
+    <rect x="530" y="130" width="110" height="160" fill="#ead2a8"/>
+    <path d="M-4 110 L204 110 L196 96 L4 96 Z" fill="#c9714d"/>
+    <path d="M366 104 L534 104 L526 90 L374 90 Z" fill="#c9714d"/>
+    <g fill="#3d7fbf">
+      <rect x="24" y="136" width="14" height="40"/><rect x="62" y="136" width="14" height="40"/>
+      <rect x="116" y="136" width="14" height="40"/><rect x="154" y="136" width="14" height="40"/>
+      <rect x="226" y="164" width="12" height="36"/><rect x="262" y="164" width="12" height="36"/><rect x="300" y="164" width="12" height="36"/><rect x="336" y="164" width="12" height="36"/>
+      <rect x="392" y="130" width="14" height="40"/><rect x="430" y="130" width="14" height="40"/><rect x="474" y="130" width="14" height="40"/><rect x="512" y="130" width="10" height="40"/>
+      <rect x="552" y="156" width="12" height="36"/><rect x="600" y="156" width="12" height="36"/>
+    </g>
+    <g fill="#5b4b3e"><rect x="38" y="136" width="24" height="40"/><rect x="130" y="136" width="24" height="40"/><rect x="238" y="164" width="24" height="36"/><rect x="312" y="164" width="24" height="36"/><rect x="406" y="130" width="24" height="40"/><rect x="488" y="130" width="24" height="40"/><rect x="564" y="156" width="36" height="36"/></g>
+    <!-- tricolore bunting -->
+    <path d="M0 210 Q320 250 640 206" fill="none" stroke-width="2.5"/>
+    <g stroke-width="2">
+      <path d="M40 214 L52 238 L64 218 Z" fill="#2f4fa8"/><path d="M100 222 L110 246 L124 224 Z" fill="#fff"/><path d="M160 228 L168 252 L184 228 Z" fill="#d23a48"/>
+      <path d="M220 232 L226 256 L244 232 Z" fill="#2f4fa8"/><path d="M400 232 L406 256 L422 230 Z" fill="#fff"/><path d="M460 228 L466 252 L482 226 Z" fill="#d23a48"/>
+      <path d="M520 222 L524 246 L542 218 Z" fill="#2f4fa8"/><path d="M580 214 L584 238 L600 210 Z" fill="#fff"/>
+    </g>
+    <!-- square -->
+    <rect x="0" y="288" width="640" height="72" fill="#e8d2a6"/>
+    <!-- fountain -->
+    <ellipse cx="320" cy="300" rx="64" ry="14" fill="#9ad3ea"/>
+    <rect x="310" y="232" width="20" height="66" fill="#d8cdb8"/>
+    <ellipse cx="320" cy="232" rx="34" ry="9" fill="#d8cdb8"/>
+    <path d="M320 222 Q300 196 292 226 M320 222 Q340 196 348 226 M320 222 L320 200" fill="none" stroke="#3d9ed0" stroke-width="3"/>
+    <!-- table -->
+    <path d="M40 306 L230 306 L250 336 L20 336 Z" fill="#2f5fd0"/>
+    <path d="M135 306 L135 336" stroke="#fff" stroke-width="3"/>
+    <path d="M30 336 L30 358 M240 336 L240 358"/>
+    <!-- croissant -->
+    <rect x="150" y="292" width="70" height="14" rx="7" fill="#e8a64a" transform="rotate(-6 185 299)"/>
+    <path d="M162 296 L168 302 M178 294 L184 300 M194 292 L200 298" stroke-width="2.5" transform="rotate(-6 185 299)"/>
+    <!-- empty chair with reserved sign -->
+    <path d="M420 270 L420 340 M470 270 L470 340 M420 306 L470 306 M420 270 L470 270" stroke-width="4"/>
+    <path d="M420 306 L470 306 L476 314 L414 314 Z" fill="#c9714d"/>
+    <path d="M414 314 L414 352 M476 314 L476 352" stroke-width="4"/>
+    <rect x="426" y="276" width="38" height="22" fill="#fff" stroke-width="2.5"/>
+    <!-- seagull -->
+    <path d="M556 300 Q580 280 604 300 Q600 316 580 318 Q560 316 556 300 Z" fill="#fff"/>
+    <circle cx="560" cy="290" r="11" fill="#fff"/>
+    <path d="M550 290 L538 294 L550 296 Z" fill="#f0a24a"/>
+    <circle cx="558" cy="287" r="2.2" fill="#1d1d22"/>
+    <path d="M590 300 L612 292" stroke-width="3"/>
+    <path d="M574 318 L572 334 M586 318 L588 334" stroke="#f0a24a"/>
+  </g>
+  <text x="445" y="291" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-weight="700" font-size="8.5" fill="#1d1d22">RÉSERVÉ</text>
+  <g>
+    <path d="M440 22 L616 22 Q628 22 628 34 L628 74 Q628 86 616 86 L580 86 L566 110 L560 86 L440 86 Q428 86 428 74 L428 34 Q428 22 440 22 Z" fill="#fff" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="528" y="62" text-anchor="middle" font-family="Patrick Hand, Comic Sans MS, cursive" font-size="24" textLength="176" lengthAdjust="spacingAndGlyphs" fill="#1d1d22">Pas ce soir, mon ami</text>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cartoon of a Wellingborough street with terraced houses, a church spire and bunting, two trophies on a table tennis table and a pigeon">
+  <defs>
+    <filter id="wel-wob"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="9"/><feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="#cfe2ec"/>
+  <g filter="url(#wel-wob)" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- clouds -->
+    <path d="M40 70 Q50 44 80 52 Q96 30 124 46 Q150 40 150 66 Q156 84 132 86 L52 86 Q30 84 40 70 Z" fill="#fff"/>
+    <path d="M470 50 Q480 30 506 38 Q522 20 546 34 Q574 30 572 54 Q578 70 556 72 L482 72 Q460 70 470 50 Z" fill="#fff"/>
+    <!-- church spire -->
+    <rect x="300" y="120" width="56" height="120" fill="#c9b98f"/>
+    <path d="M296 122 L328 20 L360 122 Z" fill="#b5a273"/>
+    <path d="M318 160 Q328 146 338 160 L338 186 L318 186 Z" fill="#4b4f5a"/>
+    <!-- terraced houses -->
+    <g fill="#b4553e">
+      <rect x="20" y="160" width="100" height="140"/>
+      <rect x="120" y="150" width="100" height="150" fill="#c4674c"/>
+      <rect x="220" y="168" width="80" height="132"/>
+      <rect x="356" y="160" width="100" height="140" fill="#c4674c"/>
+      <rect x="456" y="152" width="90" height="148"/>
+      <rect x="546" y="166" width="94" height="134" fill="#c4674c"/>
+    </g>
+    <g fill="#4b4f5a">
+      <path d="M14 162 L70 128 L126 162 Z"/><path d="M114 152 L170 118 L226 152 Z"/><path d="M216 170 L260 140 L304 170 Z"/>
+      <path d="M350 162 L406 128 L462 162 Z"/><path d="M450 154 L501 122 L552 154 Z"/><path d="M540 168 L593 134 L646 168 Z"/>
+    </g>
+    <g fill="#fdf3d8">
+      <rect x="40" y="186" width="24" height="28"/><rect x="78" y="186" width="24" height="28"/><rect x="140" y="178" width="24" height="28"/><rect x="178" y="178" width="24" height="28"/>
+      <rect x="240" y="192" width="22" height="26"/><rect x="376" y="186" width="24" height="28"/><rect x="414" y="186" width="24" height="28"/>
+      <rect x="474" y="178" width="22" height="28"/><rect x="510" y="178" width="22" height="28"/><rect x="566" y="190" width="24" height="28"/><rect x="604" y="190" width="24" height="28"/>
+    </g>
+    <rect x="152" y="236" width="30" height="64" fill="#2f5fd0"/>
+    <rect x="482" y="236" width="30" height="64" fill="#23895c"/>
+    <!-- club sign -->
+    <rect x="228" y="226" width="62" height="26" fill="#fff"/>
+    <!-- bunting -->
+    <path d="M0 120 Q160 160 300 128" fill="none" stroke-width="2.5"/>
+    <path d="M356 128 Q500 166 640 124" fill="none" stroke-width="2.5"/>
+    <g stroke-width="2">
+      <path d="M30 128 L44 156 L56 134 Z" fill="#d23a48"/><path d="M80 140 L92 168 L106 144 Z" fill="#fff"/><path d="M134 148 L144 176 L160 150 Z" fill="#2f5fd0"/>
+      <path d="M190 150 L198 178 L216 148 Z" fill="#d23a48"/><path d="M244 142 L250 170 L268 138 Z" fill="#fff"/>
+      <path d="M390 140 L402 168 L416 144 Z" fill="#2f5fd0"/><path d="M444 150 L454 178 L470 150 Z" fill="#d23a48"/><path d="M500 152 L508 180 L526 150 Z" fill="#fff"/>
+      <path d="M556 146 L562 174 L580 142 Z" fill="#2f5fd0"/><path d="M606 136 L610 164 L628 130 Z" fill="#d23a48"/>
+    </g>
+    <!-- street -->
+    <rect x="0" y="298" width="640" height="62" fill="#9aa1ab"/>
+    <!-- table -->
+    <path d="M190 296 L450 296 L470 330 L170 330 Z" fill="#2f5fd0"/>
+    <path d="M320 296 L320 330" stroke="#fff" stroke-width="3"/>
+    <path d="M316 282 L316 300 M324 282 L324 300" stroke-width="3"/>
+    <path d="M180 330 L180 356 M460 330 L460 356"/>
+    <!-- trophies -->
+    <path d="M232 260 L262 260 Q262 284 247 286 Q232 284 232 260 Z" fill="#f6c343"/>
+    <path d="M241 286 L253 286 L255 296 L239 296 Z" fill="#f6c343"/>
+    <path d="M378 260 L408 260 Q408 284 393 286 Q378 284 378 260 Z" fill="#f6c343"/>
+    <path d="M387 286 L399 286 L401 296 L385 296 Z" fill="#f6c343"/>
+    <!-- pigeon -->
+    <ellipse cx="560" cy="318" rx="30" ry="20" fill="#9ea7b3"/>
+    <circle cx="534" cy="300" r="13" fill="#7d8796"/>
+    <path d="M522 300 L512 304 L522 306 Z" fill="#f0a24a"/>
+    <circle cx="531" cy="297" r="2.5" fill="#1d1d22"/>
+    <path d="M556 338 L552 352 M568 338 L570 352"/>
+  </g>
+  <text x="259" y="244" text-anchor="middle" font-family="Figtree, system-ui, sans-serif" font-weight="700" font-size="11" fill="#1d1d22">TT CLUB</text>
+  <g>
+    <path d="M430 196 L626 196 Q636 196 636 206 L636 244 Q636 254 626 254 L560 254 L540 280 L540 254 L430 254 Q420 254 420 244 L420 206 Q420 196 430 196 Z" fill="#fff" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="528" y="232" text-anchor="middle" font-family="Patrick Hand, Comic Sans MS, cursive" font-size="24" textLength="190" lengthAdjust="spacingAndGlyphs" fill="#1d1d22">Same again, then?</text>
+  </g>
+</svg>

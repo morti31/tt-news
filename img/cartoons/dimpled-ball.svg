@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cartoon of a dimpled table tennis ball on a golf tee on a table tennis table, under a magnifying glass, with a jealous golf ball beside it">
+  <defs>
+    <filter id="dim-wob"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="21"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="#e9e1f7"/>
+  <g filter="url(#dim-wob)" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- lab shelf -->
+    <path d="M30 120 L250 120" stroke-width="5"/>
+    <path d="M60 120 L60 70 Q60 60 68 60 L82 60 Q90 60 90 70 L90 120 Z" fill="#9be0c3"/>
+    <path d="M130 120 L150 70 L150 50 L170 50 L170 70 L190 120 Z" fill="#ffb0c0"/>
+    <circle cx="225" cy="100" r="18" fill="#bfe3ff"/><path d="M225 82 L225 60"/>
+    <!-- table -->
+    <path d="M40 262 L600 262 L630 320 L10 320 Z" fill="#2f5fd0"/>
+    <path d="M320 262 L320 320" stroke="#fff" stroke-width="3"/>
+    <path d="M26 320 L26 360 M614 320 L614 360"/>
+    <!-- tee -->
+    <path d="M312 262 L328 262 L322 224 L318 224 Z" fill="#ffffff"/>
+    <path d="M300 226 Q320 216 340 226" fill="#fff"/>
+    <!-- dimpled ball -->
+    <circle cx="320" cy="180" r="48" fill="#f37021"/>
+    <g fill="#d65a12" stroke-width="0">
+      <circle cx="300" cy="160" r="6"/><circle cx="322" cy="152" r="6"/><circle cx="342" cy="164" r="6"/>
+      <circle cx="292" cy="184" r="6"/><circle cx="314" cy="178" r="6"/><circle cx="336" cy="186" r="6"/><circle cx="352" cy="200" r="5"/>
+      <circle cx="304" cy="204" r="6"/><circle cx="326" cy="208" r="6"/><circle cx="292" cy="146" r="4"/><circle cx="346" cy="144" r="4"/>
+    </g>
+    <circle cx="302" cy="160" r="9" fill="#fff" fill-opacity=".45" stroke-width="0"/>
+    <!-- magnifying glass -->
+    <circle cx="430" cy="112" r="56" fill="#bfe3ff" fill-opacity=".45" stroke-width="7"/>
+    <path d="M470 152 L540 222" stroke-width="16"/>
+    <path d="M470 152 L540 222" stroke="#8a5a2b" stroke-width="10"/>
+    <!-- golf ball -->
+    <circle cx="582" cy="238" r="22" fill="#fff"/>
+    <g fill="#d9dde4" stroke-width="0"><circle cx="574" cy="230" r="3"/><circle cx="586" cy="228" r="3"/><circle cx="592" cy="240" r="3"/><circle cx="576" cy="244" r="3"/></g>
+    <path d="M572 234 L578 236 M588 234 L594 232" stroke-width="2.5"/>
+    <path d="M576 248 Q582 244 588 248" fill="none" stroke-width="2.5"/>
+  </g>
+  <g>
+    <path d="M430 286 L612 286 Q624 286 624 298 L624 334 Q624 346 612 346 L430 346 Q418 346 418 334 L418 298 Q418 286 430 286 L556 286 L572 264 L576 286 Z" fill="#fff" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="521" y="324" text-anchor="middle" font-family="Patrick Hand, Comic Sans MS, cursive" font-size="25" fill="#1d1d22">Copycat.</text>
+  </g>
+</svg>

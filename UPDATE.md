@@ -20,6 +20,12 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
    - Write the headline and a summary of one to three sentences in your own words. No copied sentences, and any quote under 15 words.
    - Link every source used. Leave out anything sources contradict rather than guessing.
    - For a story about a single match result, add `"score"` (for example `"3-2"`), which appears on the story's artwork.
+   - Give the story an `image` where a suitable one exists, in this order of preference:
+     1. A photo of the main player from Wikimedia Commons, only where the file page names that player and the licence is CC0, public domain, CC BY or CC BY-SA. Use crowd or group shots only if the player is clearly the subject. Format: `{"type":"photo","url":"<1280px upload.wikimedia.org thumbnail>","alt":"...","caption":"<who, where, year>","credit":"<author as on the file page>","licence":"CC BY 4.0","licence_url":"...","page":"<Commons file page>"}`.
+     2. A generic table tennis photo from Unsplash or Pexels for stories without a single named player (equipment, clubs, rule changes), in the same format with the photographer as credit and "Unsplash Licence" or "Pexels Licence".
+     3. A cartoon for stories tied to a place: reuse one in `img/cartoons/` if it fits, or draw a new 640×360 SVG there in the same style (thick wobbly outlines through the feTurbulence filter, flat colours, a speech bubble with a short joke in Patrick Hand using textLength so it fits). Show places, objects and animals only, never a real person's likeness. Format: `{"type":"cartoon","src":"img/cartoons/<name>.svg"}`.
+     4. Otherwise leave `image` out and the site draws its own table illustration.
+     Never use photos from news sites, WTT, ITTF or federations, and never use a photo whose licence you could not check.
    - Mark the single biggest story `"top": true` and remove the flag from the previous one.
 4. Remove stories older than 14 days. Keep at most 30.
 5. Update `results` with finished matches from events on now or just ended (finals and semi-finals for WTT events, title-deciders for club competitions). Keep the three most recent events.

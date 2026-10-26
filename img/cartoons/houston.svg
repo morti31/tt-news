@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Cartoon of the Houston skyline at sunset, with a rocket shaped like a table tennis bat taking off and a cowboy hat resting on a table">
+  <defs>
+    <filter id="hou-wob"><feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="3.5"/></filter>
+  </defs>
+  <rect width="640" height="360" fill="#ffc46b"/>
+  <circle cx="110" cy="250" r="90" fill="#ff9a3d"/>
+  <g filter="url(#hou-wob)" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- skyline -->
+    <rect x="40" y="170" width="46" height="120" fill="#4a5fa8"/>
+    <rect x="92" y="120" width="40" height="170" fill="#3b4f96"/>
+    <path d="M92 120 L112 92 L132 120 Z" fill="#3b4f96"/>
+    <rect x="140" y="150" width="54" height="140" fill="#5c72bd"/>
+    <rect x="200" y="100" width="36" height="190" fill="#2f4386"/>
+    <path d="M200 100 L218 70 L236 100 Z" fill="#2f4386"/>
+    <rect x="242" y="185" width="50" height="105" fill="#4a5fa8"/>
+    <rect x="298" y="140" width="44" height="150" fill="#3b4f96"/>
+    <!-- windows -->
+    <g fill="#ffe39a" stroke-width="2">
+      <rect x="50" y="185" width="8" height="10"/><rect x="68" y="185" width="8" height="10"/><rect x="50" y="215" width="8" height="10"/>
+      <rect x="102" y="140" width="7" height="10"/><rect x="116" y="165" width="7" height="10"/><rect x="102" y="200" width="7" height="10"/>
+      <rect x="152" y="170" width="9" height="10"/><rect x="172" y="200" width="9" height="10"/><rect x="152" y="235" width="9" height="10"/>
+      <rect x="210" y="125" width="7" height="10"/><rect x="210" y="170" width="7" height="10"/><rect x="222" y="220" width="7" height="10"/>
+      <rect x="308" y="160" width="8" height="10"/><rect x="324" y="195" width="8" height="10"/>
+    </g>
+    <!-- ground -->
+    <path d="M0 288 Q160 278 320 290 T640 286 L640 360 L0 360 Z" fill="#d98b4a"/>
+    <!-- cactus -->
+    <path d="M372 300 L372 230 Q372 216 384 216 Q396 216 396 230 L396 300 Z" fill="#3e9b5f"/>
+    <path d="M372 262 L356 262 Q348 262 348 252 L348 236 Q348 228 356 228 Q362 228 362 236 L362 248 L372 248" fill="#3e9b5f"/>
+    <!-- table with cowboy hat -->
+    <path d="M60 318 L250 304 L276 330 L86 346 Z" fill="#2f5fd0"/>
+    <path d="M168 311 L180 338" stroke="#fff" stroke-width="3"/>
+    <path d="M92 346 L92 360 M268 332 L268 360" />
+    <path d="M118 316 Q150 300 186 312 Q176 318 150 318 Q130 320 118 316 Z" fill="#8a5a2b"/>
+    <path d="M134 312 Q136 290 152 290 Q168 290 168 310" fill="#a06a34"/>
+    <!-- rocket: a bat -->
+    <g transform="rotate(14 520 170)">
+      <path d="M498 250 L542 250 L536 300 L504 300 Z" fill="#e6c08a"/>
+      <ellipse cx="520" cy="170" rx="62" ry="86" fill="#d23a48"/>
+      <ellipse cx="520" cy="170" rx="50" ry="74" fill="none" stroke="#1d1d22" stroke-width="2.5" stroke-dasharray="2 7"/>
+      <circle cx="520" cy="150" r="20" fill="#bfe3ff"/>
+      <path d="M504 300 Q508 330 498 352 M520 300 Q520 336 516 360 M536 300 Q534 330 546 352" stroke="#ff9a3d" stroke-width="6"/>
+    </g>
+    <circle cx="474" cy="336" r="22" fill="#fff" opacity=".9"/>
+    <circle cx="566" cy="342" r="26" fill="#fff" opacity=".9"/>
+    <circle cx="520" cy="350" r="20" fill="#fff" opacity=".9"/>
+  </g>
+  <!-- speech bubble -->
+  <g>
+    <path d="M300 22 L620 22 Q632 22 632 34 L632 74 Q632 86 620 86 L548 86 L538 118 L522 86 L300 86 Q288 86 288 74 L288 34 Q288 22 300 22 Z" fill="#fff" stroke="#1d1d22" stroke-width="3.5" stroke-linejoin="round"/>
+    <text x="460" y="62" text-anchor="middle" font-family="Patrick Hand, Comic Sans MS, cursive" font-size="24" textLength="318" lengthAdjust="spacingAndGlyphs" fill="#1d1d22">Houston, we have a topspin problem</text>
+  </g>
+</svg>
