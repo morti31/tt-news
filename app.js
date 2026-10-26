@@ -86,7 +86,7 @@
   const card = (s, heading = "h3", sc = true) => {
     const full = (data.articles || {})[s.id];
     const title = full ? `<a class="stretch" href="${esc(full.url)}">${esc(s.headline)}</a>` : esc(s.headline);
-    return `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${title}</${heading}><p>${esc(s.summary)}</p>${full && !full.brief ? '<p class="read-more">Read the full story</p>' : ""}${meta(s)}</div></article>`;
+    return `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${title}</${heading}><p>${esc(s.summary)}</p>${meta(s)}</div></article>`;
   };
 
   function render(cat) {
