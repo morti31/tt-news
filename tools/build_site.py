@@ -73,6 +73,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <meta property="og:url" content="{e(canonical)}"><meta property="og:site_name" content="Eleven">{og_img}
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="Eleven" href="/feed.xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/img/icons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#17202b">
 {FONTS}
 <link rel="stylesheet" href="/styles.css">
 {extra_head}
