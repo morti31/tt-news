@@ -39,12 +39,13 @@
     return `<svg class="art" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Line drawing of a table tennis table">
       <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <line x1="0" y1="${y0 + dy + 44}" x2="640" y2="${y0 + dy + 44}" stroke-width=".6"/>
-        <path d="M${x0 + dx} ${y0} L${x0 + L + dx} ${y0} L${x0 + L} ${y0 + dy} L${x0} ${y0 + dy} Z" fill="var(--art-bg)" stroke-width="1.6"/>
-        <line x1="${x0 + 14}" y1="${y0 + dy / 2}" x2="${x0 + L + 6}" y2="${y0 + dy / 2}" stroke-width=".5"/>
+        <path d="M${x0 + dx} ${y0} L${x0 + L + dx} ${y0} L${x0 + L} ${y0 + dy} L${x0} ${y0 + dy} Z" fill="#2f5fd0" stroke-width="1.6"/>
+        <path d="M${x0 + dx + 4} ${y0 + 1.5} L${x0 + L + dx - 4} ${y0 + 1.5} L${x0 + L - 3} ${y0 + dy - 1.5} L${x0 + 3} ${y0 + dy - 1.5} Z" stroke="#fff" stroke-width=".9"/>
+        <line x1="${x0 + 14}" y1="${y0 + dy / 2}" x2="${x0 + L + 6}" y2="${y0 + dy / 2}" stroke="#fff" stroke-width=".7"/>
         <path d="M${x0} ${y0 + dy} L${x0 + L} ${y0 + dy} L${x0 + L} ${y0 + dy + 5} L${x0} ${y0 + dy + 5} Z" fill="currentColor" stroke-width="1"/>
         <path d="M${mx + dx} ${y0} L${mx + dx} ${y0 - 13} L${mx} ${y0 + dy - 13} L${mx} ${y0 + dy}" stroke-width="1.2"/>${net}${legs}
         <path d="M${fx} ${fy} Q${(fx + bx) / 2} ${by - 60} ${bx} ${by}" stroke-width=".8" stroke-dasharray="1 5"/>
-        <circle cx="${bx}" cy="${by}" r="5.5" fill="var(--art-bg)" stroke-width="1.3"/>
+        <circle cx="${bx}" cy="${by}" r="5.5" fill="#f37021" stroke-width="1.1"/>
       </g>${score}
     </svg>`;
   }

@@ -2,6 +2,7 @@
 import math, random, os
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "img", "cartoons")
+BLUE, ORANGE, GOLD, RED, SKY = "#2f5fd0", "#f37021", "#f2b33d", "#e0485a", "#9cc8f0"
 W = 'stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"'
 
 
@@ -26,10 +27,10 @@ def table(x0=120, y0=300, length=400, depth_dx=20, depth_dy=14, legs=True):
     x1 = x0 + length
     a, b = (x0 + depth_dx, y0), (x1 + depth_dx, y0)
     c, d = (x1, y0 + depth_dy), (x0, y0 + depth_dy)
-    out = [f'<path d="M{a[0]} {a[1]} L{b[0]} {b[1]} L{c[0]} {c[1]} L{d[0]} {d[1]} Z" fill="var(--art-bg, #fff)" stroke-width="1.6"/>']
+    out = [f'<path d="M{a[0]} {a[1]} L{b[0]} {b[1]} L{c[0]} {c[1]} L{d[0]} {d[1]} Z" fill="{BLUE}" stroke-width="1.6"/>']
     # white line border inset and centre line
-    out.append(f'<path d="M{a[0]+4} {a[1]+1.5} L{b[0]-4} {b[1]+1.5} L{c[0]-3} {c[1]-1.5} L{d[0]+3} {d[1]-1.5} Z" stroke-width=".6"/>')
-    out.append(f'<line x1="{a[0]+4}" y1="{y0+depth_dy/2}" x2="{b[0]-4}" y2="{y0+depth_dy/2}" stroke-width=".5" transform="translate({-depth_dx/2} 0)"/>')
+    out.append(f'<path d="M{a[0]+4} {a[1]+1.5} L{b[0]-4} {b[1]+1.5} L{c[0]-3} {c[1]-1.5} L{d[0]+3} {d[1]-1.5} Z" stroke="#fff" stroke-width=".9"/>')
+    out.append(f'<line x1="{a[0]+4}" y1="{y0+depth_dy/2}" x2="{b[0]-4}" y2="{y0+depth_dy/2}" stroke="#fff" stroke-width=".7" transform="translate({-depth_dx/2} 0)"/>')
     # apron
     out.append(f'<path d="M{d[0]} {d[1]} L{c[0]} {c[1]} L{c[0]} {c[1]+5} L{d[0]} {d[1]+5} Z" fill="currentColor" stroke-width="1"/>')
     # net, edge-on across the depth
@@ -55,8 +56,8 @@ def ball(cx, cy, r=5.5, arc_from=None):
         fx, fy = arc_from
         qx, qy = (fx + cx) / 2, min(fy, cy) - 46
         out.append(f'<path d="M{fx} {fy} Q{qx} {qy} {cx} {cy}" stroke-width=".8" stroke-dasharray="1 5"/>')
-    out.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="var(--art-bg, #fff)" stroke-width="1.3"/>')
-    out.append(f'<path d="M{cx-r*.5} {cy-r*.15} A{r*.6} {r*.6} 0 0 1 {cx+r*.2} {cy-r*.55}" stroke-width=".5"/>')
+    out.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{ORANGE}" stroke-width="1.1"/>')
+    out.append(f'<path d="M{cx-r*.5} {cy-r*.15} A{r*.6} {r*.6} 0 0 1 {cx+r*.2} {cy-r*.55}" stroke="#fff" stroke-width=".7"/>')
     return "\n".join(out)
 
 
@@ -101,7 +102,7 @@ def houston():
             b.append(f'<rect x="{x}" y="{top}" width="{w}" height="{ground-top}" fill="{fill}"/>')
     b.append(f'<line x1="0" y1="{ground}" x2="640" y2="{ground}" stroke-width="1.4"/>')
     # sun disc low on the horizon, hatched
-    b.insert(0, '<circle cx="520" cy="96" r="38" fill="url(#hou-d)" stroke-width=".8"/>')
+    b.insert(0, f'<circle cx="520" cy="96" r="38" fill="{GOLD}" fill-opacity=".9" stroke="none"/>')
     # freeway in front
     b.append('<path d="M0 278 L640 278 M0 284 L640 284" stroke-width=".8"/>')
     for x in range(10, 640, 46):
@@ -125,27 +126,27 @@ def wellingborough():
     # terraces
     houses_l = [(0, 160), (72, 150), (144, 164), (216, 156)]
     houses_r = [(344, 156), (416, 166), (488, 150), (560, 160)]
-    for x, top in houses_l + houses_r:
+    for hn, (x, top) in enumerate(houses_l + houses_r):
         w = 72 if x not in (216, 344) else 80
         if x == 216: w = 80
         b.append(f'<rect x="{x}" y="{top}" width="{w}" height="{ground-top}" fill="var(--art-bg, #fff)"/>')
         b.append(f'<path d="M{x-3} {top} L{x+w/2} {top-32} L{x+w+3} {top} Z" fill="url(#wel-r)"/>')
         b.append(f'<rect x="{x+w-22}" y="{top-34}" width="10" height="18" fill="var(--art-bg, #fff)"/>')
         b.append(windows_grid(x + 6, top + 10, w - 12, 44, 2, 1, pad=8))
-        b.append(f'<rect x="{x+w/2-9}" y="{ground-42}" width="18" height="42" fill="currentColor"/>')
+        b.append(f'<rect x="{x+w/2-9}" y="{ground-42}" width="18" height="42" fill="{(RED, "currentColor", BLUE, "currentColor")[hn % 4]}"/>')
         b.append(f'<path d="M{x+w/2-11} {ground-44} L{x+w/2+11} {ground-44}" stroke-width="1"/>')
         b.append(windows_grid(x + 6, ground - 44, w / 2 - 18, 36, 1, 1, pad=0))
     # chimneys smoke-free; bunting as a fine line with small pennants
     b.append('<path d="M0 108 Q150 140 292 112" stroke-width=".6"/>')
     b.append('<path d="M348 112 Q500 144 640 106" stroke-width=".6"/>')
-    for x, y in [(24, 114), (64, 122), (104, 128), (144, 131), (184, 130), (224, 125), (264, 118), (376, 118), (416, 126), (456, 131), (496, 132), (536, 128), (576, 120), (616, 111)]:
-        b.append(f'<path d="M{x-5} {y} L{x} {y+10} L{x+5} {y}" stroke-width=".6" fill="var(--art-bg, #fff)"/>')
+    for n, (x, y) in enumerate([(24, 114), (64, 122), (104, 128), (144, 131), (184, 130), (224, 125), (264, 118), (376, 118), (416, 126), (456, 131), (496, 132), (536, 128), (576, 120), (616, 111)]):
+        b.append(f'<path d="M{x-5} {y} L{x} {y+10} L{x+5} {y}" stroke-width=".6" fill="{(RED, BLUE, "var(--art-bg, #fff)")[n % 3]}"/>')
     b.append(f'<line x1="0" y1="{ground}" x2="640" y2="{ground}" stroke-width="1.4"/>')
     b.append('<path d="M0 268 L640 268" stroke-width=".5"/>')
     b.append(table(120, 300, 400))
     # two trophies on the table
     for tx in (220, 420):
-        b.append(f'<path d="M{tx-9} 278 L{tx+9} 278 Q{tx+9} 292 {tx} 294 Q{tx-9} 292 {tx-9} 278 Z" fill="var(--art-bg, #fff)" stroke-width="1.1"/>')
+        b.append(f'<path d="M{tx-9} 278 L{tx+9} 278 Q{tx+9} 292 {tx} 294 Q{tx-9} 292 {tx-9} 278 Z" fill="{GOLD}" stroke-width="1.1"/>')
         b.append(f'<path d="M{tx-9} 281 Q{tx-15} 281 {tx-14} 286 Q{tx-13} 290 {tx-7} 290 M{tx+9} 281 Q{tx+15} 281 {tx+14} 286 Q{tx+13} 290 {tx+7} 290" stroke-width=".8"/>')
         b.append(f'<path d="M{tx-2} 294 L{tx+2} 294 L{tx+3} 300 L{tx-3} 300 Z M{tx-7} 300 L{tx+7} 300" stroke-width="1"/>')
     svg("wellingborough", "Line drawing of a Wellingborough street with terraced houses and a church spire, with two trophies on a table tennis table", "\n".join(b), defs)
@@ -186,16 +187,17 @@ def montpellier():
     for x, w in ((0, 140), (500, 140)):
         b.append(f'<rect x="{x}" y="128" width="{w}" height="{ground-128}" fill="var(--art-bg, #fff)"/>')
         b.append(f'<line x1="{x}" y1="124" x2="{x+w}" y2="124" stroke-width="1.2"/>')
-        b.append(windows_grid(x + 6, 140, w - 12, 100, 3, 2, pad=12, sash=False))
+        b.append(windows_grid(x + 6, 140, w - 12, 100, 3, 2, pad=12, sash=False).replace('<rect ', f'<rect fill="{SKY}" '))
     b.append(f'<line x1="0" y1="{ground}" x2="640" y2="{ground}" stroke-width="1.4"/>')
     # fountain: basin, pedestal, water
     fx = 572
-    b.append(f'<ellipse cx="{fx}" cy="300" rx="46" ry="9" fill="var(--art-bg, #fff)" stroke-width="1.2"/>')
+    b.append(f'<ellipse cx="{fx}" cy="300" rx="46" ry="9" fill="{SKY}" stroke-width="1.2"/>')
     b.append(f'<path d="M{fx-46} 300 L{fx-44} 310 Q{fx} 322 {fx+44} 310 L{fx+46} 300" stroke-width="1.2"/>')
     b.append(f'<rect x="{fx-6}" y="244" width="12" height="54" fill="url(#mon-r)" stroke-width="1"/>')
     b.append(f'<ellipse cx="{fx}" cy="244" rx="20" ry="5" fill="var(--art-bg, #fff)"/>')
     b.append(f'<path d="M{fx} 239 Q{fx-14} 216 {fx-24} 246 M{fx} 239 Q{fx+14} 216 {fx+24} 246 M{fx} 239 L{fx} 222" stroke-width=".7" stroke-dasharray="2 2"/>')
     b.append(table(60, 300, 400))
+    b.append(ball(330, 270, arc_from=(110, 294)))
     svg("montpellier", "Line drawing of the Opéra Comédie in Montpellier with a fountain, a table tennis table and an empty chair", "\n".join(b), defs)
 
 
@@ -203,7 +205,7 @@ def montpellier():
 def dimpled():
     b = []
     cx, cy, r = 230, 176, 112
-    b.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="var(--art-bg, #fff)" stroke-width="1.6"/>')
+    b.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{ORANGE}" stroke-width="1.6"/>')
     # dimples: points on the visible hemisphere, orthographic projection, tilted
     tilt = math.radians(20)
     for lat_deg in range(-75, 90, 15):

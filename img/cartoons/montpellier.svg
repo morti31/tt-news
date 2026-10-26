@@ -49,29 +49,29 @@
 <path d="M449.42857142857144 262 L449.42857142857144 224 Q465.7142857142857 200 482.0 224 L482.0 262" fill="url(#mon-d)" stroke-width="1"/>
 <rect x="0" y="128" width="140" height="134" fill="var(--art-bg, #fff)"/>
 <line x1="0" y1="124" x2="140" y2="124" stroke-width="1.2"/>
-<rect x="18.0" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="18.0" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="56.7" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="56.7" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="95.3" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="95.3" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="18.0" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="18.0" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="56.7" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="56.7" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="95.3" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="95.3" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
 <rect x="500" y="128" width="140" height="134" fill="var(--art-bg, #fff)"/>
 <line x1="500" y1="124" x2="640" y2="124" stroke-width="1.2"/>
-<rect x="518.0" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="518.0" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="556.7" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="556.7" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="595.3" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
-<rect x="595.3" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="518.0" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="518.0" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="556.7" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="556.7" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="595.3" y="152.0" width="26.7" height="32.0" stroke-width=".7"/>
+<rect fill="#9cc8f0" x="595.3" y="196.0" width="26.7" height="32.0" stroke-width=".7"/>
 <line x1="0" y1="262" x2="640" y2="262" stroke-width="1.4"/>
-<ellipse cx="572" cy="300" rx="46" ry="9" fill="var(--art-bg, #fff)" stroke-width="1.2"/>
+<ellipse cx="572" cy="300" rx="46" ry="9" fill="#9cc8f0" stroke-width="1.2"/>
 <path d="M526 300 L528 310 Q572 322 616 310 L618 300" stroke-width="1.2"/>
 <rect x="566" y="244" width="12" height="54" fill="url(#mon-r)" stroke-width="1"/>
 <ellipse cx="572" cy="244" rx="20" ry="5" fill="var(--art-bg, #fff)"/>
 <path d="M572 239 Q558 216 548 246 M572 239 Q586 216 596 246 M572 239 L572 222" stroke-width=".7" stroke-dasharray="2 2"/>
-<path d="M80 300 L480 300 L460 314 L60 314 Z" fill="var(--art-bg, #fff)" stroke-width="1.6"/>
-<path d="M84 301.5 L476 301.5 L457 312.5 L63 312.5 Z" stroke-width=".6"/>
-<line x1="84" y1="307.0" x2="476" y2="307.0" stroke-width=".5" transform="translate(-10.0 0)"/>
+<path d="M80 300 L480 300 L460 314 L60 314 Z" fill="#2f5fd0" stroke-width="1.6"/>
+<path d="M84 301.5 L476 301.5 L457 312.5 L63 312.5 Z" stroke="#fff" stroke-width=".9"/>
+<line x1="84" y1="307.0" x2="476" y2="307.0" stroke="#fff" stroke-width=".7" transform="translate(-10.0 0)"/>
 <path d="M60 314 L460 314 L460 319 L60 319 Z" fill="currentColor" stroke-width="1"/>
 <path d="M280.0 300 L280.0 287 L260.0 301 L260.0 314" stroke-width="1.2"/>
 <line x1="276.7" y1="302.3" x2="276.7" y2="289.3" stroke-width=".4"/>
@@ -83,5 +83,8 @@
 <path d="M410 319 L406 358 M430 319 L434 358" stroke-width="1.4"/>
 <line x1="90" y1="342" x2="110" y2="342" stroke-width=".8"/>
 <line x1="410" y1="342" x2="430" y2="342" stroke-width=".8"/>
+<path d="M110 294 Q220.0 224 330 270" stroke-width=".8" stroke-dasharray="1 5"/>
+<circle cx="330" cy="270" r="5.5" fill="#f37021" stroke-width="1.1"/>
+<path d="M327.25 269.175 A3.3 3.3 0 0 1 331.1 266.975" stroke="#fff" stroke-width=".7"/>
 </g>
 </svg>
