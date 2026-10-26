@@ -6,4 +6,4 @@ Table tennis news, results, rankings and fixtures on one page.
 - `data/news.json`: all content, rewritten by each update run
 - `UPDATE.md`: what each update run does
 
-Hosted on Cloudflare Pages straight from this repository: no build command, output directory `/`.
+Hosted on Cloudflare Workers from this repository. `wrangler.jsonc` serves the files as static assets; `.assetsignore` keeps the tooling and notes off the live site.

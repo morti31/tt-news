@@ -1,0 +1,8 @@
+{
+  // Cloudflare Workers config: serve this repository as a static site
+  "name": "tt-news",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "."
+  }
+}
