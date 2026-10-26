@@ -86,14 +86,13 @@
   const avatar = (size) => au.photo
     ? `<img class="avatar" src="${esc(au.photo)}" alt="" width="${size}" height="${size}">`
     : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px" aria-hidden="true">${esc(au.name.split(" ").map((w) => w[0]).join("").slice(0, 2))}</span>`;
-  $("author-avatar").innerHTML = avatar(56);
-  $("about-h").textContent = au.name;
-  $("author-bio").textContent = au.bio || "";
-  const byline = `<a class="byline" href="#about">${avatar(26)}<span>By ${esc(au.name)}</span></a>`;
-  const meta = (s) => `${byline}<div class="meta">${fmt(s.date)}, via ${s.sources.map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join(" and ")}</div>`;
+  const byline = `<span class="byline">${avatar(26)}<span>By ${esc(au.name)}</span></span>`;
+  const meta = (s) => `${byline}<div class="meta">${fmt(s.date)}</div>`;
   const card = (s, heading = "h3", sc = true) => {
     const full = (data.articles || {})[s.id];
-    const title = full ? `<a class="stretch" href="${esc(full.url)}">${esc(s.headline)}</a>` : esc(s.headline);
+    const link = full ? full.url : (s.sources[0] || {}).url;
+    const ext = full ? "" : ' target="_blank" rel="noopener"';
+    const title = link ? `<a class="stretch" href="${esc(link)}"${ext}>${esc(s.headline)}</a>` : esc(s.headline);
     return `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${title}</${heading}><p>${esc(s.summary)}</p>${full ? '<p class="read-more">Read the full story</p>' : ""}${meta(s)}</div></article>`;
   };
 

@@ -112,7 +112,7 @@ def article_page(a, others):
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": a["title"][:110], "description": a["standfirst"],
         "datePublished": a.get("published", a["date"] + "T09:00:00Z"), "dateModified": a.get("modified", a.get("published", a["date"] + "T09:00:00Z")),
-        "author": [{"@type": "Person", "name": AUTHOR["name"], "url": f"{SITE}/#about"}],
+        "author": [{"@type": "Person", "name": AUTHOR["name"], "url": f"{SITE}/news/"}],
         "publisher": {"@type": "Organization", "name": "Eleven", "url": SITE},
         "mainEntityOfPage": url, "articleSection": a["category"], "wordCount": words, "inLanguage": "en-GB",
     }
@@ -125,7 +125,7 @@ def article_page(a, others):
   {tag}
   <h1>{e(a['title'])}</h1>
   <p class="standfirst">{e(a['standfirst'])}</p>
-  <div class="article-byline"><a class="byline" href="/#about">{avatar(36)}<span>By {e(AUTHOR['name'])}</span></a><time datetime="{e(a['date'])}">{long_date(a['date'])}</time></div>
+  <div class="article-byline"><span class="byline">{avatar(36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a['date'])}">{long_date(a['date'])}</time></div>
   {hero(a)}
   <div class="article-body">
 {paras}
