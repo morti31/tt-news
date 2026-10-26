@@ -208,5 +208,34 @@ def main():
     print(f"built {len(arts)} articles, archive, sitemap ({len(urls)} URLs), robots.txt, feed.xml")
 
 
+def check_schedule():
+    """Warn about schedule entries that would break the page or the calendar feed."""
+    s = json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8"))
+    ids, problems = set(), []
+    for ev in s.get("events", []):
+        try:
+            if dt.date.fromisoformat(ev["end"]) < dt.date.fromisoformat(ev["start"]):
+                problems.append(f'{ev["id"]}: ends before it starts')
+        except (KeyError, ValueError) as err:
+            problems.append(f'{ev.get("id", "?")}: bad or missing date ({err})')
+        if ev.get("id") in ids:
+            problems.append(f'{ev["id"]}: duplicate id')
+        ids.add(ev.get("id"))
+    for fx in s.get("fixtures", []):
+        if fx.get("event_id") not in ids:
+            problems.append(f'fixture {fx.get("id")}: unknown event_id {fx.get("event_id")}')
+        try:
+            dt.datetime.fromisoformat(fx["start"].replace("Z", "+00:00"))
+        except (KeyError, ValueError):
+            problems.append(f'fixture {fx.get("id")}: bad start time')
+    for p in problems:
+        print("schedule warning:", p)
+    return problems
+
+
 if __name__ == "__main__":
     main()
+    check_schedule()
+    # Rebuild the subscribable calendar on every deploy so it always matches data/schedule.json
+    import runpy
+    runpy.run_path(os.path.join(ROOT, "tools", "build_calendar.py"), run_name="__main__")

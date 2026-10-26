@@ -41,7 +41,8 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
    - Add newly confirmed tournaments and club competitions from the ITTF/WTT, ETTU, TTBL, T.League, CTTSL and UTT calendars, and move anything in `tbc` into `events` once dates are published. Leave past events in place; the site hides them.
    - Add `fixtures` with real times (UTC, ISO format, with `event_id`, `name`, `start`, `end`, `source`) for any event within the next 14 days: session times as soon as the organiser publishes them, then notable matches once the draw is out, for example `"WTT Champions Frankfurt: Lebrun v Moregard, quarter-final"`. Use times from the organiser, live-score sites (WTT, Flashscore, SofaScore) or the federation, and convert local times to UTC. Keep each fixture's `id` stable when updating its time, so subscribers' calendars update rather than duplicate.
    - Remove fixtures more than 7 days old.
-   - Run `python3 tools/build_calendar.py` to rebuild `calendar.ics`, and commit both files.
+   - Run `python3 tools/build_site.py`, which checks the schedule (fix anything it prints as a "schedule warning") and rebuilds `calendar.ics`. Commit `data/schedule.json` and `calendar.ics`. Cloudflare also rebuilds the calendar on every deploy, so it always matches the schedule.
+   - Check every live or upcoming event in the next 14 days on each run, not just new ones: if a date, venue, session time or match time has moved, update the existing entry in place (same `id`) rather than adding a new one.
 8. Set `updated` in both JSON files to the current UTC time, check the JSON parses, then commit with a message like `Update 2026-10-27 09:00` and push.
 
 ## Schedule
