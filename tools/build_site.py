@@ -61,7 +61,7 @@ def avatar(au, size):
     if au.get("photo"):
         return f'<img class="avatar" src="{e(au["photo"])}" alt="" width="{size}" height="{size}">'
     return (f'<span class="avatar" style="width:{size}px;height:{size}px;font-size:{size*0.4:.0f}px;background:{e(au.get("colour", "var(--ink)"))};color:#fff" '
-            f'aria-hidden="true">{e(initials(au["name"]))}</span>')
+            f'aria-hidden="true">{e(au.get("initials") or initials(au["name"]))}</span>')
 
 
 def hero(a):

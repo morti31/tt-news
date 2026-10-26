@@ -86,7 +86,7 @@
   const who = (s) => authors[s.author] || authors.tom || { name: "Eleven" };
   const avatar = (au, size) => au.photo
     ? `<img class="avatar" src="${esc(au.photo)}" alt="" width="${size}" height="${size}">`
-    : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px;background:${esc(au.colour || "var(--ink)")};color:#fff" aria-hidden="true">${esc(au.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`;
+    : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px;background:${esc(au.colour || "var(--ink)")};color:#fff" aria-hidden="true">${esc(au.initials || au.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`;
   const when = (s) => {
     const full = (data.articles || {})[s.id];
     if (full && full.published) {
