@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TT News: table tennis news, results and rankings</title>
+<meta name="description" content="The latest table tennis news, results, rankings and fixtures from WTT, ITTF, England and the club leagues.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <a class="logo" href="/"><span class="ball" aria-hidden="true"></span>TT<span>NEWS</span></a>
+    <p class="updated" id="updated"></p>
+  </div>
+  <nav class="sections" aria-label="Sections">
+    <div class="wrap" id="tabs">
+      <button data-cat="All" class="active">Home</button>
+      <button data-cat="International">International</button>
+      <button data-cat="England">England</button>
+      <button data-cat="Clubs">Clubs</button>
+      <button data-cat="Equipment">Equipment</button>
+    </div>
+  </nav>
+</header>
+
+<div id="live" class="live" hidden></div>
+
+<main class="wrap layout">
+  <section aria-label="News">
+    <div id="top"></div>
+    <div id="stories" class="grid"></div>
+    <p id="empty" class="empty" hidden>No stories in this section yet.</p>
+  </section>
+
+  <aside>
+    <section class="panel">
+      <h2>Latest results</h2>
+      <div id="results"></div>
+    </section>
+    <section class="panel">
+      <h2>World rankings</h2>
+      <div class="toggle" id="rank-toggle">
+        <button data-g="men" class="active">Men</button>
+        <button data-g="women">Women</button>
+      </div>
+      <ol id="rankings" class="rankings"></ol>
+      <p class="small" id="rank-week"></p>
+    </section>
+    <section class="panel">
+      <h2>Coming up</h2>
+      <ul id="events" class="events"></ul>
+    </section>
+  </aside>
+</main>
+
+<footer class="wrap footer">
+  <p>Stories are short summaries written for this site, with links to the original reporting. Dates and results come from the sources linked; organisers may amend fixtures.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
