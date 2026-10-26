@@ -276,3 +276,62 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .live-card .ev { display: inline-flex; align-items: center; gap: 6px; color: var(--live); font-weight: 600; }
 .live-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--live); animation: pulse 1.6s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } }
+
+/* Rankings: leader card, points and bar */
+.rank-lead { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; background: var(--bg); border-radius: 12px; padding: 12px 14px; margin-bottom: 6px; }
+.rank-lead:empty { display: none; }
+.rl-label, .rl-nat { display: block; font-size: 12px; color: var(--muted); }
+.rl-name { display: block; font: 800 19px/1.2 "Bricolage Grotesque", sans-serif; margin: 2px 0; }
+.rl-pts { text-align: right; }
+.rl-pts b { display: block; font: 800 24px/1 "Bricolage Grotesque", sans-serif; font-variant-numeric: tabular-nums; color: var(--ball); }
+.rl-pts span { font-size: 12px; color: var(--muted); }
+.rank-lead + .rankings { counter-reset: r 1; }
+.rankings li { grid-template-columns: 30px minmax(0, 1fr) auto; row-gap: 5px; }
+.rankings li::before { content: none; }
+.rankings .rk { font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.rankings .who { min-width: 0; }
+.rankings .nm { display: block; line-height: 1.25; }
+.rankings .nt { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.rankings .pts { font-weight: 600; font-variant-numeric: tabular-nums; }
+.rankings .bar { grid-column: 2 / 4; height: 4px; border-radius: 2px; background: var(--bg); overflow: hidden; }
+.rankings .bar i { display: block; height: 100%; border-radius: 2px; background: var(--International); }
+.mv { font-size: 10px; font-weight: 600; }
+.mv.up { color: var(--Clubs); }
+.mv.down { color: var(--live); }
+
+/* Advertising slots */
+.ad-wrap { padding-top: 20px; }
+.ad { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; border-radius: 12px; background: var(--card); border: 1px solid var(--rule); color: var(--muted); }
+.ad-leader { min-height: 90px; max-width: 970px; margin: 0 auto; }
+.ad-side { min-height: 250px; margin-bottom: 20px; }
+.ad-label { font-size: 11px; letter-spacing: .02em; color: var(--muted); }
+.ad-empty { font-size: 13px; font-weight: 600; color: var(--muted); text-decoration: none; }
+.ad-empty:hover { color: var(--ink); text-decoration: underline; }
+.ad.filled { background: none; border: 0; }
+@media (max-width: 640px) { .ad-leader { min-height: 60px; } }
+footer + * , .footer { margin-top: 0; }
+.ad-wrap + .footer { margin-top: 28px; }
+
+/* Footer links */
+.foot-links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 6px 0 14px; }
+.foot-links a { color: var(--ink); font-weight: 600; font-size: 14px; text-decoration: none; }
+.foot-links a:hover { text-decoration: underline; }
+
+/* About and contact */
+.info-grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 40px; padding-bottom: 48px; }
+@media (max-width: 900px) { .info-grid { grid-template-columns: minmax(0, 1fr); } }
+.info-body h2 { font-size: 24px; font-weight: 800; margin: 28px 0 8px; }
+.info-body h2:first-child { margin-top: 0; }
+.info-body p { font-size: 17px; line-height: 1.7; max-width: 66ch; margin: 0 0 1em; }
+.info-body a { color: var(--International); }
+.info-side .section-title { font-size: 24px; }
+.info-side .panel-title { margin: 0; }
+.contact-form { display: grid; gap: 14px; max-width: 620px; }
+.contact-form label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  font: 400 16px "Figtree", sans-serif; color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 10px; padding: 10px 12px; }
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 2px solid var(--International); outline-offset: 0; border-color: transparent; }
+.contact-form .btn { justify-self: start; padding: 11px 22px; font-size: 15px; }
+.contact-form .hp { position: absolute; left: -9999px; }
+.form-error { margin: 0; color: var(--live); font-size: 14px; font-weight: 600; }
+.form-done { margin: 0; font-size: 16px; font-weight: 600; }

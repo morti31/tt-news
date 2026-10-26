@@ -25,10 +25,12 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
 <li><a href="/">Home</a></li><li><a href="/#International">International</a></li><li><a href="/#England">England</a></li>
-<li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/news/"{news_cur}>Archive</a></li><li><a href="/schedule.html">Schedule</a></li>
+<li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
 </ul></nav></div></header>"""
 
-FOOT = """<footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
+FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
+<footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
 <p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
 
 
@@ -102,6 +104,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <body>
 {NAV.format(news_cur=' aria-current="page"' if news_cur else "")}
 <section class="ticker" aria-label="Latest scores"><div class="wrap ticker-inner" id="ticker"></div></section>
+<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
 {body}
 {FOOT}
 <script src="/widgets.js"></script>
@@ -157,11 +160,12 @@ def article_page(a, others, brief=False):
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
 </article>
 <aside class="article-side">
+  <div class="ad ad-side" data-ad="sidebar"></div>
   {f'<section class="panel author"><div class="author-head">{avatar(AUTHOR, 56)}<div><p class="small-label">Writer</p><h2 class="panel-title">{e(AUTHOR["name"])}</h2></div></div><p class="author-bio">{e(AUTHOR["bio"])}</p></section>' if AUTHOR.get("bio") else ""}
   {f'<section class="panel"><h2 class="panel-title">More news</h2><ul class="more-list">{more}</ul></section>' if more else ''}
   <section class="panel"><h2 class="panel-title">World rankings</h2>
     <div class="toggle" id="rank-toggle" role="group" aria-label="Rankings"><button data-g="men" aria-pressed="true">Men</button><button data-g="women" aria-pressed="false">Women</button></div>
-    <ol id="rankings" class="rankings"></ol><p class="small" id="rank-week"></p></section>
+    <div id="rank-lead" class="rank-lead"></div><ol id="rankings" class="rankings"></ol><p class="small" id="rank-week"></p></section>
   <section class="panel"><h2 class="panel-title">Coming up</h2><ul id="events" class="events" data-count="5"></ul>
     <a class="panel-link" href="/schedule.html">Full schedule and calendar</a></section>
 </aside>
@@ -204,8 +208,11 @@ def main():
         briefs += 1
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
+    open(os.path.join(ROOT, "about.html"), "w", encoding="utf-8").write(about_page())
+    open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
+
     today = dt.date.today().isoformat()
-    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
+    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
@@ -223,6 +230,84 @@ def main():
     rss.append("</channel></rss>")
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write("\n".join(rss) + "\n")
     print(f"built {len(arts)} articles, {briefs} short pages, archive, sitemap ({len(urls)} URLs), robots.txt, feed.xml")
+
+
+def about_page():
+    team = []
+    for key, role in (("tom", "Editor, equipment"), ("michael", "International"), ("michelle", "England and clubs")):
+        au = AUTHORS.get(key)
+        if not au:
+            continue
+        team.append(f'''<section class="panel author"><div class="author-head">{avatar(au, 56)}<div><p class="small-label">{role}</p>
+<h3 class="panel-title">{e(au["name"])}</h3></div></div>{f'<p class="author-bio">{e(au["bio"])}</p>' if au.get("bio") else ""}</section>''')
+    body = f"""<main class="wrap info-wrap">
+<section class="sched-head"><div><h1>About Eleven</h1>
+<p class="lede">Table tennis news, results, rankings and fixtures from around the world, in one place and in English.</p></div></section>
+<div class="info-grid"><div class="info-body">
+<h2>Why Eleven exists</h2>
+<p>Table tennis is one of the most played sports in the world, but its news is scattered. The biggest stories often break first in Chinese, Japanese or Korean, results sit on federation sites, and club competitions from the China Super League to the Bundesliga rarely reach English-language readers at all.</p>
+<p>Eleven brings that together: international tournaments, the English game, the major club leagues and equipment news, alongside live results, the ITTF world rankings and a schedule you can add to your own calendar.</p>
+<h2>How we report</h2>
+<p>We follow coverage from federations, organisers and media in English, Chinese, Japanese, Korean, German and French. Stories that rely mainly on non-English sources are marked as translated, and every story lists the sources it draws on so you can read the original reporting.</p>
+<p>We keep what has been confirmed separate from what has been reported, and say who reported it. Rankings come from the official ITTF list, and fixtures from organisers' published schedules.</p>
+<h2>Corrections</h2>
+<p>If we get something wrong, we want to know. Tell us through the <a href="/contact.html">contact page</a> and we will check it and correct the story. Significant corrections are noted on the article.</p>
+<h2>Photos and illustrations</h2>
+<p>Photos are used under Creative Commons and other free licences, with the photographer and licence credited on each image. Illustrations are drawn for Eleven.</p>
+</div>
+<aside class="info-side"><h2 class="section-title">The team</h2>{"".join(team)}</aside></div>
+</main>"""
+    return page("About | Eleven", "About Eleven: table tennis news, results, rankings and fixtures from around the world.", f"{SITE}/about.html", body)
+
+
+def contact_page():
+    key = NEWS.get("contact", {}).get("web3forms_key", "")
+    body = f"""<main class="wrap info-wrap">
+<section class="sched-head"><div><h1>Contact</h1>
+<p class="lede">Story tips, corrections, advertising or anything else. Send us a message and we'll get back to you.</p></div></section>
+<div class="info-grid"><div>
+<form class="panel contact-form" id="contact-form" data-key="{e(key)}" novalidate>
+  <input type="hidden" name="subject" value="New message from Eleven">
+  <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label>Your name<input name="name" required autocomplete="name"></label>
+  <label>Email<input name="email" type="email" required autocomplete="email" placeholder="name@example.com"></label>
+  <label>What's it about?<select name="topic">
+    <option>General enquiry</option><option>Story tip</option><option>Correction</option><option>Advertising</option></select></label>
+  <label>Message<textarea name="message" rows="6" required></textarea></label>
+  <p class="form-error" id="form-error" role="alert" hidden></p>
+  <button class="btn btn-primary" type="submit">Send message</button>
+  <p class="form-done" id="form-done" role="status" hidden>Message sent. Thanks, we'll reply as soon as we can.</p>
+</form></div>
+<aside class="info-side">
+<section class="panel"><h2 class="panel-title">Corrections</h2><p class="author-bio">Choose "Correction", include the article link and tell us what needs fixing.</p></section>
+<section class="panel" id="advertise"><h2 class="panel-title">Advertise with Eleven</h2><p class="author-bio">Eleven reaches table tennis players and fans across the UK and beyond. Choose "Advertising" and tell us what you have in mind.</p></section>
+</aside></div>
+</main>
+<script>
+(function () {{
+  const form = document.getElementById("contact-form"), err = document.getElementById("form-error"), done = document.getElementById("form-done");
+  const topic = new URLSearchParams(location.search).get("topic") || (location.hash === "#advertise" ? "Advertising" : "");
+  if (topic) [...form.topic.options].forEach((o) => {{ if (o.text === topic) o.selected = true; }});
+  const show = (m) => {{ err.textContent = m; err.hidden = !m; }};
+  form.addEventListener("input", () => show(""));
+  form.addEventListener("submit", async (ev) => {{
+    ev.preventDefault();
+    if (!form.name.value.trim()) return show("Enter your name.");
+    if (!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(form.email.value)) return show("Enter a valid email address.");
+    if (!form.message.value.trim()) return show("Write a message first.");
+    if (!form.dataset.key) return show("The contact form isn't switched on yet. Please try again soon.");
+    const data = new FormData(form); data.append("access_key", form.dataset.key);
+    data.set("subject", "Eleven: " + form.topic.value);
+    const btn = form.querySelector("button"); btn.disabled = true; btn.textContent = "Sending";
+    try {{
+      const r = await fetch("https://api.web3forms.com/submit", {{ method: "POST", body: data }}).then((x) => x.json());
+      if (!r.success) throw new Error(r.message);
+      form.querySelectorAll("label, button").forEach((x) => x.hidden = true); done.hidden = false;
+    }} catch (e) {{ show("Your message didn't send. Check your connection and try again."); btn.disabled = false; btn.textContent = "Send message"; }}
+  }});
+}})();
+</script>"""
+    return page("Contact | Eleven", "Contact Eleven with story tips, corrections or advertising enquiries.", f"{SITE}/contact.html", body)
 
 
 def check_schedule():

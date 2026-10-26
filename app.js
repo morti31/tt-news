@@ -76,8 +76,9 @@
     : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px;background:${esc(au.colour || "var(--ink)")};color:#fff" aria-hidden="true">${esc(au.initials || au.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`;
   const when = (s) => {
     const full = (data.articles || {})[s.id];
-    if (full && full.published) {
-      return new Date(full.published).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }).replace(",", ",");
+    const stamp = (full && full.published) || s.published;
+    if (stamp) {
+      return new Date(stamp).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }).replace(",", ",");
     }
     return fmt(s.date);
   };

@@ -2,7 +2,7 @@
 // Each renders only if its container exists on the page.
 (async function () {
   const $ = (id) => document.getElementById(id);
-  if (!$("ticker") && !$("rankings") && !$("events")) return;
+  if (!$("ticker") && !$("rankings") && !$("events") && !document.querySelector("[data-ad]")) return;
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const day = (iso) => new Date(iso + "T12:00:00");
   const fmt = (iso, o = { day: "numeric", month: "short" }) => day(iso).toLocaleDateString("en-GB", o);
@@ -32,9 +32,30 @@
     if (!cards.length) $("ticker").closest(".ticker").hidden = true;
   }
 
-  // World rankings with men/women toggle
+  // World rankings: leader card, then points with a bar against the No. 1
   if ($("rankings") && news.rankings) {
-    const ranks = (g) => { $("rankings").innerHTML = news.rankings[g].map((p) => `<li><span>${esc(p.name)}</span><span class="nat">${esc(p.nat)}</span></li>`).join(""); };
+    const f = (n) => Number(n || 0).toLocaleString("en-GB");
+    const move = (p, i) => {
+      if (!p.prev) return "";
+      const d = p.prev - (i + 1);
+      if (d > 0) return `<span class="mv up" title="Up ${d}">▲${d}</span>`;
+      if (d < 0) return `<span class="mv down" title="Down ${-d}">▼${-d}</span>`;
+      return "";
+    };
+    const ranks = (g) => {
+      const list = news.rankings[g] || [];
+      if (!list.length) return;
+      const top = list[0], max = top.points || 1;
+      const lead = $("rank-lead");
+      if (lead) lead.innerHTML = `<div><span class="rl-label">World No. 1</span><span class="rl-name">${esc(top.name)}</span><span class="rl-nat">${esc(top.nat)}</span></div>
+        <div class="rl-pts"><b>${f(top.points)}</b><span>points</span></div>`;
+      $("rankings").innerHTML = list.slice(lead ? 1 : 0).map((p, k) => {
+        const i = k + (lead ? 1 : 0);
+        return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${esc(p.name)}</span><span class="nt">${esc(p.nat)}${move(p, i)}</span></span>
+          <span class="pts">${p.points ? f(p.points) : ""}</span>
+          ${p.points ? `<span class="bar"><i style="width:${Math.round(p.points / max * 100)}%"></i></span>` : ""}</li>`;
+      }).join("");
+    };
     if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="${esc(news.rankings.url)}" target="_blank" rel="noopener">See the full list</a>`;
     $("rank-toggle")?.addEventListener("click", (e) => {
       const b = e.target.closest("button");
@@ -55,5 +76,23 @@
       return `<li class="${now ? "now" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
         <div><span class="name">${esc(e.name)}</span><span class="when">${when}</span></div></li>`;
     }).join("");
+  }
+
+  // Advertising slots: fill from data/ads.json, otherwise show a quiet placeholder
+  const slots = document.querySelectorAll("[data-ad]");
+  if (slots.length) {
+    let ads = {};
+    try { ads = await fetch("/data/ads.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) {}
+    slots.forEach((el) => {
+      const code = ads[el.dataset.ad];
+      if (code) {
+        const range = document.createRange();
+        el.innerHTML = '<span class="ad-label">Advertisement</span>';
+        el.appendChild(range.createContextualFragment(code)); // runs any ad scripts
+        el.classList.add("filled");
+      } else {
+        el.innerHTML = '<span class="ad-label">Advertisement</span><a class="ad-empty" href="/contact.html">Advertise with Eleven</a>';
+      }
+    });
   }
 })();

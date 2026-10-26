@@ -50,7 +50,8 @@
         "China's Chen Yi won the women's singles at the Asian Championships in Tashkent, beating Japan's Miwa Harimoto 3-0 in the final.",
         "Harimoto had a busy week. She lost a second final in the women's doubles, partnering Hina Hayata against China's Kuai Man and Wang Yidi, but won the mixed doubles with Sora Matsushima.",
         "China and Japan shared all seven titles, four to three. Chen Yi is in China's six-strong women's squad for WTT Champions Montpellier, which starts on Tuesday."
-      ]
+      ],
+      "published": "2026-10-26T15:52:00Z"
     },
     {
       "id": "asian-teams-2026",
@@ -92,7 +93,7 @@
         "type": "cartoon",
         "src": "img/cartoons/montpellier.svg"
       },
-      "author": "tom"
+      "author": "michael"
     },
     {
       "id": "americas-champs-2026",
@@ -149,11 +150,12 @@
           "url": "https://www.tabletennisengland.co.uk/news/2026/big-learning-curve-for-english-duo-at-ittf-world-hopes-week/"
         }
       ],
-      "author": "tom",
+      "author": "michelle",
       "body": [
         "Sheffield hosted ITTF World Hopes Week, the federation's development camp for leading young players from around the world.",
         "England's Sai Prasanna Kumar and Isabella Xiao Xu took part. Table Tennis England said the pair faced playing styles they rarely meet at home and learned from the other players and coaches at the camp, and its video report describes the week as a success for players, coaches and the ITTF."
-      ]
+      ],
+      "published": "2026-10-26T15:41:00Z"
     },
     {
       "id": "mltt-houston-2026",
@@ -175,7 +177,8 @@
       "body": [
         "Major League Table Tennis continues its fourth season in Houston, with Week 4 running from 30 October to 1 November.",
         "Four of the US franchise league's teams are in action over the weekend, according to Butterfly's preview."
-      ]
+      ],
+      "published": "2026-10-26T15:34:00Z"
     },
     {
       "id": "dimpled-ball-2026",
@@ -193,12 +196,13 @@
         "type": "cartoon",
         "src": "img/cartoons/dimpled-ball.svg"
       },
-      "author": "michael",
+      "author": "tom",
       "body": [
         "Ray D'Alonzo has published a mathematical paper asking what would happen if table tennis balls had golf-style dimples.",
         "His model suggests a dimpled ball would meet less drag and keep more of its speed as it crosses the table. He stresses that his drag figures are illustrative rather than measured.",
         "The bigger unknowns are spin and bounce. D'Alonzo concludes that the effect of dimples on either can't be predicted reliably without making and testing real prototypes."
-      ]
+      ],
+      "published": "2026-10-26T15:27:00Z"
     }
   ],
   "results": [
@@ -297,90 +301,130 @@
     }
   ],
   "rankings": {
-    "week": "ITTF Week 42, 12 October 2026",
-    "url": "https://butterflyonline.com/world-top-20/",
+    "week": "ITTF world ranking, week 44, 26 October 2026",
+    "url": "https://www.worldtabletennis.com/rankings",
     "men": [
       {
         "name": "Sora Matsushima",
-        "nat": "JPN"
+        "nat": "JPN",
+        "points": 8550,
+        "prev": 1
       },
       {
         "name": "Félix Lebrun",
-        "nat": "FRA"
+        "nat": "FRA",
+        "points": 6859,
+        "prev": 2
       },
       {
         "name": "Tomokazu Harimoto",
-        "nat": "JPN"
+        "nat": "JPN",
+        "points": 6413,
+        "prev": 3
       },
       {
         "name": "Truls Moregard",
-        "nat": "SWE"
+        "nat": "SWE",
+        "points": 6180,
+        "prev": 4
       },
       {
         "name": "Wang Chuqin",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 6157,
+        "prev": 5
       },
       {
         "name": "Lin Yun-Ju",
-        "nat": "TPE"
+        "nat": "TPE",
+        "points": 5595,
+        "prev": 6
       },
       {
         "name": "Hugo Calderano",
-        "nat": "BRA"
+        "nat": "BRA",
+        "points": 4760,
+        "prev": 7
       },
       {
         "name": "Alexis Lebrun",
-        "nat": "FRA"
+        "nat": "FRA",
+        "points": 3750,
+        "prev": 8
       },
       {
         "name": "Lin Shidong",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 3642,
+        "prev": 9
       },
       {
         "name": "Jang Woojin",
-        "nat": "KOR"
+        "nat": "KOR",
+        "points": 3586,
+        "prev": 10
       }
     ],
     "women": [
       {
         "name": "Wang Manyu",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 9265,
+        "prev": 1
       },
       {
         "name": "Sun Yingsha",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 7675,
+        "prev": 2
       },
       {
         "name": "Miwa Harimoto",
-        "nat": "JPN"
+        "nat": "JPN",
+        "points": 7009,
+        "prev": 3
       },
       {
         "name": "Wang Yidi",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 5810,
+        "prev": 4
       },
       {
         "name": "Kuai Man",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 5710,
+        "prev": 5
       },
       {
         "name": "Hina Hayata",
-        "nat": "JPN"
+        "nat": "JPN",
+        "points": 4770,
+        "prev": 6
       },
       {
         "name": "Chen Xingtong",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 4625,
+        "prev": 7
       },
       {
         "name": "Hitomi Sato",
-        "nat": "JPN"
-      },
-      {
-        "name": "Sabine Winter",
-        "nat": "GER"
+        "nat": "JPN",
+        "points": 4100,
+        "prev": 8
       },
       {
         "name": "Chen Yi",
-        "nat": "CHN"
+        "nat": "CHN",
+        "points": 4060,
+        "prev": 10
+      },
+      {
+        "name": "Sabine Winter",
+        "nat": "GER",
+        "points": 3815,
+        "prev": 9
       }
     ]
   },
@@ -408,5 +452,8 @@
       "colour": "#23895c",
       "initials": "MN"
     }
+  },
+  "contact": {
+    "web3forms_key": ""
   }
 }

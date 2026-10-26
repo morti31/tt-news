@@ -28,7 +28,6 @@
         <li><button data-cat="England" aria-pressed="false">England</button></li>
         <li><button data-cat="Clubs" aria-pressed="false">Clubs</button></li>
         <li><button data-cat="Equipment" aria-pressed="false">Equipment</button></li>
-        <li><a href="/news/">Archive</a></li>
         <li><a href="/schedule.html">Schedule</a></li>
       </ul>
     </nav>
@@ -38,6 +37,7 @@
 <section class="ticker" aria-label="Latest scores">
   <div class="wrap ticker-inner" id="ticker"></div>
 </section>
+<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
 
 <main class="wrap">
   <div id="live" class="live" hidden></div>
@@ -55,12 +55,14 @@
     </section>
 
     <aside>
+      <div class="ad ad-side" data-ad="sidebar"></div>
       <section class="panel" aria-labelledby="rank-h">
         <h2 id="rank-h" class="panel-title">World rankings</h2>
         <div class="toggle" id="rank-toggle" role="group" aria-label="Rankings">
           <button data-g="men" aria-pressed="true">Men</button>
           <button data-g="women" aria-pressed="false">Women</button>
         </div>
+        <div id="rank-lead" class="rank-lead"></div>
         <ol id="rankings" class="rankings"></ol>
         <p class="small" id="rank-week"></p>
       </section>
@@ -73,9 +75,12 @@
   </div>
 </main>
 
+<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
+
 <footer class="footer">
   <div class="wrap">
     <p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
+    <nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
     <p id="updated"></p>
     <p>Stories are short summaries written for this site, with links to the original reporting. Stories marked as translated come from non-English sources. Fixtures can change, so check with organisers.</p>
   </div>
