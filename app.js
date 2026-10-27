@@ -111,7 +111,29 @@
   }
 
   // ---- Watch: official highlights, four at a time, rotating hourly and mixing men's and women's matches
-  function renderWatch() {
+  // Newest WTT match highlights for the event on now (or the latest one), straight from WTT's YouTube channel.
+  // Falls back to the hand-picked list in news.json if the feed is empty or down.
+  async function renderWatch() {
+    const started = Object.values(hubs).filter((h) => h.start && h.start <= today && h.stream_q)
+      .sort((a, b) => b.start.localeCompare(a.start));
+    const target = onHub || started[0];
+    if (target) {
+      try {
+        const q = target.stream_q || `${target.city} ${target.year}`;
+        const d = await fetch(`/api/highlights?q=${encodeURIComponent(q)}`).then((r) => r.json());
+        const vids = (d.videos || []).filter((v) => v.id);
+        if (vids.length >= 2) {
+          const w = vids.filter((v) => v.gender === "W"), m = vids.filter((v) => v.gender !== "W");
+          const pick = [];
+          for (let i = 0; pick.length < Math.min(4, vids.length); i++) {   // newest first, women and men in turn
+            const v = (i % 2 ? m : w)[Math.floor(i / 2)] || (i % 2 ? w : m)[Math.floor(i / 2)];
+            if (v && !pick.includes(v)) pick.push(v);
+            if (i > 16) break;
+          }
+          return drawWatch(pick, target);
+        }
+      } catch (e) { /* fall back below */ }
+    }
     const all = (data.highlights || []).filter((v) => v.id);
     if (all.length < 2) return;
     const byDate = [...all].sort((a, b) => b.date.localeCompare(a.date));
@@ -127,12 +149,16 @@
       const v = src[(turn + Math.floor(i / 3)) % src.length];
       if (!pick.includes(v)) pick.push(v);
     }
-    const hub = hubs[ev];
+    drawWatch(pick, hubs[ev]);
+  }
+  let curCat = "All";
+  function drawWatch(pick, hub) {
     $("watch").innerHTML = `<div class="wrap"><div class="sec-head"><h2 id="watch-h">Watch</h2>${hub ? `<a href="${esc(hub.url)}">${esc(hub.name)} ${esc(hub.year)} highlights</a>` : ""}</div>
       <div class="rail">${pick.map((v) => `<figure class="video">
         <button type="button" class="yt" data-yt="${esc(v.id)}" aria-label="Play video: ${esc(v.title)}">
           <img src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="yt-play" aria-hidden="true"></span>
         </button><figcaption>${esc(v.title)}<span>Video: ${esc(v.channel || "YouTube")}</span></figcaption></figure>`).join("")}</div></div>`;
+    $("watch").hidden = curCat !== "All";
   }
   document.addEventListener("click", (ev) => {
     const b = ev.target.closest("#watch .yt");
@@ -196,6 +222,7 @@
 
   // Home shows everything; Clubs and Equipment filter the stories
   function show(cat) {
+    curCat = cat;
     const home = cat === "All";
     $("onnow").hidden = !home || !onHub;
     // the "on now" section carries the live scores, so the scores strip steps aside on the homepage
