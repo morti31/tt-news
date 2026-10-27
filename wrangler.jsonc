@@ -1,8 +1,11 @@
 {
-  // Cloudflare Workers config: serve this repository as a static site
+  // Cloudflare Workers config: the static site plus worker.js for /api/* (live scores from WTT)
   "name": "tt-news",
   "compatibility_date": "2026-10-01",
+  "main": "worker.js",
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
   }
 }
