@@ -6,8 +6,8 @@ A daily scheduled run writes one feature (analysis, opinion or original data), a
 
 1. Pull `main`. Check open pull requests titled "Feature for review: ..." (`gh api "repos/morti31/tt-news/pulls?state=open"`). If one from an earlier day is still open, still write today's, on its own branch.
 2. Pick the topic: the first item under **Up next** that isn't marked done and doesn't already have a "Feature for review" pull request, open or merged (check titles with `gh api "repos/morti31/tt-news/pulls?state=all&per_page=50"`). If a news event makes another backlog idea timely (a result, an injury, a ranking change), take that one instead and say why in the pull request. When fewer than four ideas are left, add five new ones to the end of **Up next** in the same pull request, so Tom can approve or cut them.
-3. Research, write, build the data, make the cover (below), then open the pull request and send Tom a push notification: "Today's feature is ready to approve: <headline>".
-4. Move the topic to **Done** with the date and slug, in the same pull request.
+2. Research, write, build the data, make the cover (below), then open the pull request and send Tom a push notification: "Today's feature is ready to approve: <headline>".
+3. Move the topic to **Done** with the date and slug, in the same pull request.
 
 ## How to write it (Tom's style)
 
@@ -63,17 +63,16 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 
 ## Up next
 
-1. Exported talent: how many of the world's top 100 learned the game in China? (analysis, original data: country of birth or development for the ITTF top 100, by nation)
-2. The game is getting younger (analysis, original data: average age of the world top 10 and top 50 now against 2010 and 2016)
-3. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
-4. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
-5. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-6. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-7. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
-8. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-9. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-10. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+1. The game is getting younger (analysis, original data: average age of the world top 10 and top 50 now against 2010 and 2016)
+2. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
+3. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
+4. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
+5. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+6. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
+7. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+8. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+9. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
 
 ## Done
 
-(none yet)
+- 2026-10-27: Exported talent: how many of the world's top 100 learned the game in China? (`chinese-born-players-world-top-100`)
