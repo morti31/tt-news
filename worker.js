@@ -102,21 +102,29 @@ async function page(url, ctx, ttl) {
 
 const unescapeJson = (s) => { try { return JSON.parse(`"${s}"`); } catch (e) { return s; } };
 
-async function stream(ctx) {
-  // The channel's /live address shows the current broadcast when there is one
-  const live = await page(`${CHANNEL}/live`, ctx, 60);
-  const id = (/<link rel="canonical" href="https:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})"/.exec(live) || [])[1];
-  if (id && /"isLiveNow":true/.test(live)) {
-    const title = unescapeJson((/"title":"((?:[^"\\]|\\.)*)","lengthSeconds"/.exec(live) || /<meta name="title" content="([^"]*)"/.exec(live) || [])[1] || "");
-    return { status: "live", id, title, channel: "World Table Tennis" };
-  }
-  // Otherwise the most recent stream on the channel's Live tab, to watch back
-  const streams = await page(`${CHANNEL}/streams`, ctx, 300);
-  const m = /"videoRenderer":\{"videoId":"([\w-]{11})".*?"title":\{"runs":\[\{"text":"((?:[^"\\]|\\.)*)"\}\]/.exec(streams);
-  if (m) {
-    const upcoming = streams.slice(m.index, m.index + 4000).includes('"upcomingEventData"');
-    return { status: upcoming ? "upcoming" : "replay", id: m[1], title: unescapeJson(m[2]), channel: "World Table Tennis" };
-  }
+function streamList(html) {
+  // Each video on the channel's Live tab, with whether it is on air now or still to come
+  return html.split('"videoRenderer":{"videoId":"').slice(1).map((chunk) => {
+    const title = (/"title":\{"runs":\[\{"text":"((?:[^"\\]|\\.)*)"/.exec(chunk) || [])[1] || "";
+    return {
+      id: chunk.slice(0, 11), title: unescapeJson(title),
+      live: /"style":"LIVE"|BADGE_STYLE_TYPE_LIVE_NOW/.test(chunk),
+      upcoming: chunk.includes('"upcomingEventData"'),
+    };
+  }).filter((v) => /^[\w-]{11}$/.test(v.id));
+}
+
+async function stream(ctx, q) {
+  // q: words that identify the event in WTT's stream titles, e.g. "Montpellier"
+  const words = String(q || "").toLowerCase().split(/[\s,]+/).filter(Boolean);
+  const match = (v) => !words.length || words.every((w) => v.title.toLowerCase().includes(w));
+  const list = streamList(await page(`${CHANNEL}/streams`, ctx, 60)).filter(match);
+  const live = list.filter((v) => v.live);
+  if (live.length) return { status: "live", ...live[0], channel: "World Table Tennis", more: live.slice(1, 4) };
+  const done = list.find((v) => !v.upcoming && !v.live);
+  const next = list.find((v) => v.upcoming);
+  if (done) return { status: "replay", ...done, channel: "World Table Tennis", next: next || null };
+  if (next) return { status: "upcoming", ...next, channel: "World Table Tennis" };
   return { status: "none" };
 }
 
@@ -137,7 +145,7 @@ export default {
     }
     if (url.pathname === "/api/stream") {
       try {
-        return json(await stream(ctx), 200, 60);
+        return json(await stream(ctx, url.searchParams.get("q")), 200, 60);
       } catch (err) {
         return json({ status: "none", detail: String(err.message || err) }, 200, 30);
       }
