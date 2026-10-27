@@ -177,6 +177,36 @@ def story_thumb(i, seen):
     return ""
 
 
+def side_extras(a, ev0):
+    """Sidebar panels kept in reserve for long stories, shown in this order until the columns line up."""
+    out = []
+    today = dt.date.today().isoformat()
+    # Latest results: live from WTT for the event on now, otherwise the most recent event's finals
+    live = next((h for h in HUBS.values() if h.get("wtt_id") and h.get("start") and h["start"] <= today <= h["end"]), None)
+    if live:
+        out.append(f'<section class="panel" data-extra data-wtt="{e(live["wtt_id"])}"><h2 class="rule-title">Latest results</h2>'
+                   f'<p class="small">{e(live["name"])}</p><ul class="lr"><li>Loading…</li></ul><a class="panel-link" href="/events/{live["id"]}.html#live">Live scores</a></section>')
+    elif NEWS.get("results"):
+        r = NEWS["results"][0]
+        rows = "".join(f'<li><span class="lr-label">{e(m["round"])}</span><span class="won">{e(m["winner"])}</span><b>{e(m["score"])}</b><span>{e(m["loser"])}</span></li>'
+                       for m in r["matches"][:6] if m.get("loser"))
+        out.append(f'<section class="panel" data-extra><h2 class="rule-title">Latest results</h2><p class="small">{e(r["event"])}</p><ul class="lr">{rows}</ul></section>')
+    # Watch: one official highlight, from this story's event if there is one
+    hl = sorted(NEWS.get("highlights", []), key=lambda v: v["date"], reverse=True)
+    own = [v for v in hl if ev0 and v.get("event") == ev0["id"]]
+    pick = (own or hl or [None])[0]
+    if pick and pick["id"] not in {v["id"] for v in a.get("videos") or []}:
+        out.append(f'<section class="panel" data-extra><h2 class="rule-title">Watch</h2>{components.videos([pick]).replace("<h2 id=\"vid-h\">Watch</h2>", "")}</section>')
+    # The next major event, with its poster
+    nxt = sorted((h for h in HUBS.values() if h.get("start") and h["start"] > today and h is not ev0), key=lambda h: h["start"])
+    if nxt and build_events.tile(nxt[0]):
+        h = nxt[0]
+        out.append(f'<section class="panel" data-extra><h2 class="rule-title">Next up</h2><a class="ev-tile" href="/events/{h["id"]}.html">'
+                   f'<img src="{build_events.tile(h)}" alt="" loading="lazy"><h3>{e(h["name"])} {e(h["year"])}</h3><span>{e(build_events.dates(h))}</span></a></section>')
+    out.append('<div class="ad ad-side" data-extra data-ad="sidebar3"></div>')
+    return "\n".join(out)
+
+
 def short_when(iso):
     t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(UK)
     return f"{t.day} {t:%b}, {t:%H:%M}"
@@ -211,6 +241,7 @@ def article_page(a, others, brief=False):
         f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else i["category"])}</span>'
         f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(AUTHORS.get(i["author"], {}).get("name", "Eleven"))}</span></div></article>'
         for i in rest[:16])
+    extras = side_extras(a, ev0)
     img = a.get("image") or {}
     ld = {
         "@context": "https://schema.org", "@type": "NewsArticle",
@@ -250,29 +281,65 @@ def article_page(a, others, brief=False):
     <div id="rank-lead" class="rank-lead"></div><ol id="rankings" class="rankings"></ol><p class="small" id="rank-week"></p></section>
   <section class="panel"><h2 class="panel-title">Coming up</h2><ul id="events" class="events" data-count="5"></ul>
     <a class="panel-link" href="/schedule.html">Full schedule and calendar</a></section>
+  {extras}
+  <div class="side-end"><div class="ad ad-side" data-ad="sidebar2"></div></div>
 </aside>
 </main>
-{components.SCRIPT if (a.get("videos") or a.get("draw")) else ""}
+<section class="wrap more-wide" hidden><div class="sec-head"><h2>More news</h2><a href="/news/">All news</a></div><div class="more-grid" id="more-grid"></div></section>
+{components.SCRIPT}
 <script>
-// Fill the space beside the sidebar with more news, then stop where the two columns line up
+// Balance the two columns, BBC style:
+// 1. a long story: add sidebar panels (latest results, a video, the next event) until the sidebar reaches the end of the story
+// 2. a short story: add "More news" under it until it reaches the end of the sidebar
+// 3. anything left over runs full width below both columns
 (function () {{
-  var main = document.querySelector(".article"), side = document.querySelector(".article-side");
-  var items = [].slice.call(document.querySelectorAll("#more-news .promo"));
-  if (!main || !side || !items.length) return;
+  var side = document.querySelector(".article-side"), end = document.querySelector(".article-sources");
+  var list = document.getElementById("more-news"), grid = document.getElementById("more-grid");
+  if (!side || !end) return;
+  var extras = [].slice.call(side.querySelectorAll("[data-extra]"));
+  var items = list ? [].slice.call(list.querySelectorAll(".promo")) : [];
+  var bottom = function (el) {{ return el.getBoundingClientRect().bottom; }};
+  var sideEnd = function () {{ var k = side.querySelector(".side-end"); return k.getBoundingClientRect().top; }};
   function fit() {{
-    items.forEach(function (x) {{ x.hidden = false; }});
-    var box = document.getElementById("more-news");
-    var stacked = side.getBoundingClientRect().top >= box.getBoundingClientRect().bottom - 5;
-    if (stacked) {{ items.forEach(function (x, k) {{ x.hidden = k >= 6; }}); return; }}
-    for (var i = items.length - 1; i >= 3; i--) {{
-      if (box.getBoundingClientRect().bottom <= side.getBoundingClientRect().bottom + 40) break;
-      items[i].hidden = true;
+    var stacked = side.getBoundingClientRect().top > end.getBoundingClientRect().top;
+    extras.forEach(function (x) {{ x.hidden = true; }});
+    items.forEach(function (x) {{ list.appendChild(x); x.hidden = false; }});
+    if (list) list.closest(".more-news").hidden = false;
+    if (stacked) {{
+      items.forEach(function (x, k) {{ x.hidden = k >= 6; }});
+    }} else {{
+      for (var i = 0; i < extras.length && sideEnd() < bottom(end) - 60; i++) extras[i].hidden = false;
+      var shown = 0;
+      items.forEach(function (x) {{ x.hidden = true; }});
+      for (var j = 0; j < items.length; j++) {{
+        if (bottom(list.closest(".more-news")) > sideEnd() + 40 && shown > 0) break;
+        if (shown === 0 && bottom(end) > sideEnd() - 120) break;
+        items[j].hidden = false; shown++;
+      }}
+      if (list) list.closest(".more-news").hidden = shown === 0;
     }}
+    var left = stacked ? [] : items.filter(function (x) {{ return x.hidden; }}).slice(0, 8);
+    grid.innerHTML = "";
+    left.forEach(function (x) {{ var c = x.cloneNode(true); c.hidden = false; grid.appendChild(c); }});
+    grid.closest(".more-wide").hidden = !left.length;
+    // one "More news" heading: if the list under the story is showing, the full-width row just continues it
+    grid.closest(".more-wide").classList.toggle("continues", !!list && !list.closest(".more-news").hidden);
   }}
   fit();
   window.addEventListener("load", fit);
-  window.addEventListener("resize", fit);
-  new MutationObserver(function () {{ clearTimeout(fit.t); fit.t = setTimeout(fit, 200); }}).observe(side, {{ childList: true, subtree: true }});
+  window.addEventListener("resize", function () {{ clearTimeout(fit.r); fit.r = setTimeout(fit, 150); }});
+  new MutationObserver(function () {{ clearTimeout(fit.t); fit.t = setTimeout(fit, 250); }}).observe(side, {{ childList: true, subtree: true }});
+  // Latest results panel: live from WTT while an event is on
+  var lr = side.querySelector("[data-wtt]");
+  if (lr) fetch("/api/live?event=" + lr.dataset.wtt).then(function (r) {{ return r.json(); }}).then(function (d) {{
+    var ms = (d.live || []).concat(d.results || []).slice(0, 6);
+    if (!ms.length) return;
+    lr.querySelector("ul").innerHTML = ms.map(function (m) {{
+      var w = m.status === "live" ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
+      var nm = function (i) {{ return '<span class="' + (w === i ? "won" : "") + '">' + m.sides[i].name.replace(/[<>&]/g, "") + "</span>"; }};
+      return '<li><span class="lr-label">' + (m.status === "live" ? '<span class="live-dot"></span>Live · ' : "") + m.label + "</span>" + nm(0) + "<b>" + m.score[0] + "–" + m.score[1] + "</b>" + nm(1) + "</li>";
+    }}).join("");
+  }}).catch(function () {{}});
 }})();
 </script>"""
     og = img.get("url") if img.get("type") == "photo" else (SITE + build_events.poster(ev) if ev and build_events.poster(ev) else None)
