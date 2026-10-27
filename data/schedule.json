@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T20:20:00Z",
+  "updated": "2026-10-27T12:40:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -23,6 +23,17 @@
       "country": "USA",
       "series": "Clubs",
       "type": "US franchise league",
+      "prestige": 2
+    },
+    {
+      "id": "youth-olympic-games-dakar-2026",
+      "name": "Youth Olympic Games",
+      "start": "2026-10-31",
+      "end": "2026-11-05",
+      "city": "Dakar",
+      "country": "Senegal",
+      "series": "Majors",
+      "type": "Youth Olympic Games",
       "prestige": 2
     },
     {

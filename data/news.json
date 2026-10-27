@@ -1,7 +1,55 @@
 {
-  "updated": "2026-10-26T20:20:00Z",
+  "updated": "2026-10-27T12:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "montpellier-shin-cheng-2026",
+      "category": "International",
+      "headline": "WTT Champions Montpellier: Shin Yubin sweeps Cheng I-Ching in opening match",
+      "summary": "Korea's Shin Yubin beat Chinese Taipei's Cheng I-Ching 3-0 in the first women's singles match of WTT Champions Montpellier on Tuesday. She meets the winner of Sun Yingsha's opener against France's Camille Lutz in the round of 16.",
+      "date": "2026-10-27",
+      "published": "2026-10-27T12:40:00Z",
+      "sources": [
+        {
+          "name": "Liberty Times (Chinese)",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5620710"
+        },
+        {
+          "name": "Sina Sports (Chinese)",
+          "url": "https://k.sina.com.cn/article_7879995911_1d5af320702702xhe0.html"
+        },
+        {
+          "name": "Flashscore",
+          "url": "https://www.flashscore.de/spiel/tischtennis/cheng-i-ching-K8bG00vU/shin-yubin-hGVjh6lD/"
+        }
+      ],
+      "lang": "Chinese",
+      "author": "michael",
+      "score": "3-0",
+      "top": true,
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "matches": [
+        {
+          "label": "Women's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Shin Yubin",
+              "nat": "KOR"
+            },
+            {
+              "name": "Cheng I-Ching",
+              "nat": "TPE"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ]
+        }
+      ]
+    },
     {
       "id": "asian-ms-final-2026",
       "category": "International",
@@ -53,7 +101,6 @@
         "In the women's event Miwa Harimoto, who has won the last three Champions titles, plays Bruna Takahashi, Rallys reported. Last year's finalist Sabine Winter faces France's Jia Nan Yuan. Play starts on Tuesday."
       ],
       "draw": "3250",
-      "top": true,
       "event": "wtt-champions-montpellier-2026"
     },
     {
