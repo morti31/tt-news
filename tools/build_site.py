@@ -36,7 +36,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/rankings.html">Rankings</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/features/">Features</a></li><li><a href="/rankings.html">Rankings</a></li>
 <li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
 </ul></nav></div></header>"""
 
@@ -79,6 +79,9 @@ def avatar(au, size):
 
 
 def hero(a):
+    cov = feature_cover(a) if a.get("category") == "Features" else None
+    if cov:
+        return f'<figure class="article-hero feature-cover"><img src="{cov}" alt="{e(a.get("cover", {}).get("label", a["title"]))}" width="1600" height="900"></figure>'
     im = a.get("image") or {}
     ev = event_of(a)
     if im.get("type") != "photo" and ev and build_events.poster(ev):
@@ -260,6 +263,38 @@ def side_extras(a, ev0):
     return "\n".join(out)
 
 
+import re
+
+
+def linkify(text):
+    """Plain paragraph text, with [words](/path or https://...) turned into links."""
+    out, last = [], 0
+    for m in re.finditer(r"\[([^\]]+)\]\(((?:https?://|/)[^)\s]+)\)", text):
+        out.append(e(text[last:m.start()]))
+        ext = m.group(2).startswith("http")
+        out.append(f'<a href="{e(m.group(2))}"{" rel=\"noopener\"" if ext else ""}>{e(m.group(1))}</a>')
+        last = m.end()
+    out.append(e(text[last:]))
+    return "".join(out)
+
+
+def chart(c):
+    """A simple horizontal bar chart from {"title", "rows": [[label, value], ...], "unit", "note", "source"}."""
+    rows = c.get("rows") or []
+    top = max((float(v) for _, v in rows), default=1) or 1
+    unit = c.get("unit", "")
+    bars = "".join(f'<li><span class="ch-label">{e(str(k))}</span><span class="ch-bar"><i style="width:{100 * float(v) / top:.1f}%"></i></span>'
+                   f'<b>{e(str(v))}{e(unit)}</b></li>' for k, v in rows)
+    src = f'<p class="ch-source">Source: {linkify(c["source"])}</p>' if c.get("source") else ""
+    note = f'<p class="ch-note">{linkify(c["note"])}</p>' if c.get("note") else ""
+    return f'<figure class="chart"><figcaption>{e(c.get("title", ""))}</figcaption><ul>{bars}</ul>{note}{src}</figure>'
+
+
+def feature_cover(a):
+    p = f"img/features/{a['slug']}.jpg"
+    return "/" + p if os.path.exists(os.path.join(ROOT, p)) else None
+
+
 def short_when(iso):
     t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(UK)
     return f"{t.day} {t:%b}, {t:%H:%M}"
@@ -269,14 +304,16 @@ def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
     words = sum(len(p.split()) for p in a["body"])
-    tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(a["category"])}'
+    tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(a.get("kind") or a["category"])}'
     if a.get("lang"):
         tag += f'<span class="translated">, translated from {e(a["lang"])}</span>'
     tag += "</span>"
     ev = event_of(a)
     crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
              else f'<a href="/#{e(a["category"])}">{e(a["category"])}</a>')
-    ps = [f"<p>{e(p)}</p>" for p in a["body"]]
+    ps = [f"<p>{linkify(p)}</p>" for p in a["body"]]
+    for ch in sorted(a.get("charts") or [], key=lambda c: -c.get("after", 0)):
+        ps.insert(min(ch.get("after", len(ps)), len(ps)), chart(ch))
     # Highlights sit after the second paragraph, like a broadcaster's match report
     vids = a.get("videos") or []
     # The first official video becomes the lead image; any others go in the Watch section
@@ -298,7 +335,8 @@ def article_page(a, others, brief=False):
     extras = side_extras(a, ev0)
     img = a.get("image") or {}
     ld = {
-        "@context": "https://schema.org", "@type": "NewsArticle",
+        "@context": "https://schema.org",
+        "@type": {"Opinion": "OpinionNewsArticle", "Analysis": "AnalysisNewsArticle"}.get(a.get("kind"), "NewsArticle"),
         "headline": a["title"][:110], "description": a["standfirst"],
         "datePublished": a.get("published", a["date"] + "T09:00:00Z"), "dateModified": a.get("modified", a.get("published", a["date"] + "T09:00:00Z")),
         "author": [{"@type": "Person", "name": AUTHOR["name"], "url": f"{SITE}/authors/{a.get('author', 'tom')}.html"}],
@@ -312,6 +350,8 @@ def article_page(a, others, brief=False):
         images.append(img["url"])
     if vids:
         images.append(f"https://i.ytimg.com/vi/{vids[0]['id']}/maxresdefault.jpg")
+    if feature_cover(a):
+        images.append(SITE + feature_cover(a))
     if ev0 and build_events.poster(ev0):
         images += [SITE + build_events.poster(ev0)] + ([SITE + build_events.tile(ev0)] if build_events.tile(ev0) else [])
     if images:
@@ -406,9 +446,12 @@ def article_page(a, others, brief=False):
 }})();
 </script>"""
     og = img.get("url") if img.get("type") == "photo" else (SITE + build_events.poster(ev) if ev and build_events.poster(ev) else None)
-    desc = a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
+    if feature_cover(a):
+        og = SITE + feature_cover(a)
+    # SEO: a search title and description can differ from the headline and standfirst
+    desc = a.get("description") or a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
     # Short stories stay readable and shareable but are kept out of Google's index as thin pages
-    return page(f"{a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
+    return page(f"{a.get('seo_title') or a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
                 robots="noindex, follow" if brief else None)
 
 
@@ -450,6 +493,17 @@ def main():
         briefs += 1
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hubs = build_hubs(arts)
+    feats = [a for a in arts if a.get("category") == "Features"]
+    fdata = [{"slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "standfirst": a.get("standfirst", ""), "kind": a.get("kind", "Feature"),
+              "published": a.get("published", a["date"]), "cover": feature_cover(a), "author": author_of(a)["name"]} for a in feats]
+    json.dump(fdata, open(os.path.join(ROOT, "data", "features.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    os.makedirs(os.path.join(ROOT, "features"), exist_ok=True)
+    cards = "".join(f'''<li class="ev-card"><a href="{f["url"]}">{f'<img src="{f["cover"]}" alt="" loading="lazy" width="1600" height="900">' if f["cover"] else ""}
+<span class="ev-group" style="--tier:#f37021">{e(f["kind"])}</span><h3>{e(f["title"])}</h3><p>{e(f["standfirst"])}</p></a></li>''' for f in fdata)
+    fbody = f"""<main class="wrap"><section class="sched-head"><div><h1>Features</h1><p class="lede">Analysis, opinion and original data on table tennis around the world.</p></div></section>
+<ul class="ev-cards">{cards or '<li class="empty">The first features are on their way.</li>'}</ul></main>"""
+    open(os.path.join(ROOT, "features", "index.html"), "w", encoding="utf-8").write(
+        page("Features: table tennis analysis, opinion and data | Eleven", "Long reads on table tennis: analysis, opinion and original data from Eleven.", f"{SITE}/features/", fbody))
 
     open(os.path.join(ROOT, "about.html"), "w", encoding="utf-8").write(about_page())
     R = build_rankings.load()
@@ -467,6 +521,7 @@ def main():
     today = dt.date.today().isoformat()
     urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts]
+    urls += [(f"{SITE}/features/", today)]
     urls += [(f"{SITE}/events/", today)] + [(f"{SITE}/events/{h}.html", today) for h in hubs]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"

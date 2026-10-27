@@ -9,7 +9,8 @@
   try {
     data = await fetch("data/news.json", { cache: "no-store" }).then((r) => r.json());
     const opt = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
-    const [sch, arts, hubs, top] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json")]);
+    const [sch, arts, hubs, top, feats] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json"), opt("data/features.json")]);
+    data.features = Array.isArray(feats) ? feats : [];
     data.top = Array.isArray(top) ? top : [];
     data.events = sch.events || [];
     data.articles = arts;
@@ -200,6 +201,7 @@
     // the "on now" section carries the live scores, so the scores strip steps aside on the homepage
     document.body.classList.toggle("has-onnow", home && !!onHub);
     $("watch").hidden = !home || !$("watch").innerHTML;
+    $("feat-row").hidden = !home || !$("feat-row").innerHTML;
     $("ev-row").hidden = !home || !$("ev-row").innerHTML;
     render(cat);
   }
@@ -215,7 +217,16 @@
     document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === cat)));
     show(cat);
   };
+  // Features: the newest three long reads
+  function renderFeatures() {
+    const fs = [...data.features].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 3);
+    if (!fs.length) return;
+    $("feat-row").innerHTML = `<div class="sec-head"><h2 id="feat-h">Features</h2><a href="/features/">All features</a></div><div class="feat-grid">` +
+      fs.map((f) => `<article class="feat"><a href="${esc(f.url)}">${f.cover ? `<img src="${esc(f.cover)}" alt="" loading="lazy">` : ""}
+        <span class="kicker" style="color:var(--ball)">${esc(f.kind)}</span><h3>${esc(f.title)}</h3><p>${esc(f.standfirst)}</p><span class="meta">By ${esc(f.author)}</span></a></article>`).join("") + "</div>";
+  }
   renderOnNow();
+  renderFeatures();
   renderWatch();
   renderEvents();
   window.addEventListener("hashchange", () => { fromHash(); window.scrollTo(0, 0); });
