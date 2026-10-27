@@ -62,7 +62,7 @@
           ${p.points ? `<span class="bar"><i style="width:${Math.round(p.points / max * 100)}%"></i></span>` : ""}</li>`;
       }).join("");
     };
-    if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="${esc(news.rankings.url)}" target="_blank" rel="noopener">See the full list</a>`;
+    if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="/rankings.html">Full top 100</a>`;
     $("rank-toggle")?.addEventListener("click", (e) => {
       const b = e.target.closest("button");
       if (!b) return;

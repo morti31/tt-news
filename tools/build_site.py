@@ -10,6 +10,7 @@ import json, os, glob, html, sys, datetime as dt
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import components
 import build_events
+import build_rankings
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
@@ -35,13 +36,13 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/#International">International</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/rankings.html">Rankings</a></li>
 <li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
 <p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
 
 
@@ -81,8 +82,8 @@ def hero(a):
     im = a.get("image") or {}
     ev = event_of(a)
     if im.get("type") != "photo" and ev and build_events.poster(ev):
-        return (f'<figure class="article-hero poster"><a href="/events/{ev["id"]}.html"><img src="{build_events.poster(ev)}" '
-                f'alt="{e(ev["name"])} {ev["year"]}: Eleven event poster" width="1600" height="900"></a><figcaption>{build_events.CREDIT}</figcaption></figure>')
+        return (f'<figure class="article-hero poster">{build_events.picture(ev, ev["name"] + " " + ev["year"] + ": Eleven event poster", "/events/" + ev["id"] + ".html")}'
+                f'<figcaption>{build_events.credit(ev)}</figcaption></figure>')
     if not im:
         return ""
     if im["type"] == "photo":
@@ -241,10 +242,20 @@ def main():
     hubs = build_hubs(arts)
 
     open(os.path.join(ROOT, "about.html"), "w", encoding="utf-8").write(about_page())
+    R = build_rankings.load()
+    if R:
+        with_article = {a.get("story_id") for a in arts}
+        items = [(a.get("published", a["date"]), f"/news/{a['slug']}.html", " ".join([a["title"], a.get("standfirst", ""), *a["body"]])) for a in arts]
+        items += [(s.get("published", s["date"]), f"/news/{s['id']}.html", " ".join([s["headline"], s["summary"], *(s.get("body") or [])]))
+                  for s in NEWS.get("stories", []) if s["id"] not in with_article]
+        items.sort(key=lambda x: x[0], reverse=True)
+        desc = f'The official ITTF world table tennis rankings, {R["label"].split(", ", 1)[1]}: the top 100 men and women with points and movement.'
+        open(os.path.join(ROOT, "rankings.html"), "w", encoding="utf-8").write(
+            page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items)))
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
 
     today = dt.date.today().isoformat()
-    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
+    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts]
     urls += [(f"{SITE}/events/", today)] + [(f"{SITE}/events/{h}.html", today) for h in hubs]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

@@ -41,7 +41,7 @@
         <figcaption>${im.caption ? esc(im.caption) + ". " : ""}Photo: <a href="${esc(im.page)}" target="_blank" rel="noopener">${esc(im.credit)}</a>, <a href="${esc(im.licence_url)}" target="_blank" rel="noopener">${esc(im.licence)}</a></figcaption></figure>`;
     }
     const hub = s.event && (data.hubs || {})[s.event];
-    if (hub && hub.poster) return `<figure class="art poster"><img src="${esc(hub.poster)}" alt="${esc(hub.name)} ${esc(hub.year)} poster" loading="lazy"></figure>`;
+    if (hub && hub.poster) return `<figure class="art poster"><img class="wide" src="${esc(hub.poster)}" alt="${esc(hub.name)} ${esc(hub.year)} poster" loading="lazy">${hub.tile ? `<img class="sq" src="${esc(hub.tile)}" alt="" loading="lazy">` : ""}</figure>`;
     if (im && im.type === "cartoon") return `<div class="art cartoon" data-cartoon="${esc(im.src)}"></div>`;
     // Fallback: a line drawing of the table, with the ball's flight varied per story
     const h = hash(s.id);

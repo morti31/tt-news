@@ -10,6 +10,7 @@ Table tennis news, results, rankings and fixtures on one page.
 - `tools/fetch_draw.py`: pulls an official WTT draw into `data/draws/`
 - `tools/build_calendar.py`: rebuilds `calendar.ics` from `data/schedule.json`
 - `data/events.json`, `tools/build_events.py`: event hub pages under `/events/`
+- `tools/rankings.py`, `tools/build_rankings.py`: the Rankings page from the official ITTF list
 - `tools/posters.py`: renders Eleven's event posters to `img/posters/` (needs Playwright; run locally, not at deploy)
 - `UPDATE.md`: what each update run does
 

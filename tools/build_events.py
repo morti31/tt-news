@@ -6,6 +6,7 @@ Output: events/<id>.html, events/<id>.ics, events/index.html, data/event-index.j
 """
 import json, os, datetime as dt, html
 import components
+import posters
 
 e = html.escape
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -13,13 +14,28 @@ TIER_NAMES = {"world": "World event", "smash": "Grand Smash", "champions": "WTT 
               "star": "WTT Star Contender", "contender": "WTT Contender", "club": "Club competition"}
 
 
-CREDIT = ('Poster by Eleven. Arena photo: <a href="https://unsplash.com/photos/empty-indoor-sports-arena-with-spectator-seating-_XlTp6nHbm0" rel="noopener">'
-          'ARTO SURAJ</a>, <a href="https://unsplash.com/license" rel="noopener">Unsplash Licence</a>')
-
-
 def load():
     path = os.path.join(ROOT, "data", "events.json")
-    return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {"events": []}
+    data = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {"events": []}
+    posters.assign_variants(data["events"])   # same photo and colour choices as the rendered posters
+    return data
+
+
+def credit(ev):
+    return posters.credit(ev)
+
+
+def tile(ev):
+    p = f"img/posters/{ev['id']}-sq.jpg"
+    return "/" + p if os.path.exists(os.path.join(ROOT, p)) else None
+
+
+def picture(ev, alt, link=None):
+    """The poster as a responsive image: the square version on phones, the wide one elsewhere."""
+    sq = tile(ev)
+    src = f'<source media="(max-width: 600px)" srcset="{sq}" width="1000" height="1000">' if sq else ""
+    img = f'<picture>{src}<img src="{poster(ev)}" alt="{e(alt)}" width="1600" height="900"></picture>'
+    return f'<a href="{link}">{img}</a>' if link else img
 
 
 def poster(ev):
@@ -44,7 +60,7 @@ def status(ev, today):
 
 
 def index_entry(ev):
-    return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev)}
+    return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev)}
 
 
 def event_index(data):
@@ -116,7 +132,7 @@ def hub(ev, items, schedule, today, news):
     pill = {"now": '<span class="hub-status now">On now</span>', "next": '<span class="hub-status">Coming up</span>',
             "past": '<span class="hub-status past">Finished</span>'}[st]
     img = poster(ev)
-    hero = f'<figure class="hub-poster"><img src="{img}" alt="{e(ev["name"])} {ev["year"]} poster" width="1600" height="900"><figcaption>{CREDIT}</figcaption></figure>' if img else ""
+    hero = f'<figure class="hub-poster">{picture(ev, ev["name"] + " " + ev["year"] + " poster")}<figcaption>{credit(ev)}</figcaption></figure>' if img else ""
     place = ev.get("venue") and f'{ev["venue"]}, {ev["city"]}, {ev["country"]}' or f'{ev["city"]}, {ev["country"]}'
     live = ""
     if st == "now" and ev.get("live"):
@@ -132,7 +148,12 @@ def hub(ev, items, schedule, today, news):
                 seen.add(key)
                 matches.append(m)
     matches.sort(key=_rank)
-    results = f'<section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{components.scoreboard(matches)}</section>' if matches else ""
+    # Equal prominence: big side-by-side cards only once there is both a men's and a women's result;
+    # until then every result is listed at the same size
+    genders = {components._gender(m) for m in matches}
+    board = components.scoreboard(matches) if {"M", "W"} <= genders else (
+        '<section class="scoreboard" aria-label="Results"><div class="sb-more">' + "".join(components._compact(m) for m in matches) + "</div></section>")
+    results = f'<section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{board}</section>' if matches else ""
     draw = components.draw(ev.get("draw"))
     draw = f'<section class="hub-sec" id="draw">{draw}</section>' if draw else ""
     vids, vseen = [], set()

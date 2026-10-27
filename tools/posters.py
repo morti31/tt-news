@@ -73,22 +73,95 @@ def date_range(ev):
     return f"{a.day} {a:%b} to {b.day} {b:%b %Y}"
 
 
-# Flashes of colour for each tier: two accents that sit against the tier colour
-ACCENTS = {
-    "world": ("#ffb81c", "#ff5a1f"),
-    "smash": ("#ff2d7a", "#7b2ff7"),
-    "champions": ("#ff5a1f", "#ffb81c"),
-    "continental": ("#ffb81c", "#ff4f7b"),
-    "star": ("#ff7a00", "#d9f03c"),
-    "contender": ("#3ad1c0", "#ff5a1f"),
-    "club": ("#f2c230", "#ff5a1f"),
+# Continental championships take the colour of their continent, so Lima and Tashkent never match
+REGIONS = {
+    "Asia": ("#12917a", "#032b24"),
+    "Americas": ("#7a3cf0", "#1c0b46"),
+    "Europe": ("#0a84c4", "#04263b"),
+    "Africa": ("#d98a00", "#3a2200"),
+    "Oceania": ("#00a39b", "#00302e"),
 }
-PHOTOS = {"arena-hall.jpg": "Arena photo: ARTO SURAJ on Unsplash"}
+# Flashes of colour: several accent pairs per colour, rotated so neighbouring posters differ
+ACCENTS = {
+    "#d4213d": [("#ffb81c", "#ff5a1f"), ("#2f6bff", "#ffb81c"), ("#ff4f9a", "#ffd23f")],
+    "#f37021": [("#ff2d7a", "#7b2ff7"), ("#ffd23f", "#ff2d7a"), ("#2f6bff", "#ff2d7a")],
+    "#3a66e0": [("#ff5a1f", "#ffb81c"), ("#ff4f9a", "#ff8a00"), ("#d9f03c", "#22c3a6")],
+    "#12917a": [("#ffb81c", "#ff4f7b"), ("#ff6a1f", "#ffd23f"), ("#c7f03c", "#2fb4ff")],
+    "#7a3cf0": [("#ff8a00", "#ff2d7a"), ("#d9f03c", "#ff8a00"), ("#2fe0c8", "#ffd23f")],
+    "#0a84c4": [("#ffd23f", "#ff5a1f"), ("#ff4f9a", "#ffd23f"), ("#c7f03c", "#ff8a00")],
+    "#d98a00": [("#ff2d55", "#7b2ff7"), ("#2f6bff", "#ff2d55"), ("#12c2a0", "#ff2d55")],
+    "#00a39b": [("#ff8a00", "#ffd23f"), ("#ff4f9a", "#ff8a00"), ("#2f6bff", "#ffd23f")],
+    "#2aa198": [("#ff7a00", "#d9f03c"), ("#ff4f9a", "#ffd23f"), ("#2f6bff", "#ff7a00")],
+    "#6b7586": [("#3ad1c0", "#ff5a1f"), ("#ffd23f", "#ff4f9a"), ("#c7f03c", "#2fb4ff")],
+    "#23895c": [("#f2c230", "#ff5a1f"), ("#ff4f9a", "#ffd23f"), ("#2fb4ff", "#f2c230")],
+}
+# Licensed photos (Unsplash Licence); align is the crop focus inside the panel
+PHOTOS = {
+    "arena-hall.jpg": ("ARTO SURAJ", "https://unsplash.com/photos/empty-indoor-sports-arena-with-spectator-seating-_XlTp6nHbm0", "xMidYMin"),
+    "seats-rows.jpg": ("Reed Mok", "https://unsplash.com/photos/teal-and-blue-chair-landscape-photography-9oduzVzk8LQ", "xMidYMid"),
+    "seats-dark.jpg": ("Milan Csizmadia", "https://unsplash.com/photos/black-and-white-piano-keys-WDLTwagtvSo", "xMidYMid"),
+    "stadium-roof.jpg": ("Winston Tjia", "https://unsplash.com/photos/a-stadium-filled-with-lots-of-empty-seats-4gX2Jj9zDBY", "xMidYMin"),
+    "arena-above.jpg": ("Tim Trad", "https://unsplash.com/photos/white-and-red-airplane-on-top-of-stadium-during-night-time-3PdOKrfzrYM", "xMidYMid"),
+    "dome.jpg": ("TAKAHIRO NISHIZONO", "https://unsplash.com/photos/stadium-seats-under-metal-dome-V06_qJzPt54", "xMidYMin"),
+}
+LAYOUTS = 3
 
 
-def photo_href(ev):
+def palette(ev):
+    if ev["tier"] == "continental" and ev.get("region") in REGIONS:
+        return REGIONS[ev["region"]]
+    return TIERS[ev["tier"]]
+
+
+def assign_variants(events):
+    """Give each event a photo, accent pair and layout so that no two posters look alike.
+
+    Works through events in file order (new events are appended, so existing posters keep their look).
+    Each candidate is scored against earlier posters: sharing a colour and a photo costs most, then
+    accents and layout; reusing a photo anywhere costs a little. Explicit "photo", "accent" or
+    "layout" fields on an event override the choice.
+    """
+    import itertools, zlib
+    done = []
+    for ev in events:
+        c = palette(ev)[0]
+        n_acc = len(ACCENTS.get(c, [("#ff5a1f", "#ffb81c")]))
+        best = None
+        for photo, acc, lay in itertools.product(PHOTOS, range(n_acc), range(LAYOUTS)):
+            if ev.get("photo") and photo != ev["photo"] or "accent" in ev and acc != ev["accent"] or "layout" in ev and lay != ev["layout"]:
+                continue
+            score = 0
+            for o in done:
+                same = o["c"] == c
+                score += (6 if same else 1) * (o["photo"] == photo) + (3 if same else 0) * (o["acc"] == acc) + (2 if same else .3) * (o["lay"] == lay)
+            tie = zlib.crc32(f'{ev["id"]}{photo}{acc}{lay}'.encode()) / 2 ** 32
+            if best is None or (score, tie) < best[0]:
+                best = ((score, tie), photo, acc, lay)
+        _, photo, acc, lay = best
+        ev["_v"] = {"photo": photo, "accent": acc, "layout": lay}
+        done.append({"c": c, "photo": photo, "acc": acc, "lay": lay})
+    return events
+
+
+def _variant(ev):
+    if "_v" not in ev:
+        assign_variants([ev])
+    v = ev["_v"]
+    c, deep = palette(ev)
+    a1, a2 = ACCENTS.get(c, [("#ff5a1f", "#ffb81c")])[v["accent"]]
+    return c, deep, a1, a2, v["photo"], v["layout"]
+
+
+def credit(ev):
+    """HTML credit line for the photo used on an event's poster."""
+    name, url, _ = PHOTOS[_variant(ev)[4]]
+    return (f'Poster by Eleven. Photo: <a href="{url}" rel="noopener">{e(name)}</a>, '
+            f'<a href="https://unsplash.com/license" rel="noopener">Unsplash Licence</a>')
+
+
+def photo_href(name):
     import base64
-    path = os.path.join(ROOT, "img", "posters", "photos", ev.get("photo", "arena-hall.jpg"))
+    path = os.path.join(ROOT, "img", "posters", "photos", name)
     return "data:image/jpeg;base64," + base64.b64encode(open(path, "rb").read()).decode()
 
 
@@ -96,33 +169,54 @@ def _rgb(h):
     return [int(h[i:i + 2], 16) / 255 for i in (1, 3, 5)]
 
 
+def _photo_defs(uid, c, deep, a1, a2, box):
+    d, m = _rgb(deep), _rgb(c)
+    hi = [min(1, x * .45 + .62) for x in m]   # highlights: the colour lifted towards white
+    duo = "".join(f'<feFunc{ch} type="table" tableValues="{d[i] * .7:.3f} {d[i]:.3f} {m[i]:.3f} {hi[i]:.3f}"/>' for i, ch in enumerate("RGB"))
+    x, y, w, h = box
+    return (f'<filter id="{uid}-duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>'
+            f'<feComponentTransfer>{duo}</feComponentTransfer></filter>'
+            f'<clipPath id="{uid}-panel"><rect x="{x}" y="{y}" width="{w}" height="{h}"/></clipPath>'
+            f'<linearGradient id="{uid}-flash" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a1}"/><stop offset="1" stop-color="{a2}"/></linearGradient>'
+            f'<linearGradient id="{uid}-shade" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="{deep}" stop-opacity="0"/><stop offset="1" stop-color="{deep}" stop-opacity=".85"/></linearGradient>')
+
+
+def _flashes(uid, layout, box, a1, a2):
+    """The colour shapes over the photo; three arrangements so posters side by side differ."""
+    x, y, w, h = box
+    s = min(w, h) / 560   # scale relative to the landscape panel
+    out = []
+    if layout == 0:     # ball top right, arcs rising from the bottom left
+        out += [f'<circle cx="{x}" cy="{y + h}" r="{300 * s:.0f}" fill="none" stroke="{a1}" stroke-width="{34 * s:.0f}"/>',
+                f'<circle cx="{x}" cy="{y + h}" r="{356 * s:.0f}" fill="none" stroke="{a2}" stroke-width="{6 * s:.1f}"/>',
+                f'<circle cx="{x + w - 148 * s:.0f}" cy="{y + 214 * s:.0f}" r="{118 * s:.0f}" fill="url(#{uid}-flash)"/>',
+                f'<circle cx="{x + w - 148 * s:.0f}" cy="{y + 214 * s:.0f}" r="{146 * s:.0f}" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>']
+    elif layout == 1:   # arcs from the top right, ball low on the left
+        out += [f'<circle cx="{x + w}" cy="{y}" r="{280 * s:.0f}" fill="none" stroke="{a1}" stroke-width="{34 * s:.0f}"/>',
+                f'<circle cx="{x + w}" cy="{y}" r="{336 * s:.0f}" fill="none" stroke="{a2}" stroke-width="{6 * s:.1f}"/>',
+                f'<circle cx="{x + 170 * s:.0f}" cy="{y + h * .58:.0f}" r="{104 * s:.0f}" fill="url(#{uid}-flash)"/>',
+                f'<circle cx="{x + 170 * s:.0f}" cy="{y + h * .58:.0f}" r="{130 * s:.0f}" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>']
+    else:               # two diagonal bands crossing the panel, small ball between them
+        k = h * .55
+        out += [f'<polygon points="{x},{y + h * .62:.0f} {x + w},{y + h * .62 - k:.0f} {x + w},{y + h * .62 - k + 54 * s:.0f} {x},{y + h * .62 + 54 * s:.0f}" fill="{a1}"/>',
+                f'<polygon points="{x},{y + h * .62 + 84 * s:.0f} {x + w},{y + h * .62 - k + 84 * s:.0f} {x + w},{y + h * .62 - k + 96 * s:.0f} {x},{y + h * .62 + 96 * s:.0f}" fill="{a2}"/>',
+                f'<circle cx="{x + w * .68:.0f}" cy="{y + h * .2:.0f}" r="{66 * s:.0f}" fill="url(#{uid}-flash)"/>']
+    return out
+
+
 def grid(ev, uid):
     """D, Grid: paper stock and a timetable grid, beside a duotone arena photo with flashes of colour."""
-    c, deep = TIERS[ev["tier"]]
-    a1, a2 = ACCENTS[ev["tier"]]
+    c, deep, a1, a2, photo, layout = _variant(ev)
     ink, paper, L, R, P = "#121417", "#f3f1ec", 96, 936, 1000   # P: where the photo panel starts
     defs, noise = grain(uid, .05, dark=True)
     title = ev["city"].upper()
     size = fit(title, R - L, 250, -0.005)
-    d, m = _rgb(deep), _rgb(c)
-    hi = [min(1, x * .45 + .62) for x in m]   # highlights: the tier colour lifted towards white
-    duo = "".join(f'<feFunc{ch} type="table" tableValues="{d[i] * .7:.3f} {d[i]:.3f} {m[i]:.3f} {hi[i]:.3f}"/>' for i, ch in enumerate("RGB"))
-    b = [f'<defs>{defs}'
-         f'<filter id="{uid}-duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>'
-         f'<feComponentTransfer>{duo}</feComponentTransfer></filter>'
-         f'<clipPath id="{uid}-panel"><rect x="{P}" y="0" width="{W - P}" height="{H}"/></clipPath>'
-         f'<linearGradient id="{uid}-flash" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a1}"/><stop offset="1" stop-color="{a2}"/></linearGradient>'
-         f'<linearGradient id="{uid}-shade" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="{deep}" stop-opacity="0"/><stop offset="1" stop-color="{deep}" stop-opacity=".85"/></linearGradient>'
-         f'</defs>',
-         f'<rect width="{W}" height="{H}" fill="{paper}"/>']
-    # photo panel: duotone arena, crop on the roof lights, then the colour flashes on top
+    box = (P, 0, W - P, H)
+    b = [f'<defs>{defs}{_photo_defs(uid, c, deep, a1, a2, box)}</defs>', f'<rect width="{W}" height="{H}" fill="{paper}"/>']
     b.append(f'<g clip-path="url(#{uid}-panel)">')
-    b.append(f'<image href="{photo_href(ev)}" x="{P - 560}" y="-40" width="1500" height="1000" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-duo)"/>')
+    b.append(f'<image href="{photo_href(photo)}" x="{P}" y="0" width="{W - P}" height="{H}" preserveAspectRatio="{PHOTOS[photo][2]} slice" filter="url(#{uid}-duo)"/>')
     b.append(f'<rect x="{P}" y="0" width="{W - P}" height="{H}" fill="url(#{uid}-shade)"/>')
-    b.append(f'<circle cx="{P}" cy="{H}" r="300" fill="none" stroke="{a1}" stroke-width="34"/>')
-    b.append(f'<circle cx="{P}" cy="{H}" r="356" fill="none" stroke="{a2}" stroke-width="6"/>')
-    b.append(f'<circle cx="1452" cy="214" r="118" fill="url(#{uid}-flash)"/>')
-    b.append(f'<circle cx="1452" cy="214" r="146" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>')
+    b += _flashes(uid, layout, box, a1, a2)
     b.append("</g>")
     b.append(f'<rect x="{P}" y="0" width="10" height="{H}" fill="{a1}"/>')
     b.append(t(ev["year"], W - 64, H - 56, 168, "#fff", 300, "end", -0.03))
@@ -142,34 +236,73 @@ def grid(ev, uid):
     for i, (k, v) in enumerate(cols):
         x = L + i * colw
         b.append(label(k, x, y + 42, ink, 14, opacity=.55))
-        words, lines = v.split(), [""]
-        for w_ in words:   # wrap at roughly the column width
-            if len(lines[-1]) + len(w_) > 20 and lines[-1]:
-                lines.append(w_)
-            else:
-                lines[-1] = (lines[-1] + " " + w_).strip()
-        for j, ln in enumerate(lines[:2]):
+        for j, ln in enumerate(_wrap(v, 20)[:2]):
             b.append(t(ln, x, y + 76 + j * 28, 22, ink, 600))
-    ds = days(ev)
-    top = 690
-    b.append(f'<rect x="{L}" y="{top}" width="{R - L}" height="1" fill="{ink}" fill-opacity=".35"/>')
-    if ds:
-        cw = (R - L) / len(ds)
-        for i, dd in enumerate(ds):
-            x = L + i * cw
-            last = i == len(ds) - 1
-            if last:
-                b.append(f'<rect x="{x:.0f}" y="{top}" width="{cw:.0f}" height="{H - top - 64}" fill="url(#{uid}-flash)"/>')
-            elif i:
-                b.append(f'<rect x="{x:.0f}" y="{top + 20}" width="1" height="{H - top - 104}" fill="{ink}" fill-opacity=".18"/>')
-            col = ink
-            b.append(label(f"{dd:%a}", x + 14, top + 36, col, 13, opacity=.9 if last else .55))
-            b.append(t(f"{dd.day:02d}", x + 10, top + 116, min(84, cw * .62), col, 300 if not last else 600, track=-0.03))
-        b.append(label("Finals", L + (len(ds) - 1) * cw + 14, H - 82, ink, 12, opacity=.9))
-    else:
-        b.append(t(date_range(ev), L, top + 110, 84, ink, 300, track=-0.02))
+    b += _days(ev, uid, L, R, 690, H - 64, ink)
     b.append(label("Eleven event series", L, H - 26, ink, 12, opacity=.45))
     b.append(noise)
+    return b
+
+
+def _wrap(v, n):
+    lines = [""]
+    for w_ in v.split():
+        if len(lines[-1]) + len(w_) > n and lines[-1]:
+            lines.append(w_)
+        else:
+            lines[-1] = (lines[-1] + " " + w_).strip()
+    return lines
+
+
+def _days(ev, uid, L, R, top, bottom, ink, big=84):
+    b = [f'<rect x="{L}" y="{top}" width="{R - L}" height="1" fill="{ink}" fill-opacity=".35"/>']
+    ds = days(ev)
+    if not ds:
+        b.append(t(date_range(ev), L, top + 110, big, ink, 300, track=-0.02))
+        return b
+    cw = (R - L) / len(ds)
+    for i, dd in enumerate(ds):
+        x = L + i * cw
+        last = i == len(ds) - 1
+        if last:
+            b.append(f'<rect x="{x:.0f}" y="{top}" width="{cw:.0f}" height="{bottom - top}" fill="url(#{uid}-flash)"/>')
+        elif i:
+            b.append(f'<rect x="{x:.0f}" y="{top + 20}" width="1" height="{bottom - top - 40}" fill="{ink}" fill-opacity=".18"/>')
+        b.append(label(f"{dd:%a}", x + 14, top + 36, ink, 13, opacity=.9 if last else .55))
+        b.append(t(f"{dd.day:02d}", x + 10, top + 116, min(big, cw * .62), ink, 600 if last else 300, track=-0.03))
+    b.append(label("Finals", L + (len(ds) - 1) * cw + 14, bottom - 18, ink, 12, opacity=.9))
+    return b
+
+
+TW, TH = 1000, 1000
+
+
+def tile(ev, uid):
+    """Square version for small slots and phones: photo and colour above, the title and dates below."""
+    c, deep, a1, a2, photo, layout = _variant(ev)
+    ink, paper, L, R = "#121417", "#f3f1ec", 64, TW - 64
+    PH = 470
+    box = (0, 0, TW, PH)
+    defs, _ = grain(uid, .05, dark=True)
+    title = ev["city"].upper()
+    size = fit(title, R - L, 230, -0.005)
+    b = [f'<defs>{defs}{_photo_defs(uid, c, deep, a1, a2, box)}</defs>', f'<rect width="{TW}" height="{TH}" fill="{paper}"/>']
+    b.append(f'<g clip-path="url(#{uid}-panel)">')
+    b.append(f'<image href="{photo_href(photo)}" x="0" y="0" width="{TW}" height="{PH}" preserveAspectRatio="{PHOTOS[photo][2]} slice" filter="url(#{uid}-duo)"/>')
+    b.append(f'<rect x="0" y="0" width="{TW}" height="{PH}" fill="url(#{uid}-shade)"/>')
+    b += _flashes(uid, layout, box, a1, a2)
+    b.append("</g>")
+    b.append(f'<rect x="0" y="{PH}" width="{TW}" height="10" fill="{a1}"/>')
+    b.append(t(ev["year"], R, PH - 40, 150, "#fff", 300, "end", -0.03))
+    b.append(label(ev["series"], L, PH + 72, ink, 24, opacity=1))
+    base = PH + 92 + size * 0.73
+    b.append(t(title, L - size * 0.02, base, size, ink, 800, track=-0.005, stretch=75))
+    b.append(f'<rect x="{L}" y="{base + 36:.0f}" width="{R - L}" height="2" fill="{ink}"/>')
+    b.append(t(date_range(ev), L, base + 96, 38, ink, 600))
+    b.append(label(place(ev), L, base + 142, ink, 20, opacity=.6))
+    b.append(wordmark(R, base + 144, ink, 28))
+    b.append(f'<rect x="{R - 120}" y="{base + 64:.0f}" width="60" height="12" fill="{a1}"/><rect x="{R - 60}" y="{base + 64:.0f}" width="60" height="12" fill="{c}"/>')
+    b.append(_)
     return b
 
 
@@ -264,26 +397,29 @@ def court(ev, uid):
     return b
 
 
-STYLES = {"grid": grid, "arena": arena, "court": court}
+STYLES = {"grid": grid, "arena": arena, "court": court, "tile": tile}
 
 
 def svg(ev, style):
     uid = f'{ev["id"]}-{style}'
     body = "\n".join(STYLES[style](ev, uid))
     lbl = f'{ev["series"]} {ev["city"]} {ev["year"]} poster by Eleven'
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{e(lbl)}">\n{body}\n</svg>\n'
+    w, h = (TW, TH) if style == "tile" else (W, H)
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{e(lbl)}">\n{body}\n</svg>\n'
 
 
 def main(only=None):
-    """Render every hub event's poster to img/posters/<id>.jpg (needs Playwright, so run it locally, not at deploy)."""
+    """Render every hub event's posters: img/posters/<id>.jpg (16:9) and <id>-sq.jpg (square, for phones and small slots).
+    Needs Playwright, so run it locally or in an update run, not at deploy."""
     data = json.load(open(os.path.join(ROOT, "data", "events.json"), encoding="utf-8"))
+    assign_variants(data["events"])
     out = os.path.join(ROOT, "img", "posters")
     os.makedirs(out, exist_ok=True)
     font = os.path.join(ROOT, "tools", "BricolageGrotesque-variable.woff2")
     import base64
     b64 = base64.b64encode(open(font, "rb").read()).decode()
     css = (f"@font-face{{font-family:'Bricolage Grotesque';src:url(data:font/woff2;base64,{b64}) format('woff2');font-weight:200 800;font-stretch:75% 100%}}"
-           "html,body{margin:0;background:#000}svg{display:block;width:1600px;height:900px}")
+           "html,body{margin:0;background:#000}svg{display:block}")
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -291,11 +427,13 @@ def main(only=None):
         for ev in data["events"]:
             if only and ev["id"] not in only:
                 continue
-            pg.set_content(f"<html><head><style>{css}</style></head><body>{svg(ev, ev.get('style', data.get('style', 'arena')))}</body></html>")
-            pg.evaluate("document.fonts.ready.then(() => document.fonts.size)")
-            pg.wait_for_timeout(300)
-            pg.screenshot(path=os.path.join(out, f'{ev["id"]}.jpg'), type="jpeg", quality=86)
-            print("poster:", ev["id"])
+            for style, suffix, (w, h) in ((ev.get("style", data.get("style", "grid")), "", (W, H)), ("tile", "-sq", (TW, TH))):
+                pg.set_viewport_size({"width": w, "height": h})
+                pg.set_content(f"<html><head><style>{css} svg{{width:{w}px;height:{h}px}}</style></head><body>{svg(ev, style)}</body></html>")
+                pg.evaluate("document.fonts.ready.then(() => document.fonts.size)")
+                pg.wait_for_timeout(300)
+                pg.screenshot(path=os.path.join(out, f'{ev["id"]}{suffix}.jpg'), type="jpeg", quality=84)
+            print("poster:", ev["id"], ev["_v"])
         browser.close()
 
 
