@@ -140,6 +140,48 @@ def load_articles():
     return arts
 
 
+def story_list(arts):
+    """Every story on the site, lead story first then newest, with what the story lists need."""
+    amap = {x.get("story_id"): x for x in arts}
+    out = []
+    for s in NEWS.get("stories", []):
+        a = amap.get(s["id"])
+        vids = (a or {}).get("videos") or s.get("videos") or []
+        out.append({"id": s["id"], "slug": a["slug"] if a else s["id"], "url": f"/news/{a['slug'] if a else s['id']}.html",
+                    "title": a["title"] if a else s["headline"], "category": s["category"], "top": s.get("top"),
+                    "published": (a or {}).get("published") or s.get("published") or s["date"] + "T09:00:00Z",
+                    "event": s.get("event") or (a or {}).get("event"), "video": vids[0]["id"] if vids else None,
+                    "image": (a or {}).get("image") or s.get("image"), "author": s.get("author", "tom")})
+    out.sort(key=lambda i: i["published"], reverse=True)
+    out.sort(key=lambda i: not i["top"])
+    return out
+
+
+STORIES = []
+
+
+def story_thumb(i, seen):
+    """Same picture order as the homepage: video, event poster (once per page), photo, illustration."""
+    if i["video"]:
+        return (f'<div class="pic video-art"><img src="https://i.ytimg.com/vi/{e(i["video"])}/hqdefault.jpg" alt="" loading="lazy">'
+                f'<span class="yt-play" aria-hidden="true"></span></div>')
+    ev = HUBS.get(i["event"] or "")
+    if ev and build_events.poster(ev) and ev["id"] not in seen:
+        seen.add(ev["id"])
+        return f'<div class="pic poster"><img src="{build_events.poster(ev)}" alt="" loading="lazy"></div>'
+    im = i["image"] or {}
+    if im.get("type") == "photo":
+        return f'<div class="pic photo"><img src="{e(im["url"])}" alt="" loading="lazy"></div>'
+    if im.get("type") == "cartoon":
+        return f'<div class="pic cartoon"><img src="/{e(im["src"])}" alt="" loading="lazy"></div>'
+    return ""
+
+
+def short_when(iso):
+    t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(UK)
+    return f"{t.day} {t:%b}, {t:%H:%M}"
+
+
 def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
@@ -158,7 +200,17 @@ def article_page(a, others, brief=False):
     ps.insert(min(2, len(ps)), components.videos(vids[1:]))
     paras = "\n".join(x for x in ps if x)
     sources = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in a["sources"])
-    more = "".join(f'<li><a href="/news/{e(o["slug"])}.html">{e(o["title"])}</a><span>{pub_time(o)}</span></li>' for o in others[:5])
+    cur = a.get("story_id") or a["slug"]
+    pool = [i for i in STORIES if i["id"] != cur and i["slug"] != a["slug"]]
+    tops, rest = pool[:5], pool[5:]
+    tops_html = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a><span class="meta">{short_when(i["published"])}</span></li>' for i in tops)
+    ev0 = event_of(a)
+    seen = {ev0["id"]} if ev0 else set()   # this story's own poster is already at the top
+    more_html = "".join(
+        f'<article class="promo">{story_thumb(i, seen)}<div><span class="kicker" style="color:var(--{e(i["category"])}, var(--ink))">'
+        f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else i["category"])}</span>'
+        f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(AUTHORS.get(i["author"], {}).get("name", "Eleven"))}</span></div></article>'
+        for i in rest[:16])
     img = a.get("image") or {}
     ld = {
         "@context": "https://schema.org", "@type": "NewsArticle",
@@ -187,11 +239,12 @@ def article_page(a, others, brief=False):
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
+  {f'<section class="more-news"><div class="sec-head"><h2>More news</h2><a href="/news/">All news</a></div><div class="promos" id="more-news">{more_html}</div></section>' if more_html else ""}
 </article>
 <aside class="article-side">
   <div class="ad ad-side" data-ad="sidebar"></div>
   {f'<section class="panel author"><div class="author-head">{avatar(AUTHOR, 56)}<div><p class="small-label">Writer</p><h2 class="panel-title">{e(AUTHOR["name"])}</h2></div></div><p class="author-bio">{e(AUTHOR["bio"])}</p></section>' if AUTHOR.get("bio") else ""}
-  {f'<section class="panel"><h2 class="panel-title">More news</h2><ul class="more-list">{more}</ul></section>' if more else ''}
+  {f'<section class="panel tops"><h2 class="rule-title">Top stories</h2><ol>{tops_html}</ol></section>' if tops_html else ''}
   <section class="panel"><h2 class="panel-title">World rankings</h2>
     <div class="toggle" id="rank-toggle" role="group" aria-label="Rankings"><button data-g="men" aria-pressed="true">Men</button><button data-g="women" aria-pressed="false">Women</button></div>
     <div id="rank-lead" class="rank-lead"></div><ol id="rankings" class="rankings"></ol><p class="small" id="rank-week"></p></section>
@@ -199,7 +252,29 @@ def article_page(a, others, brief=False):
     <a class="panel-link" href="/schedule.html">Full schedule and calendar</a></section>
 </aside>
 </main>
-{components.SCRIPT if (a.get("videos") or a.get("draw")) else ""}"""
+{components.SCRIPT if (a.get("videos") or a.get("draw")) else ""}
+<script>
+// Fill the space beside the sidebar with more news, then stop where the two columns line up
+(function () {{
+  var main = document.querySelector(".article"), side = document.querySelector(".article-side");
+  var items = [].slice.call(document.querySelectorAll("#more-news .promo"));
+  if (!main || !side || !items.length) return;
+  function fit() {{
+    items.forEach(function (x) {{ x.hidden = false; }});
+    var box = document.getElementById("more-news");
+    var stacked = side.getBoundingClientRect().top >= box.getBoundingClientRect().bottom - 5;
+    if (stacked) {{ items.forEach(function (x, k) {{ x.hidden = k >= 6; }}); return; }}
+    for (var i = items.length - 1; i >= 3; i--) {{
+      if (box.getBoundingClientRect().bottom <= side.getBoundingClientRect().bottom + 40) break;
+      items[i].hidden = true;
+    }}
+  }}
+  fit();
+  window.addEventListener("load", fit);
+  window.addEventListener("resize", fit);
+  new MutationObserver(function () {{ clearTimeout(fit.t); fit.t = setTimeout(fit, 200); }}).observe(side, {{ childList: true, subtree: true }});
+}})();
+</script>"""
     og = img.get("url") if img.get("type") == "photo" else (SITE + build_events.poster(ev) if ev and build_events.poster(ev) else None)
     desc = a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
     # Short stories stay readable and shareable but are kept out of Google's index as thin pages
@@ -208,7 +283,9 @@ def article_page(a, others, brief=False):
 
 
 def main():
+    global STORIES
     arts = load_articles()
+    STORIES = story_list(arts)
     os.makedirs(os.path.join(ROOT, "news"), exist_ok=True)
     for a in arts:
         others = [o for o in arts if o["slug"] != a["slug"]]

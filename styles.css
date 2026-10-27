@@ -786,3 +786,8 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 .tk-arrow:hover { background: #fff; color: #14171c; }
 .tk-arrow.prev { left: 10px; } .tk-arrow.next { right: 10px; }
 @media (hover: none) { .tk-arrow { display: none; } }
+.more-news { margin-top: 36px; }
+.article-side .tops ol { margin-top: 4px; }
+.article-side .tops li { grid-template-columns: 30px 1fr; padding: 10px 0; }
+.article-side .tops a { font-size: 15px; }
+.pic.cartoon img { width: 100%; height: 100%; object-fit: cover; }
