@@ -585,3 +585,27 @@ footer + * , .footer { margin-top: 0; }
 .home-watch .section-title a { color: inherit; }
 .home-watch .video-grid { grid-template-columns: 1fr 1fr; }
 @media (max-width: 560px) { .home-watch .video-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Live scores */
+.lv-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--live); margin-right: 8px; vertical-align: middle; animation: pulse 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .lv-dot { animation: none; } }
+.lv-now { display: grid; gap: 12px; }
+.lv-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+.lv-sub { font-size: 16px; margin: 22px 0 10px; }
+.lv-card { border-radius: var(--radius); background: var(--card); border: 1px solid var(--rule); padding: 12px 14px; }
+.lv-card.is-live { background: var(--sb-dark, #17202b); color: #fff; border-color: transparent; }
+.lv-meta { display: flex; justify-content: space-between; gap: 10px; margin: 0 0 8px; font-size: 12px; font-weight: 600; color: var(--muted); }
+.lv-card.is-live .lv-meta { color: rgba(255,255,255,.75); }
+.lv-card.is-live .lv-meta span:first-child { color: #ff6b6b; }
+.lv-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.lv-table th { text-align: left; font-weight: 600; padding: 4px 0; display: flex; align-items: center; gap: 6px; }
+.lv-table td { width: 30px; text-align: center; padding: 4px 0; font-size: 14px; opacity: .7; }
+.lv-table td.lv-sets { width: 34px; font-weight: 800; font-size: 18px; opacity: 1; }
+.lv-table td.lv-gw { opacity: 1; font-weight: 700; }
+.lv-table td.lv-cur { opacity: 1; font-weight: 800; color: #f37021; }
+.lv-won th { font-weight: 800; }
+.lv-nat { font-size: 11px; opacity: .6; }
+.lv-serve { width: 7px; height: 7px; border-radius: 50%; background: #f2b33d; }
+.lv-empty { margin: 0; padding: 16px; border: 1px dashed var(--rule); border-radius: var(--radius); color: var(--muted); }
+.score-card .pts { font-style: normal; margin-left: 6px; color: #f37021; font-weight: 700; }
+.score-card.is-live { border: 1px solid rgba(224, 51, 63, .35); }

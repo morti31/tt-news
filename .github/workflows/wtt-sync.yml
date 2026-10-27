@@ -1,0 +1,31 @@
+name: WTT sync
+# Pulls official WTT order of play, draws and the ITTF ranking into the site every 30 minutes.
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: wtt-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync from WTT
+        run: |
+          python3 tools/wtt_sync.py
+          python3 tools/build_calendar.py
+      - name: Commit changes
+        run: |
+          git config user.name "Tom Mortimer"
+          git config user.email "tommorti@gmail.com"
+          git add data/schedule.json data/draws data/rankings.json data/news.json calendar.ics
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          # calendar.ics alone changes on every run (timestamp); only commit when data changed
+          if git diff --cached --quiet -- data; then echo "Only the calendar timestamp changed"; exit 0; fi
+          git commit -q -m "WTT sync $(date -u +'%Y-%m-%d %H:%M')"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 10; done
+          exit 1

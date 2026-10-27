@@ -60,7 +60,7 @@ def status(ev, today):
 
 
 def index_entry(ev):
-    return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev)}
+    return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev), "wtt": ev.get("wtt_id")}
 
 
 def event_index(data):
@@ -153,7 +153,13 @@ def hub(ev, items, schedule, today, news):
     genders = {components._gender(m) for m in matches}
     board = components.scoreboard(matches) if {"M", "W"} <= genders else (
         '<section class="scoreboard" aria-label="Results"><div class="sb-more">' + "".join(components._compact(m) for m in matches) + "</div></section>")
-    results = f'<section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{board}</section>' if matches else ""
+    # Live scores straight from WTT while the event is on (refreshed in the browser by /live.js)
+    live_sec = ""
+    if ev.get("wtt_id") and st != "past":
+        live_sec = (f'<section class="hub-sec lv" id="live" data-wtt-live="{e(ev["wtt_id"])}" hidden>'
+                    '<h2 class="section-title"><span class="lv-dot"></span>Live scores</h2><div class="lv-now"></div>'
+                    '<h3 class="lv-sub">Latest results</h3><div class="lv-done lv-grid"></div><p class="small lv-note"></p></section>')
+    results = f'<section class="hub-sec" id="results"><h2 class="section-title">{"Key results" if live_sec else "Results"}</h2>{board}</section>' if matches else ""
     draw = components.draw(ev.get("draw"))
     draw = f'<section class="hub-sec" id="draw">{draw}</section>' if draw else ""
     vids, vseen = [], set()
@@ -168,7 +174,7 @@ def hub(ev, items, schedule, today, news):
     news_sec = f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2><ul class="archive">{stories}</ul></section>' if items else ""
     fixtures = _fixtures(ev, schedule)
     empty = "" if (results or draw or fixtures or items) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
-    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
+    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("live", "Live", live_sec), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
                                                                 ("watch", "Watch", watch), ("news", "News", news_sec)) if sec)
     facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev["events"]),
                                                                    ("Level", TIER_NAMES.get(ev["tier"], ""))) if v)
@@ -183,7 +189,7 @@ def hub(ev, items, schedule, today, news):
 </header>
 {f'<nav class="hub-jump" aria-label="On this page">{jump}</nav>' if jump else ""}
 <div class="hub-grid"><div class="hub-main">
-{empty}{results}{draw}{fixtures}{watch}{news_sec}
+{empty}{live_sec}{results}{draw}{fixtures}{watch}{news_sec}
 </div>
 <aside class="article-side">
   <section class="panel hub-facts"><h2 class="panel-title">Event guide</h2><dl>{facts}</dl></section>
@@ -192,7 +198,8 @@ def hub(ev, items, schedule, today, news):
     <a class="panel-link" href="/events/">All events</a></section>
 </aside></div>
 </main>
-{components.SCRIPT if (vids or ev.get("draw")) else ""}"""
+{components.SCRIPT if (vids or ev.get("draw")) else ""}
+{'<script src="/live.js" defer></script>' if live_sec else ""}"""
     return body
 
 

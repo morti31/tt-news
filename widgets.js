@@ -36,6 +36,33 @@
     }));
     $("ticker").innerHTML = cards.join("");
     if (!cards.length) $("ticker").closest(".ticker").hidden = true;
+
+    // Matches in play (and the latest finished ones) from WTT, for events with an Eleven event page
+    const liveHubs = events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id]);
+    if (liveHubs.length) {
+      const mcard = (m, hub) => {
+        const live = m.status === "live", g = m.games[m.games.length - 1] || [0, 0];
+        const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
+        const side = (i) => `<span class="row${won === i ? " won" : ""}"><span>${flag(m.sides[i].nat)}${esc(m.sides[i].name)}</span><b>${m.score[i]}${live ? `<i class="pts">${g[i]}</i>` : ""}</b></span>`;
+        return `<a class="score-card${live ? " is-live" : ""}" href="${esc(hub.url)}#live"><span class="ev">${live ? '<span class="live-dot"></span>' : ""}${esc(m.label)}</span>${side(0)}${side(1)}</a>`;
+      };
+      const refresh = async () => {
+        if (document.hidden) return;
+        let extra = [];
+        for (const hub of liveHubs) {
+          try {
+            const d = await fetch(`/api/live?event=${encodeURIComponent(hub.wtt)}`, { cache: "no-store" }).then((r) => r.json());
+            extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), (d.results || []).slice(0, 6).map((m) => mcard(m, hub)));
+          } catch (e) {}
+        }
+        if (!extra.length) return;
+        const on = cards.filter((c) => c.includes("live-card"));
+        $("ticker").innerHTML = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
+        $("ticker").closest(".ticker").hidden = false;
+      };
+      refresh();
+      setInterval(refresh, 20000);
+    }
   }
 
   // World rankings: leader card, then points with a bar against the No. 1
