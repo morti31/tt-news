@@ -99,6 +99,41 @@
     return `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${title}</${heading}><p>${esc(s.summary)}</p>${meta(s)}</div></article>`;
   };
 
+  // Highlights: two official videos side by side, from the event on now (or the latest one),
+  // rotating through the newest clips and pairing a men's and a women's match when both exist
+  function renderWatch() {
+    const all = (data.highlights || []).filter((v) => v.id);
+    if (all.length < 2) { $("watch").hidden = true; return false; }
+    const hubs = data.hubs || {};
+    const liveHub = data.events.filter((e) => e.start <= today && e.end >= today).map((e) => hubs[e.id]).find(Boolean);
+    const byDate = [...all].sort((a, b) => b.date.localeCompare(a.date));
+    let ev = liveHub && byDate.find((v) => hubs[v.event] === liveHub) ? byDate.find((v) => hubs[v.event] === liveHub).event : byDate[0].event;
+    let pool = byDate.filter((v) => v.event === ev).slice(0, 6);
+    if (pool.length < 2) pool = byDate.slice(0, 6);
+    const turn = Math.floor(Date.now() / 36e5);  // changes every hour
+    const men = pool.filter((v) => v.gender === "M"), women = pool.filter((v) => v.gender === "W");
+    const pick = men.length && women.length ? [men[turn % men.length], women[turn % women.length]]
+      : [pool[(2 * turn) % pool.length], pool[(2 * turn + 1) % pool.length]];
+    const hub = hubs[ev];
+    const head = hub ? `Highlights: <a href="${esc(hub.url)}">${esc(hub.name)} ${esc(hub.year)}</a>` : "Highlights";
+    $("watch").innerHTML = `<h2 id="watch-h" class="section-title">${head}</h2><div class="video-grid">` + pick.map((v) => `<figure class="video">
+      <button type="button" class="yt" data-yt="${esc(v.id)}" aria-label="Play video: ${esc(v.title)}">
+        <img src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="yt-play" aria-hidden="true"></span>
+      </button><figcaption>${esc(v.title)}<span>Video: ${esc(v.channel || "YouTube")}</span></figcaption></figure>`).join("") + "</div>";
+    $("watch").hidden = false;
+    return true;
+  }
+  document.addEventListener("click", (ev) => {
+    const b = ev.target.closest("#watch .yt");
+    if (!b) return;
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.yt + "?autoplay=1&rel=0";
+    f.title = b.getAttribute("aria-label").replace("Play video: ", "");
+    f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
+    f.allowFullscreen = true;
+    b.replaceWith(f);
+  });
+
   function render(cat) {
     const list = cat === "All" ? stories : stories.filter((s) => s.category === cat);
     const lead = list.find((s) => s.top) || list[0];
@@ -106,7 +141,11 @@
     $("lead").className = "lead";
     $("lead").innerHTML = lead ? card(lead, "h2") : '<div class="card"><div class="card-body"><p>Nothing in this section yet. New stories arrive with each update.</p></div></div>';
     $("second").innerHTML = rest.slice(0, 3).map((s) => card(s, "h3", false)).join("");
-    $("stories").innerHTML = rest.slice(3).map((s) => card(s)).join("");
+    // Keep the grid's rows full: an odd card out gives way to the highlights row
+    let more = rest.slice(3);
+    const watching = renderWatch();
+    if (watching && more.length % 2) more = more.slice(0, -1);
+    $("stories").innerHTML = more.map((s) => card(s)).join("");
     $("empty").hidden = rest.length > 3;
   }
   // Cartoons are inlined so their speech bubbles use the page's hand-lettered font

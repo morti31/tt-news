@@ -97,13 +97,15 @@ ACCENTS = {
 }
 # Licensed photos (Unsplash Licence); align is the crop focus inside the panel
 PHOTOS = {
-    "arena-hall.jpg": ("ARTO SURAJ", "https://unsplash.com/photos/empty-indoor-sports-arena-with-spectator-seating-_XlTp6nHbm0", "xMidYMin"),
+    "hall-lights.jpg": ("ARTO SURAJ", "https://unsplash.com/photos/empty-indoor-sports-arena-with-spectator-seating-_XlTp6nHbm0", "xMidYMid"),
     "seats-rows.jpg": ("Reed Mok", "https://unsplash.com/photos/teal-and-blue-chair-landscape-photography-9oduzVzk8LQ", "xMidYMid"),
+    "seats-blue.jpg": ("Reed Mok", "https://unsplash.com/photos/teal-and-blue-chair-landscape-photography-9oduzVzk8LQ", "xMidYMid"),
     "seats-dark.jpg": ("Milan Csizmadia", "https://unsplash.com/photos/black-and-white-piano-keys-WDLTwagtvSo", "xMidYMid"),
-    "stadium-roof.jpg": ("Winston Tjia", "https://unsplash.com/photos/a-stadium-filled-with-lots-of-empty-seats-4gX2Jj9zDBY", "xMidYMin"),
-    "arena-above.jpg": ("Tim Trad", "https://unsplash.com/photos/white-and-red-airplane-on-top-of-stadium-during-night-time-3PdOKrfzrYM", "xMidYMid"),
-    "dome.jpg": ("TAKAHIRO NISHIZONO", "https://unsplash.com/photos/stadium-seats-under-metal-dome-V06_qJzPt54", "xMidYMin"),
+    "stadium-seats.jpg": ("Winston Tjia", "https://unsplash.com/photos/a-stadium-filled-with-lots-of-empty-seats-4gX2Jj9zDBY", "xMidYMid"),
+    "dome-seats.jpg": ("TAKAHIRO NISHIZONO", "https://unsplash.com/photos/stadium-seats-under-metal-dome-V06_qJzPt54", "xMidYMid"),
 }
+# Photos are close crops of seating, lights or stands: never a whole stadium, so no poster
+# suggests a venue the event isn't played in
 LAYOUTS = 3
 
 
