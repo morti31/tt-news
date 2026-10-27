@@ -1,7 +1,263 @@
 {
-  "updated": "2026-10-27T12:40:00Z",
+  "updated": "2026-10-27T16:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "montpellier-day1-sun-lin-2026",
+      "category": "International",
+      "headline": "WTT Champions Montpellier: Sun Yingsha and Lin Shidong sweep into round of 16",
+      "summary": "Sun Yingsha beat France's Camille Lutz 11-6, 11-5, 11-3 in her first match for about three weeks, and Lin Shidong beat Korea's Lim Jonghoon 3-0 on the opening day of WTT Champions Montpellier. Hina Hayata and Bernadette Szőcs also won in straight games, while An Jaehyun came from two games down to beat Omar Assar.",
+      "body": [
+        "Sun conceded 14 points in three games against Lutz. Her previous match was a round of 32 defeat at the China Smash, after which she missed the Asian Championships in Tashkent. Speaking afterwards, she said injury and illness had disrupted her training and that she had only returned to a normal routine about ten days before travelling, according to Sina Sports. She plays Korea's Shin Yubin in the round of 16.",
+        "Lin beat Lim 11-7, 11-8, 11-2 in about 21 minutes, recovering from 0-6 down in the second game, Chinese outlets reported. He meets An, who beat Egypt's Assar 3-2 after taking the deciding game 13-11.",
+        "Hayata beat Hong Kong's Doo Hoi Kem 11-9, 11-7, 11-9, coming back from 3-8 down in the first game, and plays Szőcs next. The Romanian beat Korea's Kim Nayeong 11-7, 12-10, 11-9."
+      ],
+      "date": "2026-10-27",
+      "published": "2026-10-27T16:40:00Z",
+      "sources": [
+        {
+          "name": "Sina Sports (Chinese)",
+          "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908sodw.html"
+        },
+        {
+          "name": "Sina Sports: Sun Yingsha reaction (Chinese)",
+          "url": "https://k.sina.com.cn/article_7879995911_1d5af320706802xj20.html"
+        },
+        {
+          "name": "SMZDM (Chinese)",
+          "url": "https://post.smzdm.com/p/a5rxqp98/"
+        },
+        {
+          "name": "Sina Sports: Hayata v Doo (Chinese)",
+          "url": "https://k.sina.com.cn/article_7879995911_1d5af320706802xjbo.html"
+        },
+        {
+          "name": "Antena Sport (Romanian)",
+          "url": "https://as.ro/tenis-de-masa/bernadette-szocs-kim-nayeong-live-video-1630-romancele-debuteaza-la-wtt-champions-montpellier-2026-samara-joaca-la-2115-702145.html"
+        },
+        {
+          "name": "Flashscore",
+          "url": "https://www.flashscore.co.uk/match/table-tennis/an-jaehyun-xlDb2q11/assar-omar-O4wOa9rm/"
+        }
+      ],
+      "lang": "Chinese",
+      "author": "michael",
+      "top": true,
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "matches": [
+        {
+          "label": "Women's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Camille Lutz",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Lin Shidong",
+              "nat": "CHN"
+            },
+            {
+              "name": "Lim Jonghoon",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              2
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Hina Hayata",
+              "nat": "JPN"
+            },
+            {
+              "name": "Doo Hoi Kem",
+              "nat": "HKG"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "An Jaehyun",
+              "nat": "KOR"
+            },
+            {
+              "name": "Omar Assar",
+              "nat": "EGY"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ]
+        },
+        {
+          "label": "Women's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Bernadette Szőcs",
+              "nat": "ROU"
+            },
+            {
+              "name": "Kim Nayeong",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "montpellier-ranefur-kallberg-2026",
+      "category": "International",
+      "headline": "WTT Champions Montpellier: Ranefur saves match points to beat Källberg",
+      "summary": "Elias Ranefur came from two games down to beat his Swedish team-mate and close friend Anton Källberg 7-11, 8-11, 11-7, 12-10, 11-8 in the first round on Tuesday. He trailed 6-10 in the fourth game, and the match was held up for a long break while a wound on his arm was treated, Swedish media reported. He meets Alexis Lebrun or Patrick Franziska next.",
+      "date": "2026-10-27",
+      "published": "2026-10-27T16:45:00Z",
+      "sources": [
+        {
+          "name": "Sweden Herald",
+          "url": "https://swedenherald.com/article/elias-ranefur-rallies-to-beat-best-friend-anton-kallberg-in-fiveset-thriller-in-france"
+        },
+        {
+          "name": "Göteborgs-Posten (Swedish)",
+          "url": "https://www.gp.se/sport/blodigt-drama-nar-ranefur-slog-ut-basta-kompisen.29a5e3f4-19b3-5f2b-b539-7a1b39940b7d"
+        }
+      ],
+      "author": "michael",
+      "score": "3-2",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "matches": [
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Elias Ranefur",
+              "nat": "SWE"
+            },
+            {
+              "name": "Anton Källberg",
+              "nat": "SWE"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ]
+    },
     {
       "id": "montpellier-shin-cheng-2026",
       "category": "International",
@@ -26,7 +282,6 @@
       "lang": "Chinese",
       "author": "michael",
       "score": "3-0",
-      "top": true,
       "event": "wtt-champions-montpellier-2026",
       "draw": "3250",
       "matches": [

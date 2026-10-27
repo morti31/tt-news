@@ -2,7 +2,7 @@
  "event": "WTT Champions Montpellier",
  "wtt_event_id": "3250",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250&selectedTab=Draws",
- "updated": "2026-10-27T12:40:00Z",
+ "updated": "2026-10-27T16:45:00Z",
  "events": {
   "men": {
    "name": "Men's singles",
@@ -130,7 +130,9 @@
          "name": "Lim Jonghoon",
          "nat": "KOR"
         }
-       ]
+       ],
+       "winner": 0,
+       "score": "3-0"
       },
       {
        "when": "2026-10-27T13:55:00Z",
@@ -143,7 +145,9 @@
          "name": "Omar Assar",
          "nat": "EGY"
         }
-       ]
+       ],
+       "winner": 0,
+       "score": "3-2"
       },
       {
        "when": "2026-10-28T12:45:00Z",
@@ -197,7 +201,9 @@
          "name": "Anton Källberg",
          "nat": "SWE"
         }
-       ]
+       ],
+       "winner": 0,
+       "score": "3-2"
       },
       {
        "when": "2026-10-28T11:35:00Z",
@@ -257,8 +263,15 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        }
        ]
       },
       {
@@ -270,7 +283,10 @@
       {
        "players": [
         null,
-        null
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        }
        ]
       },
       {
@@ -520,7 +536,9 @@
          "name": "Doo Hoi Kem",
          "nat": "HKG"
         }
-       ]
+       ],
+       "winner": 0,
+       "score": "3-0"
       },
       {
        "when": "2026-10-27T14:30:00Z",
@@ -533,7 +551,9 @@
          "name": "Bernadette Szőcs",
          "nat": "ROU"
         }
-       ]
+       ],
+       "winner": 1,
+       "score": "3-0"
       },
       {
        "when": "2026-10-27T11:00:00Z",
@@ -562,7 +582,9 @@
          "nat": "CHN",
          "seed": 2
         }
-       ]
+       ],
+       "winner": 1,
+       "score": "3-0"
       }
      ]
     },
@@ -607,8 +629,15 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU"
+        }
        ]
       },
       {
@@ -617,7 +646,11 @@
          "name": "Shin Yubin",
          "nat": "KOR"
         },
-        null
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 2
+        }
        ]
       }
      ]
