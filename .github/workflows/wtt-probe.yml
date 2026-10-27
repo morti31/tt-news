@@ -1,15 +1,29 @@
 name: WTT probe
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      paths:
+        description: "Space-separated paths under liveeventsapi/api/cms/"
+        required: true
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Probe WTT live endpoints
+      - name: Probe WTT live endpoints and save the replies to the probe branch
+        env:
+          PATHS: ${{ inputs.paths }}
         run: |
           B="https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/liveeventsapi/api/cms"
-          H=(-H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/")
-          for p in "GetLiveResult?EventId=3250" "GetOfficialResult?EventId=3250&include_match_card=false&take=5" "GetEventSchedule/3250" "GetEventInfo/3250" "GetMatchCardDetails/3250" "GetBrackets/3250/TTEWSINGLES-------------------------------"; do
-            echo "=== $p"
-            curl -s -m 20 -w "\nHTTP %{http_code}\n" "${H[@]}" "$B/$p" | head -c 2500
-            echo
+          mkdir out && cd out
+          i=0
+          for p in $PATHS; do
+            i=$((i+1))
+            echo "$p" > "$i.path"
+            curl -s -m 25 -o "$i.body" -w "%{http_code}" -H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/" "$B/$p" > "$i.status" || true
           done
+          git init -q && git checkout -q -b probe
+          git config user.name probe && git config user.email probe@example.com
+          git add . && git commit -q -m probe
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" probe
