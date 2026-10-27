@@ -30,21 +30,41 @@
       const sc = /^(\d+)-(\d+)$/.exec(m.score || "");
       if (!sc || !m.loser) return;
       cards.push(`<a class="score-card" href="${esc(r.url)}" target="_blank" rel="noopener">
-        <span class="ev" title="${esc(r.event)}">${esc(m.round)}, ${esc(r.event.split(", ")[1] || r.event)}</span>
+        <span class="ev" title="${esc(r.event)}">${esc(m.round)}</span><span class="where">${esc(r.event)}</span>
         <span class="row won"><span>${withFlag(m.winner)}</span><b>${sc[1]}</b></span>
         <span class="row"><span>${withFlag(m.loser)}</span><b>${sc[2]}</b></span></a>`);
     }));
     $("ticker").innerHTML = cards.join("");
     if (!cards.length) $("ticker").closest(".ticker").hidden = true;
 
+    // Slim scrolling: hidden scrollbar, fade at the edges, arrow buttons on desktop
+    const strip = $("ticker"), shell = strip.closest(".ticker");
+    shell.classList.add("has-arrows");
+    shell.insertAdjacentHTML("beforeend", '<button class="tk-arrow prev" aria-label="Earlier scores" hidden>&#8249;</button><button class="tk-arrow next" aria-label="More scores">&#8250;</button>');
+    const prev = shell.querySelector(".prev"), next = shell.querySelector(".next");
+    const edges = () => {
+      prev.hidden = strip.scrollLeft < 8;
+      next.hidden = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 8;
+      shell.classList.toggle("at-start", prev.hidden);
+      shell.classList.toggle("at-end", next.hidden);
+    };
+    prev.addEventListener("click", () => strip.scrollBy({ left: -strip.clientWidth * 0.8, behavior: "smooth" }));
+    next.addEventListener("click", () => strip.scrollBy({ left: strip.clientWidth * 0.8, behavior: "smooth" }));
+    strip.addEventListener("scroll", edges, { passive: true });
+    window.addEventListener("resize", edges);
+    new MutationObserver(edges).observe(strip, { childList: true });
+    edges();
+
     // Matches in play (and the latest finished ones) from WTT, for events with an Eleven event page
     const liveHubs = events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id]);
     if (liveHubs.length) {
+      // "Women's singles, round of 32" -> "Women's singles R32", so the label fits the card
+      const short = (l) => String(l).replace(/, round of (\d+)/i, " R$1").replace(/, quarter-?finals?/i, " QF").replace(/, semi-?finals?/i, " SF").replace(/, final$/i, " final");
       const mcard = (m, hub) => {
         const live = m.status === "live", g = m.games[m.games.length - 1] || [0, 0];
         const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
         const side = (i) => `<span class="row${won === i ? " won" : ""}"><span>${flag(m.sides[i].nat)}${esc(m.sides[i].name)}</span><b>${m.score[i]}${live ? `<i class="pts">${g[i]}</i>` : ""}</b></span>`;
-        return `<a class="score-card${live ? " is-live" : ""}" href="${esc(hub.url)}#live"><span class="ev">${live ? '<span class="live-dot"></span>' : ""}${esc(m.label)}</span>${side(0)}${side(1)}</a>`;
+        return `<a class="score-card${live ? " is-live" : ""}" href="${esc(hub.url)}#live"><span class="ev">${live ? '<span class="live-dot"></span>' : ""}${esc(short(m.label))}</span><span class="where">${esc(hub.name)}</span>${side(0)}${side(1)}</a>`;
       };
       const refresh = async () => {
         if (document.hidden) return;

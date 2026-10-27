@@ -771,3 +771,18 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 .rl-score span { font-size: 11px; color: var(--muted); }
 .tops .ad { margin-top: 24px; }
 .layout { margin-top: 0; padding-top: 28px; }
+
+/* Scores strip: two-line headers and slim scrolling */
+.score-card .where { display: block; font-size: 11px; color: #7d8592; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: -3px 0 4px; }
+.ticker { position: relative; }
+.ticker-inner { scrollbar-width: none; scroll-behavior: smooth; }
+.ticker-inner::-webkit-scrollbar { display: none; }
+.ticker.has-arrows::before, .ticker.has-arrows::after { content: ""; position: absolute; top: 0; bottom: 0; width: 56px; pointer-events: none; z-index: 1; transition: opacity .2s; }
+.ticker.has-arrows::before { left: 0; background: linear-gradient(90deg, var(--strip), transparent); }
+.ticker.has-arrows::after { right: 0; background: linear-gradient(270deg, var(--strip), transparent); }
+.ticker.at-start::before, .ticker.at-end::after { opacity: 0; }
+.tk-arrow { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 30px; height: 30px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25);
+  background: rgba(20,23,28,.85); color: #fff; font: 600 20px/1 "Figtree", sans-serif; cursor: pointer; display: grid; place-items: center; padding: 0 0 2px; }
+.tk-arrow:hover { background: #fff; color: #14171c; }
+.tk-arrow.prev { left: 10px; } .tk-arrow.next { right: 10px; }
+@media (hover: none) { .tk-arrow { display: none; } }
