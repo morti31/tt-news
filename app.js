@@ -146,7 +146,7 @@
     const list = Object.values(hubs).filter((h) => h.end && h.end >= today && !urls.has(h.url) && urls.add(h.url))
       .sort((a, b) => (a.start || "").localeCompare(b.start || "")).slice(0, 4);
     if (!list.length) return;
-    $("ev-row").innerHTML = `<div class="sec-head"><h2 id="evrow-h">Events</h2><a href="/events/">All events</a></div>
+    $("ev-row").innerHTML = `<div class="sec-head"><h2 id="evrow-h">Major events</h2><a href="/events/">All events</a></div>
       <div class="ev-tiles">${list.map((h) => `<a class="ev-tile" href="${esc(h.url)}"><img src="${esc(h.tile || h.poster)}" alt="" loading="lazy">
         <h3>${esc(h.name)}</h3><span>${h.start <= today ? "On now" : `${fmt(h.start)} to ${fmt(h.end)}`}</span></a>`).join("")}</div>`;
   }

@@ -52,11 +52,15 @@
         for (const hub of liveHubs) {
           try {
             const d = await fetch(`/api/live?event=${encodeURIComponent(hub.wtt)}`, { cache: "no-store" }).then((r) => r.json());
-            extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), (d.results || []).slice(0, 6).map((m) => mcard(m, hub)));
+            extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), (d.results || []).slice(0, 10).map((m) => mcard(m, hub)));
           } catch (e) {}
         }
-        if (!extra.length) return;
-        const on = cards.filter((c) => c.includes("live-card"));
+        // On the homepage the "on now" section shows the event and its four newest matches,
+        // so the strip carries on from there instead of repeating them
+        const onHome = !!$("onnow") && (document.body.classList.contains("has-onnow") || !location.hash);
+        if (onHome) extra = extra.slice(4);
+        if (!extra.length && !onHome) return;
+        const on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
         $("ticker").innerHTML = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
         $("ticker").closest(".ticker").hidden = false;
       };
@@ -80,11 +84,8 @@
       if (!list.length) return;
       const top = list[0], max = top.points || 1;
       const lead = $("rank-lead");
-      // Both world No. 1s, side by side at the same size, whichever list is showing
-      if (lead) lead.innerHTML = ["men", "women"].map((k) => {
-        const p = (news.rankings[k] || [])[0];
-        return p ? `<div class="rl"><span class="rl-label">${k === "men" ? "Men's" : "Women's"} No. 1</span><span class="rl-name">${flag(p.nat)}${esc(p.name)}</span><b class="rl-pts">${f(p.points)}</b></div>` : "";
-      }).join("");
+      if (lead) lead.innerHTML = `<div class="rl"><span class="rl-label">${g === "men" ? "Men's" : "Women's"} world No. 1</span><span class="rl-name">${flag(top.nat)}${esc(top.name)}</span></div>
+        <div class="rl-score"><b class="rl-pts">${f(top.points)}</b><span>points</span></div>`;
       $("rankings").innerHTML = list.slice(lead ? 1 : 0).map((p, k) => {
         const i = k + (lead ? 1 : 0);
         return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${esc(p.name)}</span><span class="nt">${flag(p.nat)}${esc(p.nat)}${move(p, i)}</span></span>

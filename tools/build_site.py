@@ -42,7 +42,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
 <p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
 
 
@@ -216,10 +216,10 @@ def main():
 
     items = "".join(f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(a['category'])}</span>
 <h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a></li>""" for a in arts)
-    archive = f"""<main class="wrap"><section class="sched-head"><div><h1>Archive</h1><p class="lede">Every full article published on Eleven, newest first.</p></div></section>
-<ul class="archive">{items or '<li class="empty">No full articles yet.</li>'}</ul></main>"""
+    archive = f"""<main class="wrap"><section class="sched-head"><div><h1>News</h1><p class="lede">Every news story published on Eleven, newest first.</p></div></section>
+<ul class="archive">{items or '<li class="empty">No news yet.</li>'}</ul></main>"""
     open(os.path.join(ROOT, "news", "index.html"), "w", encoding="utf-8").write(
-        page("Archive | Eleven", "Every full table tennis article published on Eleven.", f"{SITE}/news/", archive, news_cur=True))
+        page("News | Eleven", "Every table tennis news story published on Eleven.", f"{SITE}/news/", archive, news_cur=True))
 
     index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html", "published": a.get("published"),
                                             **({"video": a["videos"][0]["id"]} if a.get("videos") else {})} for a in arts}
@@ -326,7 +326,7 @@ def about_page():
 <p>We follow coverage from federations, organisers and media in English, Chinese, Japanese, Korean, German and French. Stories that rely mainly on non-English sources are marked as translated, and every story lists the sources it draws on so you can read the original reporting.</p>
 <p>We keep what has been confirmed separate from what has been reported, and say who reported it. Rankings come from the official ITTF list, and fixtures from organisers' published schedules.</p>
 <h2>Corrections</h2>
-<p>If we get something wrong, we want to know. Tell us through the <a href="/contact.html">contact page</a> and we will check it and correct the story. Significant corrections are noted on the article.</p>
+<p>If we get something wrong, we want to know. Tell us through the <a href="/contact.html">contact page</a> and we will check it and correct the story. Significant corrections are noted on the story.</p>
 <h2>Photos and illustrations</h2>
 <p>Photos are used under Creative Commons and other free licences, with the photographer and licence credited on each image. Illustrations are drawn for Eleven.</p>
 </div>
@@ -354,7 +354,7 @@ def contact_page():
   <p class="form-done" id="form-done" role="status" hidden>Message sent. Thanks, we'll reply as soon as we can.</p>
 </form></div>
 <aside class="info-side">
-<section class="panel"><h2 class="panel-title">Corrections</h2><p class="author-bio">Choose "Correction", include the article link and tell us what needs fixing.</p></section>
+<section class="panel"><h2 class="panel-title">Corrections</h2><p class="author-bio">Choose "Correction", include the link to the story and tell us what needs fixing.</p></section>
 <section class="panel" id="advertise"><h2 class="panel-title">Advertise with Eleven</h2><p class="author-bio">Eleven reaches table tennis players and fans across the UK and beyond. Choose "Advertising" and tell us what you have in mind.</p></section>
 </aside></div>
 </main>
