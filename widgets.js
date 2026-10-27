@@ -93,7 +93,7 @@ window.ElevenStream = function (el) {
     const liveHubs = events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id]);
     if (liveHubs.length) {
       // "Women's singles, round of 32" -> "Women's singles R32", so the label fits the card
-      const short = (l) => String(l).replace(/, round of (\d+)/i, " R$1").replace(/, quarter-?finals?/i, " QF").replace(/, semi-?finals?/i, " SF").replace(/, final$/i, " final");
+      const short = (l) => String(l).replace(/, (?:round of|last) (\d+)/i, " R$1").replace(/, quarter-?finals?/i, " QF").replace(/, semi-?finals?/i, " SF").replace(/, final$/i, " final");
       const mcard = (m, hub) => {
         const live = m.status === "live", g = m.games[m.games.length - 1] || [0, 0];
         const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);

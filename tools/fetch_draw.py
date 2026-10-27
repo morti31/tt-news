@@ -12,7 +12,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 API = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/liveeventsapi/api/cms/GetBrackets/{eid}/{code}"
 SUBEVENTS = {"men": ("Men's singles", "TTEMSINGLES-------------------------------"),
              "women": ("Women's singles", "TTEWSINGLES-------------------------------")}
-ROUNDS = {"R64-": "Round of 64", "R32-": "Round of 32", "8FNL": "Round of 16", "QFNL": "Quarter-finals", "SFNL": "Semi-finals", "FNL-": "Final"}
+ROUNDS = {"R64-": "Last 64", "R32-": "Last 32", "8FNL": "Last 16", "QFNL": "Quarter-finals", "SFNL": "Semi-finals", "FNL-": "Final"}
 FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
 # WTT data drops accents and uses its own forms for some names
 FIXES = {"Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo",
