@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       paths:
-        description: "Space-separated paths under liveeventsapi/api/cms/"
+        description: "Space-separated paths under liveeventsapi/api/cms/, or full URLs"
         required: true
 permissions:
   contents: write
@@ -21,7 +21,8 @@ jobs:
           for p in $PATHS; do
             i=$((i+1))
             echo "$p" > "$i.path"
-            curl -s -m 25 -o "$i.body" -w "%{http_code}" -H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/" "$B/$p" > "$i.status" || true
+            case "$p" in http*) U="$p";; *) U="$B/$p";; esac
+            curl -s -m 25 -o "$i.body" -w "%{http_code}" -H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/" "$U" > "$i.status" || true
           done
           git init -q && git checkout -q -b probe
           git config user.name probe && git config user.email probe@example.com
