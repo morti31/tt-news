@@ -1,7 +1,272 @@
 {
-  "updated": "2026-10-27T16:45:00Z",
+  "updated": "2026-10-27T22:00:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "montpellier-day1-evening-2026",
+      "category": "International",
+      "headline": "WTT Champions Montpellier: Félix Lebrun and Chen Yi win openers as Matsushima survives Qiu",
+      "summary": "Félix Lebrun beat Denmark's Anders Lind 11-8, 11-3, 11-3 and Chen Yi recovered from losing the first game to beat Peng Yu-han 3-1 on the first evening of WTT Champions Montpellier. Top seed Sora Matsushima beat Dang Qiu 11-2 in the deciding game, Elizabeta Samara knocked out Germany's Han Ying, and Truls Moregard beat Thibault Poret 3-0 despite appearing to feel his shoulder.",
+      "body": [
+        "Lebrun won 14 of 17 points after taking a close first game against Lind, tennis2table reported. He plays Oh Junsung or Zhou Qihao in the round of 16. Chen Yi lost the first game 12-10 from 9-8 up, then dropped only 12 points in the next three, according to Sina Sports. She meets Wang Manyu or Hana Goda next.",
+        "Matsushima led Qiu by two games, lost the next two 11-3 and 12-10, then took the decider 11-2, tischtennis.de reported. Samara beat Han 11-8, 11-4, 8-11, 11-7. Moregard won 11-8, 11-6, 11-8 but reached for his shoulder during the third game, Swedish media reported; it is not clear how serious it is.",
+        "Earlier, Lin Yun-Ju came from 2-1 down to beat Portugal's João Geraldo 8-11, 11-4, 5-11, 11-4, 11-6, according to United Daily News."
+      ],
+      "date": "2026-10-27",
+      "published": "2026-10-27T21:58:00Z",
+      "sources": [
+        {
+          "name": "tennis2table (French)",
+          "url": "https://tennis2table.com/tennis-de-table/wtt-champions-montpellier-felix-lebrun-balaie-anders-lind-3-0.html"
+        },
+        {
+          "name": "Sweden Herald",
+          "url": "https://swedenherald.com/article/truls-moregardh-cruises-into-montpellier-second-round-despite-shoulder-concern"
+        },
+        {
+          "name": "Hur Bra (Swedish)",
+          "url": "https://hurbra.se/truls-moregardh-poret-resultat-27-oktober-2026/"
+        },
+        {
+          "name": "tischtennis.de (German)",
+          "url": "https://www.tischtennis.de/news/niederlagen-von-qiu-und-han-zum-auftakt-des-champions-montpellier.html"
+        },
+        {
+          "name": "Digi Sport (Romanian)",
+          "url": "https://www.digisport.ro/tenis-de-masa/dubla-calificare-pentru-romania-la-wtt-champions-montpellier-2026-elizabeta-samara-a-urmat-o-pe-bernadette-szocs-4569959"
+        },
+        {
+          "name": "Sina Sports (Chinese)",
+          "url": "https://k.sina.cn/article_2195648472_82deefd800103cozu.html"
+        },
+        {
+          "name": "United Daily News (Chinese)",
+          "url": "https://udn.com/news/story/7005/9840998"
+        }
+      ],
+      "author": "michael",
+      "top": true,
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "matches": [
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Félix Lebrun",
+              "nat": "FRA"
+            },
+            {
+              "name": "Anders Lind",
+              "nat": "DEN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Chen Yi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Peng Yu-han",
+              "nat": "TPE"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sora Matsushima",
+              "nat": "JPN"
+            },
+            {
+              "name": "Dang Qiu",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              2
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Elizabeta Samara",
+              "nat": "ROU"
+            },
+            {
+              "name": "Han Ying",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Truls Moregard",
+              "nat": "SWE"
+            },
+            {
+              "name": "Thibault Poret",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, round of 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Lin Yun-Ju",
+              "nat": "TPE"
+            },
+            {
+              "name": "João Geraldo",
+              "nat": "POR"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        }
+      ]
+    },
     {
       "id": "montpellier-day1-sun-lin-2026",
       "category": "International",
@@ -42,7 +307,6 @@
       ],
       "lang": "Chinese",
       "author": "michael",
-      "top": true,
       "event": "wtt-champions-montpellier-2026",
       "draw": "3250",
       "matches": [

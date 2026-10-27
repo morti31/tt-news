@@ -127,6 +127,26 @@ async function stream(ctx, q) {
   return { status: "none" };
 }
 
+// ---- WTT's match highlights from the channel's Videos tab, e.g. "Chen Yi vs Peng Yu-Han | WS R32 | #WTTMontpellier 2026"
+const EVENTS = { MS: ["M", "men's singles"], WS: ["W", "women's singles"], MD: ["M", "men's doubles"], WD: ["W", "women's doubles"], XD: ["X", "mixed doubles"] };
+const ROUNDS = { F: "final", Final: "final", SF: "semi-final", QF: "quarter-final", R16: "round of 16", R32: "round of 32", R64: "round of 64" };
+
+async function highlights(ctx, q) {
+  const words = String(q || "").toLowerCase().split(/[\s,]+/).filter(Boolean);
+  const out = [];
+  for (const v of streamList(await page(`${CHANNEL}/videos`, ctx, 1800))) {
+    const parts = v.title.split("|").map((x) => x.trim());
+    if (parts.length < 3 || !/ vs /i.test(parts[0]) || /^(LIVE|FULL MATCH)/i.test(v.title)) continue;
+    if (words.length && !words.every((w) => v.title.toLowerCase().includes(w))) continue;
+    const [code, ...rest] = parts[1].split(/\s+/);
+    const ev = EVENTS[code];
+    if (!ev) continue;
+    const round = ROUNDS[rest.join(" ")] || rest.join(" ");
+    out.push({ id: v.id, title: `${parts[0]}, ${ev[1]} ${round}`.trim(), gender: ev[0], channel: "World Table Tennis" });
+  }
+  return { videos: out.slice(0, 16) };
+}
+
 const json = (data, status = 200, maxAge = 8) =>
   new Response(JSON.stringify(data), { status, headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": `public, max-age=${maxAge}` } });
 
@@ -147,6 +167,13 @@ export default {
         return json(await stream(ctx, url.searchParams.get("q")), 200, 60);
       } catch (err) {
         return json({ status: "none", detail: String(err.message || err) }, 200, 30);
+      }
+    }
+    if (url.pathname === "/api/highlights") {
+      try {
+        return json(await highlights(ctx, url.searchParams.get("q")), 200, 600);
+      } catch (err) {
+        return json({ videos: [], detail: String(err.message || err) }, 200, 60);
       }
     }
     return env.ASSETS.fetch(req);

@@ -2,7 +2,7 @@
  "event": "WTT Champions Montpellier",
  "wtt_event_id": "3250",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250&selectedTab=Draws",
- "updated": "2026-10-27T16:45:00Z",
+ "updated": "2026-10-27T22:00:00Z",
  "events": {
   "men": {
    "name": "Men's singles",
@@ -22,7 +22,9 @@
          "name": "Dang Qiu",
          "nat": "GER"
         }
-       ]
+       ],
+       "winner": 0,
+       "score": "3-2"
       },
       {
        "when": "2026-10-28T13:55:00Z",
@@ -116,7 +118,9 @@
          "nat": "TPE",
          "seed": 5
         }
-       ]
+       ],
+       "winner": 1,
+       "score": "3-2"
       },
       {
        "when": "2026-10-27T12:45:00Z",
@@ -174,7 +178,9 @@
          "nat": "SWE",
          "seed": 4
         }
-       ]
+       ],
+       "winner": 1,
+       "score": "3-0"
       },
       {
        "when": "2026-10-28T19:15:00Z",
@@ -230,7 +236,9 @@
          "nat": "FRA",
          "seed": 2
         }
-       ]
+       ],
+       "winner": 1,
+       "score": "3-0"
       }
      ]
     },
@@ -239,7 +247,11 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Sora Matsushima",
+         "nat": "JPN",
+         "seed": 1
+        },
         null
        ]
       },
@@ -258,7 +270,11 @@
       {
        "players": [
         null,
-        null
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 5
+        }
        ]
       },
       {
@@ -277,7 +293,11 @@
       {
        "players": [
         null,
-        null
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 4
+        }
        ]
       },
       {
@@ -292,7 +312,11 @@
       {
        "players": [
         null,
-        null
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -387,7 +411,9 @@
          "name": "Peng Yu-han",
          "nat": "TPE"
         }
-       ]
+       ],
+       "winner": 0,
+       "score": "3-1"
       },
       {
        "when": "2026-10-28T19:50:00Z",
@@ -508,7 +534,9 @@
          "name": "Elizabeta Samara",
          "nat": "ROU"
         }
-       ]
+       ],
+       "winner": 1,
+       "score": "3-1"
       },
       {
        "when": "2026-10-28T13:20:00Z",
@@ -594,7 +622,10 @@
       {
        "players": [
         null,
-        null
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        }
        ]
       },
       {
@@ -623,7 +654,10 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Elizabeta Samara",
+         "nat": "ROU"
+        },
         null
        ]
       },
