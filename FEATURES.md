@@ -9,13 +9,16 @@ A daily scheduled run writes one feature (analysis, opinion or original data), a
 2. Research, write, build the data, make the cover (below), then open the pull request and send Tom a push notification: "Today's feature is ready to approve: <headline>".
 3. Move the topic to **Done** with the date and slug, in the same pull request.
 
-## How to write it (Tom's style)
+## How to write it
 
-- **Open on a news hook**: something that happened in the last few days, a result, a quote, a decision. Two or three sentences, then widen out to the bigger story.
-- **Explain the system behind it**: history, money, rules, who decides. Plain explanation in short paragraphs, no jargon, no subheadings.
-- **Carry it with quotes**: secondary sources are fine. Quote only words that appear exactly in the published source, and say where they come from in the sentence: "Lebrun told L'Équipe", "Sun Yingsha said in an interview with Xinhua". Keep each quote under 30 words and use no more than five. Never invent or tidy a quote. Name translated quotes as translated: "told Sohu (translated from Chinese)".
-- **Bring original data together**: every piece has at least one number Eleven worked out itself (a count, a share, an average, a comparison over time), shown in a chart and explained in the text, with the method in one sentence ("Eleven counted...").
-- **End on the open question**: what happens next, what would change it, often a final quote.
+Follow STYLE.md (Guardian style) throughout; its Features section is the model. In particular:
+
+
+- **Open on a person and a moment** from the last few days: a result, a quote, a decision, told as a scene. Widen out to the bigger story by the third or fourth paragraph.
+- **Explain the system behind it**: history, money, rules, who decides. Plain explanation in short paragraphs, built around people rather than lists of numbers, no jargon, no subheadings.
+- **Carry it with quotes**: secondary sources are fine. Quote only words that appear exactly in the published source, and say where they come from in the sentence: "Lebrun told L'Équipe", "Sun Yingsha said in an interview with Xinhua". Don't attribute results or other established facts to an outlet; put those sources in `sources` only. Keep each quote under 30 words and use no more than five. Never invent or tidy a quote. Name translated quotes as translated: "told Sohu (translated from Chinese)".
+- **Bring original data together**: every piece has at least one number Eleven worked out itself (a count, a share, an average, a comparison over time), shown in a chart, with the method in one sentence. Keep to two or three numbers per paragraph; lists of names and countries go in the chart.
+- **End on an image, a quote or a sharp line** that answers or reframes the opening. Never a promise of future coverage.
 - Separate fact, reported claims, allegations and opinion clearly. Opinion pieces say they are opinion (`"kind": "Opinion"`) and still get every fact right.
 - British English. About 1,000 words (900 to 1,200). No em dashes, no clichés ("game-changer", "testament to", "landscape", "delve"), no "not X but Y", no padding.
 - Byline: Tom Mortimer (`"author": "tom"`).

@@ -8,7 +8,7 @@ For every event page in data/events.json with a "wtt_id" that is on now or start
 Once a day it also refreshes the ITTF world ranking (data/rankings.json and the sidebar top 10).
 Nothing is written if WTT can't be reached.
 """
-import json, os, sys, urllib.request, datetime as dt
+import json, os, re, sys, urllib.request, datetime as dt
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import fetch_draw, rankings
@@ -65,6 +65,7 @@ def fixtures(ev):
         desc = next((x["Value"] for x in u.get("ItemDescription", []) if x.get("Language") == "ENG"), u["Code"])
         parts = desc.split(" - ")   # "Men's Singles - Round of 32 - Match 10"
         what = ", ".join(p.lower() for p in parts[:2])
+        what = re.sub(r"round of (\d+)", r"last \1", what).replace("finals", "final")
         players = [person((s or {}).get("Competitor")) for s in ((u.get("StartList") or {}).get("Start") or [])]
         players = [p for p in players if p]
         title = f'{ev["name"]}: {" v ".join(players)}, {what}' if len(players) == 2 else f'{ev["name"]}: {desc.replace(" - ", ", ")}'

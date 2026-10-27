@@ -27,9 +27,10 @@ function playerName(raw, org) {
 }
 
 function label(desc) {
-  // "Women's Singles - Round of 32 - Match 14" -> "Women's singles, round of 32"
+  // "Women's Singles - Round of 32 - Match 14" -> "Women's singles, last 32" (Guardian style)
   const [ev, round] = String(desc || "").split(" - ");
-  return [ev && ev[0] + ev.slice(1).toLowerCase(), round && round.toLowerCase()].filter(Boolean).join(", ");
+  const r = round && round.toLowerCase().replace(/^round of (\d+)$/, "last $1").replace(/finals$/, "final");
+  return [ev && ev[0] + ev.slice(1).toLowerCase(), r].filter(Boolean).join(", ");
 }
 
 const pairs = (s) => String(s || "").split(",").filter(Boolean).map((g) => g.split("-").map(Number));
@@ -129,7 +130,7 @@ async function stream(ctx, q) {
 
 // ---- WTT's match highlights from the channel's Videos tab, e.g. "Chen Yi vs Peng Yu-Han | WS R32 | #WTTMontpellier 2026"
 const EVENTS = { MS: ["M", "men's singles"], WS: ["W", "women's singles"], MD: ["M", "men's doubles"], WD: ["W", "women's doubles"], XD: ["X", "mixed doubles"] };
-const ROUNDS = { F: "final", Final: "final", SF: "semi-final", QF: "quarter-final", R16: "round of 16", R32: "round of 32", R64: "round of 64" };
+const ROUNDS = { F: "final", Final: "final", SF: "semi-final", QF: "quarter-final", R16: "last 16", R32: "last 32", R64: "last 64" };
 
 async function highlights(ctx, q) {
   const words = String(q || "").toLowerCase().split(/[\s,]+/).filter(Boolean);

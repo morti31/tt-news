@@ -12,6 +12,9 @@ The shelves and planned titles are in `data/guides/plan.json`. A written guide i
 
 ## How to write them
 
+Follow STYLE.md (Guardian style) for spelling, numbers, names and tone.
+
+
 - **Reader**: someone who has just started watching or playing. Assume nothing; explain every term the first time it appears, or link to the glossary.
 - **Answer first**: the first paragraph answers the question in the title. Detail follows under `## ` subheadings (four to eight per guide).
 - **Length**: 600 to 1,200 words. Long enough to be the best answer on the web for the search, no longer.
