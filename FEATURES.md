@@ -5,7 +5,7 @@ A daily scheduled run writes one feature (analysis, opinion or original data), a
 ## Each run
 
 1. Pull `main`. Check open pull requests titled "Feature for review: ..." (`gh api "repos/morti31/tt-news/pulls?state=open"`). If one from an earlier day is still open, still write today's, on its own branch.
-2. Pick the topic: the first item under **Up next** that isn't marked done. If a news event makes another backlog idea timely (a result, an injury, a ranking change), take that one instead and say why in the pull request. When fewer than four ideas are left, add five new ones to the end of **Up next** in the same pull request, so Tom can approve or cut them.
+2. Pick the topic: the first item under **Up next** that isn't marked done and doesn't already have a "Feature for review" pull request, open or merged (check titles with `gh api "repos/morti31/tt-news/pulls?state=all&per_page=50"`). If a news event makes another backlog idea timely (a result, an injury, a ranking change), take that one instead and say why in the pull request. When fewer than four ideas are left, add five new ones to the end of **Up next** in the same pull request, so Tom can approve or cut them.
 3. Research, write, build the data, make the cover (below), then open the pull request and send Tom a push notification: "Today's feature is ready to approve: <headline>".
 4. Move the topic to **Done** with the date and slug, in the same pull request.
 
