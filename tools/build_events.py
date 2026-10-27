@@ -73,7 +73,7 @@ def index_entry(ev):
     bg, rule, ink = TINTS.get(c, ("#f1f3f7", "#dde1e8", "#111418"))
     return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev),
             "wtt": ev.get("wtt_id"), "series": ev["series"], "city": ev["city"], "venue": ev.get("venue"), "start": ev.get("start"),
-            "end": ev.get("end"), "group": ev["group"], "colour": c, "tint": bg, "tint_rule": rule, "tint_ink": ink}
+            "end": ev.get("end"), "group": ev["group"], "stream_q": ev.get("stream_q") or f'{ev["city"]} {ev["year"]}', "colour": c, "tint": bg, "tint_rule": rule, "tint_ink": ink}
 
 
 def event_index(data):
@@ -170,6 +170,7 @@ def hub(ev, items, schedule, today, news):
     live_sec = ""
     if ev.get("wtt_id") and st != "past":
         live_sec = (f'<section class="hub-sec lv" id="live" data-wtt-live="{e(ev["wtt_id"])}" hidden>'
+                    f'<div id="stream" class="hub-stream" data-stream-q="{e(ev.get("stream_q") or ev["city"] + " " + ev["year"])}" hidden></div>'
                     '<h2 class="section-title"><span class="lv-dot"></span>Live scores</h2><div class="lv-now"></div>'
                     '<h3 class="lv-sub">Latest results</h3><div class="lv-done lv-grid"></div><p class="small lv-note"></p></section>')
     results = f'<section class="hub-sec" id="results"><h2 class="section-title">{"Key results" if live_sec else "Results"}</h2>{board}</section>' if matches else ""

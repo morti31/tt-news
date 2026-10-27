@@ -51,6 +51,8 @@
     document.addEventListener("visibilitychange", tick);
   });
 
+  document.querySelectorAll("[data-stream-q]").forEach((el) => { if (window.ElevenStream && !el.closest(".onnow")) window.ElevenStream(el); });
+
   // Scores strip: matches in play lead the strip, linking to the event page
   window.ElevenLive = { get, card };
 })();

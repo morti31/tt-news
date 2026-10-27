@@ -103,15 +103,14 @@ async function page(url, ctx, ttl) {
 const unescapeJson = (s) => { try { return JSON.parse(`"${s}"`); } catch (e) { return s; } };
 
 function streamList(html) {
-  // Each video on the channel's Live tab, with whether it is on air now or still to come
-  return html.split('"videoRenderer":{"videoId":"').slice(1).map((chunk) => {
-    const title = (/"title":\{"runs":\[\{"text":"((?:[^"\\]|\\.)*)"/.exec(chunk) || [])[1] || "";
-    return {
-      id: chunk.slice(0, 11), title: unescapeJson(title),
-      live: /"style":"LIVE"|BADGE_STYLE_TYPE_LIVE_NOW/.test(chunk),
-      upcoming: chunk.includes('"upcomingEventData"'),
-    };
-  }).filter((v) => /^[\w-]{11}$/.test(v.id));
+  // Each video on the channel's Live tab: on air now, scheduled, or finished (watch back)
+  return html.split('"lockupViewModel":{').slice(1).map((chunk) => {
+    const id = (/"contentId":"([\w-]{11})"/.exec(chunk) || [])[1];
+    const title = (/"lockupMetadataViewModel":\{"title":\{"content":"((?:[^"\\]|\\.)*)"/.exec(chunk) || [])[1] || "";
+    const head = chunk.slice(0, 8000);
+    const when = (/"content":"(Scheduled for [^"]*)"/.exec(chunk) || [])[1] || null;
+    return { id, title: unescapeJson(title), live: /"text":"LIVE"/.test(head), upcoming: /Scheduled for|"content":"\d[\d,]* waiting"/.test(chunk.slice(0, 20000)), scheduled: when };
+  }).filter((v) => v.id);
 }
 
 async function stream(ctx, q) {
@@ -121,7 +120,7 @@ async function stream(ctx, q) {
   const list = streamList(await page(`${CHANNEL}/streams`, ctx, 60)).filter(match);
   const live = list.filter((v) => v.live);
   if (live.length) return { status: "live", ...live[0], channel: "World Table Tennis", more: live.slice(1, 4) };
-  const done = list.find((v) => !v.upcoming && !v.live);
+  const done = list.find((v) => !v.upcoming && !v.live);  // newest finished stream first, as the tab lists them
   const next = list.find((v) => v.upcoming);
   if (done) return { status: "replay", ...done, channel: "World Table Tennis", next: next || null };
   if (next) return { status: "upcoming", ...next, channel: "World Table Tennis" };

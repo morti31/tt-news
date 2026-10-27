@@ -810,3 +810,20 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 @media (max-width: 520px) { .more-grid { grid-template-columns: 1fr; } .more-grid .promo { grid-template-columns: 120px 1fr; } }
 .more-wide.continues .sec-head { border-bottom-width: 1px; }
 .more-wide.continues .sec-head h2, .more-wide.continues .sec-head a { display: none; }
+
+/* Live stream player */
+.stream { position: relative; background: #000; }
+.st-play { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; background: #000; cursor: pointer; overflow: hidden; }
+.st-play img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .92; }
+.stream iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; }
+.st-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 10px 14px; background: var(--strip); color: #fff; font-size: 14px; }
+.st-cap b { display: inline-flex; align-items: center; gap: 8px; }
+.st-cap span { color: #c9ced6; }
+.st-cap a { margin-left: auto; color: #9aa1ad; font-size: 12px; }
+.st-badge { display: inline-flex; align-items: center; padding: 2px 8px; background: var(--live); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.st-badge .live-dot { background: #fff; }
+.onnow-stream { margin: 10px 0 18px; }
+.hub-stream { margin-bottom: 26px; }
+.score-card.watch-card { background: var(--live); }
+.score-card.watch-card .ev, .score-card.watch-card .where, .score-card.watch-card .row:not(.won) { color: #fff; }
+.score-card.watch-card .live-dot { background: #fff; }

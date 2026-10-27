@@ -80,9 +80,12 @@
         <span class="lab sub">Day ${dnum} of ${n}${onHub.venue ? ` · ${esc(onHub.venue)}` : ""}</span>
         <div class="days">${days}</div>
         <a class="onnow-link" href="${esc(onHub.url)}">Draw, results and schedule</a></div>
-      <div class="onnow-live"><span class="lab">Live and latest</span><div class="lv-strip" id="onnow-live"><p class="lv-wait">Scores appear here when play starts.</p></div></div>
+      <div class="onnow-live"><div class="onnow-stream" data-stream-q="${esc(onHub.stream_q || onHub.city)}" hidden></div>
+        <span class="lab">Live and latest</span><div class="lv-strip" id="onnow-live"><p class="lv-wait">Scores appear here when play starts.</p></div></div>
     </div>`;
     if (onHub.wtt) liveScores();
+    const st = el.querySelector(".onnow-stream");
+    if (st && window.ElevenStream) window.ElevenStream(st);
   }
   async function liveScores() {
     const box = $("onnow-live");

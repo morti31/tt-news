@@ -1,5 +1,39 @@
 // Shared panels used on every page: the scores strip, world rankings and "Coming up".
 // Each renders only if its container exists on the page.
+// Live stream player: WTT's YouTube broadcast for an event, or the latest session to watch back
+window.ElevenStream = function (el) {
+  const q = el.dataset.streamQ, link = el.dataset.link || "";
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // "LIVE! | Infinity Arena I WTT Champions Montpellier 2026 | Session 1" -> "Session 1"
+  const part = (t) => (String(t).split("|").map((x) => x.trim()).filter((x) => /session|day|final/i.test(x)).join(", ")) || "Full session";
+  async function tick() {
+    if (document.hidden || el.querySelector("iframe")) return;
+    let s;
+    try { s = await fetch(`/api/stream?q=${encodeURIComponent(q)}`).then((r) => r.json()); } catch (e) { return; }
+    if (!s || !s.id || s.status === "none") { el.hidden = true; return; }
+    const live = s.status === "live", soon = s.status === "upcoming";
+    const head = live ? '<span class="st-badge"><span class="live-dot"></span>Live</span>Watch live' : soon ? "Coming up on the stream" : "Catch up on the action";
+    const thumb = `https://i.ytimg.com/vi/${esc(s.id)}/${live ? "hqdefault_live" : "hqdefault"}.jpg`;
+    el.innerHTML = `<div class="stream${live ? " is-live" : ""}">
+      <button type="button" class="st-play" data-yt="${esc(s.id)}" aria-label="Play: ${esc(s.title)}"><img src="${thumb}" alt="" loading="lazy"><span class="yt-play" aria-hidden="true"></span></button>
+      <div class="st-cap"><b>${head}</b><span>${esc(part(s.title))}${soon && s.scheduled ? ` · ${esc(s.scheduled)}` : ""}</span>
+      <a href="https://www.youtube.com/watch?v=${esc(s.id)}" target="_blank" rel="noopener">World Table Tennis on YouTube</a></div></div>`;
+    el.hidden = false;
+  }
+  el.addEventListener("click", (ev) => {
+    const b = ev.target.closest(".st-play");
+    if (!b) return;
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.yt + "?autoplay=1&rel=0";
+    f.title = b.getAttribute("aria-label");
+    f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
+    f.allowFullscreen = true;
+    b.replaceWith(f);
+  });
+  tick();
+  setInterval(tick, 60000);
+};
+
 (async function () {
   const $ = (id) => document.getElementById(id);
   if (!$("ticker") && !$("rankings") && !$("events") && !document.querySelector("[data-ad]")) return;
@@ -81,6 +115,12 @@
         if (onHome) extra = extra.slice(4);
         if (!extra.length && !onHome) return;
         const on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
+        for (const hub of liveHubs) {
+          try {
+            const st = await fetch(`/api/stream?q=${encodeURIComponent(hub.stream_q || hub.city)}`).then((r) => r.json());
+            if (st.status === "live" && !onHome) on.unshift(`<a class="score-card watch-card" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a>`);
+          } catch (e) {}
+        }
         $("ticker").innerHTML = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
         $("ticker").closest(".ticker").hidden = false;
       };
