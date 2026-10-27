@@ -301,12 +301,21 @@ def article_page(a, others, brief=False):
         "@context": "https://schema.org", "@type": "NewsArticle",
         "headline": a["title"][:110], "description": a["standfirst"],
         "datePublished": a.get("published", a["date"] + "T09:00:00Z"), "dateModified": a.get("modified", a.get("published", a["date"] + "T09:00:00Z")),
-        "author": [{"@type": "Person", "name": AUTHOR["name"], "url": f"{SITE}/news/"}],
-        "publisher": {"@type": "Organization", "name": "Eleven", "url": SITE},
+        "author": [{"@type": "Person", "name": AUTHOR["name"], "url": f"{SITE}/authors/{a.get('author', 'tom')}.html"}],
+        "publisher": {"@type": "NewsMediaOrganization", "name": "Eleven", "url": SITE,
+                      "logo": {"@type": "ImageObject", "url": f"{SITE}/img/icons/eleven-logo.png", "width": 600, "height": 60}},
         "mainEntityOfPage": url, "articleSection": a["category"], "wordCount": words, "inLanguage": "en-GB",
     }
+    # Google wants large images in several shapes: the photo, video still or event poster (wide and square)
+    images = []
     if img.get("type") == "photo":
-        ld["image"] = [img["url"]]
+        images.append(img["url"])
+    if vids:
+        images.append(f"https://i.ytimg.com/vi/{vids[0]['id']}/maxresdefault.jpg")
+    if ev0 and build_events.poster(ev0):
+        images += [SITE + build_events.poster(ev0)] + ([SITE + build_events.tile(ev0)] if build_events.tile(ev0) else [])
+    if images:
+        ld["image"] = images
     head = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
     body = f"""<main class="wrap article-wrap">
 <article class="article">
@@ -314,7 +323,7 @@ def article_page(a, others, brief=False):
   {tag}
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
-  <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
+  <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By <a href="/authors/{e(a.get('author', 'tom'))}.html">{e(AUTHOR['name'])}</a></span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
   {components.scoreboard(a.get("matches"))}
   {components.video_hero(vids[0]) if vids else hero(a)}
   <div class="article-body">
@@ -462,7 +471,35 @@ def main():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
-    open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+    open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n")
+    # Google News sitemap: full articles from the last two days
+    cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=2)
+    recent = [a for a in arts if dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00Z").replace("Z", "+00:00")) >= cutoff]
+    ns = ['<?xml version="1.0" encoding="UTF-8"?>',
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
+    for a in recent:
+        ns.append(f"  <url><loc>{SITE}/news/{e(a['slug'])}.html</loc><news:news><news:publication><news:name>Eleven</news:name><news:language>en</news:language></news:publication>"
+                  f"<news:publication_date>{e(a.get('published', a['date'] + 'T09:00:00Z'))}</news:publication_date><news:title>{e(a['title'])}</news:title></news:news></url>")
+    ns.append("</urlset>")
+    open(os.path.join(ROOT, "news-sitemap.xml"), "w", encoding="utf-8").write("\n".join(ns) + "\n")
+    # Writer pages: who they are and everything they have written
+    os.makedirs(os.path.join(ROOT, "authors"), exist_ok=True)
+    for key, au in AUTHORS.items():
+        mine = [i for i in STORIES if i["author"] == key]
+        li = "".join(f'<li class="archive-item"><a href="{i["url"]}"><h2>{e(i["title"])}</h2><time>{short_when(i["published"])}</time></a></li>' for i in mine)
+        ld_p = {"@context": "https://schema.org", "@type": "Person", "name": au["name"], "url": f"{SITE}/authors/{key}.html",
+                "worksFor": {"@type": "NewsMediaOrganization", "name": "Eleven", "url": SITE}}
+        if au.get("bio"):
+            ld_p["description"] = au["bio"]
+        body = f"""<main class="wrap info-wrap"><section class="sched-head"><div><p class="small-label">Writer</p><h1>{e(au["name"])}</h1>
+<p class="lede">{e(au.get("bio", ""))}</p></div></section><h2 class="rule-title">Latest by {e(au["name"])}</h2><ul class="archive">{li or '<li class="empty">No stories yet.</li>'}</ul></main>"""
+        open(os.path.join(ROOT, "authors", f"{key}.html"), "w", encoding="utf-8").write(
+            page(f"{au['name']} | Eleven", f"{au['name']} writes for Eleven. {au.get('bio', '')}"[:300], f"{SITE}/authors/{key}.html", body,
+                 f'<script type="application/ld+json">{json.dumps(ld_p, ensure_ascii=False)}</script>'))
+        urls.append((f"{SITE}/authors/{key}.html", today))
+    sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
+    open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
 
     def rfc822(a):
         d = dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00+00:00").replace("Z", "+00:00"))
