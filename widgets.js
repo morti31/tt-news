@@ -16,6 +16,8 @@
   try { news = await fetch("/data/news.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) {}
   try { sched = await fetch("/data/schedule.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) {}
   const events = sched.events || news.events || [];
+  let hubs = {};
+  if ($("events")) { try { hubs = await fetch("/data/event-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})); } catch (e) {} }
 
   // Scores strip, led by anything on now with a link to live scores
   if ($("ticker")) {
@@ -78,7 +80,7 @@
       const now = e.start <= today;
       const when = now ? `On now, until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
       return `<li class="${now ? "now" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
-        <div><span class="name">${esc(e.name)}</span><span class="when">${when}</span></div></li>`;
+        <div><span class="name">${hubs[e.id] ? `<a href="${esc(hubs[e.id].url)}">${esc(e.name)}</a>` : esc(e.name)}</span><span class="when">${when}</span></div></li>`;
     }).join("");
   }
 

@@ -19,11 +19,8 @@
         }
       ],
       "score": "3-2",
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/tashkent.svg"
-      },
-      "author": "michael"
+      "author": "michael",
+      "event": "asian-championships-2026"
     },
     {
       "id": "montpellier-draw-2026",
@@ -50,17 +47,14 @@
           "url": "https://rallys.online/topic/international/261026wttchampionsmontpelliermdraw/"
         }
       ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/montpellier.svg"
-      },
       "author": "michael",
       "body": [
         "The draw for WTT Champions Montpellier pits defending champion Truls Moregard against France's Thibault Poret and Tomokazu Harimoto against Simon Gauzy in the first round. Wen Ruibo and Liang Jingkun meet in an all-Chinese opener, according to Sohu.",
         "In the women's event Miwa Harimoto, who has won the last three Champions titles, plays Bruna Takahashi, Rallys reported. Last year's finalist Sabine Winter faces France's Jia Nan Yuan. Play starts on Tuesday."
       ],
       "draw": "3250",
-      "top": true
+      "top": true,
+      "event": "wtt-champions-montpellier-2026"
     },
     {
       "id": "asian-ws-final-2026",
@@ -101,10 +95,6 @@
           ]
         }
       ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/tashkent.svg"
-      },
       "score": "3-0",
       "social": [
         {
@@ -112,7 +102,8 @@
           "url": "https://www.instagram.com/p/De9m74ElyKw/",
           "account": "@ittfworld"
         }
-      ]
+      ],
+      "event": "asian-championships-2026"
     },
     {
       "id": "asian-teams-2026",
@@ -131,10 +122,7 @@
         }
       ],
       "author": "michael",
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/tashkent.svg"
-      }
+      "event": "asian-championships-2026"
     },
     {
       "id": "montpellier-preview-2026",
@@ -153,11 +141,8 @@
         }
       ],
       "lang": "Chinese",
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/montpellier.svg"
-      },
-      "author": "michael"
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026"
     },
     {
       "id": "americas-champs-2026",
@@ -171,11 +156,8 @@
           "url": "https://butterflyonline.com/venezuela-and-usa-take-team-titles-as-parity-prevails-at-americas-championships/"
         }
       ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/lima.svg"
-      },
-      "author": "michael"
+      "author": "michael",
+      "event": "americas-championships-2026"
     },
     {
       "id": "u21-national-cup-2026",

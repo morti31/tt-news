@@ -15,6 +15,9 @@
     try {
       data.articles = await fetch("data/article-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {}));
     } catch (e) { data.articles = {}; }
+    try {
+      data.hubs = await fetch("data/event-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {}));
+    } catch (e) { data.hubs = {}; }
   } catch (e) {
     $("lead").innerHTML = '<div class="card"><div class="card-body"><p>The news didn\'t load. Refresh the page to try again.</p></div></div>';
     return;
@@ -37,6 +40,8 @@
       return `<figure class="art photo"><img src="${esc(im.url)}" alt="${esc(im.alt || "")}" loading="lazy">
         <figcaption>${im.caption ? esc(im.caption) + ". " : ""}Photo: <a href="${esc(im.page)}" target="_blank" rel="noopener">${esc(im.credit)}</a>, <a href="${esc(im.licence_url)}" target="_blank" rel="noopener">${esc(im.licence)}</a></figcaption></figure>`;
     }
+    const hub = s.event && (data.hubs || {})[s.event];
+    if (hub && hub.poster) return `<figure class="art poster"><img src="${esc(hub.poster)}" alt="${esc(hub.name)} ${esc(hub.year)} poster" loading="lazy"></figure>`;
     if (im && im.type === "cartoon") return `<div class="art cartoon" data-cartoon="${esc(im.src)}"></div>`;
     // Fallback: a line drawing of the table, with the ball's flight varied per story
     const h = hash(s.id);

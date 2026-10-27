@@ -9,11 +9,20 @@ Output: news/<slug>.html, news/index.html, data/article-index.json, sitemap.xml,
 import json, os, glob, html, sys, datetime as dt
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import components
+import build_events
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
 NEWS = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))
 AUTHORS = NEWS.get("authors", {"tom": {"name": "Eleven"}})
+EVENTS = build_events.load()
+HUBS = {ev["id"]: ev for ev in EVENTS["events"]}
+STORY_EVENT = {s["id"]: s["event"] for s in NEWS.get("stories", []) if s.get("event")}
+
+
+def event_of(a):
+    """The hub event an article or story belongs to, if any."""
+    return HUBS.get(a.get("event") or STORY_EVENT.get(a.get("story_id"), ""))
 
 
 def author_of(a):
@@ -27,12 +36,12 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
 <li><a href="/">Home</a></li><li><a href="/#International">International</a></li>
-<li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
+<li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/events/">Events</a></li><li><a href="/schedule.html">Schedule</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#England">England</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">Archive</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
 <p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
 
 
@@ -69,7 +78,11 @@ def avatar(au, size):
 
 
 def hero(a):
-    im = a.get("image")
+    im = a.get("image") or {}
+    ev = event_of(a)
+    if im.get("type") != "photo" and ev and build_events.poster(ev):
+        return (f'<figure class="article-hero poster"><a href="/events/{ev["id"]}.html"><img src="{build_events.poster(ev)}" '
+                f'alt="{e(ev["name"])} {ev["year"]}: Eleven event poster" width="1600" height="900"></a></figure>')
     if not im:
         return ""
     if im["type"] == "photo":
@@ -134,6 +147,9 @@ def article_page(a, others, brief=False):
     if a.get("lang"):
         tag += f'<span class="translated">, translated from {e(a["lang"])}</span>'
     tag += "</span>"
+    ev = event_of(a)
+    crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
+             else f'<a href="/#{e(a["category"])}">{e(a["category"])}</a>')
     ps = [f"<p>{e(p)}</p>" for p in a["body"]]
     # Highlights sit after the second paragraph, like a broadcaster's match report
     vids = a.get("videos") or []
@@ -156,7 +172,7 @@ def article_page(a, others, brief=False):
     head = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
     body = f"""<main class="wrap article-wrap">
 <article class="article">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/#{e(a['category'])}">{e(a['category'])}</a></nav>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {crumb}</nav>
   {tag}
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
@@ -168,6 +184,7 @@ def article_page(a, others, brief=False):
   </div>
   {components.social(a.get("social"))}
   {components.draw(a.get("draw"))}
+  {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
 </article>
 <aside class="article-side">
@@ -182,7 +199,7 @@ def article_page(a, others, brief=False):
 </aside>
 </main>
 {components.SCRIPT if (a.get("videos") or a.get("draw")) else ""}"""
-    og = img.get("url") if img.get("type") == "photo" else None
+    og = img.get("url") if img.get("type") == "photo" else (SITE + build_events.poster(ev) if ev and build_events.poster(ev) else None)
     desc = a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
     # Short stories stay readable and shareable but are kept out of Google's index as thin pages
     return page(f"{a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
@@ -213,7 +230,7 @@ def main():
             continue
         brief = {"slug": s["id"], "title": s["headline"], "standfirst": "", "category": s["category"], "date": s["date"],
                  "body": s.get("body") or [s["summary"]], "sources": s.get("sources", []), "author": s.get("author", "tom")}
-        for k in ("lang", "image", "published", "matches", "videos", "draw", "social"):
+        for k in ("lang", "image", "published", "matches", "videos", "draw", "social", "event"):
             if s.get(k):
                 brief[k] = s[k]
         open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))
@@ -221,6 +238,7 @@ def main():
                           **({"video": s["videos"][0]["id"]} if s.get("videos") else {})}
         briefs += 1
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    hubs = build_hubs(arts)
 
     open(os.path.join(ROOT, "about.html"), "w", encoding="utf-8").write(about_page())
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
@@ -228,6 +246,7 @@ def main():
     today = dt.date.today().isoformat()
     urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts]
+    urls += [(f"{SITE}/events/", today)] + [(f"{SITE}/events/{h}.html", today) for h in hubs]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
@@ -244,6 +263,37 @@ def main():
     rss.append("</channel></rss>")
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write("\n".join(rss) + "\n")
     print(f"built {len(arts)} articles, {briefs} short pages, archive, sitemap ({len(urls)} URLs), robots.txt, feed.xml")
+
+
+def build_hubs(arts):
+    """Event hub pages, their calendars, the events index and data/event-index.json."""
+    os.makedirs(os.path.join(ROOT, "events"), exist_ok=True)
+    schedule = json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8"))
+    today = dt.datetime.now(UK).date().isoformat()
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    with_article = {a.get("story_id") for a in arts}
+    for ev in EVENTS["events"]:
+        items = []
+        for a in arts:
+            if event_of(a) is ev:
+                items.append((a, f"/news/{a['slug']}.html", a.get("published", a["date"]), f"By {author_of(a)['name']}, {pub_time(a)}"))
+        for s in NEWS.get("stories", []):
+            if s.get("event") == ev["id"] and s["id"] not in with_article:
+                items.append((s, f"/news/{s['id']}.html", s.get("published", s["date"]), f"By {author_of(s)['name']}, {pub_time(s)}"))
+        items.sort(key=lambda x: x[2], reverse=True)
+        body = build_events.hub(ev, items, schedule, today, NEWS)
+        place = ev.get("venue") or ev["city"]
+        desc = f'{ev["name"]} {ev["year"]}, {build_events.dates(ev)}, {place}: results, draw, schedule and news.'
+        poster = build_events.poster(ev)
+        open(os.path.join(ROOT, "events", ev["id"] + ".html"), "w", encoding="utf-8").write(
+            page(f'{ev["name"]} {ev["year"]}: results, draw and schedule | Eleven', desc, f'{SITE}/events/{ev["id"]}.html', body,
+                 og_image=SITE + poster if poster else None))
+        if ev.get("start"):
+            open(os.path.join(ROOT, "events", ev["id"] + ".ics"), "w", encoding="utf-8", newline="").write(build_events.calendar(ev, schedule, SITE, stamp))
+    open(os.path.join(ROOT, "events", "index.html"), "w", encoding="utf-8").write(
+        page("Events | Eleven", "Major table tennis tournaments: draws, results, schedules and news.", f"{SITE}/events/", build_events.index_page(EVENTS, today)))
+    json.dump(build_events.event_index(EVENTS), open(os.path.join(ROOT, "data", "event-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return [ev["id"] for ev in EVENTS["events"]]
 
 
 def about_page():
