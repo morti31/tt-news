@@ -1,0 +1,74 @@
+{
+  "intro": "Everything you need to follow and play table tennis, in order: start with the basics, then work out how the professional game fits together, then choose your kit.",
+  "shelves": [
+    {
+      "key": "start", "num": "1", "title": "Start here",
+      "intro": "The rules, the scoring and how to get playing.",
+      "items": [
+        {"slug": "table-tennis-rules-explained", "title": "Table tennis rules explained in five minutes"},
+        {"slug": "table-tennis-scoring-explained", "title": "How scoring works: points, games, matches and deuce"},
+        {"slug": "legal-serve-rules", "title": "What makes a serve legal?"},
+        {"slug": "doubles-rules-explained", "title": "Doubles: the order of play and the extra rules"},
+        {"slug": "how-to-start-playing-table-tennis", "title": "How to start playing table tennis as an adult"},
+        {"slug": "find-a-table-tennis-club-england", "title": "How to find a club and join a league in England"}
+      ]
+    },
+    {
+      "key": "pro", "num": "2", "title": "How the pro game works",
+      "intro": "Who runs the sport, which events matter and how players qualify.",
+      "items": [
+        {"slug": "ittf-and-wtt-explained", "title": "ITTF and WTT: who runs table tennis?"},
+        {"slug": "wtt-event-tiers-explained", "title": "Grand Smash, Champions, Star Contender: the WTT events explained"},
+        {"slug": "how-table-tennis-world-rankings-work", "title": "How the world rankings work"},
+        {"slug": "world-table-tennis-championships-explained", "title": "The World Championships: singles years, team years and how players qualify"},
+        {"slug": "olympic-table-tennis-qualification", "title": "Table tennis at the Olympics: format and qualification"},
+        {"slug": "table-tennis-world-cup-explained", "title": "The World Cups and the WTT Finals"},
+        {"slug": "team-table-tennis-format", "title": "How team matches work"},
+        {"slug": "table-tennis-season-calendar", "title": "The table tennis season, month by month"},
+        {"slug": "where-to-watch-table-tennis", "title": "How to watch table tennis live in the UK"}
+      ]
+    },
+    {
+      "key": "clubs", "num": "3", "title": "Leagues and the club game",
+      "intro": "Where the professionals play between tournaments, and how the game is organised at home.",
+      "items": [
+        {"slug": "professional-table-tennis-leagues", "title": "The professional leagues: Bundesliga, China Super League, T.League and more"},
+        {"slug": "ettu-champions-league-explained", "title": "The European Champions League explained"},
+        {"slug": "table-tennis-england-explained", "title": "How table tennis is run in England"},
+        {"slug": "table-tennis-england-ratings", "title": "Ratings and rankings for club players in England"}
+      ]
+    },
+    {
+      "key": "kit", "num": "4", "title": "Equipment",
+      "intro": "Bats, blades, rubbers and balls, with what to buy at every stage.",
+      "items": [
+        {"slug": "what-table-tennis-bat-to-buy", "title": "What bat should a beginner buy?"},
+        {"slug": "table-tennis-blades-explained", "title": "Blades explained: wood, carbon, speed and handles"},
+        {"slug": "table-tennis-rubbers-explained", "title": "Rubbers explained: inverted, pimples and anti-spin"},
+        {"slug": "rubber-sponge-thickness-hardness", "title": "Sponge thickness and hardness: what the numbers mean"},
+        {"slug": "tacky-vs-tensor-rubbers", "title": "Chinese tacky against European tensor rubbers"},
+        {"slug": "custom-vs-ready-made-bats", "title": "Custom or ready-made: when to build your own bat"},
+        {"slug": "ittf-approved-rubbers-and-racket-rules", "title": "Approved rubbers, colours and the racket rules"},
+        {"slug": "table-tennis-balls-explained", "title": "Balls: 40mm plastic, stars and why the ball changed"},
+        {"slug": "table-tennis-shoes-and-tables", "title": "Shoes, tables and the rest of the kit"}
+      ]
+    },
+    {
+      "key": "styles", "num": "5", "title": "Styles and tactics",
+      "intro": "What you're watching when two players meet, and how to start thinking like one.",
+      "items": [
+        {"slug": "penhold-vs-shakehand-grip", "title": "Penhold or shakehand: the two grips"},
+        {"slug": "table-tennis-playing-styles", "title": "Attackers, defenders and blockers: the playing styles"},
+        {"slug": "spin-in-table-tennis-explained", "title": "Spin explained: topspin, backspin and sidespin"},
+        {"slug": "serve-and-receive-tactics", "title": "Why the serve and the return decide so many points"}
+      ]
+    },
+    {
+      "key": "words", "num": "6", "title": "Glossary",
+      "intro": "The words commentators use, in plain English.",
+      "items": [
+        {"slug": "table-tennis-glossary", "title": "Table tennis glossary: from banana flick to chiquita"}
+      ]
+    }
+  ]
+}

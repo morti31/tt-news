@@ -848,3 +848,46 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 .chart b { text-align: right; font-variant-numeric: tabular-nums; }
 .ch-note, .ch-source { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 .chart p { font-size: 12px !important; line-height: 1.4; }
+
+/* The Guide */
+.guide-body h2 { font: 800 24px/1.2 "Inter Tight", sans-serif; margin: 1.6em 0 .5em; letter-spacing: -.01em; }
+.key-points { margin: 22px 0 26px; padding: 18px 22px; background: var(--International-tint); border-left: 4px solid var(--International); border-radius: 0 10px 10px 0; }
+.key-points h2 { font: 800 15px/1 "Inter Tight", sans-serif; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 10px; color: var(--International); }
+.key-points ul { margin: 0; padding-left: 18px; }
+.key-points li { margin: 6px 0; font-size: 16px; line-height: 1.5; }
+.guide-next { display: block; margin: 28px 0 0; padding: 16px 20px; border: 1px solid var(--rule); border-radius: 10px; text-decoration: none; color: inherit; }
+.guide-next:hover { border-color: var(--International); }
+.guide-next b { display: block; font: 700 20px/1.25 "Inter Tight", sans-serif; margin-top: 4px; }
+.guide-next b::after { content: " →"; color: var(--ball); }
+.guide-toc ol { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+.guide-toc li { counter-increment: g; display: grid; grid-template-columns: 26px 1fr; padding: 8px 0; border-bottom: 1px solid var(--rule); font-size: 15px; line-height: 1.35; }
+.guide-toc li::before { content: counter(g); font-weight: 800; color: var(--muted); }
+.guide-toc li.on::before, .guide-toc li.on a { color: var(--International); font-weight: 700; }
+.guide-toc a { color: inherit; text-decoration: none; }
+.guide-toc a:hover { text-decoration: underline; }
+.guide-toc .soon { color: var(--muted); }
+.guide-toc .soon small { grid-column: 2; font-size: 12px; }
+.guide-path ol { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; padding: 0; list-style: none; }
+.guide-path a { display: inline-flex; gap: 8px; align-items: center; padding: 8px 14px; border: 1px solid var(--rule); border-radius: 999px; text-decoration: none; color: inherit; font-weight: 600; font-size: 14px; }
+.guide-path a:hover { border-color: var(--International); }
+.guide-path b { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--International); color: #fff; font-size: 12px; }
+.shelf { padding: 28px 0 8px; border-top: 3px solid var(--ink, #121417); margin-top: 24px; scroll-margin-top: 20px; }
+.shelf-head { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px; align-items: start; margin-bottom: 18px; }
+.shelf-num { font: 800 52px/0.9 "Bricolage Grotesque", sans-serif; color: var(--ball); }
+.shelf-head h2 { font: 800 28px/1.1 "Inter Tight", sans-serif; margin: 0 0 4px; }
+.shelf-head p { margin: 0; color: var(--muted); }
+.gcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
+.gcard > a, .gcard.soon { display: flex; flex-direction: column; height: 100%; box-sizing: border-box; padding: 16px 18px; border: 1px solid var(--rule); border-top: 3px solid var(--International); border-radius: 0 0 8px 8px; text-decoration: none; color: inherit; }
+.gcard > a:hover h3 { text-decoration: underline; }
+.gcard h3 { font: 700 18px/1.3 "Inter Tight", sans-serif; margin: 0 0 6px; }
+.gcard p { margin: 0 0 10px; font-size: 15px; line-height: 1.45; color: var(--muted); }
+.gcard .meta { margin-top: auto; font-size: 13px; color: var(--muted); }
+.gcard.soon { border-top-color: var(--rule); opacity: .7; }
+.gcard.soon h3 { font-weight: 600; }
+.guide-strip { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 28px; align-items: center; margin: 32px 0; padding: 22px 26px; background: var(--International); color: #fff; border-radius: 12px; }
+.guide-strip h2 { font: 800 26px/1.1 "Inter Tight", sans-serif; margin: 0 0 6px; }
+.guide-strip p { margin: 0; opacity: .9; }
+.guide-strip ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.guide-strip ul a { display: inline-block; padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,.14); color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; }
+.guide-strip ul a:hover { background: #fff; color: var(--International); }
+@media (max-width: 760px) { .guide-strip { grid-template-columns: minmax(0, 1fr); } }

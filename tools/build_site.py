@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import components
 import build_events
 import build_rankings
+import build_guides
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
@@ -36,13 +37,13 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/features/">Features</a></li><li><a href="/rankings.html">Rankings</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/features/">Features</a></li><li><a href="/guide/">Guide</a></li><li><a href="/rankings.html">Rankings</a></li>
 <li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
 <p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
 
 
@@ -552,6 +553,7 @@ def main():
             page(f"{au['name']} | Eleven", f"{au['name']} writes for Eleven. {au.get('bio', '')}"[:300], f"{SITE}/authors/{key}.html", body,
                  f'<script type="application/ld+json">{json.dumps(ld_p, ensure_ascii=False)}</script>'))
         urls.append((f"{SITE}/authors/{key}.html", today))
+    urls += build_guides.build(page, SITE, AUTHORS, avatar, linkify)
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
