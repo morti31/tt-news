@@ -428,3 +428,26 @@ footer + * , .footer { margin-top: 0; }
   .sb-meta { flex-direction: column; gap: 2px; }
   .sb-meta span + span::before { display: none; }
 }
+
+/* Paired headline results (men's and women's at equal weight) */
+.sb-name { overflow-wrap: break-word; hyphens: manual; }
+.sb-event { background: var(--sb-dark); color: #c3cad6; text-align: center; font-size: 13px; padding: 14px 20px 0; }
+.sb-heads { display: grid; grid-template-columns: minmax(0, 1fr); }
+.sb-pair .sb-heads { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.sb-pair .sb-top.h0 { grid-column: 1; grid-row: 1; }
+.sb-pair .sb-top.h1 { grid-column: 2; grid-row: 1; border-left: 1px solid rgba(255,255,255,.12); }
+.sb-pair .sb-detail.h0 { grid-column: 1; grid-row: 2; }
+.sb-pair .sb-detail.h1 { grid-column: 2; grid-row: 2; border-left: 1px solid var(--rule); }
+.sb-pair .sb-top { padding-top: 12px; }
+.sb-pair .sb-name { font-size: clamp(16px, 1.6vw, 19px); }
+.sb-pair .sb-score b { min-width: 42px; height: 50px; font-size: 30px; }
+.sb-pair .sb-main { gap: 10px; }
+.sb-detail:empty { display: none; }
+@media (max-width: 760px) {
+  .sb-pair .sb-heads { grid-template-columns: minmax(0, 1fr); }
+  .sb-pair .sb-top.h0, .sb-pair .sb-top.h1, .sb-pair .sb-detail.h0, .sb-pair .sb-detail.h1 { grid-column: 1; grid-row: auto; border-left: 0; }
+  .sb-pair .sb-top.h1 { border-top: 1px solid rgba(255,255,255,.12); }
+}
+
+.sb-sub { font-size: 13px; font-weight: 600; color: var(--muted); margin: 12px 0 0; text-align: center; }
+.sb-more .sb-rubbers { padding: 0 0 6px; border-bottom: 1px solid var(--rule); }

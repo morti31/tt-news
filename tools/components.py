@@ -69,22 +69,28 @@ def _compact(m, label=None):
 </div>"""
 
 
-def scoreboard(matches):
-    if not matches:
-        return ""
-    m = matches[0]
+def _gender(m):
+    label = (m.get("label") or "").lower()
+    if label.startswith("women") or label.startswith("girls"):
+        return "W"
+    if label.startswith("men") or label.startswith("boys"):
+        return "M"
+    return None
+
+
+def _detail(m):
+    if m.get("rubbers"):
+        return '<div class="sb-rubbers">' + "".join(_compact(r, label="") for r in m["rubbers"]) + "</div>"
+    return _games_table(m)
+
+
+def _headline(m, i=0, show_event=True, with_detail=True):
     w = _winner(m.get("score"))
     a, b = m["sides"]
-    meta = "".join(f"<span>{e(x)}</span>" for x in (m.get("label"), m.get("event")) if x)
+    meta = "".join(f"<span>{e(x)}</span>" for x in (m.get("label"), m.get("event") if show_event else None) if x)
     s = m.get("score") or ["", ""]
-    detail = _games_table(m)
-    if m.get("rubbers"):
-        detail = '<div class="sb-rubbers">' + "".join(_compact(r, label="") for r in m["rubbers"]) + "</div>"
-    more = ""
-    if len(matches) > 1:
-        more = '<div class="sb-more"><h2 class="sb-more-title">More results</h2>' + "".join(_compact(x) for x in matches[1:]) + "</div>"
-    return f"""<section class="scoreboard" aria-label="Result">
-  <div class="sb-top">
+    detail = _detail(m) if with_detail else ""
+    return f"""<div class="sb-top h{i}">
     <div class="sb-meta">{meta}</div>
     <div class="sb-main">
       {_side(a, w == 0, "left")}
@@ -93,7 +99,40 @@ def scoreboard(matches):
     </div>
     <p class="sb-status">{e(m.get("status", "Final result"))}</p>
   </div>
-  {detail}
+  <div class="sb-detail h{i}">{detail}</div>"""
+
+
+def scoreboard(matches):
+    """Headline result(s), then the rest as an equal-weight list.
+
+    Rule: never give one gender's result prominence over the other. When a story
+    covers both men's and women's events, the first men's and first women's results
+    are shown side by side at the same size. A story about one gender's events only
+    keeps a single headline.
+    """
+    if not matches:
+        return ""
+    men = next((m for m in matches if _gender(m) == "M"), None)
+    women = next((m for m in matches if _gender(m) == "W"), None)
+    if men and women:
+        heads = [m for m in matches if m is men or m is women]  # keep the story's own order
+    else:
+        heads = [matches[0]]
+    rest = [m for m in matches if not any(m is h for h in heads)]
+    pair = len(heads) == 2
+    # In a pair, extra detail sits under the cards only if both have it; otherwise it moves
+    # down to the results list so neither headline outweighs the other.
+    details_under = not pair or all(_detail(h) for h in heads)
+    moved = "" if details_under else "".join(
+        f'<h3 class="sb-sub">{e(h.get("label", ""))}: match by match</h3>{_detail(h)}' for h in heads if _detail(h))
+    more = ""
+    if rest or moved:
+        more = '<div class="sb-more"><h2 class="sb-more-title">More results</h2>' + moved + "".join(_compact(x) for x in rest) + "</div>"
+    event = next((h.get("event") for h in heads if h.get("event")), None)
+    strip = f'<div class="sb-event">{e(event)}</div>' if pair and event else ""
+    return f"""<section class="scoreboard{" sb-pair" if pair else ""}" aria-label="Results">
+  {strip}
+  <div class="sb-heads">{"".join(_headline(h, i, show_event=not pair, with_detail=details_under) for i, h in enumerate(heads))}</div>
   {more}
 </section>"""
 
