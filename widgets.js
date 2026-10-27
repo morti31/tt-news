@@ -17,15 +17,15 @@
   try { sched = await fetch("/data/schedule.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) {}
   const events = sched.events || news.events || [];
   let hubs = {};
-  if ($("events")) { try { hubs = await fetch("/data/event-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})); } catch (e) {} }
+  { try { hubs = await fetch("/data/event-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})); } catch (e) {} }
 
   // Scores strip, led by anything on now with a link to live scores
   if ($("ticker")) {
     const cards = events.filter((e) => e.start <= today && e.end >= today).map((e) =>
-      `<a class="score-card live-card" href="${esc(news.live_results_url || "https://www.worldtabletennis.com/")}" target="_blank" rel="noopener">
+      `<a class="score-card live-card" href="${esc(hubs[e.id] ? hubs[e.id].url : news.live_results_url || "https://www.worldtabletennis.com/")}"${hubs[e.id] ? "" : ' target="_blank" rel="noopener"'}>
         <span class="ev"><span class="live-dot"></span>On now</span>
         <span class="row won"><span>${esc(e.name)}</span></span>
-        <span class="row"><span>Live scores on WTT</span></span></a>`);
+        <span class="row"><span>${hubs[e.id] ? "Draw, results and schedule" : "Live scores on WTT"}</span></span></a>`);
     (news.results || []).forEach((r) => r.matches.forEach((m) => {
       const sc = /^(\d+)-(\d+)$/.exec(m.score || "");
       if (!sc || !m.loser) return;

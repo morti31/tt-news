@@ -82,7 +82,7 @@ def hero(a):
     ev = event_of(a)
     if im.get("type") != "photo" and ev and build_events.poster(ev):
         return (f'<figure class="article-hero poster"><a href="/events/{ev["id"]}.html"><img src="{build_events.poster(ev)}" '
-                f'alt="{e(ev["name"])} {ev["year"]}: Eleven event poster" width="1600" height="900"></a></figure>')
+                f'alt="{e(ev["name"])} {ev["year"]}: Eleven event poster" width="1600" height="900"></a><figcaption>{build_events.CREDIT}</figcaption></figure>')
     if not im:
         return ""
     if im["type"] == "photo":

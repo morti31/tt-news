@@ -13,6 +13,10 @@ TIER_NAMES = {"world": "World event", "smash": "Grand Smash", "champions": "WTT 
               "star": "WTT Star Contender", "contender": "WTT Contender", "club": "Club competition"}
 
 
+CREDIT = ('Poster by Eleven. Arena photo: <a href="https://unsplash.com/photos/empty-indoor-sports-arena-with-spectator-seating-_XlTp6nHbm0" rel="noopener">'
+          'ARTO SURAJ</a>, <a href="https://unsplash.com/license" rel="noopener">Unsplash Licence</a>')
+
+
 def load():
     path = os.path.join(ROOT, "data", "events.json")
     return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {"events": []}
@@ -112,7 +116,7 @@ def hub(ev, items, schedule, today, news):
     pill = {"now": '<span class="hub-status now">On now</span>', "next": '<span class="hub-status">Coming up</span>',
             "past": '<span class="hub-status past">Finished</span>'}[st]
     img = poster(ev)
-    hero = f'<figure class="hub-poster"><img src="{img}" alt="{e(ev["name"])} {ev["year"]} poster" width="1600" height="900"></figure>' if img else ""
+    hero = f'<figure class="hub-poster"><img src="{img}" alt="{e(ev["name"])} {ev["year"]} poster" width="1600" height="900"><figcaption>{CREDIT}</figcaption></figure>' if img else ""
     place = ev.get("venue") and f'{ev["venue"]}, {ev["city"]}, {ev["country"]}' or f'{ev["city"]}, {ev["country"]}'
     live = ""
     if st == "now" and ev.get("live"):

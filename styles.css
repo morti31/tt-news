@@ -529,3 +529,8 @@ footer + * , .footer { margin-top: 0; }
 .ev-card h3 { margin: 4px 16px 4px; font-size: 19px; line-height: 1.2; }
 .ev-card p { margin: 0 16px 16px; color: var(--muted); font-size: 14px; }
 .ev-card a:hover h3 { text-decoration: underline; }
+.live a.live-ev { margin-left: 0; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.art.poster img { object-position: left center; }
+.hub-poster { position: relative; }
+.hub-poster figcaption, .article-hero.poster figcaption { position: absolute; right: 0; bottom: 0; left: auto; padding: 4px 10px; font-size: 11px; color: #fff; background: rgba(0,0,0,.45); border-top-left-radius: 6px; }
+.hub-poster figcaption a, .article-hero.poster figcaption a { color: #fff; }

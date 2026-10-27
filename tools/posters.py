@@ -73,42 +73,102 @@ def date_range(ev):
     return f"{a.day} {a:%b} to {b.day} {b:%b %Y}"
 
 
+# Flashes of colour for each tier: two accents that sit against the tier colour
+ACCENTS = {
+    "world": ("#ffb81c", "#ff5a1f"),
+    "smash": ("#ff2d7a", "#7b2ff7"),
+    "champions": ("#ff5a1f", "#ffb81c"),
+    "continental": ("#ffb81c", "#ff4f7b"),
+    "star": ("#ff7a00", "#d9f03c"),
+    "contender": ("#3ad1c0", "#ff5a1f"),
+    "club": ("#f2c230", "#ff5a1f"),
+}
+PHOTOS = {"arena-hall.jpg": "Arena photo: ARTO SURAJ on Unsplash"}
+
+
+def photo_href(ev):
+    import base64
+    path = os.path.join(ROOT, "img", "posters", "photos", ev.get("photo", "arena-hall.jpg"))
+    return "data:image/jpeg;base64," + base64.b64encode(open(path, "rb").read()).decode()
+
+
+def _rgb(h):
+    return [int(h[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+
+
 def grid(ev, uid):
-    """A, Grid: paper stock, an exact typographic grid, the tournament laid out like a timetable."""
+    """D, Grid: paper stock and a timetable grid, beside a duotone arena photo with flashes of colour."""
     c, deep = TIERS[ev["tier"]]
-    ink, paper, L, R = "#121417", "#f3f1ec", 96, 1504
+    a1, a2 = ACCENTS[ev["tier"]]
+    ink, paper, L, R, P = "#121417", "#f3f1ec", 96, 936, 1000   # P: where the photo panel starts
     defs, noise = grain(uid, .05, dark=True)
     title = ev["city"].upper()
-    size = fit(title, R - L, 360, -0.005)
-    b = [f"<defs>{defs}</defs>", f'<rect width="{W}" height="{H}" fill="{paper}"/>']
-    b.append(label(ev["series"], L, 92, ink, 18, opacity=1))
-    b.append(label(f'{ev["city"]}, {ev["country"]}', R, 92, ink, 18, "end", .6))
-    b.append(f'<rect x="{L}" y="112" width="{R - L}" height="2" fill="{ink}"/>')
-    base = 128 + size * 0.73
+    size = fit(title, R - L, 250, -0.005)
+    d, m = _rgb(deep), _rgb(c)
+    hi = [min(1, x * .45 + .62) for x in m]   # highlights: the tier colour lifted towards white
+    duo = "".join(f'<feFunc{ch} type="table" tableValues="{d[i] * .7:.3f} {d[i]:.3f} {m[i]:.3f} {hi[i]:.3f}"/>' for i, ch in enumerate("RGB"))
+    b = [f'<defs>{defs}'
+         f'<filter id="{uid}-duo" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>'
+         f'<feComponentTransfer>{duo}</feComponentTransfer></filter>'
+         f'<clipPath id="{uid}-panel"><rect x="{P}" y="0" width="{W - P}" height="{H}"/></clipPath>'
+         f'<linearGradient id="{uid}-flash" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a1}"/><stop offset="1" stop-color="{a2}"/></linearGradient>'
+         f'<linearGradient id="{uid}-shade" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="{deep}" stop-opacity="0"/><stop offset="1" stop-color="{deep}" stop-opacity=".85"/></linearGradient>'
+         f'</defs>',
+         f'<rect width="{W}" height="{H}" fill="{paper}"/>']
+    # photo panel: duotone arena, crop on the roof lights, then the colour flashes on top
+    b.append(f'<g clip-path="url(#{uid}-panel)">')
+    b.append(f'<image href="{photo_href(ev)}" x="{P - 560}" y="-40" width="1500" height="1000" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-duo)"/>')
+    b.append(f'<rect x="{P}" y="0" width="{W - P}" height="{H}" fill="url(#{uid}-shade)"/>')
+    b.append(f'<circle cx="{P}" cy="{H}" r="300" fill="none" stroke="{a1}" stroke-width="34"/>')
+    b.append(f'<circle cx="{P}" cy="{H}" r="356" fill="none" stroke="{a2}" stroke-width="6"/>')
+    b.append(f'<circle cx="1452" cy="214" r="118" fill="url(#{uid}-flash)"/>')
+    b.append(f'<circle cx="1452" cy="214" r="146" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>')
+    b.append("</g>")
+    b.append(f'<rect x="{P}" y="0" width="10" height="{H}" fill="{a1}"/>')
+    b.append(t(ev["year"], W - 64, H - 56, 168, "#fff", 300, "end", -0.03))
+    b.append(t("Eleven", P + 52, 92, 26, "#fff", 800))
+    if ev.get("coords"):
+        b.append(label(ev["coords"], P + 52, 120, "#fff", 12, opacity=.7))
+    # paper side
+    b.append(f'<rect x="{L}" y="70" width="40" height="8" fill="{a1}"/><rect x="{L + 40}" y="70" width="40" height="8" fill="{c}"/>')
+    b.append(label(ev["series"], L, 118, ink, 18, opacity=1))
+    b.append(f'<rect x="{L}" y="138" width="{R - L}" height="2" fill="{ink}"/>')
+    base = 156 + size * 0.73
     b.append(t(title, L - size * 0.02, base, size, ink, 800, track=-0.005, stretch=75))
-    y = base + 44
+    y = base + 40
     b.append(f'<rect x="{L}" y="{y:.0f}" width="{R - L}" height="1" fill="{ink}" fill-opacity=".35"/>')
     cols = (("Dates", date_range(ev)), ("Venue", place(ev)), ("Events", ev["events"]))
+    colw = (R - L) / 3
     for i, (k, v) in enumerate(cols):
-        x = L + i * 380
-        b.append(label(k, x, y + 46, ink, 15, opacity=.55))
-        b.append(t(v, x, y + 84, 26, ink, 600))
-    b.append(t(ev["year"], R, y + 84, 56, c, 300, "end", -0.02))
+        x = L + i * colw
+        b.append(label(k, x, y + 42, ink, 14, opacity=.55))
+        words, lines = v.split(), [""]
+        for w_ in words:   # wrap at roughly the column width
+            if len(lines[-1]) + len(w_) > 20 and lines[-1]:
+                lines.append(w_)
+            else:
+                lines[-1] = (lines[-1] + " " + w_).strip()
+        for j, ln in enumerate(lines[:2]):
+            b.append(t(ln, x, y + 76 + j * 28, 22, ink, 600))
     ds = days(ev)
-    top, cw = 700, (R - L) / max(1, len(ds))
+    top = 690
     b.append(f'<rect x="{L}" y="{top}" width="{R - L}" height="1" fill="{ink}" fill-opacity=".35"/>')
-    for i, d in enumerate(ds):
-        x = L + i * cw
-        last = i == len(ds) - 1
-        if last:
-            b.append(f'<rect x="{x:.0f}" y="{top}" width="{cw:.0f}" height="{H - top - 60}" fill="{c}"/>')
-        elif i:
-            b.append(f'<rect x="{x:.0f}" y="{top + 20}" width="1" height="{H - top - 100}" fill="{ink}" fill-opacity=".18"/>')
-        col = "#fff" if last else ink
-        b.append(label(f"{d:%a}" + ("  Finals" if last else ""), x + 20, top + 40, col, 14, opacity=.9 if last else .55))
-        b.append(t(f"{d.day:02d}", x + 16, top + 128, 92, col, 300, track=-0.03))
-    b.append(wordmark(R, H - 22, ink, 20))
-    b.append(label("Eleven event series", L, H - 24, ink, 12, opacity=.45))
+    if ds:
+        cw = (R - L) / len(ds)
+        for i, dd in enumerate(ds):
+            x = L + i * cw
+            last = i == len(ds) - 1
+            if last:
+                b.append(f'<rect x="{x:.0f}" y="{top}" width="{cw:.0f}" height="{H - top - 64}" fill="url(#{uid}-flash)"/>')
+            elif i:
+                b.append(f'<rect x="{x:.0f}" y="{top + 20}" width="1" height="{H - top - 104}" fill="{ink}" fill-opacity=".18"/>')
+            col = ink
+            b.append(label(f"{dd:%a}", x + 14, top + 36, col, 13, opacity=.9 if last else .55))
+            b.append(t(f"{dd.day:02d}", x + 10, top + 116, min(84, cw * .62), col, 300 if not last else 600, track=-0.03))
+        b.append(label("Finals", L + (len(ds) - 1) * cw + 14, H - 82, ink, 12, opacity=.9))
+    else:
+        b.append(t(date_range(ev), L, top + 110, 84, ink, 300, track=-0.02))
+    b.append(label("Eleven event series", L, H - 26, ink, 12, opacity=.45))
     b.append(noise)
     return b
 

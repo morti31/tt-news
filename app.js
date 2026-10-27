@@ -71,7 +71,7 @@
   const today = new Date().toISOString().slice(0, 10);
   const live = data.events.filter((e) => e.start <= today && e.end >= today);
   if (live.length) {
-    $("live").innerHTML = '<span class="pulse">On now</span>' + live.map((e) => `<span>${esc(e.name)}</span>`).join("") +
+    $("live").innerHTML = '<span class="pulse">On now</span>' + live.map((e) => (data.hubs || {})[e.id] ? `<a class="live-ev" href="${esc(data.hubs[e.id].url)}">${esc(e.name)}</a>` : `<span>${esc(e.name)}</span>`).join("") +
       `<a href="${esc(data.live_results_url)}" target="_blank" rel="noopener">Live scores on WTT</a>`;
     $("live").hidden = false;
   }
