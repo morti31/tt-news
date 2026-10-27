@@ -7,6 +7,10 @@
   const day = (iso) => new Date(iso + "T12:00:00");
   const fmt = (iso, o = { day: "numeric", month: "short" }) => day(iso).toLocaleDateString("en-GB", o);
   const today = new Date().toISOString().slice(0, 10);
+  const FLAGS = {"CHN": "cn", "JPN": "jp", "KOR": "kr", "PRK": "kp", "HKG": "hk", "MAC": "mo", "SGP": "sg", "IND": "in", "IRI": "ir", "KAZ": "kz", "UZB": "uz", "THA": "th", "MAS": "my", "INA": "id", "VIE": "vn", "PHI": "ph", "QAT": "qa", "KSA": "sa", "UAE": "ae", "BRN": "bh", "EGY": "eg", "NGR": "ng", "ALG": "dz", "TUN": "tn", "MAR": "ma", "RSA": "za", "FRA": "fr", "GER": "de", "SWE": "se", "DEN": "dk", "NOR": "no", "FIN": "fi", "ENG": "gb-eng", "SCO": "gb-sct", "WAL": "gb-wls", "GBR": "gb", "IRL": "ie", "POR": "pt", "ESP": "es", "ITA": "it", "AUT": "at", "SUI": "ch", "BEL": "be", "NED": "nl", "LUX": "lu", "POL": "pl", "CZE": "cz", "SVK": "sk", "SLO": "si", "CRO": "hr", "SRB": "rs", "BIH": "ba", "MNE": "me", "MKD": "mk", "GRE": "gr", "TUR": "tr", "ROU": "ro", "HUN": "hu", "BUL": "bg", "UKR": "ua", "MDA": "md", "LTU": "lt", "LAT": "lv", "EST": "ee", "ISR": "il", "BRA": "br", "ARG": "ar", "CHI": "cl", "PER": "pe", "COL": "co", "VEN": "ve", "ECU": "ec", "URU": "uy", "PAR": "py", "MEX": "mx", "CUB": "cu", "DOM": "do", "PUR": "pr", "GUA": "gt", "CAN": "ca", "USA": "us", "AUS": "au", "NZL": "nz", "FIJ": "fj"};
+  const flag = (c) => (FLAGS[(c || "").toUpperCase()] ? `<span class="fi fi-${FLAGS[c.toUpperCase()]}" aria-hidden="true"></span>` : "");
+  // "Tomokazu Harimoto (JPN)" -> name with a flag before it
+  const withFlag = (s) => { const m = /^(.*?)\s*\(([A-Z]{3})\)$/.exec(s || ""); return m ? `${flag(m[2])}${esc(m[1])}` : esc(s); };
 
   let news = {}, sched = {};
   try { news = await fetch("/data/news.json", { cache: "no-store" }).then((r) => r.json()); } catch (e) {}
@@ -25,8 +29,8 @@
       if (!sc || !m.loser) return;
       cards.push(`<a class="score-card" href="${esc(r.url)}" target="_blank" rel="noopener">
         <span class="ev" title="${esc(r.event)}">${esc(m.round)}, ${esc(r.event.split(", ")[1] || r.event)}</span>
-        <span class="row won"><span>${esc(m.winner)}</span><b>${sc[1]}</b></span>
-        <span class="row"><span>${esc(m.loser)}</span><b>${sc[2]}</b></span></a>`);
+        <span class="row won"><span>${withFlag(m.winner)}</span><b>${sc[1]}</b></span>
+        <span class="row"><span>${withFlag(m.loser)}</span><b>${sc[2]}</b></span></a>`);
     }));
     $("ticker").innerHTML = cards.join("");
     if (!cards.length) $("ticker").closest(".ticker").hidden = true;
@@ -47,11 +51,11 @@
       if (!list.length) return;
       const top = list[0], max = top.points || 1;
       const lead = $("rank-lead");
-      if (lead) lead.innerHTML = `<div><span class="rl-label">World No. 1</span><span class="rl-name">${esc(top.name)}</span><span class="rl-nat">${esc(top.nat)}</span></div>
+      if (lead) lead.innerHTML = `<div><span class="rl-label">World No. 1</span><span class="rl-name">${esc(top.name)}</span><span class="rl-nat">${flag(top.nat)}${esc(top.nat)}</span></div>
         <div class="rl-pts"><b>${f(top.points)}</b><span>points</span></div>`;
       $("rankings").innerHTML = list.slice(lead ? 1 : 0).map((p, k) => {
         const i = k + (lead ? 1 : 0);
-        return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${esc(p.name)}</span><span class="nt">${esc(p.nat)}${move(p, i)}</span></span>
+        return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${esc(p.name)}</span><span class="nt">${flag(p.nat)}${esc(p.nat)}${move(p, i)}</span></span>
           <span class="pts">${p.points ? f(p.points) : ""}</span>
           ${p.points ? `<span class="bar"><i style="width:${Math.round(p.points / max * 100)}%"></i></span>` : ""}</li>`;
       }).join("");

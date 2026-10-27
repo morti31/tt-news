@@ -100,6 +100,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <link rel="alternate" type="application/rss+xml" title="Eleven" href="/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/img/icons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#17202b">
 {FONTS}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="/styles.css">
 {extra_head}
 </head>
@@ -135,7 +136,9 @@ def article_page(a, others, brief=False):
     tag += "</span>"
     ps = [f"<p>{e(p)}</p>" for p in a["body"]]
     # Highlights sit after the second paragraph, like a broadcaster's match report
-    ps.insert(min(2, len(ps)), components.videos(a.get("videos")))
+    vids = a.get("videos") or []
+    # The first official video becomes the lead image; any others go in the Watch section
+    ps.insert(min(2, len(ps)), components.videos(vids[1:]))
     paras = "\n".join(x for x in ps if x)
     sources = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in a["sources"])
     more = "".join(f'<li><a href="/news/{e(o["slug"])}.html">{e(o["title"])}</a><span>{pub_time(o)}</span></li>' for o in others[:5])
@@ -159,10 +162,11 @@ def article_page(a, others, brief=False):
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
   {components.scoreboard(a.get("matches"))}
-  {hero(a)}
+  {components.video_hero(vids[0]) if vids else hero(a)}
   <div class="article-body">
 {paras}
   </div>
+  {components.social(a.get("social"))}
   {components.draw(a.get("draw"))}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
 </article>
@@ -199,7 +203,8 @@ def main():
     open(os.path.join(ROOT, "news", "index.html"), "w", encoding="utf-8").write(
         page("Archive | Eleven", "Every full table tennis article published on Eleven.", f"{SITE}/news/", archive, news_cur=True))
 
-    index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html", "published": a.get("published")} for a in arts}
+    index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html", "published": a.get("published"),
+                                            **({"video": a["videos"][0]["id"]} if a.get("videos") else {})} for a in arts}
 
     # Short stories without a full article get a short page of their own
     briefs = 0
@@ -208,11 +213,12 @@ def main():
             continue
         brief = {"slug": s["id"], "title": s["headline"], "standfirst": "", "category": s["category"], "date": s["date"],
                  "body": s.get("body") or [s["summary"]], "sources": s.get("sources", []), "author": s.get("author", "tom")}
-        for k in ("lang", "image", "published", "matches", "videos", "draw"):
+        for k in ("lang", "image", "published", "matches", "videos", "draw", "social"):
             if s.get(k):
                 brief[k] = s[k]
         open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))
-        index[s["id"]] = {"slug": s["id"], "url": f"/news/{s['id']}.html", "brief": True}
+        index[s["id"]] = {"slug": s["id"], "url": f"/news/{s['id']}.html", "brief": True,
+                          **({"video": s["videos"][0]["id"]} if s.get("videos") else {})}
         briefs += 1
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 

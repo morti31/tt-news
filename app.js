@@ -27,6 +27,11 @@
   // Artwork: a table seen from above, with a ball in flight. Each story gets its own angle and flight path.
   const hash = (str) => { let h = 2166136261; for (const c of str) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; };
   function art(s, showScore = true) {
+    const full = (data.articles || {})[s.id];
+    if (full && full.video) {
+      return `<div class="art video-art"><img src="https://i.ytimg.com/vi/${esc(full.video)}/maxresdefault.jpg" alt="" loading="lazy"
+        onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(full.video)}/hqdefault.jpg'"><span class="yt-play" aria-hidden="true"></span></div>`;
+    }
     const im = s.image;
     if (im && im.type === "photo") {
       return `<figure class="art photo"><img src="${esc(im.url)}" alt="${esc(im.alt || "")}" loading="lazy">

@@ -17,6 +17,16 @@ Data shapes (all optional on an article in data/articles/*.json or a story in da
 import html, json, os, datetime as dt
 
 e = html.escape
+# ITTF country codes to flag-icons codes. TPE (competes under its Olympic flag) and
+# neutral athletes (RUS, BLR, AIN) deliberately get no flag, just the code.
+FLAGS = {"CHN": "cn", "JPN": "jp", "KOR": "kr", "PRK": "kp", "HKG": "hk", "MAC": "mo", "SGP": "sg", "IND": "in", "IRI": "ir", "KAZ": "kz", "UZB": "uz", "THA": "th", "MAS": "my", "INA": "id", "VIE": "vn", "PHI": "ph", "QAT": "qa", "KSA": "sa", "UAE": "ae", "BRN": "bh", "EGY": "eg", "NGR": "ng", "ALG": "dz", "TUN": "tn", "MAR": "ma", "RSA": "za", "FRA": "fr", "GER": "de", "SWE": "se", "DEN": "dk", "NOR": "no", "FIN": "fi", "ENG": "gb-eng", "SCO": "gb-sct", "WAL": "gb-wls", "GBR": "gb", "IRL": "ie", "POR": "pt", "ESP": "es", "ITA": "it", "AUT": "at", "SUI": "ch", "BEL": "be", "NED": "nl", "LUX": "lu", "POL": "pl", "CZE": "cz", "SVK": "sk", "SLO": "si", "CRO": "hr", "SRB": "rs", "BIH": "ba", "MNE": "me", "MKD": "mk", "GRE": "gr", "TUR": "tr", "ROU": "ro", "HUN": "hu", "BUL": "bg", "UKR": "ua", "MDA": "md", "LTU": "lt", "LAT": "lv", "EST": "ee", "ISR": "il", "BRA": "br", "ARG": "ar", "CHI": "cl", "PER": "pe", "COL": "co", "VEN": "ve", "ECU": "ec", "URU": "uy", "PAR": "py", "MEX": "mx", "CUB": "cu", "DOM": "do", "PUR": "pr", "GUA": "gt", "CAN": "ca", "USA": "us", "AUS": "au", "NZL": "nz", "FIJ": "fj"}
+
+
+def flag(code):
+    f = FLAGS.get((code or "").upper())
+    return f'<span class="fi fi-{f}" aria-hidden="true"></span>' if f else ""
+
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 try:
@@ -33,7 +43,7 @@ def _winner(score):
 
 
 def _side(p, won, align):
-    nat = f'<span class="sb-nat">{e(p.get("nat", ""))}</span>' if p.get("nat") else ""
+    nat = f'<span class="sb-nat">{flag(p.get("nat"))}{e(p.get("nat", ""))}</span>' if p.get("nat") else ""
     return f'<div class="sb-side {align}{" won" if won else ""}"><span class="sb-name">{e(p["name"])}</span>{nat}</div>'
 
 
@@ -62,9 +72,9 @@ def _compact(m, label=None):
     lab = label if label is not None else m.get("label", "")
     return f"""<div class="sb-row">
   {f'<span class="sb-row-label">{e(lab)}</span>' if lab else ""}
-  <span class="sb-row-a{" won" if w == 0 else ""}">{e(a["name"])}{f' <small>{e(a["nat"])}</small>' if a.get("nat") else ""}</span>
+  <span class="sb-row-a{" won" if w == 0 else ""}">{e(a["name"])}{f' <small>{flag(a["nat"])}{e(a["nat"])}</small>' if a.get("nat") else ""}</span>
   <span class="sb-row-score">{score}</span>
-  <span class="sb-row-b{" won" if w == 1 else ""}">{e(b["name"])}{f' <small>{e(b["nat"])}</small>' if b.get("nat") else ""}</span>
+  <span class="sb-row-b{" won" if w == 1 else ""}">{e(b["name"])}{f' <small>{flag(b["nat"])}{e(b["nat"])}</small>' if b.get("nat") else ""}</span>
   {_chips(m.get("games"))}
 </div>"""
 
@@ -158,7 +168,7 @@ def _bracket(ev):
                     continue
                 seed = f'<span class="seed">{p["seed"]}</span>' if p.get("seed") else '<span class="seed"></span>'
                 won = " won" if m.get("winner") == i else (" lost" if m.get("winner") is not None else "")
-                rows.append(f'<div class="br-p{won}">{seed}<span class="nm">{e(p["name"])}</span><span class="nat">{e(p["nat"])}</span><span class="sc">{e(scores[i].strip())}</span></div>')
+                rows.append(f'<div class="br-p{won}">{seed}<span class="nm">{e(p["name"])}</span><span class="nat">{flag(p["nat"])}{e(p["nat"])}</span><span class="sc">{e(scores[i].strip())}</span></div>')
             when = f'<span class="br-when">{_uk_time(m["when"])}</span>' if m.get("when") and m.get("winner") is None else ""
             boxes.append(f'<div class="br-slot">{when}<div class="br-match">{"".join(rows)}</div></div>')
         cols.append(f'<div class="br-round"><h3>{e(rd["round"])}</h3><div class="br-matches">{"".join(boxes)}</div></div>')
@@ -188,6 +198,23 @@ def draw(ref):
 </section>"""
 
 
+def thumb(vid):
+    """HD thumbnail, falling back to the standard one if the upload has no HD version."""
+    return (f'<img src="https://i.ytimg.com/vi/{e(vid)}/maxresdefault.jpg" alt="" '
+            f'onerror="this.onerror=null;this.src=\'https://i.ytimg.com/vi/{e(vid)}/hqdefault.jpg\'">')
+
+
+def video_hero(v):
+    """Lead image for a story with official video: the video's own preview, playing in place."""
+    return f"""<figure class="article-hero video-hero">
+  <button type="button" class="yt" data-yt="{e(v['id'])}" aria-label="Play video: {e(v['title'])}">
+    {thumb(v['id'])}<span class="yt-play" aria-hidden="true"></span>
+    <span class="yt-label"><span class="yt-badge">Watch</span>{e(v['title'])}</span>
+  </button>
+  <figcaption>Video: {e(v.get('channel', 'YouTube'))}</figcaption>
+</figure>"""
+
+
 def videos(vs):
     if not vs:
         return ""
@@ -199,6 +226,24 @@ def videos(vs):
   <figcaption>{e(v['title'])}<span>Video: {e(v.get('channel', 'YouTube'))}</span></figcaption>
 </figure>""" for v in vs)
     return f'<section class="videos" aria-labelledby="vid-h"><h2 id="vid-h">Watch</h2><div class="video-grid{" one" if len(vs) == 1 else ""}">{items}</div></section>'
+
+
+def social(posts):
+    """Official Instagram or X posts, shown through each platform's own embed code (which keeps the
+    photo with its owner and credits the account). Only official accounts: WTT, ITTF, federations,
+    clubs, leagues and the players themselves."""
+    if not posts:
+        return ""
+    items, scripts = [], set()
+    for p in posts:
+        url = e(p["url"])
+        if p["platform"] == "instagram":
+            items.append(f'<blockquote class="instagram-media" data-instgrm-permalink="{url}" data-instgrm-version="14"><a href="{url}" rel="noopener">View this post from {e(p.get("account", "Instagram"))} on Instagram</a></blockquote>')
+            scripts.add('<script async src="https://www.instagram.com/embed.js"></script>')
+        elif p["platform"] == "x":
+            items.append(f'<blockquote class="twitter-tweet" data-dnt="true" data-conversation="none"><a href="{url}" rel="noopener">View this post from {e(p.get("account", "X"))} on X</a></blockquote>')
+            scripts.add('<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>')
+    return f'<section class="social" aria-labelledby="soc-h"><h2 id="soc-h">From the event</h2><div class="social-grid">{"".join(items)}</div>{"".join(sorted(scripts))}</section>'
 
 
 SCRIPT = """<script>
