@@ -88,9 +88,20 @@ def _gender(m):
     return None
 
 
+def _with_team_nats(r, m):
+    """Players in a team tie inherit their team's country, so each match shows a flag."""
+    sides = []
+    for i, p in enumerate(r["sides"]):
+        p = dict(p)
+        if not p.get("nat") and m["sides"][i].get("nat"):
+            p["nat"] = m["sides"][i]["nat"]
+        sides.append(p)
+    return {**r, "sides": sides}
+
+
 def _detail(m):
     if m.get("rubbers"):
-        return '<div class="sb-rubbers">' + "".join(_compact(r, label="") for r in m["rubbers"]) + "</div>"
+        return '<div class="sb-rubbers">' + "".join(_compact(_with_team_nats(r, m), label="") for r in m["rubbers"]) + "</div>"
     return _games_table(m)
 
 
