@@ -126,9 +126,13 @@
     document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     render(b.dataset.cat);
   });
-  const fromHash = decodeURIComponent(location.hash.slice(1));
-  const startCat = ["International", "England", "Clubs", "Equipment"].includes(fromHash) ? fromHash : "All";
-  document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === startCat)));
-  render(startCat);
+  const fromHash = () => {
+    const h = decodeURIComponent(location.hash.slice(1));
+    const cat = ["International", "England", "Clubs", "Equipment"].includes(h) ? h : "All";
+    document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === cat)));
+    render(cat);
+  };
+  window.addEventListener("hashchange", () => { fromHash(); window.scrollTo(0, 0); });
+  fromHash();
 
 })();
