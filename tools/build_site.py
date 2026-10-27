@@ -158,6 +158,59 @@ def story_list(arts):
 
 
 STORIES = []
+TOP = []   # story ids in Top stories order (see top_stories)
+
+# How much each kind of event matters, on the schedule's 1 to 5 prestige scale
+TIER_PRESTIGE = {"world": 5, "smash": 4, "continental": 3.5, "champions": 3, "star": 2, "contender": 1.5, "club": 2}
+CATEGORY_PRESTIGE = {"International": 2.5, "England": 2, "Clubs": 2, "Equipment": 1.5}
+
+
+def top_stories(stories, now=None):
+    """Top stories by weight, not just time.
+
+    score = freshness x (0.5 + importance + extras), then a diversity pass.
+      freshness  halves every 18 hours, so a big story stays up for a day or two and then gives way
+      importance the event's prestige (schedule 1 to 5, divided by 5); stories without an event use their section
+      extras     +0.15 a full article, +0.1 match results, +0.1 official video, +0.25 the event is on now
+      diversity  each further story from the same event counts 25% less, so one tournament can't fill the list
+    """
+    now = now or dt.datetime.now(dt.timezone.utc)
+    sched = {ev["id"]: ev for ev in json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8")).get("events", [])}
+    today = now.date().isoformat()
+    amap = {}
+    for f in glob.glob(os.path.join(ROOT, "data", "articles", "*.json")):
+        x = json.load(open(f, encoding="utf-8"))
+        amap[x.get("story_id")] = x
+    raw = {s["id"]: s for s in NEWS.get("stories", [])}
+    scored = []
+    for i in stories:
+        hub = HUBS.get(i["event"] or "")
+        if hub and hub.get("schedule_id") in sched and sched[hub["schedule_id"]].get("prestige"):
+            prestige = sched[hub["schedule_id"]]["prestige"]
+        elif hub:
+            prestige = TIER_PRESTIGE.get(hub["tier"], 2.5)
+        else:
+            prestige = CATEGORY_PRESTIGE.get(i["category"], 2)
+        age = max(0, (now - dt.datetime.fromisoformat(i["published"].replace("Z", "+00:00"))).total_seconds() / 3600)
+        fresh = 0.5 ** (age / 18)
+        art, s = amap.get(i["id"]), raw.get(i["id"], {})
+        extras = (0.15 if art else 0) + (0.1 if (art or s).get("matches") else 0) + (0.1 if i["video"] else 0)
+        if hub and hub.get("start") and hub["start"] <= today <= hub["end"]:
+            extras += 0.25
+        scored.append([fresh * (0.5 + prestige / 5 + extras), i])
+    out, per_event = [], {}
+    pool = sorted(scored, key=lambda x: -x[0])
+    while pool:
+        for x in pool:   # re-weight by how many of the same event are already in
+            x.append(x[0] * 0.75 ** per_event.get(x[1]["event"] or x[1]["id"], 0))
+        pool.sort(key=lambda x: -x[-1])
+        best = pool.pop(0)
+        out.append(best[1])
+        k = best[1]["event"] or best[1]["id"]
+        per_event[k] = per_event.get(k, 0) + 1
+        for x in pool:
+            del x[-1]
+    return out
 
 
 def story_thumb(i, seen):
@@ -232,7 +285,8 @@ def article_page(a, others, brief=False):
     sources = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in a["sources"])
     cur = a.get("story_id") or a["slug"]
     pool = [i for i in STORIES if i["id"] != cur and i["slug"] != a["slug"]]
-    tops, rest = pool[:5], pool[5:]
+    tops = [i for i in TOP if i["id"] != cur and i["slug"] != a["slug"]][:5]
+    rest = [i for i in pool if i not in tops]
     tops_html = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a><span class="meta">{short_when(i["published"])}</span></li>' for i in tops)
     ev0 = event_of(a)
     seen = {ev0["id"]} if ev0 else set()   # this story's own poster is already at the top
@@ -353,6 +407,9 @@ def main():
     global STORIES
     arts = load_articles()
     STORIES = story_list(arts)
+    global TOP
+    TOP = top_stories(STORIES)
+    json.dump([i["id"] for i in TOP], open(os.path.join(ROOT, "data", "top-stories.json"), "w"))
     os.makedirs(os.path.join(ROOT, "news"), exist_ok=True)
     for a in arts:
         others = [o for o in arts if o["slug"] != a["slug"]]

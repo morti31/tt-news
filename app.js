@@ -9,7 +9,8 @@
   try {
     data = await fetch("data/news.json", { cache: "no-store" }).then((r) => r.json());
     const opt = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
-    const [sch, arts, hubs] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json")]);
+    const [sch, arts, hubs, top] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json")]);
+    data.top = Array.isArray(top) ? top : [];
     data.events = sch.events || [];
     data.articles = arts;
     data.hubs = hubs;
@@ -165,7 +166,11 @@
       <h1><a class="stretch" href="${esc(url(lead))}">${esc(lead.headline)}</a></h1><p>${esc(lead.summary)}</p>
       <span class="meta">${when(lead)} · By ${esc(who(lead))}</span></div></article>`
       : '<p class="empty">Nothing in this section yet. New stories arrive with each update.</p>';
-    const tops = rest.slice(0, 5), more = rest.slice(5);
+    // Top stories: the weighted order worked out at build time (prestige, freshness, results, video, events on now)
+    const rank = (s) => { const k = data.top.indexOf(s.id); return k < 0 ? 999 : k; };
+    const tops = [...rest].sort((a, b) => rank(a) - rank(b)).slice(0, 5);
+    // Latest: strictly newest first, whether or not a story is also in Top stories
+    const more = rest;
     $("second").innerHTML = tops.map((s) => `<li><a href="${esc(url(s))}">${esc(s.headline)}</a><span class="meta">${when(s)}</span></li>`).join("");
     $("second").closest(".tops").hidden = !tops.length;
     $("stories").innerHTML = more.map((s) => `<article class="promo">${art(s, "small")}<div>${kicker(s)}
