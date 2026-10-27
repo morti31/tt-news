@@ -7,14 +7,8 @@
   "title": "Harimoto recovers from two games down to beat Li Tianyang for Asian title",
   "standfirst": "Japan's world No. 3 lost the first two games of the men's singles final in Tashkent, then took the next three to deny China a clean sweep of the men's events.",
   "image": {
-    "type": "photo",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg/1280px-Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg",
-    "alt": "Tomokazu Harimoto playing at the Paris 2024 Olympics",
-    "caption": "Harimoto at Paris 2024",
-    "credit": "Daieuxetdailleurs",
-    "licence": "CC BY 4.0",
-    "licence_url": "https://creativecommons.org/licenses/by/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg"
+    "type": "cartoon",
+    "src": "img/cartoons/tashkent.svg"
   },
   "body": [
     "Tomokazu Harimoto is the Asian men's singles champion after coming back from two games down against Li Tianyang in Tashkent on Sunday. The Chinese player won the opening game 11-1 and edged the second 11-9, but Harimoto took the next three 11-7, 11-8, 11-7 to win the final of the 2026 Asian Championships.",
@@ -38,5 +32,152 @@
       "url": "https://butterflyonline.com/world-top-20/"
     }
   ],
-  "author": "michael"
+  "author": "michael",
+  "matches": [
+    {
+      "label": "Men's singles final",
+      "event": "Asian Championships, Tashkent",
+      "sides": [
+        {
+          "name": "Tomokazu Harimoto",
+          "nat": "JPN"
+        },
+        {
+          "name": "Li Tianyang",
+          "nat": "CHN"
+        }
+      ],
+      "score": [
+        3,
+        2
+      ],
+      "games": [
+        [
+          1,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          7
+        ]
+      ]
+    },
+    {
+      "label": "Semi-final",
+      "sides": [
+        {
+          "name": "Tomokazu Harimoto",
+          "nat": "JPN"
+        },
+        {
+          "name": "Wen Ruibo",
+          "nat": "CHN"
+        }
+      ],
+      "score": [
+        3,
+        0
+      ],
+      "games": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          5
+        ]
+      ]
+    },
+    {
+      "label": "Semi-final",
+      "sides": [
+        {
+          "name": "Li Tianyang",
+          "nat": "CHN"
+        },
+        {
+          "name": "Kuo Guan-hong",
+          "nat": "TPE"
+        }
+      ],
+      "score": [
+        3,
+        2
+      ],
+      "games": [
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          6
+        ]
+      ]
+    },
+    {
+      "label": "Men's doubles final",
+      "sides": [
+        {
+          "name": "Lin Shidong / Huang Youzheng",
+          "nat": "CHN"
+        },
+        {
+          "name": "Wen Ruibo / Yuan Licen",
+          "nat": "CHN"
+        }
+      ],
+      "score": [
+        3,
+        1
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": "4waydbwXrog",
+      "title": "Tomokazu Harimoto vs Li Tianyang, men's singles final",
+      "channel": "TT11TV"
+    },
+    {
+      "id": "nA2vzQsiiY4",
+      "title": "Tomokazu Harimoto vs Wen Ruibo, semi-final",
+      "channel": "TT11TV"
+    },
+    {
+      "id": "9E1KIlulFhE",
+      "title": "Li Tianyang vs Kuo Guan-hong, semi-final",
+      "channel": "TT11TV"
+    }
+  ],
+  "modified": "2026-10-27T11:05:00Z"
 }

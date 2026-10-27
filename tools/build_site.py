@@ -6,7 +6,9 @@ It uses only the Python standard library.
 Input:  data/articles/*.json  (one file per full article; merged into main once approved)
 Output: news/<slug>.html, news/index.html, data/article-index.json, sitemap.xml, robots.txt, feed.xml
 """
-import json, os, glob, html, datetime as dt
+import json, os, glob, html, sys, datetime as dt
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import components
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
@@ -131,7 +133,10 @@ def article_page(a, others, brief=False):
     if a.get("lang"):
         tag += f'<span class="translated">, translated from {e(a["lang"])}</span>'
     tag += "</span>"
-    paras = "\n".join(f"<p>{e(p)}</p>" for p in a["body"])
+    ps = [f"<p>{e(p)}</p>" for p in a["body"]]
+    # Highlights sit after the second paragraph, like a broadcaster's match report
+    ps.insert(min(2, len(ps)), components.videos(a.get("videos")))
+    paras = "\n".join(x for x in ps if x)
     sources = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in a["sources"])
     more = "".join(f'<li><a href="/news/{e(o["slug"])}.html">{e(o["title"])}</a><span>{pub_time(o)}</span></li>' for o in others[:5])
     img = a.get("image") or {}
@@ -153,10 +158,12 @@ def article_page(a, others, brief=False):
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
+  {components.scoreboard(a.get("matches"))}
   {hero(a)}
   <div class="article-body">
 {paras}
   </div>
+  {components.draw(a.get("draw"))}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
 </article>
 <aside class="article-side">
@@ -169,7 +176,8 @@ def article_page(a, others, brief=False):
   <section class="panel"><h2 class="panel-title">Coming up</h2><ul id="events" class="events" data-count="5"></ul>
     <a class="panel-link" href="/schedule.html">Full schedule and calendar</a></section>
 </aside>
-</main>"""
+</main>
+{components.SCRIPT if (a.get("videos") or a.get("draw")) else ""}"""
     og = img.get("url") if img.get("type") == "photo" else None
     desc = a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
     # Short stories stay readable and shareable but are kept out of Google's index as thin pages
@@ -200,7 +208,7 @@ def main():
             continue
         brief = {"slug": s["id"], "title": s["headline"], "standfirst": "", "category": s["category"], "date": s["date"],
                  "body": s.get("body") or [s["summary"]], "sources": s.get("sources", []), "author": s.get("author", "tom")}
-        for k in ("lang", "image", "published"):
+        for k in ("lang", "image", "published", "matches", "videos", "draw"):
             if s.get(k):
                 brief[k] = s[k]
         open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))

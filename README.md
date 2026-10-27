@@ -6,6 +6,8 @@ Table tennis news, results, rankings and fixtures on one page.
 - `data/news.json`: all content, rewritten by each update run
 - `data/articles/`: full articles, one JSON file each, added through review pull requests
 - `tools/build_site.py`: builds article pages, the archive, sitemap, RSS feed and robots.txt (Cloudflare build command)
+- `tools/components.py`: scoreboard, draw bracket and video highlights on story pages
+- `tools/fetch_draw.py`: pulls an official WTT draw into `data/draws/`
 - `tools/build_calendar.py`: rebuilds `calendar.ics` from `data/schedule.json`
 - `UPDATE.md`: what each update run does
 

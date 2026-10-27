@@ -7,14 +7,8 @@
   "title": "Calderano and Diaz win singles titles as Americas Championships spread the honours",
   "standfirst": "Hugo Calderano beat fellow Brazilian Guilherme Teodoro in Lima, Adriana Diaz beat Canada's Mo Zhang, and no country won more than two titles.",
   "image": {
-    "type": "photo",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Hugocalderano.jpg/1280px-Hugocalderano.jpg",
-    "alt": "Hugo Calderano playing at the 2019 Pan American Games in Lima",
-    "caption": "Calderano in Lima, 2019",
-    "credit": "Abelardo Mendes Jr",
-    "licence": "CC BY-SA 4.0",
-    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Hugocalderano.jpg"
+    "type": "cartoon",
+    "src": "img/cartoons/lima.svg"
   },
   "body": [
     "Hugo Calderano won the men's singles at the ITTF-Americas Championships in Lima, beating his Brazilian team-mate Guilherme Teodoro 4-1 in the final. Puerto Rico's Adriana Diaz took the women's title, beating Canada's Mo Zhang 4-2.",
@@ -35,5 +29,111 @@
       "url": "https://butterflyonline.com/world-top-20/"
     }
   ],
-  "author": "michael"
+  "author": "michael",
+  "matches": [
+    {
+      "label": "Men's singles final",
+      "event": "Americas Championships, Lima",
+      "sides": [
+        {
+          "name": "Hugo Calderano",
+          "nat": "BRA"
+        },
+        {
+          "name": "Guilherme Teodoro",
+          "nat": "BRA"
+        }
+      ],
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "label": "Women's singles final",
+      "sides": [
+        {
+          "name": "Adriana Diaz",
+          "nat": "PUR"
+        },
+        {
+          "name": "Mo Zhang",
+          "nat": "CAN"
+        }
+      ],
+      "score": [
+        4,
+        2
+      ]
+    },
+    {
+      "label": "Women's team final",
+      "sides": [
+        {
+          "name": "USA",
+          "nat": "USA"
+        },
+        {
+          "name": "Puerto Rico",
+          "nat": "PUR"
+        }
+      ],
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "label": "Men's doubles final",
+      "sides": [
+        {
+          "name": "Nicolas Burgos / Gustavo Gomez",
+          "nat": "CHI"
+        },
+        {
+          "name": "Medina / Rios",
+          "nat": "VEN"
+        }
+      ],
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "label": "Women's doubles final",
+      "sides": [
+        {
+          "name": "Giulia Takahashi / Laura Watanabe",
+          "nat": "BRA"
+        },
+        {
+          "name": "Sally Moyland / Lily Zhang",
+          "nat": "USA"
+        }
+      ],
+      "score": [
+        3,
+        0
+      ]
+    },
+    {
+      "label": "Mixed doubles final",
+      "sides": [
+        {
+          "name": "Edward Ly / Mo Zhang",
+          "nat": "CAN"
+        },
+        {
+          "name": "Guilherme Teodoro / Giulia Takahashi",
+          "nat": "BRA"
+        }
+      ],
+      "score": [
+        3,
+        0
+      ]
+    }
+  ],
+  "modified": "2026-10-27T11:05:00Z"
 }

@@ -21,14 +21,8 @@
       ],
       "score": "3-2",
       "image": {
-        "type": "photo",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg/1280px-Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg",
-        "alt": "Tomokazu Harimoto playing at the Paris 2024 Olympics",
-        "credit": "Daieuxetdailleurs",
-        "licence": "CC BY 4.0",
-        "licence_url": "https://creativecommons.org/licenses/by/4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Matchs_de_32e_de_finale_-_Tennis_de_table_Jeux_Olympiques_2024_-_Paris_Arena_Sud_-_2024-07-29_-_03.jpg",
-        "caption": "Harimoto at Paris 2024"
+        "type": "cartoon",
+        "src": "img/cartoons/tashkent.svg"
       },
       "author": "michael"
     },
@@ -65,7 +59,8 @@
       "body": [
         "The draw for WTT Champions Montpellier pits defending champion Truls Moregard against France's Thibault Poret and Tomokazu Harimoto against Simon Gauzy in the first round. Wen Ruibo and Liang Jingkun meet in an all-Chinese opener, according to Sohu.",
         "In the women's event Miwa Harimoto, who has won the last three Champions titles, plays Bruna Takahashi, Rallys reported. Last year's finalist Sabine Winter faces France's Jia Nan Yuan. Play starts on Tuesday."
-      ]
+      ],
+      "draw": "3250"
     },
     {
       "id": "asian-ws-final-2026",
@@ -86,7 +81,31 @@
         "Harimoto had a busy week. She lost a second final in the women's doubles, partnering Hina Hayata against China's Kuai Man and Wang Yidi, but won the mixed doubles with Sora Matsushima.",
         "China and Japan shared all seven titles, four to three. Chen Yi is in China's six-strong women's squad for WTT Champions Montpellier, which starts on Tuesday."
       ],
-      "published": "2026-10-26T15:52:00Z"
+      "published": "2026-10-26T15:52:00Z",
+      "matches": [
+        {
+          "label": "Women's singles final",
+          "event": "Asian Championships, Tashkent",
+          "sides": [
+            {
+              "name": "Chen Yi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Miwa Harimoto",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ]
+        }
+      ],
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/tashkent.svg"
+      }
     },
     {
       "id": "asian-teams-2026",
@@ -105,7 +124,11 @@
         }
       ],
       "score": "3-0",
-      "author": "michael"
+      "author": "michael",
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/tashkent.svg"
+      }
     },
     {
       "id": "montpellier-preview-2026",
@@ -144,14 +167,8 @@
       ],
       "score": "4-1",
       "image": {
-        "type": "photo",
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Hugocalderano.jpg/1280px-Hugocalderano.jpg",
-        "alt": "Hugo Calderano playing at the 2019 Pan American Games in Lima",
-        "credit": "Abelardo Mendes Jr",
-        "licence": "CC BY-SA 4.0",
-        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Hugocalderano.jpg",
-        "caption": "Calderano in Lima, 2019"
+        "type": "cartoon",
+        "src": "img/cartoons/lima.svg"
       },
       "author": "michael"
     },

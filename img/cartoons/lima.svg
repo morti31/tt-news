@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Line drawing of Lima Cathedral on the Plaza de Armas, with yellow colonial balconies and a table tennis table in front">
+<defs><pattern id="lim-d" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="3" stroke="currentColor" stroke-width="0.5"/></pattern><pattern id="lim-v" width="3.2" height="3.2" patternUnits="userSpaceOnUse" patternTransform="rotate(90)"><line x1="0" y1="0" x2="0" y2="3.2" stroke="currentColor" stroke-width="0.45"/></pattern></defs>
+<g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3">
+<rect x="190" y="96" width="44" height="166" fill="var(--art-bg, #fff)" stroke-width="1.4"/>
+<rect x="194" y="70" width="36" height="26" fill="var(--art-bg, #fff)" stroke-width="1.2"/>
+<path d="M200 70 L200 58 Q212 40 224 58 L224 70" fill="url(#lim-d)" stroke-width="1"/>
+<line x1="212" y1="44" x2="212" y2="30" stroke-width="1"/><path d="M208 35 L216 35" stroke-width="1"/>
+<path d="M204 92 L204 78 Q212 70 220 78 L220 92" fill="currentColor" fill-opacity=".85" stroke-width=".8"/>
+<path d="M204 146 L204 128 Q212 120 220 128 L220 146 Z" stroke-width=".8"/>
+<path d="M204 196 L204 178 Q212 170 220 178 L220 196 Z" stroke-width=".8"/>
+<rect x="410" y="96" width="44" height="166" fill="var(--art-bg, #fff)" stroke-width="1.4"/>
+<rect x="414" y="70" width="36" height="26" fill="var(--art-bg, #fff)" stroke-width="1.2"/>
+<path d="M420 70 L420 58 Q432 40 444 58 L444 70" fill="url(#lim-d)" stroke-width="1"/>
+<line x1="432" y1="44" x2="432" y2="30" stroke-width="1"/><path d="M428 35 L436 35" stroke-width="1"/>
+<path d="M424 92 L424 78 Q432 70 440 78 L440 92" fill="currentColor" fill-opacity=".85" stroke-width=".8"/>
+<path d="M424 146 L424 128 Q432 120 440 128 L440 146 Z" stroke-width=".8"/>
+<path d="M424 196 L424 178 Q432 170 440 178 L440 196 Z" stroke-width=".8"/>
+<rect x="234" y="120" width="176" height="142" fill="var(--art-bg, #fff)" stroke-width="1.4"/>
+<path d="M234 120 L322 92 L410 120" fill="var(--art-bg, #fff)" stroke-width="1.3"/>
+<path d="M296 262 L296 192 Q322 160 348 192 L348 262" fill="url(#lim-v)" stroke-width="1.2"/>
+<circle cx="322" cy="140" r="12" stroke-width="1"/><circle cx="322" cy="140" r="5" stroke-width=".6"/>
+<line x1="256" y1="160" x2="256" y2="262" stroke-width=".9"/><line x1="264" y1="160" x2="264" y2="262" stroke-width=".9"/>
+<line x1="388" y1="160" x2="388" y2="262" stroke-width=".9"/><line x1="396" y1="160" x2="396" y2="262" stroke-width=".9"/>
+<rect x="0" y="150" width="176" height="112" fill="#f2b33d" fill-opacity=".55" stroke-width="1.2"/>
+<rect x="18.0" y="170" width="37" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>
+<path d="M18.0 204 L55 204" stroke-width="2"/>
+<line x1="25.3" y1="174" x2="25.3" y2="200" stroke-width=".5"/>
+<line x1="32.7" y1="174" x2="32.7" y2="200" stroke-width=".5"/>
+<line x1="40.0" y1="174" x2="40.0" y2="200" stroke-width=".5"/>
+<line x1="47.3" y1="174" x2="47.3" y2="200" stroke-width=".5"/>
+<rect x="26" y="222" width="21" height="40" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>
+<rect x="64.66666666666666" y="170" width="37" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>
+<path d="M64.66666666666666 204 L101 204" stroke-width="2"/>
+<line x1="72.0" y1="174" x2="72.0" y2="200" stroke-width=".5"/>
+<line x1="79.3" y1="174" x2="79.3" y2="200" stroke-width=".5"/>
+<line x1="86.7" y1="174" x2="86.7" y2="200" stroke-width=".5"/>
+<line x1="94.0" y1="174" x2="94.0" y2="200" stroke-width=".5"/>
+<rect x="73" y="222" width="21" height="40" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>
+<rect x="111.33333333333333" y="170" width="37" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>
+<path d="M111.33333333333333 204 L148 204" stroke-width="2"/>
+<line x1="118.7" y1="174" x2="118.7" y2="200" stroke-width=".5"/>
+<line x1="126.0" y1="174" x2="126.0" y2="200" stroke-width=".5"/>
+<line x1="133.3" y1="174" x2="133.3" y2="200" stroke-width=".5"/>
+<line x1="140.7" y1="174" x2="140.7" y2="200" stroke-width=".5"/>
+<rect x="119" y="222" width="21" height="40" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>
+<rect x="464" y="150" width="176" height="112" fill="#f2b33d" fill-opacity=".55" stroke-width="1.2"/>
+<rect x="482.0" y="170" width="37" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>
+<path d="M482.0 204 L519 204" stroke-width="2"/>
+<line x1="489.3" y1="174" x2="489.3" y2="200" stroke-width=".5"/>
+<line x1="496.7" y1="174" x2="496.7" y2="200" stroke-width=".5"/>
+<line x1="504.0" y1="174" x2="504.0" y2="200" stroke-width=".5"/>
+<line x1="511.3" y1="174" x2="511.3" y2="200" stroke-width=".5"/>
+<rect x="490" y="222" width="21" height="40" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>
+<rect x="528.6666666666666" y="170" width="37" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>
+<path d="M528.6666666666666 204 L565 204" stroke-width="2"/>
+<line x1="536.0" y1="174" x2="536.0" y2="200" stroke-width=".5"/>
+<line x1="543.3" y1="174" x2="543.3" y2="200" stroke-width=".5"/>
+<line x1="550.7" y1="174" x2="550.7" y2="200" stroke-width=".5"/>
+<line x1="558.0" y1="174" x2="558.0" y2="200" stroke-width=".5"/>
+<rect x="537" y="222" width="21" height="40" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>
+<rect x="575.3333333333334" y="170" width="37" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>
+<path d="M575.3333333333334 204 L612 204" stroke-width="2"/>
+<line x1="582.7" y1="174" x2="582.7" y2="200" stroke-width=".5"/>
+<line x1="590.0" y1="174" x2="590.0" y2="200" stroke-width=".5"/>
+<line x1="597.3" y1="174" x2="597.3" y2="200" stroke-width=".5"/>
+<line x1="604.7" y1="174" x2="604.7" y2="200" stroke-width=".5"/>
+<rect x="583" y="222" width="21" height="40" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>
+<line x1="0" y1="262" x2="640" y2="262" stroke-width="1.4"/>
+<path d="M560 302 Q556 300 566 270" stroke-width="2"/>
+<path d="M566 270 Q551.0 262 536 276" stroke="#23895c" stroke-width="2"/>
+<path d="M566 270 Q581.0 260 596 274" stroke="#23895c" stroke-width="2"/>
+<path d="M566 270 Q555.0 244 544 258" stroke="#23895c" stroke-width="2"/>
+<path d="M566 270 Q578.0 242 590 256" stroke="#23895c" stroke-width="2"/>
+<path d="M566 270 Q566.0 236 566 250" stroke="#23895c" stroke-width="2"/>
+<path d="M100 300 L500 300 L480 314 L80 314 Z" fill="#2f5fd0" stroke-width="1.6"/>
+<path d="M104 301.5 L496 301.5 L477 312.5 L83 312.5 Z" stroke="#fff" stroke-width=".9"/>
+<line x1="104" y1="307.0" x2="496" y2="307.0" stroke="#fff" stroke-width=".7" transform="translate(-10.0 0)"/>
+<path d="M80 314 L480 314 L480 319 L80 319 Z" fill="currentColor" stroke-width="1"/>
+<path d="M300.0 300 L300.0 287 L280.0 301 L280.0 314" stroke-width="1.2"/>
+<line x1="296.7" y1="302.3" x2="296.7" y2="289.3" stroke-width=".4"/>
+<line x1="293.3" y1="304.7" x2="293.3" y2="291.7" stroke-width=".4"/>
+<line x1="290.0" y1="307.0" x2="290.0" y2="294.0" stroke-width=".4"/>
+<line x1="286.7" y1="309.3" x2="286.7" y2="296.3" stroke-width=".4"/>
+<line x1="283.3" y1="311.7" x2="283.3" y2="298.7" stroke-width=".4"/>
+<path d="M110 319 L106 358 M130 319 L134 358" stroke-width="1.4"/>
+<path d="M430 319 L426 358 M450 319 L454 358" stroke-width="1.4"/>
+<line x1="110" y1="342" x2="130" y2="342" stroke-width=".8"/>
+<line x1="430" y1="342" x2="450" y2="342" stroke-width=".8"/>
+<path d="M150 294 Q265.0 224 380 270" stroke-width=".8" stroke-dasharray="1 5"/>
+<circle cx="380" cy="270" r="5.5" fill="#f37021" stroke-width="1.1"/>
+<path d="M377.25 269.175 A3.3 3.3 0 0 1 381.1 266.975" stroke="#fff" stroke-width=".7"/>
+</g>
+</svg>

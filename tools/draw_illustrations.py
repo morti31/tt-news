@@ -238,5 +238,86 @@ def dimpled():
     svg("dimpled-ball", "Technical line drawing comparing a dimpled table tennis ball with a standard ball", "\n".join(b))
 
 
-houston(); wellingborough(); montpellier(); dimpled()
+
+# ---------------------------------------------------------------- Tashkent
+def tashkent():
+    defs = hatch("tas-d", 3, 45, .5) + hatch("tas-v", 3.2, 90, .45) + hatch("tas-h", 3, 0, .45)
+    b = []
+    ground = 262
+    # Hazrati Imam-style madrasa: long arcaded facade, central portal (pishtaq), two domes and minarets
+    x0, x1 = 120, 520
+    b.append(f'<rect x="{x0}" y="170" width="{x1-x0}" height="{ground-170}" fill="var(--art-bg, #fff)" stroke-width="1.4"/>')
+    b.append(f'<line x1="{x0}" y1="178" x2="{x1}" y2="178" stroke-width=".6"/>')
+    for i in range(12):
+        ax = x0 + 12 + i * ((x1 - x0 - 24) / 12)
+        if 268 < ax < 362:
+            continue
+        b.append(f'<path d="M{ax+3} {ground} L{ax+3} 214 Q{ax+15} 196 {ax+27} 214 L{ax+27} {ground}" fill="url(#tas-v)" stroke-width=".9"/>')
+    # central portal
+    b.append(f'<rect x="262" y="120" width="116" height="{ground-120}" fill="var(--art-bg, #fff)" stroke-width="1.5"/>')
+    b.append(f'<rect x="268" y="126" width="104" height="{ground-126}" stroke-width=".6"/>')
+    b.append(f'<path d="M286 {ground} L286 176 Q320 132 354 176 L354 {ground}" fill="{SKY}" fill-opacity=".55" stroke-width="1.2"/>')
+    b.append(f'<path d="M298 {ground} L298 186 Q320 156 342 186 L342 {ground}" fill="url(#tas-d)" stroke-width=".8"/>')
+    # domes on drums either side
+    for cx in (200, 440):
+        b.append(f'<rect x="{cx-26}" y="134" width="52" height="36" fill="var(--art-bg, #fff)" stroke-width="1.2"/>')
+        b.append(f'<path d="M{cx-30} 134 Q{cx-30} 84 {cx} 76 Q{cx+30} 84 {cx+30} 134 Z" fill="{BLUE}" fill-opacity=".9" stroke-width="1.3"/>')
+        for k in range(-3, 4):
+            b.append(f'<path d="M{cx + k*7} 134 Q{cx + k*5} 96 {cx} 78" stroke="#fff" stroke-width=".5"/>')
+        b.append(f'<line x1="{cx}" y1="76" x2="{cx}" y2="62" stroke-width="1"/><circle cx="{cx}" cy="60" r="2" fill="{GOLD}"/>')
+    # minarets at the ends
+    for mx in (96, 544):
+        b.append(f'<path d="M{mx-11} {ground} L{mx-8} 92 L{mx+8} 92 L{mx+11} {ground} Z" fill="url(#tas-h)" stroke-width="1.2"/>')
+        b.append(f'<rect x="{mx-13}" y="82" width="26" height="10" fill="var(--art-bg, #fff)" stroke-width="1"/>')
+        b.append(f'<path d="M{mx-9} 82 Q{mx} 62 {mx+9} 82 Z" fill="{BLUE}" stroke-width="1"/>')
+        for yy in (130, 170, 210):
+            b.append(f'<line x1="{mx-10}" y1="{yy}" x2="{mx+10}" y2="{yy}" stroke-width=".6"/>')
+    b.append(f'<line x1="0" y1="{ground}" x2="640" y2="{ground}" stroke-width="1.4"/>')
+    b.append('<path d="M0 270 L640 270" stroke-width=".5"/>')
+    b.append(table(120, 300, 400))
+    b.append(ball(452, 270, arc_from=(190, 294)))
+    svg("tashkent", "Line drawing of a Tashkent madrasa with blue domes and minarets, with a table tennis table in front", "\n".join(b), defs)
+
+
+# ---------------------------------------------------------------- Lima
+def lima():
+    defs = hatch("lim-d", 3, 45, .5) + hatch("lim-v", 3.2, 90, .45)
+    b = []
+    ground = 262
+    # Cathedral on the Plaza de Armas: twin towers with spires, central facade
+    for tx in (190, 410):
+        b.append(f'<rect x="{tx}" y="96" width="44" height="{ground-96}" fill="var(--art-bg, #fff)" stroke-width="1.4"/>')
+        b.append(f'<rect x="{tx+4}" y="70" width="36" height="26" fill="var(--art-bg, #fff)" stroke-width="1.2"/>')
+        b.append(f'<path d="M{tx+10} {96-26} L{tx+10} 58 Q{tx+22} 40 {tx+34} 58 L{tx+34} 70" fill="url(#lim-d)" stroke-width="1"/>')
+        b.append(f'<line x1="{tx+22}" y1="44" x2="{tx+22}" y2="30" stroke-width="1"/><path d="M{tx+18} 35 L{tx+26} 35" stroke-width="1"/>')
+        b.append(f'<path d="M{tx+14} 92 L{tx+14} 78 Q{tx+22} 70 {tx+30} 78 L{tx+30} 92" fill="currentColor" fill-opacity=".85" stroke-width=".8"/>')
+        for yy in (120, 170):
+            b.append(f'<path d="M{tx+14} {yy+26} L{tx+14} {yy+8} Q{tx+22} {yy} {tx+30} {yy+8} L{tx+30} {yy+26} Z" stroke-width=".8"/>')
+    b.append(f'<rect x="234" y="120" width="176" height="{ground-120}" fill="var(--art-bg, #fff)" stroke-width="1.4"/>')
+    b.append('<path d="M234 120 L322 92 L410 120" fill="var(--art-bg, #fff)" stroke-width="1.3"/>')
+    b.append(f'<path d="M296 {ground} L296 192 Q322 160 348 192 L348 {ground}" fill="url(#lim-v)" stroke-width="1.2"/>')
+    b.append('<circle cx="322" cy="140" r="12" stroke-width="1"/><circle cx="322" cy="140" r="5" stroke-width=".6"/>')
+    for cx in (256, 388):
+        b.append(f'<line x1="{cx}" y1="160" x2="{cx}" y2="{ground}" stroke-width=".9"/><line x1="{cx+8}" y1="160" x2="{cx+8}" y2="{ground}" stroke-width=".9"/>')
+    # the famous wooden balconies on the buildings either side, in yellow walls
+    for x, w in ((0, 176), (464, 176)):
+        b.append(f'<rect x="{x}" y="150" width="{w}" height="{ground-150}" fill="{GOLD}" fill-opacity=".55" stroke-width="1.2"/>')
+        for k in range(3):
+            bx = x + 18 + k * (w - 36) / 3
+            b.append(f'<rect x="{bx}" y="170" width="{(w-36)/3-10:.0f}" height="34" fill="var(--art-bg, #fff)" stroke-width="1"/>')
+            b.append(f'<path d="M{bx} 204 L{bx+(w-36)/3-10:.0f} 204" stroke-width="2"/>')
+            for j in range(1, 5):
+                lx = bx + j * ((w - 36) / 3 - 10) / 5
+                b.append(f'<line x1="{lx:.1f}" y1="174" x2="{lx:.1f}" y2="200" stroke-width=".5"/>')
+            b.append(f'<rect x="{bx+8:.0f}" y="222" width="{(w-36)/3-26:.0f}" height="{ground-222}" fill="currentColor" fill-opacity=".8" stroke-width=".8"/>')
+    b.append(f'<line x1="0" y1="{ground}" x2="640" y2="{ground}" stroke-width="1.4"/>')
+    # palm on the plaza
+    b.append(f'<path d="M560 {ground+40} Q556 300 566 270" stroke-width="2"/>')
+    for dx, dy in ((-30, 6), (30, 4), (-22, -12), (24, -14), (0, -20)):
+        b.append(f'<path d="M566 270 Q{566+dx/2} {270+dy-14} {566+dx} {270+dy}" stroke="{GREEN if "GREEN" in globals() else "#23895c"}" stroke-width="2"/>')
+    b.append(table(80, 300, 400))
+    b.append(ball(380, 270, arc_from=(150, 294)))
+    svg("lima", "Line drawing of Lima Cathedral on the Plaza de Armas, with yellow colonial balconies and a table tennis table in front", "\n".join(b), defs)
+
+houston(); wellingborough(); montpellier(); dimpled(); tashkent(); lima()
 print("done")
