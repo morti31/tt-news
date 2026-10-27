@@ -3,125 +3,131 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const day = (iso) => new Date(iso + "T12:00:00");
   const fmt = (iso, o = { day: "numeric", month: "short" }) => day(iso).toLocaleDateString("en-GB", o);
+  const today = new Date().toISOString().slice(0, 10);
 
   let data;
   try {
-    const res = await fetch("data/news.json", { cache: "no-store" });
-    data = await res.json();
-    try {
-      const sch = await fetch("data/schedule.json", { cache: "no-store" }).then((r) => r.json());
-      data.events = sch.events;
-    } catch (e) { /* fall back to events in news.json */ }
-    try {
-      data.articles = await fetch("data/article-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {}));
-    } catch (e) { data.articles = {}; }
-    try {
-      data.hubs = await fetch("data/event-index.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {}));
-    } catch (e) { data.hubs = {}; }
+    data = await fetch("data/news.json", { cache: "no-store" }).then((r) => r.json());
+    const opt = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    const [sch, arts, hubs] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json")]);
+    data.events = sch.events || [];
+    data.articles = arts;
+    data.hubs = hubs;
   } catch (e) {
-    $("lead").innerHTML = '<div class="card"><div class="card-body"><p>The news didn\'t load. Refresh the page to try again.</p></div></div>';
+    $("lead").innerHTML = "<p>The news didn't load. Refresh the page to try again.</p>";
     return;
   }
+  const hubs = data.hubs, arts = data.articles, authors = data.authors || {};
 
   $("updated").textContent = "Last updated " + new Date(data.updated).toLocaleString("en-GB", {
     weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit"
   });
 
-  // Artwork: a table seen from above, with a ball in flight. Each story gets its own angle and flight path.
-  const hash = (str) => { let h = 2166136261; for (const c of str) h = Math.imul(h ^ c.charCodeAt(0), 16777619); return h >>> 0; };
-  function art(s, showScore = true) {
-    const full = (data.articles || {})[s.id];
+  // ---- Story pieces
+  const stamp = (s) => ((arts[s.id] || {}).published) || s.published;
+  const when = (s) => {
+    const p = stamp(s);
+    if (!p) return fmt(s.date);
+    const t = new Date(p);
+    return t.toISOString().slice(0, 10) === today ? t.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
+      : t.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  };
+  const who = (s) => (authors[s.author] || authors.tom || { name: "Eleven" }).name;
+  const url = (s) => (arts[s.id] && arts[s.id].url) || `/news/${s.id}.html`;
+  const kicker = (s) => {
+    const hub = s.event && hubs[s.event];
+    const text = hub ? hub.name : s.category;
+    return `<span class="kicker" style="color:var(--${s.category}, var(--ink))">${esc(text)}${s.lang ? `<span class="translated"> · translated from ${esc(s.lang)}</span>` : ""}</span>`;
+  };
+
+  // Picture order: official video, then the event poster (once per page), then a photo, then an illustration
+  let seen = new Set();
+  function art(s, size) {
+    const full = arts[s.id];
     if (full && full.video) {
-      return `<div class="art video-art"><img src="https://i.ytimg.com/vi/${esc(full.video)}/maxresdefault.jpg" alt="" loading="lazy"
+      return `<div class="pic video-art"><img src="https://i.ytimg.com/vi/${esc(full.video)}/${size === "big" ? "maxresdefault" : "hqdefault"}.jpg" alt="" loading="lazy"
         onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(full.video)}/hqdefault.jpg'"><span class="yt-play" aria-hidden="true"></span></div>`;
     }
+    const hub = s.event && hubs[s.event];
+    if (hub && hub.poster && !seen.has(s.event)) {
+      seen.add(s.event);
+      return `<div class="pic poster"><img src="${esc(hub.poster)}" alt="${esc(hub.name)} ${esc(hub.year)} poster" loading="lazy"></div>`;
+    }
     const im = s.image;
-    if (im && im.type === "photo") {
-      return `<figure class="art photo"><img src="${esc(im.url)}" alt="${esc(im.alt || "")}" loading="lazy">
-        <figcaption>${im.caption ? esc(im.caption) + ". " : ""}Photo: <a href="${esc(im.page)}" target="_blank" rel="noopener">${esc(im.credit)}</a>, <a href="${esc(im.licence_url)}" target="_blank" rel="noopener">${esc(im.licence)}</a></figcaption></figure>`;
-    }
-    const hub = s.event && (data.hubs || {})[s.event];
-    if (hub && hub.poster) return `<figure class="art poster"><img class="wide" src="${esc(hub.poster)}" alt="${esc(hub.name)} ${esc(hub.year)} poster" loading="lazy">${hub.tile ? `<img class="sq" src="${esc(hub.tile)}" alt="" loading="lazy">` : ""}</figure>`;
-    if (im && im.type === "cartoon") return `<div class="art cartoon" data-cartoon="${esc(im.src)}"></div>`;
-    // Fallback: a line drawing of the table, with the ball's flight varied per story
-    const h = hash(s.id);
-    const flip = h & 1;
-    const x0 = 120, y0 = 250, L = 400, dx = 20, dy = 14, mx = x0 + L / 2;
-    const net = [1, 2, 3, 4, 5].map((i) => { const t = i / 6, px = mx + dx - dx * t, py = y0 + dy * t; return `<line x1="${px}" y1="${py}" x2="${px}" y2="${py - 13}" stroke-width=".4"/>`; }).join("");
-    const legs = [x0 + 40, x0 + L - 40].map((lx) => `<path d="M${lx - 10} ${y0 + dy + 5} L${lx - 14} ${y0 + dy + 44} M${lx + 10} ${y0 + dy + 5} L${lx + 14} ${y0 + dy + 44}" stroke-width="1.4"/>`).join("");
-    const fx = flip ? 180 + (h >> 4) % 60 : 400 + (h >> 4) % 60, fy = y0 - 4;
-    const bx = flip ? 380 + (h >> 9) % 90 : 160 + (h >> 9) % 90, by = 150 + (h >> 13) % 70;
-    const score = s.score && showScore
-      ? `<text x="40" y="96" font-family="Bricolage Grotesque, system-ui, sans-serif" font-weight="600" font-size="64" fill="currentColor" stroke="none" letter-spacing="-.02em">${esc(s.score.replace("-", "–"))}</text>` : "";
-    return `<svg class="art" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Line drawing of a table tennis table">
-      <g stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="0" y1="${y0 + dy + 44}" x2="640" y2="${y0 + dy + 44}" stroke-width=".6"/>
-        <path d="M${x0 + dx} ${y0} L${x0 + L + dx} ${y0} L${x0 + L} ${y0 + dy} L${x0} ${y0 + dy} Z" fill="#2f5fd0" stroke-width="1.6"/>
-        <path d="M${x0 + dx + 4} ${y0 + 1.5} L${x0 + L + dx - 4} ${y0 + 1.5} L${x0 + L - 3} ${y0 + dy - 1.5} L${x0 + 3} ${y0 + dy - 1.5} Z" stroke="#fff" stroke-width=".9"/>
-        <line x1="${x0 + 14}" y1="${y0 + dy / 2}" x2="${x0 + L + 6}" y2="${y0 + dy / 2}" stroke="#fff" stroke-width=".7"/>
-        <path d="M${x0} ${y0 + dy} L${x0 + L} ${y0 + dy} L${x0 + L} ${y0 + dy + 5} L${x0} ${y0 + dy + 5} Z" fill="currentColor" stroke-width="1"/>
-        <path d="M${mx + dx} ${y0} L${mx + dx} ${y0 - 13} L${mx} ${y0 + dy - 13} L${mx} ${y0 + dy}" stroke-width="1.2"/>${net}${legs}
-        <path d="M${fx} ${fy} Q${(fx + bx) / 2} ${by - 60} ${bx} ${by}" stroke-width=".8" stroke-dasharray="1 5"/>
-        <circle cx="${bx}" cy="${by}" r="5.5" fill="#f37021" stroke-width="1.1"/>
-      </g>${score}
-    </svg>`;
+    if (im && im.type === "photo") return `<div class="pic photo"><img src="${esc(im.url)}" alt="${esc(im.alt || "")}" loading="lazy"></div>`;
+    if (im && im.type === "cartoon") return `<div class="pic cartoon" data-cartoon="${esc(im.src)}"></div>`;
+    return "";
   }
 
-  // Live notice
-  const today = new Date().toISOString().slice(0, 10);
-  const live = data.events.filter((e) => e.start <= today && e.end >= today);
-  if (live.length) {
-    $("live").innerHTML = '<span class="pulse">On now</span>' + live.map((e) => (data.hubs || {})[e.id] ? `<a class="live-ev" href="${esc(data.hubs[e.id].url)}">${esc(e.name)}</a>` : `<span>${esc(e.name)}</span>`).join("") +
-      `<a href="${esc(data.live_results_url)}" target="_blank" rel="noopener">Live scores on WTT</a>`;
-    $("live").hidden = false;
+  // ---- On now: the big event of the moment, in its own soft colour, with live scores
+  const liveEvent = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id])
+    .sort((a, b) => (b.prestige || 0) - (a.prestige || 0))[0];
+  const onHub = liveEvent && hubs[liveEvent.id];
+  function renderOnNow() {
+    if (!onHub) return;
+    const el = $("onnow");
+    const s = day(onHub.start), n = Math.round((day(onHub.end) - s) / 864e5) + 1;
+    const dnum = Math.round((day(today) - s) / 864e5) + 1;
+    const days = Array.from({ length: n }, (_, i) => {
+      const d = new Date(s.getTime() + i * 864e5), iso = d.toISOString().slice(0, 10);
+      const cls = [iso === today ? "now" : "", i === n - 1 ? "fin" : ""].join(" ");
+      return `<div class="${cls}"><span>${d.toLocaleDateString("en-GB", { weekday: "short" })}</span><b>${String(d.getDate()).padStart(2, "0")}</b></div>`;
+    }).join("");
+    el.style.cssText = `--tint:${onHub.tint};--tint-rule:${onHub.tint_rule};--tint-ink:${onHub.tint_ink};--tier:${onHub.colour}`;
+    el.innerHTML = `<div class="wrap onnow-inner">
+      <div class="onnow-title"><span class="lab"><span class="live-dot"></span>On now · ${esc(onHub.series)}</span>
+        <h2><a href="${esc(onHub.url)}">${esc(onHub.city)}</a></h2>
+        <span class="lab sub">Day ${dnum} of ${n}${onHub.venue ? ` · ${esc(onHub.venue)}` : ""}</span>
+        <div class="days">${days}</div>
+        <a class="onnow-link" href="${esc(onHub.url)}">Draw, results and schedule</a></div>
+      <div class="onnow-live"><span class="lab">Live and latest</span><div class="lv-strip" id="onnow-live"><p class="lv-wait">Scores appear here when play starts.</p></div></div>
+    </div>`;
+    if (onHub.wtt) liveScores();
+  }
+  async function liveScores() {
+    const box = $("onnow-live");
+    const tick = async () => {
+      if (document.hidden) return;
+      try {
+        const d = await fetch(`/api/live?event=${encodeURIComponent(onHub.wtt)}`, { cache: "no-store" }).then((r) => r.json());
+        const ms = (d.live || []).concat(d.results || []).slice(0, 4);
+        if (!ms.length) return;
+        box.innerHTML = ms.map((m) => {
+          const live = m.status === "live", g = m.games[m.games.length - 1] || [0, 0];
+          const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
+          const side = (i) => `<span class="row${won === i ? " won" : ""}"><span>${esc(m.sides[i].name)}</span><b>${m.score[i]}${live ? `<i class="pts">${g[i]}</i>` : ""}</b></span>`;
+          return `<a class="score-card${live ? " is-live" : ""}" href="${esc(onHub.url)}#live"><span class="ev">${live ? '<span class="live-dot"></span>Live · ' : "Final · "}${esc(m.label)}</span>${side(0)}${side(1)}</a>`;
+        }).join("");
+      } catch (e) { /* keep the last scores showing */ }
+    };
+    tick();
+    setInterval(tick, 15000);
+    document.addEventListener("visibilitychange", tick);
   }
 
-  // Stories
-  const stories = [...data.stories].sort((a, b) => b.date.localeCompare(a.date));
-  const tag = (s) => `<span class="tag" style="color:var(--${s.category}, var(--ink))">${esc(s.category)}${s.lang ? `<span class="translated">, translated from ${esc(s.lang)}</span>` : ""}</span>`;
-  const authors = data.authors || {};
-  const who = (s) => authors[s.author] || authors.tom || { name: "Eleven" };
-  const avatar = (au, size) => au.photo
-    ? `<img class="avatar" src="${esc(au.photo)}" alt="" width="${size}" height="${size}">`
-    : `<span class="avatar" style="width:${size}px;height:${size}px;font-size:${size * 0.4}px;background:${esc(au.colour || "var(--ink)")};color:#fff" aria-hidden="true">${esc(au.initials || au.name.split(/\s+/).map((w) => w[0]).join("").slice(0, 2))}</span>`;
-  const when = (s) => {
-    const full = (data.articles || {})[s.id];
-    const stamp = (full && full.published) || s.published;
-    if (stamp) {
-      return new Date(stamp).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }).replace(",", ",");
-    }
-    return fmt(s.date);
-  };
-  const meta = (s) => { const au = who(s); return `<span class="byline">${avatar(au, 26)}<span>By ${esc(au.name)}</span></span><div class="meta">${when(s)}</div>`; };
-  const card = (s, heading = "h3", sc = true) => {
-    const full = (data.articles || {})[s.id];
-    const title = full ? `<a class="stretch" href="${esc(full.url)}">${esc(s.headline)}</a>` : esc(s.headline);
-    return `<article class="card">${art(s, sc)}<div class="card-body">${tag(s)}<${heading}>${title}</${heading}><p>${esc(s.summary)}</p>${meta(s)}</div></article>`;
-  };
-
-  // Highlights: two official videos side by side, from the event on now (or the latest one),
-  // rotating through the newest clips and pairing a men's and a women's match when both exist
+  // ---- Watch: official highlights, four at a time, rotating hourly and mixing men's and women's matches
   function renderWatch() {
     const all = (data.highlights || []).filter((v) => v.id);
-    if (all.length < 2) { $("watch").hidden = true; return false; }
-    const hubs = data.hubs || {};
-    const liveHub = data.events.filter((e) => e.start <= today && e.end >= today).map((e) => hubs[e.id]).find(Boolean);
+    if (all.length < 2) return;
     const byDate = [...all].sort((a, b) => b.date.localeCompare(a.date));
-    let ev = liveHub && byDate.find((v) => hubs[v.event] === liveHub) ? byDate.find((v) => hubs[v.event] === liveHub).event : byDate[0].event;
-    let pool = byDate.filter((v) => v.event === ev).slice(0, 6);
-    if (pool.length < 2) pool = byDate.slice(0, 6);
-    const turn = Math.floor(Date.now() / 36e5);  // changes every hour
-    const men = pool.filter((v) => v.gender === "M"), women = pool.filter((v) => v.gender === "W");
-    const pick = men.length && women.length ? [men[turn % men.length], women[turn % women.length]]
-      : [pool[(2 * turn) % pool.length], pool[(2 * turn + 1) % pool.length]];
+    const ev = ((onHub && byDate.find((v) => hubs[v.event] === onHub)) || byDate[0]).event;
+    let pool = byDate.filter((v) => v.event === ev).slice(0, 8);
+    if (pool.length < 4) pool = pool.concat(byDate.filter((v) => !pool.includes(v))).slice(0, 8);
+    const turn = Math.floor(Date.now() / 36e5);
+    const groups = [pool.filter((v) => v.gender === "W"), pool.filter((v) => v.gender === "M"), pool.filter((v) => !["M", "W"].includes(v.gender))];
+    const pick = [];
+    for (let i = 0; pick.length < Math.min(4, pool.length) && i < 24; i++) {
+      const src = groups[i % 3];
+      if (!src.length) continue;
+      const v = src[(turn + Math.floor(i / 3)) % src.length];
+      if (!pick.includes(v)) pick.push(v);
+    }
     const hub = hubs[ev];
-    const head = hub ? `Highlights: <a href="${esc(hub.url)}">${esc(hub.name)} ${esc(hub.year)}</a>` : "Highlights";
-    $("watch").innerHTML = `<h2 id="watch-h" class="section-title">${head}</h2><div class="video-grid">` + pick.map((v) => `<figure class="video">
-      <button type="button" class="yt" data-yt="${esc(v.id)}" aria-label="Play video: ${esc(v.title)}">
-        <img src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="yt-play" aria-hidden="true"></span>
-      </button><figcaption>${esc(v.title)}<span>Video: ${esc(v.channel || "YouTube")}</span></figcaption></figure>`).join("") + "</div>";
-    $("watch").hidden = false;
-    return true;
+    $("watch").innerHTML = `<div class="wrap"><div class="sec-head"><h2 id="watch-h">Watch</h2>${hub ? `<a href="${esc(hub.url)}">${esc(hub.name)} ${esc(hub.year)} highlights</a>` : ""}</div>
+      <div class="rail">${pick.map((v) => `<figure class="video">
+        <button type="button" class="yt" data-yt="${esc(v.id)}" aria-label="Play video: ${esc(v.title)}">
+          <img src="https://i.ytimg.com/vi/${esc(v.id)}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="yt-play" aria-hidden="true"></span>
+        </button><figcaption>${esc(v.title)}<span>Video: ${esc(v.channel || "YouTube")}</span></figcaption></figure>`).join("")}</div></div>`;
   }
   document.addEventListener("click", (ev) => {
     const b = ev.target.closest("#watch .yt");
@@ -134,21 +140,38 @@
     b.replaceWith(f);
   });
 
-  function render(cat) {
-    const list = cat === "All" ? stories : stories.filter((s) => s.category === cat);
-    const lead = list.find((s) => s.top) || list[0];
-    const rest = list.filter((s) => s !== lead);
-    $("lead").className = "lead";
-    $("lead").innerHTML = lead ? card(lead, "h2") : '<div class="card"><div class="card-body"><p>Nothing in this section yet. New stories arrive with each update.</p></div></div>';
-    $("second").innerHTML = rest.slice(0, 3).map((s) => card(s, "h3", false)).join("");
-    // Keep the grid's rows full: an odd card out gives way to the highlights row
-    let more = rest.slice(3);
-    const watching = renderWatch();
-    if (watching && more.length % 2) more = more.slice(0, -1);
-    $("stories").innerHTML = more.map((s) => card(s)).join("");
-    $("empty").hidden = rest.length > 3;
+  // ---- Events row: posters for the event on now and the next ones
+  function renderEvents() {
+    const urls = new Set();
+    const list = Object.values(hubs).filter((h) => h.end && h.end >= today && !urls.has(h.url) && urls.add(h.url))
+      .sort((a, b) => (a.start || "").localeCompare(b.start || "")).slice(0, 4);
+    if (!list.length) return;
+    $("ev-row").innerHTML = `<div class="sec-head"><h2 id="evrow-h">Events</h2><a href="/events/">All events</a></div>
+      <div class="ev-tiles">${list.map((h) => `<a class="ev-tile" href="${esc(h.url)}"><img src="${esc(h.tile || h.poster)}" alt="" loading="lazy">
+        <h3>${esc(h.name)}</h3><span>${h.start <= today ? "On now" : `${fmt(h.start)} to ${fmt(h.end)}`}</span></a>`).join("")}</div>`;
   }
-  // Cartoons are inlined so their speech bubbles use the page's hand-lettered font
+
+  // ---- Stories
+  const stories = [...data.stories].sort((a, b) => (stamp(b) || b.date).localeCompare(stamp(a) || a.date));
+  function render(cat) {
+    seen = new Set();
+    const list = cat === "All" ? stories : stories.filter((s) => s.category === cat);
+    const lead = (cat === "All" && list.find((s) => s.top)) || list[0];
+    const rest = list.filter((s) => s !== lead);
+    $("lead").innerHTML = lead ? `<article class="big">${art(lead, "big")}<div class="big-text">${kicker(lead)}
+      <h1><a class="stretch" href="${esc(url(lead))}">${esc(lead.headline)}</a></h1><p>${esc(lead.summary)}</p>
+      <span class="meta">${when(lead)} · By ${esc(who(lead))}</span></div></article>`
+      : '<p class="empty">Nothing in this section yet. New stories arrive with each update.</p>';
+    const tops = rest.slice(0, 5), more = rest.slice(5);
+    $("second").innerHTML = tops.map((s) => `<li><a href="${esc(url(s))}">${esc(s.headline)}</a><span class="meta">${when(s)}</span></li>`).join("");
+    $("second").closest(".tops").hidden = !tops.length;
+    $("stories").innerHTML = more.map((s) => `<article class="promo">${art(s, "small")}<div>${kicker(s)}
+      <h3><a class="stretch" href="${esc(url(s))}">${esc(s.headline)}</a></h3><span class="meta">${when(s)} · By ${esc(who(s))}</span></div></article>`).join("");
+    $("empty").hidden = more.length > 0;
+    fillCartoons();
+  }
+
+  // Illustrations are inlined so they inherit the page's colours
   const cartoonCache = {};
   async function fillCartoons() {
     for (const el of document.querySelectorAll("[data-cartoon]:not(.filled)")) {
@@ -161,22 +184,32 @@
       } catch (e) { /* leave the tinted panel showing */ }
     }
   }
-  const _render = render;
-  render = (cat) => { _render(cat); fillCartoons(); };
 
+  // Home shows everything; Clubs and Equipment filter the stories
+  function show(cat) {
+    const home = cat === "All";
+    $("onnow").hidden = !home || !onHub;
+    // the "on now" section carries the live scores, so the scores strip steps aside on the homepage
+    document.body.classList.toggle("has-onnow", home && !!onHub);
+    $("watch").hidden = !home || !$("watch").innerHTML;
+    $("ev-row").hidden = !home || !$("ev-row").innerHTML;
+    render(cat);
+  }
   $("tabs").addEventListener("click", (e) => {
     const b = e.target.closest("button");
     if (!b) return;
     document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    render(b.dataset.cat);
+    show(b.dataset.cat);
   });
   const fromHash = () => {
     const h = decodeURIComponent(location.hash.slice(1));
     const cat = ["International", "England", "Clubs", "Equipment"].includes(h) ? h : "All";
     document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === cat)));
-    render(cat);
+    show(cat);
   };
+  renderOnNow();
+  renderWatch();
+  renderEvents();
   window.addEventListener("hashchange", () => { fromHash(); window.scrollTo(0, 0); });
   fromHash();
-
 })();

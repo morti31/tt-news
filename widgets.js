@@ -80,8 +80,11 @@
       if (!list.length) return;
       const top = list[0], max = top.points || 1;
       const lead = $("rank-lead");
-      if (lead) lead.innerHTML = `<div><span class="rl-label">World No. 1</span><span class="rl-name">${esc(top.name)}</span><span class="rl-nat">${flag(top.nat)}${esc(top.nat)}</span></div>
-        <div class="rl-pts"><b>${f(top.points)}</b><span>points</span></div>`;
+      // Both world No. 1s, side by side at the same size, whichever list is showing
+      if (lead) lead.innerHTML = ["men", "women"].map((k) => {
+        const p = (news.rankings[k] || [])[0];
+        return p ? `<div class="rl"><span class="rl-label">${k === "men" ? "Men's" : "Women's"} No. 1</span><span class="rl-name">${flag(p.nat)}${esc(p.name)}</span><b class="rl-pts">${f(p.points)}</b></div>` : "";
+      }).join("");
       $("rankings").innerHTML = list.slice(lead ? 1 : 0).map((p, k) => {
         const i = k + (lead ? 1 : 0);
         return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${esc(p.name)}</span><span class="nt">${flag(p.nat)}${esc(p.nat)}${move(p, i)}</span></span>

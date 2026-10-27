@@ -59,8 +59,21 @@ def status(ev, today):
     return "past" if end and end < today else "next"
 
 
+# Soft tints for the homepage's "on now" section, by poster colour: (background, rule, text)
+TINTS = {"#d4213d": ("#fcedef", "#f2d3d8", "#5c0716"), "#f37021": ("#fdf1e8", "#f6dcc8", "#5e2205"),
+         "#3a66e0": ("#eef2fb", "#d5ddf2", "#13235b"), "#12917a": ("#eaf6f2", "#cfe8df", "#063a30"),
+         "#7a3cf0": ("#f2edfc", "#ddd1f6", "#2a1063"), "#0a84c4": ("#e9f4fa", "#cbe3f1", "#04263b"),
+         "#d98a00": ("#fbf3e3", "#f0dfba", "#3a2200"), "#00a39b": ("#e7f6f5", "#c7e8e6", "#00302e"),
+         "#2aa198": ("#e8f6f4", "#cbe9e5", "#0e4a46"), "#6b7586": ("#f1f2f5", "#dcdfe5", "#262c36"),
+         "#23895c": ("#e9f5ef", "#cde7da", "#0b3a26")}
+
+
 def index_entry(ev):
-    return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev), "wtt": ev.get("wtt_id")}
+    c = posters.palette(ev)[0]
+    bg, rule, ink = TINTS.get(c, ("#f1f3f7", "#dde1e8", "#111418"))
+    return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev),
+            "wtt": ev.get("wtt_id"), "series": ev["series"], "city": ev["city"], "venue": ev.get("venue"), "start": ev.get("start"),
+            "end": ev.get("end"), "group": ev["group"], "colour": c, "tint": bg, "tint_rule": rule, "tint_ink": ink}
 
 
 def event_index(data):

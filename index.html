@@ -9,10 +9,10 @@
 <link rel="icon" href="/img/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#17202b">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Figtree:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="alternate" type="application/rss+xml" title="Eleven" href="/feed.xml">
@@ -38,43 +38,47 @@
 <section class="ticker" aria-label="Latest scores">
   <div class="wrap ticker-inner" id="ticker"></div>
 </section>
+<section id="onnow" class="onnow" aria-label="On now" hidden></section>
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
 
 <main class="wrap">
-  <div id="live" class="live" hidden></div>
-
-  <section class="top" aria-label="Top stories">
+  <section class="hero" aria-label="Top stories">
     <div id="lead"></div>
-    <div id="second" class="second"></div>
+    <aside class="tops"><h2 class="rule-title">Top stories</h2><ol id="second"></ol></aside>
   </section>
 
   <div class="layout">
     <section aria-labelledby="latest-h">
-      <h2 id="latest-h" class="section-title">Latest news</h2>
-      <div id="stories" class="cards"></div>
-      <section id="watch" class="videos home-watch" aria-labelledby="watch-h" hidden></section>
+      <div class="sec-head"><h2 id="latest-h">Latest</h2><a href="/news/">All articles</a></div>
+      <div id="stories" class="promos"></div>
       <p id="empty" class="empty" hidden>Nothing more in this section yet. New stories arrive with each update.</p>
     </section>
 
     <aside>
-      <div class="ad ad-side" data-ad="sidebar"></div>
       <section class="panel" aria-labelledby="rank-h">
-        <h2 id="rank-h" class="panel-title">World rankings</h2>
+        <h2 id="rank-h" class="rule-title">World rankings</h2>
+        <div id="rank-lead" class="rank-lead"></div>
         <div class="toggle" id="rank-toggle" role="group" aria-label="Rankings">
           <button data-g="men" aria-pressed="true">Men</button>
           <button data-g="women" aria-pressed="false">Women</button>
         </div>
-        <div id="rank-lead" class="rank-lead"></div>
         <ol id="rankings" class="rankings"></ol>
         <p class="small" id="rank-week"></p>
       </section>
+      <div class="ad ad-side" data-ad="sidebar"></div>
       <section class="panel" aria-labelledby="events-h">
-        <h2 id="events-h" class="panel-title">Coming up</h2>
-        <ul id="events" class="events"></ul>
+        <h2 id="events-h" class="rule-title">Coming up</h2>
+        <ul id="events" class="events" data-count="5"></ul>
         <a class="panel-link" href="/schedule.html">Full schedule and calendar</a>
       </section>
     </aside>
   </div>
+</main>
+
+<section id="watch" class="watch" aria-labelledby="watch-h" hidden></section>
+
+<main class="wrap">
+  <section id="ev-row" class="ev-row" aria-labelledby="evrow-h" hidden></section>
 </main>
 
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
