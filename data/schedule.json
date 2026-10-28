@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T16:40:00Z",
+  "updated": "2026-10-28T19:05:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -509,66 +509,12 @@
       "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
     },
     {
-      "id": "wtt-3250-ttemsinglesr32000900",
-      "event_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier: Lin Shidong v Lim Jonghoon, men's singles, last 32",
-      "start": "2026-10-27T12:45:00Z",
-      "end": "2026-10-27T13:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3250-ttewsinglesr32001300",
-      "event_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier: Hina Hayata v Doo Hoi Kem, women's singles, last 32",
-      "start": "2026-10-27T13:20:00Z",
-      "end": "2026-10-27T13:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3250-ttemsinglesr32001000",
-      "event_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier: An Jaehyun v Omar Assar, men's singles, last 32",
-      "start": "2026-10-27T13:55:00Z",
-      "end": "2026-10-27T14:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3250-ttewsinglesr32001400",
-      "event_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier: Kim Nayeong v Bernadette Szőcs, women's singles, last 32",
-      "start": "2026-10-27T14:30:00Z",
-      "end": "2026-10-27T15:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3250-ttemsinglesr32000800",
-      "event_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier: João Geraldo v Lin Yun-Ju, men's singles, last 32",
-      "start": "2026-10-27T15:05:00Z",
-      "end": "2026-10-27T15:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "detail": "Table 1"
-    },
-    {
       "id": "montpellier-2026-10-27-s2",
       "event_id": "wtt-champions-montpellier-2026",
       "name": "WTT Champions Montpellier: day 1, session 2",
       "start": "2026-10-27T17:30:00Z",
       "end": "2026-10-27T21:30:00Z",
       "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
-    },
-    {
-      "id": "wtt-3250-ttemsinglesr32001600",
-      "event_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier: Anders Lind v Félix Lebrun, men's singles, last 32",
-      "start": "2026-10-27T17:30:00Z",
-      "end": "2026-10-27T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3250-ttewsinglesr32000200",
@@ -810,6 +756,51 @@
       "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
     },
     {
+      "id": "wtt-3250-ttemsingles8fnl000600",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Shunsuke Togami v Truls Moregard, men's singles, last 16",
+      "start": "2026-10-29T17:30:00Z",
+      "end": "2026-10-29T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000500",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Women's Singles, Round of 16, Match 5",
+      "start": "2026-10-29T18:05:00Z",
+      "end": "2026-10-29T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000400",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Jang Woojin v Lin Yun-Ju, men's singles, last 16",
+      "start": "2026-10-29T18:40:00Z",
+      "end": "2026-10-29T19:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000600",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Elizabeta Samara v Wang Yidi, women's singles, last 16",
+      "start": "2026-10-29T19:15:00Z",
+      "end": "2026-10-29T19:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000100",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Sora Matsushima v Vladimir Sidorenko, men's singles, last 16",
+      "start": "2026-10-29T19:50:00Z",
+      "end": "2026-10-29T20:25:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
       "id": "montpellier-2026-10-30-s1",
       "event_id": "wtt-champions-montpellier-2026",
       "name": "WTT Champions Montpellier: day 4, session 1",
@@ -818,12 +809,111 @@
       "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
     },
     {
+      "id": "wtt-3250-ttewsingles8fnl000100",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Wang Manyu v Chen Yi, women's singles, last 16",
+      "start": "2026-10-30T11:00:00Z",
+      "end": "2026-10-30T11:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000500",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Lin Shidong v An Jaehyun, men's singles, last 16",
+      "start": "2026-10-30T11:35:00Z",
+      "end": "2026-10-30T12:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000800",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Shin Yubin v Sun Yingsha, women's singles, last 16",
+      "start": "2026-10-30T12:10:00Z",
+      "end": "2026-10-30T12:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000300",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Men's Singles, Round of 16, Match 3",
+      "start": "2026-10-30T12:45:00Z",
+      "end": "2026-10-30T13:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000300",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Women's Singles, Round of 16, Match 3",
+      "start": "2026-10-30T13:20:00Z",
+      "end": "2026-10-30T13:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000700",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Men's Singles, Round of 16, Match 7",
+      "start": "2026-10-30T13:55:00Z",
+      "end": "2026-10-30T14:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
       "id": "montpellier-2026-10-30-s2",
       "event_id": "wtt-champions-montpellier-2026",
       "name": "WTT Champions Montpellier: day 4, session 2",
       "start": "2026-10-30T17:30:00Z",
       "end": "2026-10-30T21:30:00Z",
       "source": "https://tennis2table.com/actualite/internationale/wtt-world-table-tennis/wtt-champions-montpellier-2026-2.html"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000400",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Women's Singles, Round of 16, Match 4",
+      "start": "2026-10-30T17:30:00Z",
+      "end": "2026-10-30T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000200",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Men's Singles, Round of 16, Match 2",
+      "start": "2026-10-30T18:05:00Z",
+      "end": "2026-10-30T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000700",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Hina Hayata v Bernadette Szőcs, women's singles, last 16",
+      "start": "2026-10-30T18:40:00Z",
+      "end": "2026-10-30T19:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttemsingles8fnl000800",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Zhou Qihao v Félix Lebrun, men's singles, last 16",
+      "start": "2026-10-30T19:15:00Z",
+      "end": "2026-10-30T19:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3250-ttewsingles8fnl000200",
+      "event_id": "wtt-champions-montpellier-2026",
+      "name": "WTT Champions Montpellier: Women's Singles, Round of 16, Match 2",
+      "start": "2026-10-30T19:50:00Z",
+      "end": "2026-10-30T20:25:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "detail": "Table 1"
     },
     {
       "id": "montpellier-2026-10-31-s1",
