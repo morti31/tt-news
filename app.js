@@ -206,7 +206,42 @@
       <h3><a class="stretch" href="${esc(url(s))}">${esc(s.headline)}</a></h3><span class="meta">${when(s)} · By ${esc(who(s))}</span></div></article>`).join("");
     $("empty").hidden = more.length > 0;
     fillCartoons();
+    balance();
   }
+
+  // Latest stops where the sidebar stops, so the right-hand column never leaves white space beside it.
+  // At least four stories always show; on phones (one column) the list is capped at eight.
+  // The rest are a click away on the News page.
+  function balance() {
+    const list = $("stories"), aside = document.querySelector(".layout > aside");
+    if (!list || !aside) return;
+    const items = [...list.children];
+    items.forEach((el) => (el.hidden = false));
+    const oneCol = getComputedStyle(list.closest(".layout")).gridTemplateColumns.split(" ").length < 2;
+    let shown = items.length;
+    if (oneCol) shown = Math.min(items.length, 8);
+    else {
+      // the aside may be stretched to the row's height, so measure its last panel rather than the aside itself
+      const last = [...aside.children].filter((c) => !c.hidden && c.offsetHeight).pop();
+      const limit = (last || aside).getBoundingClientRect().bottom;
+      shown = items.filter((el) => el.getBoundingClientRect().bottom <= limit + 24).length;
+      shown = Math.max(Math.min(4, items.length), shown);
+    }
+    items.forEach((el, i) => (el.hidden = i >= shown));
+    let more = $("latest-more");
+    if (!more) {
+      more = document.createElement("a");
+      more.id = "latest-more"; more.className = "panel-link latest-more"; more.href = "/news/";
+      list.after(more);
+    }
+    more.textContent = "More news";
+    more.hidden = shown >= items.length;
+  }
+  if (window.ResizeObserver) {
+    let t;
+    new ResizeObserver(() => { clearTimeout(t); t = setTimeout(balance, 120); }).observe(document.querySelector(".layout > aside") || document.body);
+  }
+  window.addEventListener("resize", () => balance());
 
   // Illustrations are inlined so they inherit the page's colours
   const cartoonCache = {};
@@ -250,7 +285,7 @@
   function renderFeatures() {
     const fs = [...data.features].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 3);
     if (!fs.length) return;
-    $("feat-row").innerHTML = `<div class="sec-head"><h2 id="feat-h">Features</h2><a href="/features/">All features</a></div><div class="feat-grid">` +
+    $("feat-row").innerHTML = `<div class="sec-head"><h2 id="feat-h">Features</h2><a href="/features/">All features</a></div><div class="feat-grid" style="--n:${fs.length}">` +
       fs.map((f) => `<article class="feat"><a href="${esc(f.url)}">${f.cover ? `<img src="${esc(f.cover)}" alt="" loading="lazy">` : ""}
         <span class="kicker" style="color:var(--ball)">${esc(f.kind)}</span><h3>${esc(f.title)}</h3><p>${esc(f.standfirst)}</p><span class="meta">By ${esc(f.author)}</span></a></article>`).join("") + "</div>";
   }

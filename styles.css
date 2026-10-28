@@ -830,7 +830,7 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 
 /* Features */
 .feat-row { margin-top: 40px; }
-.feat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 16px; }
+.feat-grid { display: grid; grid-template-columns: repeat(var(--n, 3), minmax(0, 1fr)); gap: 24px; margin-top: 16px; }   /* fewer than three features fill the row rather than leaving a gap */
 .feat a { text-decoration: none; display: block; }
 .feat img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; margin-bottom: 10px; }
 .feat h3 { font: 800 21px/1.15 var(--head-font); margin: 6px 0; letter-spacing: -.015em; }
@@ -901,3 +901,6 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 .wr { display: inline-block; margin-left: 6px; font-size: .78em; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; vertical-align: 1px; }
 .score-card .wr, .onnow .wr { color: rgba(255,255,255,.6); }
 .lv-won .wr, .row.won .wr { font-weight: 600; }
+.latest-more { display: inline-block; margin-top: 14px; }
+.hub-full { margin-top: 8px; }
+.hub-full .hub-sec:first-child { margin-top: 24px; }

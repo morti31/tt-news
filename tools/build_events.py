@@ -192,6 +192,13 @@ def hub(ev, items, schedule, today, news):
                                                                 ("watch", "Watch", watch), ("news", "News", news_sec)) if sec)
     facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev["events"]),
                                                                    ("Level", TIER_NAMES.get(ev["tier"], ""))) if v)
+    # The sidebar sits beside the first sections only (live scores and results, or whatever comes first);
+    # the long sections (draw, schedule, highlights, news) run full width below it, so there is no
+    # empty column on the right.
+    order = [x for x in (live_sec, results, draw, fixtures, watch, news_sec) if x]
+    top = [x for x in (live_sec, results) if x] or order[:1]
+    top_html = empty + "".join(top)
+    below_html = "".join(x for x in order if x not in top)
     body = f"""<main class="wrap hub">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/events/">Events</a> / {e(ev["group"])}</nav>
 {hero}
@@ -203,7 +210,7 @@ def hub(ev, items, schedule, today, news):
 </header>
 {f'<nav class="hub-jump" aria-label="On this page">{jump}</nav>' if jump else ""}
 <div class="hub-grid"><div class="hub-main">
-{empty}{live_sec}{results}{draw}{fixtures}{watch}{news_sec}
+{top_html}
 </div>
 <aside class="article-side">
   <section class="panel hub-facts"><h2 class="panel-title">Event guide</h2><dl>{facts}</dl></section>
@@ -211,6 +218,7 @@ def hub(ev, items, schedule, today, news):
   <section class="panel"><h2 class="panel-title">Coming up</h2><ul id="events" class="events" data-count="5"></ul>
     <a class="panel-link" href="/events/">All events</a></section>
 </aside></div>
+{f'<div class="hub-full">{below_html}</div>' if below_html else ""}
 </main>
 {components.SCRIPT if (vids or ev.get("draw")) else ""}
 {'<script src="/live.js" defer></script>' if live_sec else ""}"""
