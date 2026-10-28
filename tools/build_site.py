@@ -488,6 +488,8 @@ def main():
     TOP = top_stories(STORIES)
     json.dump([i["id"] for i in TOP], open(os.path.join(ROOT, "data", "top-stories.json"), "w"))
     os.makedirs(os.path.join(ROOT, "news"), exist_ok=True)
+    for old in glob.glob(os.path.join(ROOT, "news", "*.html")):   # start clean: merged or removed stories leave no stale pages
+        os.remove(old)
     for a in arts:
         others = [o for o in arts if o["slug"] != a["slug"]]
         open(os.path.join(ROOT, "news", a["slug"] + ".html"), "w", encoding="utf-8").write(article_page(a, others))

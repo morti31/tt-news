@@ -187,7 +187,8 @@
           "name": "World Table Tennis on YouTube",
           "url": "https://www.youtube.com/@WTTGlobal/videos"
         }
-      ]
+      ],
+      "top": true
     },
     {
       "id": "wtt-champions-montpellier-2026-day2-preview",
@@ -211,12 +212,8 @@
       "id": "jtta-all-japan-wtt-clash-2026",
       "category": "International",
       "lang": "Japanese",
-      "headline": "Japan's top players may miss All Japan Championships after WTT Champions clash",
-      "summary": "The Japan Table Tennis Association has warned that players entered for a WTT Champions event in Asia next January may be unable to play the All Japan Championships, which run on the same dates, 19 to 24 January 2027. It said WTT and the ITTF did not agree to its request to move the WTT event.",
-      "body": [
-        "WTT Champions in Asia is usually held in early January, but the 2027 calendar published on 1 September moved it into the week of the national championships. The association said it had asked the ITTF and WTT to change the dates and asked the host federation to consider it, without success. Moving the All Japan Championships about four months out was judged too difficult because of the venue and organisation.",
-        "The association said the clash would seriously harm players' chances to compete, because Japan's Los Angeles 2028 singles and team places go to the two highest-ranked Japanese players in the first ITTF ranking of 2028. It has already dropped automatic World Championships selection for the All Japan singles winners, and will ask the ITTF and WTT to coordinate international dates with major national events from 2028."
-      ],
+      "headline": "Japan's top players may miss the All Japan Championships after clash with WTT Champions event",
+      "summary": "The All Japan Championships and a WTT Champions event in Asia both fall on 19 to 24 January 2027, and WTT and the ITTF declined to move the WTT event.",
       "date": "2026-10-27",
       "published": "2026-10-28T08:15:00Z",
       "sources": [
@@ -234,12 +231,8 @@
     {
       "id": "african-champs-2026",
       "category": "International",
-      "headline": "Youssef Abdelaziz and Hana Goda win African Championships singles titles",
-      "summary": "Youssef Abdelaziz beat his Egyptian teammate Omar Assar 4-1 in the men's singles final in Tangier, and Hana Goda beat Dina Meshref 4-1 for her fourth African women's singles title in a row. Egypt took all four places in the two finals.",
-      "body": [
-        "Goda reached the final by beating Hend Fathy 4-1, and Meshref beat Mariam Alhodaby by the same score. Abdelaziz also won the men's doubles with Mohamed El-Beily and the mixed doubles with Alhodaby, while Goda and Meshref won the women's doubles.",
-        "Egypt's women won the team event earlier in the week, beating Tunisia 3-0 in the final without losing a game. The championships ran from 18 to 25 October."
-      ],
+      "headline": "African Championships 2026: Youssef Abdelaziz and Hana Goda win singles titles as Egypt sweep the board",
+      "summary": "Goda won her fourth African singles title in a row and Abdelaziz beat Omar Assar in Tangier, where Egypt filled all four final places.",
       "date": "2026-10-25",
       "published": "2026-10-28T08:10:00Z",
       "sources": [
@@ -494,8 +487,8 @@
     {
       "id": "world-hopes-sheffield-2026",
       "category": "England",
-      "headline": "Sheffield hosts ITTF World Hopes Week",
-      "summary": "The ITTF's development camp for the world's leading under-12s came to Sheffield, with England's Sai Prasanna Kumar and Isabella Xiao Xu among the players.",
+      "headline": "ITTF World Hopes Week in Sheffield: a big learning curve for England's Sai Prasanna Kumar and Isabella Xiao Xu",
+      "summary": "The ITTF's camp for the world's best under-12s came to the English Institute of Sport in Sheffield, ending in a competition where every game counted.",
       "date": "2026-10-23",
       "sources": [
         {
@@ -504,16 +497,13 @@
         }
       ],
       "author": "michelle",
-      "body": [
-        "Table Tennis England said the pair faced playing styles they rarely meet at home and learned from the other players and coaches at the camp. Its video report called the week a success for players, coaches and the ITTF."
-      ],
       "published": "2026-10-26T15:41:00Z"
     },
     {
       "id": "mltt-houston-2026",
       "category": "Clubs",
-      "headline": "Major League Table Tennis heads to Houston for Week 4",
-      "summary": "The US franchise league's fourth season continues in Houston from 30 October to 1 November, with four teams in action.",
+      "headline": "Major League Table Tennis Week 4 preview: Texas Smash host Chicago, Atlanta and Carolina in Houston",
+      "summary": "The US franchise league's fourth season moves to Houston, where last season's beaten finalists, Carolina Gold Rush, finally start their campaign.",
       "date": "2026-10-25",
       "sources": [
         {
@@ -531,8 +521,8 @@
     {
       "id": "dimpled-ball-2026",
       "category": "Equipment",
-      "headline": "Could a dimpled ball change the game?",
-      "summary": "Ray D'Alonzo has published a mathematical paper on golf-style dimples on a table tennis ball. His model suggests less drag and more speed kept across the table, though the effects on spin and bounce would need real prototypes to test.",
+      "headline": "Could a dimpled ball change table tennis? What one physicist's model predicts",
+      "summary": "A retired chemist and former college player has modelled a golf-style dimpled ball.",
       "date": "2026-10-23",
       "sources": [
         {
@@ -545,10 +535,6 @@
         "src": "img/cartoons/dimpled-ball.svg"
       },
       "author": "tom",
-      "body": [
-        "The model suggests a dimpled ball would meet less drag and keep more of its speed as it crosses the table. D'Alonzo stresses that his drag figures are illustrative rather than measured.",
-        "The bigger unknowns are spin and bounce. D'Alonzo concludes that neither can be predicted reliably without making and testing real prototypes."
-      ],
       "published": "2026-10-26T15:27:00Z"
     }
   ],

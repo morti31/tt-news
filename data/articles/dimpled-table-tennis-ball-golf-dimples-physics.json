@@ -1,0 +1,36 @@
+{
+  "slug": "dimpled-table-tennis-ball-golf-dimples-physics",
+  "story_id": "dimpled-ball-2026",
+  "category": "Equipment",
+  "date": "2026-10-23",
+  "published": "2026-10-26T15:27:00Z",
+  "modified": "2026-10-28T11:10:00Z",
+  "author": "tom",
+  "title": "Could a dimpled ball change table tennis? What one physicist's model predicts",
+  "seo_title": "Dimpled table tennis ball: what the physics predicts",
+  "description": "What would happen if a table tennis ball had golf-style dimples? Ray D'Alonzo's model predicts less drag, but spin and bounce can only be tested with prototypes.",
+  "standfirst": "A retired chemist and former college player has modelled a golf-style dimpled ball. It would keep more of its speed across the table, but the effect on spin and bounce is anyone's guess.",
+  "body": [
+    "What would happen if a table tennis ball had dimples like a golf ball? Ray D'Alonzo, a retired PhD analytical chemist and former college player in the US, has tried to answer the question with a mathematical paper published by Table Tennis England. His model suggests a dimpled ball would keep more of its speed as it crosses the table, but he concludes that its effect on spin and bounce can only be found by making one.",
+    "D'Alonzo is clear that he is not trying to change the sport's equipment. \"This is not a proposal to change the official ball. It is a thought experiment,\" he writes.",
+    "## Why golf balls have dimples",
+    "The idea comes from golf. Nineteenth-century golfers noticed that old gutta-percha balls that had been nicked and dented flew further than smooth new ones. Makers began adding marks on purpose, and those experiments became the engineered dimples on modern golf balls. The explanation came later: surface texture changes the way air flows around a ball and where it separates from the back, which under the right conditions reduces drag.",
+    "## Less drag, the same start",
+    "A table tennis ball weighs 2.7g and has a large surface for its weight, so drag matters a great deal. To show the scale of a possible effect, D'Alonzo modelled two balls struck at 15 metres a second, about 34mph, giving the smooth ball a drag coefficient of 0.45 and the dimpled one 0.30. He stresses that those figures are illustrative: nobody has measured a dimpled table tennis ball.",
+    "Over the 2.74 metres of the table, the smooth ball slowed from 15 to about 10.6 metres a second, while the dimpled one kept about 11.9. The dimpled ball would not get faster, but it would lose less speed, so an opponent would face a quicker ball from the same stroke.",
+    "## The big unknowns: spin and bounce",
+    "Spin matters more to players, and here the model is less certain. A spinning ball pushes air unevenly, which is why topspin dips, backspin floats and sidespin curves. Dimples would change the airflow, so they would probably change the effect of spin too. A good design might make topspin dip more sharply or sidespin bend further; another might do very little, or the opposite.",
+    "The bounce is the hardest part. The thin shell flattens when it hits the table, so a dimple in the contact area might or might not change the friction, and the ball would arrive with different speed and spin anyway. D'Alonzo concludes that the bounce could be noticeably different, but that theory alone cannot say which way.",
+    "## How the paper was written",
+    "D'Alonzo says the question and concept are his, and that he asked OpenAI's ChatGPT to search the scientific literature, build a simplified model, run the calculations and help draft the paper, which he reviewed. He invites readers to check the analysis independently.",
+    "## The next step",
+    "Testing it would not need any change to the laws. D'Alonzo suggests making smooth and dimpled balls of the same size, weight and material, filming them with high-speed cameras to compare speed, spin and rebound, and then giving them to good players.",
+    "The ball has changed before. It grew from 38mm to 40mm after the Sydney 2000 Olympics, and the switch from celluloid to plastic began in 2014. Both changes slowed the game down. A dimpled ball, if D'Alonzo's numbers are anywhere near right, would push the other way. Our [guide to the rules](/guide/table-tennis-rules-explained.html) explains what the laws say about the ball now."
+  ],
+  "sources": [
+    {
+      "name": "Table Tennis England",
+      "url": "https://www.tabletennisengland.co.uk/news/2026/a-table-tennis-ball-with-dimples-that-could-be-a-whole-new-ball-game/"
+    }
+  ]
+}
