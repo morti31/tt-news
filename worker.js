@@ -3,7 +3,7 @@
 //
 //   GET /api/live?event=3250   ->  { updated, live: [match], results: [match] }
 //
-// A match is { code, label, table, status, game, sides: [{name, nat}], score: [a, b],
+// A match is { code, label, table, status, game, sides: [{name, nat, rank}], score: [a, b],
 //              games: [[a, b], ...], server: 0|1|null, start (UTC ISO) }.
 const WTT = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/liveeventsapi/api/cms";
 const HEADERS = { Origin: "https://www.worldtabletennis.com", Referer: "https://www.worldtabletennis.com/", Accept: "application/json" };
@@ -41,7 +41,22 @@ function utc(s) {
   return m ? `${m[3]}-${m[1].padStart(2, "0")}-${m[2].padStart(2, "0")}T${m[4].padStart(2, "0")}:${m[5]}:00Z` : null;
 }
 
-function match(card) {
+// World ranking by ITTF id, from the site's own data/rankings.json (top 100 men and women).
+// Players outside the top 100, and doubles pairs, get no rank.
+async function rankMap(env, origin, ctx) {
+  try {
+    const r = await env.ASSETS.fetch(new Request(origin + "/data/rankings.json"));
+    if (!r.ok) return {};
+    const data = await r.json();
+    const out = {};
+    for (const g of ["men", "women"]) for (const p of data[g] || []) if (p.ittf_id) out[String(p.ittf_id)] = p.rank;
+    return out;
+  } catch (e) {
+    return {};
+  }
+}
+
+function match(card, ranks = {}) {
   if (!card || !card.competitiors) return null;
   const comps = card.competitiors;
   const live = card.resultStatus !== "OFFICIAL";
@@ -55,7 +70,12 @@ function match(card) {
     table: card.tableName || null,
     status: live ? "live" : "final",
     game: Number(card.currentGameNumber) || null,
-    sides: comps.map((c) => ({ name: (c.players || []).map((p) => playerName(p.playerName, p.playerOrgCode || c.competitiorOrg)).join(" / ") || playerName(c.competitiorName, c.competitiorOrg), nat: c.competitiorOrg })),
+    sides: comps.map((c) => {
+      const players = c.players || [];
+      const rank = players.length <= 1 ? ranks[String((players[0] && players[0].playerId) || c.competitiorId)] : undefined;
+      return { name: players.map((p) => playerName(p.playerName, p.playerOrgCode || c.competitiorOrg)).join(" / ") || playerName(c.competitiorName, c.competitiorOrg),
+               nat: c.competitiorOrg, ...(rank ? { rank } : {}) };
+    }),
     score: pairs((card.overallScores || card.resultOverallScores || "0-0").replace(/,/g, ""))[0] || [0, 0],
     games,
     server: server >= 0 ? server : null,
@@ -74,16 +94,17 @@ async function cached(url, ctx, ttl) {
   return JSON.parse(text);
 }
 
-async function live(eventId, ctx) {
-  const [now, done] = await Promise.all([
+async function live(eventId, ctx, env, origin) {
+  const [now, done, ranks] = await Promise.all([
     cached(`${WTT}/GetLiveResult?EventId=${eventId}&include_match_card=true`, ctx, 8),
     cached(`${WTT}/GetOfficialResult?EventId=${eventId}&include_match_card=true&take=40`, ctx, 45),
+    rankMap(env, origin, ctx),
   ]);
   return {
     event: eventId,
     updated: new Date().toISOString(),
-    live: (now || []).map((x) => match(x.match_card)).filter(Boolean),
-    results: (done || []).map((x) => match(x.match_card)).filter(Boolean),
+    live: (now || []).map((x) => match(x.match_card, ranks)).filter(Boolean),
+    results: (done || []).map((x) => match(x.match_card, ranks)).filter(Boolean),
   };
 }
 
@@ -158,7 +179,7 @@ export default {
       const id = url.searchParams.get("event") || "";
       if (!/^\d{1,6}$/.test(id)) return json({ error: "event must be a WTT event id" }, 400);
       try {
-        return json(await live(id, ctx));
+        return json(await live(id, ctx, env, url.origin));
       } catch (err) {
         return json({ error: "Live data is unavailable right now", detail: String(err.message || err) }, 502, 5);
       }

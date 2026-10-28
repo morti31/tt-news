@@ -6,6 +6,9 @@
   const flag = (c) => (FLAGS[c] ? `<span class="fi fi-${FLAGS[c]}" aria-hidden="true"></span>` : "");
   const time = (iso) => iso ? new Date(iso).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/London" }) : "";
 
+  // World ranking (top 100 only), added by /api/live from data/rankings.json
+  const wr = (s) => (s && s.rank ? `<span class="wr" title="World No ${s.rank}">${s.rank}</span>` : "");
+
   function card(m) {
     const live = m.status === "live";
     const won = live ? null : m.score[0] > m.score[1] ? 0 : 1;
@@ -16,7 +19,7 @@
         const w = !cur && g[i] > g[1 - i];
         return `<td class="${cur ? "lv-cur" : ""}${w ? " lv-gw" : ""}">${g[i]}</td>`;
       }).join("");
-      return `<tr class="${won === i ? "lv-won" : ""}"><th scope="row">${flag(s.nat)}<span class="lv-name">${esc(s.name)}</span><span class="lv-nat">${esc(s.nat)}</span>${live && m.server === i ? '<span class="lv-serve" title="Serving"></span>' : ""}</th>
+      return `<tr class="${won === i ? "lv-won" : ""}"><th scope="row">${flag(s.nat)}<span class="lv-name">${esc(s.name)}</span>${wr(s)}<span class="lv-nat">${esc(s.nat)}</span>${live && m.server === i ? '<span class="lv-serve" title="Serving"></span>' : ""}</th>
         <td class="lv-sets">${m.score[i]}</td>${cells}</tr>`;
     };
     const meta = live ? `<span class="lv-dot"></span>Live${m.game ? `, game ${m.game}` : ""}` : "Final";

@@ -896,3 +896,8 @@ h1, h2, h3 { font-family: var(--head-font); letter-spacing: -.02em; }
 .article-body .body-h { font: 800 23px/1.2 "Inter Tight", sans-serif; letter-spacing: -.01em; margin: 1.5em 0 .5em; }
 .article-body .body-list { margin: 0 0 1.15em; padding-left: 20px; max-width: 68ch; }
 .article-body .body-list li { font-size: 17px; line-height: 1.6; margin: 6px 0; }
+
+/* World ranking next to names in live scores (top 100 only) */
+.wr { display: inline-block; margin-left: 6px; font-size: .78em; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; vertical-align: 1px; }
+.score-card .wr, .onnow .wr { color: rgba(255,255,255,.6); }
+.lv-won .wr, .row.won .wr { font-weight: 600; }
