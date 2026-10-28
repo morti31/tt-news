@@ -66,16 +66,16 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 
 ## Up next
 
-1. The game is getting younger (analysis, original data: average age of the world top 10 and top 50 now against 2010 and 2016)
-2. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
-3. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
-4. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-5. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-6. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
-7. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-8. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-9. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+1. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
+2. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
+3. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
+4. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+5. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
+6. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+7. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+8. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
 
 ## Done
 
 - 2026-10-27: Exported talent: how many of the world's top 100 learned the game in China? (`chinese-born-players-world-top-100`)
+- 2026-10-28: Why the men's world top 10 has got four years younger while the women's has aged (`average-age-table-tennis-world-top-10`)
