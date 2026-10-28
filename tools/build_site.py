@@ -329,6 +329,8 @@ def article_page(a, others, brief=False):
     kind = a.get("kind") or a["category"]
     if a.get("day") and kind in ("Preview", "Review"):   # daily tournament coverage: "Day 2 preview"
         kind = f"Day {a['day']} {kind.lower()}"
+    if kind == "Update":   # rare short story, kept out of Google (see UPDATE.md)
+        kind = "Quick update"
     tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(kind)}'
     if a.get("lang"):
         tag += f'<span class="translated">, translated from {e(a["lang"])}</span>'

@@ -38,7 +38,7 @@
   const url = (s) => (arts[s.id] && arts[s.id].url) || `/news/${s.id}`;
   const kicker = (s) => {
     const hub = s.event && hubs[s.event];
-    const daily = s.day && ["Preview", "Review"].includes(s.kind) ? `Day ${s.day} ${s.kind.toLowerCase()}` : "";
+    const daily = s.day && ["Preview", "Review"].includes(s.kind) ? `Day ${s.day} ${s.kind.toLowerCase()}` : s.kind === "Update" ? "Quick update" : "";
     const text = [hub ? hub.name : s.category, daily].filter(Boolean).join(" · ");
     return `<span class="kicker" style="color:var(--${s.category}, var(--ink))">${esc(text)}${s.lang ? `<span class="translated"> · translated from ${esc(s.lang)}</span>` : ""}</span>`;
   };

@@ -17,6 +17,7 @@ Eleven writes like the Guardian's sport desk: clear, confident, plainly told, wi
 - **Then** quotes, context and the other results, in order of importance. Keep every paragraph to one idea, one to three sentences.
 - **End** with what happens next (the next opponent or session), stated simply. No summing-up line.
 - Story cards (`summary` in news.json): one sentence, intro style, different from the article's standfirst.
+- Quick updates (rare, see UPDATE.md): one sentence of summary, then up to three short paragraphs. Same style rules.
 - Length: every article is at least 400 words (see UPDATE.md). Reach it with facts, results, context and quotes, never padding: a longer article must still have one idea per paragraph.
 - Match reports describe the match: the moment it turned, the run of points, the comeback. One vivid detail beats three scorelines. Give the full scoreline once, for the main match.
 
