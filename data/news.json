@@ -1,7 +1,199 @@
 {
-  "updated": "2026-10-28T16:40:00Z",
+  "updated": "2026-10-28T21:25:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-montpellier-2026-day2-review",
+      "kind": "Review",
+      "day": 2,
+      "category": "International",
+      "date": "2026-10-28",
+      "published": "2026-10-28T21:25:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier day two review: Gauzy knocks out Harimoto as Wang Manyu escapes",
+      "summary": "Simon Gauzy beat the world No 3, Tomokazu Harimoto, 15-13, 11-7, 11-6 and Wang Manyu won three games 11-9 against Hana Goda, while Alexis Lebrun lost from two games up to Patrick Franziska.",
+      "matches": [
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Simon Gauzy",
+              "nat": "FRA"
+            },
+            {
+              "name": "Tomokazu Harimoto",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              15,
+              13
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Wang Manyu",
+              "nat": "CHN"
+            },
+            {
+              "name": "Hana Goda",
+              "nat": "EGY"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            },
+            {
+              "name": "Alexis Lebrun",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Kuai Man",
+              "nat": "CHN"
+            },
+            {
+              "name": "Anna Hursey",
+              "nat": "WAL"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              14,
+              12
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "I2wcQBYm0eI",
+          "title": "Tomokazu Harimoto v Simon Gauzy, men's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "aMrfgxhjkD4",
+          "title": "Wang Manyu v Hana Goda, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "wa7JDSfC1jg",
+          "title": "Anna Hursey v Kuai Man, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "oIufb0JfRiA",
+          "title": "Flavien Coton v Jang Woojin, men's singles last 32",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        }
+      ],
+      "top": true
+    },
     {
       "id": "wtt-champions-frankfurt-2026-wildcards",
       "category": "International",
@@ -208,8 +400,7 @@
           "name": "World Table Tennis on YouTube",
           "url": "https://www.youtube.com/@WTTGlobal/videos"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "wtt-champions-montpellier-2026-day2-preview",
@@ -221,7 +412,7 @@
       "author": "michael",
       "event": "wtt-champions-montpellier-2026",
       "headline": "WTT Champions Montpellier day two preview: Wang Manyu, Alexis Lebrun and five French players in action",
-      "summary": "The women's top seed, Wang Manyu, faces the new African champion, Hana Goda, and Alexis Lebrun meets Patrick Franziska as the last 32 is completed.",
+      "summary": "The women's top seed, Wang Manyu, faces the new African champion, Hana Goda, and Alexis Lebrun meets Patrick Franziska on the second day of the first round.",
       "sources": [
         {
           "name": "WTT Champions Montpellier 2026: schedule",
