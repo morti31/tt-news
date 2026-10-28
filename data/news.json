@@ -1,7 +1,28 @@
 {
-  "updated": "2026-10-28T08:15:00Z",
+  "updated": "2026-10-28T16:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-wildcards",
+      "category": "International",
+      "lang": "German",
+      "event": "wtt-champions-frankfurt-2026",
+      "headline": "Benedikt Duda, Wim Verdonschot and Josi Neumann get wildcards for WTT Champions Frankfurt",
+      "summary": "Ten German players will be in the draw at WTT Champions Frankfurt next week after the last four wildcards went to Duda, Verdonschot, Neumann and Austria's Sofia Polcanova.",
+      "date": "2026-10-28",
+      "published": "2026-10-28T16:40:00Z",
+      "sources": [
+        {
+          "name": "tischtennis.de (German): Wildcards für Duda, Neumann und Verdonschot",
+          "url": "https://www.tischtennis.de/news/wildcards-fuer-duda-neumann-und-verdonschot-champions-frankfurt-freut-sich-auf-drei-weitere-dttb-asse.html"
+        },
+        {
+          "name": "tischtennis.de (German): WTT Champions Frankfurt, der Zeitplan",
+          "url": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
+        }
+      ],
+      "author": "michael"
+    },
     {
       "id": "wtt-champions-montpellier-2026-day1-review",
       "kind": "Review",
