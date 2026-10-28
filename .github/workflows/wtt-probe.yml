@@ -23,6 +23,7 @@ jobs:
             echo "$p" > "$i.path"
             case "$p" in http*) U="$p";; *) U="$B/$p";; esac
             curl -s -m 25 -o "$i.body" -w "%{http_code}" -H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/" "$U" > "$i.status" || true
+            case "$p" in http*) case "$p" in *wtt*|*workers.dev*) ;; *) gzip -9 "$i.body";; esac;; esac
           done
           git init -q && git checkout -q -b probe
           git config user.name probe && git config user.email probe@example.com
