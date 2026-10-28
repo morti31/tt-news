@@ -413,8 +413,8 @@
     {
       "id": "asian-ms-final-2026",
       "category": "International",
-      "headline": "Harimoto comes from two games down to win Asian Championships title",
-      "summary": "Tomokazu Harimoto lost the first two games of the men's singles final in Tashkent to Li Tianyang, then won the next three to take gold. Kuo Guan-hong and Wen Ruibo took bronze.",
+      "headline": "Asian Championships 2026: Harimoto and Chen Yi win singles titles as China and Japan share the honours",
+      "summary": "Tomokazu Harimoto came from two games down to beat Li Tianyang and Chen Yi swept Miwa Harimoto, while Japan's women beat China in the team final.",
       "date": "2026-10-25",
       "sources": [
         {
@@ -426,15 +426,14 @@
           "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
         }
       ],
-      "score": "3-2",
       "author": "michael",
       "event": "asian-championships-2026"
     },
     {
       "id": "montpellier-draw-2026",
       "category": "International",
-      "headline": "Lebrun brothers and Sun Yingsha learn their WTT Champions Montpellier openers",
-      "summary": "Félix Lebrun starts against Denmark's Anders Lind on Tuesday evening and Alexis Lebrun meets Germany's Patrick Franziska, while Sun Yingsha's return begins against France's Camille Lutz. The top seeds, Sora Matsushima and Wang Manyu, face Dang Qiu and Hana Goda.",
+      "headline": "WTT Champions Montpellier 2026 preview: Wang Chuqin out as Lebrun brothers and Sun Yingsha learn their openers",
+      "summary": "The world champion's injury leaves Lin Shidong leading China's men, while Félix Lebrun opens against Anders Lind and Sun Yingsha returns against Camille Lutz.",
       "date": "2026-10-26",
       "published": "2026-10-26T20:20:00Z",
       "sources": [
@@ -456,105 +455,14 @@
         }
       ],
       "author": "michael",
-      "body": [
-        "The defending champion, Truls Moregard, plays France's Thibault Poret and Tomokazu Harimoto meets Simon Gauzy in the first round. Wen Ruibo and Liang Jingkun meet in an all-Chinese opener.",
-        "In the women's event Miwa Harimoto, who has won the last three Champions titles, plays Bruna Takahashi. Last year's finalist Sabine Winter faces France's Jia Nan Yuan. Play starts on Tuesday."
-      ],
       "draw": "3250",
-      "event": "wtt-champions-montpellier-2026"
-    },
-    {
-      "id": "asian-ws-final-2026",
-      "category": "International",
-      "headline": "Chen Yi sweeps Miwa Harimoto for Asian Championships women's singles gold",
-      "summary": "China's Chen Yi beat Japan's Miwa Harimoto 3-0 in the women's singles final in Tashkent as China and Japan shared the seven titles, four to three.",
-      "date": "2026-10-25",
-      "sources": [
-        {
-          "name": "Butterfly",
-          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
-        }
-      ],
-      "author": "michael",
-      "body": [
-        "Harimoto had a busy week. She lost a second final in the women's doubles, partnering Hina Hayata against China's Kuai Man and Wang Yidi, but won the mixed doubles with Sora Matsushima.",
-        "Chen is in China's six-strong women's squad for WTT Champions Montpellier, which starts on Tuesday."
-      ],
-      "published": "2026-10-26T15:52:00Z",
-      "matches": [
-        {
-          "label": "Women's singles final",
-          "event": "Asian Championships, Tashkent",
-          "sides": [
-            {
-              "name": "Chen Yi",
-              "nat": "CHN"
-            },
-            {
-              "name": "Miwa Harimoto",
-              "nat": "JPN"
-            }
-          ],
-          "score": [
-            3,
-            0
-          ]
-        }
-      ],
-      "score": "3-0",
-      "social": [
-        {
-          "platform": "instagram",
-          "url": "https://www.instagram.com/p/De9m74ElyKw/",
-          "account": "@ittfworld"
-        }
-      ],
-      "event": "asian-championships-2026"
-    },
-    {
-      "id": "asian-teams-2026",
-      "category": "International",
-      "headline": "China retain Asian Championships men's team title as Japan win women's",
-      "summary": "China's men beat South Korea 3-0 in the final and Japan's women beat China to win the women's team title. South Korea had knocked out the world No 1 Sora Matsushima's Japan in the men's semi-finals on the way to their first men's team silver since 2019.",
-      "date": "2026-10-23",
-      "sources": [
-        {
-          "name": "Star News Korea",
-          "url": "https://www.starnewskorea.com/en/sports/2026/10/23/2026102314230912197"
-        },
-        {
-          "name": "Butterfly",
-          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
-        }
-      ],
-      "author": "michael",
-      "event": "asian-championships-2026"
-    },
-    {
-      "id": "montpellier-preview-2026",
-      "category": "International",
-      "headline": "Wang Chuqin pulls out of WTT Champions Montpellier injured as Sun Yingsha returns",
-      "summary": "The world champion has withdrawn from WTT Champions Montpellier (27 October to 1 November) with an injury, and reports in China differ on who has taken his place. Lin Shidong leads China's men and Sun Yingsha heads a six-strong women's squad, while Félix and Alexis Lebrun lead the home challenge.",
-      "date": "2026-10-23",
-      "sources": [
-        {
-          "name": "NetEase (Chinese)",
-          "url": "https://www.163.com/dy/article/L9UUNJ8U0556923K.html"
-        },
-        {
-          "name": "Montpellier En Commun (French)",
-          "url": "https://encommun.montpellier.fr/articles/2026-10-24-wtt-2026-le-retour-des-meilleurs-pongistes-mondiaux-montpellier"
-        }
-      ],
-      "lang": "Chinese",
-      "author": "michael",
       "event": "wtt-champions-montpellier-2026"
     },
     {
       "id": "americas-champs-2026",
       "category": "International",
-      "headline": "Calderano and Diaz win Americas Championships singles titles",
-      "summary": "Hugo Calderano beat his Brazilian teammate Guilherme Teodoro 4-1 in Lima, and Puerto Rico's Adriana Diaz beat Canada's Mo Zhang 4-2. The US women won the team event, beating Puerto Rico 3-0 in the final.",
+      "headline": "Americas Championships 2026: Calderano and Diaz win singles titles as honours are shared",
+      "summary": "Hugo Calderano beat Guilherme Teodoro and Adriana Diaz won her seventh continental title in Lima, where five nations shared the titles.",
       "date": "2026-10-25",
       "sources": [
         {
