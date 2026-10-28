@@ -72,14 +72,16 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
    - Why defenders declined: the 40mm ball (2000), 11-point games (2001), the plastic ball (from 2014), the expedite rule, faster sponges. Look for published interviews with defenders or coaches on this.
    - Original data: count the defensive players (choppers and long-pimple defenders) in today's men's and women's top 100 (data/rankings.json) and top 20, and compare with an older ranking list if one can be found. Only count players whose style is confirmed by a reliable source; state the method. On a first look, the men's top 50 appears to have no defenders while the women's top 20 has at least three. Also consider Sabine Winter (No 10), whose switch to anti-spin rubber Table Tennis Kingdom covered: say what she plays and don't call her a chopper unless sources do.
 
-2. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
-3. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
-4. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-5. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-6. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
-7. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-8. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-9. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+2. **Requested by Tom: write this straight after the choppers feature.** Tables: why they are not all the same (long feature, 1,500 to 2,500 words). Which tables are used at which tournaments and in which countries (official suppliers of the WTT, the World Championships, the Olympics and the big national leagues), how table speed and bounce work (top thickness and material, the ITTF bounce rule of 23cm to 25cm from a 30cm drop in the laws, surface coating and friction, temperature, humidity and the floor underneath), what players and coaches have said in published interviews about fast or slow tables, and the comparison with grass, clay and hard tennis courts and with cricket pitches, where conditions are part of the contest. Original data: compare the tables at this season's major events (manufacturer and model, with any published specifications), and check the laws for exactly what is allowed. Verify every manufacturer and event pairing from the event's or manufacturer's own announcement.
+
+3. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
+4. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
+5. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
+6. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+7. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
+8. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+9. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+10. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
 
 ## Done
 
