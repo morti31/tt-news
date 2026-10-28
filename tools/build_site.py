@@ -731,9 +731,32 @@ def check_schedule():
     return problems
 
 
+CLEAN_RE = re.compile(r"(?<=[\"'(=\s>])((?:https://tt-news\.tommorti\.workers\.dev)?/(?:[\w\-]+/)*)([\w\-]+)\.html")
+
+
+def clean_url(text):
+    """Cloudflare serves /news/x.html at /news/x (and redirects the .html form), so every URL Eleven
+    publishes uses the clean form: /news/x, /rankings, /guide/ (for guide/index.html)."""
+    return CLEAN_RE.sub(lambda m: m.group(1) + ("" if m.group(2) == "index" else m.group(2)), text)
+
+
+def clean_urls():
+    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "calendar.ics")]
+    for d in ("news", "events", "features", "guide", "authors"):
+        files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
+    files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json")]
+    for f in files:
+        if os.path.exists(f):
+            t = open(f, encoding="utf-8").read()
+            c = clean_url(t)
+            if c != t:
+                open(f, "w", encoding="utf-8").write(c)
+
+
 if __name__ == "__main__":
     main()
     check_schedule()
     # Rebuild the subscribable calendar on every deploy so it always matches data/schedule.json
     import runpy
     runpy.run_path(os.path.join(ROOT, "tools", "build_calendar.py"), run_name="__main__")
+    clean_urls()

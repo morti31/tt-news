@@ -153,7 +153,7 @@ window.ElevenStream = function (el) {
           ${p.points ? `<span class="bar"><i style="width:${Math.round(p.points / max * 100)}%"></i></span>` : ""}</li>`;
       }).join("");
     };
-    if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="/rankings.html">Full top 100</a>`;
+    if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="/rankings">Full top 100</a>`;
     $("rank-toggle")?.addEventListener("click", (e) => {
       const b = e.target.closest("button");
       if (!b) return;
@@ -188,7 +188,7 @@ window.ElevenStream = function (el) {
         el.appendChild(range.createContextualFragment(code)); // runs any ad scripts
         el.classList.add("filled");
       } else {
-        el.innerHTML = '<span class="ad-label">Advertisement</span><a class="ad-empty" href="/contact.html">Advertise with Eleven</a>';
+        el.innerHTML = '<span class="ad-label">Advertisement</span><a class="ad-empty" href="/contact">Advertise with Eleven</a>';
       }
     });
   }

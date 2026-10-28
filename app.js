@@ -35,7 +35,7 @@
       : t.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
   };
   const who = (s) => (authors[s.author] || authors.tom || { name: "Eleven" }).name;
-  const url = (s) => (arts[s.id] && arts[s.id].url) || `/news/${s.id}.html`;
+  const url = (s) => (arts[s.id] && arts[s.id].url) || `/news/${s.id}`;
   const kicker = (s) => {
     const hub = s.event && hubs[s.event];
     const daily = s.day && ["Preview", "Review"].includes(s.kind) ? `Day ${s.day} ${s.kind.toLowerCase()}` : "";
