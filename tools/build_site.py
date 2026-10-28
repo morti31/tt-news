@@ -280,7 +280,7 @@ def linkify(text):
         out.append(f'<a href="{e(m.group(2))}"{" rel=\"noopener\"" if ext else ""}>{e(m.group(1))}</a>')
         last = m.end()
     out.append(e(text[last:]))
-    return "".join(out)
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", "".join(out))   # **bold** for match lines in previews
 
 
 def chart(c):
@@ -305,6 +305,23 @@ def short_when(iso):
     return f"{t.day} {t:%b}, {t:%H:%M}"
 
 
+def block(p):
+    """One body item: "## Heading", a list ("- item" lines), or a paragraph."""
+    if p.startswith("## "):
+        return f'<h2 class="body-h">{e(p[3:])}</h2>'
+    if p.startswith("- "):
+        items = [x[2:] for x in p.split("\n") if x.startswith("- ")]
+        return '<ul class="body-list">' + "".join(f"<li>{linkify(x)}</li>" for x in items) + "</ul>"
+    return f"<p>{linkify(p)}</p>"
+
+
+def words_of(a):
+    return sum(len(p.split()) for p in a.get("body") or [])
+
+
+MIN_WORDS = 400   # below this a page is kept out of search engines and sitemaps (see UPDATE.md)
+
+
 def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
@@ -319,7 +336,7 @@ def article_page(a, others, brief=False):
     ev = event_of(a)
     crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
              else f'<a href="/#{e(a["category"])}">{e(a["category"])}</a>')
-    ps = [f"<p>{linkify(p)}</p>" for p in a["body"]]
+    ps = [block(p) for p in a["body"]]
     for ch in sorted(a.get("charts") or [], key=lambda c: -c.get("after", 0)):
         ps.insert(min(ch.get("after", len(ps)), len(ps)), chart(ch))
     # Highlights sit after the second paragraph, like a broadcaster's match report
@@ -458,9 +475,9 @@ def article_page(a, others, brief=False):
         og = SITE + feature_cover(a)
     # SEO: a search title and description can differ from the headline and standfirst
     desc = a.get("description") or a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
-    # Short stories stay readable and shareable but are kept out of Google's index as thin pages
+    # Short stories, and articles under MIN_WORDS, stay readable and shareable but are kept out of Google's index as thin pages
     return page(f"{a.get('seo_title') or a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
-                robots="noindex, follow" if brief else None)
+                robots="noindex, follow" if brief or words_of(a) < MIN_WORDS else None)
 
 
 def main():
@@ -528,7 +545,7 @@ def main():
 
     today = dt.date.today().isoformat()
     urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
-    urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts]
+    urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts if words_of(a) >= MIN_WORDS]
     urls += [(f"{SITE}/features/", today)]
     urls += [(f"{SITE}/events/", today)] + [(f"{SITE}/events/{h}.html", today) for h in hubs]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -537,7 +554,7 @@ def main():
     open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n")
     # Google News sitemap: full articles from the last two days
     cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=2)
-    recent = [a for a in arts if dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00Z").replace("Z", "+00:00")) >= cutoff]
+    recent = [a for a in arts if words_of(a) >= MIN_WORDS and dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00Z").replace("Z", "+00:00")) >= cutoff]
     ns = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
     for a in recent:
