@@ -1,7 +1,210 @@
 {
-  "updated": "2026-10-27T22:00:00Z",
+  "updated": "2026-10-28T08:15:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "jtta-all-japan-wtt-clash-2026",
+      "category": "International",
+      "lang": "Japanese",
+      "headline": "Japan's top players may miss All Japan Championships after WTT Champions clash",
+      "summary": "The Japan Table Tennis Association has warned that players entered for a WTT Champions event in Asia next January may be unable to play the All Japan Championships, which run on the same dates, 19 to 24 January 2027. It said WTT and the ITTF did not agree to its request to move the WTT event.",
+      "body": [
+        "WTT Champions in Asia is usually held in early January, but the 2027 calendar published on 1 September moved it into the week of the national championships. The association said it had asked the ITTF and WTT to change the dates and asked the host federation to consider it, without success. Moving the All Japan Championships about four months out was judged too difficult because of the venue and organisation.",
+        "The association said the clash would seriously harm players' chances to compete, because Japan's Los Angeles 2028 singles and team places go to the two highest-ranked Japanese players in the first ITTF ranking of 2028. It has already dropped automatic World Championships selection for the All Japan singles winners, and will ask the ITTF and WTT to coordinate international dates with major national events from 2028."
+      ],
+      "date": "2026-10-27",
+      "published": "2026-10-28T08:15:00Z",
+      "sources": [
+        {
+          "name": "Table Tennis Kingdom (Japanese)",
+          "url": "https://world-tt.com/blog/news/archives/387233"
+        },
+        {
+          "name": "Table Tennis Kingdom (Japanese)",
+          "url": "https://world-tt.com/blog/news/archives/384564"
+        }
+      ],
+      "author": "michael"
+    },
+    {
+      "id": "african-champs-2026",
+      "category": "International",
+      "headline": "Youssef Abdelaziz and Hana Goda win African Championships singles titles",
+      "summary": "Youssef Abdelaziz beat his Egyptian teammate Omar Assar 4-1 in the men's singles final in Tangier, and Hana Goda beat Dina Meshref 4-1 for her fourth African women's singles title in a row. Egypt took all four places in the two finals.",
+      "body": [
+        "Goda reached the final by beating Hend Fathy 4-1, and Meshref beat Mariam Alhodaby by the same score. Abdelaziz also won the men's doubles with Mohamed El-Beily and the mixed doubles with Alhodaby, while Goda and Meshref won the women's doubles.",
+        "Egypt's women won the team event earlier in the week, beating Tunisia 3-0 in the final without losing a game. The championships ran from 18 to 25 October."
+      ],
+      "date": "2026-10-25",
+      "published": "2026-10-28T08:10:00Z",
+      "sources": [
+        {
+          "name": "Egyptian Gazette",
+          "url": "https://egyptian-gazette.com/sports/egypts-goda-seals-african-table-tennis-crown/"
+        },
+        {
+          "name": "El Watan (Arabic)",
+          "url": "https://www.elwatannews.com/news/details/8384376"
+        },
+        {
+          "name": "Cairo Mubasher (Arabic)",
+          "url": "https://www.cairomubasher.com/246112"
+        },
+        {
+          "name": "Sport News Africa",
+          "url": "https://sportnewsafrica.com/en/news/table-tennis-egypt-beat-tunisia-to-take-the-title-in-tangier/"
+        }
+      ],
+      "author": "michael",
+      "matches": [
+        {
+          "label": "Men's singles final",
+          "event": "African Championships, Tangier",
+          "sides": [
+            {
+              "name": "Youssef Abdelaziz",
+              "nat": "EGY"
+            },
+            {
+              "name": "Omar Assar",
+              "nat": "EGY"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ]
+        },
+        {
+          "label": "Women's singles final",
+          "event": "African Championships, Tangier",
+          "sides": [
+            {
+              "name": "Hana Goda",
+              "nat": "EGY"
+            },
+            {
+              "name": "Dina Meshref",
+              "nat": "EGY"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ]
+        },
+        {
+          "label": "Women's team final",
+          "event": "African Championships, Tangier",
+          "sides": [
+            {
+              "name": "Egypt",
+              "nat": "EGY"
+            },
+            {
+              "name": "Tunisia",
+              "nat": "TUN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Hana Goda",
+                  "nat": "EGY"
+                },
+                {
+                  "name": "Maram Zoghlami",
+                  "nat": "TUN"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  1
+                ],
+                [
+                  11,
+                  2
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Dina Meshref",
+                  "nat": "EGY"
+                },
+                {
+                  "name": "Ela Saidi",
+                  "nat": "TUN"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Hend Fathy",
+                  "nat": "EGY"
+                },
+                {
+                  "name": "Fadwa Garci",
+                  "nat": "TUN"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "montpellier-day1-evening-2026",
       "category": "International",
