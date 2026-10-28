@@ -143,7 +143,7 @@ async function highlights(ctx, q) {
     const ev = EVENTS[code];
     if (!ev) continue;
     const round = ROUNDS[rest.join(" ")] || rest.join(" ");
-    out.push({ id: v.id, title: `${parts[0]}, ${ev[1]} ${round}`.trim(), gender: ev[0], channel: "World Table Tennis" });
+    out.push({ id: v.id, title: `${parts[0].replace(/ vs /i, " v ")}, ${ev[1]} ${round}`.trim(), gender: ev[0], channel: "World Table Tennis" });
   }
   return { videos: out.slice(0, 16) };
 }

@@ -3,6 +3,219 @@
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
     {
+      "id": "wtt-champions-montpellier-2026-day1-review",
+      "kind": "Review",
+      "day": 1,
+      "category": "International",
+      "date": "2026-10-28",
+      "published": "2026-10-28T09:05:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "Sun Yingsha wins on her return as Matsushima survives a scare on day one of WTT Champions Montpellier",
+      "summary": "Sun Yingsha dropped 14 points against Camille Lutz in her first match for about three weeks, and Félix Lebrun and Chen Yi won their openers. The world No 1, Sora Matsushima, let slip a two-game lead against Dang Qiu before taking the decider 11-2.",
+      "body": [
+        "In the women's draw Romania's Elizabeta Samara beat Germany's Han Ying in four games, and Hina Hayata came back from 3-8 down in the first game to beat Hong Kong's Doo Hoi Kem in three. Chen lost her first game to Peng Yu-han 12-10, then dropped 12 points in the next three.",
+        "Elias Ranefur produced the comeback of the day, saving match points to beat his Swedish teammate Anton Källberg from two games down, and Lin Yun-Ju recovered from 2-1 behind against João Geraldo. The defending champion, Truls Moregard, beat Thibault Poret in straight games but reached for his shoulder during the third.",
+        "Day two completes the last 32. The women's top seed, Wang Manyu, plays the new African champion, Hana Goda, at 12.10pm UK time, Tomokazu Harimoto meets Simon Gauzy at 6.05pm and Alexis Lebrun plays Patrick Franziska at 7.15pm."
+      ],
+      "matches": [
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Camille Lutz",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Félix Lebrun",
+              "nat": "FRA"
+            },
+            {
+              "name": "Anders Lind",
+              "nat": "DEN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Chen Yi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Peng Yu-han",
+              "nat": "TPE"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sora Matsushima",
+              "nat": "JPN"
+            },
+            {
+              "name": "Dang Qiu",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              2
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "URd0-AEp3lk",
+          "title": "Camille Lutz v Sun Yingsha, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "NZ3quVcz3jQ",
+          "title": "Anders Lind v Félix Lebrun, men's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "2xsPI7xpWik",
+          "title": "Chen Yi v Peng Yu-han, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "r7lLqJPB9KU",
+          "title": "Sora Matsushima v Dang Qiu, men's singles last 32",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "World Table Tennis on YouTube",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        }
+      ]
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day2-preview",
+      "kind": "Preview",
+      "day": 2,
+      "category": "International",
+      "date": "2026-10-28",
+      "published": "2026-10-28T09:10:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "headline": "Wang Manyu and Alexis Lebrun start on day two of WTT Champions Montpellier",
+      "summary": "The women's top seed, Wang Manyu, plays Hana Goda at 12.10pm UK time, and Alexis Lebrun meets Patrick Franziska at 7.15pm as the last 32 is completed.",
+      "body": [
+        "Also in action: Kuai Man against Wales's Anna Hursey at 11am, the defending champion Wang Yidi against Dina Meshref at 1.20pm, Tomokazu Harimoto against Simon Gauzy at 6.05pm and Sabine Winter against Jia Nan Yuan at 7.50pm."
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: schedule",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        }
+      ]
+    },
+    {
       "id": "jtta-all-japan-wtt-clash-2026",
       "category": "International",
       "lang": "Japanese",

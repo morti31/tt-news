@@ -176,6 +176,7 @@ def top_stories(stories, now=None):
       freshness  halves every 18 hours, so a big story stays up for a day or two and then gives way
       importance the event's prestige (schedule 1 to 5, divided by 5); stories without an event use their section
       extras     +0.15 a full article, +0.1 match results, +0.1 official video, +0.25 the event is on now
+      previews   day previews count 40% less
       diversity  each further story from the same event counts 25% less, so one tournament can't fill the list
     """
     now = now or dt.datetime.now(dt.timezone.utc)
@@ -201,7 +202,10 @@ def top_stories(stories, now=None):
         extras = (0.15 if art else 0) + (0.1 if (art or s).get("matches") else 0) + (0.1 if i["video"] else 0)
         if hub and hub.get("start") and hub["start"] <= today <= hub["end"]:
             extras += 0.25
-        scored.append([fresh * (0.5 + prestige / 5 + extras), i])
+        score = fresh * (0.5 + prestige / 5 + extras)
+        if s.get("kind") == "Preview":   # a day preview is useful once play starts, then it gives way to results
+            score *= 0.6
+        scored.append([score, i])
     out, per_event = [], {}
     pool = sorted(scored, key=lambda x: -x[0])
     while pool:
@@ -305,7 +309,10 @@ def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
     words = sum(len(p.split()) for p in a["body"])
-    tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(a.get("kind") or a["category"])}'
+    kind = a.get("kind") or a["category"]
+    if a.get("day") and kind in ("Preview", "Review"):   # daily tournament coverage: "Day 2 preview"
+        kind = f"Day {a['day']} {kind.lower()}"
+    tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(kind)}'
     if a.get("lang"):
         tag += f'<span class="translated">, translated from {e(a["lang"])}</span>'
     tag += "</span>"
@@ -483,9 +490,9 @@ def main():
     for s in NEWS.get("stories", []):
         if s["id"] in index:
             continue
-        brief = {"slug": s["id"], "title": s["headline"], "standfirst": "", "category": s["category"], "date": s["date"],
+        brief = {"slug": s["id"], "title": s["headline"], "standfirst": s["summary"] if s.get("body") else "", "category": s["category"], "date": s["date"],
                  "body": s.get("body") or [s["summary"]], "sources": s.get("sources", []), "author": s.get("author", "tom")}
-        for k in ("lang", "image", "published", "matches", "videos", "draw", "social", "event"):
+        for k in ("lang", "image", "published", "matches", "videos", "draw", "social", "event", "kind", "day"):
             if s.get(k):
                 brief[k] = s[k]
         open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))
