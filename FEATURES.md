@@ -1,6 +1,6 @@
 # Features: one a day
 
-A daily scheduled run writes one feature (analysis, opinion or original data), about 1,000 words, and publishes it straight to `main`. There is no approval step, so every fact, name, number and quote must be checked against its source before committing. Tom is told by push notification and asks for changes afterwards if he wants them.
+A daily scheduled run writes one feature (analysis, opinion or original data), at least 1,000 words, and publishes it straight to `main`. There is no approval step, so every fact, name, number and quote must be checked against its source before committing. Tom is told by push notification and asks for changes afterwards if he wants them.
 
 ## Each run
 
@@ -20,7 +20,7 @@ Follow STYLE.md (Guardian style) throughout; its Features section is the model. 
 - **Bring original data together**: every piece has at least one number Eleven worked out itself (a count, a share, an average, a comparison over time), shown in a chart, with the method in one sentence. Keep to two or three numbers per paragraph; lists of names and countries go in the chart.
 - **End on an image, a quote or a sharp line** that answers or reframes the opening. Never a promise of future coverage.
 - Separate fact, reported claims, allegations and opinion clearly. Opinion pieces say they are opinion (`"kind": "Opinion"`) and still get every fact right.
-- British English. About 1,000 words (900 to 1,200). No em dashes, no clichés ("game-changer", "testament to", "landscape", "delve"), no "not X but Y", no padding.
+- British English. At least 1,000 words, and longer when the story needs it: a history or a big subject can run to 2,000 words or more. Length must come from reporting, quotes and data, never padding. No em dashes, no clichés ("game-changer", "testament to", "landscape", "delve"), no "not X but Y", no padding.
 - Byline: Tom Mortimer (`"author": "tom"`).
 
 ## SEO
@@ -66,14 +66,20 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 
 ## Up next
 
-1. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
-2. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
-3. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-4. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-5. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
-6. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-7. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-8. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+1. **Next, requested by Tom: write this one next, even if another topic looks more timely.** Choppers and defenders: their history and where they stand now (long feature, 1,500 to 2,500 words). Ideas to check and build on:
+   - Hook: Japan's two modern defenders are in the women's top 15: Hitomi Sato (No 8) and Honoka Hashimoto (No 14). Hashimoto beat Chen Yi and Wang Yidi in Japan's 3-2 win over China in the Asian Championships team final this month, and Sato beat Wang Manyu 12-10, 11-4, 15-13 at the US Smash in June (Butterfly called her a "Japanese modern defender"). Germany's Han Ying (No 16, 43) lost in Montpellier this week. Check Sato's and Hashimoto's Montpellier results.
+   - History to verify: Richard Bergmann (England, four world singles titles, a defender); Ding Song's chopping in China's 1995 world team final; Joo Se-hyuk (2003 world singles final); Kim Kyung-ah (Athens 2004 Olympic bronze); Chen Xinhua (China then England); Hou Yingchao (2019 All China champion). Confirm every detail from primary or reliable sources.
+   - Why defenders declined: the 40mm ball (2000), 11-point games (2001), the plastic ball (from 2014), the expedite rule, faster sponges. Look for published interviews with defenders or coaches on this.
+   - Original data: count the defensive players (choppers and long-pimple defenders) in today's men's and women's top 100 (data/rankings.json) and top 20, and compare with an older ranking list if one can be found. Only count players whose style is confirmed by a reliable source; state the method. On a first look, the men's top 50 appears to have no defenders while the women's top 20 has at least three. Also consider Sabine Winter (No 10), whose switch to anti-spin rubber Table Tennis Kingdom covered: say what she plays and don't call her a chopper unless sources do.
+
+2. Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
+3. Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
+4. After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
+5. The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+6. The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
+7. Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+8. Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+9. Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
 
 ## Done
 
