@@ -6,9 +6,9 @@ The shelves and planned titles are in `data/guides/plan.json`. A written guide i
 
 ## Each run
 
-1. Pull `main`. Pick the next three unwritten titles in `plan.json`, in shelf order, skipping any already in an open "Guides for review" pull request (`gh api "repos/morti31/tt-news/pulls?state=open"`).
+1. Pull `main`. Pick the next three titles in `plan.json`, in shelf order, that don't yet have a file in `data/guides/`.
 2. Research each from primary sources first: the ITTF Statutes and Handbook, the WTT website, Table Tennis England, manufacturers' own specification pages for equipment. Use secondary sources only to add context, and name them.
-3. Write, build (`python3 tools/build_site.py`), check each page renders, then commit on a branch `guides/YYYY-MM-DD`, push and open a pull request titled "Guides for review: <title>, <title>, <title>". Tom publishes by merging.
+3. Write, build (`python3 tools/build_site.py`), check each page renders, then commit to `main` with a message like "Guides: <title>, <title>, <title>" and push (if the push is rejected, `git pull --rebase origin main` and push again). Guides go live with no approval step, so check every fact and number against its source before committing.
 
 ## How to write them
 

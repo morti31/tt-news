@@ -1,13 +1,13 @@
 # Features: one a day
 
-A daily scheduled run writes one feature (analysis, opinion or original data), about 1,000 words, and sends it to Tom for approval as a pull request. Tom approves by merging (that publishes it) or declines by closing. Nothing in Features goes to `main` without his merge.
+A daily scheduled run writes one feature (analysis, opinion or original data), about 1,000 words, and publishes it straight to `main`. There is no approval step, so every fact, name, number and quote must be checked against its source before committing. Tom is told by push notification and asks for changes afterwards if he wants them.
 
 ## Each run
 
-1. Pull `main`. Check open pull requests titled "Feature for review: ..." (`gh api "repos/morti31/tt-news/pulls?state=open"`). If one from an earlier day is still open, still write today's, on its own branch.
-2. Pick the topic: the first item under **Up next** that isn't marked done and doesn't already have a "Feature for review" pull request, open or merged (check titles with `gh api "repos/morti31/tt-news/pulls?state=all&per_page=50"`). If a news event makes another backlog idea timely (a result, an injury, a ranking change), take that one instead and say why in the pull request. When fewer than four ideas are left, add five new ones to the end of **Up next** in the same pull request, so Tom can approve or cut them.
-2. Research, write, build the data, make the cover (below), then open the pull request and send Tom a push notification: "Today's feature is ready to approve: <headline>".
-3. Move the topic to **Done** with the date and slug, in the same pull request.
+1. Pull `main`.
+2. Pick the topic: the first item under **Up next** that isn't already under **Done**. If a news event makes another backlog idea timely (a result, an injury, a ranking change), take that one instead. When fewer than four ideas are left, add five new ones to the end of **Up next**.
+3. Research, write, build the data and make the cover (below).
+4. Move the topic to **Done** with the date and slug, commit everything to `main` and push. Then send Tom a push notification: "Today's feature is live: <headline> <link>", using the clean link `https://tt-news.tommorti.workers.dev/news/<slug>`.
 
 ## How to write it
 
@@ -50,7 +50,7 @@ Follow STYLE.md (Guardian style) throughout; its Features section is the model. 
 }
 ```
 
-Then `python3 tools/feature_cover.py <slug>` (writes `img/features/<slug>.jpg`) and `python3 tools/build_site.py` to check it builds. Commit the article, the cover and this file on a branch `feature/YYYY-MM-DD`, push, and open the pull request with `gh api repos/morti31/tt-news/pulls -X POST -f title="Feature for review: <headline>" -f head=feature/YYYY-MM-DD -f base=main -F body=@body.md`. Make body.md with `python3 tools/review_body.py data/articles/<slug>.json` and add one line on why this topic today.
+Then `python3 tools/feature_cover.py <slug>` (writes `img/features/<slug>.jpg`) and `python3 tools/build_site.py` to check it builds. Commit the article, the cover and this file to `main` with a message like "Feature: <headline>" and push. If the push is rejected because `main` has moved on, run `git pull --rebase origin main` and push again.
 
 ## Getting WTT data
 
