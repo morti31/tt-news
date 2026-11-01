@@ -1,14 +1,36 @@
 {
-  "updated": "2026-11-01T20:40:00Z",
+  "updated": "2026-11-01T20:30:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-preview",
+      "kind": "Preview",
+      "category": "International",
+      "date": "2026-11-01",
+      "published": "2026-11-01T20:25:00Z",
+      "author": "michael",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "headline": "WTT Champions Frankfurt preview: Wang Chuqin returns as Wang Manyu and Lin Shidong pull out",
+      "summary": "Wang Chuqin plays Denmark's Anders Lind in his first match back from injury at WTT Champions Frankfurt, which starts on Tuesday without Wang Manyu or Lin Shidong.",
+      "sources": [
+        {
+          "name": "WTT Champions Frankfurt 2026: draw",
+          "url": "https://www.worldtabletennis.com/eventInfo?selectedTab=Draws&eventId=3252"
+        },
+        {
+          "name": "tischtennis.de (German): Weltmeisterin wartet auf Ying Han, Asien-Meisterin auf Neumann",
+          "url": "https://www.tischtennis.de/news/wtt-champions-frankfurt-weltmeisterin-wartet-auf-ying-han-asien-meisterin-auf-neumann.html"
+        }
+      ]
+    },
     {
       "id": "wtt-champions-montpellier-2026-day6-review",
       "kind": "Review",
       "day": 6,
       "category": "International",
       "date": "2026-11-01",
-      "published": "2026-11-01T20:40:00Z",
+      "published": "2026-11-01T19:20:00Z",
       "author": "michael",
       "event": "wtt-champions-montpellier-2026",
       "draw": "3250",
@@ -207,8 +229,8 @@
           "channel": "World Table Tennis"
         },
         {
-          "id": "J5g15GqTbEg",
-          "title": "Hugo Calderano v Jang Woojin, men's singles semi-final",
+          "id": "kfXzhRoZZiA",
+          "title": "Jang Woojin v Patrick Franziska, men's singles final",
           "channel": "World Table Tennis"
         },
         {
@@ -217,8 +239,8 @@
           "channel": "World Table Tennis"
         },
         {
-          "id": "IXpBo-FlyY0",
-          "title": "Truls Moregard v Patrick Franziska, men's singles semi-final",
+          "id": "J5g15GqTbEg",
+          "title": "Hugo Calderano v Jang Woojin, men's singles semi-final",
           "channel": "World Table Tennis"
         }
       ],
@@ -240,10 +262,6 @@
           "url": "https://butterflyonline.com/montpellier-says-adieu-to-seeds-un-deux-et-trois/"
         },
         {
-          "name": "Sina Sports (Chinese): Sun Yingsha beats Kuai Man 4-1",
-          "url": "https://k.sina.cn/article_7095179045_1a6e7d72506801tvna.html"
-        },
-        {
           "name": "Nate Sports (Korean): Jang Woojin beats Lin Yun-Ju from 10-7 down",
           "url": "https://sports.news.nate.com/view/20261031n00502"
         },
@@ -257,6 +275,746 @@
         }
       ],
       "top": true
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day6-preview",
+      "kind": "Preview",
+      "day": 6,
+      "category": "International",
+      "date": "2026-11-01",
+      "published": "2026-11-01T07:50:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier finals day preview: Sun Yingsha meets Wang Yidi, Moregard plays Franziska",
+      "summary": "Sun Yingsha plays the defending champion Wang Yidi and Truls Moregard faces Patrick Franziska in Sunday's semi-finals, before both finals in the late afternoon.",
+      "videos": [
+        {
+          "id": "u_F90Z2Cpos",
+          "title": "Hina Hayata v Sun Yingsha, women's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "8dMXG06mrJY",
+          "title": "Lin Shidong v Truls Moregard, men's singles quarter-final",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: schedule and draw",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "FFTT (French): Quelle intensité !",
+          "url": "https://www.fftt.com/actualites/wtt/quelle-intensite/"
+        }
+      ]
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day5-review",
+      "kind": "Review",
+      "day": 5,
+      "category": "International",
+      "date": "2026-10-31",
+      "published": "2026-10-31T21:50:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier day five review: Kuai Man ends Miwa Harimoto's run as Moregard survives",
+      "summary": "Kuai Man beat Miwa Harimoto 4-2 to end her bid for a fourth WTT Champions title in a row, while Truls Moregard and Sun Yingsha won seven-game quarter-finals.",
+      "matches": [
+        {
+          "label": "Women's singles, quarter-final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Kuai Man",
+              "nat": "CHN"
+            },
+            {
+              "name": "Miwa Harimoto",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, quarter-final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Truls Moregard",
+              "nat": "SWE"
+            },
+            {
+              "name": "Lin Shidong",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              1,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, quarter-final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Hina Hayata",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, quarter-final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            },
+            {
+              "name": "Zhou Qihao",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              13,
+              15
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              12,
+              10
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "4835rN6ArlE",
+          "title": "Miwa Harimoto v Kuai Man, women's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "8dMXG06mrJY",
+          "title": "Lin Shidong v Truls Moregard, men's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "u_F90Z2Cpos",
+          "title": "Hina Hayata v Sun Yingsha, women's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "jfb7FuDgS5c",
+          "title": "Patrick Franziska v Zhou Qihao, men's singles quarter-final",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        }
+      ]
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day5-preview",
+      "kind": "Preview",
+      "day": 5,
+      "category": "International",
+      "date": "2026-10-31",
+      "published": "2026-10-31T08:35:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier day five preview: Miwa Harimoto faces Kuai Man as Moregard meets Lin Shidong",
+      "summary": "All eight quarter-finals are played on Saturday, with Miwa Harimoto chasing a fourth WTT Champions title in a row against Kuai Man.",
+      "videos": [
+        {
+          "id": "EdveZu_vZj4",
+          "title": "Zhou Qihao v Félix Lebrun, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "4Xfi_pE5JiM",
+          "title": "Wang Manyu v Chen Yi, women's singles last 16",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: schedule and draw",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "TV Tokyo (Japanese): Miwa Harimoto's WTT Champions run",
+          "url": "https://www.tv-tokyo.co.jp/tabletennis/news/2026/11/042828.html"
+        }
+      ]
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day4-review",
+      "kind": "Review",
+      "day": 4,
+      "category": "International",
+      "date": "2026-10-30",
+      "published": "2026-10-30T21:40:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier day four review: Chen Yi beats Wang Manyu as Zhou knocks out Félix Lebrun",
+      "summary": "Chen Yi beat the top seed, Wang Manyu, in straight games and Zhou Qihao knocked out Félix Lebrun, leaving France without a quarter-finalist.",
+      "matches": [
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Chen Yi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Wang Manyu",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Zhou Qihao",
+              "nat": "CHN"
+            },
+            {
+              "name": "Félix Lebrun",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Shin Yubin",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Liang Jingkun",
+              "nat": "CHN"
+            },
+            {
+              "name": "Simon Gauzy",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "EdveZu_vZj4",
+          "title": "Zhou Qihao v Félix Lebrun, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "4Xfi_pE5JiM",
+          "title": "Wang Manyu v Chen Yi, women's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "YIYVRuYobBE",
+          "title": "Shin Yubin v Sun Yingsha, women's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "Va2ScrQ5egk",
+          "title": "Simon Gauzy v Liang Jingkun, men's singles last 16",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        }
+      ]
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day4-preview",
+      "kind": "Preview",
+      "day": 4,
+      "category": "International",
+      "date": "2026-10-30",
+      "published": "2026-10-30T08:40:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier day four preview: Wang Manyu meets Chen Yi as Félix Lebrun plays Zhou Qihao",
+      "summary": "The last 16 finishes on Friday, with Wang Manyu against Chen Yi, Sun Yingsha against Shin Yubin and Félix Lebrun against Zhou Qihao.",
+      "videos": [
+        {
+          "id": "qnnk6ZwgiXI",
+          "title": "Sora Matsushima v Vladimir Sidorenko, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "PAcufrLfyKc",
+          "title": "Chen Xingtong v Annett Kaufmann, women's singles last 16",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: schedule and draw",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "TV Tokyo (Japanese): Miwa Harimoto's WTT Champions run",
+          "url": "https://www.tv-tokyo.co.jp/tabletennis/news/2026/11/042828.html"
+        }
+      ]
+    },
+    {
+      "id": "wtt-champions-montpellier-2026-day3-review",
+      "kind": "Review",
+      "day": 3,
+      "category": "International",
+      "date": "2026-10-29",
+      "published": "2026-10-29T21:45:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier day three review: Sidorenko knocks out Matsushima as Wang Yidi cruises",
+      "summary": "Vladimir Sidorenko beat the world No 1, Sora Matsushima, 3-1 in the last 16, while Wang Yidi and Miwa Harimoto won in straight games.",
+      "matches": [
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Vladimir Sidorenko"
+            },
+            {
+              "name": "Sora Matsushima",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Wang Yidi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Elizabeta Samara",
+              "nat": "ROU"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Jang Woojin",
+              "nat": "KOR"
+            },
+            {
+              "name": "Lin Yun-Ju",
+              "nat": "TPE"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              12,
+              10
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Chen Xingtong",
+              "nat": "CHN"
+            },
+            {
+              "name": "Annett Kaufmann",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "qnnk6ZwgiXI",
+          "title": "Sora Matsushima v Vladimir Sidorenko, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "PAcufrLfyKc",
+          "title": "Chen Xingtong v Annett Kaufmann, women's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "lIG1ZIHdWbM",
+          "title": "Jang Woojin v Lin Yun-Ju, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "l2BX8rF998A",
+          "title": "Miwa Harimoto v Bruna Takahashi, women's singles last 32",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        }
+      ]
+    },
+    {
+      "id": "gb-para-worlds-squad-2026",
+      "category": "England",
+      "date": "2026-10-29",
+      "published": "2026-10-29T15:10:00Z",
+      "author": "michelle",
+      "headline": "Will Bayley and Bly Twomey lead 12-strong GB squad for World Para Championships in Thailand",
+      "summary": "British Para Table Tennis has named 12 players, including the world champion Will Bayley, for the World Para Championships in Pattaya from 13 to 19 November.",
+      "sources": [
+        {
+          "name": "Table Tennis England: Strong GB squad for ITTF World Para Championships",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/strong-gb-squad-for-ittf-world-para-championships/"
+        }
+      ]
     },
     {
       "id": "wtt-champions-montpellier-2026-day3-preview",
@@ -489,6 +1247,24 @@
       "author": "michael"
     },
     {
+      "id": "wtt-champions-montpellier-2026-day2-preview",
+      "kind": "Preview",
+      "day": 2,
+      "category": "International",
+      "date": "2026-10-28",
+      "published": "2026-10-28T09:10:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "headline": "WTT Champions Montpellier day two preview: Wang Manyu, Alexis Lebrun and five French players in action",
+      "summary": "The women's top seed, Wang Manyu, faces the new African champion, Hana Goda, and Alexis Lebrun meets Patrick Franziska on the second day of the first round.",
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: schedule",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        }
+      ]
+    },
+    {
       "id": "wtt-champions-montpellier-2026-day1-review",
       "kind": "Review",
       "day": 1,
@@ -676,24 +1452,6 @@
       ]
     },
     {
-      "id": "wtt-champions-montpellier-2026-day2-preview",
-      "kind": "Preview",
-      "day": 2,
-      "category": "International",
-      "date": "2026-10-28",
-      "published": "2026-10-28T09:10:00Z",
-      "author": "michael",
-      "event": "wtt-champions-montpellier-2026",
-      "headline": "WTT Champions Montpellier day two preview: Wang Manyu, Alexis Lebrun and five French players in action",
-      "summary": "The women's top seed, Wang Manyu, faces the new African champion, Hana Goda, and Alexis Lebrun meets Patrick Franziska on the second day of the first round.",
-      "sources": [
-        {
-          "name": "WTT Champions Montpellier 2026: schedule",
-          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
-        }
-      ]
-    },
-    {
       "id": "jtta-all-japan-wtt-clash-2026",
       "category": "International",
       "lang": "Japanese",
@@ -712,6 +1470,24 @@
         }
       ],
       "author": "michael"
+    },
+    {
+      "id": "u21-national-cup-2026",
+      "category": "England",
+      "headline": "Pashley and Trumpauskas retain Under-21 National Cup titles",
+      "summary": "Ella Pashley went unbeaten at Highfields TTC in Wellingborough, beating Sophie Earley 3-0 in the final round. Larry Trumpauskas lost one match on his way to keeping the men's title.",
+      "date": "2026-10-26",
+      "sources": [
+        {
+          "name": "Table Tennis England",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
+        }
+      ],
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/wellingborough.svg"
+      },
+      "author": "michelle"
     },
     {
       "id": "african-champs-2026",
@@ -889,25 +1665,6 @@
       ]
     },
     {
-      "id": "asian-ms-final-2026",
-      "category": "International",
-      "headline": "Asian Championships 2026: Harimoto and Chen Yi win singles titles as China and Japan share the honours",
-      "summary": "Tomokazu Harimoto came from two games down to beat Li Tianyang and Chen Yi swept Miwa Harimoto, while Japan's women beat China in the team final.",
-      "date": "2026-10-25",
-      "sources": [
-        {
-          "name": "tabletennis.media",
-          "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"
-        },
-        {
-          "name": "Butterfly",
-          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
-        }
-      ],
-      "author": "michael",
-      "event": "asian-championships-2026"
-    },
-    {
       "id": "montpellier-draw-2026",
       "category": "International",
       "headline": "WTT Champions Montpellier 2026 preview: Wang Chuqin out as Lebrun brothers and Sun Yingsha learn their openers",
@@ -937,6 +1694,25 @@
       "event": "wtt-champions-montpellier-2026"
     },
     {
+      "id": "asian-ms-final-2026",
+      "category": "International",
+      "headline": "Asian Championships 2026: Harimoto and Chen Yi win singles titles as China and Japan share the honours",
+      "summary": "Tomokazu Harimoto came from two games down to beat Li Tianyang and Chen Yi swept Miwa Harimoto, while Japan's women beat China in the team final.",
+      "date": "2026-10-25",
+      "sources": [
+        {
+          "name": "tabletennis.media",
+          "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"
+        },
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
+        }
+      ],
+      "author": "michael",
+      "event": "asian-championships-2026"
+    },
+    {
       "id": "americas-champs-2026",
       "category": "International",
       "headline": "Americas Championships 2026: Calderano and Diaz win singles titles as honours are shared",
@@ -950,24 +1726,6 @@
       ],
       "author": "michael",
       "event": "americas-championships-2026"
-    },
-    {
-      "id": "u21-national-cup-2026",
-      "category": "England",
-      "headline": "Pashley and Trumpauskas retain Under-21 National Cup titles",
-      "summary": "Ella Pashley went unbeaten at Highfields TTC in Wellingborough, beating Sophie Earley 3-0 in the final round. Larry Trumpauskas lost one match on his way to keeping the men's title.",
-      "date": "2026-10-26",
-      "sources": [
-        {
-          "name": "Table Tennis England",
-          "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
-        }
-      ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/wellingborough.svg"
-      },
-      "author": "michelle"
     },
     {
       "id": "world-hopes-sheffield-2026",
