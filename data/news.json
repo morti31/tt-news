@@ -1,7 +1,263 @@
 {
-  "updated": "2026-10-29T00:40:00Z",
+  "updated": "2026-11-01T20:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-montpellier-2026-day6-review",
+      "kind": "Review",
+      "day": 6,
+      "category": "International",
+      "date": "2026-11-01",
+      "published": "2026-11-01T20:40:00Z",
+      "author": "michael",
+      "event": "wtt-champions-montpellier-2026",
+      "draw": "3250",
+      "headline": "WTT Champions Montpellier finals: Sun Yingsha beats Kuai Man as Jang Woojin comes from 3-1 down",
+      "summary": "Sun Yingsha lost the first game of the WTT Champions Montpellier final to Kuai Man and won the next four, and Jang Woojin won the last three games to beat Patrick Franziska 4-3.",
+      "matches": [
+        {
+          "label": "Women's singles, final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Kuai Man",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Jang Woojin",
+              "nat": "KOR"
+            },
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              3,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, semi-final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Wang Yidi",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              11,
+              2
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, semi-final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Jang Woojin",
+              "nat": "KOR"
+            },
+            {
+              "name": "Hugo Calderano",
+              "nat": "BRA"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              14,
+              12
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "GjGt2DzpF1w",
+          "title": "Kuai Man v Sun Yingsha, women's singles final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "J5g15GqTbEg",
+          "title": "Hugo Calderano v Jang Woojin, men's singles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "9FeheiTKt58",
+          "title": "Wang Yidi v Sun Yingsha, women's singles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "IXpBo-FlyY0",
+          "title": "Truls Moregard v Patrick Franziska, men's singles semi-final",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Montpellier 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "FFTT (French): Sun Yingsha et Jang Woojin triomphent à Montpellier",
+          "url": "https://www.fftt.com/actualites/wtt/sun-yingsha-et-jang-woojin-triomphent-a-montpellier/"
+        },
+        {
+          "name": "Flashscore (French): Franziska élimine Moregard en demi-finale",
+          "url": "https://www.flashscore.fr/actualites/franziska-elimine-le-tenant-du-titre-moregard-en-demi-finale-a-montpellier/zmMZQqRE/"
+        },
+        {
+          "name": "Butterfly: Montpellier says adieu to seeds un, deux et trois",
+          "url": "https://butterflyonline.com/montpellier-says-adieu-to-seeds-un-deux-et-trois/"
+        },
+        {
+          "name": "Sina Sports (Chinese): Sun Yingsha beats Kuai Man 4-1",
+          "url": "https://k.sina.cn/article_7095179045_1a6e7d72506801tvna.html"
+        },
+        {
+          "name": "Nate Sports (Korean): Jang Woojin beats Lin Yun-Ju from 10-7 down",
+          "url": "https://sports.news.nate.com/view/20261031n00502"
+        },
+        {
+          "name": "tischtennis.de (German): WTT Champions Frankfurt draw",
+          "url": "https://www.tischtennis.de/news/wtt-champions-frankfurt-weltmeisterin-wartet-auf-ying-han-asien-meisterin-auf-neumann.html"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        }
+      ],
+      "top": true
+    },
     {
       "id": "wtt-champions-montpellier-2026-day3-preview",
       "kind": "Preview",
@@ -209,8 +465,7 @@
           "name": "World Table Tennis on YouTube: match highlights",
           "url": "https://www.youtube.com/@WTTGlobal/videos"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "wtt-champions-frankfurt-2026-wildcards",
@@ -770,6 +1025,49 @@
   ],
   "results": [
     {
+      "event": "WTT Champions Montpellier",
+      "ended": "2026-11-01",
+      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
+      "matches": [
+        {
+          "round": "Women's singles final",
+          "winner": "Sun Yingsha (CHN)",
+          "loser": "Kuai Man (CHN)",
+          "score": "4-1"
+        },
+        {
+          "round": "Men's singles final",
+          "winner": "Jang Woojin (KOR)",
+          "loser": "Patrick Franziska (GER)",
+          "score": "4-3"
+        },
+        {
+          "round": "Women's singles semi-final",
+          "winner": "Sun Yingsha (CHN)",
+          "loser": "Wang Yidi (CHN)",
+          "score": "4-3"
+        },
+        {
+          "round": "Women's singles semi-final",
+          "winner": "Kuai Man (CHN)",
+          "loser": "Chen Yi (CHN)",
+          "score": "4-2"
+        },
+        {
+          "round": "Men's singles semi-final",
+          "winner": "Jang Woojin (KOR)",
+          "loser": "Hugo Calderano (BRA)",
+          "score": "4-3"
+        },
+        {
+          "round": "Men's singles semi-final",
+          "winner": "Patrick Franziska (GER)",
+          "loser": "Truls Moregard (SWE)",
+          "score": "4-3"
+        }
+      ]
+    },
+    {
       "event": "Asian Championships, Tashkent",
       "ended": "2026-10-25",
       "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/",
@@ -840,25 +1138,6 @@
           "winner": "USA",
           "loser": "Puerto Rico",
           "score": "3-0"
-        }
-      ]
-    },
-    {
-      "event": "Under-21 National Cup, Wellingborough",
-      "ended": "2026-10-25",
-      "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/",
-      "matches": [
-        {
-          "round": "Women's champion",
-          "winner": "Ella Pashley",
-          "loser": "",
-          "score": "Unbeaten"
-        },
-        {
-          "round": "Men's champion",
-          "winner": "Larry Trumpauskas",
-          "loser": "",
-          "score": "Retained"
         }
       ]
     }
