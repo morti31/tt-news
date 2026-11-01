@@ -200,11 +200,14 @@ def top_stories(stories, now=None):
         fresh = 0.5 ** (age / 18)
         art, s = amap.get(i["id"]), raw.get(i["id"], {})
         extras = (0.15 if art else 0) + (0.1 if (art or s).get("matches") else 0) + (0.1 if i["video"] else 0)
-        if hub and hub.get("start") and hub["start"] <= today <= hub["end"]:
+        over = bool(hub and components.champions(hub.get("draw")))   # every final played
+        if hub and hub.get("start") and hub["start"] <= today <= hub["end"] and not over:
             extras += 0.25
         score = fresh * (0.5 + prestige / 5 + extras)
         if s.get("kind") == "Preview":   # a day preview is useful once play starts, then it gives way to results
-            score *= 0.6
+            score *= 0.02 if over else 0.6   # once the tournament is over its previews drop right down
+        if over and s.get("kind") == "Review" and i["published"][:10] >= (hub.get("end") or ""):
+            score *= 1.5   # the finals report leads
         scored.append([score, i])
     out, per_event = [], {}
     pool = sorted(scored, key=lambda x: -x[0])

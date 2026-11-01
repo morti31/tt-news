@@ -63,7 +63,9 @@
   }
 
   // ---- On now: the big event of the moment, in its own soft colour, with live scores
-  const liveEvent = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id])
+  // An event whose finals have all been played is over, even on its last day: it leaves "On now"
+  const done = (h) => !!(h && h.champions && h.champions.length);
+  const liveEvent = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && !done(hubs[e.id]))
     .sort((a, b) => (b.prestige || 0) - (a.prestige || 0))[0];
   const onHub = liveEvent && hubs[liveEvent.id];
   function renderOnNow() {
@@ -89,6 +91,34 @@
     if (onHub.wtt) liveScores();
     const st = el.querySelector(".onnow-stream");
     if (st && window.ElevenStream) window.ElevenStream(st);
+  }
+  // ---- Champions: once a big event is over, the news leads again and the winners get their own panel
+  // under the top stories for three days (or until the next big event starts)
+  const FLAGS = {"CHN": "cn", "JPN": "jp", "KOR": "kr", "PRK": "kp", "HKG": "hk", "MAC": "mo", "SGP": "sg", "IND": "in", "IRI": "ir", "KAZ": "kz", "THA": "th", "MAS": "my", "INA": "id", "QAT": "qa", "EGY": "eg", "NGR": "ng", "ALG": "dz", "TUN": "tn", "FRA": "fr", "GER": "de", "SWE": "se", "DEN": "dk", "NOR": "no", "ENG": "gb-eng", "SCO": "gb-sct", "WAL": "gb-wls", "GBR": "gb", "IRL": "ie", "POR": "pt", "ESP": "es", "ITA": "it", "AUT": "at", "SUI": "ch", "BEL": "be", "NED": "nl", "LUX": "lu", "POL": "pl", "CZE": "cz", "SVK": "sk", "SLO": "si", "CRO": "hr", "SRB": "rs", "GRE": "gr", "TUR": "tr", "ROU": "ro", "HUN": "hu", "UKR": "ua", "BRA": "br", "ARG": "ar", "CHI": "cl", "PUR": "pr", "CAN": "ca", "USA": "us", "AUS": "au", "NZL": "nz", "MON": "mc"};
+  const flagOf = (c) => (FLAGS[(c || "").toUpperCase()] ? `<span class="fi fi-${FLAGS[c.toUpperCase()]}" aria-hidden="true"></span>` : "");
+  const plusDays = (iso, n) => new Date(day(iso).getTime() + n * 864e5).toISOString().slice(0, 10);
+  const finished = onHub ? null : Object.entries(hubs)
+    .filter(([id, h]) => id === Object.keys(hubs).find((k) => hubs[k] === h))   // each hub once, by its own id
+    .filter(([, h]) => done(h) && h.end && h.start <= today && plusDays(h.end, 3) >= today)
+    .sort((a, b) => b[1].end.localeCompare(a[1].end))[0];
+  function renderChampions() {
+    const el = $("champs");
+    if (!el || !finished) return;
+    const [id, h] = finished;
+    const report = data.stories.filter((s) => s.event === id && s.kind === "Review")
+      .sort((a, b) => (stamp(b) || b.date).localeCompare(stamp(a) || a.date))[0];
+    const next = Object.values(hubs).filter((x, i, all) => all.indexOf(x) === i && x.start && x.start > today)
+      .sort((a, b) => a.start.localeCompare(b.start))[0];
+    const ended = day(h.end).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
+    const cards = h.champions.map((c) => `<div class="champ"><span class="champ-ev">${esc(c.event)} champion</span>
+      <p class="champ-name">${flagOf(c.champion.nat)}${esc(c.champion.name)}</p>
+      <p class="champ-final">Beat ${esc(c.runner_up.name)} ${esc(c.score)} in the final<span>${esc(c.games)}</span></p></div>`).join("");
+    const nextTxt = next ? `<a class="champs-next" href="${esc(next.url)}">Next: ${esc(next.name)}, from ${esc(day(next.start).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }))}</a>` : "";
+    el.style.cssText = `--tier:${h.colour}`;
+    el.innerHTML = `<div class="champs-head"><span class="lab">Tournament over · ${esc(ended)}</span>
+        <h2><a href="${esc(h.url)}">${esc(h.name)} ${esc(h.year)}: the champions</a></h2></div>
+      <div class="champs">${cards}</div>
+      <p class="champs-links">${report ? `<a href="${esc(url(report))}">Finals report</a>` : ""}<a href="${esc(h.url)}#draw">Results and draw</a><a href="#watch">Highlights</a>${nextTxt}</p>`;
   }
   async function liveScores() {
     const box = $("onnow-live");
@@ -262,6 +292,7 @@
     curCat = cat;
     const home = cat === "All";
     $("onnow").hidden = !home || !onHub;
+    if ($("champs")) $("champs").hidden = !home || !finished;
     // the "on now" section carries the live scores, so the scores strip steps aside on the homepage
     document.body.classList.toggle("has-onnow", home && !!onHub);
     $("watch").hidden = !home || !$("watch").innerHTML;
@@ -290,6 +321,7 @@
         <span class="kicker" style="color:var(--ball)">${esc(f.kind)}</span><h3>${esc(f.title)}</h3><p>${esc(f.standfirst)}</p><span class="meta">By ${esc(f.author)}</span></a></article>`).join("") + "</div>";
   }
   renderOnNow();
+  renderChampions();
   renderFeatures();
   renderWatch();
   renderEvents();

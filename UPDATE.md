@@ -82,3 +82,14 @@ For every tournament rated 3 stars or more (`prestige` 3 or higher in `data/sche
 - **Review** (700 to 1,000 words): post it in the first run after the day's last session ends. Story `id` `<hub id>-day<N>-review`; slug `<hub id>-day-<N in words>-review-results-highlights`; `"kind": "Review"`, `"day": N`. Intro: the day's main story, covering both draws. Then `## ` sections on the main matches, upsets, comebacks and records (shortest and longest matches, saved match points), with quotes from published interviews; `## Results in full` (every match as a list, "Winner (NAT) bt Loser (NAT) 11-8, 11-6, 11-8"); and a closing section on the next day's headline matches linking to the next preview. `matches`: the day's four key results, two women's and two men's. If separate stories were published during the day, merge them into the review rather than leaving short pages: remove them from `news.json`, delete their article files and add a `301` line for each old URL to `_redirects`.
 - **Highlights**: add up to four of the day's official WTT highlights to the review's `videos`, two women's and two men's, the most important match first. Get them from Eleven's own highlights feed through the probe workflow: run it with `https://tt-news.tommorti.workers.dev/api/highlights?q=<stream_q from the hub in data/events.json>` and read `videos` (each has `id`, `title` and `gender`). Use only clips of matches played that day. WTT often posts them late at night or the next morning, so on each run check the latest review: if it has fewer than four clips and more are available, add them.
 - Keep the day count from the tournament's first day of play (day one = `start` in `data/events.json`). If a review for the day already exists, update it rather than adding a second.
+
+## When a tournament finishes
+
+The site switches itself over once every final in the event's draw (`data/draws/<id>.json`) has a winner, so keep the draw synced through finals day. Then:
+
+- The homepage drops the "On now" panel, the news leads again and the scores strip returns.
+- A Champions panel (both singles winners, final scores, links to the finals report, results and the next event) sits under Top stories for three days after the end date, or until the next big event starts.
+- The event page shows "Finished", a Champions section at the top, and no live scores or calendar button.
+- Previews for the event drop out of Top stories; the finals review (the last day's `Review`) gets a boost to lead.
+
+Your job on finals day: publish the finals review as the `top` story, written as the celebration of the winners (headline names both champions). Mark the next tournament's preview as the second story. Don't write "the tournament continues" or "day N" language in anything published after the last final.

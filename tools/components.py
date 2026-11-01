@@ -186,6 +186,28 @@ def _bracket(ev):
     return "".join(cols)
 
 
+def champions(ref):
+    """Winners of each event in a finished draw: [{event, champion, runner_up, score, games}], or [] if any final is unplayed."""
+    if not ref:
+        return []
+    path = os.path.join(ROOT, "data", "draws", f"{ref}.json")
+    if not os.path.exists(path):
+        return []
+    out = []
+    for key, ev in json.load(open(path, encoding="utf-8"))["events"].items():
+        rounds = ev.get("rounds") or []
+        fin = rounds[-1] if rounds and rounds[-1].get("round", "").lower() == "final" else None
+        m = fin and fin.get("matches") and fin["matches"][0]
+        if not m or m.get("winner") not in (0, 1) or not m.get("score"):
+            return []
+        w = m["winner"]
+        sc, _, games = m["score"].partition(" ")
+        a, b = sc.split("-")
+        out.append({"key": key, "event": ev["name"], "champion": m["players"][w], "runner_up": m["players"][1 - w],
+                    "score": f"{max(a, b)}-{min(a, b)}", "games": ", ".join(f"{g[w]}-{g[1 - w]}" for g in (x.split(":") for x in games.strip("()").split(",") if ":" in x) if g != ["0", "0"]), "when": m.get("when")})
+    return out
+
+
 def draw(ref):
     if not ref:
         return ""

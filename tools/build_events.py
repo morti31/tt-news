@@ -54,6 +54,8 @@ def dates(ev):
 
 def status(ev, today):
     end = ev.get("end")
+    if components.champions(ev.get("draw")) and ev.get("start") and ev["start"] <= today:
+        return "past"   # every final played: the tournament is over, even on the last day
     if ev.get("start") and ev["start"] <= today <= end:
         return "now"
     return "past" if end and end < today else "next"
@@ -73,7 +75,8 @@ def index_entry(ev):
     bg, rule, ink = TINTS.get(c, ("#f1f3f7", "#dde1e8", "#111418"))
     return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev),
             "wtt": ev.get("wtt_id"), "series": ev["series"], "city": ev["city"], "venue": ev.get("venue"), "start": ev.get("start"),
-            "end": ev.get("end"), "group": ev["group"], "stream_q": ev.get("stream_q") or f'{ev["city"]} {ev["year"]}', "colour": c, "tint": bg, "tint_rule": rule, "tint_ink": ink}
+            "end": ev.get("end"), "group": ev["group"], "stream_q": ev.get("stream_q") or f'{ev["city"]} {ev["year"]}', "colour": c, "tint": bg, "tint_rule": rule, "tint_ink": ink,
+            "champions": components.champions(ev.get("draw"))}
 
 
 def event_index(data):
@@ -150,7 +153,7 @@ def hub(ev, items, schedule, today, news):
     live = ""
     if st == "now" and ev.get("live"):
         live = f'<a class="btn btn-primary" href="{e(news.get("live_results_url", "https://www.worldtabletennis.com/"))}" rel="noopener">Live scores on WTT</a>'
-    cal = f'<a class="btn" href="/events/{ev["id"]}.ics">Add to calendar</a>' if ev.get("start") else ""
+    cal = f'<a class="btn" href="/events/{ev["id"]}.ics">Add to calendar</a>' if ev.get("start") and st != "past" else ""
 
     # Results: every match reported in this event's stories, finals first, each match once
     seen, matches = set(), []
@@ -173,6 +176,14 @@ def hub(ev, items, schedule, today, news):
                     f'<div id="stream" class="hub-stream" data-stream-q="{e(ev.get("stream_q") or ev["city"] + " " + ev["year"])}" hidden></div>'
                     '<h2 class="section-title"><span class="lv-dot"></span>Live scores</h2><div class="lv-now"></div>'
                     '<h3 class="lv-sub">Latest results</h3><div class="lv-done lv-grid"></div><p class="small lv-note"></p></section>')
+    champs = components.champions(ev.get("draw")) if st == "past" else []
+    champ_sec = ""
+    if champs:
+        cards = "".join(f'''<div class="champ"><span class="champ-ev">{e(c["event"])} champion</span>
+<p class="champ-name">{components.flag(c["champion"].get("nat"))}{e(c["champion"]["name"])}</p>
+<p class="champ-final">Beat {e(c["runner_up"]["name"])} {e(c["score"])} in the final<span>{e(c["games"])}</span></p></div>''' for c in champs)
+        champ_sec = (f'<section class="hub-sec champs-sec" id="champions"><h2 class="section-title">Champions</h2>'
+                     f'<div class="champs" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">{cards}</div></section>')
     results = f'<section class="hub-sec" id="results"><h2 class="section-title">{"Key results" if live_sec else "Results"}</h2>{board}</section>' if matches else ""
     draw = components.draw(ev.get("draw"))
     draw = f'<section class="hub-sec" id="draw">{draw}</section>' if draw else ""
@@ -188,15 +199,15 @@ def hub(ev, items, schedule, today, news):
     news_sec = f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2><ul class="archive">{stories}</ul></section>' if items else ""
     fixtures = _fixtures(ev, schedule)
     empty = "" if (results or draw or fixtures or items) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
-    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("live", "Live", live_sec), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
+    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("champions", "Champions", champ_sec), ("live", "Live", live_sec), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
                                                                 ("watch", "Watch", watch), ("news", "News", news_sec)) if sec)
     facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev["events"]),
                                                                    ("Level", TIER_NAMES.get(ev["tier"], ""))) if v)
     # The sidebar sits beside the first sections only (live scores and results, or whatever comes first);
     # the long sections (draw, schedule, highlights, news) run full width below it, so there is no
     # empty column on the right.
-    order = [x for x in (live_sec, results, draw, fixtures, watch, news_sec) if x]
-    top = [x for x in (live_sec, results) if x] or order[:1]
+    order = [x for x in (champ_sec, live_sec, results, draw, fixtures, watch, news_sec) if x]
+    top = [x for x in (champ_sec, live_sec, results) if x] or order[:1]
     top_html = empty + "".join(top)
     below_html = "".join(x for x in order if x not in top)
     body = f"""<main class="wrap hub">

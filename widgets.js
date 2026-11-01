@@ -55,7 +55,8 @@ window.ElevenStream = function (el) {
 
   // Scores strip, led by anything on now with a link to live scores
   if ($("ticker")) {
-    const cards = events.filter((e) => e.start <= today && e.end >= today).map((e) =>
+    const over = (id) => !!(hubs[id] && hubs[id].champions && hubs[id].champions.length);   // every final played
+    const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) =>
       `<a class="score-card live-card" href="${esc(hubs[e.id] ? hubs[e.id].url : news.live_results_url || "https://www.worldtabletennis.com/")}"${hubs[e.id] ? "" : ' target="_blank" rel="noopener"'}>
         <span class="ev"><span class="live-dot"></span>On now</span>
         <span class="row won"><span>${esc(e.name)}</span></span>
@@ -112,14 +113,14 @@ window.ElevenStream = function (el) {
         }
         // On the homepage the "on now" section shows the event and its four newest matches,
         // so the strip carries on from there instead of repeating them
-        const onHome = !!$("onnow") && (document.body.classList.contains("has-onnow") || !location.hash);
+        const onHome = !!$("onnow") && document.body.classList.contains("has-onnow");
         if (onHome) extra = extra.slice(4);
         if (!extra.length && !onHome) return;
         const on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
         for (const hub of liveHubs) {
           try {
             const st = await fetch(`/api/stream?q=${encodeURIComponent(hub.stream_q || hub.city)}`).then((r) => r.json());
-            if (st.status === "live" && !onHome) on.unshift(`<a class="score-card watch-card" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a>`);
+            if (st.status === "live" && !onHome && !(hub.champions && hub.champions.length)) on.unshift(`<a class="score-card watch-card" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a>`);
           } catch (e) {}
         }
         $("ticker").innerHTML = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
