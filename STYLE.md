@@ -23,6 +23,7 @@ Eleven writes like the Guardian's sport desk: clear, confident, plainly told, wi
 
 ## Features
 
+- **Register**: Guardian long read and New Yorker: intelligent, precise, sophisticated, with a point of view. Every feature carries substantial historical context, woven through it (see FEATURES.md), and is pitched at newer fans, at both new and established fans, or at expert fans, a third each (see FEATURES.md).
 - **Open on a person and a moment**, told as a scene or a single striking fact, not a summary of the argument. Bring in the bigger story by the third or fourth paragraph (the paragraph that tells the reader why this matters now).
 - Build the piece around people. Data supports the story; it isn't the story. Give no more than two or three numbers in a paragraph, and round where precision doesn't matter.
 - Lists of names and countries go in a chart or a short list sentence, never a whole paragraph of them.
