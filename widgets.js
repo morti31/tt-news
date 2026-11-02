@@ -91,7 +91,15 @@ window.ElevenStream = function (el) {
     edges();
 
     // Matches in play (and the latest finished ones) from WTT, for events with an Eleven event page
-    const liveHubs = events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id]);
+    // An event stays here for three days after it ends, so its finals open point by point too
+    const since = new Date(Date.now() - 3 * 864e5).toISOString().slice(0, 10);
+    const liveHubs = events.filter((e) => e.start <= today && e.end >= since && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id]);
+    // Those events' stored results (which link out to WTT) give way to WTT's own cards
+    if (liveHubs.length) {
+      const names = new Set(liveHubs.map((h) => h.name));
+      cards.splice(0, cards.length, ...cards.filter((c) => ![...names].some((n) => c.includes(`title="${esc(n)}"`))));
+      $("ticker").innerHTML = cards.join("");
+    }
     if (liveHubs.length) {
       // "Women's singles, round of 32" -> "Women's singles R32", so the label fits the card
       const short = (l) => String(l).replace(/, (?:round of|last) (\d+)/i, " R$1").replace(/, quarter-?finals?/i, " QF").replace(/, semi-?finals?/i, " SF").replace(/, final$/i, " final");
