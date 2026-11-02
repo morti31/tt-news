@@ -2,6 +2,7 @@
 // match data (used with WTT's permission). Everything else is static assets.
 //
 //   GET /api/live?event=3250   ->  { updated, live: [match], results: [match] }
+//   GET /api/match?event=3250&code=<documentCode>  ->  one match with every point (see matchDetail)
 //
 // A match is { code, label, table, status, game, sides: [{name, nat, rank}], score: [a, b],
 //              games: [[a, b], ...], server: 0|1|null, start (UTC ISO) }.
@@ -108,6 +109,44 @@ async function live(eventId, ctx, env, origin) {
   };
 }
 
+// ---- One match, point by point: GET /api/match?event=3250&code=TTEMSINGLES-...
+// { ...match, best, points: [game, ...] } where each game is a list of
+//   { k: "p", s: server 0|1, w: winner 0|1, h, a, tag?: "GP"|"MP" }   a point, score after it, and whether
+//                                                                     the leader then has game or match point
+//   { k: "to", by: 0|1, h, a }                                        a time-out
+async function matchDetail(eventId, code, ctx, env, origin) {
+  const url = `${WTT}/GetMatchCardDetails/${eventId}/${encodeURIComponent(code)}?no_cache=true&require_full_msg=true&require_play_by_play_full=true`;
+  const [card, ranks] = await Promise.all([cached(url, ctx, 5), rankMap(env, origin, ctx)]);
+  const m = match(card, ranks);
+  if (!m) throw new Error("No such match");
+  const comps = card.competitiors || [];
+  const side = (x) => (x === "H" || x === (comps[0] || {}).competitiorId ? 0 : x === "A" || x === (comps[1] || {}).competitiorId ? 1 : null);
+  const best = Number((card.matchConfig || {}).bestOfXGames) || 5, need = Math.ceil(best / 2);
+  const msgs = ((card.full_msg || {}).PlayByPlay || []).map((x) => x.MessagePayLoad || {})
+    .filter((x) => x.Competition && Array.isArray(x.Competition.ActionsProgressionByGame))
+    .sort((a, b) => Number(b.SequenceNumber) - Number(a.SequenceNumber));
+  const acts = msgs.length ? msgs[0].Competition.ActionsProgressionByGame : [];
+  const games = [], won = [0, 0];
+  for (const a of acts) {
+    const g = /^G(\d+)$/.exec(a.Period || "");
+    if (!g) continue;
+    const n = Number(g[1]) - 1;
+    while (games.length <= n) games.push([]);
+    const h = Number(a.ScoreH) || 0, aw = Number(a.ScoreA) || 0;
+    if (a.ActionType === "PT" && side(a.IsWinner) !== null) {
+      const p = { k: "p", s: side(a.ServerCompetitor), w: side(a.IsWinner), h, a: aw };
+      const lead = h > aw ? 0 : aw > h ? 1 : null, top = Math.max(h, aw);
+      const over = top >= 11 && Math.abs(h - aw) >= 2;
+      if (over) won[lead] += 1;
+      else if (lead !== null && top >= 10) p.tag = won[lead] === need - 1 ? "MP" : "GP";
+      games[n].push(p);
+    } else if (a.ActionType === "TO" && a.TimeoutStatus === "START") {
+      games[n].push({ k: "to", by: side(a.TimeoutRequestedBy), h, a: aw });
+    }
+  }
+  return { ...m, best, points: games.filter((g) => g.length) };
+}
+
 // ---- WTT's YouTube streams: what's live now, or the latest finished stream to watch back
 const CHANNEL = "https://www.youtube.com/@WTTGlobal";
 const YT_HEADERS = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36", "Accept-Language": "en-GB,en;q=0.9" };
@@ -182,6 +221,16 @@ export default {
         return json(await live(id, ctx, env, url.origin));
       } catch (err) {
         return json({ error: "Live data is unavailable right now", detail: String(err.message || err) }, 502, 5);
+      }
+    }
+    if (url.pathname === "/api/match") {
+      const id = url.searchParams.get("event") || "", code = url.searchParams.get("code") || "";
+      if (!/^\d{1,6}$/.test(id) || !/^[A-Z0-9-]{10,60}$/.test(code)) return json({ error: "event and code are required" }, 400);
+      try {
+        const d = await matchDetail(id, code, ctx, env, url.origin);
+        return json(d, 200, d.status === "live" ? 5 : 300);
+      } catch (err) {
+        return json({ error: "Match data is unavailable right now", detail: String(err.message || err) }, 502, 5);
       }
     }
     if (url.pathname === "/api/stream") {

@@ -129,6 +129,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 {body}
 {FOOT}
 <script src="/widgets.js"></script>
+<script src="/matchpop.js" defer></script>
 </body>
 </html>
 """

@@ -9,7 +9,7 @@
   // World ranking (top 100 only), added by /api/live from data/rankings.json
   const wr = (s) => (s && s.rank ? `<span class="wr" title="World No ${s.rank}">${s.rank}</span>` : "");
 
-  function card(m) {
+  function card(m, event) {
     const live = m.status === "live";
     const won = live ? null : m.score[0] > m.score[1] ? 0 : 1;
     const row = (i) => {
@@ -23,7 +23,7 @@
         <td class="lv-sets">${m.score[i]}</td>${cells}</tr>`;
     };
     const meta = live ? `<span class="lv-dot"></span>Live${m.game ? `, game ${m.game}` : ""}` : "Final";
-    return `<article class="lv-card${live ? " is-live" : ""}"><p class="lv-meta"><span>${meta}</span><span>${esc(m.label)}${m.table ? ` · ${esc(m.table)}` : ""}</span></p>
+    return `<article class="lv-card${live ? " is-live" : ""}"${event && m.code ? ` data-match="${esc(event)}|${esc(m.code)}" tabindex="0" role="button" aria-label="${esc(m.sides.map((x) => x.name).join(" v "))}: point by point"` : ""}><p class="lv-meta"><span>${meta}</span><span>${esc(m.label)}${m.table ? ` · ${esc(m.table)}` : ""}</span></p>
       <table class="lv-table"><caption class="sr-only">${esc(m.sides.map((s) => s.name).join(" v "))}</caption><tbody>${row(0)}${row(1)}</tbody></table></article>`;
   }
 
@@ -41,8 +41,8 @@
       if (document.hidden) return;
       try {
         const d = await get(id);
-        now.innerHTML = d.live.length ? d.live.map(card).join("") : '<p class="lv-empty">No match in play right now. Scores appear here as soon as the next one starts.</p>';
-        done.innerHTML = d.results.slice(0, 12).map(card).join("");
+        now.innerHTML = d.live.length ? d.live.map((m) => card(m, id)).join("") : '<p class="lv-empty">No match in play right now. Scores appear here as soon as the next one starts.</p>';
+        done.innerHTML = d.results.slice(0, 12).map((m) => card(m, id)).join("");
         note.textContent = `Updated ${time(d.updated)}. Live data from World Table Tennis.`;
         el.hidden = !(d.live.length || d.results.length);
       } catch (e) {

@@ -100,7 +100,7 @@ window.ElevenStream = function (el) {
         const live = m.status === "live", g = m.games[m.games.length - 1] || [0, 0];
         const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
         const side = (i) => `<span class="row${won === i ? " won" : ""}"><span>${flag(m.sides[i].nat)}${esc(m.sides[i].name)}${wr(m.sides[i])}</span><b>${m.score[i]}${live ? `<i class="pts">${g[i]}</i>` : ""}</b></span>`;
-        return `<a class="score-card${live ? " is-live" : ""}" href="${esc(hub.url)}#live"><span class="ev">${live ? '<span class="live-dot"></span>' : ""}${esc(short(m.label))}</span><span class="where">${esc(hub.name)}</span>${side(0)}${side(1)}</a>`;
+        return `<a class="score-card${live ? " is-live" : ""}" href="${esc(hub.url)}#live" data-match="${esc(hub.wtt)}|${esc(m.code)}"><span class="ev">${live ? '<span class="live-dot"></span>' : ""}${esc(short(m.label))}</span><span class="where">${esc(hub.name)}</span>${side(0)}${side(1)}</a>`;
       };
       const refresh = async () => {
         if (document.hidden) return;

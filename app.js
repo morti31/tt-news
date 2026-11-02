@@ -133,7 +133,7 @@
           const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
           const wr = (s) => (s && s.rank ? `<span class="wr" title="World No ${s.rank}">${s.rank}</span>` : "");
           const side = (i) => `<span class="row${won === i ? " won" : ""}"><span>${esc(m.sides[i].name)}${wr(m.sides[i])}</span><b>${m.score[i]}${live ? `<i class="pts">${g[i]}</i>` : ""}</b></span>`;
-          return `<a class="score-card${live ? " is-live" : ""}" href="${esc(onHub.url)}#live"><span class="ev">${live ? '<span class="live-dot"></span>Live · ' : "Final · "}${esc(m.label)}</span>${side(0)}${side(1)}</a>`;
+          return `<a class="score-card${live ? " is-live" : ""}" href="${esc(onHub.url)}#live" data-match="${esc(onHub.wtt)}|${esc(m.code)}"><span class="ev">${live ? '<span class="live-dot"></span>Live · ' : "Final · "}${esc(m.label)}</span>${side(0)}${side(1)}</a>`;
         }).join("");
       } catch (e) { /* keep the last scores showing */ }
     };
