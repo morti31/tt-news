@@ -1,7 +1,143 @@
 {
-  "updated": "2026-11-02T17:40:00Z",
+  "updated": "2026-11-02T20:20:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "sam-walker-wtt-feeder-chennai-final-2026",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-02",
+      "published": "2026-11-02T20:20:00Z",
+      "author": "michelle",
+      "headline": "Sam Walker loses WTT Feeder Chennai final to Manav Thakkar after leading by two games",
+      "summary": "England's Sam Walker was two points from the WTT Feeder Chennai title before India's top seed, Manav Thakkar, came back to win the final 3-2.",
+      "score": "3-2",
+      "body": [
+        "Walker, the world No 159, reached his first WTT Feeder singles final and took the first two games 11-6, 11-8 against Thakkar, the home favourite, who is ranked 49th in the world.",
+        "He was two points from victory in the third game before Thakkar won five points in a row to take it 11-9. Thakkar then levelled the match with an 11-3 game and won the decider 11-8.",
+        "Walker beat India's second seed, Ankur Bhattacharjee, 3-0 in the last 16, came from two games down to beat the sixth seed, Payas Jain, 3-2 in the quarter-final and beat the seventh seed, Snehit Suravajjula, 3-0 in the semi-final. Reaching the final earns him 90 world ranking points."
+      ],
+      "matches": [
+        {
+          "label": "Men's singles final",
+          "event": "WTT Feeder Chennai",
+          "sides": [
+            {
+              "name": "Manav Thakkar",
+              "nat": "IND"
+            },
+            {
+              "name": "Sam Walker",
+              "nat": "ENG"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles semi-final",
+          "event": "WTT Feeder Chennai",
+          "sides": [
+            {
+              "name": "Sam Walker",
+              "nat": "ENG"
+            },
+            {
+              "name": "Snehit Suravajjula",
+              "nat": "IND"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles quarter-final",
+          "event": "WTT Feeder Chennai",
+          "sides": [
+            {
+              "name": "Sam Walker",
+              "nat": "ENG"
+            },
+            {
+              "name": "Payas Jain",
+              "nat": "IND"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              14,
+              16
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Table Tennis England: WTT Feeder Chennai 2026",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/wtt-feeder-chennai-2026/"
+        }
+      ]
+    },
     {
       "id": "wang-manyu-butterfly-contract-2026",
       "category": "Equipment",
