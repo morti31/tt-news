@@ -193,7 +193,9 @@ def hub(ev, items, schedule, today, news):
             if v["id"] not in vseen:
                 vseen.add(v["id"])
                 vids.append(v)
-    watch = f'<section class="hub-sec" id="watch">{components.videos(vids)}</section>' if vids else ""
+    # Always present, so the homepage's Highlights link lands here even before the first video
+    watch = (f'<section class="hub-sec" id="watch">{components.videos(vids)}</section>' if vids else
+             '<section class="hub-sec" id="watch"><h2 class="section-title">Highlights</h2><p class="hub-empty">WTT highlights will appear here as matches are played.</p></section>')
     stories = "".join(f'''<li class="archive-item"><a href="{e(url)}"><h3>{e(it.get("title") or it.get("headline"))}</h3>
 <p>{e(it.get("standfirst") or it.get("summary", ""))}</p><time>{e(byline)}</time></a></li>''' for it, url, pub, byline in items)
     news_sec = f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2><ul class="archive">{stories}</ul></section>' if items else ""

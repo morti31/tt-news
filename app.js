@@ -118,7 +118,7 @@
     el.innerHTML = `<div class="champs-head"><span class="lab">${esc(dates)}</span>
         <h2><a href="${esc(h.url)}">${esc(h.name)} ${esc(h.year)}: the champions</a></h2></div>
       <div class="champs">${cards}</div>
-      <p class="champs-links">${report ? `<a href="${esc(url(report))}">Finals report</a>` : ""}<a href="${esc(h.url)}#draw">Results and draw</a><a href="#watch">Highlights</a>${nextTxt}</p>`;
+      <p class="champs-links">${report ? `<a href="${esc(url(report))}">Finals report</a>` : ""}<a href="${esc(h.url)}#draw">Results and draw</a><a href="${esc(h.url)}#watch">Highlights</a>${nextTxt}</p>`;
   }
   async function liveScores() {
     const box = $("onnow-live");
