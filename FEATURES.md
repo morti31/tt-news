@@ -89,6 +89,9 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 7. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
 8. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
 9. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+10. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
+11. [Both] WTT and the ITTF: the money, part 1 (feature: what WTT is, when and how it was founded, why, what it has done to the calendar, China's role and investment; history from the ITTF AGM minutes, WTT and ITTF announcements, and Steve Dainton's published interviews)
+12. [Expert] WTT and the ITTF: the money, part 2 (analysis, original data: finances and sustainability using public accounts and reported figures, China's share of revenue, India as a market through UTT and JioStar, the badminton comparison, and expert opinion. Verify every figure from the draft brief against the ITTF AGM minutes and WTT's own published numbers before use; treat cumulative audience and reach figures as exposure, not unique viewers)
 
 ## Done
 
