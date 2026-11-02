@@ -109,13 +109,13 @@
       .sort((a, b) => (stamp(b) || b.date).localeCompare(stamp(a) || a.date))[0];
     const next = Object.values(hubs).filter((x, i, all) => all.indexOf(x) === i && x.start && x.start > today)
       .sort((a, b) => a.start.localeCompare(b.start))[0];
-    const ended = day(h.end).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" });
+    const dates = `${day(h.start).toLocaleDateString("en-GB", { day: "numeric", month: "long" })} to ${day(h.end).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}`;
     const cards = h.champions.map((c) => `<div class="champ"><span class="champ-ev">${esc(c.event)} champion</span>
       <p class="champ-name">${flagOf(c.champion.nat)}${esc(c.champion.name)}</p>
       <p class="champ-final">Beat ${esc(c.runner_up.name)} ${esc(c.score)} in the final<span>${esc(c.games)}</span></p></div>`).join("");
     const nextTxt = next ? `<a class="champs-next" href="${esc(next.url)}">Next: ${esc(next.name)}, from ${esc(day(next.start).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }))}</a>` : "";
     el.style.cssText = `--tier:${h.colour}`;
-    el.innerHTML = `<div class="champs-head"><span class="lab">Tournament over · ${esc(ended)}</span>
+    el.innerHTML = `<div class="champs-head"><span class="lab">${esc(dates)}</span>
         <h2><a href="${esc(h.url)}">${esc(h.name)} ${esc(h.year)}: the champions</a></h2></div>
       <div class="champs">${cards}</div>
       <p class="champs-links">${report ? `<a href="${esc(url(report))}">Finals report</a>` : ""}<a href="${esc(h.url)}#draw">Results and draw</a><a href="#watch">Highlights</a>${nextTxt}</p>`;
