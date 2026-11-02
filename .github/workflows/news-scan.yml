@@ -1,0 +1,26 @@
+name: News scan
+# Collects recent table tennis headlines (Google News in several languages, sites' feeds, official WTT results)
+# and saves a digest to the `scan` branch for the update runs to read. See UPDATE.md, step 2.
+on:
+  schedule:
+    - cron: "20 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: news-scan
+  cancel-in-progress: true
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the digest
+        run: python3 tools/news_scan.py out
+      - name: Save the digest to the scan branch
+        run: |
+          cd out
+          git init -q && git checkout -q -b scan
+          git config user.name "news-scan" && git config user.email "scan@example.com"
+          git add . && git commit -q -m "News scan $(date -u +'%Y-%m-%d %H:%M')"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" scan
