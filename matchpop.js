@@ -91,7 +91,7 @@
       ${scoreboard(m)}
       ${games.length ? `<div class="mp-tabs" role="group" aria-label="Game">${tabs}</div>
       <div class="mp-game"><div class="mp-key"><span class="s0"><span class="mp-chip"></span>${esc(names[0])} won ${won[0]} points (${srv[0]} on serve)</span><span class="s1"><span class="mp-chip"></span>${esc(names[1])} won ${won[1]} points (${srv[1]} on serve)</span></div>
-        ${momentum(pts)}${pointList(m, pts, g === games.length - 1)}</div>` : '<p class="mp-wait">Point-by-point appears here once the first rally is played.</p>'}
+        ${pointList(m, pts, g === games.length - 1)}</div>` : '<p class="mp-wait">Point-by-point appears here once the first rally is played.</p>'}
       <p class="mp-foot">${live ? "Updates every few seconds. " : ""}Data from World Table Tennis.${current.hub ? ` <a href="${esc(current.hub)}">Event page</a>` : ""}</p>`;
   }
 
