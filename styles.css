@@ -256,6 +256,13 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .archive-item p { margin: 0 0 8px; color: var(--muted); }
 .archive-item time { font-size: 13px; color: var(--muted); }
 .archive-item a:hover h2 { text-decoration: underline; }
+.pager { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: -24px 0 56px; }
+.pager-nums { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.pager a, .pager span { text-decoration: none; font-weight: 700; font-size: 14px; }
+.pager-num, .pager-step { min-width: 38px; padding: 8px 12px; border-radius: var(--radius); background: var(--card); box-shadow: var(--shadow); color: var(--ink); text-align: center; }
+.pager a:hover { text-decoration: underline; }
+.pager-num[aria-current="page"] { background: var(--ink); color: var(--card); }
+.pager-step.off { opacity: .4; box-shadow: none; }
 .card h2 a, .card h3 a { text-decoration: none; }
 .card h2 a:hover, .card h3 a:hover { text-decoration: underline; }
 .card a.stretch::after { content: ""; position: absolute; inset: 0; }

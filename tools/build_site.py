@@ -326,6 +326,7 @@ def words_of(a):
     return sum(len(p.split()) for p in a.get("body") or [])
 
 
+NEWS_PER_PAGE = 20   # stories per page on /news/
 MIN_WORDS = 400   # below this a page is kept out of search engines and sitemaps (see UPDATE.md)
 
 
@@ -503,12 +504,34 @@ def main():
         others = [o for o in arts if o["slug"] != a["slug"]]
         open(os.path.join(ROOT, "news", a["slug"] + ".html"), "w", encoding="utf-8").write(article_page(a, others))
 
-    items = "".join(f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(a['category'])}</span>
-<h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a></li>""" for a in arts)
-    archive = f"""<main class="wrap"><section class="sched-head"><div><h1>News</h1><p class="lede">Every news story published on Eleven, newest first.</p></div></section>
-<ul class="archive">{items or '<li class="empty">No news yet.</li>'}</ul></main>"""
-    open(os.path.join(ROOT, "news", "index.html"), "w", encoding="utf-8").write(
-        page("News | Eleven", "Every table tennis news story published on Eleven.", f"{SITE}/news/", archive, news_cur=True))
+    def archive_item(a):
+        return (f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(a['category'])}</span>
+<h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a></li>""")
+
+    def page_url(n):
+        return "/news/" if n == 1 else f"/news/page-{n}.html"
+
+    pages = max(1, -(-len(arts) // NEWS_PER_PAGE))
+    for n in range(1, pages + 1):
+        chunk = arts[(n - 1) * NEWS_PER_PAGE:n * NEWS_PER_PAGE]
+        items = "".join(archive_item(a) for a in chunk)
+        nums = []
+        for i in range(1, pages + 1):
+            nums.append(f'<span class="pager-num" aria-current="page">{i}</span>' if i == n else f'<a class="pager-num" href="{page_url(i)}">{i}</a>')
+        pager = ""
+        if pages > 1:
+            prev = f'<a class="pager-step" rel="prev" href="{page_url(n - 1)}">&larr; Newer</a>' if n > 1 else '<span class="pager-step off">&larr; Newer</span>'
+            nxt = f'<a class="pager-step" rel="next" href="{page_url(n + 1)}">Older &rarr;</a>' if n < pages else '<span class="pager-step off">Older &rarr;</span>'
+            pager = f'<nav class="pager" aria-label="News pages">{prev}<span class="pager-nums">{"".join(nums)}</span>{nxt}</nav>'
+        lede = "Every news story published on Eleven, newest first." if pages == 1 else \
+            f"Every news story published on Eleven, newest first. Page {n} of {pages}."
+        archive = f"""<main class="wrap"><section class="sched-head"><div><h1>News</h1><p class="lede">{lede}</p></div></section>
+<ul class="archive">{items or '<li class="empty">No news yet.</li>'}</ul>{pager}</main>"""
+        links = (f'<link rel="prev" href="{SITE}{page_url(n - 1)}">' if n > 1 else "") + (f'<link rel="next" href="{SITE}{page_url(n + 1)}">' if n < pages else "")
+        title = "News | Eleven" if n == 1 else f"News, page {n} | Eleven"
+        out = "index.html" if n == 1 else f"page-{n}.html"
+        open(os.path.join(ROOT, "news", out), "w", encoding="utf-8").write(
+            page(title, "Every table tennis news story published on Eleven.", f"{SITE}{page_url(n)}", archive, extra_head=links, news_cur=True))
 
     index = {a.get("story_id", a["slug"]): {"slug": a["slug"], "url": f"/news/{a['slug']}.html", "published": a.get("published"),
                                             **({"video": a["videos"][0]["id"]} if a.get("videos") else {})} for a in arts}
@@ -556,6 +579,7 @@ def main():
 
     today = dt.date.today().isoformat()
     urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
+    urls += [(f"{SITE}/news/page-{n}.html", today) for n in range(2, max(1, -(-len(arts) // NEWS_PER_PAGE)) + 1)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts if words_of(a) >= MIN_WORDS]
     urls += [(f"{SITE}/features/", today)]
     urls += [(f"{SITE}/events/", today)] + [(f"{SITE}/events/{h}.html", today) for h in hubs]
