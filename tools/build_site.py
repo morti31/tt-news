@@ -128,6 +128,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
 {body}
 {FOOT}
+<script src="/fixtures.js"></script>
 <script src="/widgets.js"></script>
 <script src="/matchpop.js" defer></script>
 </body>

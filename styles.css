@@ -984,3 +984,22 @@ html.mp-open { overflow: hidden; }
   .mp-tags em { font-size: 10px; }
 }
 @media (prefers-color-scheme: dark) { .mp { --p0: #9fb3c8; } }
+
+/* Live score sections: live, next up beside latest results, then semi-finals and finals (fixtures.js) */
+#onnow-live .lv-grp { margin-top: 14px; }
+#onnow-live .lv-grp:first-child { margin-top: 0; }
+#onnow-live .lv-grp .lab { display: flex; align-items: center; gap: 6px; }
+.lv-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; margin-top: 14px; }
+.lv-cols .lv-grp { margin-top: 0 !important; }
+.lv-cols:first-child { margin-top: 0; }
+.lv-strip.one { grid-template-columns: 1fr; }
+.lv-ko { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+.lv-ko h3 { margin: 10px 0 0; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+.lv-ko .lv-strip { margin-top: 6px; }
+.fx-when { display: block; font-size: 12px; font-weight: 700; color: var(--ball, #f37021); margin: -2px 0 3px; font-variant-numeric: tabular-nums; }
+.score-card .row.tbd { font-style: italic; color: #9aa1ad; }
+.fx-card .row span:first-child { color: #fff; }
+.fx-card .row.tbd span:first-child { color: #9aa1ad; }
+@media (max-width: 760px) { .lv-cols, .lv-ko { grid-template-columns: 1fr; } .lv-cols .lv-grp + .lv-grp { margin-top: 14px !important; } }
+.fx-when.tbc { color: #9aa1ad; font-weight: 600; }
+#onnow-live .lv-wide .lv-strip { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }

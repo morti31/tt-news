@@ -86,7 +86,7 @@
         <div class="days">${days}</div>
         <a class="onnow-link" href="${esc(onHub.url)}">Draw, results and schedule</a></div>
       <div class="onnow-live"><div class="onnow-stream" data-stream-q="${esc(onHub.stream_q || onHub.city)}" hidden></div>
-        <span class="lab">Live and latest</span><div class="lv-strip" id="onnow-live"><p class="lv-wait">Scores appear here when play starts.</p></div></div>
+        <div id="onnow-live"><span class="lab">Live and latest</span><div class="lv-strip"><p class="lv-wait">Scores appear here when play starts.</p></div></div></div>
     </div>`;
     if (onHub.wtt) liveScores();
     const st = el.querySelector(".onnow-stream");
@@ -126,15 +126,24 @@
       if (document.hidden) return;
       try {
         const d = await fetch(`/api/live?event=${encodeURIComponent(onHub.wtt)}`, { cache: "no-store" }).then((r) => r.json());
-        const ms = (d.live || []).concat(d.results || []).slice(0, 4);
-        if (!ms.length) return;
-        box.innerHTML = ms.map((m) => {
+        const scoreCard = (m) => {
           const live = m.status === "live", g = m.games[m.games.length - 1] || [0, 0];
           const won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
           const wr = (s) => (s && s.rank ? `<span class="wr" title="World No ${s.rank}">${s.rank}</span>` : "");
           const side = (i) => `<span class="row${won === i ? " won" : ""}"><span>${esc(m.sides[i].name)}${wr(m.sides[i])}</span><b>${m.score[i]}${live ? `<i class="pts">${g[i]}</i>` : ""}</b></span>`;
           return `<a class="score-card${live ? " is-live" : ""}" href="${esc(onHub.url)}#live" data-match="${esc(onHub.wtt)}|${esc(m.code)}"><span class="ev">${live ? '<span class="live-dot"></span>Live · ' : "Final · "}${esc(m.label)}</span>${side(0)}${side(1)}</a>`;
-        }).join("");
+        };
+        // Live matches, then the next two fixtures beside the last two results, then (from the
+        // quarter-finals) every semi-final and final, filled in as players go through
+        const fx = window.ElevenFixtures ? await window.ElevenFixtures.get(onHub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
+        const live = d.live || [], done = (d.results || []).slice(0, 2);
+        if (!live.length && !done.length && !fx.next.length) return;
+        const grp = (lab, cards, cls = "") => cards.length ? `<div class="lv-grp ${cls}"><span class="lab">${lab}</span><div class="lv-strip${cls ? "" : " one"}">${cards.join("")}</div></div>` : "";
+        const F = window.ElevenFixtures;
+        box.innerHTML = grp('<span class="live-dot"></span>Live now', live.map(scoreCard), "lv-wide")
+          + `<div class="lv-cols">${grp("Next up", fx.next.map((x) => F.card(x, onHub)))}${grp("Latest results", done.map(scoreCard))}</div>`
+          + (fx.knock.length ? `<div class="lv-grp lv-knock"><span class="lab">Semi-finals and finals</span><div class="lv-ko">${fx.knock.map((k) =>
+              `<div><h3>${esc(k.name)}</h3><div class="lv-strip one">${k.items.map((x) => F.card(x, onHub, { short: true })).join("")}</div></div>`).join("")}</div></div>` : "");
       } catch (e) { /* keep the last scores showing */ }
     };
     tick();

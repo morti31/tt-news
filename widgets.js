@@ -93,7 +93,8 @@ window.ElevenStream = function (el) {
     // Matches in play (and the latest finished ones) from WTT, for events with an Eleven event page
     // An event stays here for three days after it ends, so its finals open point by point too
     const since = new Date(Date.now() - 3 * 864e5).toISOString().slice(0, 10);
-    const liveHubs = events.filter((e) => e.start <= today && e.end >= since && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id]);
+    const liveHubs = events.filter((e) => e.start <= today && e.end >= since && hubs[e.id] && hubs[e.id].wtt).map((e) => hubs[e.id])
+      .sort((a, b) => ((a.champions || []).length ? 1 : 0) - ((b.champions || []).length ? 1 : 0) || b.start.localeCompare(a.start));   // events in progress first
     // Those events' stored results (which link out to WTT) give way to WTT's own cards
     if (liveHubs.length) {
       const names = new Set(liveHubs.map((h) => h.name));
@@ -112,17 +113,22 @@ window.ElevenStream = function (el) {
       };
       const refresh = async () => {
         if (document.hidden) return;
+        // Per event: live matches, the next two fixtures, the last two results, then (from the
+        // quarter-finals) every semi-final and final, then older results
+        const onHome = !!$("onnow") && document.body.classList.contains("has-onnow");
         let extra = [];
         for (const hub of liveHubs) {
           try {
             const d = await fetch(`/api/live?event=${encodeURIComponent(hub.wtt)}`, { cache: "no-store" }).then((r) => r.json());
-            extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), (d.results || []).slice(0, 10).map((m) => mcard(m, hub)));
+            const F = window.ElevenFixtures;
+            const fx = F ? await F.get(hub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
+            const res = (d.results || []).slice(0, 10).map((m) => mcard(m, hub));
+            // On the homepage the "on now" panel already shows all but the older results
+            if (onHome) { extra = extra.concat(res.slice(2)); continue; }
+            extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), fx.next.map((x) => F.card(x, hub, { prefix: "Next · ", where: true })), res.slice(0, 2),
+              ...fx.knock.map((k) => k.items.map((x) => F.card(x, hub, { where: true }))), res.slice(2));
           } catch (e) {}
         }
-        // On the homepage the "on now" section shows the event and its four newest matches,
-        // so the strip carries on from there instead of repeating them
-        const onHome = !!$("onnow") && document.body.classList.contains("has-onnow");
-        if (onHome) extra = extra.slice(4);
         if (!extra.length && !onHome) return;
         const on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
         for (const hub of liveHubs) {
