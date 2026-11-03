@@ -1,7 +1,192 @@
 {
-  "updated": "2026-11-03T16:30:00Z",
+  "updated": "2026-11-03T20:55:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day1-review",
+      "kind": "Review",
+      "day": 1,
+      "category": "International",
+      "date": "2026-11-03",
+      "published": "2026-11-03T20:50:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "top": true,
+      "headline": "WTT Champions Frankfurt day one review: Wang Chuqin returns with a win as Miwa Harimoto survives",
+      "summary": "Wang Chuqin beat Anders Lind in straight games in his first match for more than a month, and Miwa Harimoto won a deciding game against Sofia Polcanova on day one of WTT Champions Frankfurt.",
+      "matches": [
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Wang Chuqin",
+              "nat": "CHN"
+            },
+            {
+              "name": "Anders Lind",
+              "nat": "DEN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Miwa Harimoto",
+              "nat": "JPN"
+            },
+            {
+              "name": "Sofia Polcanova",
+              "nat": "AUT"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Joo Cheonhui",
+              "nat": "KOR"
+            },
+            {
+              "name": "Adriana Diaz",
+              "nat": "PUR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Lin Yun-Ju",
+              "nat": "TPE"
+            },
+            {
+              "name": "Darko Jorgic",
+              "nat": "SLO"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "1BHkbPVbF7s",
+          "title": "Anders Lind v Wang Chuqin, men's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "l2IBQmzlxmA",
+          "title": "Sofia Polcanova v Miwa Harimoto, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "2uLmXpz3Oxo",
+          "title": "Adriana Diaz v Joo Cheonhui, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "pLYmtxpKr_0",
+          "title": "Lin Yun-Ju v Darko Jorgic, men's singles last 32",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
     {
       "id": "borussia-dusseldorf-fan-zhendong-contracts-2026",
       "category": "Clubs",
@@ -189,8 +374,7 @@
           "name": "ITTF world ranking, week 45",
           "url": "https://www.worldtabletennis.com/rankings"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "ttbl-bad-homburg-werder-bremen-2026-11-02",
