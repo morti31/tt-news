@@ -1,7 +1,56 @@
 {
-  "updated": "2026-11-03T13:00:00Z",
+  "updated": "2026-11-03T16:30:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "borussia-dusseldorf-fan-zhendong-contracts-2026",
+      "category": "Clubs",
+      "kind": "Update",
+      "date": "2026-11-03",
+      "published": "2026-11-03T16:25:00Z",
+      "author": "michelle",
+      "lang": "German",
+      "headline": "Fan Zhendong's future at Borussia Düsseldorf is open as no player has a contract beyond this season",
+      "summary": "Borussia Düsseldorf will open contract talks this month with none of their players or their coach signed beyond this season, the club's manager, Andreas Preuß, has said.",
+      "body": [
+        "Preuß told the Tischtennis Bundesliga that talks on new contracts are due in November and that he wants to speak to Fan Zhendong, but does not expect quick decisions. He said the open squad planning gave him \"a bit of a headache\".",
+        "Fan, the Olympic champion, joined Düsseldorf from their rivals 1. FC Saarbrücken in the summer. The record German champions have won all six of their league matches and lead the TTBL with a perfect 12-0 points record.",
+        "Preuß said Fan's arrival had changed everything from ticketing and merchandise to social media. The club have added two international sponsors, and their matches are shown live in more than 300 cinemas in China.",
+        "Düsseldorf have several home matches in November and December, and the city stages a WTT Feeder event at the end of November."
+      ],
+      "sources": [
+        {
+          "name": "Tischtennis.de (German): Interview with Andreas Preuß, manager of Borussia Düsseldorf",
+          "url": "https://www.tischtennis.de/news/interview-mit-andreas-preuss-manager-borussia-duesseldorf-durch-fan-zhendong-ist-ueberall-alles-irgendwo-mehr.html"
+        },
+        {
+          "name": "Sport1 (German): Will the star stay at Düsseldorf?",
+          "url": "https://www.sport1.de/news/tischtennis/2026/11/bleibt-der-star-durch-fan-ist-ueberall-alles-irgendwo-mehr"
+        }
+      ]
+    },
+    {
+      "id": "county-championships-2026-veterans-premier-weekend-one",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-03",
+      "published": "2026-11-03T16:20:00Z",
+      "author": "michelle",
+      "headline": "County Championships: Yorkshire and Nottinghamshire lead the veterans Premier Division after the opening weekend",
+      "summary": "Yorkshire and Nottinghamshire both won all three of their matches at Ashford to lead the County Championships veterans Premier Division after its first weekend.",
+      "body": [
+        "The reigning champions Yorkshire beat the division's two new counties, Lancashire and Sussex, 8-2 each and then beat Essex 9-1. They lead on 12 points, two clear of Nottinghamshire.",
+        "Nottinghamshire, runners-up for the past two seasons, beat Hertfordshire and Kent 7-3 and Essex 10-0.",
+        "Hertfordshire and Middlesex are next on seven points with two wins each. Lancashire are fifth after beating Sussex, while Kent, Sussex and Essex lost all three of their matches.",
+        "The division finishes at Nottingham TTC on the first weekend of March."
+      ],
+      "sources": [
+        {
+          "name": "Table Tennis England: County Championships 2026: Yorks and Notts dominate again",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/county-championships-2026-yorks-and-notts-dominate-again/"
+        }
+      ]
+    },
     {
       "id": "youth-olympic-games-dakar-2026-kawakami-matsushima-mixed-doubles",
       "category": "International",
@@ -1971,24 +2020,6 @@
       "author": "michael"
     },
     {
-      "id": "u21-national-cup-2026",
-      "category": "England",
-      "headline": "Pashley and Trumpauskas retain Under-21 National Cup titles",
-      "summary": "Ella Pashley went unbeaten at Highfields TTC in Wellingborough, beating Sophie Earley 3-0 in the final round. Larry Trumpauskas lost one match on his way to keeping the men's title.",
-      "date": "2026-10-26",
-      "sources": [
-        {
-          "name": "Table Tennis England",
-          "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
-        }
-      ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/wellingborough.svg"
-      },
-      "author": "michelle"
-    },
-    {
       "id": "african-champs-2026",
       "category": "International",
       "headline": "African Championships 2026: Youssef Abdelaziz and Hana Goda win singles titles as Egypt sweep the board",
@@ -2191,25 +2222,6 @@
       "author": "michael",
       "draw": "3250",
       "event": "wtt-champions-montpellier-2026"
-    },
-    {
-      "id": "asian-ms-final-2026",
-      "category": "International",
-      "headline": "Asian Championships 2026: Harimoto and Chen Yi win singles titles as China and Japan share the honours",
-      "summary": "Tomokazu Harimoto came from two games down to beat Li Tianyang and Chen Yi swept Miwa Harimoto, while Japan's women beat China in the team final.",
-      "date": "2026-10-25",
-      "sources": [
-        {
-          "name": "tabletennis.media",
-          "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"
-        },
-        {
-          "name": "Butterfly",
-          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
-        }
-      ],
-      "author": "michael",
-      "event": "asian-championships-2026"
     },
     {
       "id": "world-hopes-sheffield-2026",
