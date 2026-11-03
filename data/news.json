@@ -1,7 +1,203 @@
 {
-  "updated": "2026-11-02T20:20:00Z",
+  "updated": "2026-11-03T00:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day1-preview",
+      "kind": "Preview",
+      "day": 1,
+      "category": "International",
+      "date": "2026-11-03",
+      "published": "2026-11-03T00:40:00Z",
+      "author": "michael",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "headline": "WTT Champions Frankfurt day one preview: Wang Chuqin returns as Miwa Harimoto and Matsushima start",
+      "summary": "Wang Chuqin plays his first match since injury, Tomokazu Harimoto meets Vladimir Sidorenko and Miwa Harimoto opens the tournament on Tuesday in Frankfurt.",
+      "sources": [
+        {
+          "name": "WTT Champions Frankfurt 2026: schedule and draw",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3252"
+        },
+        {
+          "name": "ITTF world ranking, week 45",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
+    },
+    {
+      "id": "ttbl-bad-homburg-werder-bremen-2026-11-02",
+      "category": "Clubs",
+      "kind": "Update",
+      "date": "2026-11-02",
+      "published": "2026-11-03T00:45:00Z",
+      "author": "michelle",
+      "headline": "Tischtennis Bundesliga: Bad Homburg beat Werder Bremen 3-1 as Csaba Andras wins twice",
+      "summary": "TTC OE Bad Homburg beat Werder Bremen 3-1 at home on Monday night, with Csaba Andras winning both his singles, as the Tischtennis Bundesliga returned after a seven-week break.",
+      "score": "3-1",
+      "body": [
+        "Andras opened with an 11-4, 11-5, 11-6 win over Marcelo Aguirre, and Finn Luu came from a game down to beat Kirill Gerassimenko 3-1 for a 2-0 lead.",
+        "Irvin Bertrand kept Werder in the match by beating Ivan Ban 11-9, 11-2, 11-4, but Andras sealed the win by beating Gerassimenko 11-5, 11-9, 6-11, 11-4.",
+        "It is a third league win of the season for Bad Homburg, who now have three wins and three defeats. Werder had hoped to stay in the top four, which qualifies for the play-off finals."
+      ],
+      "matches": [
+        {
+          "label": "Tischtennis Bundesliga",
+          "event": "Tischtennis Bundesliga",
+          "sides": [
+            {
+              "name": "TTC OE Bad Homburg",
+              "nat": "GER"
+            },
+            {
+              "name": "Werder Bremen",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Csaba Andras"
+                },
+                {
+                  "name": "Marcelo Aguirre"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Finn Luu"
+                },
+                {
+                  "name": "Kirill Gerassimenko"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Ivan Ban"
+                },
+                {
+                  "name": "Irvin Bertrand"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Csaba Andras"
+                },
+                {
+                  "name": "Kirill Gerassimenko"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Weser-Kurier (German): Werder verliert in Bad Homburg klar",
+          "url": "https://www.weser-kurier.de/bremen/sport/tischtennis-bundesliga-ttbl-werder-verliert-in-bad-homburg-klar-doc88au3t3dkg01kcuznczv"
+        },
+        {
+          "name": "hessenschau (German): TTC OE Bad Homburg fixtures and results 2026-27",
+          "url": "https://www.hessenschau.de/sport/ergebnisse-tabellen/tischtennis-106~team_id-3232.html"
+        },
+        {
+          "name": "TTC OE Bad Homburg (German): TTC OE gegen Werder Bremen",
+          "url": "https://ttcoe.de/ttc-oe-gegen-werder-bremen-bundesliga-kehrt-nach-bad-homburg-zurueck/"
+        }
+      ],
+      "lang": "German"
+    },
     {
       "id": "sam-walker-wtt-feeder-chennai-final-2026",
       "category": "England",
@@ -203,7 +399,8 @@
           "name": "tischtennis.de (German): Weltmeisterin wartet auf Ying Han, Asien-Meisterin auf Neumann",
           "url": "https://www.tischtennis.de/news/wtt-champions-frankfurt-weltmeisterin-wartet-auf-ying-han-asien-meisterin-auf-neumann.html"
         }
-      ]
+      ],
+      "top": true
     },
     {
       "id": "wtt-champions-montpellier-2026-day6-review",
@@ -454,8 +651,7 @@
           "name": "World Table Tennis on YouTube: match highlights",
           "url": "https://www.youtube.com/@WTTGlobal/videos"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "wtt-champions-montpellier-2026-day6-preview",
@@ -2082,13 +2278,13 @@
     }
   ],
   "rankings": {
-    "week": "ITTF world ranking, week 44, 26 October 2026",
+    "week": "ITTF world ranking, week 45, 2 November 2026",
     "url": "https://www.worldtabletennis.com/rankings",
     "men": [
       {
         "name": "Sora Matsushima",
         "nat": "JPN",
-        "points": 8550,
+        "points": 8230,
         "prev": 1
       },
       {
@@ -2104,16 +2300,16 @@
         "prev": 3
       },
       {
-        "name": "Truls Moregard",
-        "nat": "SWE",
-        "points": 6180,
-        "prev": 4
-      },
-      {
         "name": "Wang Chuqin",
         "nat": "CHN",
         "points": 6157,
         "prev": 5
+      },
+      {
+        "name": "Truls Moregard",
+        "nat": "SWE",
+        "points": 5630,
+        "prev": 4
       },
       {
         "name": "Lin Yun-Ju",
@@ -2124,8 +2320,14 @@
       {
         "name": "Hugo Calderano",
         "nat": "BRA",
-        "points": 4760,
+        "points": 4830,
         "prev": 7
+      },
+      {
+        "name": "Jang Woojin",
+        "nat": "KOR",
+        "points": 4236,
+        "prev": 10
       },
       {
         "name": "Alexis Lebrun",
@@ -2136,14 +2338,8 @@
       {
         "name": "Lin Shidong",
         "nat": "CHN",
-        "points": 3642,
+        "points": 3686,
         "prev": 9
-      },
-      {
-        "name": "Jang Woojin",
-        "nat": "KOR",
-        "points": 3586,
-        "prev": 10
       }
     ],
     "women": [
@@ -2156,7 +2352,7 @@
       {
         "name": "Sun Yingsha",
         "nat": "CHN",
-        "points": 7675,
+        "points": 8575,
         "prev": 2
       },
       {
@@ -2166,16 +2362,16 @@
         "prev": 3
       },
       {
-        "name": "Wang Yidi",
-        "nat": "CHN",
-        "points": 5810,
-        "prev": 4
-      },
-      {
         "name": "Kuai Man",
         "nat": "CHN",
-        "points": 5710,
+        "points": 6030,
         "prev": 5
+      },
+      {
+        "name": "Wang Yidi",
+        "nat": "CHN",
+        "points": 5260,
+        "prev": 4
       },
       {
         "name": "Hina Hayata",
@@ -2186,26 +2382,26 @@
       {
         "name": "Chen Xingtong",
         "nat": "CHN",
-        "points": 4625,
+        "points": 4660,
         "prev": 7
-      },
-      {
-        "name": "Hitomi Sato",
-        "nat": "JPN",
-        "points": 4100,
-        "prev": 8
       },
       {
         "name": "Chen Yi",
         "nat": "CHN",
-        "points": 4060,
-        "prev": 10
+        "points": 4335,
+        "prev": 9
       },
       {
-        "name": "Sabine Winter",
-        "nat": "GER",
-        "points": 3815,
-        "prev": 9
+        "name": "Hitomi Sato",
+        "nat": "JPN",
+        "points": 4220,
+        "prev": 8
+      },
+      {
+        "name": "Zhu Yuling",
+        "nat": "MAC",
+        "points": 3500,
+        "prev": 11
       }
     ]
   },
