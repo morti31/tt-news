@@ -1995,6 +1995,24 @@
       ]
     },
     {
+      "id": "u21-national-cup-2026",
+      "category": "England",
+      "headline": "Pashley and Trumpauskas retain Under-21 National Cup titles",
+      "summary": "Ella Pashley went unbeaten at Highfields TTC in Wellingborough, beating Sophie Earley 3-0 in the final round. Larry Trumpauskas lost one match on his way to keeping the men's title.",
+      "date": "2026-10-26",
+      "sources": [
+        {
+          "name": "Table Tennis England",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
+        }
+      ],
+      "image": {
+        "type": "cartoon",
+        "src": "img/cartoons/wellingborough.svg"
+      },
+      "author": "michelle"
+    },
+    {
       "id": "african-champs-2026",
       "category": "International",
       "headline": "African Championships 2026: Youssef Abdelaziz and Hana Goda win singles titles as Egypt sweep the board",
@@ -2195,6 +2213,25 @@
       ],
       "draw": "3250",
       "event": "wtt-champions-montpellier-2026"
+    },
+    {
+      "id": "asian-ms-final-2026",
+      "category": "International",
+      "headline": "Asian Championships 2026: Harimoto and Chen Yi win singles titles as China and Japan share the honours",
+      "summary": "Tomokazu Harimoto came from two games down to beat Li Tianyang and Chen Yi swept Miwa Harimoto, while Japan's women beat China in the team final.",
+      "date": "2026-10-25",
+      "sources": [
+        {
+          "name": "tabletennis.media",
+          "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"
+        },
+        {
+          "name": "Butterfly",
+          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
+        }
+      ],
+      "author": "michael",
+      "event": "asian-championships-2026"
     },
     {
       "id": "world-hopes-sheffield-2026",
