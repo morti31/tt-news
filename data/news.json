@@ -1,7 +1,130 @@
 {
-  "updated": "2026-11-03T00:45:00Z",
+  "updated": "2026-11-03T13:00:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "youth-olympic-games-dakar-2026-kawakami-matsushima-mixed-doubles",
+      "category": "International",
+      "kind": "Update",
+      "date": "2026-11-03",
+      "published": "2026-11-03T12:55:00Z",
+      "author": "michael",
+      "lang": "Japanese",
+      "headline": "Youth Olympic Games: Japan's Ryusei Kawakami and Misora Matsushima knock out China to reach mixed doubles final",
+      "summary": "Japan's Ryusei Kawakami and 13-year-old Misora Matsushima will play for Youth Olympic Games gold in Dakar after beating China's Li Hechen and Yao Ruixuan in the mixed doubles quarter-finals.",
+      "score": "3-1",
+      "body": [
+        "Kawakami and Matsushima won 11-3, 13-15, 15-13, 11-8 on Sunday, taking the third game from 13-13 to end China's hopes of a medal in the event. They beat a pair from Taiwan 3-1 in Monday's semi-finals.",
+        "Matsushima is the younger sister of the men's world No 1, Sora Matsushima. Li and Yao recovered to reach the last 16 of the singles.",
+        "The mixed doubles final is on Tuesday. The table tennis competition in Dakar finishes on Thursday."
+      ],
+      "matches": [
+        {
+          "label": "Mixed doubles quarter-final",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Ryusei Kawakami / Misora Matsushima",
+              "nat": "JPN"
+            },
+            {
+              "name": "Li Hechen / Yao Ruixuan",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              15,
+              13
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rallys (Japanese): Kawakami and Matsushima beat Chinese pair to reach mixed doubles semi-finals",
+          "url": "https://rallys.online/topic/international/261102youtholympic/"
+        },
+        {
+          "name": "Sohu (Chinese): China's mixed doubles pair beaten by 13-year-old Japanese player",
+          "url": "https://www.sohu.com/a/1096248862_123042862"
+        },
+        {
+          "name": "Sina (Chinese): Li Hechen and Yao Ruixuan lose 1-3 to Japanese pair",
+          "url": "https://k.sina.com.cn/article_7879995911_1d5af320706802zbsm.html"
+        },
+        {
+          "name": "Olympics.com (Japanese): Kawakami and Matsushima reach mixed doubles final, highlights",
+          "url": "https://www.olympics.com/ja/video/kawakami-matsushima-mixed-doubles-japan-chinese-taipei-dakar-2026"
+        },
+        {
+          "name": "Xinhua (Chinese): Li Hechen and Yao Ruixuan reach last 16 of Youth Olympic singles",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWDJZM21GWDh0LUlaSEFxVnBpS1dVVU5DclNCb19zdUpRTUJUN2d5Vl96UVdZWm5KX0tOeHRTZkE4NnpDX2t2VEFONWNNZEZGTWtfSXlDVWZZOW5xR3NDMkxUb0hkU3M4YkxWaXdRNlZLVE1xU2RYbkZleDIzR0oxakp4R0FsYWs?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "desmond-douglas-o5bm-birmingham-table-tennis-hub-2026",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-03",
+      "published": "2026-11-03T12:50:00Z",
+      "author": "michelle",
+      "headline": "Desmond Douglas joins Birmingham table tennis hub helping older black men stay active",
+      "summary": "Desmond Douglas, the 11-time English national champion, has visited the Over-50s Black Men Forum's table tennis health hub in Handsworth, where he grew up.",
+      "body": [
+        "Douglas joined last week's session at Handsworth Wellbeing Centre, played with members and met people he had known growing up in the area. BBC Midlands filmed the session for a report on Midlands Today.",
+        "The Over-50s Black Men Forum (O5BM) uses weekly table tennis as a way into physical activity, friendship and conversations about health for men who may not use traditional health services. The Birmingham hub is part of a wider expansion of its community programme.",
+        "Douglas, who reached No 7 in the world and played for Great Britain at the 1988 Seoul Olympics, told BBC Midlands that getting out and playing sport helps older men set aside bad thoughts, adding: \"Mentally you're in a happier place.\""
+      ],
+      "sources": [
+        {
+          "name": "Table Tennis England: Des Douglas backing Forum's mission to get older black men more active",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/des-douglas-backing-forums-mission-to-get-older-black-men-more-active/"
+        },
+        {
+          "name": "BBC: How table tennis is helping older black men open up",
+          "url": "https://www.bbc.co.uk/news/videos/cr4g1j0x0we3o"
+        }
+      ]
+    },
+    {
+      "id": "ken-green-umpire-obituary-2026",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-03",
+      "published": "2026-11-03T12:45:00Z",
+      "author": "michelle",
+      "headline": "Ken Green, who umpired at the 1977 World Championships in Birmingham, dies aged 93",
+      "summary": "Ken Green, the international umpire who officiated at the 1977 World Championships in Birmingham, has died aged 93.",
+      "body": [
+        "Green qualified as a national umpire in 1976 and as an ITTF international umpire in 1980. As well as the home world championships in 1977, he umpired at the 1981 edition in Novi Sad, then in Yugoslavia, and at the Commonwealth Championships in Cardiff in 1973 and Edinburgh in 1979.",
+        "Born in 1933, he played in the Warrington and Bolton leagues in the north-west before moving to Peterborough, where he died last month after a short illness.",
+        "A celebration of his life will be held at St Botolph's Church, Longthorpe, at 1.15pm on Thursday 26 November, followed by committal at Peterborough Crematorium."
+      ],
+      "sources": [
+        {
+          "name": "Table Tennis England: Obituary: International Umpire Ken Green",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/obituary-international-umpire-ken-green-who-officiated-at-a-home-world-championships/"
+        }
+      ]
+    },
     {
       "id": "wtt-champions-frankfurt-2026-day1-preview",
       "kind": "Preview",
@@ -23,7 +146,8 @@
           "name": "ITTF world ranking, week 45",
           "url": "https://www.worldtabletennis.com/rankings"
         }
-      ]
+      ],
+      "top": true
     },
     {
       "id": "ttbl-bad-homburg-werder-bremen-2026-11-02",
@@ -201,18 +325,12 @@
     {
       "id": "sam-walker-wtt-feeder-chennai-final-2026",
       "category": "England",
-      "kind": "Update",
       "date": "2026-11-02",
       "published": "2026-11-02T20:20:00Z",
       "author": "michelle",
       "headline": "Sam Walker loses WTT Feeder Chennai final to Manav Thakkar after leading by two games",
-      "summary": "England's Sam Walker was two points from the WTT Feeder Chennai title before India's top seed, Manav Thakkar, came back to win the final 3-2.",
+      "summary": "England's Sam Walker led the WTT Feeder Chennai final by two games and 9-6 before India's top seed, Manav Thakkar, came back to win 3-2.",
       "score": "3-2",
-      "body": [
-        "Walker, the world No 159, reached his first WTT Feeder singles final and took the first two games 11-6, 11-8 against Thakkar, the home favourite, who is ranked 49th in the world.",
-        "He was two points from victory in the third game before Thakkar won five points in a row to take it 11-9. Thakkar then levelled the match with an 11-3 game and won the decider 11-8.",
-        "Walker beat India's second seed, Ankur Bhattacharjee, 3-0 in the last 16, came from two games down to beat the sixth seed, Payas Jain, 3-2 in the quarter-final and beat the seventh seed, Snehit Suravajjula, 3-0 in the semi-final. Reaching the final earns him 90 world ranking points."
-      ],
       "matches": [
         {
           "label": "Men's singles final",
@@ -331,8 +449,13 @@
         {
           "name": "Table Tennis England: WTT Feeder Chennai 2026",
           "url": "https://www.tabletennisengland.co.uk/news/2026/wtt-feeder-chennai-2026/"
+        },
+        {
+          "name": "Table Tennis England: Sam Walker: How I overcame nightmare journey to reach WTT final",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/sam-walker-how-i-overcame-nightmare-journey-to-reach-wtt-final/"
         }
-      ]
+      ],
+      "modified": "2026-11-03T12:40:00Z"
     },
     {
       "id": "wang-manyu-butterfly-contract-2026",
@@ -399,8 +522,7 @@
           "name": "tischtennis.de (German): Weltmeisterin wartet auf Ying Han, Asien-Meisterin auf Neumann",
           "url": "https://www.tischtennis.de/news/wtt-champions-frankfurt-weltmeisterin-wartet-auf-ying-han-asien-meisterin-auf-neumann.html"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "wtt-champions-montpellier-2026-day6-review",
@@ -2088,21 +2210,6 @@
       ],
       "author": "michael",
       "event": "asian-championships-2026"
-    },
-    {
-      "id": "americas-champs-2026",
-      "category": "International",
-      "headline": "Americas Championships 2026: Calderano and Diaz win singles titles as honours are shared",
-      "summary": "Hugo Calderano beat Guilherme Teodoro and Adriana Diaz won her seventh continental title in Lima, where five nations shared the titles.",
-      "date": "2026-10-25",
-      "sources": [
-        {
-          "name": "Butterfly",
-          "url": "https://butterflyonline.com/venezuela-and-usa-take-team-titles-as-parity-prevails-at-americas-championships/"
-        }
-      ],
-      "author": "michael",
-      "event": "americas-championships-2026"
     },
     {
       "id": "world-hopes-sheffield-2026",
