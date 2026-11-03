@@ -6,14 +6,22 @@ The update run reads it with `git fetch origin scan` (see UPDATE.md, step 2).
 
     python3 tools/news_scan.py <output directory>
 
-Only headlines, links, outlets and dates are kept, never article text.
+The digest keeps headlines, links, outlets and dates. For the newest items it also resolves Google News
+redirect links to the real article address (`real_url`) and saves a short plain-text excerpt of each page
+(first PAGE_CHARS characters) to pages.json, so the update run can read leads without fetching sites that
+refuse its sandbox. Excerpts are for checking facts only; stories are still written in our own words.
 """
-import json, os, sys, re, urllib.request, urllib.parse, datetime as dt
+import json, os, sys, re, base64, html, urllib.request, urllib.parse, datetime as dt
+from concurrent.futures import ThreadPoolExecutor
+from html.parser import HTMLParser
 import xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 HOURS = 60  # keep items from the last 60 hours
+PAGE_ITEMS = 60   # fetch page text for this many of the newest items
+PAGE_CHARS = 3500  # excerpt length kept per page
+PAGE_SKIP = ("tabletennisdaily.com/forum", "youtube.com", "youtu.be", "dazn.com", "facebook.com", "instagram.com", "x.com", "twitter.com")
 
 # Google News searches: (label, query, language/region parameters). `when:2d` limits to two days.
 GN = [
@@ -76,6 +84,107 @@ def get(url, headers=None, timeout=25):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "identity", **(headers or {})})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
+
+
+def resolve_google(url):
+    """Real article address behind a news.google.com/rss/articles/<id> link, or '' if it can't be found."""
+    m = re.search(r"/articles/([^?/]+)", url)
+    if not m:
+        return ""
+    gid = m.group(1)
+    try:  # older ids carry the address inside the base64
+        raw = base64.urlsafe_b64decode(gid + "=" * (-len(gid) % 4))
+        found = re.search(rb"https?://[\x21-\x7e]+", raw)
+        if found:
+            return found.group(0).decode()
+    except Exception:
+        pass
+    try:  # newer ids: ask Google's own redirect endpoint, as the news page does
+        page = get(f"https://news.google.com/rss/articles/{gid}").decode("utf-8", "replace")
+        sg = re.search(r'data-n-a-sg="([^"]+)"', page)
+        ts = re.search(r'data-n-a-ts="([^"]+)"', page)
+        if not (sg and ts):
+            return ""
+        inner = json.dumps(["garturlreq", [["X", "X", ["X", "X"], None, None, 1, 1, "US:en", None, 1, None, None, None, None, None, 0, 1],
+                                          "X", "X", 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0], gid, int(ts.group(1)), sg.group(1)])
+        body = urllib.parse.urlencode({"f.req": json.dumps([[["Fbv4je", inner, None, "generic"]]])}).encode()
+        req = urllib.request.Request("https://news.google.com/_/DotsSplashUi/data/batchexecute", data=body,
+                                     headers={"User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+        text = urllib.request.urlopen(req, timeout=25).read().decode("utf-8", "replace")
+        chunk = json.loads(text.split("\n\n", 1)[1])
+        return json.loads(chunk[0][2])[1]
+    except Exception:
+        return ""
+
+
+class _Text(HTMLParser):
+    SKIP = {"script", "style", "noscript", "svg", "nav", "footer", "header", "form", "aside"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.depth, self.parts, self.title = 0, [], ""
+        self._in_title = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP:
+            self.depth += 1
+        elif tag == "title":
+            self._in_title = True
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP and self.depth:
+            self.depth -= 1
+        elif tag == "title":
+            self._in_title = False
+
+    def handle_data(self, data):
+        if self._in_title:
+            self.title += data
+        elif not self.depth and len(data.strip()) > 1:
+            self.parts.append(data.strip())
+
+
+def page_text(url):
+    """Plain-text excerpt of an article page: paragraphs of real sentences only."""
+    raw = get(url, {"Accept": "text/html,application/xhtml+xml", "Accept-Language": "en,*;q=0.5"}, timeout=25)
+    head = raw[:3000].decode("ascii", "ignore")
+    cs = re.search(r"charset=[\"']?([\w-]+)", head)
+    doc = raw.decode(cs.group(1) if cs else "utf-8", "replace")
+    p = _Text()
+    p.feed(doc)
+    paras = [re.sub(r"\s+", " ", t) for t in p.parts if len(t) > 40]
+    return re.sub(r"\s+", " ", p.title).strip(), " ".join(paras)[:PAGE_CHARS]
+
+
+def fetch_pages(rows, status):
+    """Adds real_url to the newest rows and returns {url: {title, text}} for the pages that could be read."""
+    todo = [r for r in rows[:PAGE_ITEMS]]
+
+    def work(r):
+        url = r["url"]
+        if "news.google.com" in url:
+            real = resolve_google(url)
+            if not real:
+                return r, None, "unresolved"
+            r["real_url"] = real
+            url = real
+        if any(k in url for k in PAGE_SKIP):
+            return r, None, "skipped"
+        try:
+            title, text = page_text(url)
+            return r, {"url": url, "title": title, "text": text}, "ok" if text else "empty"
+        except Exception as e:
+            return r, None, str(e)[:60]
+
+    pages, counts = {}, {}
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for r, page, result in ex.map(work, todo):
+            counts[result] = counts.get(result, 0) + 1
+            if page:
+                pages[r["url"]] = page
+    status.append({"source": "page text", "ok": bool(pages) or not todo, "items": len(pages),
+                   "error": ", ".join(f"{k}: {v}" for k, v in counts.items() if k != "ok")})
+    return pages
 
 
 def when(text):
@@ -158,14 +267,22 @@ def main(outdir):
                 status.append({"source": f"wtt {i} {name}", "ok": False, "error": str(e)[:120]})
 
     rows = sorted(items.values(), key=lambda r: r["published"], reverse=True)
+    try:
+        pages = fetch_pages(rows, status)
+    except Exception as e:
+        pages = {}
+        status.append({"source": "page text", "ok": False, "error": str(e)[:120]})
     os.makedirs(outdir, exist_ok=True)
+    json.dump(pages, open(os.path.join(outdir, "pages.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"generated": now.strftime("%Y-%m-%dT%H:%MZ"), "window_hours": HOURS, "items": rows, "status": status},
               open(os.path.join(outdir, "digest.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump(wtt, open(os.path.join(outdir, "wtt.json"), "w", encoding="utf-8"), ensure_ascii=False)
     with open(os.path.join(outdir, "digest.md"), "w", encoding="utf-8") as f:
         f.write(f"# News scan {now:%Y-%m-%d %H:%M} UTC, last {HOURS} hours, {len(rows)} headlines\n\n")
         for r in rows:
-            f.write(f"- {r['published']} | {r['source']} | {r['title']} | {r['url']}\n")
+            real = f" | real: {r['real_url']}" if r.get("real_url") else ""
+            read = " | text in pages.json" if r["url"] in pages else ""
+            f.write(f"- {r['published']} | {r['source']} | {r['title']} | {r['url']}{real}{read}\n")
         f.write("\n## Source status\n\n")
         for s in status:
             f.write(f"- {'ok ' if s['ok'] else 'FAIL'} {s['source']} {s.get('items', s.get('bytes', ''))} {s.get('error', '')}\n")
