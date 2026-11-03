@@ -35,7 +35,7 @@ Follow STYLE.md (Guardian style) throughout; its Features section is the model. 
 - **End on an image, a quote or a sharp line** that answers or reframes the opening. Never a promise of future coverage.
 - Separate fact, reported claims, allegations and opinion clearly. Opinion pieces say they are opinion (`"kind": "Opinion"`) and still get every fact right.
 - British English. At least 1,000 words, and longer when the story needs it: a history or a big subject can run to 2,000 words or more. Length must come from reporting, quotes and data, never padding. No em dashes, no clichés ("game-changer", "testament to", "landscape", "delve"), no "not X but Y", no padding.
-- Byline: Tom Mortimer (`"author": "tom"`).
+- Byline: no `"author"` field and no personal names anywhere on the site. Every story, article, feature and guide is credited to the Eleven Team by the build, and the About, Contact and article pages name no individual. Never write the names of Tom, Michael or Michelle in published copy.
 
 ## SEO
 
@@ -55,7 +55,7 @@ Follow STYLE.md (Guardian style) throughout; its Features section is the model. 
 ```json
 {
   "slug": "...", "category": "Features", "kind": "Analysis | Feature | Opinion",
-  "date": "YYYY-MM-DD", "published": "YYYY-MM-DDTHH:MM:00Z", "author": "tom",
+  "date": "YYYY-MM-DD", "published": "YYYY-MM-DDTHH:MM:00Z",
   "title": "...", "seo_title": "...", "description": "...", "standfirst": "...",
   "body": ["paragraph", "paragraph with an [internal link](/rankings.html)", "..."],
   "charts": [{"after": 3, "title": "...", "rows": [["label", 12], ["label", 9]], "unit": "%", "note": "How Eleven counted", "source": "[Source](https://...)"}],
@@ -95,6 +95,9 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-10-27: Exported talent: how many of the world's top 100 learned the game in China? (`chinese-born-players-world-top-100`) [Both]
 - 2026-10-28: Why the men's world top 10 has got four years younger while the women's has aged (`average-age-table-tennis-world-top-10`) [Both]
 - 2026-10-29: Japan's choppers keep an old art alive as defence disappears from the men's game (`table-tennis-choppers-defenders-history`) [Both]
-- 2026-11-02: China and WTT's money: part one, who pays and where it goes (`wtt-china-money-table-tennis-part-one`) [Both]
-- 2026-11-02: WTT's money: part two, the 2025 accounts, the 15% stake and sustainability (`wtt-finances-ittf-accounts-part-two`) [Expert]
+- 2026-11-01: WTT's money, part one: China's money, and where it actually goes (`wtt-china-money-table-tennis-part-one`) [Both]
+- 2026-11-02: WTT's money, part two: where it comes from, and what the 2025 accounts show (`wtt-finances-ittf-accounts-part-two`) [Expert]
 - 2026-11-03: Why no two table tennis tables play alike (`table-tennis-tables-speed-bounce-suppliers`) [New]
+
+
+Series: when a feature runs in parts, name them "<Series>, part one: ..." and "<Series>, part two: ...", link each part to the other in the first paragraph, and publish the parts on consecutive days.

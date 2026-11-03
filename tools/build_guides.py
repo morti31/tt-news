@@ -10,7 +10,7 @@ A guide file:
   "summary": "one or two sentences shown on the shelf and under the headline",
   "key_points": ["three to five one-line takeaways"],
   "body": ["paragraph", "## A subheading", "paragraph with an [internal link](/rankings.html)"],
-  "author": "tom", "published": "YYYY-MM-DDTHH:MM:00Z", "updated": "YYYY-MM-DD",
+  "published": "YYYY-MM-DDTHH:MM:00Z", "updated": "YYYY-MM-DD",
   "sources": [{"name": "...", "url": "https://..."}]
 }
 """
@@ -72,12 +72,12 @@ def build(page, site, authors, avatar, linkify):
         nxt = next((it for it in items[i + 1:] if it["slug"] in guides), None)
         nxt_html = (f'<a class="guide-next" href="/guide/{nxt["slug"]}.html"><span class="small-label">Next in {e(sh["title"])}</span><b>{e(nxt["title"])}</b></a>'
                     if nxt else '<a class="guide-next" href="/guide/"><span class="small-label">Keep going</span><b>Back to the Guide</b></a>')
-        au = authors.get(g.get("author", "tom"), {"name": "Eleven"})
+        au = authors["team"]
         keys = "".join(f"<li>{linkify(k)}</li>" for k in g.get("key_points", []))
         sources = "".join(f'<li><a href="{e(s["url"])}" rel="noopener">{e(s["name"])}</a></li>' for s in g.get("sources", []))
         url = f"{site}/guide/{slug}.html"
         ld = {"@context": "https://schema.org", "@type": "Article", "headline": g["title"][:110], "description": g.get("description") or g["summary"],
-              "author": [{"@type": "Person", "name": au["name"], "url": f"{site}/authors/{g.get('author', 'tom')}.html"}],
+              "author": [{"@type": "Organization", "name": au["name"], "url": site}],
               "publisher": {"@type": "NewsMediaOrganization", "name": "Eleven", "url": site,
                             "logo": {"@type": "ImageObject", "url": f"{site}/img/icons/eleven-logo.png", "width": 600, "height": 60}},
               "datePublished": g.get("published"), "dateModified": (g.get("updated") or g.get("published", ""))[:10], "mainEntityOfPage": url,
@@ -95,7 +95,7 @@ def build(page, site, authors, avatar, linkify):
   <span class="tag" style="color:var(--ball)">{e(g.get("level", "Guide"))} · {minutes(g)} min read</span>
   <h1>{e(g["title"])}</h1>
   <p class="standfirst">{e(g["summary"])}</p>
-  <div class="article-byline"><span class="byline">{avatar(au, 36)}<span>By <a href="/authors/{e(g.get('author', 'tom'))}.html">{e(au["name"])}</a></span></span>{f'<time datetime="{updated}">Updated {upd.day} {upd:%B %Y}</time>' if upd else ""}</div>
+  <div class="article-byline"><span class="byline">{avatar(au, 36)}<span>By {e(au["name"])}</span></span>{f'<time datetime="{updated}">Updated {upd.day} {upd:%B %Y}</time>' if upd else ""}</div>
   {f'<section class="key-points"><h2>In short</h2><ul>{keys}</ul></section>' if keys else ""}
   <div class="article-body guide-body">
 {body_html(g, linkify)}

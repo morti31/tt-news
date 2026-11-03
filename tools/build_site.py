@@ -16,7 +16,9 @@ import build_guides
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
 NEWS = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))
-AUTHORS = NEWS.get("authors", {"tom": {"name": "Eleven"}})
+# One byline for everything: no individual writers are named anywhere on the site
+TEAM = {"name": "Eleven Team", "bio": "", "photo": "", "colour": "#17202b", "initials": "ET"}
+AUTHORS = {"team": TEAM}
 EVENTS = build_events.load()
 HUBS = {ev["id"]: ev for ev in EVENTS["events"]}
 STORY_EVENT = {s["id"]: s["event"] for s in NEWS.get("stories", []) if s.get("event")}
@@ -28,7 +30,7 @@ def event_of(a):
 
 
 def author_of(a):
-    return AUTHORS.get(a.get("author", "tom"), AUTHORS.get("tom", {"name": "Eleven"}))
+    return TEAM
 e = html.escape
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
@@ -157,7 +159,7 @@ def story_list(arts):
                     "title": a["title"] if a else s["headline"], "category": s["category"], "top": s.get("top"),
                     "published": (a or {}).get("published") or s.get("published") or s["date"] + "T09:00:00Z",
                     "event": s.get("event") or (a or {}).get("event"), "video": vids[0]["id"] if vids else None,
-                    "image": (a or {}).get("image") or s.get("image"), "author": s.get("author", "tom")})
+                    "image": (a or {}).get("image") or s.get("image"), "author": "team"})
     out.sort(key=lambda i: i["published"], reverse=True)
     out.sort(key=lambda i: not i["top"])
     return out
@@ -362,7 +364,7 @@ def article_page(a, others, brief=False):
     more_html = "".join(
         f'<article class="promo">{story_thumb(i, seen)}<div><span class="kicker" style="color:var(--{e(i["category"])}, var(--ink))">'
         f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else i["category"])}</span>'
-        f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(AUTHORS.get(i["author"], {}).get("name", "Eleven"))}</span></div></article>'
+        f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(TEAM["name"])}</span></div></article>'
         for i in rest[:16])
     extras = side_extras(a, ev0)
     img = a.get("image") or {}
@@ -371,7 +373,7 @@ def article_page(a, others, brief=False):
         "@type": {"Opinion": "OpinionNewsArticle", "Analysis": "AnalysisNewsArticle"}.get(a.get("kind"), "NewsArticle"),
         "headline": a["title"][:110], "description": a["standfirst"],
         "datePublished": a.get("published", a["date"] + "T09:00:00Z"), "dateModified": a.get("modified", a.get("published", a["date"] + "T09:00:00Z")),
-        "author": [{"@type": "Person", "name": AUTHOR["name"], "url": f"{SITE}/authors/{a.get('author', 'tom')}.html"}],
+        "author": [{"@type": "Organization", "name": AUTHOR["name"], "url": SITE}],
         "publisher": {"@type": "NewsMediaOrganization", "name": "Eleven", "url": SITE,
                       "logo": {"@type": "ImageObject", "url": f"{SITE}/img/icons/eleven-logo.png", "width": 600, "height": 60}},
         "mainEntityOfPage": url, "articleSection": a["category"], "wordCount": words, "inLanguage": "en-GB",
@@ -395,7 +397,7 @@ def article_page(a, others, brief=False):
   {tag}
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
-  <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By <a href="/authors/{e(a.get('author', 'tom'))}.html">{e(AUTHOR['name'])}</a></span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
+  <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
   {components.scoreboard(a.get("matches"))}
   {components.video_hero(vids[0]) if vids else hero(a)}
   <div class="article-body">
@@ -517,7 +519,7 @@ def main():
         if s["id"] in index:
             continue
         brief = {"slug": s["id"], "title": s["headline"], "standfirst": s["summary"] if s.get("body") else "", "category": s["category"], "date": s["date"],
-                 "body": s.get("body") or [s["summary"]], "sources": s.get("sources", []), "author": s.get("author", "tom")}
+                 "body": s.get("body") or [s["summary"]], "sources": s.get("sources", [])}
         for k in ("lang", "image", "published", "matches", "videos", "draw", "social", "event", "kind", "day"):
             if s.get(k):
                 brief[k] = s[k]
@@ -571,21 +573,6 @@ def main():
                   f"<news:publication_date>{e(a.get('published', a['date'] + 'T09:00:00Z'))}</news:publication_date><news:title>{e(a['title'])}</news:title></news:news></url>")
     ns.append("</urlset>")
     open(os.path.join(ROOT, "news-sitemap.xml"), "w", encoding="utf-8").write("\n".join(ns) + "\n")
-    # Writer pages: who they are and everything they have written
-    os.makedirs(os.path.join(ROOT, "authors"), exist_ok=True)
-    for key, au in AUTHORS.items():
-        mine = [i for i in STORIES if i["author"] == key]
-        li = "".join(f'<li class="archive-item"><a href="{i["url"]}"><h2>{e(i["title"])}</h2><time>{short_when(i["published"])}</time></a></li>' for i in mine)
-        ld_p = {"@context": "https://schema.org", "@type": "Person", "name": au["name"], "url": f"{SITE}/authors/{key}.html",
-                "worksFor": {"@type": "NewsMediaOrganization", "name": "Eleven", "url": SITE}}
-        if au.get("bio"):
-            ld_p["description"] = au["bio"]
-        body = f"""<main class="wrap info-wrap"><section class="sched-head"><div><p class="small-label">Writer</p><h1>{e(au["name"])}</h1>
-<p class="lede">{e(au.get("bio", ""))}</p></div></section><h2 class="rule-title">Latest by {e(au["name"])}</h2><ul class="archive">{li or '<li class="empty">No stories yet.</li>'}</ul></main>"""
-        open(os.path.join(ROOT, "authors", f"{key}.html"), "w", encoding="utf-8").write(
-            page(f"{au['name']} | Eleven", f"{au['name']} writes for Eleven. {au.get('bio', '')}"[:300], f"{SITE}/authors/{key}.html", body,
-                 f'<script type="application/ld+json">{json.dumps(ld_p, ensure_ascii=False)}</script>'))
-        urls.append((f"{SITE}/authors/{key}.html", today))
     urls += build_guides.build(page, SITE, AUTHORS, avatar, linkify)
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
@@ -636,13 +623,6 @@ def build_hubs(arts):
 
 
 def about_page():
-    team = []
-    for key, role in (("tom", "Editor, equipment"), ("michael", "International"), ("michelle", "England and clubs")):
-        au = AUTHORS.get(key)
-        if not au:
-            continue
-        team.append(f'''<section class="panel author"><div class="author-head">{avatar(au, 56)}<div><p class="small-label">{role}</p>
-<h3 class="panel-title">{e(au["name"])}</h3></div></div>{f'<p class="author-bio">{e(au["bio"])}</p>' if au.get("bio") else ""}</section>''')
     body = f"""<main class="wrap info-wrap">
 <section class="sched-head"><div><h1>About Eleven</h1>
 <p class="lede">Table tennis news, results, rankings and fixtures from around the world, in one place and in English.</p></div></section>
@@ -653,12 +633,14 @@ def about_page():
 <h2>How we report</h2>
 <p>We follow coverage from federations, organisers and media in English, Chinese, Japanese, Korean, German and French. Stories that rely mainly on non-English sources are marked as translated, and every story lists the sources it draws on so you can read the original reporting.</p>
 <p>We keep what has been confirmed separate from what has been reported, and say who reported it. Rankings come from the official ITTF list, and fixtures from organisers' published schedules.</p>
+<h2>Who writes Eleven</h2>
+<p>Everything on Eleven is written and edited by the Eleven Team, and credited that way. Stories are checked against their sources before they are published.</p>
 <h2>Corrections</h2>
 <p>If we get something wrong, we want to know. Tell us through the <a href="/contact.html">contact page</a> and we will check it and correct the story. Significant corrections are noted on the story.</p>
 <h2>Photos and illustrations</h2>
 <p>Photos are used under Creative Commons and other free licences, with the photographer and licence credited on each image. Illustrations are drawn for Eleven.</p>
 </div>
-<aside class="info-side"><h2 class="section-title">The team</h2>{"".join(team)}</aside></div>
+</div>
 </main>"""
     return page("About | Eleven", "About Eleven: table tennis news, results, rankings and fixtures from around the world.", f"{SITE}/about.html", body)
 
@@ -749,7 +731,7 @@ def clean_url(text):
 
 def clean_urls():
     files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "calendar.ics")]
-    for d in ("news", "events", "features", "guide", "authors"):
+    for d in ("news", "events", "features", "guide"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
     files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json")]
     for f in files:

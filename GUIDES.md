@@ -23,7 +23,7 @@ Follow STYLE.md (Guardian style) for spelling, numbers, names and tone.
 - **Key points**: three to five one-line takeaways in `key_points`.
 - **Links**: three to six internal links per guide, mostly to other guides (`/guide/<slug>.html`), plus `/rankings.html`, `/events/` or event pages where useful. Every guide's last section should send the reader on to the next step.
 - **Style**: British English. No em dashes, no clichés ("game-changer", "testament to", "landscape", "delve"), no "not X but Y". Short paragraphs. Second person ("you") is fine.
-- **Byline**: `"author": "tom"` for equipment and the club game; `"author": "michael"` for the pro game; `"author": "michelle"` for England-specific guides (keys under `authors` in `data/news.json`).
+- **Byline**: no `"author"` field and no personal names anywhere on the site. Every story, article, feature and guide is credited to the Eleven Team by the build, and the About, Contact and article pages name no individual. Never write the names of Tom, Michael or Michelle in published copy.
 
 ## SEO
 

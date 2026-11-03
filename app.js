@@ -34,7 +34,7 @@
     return t.toISOString().slice(0, 10) === today ? t.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
       : t.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
   };
-  const who = (s) => (authors[s.author] || authors.tom || { name: "Eleven" }).name;
+  const who = () => "Eleven Team";
   const url = (s) => (arts[s.id] && arts[s.id].url) || `/news/${s.id}`;
   const kicker = (s) => {
     const hub = s.event && hubs[s.event];
