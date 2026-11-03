@@ -83,13 +83,12 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 1. [Expert] Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
 2. [Both] Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
 3. [Expert] After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-4. [New] Tables: why they are not all the same (long feature, 1,500 to 2,500 words). Which tables are used at which tournaments and in which countries (official suppliers of the WTT, the World Championships, the Olympics and the big national leagues), how table speed and bounce work (top thickness and material, the laws' bounce requirement (about 23cm when a ball is dropped from 30cm: check the current wording and any tighter limits in the ITTF technical leaflet), surface coating and friction, temperature, humidity and the floor underneath), what players and coaches have said in published interviews about fast or slow tables, and the comparison with grass, clay and hard tennis courts and with cricket pitches, where conditions are part of the contest. Original data: compare the tables at this season's major events (manufacturer and model, with any published specifications), and check the laws for exactly what is allowed. Verify every manufacturer and event pairing from the event's or manufacturer's own announcement.
-5. [Both] The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-6. [New] The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
-7. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-8. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-9. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
-10. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
+4. [Both] The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+5. [New] The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
+6. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+7. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+8. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+9. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
 
 ## Done
 
@@ -98,3 +97,4 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-10-29: Japan's choppers keep an old art alive as defence disappears from the men's game (`table-tennis-choppers-defenders-history`) [Both]
 - 2026-11-02: China and WTT's money: part one, who pays and where it goes (`wtt-china-money-table-tennis-part-one`) [Both]
 - 2026-11-02: WTT's money: part two, the 2025 accounts, the 15% stake and sustainability (`wtt-finances-ittf-accounts-part-two`) [Expert]
+- 2026-11-03: Slippery, soft, fast or hard: why table tennis tables are not all the same (`table-tennis-tables-speed-bounce-suppliers`) [New]
