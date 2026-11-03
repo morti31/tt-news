@@ -97,4 +97,4 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-10-29: Japan's choppers keep an old art alive as defence disappears from the men's game (`table-tennis-choppers-defenders-history`) [Both]
 - 2026-11-02: China and WTT's money: part one, who pays and where it goes (`wtt-china-money-table-tennis-part-one`) [Both]
 - 2026-11-02: WTT's money: part two, the 2025 accounts, the 15% stake and sustainability (`wtt-finances-ittf-accounts-part-two`) [Expert]
-- 2026-11-03: Slippery, soft, fast or hard: why table tennis tables are not all the same (`table-tennis-tables-speed-bounce-suppliers`) [New]
+- 2026-11-03: Why no two table tennis tables play alike (`table-tennis-tables-speed-bounce-suppliers`) [New]
