@@ -1085,5 +1085,7 @@ html.mp-open { overflow: hidden; }
 .onnow { overflow-x: clip; }
 
 .key-matches { margin: 18px 0 8px; }
-.km-title { font: 800 13px/1 "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 6px; }
-.km-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 12px; font-size: 14px; font-weight: 600; }
+.key-matches { margin-top: 26px; }
+.km-title { font: 800 30px/1.05 "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: -.01em; margin: 0 0 8px; padding-top: 10px; border-top: 4px solid var(--ink); }
+@media (max-width: 600px) { .km-title { font-size: 24px; } }
+.km-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 16px; font-size: 15px; font-weight: 600; }
