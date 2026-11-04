@@ -93,3 +93,5 @@ The site switches itself over once every final in the event's draw (`data/draws/
 - Previews for the event drop out of Top stories; the finals review (the last day's `Review`) gets a boost to lead.
 
 Your job on finals day: publish the finals review as the `top` story, written as the celebration of the winners (headline names both champions). Mark the next tournament's preview as the second story. Don't write "the tournament continues" or "day N" language in anything published after the last final.
+
+- Internal links: the build links the first mention in each story of every event page (full name, name and year, or host city) and of the world rankings automatically. Still add by hand the links the build can't know about: earlier stories, previews and reviews, guides (`[words](/news/<slug>.html)`), and the right anchor (`/events/<id>.html#matches`, `#watch`) where it helps the reader.

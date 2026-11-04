@@ -322,6 +322,45 @@ def block(p):
     return f"<p>{linkify(p)}</p>"
 
 
+def autolink(blocks, a):
+    """Internal links for SEO: the first mention in a story of each event page (by name, name and year, or host
+    city) and of the world rankings becomes a link. Text already inside a link, headings and quotes stay as they are."""
+    targets = []
+    for h in HUBS.values():
+        if not h.get("start"):
+            continue
+        names = [f'{h["name"]} {h["year"]}', h["name"]] + ([h["city"]] if h.get("city") else [])
+        targets.append((f'/events/{h["id"]}.html', names))
+    targets.append(("/rankings.html", ["world rankings", "world ranking", "world number one", "world No 1"]))
+    done, out, inlink = set(), [], False
+    for b in blocks:
+        if not b.startswith(("<p>", "<ul")):
+            out.append(b)
+            continue
+        parts = re.split(r"(<[^>]+>)", b)
+        for i, t in enumerate(parts):
+            if t.startswith("<"):
+                if t.startswith("<a "):
+                    inlink = True
+                elif t == "</a>":
+                    inlink = False
+                continue
+            if inlink or not t.strip():
+                continue
+            for url, names in targets:
+                if url in done:
+                    continue
+                for n in names:
+                    m = re.search(r"(?<![\w-])" + re.escape(html.escape(n)) + r"(?![\w-])", t)
+                    if m:
+                        t = t[:m.start()] + f'<a href="{url}">{m.group(0)}</a>' + t[m.end():]
+                        done.add(url)
+                        break
+            parts[i] = t
+        out.append("".join(parts))
+    return out
+
+
 def words_of(a):
     return sum(len(p.split()) for p in a.get("body") or [])
 
@@ -346,7 +385,7 @@ def article_page(a, others, brief=False):
     ev = event_of(a)
     crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
              else f'<a href="/#{e(a["category"])}">{e(a["category"])}</a>')
-    ps = [block(p) for p in a["body"]]
+    ps = autolink([block(p) for p in a["body"]], a)
     for ch in sorted(a.get("charts") or [], key=lambda c: -c.get("after", 0)):
         ps.insert(min(ch.get("after", len(ps)), len(ps)), chart(ch))
     # Highlights sit after the second paragraph, like a broadcaster's match report
