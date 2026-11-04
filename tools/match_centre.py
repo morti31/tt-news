@@ -96,6 +96,9 @@ def rows(ev, schedule):
                 if len(ps) == 2 and all(ps):
                     drawn[key_of([p["name"] for p in ps])] = {"event": dev["name"], "round": _round(r["round"]), "m": m}
 
+    # One table in use: name the venue instead of "Table 1"
+    tables = {f.get("detail") for f in fx if f.get("detail")}
+    venue = ev.get("venue") if len(tables) <= 1 else None
     out, used = [], set()
     prefix = ev["name"] + ": "
     for f in fx:
@@ -113,7 +116,7 @@ def rows(ev, schedule):
         if k:
             used.add(k)
         sets, games = _parse_score((d or {}).get("m", {}).get("score"), (d or {}).get("m", {}).get("winner"))
-        out.append({"when": f["start"], "table": f.get("detail") or "", "code": f.get("code") or code_of(f["id"], wtt),
+        out.append({"when": f["start"], "table": venue or f.get("detail") or "", "code": f.get("code") or code_of(f["id"], wtt),
                     "event": (lab[0][:1].upper() + lab[0][1:]) if lab else "", "round": _round(lab[1]) if len(lab) > 1 else "",
                     "players": [{"name": n, **people.get(n.lower(), {})} for n in names], "key": k,
                     "sets": sets, "games": games, "winner": (d or {}).get("m", {}).get("winner")})

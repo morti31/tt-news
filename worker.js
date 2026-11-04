@@ -57,7 +57,7 @@ async function rankMap(env, origin, ctx) {
   }
 }
 
-function match(card, ranks = {}) {
+function match(card, ranks = {}, venue = false) {
   if (!card || !card.competitiors) return null;
   const comps = card.competitiors;
   const live = card.resultStatus !== "OFFICIAL";
@@ -68,7 +68,7 @@ function match(card, ranks = {}) {
   return {
     code: card.documentCode,
     label: label(card.subEventDescription),
-    table: card.tableName || null,
+    table: (venue && card.venueName) || card.tableName || null,
     status: live ? "live" : "final",
     game: Number(card.currentGameNumber) || null,
     sides: comps.map((c) => {
@@ -95,6 +95,15 @@ async function cached(url, ctx, ttl) {
   return JSON.parse(text);
 }
 
+// One table in use at the event: its cards name the venue instead of "Table 1"
+async function oneTable(eventId, env, origin) {
+  try {
+    const sched = await (await env.ASSETS.fetch(new Request(origin + "/data/schedule.json"))).json();
+    const t = new Set((sched.fixtures || []).filter((f) => f.id.startsWith(`wtt-${eventId}-`) && f.detail).map((f) => f.detail));
+    return t.size === 1;
+  } catch (e) { return false; }
+}
+
 async function live(eventId, ctx, env, origin, all = false) {
   const [now, done, ranks] = await Promise.all([
     cached(`${WTT}/GetLiveResult?EventId=${eventId}&include_match_card=true`, ctx, 8),
@@ -102,8 +111,9 @@ async function live(eventId, ctx, env, origin, all = false) {
     rankMap(env, origin, ctx),
   ]);
   let dbg = null;
-  const liveNow = (now || []).map((x) => match(x.match_card, ranks)).filter(Boolean);
-  const results = (done || []).map((x) => match(x.match_card, ranks)).filter(Boolean);
+  const one = await oneTable(eventId, env, origin);
+  const liveNow = (now || []).map((x) => match(x.match_card, ranks, one)).filter(Boolean);
+  const results = (done || []).map((x) => match(x.match_card, ranks, one)).filter(Boolean);
   // WTT's result list can lag behind: matches on the order of play that started a while ago and are in neither
   // list are read from their own match card, so every page shows the same score
   try {
@@ -118,7 +128,7 @@ async function live(eventId, ctx, env, origin, all = false) {
       if (!code) return null;
       try {
         const card = await cached(`${WTT}/GetMatchCardDetails/${eventId}/${encodeURIComponent(code)}?no_cache=true&require_full_msg=true&require_play_by_play_full=true`, ctx, 20);
-        const m = match(card, ranks);
+        const m = match(card, ranks, one);
         if (!m || !m.sides.length || (m.score[0] === 0 && m.score[1] === 0 && !m.games.some(([a, b]) => a || b))) return null;
         const need = Math.ceil((Number((card.matchConfig || {}).bestOfXGames) || 5) / 2);
         if (m.status === "live" && Math.max(...m.score) >= need) { m.status = "final"; m.games = m.games.filter(([a, b]) => a || b); }
@@ -139,7 +149,7 @@ async function live(eventId, ctx, env, origin, all = false) {
 async function matchDetail(eventId, code, ctx, env, origin) {
   const url = `${WTT}/GetMatchCardDetails/${eventId}/${encodeURIComponent(code)}?no_cache=true&require_full_msg=true&require_play_by_play_full=true`;
   const [card, ranks] = await Promise.all([cached(url, ctx, 5), rankMap(env, origin, ctx)]);
-  const m = match(card, ranks);
+  const m = match(card, ranks, await oneTable(eventId, env, origin));
   if (!m) throw new Error("No such match");
   const comps = card.competitiors || [];
   const side = (x) => (x === "H" || x === (comps[0] || {}).competitiorId ? 0 : x === "A" || x === (comps[1] || {}).competitiorId ? 1 : null);

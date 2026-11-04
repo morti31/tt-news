@@ -96,3 +96,4 @@ Your job on finals day: publish the finals review as the `top` story, written as
 
 - Internal links: the build links the first mention in each story of every event page (full name, name and year, or host city) and of the world rankings automatically. Still add by hand the links the build can't know about: earlier stories, previews and reviews, guides (`[words](/news/<slug>.html)`), and the right anchor (`/events/<id>.html#matches`, `#watch`) where it helps the reader.
 - Times: pages are built in UK time and /localtime.js converts `<time data-lt="hm|dhm" datetime="...Z">` to the reader's time zone; JS-drawn times (live.js, fixtures.js) already use the browser's zone. Any new scheduled time on an event page must use that markup and sit near a note saying times are approximate.
+- Tables: where an event uses one table, cards, fixtures and the match centre name the venue (set `venue` on the event in data/events.json) instead of "Table 1".

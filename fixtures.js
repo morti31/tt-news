@@ -27,6 +27,8 @@
       for (const r of ev.rounds || []) for (const m of r.matches || []) for (const p of m.players || [])
         if (p && p.name && !people[p.name.toLowerCase()]) people[p.name.toLowerCase()] = { nat: p.nat };
     const fx = ((sch && sch.fixtures) || []).filter((f) => f.id.startsWith(`wtt-${hub.wtt}-`));
+    const tables = new Set(fx.map((f) => f.detail).filter(Boolean));
+    if (tables.size <= 1 && hub.venue) fx.forEach((f) => { if (f.detail) f.detail = hub.venue; });   // one table: name the venue
     const v = { fx, draw, people };
     store[hub.wtt] = { t: Date.now(), v };
     return v;
