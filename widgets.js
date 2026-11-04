@@ -101,6 +101,12 @@ window.ElevenStream = function (el) {
       cards.splice(0, cards.length, ...cards.filter((c) => ![...names].some((n) => c.includes(`title="${esc(n)}"`))));
       $("ticker").innerHTML = cards.join("");
     }
+    // Home page with an event on: the "On now" panel carries the live scores, so the strip waits for them
+    // rather than showing "On now" link cards that are swapped out a moment later
+    if (liveHubs.length && ["/", "/index.html"].includes(location.pathname) && liveHubs.some((h) => !(h.champions || []).length && h.start <= today && h.end >= today)) {
+      $("ticker").innerHTML = "";
+      $("ticker").closest(".ticker").hidden = true;
+    }
     if (liveHubs.length) {
       // "Women's singles, round of 32" -> "Women's singles R32", so the label fits the card
       const short = (l) => String(l).replace(/, (?:round of|last) (\d+)/i, " R$1").replace(/, quarter-?finals?/i, " QF").replace(/, semi-?finals?/i, " SF").replace(/, final$/i, " final");
@@ -137,8 +143,9 @@ window.ElevenStream = function (el) {
             if (st.status === "live" && !onHome && !(hub.champions && hub.champions.length)) on.unshift(`<a class="score-card watch-card" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a>`);
           } catch (e) {}
         }
-        $("ticker").innerHTML = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
-        $("ticker").closest(".ticker").hidden = false;
+        const html = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
+        if ($("ticker").dataset.h !== html) { $("ticker").dataset.h = html; $("ticker").innerHTML = html; }   // no redraw when unchanged
+        $("ticker").closest(".ticker").hidden = !html;
       };
       refresh();
       setInterval(refresh, 20000);
