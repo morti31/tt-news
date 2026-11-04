@@ -72,7 +72,7 @@ def fixtures(ev):
         table = (u.get("VenueDescription") or {}).get("LocationName")
         out.append({"id": "wtt-" + wid + "-" + u["Code"].replace("-", "").lower(), "event_id": ev.get("schedule_id", ev["id"]), "name": title,
                     "start": start.strftime("%Y-%m-%dT%H:%M:00Z"), "end": end.strftime("%Y-%m-%dT%H:%M:00Z"),
-                    "source": f"https://www.worldtabletennis.com/eventInfo?eventId={wid}", **({"detail": table} if table else {})})
+                    "source": f"https://www.worldtabletennis.com/eventInfo?eventId={wid}", "code": u["Code"], **({"detail": table} if table else {})})
     return sorted(out, key=lambda f: f["start"]), offset
 
 

@@ -27,8 +27,37 @@
       <table class="lv-table"><caption class="sr-only">${esc(m.sides.map((s) => s.name).join(" v "))}</caption><tbody>${row(0)}${row(1)}</tbody></table></article>`;
   }
 
-  async function get(id) {
-    const r = await fetch(`/api/live?event=${encodeURIComponent(id)}`, { cache: "no-store" });
+  // The match centre's rows (data-key = the two players' names): live scores and fresh results go straight in
+  const rowKey = (m) => m.sides.map((x) => String(x.name).trim().toLowerCase()).sort().join("|");
+  function overlay(d, id) {
+    const rows = {};
+    document.querySelectorAll(".mc-row[data-key]").forEach((r) => (rows[r.dataset.key] = r));
+    for (const m of (d.results || []).concat(d.live || [])) {
+      const r = rows[rowKey(m)];
+      if (!r) continue;
+      const live = m.status === "live";
+      // the row lists players in its own order; line the score up with it
+      const names = [...r.querySelectorAll(".mc-p .nm")].map((x) => x.textContent.trim().toLowerCase());
+      const flip = names.length === 2 && names[0] === String(m.sides[1].name).trim().toLowerCase();
+      const sc = flip ? [m.score[1], m.score[0]] : m.score;
+      const gs = m.games.map((g) => (flip ? [g[1], g[0]] : g));
+      const won = live ? -1 : (sc[0] > sc[1] ? 0 : 1);
+      r.classList.toggle("is-live", live);
+      r.classList.toggle("done", !live);
+      r.querySelector(".mc-time time").textContent = live ? "Live" : "Result";
+      r.querySelectorAll(".mc-p").forEach((p, i) => p.classList.toggle("won", won === i));
+      r.querySelector(".mc-sets").innerHTML = sc.map((v, i) => `<b class="${won === i ? "won" : ""}">${v}</b>`).join("");
+      r.querySelector(".mc-games").innerHTML = gs.map((g, k) => {
+        const cur = live && k === gs.length - 1;
+        return `<span class="${cur ? "cur" : ""}"><i class="${!cur && g[0] > g[1] ? "w" : ""}">${g[0]}</i><i class="${!cur && g[1] > g[0] ? "w" : ""}">${g[1]}</i></span>`;
+      }).join("");
+      if (m.code && !r.dataset.match) { r.dataset.match = `${id}|${m.code}`; r.tabIndex = 0; r.setAttribute("role", "button"); }
+      else if (m.code) r.dataset.match = `${id}|${m.code}`;
+    }
+  }
+
+  async function get(id, all) {
+    const r = await fetch(`/api/live?event=${encodeURIComponent(id)}${all ? "&all=1" : ""}`, { cache: "no-store" });
     if (!r.ok) throw new Error(r.status);
     return r.json();
   }
@@ -40,11 +69,12 @@
     async function tick() {
       if (document.hidden) return;
       try {
-        const d = await get(id);
+        const d = await get(id, !!document.querySelector(".mc"));
         now.innerHTML = d.live.length ? d.live.map((m) => card(m, id)).join("") : '<p class="lv-empty">No match in play right now. Scores appear here as soon as the next one starts.</p>';
-        done.innerHTML = d.results.slice(0, 12).map((m) => card(m, id)).join("");
+        if (done) done.innerHTML = d.results.slice(0, 12).map((m) => card(m, id)).join("");
+        overlay(d, id);
         note.textContent = `Updated ${time(d.updated)}. Live data from World Table Tennis.`;
-        el.hidden = !(d.live.length || d.results.length);
+        el.hidden = done ? !(d.live.length || d.results.length) : !d.live.length;   // "Live now" only while a match is on
       } catch (e) {
         note.textContent = "Live scores are unavailable at the moment. They will return automatically.";
       }
@@ -53,6 +83,10 @@
     setInterval(tick, 15000);
     document.addEventListener("visibilitychange", tick);
   });
+
+  // Event pages without live scores (finished events): fill in the match centre once, so every played match
+  // has its result and opens point by point
+  if (!document.querySelector("[data-wtt-live]")) document.querySelectorAll(".mc[data-wtt]").forEach((el) => get(el.dataset.wtt, true).then((d) => overlay(d, el.dataset.wtt)).catch(() => {}));
 
   document.querySelectorAll("[data-stream-q]").forEach((el) => { if (window.ElevenStream && !el.closest(".onnow")) window.ElevenStream(el); });
 

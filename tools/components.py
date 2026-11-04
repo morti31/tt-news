@@ -169,7 +169,7 @@ def _bracket(ev):
         boxes = []
         for m in rd["matches"]:
             ps = m.get("players") or [None, None]
-            scores = (m.get("score") or "").replace("–", "-").split("-") if m.get("score") else ["", ""]
+            scores = (m.get("score") or "").split(" ")[0].replace("–", "-").split("-") if m.get("score") else ["", ""]   # "3-0 (11:6,...)" -> games won
             if len(scores) != 2:
                 scores = ["", ""]
             rows = []
@@ -289,6 +289,20 @@ document.addEventListener("click", function (ev) {
     f.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
     f.allowFullscreen = true;
     b.replaceWith(f);
+    return;
+  }
+  var d = ev.target.closest(".mc-tabs button");
+  if (d) {   // match centre: one day at a time
+    var mc = d.closest(".mc");
+    mc.querySelectorAll(".mc-tabs button").forEach(function (x) { x.setAttribute("aria-selected", String(x === d)); });
+    mc.querySelectorAll(".mc-day").forEach(function (p) { p.hidden = p.dataset.day !== d.dataset.day; });
+    return;
+  }
+  var g = ev.target.closest(".mc-filter button");
+  if (g) {   // match centre: all matches or one event
+    var box = g.closest(".mc");
+    box.querySelectorAll(".mc-filter button").forEach(function (x) { x.setAttribute("aria-pressed", String(x === g)); });
+    box.querySelectorAll(".mc-row").forEach(function (r) { r.hidden = g.dataset.g !== "all" && r.dataset.g !== g.dataset.g; });
     return;
   }
   var t = ev.target.closest(".draw-toggle button");

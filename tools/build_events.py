@@ -6,6 +6,7 @@ Output: events/<id>.html, events/<id>.ics, events/index.html, data/event-index.j
 """
 import json, os, datetime as dt, html
 import components
+import match_centre
 import posters
 
 e = html.escape
@@ -151,8 +152,6 @@ def hub(ev, items, schedule, today, news):
     hero = f'<figure class="hub-poster">{picture(ev, ev["name"] + " " + ev["year"] + " poster")}<figcaption>{credit(ev)}</figcaption></figure>' if img else ""
     place = ev.get("venue") and f'{ev["venue"]}, {ev["city"]}, {ev["country"]}' or f'{ev["city"]}, {ev["country"]}'
     live = ""
-    if st == "now" and ev.get("live"):
-        live = f'<a class="btn btn-primary" href="{e(news.get("live_results_url", "https://www.worldtabletennis.com/"))}" rel="noopener">Live scores on WTT</a>'
     cal = f'<a class="btn" href="/events/{ev["id"]}.ics">Add to calendar</a>' if ev.get("start") and st != "past" else ""
 
     # Results: every match reported in this event's stories, finals first, each match once
@@ -174,8 +173,7 @@ def hub(ev, items, schedule, today, news):
     if ev.get("wtt_id") and st != "past":
         live_sec = (f'<section class="hub-sec lv" id="live" data-wtt-live="{e(ev["wtt_id"])}" hidden>'
                     f'<div id="stream" class="hub-stream" data-stream-q="{e(ev.get("stream_q") or ev["city"] + " " + ev["year"])}" hidden></div>'
-                    '<h2 class="section-title"><span class="lv-dot"></span>Live scores</h2><div class="lv-now"></div>'
-                    '<h3 class="lv-sub">Latest results</h3><div class="lv-done lv-grid"></div><p class="small lv-note"></p></section>')
+                    '<h2 class="section-title"><span class="lv-dot"></span>Live now</h2><div class="lv-now"></div><p class="small lv-note"></p></section>')
     champs = components.champions(ev.get("draw")) if st == "past" else []
     champ_sec = ""
     if champs:
@@ -184,7 +182,9 @@ def hub(ev, items, schedule, today, news):
 <p class="champ-final">Beat {e(c["runner_up"]["name"])} {e(c["score"])} in the final<span>{e(c["games"])}</span></p></div>''' for c in champs)
         champ_sec = (f'<section class="hub-sec champs-sec" id="champions"><h2 class="section-title">Champions</h2>'
                      f'<div class="champs" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">{cards}</div></section>')
-    results = f'<section class="hub-sec" id="results"><h2 class="section-title">{"Key results" if live_sec else "Results"}</h2>{board}</section>' if matches else ""
+    # Matches: every match by day, with times, scores and point by point (replaces the results board and schedule)
+    mc = match_centre.section(ev, schedule, today) if ev.get("start") and (ev.get("wtt_id") or ev.get("draw")) else ""
+    results = "" if mc else (f'<section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{board}</section>' if matches else "")
     draw = components.draw(ev.get("draw"))
     draw = f'<section class="hub-sec" id="draw">{draw}</section>' if draw else ""
     vids, vseen = [], set()
@@ -198,29 +198,29 @@ def hub(ev, items, schedule, today, news):
              '<section class="hub-sec" id="watch"><h2 class="section-title">Highlights</h2><p class="hub-empty">WTT highlights will appear here as matches are played.</p></section>')
     stories = "".join(f'''<li class="archive-item"><a href="{e(url)}"><h3>{e(it.get("title") or it.get("headline"))}</h3>
 <p>{e(it.get("standfirst") or it.get("summary", ""))}</p><time>{e(byline)}</time></a></li>''' for it, url, pub, byline in items)
-    news_sec = f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2><ul class="archive">{stories}</ul></section>' if items else ""
-    fixtures = _fixtures(ev, schedule)
-    empty = "" if (results or draw or fixtures or items) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
-    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("champions", "Champions", champ_sec), ("live", "Live", live_sec), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
+    news_sec = f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2><ul class="archive hub-news">{stories}</ul></section>' if items else ""
+    fixtures = "" if mc else _fixtures(ev, schedule)
+    empty = "" if (mc or results or draw or fixtures or items) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
+    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("champions", "Champions", champ_sec), ("live", "Live", "" if mc else live_sec), ("matches", "Matches", mc), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
                                                                 ("watch", "Watch", watch), ("news", "News", news_sec)) if sec)
     facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev["events"]),
                                                                    ("Level", TIER_NAMES.get(ev["tier"], ""))) if v)
     # The sidebar sits beside the first sections only (live scores and results, or whatever comes first);
     # the long sections (draw, schedule, highlights, news) run full width below it, so there is no
     # empty column on the right.
-    order = [x for x in (champ_sec, live_sec, results, draw, fixtures, watch, news_sec) if x]
-    top = [x for x in (champ_sec, live_sec, results) if x] or order[:1]
+    order = [x for x in (champ_sec, live_sec, mc, results, draw, fixtures, watch, news_sec) if x]
+    top = [x for x in (champ_sec, live_sec, mc, results) if x] or order[:1]
     top_html = empty + "".join(top)
     below_html = "".join(x for x in order if x not in top)
     body = f"""<main class="wrap hub">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/events/">Events</a> / {e(ev["group"])}</nav>
-{hero}
+<div class="hub-top{" has-poster" if hero else ""}">{hero}
 <header class="hub-head" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">
   <div><p class="hub-kicker">{pill}<span>{e(ev["group"])}</span></p>
   <h1>{e(ev["name"])} {e(ev["year"])}</h1>
   <p class="hub-meta">{e(dates(ev))}<span aria-hidden="true"> · </span>{e(place)}</p></div>
   <div class="hub-actions">{live}{cal}</div>
-</header>
+</header></div>
 {f'<nav class="hub-jump" aria-label="On this page">{jump}</nav>' if jump else ""}
 <div class="hub-grid"><div class="hub-main">
 {top_html}
@@ -233,8 +233,8 @@ def hub(ev, items, schedule, today, news):
 </aside></div>
 {f'<div class="hub-full">{below_html}</div>' if below_html else ""}
 </main>
-{components.SCRIPT if (vids or ev.get("draw")) else ""}
-{'<script src="/live.js" defer></script>' if live_sec else ""}"""
+{components.SCRIPT if (vids or ev.get("draw") or mc) else ""}
+{'<script src="/live.js" defer></script>' if (live_sec or (mc and ev.get("wtt_id"))) else ""}"""
     return body
 
 

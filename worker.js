@@ -95,10 +95,10 @@ async function cached(url, ctx, ttl) {
   return JSON.parse(text);
 }
 
-async function live(eventId, ctx, env, origin) {
+async function live(eventId, ctx, env, origin, all = false) {
   const [now, done, ranks] = await Promise.all([
     cached(`${WTT}/GetLiveResult?EventId=${eventId}&include_match_card=true`, ctx, 8),
-    cached(`${WTT}/GetOfficialResult?EventId=${eventId}&include_match_card=true&take=40`, ctx, 45),
+    cached(`${WTT}/GetOfficialResult?EventId=${eventId}&include_match_card=true&take=${all ? 150 : 40}`, ctx, 45),   // all: every result of the event (event pages)
     rankMap(env, origin, ctx),
   ]);
   return {
@@ -218,7 +218,7 @@ export default {
       const id = url.searchParams.get("event") || "";
       if (!/^\d{1,6}$/.test(id)) return json({ error: "event must be a WTT event id" }, 400);
       try {
-        return json(await live(id, ctx, env, url.origin));
+        return json(await live(id, ctx, env, url.origin, url.searchParams.get("all") === "1"));
       } catch (err) {
         return json({ error: "Live data is unavailable right now", detail: String(err.message || err) }, 502, 5);
       }
