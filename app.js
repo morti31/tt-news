@@ -40,7 +40,7 @@
     const hub = s.event && hubs[s.event];
     const daily = s.day && ["Preview", "Review"].includes(s.kind) ? `Day ${s.day} ${s.kind.toLowerCase()}` : s.kind === "Update" ? "Quick update" : "";
     const text = [hub ? hub.name : s.category, daily].filter(Boolean).join(" · ");
-    return `<span class="kicker" style="color:var(--${s.category}, var(--ink))">${esc(text)}${s.lang ? `<span class="translated"> · translated from ${esc(s.lang)}</span>` : ""}</span>`;
+    return `<span class="kicker" style="color:var(--${s.category}, var(--ink))">${esc(text)}</span>`;
   };
 
   // Picture order: official video, then the event poster (once per page), then a photo, then an illustration

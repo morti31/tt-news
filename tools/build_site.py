@@ -46,7 +46,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
 <nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
-<p>Table tennis news, results and fixtures from around the world. Stories marked as translated draw on non-English sources.</p></div></footer>"""
+<p>Table tennis news, results and fixtures from around the world.</p></div></footer>"""
 
 
 try:
@@ -380,8 +380,6 @@ def article_page(a, others, brief=False):
     if kind == "Update":   # rare short story, kept out of Google (see UPDATE.md)
         kind = "Quick update"
     tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(kind)}'
-    if a.get("lang"):
-        tag += f'<span class="translated">, translated from {e(a["lang"])}</span>'
     tag += "</span>"
     ev = event_of(a)
     crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
@@ -695,7 +693,7 @@ def about_page():
 <p>Table tennis is one of the most played sports in the world, but its news is scattered. The biggest stories often break first in Chinese, Japanese or Korean, results sit on federation sites, and club competitions from the China Super League to the Bundesliga rarely reach English-language readers at all.</p>
 <p>Eleven brings that together: international tournaments, the English game, the major club leagues and equipment news, alongside live results, the ITTF world rankings and a schedule you can add to your own calendar.</p>
 <h2>How we report</h2>
-<p>We follow coverage from federations, organisers and media in English, Chinese, Japanese, Korean, German and French. Stories that rely mainly on non-English sources are marked as translated, and every story lists the sources it draws on so you can read the original reporting.</p>
+<p>We follow coverage from federations, organisers and media in English, Chinese, Japanese, Korean, German and French. Every story lists the sources it draws on so you can read the original reporting.</p>
 <p>We keep what has been confirmed separate from what has been reported, and say who reported it. Rankings come from the official ITTF list, and fixtures from organisers' published schedules.</p>
 <h2>Who writes Eleven</h2>
 <p>Everything on Eleven is written and edited by the Eleven Team, and credited that way. Stories are checked against their sources before they are published.</p>
