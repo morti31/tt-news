@@ -101,12 +101,33 @@ async function live(eventId, ctx, env, origin, all = false) {
     cached(`${WTT}/GetOfficialResult?EventId=${eventId}&include_match_card=true&take=${all ? 150 : 40}`, ctx, 45),   // all: every result of the event (event pages)
     rankMap(env, origin, ctx),
   ]);
-  return {
-    event: eventId,
-    updated: new Date().toISOString(),
-    live: (now || []).map((x) => match(x.match_card, ranks)).filter(Boolean),
-    results: (done || []).map((x) => match(x.match_card, ranks)).filter(Boolean),
-  };
+  const liveNow = (now || []).map((x) => match(x.match_card, ranks)).filter(Boolean);
+  const results = (done || []).map((x) => match(x.match_card, ranks)).filter(Boolean);
+  // WTT's result list can lag behind: matches on the order of play that started a while ago and are in neither
+  // list are read from their own match card, so every page shows the same score
+  try {
+    const seen = new Set(liveNow.concat(results).map((m) => String(m.code).replace(/-/g, "").toLowerCase()));
+    const sched = await cached(`${origin}/data/schedule.json`, ctx, 300);
+    const t = Date.now();
+    const missing = (sched.fixtures || []).filter((f) => f.id.startsWith(`wtt-${eventId}-`) && f.start && Date.parse(f.start) < t - 12 * 6e4 && Date.parse(f.start) > t - 36 * 36e5
+      && !seen.has(f.id.slice(`wtt-${eventId}-`.length))).sort((a, b) => b.start.localeCompare(a.start)).slice(0, 12);
+    const found = await Promise.all(missing.map(async (f) => {
+      const k = f.id.slice(`wtt-${eventId}-`.length).toUpperCase();
+      const code = f.code || (k.length >= 12 && /^\d{6}$/.test(k.slice(-6)) ? `${k.slice(0, 11).padEnd(22, "-")}${k.slice(11, -6)}-${k.slice(-6)}`.padEnd(42, "-") : null);
+      if (!code) return null;
+      try {
+        const card = await cached(`${WTT}/GetMatchCardDetails/${eventId}/${encodeURIComponent(code)}?no_cache=true&require_full_msg=true&require_play_by_play_full=true`, ctx, 20);
+        const m = match(card, ranks);
+        if (!m || !m.sides.length || (m.score[0] === 0 && m.score[1] === 0 && !m.games.some(([a, b]) => a || b))) return null;
+        const need = Math.ceil((Number((card.matchConfig || {}).bestOfXGames) || 5) / 2);
+        if (m.status === "live" && Math.max(...m.score) >= need) { m.status = "final"; m.games = m.games.filter(([a, b]) => a || b); }
+        return m;
+      } catch (e) { return null; }
+    }));
+    for (const m of found.filter(Boolean)) (m.status === "live" ? liveNow : results).push(m);
+    results.sort((a, b) => String(b.start || "").localeCompare(String(a.start || "")));
+  } catch (e) { /* the lists from WTT stand */ }
+  return { event: eventId, updated: new Date().toISOString(), live: liveNow, results };
 }
 
 // ---- One match, point by point: GET /api/match?event=3250&code=TTEMSINGLES-...
