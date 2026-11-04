@@ -1,7 +1,36 @@
 {
-  "updated": "2026-11-04T00:30:00Z",
+  "updated": "2026-11-04T04:50:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "honoka-hashimoto-mappa-sponsorship-2026",
+      "category": "International",
+      "kind": "Update",
+      "date": "2026-11-04",
+      "published": "2026-11-04T04:45:00Z",
+      "lang": "Japanese",
+      "headline": "Honoka Hashimoto signs sponsorship deal with Jujutsu Kaisen animation studio MAPPA",
+      "summary": "Japan's world No 14 Honoka Hashimoto has signed a sponsorship contract with MAPPA, the Tokyo studio behind Jujutsu Kaisen and Chainsaw Man, from November.",
+      "body": [
+        "Honoka Hashimoto, the Japanese defender ranked 14th in the world, has signed a sponsorship contract with the animation studio MAPPA, starting this month. It is the first time MAPPA has backed an individual athlete.",
+        "Hashimoto, a self-described anime fan, said she watched MAPPA's work, including Jujutsu Kaisen and Chainsaw Man. She said she wanted to show \"how I have grown as a table tennis player\".",
+        "The chopper beat a leading Chinese player in the women's team final at the World Championships in May, when Japan took silver, and helped them win the Asian team title in October. She is not in the draw at WTT Champions Frankfurt this week."
+      ],
+      "sources": [
+        {
+          "name": "Nippon TV via Yahoo Japan (Japanese): Hashimoto signs sponsorship contract with MAPPA",
+          "url": "https://news.yahoo.co.jp/articles/c98b6ead3d6f479aee3ebeac65ad57679f09b806"
+        },
+        {
+          "name": "KAI-YOU (Japanese): MAPPA's first sponsorship of an individual athlete",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBBRkpZNVlzMTA1akJCOGpNTWYza3plaDJOTDR5VGEzbmFlU21YY1hUTnlVU3ZDZnJlY0VvU2xZUGZmS1psSWxiVg?oc=5"
+        },
+        {
+          "name": "ITTF world ranking",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
+    },
     {
       "id": "wtt-champions-frankfurt-2026-day2-preview",
       "kind": "Preview",
@@ -259,25 +288,77 @@
     {
       "id": "youth-olympic-games-dakar-2026-kawakami-matsushima-mixed-doubles",
       "category": "International",
-      "kind": "Update",
-      "date": "2026-11-03",
-      "published": "2026-11-03T12:55:00Z",
+      "date": "2026-11-04",
+      "published": "2026-11-04T04:40:00Z",
       "lang": "Japanese",
-      "headline": "Youth Olympic Games: Japan's Ryusei Kawakami and Misora Matsushima knock out China to reach mixed doubles final",
-      "summary": "Japan's Ryusei Kawakami and 13-year-old Misora Matsushima will play for Youth Olympic Games gold in Dakar after beating China's Li Hechen and Yao Ruixuan in the mixed doubles quarter-finals.",
+      "headline": "Youth Olympic Games: Ryusei Kawakami and Miku Matsushima win mixed doubles gold for Japan",
+      "summary": "Japan's Ryusei Kawakami and 13-year-old Miku Matsushima are Youth Olympic mixed doubles champions after beating a Hong Kong pair 3-1 in the final in Dakar.",
       "score": "3-1",
-      "body": [
-        "Kawakami and Matsushima won 11-3, 13-15, 15-13, 11-8 on Sunday, taking the third game from 13-13 to end China's hopes of a medal in the event. They beat a pair from Taiwan 3-1 in Monday's semi-finals.",
-        "Matsushima is the younger sister of the men's world No 1, Sora Matsushima. Li and Yao recovered to reach the last 16 of the singles.",
-        "The mixed doubles final is on Tuesday. The table tennis competition in Dakar finishes on Thursday."
-      ],
       "matches": [
+        {
+          "label": "Mixed doubles final",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Ryusei Kawakami / Miku Matsushima",
+              "nat": "JPN"
+            },
+            {
+              "name": "Hong Kong",
+              "nat": "HKG"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ]
+        },
+        {
+          "label": "Mixed doubles bronze medal match",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Lin Chin-Ting / Chen Min-hsin",
+              "nat": "TPE"
+            },
+            {
+              "name": "Thitaphat Preechayan / Kulapassr Vijitviriyagul",
+              "nat": "THA"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
         {
           "label": "Mixed doubles quarter-final",
           "event": "Youth Olympic Games, Dakar",
           "sides": [
             {
-              "name": "Ryusei Kawakami / Misora Matsushima",
+              "name": "Ryusei Kawakami / Miku Matsushima",
               "nat": "JPN"
             },
             {
@@ -307,28 +388,72 @@
               8
             ]
           ]
+        },
+        {
+          "label": "Boys' singles last 16",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Ryusei Kawakami",
+              "nat": "JPN"
+            },
+            {
+              "name": "Abdelmalk Elsayed",
+              "nat": "EGY"
+            }
+          ],
+          "score": [
+            4,
+            0
+          ],
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              3
+            ]
+          ]
         }
       ],
       "sources": [
         {
-          "name": "Rallys (Japanese): Kawakami and Matsushima beat Chinese pair to reach mixed doubles semi-finals",
+          "name": "Jiji Press (Japanese): Kawakami and Matsushima win mixed doubles gold",
+          "url": "https://sp.m.jiji.com/article/show/3903907"
+        },
+        {
+          "name": "Olympics.com: Matsushima and Kawakami win Dakar 2026 mixed doubles gold",
+          "url": "https://www.olympics.com/en/dakar-2026/olympic-information-service/matsushima-and-kawakami-jpn-on-track-for-singles-success-after-winning-dakar-2026-table-tennis-mixed-doubles-gold"
+        },
+        {
+          "name": "Liberty Times (Chinese): Lin Chin-Ting and Chen Min-hsin come from behind for bronze",
+          "url": "https://sports.ltn.com.tw/news/breakingnews/5628507"
+        },
+        {
+          "name": "TSNA (Chinese): Taiwan's third Youth Olympic table tennis medal",
+          "url": "https://tsna.com/article/205232"
+        },
+        {
+          "name": "Sohu (Chinese): Yao Ruixuan loses 4-3 to Chen Min-hsin",
+          "url": "https://m.sohu.com/a/1096870666_121633831"
+        },
+        {
+          "name": "Punch: African players fail to match Onaolapo's Youth Olympics feat",
+          "url": "https://punchng.com/african-stars-fail-to-match-onaolapos-youth-olympics-feat/"
+        },
+        {
+          "name": "Rallys (Japanese): Kawakami and Matsushima beat Chinese pair",
           "url": "https://rallys.online/topic/international/261102youtholympic/"
-        },
-        {
-          "name": "Sohu (Chinese): China's mixed doubles pair beaten by 13-year-old Japanese player",
-          "url": "https://www.sohu.com/a/1096248862_123042862"
-        },
-        {
-          "name": "Sina (Chinese): Li Hechen and Yao Ruixuan lose 1-3 to Japanese pair",
-          "url": "https://k.sina.com.cn/article_7879995911_1d5af320706802zbsm.html"
-        },
-        {
-          "name": "Olympics.com (Japanese): Kawakami and Matsushima reach mixed doubles final, highlights",
-          "url": "https://www.olympics.com/ja/video/kawakami-matsushima-mixed-doubles-japan-chinese-taipei-dakar-2026"
-        },
-        {
-          "name": "Xinhua (Chinese): Li Hechen and Yao Ruixuan reach last 16 of Youth Olympic singles",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWDJZM21GWDh0LUlaSEFxVnBpS1dVVU5DclNCb19zdUpRTUJUN2d5Vl96UVdZWm5KX0tOeHRTZkE4NnpDX2t2VEFONWNNZEZGTWtfSXlDVWZZOW5xR3NDMkxUb0hkU3M4YkxWaXdRNlZLVE1xU2RYbkZleDIzR0oxakp4R0FsYWs?oc=5"
         }
       ]
     },
