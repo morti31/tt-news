@@ -107,7 +107,7 @@ async function live(eventId, ctx, env, origin, all = false) {
   // list are read from their own match card, so every page shows the same score
   try {
     const seen = new Set(liveNow.concat(results).map((m) => String(m.code).replace(/-/g, "").toLowerCase()));
-    const sched = await cached(`${origin}/data/schedule.json`, ctx, 300);
+    const sched = await (await env.ASSETS.fetch(new Request(origin + "/data/schedule.json"))).json();
     const t = Date.now();
     const missing = (sched.fixtures || []).filter((f) => f.id.startsWith(`wtt-${eventId}-`) && f.start && Date.parse(f.start) < t - 12 * 6e4 && Date.parse(f.start) > t - 36 * 36e5
       && !seen.has(f.id.slice(`wtt-${eventId}-`.length))).sort((a, b) => b.start.localeCompare(a.start)).slice(0, 12);
