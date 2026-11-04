@@ -1,7 +1,184 @@
 {
-  "updated": "2026-11-04T16:50:00Z",
+  "updated": "2026-11-04T21:05:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day2-review",
+      "kind": "Review",
+      "day": 2,
+      "category": "International",
+      "date": "2026-11-04",
+      "published": "2026-11-04T21:05:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "top": true,
+      "headline": "WTT Champions Frankfurt day two review: Han Ying beats Wang Yidi as Germany win all six matches",
+      "summary": "Germany's Han Ying beat Wang Yidi 3-0 and Dimitrij Ovtcharov set up an all-German match with Dang Qiu on day two of WTT Champions Frankfurt, where all six home players won.",
+      "matches": [
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Han Ying",
+              "nat": "GER"
+            },
+            {
+              "name": "Wang Yidi",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Dimitrij Ovtcharov",
+              "nat": "GER"
+            },
+            {
+              "name": "Omar Assar",
+              "nat": "EGY"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Annett Kaufmann",
+              "nat": "GER"
+            },
+            {
+              "name": "Doo Hoi Kem",
+              "nat": "HKG"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              1
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Wim Verdonschot",
+              "nat": "GER"
+            },
+            {
+              "name": "Simon Gauzy",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "9sUHDQcquH8",
+          "title": "Wang Yidi v Han Ying, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "LGscUTZRpvA",
+          "title": "Wim Verdonschot v Simon Gauzy, men's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "aK_DqYQIBPk",
+          "title": "Annett Kaufmann v Doo Hoi Kem, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "yGJpdGK-cA0",
+          "title": "Shunsuke Togami v Kanak Jha, men's singles last 32",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
     {
       "id": "quadri-aruna-international-retirement-2028",
       "category": "International",
@@ -259,7 +436,6 @@
       "published": "2026-11-03T20:50:00Z",
       "event": "wtt-champions-frankfurt-2026",
       "draw": "3252",
-      "top": true,
       "headline": "WTT Champions Frankfurt day one review: Wang Chuqin returns with a win as Miwa Harimoto survives",
       "summary": "Wang Chuqin beat Anders Lind in straight games in his first match for more than a month, and Miwa Harimoto won a deciding game against Sofia Polcanova on day one of WTT Champions Frankfurt.",
       "matches": [
