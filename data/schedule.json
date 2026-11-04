@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T11:32:00Z",
+  "updated": "2026-11-04T18:51:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -659,78 +659,6 @@
       "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
     },
     {
-      "id": "wtt-3252-ttewsinglesr32001600",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Sofia Polcanova v Miwa Harimoto, women's singles, last 32",
-      "start": "2026-11-03T11:00:00Z",
-      "end": "2026-11-03T11:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsinglesr32001000",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Zhou Qihao v Thibault Poret, men's singles, last 32",
-      "start": "2026-11-03T11:35:00Z",
-      "end": "2026-11-03T12:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttewsinglesr32001300",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Chen Xingtong v Kim Nayeong, women's singles, last 32",
-      "start": "2026-11-03T12:10:00Z",
-      "end": "2026-11-03T12:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsinglesr32001200",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Anders Lind v Wang Chuqin, men's singles, last 32",
-      "start": "2026-11-03T12:45:00Z",
-      "end": "2026-11-03T13:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttewsinglesr32001500",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Adriana Diaz v Joo Cheonhui, women's singles, last 32",
-      "start": "2026-11-03T13:20:00Z",
-      "end": "2026-11-03T13:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsinglesr32001600",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Vladimir Sidorenko v Tomokazu Harimoto, men's singles, last 32",
-      "start": "2026-11-03T13:55:00Z",
-      "end": "2026-11-03T14:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttewsinglesr32001400",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Cheng I-Ching v Bruna Takahashi, women's singles, last 32",
-      "start": "2026-11-03T14:30:00Z",
-      "end": "2026-11-03T15:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsinglesr32000900",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Lin Yun-Ju v Darko Jorgic, men's singles, last 32",
-      "start": "2026-11-03T15:05:00Z",
-      "end": "2026-11-03T15:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
       "id": "frankfurt-2026-11-03-s2",
       "event_id": "wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt: day 1, session 2",
@@ -739,21 +667,13 @@
       "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
     },
     {
-      "id": "wtt-3252-ttemsinglesr32001300",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Dang Qiu v Elias Ranefur, men's singles, last 32",
-      "start": "2026-11-03T17:30:00Z",
-      "end": "2026-11-03T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3252-ttewsinglesr32000300",
       "event_id": "wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt: Peng Yu-han v Bernadette Szőcs, women's singles, last 32",
       "start": "2026-11-03T18:05:00Z",
       "end": "2026-11-03T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000300--",
       "detail": "Table 1"
     },
     {
@@ -763,6 +683,7 @@
       "start": "2026-11-03T18:40:00Z",
       "end": "2026-11-03T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000100--",
       "detail": "Table 1"
     },
     {
@@ -772,6 +693,7 @@
       "start": "2026-11-03T19:15:00Z",
       "end": "2026-11-03T19:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000200--",
       "detail": "Table 1"
     },
     {
@@ -781,6 +703,7 @@
       "start": "2026-11-03T19:50:00Z",
       "end": "2026-11-03T20:25:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000200--",
       "detail": "Table 1"
     },
     {
@@ -798,6 +721,7 @@
       "start": "2026-11-04T11:00:00Z",
       "end": "2026-11-04T11:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-001000--",
       "detail": "Table 1"
     },
     {
@@ -807,6 +731,7 @@
       "start": "2026-11-04T11:35:00Z",
       "end": "2026-11-04T12:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000600--",
       "detail": "Table 1"
     },
     {
@@ -816,6 +741,7 @@
       "start": "2026-11-04T12:10:00Z",
       "end": "2026-11-04T12:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000500--",
       "detail": "Table 1"
     },
     {
@@ -825,6 +751,7 @@
       "start": "2026-11-04T12:45:00Z",
       "end": "2026-11-04T13:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000700--",
       "detail": "Table 1"
     },
     {
@@ -834,6 +761,7 @@
       "start": "2026-11-04T13:20:00Z",
       "end": "2026-11-04T13:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000400--",
       "detail": "Table 1"
     },
     {
@@ -843,6 +771,7 @@
       "start": "2026-11-04T13:55:00Z",
       "end": "2026-11-04T14:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-001100--",
       "detail": "Table 1"
     },
     {
@@ -852,6 +781,7 @@
       "start": "2026-11-04T14:30:00Z",
       "end": "2026-11-04T15:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000900--",
       "detail": "Table 1"
     },
     {
@@ -861,6 +791,7 @@
       "start": "2026-11-04T15:05:00Z",
       "end": "2026-11-04T15:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000100--",
       "detail": "Table 1"
     },
     {
@@ -878,6 +809,7 @@
       "start": "2026-11-04T17:30:00Z",
       "end": "2026-11-04T18:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000600--",
       "detail": "Table 1"
     },
     {
@@ -887,6 +819,7 @@
       "start": "2026-11-04T18:05:00Z",
       "end": "2026-11-04T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-001500--",
       "detail": "Table 1"
     },
     {
@@ -896,6 +829,7 @@
       "start": "2026-11-04T18:40:00Z",
       "end": "2026-11-04T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-001100--",
       "detail": "Table 1"
     },
     {
@@ -905,6 +839,7 @@
       "start": "2026-11-04T19:15:00Z",
       "end": "2026-11-04T19:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-001400--",
       "detail": "Table 1"
     },
     {
@@ -914,6 +849,7 @@
       "start": "2026-11-04T19:50:00Z",
       "end": "2026-11-04T20:25:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000700--",
       "detail": "Table 1"
     },
     {
@@ -931,6 +867,7 @@
       "start": "2026-11-05T12:00:00Z",
       "end": "2026-11-05T12:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000400--",
       "detail": "Table 1"
     },
     {
@@ -940,6 +877,7 @@
       "start": "2026-11-05T12:35:00Z",
       "end": "2026-11-05T13:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-001200--",
       "detail": "Table 1"
     },
     {
@@ -949,6 +887,7 @@
       "start": "2026-11-05T13:10:00Z",
       "end": "2026-11-05T13:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000800--",
       "detail": "Table 1"
     },
     {
@@ -958,6 +897,7 @@
       "start": "2026-11-05T13:45:00Z",
       "end": "2026-11-05T14:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000300--",
       "detail": "Table 1"
     },
     {
@@ -967,6 +907,7 @@
       "start": "2026-11-05T14:20:00Z",
       "end": "2026-11-05T14:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------R32-000500--",
       "detail": "Table 1"
     },
     {
@@ -976,6 +917,7 @@
       "start": "2026-11-05T14:55:00Z",
       "end": "2026-11-05T15:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------R32-000800--",
       "detail": "Table 1"
     },
     {
@@ -989,19 +931,21 @@
     {
       "id": "wtt-3252-ttemsingles8fnl000600",
       "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Men's Singles, Round of 16, Match 6",
+      "name": "WTT Champions Frankfurt: Wen Ruibo v Wang Chuqin, men's singles, last 16",
       "start": "2026-11-05T17:30:00Z",
       "end": "2026-11-05T18:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000600--",
       "detail": "Table 1"
     },
     {
       "id": "wtt-3252-ttewsingles8fnl000100",
       "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Women's Singles, Round of 16, Match 1",
+      "name": "WTT Champions Frankfurt: Natalia Bajor v Hana Goda, women's singles, last 16",
       "start": "2026-11-05T18:05:00Z",
       "end": "2026-11-05T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000100--",
       "detail": "Table 1"
     },
     {
@@ -1011,15 +955,17 @@
       "start": "2026-11-05T18:40:00Z",
       "end": "2026-11-05T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000700--",
       "detail": "Table 1"
     },
     {
       "id": "wtt-3252-ttewsingles8fnl000200",
       "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Women's Singles, Round of 16, Match 2",
+      "name": "WTT Champions Frankfurt: Bernadette Szőcs v Satsuki Odo, women's singles, last 16",
       "start": "2026-11-05T19:15:00Z",
       "end": "2026-11-05T19:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000200--",
       "detail": "Table 1"
     },
     {
@@ -1029,24 +975,7 @@
       "start": "2026-11-05T19:50:00Z",
       "end": "2026-11-05T20:25:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttewsingles8fnl000800",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Joo Cheonhui v Miwa Harimoto, women's singles, last 16",
-      "start": "2026-11-06T11:00:00Z",
-      "end": "2026-11-06T11:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsingles8fnl000500",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Lin Yun-Ju v Zhou Qihao, men's singles, last 16",
-      "start": "2026-11-06T11:35:00Z",
-      "end": "2026-11-06T12:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000100--",
       "detail": "Table 1"
     },
     {
@@ -1058,39 +987,63 @@
       "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
     },
     {
+      "id": "wtt-3252-ttewsingles8fnl000800",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Joo Cheonhui v Miwa Harimoto, women's singles, last 16",
+      "start": "2026-11-06T12:00:00Z",
+      "end": "2026-11-06T12:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000800--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttemsingles8fnl000500",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Lin Yun-Ju v Zhou Qihao, men's singles, last 16",
+      "start": "2026-11-06T12:35:00Z",
+      "end": "2026-11-06T13:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000500--",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3252-ttewsingles8fnl000700",
       "event_id": "wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt: Chen Xingtong v Bruna Takahashi, women's singles, last 16",
-      "start": "2026-11-06T12:10:00Z",
-      "end": "2026-11-06T12:45:00Z",
+      "start": "2026-11-06T13:10:00Z",
+      "end": "2026-11-06T13:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000700--",
       "detail": "Table 1"
     },
     {
       "id": "wtt-3252-ttemsingles8fnl000800",
       "event_id": "wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt: Men's Singles, Round of 16, Match 8",
-      "start": "2026-11-06T12:45:00Z",
-      "end": "2026-11-06T13:20:00Z",
+      "start": "2026-11-06T13:45:00Z",
+      "end": "2026-11-06T14:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000800--",
       "detail": "Table 1"
     },
     {
       "id": "wtt-3252-ttewsingles8fnl000500",
       "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Women's Singles, Round of 16, Match 5",
-      "start": "2026-11-06T13:20:00Z",
-      "end": "2026-11-06T13:55:00Z",
+      "name": "WTT Champions Frankfurt: Hina Hayata v Annett Kaufmann, women's singles, last 16",
+      "start": "2026-11-06T14:20:00Z",
+      "end": "2026-11-06T14:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000500--",
       "detail": "Table 1"
     },
     {
       "id": "wtt-3252-ttemsingles8fnl000400",
       "event_id": "wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt: Men's Singles, Round of 16, Match 4",
-      "start": "2026-11-06T13:55:00Z",
-      "end": "2026-11-06T14:30:00Z",
+      "start": "2026-11-06T14:55:00Z",
+      "end": "2026-11-06T15:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000400--",
       "detail": "Table 1"
     },
     {
@@ -1104,10 +1057,11 @@
     {
       "id": "wtt-3252-ttewsingles8fnl000300",
       "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Women's Singles, Round of 16, Match 3",
+      "name": "WTT Champions Frankfurt: Han Ying v Sabine Winter, women's singles, last 16",
       "start": "2026-11-06T17:30:00Z",
       "end": "2026-11-06T18:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000300--",
       "detail": "Table 1"
     },
     {
@@ -1117,6 +1071,7 @@
       "start": "2026-11-06T18:05:00Z",
       "end": "2026-11-06T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000300--",
       "detail": "Table 1"
     },
     {
@@ -1126,6 +1081,7 @@
       "start": "2026-11-06T18:40:00Z",
       "end": "2026-11-06T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000600--",
       "detail": "Table 1"
     },
     {
@@ -1135,6 +1091,7 @@
       "start": "2026-11-06T19:15:00Z",
       "end": "2026-11-06T19:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------8FNL000200--",
       "detail": "Table 1"
     },
     {
@@ -1144,6 +1101,7 @@
       "start": "2026-11-06T19:50:00Z",
       "end": "2026-11-06T20:25:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------8FNL000400--",
       "detail": "Table 1"
     },
     {
