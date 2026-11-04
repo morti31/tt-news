@@ -180,7 +180,7 @@ def _bracket(ev):
                 seed = f'<span class="seed">{p["seed"]}</span>' if p.get("seed") else '<span class="seed"></span>'
                 won = " won" if m.get("winner") == i else (" lost" if m.get("winner") is not None else "")
                 rows.append(f'<div class="br-p{won}">{seed}<span class="nm">{e(p["name"])}</span><span class="nat">{flag(p["nat"])}{e(p["nat"])}</span><span class="sc">{e(scores[i].strip())}</span></div>')
-            when = f'<span class="br-when">{_uk_time(m["when"])}</span>' if m.get("when") and m.get("winner") is None else ""
+            when = f'<span class="br-when"><time datetime="{m["when"]}" data-lt="dhm">{_uk_time(m["when"])}</time></span>' if m.get("when") and m.get("winner") is None else ""
             boxes.append(f'<div class="br-slot">{when}<div class="br-match">{"".join(rows)}</div></div>')
         cols.append(f'<div class="br-round"><h3>{e(rd["round"])}</h3><div class="br-matches">{"".join(boxes)}</div></div>')
     return "".join(cols)
@@ -225,7 +225,7 @@ def draw(ref):
     upd = dt.datetime.fromisoformat(d["updated"].replace("Z", "+00:00")).astimezone(UK)
     return f"""<section class="draw" aria-labelledby="draw-h">
   <div class="draw-head"><h2 id="draw-h">The draw</h2>{tabs}</div>
-  <p class="draw-note">Seeds shown in grey. Times are UK time. Scroll sideways to follow each round.</p>
+  <p class="draw-note">Seeds shown in grey. <span data-tz-note>Times are UK time.</span> Times are approximate. Scroll sideways to follow each round.</p>
   {panels}
   <p class="draw-note">Official draw from <a href="{e(d["source"])}" rel="noopener">World Table Tennis</a>, updated {upd.day} {upd:%B}, {upd:%H:%M}.</p>
 </section>"""

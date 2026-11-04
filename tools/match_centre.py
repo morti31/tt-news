@@ -149,7 +149,7 @@ def _row(r, wtt):
         attrs += f' data-match="{e(str(wtt))}|{e(r["code"])}" tabindex="0" role="button"'
     status = "Result" if played else f"{t:%H:%M}"
     return f'''<li class="mc-row{" done" if played else ""}" data-g="{_gender(r["event"])}"{attrs}>
-<span class="mc-time"><time datetime="{e(r["when"])}">{status}</time></span>
+<span class="mc-time"><time datetime="{e(r["when"])}" data-lt="hm">{status}</time></span>
 <span class="mc-main"><span class="mc-label">{e(label)}</span>{names}</span>
 <span class="mc-sets">{sets}</span><span class="mc-games">{games}</span></li>'''
 
@@ -183,7 +183,7 @@ def section(ev, schedule, today_iso=None):
             mine = [r for r in by_day[d] if _uk(r["when"]) >= _uk(s["start"]) - dt.timedelta(minutes=5) and (nxt is None or _uk(r["when"]) < nxt - dt.timedelta(minutes=5))]
             name = s["name"].removeprefix(ev["name"] + ": ")
             name = name[:1].upper() + name[1:]
-            items.append(f'<li class="mc-sess"><span>{e(name)}</span><time datetime="{e(s["start"])}">{_uk(s["start"]):%H:%M}</time></li>')
+            items.append(f'<li class="mc-sess"><span>{e(name)}</span><time datetime="{e(s["start"])}" data-lt="hm">{_uk(s["start"]):%H:%M}</time></li>')
             items += [_row(r, wtt) for r in mine]
         if not ss:
             items += [_row(r, wtt) for r in by_day[d]]
@@ -204,5 +204,5 @@ def section(ev, schedule, today_iso=None):
 <div class="mc-head"><h2 class="section-title" id="matches-h">Matches</h2>{filt}</div>
 <div class="mc-tabs" role="tablist" aria-label="Day">{"".join(tabs)}</div>
 {"".join(panels)}
-<p class="small mc-note">UK time. Tap a played match for point by point. Order of play and results from World Table Tennis.</p>
+<p class="small mc-note"><span data-tz-note>Times are UK time.</span> Times are approximate: matches can start late or run over, so a match may not have started when its time passes. Tap a played match for point by point. Order of play and results from World Table Tennis.</p>
 </section>'''

@@ -95,7 +95,7 @@
 
   const when = (iso) => {
     if (!iso) return "Time to be confirmed";
-    const d = new Date(iso), uk = { timeZone: "Europe/London" };
+    const d = new Date(iso), uk = {};
     const today = new Date().toLocaleDateString("en-GB", uk) === d.toLocaleDateString("en-GB", uk);
     const t = d.toLocaleTimeString("en-GB", { ...uk, hour: "2-digit", minute: "2-digit" });
     return today ? t : `${d.toLocaleDateString("en-GB", { ...uk, weekday: "short" })} ${t}`;

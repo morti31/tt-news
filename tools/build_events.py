@@ -107,9 +107,9 @@ def _fixtures(ev, schedule):
         days.setdefault(_uk(f["start"]).date(), []).append(f)
     prefix = ev["name"] + ": "
     for d, items in days.items():
-        rows = "".join(f'<li><time datetime="{e(f["start"])}">{_uk(f["start"]):%H:%M}</time><span>{e(_cap(f["name"].removeprefix(prefix)))}</span></li>' for f in items)
+        rows = "".join(f'<li><time datetime="{e(f["start"])}" data-lt="hm">{_uk(f["start"]):%H:%M}</time><span>{e(_cap(f["name"].removeprefix(prefix)))}</span></li>' for f in items)
         out.append(f'<div class="fx-day"><h3>{d:%A} {d.day} {d:%B}</h3><ul class="fx-list">{rows}</ul></div>')
-    return f'<section class="hub-sec" id="schedule"><h2 class="section-title">Schedule</h2><p class="small">UK time. Session and match times from the organiser and published order of play.</p>{"".join(out)}</section>'
+    return f'<section class="hub-sec" id="schedule"><h2 class="section-title">Schedule</h2><p class="small"><span data-tz-note>Times are UK time.</span> Times are approximate: sessions and matches can start late or run over. Session and match times from the organiser and published order of play.</p>{"".join(out)}</section>'
 
 
 def _rank(m):
