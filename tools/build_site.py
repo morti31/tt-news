@@ -316,7 +316,7 @@ def short_when(iso):
 def block(p):
     """One body item: "## Heading", a list ("- item" lines), or a paragraph."""
     if p.startswith("## "):
-        return f'<h2 class="body-h">{e(p[3:])}</h2>'
+        return f'<h2 class="body-h" id="{re.sub(r"[^a-z0-9]+", "-", p[3:].lower()).strip("-")}">{e(p[3:])}</h2>'
     if p.startswith("- "):
         items = [x[2:] for x in p.split("\n") if x.startswith("- ")]
         return '<ul class="body-list">' + "".join(f"<li>{linkify(x)}</li>" for x in items) + "</ul>"
@@ -360,6 +360,20 @@ def autolink(blocks, a):
             parts[i] = t
         out.append("".join(parts))
     return out
+
+
+def key_matches(a, ev):
+    """The headline results of a day review, labelled as a selection, with links to the full results."""
+    sb = components.scoreboard(a.get("matches"))
+    if not sb:
+        return ""
+    links = []
+    if any(re.match(r"results in full", p[3:], re.I) for p in a["body"] if p.startswith("## ")):
+        links.append('<a href="#results-in-full">The day\'s results in full</a>')
+    if ev:
+        links.append(f'<a href="/events/{e(ev["id"])}.html#matches">All matches and results: {e(ev["name"])} {e(ev["year"])}</a>')
+    return (f'<div class="key-matches"><h2 class="km-title">Key matches</h2>'
+            f'{f"<p class=km-links>{chr(32).join(links)}</p>" if links else ""}{sb}</div>')
 
 
 def words_of(a):
@@ -437,7 +451,7 @@ def article_page(a, others, brief=False):
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
-  {components.scoreboard(a.get("matches"))}
+  {key_matches(a, ev)}
   {components.video_hero(vids[0]) if vids else hero(a)}
   <div class="article-body">
 {paras}

@@ -1083,3 +1083,7 @@ html.mp-open { overflow: hidden; }
 @media (max-width: 760px) { .lv-cols, .lv-ko { grid-template-columns: minmax(0, 1fr); } .onnow-inner { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 420px) { .lv-strip { grid-template-columns: minmax(0, 1fr); } }
 .onnow { overflow-x: clip; }
+
+.key-matches { margin: 18px 0 8px; }
+.km-title { font: 800 13px/1 "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 6px; }
+.km-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0 0 12px; font-size: 14px; font-weight: 600; }
