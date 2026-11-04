@@ -101,6 +101,7 @@ async function live(eventId, ctx, env, origin, all = false) {
     cached(`${WTT}/GetOfficialResult?EventId=${eventId}&include_match_card=true&take=${all ? 150 : 40}`, ctx, 45),   // all: every result of the event (event pages)
     rankMap(env, origin, ctx),
   ]);
+  let dbg = null;
   const liveNow = (now || []).map((x) => match(x.match_card, ranks)).filter(Boolean);
   const results = (done || []).map((x) => match(x.match_card, ranks)).filter(Boolean);
   // WTT's result list can lag behind: matches on the order of play that started a while ago and are in neither
@@ -126,8 +127,8 @@ async function live(eventId, ctx, env, origin, all = false) {
     }));
     for (const m of found.filter(Boolean)) (m.status === "live" ? liveNow : results).push(m);
     results.sort((a, b) => String(b.start || "").localeCompare(String(a.start || "")));
-  } catch (e) { /* the lists from WTT stand */ }
-  return { event: eventId, updated: new Date().toISOString(), live: liveNow, results };
+  } catch (e) { dbg = String(e && e.stack || e); }
+  return { event: eventId, updated: new Date().toISOString(), live: liveNow, results, ...(dbg ? { dbg } : {}) };
 }
 
 // ---- One match, point by point: GET /api/match?event=3250&code=TTEMSINGLES-...
