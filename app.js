@@ -140,10 +140,11 @@
         if (!live.length && !done.length && !fx.next.length) return;
         const grp = (lab, cards, cls = "") => cards.length ? `<div class="lv-grp ${cls}"><span class="lab">${lab}</span><div class="lv-strip${cls ? "" : " one"}">${cards.join("")}</div></div>` : "";
         const F = window.ElevenFixtures;
-        box.innerHTML = grp('<span class="live-dot"></span>Live now', live.map(scoreCard), "lv-wide")
+        const html = grp('<span class="live-dot"></span>Live now', live.map(scoreCard), "lv-wide")
           + `<div class="lv-cols">${grp("Next up", fx.next.map((x) => F.card(x, onHub)))}${grp("Latest results", done.map(scoreCard))}</div>`
           + (fx.knock.length ? `<div class="lv-grp lv-knock"><span class="lab">Semi-finals and finals</span><div class="lv-ko">${fx.knock.map((k) =>
               `<div><h3>${esc(k.name)}</h3><div class="lv-strip one">${k.items.map((x) => F.card(x, onHub, { short: true })).join("")}</div></div>`).join("")}</div></div>` : "");
+        if (box.dataset.h !== html) { box.dataset.h = html; box.innerHTML = html; }   // redraw only when something changed, so nothing flickers or loses a tap
       } catch (e) { /* keep the last scores showing */ }
     };
     tick();

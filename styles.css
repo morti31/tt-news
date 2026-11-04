@@ -1071,3 +1071,15 @@ html.mp-open { overflow: hidden; }
 .hub-news .archive-item p { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .mc-filter button { white-space: nowrap; }
 @media (max-width: 560px) { .mc-row { grid-template-columns: 46px minmax(0, 1fr) 22px; } .mc-filter button { font-size: 13px; padding: 6px 10px; } }
+
+/* Home page live panel on narrow phones: grid columns may shrink below their content, so long names
+   truncate instead of widening the page (which made iOS Safari zoom out and shift) */
+.onnow-inner, .onnow-live, #onnow-live, .lv-grp, .lv-cols > *, .lv-ko > * { min-width: 0; }
+.lv-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lv-strip.one { grid-template-columns: minmax(0, 1fr); }
+.lv-cols, .lv-ko { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lv-strip .score-card { min-width: 0; max-width: 100%; box-sizing: border-box; }
+#onnow-live .lv-wide .lv-strip { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+@media (max-width: 760px) { .lv-cols, .lv-ko { grid-template-columns: minmax(0, 1fr); } .onnow-inner { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 420px) { .lv-strip { grid-template-columns: minmax(0, 1fr); } }
+.onnow { overflow-x: clip; }
