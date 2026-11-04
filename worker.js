@@ -122,10 +122,21 @@ async function matchDetail(eventId, code, ctx, env, origin) {
   const comps = card.competitiors || [];
   const side = (x) => (x === "H" || x === (comps[0] || {}).competitiorId ? 0 : x === "A" || x === (comps[1] || {}).competitiorId ? 1 : null);
   const best = Number((card.matchConfig || {}).bestOfXGames) || 5, need = Math.ceil(best / 2);
-  const msgs = ((card.full_msg || {}).PlayByPlay || []).map((x) => x.MessagePayLoad || {})
-    .filter((x) => x.Competition && Array.isArray(x.Competition.ActionsProgressionByGame))
+  const all = ((card.full_msg || {}).PlayByPlay || []).map((x) => x.MessagePayLoad || {}).filter((x) => x.Competition);
+  const msgs = all.filter((x) => Array.isArray(x.Competition.ActionsProgressionByGame))
     .sort((a, b) => Number(b.SequenceNumber) - Number(a.SequenceNumber));
-  const acts = msgs.length ? msgs[0].Competition.ActionsProgressionByGame : [];
+  let acts = msgs.length ? msgs[0].Competition.ActionsProgressionByGame : [];
+  if (!acts.length && m.status === "live") {
+    // While a match is on, WTT sends only the last few actions (one per message). Keep every action seen so far
+    // in the cache, so the list builds up while the match is open; the full record arrives when it finishes.
+    const key = new Request(`https://eleven.internal/pbp/${eventId}/${code}`), cache = caches.default;
+    let kept = [];
+    try { const hit = await cache.match(key); if (hit) kept = await hit.json(); } catch (e) {}
+    const seen = new Map(kept.map((a) => [a._n, a]));
+    for (const x of all) if (x.Competition.Actions && x.SequenceNumber !== undefined) seen.set(Number(x.SequenceNumber), { ...x.Competition.Actions, _n: Number(x.SequenceNumber) });
+    acts = [...seen.values()].sort((a, b) => a._n - b._n);
+    ctx.waitUntil(cache.put(key, new Response(JSON.stringify(acts), { headers: { "Cache-Control": "max-age=7200" } })));
+  }
   const games = [], won = [0, 0];
   for (const a of acts) {
     const g = /^G(\d+)$/.exec(a.Period || "");
@@ -137,14 +148,14 @@ async function matchDetail(eventId, code, ctx, env, origin) {
       const p = { k: "p", s: side(a.ServerCompetitor), w: side(a.IsWinner), h, a: aw };
       const lead = h > aw ? 0 : aw > h ? 1 : null, top = Math.max(h, aw);
       const over = top >= 11 && Math.abs(h - aw) >= 2;
-      if (over) won[lead] += 1;
-      else if (lead !== null && top >= 10) p.tag = won[lead] === need - 1 ? "MP" : "GP";
+      const before = m.games.slice(0, n).filter((gm) => gm[lead === 1 ? 1 : 0] > gm[lead === 1 ? 0 : 1]).length;   // games already won by the leader
+      if (!over && lead !== null && top >= 10) p.tag = before === need - 1 ? "MP" : "GP";
       games[n].push(p);
     } else if (a.ActionType === "TO" && a.TimeoutStatus === "START") {
       games[n].push({ k: "to", by: side(a.TimeoutRequestedBy), h, a: aw });
     }
   }
-  return { ...m, best, points: games.filter((g) => g.length) };
+  return { ...m, best, points: m.status === "live" ? games : games.filter((g) => g.length), partial: m.status === "live" && !msgs.length };
 }
 
 // ---- WTT's YouTube streams: what's live now, or the latest finished stream to watch back
