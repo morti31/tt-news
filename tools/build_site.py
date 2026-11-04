@@ -362,6 +362,23 @@ def autolink(blocks, a):
     return out
 
 
+def km_title(a):
+    """Heading for the headline results: "Key matches" for early rounds, the round's own name once the
+    matches shown are all from the quarter-finals, semi-finals or final."""
+    rounds = set()
+    for m in a.get("matches") or []:
+        l = (m.get("label") or "").lower().replace("semifinal", "semi-final").replace("quarterfinal", "quarter-final")
+        r = l.rsplit(", ", 1)[-1]
+        rounds.add("final" if r in ("final", "finals") else r)
+    if rounds == {"final"}:
+        return "The finals" if len(a["matches"]) > 1 else "The final"
+    if rounds <= {"final", "semi-final"} and "semi-final" in rounds:
+        return "Semi-finals and finals" if "final" in rounds else "The semi-finals"
+    if rounds == {"quarter-final"}:
+        return "The quarter-finals"
+    return "Key matches"
+
+
 def key_matches(a, ev):
     """The headline results of a day review, labelled as a selection, with links to the full results."""
     sb = components.scoreboard(a.get("matches"))
@@ -372,7 +389,7 @@ def key_matches(a, ev):
         links.append('<a href="#results-in-full">The day\'s results in full</a>')
     if ev:
         links.append(f'<a href="/events/{e(ev["id"])}.html#matches">All matches and results: {e(ev["name"])} {e(ev["year"])}</a>')
-    return (f'<div class="key-matches"><h2 class="km-title">Key matches</h2>'
+    return (f'<div class="key-matches"><h2 class="km-title">{e(km_title(a))}</h2>'
             f'{f"<p class=km-links>{chr(32).join(links)}</p>" if links else ""}{sb}</div>')
 
 
