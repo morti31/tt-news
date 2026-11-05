@@ -1166,8 +1166,6 @@ html.mp-open { overflow: hidden; }
 .tags li { margin: 0; }
 .tg { display: inline-block; font: 600 12px/1 "Figtree", sans-serif; padding: 6px 10px; border-radius: 999px; background: var(--card, #fff); color: var(--ink); border: 1px solid var(--rule); text-decoration: none; white-space: nowrap; }
 .tg:hover { border-color: var(--ink); text-decoration: none; }
-.tg-tournament { background: var(--ink); color: #fff; border-color: var(--ink); }
-.tg-tournament:hover { opacity: .85; }
 .article-byline + .tags { margin: -4px 0 18px; }
 .archive-item .tags { padding: 0 24px 16px; margin: 0; }
 .archive-item a + .tags { margin-top: -8px; border-bottom: 1px solid var(--rule); padding-bottom: 14px; }
@@ -1184,10 +1182,7 @@ html.mp-open { overflow: hidden; }
 .tag-index li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--rule); break-inside: avoid; }
 .tag-index a { color: inherit; font-weight: 600; }
 .tag-page .archive { margin-top: 0; }
-@media (prefers-color-scheme: dark) { .tg-tournament { background: #e8edf3; color: #17202b; border-color: #e8edf3; } }
 .archive-item .tags a.tg, .hub-news .archive-item .tags a.tg { display: inline-block; padding: 6px 10px; border-radius: 999px; box-shadow: none; border: 1px solid var(--rule); background: var(--card, #fff); color: var(--ink); }
-.archive-item .tags a.tg-tournament { background: var(--ink); color: #fff; border-color: var(--ink); }
-@media (prefers-color-scheme: dark) { .archive-item .tags a.tg-tournament { background: #e8edf3; color: #17202b; border-color: #e8edf3; } }
 .archive-item .tags { padding: 0 0 16px; }
 .archive-item:has(.tags) { border-bottom: 1px solid var(--rule); }
 .archive-item .tags { margin-top: 10px; }

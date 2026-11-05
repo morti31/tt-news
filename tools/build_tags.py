@@ -26,7 +26,7 @@ def chips(tg, slugs, n=MAX_TAGS, skip=None):
 
 def topics(tg, slugs):
     """All of a story's tags, at the foot of the article."""
-    row = chips(tg, slugs, 8)
+    row = chips(tg, slugs, 40)
     return f'<section class="article-topics"><h2>Topics</h2>{row}</section>' if row else ""
 
 

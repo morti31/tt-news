@@ -199,7 +199,7 @@ class Tagger:
                 continue
             v = min(nt, 2) * 10 + min(ns, 2) * 4 + min(nb, 2 if kind == "country" else 6)
             if not (nt or ns):    # a name in the body alone does not make a tag, unless it comes up again and again
-                if kind == "tournament" or (kind == "country" and nb < 6) or (kind == "club" and nb < 3) or (kind == "player" and nb < 3):
+                if kind == "tournament" or (kind == "country" and nb < 6) or (kind == "club" and nb < 3) or (kind == "player" and nb < 2):
                     continue
             add(slug, v)
         # WTT events without a hub page ("WTT Feeder Chennai") and the story's own event
@@ -254,6 +254,15 @@ class Tagger:
         # Keep a country only when it is a main subject
         out.sort(key=lambda s: (TYPE_ORDER.index(self.tags[s]["type"]), -sc[s]))
         return out
+
+
+def footer(tg, sc):
+    """Every tag for the foot of an article: the best eight, plus every player named at least twice."""
+    out = tg.pick(sc, 8)
+    extra = [s for s in sorted(sc, key=lambda x: -sc[x]) if tg.tags[s]["type"] == "player" and sc[s] >= 2 and s not in out]
+    out += extra
+    out.sort(key=lambda s: (TYPE_ORDER.index(tg.tags[s]["type"]), -sc[s]))
+    return out
 
 
 def load_registry():

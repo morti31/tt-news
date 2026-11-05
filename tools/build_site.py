@@ -196,7 +196,7 @@ def make_tags(arts):
                        "matches": a.get("matches"), "manual": a.get("tags")})
         disp = tg.pick(sc)
         tagmap[key] = disp
-        full[key] = tg.pick(sc, 8)
+        full[key] = tagmod.footer(tg, sc)
         kind = a.get("kind") or a["category"]
         if a.get("day") and kind in ("Preview", "Review"):
             kind = f"Day {a['day']} {kind.lower()}"
