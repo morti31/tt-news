@@ -253,21 +253,22 @@ def mltt():
         if not d["pagination"].get("hasNextPage"):
             break
         page += 1
-    sch = json.loads(get(f"{MLTT}/schedules"))["data"]
-    season = max((s for x in sch for s in x.get("seasons", [])), key=lambda s: int(re.sub(r"\D", "", s) or 0))
-    ids = {x["id"] for x in sch if season in x.get("seasons", [])}
-    where = {x["id"]: x.get("city") for x in sch}
+    # The season runs from September to April: everything from 1 August of the season's first year
+    today = dt.date.today()
+    y0 = today.year if today.month >= 8 else today.year - 1
+    lo, hi = f"{y0}-08-01", f"{y0 + 1}-08-01"
+    season = f"{y0}-{str(y0 + 1)[2:]}"
     now = dt.datetime.now(UTC)
     matches, rec = [], {}
     for m in out:
-        if m.get("scheduleId") not in ids:
+        if not (lo <= m.get("date", "") < hi):
             continue
         h, a = m["team1"]["name"], m["team2"]["name"]
         ph, pa = m["team1"].get("points"), m["team2"].get("points")
         when = dt.datetime.fromisoformat(m["startDateTime"].replace("Z", "+00:00"))
         done = ph is not None and pa is not None and (ph != pa or ph > 0)
         status = "finished" if done and when < now - dt.timedelta(hours=3) else "live" if done else "scheduled"
-        matches.append({"when": iso(when), "home": h, "away": a, "score": [ph, pa] if done else None, "status": status, "venue": m.get("city") or where.get(m["scheduleId"])})
+        matches.append({"when": iso(when), "home": h, "away": a, "score": [ph, pa] if done else None, "status": status, "venue": m.get("city")})
         if status == "finished":
             for t, us, them in ((h, ph, pa), (a, pa, ph)):
                 r = rec.setdefault(t, {"team": t, "p": 0, "w": 0, "l": 0, "for": 0, "against": 0})
