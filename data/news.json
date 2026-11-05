@@ -1,7 +1,183 @@
 {
-  "updated": "2026-11-05T16:25:00Z",
+  "updated": "2026-11-05T20:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day3-review",
+      "kind": "Review",
+      "day": 3,
+      "category": "International",
+      "date": "2026-11-05",
+      "published": "2026-11-05T20:45:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "top": true,
+      "headline": "WTT Champions Frankfurt day three review: Wen Ruibo knocks out Wang Chuqin as Duda beats Jang Woojin",
+      "summary": "Wen Ruibo beat Wang Chuqin 3-0 and Benedikt Duda knocked out Jang Woojin on day three of WTT Champions Frankfurt, where Hana Goda and Satsuki Odo reached the quarter-finals.",
+      "matches": [
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Wen Ruibo",
+              "nat": "CHN"
+            },
+            {
+              "name": "Wang Chuqin",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Hana Goda",
+              "nat": "EGY"
+            },
+            {
+              "name": "Natalia Bajor",
+              "nat": "POL"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 32",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Benedikt Duda",
+              "nat": "GER"
+            },
+            {
+              "name": "Jang Woojin",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              3,
+              11
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Satsuki Odo",
+              "nat": "JPN"
+            },
+            {
+              "name": "Bernadette Szőcs",
+              "nat": "ROU"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "EcZoINgkP-Y",
+          "title": "Wen Ruibo v Wang Chuqin, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "v-bNbTLWJCQ",
+          "title": "Amy Wang v Kuai Man, women's singles last 32",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "_EKu2S6mrqo",
+          "title": "Benedikt Duda v Jang Woojin, men's singles last 32",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
     {
       "id": "annett-kaufmann-online-hate-regulation-2026",
       "category": "International",
@@ -34,9 +210,45 @@
       "kind": "Update",
       "date": "2026-11-05",
       "published": "2026-11-05T16:20:00Z",
-      "headline": "Youth Olympic Games: Otálvaro meets Kawakami and Loy Ming Ying faces Chen Min-hsin in the singles finals",
-      "summary": "Colombia's Emanuel Otálvaro and Singapore's Loy Ming Ying both beat higher seeds to reach the Youth Olympic singles finals in Dakar, where they play Japan's Ryusei Kawakami and Taiwan's Chen Min-hsin.",
+      "headline": "Youth Olympic Games: Ryusei Kawakami and Chen Min-hsin win the singles titles in Dakar",
+      "summary": "Japan's Ryusei Kawakami beat Colombia's Emanuel Otálvaro and Taiwan's Chen Min-hsin beat Singapore's Loy Ming Ying, both 4-2, in the Youth Olympic singles finals.",
       "matches": [
+        {
+          "label": "Men's singles final",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Ryusei Kawakami",
+              "nat": "JPN"
+            },
+            {
+              "name": "Emanuel Otálvaro",
+              "nat": "COL"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ]
+        },
+        {
+          "label": "Women's singles final",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Chen Min-hsin",
+              "nat": "TPE"
+            },
+            {
+              "name": "Loy Ming Ying",
+              "nat": "SGP"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ]
+        },
         {
           "label": "Men's singles semi-final",
           "event": "Youth Olympic Games, Dakar",
@@ -177,12 +389,24 @@
         }
       ],
       "body": [
-        "Emanuel Otálvaro and Loy Ming Ying will play for Youth Olympic singles gold in Dakar on Thursday evening after both knocked out seeded opponents in the semi-finals.",
-        "Otálvaro, the 16-year-old Colombian who ended China's medal run by beating Li Hechen in the quarter-finals, beat Hong Kong's Li Ki Ho 4-1 (11-6, 11-7, 9-11, 11-6, 11-7), recovering from 7-4 down in the fifth game. He meets Japan's top seed Ryusei Kawakami, who beat South Korea's Lee Seungsoo 4-2, at 6.15pm UK time.",
-        "Loy, Singapore's 16-year-old 10th seed, beat Hong Kong's second seed Su Tsz Tung 4-2 (5-11, 11-6, 11-9, 7-11, 11-8, 11-9). Her opponent in the final is Taiwan's fifth seed Chen Min-hsin, 17, who beat the top seed Miku Matsushima 4-0 (12-10, 11-6, 11-5, 11-6). Chen's medal is Taiwan's first in Youth Olympic women's singles.",
-        "The women's final starts at 5.30pm UK time. Kawakami and Matsushima won the mixed doubles gold for Japan on Tuesday, beating Su and Li in the final."
+        "Japan's Ryusei Kawakami and Taiwan's Chen Min-hsin won the Youth Olympic singles titles in Dakar on Thursday evening, both by four games to two.",
+        "Kawakami, the top seed, won the first three games against Colombia's Emanuel Otálvaro, who won the next two before Kawakami closed out the match 11-6. Kawakami, who won the mixed doubles gold with Miku Matsushima on Tuesday, now has two gold medals in Dakar. Otálvaro, 16, had knocked out China's Li Hechen in the quarter-finals.",
+        "Chen, 17 and the fifth seed, beat Singapore's 16-year-old Loy Ming Ying, the 10th seed, 4-2. Chen also won the mixed doubles bronze with Lin Chin-ting.",
+        "Loy's silver equals Singapore's best Youth Olympic table tennis result, Isabelle Li's runner-up finish at the first Games in Singapore in 2010. \"I am happy to be able to fly the Singapore flag,\" she said, adding that she struggled to return Chen's serve towards the end."
       ],
       "sources": [
+        {
+          "name": "Vanguardia (Spanish): Otálvaro takes silver after the final against Japan",
+          "url": "https://www.vanguardia.com/deportes/otros-deportes/2026/11/05/emanuel-otalvaro-se-quedo-con-la-medalla-de-plata-en-dakar-2026-tras-una-emocionante-final-ante-japon/"
+        },
+        {
+          "name": "The Straits Times via Red Hot Singapore: Loy Ming Ying wins silver",
+          "url": "https://www.redhot.sg/s-pore-s-loy-ming-ying-wins-table-tennis-silver-at-youth-olympics-736221.html"
+        },
+        {
+          "name": "CTS/CNA (Chinese): Lin Chin-ting and Chen Min-hsin win mixed doubles bronze",
+          "url": "https://news.cts.com.tw/cna/sports/202611/202611043097139.html"
+        },
         {
           "name": "Colombia.com (Spanish): Otálvaro reaches the final in Dakar",
           "url": "https://www.colombia.com/deportes/juegos-olimpicos/emanuel-otalvaro-avanza-a-la-final-de-tenis-de-mesa-en-dakar-2026-610277"
@@ -203,7 +427,8 @@
           "name": "UDN (Chinese): Chen Min-hsin sweeps Matsushima to reach the final",
           "url": "https://udn.com/news/story/7003/9860319"
         }
-      ]
+      ],
+      "modified": "2026-11-05T20:40:00Z"
     },
     {
       "id": "wtt-champions-frankfurt-2026-day3-preview",
@@ -236,7 +461,6 @@
       "published": "2026-11-04T21:05:00Z",
       "event": "wtt-champions-frankfurt-2026",
       "draw": "3252",
-      "top": true,
       "headline": "WTT Champions Frankfurt day two review: Han Ying beats Wang Yidi as Germany win all six matches",
       "summary": "Germany's Han Ying beat Wang Yidi 3-0 and Dimitrij Ovtcharov set up an all-German match with Dang Qiu on day two of WTT Champions Frankfurt, where all six home players won.",
       "matches": [
