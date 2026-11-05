@@ -21,14 +21,17 @@ jobs:
           for p in $PATHS; do
             i=$((i+1))
             echo "$p" > "$i.path"
-            case "$p" in http*) U="$p";; *) U="$B/$p";; esac
+            M=""; q="$p"
+            case "$q" in POST:*) M=post; q="${q#POST:}";; esac
+            case "$q" in http*) U="$q";; *) U="$B/$q";; esac
             UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
             case "$U" in
               *wtt-website-api*) curl -s -m 25 -o "$i.body" -w "%{http_code}" -H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/" "$U" > "$i.status" || true;;
-              *) curl -s -L -m 25 -A "$UA" -H "Accept-Language: en-GB,en;q=0.9" -o "$i.body" -w "%{http_code}" "$U" > "$i.status" || true;;
+              *) if [ "$M" = post ]; then curl -s -L -m 25 -A "$UA" -X POST -H "Content-Type: application/json" -d '{}' -o "$i.body" -w "%{http_code}" "$U" > "$i.status" || true
+                 else curl -s -L -m 25 -A "$UA" -H "Accept-Language: en-GB,en;q=0.9" -o "$i.body" -w "%{http_code}" "$U" > "$i.status" || true; fi;;
             esac
             touch "$i.body"
-            case "$p" in http*) case "$p" in *wtt*|*workers.dev*) ;; *) gzip -9 "$i.body" || true;; esac;; esac
+            case "$q" in http*) case "$q" in *wtt*|*workers.dev*) ;; *) gzip -9 "$i.body" || true;; esac;; esac
           done
           git init -q && git checkout -q -b probe
           git config user.name probe && git config user.email probe@example.com
