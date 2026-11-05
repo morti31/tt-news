@@ -13,6 +13,8 @@ import build_events
 import build_rankings
 import build_guides
 import build_clubs
+import build_tags
+import tags as tagmod
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
@@ -165,6 +167,40 @@ def story_list(arts):
     out.sort(key=lambda i: i["published"], reverse=True)
     out.sort(key=lambda i: not i["top"])
     return out
+
+
+TG = None        # the Tagger (tools/tags.py)
+TAGMAP = {}      # story id or slug -> its 2 or 3 display tag slugs
+TAG_ITEMS = []   # every story with all its tags, for the tag pages
+
+
+def make_tags(arts):
+    """Find the tags of every article and short story. Returns (tagger, display tags by story, items for tag pages)."""
+    R = build_rankings.load()
+    stories = NEWS.get("stories", [])
+    ms = [m for a in arts for m in a.get("matches") or []] + [m for st in stories for m in st.get("matches") or []]
+    teams = set()
+    for f in glob.glob(os.path.join(ROOT, "data", "clubs", "*.json")):
+        d = json.load(open(f, encoding="utf-8"))
+        for g in (d.get("table") or {}).get("groups", []):
+            teams.update(r["team"] for r in g.get("rows", []))
+    tg = tagmod.Tagger(EVENTS["events"], R, ms, build_clubs.LEAGUES, teams, tagmod.load_registry())
+    have = {a.get("story_id") for a in arts}
+    rows = [(a.get("story_id") or a["slug"], a, " ".join(a["body"]), a.get("standfirst", ""), a["title"], a["slug"]) for a in arts]
+    rows += [(st["id"], st, " ".join(st.get("body") or [st["summary"]]), st["summary"], st["headline"], st["id"]) for st in stories if st["id"] not in have]
+    tagmap, items = {}, []
+    for key, a, body, stand, title, slug in rows:
+        ev = event_of(a)
+        sc = tg.score({"title": title, "standfirst": stand, "body": body, "event": ev["id"] if ev else None,
+                       "matches": a.get("matches"), "manual": a.get("tags")})
+        disp = tg.pick(sc)
+        tagmap[key] = disp
+        kind = a.get("kind") or a["category"]
+        if a.get("day") and kind in ("Preview", "Review"):
+            kind = f"Day {a['day']} {kind.lower()}"
+        items.append({"id": key, "url": f"/news/{slug}.html", "title": title, "summary": stand, "published": a.get("published") or a["date"] + "T09:00:00Z",
+                      "when": pub_time(a), "category": a["category"], "kind": kind, "event": ev["id"] if ev else None, "tags": disp, "all": list(sc)})
+    return tg, tagmap, items
 
 
 STORIES = []
@@ -435,7 +471,7 @@ def article_page(a, others, brief=False):
     more_html = "".join(
         f'<article class="promo">{story_thumb(i, seen)}<div><span class="kicker" style="color:var(--{e(i["category"])}, var(--ink))">'
         f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else i["category"])}</span>'
-        f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(TEAM["name"])}</span></div></article>'
+        f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(TEAM["name"])}</span>{build_tags.chips(TG, TAGMAP.get(i["id"], []), 2)}</div></article>'
         for i in rest[:16])
     extras = side_extras(a, ev0)
     img = a.get("image") or {}
@@ -469,6 +505,7 @@ def article_page(a, others, brief=False):
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
+  {build_tags.chips(TG, TAGMAP.get(a.get("story_id") or a["slug"], []))}
   {key_matches(a, ev)}
   {components.video_hero(vids[0]) if vids else hero(a)}
   <div class="article-body">
@@ -564,6 +601,10 @@ def main():
     global STORIES
     arts = load_articles()
     STORIES = story_list(arts)
+    global TG, TAGMAP, TAG_ITEMS
+    TG, TAGMAP, TAG_ITEMS = make_tags(arts)
+    json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v] for k, v in TAGMAP.items() if v},
+              open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)
     global TOP
     TOP = top_stories(STORIES)
     json.dump([i["id"] for i in TOP], open(os.path.join(ROOT, "data", "top-stories.json"), "w"))
@@ -576,7 +617,7 @@ def main():
 
     def archive_item(a):
         return (f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(a['category'])}</span>
-<h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a></li>""")
+<h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a>{build_tags.chips(TG, TAGMAP.get(a.get("story_id") or a["slug"], []))}</li>""")
 
     def page_url(n):
         return "/news/" if n == 1 else f"/news/page-{n}.html"
@@ -644,7 +685,7 @@ def main():
         items.sort(key=lambda x: x[0], reverse=True)
         desc = f'The official ITTF world table tennis rankings, {R["label"].split(", ", 1)[1]}: the top 100 men and women with points and movement.'
         open(os.path.join(ROOT, "rankings.html"), "w", encoding="utf-8").write(
-            page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items)))
+            page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links())))
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
 
     today = dt.date.today().isoformat()
@@ -673,6 +714,7 @@ def main():
     club_stories = [{**i, "summary": extra.get(i["id"], {}).get("summary", ""), "league": extra.get(i["id"], {}).get("league")} for i in story_list(arts)]
     club_stories.sort(key=lambda i: i["published"], reverse=True)
     urls += build_clubs.build(page, SITE, club_stories)
+    urls += build_tags.build(page, SITE, TG, TAG_ITEMS, build_rankings.load(), HUBS)
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
@@ -688,6 +730,14 @@ def main():
     rss.append("</channel></rss>")
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write("\n".join(rss) + "\n")
     print(f"built {len(arts)} articles, {briefs} short pages, archive, sitemap ({len(urls)} URLs), robots.txt, feed.xml")
+
+
+def tag_links():
+    """Player and country tags that have stories, for the rankings page."""
+    have = {s for it in TAG_ITEMS for s in it["all"]}
+    pl = {t["name"]: build_tags.url(TG, s) for s, t in TG.tags.items() if t["type"] == "player" and s in have}
+    co = {t["code"]: build_tags.url(TG, s) for s, t in TG.tags.items() if t["type"] == "country" and s in have}
+    return {"p": pl, "c": co}
 
 
 def build_hubs(arts):
@@ -830,9 +880,9 @@ def clean_url(text):
 
 def clean_urls():
     files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "calendar.ics")]
-    for d in ("news", "events", "features", "guide"):
+    for d in ("news", "events", "features", "guide", "tag"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
-    files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json")]
+    files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json", "tags.json")]
     for f in files:
         if os.path.exists(f):
             t = open(f, encoding="utf-8").read()

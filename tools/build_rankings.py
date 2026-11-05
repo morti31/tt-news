@@ -14,11 +14,10 @@ def load():
     return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else None
 
 
-def body(R, items):
+def body(R, items, links=None):
     """items: (published, url, text) for every story and article, newest first, to link players to news."""
 
-    def story(name):
-        return next((u for _, u, txt in items if name in txt), None)
+    links = links or {"p": {}, "c": {}}
 
     def move(p):
         if p["prev"] is None:
@@ -31,9 +30,10 @@ def body(R, items):
         return '<span class="mv same" aria-label="no change">–</span>'
 
     def who(p):
-        u = story(p["name"])
+        u, cu = links["p"].get(p["name"]), links["c"].get(p["nat"])
         n = f'<a href="{u}">{e(p["name"])}</a>' if u else e(p["name"])
-        return f'{components.flag(p["nat"])}<span class="rk-name">{n}</span><span class="rk-nat">{e(p["nat"])}</span>'
+        nat = f'<a href="{cu}">{e(p["nat"])}</a>' if cu else e(p["nat"])
+        return f'{components.flag(p["nat"])}<span class="rk-name">{n}</span><span class="rk-nat">{nat}</span>'
 
     def table(key, title):
         top = R[key][0]["points"] or 1
@@ -75,7 +75,7 @@ def body(R, items):
   <div class="toggle rk-toggle" role="group" aria-label="Show"><button data-g="men" aria-pressed="true">Men</button><button data-g="women" aria-pressed="false">Women</button></div>
 </div>
 <div class="rk-two rk-tables">{table("men", "Men's singles")}{table("women", "Women's singles")}</div>
-<p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a>. Player names link to their latest story on Eleven.</p>
+<p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a>. Player and country names link to every Eleven story about them.</p>
 </main>
 <script>
 (function () {{

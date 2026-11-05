@@ -9,7 +9,8 @@
   try {
     data = await fetch("data/news.json", { cache: "no-store" }).then((r) => r.json());
     const opt = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
-    const [sch, arts, hubs, top, feats] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json"), opt("data/features.json")]);
+    const [sch, arts, hubs, top, feats, tagmap] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json"), opt("data/features.json"), opt("data/tags.json")]);
+    data.tags = tagmap || {};
     data.features = Array.isArray(feats) ? feats : [];
     data.top = Array.isArray(top) ? top : [];
     data.events = sch.events || [];
@@ -41,6 +42,11 @@
     const daily = s.day && ["Preview", "Review"].includes(s.kind) ? `Day ${s.day} ${s.kind.toLowerCase()}` : s.kind === "Update" ? "Quick update" : "";
     const text = [hub ? hub.name : s.category, daily].filter(Boolean).join(" · ");
     return `<span class="kicker" style="color:var(--${s.category}, var(--ink))">${esc(text)}</span>`;
+  };
+
+  const tagRow = (s, n) => {
+    const t = (data.tags[s.id] || []).slice(0, n);
+    return t.length ? `<ul class="tags" aria-label="Tags">${t.map(([name, href, type]) => `<li><a class="tg tg-${esc(type)}" href="${esc(href)}">${esc(name)}</a></li>`).join("")}</ul>` : "";
   };
 
   // Picture order: official video, then the event poster (once per page), then a photo, then an illustration
@@ -233,7 +239,7 @@
     const rest = list.filter((s) => s !== lead);
     $("lead").innerHTML = lead ? `<article class="big">${art(lead, "big")}<div class="big-text">${kicker(lead)}
       <h1><a class="stretch" href="${esc(url(lead))}">${esc(lead.headline)}</a></h1><p>${esc(lead.summary)}</p>
-      <span class="meta">${when(lead)} · By ${esc(who(lead))}</span></div></article>`
+      <span class="meta">${when(lead)} · By ${esc(who(lead))}</span>${tagRow(lead, 3)}</div></article>`
       : '<p class="empty">Nothing in this section yet. New stories arrive with each update.</p>';
     // Top stories: the weighted order worked out at build time (prestige, freshness, results, video, events on now)
     const rank = (s) => { const k = data.top.indexOf(s.id); return k < 0 ? 999 : k; };
@@ -243,7 +249,7 @@
     $("second").innerHTML = tops.map((s) => `<li><a href="${esc(url(s))}">${esc(s.headline)}</a><span class="meta">${when(s)}</span></li>`).join("");
     $("second").closest(".tops").hidden = !tops.length;
     $("stories").innerHTML = more.map((s) => `<article class="promo">${art(s, "small")}<div>${kicker(s)}
-      <h3><a class="stretch" href="${esc(url(s))}">${esc(s.headline)}</a></h3><span class="meta">${when(s)} · By ${esc(who(s))}</span></div></article>`).join("");
+      <h3><a class="stretch" href="${esc(url(s))}">${esc(s.headline)}</a></h3><span class="meta">${when(s)} · By ${esc(who(s))}</span>${tagRow(s, 2)}</div></article>`).join("");
     $("empty").hidden = more.length > 0;
     fillCartoons();
     balance();
