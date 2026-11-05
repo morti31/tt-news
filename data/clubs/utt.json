@@ -1,0 +1,55 @@
+{
+ "id": "utt",
+ "auto": false,
+ "updated": "2026-11-05T15:00:00Z",
+ "season": "Season 7 (2026)",
+ "status": "Season complete: U Mumba TT are champions",
+ "source": {
+  "name": "Ultimate Table Tennis",
+  "url": "https://www.ultimatetabletennis.in/"
+ },
+ "table": {
+  "columns": [],
+  "groups": []
+ },
+ "note": "Dempo Goa Challengers went through the league phase unbeaten before losing the final.",
+ "matches": [
+  {
+   "when": "2026-07-25T14:00:00Z",
+   "home": "Dempo Goa Challengers",
+   "away": "Dabang Delhi TTC",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Semi-final",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T14:00:00Z",
+   "home": "U Mumba TT",
+   "away": "HVR Kolkata ThunderBlades",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Semi-final",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T14:00:00Z",
+   "home": "U Mumba TT",
+   "away": "Dempo Goa Challengers",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Final",
+   "venue": "Goa",
+   "date_only": true
+  }
+ ]
+}

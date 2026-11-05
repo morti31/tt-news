@@ -1,0 +1,173 @@
+{
+ "id": "proa-men",
+ "auto": false,
+ "updated": "2026-11-05T15:00:00Z",
+ "season": "2026-27",
+ "status": "Regular season, after matchday 4",
+ "source": {
+  "name": "FFTT",
+  "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": null,
+    "rows": [
+     {
+      "pos": 1,
+      "team": "SPO Rouen",
+      "p": 4,
+      "w": 4,
+      "l": 0,
+      "pts": 16
+     },
+     {
+      "pos": 1,
+      "team": "Loire Nord TT (Roanne)",
+      "p": 4,
+      "w": 4,
+      "l": 0,
+      "pts": 16
+     },
+     {
+      "pos": 3,
+      "team": "GV Hennebont",
+      "p": 4,
+      "w": 3,
+      "l": 1,
+      "pts": 14
+     },
+     {
+      "pos": 4,
+      "team": "Bruille",
+      "p": 4,
+      "w": 3,
+      "l": 1,
+      "pts": 13
+     },
+     {
+      "pos": 5,
+      "team": "TFTT Thorigné-Fouillard",
+      "p": 4,
+      "w": 2,
+      "l": 2,
+      "pts": 10
+     },
+     {
+      "pos": 6,
+      "team": "Alliance Nîmes/Montpellier",
+      "p": 4,
+      "w": 1,
+      "l": 3,
+      "pts": 9
+     },
+     {
+      "pos": 7,
+      "team": "La Romagne",
+      "p": 4,
+      "w": 1,
+      "l": 3,
+      "pts": 7
+     },
+     {
+      "pos": 8,
+      "team": "Loups d'Angers",
+      "p": 4,
+      "w": 1,
+      "l": 3,
+      "pts": 4
+     },
+     {
+      "pos": 9,
+      "team": "TT Saint-Denis",
+      "p": 4,
+      "w": 1,
+      "l": 3,
+      "pts": 4
+     },
+     {
+      "pos": 10,
+      "team": "Chartres",
+      "p": 4,
+      "w": 0,
+      "l": 4,
+      "pts": 4
+     }
+    ]
+   }
+  ],
+  "note": "Pro A awards points for each team match according to the score, so teams with the same record can have different totals."
+ },
+ "matches": [
+  {
+   "when": null,
+   "home": "Loire Nord TT (Roanne)",
+   "away": "Bruille",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": null,
+   "home": "Loups d'Angers",
+   "away": "SPO Rouen",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": null,
+   "home": "TFTT Thorigné-Fouillard",
+   "away": "GV Hennebont",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": null,
+   "home": "Alliance Nîmes/Montpellier",
+   "away": "TT Saint-Denis",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": null,
+   "home": "La Romagne",
+   "away": "Chartres",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": "2026-11-24T18:30:00Z",
+   "home": "SPO Rouen",
+   "away": "Alliance Nîmes/Montpellier",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 5",
+   "venue": "Rouen"
+  }
+ ]
+}

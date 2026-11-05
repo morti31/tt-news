@@ -1,0 +1,178 @@
+{
+ "id": "proa-women",
+ "auto": false,
+ "updated": "2026-11-05T15:00:00Z",
+ "season": "2026-27",
+ "status": "Regular season, after matchday 3",
+ "source": {
+  "name": "FFTT",
+  "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "l"
+  ],
+  "groups": [
+   {
+    "name": null,
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Étival",
+      "p": 3,
+      "w": 3,
+      "l": 0
+     },
+     {
+      "pos": 2,
+      "team": "Grand-Quevilly",
+      "p": 3,
+      "w": 2,
+      "l": 1
+     },
+     {
+      "pos": 2,
+      "team": "Le Mans",
+      "p": 3,
+      "w": 2,
+      "l": 1
+     },
+     {
+      "pos": 2,
+      "team": "Metz TT",
+      "p": 3,
+      "w": 2,
+      "l": 1
+     },
+     {
+      "pos": 2,
+      "team": "Poitiers",
+      "p": 3,
+      "w": 2,
+      "l": 1
+     },
+     {
+      "pos": 2,
+      "team": "Saint-Denis",
+      "p": 3,
+      "w": 2,
+      "l": 1
+     },
+     {
+      "pos": 2,
+      "team": "Saint-Quentin",
+      "p": 3,
+      "w": 2,
+      "l": 1
+     },
+     {
+      "pos": 8,
+      "team": "Joué-lès-Tours",
+      "p": 3,
+      "w": 1,
+      "l": 2
+     },
+     {
+      "pos": 8,
+      "team": "Alliance Nîmes/Montpellier",
+      "p": 3,
+      "w": 1,
+      "l": 2
+     },
+     {
+      "pos": 8,
+      "team": "Quimper",
+      "p": 3,
+      "w": 1,
+      "l": 2
+     },
+     {
+      "pos": 11,
+      "team": "Lys Lille Métropole",
+      "p": 3,
+      "w": 0,
+      "l": 3
+     },
+     {
+      "pos": 11,
+      "team": "Entente Saint-Pierraise",
+      "p": 3,
+      "w": 0,
+      "l": 3
+     }
+    ]
+   }
+  ],
+  "note": "Won and lost from FFTT's match reports. Teams on the same record share a place here; the official table separates them on points."
+ },
+ "matches": [
+  {
+   "when": null,
+   "home": "Metz TT",
+   "away": "Quimper",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3"
+  },
+  {
+   "when": null,
+   "home": "Étival",
+   "away": "Entente Saint-Pierraise",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 3"
+  },
+  {
+   "when": null,
+   "home": "Saint-Quentin",
+   "away": "Le Mans",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3"
+  },
+  {
+   "when": null,
+   "home": "Saint-Denis",
+   "away": "Grand-Quevilly",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3"
+  },
+  {
+   "when": null,
+   "home": "Alliance Nîmes/Montpellier",
+   "away": "Poitiers",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3"
+  },
+  {
+   "when": null,
+   "home": "Lys Lille Métropole",
+   "away": "Joué-lès-Tours",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3"
+  }
+ ]
+}

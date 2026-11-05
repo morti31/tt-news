@@ -12,6 +12,7 @@ import components
 import build_events
 import build_rankings
 import build_guides
+import build_clubs
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
@@ -40,7 +41,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
 <li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/features/">Features</a></li><li><a href="/guide/">Guide</a></li><li><a href="/rankings.html">Rankings</a></li>
-<li><a href="/#Clubs">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
+<li><a href="/clubs/">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
@@ -667,6 +668,11 @@ def main():
     ns.append("</urlset>")
     open(os.path.join(ROOT, "news-sitemap.xml"), "w", encoding="utf-8").write("\n".join(ns) + "\n")
     urls += build_guides.build(page, SITE, AUTHORS, avatar, linkify)
+    # Club pages: stories with their summary and league, for the league news lists
+    extra = {s["id"]: s for s in NEWS.get("stories", [])}
+    club_stories = [{**i, "summary": extra.get(i["id"], {}).get("summary", ""), "league": extra.get(i["id"], {}).get("league")} for i in story_list(arts)]
+    club_stories.sort(key=lambda i: i["published"], reverse=True)
+    urls += build_clubs.build(page, SITE, club_stories)
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)

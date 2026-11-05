@@ -1,0 +1,72 @@
+{
+ "id": "cl-women",
+ "auto": false,
+ "updated": "2026-11-05T15:00:00Z",
+ "season": "2026-27",
+ "status": "Stage 1 complete; Stage 2 is a single group of eight",
+ "source": {
+  "name": "ETTU",
+  "url": "https://www.ettu.org/european-champions-league-women/"
+ },
+ "table": {
+  "columns": [
+   "w"
+  ],
+  "groups": [
+   {
+    "name": "Stage 1, Group A (Budaörs)",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Linz AG Froschberg",
+      "w": 3,
+      "q": true
+     },
+     {
+      "pos": 2,
+      "team": "STK Dr. Časl Zagreb",
+      "w": 2
+     },
+     {
+      "pos": 3,
+      "team": "MIRÓ Ganxets",
+      "w": 1
+     },
+     {
+      "pos": 4,
+      "team": "KU AZS Politechnika Rzeszów",
+      "w": 0
+     }
+    ]
+   },
+   {
+    "name": "Stage 1, Group B (Budaörs)",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "SKST Plus Hodonín",
+      "w": 3,
+      "q": true
+     },
+     {
+      "pos": 2,
+      "team": "ASD Quattro Mori Cagliari",
+      "w": 2
+     },
+     {
+      "pos": 3,
+      "team": "SH-ITB Budaörsi SC",
+      "w": 1
+     },
+     {
+      "pos": 4,
+      "team": "Son Cladera TTC Mallorca",
+      "w": 0
+     }
+    ]
+   }
+  ],
+  "note": "Group winners join six seeded clubs in Stage 2, where each club plays every other club once."
+ },
+ "matches": []
+}

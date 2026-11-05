@@ -1,0 +1,70 @@
+{
+ "id": "cttsl-women",
+ "auto": false,
+ "updated": "2026-11-05T15:00:00Z",
+ "season": "2026",
+ "status": "Finals in Guangzhou, 25 to 27 December",
+ "source": {
+  "name": "Chinese Table Tennis Association",
+  "url": "https://www.news.cn/sports/20260727/88752232a9894fefb7f4c5b903b33081/c.html"
+ },
+ "table": {
+  "columns": [],
+  "groups": [
+   {
+    "name": "Regular season, final order",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Shandong Luneng",
+      "q": true
+     },
+     {
+      "pos": 2,
+      "team": "Shandong Weiqiao",
+      "q": true
+     },
+     {
+      "pos": 3,
+      "team": "Shanghai Centre",
+      "q": true
+     },
+     {
+      "pos": 4,
+      "team": "Huangshi Dongchu",
+      "q": true
+     },
+     {
+      "pos": 5,
+      "team": "Shenzhen University"
+     },
+     {
+      "pos": 6,
+      "team": "Tianjin 729"
+     },
+     {
+      "pos": 7,
+      "team": "East China University of Science and Technology"
+     },
+     {
+      "pos": 8,
+      "team": "Chengdu Gaoxin Ruoshuiju"
+     }
+    ]
+   }
+  ],
+  "note": "The top four go through to the finals in Guangzhou."
+ },
+ "matches": [
+  {
+   "when": "2026-12-25T02:00:00Z",
+   "home": "Finals",
+   "away": "",
+   "score": null,
+   "status": "scheduled",
+   "round": "Finals, Guangzhou",
+   "date_only": true,
+   "label": "Super League women's finals begin in Guangzhou"
+  }
+ ]
+}
