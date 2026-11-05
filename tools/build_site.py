@@ -210,7 +210,7 @@ TOP = []   # story ids in Top stories order (see top_stories)
 
 # How much each kind of event matters, on the schedule's 1 to 5 prestige scale
 TIER_PRESTIGE = {"world": 5, "smash": 4, "continental": 3.5, "champions": 3, "star": 2, "contender": 1.5, "club": 2}
-CATEGORY_PRESTIGE = {"International": 2.5, "England": 2, "Clubs": 2, "Equipment": 1.5}
+CATEGORY_PRESTIGE = {"Features": 3, "International": 2.5, "England": 2, "Clubs": 2, "Equipment": 1.5}
 
 
 def top_stories(stories, now=None):
@@ -222,6 +222,8 @@ def top_stories(stories, now=None):
       extras     +0.15 a full article, +0.1 match results, +0.1 official video, +0.25 the event is on now
       previews   day previews count 40% less
       diversity  each further story from the same event counts 25% less, so one tournament can't fill the list
+      features   (not guides) compete too: prestige 3, freshness halves every 36 hours (they date more slowly than
+                 results), and each further feature counts half, so at most one or two sit in the list at once
     """
     now = now or dt.datetime.now(dt.timezone.utc)
     sched = {ev["id"]: ev for ev in json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8")).get("events", [])}
@@ -241,9 +243,11 @@ def top_stories(stories, now=None):
         else:
             prestige = CATEGORY_PRESTIGE.get(i["category"], 2)
         age = max(0, (now - dt.datetime.fromisoformat(i["published"].replace("Z", "+00:00"))).total_seconds() / 3600)
-        fresh = 0.5 ** (age / 18)
+        fresh = 0.5 ** (age / (36 if i.get("feature") else 18))
         art, s = amap.get(i["id"]), raw.get(i["id"], {})
-        extras = (0.15 if art else 0) + (0.1 if (art or s).get("matches") else 0) + (0.1 if i["video"] else 0)
+        if i.get("feature"):
+            art = {}   # a full article, no match cards
+        extras = (0.15 if art is not None else 0) + (0.1 if (art or s).get("matches") else 0) + (0.1 if i["video"] else 0)
         over = bool(hub and components.champions(hub.get("draw")))   # every final played
         if hub and hub.get("start") and hub["start"] <= today <= hub["end"] and not over:
             extras += 0.25
@@ -257,11 +261,12 @@ def top_stories(stories, now=None):
     pool = sorted(scored, key=lambda x: -x[0])
     while pool:
         for x in pool:   # re-weight by how many of the same event are already in
-            x.append(x[0] * 0.75 ** per_event.get(x[1]["event"] or x[1]["id"], 0))
+            k = "features" if x[1].get("feature") else (x[1]["event"] or x[1]["id"])
+            x.append(x[0] * (0.5 if x[1].get("feature") else 0.75) ** per_event.get(k, 0))
         pool.sort(key=lambda x: -x[-1])
         best = pool.pop(0)
         out.append(best[1])
-        k = best[1]["event"] or best[1]["id"]
+        k = "features" if best[1].get("feature") else (best[1]["event"] or best[1]["id"])
         per_event[k] = per_event.get(k, 0) + 1
         for x in pool:
             del x[-1]
@@ -608,7 +613,10 @@ def main():
     json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v] for k, v in TAGMAP.items() if v},
               open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)
     global TOP
-    TOP = top_stories(STORIES)
+    feats = [{"id": a["slug"], "slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "category": "Features", "top": False,
+              "published": a.get("published", a["date"] + "T09:00:00Z"), "event": None, "video": None, "image": a.get("image"), "author": "team", "feature": True}
+             for a in arts if a.get("category") == "Features"]
+    TOP = top_stories(STORIES + feats)
     json.dump([i["id"] for i in TOP], open(os.path.join(ROOT, "data", "top-stories.json"), "w"))
     os.makedirs(os.path.join(ROOT, "news"), exist_ok=True)
     for old in glob.glob(os.path.join(ROOT, "news", "*.html")):   # start clean: merged or removed stories leave no stale pages

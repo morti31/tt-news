@@ -21,12 +21,29 @@ Eleven writes like the Guardian's sport desk: clear, confident, plainly told, wi
 - Length: a full article is at least 400 words (see UPDATE.md); short news is a quick update. Reach it with facts, results, context and quotes, never padding: a longer article must still have one idea per paragraph.
 - Match reports describe the match: the moment it turned, the run of points, the comeback. One vivid detail beats three scorelines. Give the full scoreline once, for the main match.
 
+### Storylines: find the news in the results
+
+Every report and preview should look for the story behind the scoreline, using what Eleven has already reported (earlier articles, features, the rankings, the event pages) as well as the sources. Read the site first. When one of these applies, make it a main thread, near the top, not a passing clause:
+
+- **A return from injury or a break.** Say what the injury was (if reported), how long the player was out, what they missed and where they were ranked before and now. In the match report, look for signs of rust: slow starts, lost leads, wasted game points, short rallies, anything the player says about rhythm, stiffness or confidence. Never invent a physical problem; describe what the match showed and what the player or reliable reports said. Follow it in the next round's preview and review.
+- **A withdrawal or injury during an event,** and what it does to the draw.
+- **A former world No 1 or champion** losing early, or a run of defeats.
+- **A first:** first title, first win over a top-10 player, first final, first medal for a country.
+- **Revenge or a repeat:** a rematch of a recent final, someone reversing last week's result.
+- **Teenagers and veterans** beating established players; a big age gap.
+- **Ranking consequences:** a result that will change the world No 1 or a top-10 place.
+- **Home players** at a home event, and the home nations (England, Scotland, Wales).
+- **Streaks:** unbeaten runs, a run of titles, a player who has not dropped a game.
+
+Link to the earlier Eleven story that set the storyline up.
+
 ## Features
 
 - **Register**: Guardian long read and New Yorker: intelligent, precise, sophisticated, with a point of view. Every feature carries substantial historical context, woven through it (see FEATURES.md), and is pitched at newer fans, at both new and established fans, or at expert fans, a third each (see FEATURES.md).
 - **Open on a person and a moment**, told as a scene or a single striking fact, not a summary of the argument. Bring in the bigger story by the third or fourth paragraph (the paragraph that tells the reader why this matters now).
 - Build the piece around people. Data supports the story; it isn't the story. Give no more than two or three numbers in a paragraph, and round where precision doesn't matter.
 - Lists of names and countries go in a chart or a short list sentence, never a whole paragraph of them.
+- **Quotes: more of them, and longer.** Let the players speak. A match report or day review should carry quotes from several players, winners and losers, men and women, home players and visitors, not one line from the winner. Each quote from a player or coach can run to two or three sentences (up to about 40 words) when that keeps their meaning and voice; give the full thought rather than a fragment. Use four or more quoted voices in a day review when they exist, and look beyond English sources (tischtennis.de, L'Équipe, Sina, Sohu, Nikkan Sports, Yonhap) for them. Don't quote an outlet's own reporting prose; paraphrase it.
 - Let quotes carry voice. Introduce each speaker before the quote, keep quotes exact, and don't follow a quote with a sentence that repeats it.
 - Vary sentence length. Short sentences land points; longer ones carry explanation.
 - End on an image, a quote or a sharp line that answers or reframes the opening. Never "only time will tell" or a promise of future coverage.
