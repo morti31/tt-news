@@ -24,6 +24,12 @@ def chips(tg, slugs, n=MAX_TAGS, skip=None):
     return f'<ul class="tags" aria-label="Tags">{lis}</ul>'
 
 
+def topics(tg, slugs):
+    """All of a story's tags, at the foot of the article."""
+    row = chips(tg, slugs, 8)
+    return f'<section class="article-topics"><h2>Topics</h2>{row}</section>' if row else ""
+
+
 def _date(iso):
     d = dt.date.fromisoformat(iso)
     return f"{d.day} {d:%B}"

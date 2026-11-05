@@ -170,6 +170,7 @@ def story_list(arts):
 
 
 TG = None        # the Tagger (tools/tags.py)
+TAGFULL = {}     # story id or slug -> up to 8 tags, shown at the foot of the article
 TAGMAP = {}      # story id or slug -> its 2 or 3 display tag slugs
 TAG_ITEMS = []   # every story with all its tags, for the tag pages
 
@@ -188,19 +189,20 @@ def make_tags(arts):
     have = {a.get("story_id") for a in arts}
     rows = [(a.get("story_id") or a["slug"], a, " ".join(a["body"]), a.get("standfirst", ""), a["title"], a["slug"]) for a in arts]
     rows += [(st["id"], st, " ".join(st.get("body") or [st["summary"]]), st["summary"], st["headline"], st["id"]) for st in stories if st["id"] not in have]
-    tagmap, items = {}, []
+    tagmap, items, full = {}, [], {}
     for key, a, body, stand, title, slug in rows:
         ev = event_of(a)
         sc = tg.score({"title": title, "standfirst": stand, "body": body, "event": ev["id"] if ev else None,
                        "matches": a.get("matches"), "manual": a.get("tags")})
         disp = tg.pick(sc)
         tagmap[key] = disp
+        full[key] = tg.pick(sc, 8)
         kind = a.get("kind") or a["category"]
         if a.get("day") and kind in ("Preview", "Review"):
             kind = f"Day {a['day']} {kind.lower()}"
         items.append({"id": key, "url": f"/news/{slug}.html", "title": title, "summary": stand, "published": a.get("published") or a["date"] + "T09:00:00Z",
                       "when": pub_time(a), "category": a["category"], "kind": kind, "event": ev["id"] if ev else None, "tags": disp, "all": list(sc)})
-    return tg, tagmap, items
+    return tg, tagmap, items, full
 
 
 STORIES = []
@@ -505,7 +507,6 @@ def article_page(a, others, brief=False):
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
-  {build_tags.chips(TG, TAGMAP.get(a.get("story_id") or a["slug"], []))}
   {key_matches(a, ev)}
   {components.video_hero(vids[0]) if vids else hero(a)}
   <div class="article-body">
@@ -515,6 +516,7 @@ def article_page(a, others, brief=False):
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
+  {build_tags.topics(TG, TAGFULL.get(a.get("story_id") or a["slug"], []))}
   {f'<section class="more-news"><div class="sec-head"><h2>More news</h2><a href="/news/">All news</a></div><div class="promos" id="more-news">{more_html}</div></section>' if more_html else ""}
 </article>
 <aside class="article-side">
@@ -601,8 +603,8 @@ def main():
     global STORIES
     arts = load_articles()
     STORIES = story_list(arts)
-    global TG, TAGMAP, TAG_ITEMS
-    TG, TAGMAP, TAG_ITEMS = make_tags(arts)
+    global TG, TAGMAP, TAG_ITEMS, TAGFULL
+    TG, TAGMAP, TAG_ITEMS, TAGFULL = make_tags(arts)
     json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v] for k, v in TAGMAP.items() if v},
               open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)
     global TOP

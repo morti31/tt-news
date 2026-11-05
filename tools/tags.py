@@ -248,7 +248,7 @@ class Tagger:
         for slug in ranked:
             if len(out) >= n:
                 break
-            if slug not in out and self.tags[slug]["type"] != "tournament" and not (self.tags[slug]["type"] == "country" and any(self.tags[o]["type"] == "country" for o in out)):
+            if slug not in out and (n > 3 or self.tags[slug]["type"] != "tournament") and not (n <= 3 and self.tags[slug]["type"] == "country" and any(self.tags[o]["type"] == "country" for o in out)):
                 out.append(slug)
         out = out[:n]
         # Keep a country only when it is a main subject

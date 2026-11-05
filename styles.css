@@ -1191,3 +1191,5 @@ html.mp-open { overflow: hidden; }
 .archive-item .tags { padding: 0 0 16px; }
 .archive-item:has(.tags) { border-bottom: 1px solid var(--rule); }
 .archive-item .tags { margin-top: 10px; }
+.article-topics { margin: 28px 0 0; padding-top: 18px; border-top: 1px solid var(--rule); }
+.article-topics h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 4px; }
