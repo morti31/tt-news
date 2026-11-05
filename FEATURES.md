@@ -80,15 +80,14 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 
 ## Up next
 
-1. [Expert] Is the WTT calendar breaking players? (opinion with data: events, rest days and travel for the top 20 in 2026; hook: Wang Chuqin's withdrawal from WTT Champions Montpellier)
-2. [Both] Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
-3. [Expert] After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-4. [Both] The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-5. [New] The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
-6. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-7. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-8. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
-9. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
+1. [Both] Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
+2. [Expert] After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
+3. [Both] The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+4. [New] The Lebrun effect: has one family changed French table tennis? (feature, data: French licence numbers before and after Paris 2024, crowds)
+5. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+6. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+7. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+8. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
 
 ## Done
 
@@ -98,6 +97,7 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-11-01: WTT's money, part one: China's money, and where it actually goes (`wtt-china-money-table-tennis-part-one`) [Both]
 - 2026-11-02: WTT's money, part two: where it comes from, and what the 2025 accounts show (`wtt-finances-ittf-accounts-part-two`) [Expert]
 - 2026-11-03: Why no two table tennis tables play alike (`table-tennis-tables-speed-bounce-suppliers`) [New]
+- 2026-11-05: Is the WTT calendar breaking players? The injuries and the match counts disagree (`wtt-calendar-player-workload-injuries`) [Expert]
 
 
 Series: when a feature runs in parts, name them "<Series>, part one: ..." and "<Series>, part two: ...", link each part to the other in the first paragraph, and publish the parts on consecutive days.
