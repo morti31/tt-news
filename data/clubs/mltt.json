@@ -1,0 +1,313 @@
+{
+ "id": "mltt",
+ "auto": true,
+ "updated": "2026-11-05T15:27:00Z",
+ "season": "Season 4",
+ "source": {
+  "name": "MLTT",
+  "url": "https://www.mltt.com/league/standings"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "points"
+  ],
+  "groups": [
+   {
+    "name": "East Division",
+    "rows": [
+     {
+      "team": "Princeton Revolution",
+      "p": 3,
+      "w": 2,
+      "l": 1,
+      "for": 37,
+      "against": 26,
+      "pos": 1,
+      "diff": 11
+     },
+     {
+      "team": "Atlanta Blazers",
+      "p": 3,
+      "w": 1,
+      "l": 2,
+      "for": 22,
+      "against": 41,
+      "pos": 2,
+      "diff": -19
+     },
+     {
+      "team": "Carolina Gold Rush",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 3,
+      "diff": 0
+     },
+     {
+      "team": "Florida Crocs",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 4,
+      "diff": 0
+     },
+     {
+      "team": "New York Slice",
+      "p": 3,
+      "w": 0,
+      "l": 3,
+      "for": 16,
+      "against": 47,
+      "pos": 5,
+      "diff": -31
+     }
+    ]
+   },
+   {
+    "name": "West Division",
+    "rows": [
+     {
+      "team": "Bay Area Blasters",
+      "p": 3,
+      "w": 3,
+      "l": 0,
+      "for": 48,
+      "against": 15,
+      "pos": 1,
+      "diff": 33
+     },
+     {
+      "team": "Chicago Wind",
+      "p": 6,
+      "w": 3,
+      "l": 3,
+      "for": 66,
+      "against": 60,
+      "pos": 2,
+      "diff": 6
+     },
+     {
+      "team": "Los Angeles Spinners",
+      "p": 3,
+      "w": 2,
+      "l": 1,
+      "for": 35,
+      "against": 28,
+      "pos": 3,
+      "diff": 7
+     },
+     {
+      "team": "Portland Paddlers",
+      "p": 3,
+      "w": 1,
+      "l": 2,
+      "for": 28,
+      "against": 35,
+      "pos": 4,
+      "diff": -7
+     },
+     {
+      "team": "Texas Smash",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 5,
+      "diff": 0
+     }
+    ]
+   }
+  ],
+  "note": "Eleven's table from MLTT's published results: wins first, then share of points won."
+ },
+ "matches": [
+  {
+   "when": "2026-09-11T20:00:00Z",
+   "home": "Princeton Revolution",
+   "away": "Los Angeles Spinners",
+   "score": [
+    5,
+    16
+   ],
+   "status": "finished",
+   "venue": "Duluth"
+  },
+  {
+   "when": "2026-09-11T23:30:00Z",
+   "home": "Chicago Wind",
+   "away": "Atlanta Blazers",
+   "score": [
+    7,
+    14
+   ],
+   "status": "finished",
+   "venue": "Duluth"
+  },
+  {
+   "when": "2026-09-12T20:00:00Z",
+   "home": "Princeton Revolution",
+   "away": "Chicago Wind",
+   "score": [
+    13,
+    8
+   ],
+   "status": "finished",
+   "venue": "Duluth"
+  },
+  {
+   "when": "2026-09-12T23:30:00Z",
+   "home": "Los Angeles Spinners",
+   "away": "Atlanta Blazers",
+   "score": [
+    15,
+    6
+   ],
+   "status": "finished",
+   "venue": "Duluth"
+  },
+  {
+   "when": "2026-09-13T15:00:00Z",
+   "home": "Los Angeles Spinners",
+   "away": "Chicago Wind",
+   "score": [
+    4,
+    17
+   ],
+   "status": "finished",
+   "venue": "Duluth"
+  },
+  {
+   "when": "2026-09-13T18:30:00Z",
+   "home": "Princeton Revolution",
+   "away": "Atlanta Blazers",
+   "score": [
+    19,
+    2
+   ],
+   "status": "finished",
+   "venue": "Duluth"
+  },
+  {
+   "when": "2026-09-25T21:00:00Z",
+   "home": "Portland Paddlers",
+   "away": "New York Slice",
+   "score": [
+    15,
+    6
+   ],
+   "status": "finished",
+   "venue": "Willowbrook"
+  },
+  {
+   "when": "2026-09-26T00:30:00Z",
+   "home": "Bay Area Blasters",
+   "away": "Chicago Wind",
+   "score": [
+    16,
+    5
+   ],
+   "status": "finished",
+   "venue": "Willowbrook"
+  },
+  {
+   "when": "2026-09-26T21:00:00Z",
+   "home": "Portland Paddlers",
+   "away": "Bay Area Blasters",
+   "score": [
+    5,
+    16
+   ],
+   "status": "finished",
+   "venue": "Willowbrook"
+  },
+  {
+   "when": "2026-09-27T00:30:00Z",
+   "home": "New York Slice",
+   "away": "Chicago Wind",
+   "score": [
+    5,
+    16
+   ],
+   "status": "finished",
+   "venue": "Willowbrook"
+  },
+  {
+   "when": "2026-09-27T16:00:00Z",
+   "home": "New York Slice",
+   "away": "Bay Area Blasters",
+   "score": [
+    5,
+    16
+   ],
+   "status": "finished",
+   "venue": "Willowbrook"
+  },
+  {
+   "when": "2026-09-27T19:30:00Z",
+   "home": "Portland Paddlers",
+   "away": "Chicago Wind",
+   "score": [
+    8,
+    13
+   ],
+   "status": "finished",
+   "venue": "Willowbrook"
+  },
+  {
+   "when": "2026-11-13T21:00:00Z",
+   "home": "Florida Crocs",
+   "away": "Portland Paddlers",
+   "score": null,
+   "status": "scheduled",
+   "venue": "Charlotte"
+  },
+  {
+   "when": "2026-11-14T00:30:00Z",
+   "home": "Princeton Revolution",
+   "away": "Carolina Gold Rush",
+   "score": null,
+   "status": "scheduled",
+   "venue": "Charlotte"
+  },
+  {
+   "when": "2026-11-14T21:00:00Z",
+   "home": "Florida Crocs",
+   "away": "Princeton Revolution",
+   "score": null,
+   "status": "scheduled",
+   "venue": "Charlotte"
+  },
+  {
+   "when": "2026-11-15T00:30:00Z",
+   "home": "Portland Paddlers",
+   "away": "Carolina Gold Rush",
+   "score": null,
+   "status": "scheduled",
+   "venue": "Charlotte"
+  },
+  {
+   "when": "2026-11-15T16:00:00Z",
+   "home": "Portland Paddlers",
+   "away": "Princeton Revolution",
+   "score": null,
+   "status": "scheduled",
+   "venue": "Charlotte"
+  },
+  {
+   "when": "2026-11-15T19:30:00Z",
+   "home": "Florida Crocs",
+   "away": "Carolina Gold Rush",
+   "score": null,
+   "status": "scheduled",
+   "venue": "Charlotte"
+  }
+ ]
+}

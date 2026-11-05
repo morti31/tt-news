@@ -1,0 +1,1457 @@
+{
+ "id": "ttbl",
+ "auto": true,
+ "updated": "2026-11-05T15:27:00Z",
+ "season": "2026-27",
+ "source": {
+  "name": "TTBL",
+  "url": "https://www.ttbl.de/bundesliga/table"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "games",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": null,
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Borussia Düsseldorf",
+      "p": 6,
+      "w": 6,
+      "l": 0,
+      "for": 18,
+      "against": 3,
+      "diff": 15,
+      "pts": 12
+     },
+     {
+      "pos": 2,
+      "team": "TTF Ochsenhausen",
+      "p": 6,
+      "w": 6,
+      "l": 0,
+      "for": 18,
+      "against": 6,
+      "diff": 12,
+      "pts": 12
+     },
+     {
+      "pos": 3,
+      "team": "1. FC Saarbrücken",
+      "p": 6,
+      "w": 4,
+      "l": 2,
+      "for": 13,
+      "against": 9,
+      "diff": 4,
+      "pts": 8
+     },
+     {
+      "pos": 4,
+      "team": "Borussia Dortmund",
+      "p": 6,
+      "w": 3,
+      "l": 3,
+      "for": 12,
+      "against": 12,
+      "diff": 0,
+      "pts": 6
+     },
+     {
+      "pos": 5,
+      "team": "Werder Bremen",
+      "p": 6,
+      "w": 3,
+      "l": 3,
+      "for": 12,
+      "against": 14,
+      "diff": -2,
+      "pts": 6
+     },
+     {
+      "pos": 6,
+      "team": "TTC Bad Homburg",
+      "p": 6,
+      "w": 3,
+      "l": 3,
+      "for": 12,
+      "against": 14,
+      "diff": -2,
+      "pts": 6
+     },
+     {
+      "pos": 7,
+      "team": "TTC Grenzau",
+      "p": 6,
+      "w": 3,
+      "l": 3,
+      "for": 12,
+      "against": 15,
+      "diff": -3,
+      "pts": 6
+     },
+     {
+      "pos": 8,
+      "team": "TTC Fulda-Maberzell",
+      "p": 6,
+      "w": 2,
+      "l": 4,
+      "for": 14,
+      "against": 14,
+      "diff": 0,
+      "pts": 4
+     },
+     {
+      "pos": 9,
+      "team": "ASC Grünwettersbach",
+      "p": 6,
+      "w": 2,
+      "l": 4,
+      "for": 11,
+      "against": 16,
+      "diff": -5,
+      "pts": 4
+     },
+     {
+      "pos": 10,
+      "team": "Post SV Mühlhausen",
+      "p": 6,
+      "w": 2,
+      "l": 4,
+      "for": 10,
+      "against": 16,
+      "diff": -6,
+      "pts": 4
+     },
+     {
+      "pos": 11,
+      "team": "TTC Bergneustadt",
+      "p": 6,
+      "w": 1,
+      "l": 5,
+      "for": 11,
+      "against": 17,
+      "diff": -6,
+      "pts": 2
+     },
+     {
+      "pos": 12,
+      "team": "TSV Bad Königshofen",
+      "p": 6,
+      "w": 1,
+      "l": 5,
+      "for": 9,
+      "against": 16,
+      "diff": -7,
+      "pts": 2
+     }
+    ]
+   }
+  ],
+  "note": "Two points for a win. Places 1 to 4 go through to the play-offs."
+ },
+ "matches": [
+  {
+   "when": "2026-08-16T13:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "1. FC Saarbrücken",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 1",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2026-08-16T15:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "TTC Grenzau",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 1",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2026-08-17T16:30:00Z",
+   "home": "Werder Bremen",
+   "away": "TTC Fulda-Maberzell",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 1",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2026-08-17T17:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "TTC Bergneustadt",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 1",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-08-18T16:30:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "Borussia Düsseldorf",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 1",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2026-08-18T17:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "ASC Grünwettersbach",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 1",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2026-08-21T16:30:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "Post SV Mühlhausen",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 2",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2026-08-21T17:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "TTF Ochsenhausen",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2026-08-22T17:00:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "TTC Bad Homburg",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2026-08-22T18:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "TSV Bad Königshofen",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 2",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2026-08-23T12:00:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "Borussia Dortmund",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2026-08-23T15:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "Werder Bremen",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2026-08-25T17:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "TTC Grenzau",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 3",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-08-25T17:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "TTC Fulda-Maberzell",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 3",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2026-08-26T16:30:00Z",
+   "home": "Werder Bremen",
+   "away": "Borussia Düsseldorf",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2026-08-26T16:45:00Z",
+   "home": "Borussia Dortmund",
+   "away": "ASC Grünwettersbach",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 3",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2026-08-26T17:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "TSV Bad Königshofen",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2026-08-26T17:15:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "1. FC Saarbrücken",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 3",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2026-09-01T16:30:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "Werder Bremen",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2026-09-03T17:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "Borussia Dortmund",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2026-09-05T11:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "TTC Bergneustadt",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 4",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2026-09-06T12:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "TTF Ochsenhausen",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2026-09-06T13:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "TTC Grenzau",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 4",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2026-09-06T15:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "Post SV Mühlhausen",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2026-09-13T13:00:00Z",
+   "home": "Werder Bremen",
+   "away": "ASC Grünwettersbach",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2026-09-13T13:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "TTC Bad Homburg",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2026-09-20T13:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "1. FC Saarbrücken",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-09-21T16:30:00Z",
+   "home": "Borussia Dortmund",
+   "away": "TTC Fulda-Maberzell",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2026-09-21T17:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "TSV Bad Königshofen",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2026-09-22T17:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "Borussia Düsseldorf",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2026-09-25T16:30:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "TTC Grenzau",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 6",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2026-09-25T17:00:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "TSV Bad Königshofen",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 6",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2026-09-27T12:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "Borussia Dortmund",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 6",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2026-10-23T17:00:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "Post SV Mühlhausen",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 6",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2026-10-24T17:00:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "TTF Ochsenhausen",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 6",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2026-11-02T18:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "Werder Bremen",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 6",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2026-11-08T13:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2026-11-08T14:30:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2026-11-08T16:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-11-09T18:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2026-11-10T18:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2026-11-11T18:00:00Z",
+   "home": "Werder Bremen",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2026-11-13T17:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2026-11-13T17:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2026-11-13T18:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2026-11-15T13:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2026-11-15T14:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2026-11-15T16:00:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2026-11-21T14:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 9",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2026-11-22T14:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 9",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2026-11-22T14:30:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 9",
+   "venue": "Treves"
+  },
+  {
+   "when": "2026-11-22T16:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 9",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2026-11-23T17:30:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 9",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2026-11-23T18:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 9",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-12-11T18:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2026-12-13T14:00:00Z",
+   "home": "Werder Bremen",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2026-12-13T16:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2026-12-14T18:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2026-12-14T18:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2026-12-15T18:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-12-18T17:30:00Z",
+   "home": "TTC Grenzau",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 11",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2026-12-18T18:00:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 11",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2026-12-19T13:30:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 11",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2026-12-19T14:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 11",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2026-12-20T13:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 11",
+   "venue": "Marburg"
+  },
+  {
+   "when": "2026-12-20T16:30:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 11",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2027-01-05T17:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 12",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2027-01-05T17:30:00Z",
+   "home": "Borussia Dortmund",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 12",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2027-01-05T18:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 12",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2027-01-06T17:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 12",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2027-01-06T17:30:00Z",
+   "home": "TTC Grenzau",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 12",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2027-01-07T17:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 12",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2027-01-08T17:30:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 13",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2027-01-08T18:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 13",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2027-01-09T16:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 13",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2027-01-09T17:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 13",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2027-01-10T13:00:00Z",
+   "home": "Werder Bremen",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 13",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2027-01-10T16:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 13",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2027-01-14T17:30:00Z",
+   "home": "TTC Grenzau",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 14",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2027-01-14T18:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 14",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2027-01-15T18:00:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 14",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2027-01-16T12:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 14",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2027-01-16T16:00:00Z",
+   "home": "Werder Bremen",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 14",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2027-01-17T12:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 14",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2027-02-07T13:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 15",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2027-02-07T14:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 15",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2027-02-07T14:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 15",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2027-02-07T16:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 15",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2027-02-08T18:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 15",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2027-02-08T18:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 15",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2027-02-10T17:00:00Z",
+   "home": "Werder Bremen",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 16",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2027-02-10T18:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 16",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2027-02-11T17:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 16",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2027-02-11T17:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 16",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2027-02-11T17:15:00Z",
+   "home": "TTC Grenzau",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 16",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2027-02-11T17:30:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 16",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2027-02-13T13:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 17",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2027-02-13T16:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 17",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2027-02-14T12:00:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 17",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2027-02-14T13:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 17",
+   "venue": "Minden"
+  },
+  {
+   "when": "2027-02-14T14:30:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 17",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2027-02-14T16:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 17",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2027-02-28T14:30:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 18",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2027-03-04T17:30:00Z",
+   "home": "Werder Bremen",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 18",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2027-03-04T18:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 18",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2027-03-05T17:30:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 18",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2027-03-05T18:00:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 18",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2027-03-06T16:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 18",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2027-03-13T17:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 19",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2027-03-14T16:00:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 19",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2027-03-15T18:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 19",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2027-03-15T18:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 19",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2027-03-16T17:30:00Z",
+   "home": "Borussia Dortmund",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 19",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2027-03-16T18:00:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 19",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2027-03-22T18:00:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 20",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2027-03-23T18:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 20",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2027-03-24T18:00:00Z",
+   "home": "Werder Bremen",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 20",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2027-03-25T17:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 20",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2027-03-25T18:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 20",
+   "venue": "Karlsruhe"
+  },
+  {
+   "when": "2027-03-27T16:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 20",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2027-04-06T16:30:00Z",
+   "home": "Post SV Mühlhausen",
+   "away": "ASC Grünwettersbach",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 21",
+   "venue": "Mühlhausen"
+  },
+  {
+   "when": "2027-04-07T16:30:00Z",
+   "home": "TTF Ochsenhausen",
+   "away": "TTC Fulda-Maberzell",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 21",
+   "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2027-04-07T17:00:00Z",
+   "home": "Borussia Düsseldorf",
+   "away": "Werder Bremen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 21",
+   "venue": "Düsseldorf"
+  },
+  {
+   "when": "2027-04-08T17:00:00Z",
+   "home": "Borussia Dortmund",
+   "away": "TSV Bad Königshofen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 21",
+   "venue": "Dortmund"
+  },
+  {
+   "when": "2027-04-09T17:00:00Z",
+   "home": "1. FC Saarbrücken",
+   "away": "TTC Bad Homburg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 21",
+   "venue": "Saarbrücken"
+  },
+  {
+   "when": "2027-04-09T17:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "TTC Grenzau",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 21",
+   "venue": "Bergneustadt"
+  },
+  {
+   "when": "2027-04-11T12:00:00Z",
+   "home": "TTC Bad Homburg",
+   "away": "TTC Bergneustadt",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 22",
+   "venue": "Bad Homburg"
+  },
+  {
+   "when": "2027-04-11T12:00:00Z",
+   "home": "TSV Bad Königshofen",
+   "away": "Borussia Düsseldorf",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 22",
+   "venue": "Bad Königshofen"
+  },
+  {
+   "when": "2027-04-11T12:00:00Z",
+   "home": "TTC Fulda-Maberzell",
+   "away": "Post SV Mühlhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 22",
+   "venue": "Fulda"
+  },
+  {
+   "when": "2027-04-11T12:00:00Z",
+   "home": "Werder Bremen",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 22",
+   "venue": "Bremen"
+  },
+  {
+   "when": "2027-04-11T12:00:00Z",
+   "home": "TTC Grenzau",
+   "away": "TTF Ochsenhausen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 22",
+   "venue": "Höhr-Grenzhausen"
+  },
+  {
+   "when": "2027-04-11T12:00:00Z",
+   "home": "ASC Grünwettersbach",
+   "away": "Borussia Dortmund",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 22",
+   "venue": "Karlsruhe"
+  }
+ ]
+}

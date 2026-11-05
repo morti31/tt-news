@@ -1,0 +1,722 @@
+{
+ "id": "tleague-men",
+ "auto": true,
+ "updated": "2026-11-05T15:27:00Z",
+ "season": "2026-27",
+ "source": {
+  "name": "T.League",
+  "url": "https://tleague.jp/ranking/"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "matches",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": null,
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Kanazawa Port",
+      "pts": 26,
+      "p": 11,
+      "w": 8,
+      "l": 3,
+      "for": 29,
+      "against": 17,
+      "diff": 12
+     },
+     {
+      "pos": 2,
+      "team": "Ryukyu Asteeda",
+      "pts": 20,
+      "p": 11,
+      "w": 6,
+      "l": 5,
+      "for": 24,
+      "against": 21,
+      "diff": 3
+     },
+     {
+      "pos": 3,
+      "team": "Kinoshita Meister Tokyo",
+      "pts": 20,
+      "p": 11,
+      "w": 6,
+      "l": 5,
+      "for": 23,
+      "against": 22,
+      "diff": 1
+     },
+     {
+      "pos": 4,
+      "team": "Okayama Rivets",
+      "pts": 20,
+      "p": 12,
+      "w": 6,
+      "l": 6,
+      "for": 24,
+      "against": 26,
+      "diff": -2
+     },
+     {
+      "pos": 5,
+      "team": "T.T Saitama",
+      "pts": 19,
+      "p": 12,
+      "w": 5,
+      "l": 7,
+      "for": 24,
+      "against": 27,
+      "diff": -3
+     },
+     {
+      "pos": 6,
+      "team": "Shizuoka Jade",
+      "pts": 11,
+      "p": 11,
+      "w": 3,
+      "l": 8,
+      "for": 18,
+      "against": 29,
+      "diff": -11
+     }
+    ]
+   }
+  ],
+  "note": "Three points for a win, two for a win after the Victory Match, one for a loss after the Victory Match. The top two reach the play-off final."
+ },
+ "matches": [
+  {
+   "when": "2026-07-25T10:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "T.T Saitama",
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-15T05:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Kanazawa Port",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-15T07:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Okayama Rivets",
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-16T04:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Kinoshita Meister Tokyo",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-16T08:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "T.T Saitama",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-22T03:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Okayama Rivets",
+   "score": [
+    0,
+    4
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-23T02:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "T.T Saitama",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-28T09:30:00Z",
+   "home": "Kanazawa Port",
+   "away": "Ryukyu Asteeda",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-29T04:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "Ryukyu Asteeda",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-29T09:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "T.T Saitama",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-30T04:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "Kinoshita Meister Tokyo",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-08-30T05:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Okayama Rivets",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-05T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Okayama Rivets",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-05T07:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Shizuoka Jade",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-06T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Kanazawa Port",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-06T08:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Kinoshita Meister Tokyo",
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-12T05:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "Okayama Rivets",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-19T03:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Shizuoka Jade",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-19T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "T.T Saitama",
+   "score": [
+    0,
+    4
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-20T02:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Kanazawa Port",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-20T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Ryukyu Asteeda",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-02T09:30:00Z",
+   "home": "T.T Saitama",
+   "away": "Shizuoka Jade",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-03T04:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Kanazawa Port",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-03T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Okayama Rivets",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-04T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Kinoshita Meister Tokyo",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-04T07:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Shizuoka Jade",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-17T02:30:00Z",
+   "home": "Kanazawa Port",
+   "away": "Okayama Rivets",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-17T03:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Ryukyu Asteeda",
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-17T04:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "T.T Saitama",
+   "score": [
+    0,
+    4
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-18T02:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Okayama Rivets",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-18T04:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Ryukyu Asteeda",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-18T05:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "T.T Saitama",
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-24T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Shizuoka Jade",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-25T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Kanazawa Port",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-11-07T07:30:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-07T08:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Okayama Rivets",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-08T03:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-08T08:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "T.T Saitama",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-14T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-15T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-15T05:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-12T03:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-12T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Okayama Rivets",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-13T02:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-13T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-19T03:30:00Z",
+   "home": "Kanazawa Port",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-19T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-20T03:30:00Z",
+   "home": "Okayama Rivets",
+   "away": "T.T Saitama",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-20T03:30:00Z",
+   "home": "Kanazawa Port",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-09T03:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-10T02:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-10T08:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "T.T Saitama",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-11T04:00:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-30T06:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "T.T Saitama",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-30T07:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Okayama Rivets",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-31T06:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-01-31T08:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-06T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-06T07:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "T.T Saitama",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-07T03:00:00Z",
+   "home": "Ryukyu Asteeda",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-07T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-12T09:30:00Z",
+   "home": "T.T Saitama",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-13T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-14T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-20T03:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-20T07:30:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-21T02:00:00Z",
+   "home": "Kinoshita Meister Tokyo",
+   "away": "T.T Saitama",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-21T03:30:00Z",
+   "home": "Shizuoka Jade",
+   "away": "Okayama Rivets",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-26T09:30:00Z",
+   "home": "Kanazawa Port",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-27T04:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "Okayama Rivets",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-02-28T04:00:00Z",
+   "home": "Kanazawa Port",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-03-06T05:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Shizuoka Jade",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-03-06T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Ryukyu Asteeda",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-03-07T04:00:00Z",
+   "home": "Okayama Rivets",
+   "away": "Kinoshita Meister Tokyo",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2027-03-07T05:00:00Z",
+   "home": "T.T Saitama",
+   "away": "Kanazawa Port",
+   "score": null,
+   "status": "scheduled"
+  }
+ ]
+}

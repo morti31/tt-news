@@ -1,0 +1,355 @@
+{
+ "id": "dttbl-women",
+ "auto": true,
+ "updated": "2026-11-05T15:27:00Z",
+ "season": "2026-27",
+ "source": {
+  "name": "DTTB click-TT",
+  "url": "https://dttb.click-tt.de/cgi-bin/WebObjects/nuLigaTTDE.woa/wa/groupPage?championship=DTTB+26%2F27&group=518223"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "d",
+   "l",
+   "games",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": null,
+    "rows": [
+     {
+      "pos": 1,
+      "team": "SV DJK Kolbermoor",
+      "p": 3,
+      "w": 3,
+      "d": 0,
+      "l": 0,
+      "for": 18,
+      "against": 8,
+      "diff": 10,
+      "pts": 6
+     },
+     {
+      "pos": 2,
+      "team": "TTC Weinheim",
+      "p": 2,
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "for": 12,
+      "against": 3,
+      "diff": 9,
+      "pts": 4
+     },
+     {
+      "pos": 3,
+      "team": "TTC Berlin Eastside",
+      "p": 3,
+      "w": 2,
+      "d": 0,
+      "l": 1,
+      "for": 16,
+      "against": 9,
+      "diff": 7,
+      "pts": 4
+     },
+     {
+      "pos": 4,
+      "team": "TG Langenselbold",
+      "p": 5,
+      "w": 2,
+      "d": 0,
+      "l": 3,
+      "for": 18,
+      "against": 21,
+      "diff": -3,
+      "pts": 4
+     },
+     {
+      "pos": 5,
+      "team": "TuS Fürstenfeldbruck",
+      "p": 2,
+      "w": 1,
+      "d": 0,
+      "l": 1,
+      "for": 8,
+      "against": 8,
+      "diff": 0,
+      "pts": 2
+     },
+     {
+      "pos": 6,
+      "team": "TSV Dachau",
+      "p": 2,
+      "w": 1,
+      "d": 0,
+      "l": 1,
+      "for": 7,
+      "against": 8,
+      "diff": -1,
+      "pts": 2
+     },
+     {
+      "pos": 7,
+      "team": "TTG Bingen/Münster-Sarmsheim",
+      "p": 2,
+      "w": 0,
+      "d": 0,
+      "l": 2,
+      "for": 3,
+      "against": 12,
+      "diff": -9,
+      "pts": 0
+     },
+     {
+      "pos": 8,
+      "team": "ESV Weil",
+      "p": 3,
+      "w": 0,
+      "d": 0,
+      "l": 3,
+      "for": 5,
+      "against": 18,
+      "diff": -13,
+      "pts": 0
+     }
+    ]
+   }
+  ],
+  "note": "Two points for a win, one for a draw."
+ },
+ "matches": [
+  {
+   "when": "2026-09-20T12:00:00Z",
+   "home": "SV DJK Kolbermoor",
+   "away": "TTC Berlin Eastside",
+   "score": [
+    6,
+    4
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-20T13:00:00Z",
+   "home": "TG Langenselbold",
+   "away": "ESV Weil",
+   "score": [
+    6,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-26T13:00:00Z",
+   "home": "SV DJK Kolbermoor",
+   "away": "TG Langenselbold",
+   "score": [
+    6,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-27T10:00:00Z",
+   "home": "TuS Fürstenfeldbruck",
+   "away": "SV DJK Kolbermoor",
+   "score": [
+    2,
+    6
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-27T12:00:00Z",
+   "home": "TSV Dachau",
+   "away": "TG Langenselbold",
+   "score": [
+    6,
+    2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-27T12:00:00Z",
+   "home": "TTC Weinheim",
+   "away": "ESV Weil",
+   "score": [
+    6,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-04T12:00:00Z",
+   "home": "TTG Bingen/Münster-Sarmsheim",
+   "away": "TuS Fürstenfeldbruck",
+   "score": [
+    2,
+    6
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-25T12:04:00Z",
+   "home": "TTC Berlin Eastside",
+   "away": "TSV Dachau",
+   "score": [
+    6,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-10-25T14:00:00Z",
+   "home": "TG Langenselbold",
+   "away": "TTC Weinheim",
+   "score": [
+    2,
+    6
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-11-01T13:00:00Z",
+   "home": "ESV Weil",
+   "away": "TTC Berlin Eastside",
+   "score": [
+    2,
+    6
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-11-01T14:00:00Z",
+   "home": "TG Langenselbold",
+   "away": "TTG Bingen/Münster-Sarmsheim",
+   "score": [
+    6,
+    1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-11-08T13:00:00Z",
+   "home": "TSV Dachau",
+   "away": "TuS Fürstenfeldbruck",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-08T13:00:00Z",
+   "home": "TTC Weinheim",
+   "away": "TTC Berlin Eastside",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-14T13:00:00Z",
+   "home": "TTG Bingen/Münster-Sarmsheim",
+   "away": "TTC Berlin Eastside",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-15T13:00:00Z",
+   "home": "TTG Bingen/Münster-Sarmsheim",
+   "away": "TSV Dachau",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-21T14:00:00Z",
+   "home": "TSV Dachau",
+   "away": "ESV Weil",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-21T16:30:00Z",
+   "home": "TuS Fürstenfeldbruck",
+   "away": "TTC Weinheim",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-22T09:30:00Z",
+   "home": "TuS Fürstenfeldbruck",
+   "away": "TG Langenselbold",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-22T13:00:00Z",
+   "home": "SV DJK Kolbermoor",
+   "away": "ESV Weil",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-11-22T13:00:00Z",
+   "home": "TSV Dachau",
+   "away": "TTC Weinheim",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-06T13:00:00Z",
+   "home": "TTG Bingen/Münster-Sarmsheim",
+   "away": "TTC Weinheim",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-11T17:00:00Z",
+   "home": "TTC Berlin Eastside",
+   "away": "TuS Fürstenfeldbruck",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-12T17:00:00Z",
+   "home": "ESV Weil",
+   "away": "TTG Bingen/Münster-Sarmsheim",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-13T13:00:00Z",
+   "home": "TTC Weinheim",
+   "away": "SV DJK Kolbermoor",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-13T14:00:00Z",
+   "home": "TuS Fürstenfeldbruck",
+   "away": "ESV Weil",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-13T16:00:00Z",
+   "home": "TTC Berlin Eastside",
+   "away": "TG Langenselbold",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-19T13:00:00Z",
+   "home": "TSV Dachau",
+   "away": "SV DJK Kolbermoor",
+   "score": null,
+   "status": "scheduled"
+  },
+  {
+   "when": "2026-12-20T13:00:00Z",
+   "home": "SV DJK Kolbermoor",
+   "away": "TTG Bingen/Münster-Sarmsheim",
+   "score": null,
+   "status": "scheduled"
+  }
+ ]
+}
