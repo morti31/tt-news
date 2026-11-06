@@ -1282,3 +1282,4 @@ html.mp-open { overflow: hidden; }
 .pl-tl .tl-tot { font-weight: 800; }
 @media (prefers-color-scheme: dark) { .pl-tl .tl-w { background: #4a3c08; color: #ffe9a3; } .pl-tl .tl-f { background: #2a313c; } .pl-tl .tl-sf { background: #3d2a1f; } }
 .pl-tl + .small { margin-bottom: 22px; }
+#honours .table-scroll + .small { margin-bottom: 24px; }
