@@ -265,21 +265,38 @@ TIERS = {"world": "#d4213d", "smash": "#f37021", "champions": "#3a66e0", "contin
 def index_page(data, today):
     sections = []
     groups = data.get("groups", ["WTT Series", "Majors", "Continental"])
-    for key, title in (("now", "On now"), ("next", "Coming up"), ("past", "Recent")):
-        evs = [ev for ev in data["events"] if status(ev, today) == key]
-        evs.sort(key=lambda ev: (ev.get("start") or ev.get("end")), reverse=(key == "past"))
-        if not evs:
-            continue
-        cards = "".join(f'''<li class="ev-card"><a href="/events/{ev["id"]}.html">
+
+    def card(ev):
+        return f'''<li class="ev-card"><a href="/events/{ev["id"]}.html">
 {f'<img src="{poster(ev)}" alt="" loading="lazy" width="1600" height="900">' if poster(ev) else ""}
 <span class="ev-group" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">{e(ev["group"])}</span>
-<h3>{e(ev["name"])} {e(ev["year"])}</h3><p>{e(dates(ev))}, {e(ev["city"])}</p></a></li>''' for ev in evs)
-        sections.append(f'<section class="hub-sec"><h2 class="section-title">{title}</h2><ul class="ev-cards">{cards}</ul></section>')
+<h3>{e(ev["name"])} {e(ev["year"])}</h3><p>{e(dates(ev))}, {e(ev["city"])}</p></a></li>'''
+
+    for key, title in (("now", "On now"), ("next", "Coming up")):
+        evs = sorted((ev for ev in data["events"] if status(ev, today) == key), key=lambda ev: ev.get("start") or ev.get("end"))
+        if evs:
+            sections.append(f'<section class="hub-sec"><h2 class="section-title">{title}</h2><ul class="ev-cards">{"".join(card(ev) for ev in evs)}</ul></section>')
+    # Finished events: a section per year, a heading per month, newest first
+    past = sorted((ev for ev in data["events"] if status(ev, today) == "past"), key=lambda ev: ev.get("start") or ev.get("end"), reverse=True)
+    years = {}
+    for ev in past:
+        d = dt.date.fromisoformat(ev.get("start") or ev.get("end"))
+        years.setdefault(d.year, {}).setdefault(d.month, []).append(ev)
+    year_nav = ""
+    if len(years) > 1:
+        year_nav = '<nav class="hub-jump ev-years" aria-label="Years">' + "".join(f'<a href="#y{y}">{y}</a>' for y in years) + "</nav>"
+    for y, months in years.items():
+        body = "".join(f'<div class="ev-month"><h3 class="ev-month-h">{dt.date(y, m, 1):%B}</h3><ul class="ev-cards">{"".join(card(ev) for ev in evs)}</ul></div>'
+                       for m, evs in months.items())
+        n = sum(len(v) for v in months.values())
+        sections.append(f'<section class="hub-sec ev-year" id="y{y}"><h2 class="section-title">{y} <span class="ev-count">{n} event{"s" if n != 1 else ""}</span></h2>{body}</section>')
     filt = "".join(f'<button data-g="{e(g)}" aria-pressed="false">{e(g)}</button>' for g in groups)
     return f"""<main class="wrap">
 <section class="sched-head"><div><h1>Events</h1><p class="lede">The major tournaments: draws, results, schedules and news in one place.</p></div></section>
 <div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
-{"".join(sections)}
+{"".join(sections[:len(sections) - len(years)])}
+{year_nav}
+{"".join(sections[len(sections) - len(years):])}
 <p class="small">The full calendar, including club competitions, is on the <a href="/schedule.html">schedule</a>.</p>
 </main>
 <script>
@@ -287,6 +304,7 @@ document.querySelector(".ev-filter").addEventListener("click", (ev) => {{
   const b = ev.target.closest("button"); if (!b) return;
   document.querySelectorAll(".ev-filter button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
   document.querySelectorAll(".ev-card").forEach((c) => {{ c.hidden = !!b.dataset.g && c.querySelector(".ev-group").textContent !== b.dataset.g; }});
-  document.querySelectorAll(".ev-cards").forEach((l) => {{ l.closest("section").hidden = ![...l.children].some((c) => !c.hidden); }});
+  document.querySelectorAll(".ev-cards").forEach((l) => {{ const box = l.closest(".ev-month") || l.closest("section"); box.hidden = ![...l.children].some((c) => !c.hidden); }});
+  document.querySelectorAll(".ev-year").forEach((sec) => {{ sec.hidden = ![...sec.querySelectorAll(".ev-month")].some((m) => !m.hidden); }});
 }});
 </script>"""

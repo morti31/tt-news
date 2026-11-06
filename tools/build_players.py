@@ -106,6 +106,11 @@ def long_date(iso):
     return f"{d.day} {d:%B %Y}"
 
 
+def short_date(iso):
+    d = dt.date.fromisoformat(iso[:10])
+    return f"{d.day} {d:%b %Y}"
+
+
 def player_card(p, rank=None, size="big"):
     """Eleven's player card: initials on the association's colour band, no photo."""
     words = p["name"].replace("-", " ").split()
@@ -177,6 +182,13 @@ def build(page, site, tag_items, tag_url, hubs, R):
                 best = f'No. {ms_stat["best_rank"]} ({dt.date(int(ms_stat["best_rank_year"]), int(ms_stat["best_rank_month"]), 1):%B %Y})'
             except Exception:
                 best = f'No. {ms_stat["best_rank"]}'
+        # Career high: from Eleven's weekly ranking history (WTT's own "best rank" field is unreliable)
+        career_high = None
+        hist_ranks = [(wk, row[1]) for wk, gs in sorted(hist.get("weeks", {}).items()) for g in gs.values() for row in g if row[0] == pid]
+        if hist_ranks and len(hist_ranks) >= 8:
+            r_best = min(r for _, r in hist_ranks)
+            first = next(wk for wk, r in hist_ranks if r == r_best)
+            career_high = f"No. {r_best} ({dt.date.fromisoformat(first):%B %Y}, since records began)"
         club = next((c for c in reversed(p.get("clubs") or []) if not c.get("to")), None)
 
         # ---- header
@@ -185,7 +197,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
             d = rk["prev"] - rk["rank"]
             mv = f' <span class="mv {"up" if d > 0 else "down" if d < 0 else "same"}">{"▲" + str(d) if d > 0 else "▼" + str(-d) if d < 0 else "–"}</span>'
         facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else "Outside the top 100"),
-                 ("Career high", best), ("Age", f'{age(born)} (born {long_date(born)})' if born else None),
+                 ("Career high", career_high), ("Age", f'{age(born)} (born {long_date(born)})' if born else None),
                  ("Birthplace", p.get("birthplace")), ("Height", f'{p["height_cm"]} cm' if p.get("height_cm") else None),
                  ("Plays", ", ".join(x for x in (f"{hand}-handed" if hand else None, grip) if x) or None),
                  ("Style", p.get("style")), ("Coach", p.get("coach")),
@@ -236,7 +248,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
             when = (m.get("d") or "")[:10]
             what = KINDS.get(m["k"], m["k"]) + (", " + round_name(m["r"]) if m.get("r") else "")
             with_ = f' <span class="pl-with">with {" / ".join(who(x) for x in partner)}</span>' if partner else ""
-            return (f'<tr class="{"pl-w" if res == "W" else "pl-l"}"><td class="pl-date">{e(long_date(when)) if when else ""}</td>'
+            return (f'<tr class="{"pl-w" if res == "W" else "pl-l"}"><td class="pl-date">{e(short_date(when)) if when else ""}</td>'
                     f'<td>{ev_link(m["e"])}<span class="pl-sub">{e(what)}</span></td>'
                     f'<td>{" / ".join(who(x) for x in opp)}{with_}</td><td class="pl-res"><b>{res}</b> {e(sc)}<span class="pl-sub">{e(games)}</span></td></tr>')
         recent = ms[:20]
