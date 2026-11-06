@@ -21,7 +21,7 @@ LIVE = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/li
 CMS = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/primary/api/cms"
 HEADERS = {"Origin": "https://www.worldtabletennis.com", "Referer": "https://www.worldtabletennis.com/", "User-Agent": "Mozilla/5.0 (Eleven table tennis news)"}
 FIRST_YEAR = 2021   # WTT's first season
-SKIP_NAMES = re.compile(r"Youth|Feeder|U1[0-9]|U2[01]|Junior|Cadet|Para |Veteran|Masters|Hopes|Development", re.I)
+SKIP_NAMES = re.compile(r"Youth|U1[0-9]|U2[01]|Junior|Cadet|Para |Veteran|Masters|Hopes|Development", re.I)
 MDIR = os.path.join(ROOT, "data", "matches")
 
 
@@ -183,7 +183,7 @@ def event_name(eid):
 
 
 def sync_event(eid, events, years, players, senior_only=False):
-    if senior_only:   # backfill: look at the name first and skip youth, feeder and para events without fetching their results
+    if senior_only:   # backfill: look at the name first and skip youth, para and veterans events without fetching their results
         ev0 = events.setdefault(eid, {})
         if not ev0.get("name"):
             ev0["name"] = event_name(eid) or ""
@@ -270,6 +270,11 @@ def main():
         top = max(known) if known else 3250
         todo = [k for k, v in events.items() if not v.get("done") and not v.get("skip")]
         todo += [str(x) for x in range(top - 30, top + 80) if str(x) not in events]
+        # Feeders carry ranking points: pick up any an older backfill skipped by name
+        for k, v in events.items():
+            if v.get("skip") and not v.get("n") and "feeder" in (v.get("name") or "").lower():
+                v.pop("skip")
+                todo.append(k)
     todo = sorted(set(todo), key=int)
     added = 0
     for eid in todo:
