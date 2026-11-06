@@ -1,10 +1,3205 @@
 {
+ "2750": {
+  "name": "WTT Feeder Havirov 2023",
+  "start": "2023-07-27",
+  "end": "2023-07-30",
+  "n": 0,
+  "synced": "2026-11-06T13:32:57Z",
+  "done": true,
+  "skip": true
+ },
+ "2751": {
+  "name": "ITTF World Team Table Tennis Championships Finals Busan 2024 Presented by BNK Busan Bank",
+  "start": "2024-02-16",
+  "end": "2024-02-25",
+  "n": 0,
+  "synced": "2026-11-06T13:32:59Z",
+  "done": true
+ },
+ "2752": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2753": {
+  "name": "WTTC 2024 Central Africa Regional Qualifications",
+  "n": 0,
+  "done": false
+ },
+ "2754": {
+  "name": "WTTC 2024 Western Africa Regional Qualifications",
+  "n": 0,
+  "done": false
+ },
+ "2755": {
+  "name": "WTT Feeder Düsseldorf III 2023",
+  "start": "2023-11-27",
+  "end": "2023-12-01",
+  "n": 0,
+  "synced": "2026-11-06T13:33:03Z",
+  "done": true,
+  "skip": true
+ },
+ "2756": {
+  "name": "2023 South American U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2757": {
+  "name": "South American Youth Championships (U15 & U19)",
+  "n": 0,
+  "done": false
+ },
+ "2758": {
+  "name": "Pan American Games Santiago 2023",
+  "n": 0,
+  "done": false
+ },
+ "2759": {
+  "name": "2023 Caribbean Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2760": {
+  "name": "2023 South American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2761": {
+  "name": "2023 Central American Youth Championships (U15 & U19)",
+  "n": 0,
+  "done": false
+ },
+ "2762": {
+  "name": "Special Teams qualification event – Pan American Games Santiago 2023",
+  "n": 0,
+  "done": false
+ },
+ "2763": {
+  "name": "Special Singles qualification event – Pan American Games Santiago 2023",
+  "n": 0,
+  "done": false
+ },
+ "2764": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2765": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2766": {
+  "name": "2023 European U21 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2767": {
+  "name": "2023 ITTF Pan American Youth Championships (U15 & U19)",
+  "n": 0,
+  "done": false
+ },
+ "2768": {
+  "name": "2023 African Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2769": {
+  "name": "TEST 2023 ITTF World Table Tennis Championships Finals",
+  "start": "2023-05-18",
+  "end": "2023-05-19",
+  "n": 0,
+  "synced": "2026-11-06T13:33:15Z",
+  "done": true,
+  "skip": true
+ },
+ "2770": {
+  "name": "Central American & Caribbean Games 2023",
+  "n": 0,
+  "done": false
+ },
+ "2771": {
+  "name": "2023 Caribbean Championships",
+  "n": 0,
+  "done": false
+ },
+ "2772": {
+  "name": "WTT Feeder Beirut 2023",
+  "n": 0,
+  "done": false
+ },
+ "2773": {
+  "name": "26th ITTF-Asian Table Tennis Championships 2023",
+  "n": 0,
+  "done": false
+ },
+ "2774": {
+  "name": "1st Asian Veteran Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2775": {
+  "name": "WTT Contender Muscat 2023",
+  "start": "2023-10-08",
+  "end": "2023-10-14",
+  "n": 0,
+  "synced": "2026-11-06T13:33:20Z",
+  "done": true,
+  "skip": true
+ },
+ "2776": {
+  "name": "WTT Finals Women Nagoya 2023",
+  "start": "2023-12-15",
+  "end": "2023-12-17",
+  "n": 0,
+  "synced": "2026-11-06T13:33:21Z",
+  "done": true,
+  "skip": true
+ },
+ "2777": {
+  "name": "WTT Star Contender Lanzhou 2023 Presented by Huanchen Sports",
+  "start": "2023-10-02",
+  "end": "2023-10-08",
+  "n": 0,
+  "synced": "2026-11-06T13:33:22Z",
+  "done": true,
+  "skip": true
+ },
+ "2778": {
+  "name": "2023 ITTF Summit",
+  "n": 0,
+  "done": false
+ },
+ "2779": {
+  "name": "Pan American Veteran Championships",
+  "n": 0,
+  "done": false
+ },
+ "2780": {
+  "name": "Youth Para Panamerican Games 2023",
+  "n": 0,
+  "done": false
+ },
+ "2781": {
+  "name": "2021 Europe Top 16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2782": {
+  "name": "2021 - ITTF Pan American Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2783": {
+  "name": "2022 - Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2784": {
+  "name": "2023 Central American U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2785": {
+  "name": "2023 European Games",
+  "n": 0,
+  "done": false
+ },
+ "2786": {
+  "name": "27th Asian Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2787": {
+  "name": "2023 ITTF-Africa Senior Championships",
+  "start": "2023-09-11",
+  "end": "2023-09-17",
+  "n": 0,
+  "synced": "2026-11-06T13:33:31Z",
+  "done": true,
+  "skip": true
+ },
+ "2788": {
+  "name": "2023 Caribbean U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2789": {
+  "name": "2023 ITTF Pan American Championships",
+  "start": "2023-09-10",
+  "end": "2023-09-17",
+  "n": 0,
+  "synced": "2026-11-06T13:33:34Z",
+  "done": true,
+  "skip": true
+ },
+ "2790": {
+  "name": "2023 European Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2791": {
+  "name": "2023 Pan American U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2792": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2793": {
+  "name": "2023 ITTF-Oceania Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2794": {
+  "name": "WTT Contender Taiyuan 2023",
+  "start": "2023-11-07",
+  "end": "2023-11-12",
+  "n": 0,
+  "synced": "2026-11-06T13:33:38Z",
+  "done": true,
+  "skip": true
+ },
+ "2795": {
+  "name": "ITTF-Oceania Senior Championships 2023",
+  "n": 0,
+  "done": false
+ },
+ "2796": {
+  "name": "ITTF-Oceania U21 Championships 2023",
+  "n": 0,
+  "done": false
+ },
+ "2797": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2798": {
+  "name": "ITTF-Oceania Youth Championships 2023",
+  "n": 0,
+  "done": false
+ },
+ "2799": {
+  "name": "2022 Asian Games",
+  "n": 0,
+  "done": false
+ },
+ "2800": {
+  "name": "Central American Veteran Championships",
+  "n": 0,
+  "done": false
+ },
+ "2801": {
+  "name": "WTT Youth Contender Linz 2024",
+  "start": "2024-01-11",
+  "end": "2024-01-14",
+  "n": 0,
+  "synced": "2026-11-06T13:34:23Z",
+  "done": true
+ },
+ "2802": {
+  "name": "WTT Youth Contender Doha 2024",
+  "start": "2024-01-22",
+  "end": "2024-01-25",
+  "n": 0,
+  "synced": "2026-11-06T13:34:25Z",
+  "done": true
+ },
+ "2803": {
+  "name": "WTT Youth Star Contender Tunis 2024",
+  "start": "2024-01-31",
+  "end": "2024-02-04",
+  "n": 0,
+  "synced": "2026-11-06T13:34:30Z",
+  "done": true
+ },
+ "2804": {
+  "name": "WTT Youth Contender Vila Real 2024",
+  "start": "2024-02-10",
+  "end": "2024-02-16",
+  "n": 0,
+  "synced": "2026-11-06T13:34:34Z",
+  "done": true
+ },
+ "2805": {
+  "name": "WTT Youth Contender Tunis 2024",
+  "start": "2024-02-23",
+  "end": "2024-02-26",
+  "n": 0,
+  "synced": "2026-11-06T13:34:37Z",
+  "done": true
+ },
+ "2806": {
+  "name": "WTT Youth Contender Algiers 2024",
+  "start": "2024-02-28",
+  "end": "2024-03-02",
+  "n": 0,
+  "synced": "2026-11-06T13:34:39Z",
+  "done": true
+ },
+ "2807": {
+  "name": "WTT Youth Contender Panagyurishte 2024 Presented by Asarel",
+  "start": "2024-03-07",
+  "end": "2024-03-10",
+  "n": 0,
+  "synced": "2026-11-06T13:34:42Z",
+  "done": true
+ },
+ "2808": {
+  "name": "WTT Youth Contender KOR1 2024 (NOT TO PUBLISH)",
+  "n": 0,
+  "done": false
+ },
+ "2809": {
+  "name": "WTT Youth Contender Luxembourg 2024",
+  "start": "2024-04-17",
+  "end": "2024-04-20",
+  "n": 0,
+  "synced": "2026-11-06T13:34:46Z",
+  "done": true
+ },
+ "2810": {
+  "name": "WTT Youth Star Contender Singapore 2024",
+  "start": "2024-03-14",
+  "end": "2024-03-17",
+  "n": 0,
+  "synced": "2026-11-06T13:34:48Z",
+  "done": true
+ },
+ "2811": {
+  "name": "WTT Youth Star Contender Podgorica 2024",
+  "start": "2024-04-10",
+  "end": "2024-04-14",
+  "n": 0,
+  "synced": "2026-11-06T13:34:50Z",
+  "done": true
+ },
+ "2812": {
+  "name": "WTT Youth Contender Spa 2024",
+  "start": "2024-04-22",
+  "end": "2024-04-28",
+  "n": 0,
+  "synced": "2026-11-06T13:34:53Z",
+  "done": true
+ },
+ "2813": {
+  "name": "WTT Youth Contender Metz 2024",
+  "start": "2024-04-22",
+  "end": "2024-04-28",
+  "n": 0,
+  "synced": "2026-11-06T13:34:55Z",
+  "done": true
+ },
+ "2814": {
+  "name": "WTT Youth Contender Gangneung 2024 Presented by SeAH",
+  "start": "2024-05-08",
+  "end": "2024-05-11",
+  "n": 0,
+  "synced": "2026-11-06T13:34:58Z",
+  "done": true
+ },
+ "2815": {
+  "name": "WTT Youth Contender Platja D'Aro 2024",
+  "start": "2024-05-13",
+  "end": "2024-05-19",
+  "n": 0,
+  "synced": "2026-11-06T13:35:01Z",
+  "done": true
+ },
+ "2816": {
+  "name": "WTT Youth Contender Wladyslawowo 2024",
+  "start": "2024-05-22",
+  "end": "2024-05-25",
+  "n": 0,
+  "synced": "2026-11-06T13:35:05Z",
+  "done": true
+ },
+ "2817": {
+  "name": "WTT Youth Contender Puerto Princesa 2024",
+  "start": "2024-04-29",
+  "end": "2024-05-05",
+  "n": 0,
+  "synced": "2026-11-06T13:35:07Z",
+  "done": true
+ },
+ "2818": {
+  "name": "WTT Youth Contender Cancun 2024",
+  "n": 0,
+  "done": false
+ },
+ "2819": {
+  "name": "WTT Youth Contender Berlin 2024",
+  "start": "2024-05-27",
+  "end": "2024-06-02",
+  "n": 0,
+  "synced": "2026-11-06T13:35:11Z",
+  "done": true
+ },
+ "2820": {
+  "name": "WTT Youth Contender Havirov 2024",
+  "start": "2024-05-27",
+  "end": "2024-06-02",
+  "n": 0,
+  "synced": "2026-11-06T13:35:15Z",
+  "done": true
+ },
+ "2821": {
+  "name": "WTT Youth Contender Helsingborg 2024",
+  "start": "2024-06-05",
+  "end": "2024-06-08",
+  "n": 0,
+  "synced": "2026-11-06T13:35:17Z",
+  "done": true
+ },
+ "2822": {
+  "name": "WTT Youth Contender Sandefjord 2024",
+  "start": "2024-06-10",
+  "end": "2024-06-13",
+  "n": 0,
+  "synced": "2026-11-06T13:35:20Z",
+  "done": true
+ },
+ "2823": {
+  "name": "Europe Youth Top-10 2023",
+  "n": 0,
+  "done": false
+ },
+ "2824": {
+  "name": "WTT Contender Lima 2023",
+  "n": 0,
+  "done": false
+ },
+ "2825": {
+  "name": "WTT Youth Star Contender Lima 2024",
+  "start": "2024-06-19",
+  "end": "2024-06-23",
+  "n": 0,
+  "synced": "2026-11-06T13:35:23Z",
+  "done": true
+ },
+ "2826": {
+  "name": "WTT Youth Contender Hong Kong 2024 Presented by Sunflex",
+  "start": "2024-07-08",
+  "end": "2024-07-14",
+  "n": 0,
+  "synced": "2026-11-06T13:35:26Z",
+  "done": true
+ },
+ "2827": {
+  "name": "WTT Youth Contender Sulaymaniyah 2024",
+  "start": "2024-07-17",
+  "end": "2024-07-20",
+  "n": 0,
+  "synced": "2026-11-06T13:35:28Z",
+  "done": true
+ },
+ "2828": {
+  "name": "WTT Youth Contender Amman 2024",
+  "start": "2024-07-22",
+  "end": "2024-07-25",
+  "n": 0,
+  "synced": "2026-11-06T13:35:30Z",
+  "done": true
+ },
+ "2829": {
+  "name": "WTT Youth Contender Almaty 2024",
+  "start": "2024-07-27",
+  "end": "2024-07-30",
+  "n": 0,
+  "synced": "2026-11-06T13:35:33Z",
+  "done": true
+ },
+ "2830": {
+  "name": "WTT Youth Contender Varazdin 2024",
+  "start": "2024-08-27",
+  "end": "2024-09-02",
+  "n": 0,
+  "synced": "2026-11-06T13:35:37Z",
+  "done": true
+ },
+ "2831": {
+  "name": "WTT Youth Contender Otocec 2024 Presented by I Feel Slovenia",
+  "start": "2024-08-27",
+  "end": "2024-09-02",
+  "n": 0,
+  "synced": "2026-11-06T13:35:40Z",
+  "done": true
+ },
+ "2832": {
+  "name": "WTT Youth Star Contender Skopje 2024",
+  "start": "2024-09-04",
+  "end": "2024-09-08",
+  "n": 0,
+  "synced": "2026-11-06T13:35:42Z",
+  "done": true
+ },
+ "2833": {
+  "name": "WTT Youth Contender Bangkok 2024",
+  "start": "2024-09-09",
+  "end": "2024-09-15",
+  "n": 0,
+  "synced": "2026-11-06T13:35:45Z",
+  "done": true
+ },
+ "2834": {
+  "name": "WTT Youth Contender Podgorica 2024",
+  "start": "2024-09-10",
+  "end": "2024-09-13",
+  "n": 0,
+  "synced": "2026-11-06T13:35:47Z",
+  "done": true
+ },
+ "2835": {
+  "name": "WTT Youth Contender Buenos Aires 2024",
+  "start": "2024-11-14",
+  "end": "2024-11-17",
+  "n": 0,
+  "synced": "2026-11-06T13:35:49Z",
+  "done": true
+ },
+ "2836": {
+  "name": "WTT Youth Contender Vientiane 2024",
+  "start": "2024-09-18",
+  "end": "2024-09-21",
+  "n": 0,
+  "synced": "2026-11-06T13:35:52Z",
+  "done": true
+ },
+ "2837": {
+  "name": "WTT Youth Contender Asunción 2024",
+  "start": "2024-11-09",
+  "end": "2024-11-12",
+  "n": 0,
+  "synced": "2026-11-06T13:35:54Z",
+  "done": true
+ },
+ "2838": {
+  "name": "WTT Youth Contender Batumi 2024",
+  "start": "2024-09-26",
+  "end": "2024-09-29",
+  "n": 0,
+  "synced": "2026-11-06T13:35:56Z",
+  "done": true
+ },
+ "2839": {
+  "name": "WTT Youth Contender Darwin 2024",
+  "start": "2024-10-03",
+  "end": "2024-10-06",
+  "n": 0,
+  "synced": "2026-11-06T13:35:58Z",
+  "done": true
+ },
+ "2840": {
+  "name": "WTT Youth Contender Dubai 2024",
+  "start": "2024-10-14",
+  "end": "2024-10-17",
+  "n": 0,
+  "synced": "2026-11-06T13:36:00Z",
+  "done": true
+ },
+ "2841": {
+  "name": "WTT Youth Star Contender Doha 2024",
+  "start": "2024-10-08",
+  "end": "2024-10-12",
+  "n": 0,
+  "synced": "2026-11-06T13:36:02Z",
+  "done": true
+ },
+ "2842": {
+  "name": "WTT Youth Contender Jezzine 2024 Presented by White Land Foundation",
+  "n": 0,
+  "done": false
+ },
+ "2843": {
+  "name": "WTT Youth Contender Ismailia 2024",
+  "start": "2024-10-26",
+  "end": "2024-11-01",
+  "n": 0,
+  "synced": "2026-11-06T13:36:05Z",
+  "done": true
+ },
+ "2844": {
+  "name": "WTT Youth Contender Rionegro 2024",
+  "start": "2024-10-27",
+  "end": "2024-10-30",
+  "n": 0,
+  "synced": "2026-11-06T13:36:08Z",
+  "done": true
+ },
+ "2845": {
+  "name": "WTT Youth Contender Senec 2024",
+  "start": "2024-10-30",
+  "end": "2024-11-05",
+  "n": 0,
+  "synced": "2026-11-06T13:36:12Z",
+  "done": true
+ },
+ "2846": {
+  "name": "WTT Youth Contender Szombathely 2024",
+  "start": "2024-11-03",
+  "end": "2024-11-09",
+  "n": 0,
+  "synced": "2026-11-06T13:36:16Z",
+  "done": true
+ },
+ "2847": {
+  "name": "WTT Youth Contender Lignano 2024",
+  "start": "2024-11-07",
+  "end": "2024-11-13",
+  "n": 0,
+  "synced": "2026-11-06T13:36:20Z",
+  "done": true
+ },
+ "2848": {
+  "name": "WTT Youth Star Contender Vila Nova de Gaia 2024",
+  "n": 0,
+  "done": false
+ },
+ "2849": {
+  "name": "WTT Youth Contender Dammam 2024",
+  "start": "2024-09-23",
+  "end": "2024-09-26",
+  "n": 0,
+  "synced": "2026-11-06T13:36:23Z",
+  "done": true
+ },
+ "2850": {
+  "name": "WTT Youth Contender Sarajevo 2024",
+  "start": "2024-09-15",
+  "end": "2024-09-18",
+  "n": 0,
+  "synced": "2026-11-06T13:36:25Z",
+  "done": true
+ },
+ "2851": {
+  "name": "WTT Youth Contender Beirut 2024",
+  "start": "2024-03-26",
+  "end": "2024-03-29",
+  "n": 0,
+  "synced": "2026-11-06T13:36:26Z",
+  "done": true
+ },
+ "2852": {
+  "name": "WTT Youth Contender San Francisco II 2024 Presented by The Bates Family",
+  "start": "2024-07-22",
+  "end": "2024-07-25",
+  "n": 0,
+  "synced": "2026-11-06T13:36:28Z",
+  "done": true
+ },
+ "2853": {
+  "name": "ITTF World Youth Championships 2024",
+  "start": "2024-11-22",
+  "end": "2024-11-29",
+  "n": 0,
+  "synced": "2026-11-06T13:36:30Z",
+  "done": true
+ },
+ "2854": {
+  "name": "WTT Youth Contender Cuenca 2024",
+  "start": "2024-10-22",
+  "end": "2024-10-25",
+  "n": 0,
+  "synced": "2026-11-06T13:36:32Z",
+  "done": true
+ },
+ "2855": {
+  "name": "WTT Youth Contender Antalya 2024",
+  "n": 0,
+  "done": false
+ },
+ "2856": {
+  "name": "WTT Youth Contender Santiago 2024",
+  "start": "2024-04-17",
+  "end": "2024-04-20",
+  "n": 0,
+  "synced": "2026-11-06T13:36:35Z",
+  "done": true
+ },
+ "2857": {
+  "name": "WTT Youth Contender Caracas 2024",
+  "start": "2024-11-04",
+  "end": "2024-11-07",
+  "n": 0,
+  "synced": "2026-11-06T13:36:37Z",
+  "done": true
+ },
+ "2858": {
+  "name": "WTT Youth Contender Westchester 2024",
+  "start": "2024-06-25",
+  "end": "2024-06-28",
+  "n": 0,
+  "synced": "2026-11-06T13:36:39Z",
+  "done": true
+ },
+ "2859": {
+  "name": "WTT Youth Contender Tashkent 2024",
+  "n": 0,
+  "done": false
+ },
+ "2860": {
+  "name": "ITTF Mixed Team World Cup 2023",
+  "start": "2023-12-04",
+  "end": "2023-12-10",
+  "n": 0,
+  "synced": "2026-11-06T13:36:41Z",
+  "done": true,
+  "skip": true
+ },
+ "2861": {
+  "name": "WTT Contender Doha 2024",
+  "start": "2024-01-14",
+  "end": "2024-01-20",
+  "n": 0,
+  "synced": "2026-11-06T13:36:42Z",
+  "done": true
+ },
+ "2862": {
+  "name": "WTT Star Contender Doha 2024",
+  "start": "2024-01-08",
+  "end": "2024-01-13",
+  "n": 0,
+  "synced": "2026-11-06T13:36:43Z",
+  "done": true
+ },
+ "2863": {
+  "name": "WTT Star Contender Goa 2024",
+  "start": "2024-01-23",
+  "end": "2024-01-28",
+  "n": 0,
+  "synced": "2026-11-06T13:36:45Z",
+  "done": true
+ },
+ "2864": {
+  "name": "Singapore Smash 2024",
+  "n": 0,
+  "done": false
+ },
+ "2865": {
+  "name": "WTT Contender Taiyuan 2024",
+  "start": "2024-05-21",
+  "end": "2024-05-26",
+  "n": 0,
+  "synced": "2026-11-06T13:36:46Z",
+  "done": true
+ },
+ "2866": {
+  "name": "WTT Finals Men Doha 2023",
+  "start": "2024-01-03",
+  "end": "2024-01-05",
+  "n": 0,
+  "synced": "2026-11-06T13:36:47Z",
+  "done": true
+ },
+ "2867": {
+  "name": "WTT Contender Rio de Janeiro 2024",
+  "start": "2024-05-20",
+  "end": "2024-05-26",
+  "n": 0,
+  "synced": "2026-11-06T13:36:48Z",
+  "done": true
+ },
+ "2868": {
+  "name": "WTT Contender Lagos 2024",
+  "start": "2024-06-19",
+  "end": "2024-06-23",
+  "n": 0,
+  "synced": "2026-11-06T13:36:49Z",
+  "done": true
+ },
+ "2869": {
+  "name": "WTT Contender Zagreb 2024",
+  "start": "2024-06-03",
+  "end": "2024-06-09",
+  "n": 0,
+  "synced": "2026-11-06T13:36:51Z",
+  "done": true
+ },
+ "2870": {
+  "name": "WTT Star Contender Ljubljana 2024 Presented by I Feel Slovenia",
+  "start": "2024-06-11",
+  "end": "2024-06-16",
+  "n": 0,
+  "synced": "2026-11-06T13:36:52Z",
+  "done": true
+ },
+ "2871": {
+  "name": "WTT Contender Tunis 2024 Presented by KIA",
+  "start": "2024-06-25",
+  "end": "2024-06-30",
+  "n": 0,
+  "synced": "2026-11-06T13:36:53Z",
+  "done": true
+ },
+ "2872": {
+  "name": "WTT Contender Lima 2024",
+  "start": "2024-08-21",
+  "end": "2024-08-25",
+  "n": 0,
+  "synced": "2026-11-06T13:36:54Z",
+  "done": true
+ },
+ "2873": {
+  "name": "WTT Contender Almaty 2024",
+  "start": "2024-09-03",
+  "end": "2024-09-08",
+  "n": 0,
+  "synced": "2026-11-06T13:36:55Z",
+  "done": true
+ },
+ "2874": {
+  "name": "Test - WTT Champions Macao 2026 Presented by Galaxy Entertainment Group",
+  "n": 0,
+  "done": false
+ },
+ "2875": {
+  "name": "WTT Star Contender Lanzhou 2024",
+  "n": 0,
+  "done": false
+ },
+ "2876": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2877": {
+  "name": "WTT Champions Frankfurt 2024",
+  "start": "2024-11-03",
+  "end": "2024-11-10",
+  "n": 0,
+  "synced": "2026-11-06T13:36:59Z",
+  "done": true
+ },
+ "2878": {
+  "name": "WTT Feeder Corpus Christi 2024",
+  "start": "2024-01-15",
+  "end": "2024-01-18",
+  "n": 0,
+  "synced": "2026-11-06T13:37:00Z",
+  "done": true
+ },
+ "2879": {
+  "name": "WTT Feeder Manchester 2024",
+  "start": "2024-02-01",
+  "end": "2024-02-04",
+  "n": 0,
+  "synced": "2026-11-06T13:37:01Z",
+  "done": true
+ },
+ "2880": {
+  "name": "WTT Feeder Otocec 2024 Presented by I Feel Slovenia",
+  "start": "2024-03-26",
+  "end": "2024-04-01",
+  "n": 0,
+  "synced": "2026-11-06T13:37:02Z",
+  "done": true
+ },
+ "2881": {
+  "name": "WTT Feeder Düsseldorf 2024",
+  "start": "2024-04-08",
+  "end": "2024-04-12",
+  "n": 0,
+  "synced": "2026-11-06T13:37:04Z",
+  "done": true
+ },
+ "2882": {
+  "name": "WTT Feeder Varazdin 2024",
+  "start": "2024-04-02",
+  "end": "2024-04-07",
+  "n": 0,
+  "synced": "2026-11-06T13:37:06Z",
+  "done": true
+ },
+ "2883": {
+  "name": "WTT Feeder Havirov 2024",
+  "start": "2024-04-14",
+  "end": "2024-04-17",
+  "n": 0,
+  "synced": "2026-11-06T13:37:07Z",
+  "done": true
+ },
+ "2884": {
+  "name": "WTT Feeder Olomouc 2024",
+  "start": "2024-08-21",
+  "end": "2024-08-25",
+  "n": 0,
+  "synced": "2026-11-06T13:37:08Z",
+  "done": true
+ },
+ "2885": {
+  "name": "WTT Feeder Panagyurishte 2024 Presented by Asarel",
+  "start": "2024-09-11",
+  "end": "2024-09-15",
+  "n": 0,
+  "synced": "2026-11-06T13:37:09Z",
+  "done": true
+ },
+ "2886": {
+  "name": "WTT Feeder Halmstad 2024",
+  "start": "2024-09-16",
+  "end": "2024-09-21",
+  "n": 0,
+  "synced": "2026-11-06T13:37:11Z",
+  "done": true
+ },
+ "2887": {
+  "name": "WTT Feeder Doha 2024",
+  "start": "2024-10-03",
+  "end": "2024-10-06",
+  "n": 0,
+  "synced": "2026-11-06T13:37:12Z",
+  "done": true
+ },
+ "2888": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2889": {
+  "name": "WTT Feeder Cagliari 2024",
+  "start": "2024-10-22",
+  "end": "2024-10-27",
+  "n": 0,
+  "synced": "2026-11-06T13:37:13Z",
+  "done": true
+ },
+ "2890": {
+  "name": "WTT Feeder Düsseldorf II 2024",
+  "start": "2024-11-18",
+  "end": "2024-11-22",
+  "n": 0,
+  "synced": "2026-11-06T13:37:14Z",
+  "done": true
+ },
+ "2891": {
+  "name": "WTT Feeder Vila Nova de Gaia 2024",
+  "start": "2024-11-23",
+  "end": "2024-11-27",
+  "n": 0,
+  "synced": "2026-11-06T13:37:16Z",
+  "done": true
+ },
+ "2892": {
+  "name": "WTT Feeder Manchester 2024",
+  "n": 0,
+  "done": false
+ },
+ "2893": {
+  "name": "WTT Feeder Beirut 2024",
+  "start": "2024-03-19",
+  "end": "2024-03-21",
+  "n": 0,
+  "synced": "2026-11-06T13:37:18Z",
+  "done": true
+ },
+ "2894": {
+  "name": "WTT Feeder Beirut II 2024",
+  "start": "2024-03-22",
+  "end": "2024-03-24",
+  "n": 0,
+  "synced": "2026-11-06T13:37:19Z",
+  "done": true
+ },
+ "2895": {
+  "name": "WTT Champions Frankfurt 2023 - TEST",
+  "n": 0,
+  "done": false
+ },
+ "2896": {
+  "name": "2024 Pan American Cup",
+  "n": 0,
+  "done": false
+ },
+ "2897": {
+  "name": "TEST TEAMS 2024",
+  "n": 0,
+  "done": false
+ },
+ "2898": {
+  "name": "WTT Youth Contender Benghazi 2024",
+  "start": "2024-07-01",
+  "end": "2024-07-04",
+  "n": 0,
+  "synced": "2026-11-06T13:37:22Z",
+  "done": true
+ },
+ "2899": {
+  "name": "WTT Champions Incheon 2024 Presented by Shinhan Bank",
+  "start": "2024-03-27",
+  "end": "2024-03-31",
+  "n": 0,
+  "synced": "2026-11-06T13:37:23Z",
+  "done": true
+ },
+ "2900": {
+  "name": "WTT Star Contender Bangkok 2024",
+  "start": "2024-07-02",
+  "end": "2024-07-07",
+  "n": 0,
+  "synced": "2026-11-06T13:37:25Z",
+  "done": true
+ },
+ "2901": {
+  "name": "WTT Youth Contender Antalya 2024",
+  "start": "2024-01-16",
+  "end": "2024-01-19",
+  "n": 0,
+  "synced": "2026-11-06T13:37:27Z",
+  "done": true
+ },
+ "2902": {
+  "name": "2023 ITTF Southern Africa Hopes Week & Challenge",
+  "n": 0,
+  "done": false
+ },
+ "2903": {
+  "name": "WTT Contender Muscat 2022",
+  "n": 0,
+  "done": false
+ },
+ "2904": {
+  "name": "Singapore Smash 2024",
+  "start": "2024-03-07",
+  "end": "2024-03-17",
+  "n": 0,
+  "synced": "2026-11-06T13:37:30Z",
+  "done": true
+ },
+ "2905": {
+  "name": "2023 Pacific Cup",
+  "start": "2023-12-09",
+  "end": "2023-12-10",
+  "n": 0,
+  "synced": "2026-11-06T13:37:31Z",
+  "done": true,
+  "skip": true
+ },
+ "2906": {
+  "name": "ITTF Mixed Team World Cup 2023 - TEST",
+  "start": "2023-12-03",
+  "end": "2023-12-03",
+  "n": 0,
+  "synced": "2026-11-06T13:37:32Z",
+  "done": true,
+  "skip": true
+ },
+ "2907": {
+  "name": "ITTF World Team Championships Finals Busan 2024 | ITTF Annual General Meeting",
+  "n": 0,
+  "done": false
+ },
+ "2908": {
+  "name": "North Africa Regional Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "2909": {
+  "name": "WTT Youth Contender San Francisco 2024 Presented by The Bates Family",
+  "start": "2024-05-19",
+  "end": "2024-05-22",
+  "n": 0,
+  "synced": "2026-11-06T13:37:35Z",
+  "done": true
+ },
+ "2910": {
+  "name": "Paris 2024 Olympic Games",
+  "n": 0,
+  "done": false
+ },
+ "2911": {
+  "name": "WTT Feeder Cappadocia 2024",
+  "start": "2024-05-13",
+  "end": "2024-05-17",
+  "n": 0,
+  "synced": "2026-11-06T13:37:37Z",
+  "done": true
+ },
+ "2912": {
+  "name": "WTT Feeder Caracas 2024",
+  "start": "2024-10-31",
+  "end": "2024-11-03",
+  "n": 0,
+  "synced": "2026-11-06T13:37:38Z",
+  "done": true
+ },
+ "2913": {
+  "name": "2024 Europe Top-16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2914": {
+  "name": "SINGAPORE SMASH 2024 PARA SHOWCASE EVENT",
+  "start": "2024-03-12",
+  "end": "2024-03-14",
+  "n": 0,
+  "synced": "2026-11-06T13:37:39Z",
+  "done": true
+ },
+ "2915": {
+  "name": "2024 ITTF-Oceania Olympic Singles Qualification",
+  "start": "2024-05-10",
+  "end": "2024-05-10",
+  "n": 0,
+  "synced": "2026-11-06T13:37:40Z",
+  "done": true
+ },
+ "2916": {
+  "name": "2024 ITTF-Oceania Cup",
+  "start": "2024-05-11",
+  "end": "2024-05-12",
+  "n": 0,
+  "synced": "2026-11-06T13:37:41Z",
+  "done": true
+ },
+ "2917": {
+  "name": "ITTF-Oceania Senior Championships 2024",
+  "start": "2024-10-15",
+  "end": "2024-10-18",
+  "n": 0,
+  "synced": "2026-11-06T13:37:42Z",
+  "done": true
+ },
+ "2918": {
+  "name": "2024 European U21 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2919": {
+  "name": "2023 European Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2920": {
+  "name": "Tokyo 2020 Olympic Games",
+  "n": 0,
+  "done": false
+ },
+ "2921": {
+  "name": "Olympics 2024 - TESTING",
+  "start": null,
+  "end": null,
+  "n": 0,
+  "synced": "2026-11-06T13:37:45Z",
+  "done": false,
+  "skip": true
+ },
+ "2922": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2923": {
+  "name": "Central Africa Regional Championships",
+  "n": 0,
+  "done": false
+ },
+ "2924": {
+  "name": "East Africa Regional Championships",
+  "n": 0,
+  "done": false
+ },
+ "2925": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2926": {
+  "name": "West Africa Regional Championships",
+  "n": 0,
+  "done": false
+ },
+ "2927": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2928": {
+  "name": "North Africa Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2929": {
+  "name": "2024 Caribbean Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2930": {
+  "name": "2024 Caribbean Championships",
+  "n": 0,
+  "done": false
+ },
+ "2931": {
+  "name": "World Mixed Doubles Olympic Qualification event",
+  "n": 0,
+  "done": false
+ },
+ "2932": {
+  "name": "Saudi Smash 2024",
+  "start": "2024-05-01",
+  "end": "2024-05-11",
+  "n": 0,
+  "synced": "2026-11-06T13:37:53Z",
+  "done": true
+ },
+ "2933": {
+  "name": "SIM - ITTF World Team Table Tennis Championships Finals Busan 2024 Presented by BNK Busan Bank",
+  "n": 0,
+  "done": false
+ },
+ "2934": {
+  "name": "WTT Contender Mendoza 2024",
+  "start": "2024-05-27",
+  "end": "2024-06-02",
+  "n": 0,
+  "synced": "2026-11-06T13:37:55Z",
+  "done": true
+ },
+ "2935": {
+  "name": "ITTF Americas Olympic Qualification event",
+  "n": 0,
+  "done": false
+ },
+ "2936": {
+  "name": "2024 South American Youth Championships (U15 & U19)",
+  "n": 0,
+  "done": false
+ },
+ "2937": {
+  "name": "ITTF MEN'S AND WOMEN'S WORLD CUP MACAO 2024 PRESENTED BY GALAXY ENTERTAINMENT GROUP",
+  "start": "2024-04-15",
+  "end": "2024-04-21",
+  "n": 0,
+  "synced": "2026-11-06T13:37:58Z",
+  "done": true
+ },
+ "2938": {
+  "name": "2024 Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2939": {
+  "name": "All African Games 2024",
+  "n": 0,
+  "done": false
+ },
+ "2940": {
+  "name": "WTT Champions Montpellier 2024",
+  "start": "2024-10-22",
+  "end": "2024-10-27",
+  "n": 0,
+  "synced": "2026-11-06T13:38:00Z",
+  "done": true
+ },
+ "2941": {
+  "name": "WTT Champions Chongqing 2024 Presented by Changan",
+  "start": "2024-05-30",
+  "end": "2024-06-03",
+  "n": 0,
+  "synced": "2026-11-06T13:38:01Z",
+  "done": true
+ },
+ "2942": {
+  "name": "China Smash 2024 Presented by Zhonghui Life",
+  "start": "2024-09-26",
+  "end": "2024-10-06",
+  "n": 0,
+  "synced": "2026-11-06T13:38:03Z",
+  "done": true
+ },
+ "2943": {
+  "name": "South American Master Championships",
+  "n": 0,
+  "done": false
+ },
+ "2944": {
+  "name": "ITTF Africa Cup 2024",
+  "n": 0,
+  "done": false
+ },
+ "2945": {
+  "name": "2024 South American U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2946": {
+  "name": "ITTF Africa Olympic Qualification event",
+  "n": 0,
+  "done": false
+ },
+ "2947": {
+  "name": "WTT Finals Fukuoka 2024",
+  "start": "2024-11-20",
+  "end": "2024-11-24",
+  "n": 0,
+  "synced": "2026-11-06T13:38:07Z",
+  "done": true
+ },
+ "2948": {
+  "name": "Regional Olympics Qualification / South East Asia",
+  "n": 0,
+  "done": false
+ },
+ "2949": {
+  "name": "Regional Olympics Qualification / South Asia",
+  "n": 0,
+  "done": false
+ },
+ "2950": {
+  "name": "Regional Olympics Qualification / West Asia",
+  "n": 0,
+  "done": false
+ },
+ "2951": {
+  "name": "Regional Olympics Qualification / Central Asia",
+  "n": 0,
+  "done": false
+ },
+ "2952": {
+  "name": "Regional Olympics Qualification / West Asia",
+  "n": 0,
+  "done": false
+ },
+ "2953": {
+  "name": "Regional Olympics Qualification / South Asia",
+  "n": 0,
+  "done": false
+ },
+ "2954": {
+  "name": "Regional Olympics Qualification / South East Asia",
+  "n": 0,
+  "done": false
+ },
+ "2955": {
+  "name": "Regional Olympics Qualification / Central Asia",
+  "n": 0,
+  "done": false
+ },
+ "2956": {
+  "name": "TEST event 08042024",
+  "n": 0,
+  "done": false
+ },
+ "2957": {
+  "name": "Regional Olympics Qualification / West Asia",
+  "n": 0,
+  "done": false
+ },
+ "2958": {
+  "name": "WTT Youth Contender Prishtina 2024",
+  "start": "2024-10-24",
+  "end": "2024-10-27",
+  "n": 0,
+  "synced": "2026-11-06T13:38:15Z",
+  "done": true
+ },
+ "2959": {
+  "name": "2024 Pacific Cup",
+  "start": "2024-05-11",
+  "end": "2024-05-12",
+  "n": 0,
+  "synced": "2026-11-06T13:38:16Z",
+  "done": true
+ },
+ "2960": {
+  "name": "2024 South American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2961": {
+  "name": "South Africa Regional Championships",
+  "n": 0,
+  "done": false
+ },
+ "2962": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2963": {
+  "name": "Caribbean Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2964": {
+  "name": "WTT Feeder Prishtina 2024",
+  "start": "2024-10-30",
+  "end": "2024-11-01",
+  "n": 0,
+  "synced": "2026-11-06T13:38:20Z",
+  "done": true
+ },
+ "2965": {
+  "name": "WTT Feeder Muscat 2024",
+  "start": "2024-08-29",
+  "end": "2024-09-01",
+  "n": 0,
+  "synced": "2026-11-06T13:38:20Z",
+  "done": true
+ },
+ "2966": {
+  "name": "28th Asian Youth Table Tennis Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "2967": {
+  "name": "East Africa Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2968": {
+  "name": "West Africa Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2969": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2970": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2971": {
+  "name": "Central American Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2972": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2973": {
+  "name": "PRODUCTION TEST - Saudi Smash 2024",
+  "start": "2024-05-03",
+  "end": "2024-05-10",
+  "n": 0,
+  "synced": "2026-11-06T13:38:26Z",
+  "done": true
+ },
+ "2974": {
+  "name": "33rd ITTF-ATTU Asian Cup 2022",
+  "n": 0,
+  "done": false
+ },
+ "2975": {
+  "name": "ITTF African Youth Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "2976": {
+  "name": "Caribbean U11-U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2977": {
+  "name": "Asian Youth Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "2978": {
+  "name": "WTT Youth Contender Surat 2024",
+  "n": 0,
+  "done": false
+ },
+ "2979": {
+  "name": "ITTF Mixed Team World Cup Chengdu 2024 presented by CHINA TELECOM",
+  "start": "2024-12-01",
+  "end": "2024-12-08",
+  "n": 0,
+  "synced": "2026-11-06T13:38:30Z",
+  "done": true
+ },
+ "2980": {
+  "name": "2024 Central American Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2981": {
+  "name": "2024 Central American U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2982": {
+  "name": "ITTF World Esports Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2983": {
+  "name": "WTT Champions Macao 2024 Presented by Galaxy Entertainment Group",
+  "start": "2024-09-09",
+  "end": "2024-09-15",
+  "n": 0,
+  "synced": "2026-11-06T13:38:33Z",
+  "done": true
+ },
+ "2984": {
+  "name": "South American Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2985": {
+  "name": "ITTF-Oceania Youth Championships 2024",
+  "start": "2024-09-07",
+  "end": "2024-09-08",
+  "n": 0,
+  "synced": "2026-11-06T13:38:35Z",
+  "done": true
+ },
+ "2986": {
+  "name": "South Africa Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "2987": {
+  "name": "2024 Pan American U11 & U13 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2988": {
+  "name": "European Olympic Qualification 2024",
+  "n": 0,
+  "done": false
+ },
+ "2989": {
+  "name": "2024 ITTF Pan American Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2990": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "2991": {
+  "name": "ITTF-Oceania Senior Championships 2023",
+  "n": 0,
+  "done": false
+ },
+ "2992": {
+  "name": "2024 European Youth Championships",
+  "n": 0,
+  "done": false
+ },
+ "2993": {
+  "name": "27th ITTF-Asian Table Tennis Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "2994": {
+  "name": "27th ITTF-Asian Table Tennis Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "2995": {
+  "name": "2024 ITTF-Africa Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2996": {
+  "name": "2024 ITTF Pan American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2997": {
+  "name": "WTT Contender Muscat 2024",
+  "start": "2024-10-28",
+  "end": "2024-11-02",
+  "n": 0,
+  "synced": "2026-11-06T13:38:42Z",
+  "done": true
+ },
+ "2998": {
+  "name": "Pan American Veteran Championships",
+  "n": 0,
+  "done": false
+ },
+ "2999": {
+  "name": "Pan American Veteran Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "3000": {
+  "name": "TEST - China Smash 2024 Presented by Zhonghui Life Insurance",
+  "start": "2024-09-04",
+  "end": "2024-09-04",
+  "n": 0,
+  "synced": "2026-11-06T13:38:44Z",
+  "done": true
+ },
+ "3001": {
+  "name": "WTT Youth Contender San Francisco 2025 Presented by Ethos",
+  "start": "2025-01-02",
+  "end": "2025-01-05",
+  "n": 0,
+  "synced": "2026-11-06T13:38:45Z",
+  "done": true
+ },
+ "3002": {
+  "name": "WTT Youth Contender Linz 2025",
+  "start": "2025-01-08",
+  "end": "2025-01-11",
+  "n": 0,
+  "synced": "2026-11-06T13:38:48Z",
+  "done": true
+ },
+ "3003": {
+  "name": "WTT Youth Contender Tunis 2025",
+  "start": "2025-01-13",
+  "end": "2025-01-16",
+  "n": 0,
+  "synced": "2026-11-06T13:38:50Z",
+  "done": true
+ },
+ "3004": {
+  "name": "WTT Youth Star Contender Tunis 2025",
+  "start": "2025-01-17",
+  "end": "2025-01-19",
+  "n": 0,
+  "synced": "2026-11-06T13:38:51Z",
+  "done": true
+ },
+ "3005": {
+  "name": "Singapore Youth Smash 2025",
+  "start": "2025-02-06",
+  "end": "2025-02-09",
+  "n": 0,
+  "synced": "2026-11-06T13:38:53Z",
+  "done": true
+ },
+ "3006": {
+  "name": "WTT Youth Contender Vila Real 2025",
+  "start": "2025-02-17",
+  "end": "2025-02-20",
+  "n": 0,
+  "synced": "2026-11-06T13:38:54Z",
+  "done": true
+ },
+ "3007": {
+  "name": "WTT Youth Contender Wladyslawowo 2025",
+  "start": "2025-03-05",
+  "end": "2025-03-08",
+  "n": 0,
+  "synced": "2026-11-06T13:38:57Z",
+  "done": true
+ },
+ "3008": {
+  "name": "WTT Youth Contender Berlin 2025 Presented by Seeger",
+  "start": "2025-03-10",
+  "end": "2025-03-16",
+  "n": 0,
+  "synced": "2026-11-06T13:39:00Z",
+  "done": true
+ },
+ "3009": {
+  "name": "WTT Youth Contender Havirov 2025",
+  "start": "2025-03-10",
+  "end": "2025-03-16",
+  "n": 0,
+  "synced": "2026-11-06T13:39:02Z",
+  "done": true
+ },
+ "3010": {
+  "name": "WTT Youth Contender Metz 2025",
+  "n": 0,
+  "done": false
+ },
+ "3011": {
+  "name": "WTT Youth Smash Saudi 2025 (not for publishing)",
+  "n": 0,
+  "done": false
+ },
+ "3012": {
+  "name": "WTT Youth Contender Panagyurishte 2025",
+  "start": "2025-05-15",
+  "end": "2025-05-18",
+  "n": 0,
+  "synced": "2026-11-06T13:39:06Z",
+  "done": true
+ },
+ "3013": {
+  "name": "WTT Youth Contender Platja D'Aro 2025",
+  "start": "2025-05-20",
+  "end": "2025-05-23",
+  "n": 0,
+  "synced": "2026-11-06T13:39:09Z",
+  "done": true
+ },
+ "3014": {
+  "name": "WTT Youth Contender Helsingborg 2025",
+  "start": "2025-06-06",
+  "end": "2025-06-09",
+  "n": 0,
+  "synced": "2026-11-06T13:39:11Z",
+  "done": true
+ },
+ "3015": {
+  "name": "WTT Youth Contender Sandefjord 2025",
+  "start": "2025-06-11",
+  "end": "2025-06-14",
+  "n": 0,
+  "synced": "2026-11-06T13:39:12Z",
+  "done": true
+ },
+ "3016": {
+  "name": "WTT Youth Smash USA 2025 (not for publishing)",
+  "n": 0,
+  "done": false
+ },
+ "3017": {
+  "name": "WTT Youth Contender Hong Kong 2025",
+  "start": "2025-07-28",
+  "end": "2025-08-03",
+  "n": 0,
+  "synced": "2026-11-06T13:39:15Z",
+  "done": true
+ },
+ "3018": {
+  "name": "WTT Youth Smash China 2025 (not for publishing)",
+  "n": 0,
+  "done": false
+ },
+ "3019": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3020": {
+  "name": "WTT Feeder Düsseldorf 2025",
+  "start": "2025-02-11",
+  "end": "2025-02-14",
+  "n": 0,
+  "synced": "2026-11-06T13:39:17Z",
+  "done": true
+ },
+ "3021": {
+  "name": "WTT Feeder Beirut 2025",
+  "n": 0,
+  "done": false
+ },
+ "3022": {
+  "name": "WTT Feeder Beirut II 2025",
+  "n": 0,
+  "done": false
+ },
+ "3023": {
+  "name": "WTT Feeder Manchester 2025",
+  "start": "2025-04-24",
+  "end": "2025-04-27",
+  "n": 0,
+  "synced": "2026-11-06T13:39:19Z",
+  "done": true
+ },
+ "3024": {
+  "name": "WTT Feeder Otocec 2025 Presented by I Feel Slovenia",
+  "start": "2025-03-25",
+  "end": "2025-03-29",
+  "n": 0,
+  "synced": "2026-11-06T13:39:20Z",
+  "done": true
+ },
+ "3025": {
+  "name": "WTT Feeder Otocec II 2025 Presented by I Feel Slovenia",
+  "start": "2025-03-30",
+  "end": "2025-04-03",
+  "n": 0,
+  "synced": "2026-11-06T13:39:22Z",
+  "done": true
+ },
+ "3026": {
+  "name": "WTT Feeder Doha 2025",
+  "start": "2025-02-04",
+  "end": "2025-02-08",
+  "n": 0,
+  "synced": "2026-11-06T13:39:23Z",
+  "done": true
+ },
+ "3027": {
+  "name": "WTT Feeder Panagyurishte 2025 Presented by Asarel",
+  "start": "2025-08-21",
+  "end": "2025-08-24",
+  "n": 0,
+  "synced": "2026-11-06T13:39:24Z",
+  "done": true
+ },
+ "3028": {
+  "name": "WTT Feeder Olomouc 2025",
+  "start": "2025-08-28",
+  "end": "2025-08-31",
+  "n": 0,
+  "synced": "2026-11-06T13:39:25Z",
+  "done": true
+ },
+ "3029": {
+  "name": "WTT Feeder Olomouc 2024",
+  "n": 0,
+  "done": false
+ },
+ "3030": {
+  "name": "WTT Feeder Cappadocia 2025",
+  "start": "2025-02-17",
+  "end": "2025-02-21",
+  "n": 0,
+  "synced": "2026-11-06T13:39:27Z",
+  "done": true
+ },
+ "3031": {
+  "name": "WTT Feeder Cappadocia II 2025",
+  "start": "2025-09-16",
+  "end": "2025-09-20",
+  "n": 0,
+  "synced": "2026-11-06T13:39:28Z",
+  "done": true
+ },
+ "3032": {
+  "name": "WTT Youth Contender Puerto Princesa 2025",
+  "start": "2025-02-12",
+  "end": "2025-02-15",
+  "n": 0,
+  "synced": "2026-11-06T13:39:29Z",
+  "done": true
+ },
+ "3033": {
+  "name": "WTT Youth Contender Cappadocia 2025",
+  "start": "2025-02-12",
+  "end": "2025-02-15",
+  "n": 0,
+  "synced": "2026-11-06T13:39:30Z",
+  "done": true
+ },
+ "3034": {
+  "name": "WTT Youth Contender Doha 2025",
+  "start": "2025-01-27",
+  "end": "2025-01-30",
+  "n": 0,
+  "synced": "2026-11-06T13:39:32Z",
+  "done": true
+ },
+ "3035": {
+  "name": "WTT Youth Star Contender Doha 2025",
+  "start": "2025-01-31",
+  "end": "2025-02-02",
+  "n": 0,
+  "synced": "2026-11-06T13:39:33Z",
+  "done": true
+ },
+ "3036": {
+  "name": "WTT Youth Contender Muscat 2025 (unconfirmed)",
+  "n": 0,
+  "done": false
+ },
+ "3037": {
+  "name": "WTT Youth Contender Gangneung 2025 Presented by SeAH",
+  "start": "2025-03-19",
+  "end": "2025-03-22",
+  "n": 0,
+  "synced": "2026-11-06T13:39:36Z",
+  "done": true
+ },
+ "3038": {
+  "name": "WTT Youth Contender Metz 2025",
+  "start": "2025-04-07",
+  "end": "2025-04-10",
+  "n": 0,
+  "synced": "2026-11-06T13:39:38Z",
+  "done": true
+ },
+ "3039": {
+  "name": "WTT Youth Star Contender Metz 2025",
+  "start": "2025-04-11",
+  "end": "2025-04-13",
+  "n": 0,
+  "synced": "2026-11-06T13:39:39Z",
+  "done": true
+ },
+ "3040": {
+  "name": "WTT Youth Contender Bangkok 2025 Presented by Thaioil",
+  "start": "2025-04-28",
+  "end": "2025-05-01",
+  "n": 0,
+  "synced": "2026-11-06T13:39:42Z",
+  "done": true
+ },
+ "3041": {
+  "name": "WTT Youth Star Contender Bangkok 2025 Presented by Thaioil",
+  "start": "2025-05-02",
+  "end": "2025-05-04",
+  "n": 0,
+  "synced": "2026-11-06T13:39:44Z",
+  "done": true
+ },
+ "3042": {
+  "name": "WTT Youth Contender Tashkent 2025",
+  "start": "2025-05-28",
+  "end": "2025-05-31",
+  "n": 0,
+  "synced": "2026-11-06T13:39:46Z",
+  "done": true
+ },
+ "3043": {
+  "name": "WTT Youth Contender San Francisco III 2025 Presented by DoorDash",
+  "start": "2025-09-17",
+  "end": "2025-09-20",
+  "n": 0,
+  "synced": "2026-11-06T13:39:47Z",
+  "done": true
+ },
+ "3044": {
+  "name": "WTT Youth Contender Amman 2025",
+  "start": "2025-08-14",
+  "end": "2025-08-17",
+  "n": 0,
+  "synced": "2026-11-06T13:39:49Z",
+  "done": true
+ },
+ "3045": {
+  "name": "WTT Youth Contender Almaty 2025",
+  "start": "2025-07-23",
+  "end": "2025-07-26",
+  "n": 0,
+  "synced": "2026-11-06T13:39:51Z",
+  "done": true
+ },
+ "3046": {
+  "name": "WTT Youth Contender Otocec 2025 Presented by I Feel Slovenia",
+  "start": "2025-08-28",
+  "end": "2025-09-03",
+  "n": 0,
+  "synced": "2026-11-06T13:39:53Z",
+  "done": true
+ },
+ "3047": {
+  "name": "WTT Youth Contender Varazdin 2025",
+  "start": "2025-08-28",
+  "end": "2025-09-03",
+  "n": 0,
+  "synced": "2026-11-06T13:39:56Z",
+  "done": true
+ },
+ "3048": {
+  "name": "WTT Youth Contender Bangkok II 2025",
+  "start": "2025-09-10",
+  "end": "2025-09-13",
+  "n": 0,
+  "synced": "2026-11-06T13:39:58Z",
+  "done": true
+ },
+ "3049": {
+  "name": "WTT Youth Contender Luxembourg 2025 Presented by LuXembourg - Let’s Make It Happen",
+  "start": "2025-09-10",
+  "end": "2025-09-13",
+  "n": 0,
+  "synced": "2026-11-06T13:39:59Z",
+  "done": true
+ },
+ "3050": {
+  "name": "WTT Youth Contender Perth 2025",
+  "start": "2025-10-08",
+  "end": "2025-10-11",
+  "n": 0,
+  "synced": "2026-11-06T13:40:01Z",
+  "done": true
+ },
+ "3051": {
+  "name": "WTT Youth Contender Cairo 2025",
+  "start": "2025-10-29",
+  "end": "2025-11-01",
+  "n": 0,
+  "synced": "2026-11-06T13:40:02Z",
+  "done": true
+ },
+ "3052": {
+  "name": "WTT Youth Contender Sulaymaniyah 2025",
+  "start": "2025-11-05",
+  "end": "2025-11-08",
+  "n": 0,
+  "synced": "2026-11-06T13:40:04Z",
+  "done": true
+ },
+ "3053": {
+  "name": "WTT Youth Contender Lignano 2025",
+  "start": "2025-11-03",
+  "end": "2025-11-09",
+  "n": 0,
+  "synced": "2026-11-06T13:40:06Z",
+  "done": true
+ },
+ "3054": {
+  "name": "WTT Youth Contender Szombathely 2025",
+  "start": "2025-11-11",
+  "end": "2025-11-14",
+  "n": 0,
+  "synced": "2026-11-06T13:40:09Z",
+  "done": true
+ },
+ "3055": {
+  "name": "WTT Youth Contender San Francisco IV 2025 Presented by MongoDB",
+  "start": "2025-10-29",
+  "end": "2025-11-01",
+  "n": 0,
+  "synced": "2026-11-06T13:40:10Z",
+  "done": true
+ },
+ "3056": {
+  "name": "WTT Youth Contender Senec 2025",
+  "start": "2025-11-03",
+  "end": "2025-11-09",
+  "n": 0,
+  "synced": "2026-11-06T13:40:12Z",
+  "done": true
+ },
+ "3057": {
+  "name": "WTT Feeder Helsingborg 2025",
+  "n": 0,
+  "done": false
+ },
+ "3058": {
+  "name": "WTT Feeder Prishtina 2025",
+  "start": "2025-06-03",
+  "end": "2025-06-07",
+  "n": 0,
+  "synced": "2026-11-06T13:40:15Z",
+  "done": true
+ },
+ "3059": {
+  "name": "WTT Feeder Parma 2025",
+  "start": "2025-11-29",
+  "end": "2025-12-03",
+  "n": 0,
+  "synced": "2026-11-06T13:40:16Z",
+  "done": true
+ },
+ "3060": {
+  "name": "WTT Youth Contender Prishtina 2025",
+  "start": "2025-05-29",
+  "end": "2025-06-01",
+  "n": 0,
+  "synced": "2026-11-06T13:40:17Z",
+  "done": true
+ },
+ "3061": {
+  "name": "WTT Youth Star Contender Skopje 2025",
+  "start": "2025-09-05",
+  "end": "2025-09-07",
+  "n": 0,
+  "synced": "2026-11-06T13:40:19Z",
+  "done": true
+ },
+ "3062": {
+  "name": "WTT Youth Contender Batumi 2025",
+  "start": "2025-09-18",
+  "end": "2025-09-21",
+  "n": 0,
+  "synced": "2026-11-06T13:40:21Z",
+  "done": true
+ },
+ "3063": {
+  "name": "WTT Youth Contender San Francisco II 2025 Presented by MongoDB",
+  "start": "2025-04-05",
+  "end": "2025-04-08",
+  "n": 0,
+  "synced": "2026-11-06T13:40:22Z",
+  "done": true
+ },
+ "3064": {
+  "name": "WTT Youth Contender Beirut 2025",
+  "n": 0,
+  "done": false
+ },
+ "3065": {
+  "name": "WTT Feeder Düsseldorf II 2025",
+  "start": "2025-11-24",
+  "end": "2025-11-27",
+  "n": 0,
+  "synced": "2026-11-06T13:40:24Z",
+  "done": true
+ },
+ "3066": {
+  "name": "WTT Feeder Vila Nova de Gaia 2025",
+  "start": "2025-11-05",
+  "end": "2025-11-09",
+  "n": 0,
+  "synced": "2026-11-06T13:40:26Z",
+  "done": true
+ },
+ "3067": {
+  "name": "WTT Youth Contender New York 2025",
+  "start": "2025-06-24",
+  "end": "2025-06-27",
+  "n": 0,
+  "synced": "2026-11-06T13:40:27Z",
+  "done": true
+ },
+ "3068": {
+  "name": "WTT Youth Contender Fremont 2025 Presented By Databricks",
+  "start": "2025-09-22",
+  "end": "2025-09-25",
+  "n": 0,
+  "synced": "2026-11-06T13:40:29Z",
+  "done": true
+ },
+ "3069": {
+  "name": "WTT Feeder Havirov 2025",
+  "start": "2025-04-05",
+  "end": "2025-04-09",
+  "n": 0,
+  "synced": "2026-11-06T13:40:30Z",
+  "done": true
+ },
+ "3070": {
+  "name": "WTT Youth Contender Sarajevo 2025",
+  "start": "2025-04-22",
+  "end": "2025-04-25",
+  "n": 0,
+  "synced": "2026-11-06T13:40:32Z",
+  "done": true
+ },
+ "3071": {
+  "name": "WTT Youth Contender Zrenjanin 2025",
+  "start": "2025-04-02",
+  "end": "2025-04-05",
+  "n": 0,
+  "synced": "2026-11-06T13:40:34Z",
+  "done": true
+ },
+ "3072": {
+  "name": "WTT Youth Contender Vientiane 2025 Presented by ICBC Bank",
+  "start": "2025-08-06",
+  "end": "2025-08-09",
+  "n": 0,
+  "synced": "2026-11-06T13:40:36Z",
+  "done": true
+ },
+ "3073": {
+  "name": "WTT Youth Contender Vadodara 2025 Presented by Parul University",
+  "start": "2025-02-26",
+  "end": "2025-03-01",
+  "n": 0,
+  "synced": "2026-11-06T13:40:39Z",
+  "done": true
+ },
+ "3074": {
+  "name": "WTT Youth Contender Humacao 2025",
+  "start": "2025-03-26",
+  "end": "2025-03-29",
+  "n": 0,
+  "synced": "2026-11-06T13:40:41Z",
+  "done": true
+ },
+ "3075": {
+  "name": "WTT Youth Contender Cuenca 2025",
+  "start": "2025-04-01",
+  "end": "2025-04-04",
+  "n": 0,
+  "synced": "2026-11-06T13:40:42Z",
+  "done": true
+ },
+ "3076": {
+  "name": "WTT Youth Contender Dammam 2025",
+  "start": "2025-12-07",
+  "end": "2025-12-10",
+  "n": 0,
+  "synced": "2026-11-06T13:40:44Z",
+  "done": true
+ },
+ "3077": {
+  "name": "WTT Youth Contender Dubai 2025",
+  "start": "2025-10-21",
+  "end": "2025-10-24",
+  "n": 0,
+  "synced": "2026-11-06T13:40:46Z",
+  "done": true
+ },
+ "3078": {
+  "name": "WTT Youth Contender Podgorica 2025",
+  "start": "2025-10-13",
+  "end": "2025-10-16",
+  "n": 0,
+  "synced": "2026-11-06T13:40:47Z",
+  "done": true
+ },
+ "3079": {
+  "name": "WTT Youth Star Contender Podgorica 2025",
+  "start": "2025-10-17",
+  "end": "2025-10-19",
+  "n": 0,
+  "synced": "2026-11-06T13:40:49Z",
+  "done": true
+ },
+ "3080": {
+  "name": "WTT Youth Contender Monteria 2025",
+  "start": "2025-05-13",
+  "end": "2025-05-16",
+  "n": 0,
+  "synced": "2026-11-06T13:40:51Z",
+  "done": true
+ },
+ "3081": {
+  "name": "2024 Asian Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3082": {
+  "name": "United States Smash 2025",
+  "start": "2025-07-03",
+  "end": "2025-07-13",
+  "n": 0,
+  "synced": "2026-11-06T13:40:53Z",
+  "done": true
+ },
+ "3083": {
+  "name": "WTT Star Contender Doha 2025",
+  "start": "2025-01-06",
+  "end": "2025-01-11",
+  "n": 0,
+  "synced": "2026-11-06T13:40:54Z",
+  "done": true
+ },
+ "3084": {
+  "name": "WTT Contender Muscat 2025",
+  "start": "2025-01-11",
+  "end": "2025-01-17",
+  "n": 0,
+  "synced": "2026-11-06T13:40:55Z",
+  "done": true
+ },
+ "3085": {
+  "name": "Singapore Smash 2025",
+  "start": "2025-01-30",
+  "end": "2025-02-09",
+  "n": 0,
+  "synced": "2026-11-06T13:40:56Z",
+  "done": true
+ },
+ "3086": {
+  "name": "WTT Champions Chongqing 2025 Presented by AITO",
+  "start": "2025-03-11",
+  "end": "2025-03-16",
+  "n": 0,
+  "synced": "2026-11-06T13:40:57Z",
+  "done": true
+ },
+ "3087": {
+  "name": "WTT Champions Incheon 2025",
+  "start": "2025-04-01",
+  "end": "2025-04-06",
+  "n": 0,
+  "synced": "2026-11-06T13:40:58Z",
+  "done": true
+ },
+ "3088": {
+  "name": "WTT Contender Taiyuan 2025",
+  "start": "2025-04-08",
+  "end": "2025-04-13",
+  "n": 0,
+  "synced": "2026-11-06T13:40:59Z",
+  "done": true
+ },
+ "3089": {
+  "name": "WTT Contender Tunis 2025 Presented By Tunisie Telecom",
+  "start": "2025-04-22",
+  "end": "2025-04-27",
+  "n": 0,
+  "synced": "2026-11-06T13:41:01Z",
+  "done": true
+ },
+ "3090": {
+  "name": "WTT Contender Skopje 2025",
+  "start": "2025-06-09",
+  "end": "2025-06-15",
+  "n": 0,
+  "synced": "2026-11-06T13:41:02Z",
+  "done": true
+ },
+ "3091": {
+  "name": "WTT Star Contender Ljubljana 2025 Presented by I Feel Slovenia",
+  "start": "2025-06-17",
+  "end": "2025-06-22",
+  "n": 0,
+  "synced": "2026-11-06T13:41:04Z",
+  "done": true
+ },
+ "3092": {
+  "name": "WTT Contender Zagreb 2025",
+  "start": "2025-06-24",
+  "end": "2025-06-29",
+  "n": 0,
+  "synced": "2026-11-06T13:41:05Z",
+  "done": true
+ },
+ "3093": {
+  "name": "WTT Star Contender Foz do Iguaçu 2025",
+  "start": "2025-07-30",
+  "end": "2025-08-03",
+  "n": 0,
+  "synced": "2026-11-06T13:41:06Z",
+  "done": true
+ },
+ "3094": {
+  "name": "WTT Champions Yokohama 2025",
+  "start": "2025-08-07",
+  "end": "2025-08-11",
+  "n": 0,
+  "synced": "2026-11-06T13:41:07Z",
+  "done": true
+ },
+ "3095": {
+  "name": "WTT Contender Lagos 2025",
+  "n": 0,
+  "done": false
+ },
+ "3096": {
+  "name": "WTT Contender Almaty 2025",
+  "start": "2025-09-02",
+  "end": "2025-09-07",
+  "n": 0,
+  "synced": "2026-11-06T13:41:09Z",
+  "done": true
+ },
+ "3097": {
+  "name": "WTT Champions Macao 2025 Presented by Galaxy Entertainment Group",
+  "start": "2025-09-09",
+  "end": "2025-09-14",
+  "n": 0,
+  "synced": "2026-11-06T13:41:10Z",
+  "done": true
+ },
+ "3098": {
+  "name": "China Smash 2025 Presented by Beijing Shijingshan Culture & Tourism Group",
+  "start": "2025-09-25",
+  "end": "2025-10-05",
+  "n": 0,
+  "synced": "2026-11-06T13:41:11Z",
+  "done": true
+ },
+ "3099": {
+  "name": "WTT Champions Montpellier 2025",
+  "start": "2025-10-28",
+  "end": "2025-11-02",
+  "n": 0,
+  "synced": "2026-11-06T13:41:12Z",
+  "done": true
+ },
+ "3100": {
+  "name": "WTT Champions Frankfurt 2025",
+  "start": "2025-11-04",
+  "end": "2025-11-09",
+  "n": 0,
+  "synced": "2026-11-06T13:41:13Z",
+  "done": true
+ },
+ "3101": {
+  "name": "2024 European Championships",
+  "n": 0,
+  "done": false
+ },
+ "3102": {
+  "name": "ITTF-Oceania U21 Championships 2024",
+  "n": 0,
+  "done": false
+ },
+ "3103": {
+  "name": "2024 ITTF-Oceania Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3104": {
+  "name": "ITTF-Africa Team Championships Addis Ababa 2024",
+  "n": 0,
+  "done": false
+ },
+ "3105": {
+  "name": "2024 ITTF Pan American Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3106": {
+  "name": "World Parkinson´s & Alzheimer´s Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "3107": {
+  "name": "WTT Youth Contender Tunis II 2025",
+  "start": "2025-10-08",
+  "end": "2025-10-11",
+  "n": 0,
+  "synced": "2026-11-06T13:41:18Z",
+  "done": true
+ },
+ "3108": {
+  "name": "ITTF World Table Tennis Championships Finals Doha 2025",
+  "start": "2025-05-17",
+  "end": "2025-05-25",
+  "n": 0,
+  "synced": "2026-11-06T13:41:20Z",
+  "done": true
+ },
+ "3109": {
+  "name": "ITTF Men's and Women's World Cup Macao 2025 Presented by Galaxy Entertainment Group",
+  "start": "2025-04-14",
+  "end": "2025-04-20",
+  "n": 0,
+  "synced": "2026-11-06T13:41:21Z",
+  "done": true
+ },
+ "3110": {
+  "name": "WTT Star Contender London 2025",
+  "start": "2025-10-21",
+  "end": "2025-10-26",
+  "n": 0,
+  "synced": "2026-11-06T13:41:23Z",
+  "done": true
+ },
+ "3111": {
+  "name": "WTT Star Contender China 2025",
+  "n": 0,
+  "done": false
+ },
+ "3112": {
+  "name": "WTT Finals Hong Kong 2025",
+  "start": "2025-12-10",
+  "end": "2025-12-14",
+  "n": 0,
+  "synced": "2026-11-06T13:41:24Z",
+  "done": true
+ },
+ "3113": {
+  "name": "WTT Youth Contender Asunción 2025",
+  "start": "2025-03-13",
+  "end": "2025-03-16",
+  "n": 0,
+  "synced": "2026-11-06T13:41:26Z",
+  "done": true
+ },
+ "3114": {
+  "name": "WTT Youth Contender Cancun 2025",
+  "n": 0,
+  "done": false
+ },
+ "3115": {
+  "name": "ITTF-Oceania Cup 2025",
+  "n": 0,
+  "done": false
+ },
+ "3116": {
+  "name": "ITTF African Cup 2025",
+  "n": 0,
+  "done": false
+ },
+ "3117": {
+  "name": "ITTF Pan American Cup 2025 presented By J.P. MORGAN",
+  "n": 0,
+  "done": false
+ },
+ "3118": {
+  "name": "ITTF World Youth Championships 2025",
+  "start": "2025-11-23",
+  "end": "2025-11-30",
+  "n": 0,
+  "synced": "2026-11-06T13:41:29Z",
+  "done": true
+ },
+ "3119": {
+  "name": "WTT Youth Contender Caracas 2025",
+  "start": "2025-07-01",
+  "end": "2025-07-04",
+  "n": 0,
+  "synced": "2026-11-06T13:41:31Z",
+  "done": true
+ },
+ "3120": {
+  "name": "WTT Youth Contender Buenos Aires 2025",
+  "start": "2025-03-18",
+  "end": "2025-03-21",
+  "n": 0,
+  "synced": "2026-11-06T13:41:32Z",
+  "done": true
+ },
+ "3121": {
+  "name": "WTT Contender Lagos 2025",
+  "start": "2025-07-22",
+  "end": "2025-07-26",
+  "n": 0,
+  "synced": "2026-11-06T13:41:34Z",
+  "done": true
+ },
+ "3122": {
+  "name": "34th ITTF-ATTU Asian Cup 2025",
+  "n": 0,
+  "done": false
+ },
+ "3123": {
+  "name": "WTT Youth Contender Caracas II 2025",
+  "start": "2025-10-23",
+  "end": "2025-10-26",
+  "n": 0,
+  "synced": "2026-11-06T13:41:36Z",
+  "done": true
+ },
+ "3124": {
+  "name": "SINGAPORE SMASH 2025 PARA SHOWCASE EVENT",
+  "start": "2025-02-03",
+  "end": "2025-02-05",
+  "n": 0,
+  "synced": "2026-11-06T13:41:36Z",
+  "done": true
+ },
+ "3125": {
+  "name": "SINGAPORE SMASH 2024 PARA SHOWCASE EVENT",
+  "n": 0,
+  "done": false
+ },
+ "3126": {
+  "name": "United States Youth Smash 2025",
+  "n": 0,
+  "done": false
+ },
+ "3127": {
+  "name": "WTT Youth Contender Mississauga 2025",
+  "start": "2025-08-14",
+  "end": "2025-08-17",
+  "n": 0,
+  "synced": "2026-11-06T13:41:40Z",
+  "done": true
+ },
+ "3128": {
+  "name": "Europe Smash - Sweden 2025",
+  "start": "2025-08-14",
+  "end": "2025-08-24",
+  "n": 0,
+  "synced": "2026-11-06T13:41:41Z",
+  "done": true
+ },
+ "3129": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3130": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3131": {
+  "name": "WTT Feeder Vientiane 2025 Presented by ICBC Bank",
+  "start": "2025-08-11",
+  "end": "2025-08-15",
+  "n": 0,
+  "synced": "2026-11-06T13:41:45Z",
+  "done": true
+ },
+ "3132": {
+  "name": "WTT Feeder Caracas 2025",
+  "n": 0,
+  "done": false
+ },
+ "3133": {
+  "name": "WTT Star Contender Chennai 2025 Presented by IndianOil",
+  "start": "2025-03-25",
+  "end": "2025-03-30",
+  "n": 0,
+  "synced": "2026-11-06T13:41:47Z",
+  "done": true
+ },
+ "3134": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3135": {
+  "name": "North Africa Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3136": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3137": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3138": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3139": {
+  "name": "East Africa Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3140": {
+  "name": "Central Africa Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3141": {
+  "name": "South Africa Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3142": {
+  "name": "West Africa Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3143": {
+  "name": "ITTF African Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3144": {
+  "name": "ITTF African Youth Cup 2025",
+  "n": 0,
+  "done": false
+ },
+ "3145": {
+  "name": "ITTF African Para Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3146": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3147": {
+  "name": "ITTF Oceania Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3148": {
+  "name": "ITTF Oceania Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3149": {
+  "name": "Pacific Mini Games 2025",
+  "n": 0,
+  "done": false
+ },
+ "3150": {
+  "name": "ITTF Oceania Para Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3151": {
+  "name": "Central American Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3152": {
+  "name": "South American U11 & U13 Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3153": {
+  "name": "Central American Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3154": {
+  "name": "South American Youth Championships (U15 & U19) 2025",
+  "n": 0,
+  "done": false
+ },
+ "3155": {
+  "name": "South American Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3156": {
+  "name": "Central American U11 & U13 Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3157": {
+  "name": "Asuncion 2025 Junior Pan American Games",
+  "n": 0,
+  "done": false
+ },
+ "3158": {
+  "name": "ITTF Pan American Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3159": {
+  "name": "Central American Master Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3160": {
+  "name": "Pan American U11 & U13 Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3161": {
+  "name": "South American Master Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3162": {
+  "name": "ITTF Pan American Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3163": {
+  "name": "ITTF-Americas Masters Championships Asuncion 2025",
+  "n": 0,
+  "done": false
+ },
+ "3164": {
+  "name": "XX Bolivarian Games 2025",
+  "n": 0,
+  "done": false
+ },
+ "3165": {
+  "name": "29th Asian Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3166": {
+  "name": "28th ITTF- ATTU Asian Table Tennis Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3167": {
+  "name": "Caribbean Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3168": {
+  "name": "Caribbean Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3169": {
+  "name": "TEST - ITTF WTTC 2025",
+  "n": 0,
+  "done": false
+ },
+ "3170": {
+  "name": "2025 Europe Top-16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "3171": {
+  "name": "2025 ITTF – CONSUTEME Circle 10",
+  "n": 0,
+  "done": false
+ },
+ "3172": {
+  "name": "",
+  "n": 0,
+  "done": false
+ },
+ "3173": {
+  "name": "ITTF World Para Future Lignano 2025",
+  "n": 0,
+  "done": false
+ },
+ "3174": {
+  "name": "ITTF World Para Future Costa Brava 2025",
+  "n": 0,
+  "done": false
+ },
+ "3175": {
+  "name": "WTT Contender Buenos Aires 2025",
+  "start": "2025-07-22",
+  "end": "2025-07-27",
+  "n": 0,
+  "synced": "2026-11-06T13:42:15Z",
+  "done": true
+ },
+ "3176": {
+  "name": "WTT Star Contender Muscat 2025",
+  "start": "2025-11-17",
+  "end": "2025-11-22",
+  "n": 0,
+  "synced": "2026-11-06T13:42:16Z",
+  "done": true
+ },
+ "3177": {
+  "name": "WTT Feeder Spokane 2025",
+  "start": "2025-08-05",
+  "end": "2025-08-08",
+  "n": 0,
+  "synced": "2026-11-06T13:42:17Z",
+  "done": true
+ },
+ "3178": {
+  "name": "WTT Feeder Spokane II 2025",
+  "start": "2025-08-10",
+  "end": "2025-08-12",
+  "n": 0,
+  "synced": "2026-11-06T13:42:18Z",
+  "done": true
+ },
+ "3179": {
+  "name": "West Asian Regional Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3180": {
+  "name": "East Asian Regional Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3181": {
+  "name": "Central Asian Regional Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3182": {
+  "name": "Southeast Asian Regional Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3183": {
+  "name": "South Asian Regional Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3184": {
+  "name": "ITTF World Para Challenger Wladyslawowo 2025",
+  "n": 0,
+  "done": false
+ },
+ "3185": {
+  "name": "Caribbean Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3186": {
+  "name": "Central American Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3187": {
+  "name": "West Asian Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3188": {
+  "name": "ITTF World Para Future Lahti 2025",
+  "n": 0,
+  "done": false
+ },
+ "3189": {
+  "name": "ITTF World Para Future Amman 2025",
+  "n": 0,
+  "done": false
+ },
+ "3190": {
+  "name": "ITTF World Para Challenger Sao Paulo 2025",
+  "n": 0,
+  "done": false
+ },
+ "3191": {
+  "name": "WTT Feeder Gdansk 2025",
+  "start": "2025-11-10",
+  "end": "2025-11-14",
+  "n": 0,
+  "synced": "2026-11-06T13:42:27Z",
+  "done": true
+ },
+ "3192": {
+  "name": "North Africa Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3193": {
+  "name": "West Asia Regional Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3194": {
+  "name": "ITTF World Para Challenger Podgorica 2025",
+  "n": 0,
+  "done": false
+ },
+ "3195": {
+  "name": "Europe Youth Smash - Sweden 2025",
+  "start": "2025-08-21",
+  "end": "2025-08-24",
+  "n": 0,
+  "synced": "2026-11-06T13:42:30Z",
+  "done": true
+ },
+ "3196": {
+  "name": "European U21 Championships Bratislava 2025",
+  "n": 0,
+  "done": false
+ },
+ "3197": {
+  "name": "ITTF World Para Challenger Lasko 2025",
+  "n": 0,
+  "done": false
+ },
+ "3198": {
+  "name": "ITTF World Para Elite Lasko 2025",
+  "n": 0,
+  "done": false
+ },
+ "3199": {
+  "name": "WTT Feeder Istanbul 2025",
+  "start": "2025-09-11",
+  "end": "2025-09-15",
+  "n": 0,
+  "synced": "2026-11-06T13:42:33Z",
+  "done": true
+ },
+ "3200": {
+  "name": "Testing live",
+  "n": 0,
+  "done": false
+ },
+ "3201": {
+  "name": "Games of the Small States of Europe Andorra 2025",
+  "n": 0,
+  "done": false
+ },
+ "3202": {
+  "name": "ITTF World Para Future Buenos Aires 2025",
+  "n": 0,
+  "done": false
+ },
+ "3203": {
+  "name": "ITTF Oceania Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3204": {
+  "name": "ITTF Oceania Regional Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3205": {
+  "name": "East Africa Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3206": {
+  "name": "ITTF-Oceania Team Championships Christchurch 2025",
+  "n": 0,
+  "done": false
+ },
+ "3207": {
+  "name": "ITTF World Para Future Santiago de Chile 2025",
+  "n": 0,
+  "done": false
+ },
+ "3208": {
+  "name": "Central Asia Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3209": {
+  "name": "Caribbean Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3210": {
+  "name": "South Asian Regional Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3211": {
+  "name": "ITTF World Para Future Ostrava 2025",
+  "n": 0,
+  "done": false
+ },
+ "3212": {
+  "name": "South America Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3213": {
+  "name": "Central Africa Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3214": {
+  "name": "ITTF World Para Future Taipei 2025",
+  "n": 0,
+  "done": false
+ },
+ "3215": {
+  "name": "SIMULATION United States Smash 2025",
+  "start": "2025-06-29",
+  "end": "2025-06-30",
+  "n": 0,
+  "synced": "2026-11-06T13:42:43Z",
+  "done": true
+ },
+ "3216": {
+  "name": "ITTF World Team Table Tennis Championships Finals London 2026 Presented by ACN",
+  "start": "2026-04-28",
+  "end": "2026-05-10",
+  "n": 245,
+  "synced": "2026-11-06T13:42:47Z",
+  "done": true
+ },
+ "3217": {
+  "name": "ITTF World Para Challenger Kaohsiung 2025",
+  "n": 0,
+  "done": false
+ },
+ "3218": {
+  "name": "LA 2028 Olympic Games",
+  "n": 0,
+  "done": false
+ },
+ "3219": {
+  "name": "Dakar 2026 Youth Olympic Games",
+  "n": 0,
+  "done": false
+ },
+ "3220": {
+  "name": "South Africa Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3221": {
+  "name": "West Africa Regional Team Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3222": {
+  "name": "European Youth Championships Ostrava 2025",
+  "n": 0,
+  "done": false
+ },
+ "3223": {
+  "name": "TESTING EVENT - WTT Contender",
+  "n": 0,
+  "done": false
+ },
+ "3224": {
+  "name": "ITTF World Para Elite Nakhon Ratchasima 2025",
+  "n": 0,
+  "done": false
+ },
+ "3225": {
+  "name": "ITTF World Masters Table Tennis Championships Gangneung 2026",
+  "n": 0,
+  "done": false
+ },
+ "3226": {
+  "name": "FISU World University Games Rhine-Ruhr 2025",
+  "n": 0,
+  "done": false
+ },
+ "3227": {
+  "name": "China Youth Smash 2025 Presented by Beijing Shijingshan Culture & Tourism Group",
+  "start": "2025-10-03",
+  "end": "2025-10-05",
+  "n": 0,
+  "synced": "2026-11-06T13:42:55Z",
+  "done": true
+ },
+ "3228": {
+  "name": "LA 2028 Paralympic Games",
+  "n": 0,
+  "done": false
+ },
+ "3229": {
+  "name": "European Paralympic Youth Games Istanbul 2025",
+  "n": 0,
+  "done": false
+ },
+ "3230": {
+  "name": "28th ITTF-ATTU Asian Team Championships",
+  "n": 0,
+  "done": false
+ },
+ "3231": {
+  "name": "WTT Champions Doha 2026",
+  "start": "2026-01-07",
+  "end": "2026-01-11",
+  "n": 0,
+  "synced": "2026-11-06T13:42:58Z",
+  "done": true
+ },
+ "3232": {
+  "name": "WTT Star Contender Doha 2026",
+  "start": "2026-01-13",
+  "end": "2026-01-18",
+  "n": 0,
+  "synced": "2026-11-06T13:42:59Z",
+  "done": true
+ },
+ "3233": {
+  "name": "WTT Star Contender Chennai 2026",
+  "start": "2026-02-10",
+  "end": "2026-02-15",
+  "n": 0,
+  "synced": "2026-11-06T13:43:01Z",
+  "done": true
+ },
+ "3234": {
+  "name": "Singapore Smash 2026 Presented by Resorts World Sentosa",
+  "start": "2026-02-19",
+  "end": "2026-03-01",
+  "n": 0,
+  "synced": "2026-11-06T13:43:02Z",
+  "done": true
+ },
+ "3235": {
+  "name": "WTT Champions Chongqing 2026 Presented by AITO",
+  "start": "2026-03-10",
+  "end": "2026-03-15",
+  "n": 0,
+  "synced": "2026-11-06T13:43:03Z",
+  "done": true
+ },
+ "3236": {
+  "name": "WTT Contender Tunis 2026",
+  "start": "2026-03-24",
+  "end": "2026-03-29",
+  "n": 0,
+  "synced": "2026-11-06T13:43:04Z",
+  "done": true
+ },
+ "3237": {
+  "name": "WTT Contender Taiyuan 2026",
+  "start": "2026-04-07",
+  "end": "2026-04-12",
+  "n": 0,
+  "synced": "2026-11-06T13:43:05Z",
+  "done": true
+ },
+ "3238": {
+  "name": "WTT Contender Lagos 2026",
+  "start": "2026-05-19",
+  "end": "2026-05-24",
+  "n": 0,
+  "synced": "2026-11-06T13:43:07Z",
+  "done": true
+ },
+ "3239": {
+  "name": "WTT Contender Skopje 2026",
+  "start": "2026-06-01",
+  "end": "2026-06-07",
+  "n": 0,
+  "synced": "2026-11-06T13:43:08Z",
+  "done": true
+ },
  "3240": {
   "name": "WTT Contender Zagreb 2026",
   "start": "2026-06-09",
   "end": "2026-06-14",
   "n": 0,
-  "synced": "2026-11-06T13:29:21Z",
+  "synced": "2026-11-06T13:43:09Z",
   "done": true
  },
  "3241": {
@@ -12,7 +3207,7 @@
   "start": "2026-06-16",
   "end": "2026-06-21",
   "n": 239,
-  "synced": "2026-11-06T13:29:29Z",
+  "synced": "2026-11-06T13:43:10Z",
   "done": true
  },
  "3242": {
@@ -20,7 +3215,7 @@
   "start": "2026-06-26",
   "end": "2026-07-06",
   "n": 274,
-  "synced": "2026-11-06T13:29:34Z",
+  "synced": "2026-11-06T13:43:11Z",
   "done": true
  },
  "3243": {
@@ -33,7 +3228,7 @@
   "start": "2026-07-21",
   "end": "2026-07-26",
   "n": 186,
-  "synced": "2026-11-06T13:29:41Z",
+  "synced": "2026-11-06T13:43:12Z",
   "done": true
  },
  "3245": {
@@ -41,7 +3236,7 @@
   "start": "2026-08-04",
   "end": "2026-08-09",
   "n": 62,
-  "synced": "2026-11-06T13:29:44Z",
+  "synced": "2026-11-06T13:43:13Z",
   "done": true
  },
  "3246": {
@@ -49,7 +3244,7 @@
   "start": "2026-08-08",
   "end": "2026-08-16",
   "n": 307,
-  "synced": "2026-11-06T13:29:46Z",
+  "synced": "2026-11-06T13:43:14Z",
   "done": true
  },
  "3247": {
@@ -57,7 +3252,7 @@
   "start": "2026-09-01",
   "end": "2026-09-06",
   "n": 168,
-  "synced": "2026-11-06T13:29:48Z",
+  "synced": "2026-11-06T13:43:15Z",
   "done": true
  },
  "3248": {
@@ -65,7 +3260,7 @@
   "start": "2026-09-08",
   "end": "2026-09-13",
   "n": 62,
-  "synced": "2026-11-06T13:29:50Z",
+  "synced": "2026-11-06T13:43:16Z",
   "done": true
  },
  "3249": {
@@ -73,7 +3268,7 @@
   "start": "2026-10-01",
   "end": "2026-10-11",
   "n": 307,
-  "synced": "2026-11-06T13:29:51Z",
+  "synced": "2026-11-06T13:43:17Z",
   "done": true
  },
  "3250": {
@@ -81,7 +3276,7 @@
   "start": "2026-10-27",
   "end": "2026-11-01",
   "n": 62,
-  "synced": "2026-11-06T13:29:53Z",
+  "synced": "2026-11-06T13:43:18Z",
   "done": true
  },
  "3251": {
@@ -89,7 +3284,7 @@
   "start": "2026-01-19",
   "end": "2026-01-24",
   "n": 0,
-  "synced": "2026-11-06T13:29:57Z",
+  "synced": "2026-11-06T13:43:18Z",
   "done": true
  },
  "3252": {
@@ -97,7 +3292,7 @@
   "start": "2026-11-03",
   "end": "2026-11-06",
   "n": 38,
-  "synced": "2026-11-06T13:29:58Z",
+  "synced": "2026-11-06T13:43:19Z",
   "done": false
  },
  "3253": {
@@ -105,7 +3300,7 @@
   "start": "2026-09-08",
   "end": "2026-09-13",
   "n": 225,
-  "synced": "2026-11-06T13:30:00Z",
+  "synced": "2026-11-06T13:43:20Z",
   "done": true
  },
  "3254": {
@@ -113,7 +3308,7 @@
   "start": "2026-09-15",
   "end": "2026-09-20",
   "n": 199,
-  "synced": "2026-11-06T13:30:02Z",
+  "synced": "2026-11-06T13:43:21Z",
   "done": true
  },
  "3255": {
@@ -143,6 +3338,1073 @@
  },
  "3260": {
   "name": "TESTING EVENT - WTT Contender",
+  "n": 0,
+  "done": false
+ },
+ "3261": {
+  "name": "ITTF World Para Future Spokane 2025",
+  "n": 0,
+  "done": false
+ },
+ "3262": {
+  "name": "ITTF World Para Elite Spokane 2025",
+  "n": 0,
+  "done": false
+ },
+ "3263": {
+  "name": "ITTF Mixed Team World Cup Chengdu 2025 Presented by China Telecom",
+  "start": "2025-11-30",
+  "end": "2025-12-07",
+  "n": 0,
+  "synced": "2026-11-06T13:43:24Z",
+  "done": true
+ },
+ "3264": {
+  "name": "ITTF World Para Future Tokyo 2025",
+  "n": 0,
+  "done": false
+ },
+ "3265": {
+  "name": "ITTF-Africa Championships Tunis 2025",
+  "n": 0,
+  "done": false
+ },
+ "3266": {
+  "name": "WTT Feeder Cappadocia 2026",
+  "start": "2026-02-02",
+  "end": "2026-02-06",
+  "n": 0,
+  "synced": "2026-11-06T13:43:27Z",
+  "done": true
+ },
+ "3267": {
+  "name": "WTT Feeder Düsseldorf 2026",
+  "start": "2026-03-02",
+  "end": "2026-03-06",
+  "n": 0,
+  "synced": "2026-11-06T13:43:29Z",
+  "done": true
+ },
+ "3268": {
+  "name": "WTT Feeder Otocec 2026 Presented by I Feel Slovenia",
+  "start": "2026-03-07",
+  "end": "2026-03-11",
+  "n": 0,
+  "synced": "2026-11-06T13:43:30Z",
+  "done": true
+ },
+ "3269": {
+  "name": "WTT Feeder Gdansk 2026",
+  "n": 0,
+  "done": false
+ },
+ "3270": {
+  "name": "WTT Feeder Havirov 2026",
+  "start": "2026-04-13",
+  "end": "2026-04-17",
+  "n": 0,
+  "synced": "2026-11-06T13:43:32Z",
+  "done": true
+ },
+ "3271": {
+  "name": "WTT Feeder Prishtina 2026",
+  "start": "2026-05-27",
+  "end": "2026-05-31",
+  "n": 0,
+  "synced": "2026-11-06T13:43:33Z",
+  "done": true
+ },
+ "3272": {
+  "name": "WTT Feeder Vientiane 2026 Presented by ICBC Bank",
+  "start": "2026-08-04",
+  "end": "2026-08-08",
+  "n": 196,
+  "synced": "2026-11-06T13:43:41Z",
+  "done": true
+ },
+ "3273": {
+  "name": "WTT Youth Contender Vadodara 2026 Presented by Sports Authority of Gujarat",
+  "start": "2026-01-02",
+  "end": "2026-01-05",
+  "n": 0,
+  "synced": "2026-11-06T13:43:44Z",
+  "done": true
+ },
+ "3274": {
+  "name": "WTT Youth Contender San Francisco 2026",
+  "start": "2026-01-02",
+  "end": "2026-01-05",
+  "n": 0,
+  "synced": "2026-11-06T13:43:45Z",
+  "done": true
+ },
+ "3275": {
+  "name": "WTT Youth Contender Linz 2026",
+  "start": "2026-01-08",
+  "end": "2026-01-11",
+  "n": 0,
+  "synced": "2026-11-06T13:43:48Z",
+  "done": true
+ },
+ "3276": {
+  "name": "WTT Youth Contender Manama 2026",
+  "start": "2026-01-14",
+  "end": "2026-01-17",
+  "n": 0,
+  "synced": "2026-11-06T13:43:49Z",
+  "done": true
+ },
+ "3277": {
+  "name": "WTT Youth Star Contender Doha 2026",
+  "start": "2026-01-23",
+  "end": "2026-01-25",
+  "n": 0,
+  "synced": "2026-11-06T13:43:51Z",
+  "done": true
+ },
+ "3278": {
+  "name": "WTT Youth Contender Doha 2026",
+  "start": "2026-01-19",
+  "end": "2026-01-22",
+  "n": 0,
+  "synced": "2026-11-06T13:43:53Z",
+  "done": true
+ },
+ "3279": {
+  "name": "WTT Youth Contender Cappadocia 2026",
+  "start": "2026-01-28",
+  "end": "2026-01-31",
+  "n": 0,
+  "synced": "2026-11-06T13:43:54Z",
+  "done": true
+ },
+ "3280": {
+  "name": "WTT Youth Contender Tunis 2026",
+  "start": "2026-02-02",
+  "end": "2026-02-05",
+  "n": 0,
+  "synced": "2026-11-06T13:43:56Z",
+  "done": true
+ },
+ "3281": {
+  "name": "WTT Youth Star Contender Tunis 2026",
+  "start": "2026-02-06",
+  "end": "2026-02-08",
+  "n": 0,
+  "synced": "2026-11-06T13:43:58Z",
+  "done": true
+ },
+ "3282": {
+  "name": "WTT Feeder Olomouc 2026",
+  "start": "2026-08-15",
+  "end": "2026-08-28",
+  "n": 184,
+  "synced": "2026-11-06T13:44:00Z",
+  "done": true
+ },
+ "3283": {
+  "name": "WTT Feeder Doha II 2026",
+  "n": 0,
+  "done": false
+ },
+ "3284": {
+  "name": "WTT Youth Contender Vila Real 2026",
+  "start": "2026-02-10",
+  "end": "2026-02-13",
+  "n": 0,
+  "synced": "2026-11-06T13:44:03Z",
+  "done": true
+ },
+ "3285": {
+  "name": "Singapore Youth Smash 2026 Presented by Resorts World Sentosa",
+  "start": "2026-02-26",
+  "end": "2026-03-01",
+  "n": 0,
+  "synced": "2026-11-06T13:44:04Z",
+  "done": true
+ },
+ "3286": {
+  "name": "WTT Youth Contender Buenos Aires 2026",
+  "start": "2026-03-04",
+  "end": "2026-03-07",
+  "n": 0,
+  "synced": "2026-11-06T13:44:06Z",
+  "done": true
+ },
+ "3287": {
+  "name": "WTT Youth Contender Wladyslawowo 2025",
+  "n": 0,
+  "done": false
+ },
+ "3288": {
+  "name": "WTT Youth Contender Asunción 2025",
+  "n": 0,
+  "done": false
+ },
+ "3289": {
+  "name": "WTT Youth Contender Berlin 2025 Presented by Seeger",
+  "n": 0,
+  "done": false
+ },
+ "3290": {
+  "name": "WTT Youth Contender Havirov 2025",
+  "n": 0,
+  "done": false
+ },
+ "3291": {
+  "name": "WTT Youth Contender Wladyslawowo 2026",
+  "start": "2026-03-04",
+  "end": "2026-03-07",
+  "n": 0,
+  "synced": "2026-11-06T13:44:11Z",
+  "done": true
+ },
+ "3292": {
+  "name": "WTT Youth Contender Asunción 2026",
+  "start": "2026-03-09",
+  "end": "2026-03-12",
+  "n": 0,
+  "synced": "2026-11-06T13:44:13Z",
+  "done": true
+ },
+ "3293": {
+  "name": "WTT Youth Contender Berlin 2026 Presented by Seeger",
+  "start": "2026-03-09",
+  "end": "2026-03-15",
+  "n": 0,
+  "synced": "2026-11-06T13:44:15Z",
+  "done": true
+ },
+ "3294": {
+  "name": "WTT Youth Contender Havirov 2026",
+  "start": "2026-03-09",
+  "end": "2026-03-15",
+  "n": 0,
+  "synced": "2026-11-06T13:44:18Z",
+  "done": true
+ },
+ "3295": {
+  "name": "WTT Youth Contender Riyadh 2026",
+  "n": 0,
+  "done": false
+ },
+ "3296": {
+  "name": "WTT Youth Contender Panagyurishte 2026 Presented by ASAREL",
+  "start": "2026-03-26",
+  "end": "2026-03-29",
+  "n": 0,
+  "synced": "2026-11-06T13:44:20Z",
+  "done": true
+ },
+ "3297": {
+  "name": "WTT Youth Contender Novi Sad 2026",
+  "start": "2026-03-31",
+  "end": "2026-04-03",
+  "n": 0,
+  "synced": "2026-11-06T13:44:23Z",
+  "done": true
+ },
+ "3298": {
+  "name": "WTT Youth Contender Luxembourg 2026 Presented by ICBC (Europe) S.A.",
+  "start": "2026-04-08",
+  "end": "2026-04-11",
+  "n": 0,
+  "synced": "2026-11-06T13:44:25Z",
+  "done": true
+ },
+ "3299": {
+  "name": "WTT Youth Contender Humacao 2026",
+  "start": "2026-03-26",
+  "end": "2026-03-29",
+  "n": 0,
+  "synced": "2026-11-06T13:44:26Z",
+  "done": true
+ },
+ "3300": {
+  "name": "ITTF-Oceania Cup Christchurch 2026",
+  "n": 0,
+  "done": false
+ },
+ "3301": {
+  "name": "WTT Youth Contender Metz 2026",
+  "start": "2026-04-13",
+  "end": "2026-04-16",
+  "n": 0,
+  "synced": "2026-11-06T13:44:29Z",
+  "done": true
+ },
+ "3302": {
+  "name": "WTT Youth Star Contender Metz 2026",
+  "start": "2026-04-17",
+  "end": "2026-04-19",
+  "n": 0,
+  "synced": "2026-11-06T13:44:31Z",
+  "done": true
+ },
+ "3303": {
+  "name": "WTT Youth Contender Sulaymaniyah 2026",
+  "n": 0,
+  "done": false
+ },
+ "3304": {
+  "name": "WTT Youth Contender Sarajevo 2026",
+  "start": "2026-04-27",
+  "end": "2026-04-30",
+  "n": 0,
+  "synced": "2026-11-06T13:44:34Z",
+  "done": true
+ },
+ "3305": {
+  "name": "WTT Youth Contender Platja D'Aro 2026",
+  "start": "2026-05-05",
+  "end": "2026-05-08",
+  "n": 0,
+  "synced": "2026-11-06T13:44:36Z",
+  "done": true
+ },
+ "3306": {
+  "name": "WTT Youth Star Contender Bangkok 2026",
+  "start": "2026-05-22",
+  "end": "2026-05-24",
+  "n": 0,
+  "synced": "2026-11-06T13:44:37Z",
+  "done": true
+ },
+ "3307": {
+  "name": "WTT Youth Contender Mississauga 2026",
+  "start": "2026-05-15",
+  "end": "2026-05-18",
+  "n": 0,
+  "synced": "2026-11-06T13:44:39Z",
+  "done": true
+ },
+ "3308": {
+  "name": "WTT Youth Contender Bangkok 2026",
+  "start": "2026-05-18",
+  "end": "2026-05-21",
+  "n": 0,
+  "synced": "2026-11-06T13:44:42Z",
+  "done": true
+ },
+ "3309": {
+  "name": "WTT Youth Contender Prishtina 2026",
+  "start": "2026-05-22",
+  "end": "2026-05-25",
+  "n": 0,
+  "synced": "2026-11-06T13:44:44Z",
+  "done": true
+ },
+ "3310": {
+  "name": "WTT Youth Contender Sandefjord 2026",
+  "start": "2026-05-30",
+  "end": "2026-06-02",
+  "n": 0,
+  "synced": "2026-11-06T13:44:45Z",
+  "done": true
+ },
+ "3311": {
+  "name": "WTT Youth Contender Helsingborg 2026",
+  "start": "2026-06-04",
+  "end": "2026-06-07",
+  "n": 0,
+  "synced": "2026-11-06T13:44:47Z",
+  "done": true
+ },
+ "3312": {
+  "name": "WTT Youth Contender São José 2026",
+  "start": "2026-06-08",
+  "end": "2026-06-11",
+  "n": 0,
+  "synced": "2026-11-06T13:44:49Z",
+  "done": true
+ },
+ "3313": {
+  "name": "WTT Youth Star Contender São José  2026",
+  "start": "2026-06-12",
+  "end": "2026-06-14",
+  "n": 0,
+  "synced": "2026-11-06T13:44:51Z",
+  "done": true
+ },
+ "3314": {
+  "name": "WTT Youth Contender Tunis II 2026",
+  "start": "2026-09-03",
+  "end": "2026-09-06",
+  "n": 0,
+  "synced": "2026-11-06T13:44:55Z",
+  "done": true
+ },
+ "3315": {
+  "name": "WTT Youth Contender Caracas 2026",
+  "start": "2026-06-24",
+  "end": "2026-06-24",
+  "n": 0,
+  "synced": "2026-11-06T13:44:56Z",
+  "done": true
+ },
+ "3316": {
+  "name": "WTT Youth Contender Houston 2026 Presented by Satellite Chemical",
+  "start": "2026-03-20",
+  "end": "2026-03-23",
+  "n": 0,
+  "synced": "2026-11-06T13:44:58Z",
+  "done": true
+ },
+ "3317": {
+  "name": "US Youth Smash 2026 (unconfirmed)",
+  "n": 0,
+  "done": false
+ },
+ "3318": {
+  "name": "WTT Youth Contender Hong Kong 2026",
+  "start": "2026-07-06",
+  "end": "2026-07-12",
+  "n": 0,
+  "synced": "2026-11-06T13:45:27Z",
+  "done": true
+ },
+ "3319": {
+  "name": "WTT Youth Contender Ulaanbaatar 2026",
+  "start": "2026-07-14",
+  "end": "2026-07-17",
+  "n": 0,
+  "synced": "2026-11-06T13:45:38Z",
+  "done": true
+ },
+ "3320": {
+  "name": "WTT Youth Contender Tashkent 2026",
+  "start": "2026-05-13",
+  "end": "2026-05-16",
+  "n": 0,
+  "synced": "2026-11-06T13:45:40Z",
+  "done": true
+ },
+ "3321": {
+  "name": "WTT Youth Contender Almaty 2026",
+  "start": "2026-07-24",
+  "end": "2026-07-27",
+  "n": 0,
+  "synced": "2026-11-06T13:45:42Z",
+  "done": true
+ },
+ "3322": {
+  "name": "WTT Youth Contender Vientiane 2026 Presented by ICBC Bank",
+  "start": "2026-07-30",
+  "end": "2026-08-02",
+  "n": 0,
+  "synced": "2026-11-06T13:45:54Z",
+  "done": true
+ },
+ "3323": {
+  "name": "WTT Youth Contender Amman 2026",
+  "n": 0,
+  "done": false
+ },
+ "3324": {
+  "name": "Europe Youth Smash - Sweden 2026",
+  "start": "2026-08-14",
+  "end": "2026-08-16",
+  "n": 0,
+  "synced": "2026-11-06T13:45:56Z",
+  "done": true
+ },
+ "3325": {
+  "name": "WTT Youth Contender Otocec 2025 Presented by I Feel Slovenia",
+  "n": 0,
+  "done": false
+ },
+ "3326": {
+  "name": "WTT Youth Contender Varazdin 2026",
+  "start": "2026-08-25",
+  "end": "2026-08-31",
+  "n": 0,
+  "synced": "2026-11-06T13:46:01Z",
+  "done": true
+ },
+ "3327": {
+  "name": "WTT Youth Contender Otocec 2025 Presented by I Feel Slovenia",
+  "n": 0,
+  "done": false
+ },
+ "3328": {
+  "name": "WTT Youth Contender Otocec 2026",
+  "start": "2026-08-25",
+  "end": "2026-08-31",
+  "n": 0,
+  "synced": "2026-11-06T13:46:06Z",
+  "done": true
+ },
+ "3329": {
+  "name": "WTT Youth Star Contender Gangneung 2026",
+  "start": "2026-09-18",
+  "end": "2026-09-20",
+  "n": 0,
+  "synced": "2026-11-06T13:46:16Z",
+  "done": true
+ },
+ "3330": {
+  "name": "WTT Youth Contender Gangneung 2026",
+  "start": "2026-09-14",
+  "end": "2026-09-17",
+  "n": 0,
+  "synced": "2026-11-06T13:46:22Z",
+  "done": true
+ },
+ "3331": {
+  "name": "WTT Youth Contender Bangkok II 2026",
+  "start": "2026-09-09",
+  "end": "2026-09-12",
+  "n": 0,
+  "synced": "2026-11-06T13:46:45Z",
+  "done": true
+ },
+ "3332": {
+  "name": "WTT Youth Contender Cuenca 2026",
+  "start": "2026-09-03",
+  "end": "2026-09-06",
+  "n": 0,
+  "synced": "2026-11-06T13:46:49Z",
+  "done": true
+ },
+ "3333": {
+  "name": "WTT Youth Contender Tbilisi 2026",
+  "start": "2026-09-27",
+  "end": "2026-09-30",
+  "n": 0,
+  "synced": "2026-11-06T13:46:57Z",
+  "done": true
+ },
+ "3334": {
+  "name": "WTT Youth Contender Spa 2026",
+  "start": "2026-09-21",
+  "end": "2026-09-24",
+  "n": 0,
+  "synced": "2026-11-06T13:47:05Z",
+  "done": true
+ },
+ "3335": {
+  "name": "China Youth Smash 2026 Presented by Beijing Shijingshan Culture & Tourism Group",
+  "start": "2026-10-09",
+  "end": "2026-10-11",
+  "n": 0,
+  "synced": "2026-11-06T13:47:16Z",
+  "done": true
+ },
+ "3336": {
+  "name": "WTT Youth Contender Doha II 2026",
+  "n": 0,
+  "done": false
+ },
+ "3337": {
+  "name": "WTT Youth Contender Monteria 2026",
+  "start": "2026-09-22",
+  "end": "2026-09-25",
+  "n": 0,
+  "synced": "2026-11-06T13:47:27Z",
+  "done": true
+ },
+ "3338": {
+  "name": "WTT Youth Contender Lignano 2026",
+  "start": "2026-10-21",
+  "end": "2026-10-27",
+  "n": 0,
+  "synced": "2026-11-06T13:47:32Z",
+  "done": true
+ },
+ "3339": {
+  "name": "WTT Youth Contender Senec 2026",
+  "start": "2026-10-21",
+  "end": "2026-10-27",
+  "n": 0,
+  "synced": "2026-11-06T13:47:34Z",
+  "done": true
+ },
+ "3340": {
+  "name": "WTT Youth Contender Dubai 2026",
+  "n": 0,
+  "done": false
+ },
+ "3341": {
+  "name": "WTT Youth Contender Szombathely 2025",
+  "n": 0,
+  "done": false
+ },
+ "3342": {
+  "name": "WTT Youth Contender Podgorica 2025",
+  "n": 0,
+  "done": false
+ },
+ "3343": {
+  "name": "WTT Youth Star Contender Podgorica 2025",
+  "n": 0,
+  "done": false
+ },
+ "3344": {
+  "name": "WTT Youth Contender Szombathely 2026",
+  "start": "2026-10-29",
+  "end": "2026-11-01",
+  "n": 0,
+  "synced": "2026-11-06T13:47:39Z",
+  "done": true
+ },
+ "3345": {
+  "name": "WTT Youth Contender Podgorica 2026",
+  "start": "2026-11-03",
+  "end": "2026-11-06",
+  "n": 0,
+  "synced": "2026-11-06T13:47:41Z",
+  "done": false
+ },
+ "3346": {
+  "name": "WTT Youth Star Contender Podgorica 2026",
+  "n": 0,
+  "done": false
+ },
+ "3347": {
+  "name": "WTT Youth Contender Cairo 2026",
+  "start": "2026-10-02",
+  "end": "2026-10-05",
+  "n": 0,
+  "synced": "2026-11-06T13:47:57Z",
+  "done": true
+ },
+ "3348": {
+  "name": "WTT Youth Contender Salinas 2026 (unconfirmed)",
+  "n": 0,
+  "done": false
+ },
+ "3349": {
+  "name": "WTT Youth Contender Puerto Princesa 2025",
+  "n": 0,
+  "done": false
+ },
+ "3350": {
+  "name": "WTT Youth Contender Puerto Princesa 2026",
+  "start": "2026-09-03",
+  "end": "2026-09-06",
+  "n": 0,
+  "synced": "2026-11-06T13:48:03Z",
+  "done": true
+ },
+ "3351": {
+  "name": "WTT Youth Contender San Francisco IV 2026 (unconfirmed))",
+  "n": 0,
+  "done": false
+ },
+ "3352": {
+  "name": "WTT Feeder Düsseldorf II 2026",
+  "n": 0,
+  "done": false
+ },
+ "3353": {
+  "name": "WTT Feeder Vadodara 2026 Presented by Sports Authority of Gujarat",
+  "start": "2026-01-07",
+  "end": "2026-01-11",
+  "n": 0,
+  "synced": "2026-11-06T13:48:07Z",
+  "done": true
+ },
+ "3354": {
+  "name": "WTT Feeder Doha 2026",
+  "start": "2026-01-27",
+  "end": "2026-01-31",
+  "n": 0,
+  "synced": "2026-11-06T13:48:08Z",
+  "done": true
+ },
+ "3355": {
+  "name": "WTT Feeder Lille 2026",
+  "start": "2026-01-27",
+  "end": "2026-01-31",
+  "n": 0,
+  "synced": "2026-11-06T13:48:10Z",
+  "done": true
+ },
+ "3356": {
+  "name": "WTT Feeder Varazdin 2026",
+  "start": "2026-03-12",
+  "end": "2026-03-16",
+  "n": 0,
+  "synced": "2026-11-06T13:48:12Z",
+  "done": true
+ },
+ "3357": {
+  "name": "WTT Feeder Senec 2026",
+  "start": "2026-04-18",
+  "end": "2026-04-22",
+  "n": 0,
+  "synced": "2026-11-06T13:48:13Z",
+  "done": true
+ },
+ "3358": {
+  "name": "WTT Feeder Istanbul 2026",
+  "start": "2026-05-10",
+  "end": "2026-05-14",
+  "n": 203,
+  "synced": "2026-11-06T13:48:19Z",
+  "done": true
+ },
+ "3359": {
+  "name": "WTT Feeder Istanbul II 2026",
+  "start": "2026-07-01",
+  "end": "2026-07-05",
+  "n": 167,
+  "synced": "2026-11-06T13:48:24Z",
+  "done": true
+ },
+ "3360": {
+  "name": "WTT Feeder Lagos 2026",
+  "start": "2026-05-15",
+  "end": "2026-05-19",
+  "n": 0,
+  "synced": "2026-11-06T13:48:26Z",
+  "done": true
+ },
+ "3361": {
+  "name": "WTT Feeder Hennebont 2026",
+  "start": "2026-05-20",
+  "end": "2026-05-24",
+  "n": 0,
+  "synced": "2026-11-06T13:48:27Z",
+  "done": true
+ },
+ "3362": {
+  "name": "TEST ITTF World Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3363": {
+  "name": "WTT Feeder Asunción 2026",
+  "start": "2026-07-08",
+  "end": "2026-07-12",
+  "n": 184,
+  "synced": "2026-11-06T13:48:33Z",
+  "done": true
+ },
+ "3364": {
+  "name": "WTT Feeder Ulaanbaatar 2026",
+  "start": "2026-07-19",
+  "end": "2026-07-23",
+  "n": 168,
+  "synced": "2026-11-06T13:48:39Z",
+  "done": true
+ },
+ "3365": {
+  "name": "WTT Feeder Tashkent 2026",
+  "start": "2026-07-24",
+  "end": "2026-07-28",
+  "n": 0,
+  "synced": "2026-11-06T13:48:41Z",
+  "done": true
+ },
+ "3366": {
+  "name": "WTT Youth Contender Tashkent II 2026",
+  "start": "2026-07-19",
+  "end": "2026-07-22",
+  "n": 0,
+  "synced": "2026-11-06T13:48:55Z",
+  "done": true
+ },
+ "3367": {
+  "name": "WTT Youth Contender Asunción II 2026",
+  "start": "2026-09-27",
+  "end": "2026-09-30",
+  "n": 0,
+  "synced": "2026-11-06T13:49:05Z",
+  "done": true
+ },
+ "3368": {
+  "name": "WTT Youth Contender Buenos Aires II 2026",
+  "start": "2026-10-02",
+  "end": "2026-10-05",
+  "n": 0,
+  "synced": "2026-11-06T13:49:17Z",
+  "done": true
+ },
+ "3369": {
+  "name": "WTT Youth Contender Chennai 2026 Presented by Sports Development Authority of Tamil Nadu",
+  "start": "2026-10-23",
+  "end": "2026-10-26",
+  "n": 0,
+  "synced": "2026-11-06T13:49:20Z",
+  "done": true
+ },
+ "3370": {
+  "name": "WTT Feeder Vila Nova de Gaia 2026",
+  "start": "2026-11-04",
+  "end": "2026-11-06",
+  "n": 198,
+  "synced": "2026-11-06T13:49:22Z",
+  "done": false
+ },
+ "3371": {
+  "name": "WTT Feeder Bangkok 2026",
+  "start": "2026-09-14",
+  "end": "2026-09-18",
+  "n": 246,
+  "synced": "2026-11-06T13:49:34Z",
+  "done": true
+ },
+ "3372": {
+  "name": "WTT Feeder Tunis 2026",
+  "n": 0,
+  "done": false
+ },
+ "3373": {
+  "name": "WTT Feeder Cappadocia II 2026",
+  "start": "2026-04-08",
+  "end": "2026-04-11",
+  "n": 0,
+  "synced": "2026-11-06T13:49:36Z",
+  "done": true
+ },
+ "3374": {
+  "name": "WTT Feeder Berlin 2026",
+  "start": "2026-08-19",
+  "end": "2026-08-23",
+  "n": 191,
+  "synced": "2026-11-06T13:49:38Z",
+  "done": true
+ },
+ "3375": {
+  "name": "WTT Feeder Linz 2026",
+  "start": "2026-09-23",
+  "end": "2026-09-27",
+  "n": 187,
+  "synced": "2026-11-06T13:49:41Z",
+  "done": true
+ },
+ "3376": {
+  "name": "WTT Feeder Chennai 2026 Presented by Sports Development Authority of Tamil Nadu",
+  "start": "2026-10-28",
+  "end": "2026-11-01",
+  "n": 200,
+  "synced": "2026-11-06T13:49:42Z",
+  "done": true
+ },
+ "3377": {
+  "name": "ITTF World Youth Championships Istanbul 2026",
+  "n": 0,
+  "done": false
+ },
+ "3378": {
+  "name": "ITTF Mixed Team World Cup Chengdu 2026",
+  "n": 0,
+  "done": false
+ },
+ "3379": {
+  "name": "ITTF Men’s & Women’s World Cup Macao 2026 Presented by Galaxy Entertainment Group",
+  "start": "2026-03-30",
+  "end": "2026-04-05",
+  "n": 0,
+  "synced": "2026-11-06T13:49:45Z",
+  "done": true
+ },
+ "3380": {
+  "name": "ITTF-Oceania Para Championships Auckland 2025",
+  "n": 0,
+  "done": false
+ },
+ "3381": {
+  "name": "Europe Youth Top-10 Tours 2025",
+  "n": 0,
+  "done": false
+ },
+ "3382": {
+  "name": "ITTF World Para Elite Sao Paulo 2025",
+  "n": 0,
+  "done": false
+ },
+ "3383": {
+  "name": "ITTF Para Pan American Championships Sao Paulo 2025",
+  "n": 0,
+  "done": false
+ },
+ "3384": {
+  "name": "WTT Feeder Dusseldorf II 2025",
+  "n": 0,
+  "done": false
+ },
+ "3385": {
+  "name": "European Team Championships Zadar 2025",
+  "n": 0,
+  "done": false
+ },
+ "3386": {
+  "name": "ITTF Pan American Team Championships Rock Hill 2025",
+  "n": 0,
+  "done": false
+ },
+ "3387": {
+  "name": "ITTF-Africa Team Championships Tunis 2025",
+  "n": 0,
+  "done": false
+ },
+ "3388": {
+  "name": "ITTF-Americas Masters Championships Asuncion 2025",
+  "n": 0,
+  "done": false
+ },
+ "3389": {
+  "name": "ITTF Oceania Youth Championships 2025",
+  "n": 0,
+  "done": false
+ },
+ "3390": {
+  "name": "ETTU Europe Top 16 Cup Montreux 2026",
+  "n": 0,
+  "done": false
+ },
+ "3391": {
+  "name": "ETTU European U21 Championships Cluj-Napoca 2026",
+  "n": 0,
+  "done": false
+ },
+ "3392": {
+  "name": "ETTU European Youth Championships Gondomar 2026",
+  "n": 0,
+  "done": false
+ },
+ "3393": {
+  "name": "ETTU European Youth Top 10 Antibes 2026",
+  "n": 0,
+  "done": false
+ },
+ "3394": {
+  "name": "ETTU European Individual Championships Ljubljana 2026",
+  "n": 0,
+  "done": false
+ },
+ "3395": {
+  "name": "ETTU European U13 Championships Nevsehir 2026",
+  "n": 0,
+  "done": false
+ },
+ "3396": {
+  "name": "ITTF Asian Para Championships Beijing 2025",
+  "n": 0,
+  "done": false
+ },
+ "3397": {
+  "name": "WTT Youth Contender Gaborone 2026 (draft)",
+  "n": 0,
+  "done": false
+ },
+ "3398": {
+  "name": "ITTF-Americas Cup San Francisco 2026 Presented by Mongo DB",
+  "n": 0,
+  "done": false
+ },
+ "3399": {
+  "name": "ITTF-Americas South American U11&U13 Championships Asuncion 2026",
+  "n": 0,
+  "done": false
+ },
+ "3400": {
+  "name": "ITTF-Americas South American Masters Championships Lima 2026",
+  "n": 0,
+  "done": false
+ },
+ "3401": {
+  "name": "Caribbean Youth Championships Santo Domingo 2026",
+  "n": 0,
+  "done": false
+ },
+ "3402": {
+  "name": "ITTF-Americas Caribbean Youth Championships Santo Domingo 2026",
+  "n": 0,
+  "done": false
+ },
+ "3403": {
+  "name": "ITTF-Americas Central American & Caribbean Championships Santo Domingo 2026",
+  "n": 0,
+  "done": false
+ },
+ "3404": {
+  "name": "ITTF-Americas South American Youth Championships Chapeco 2026",
+  "n": 0,
+  "done": false
+ },
+ "3405": {
+  "name": "IV South America Youth Games Panama 2026",
+  "n": 0,
+  "done": false
+ },
+ "3406": {
+  "name": "ITTF-Americas Central American Youth Championships Tegucigalpa 2026",
+  "n": 0,
+  "done": false
+ },
+ "3407": {
+  "name": "ITTF-Americas South American Championships Santiago 2026",
+  "n": 0,
+  "done": false
+ },
+ "3408": {
+  "name": "ITTF-Americas Central America & Caribbean U11&U13 Championships Guadalajara 2026",
+  "n": 0,
+  "done": false
+ },
+ "3409": {
+  "name": "XXV Central American and Caribbean Games Santo Domingo 2026",
+  "n": 0,
+  "done": false
+ },
+ "3410": {
+  "name": "ITTF-Americas Youth Championships Guatemala City 2026",
+  "n": 0,
+  "done": false
+ },
+ "3411": {
+  "name": "ITTF-Americas U11&U13 Championships Houston 2026",
+  "n": 0,
+  "done": false
+ },
+ "3412": {
+  "name": "XIII South American Games Santa Fe 2026",
+  "n": 0,
+  "done": false
+ },
+ "3413": {
+  "name": "ITTF-Americas Central American Masters Championships Tegucigalpa 2026",
+  "n": 0,
+  "done": false
+ },
+ "3414": {
+  "name": "ITTF-Americas Championships Lima 2026",
+  "n": 0,
+  "done": false
+ },
+ "3415": {
+  "name": "WTT Feeder Puerto Princesa 2026",
+  "start": "2026-09-08",
+  "end": "2026-09-12",
+  "n": 148,
+  "synced": "2026-11-06T13:50:15Z",
+  "done": true
+ },
+ "3416": {
+  "name": "ITTF World Para Elite Yvelines 2025",
+  "n": 0,
+  "done": false
+ },
+ "3417": {
+  "name": "Youth Parapan American Games Chile 2025",
+  "n": 0,
+  "done": false
+ },
+ "3418": {
+  "name": "ITTF World Para Future Gold Coast 2026",
+  "n": 0,
+  "done": false
+ },
+ "3419": {
+  "name": "ITTF World Para Challenger Wladyslawowo 2026",
+  "n": 0,
+  "done": false
+ },
+ "3420": {
+  "name": "ITTF World Para Challenger Lignano 2026",
   "n": 0,
   "done": false
  }
