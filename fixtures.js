@@ -37,9 +37,11 @@
   function parseFixture(f, hub, people) {
     // "WTT Champions Frankfurt: Sofia Polcanova v Miwa Harimoto, women's singles, last 32"
     const rest = f.name.slice(f.name.indexOf(": ") + 2);
+    // Later rounds before the players are known: "WTT Champions Frankfurt: Women's Singles, Semifinal, Match 2"
+    const named = rest.includes(" v ");
     const [pair, ...lab] = rest.split(", ");
-    const sides = pair.split(" v ").map((n) => ({ name: n.trim(), ...(people[n.trim().toLowerCase()] || {}) }));
-    const label = lab.join(", ").replace(/semifinal/i, "semi-final").replace(/quarterfinal/i, "quarter-final");
+    const sides = named ? pair.split(" v ").map((n) => ({ name: n.trim(), ...(people[n.trim().toLowerCase()] || {}) })) : [{ tbd: "To be decided" }, { tbd: "To be decided" }];
+    const label = (named ? lab : [pair, ...lab.filter((x) => !/^match \d+$/i.test(x))]).join(", ").replace(/semifinal/i, "semi-final").replace(/quarterfinal/i, "quarter-final");
     return { kind: "fixture", id: f.id.slice(`wtt-${hub.wtt}-`.length), when: f.start, table: f.detail || "", label: label[0].toUpperCase() + label.slice(1), sides };
   }
 
@@ -115,7 +117,7 @@
     const row = (s) => s.tbd ? `<span class="row tbd"><span>${esc(s.tbd)}</span></span>`
       : `<span class="row"><span>${flag(s.nat)}${esc(s.name)}${wr(s)}</span></span>`;
     return `<a class="score-card fx-card" href="${esc(hub.url)}#schedule"><span class="ev">${esc((opts.prefix || "") + (opts.short && it.short ? it.short : it.label))}</span>${opts.where ? `<span class="where">${esc(hub.name)}</span>` : ""}
-      <span class="fx-when${it.when ? "" : " tbc"}">${esc(when(it.when))}${it.table ? ` · ${esc(it.table)}` : ""}</span>${row(it.sides[0])}${row(it.sides[1])}</a>`;
+      <span class="fx-when${it.when ? "" : " tbc"}">${esc(when(it.when))}${it.table ? ` · ${esc(it.table)}` : ""}</span>${row(it.sides[0] || { tbd: "To be decided" })}${row(it.sides[1] || { tbd: "To be decided" })}</a>`;
   }
 
   window.ElevenFixtures = { get, card };

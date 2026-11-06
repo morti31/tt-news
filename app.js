@@ -151,7 +151,7 @@
           + (fx.knock.length ? `<div class="lv-grp lv-knock"><span class="lab">Semi-finals and finals</span><div class="lv-ko">${fx.knock.map((k) =>
               `<div><h3>${esc(k.name)}</h3><div class="lv-strip one">${k.items.map((x) => F.card(x, onHub, { short: true })).join("")}</div></div>`).join("")}</div></div>` : "");
         if (box.dataset.h !== html) { box.dataset.h = html; box.innerHTML = html; }   // redraw only when something changed, so nothing flickers or loses a tap
-      } catch (e) { /* keep the last scores showing */ }
+      } catch (e) { console.error("live panel", e); /* keep the last scores showing */ }
     };
     tick();
     setInterval(tick, 15000);
