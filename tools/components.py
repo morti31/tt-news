@@ -321,7 +321,7 @@ document.addEventListener("click", function (ev) {
 
 
 SUBNAVS = {"events": [("/events/", "Events"), ("/schedule.html", "Schedule and calendar")],
-           "players": [("/players/", "Player profiles"), ("/rankings.html", "World rankings")],
+           "players": [("/rankings.html", "World rankings"), ("/players/", "Player profiles")],
            "guide": [("/guide/", "Guides"), ("/#Equipment", "Equipment news")]}
 
 

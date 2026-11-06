@@ -43,7 +43,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/players/">Players</a></li><li><a href="/clubs/">Clubs</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Clubs</a></li>
 <li><a href="/features/">Features</a></li><li><a href="/guide/">Guide</a></li>
 </ul></nav></div></header>"""
 
@@ -108,7 +108,7 @@ def hero(a):
     return ""
 
 
-SECTIONS = [("/events/", ("/events", "/schedule")), ("/players/", ("/players", "/rankings")), ("/clubs/", ("/clubs",)),
+SECTIONS = [("/events/", ("/events", "/schedule")), ("/rankings.html", ("/players", "/rankings")), ("/clubs/", ("/clubs",)),
             ("/features/", ("/features",)), ("/guide/", ("/guide",))]
 
 
@@ -630,6 +630,7 @@ def main():
         if not f.endswith("wtt.json"):
             pp = json.load(open(f, encoding="utf-8"))
             PROFILES[pp["name"]] = f"/players/{os.path.splitext(os.path.basename(f))[0]}.html"
+    json.dump(PROFILES, open(os.path.join(ROOT, "data", "profiles.json"), "w", encoding="utf-8"), ensure_ascii=False)   # for the rankings widget
     TG, TAGMAP, TAG_ITEMS, TAGFULL = make_tags(arts)
     json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v] for k, v in TAGMAP.items() if v},
               open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)

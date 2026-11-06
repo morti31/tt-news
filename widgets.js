@@ -162,16 +162,18 @@ window.ElevenStream = function (el) {
       if (d < 0) return `<span class="mv down" title="Down ${-d}">▼${-d}</span>`;
       return "";
     };
+    let prof = {};
+    const nm = (p) => prof[p.name] ? `<a href="${prof[p.name].replace(/\.html$/, "")}">${esc(p.name)}</a>` : esc(p.name);
     const ranks = (g) => {
       const list = news.rankings[g] || [];
       if (!list.length) return;
       const top = list[0], max = top.points || 1;
       const lead = $("rank-lead");
-      if (lead) lead.innerHTML = `<div class="rl"><span class="rl-label">${g === "men" ? "Men's" : "Women's"} world No. 1</span><span class="rl-name">${flag(top.nat)}${esc(top.name)}</span></div>
+      if (lead) lead.innerHTML = `<div class="rl"><span class="rl-label">${g === "men" ? "Men's" : "Women's"} world No. 1</span><span class="rl-name">${flag(top.nat)}${nm(top)}</span></div>
         <div class="rl-score"><b class="rl-pts">${f(top.points)}</b><span>points</span></div>`;
       $("rankings").innerHTML = list.slice(lead ? 1 : 0).map((p, k) => {
         const i = k + (lead ? 1 : 0);
-        return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${esc(p.name)}</span><span class="nt">${flag(p.nat)}${esc(p.nat)}${move(p, i)}</span></span>
+        return `<li><span class="rk">${i + 1}</span><span class="who"><span class="nm">${nm(p)}</span><span class="nt">${flag(p.nat)}${esc(p.nat)}${move(p, i)}</span></span>
           <span class="pts">${p.points ? f(p.points) : ""}</span>
           ${p.points ? `<span class="bar"><i style="width:${Math.round(p.points / max * 100)}%"></i></span>` : ""}</li>`;
       }).join("");
@@ -184,6 +186,11 @@ window.ElevenStream = function (el) {
       ranks(b.dataset.g);
     });
     ranks("men");
+    fetch("/data/profiles.json").then((r) => r.json()).then((d) => {
+      prof = d || {};
+      const on = document.querySelector('#rank-toggle button[aria-pressed="true"]');
+      ranks(on ? on.dataset.g : "men");
+    }).catch(() => {});
   }
 
   // Coming up

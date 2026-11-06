@@ -1311,3 +1311,4 @@ html.mp-open { overflow: hidden; }
 
 .rk-name a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .rk-name a:hover { text-decoration-thickness: 2px; }
+.rankings .nm a, .rl-name a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
