@@ -24,7 +24,7 @@ jobs:
         env:
           BACKFILL: ${{ inputs.backfill }}
         run: |
-          if [ "$BACKFILL" = "refill" ]; then python3 tools/match_sync.py --refill-empty; elif [ -n "$BACKFILL" ]; then python3 tools/match_sync.py --backfill $BACKFILL --players; else python3 tools/match_sync.py; fi
+          if [ "$BACKFILL" = "refill" ]; then python3 tools/match_sync.py --refill-empty; elif [ -n "$BACKFILL" ]; then python3 tools/match_sync.py --backfill $BACKFILL --senior; else python3 tools/match_sync.py; fi
       - name: Commit changes
         run: |
           git config user.name "Tom Mortimer"

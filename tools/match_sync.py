@@ -20,7 +20,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 LIVE = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/liveeventsapi/api/cms"
 CMS = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/primary/api/cms"
 HEADERS = {"Origin": "https://www.worldtabletennis.com", "Referer": "https://www.worldtabletennis.com/", "User-Agent": "Mozilla/5.0 (Eleven table tennis news)"}
-FIRST_YEAR = 2024
+FIRST_YEAR = 2021   # WTT's first season
+SKIP_NAMES = re.compile(r"Youth|Feeder|U1[0-9]|U2[01]|Junior|Cadet|Para |Veteran|Masters|Hopes|Development", re.I)
 MDIR = os.path.join(ROOT, "data", "matches")
 
 
@@ -181,7 +182,14 @@ def event_name(eid):
         return None
 
 
-def sync_event(eid, events, years, players):
+def sync_event(eid, events, years, players, senior_only=False):
+    if senior_only:   # backfill: look at the name first and skip youth, feeder and para events without fetching their results
+        ev0 = events.setdefault(eid, {})
+        if not ev0.get("name"):
+            ev0["name"] = event_name(eid) or ""
+        if not ev0["name"] or SKIP_NAMES.search(ev0["name"]):
+            ev0.update({"skip": True, "n": ev0.get("n", 0)})
+            return 0
     rs = get(f"{LIVE}/GetOfficialResult?EventId={eid}&include_match_card=true&take=5000")
     ms = [m for m in (compact(r, players) for r in rs or []) if m]
     if rs and len(ms) < len(rs) / 4:   # no match cards (older events): use the draws
@@ -266,7 +274,7 @@ def main():
     added = 0
     for eid in todo:
         try:
-            n = sync_event(eid, events, years, players)
+            n = sync_event(eid, events, years, players, senior_only="--senior" in sys.argv)
         except Exception as err:
             print(f"{eid}: {err}")
             continue
