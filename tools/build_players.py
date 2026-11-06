@@ -92,6 +92,7 @@ def wtt_name(raw, org):
 def clean_event(n):
     n = re.sub(r"\s+[Pp]resented [Bb]y.*$", "", n or "")
     n = re.sub(r"\s+-\s+President.*$", "", n)
+    n = re.sub(r"Men[’']s (&|and) Women[’']s ", "", n)
     n = n.replace("ITTF ", "").replace("World Team Table Tennis Championships Finals", "World Team Championships")
     return n.strip()
 
@@ -314,7 +315,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
             comp, _, disc = h["event"].partition(", ")
             cat = category(comp)
             label = (comp + " " if cat in ("Grand Smash", "Continental and multi-sport", "Other") else "") + (disc or "")
-            add(cat, h["year"], label.strip() or comp, h["result"])
+            add(cat, h["year"], label.strip() or ("Team" if cat == "World Team Championships" else comp), h["result"])
         for m in ms:
             if m["r"] != "FNL" or not won(m) or m["k"][1] not in "SD":
                 continue
