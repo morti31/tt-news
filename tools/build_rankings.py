@@ -64,7 +64,7 @@ def body(R, items, links=None):
     label = R["label"]
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official {e(label)}: the top 100 men and women, with ranking points and this week's movement. The top 10 men and women have <a href="/players/">full player profiles</a>.</p></div></section>
+<p class="lede">The official {e(label)}: the top 100 men and women, with ranking points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
 <div class="rk-two rk-leaders">{leader("men", "Men's world No. 1")}{leader("women", "Women's world No. 1")}</div>
 <div class="rk-two">
   <section class="panel"><h2 class="panel-title">Biggest climbers</h2><div class="rk-two rk-inner"><div><h3>Men</h3>{climbers("men")}</div><div><h3>Women</h3>{climbers("women")}</div></div></section>

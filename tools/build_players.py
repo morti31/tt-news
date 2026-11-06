@@ -158,14 +158,17 @@ def short_date(iso):
 
 
 def player_card(p, rank=None, size="big"):
-    """Eleven's player card: initials on the association's colour band, no photo."""
-    words = p["name"].replace("-", " ").split()
+    """Eleven's player card: the association's flag, faded, behind the player's name. No photo."""
+    words = p["name"].split()
     fam_first = p.get("nat") in FAMILY_FIRST
-    ini = (words[0][0] + (words[1][0] if len(words) > 1 else "")) if fam_first else (words[0][0] + words[-1][0])
-    flag = components.flag(p.get("nat"))
+    fam, giv = (words[0], " ".join(words[1:])) if fam_first else (words[-1], " ".join(words[:-1]))
+    code = components.FLAGS.get((p.get("nat") or "").upper())
+    bg = f'<span class="fi fi-{code} pc-flag" aria-hidden="true"></span>' if code else ""
     rk = f'<span class="pc-rank">No. {rank}</span>' if rank else ""
-    return (f'<div class="pcard pcard-{size} pc-{e(p.get("gender") or "M").lower()}" aria-hidden="true"><span class="pc-ini">{e(ini.upper())}</span>'
-            f'<span class="pc-foot">{flag}<span class="pc-nat">{e(p.get("nat") or "")}</span>{rk}</span><span class="pc-mark">Eleven</span></div>')
+    first, second = (fam, giv) if fam_first else (giv, fam)
+    return (f'<div class="pcard pcard-{size}" aria-hidden="true">{bg}<span class="pc-shade"></span><span class="pc-mark">Eleven</span>{rk}'
+            f'<span class="pc-name"><span class="pc-n2">{e(p["name"])}</span></span>'
+            f'<span class="pc-nat">{components.flag(p.get("nat"))}{e(p.get("nat") or "")}</span></div>')
 
 
 def build(page, site, tag_items, tag_url, hubs, R):
@@ -491,12 +494,12 @@ def build(page, site, tag_items, tag_url, hubs, R):
         top = [p for p in ps if (ranks.get(p["ittf_id"]) or {}).get("rank", 999) <= 10]
         rest = [p for p in ps if p not in top]
         cards = "".join(f'<li class="pl-tile"><a href="/players/{p["slug"]}.html">{player_card(p, (ranks.get(p["ittf_id"]) or {}).get("rank"), "small")}'
-                        f'<span class="pl-tile-name">{e(p["name"])}</span></a></li>' for p in top)
+                        f'<span class="sr-only">{e(p["name"])}</span></a></li>' for p in top)
         lis = "".join(f'<li><span class="rk-pos">{(ranks.get(p["ittf_id"]) or {}).get("rank", "")}</span>{components.flag(p.get("nat"))}'
                       f'<a href="/players/{p["slug"]}.html">{e(p["name"])}</a><span class="rk-nat">{e(p.get("nat") or "")}</span></li>' for p in rest)
         return f'<ul class="pl-tiles">{cards}</ul>' + (f'<ul class="pl-all">{lis}</ul>' if lis else "")
     idx = f'''<main class="wrap pl-page">{components.subnav("players", "/players/")}<section class="sched-head"><div><h1>Players</h1>
-<p class="lede">Profiles of the world's leading men and women: results, season-by-season records, titles, head to heads and news. Every player who reaches the top 10 gets a profile, and it stays and keeps updating whatever their ranking.</p></div></section>
+<p class="lede">Every player in the world top 100: results, season-by-season records, titles, head to heads and the latest news.</p></div></section>
 <div class="rk-two"><section class="hub-sec"><h2 class="section-title">Women</h2>{group("W")}</section>
 <section class="hub-sec"><h2 class="section-title">Men</h2>{group("M")}</section></div></main>'''
     open(os.path.join(ROOT, "players", "index.html"), "w", encoding="utf-8").write(
