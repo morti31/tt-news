@@ -115,6 +115,64 @@ def compact(r, players):
     return m
 
 
+BRACKET_CODES = {"MS": "TTEMSINGLES", "WS": "TTEWSINGLES", "MD": "TTEMDOUBLES", "WD": "TTEWDOUBLES", "XD": "TTEXDOUBLES"}
+BRACKET_NAMES = {"MS": "Men's Singles", "WS": "Women's Singles", "MD": "Men's Doubles", "WD": "Women's Doubles", "XD": "Mixed Doubles"}
+
+
+def from_brackets(eid, players):
+    """Older events have results without match cards: read their draws instead (main draw and qualifying)."""
+    out = []
+    for k, code in BRACKET_CODES.items():
+        try:
+            j = get(f"{LIVE}/GetBrackets/{eid}/{code.ljust(42, '-')}")
+        except Exception:
+            continue
+        comp = j.get("Competition") or {}
+        nm = ((comp.get("ExtendedInfos") or {}).get("SportDescription") or {}).get("EventName")
+        if nm != BRACKET_NAMES[k]:
+            continue
+        for br in comp.get("Bracket") or []:
+            for rd in br.get("BracketItems") or []:
+                for it in rd.get("BracketItem") or []:
+                    places = sorted(it.get("CompetitorPlace") or [], key=lambda x: x.get("Pos", 0))
+                    if len(places) != 2 or not it.get("Result"):
+                        continue
+                    ids, ok = [], True
+                    for pl in places:
+                        c = pl.get("Competitor") or {}
+                        ath = ((c.get("Composition") or {}).get("Athlete")) or []
+                        if not 1 <= len(ath) <= 2:
+                            ok = False
+                            break
+                        ids.append([a.get("Code") for a in ath])
+                        for a in ath:
+                            d = a.get("Description") or {}
+                            players[a.get("Code")] = [f'{d.get("FamilyName", "")} {d.get("GivenName", "")}'.strip(), d.get("Organization") or c.get("Organization")]
+                    if not ok or not all(all(x) for x in ids):
+                        continue
+                    head, _, rest = it["Result"].partition(" ")
+                    try:
+                        sc = [int(x) for x in head.split("-")]
+                    except ValueError:
+                        continue
+                    wl = [pl.get("Wlt") for pl in places]
+                    w = 0 if wl[0] == "W" else 1 if wl[1] == "W" else (0 if sc[0] > sc[1] else 1)
+                    games = [g for g in re.findall(r"(\d+):(\d+)", rest) if g != ("0", "0")]
+                    m = {"e": str(eid), "k": k, "r": (rd.get("Code") or "").strip("-"), "p": ids, "w": w}
+                    if it.get("Date"):
+                        m["d"] = f'{it["Date"]}T{it.get("Time") or "00:00"}:00L'
+                    if games and all(sorted(g) == ["0", "11"] for g in games):
+                        m["wo"] = 1
+                    else:
+                        m["s"] = sc
+                        if games:
+                            m["g"] = ",".join(f"{a}-{b}" for a, b in games)
+                    if br.get("Code") == "PREL":
+                        m["q"] = 1
+                    out.append(m)
+    return out
+
+
 def event_name(eid):
     try:
         x = get(f"{LIVE}/GetEventName/{eid}")
@@ -126,6 +184,10 @@ def event_name(eid):
 def sync_event(eid, events, years, players):
     rs = get(f"{LIVE}/GetOfficialResult?EventId={eid}&include_match_card=true&take=5000")
     ms = [m for m in (compact(r, players) for r in rs or []) if m]
+    if rs and len(ms) < len(rs) / 4:   # no match cards (older events): use the draws
+        dates0 = sorted((r.get("startDateLocal") or "")[:4] for r in rs if r.get("startDateLocal"))
+        if dates0 and int(dates0[-1]) >= FIRST_YEAR:
+            ms = from_brackets(eid, players) or ms
     ev = events.setdefault(eid, {})
     if not ev.get("name"):
         ev["name"] = event_name(eid) or ""
@@ -190,7 +252,9 @@ def main():
         if re.fullmatch(r"\d{4}\.json", f):
             years[f[:4]] = load(os.path.join(MDIR, f), [])
     today = dt.date.today().isoformat()
-    if "--backfill" in sys.argv:
+    if "--refill-empty" in sys.argv:   # events with results but no matches saved yet
+        todo = [k for k, v in events.items() if not v.get("n") and v.get("end") and v["end"][:4] >= str(FIRST_YEAR)]
+    elif "--backfill" in sys.argv:
         i = sys.argv.index("--backfill")
         todo = [str(x) for x in range(int(sys.argv[i + 1]), int(sys.argv[i + 2]) + 1)]
     else:

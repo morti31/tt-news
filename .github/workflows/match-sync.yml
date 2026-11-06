@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       backfill:
-        description: "Optional event id range to load, e.g. '2700 3420'"
+        description: "Optional: an event id range to load, e.g. '2700 3420', or 'refill' for events with results but no matches saved"
         required: false
         default: ""
 permissions:
@@ -24,7 +24,7 @@ jobs:
         env:
           BACKFILL: ${{ inputs.backfill }}
         run: |
-          if [ -n "$BACKFILL" ]; then python3 tools/match_sync.py --backfill $BACKFILL --players; else python3 tools/match_sync.py; fi
+          if [ "$BACKFILL" = "refill" ]; then python3 tools/match_sync.py --refill-empty; elif [ -n "$BACKFILL" ]; then python3 tools/match_sync.py --backfill $BACKFILL --players; else python3 tools/match_sync.py; fi
       - name: Commit changes
         run: |
           git config user.name "Tom Mortimer"
