@@ -1,4 +1,4960 @@
 {
+ "1800": {
+  "name": "ITTF Junior Circuit Funchal Junior and Cadet Open  Funchal",
+  "skip": true,
+  "n": 0
+ },
+ "1801": {
+  "name": "ITTF Junior Circuit Taiyuan Junior and Cadet Open  Taiyuan",
+  "skip": true,
+  "n": 0
+ },
+ "1802": {
+  "name": "SINGAPORE Open  Singapore",
+  "n": 0,
+  "done": false
+ },
+ "1803": {
+  "name": "Arab Championships  Sanaa",
+  "n": 0,
+  "done": false
+ },
+ "1804": {
+  "name": "Panasonic Open (China)  Guangzhou",
+  "n": 0,
+  "done": false
+ },
+ "1805": {
+  "name": "ITTF Junior Circuit Chile Junior and Cadet Open  Vina del Mar",
+  "skip": true,
+  "n": 0
+ },
+ "1806": {
+  "name": "JAPAN Open  Yokohama",
+  "n": 0,
+  "done": false
+ },
+ "1807": {
+  "name": "Women's World Cup  Urumqi",
+  "n": 0,
+  "done": false
+ },
+ "1808": {
+  "name": "SERBIAN Open  Belgrade",
+  "n": 0,
+  "done": false
+ },
+ "1809": {
+  "name": "RUSSIAN Open  St. Petersburg",
+  "n": 0,
+  "done": false
+ },
+ "1810": {
+  "name": "Men's World Cup  Paris",
+  "n": 0,
+  "done": false
+ },
+ "1811": {
+  "name": "World Junior Circuit  Vrsac",
+  "skip": true,
+  "n": 0
+ },
+ "1812": {
+  "name": "GERMAN Open  Bayreuth",
+  "n": 0,
+  "done": false
+ },
+ "1813": {
+  "name": "Asian Games  Doha",
+  "n": 0,
+  "done": false
+ },
+ "1814": {
+  "name": "POLISH Open  Warsaw",
+  "n": 0,
+  "done": false
+ },
+ "1815": {
+  "name": "South East Asian Championships  Singapore",
+  "n": 0,
+  "done": false
+ },
+ "1816": {
+  "name": "Pro Tour Grand Finals  Hong Kong",
+  "n": 0,
+  "done": false
+ },
+ "1817": {
+  "name": "ITTF World Junior Championships  Cairo",
+  "skip": true,
+  "n": 0
+ },
+ "1818": {
+  "name": "ITTF Junior Circuit Tunisia Junior and Cadet Open  Tunis",
+  "skip": true,
+  "n": 0
+ },
+ "1819": {
+  "name": "Croatian Open  Zagreb",
+  "n": 0,
+  "done": false
+ },
+ "1820": {
+  "name": "SLOVENIA Open  Velenje",
+  "n": 0,
+  "done": false
+ },
+ "1821": {
+  "name": "ITTF Junior Circuit Venezuela Junior and Cadet Open  Valencia",
+  "skip": true,
+  "n": 0
+ },
+ "1822": {
+  "name": "EUROTOP12  Arezzo",
+  "n": 0,
+  "done": false
+ },
+ "1823": {
+  "name": "ITTF Junior Circuit Bahrain Junior and Cadet Open  Manama",
+  "skip": true,
+  "n": 0
+ },
+ "1824": {
+  "name": "INDIAN Open  New Delhi",
+  "n": 0,
+  "done": false
+ },
+ "1825": {
+  "name": "ITTF Junior Circuit Doha Junior and Cadet Open  Doha",
+  "skip": true,
+  "n": 0
+ },
+ "1826": {
+  "name": "QATAR Open  Doha",
+  "n": 0,
+  "done": false
+ },
+ "1827": {
+  "name": "KUWAIT Open  Salwa Cup",
+  "n": 0,
+  "done": false
+ },
+ "1828": {
+  "name": "ITTF Junior Circuit Chile Junior and Cadet Open  Vina del Mar",
+  "skip": true,
+  "n": 0
+ },
+ "1829": {
+  "name": "ITTF Junior Circuit Canadian Junior and Cadet Open  Montreal",
+  "skip": true,
+  "n": 0
+ },
+ "1830": {
+  "name": "ITTF Junior Circuit Algerian Junior and Cadet Open  Tipaza",
+  "skip": true,
+  "n": 0
+ },
+ "1831": {
+  "name": "LIEBHERR Brazilian Open  Belo Horizonte",
+  "n": 0,
+  "done": false
+ },
+ "1832": {
+  "name": "LIEBHERR Chile Open  Santiago",
+  "n": 0,
+  "done": false
+ },
+ "1833": {
+  "name": "African Championship  Brazzaville",
+  "n": 0,
+  "done": false
+ },
+ "1834": {
+  "name": "ITTF Junior Circuit Swedish Junior and Cadet Open  Orebro",
+  "skip": true,
+  "n": 0
+ },
+ "1835": {
+  "name": "ITTF Junior Circuit UAE Junior and Cadet Open  RasAlKhaimah",
+  "skip": true,
+  "n": 0
+ },
+ "1836": {
+  "name": "ITTF Junior Circuit Spanish Junior and Cadet Open  Platja d'Aro",
+  "skip": true,
+  "n": 0
+ },
+ "1837": {
+  "name": "ITTF WJC Finals & WCC  Vrsac",
+  "n": 0,
+  "done": false
+ },
+ "1838": {
+  "name": "ITTF WJC Finals & WCC  Santo Domingo",
+  "n": 0,
+  "done": false
+ },
+ "1839": {
+  "name": "ITTF WJC Finals & WCC  Funchal",
+  "n": 0,
+  "done": false
+ },
+ "1840": {
+  "name": "ITTF WJC Finals & WCC  Genting",
+  "n": 0,
+  "done": false
+ },
+ "1841": {
+  "name": "ITTF Junior Circuit Polish Junior and Cadet Open  Cetniewo",
+  "skip": true,
+  "n": 0
+ },
+ "1842": {
+  "name": "ITTF Junior Circuit French Junior and Cadet Open  Vern sur Seiche",
+  "skip": true,
+  "n": 0
+ },
+ "1843": {
+  "name": "ITTF Junior Circuit Ecuador Junior and Cadet Open  Cuenca",
+  "skip": true,
+  "n": 0
+ },
+ "1844": {
+  "name": "ITTF Junior Circuit New Zealand Junior and Cadet Open  North Habour",
+  "skip": true,
+  "n": 0
+ },
+ "1845": {
+  "name": "European Championships  Belgrade",
+  "n": 0,
+  "done": false
+ },
+ "1846": {
+  "name": "Latin American Championships  Guarulhos",
+  "n": 0,
+  "done": false
+ },
+ "1847": {
+  "name": "Volkswagen Open  China  Nanjing",
+  "n": 0,
+  "done": false
+ },
+ "1848": {
+  "name": "Volkswagen Open  Japan  Chiba",
+  "n": 0,
+  "done": false
+ },
+ "1849": {
+  "name": "Volkswagen Open  Korea  Seongnam",
+  "n": 0,
+  "done": false
+ },
+ "1850": {
+  "name": "North American Youth Championships Cadets  Laval",
+  "skip": true,
+  "n": 0
+ },
+ "1851": {
+  "name": "North American Championship  Laval",
+  "n": 0,
+  "done": false
+ },
+ "1852": {
+  "name": "North American Youth Championships Juniors  Laval",
+  "skip": true,
+  "n": 0
+ },
+ "1853": {
+  "name": "ITTF Junior Circuit El Salvador Junior and Cadet Open  San Salvador",
+  "skip": true,
+  "n": 0
+ },
+ "1854": {
+  "name": "Commonwealth Championships  Jaipur",
+  "n": 0,
+  "done": false
+ },
+ "1855": {
+  "name": "South American Junior Championships  Cuenca",
+  "skip": true,
+  "n": 0
+ },
+ "1856": {
+  "name": "Latin American Junior Championships  Cuenca",
+  "skip": true,
+  "n": 0
+ },
+ "1857": {
+  "name": "ITTF Junior Circuit Taiyuan Junior and Cadet Open  Taiyuan",
+  "skip": true,
+  "n": 0
+ },
+ "1858": {
+  "name": "ITTF Junior Circuit Funchal Junior and Cadet Open  Funchal",
+  "skip": true,
+  "n": 0
+ },
+ "1859": {
+  "name": "ITTF WJC Finals & WCC  Cape Town",
+  "n": 0,
+  "done": false
+ },
+ "1860": {
+  "name": "Volkswagen Women's World Cup  Chengdu",
+  "n": 0,
+  "done": false
+ },
+ "1861": {
+  "name": "World Team Cup  Magdeburg",
+  "n": 0,
+  "done": false
+ },
+ "1862": {
+  "name": "LIEBHERR Men's World Cup  Barcelona",
+  "n": 0,
+  "done": false
+ },
+ "1863": {
+  "name": "CHINESE TAIPEI Open  Taipei",
+  "n": 0,
+  "done": false
+ },
+ "1864": {
+  "name": "ITTF Junior Circuit Pakistan Junior and Cadet Open  Islamabad",
+  "skip": true,
+  "n": 0
+ },
+ "1865": {
+  "name": "ITTF Junior Circuit Indian Junior and Cadet Open  Panaji",
+  "skip": true,
+  "n": 0
+ },
+ "1866": {
+  "name": "ITTF Junior Circuit Congo Brazzaville Junior and Cadet Open  Brazzaville",
+  "skip": true,
+  "n": 0
+ },
+ "1867": {
+  "name": "Panasonic Open (China)  Shenzhen",
+  "n": 0,
+  "done": false
+ },
+ "1868": {
+  "name": "9th All Africa Games  Algiers",
+  "n": 0,
+  "done": false
+ },
+ "1869": {
+  "name": "European Youth Championships (Junior)  Sarajevo",
+  "skip": true,
+  "n": 0
+ },
+ "1870": {
+  "name": "Pan American Games  Rio de Janeiro",
+  "n": 0,
+  "done": false
+ },
+ "1871": {
+  "name": "Asian Junior Championships  Hoengseong",
+  "skip": true,
+  "n": 0
+ },
+ "1872": {
+  "name": "LIEBHERR German Open  Bremen",
+  "n": 0,
+  "done": false
+ },
+ "1873": {
+  "name": "Central American Junior Championships  San Salvador",
+  "skip": true,
+  "n": 0
+ },
+ "1874": {
+  "name": "LIEBHERR French Open  Toulouse",
+  "n": 0,
+  "done": false
+ },
+ "1875": {
+  "name": "Asian Cadet Championships  Hoengseong",
+  "skip": true,
+  "n": 0
+ },
+ "1876": {
+  "name": "European Youth Championships (Cadet)  Bratislava",
+  "skip": true,
+  "n": 0
+ },
+ "1877": {
+  "name": "European Youth Championships (Junior)  Bratislava",
+  "skip": true,
+  "n": 0
+ },
+ "1878": {
+  "name": "Eurosib Russian Open  St. Petersburg",
+  "n": 0,
+  "done": false
+ },
+ "1879": {
+  "name": "LIEBHERR Austrian Open  Wels",
+  "n": 0,
+  "done": false
+ },
+ "1880": {
+  "name": "ARAB CUP  Sanaa",
+  "n": 0,
+  "done": false
+ },
+ "1881": {
+  "name": "SWEDISH Open  Stockholm",
+  "n": 0,
+  "done": false
+ },
+ "1882": {
+  "name": "Asian Championship ATTU  Yangzhou",
+  "n": 0,
+  "done": false
+ },
+ "1883": {
+  "name": "SLOVENIA Open  Velenje",
+  "n": 0,
+  "done": false
+ },
+ "1884": {
+  "name": "ITTF Junior Circuit Hungarian Junior and Cadet Open  Kecskemet",
+  "skip": true,
+  "n": 0
+ },
+ "1885": {
+  "name": "Olympic Table Tennis Asian Qualifying Tournament  General Zone",
+  "n": 0,
+  "done": false
+ },
+ "1886": {
+  "name": "Olympic European Qualification Tournament  Nantes",
+  "n": 0,
+  "done": false
+ },
+ "1887": {
+  "name": "Olympic North America Qualification Tournament  Vancouver",
+  "n": 0,
+  "done": false
+ },
+ "1888": {
+  "name": "Olympic Oceania Qualification Tournament  Noumea",
+  "n": 0,
+  "done": false
+ },
+ "1889": {
+  "name": "ITTF Junior Circuit El Salvador Junior and Cadet Open  San Salvador",
+  "skip": true,
+  "n": 0
+ },
+ "1890": {
+  "name": "Volkswagen Pro Tour Grand Finals  Beijing",
+  "n": 0,
+  "done": false
+ },
+ "1891": {
+  "name": "Tournament of Champions  Changcha",
+  "n": 0,
+  "done": false
+ },
+ "1892": {
+  "name": "Olympic Games Test Event  Goodluck Beijing  Beijing",
+  "n": 0,
+  "done": false
+ },
+ "1893": {
+  "name": "HTV Asian Cup  Hanoi",
+  "n": 0,
+  "done": false
+ },
+ "1894": {
+  "name": "ITTF World Junior Championships  Palo Alto",
+  "skip": true,
+  "n": 0
+ },
+ "1895": {
+  "name": "EUROTOP12  Frankfurt",
+  "n": 0,
+  "done": false
+ },
+ "1896": {
+  "name": "Latin American Championships / Latin American Olympic Qualification  Santo Domingo",
+  "n": 0,
+  "done": false
+ },
+ "1897": {
+  "name": "Asian Cup  Sapporo",
+  "n": 0,
+  "done": false
+ },
+ "1898": {
+  "name": "African Junior & Cadet Championships  Alexandria",
+  "skip": true,
+  "n": 0
+ },
+ "1899": {
+  "name": "Latin American Championships  Santo Domingo",
+  "n": 0,
+  "done": false
+ },
+ "1900": {
+  "name": "Northern European and Nordic Championships  Maribo",
+  "n": 0,
+  "done": false
+ },
+ "1901": {
+  "name": "Latin American Junior Championships  Cartagena de Indias",
+  "skip": true,
+  "n": 0
+ },
+ "1902": {
+  "name": "Asian Singles and Doubles Olympic Qualification  Beijing",
+  "n": 0,
+  "done": false
+ },
+ "1903": {
+  "name": "European Singles Olympic Qualification  Luxembourg",
+  "n": 0,
+  "done": false
+ },
+ "1904": {
+  "name": "2nd Luxembourg Open Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "1905": {
+  "name": "1st Luxembourg Table Tennis Open Championships  Kirchberg",
+  "n": 0,
+  "done": false
+ },
+ "1906": {
+  "name": "US Open  Fort Lauderdale",
+  "n": 0,
+  "done": false
+ },
+ "1907": {
+  "name": "U.S. International Open  North Carolina",
+  "n": 0,
+  "done": false
+ },
+ "1908": {
+  "name": "African Junior Championships  Accra",
+  "skip": true,
+  "n": 0
+ },
+ "1909": {
+  "name": "European Youth Championships (Cadet)  Terni",
+  "skip": true,
+  "n": 0
+ },
+ "1910": {
+  "name": "European Youth Championships (Junior)  Terni",
+  "skip": true,
+  "n": 0
+ },
+ "1911": {
+  "name": "North American Championship  Las Vegas",
+  "n": 0,
+  "done": false
+ },
+ "1912": {
+  "name": "North American Youth Championships Juniors  Las Vegas",
+  "skip": true,
+  "n": 0
+ },
+ "1913": {
+  "name": "North American Youth Championships Cadets  Las Vegas",
+  "skip": true,
+  "n": 0
+ },
+ "1914": {
+  "name": "Asian Cadet Championships  Singapore",
+  "skip": true,
+  "n": 0
+ },
+ "1915": {
+  "name": "Asian Youth Championships ATTUJuniors  Singapore",
+  "skip": true,
+  "n": 0
+ },
+ "1916": {
+  "name": "Arab Championships  Rabat",
+  "n": 0,
+  "done": false
+ },
+ "1917": {
+  "name": "European Championships  SaintPetersburg",
+  "n": 0,
+  "done": false
+ },
+ "1918": {
+  "name": "ITTF World Cadet Challenge  Tiszaujvaros",
+  "skip": true,
+  "n": 0
+ },
+ "1919": {
+  "name": "African Championship  Kinshasa",
+  "n": 0,
+  "done": false
+ },
+ "1920": {
+  "name": "Bahrain Junior Open  Manama",
+  "skip": true,
+  "n": 0
+ },
+ "1921": {
+  "name": "ITTF Junior Circuit Doha Junior and Cadet Open  Doha",
+  "skip": true,
+  "n": 0
+ },
+ "1922": {
+  "name": "Safir International  Orebro",
+  "n": 0,
+  "done": false
+ },
+ "1923": {
+  "name": "ITTF Junior Circuit Hungarian Junior and Cadet Open  Tata",
+  "skip": true,
+  "n": 0
+ },
+ "1924": {
+  "name": "EUROTOP12  Dusseldorf",
+  "n": 0,
+  "done": false
+ },
+ "1925": {
+  "name": "hallmark",
+  "n": 0,
+  "done": false
+ },
+ "1926": {
+  "name": "Latin American Championships  San Salvador",
+  "n": 0,
+  "done": false
+ },
+ "1927": {
+  "name": "ITTF Junior Circuit Guatemala Junior and Cadet Open  Guatemala City",
+  "skip": true,
+  "n": 0
+ },
+ "1928": {
+  "name": "Volkswagen China vs. World Team Challenge Match  Shanghai",
+  "n": 0,
+  "done": false
+ },
+ "1929": {
+  "name": "Commonwealth Championships  Glasgow",
+  "n": 0,
+  "done": false
+ },
+ "1930": {
+  "name": "Asian Cup  Hangzhou",
+  "n": 0,
+  "done": false
+ },
+ "1931": {
+  "name": "Latin American Junior and Cadet Championships  Guatemala City",
+  "skip": true,
+  "n": 0
+ },
+ "1932": {
+  "name": "Mediterranean Games  Pescara",
+  "n": 0,
+  "done": false
+ },
+ "1933": {
+  "name": "Universiade  International University Sports Federation",
+  "n": 0,
+  "done": false
+ },
+ "1934": {
+  "name": "European Youth (Junior and Cadet) Championships  Prague",
+  "skip": true,
+  "n": 0
+ },
+ "1935": {
+  "name": "African Championships  Rabat",
+  "n": 0,
+  "done": false
+ },
+ "1936": {
+  "name": "Asian Junior Championships  Jaipur",
+  "skip": true,
+  "n": 0
+ },
+ "1937": {
+  "name": "European Youth Championships (Cadet)  Prague",
+  "skip": true,
+  "n": 0
+ },
+ "1938": {
+  "name": "LIEBHERR European Table Tennis Championships  Stuttgart",
+  "n": 0,
+  "done": false
+ },
+ "1939": {
+  "name": "Pacific Mini Games  Cook Islands",
+  "n": 0,
+  "done": false
+ },
+ "1940": {
+  "name": "STAG Pan American Junior Championships  Coquimbo",
+  "skip": true,
+  "n": 0
+ },
+ "1941": {
+  "name": "Asian Championships  Lucknow",
+  "n": 0,
+  "done": false
+ },
+ "1942": {
+  "name": "YOG Continental Qualification Event  Africa  Cairo",
+  "n": 0,
+  "done": false
+ },
+ "1943": {
+  "name": "European Super Cup  St. Petersburg",
+  "n": 0,
+  "done": false
+ },
+ "1944": {
+  "name": "World Masters Games  Melbourne",
+  "skip": true,
+  "n": 0
+ },
+ "1945": {
+  "name": "Hong KongMacau International  Hong Kong",
+  "n": 0,
+  "done": false
+ },
+ "1946": {
+  "name": "World Junior Circuit  Dubai",
+  "skip": true,
+  "n": 0
+ },
+ "1947": {
+  "name": "NA Olympic Qualification  Vancouver",
+  "n": 0,
+  "done": false
+ },
+ "1948": {
+  "name": "NA Olympic Qualification  Vancouver",
+  "n": 0,
+  "done": false
+ },
+ "1949": {
+  "name": "NA Olympic Qualification  Vancouver",
+  "n": 0,
+  "done": false
+ },
+ "1950": {
+  "name": "NA Olympic Qualification  Vancouver",
+  "n": 0,
+  "done": false
+ },
+ "1951": {
+  "name": "5th Francophone games  Beirut",
+  "n": 0,
+  "done": false
+ },
+ "1952": {
+  "name": "NA Olympic Qualification  Vancouver",
+  "n": 0,
+  "done": false
+ },
+ "1953": {
+  "name": "US Open  Las Vegas",
+  "n": 0,
+  "done": false
+ },
+ "1954": {
+  "name": "Luxembourg Open  Luxembourg",
+  "n": 0,
+  "done": false
+ },
+ "1955": {
+  "name": "Luxembourg Open  Luxembourg",
+  "n": 0,
+  "done": false
+ },
+ "1956": {
+  "name": "US Open  Las Vegas",
+  "n": 0,
+  "done": false
+ },
+ "1957": {
+  "name": "Central American Junior and Cadet Championships  San Salvador",
+  "skip": true,
+  "n": 0
+ },
+ "1958": {
+  "name": "Volkswagen China vs World Team Challenge  Shanghai",
+  "n": 0,
+  "done": false
+ },
+ "1959": {
+  "name": "Korean Hopes Challenge  Pohang",
+  "skip": true,
+  "n": 0
+ },
+ "1960": {
+  "name": "ITTF Junior Circuit Hungarian Cadet Open  Tata",
+  "skip": true,
+  "n": 0
+ },
+ "1961": {
+  "name": "ITTF Hopes Week and Challenge  Schwechat",
+  "skip": true,
+  "n": 0
+ },
+ "1962": {
+  "name": "Qatar Peace and Sport Cup  Doha",
+  "n": 0,
+  "done": false
+ },
+ "1963": {
+  "name": "2nd ITTF World Hopes Week & Challenge  Falkenberg",
+  "skip": true,
+  "n": 0
+ },
+ "1964": {
+  "name": "Volkswagen China vs. World Team Challenge Match  Shanghai",
+  "n": 0,
+  "done": false
+ },
+ "1965": {
+  "name": "China vs. World Team Challenge  Shanghai",
+  "n": 0,
+  "done": false
+ },
+ "1966": {
+  "name": "3rd ITTF World Hopes Week & Challenge  Schwechat",
+  "skip": true,
+  "n": 0
+ },
+ "1967": {
+  "name": "22nd Arab Team Championships '10  venue1",
+  "n": 0,
+  "done": false
+ },
+ "1968": {
+  "name": "JOOLA European Nations League '10  Premier  venue1",
+  "n": 0,
+  "done": false
+ },
+ "1969": {
+  "name": "JOOLA European Nations League '10  Challenge  venue1",
+  "n": 0,
+  "done": false
+ },
+ "1970": {
+  "name": "JOOLA European Nations League '10  Standard  venue1",
+  "n": 0,
+  "done": false
+ },
+ "1971": {
+  "name": "JOOLA European Nations League '11  Premier  venue1",
+  "n": 0,
+  "done": false
+ },
+ "1972": {
+  "name": "JOOLA European Nations League '11  Standard  venue1",
+  "n": 0,
+  "done": false
+ },
+ "1973": {
+  "name": "ITTF World Hopes Week  & Challenge  Otocec",
+  "skip": true,
+  "n": 0
+ },
+ "1974": {
+  "name": "Pan American Sport Festival  Mexico City",
+  "n": 0,
+  "done": false
+ },
+ "1975": {
+  "name": "ITTF World Hopes Week  & Challenge  Shanghai",
+  "skip": true,
+  "n": 0
+ },
+ "1976": {
+  "name": "Asian Junior & Cadet Championships  Kuala Lumpur",
+  "skip": true,
+  "n": 0
+ },
+ "1977": {
+  "name": "Aquece Rio International Tournament  Olympic Test Event",
+  "n": 0,
+  "done": false
+ },
+ "1978": {
+  "name": "Olympic Legends vs Brazil Stars  Rio de Janeiro",
+  "n": 0,
+  "done": false
+ },
+ "1979": {
+  "name": "UAE Junior & Cadet Open  ITTF Premium Junior Circuit",
+  "skip": true,
+  "n": 0
+ },
+ "1980": {
+  "name": "XVII Games of the Small States of Europe  San Marino",
+  "n": 0,
+  "done": false
+ },
+ "1981": {
+  "name": "European Championship Qualification  5th round",
+  "n": 0,
+  "done": false
+ },
+ "1982": {
+  "name": "Asian Junior & Cadet Championships Qualification Event- West Asia",
+  "skip": true,
+  "n": 0
+ },
+ "1983": {
+  "name": "Asian Junior & Cadet Championships Qualification EventEast Asia",
+  "skip": true,
+  "n": 0
+ },
+ "1984": {
+  "name": "Asian Junior & Cadet Championships Qualification EventSouth Asia",
+  "skip": true,
+  "n": 0
+ },
+ "1985": {
+  "name": "Asian Junior & Cadet Championships Qualification EventMiddle Asia",
+  "skip": true,
+  "n": 0
+ },
+ "1986": {
+  "name": "Tokyo 2020 Olympic Games",
+  "n": 0,
+  "done": false
+ },
+ "1987": {
+  "name": "Liebherr 2019 World Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "1988": {
+  "name": "ITTF World Cadet Challenge",
+  "skip": true,
+  "n": 0
+ },
+ "1989": {
+  "name": "Latin American Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "1990": {
+  "name": "Arab Table Tennis Championship",
+  "n": 0,
+  "done": false
+ },
+ "1991": {
+  "name": "Asian Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "1992": {
+  "name": "Finlandia Open",
+  "n": 0,
+  "done": false
+ },
+ "1993": {
+  "name": "Luxembourg Open",
+  "n": 0,
+  "done": false
+ },
+ "1994": {
+  "name": "Caribbean Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "1995": {
+  "name": "Estonian Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "1996": {
+  "name": "US Open",
+  "n": 0,
+  "done": false
+ },
+ "1997": {
+  "name": "Russian Cadet and Hopes Tournament in memory of Nikolay Nikitin",
+  "skip": true,
+  "n": 0
+ },
+ "1998": {
+  "name": "Seamaster 2019 ITTF World Tour Hungarian Open",
+  "n": 0,
+  "done": false
+ },
+ "1999": {
+  "name": "Universal ITTF Pan American Cup",
+  "n": 0,
+  "done": false
+ },
+ "2000": {
+  "name": "CCB ITTF Europe Top 16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2001": {
+  "name": "Butterfly European U21 Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2002": {
+  "name": "LION 32nd ITTF-ATTU Asian Cup",
+  "n": 0,
+  "done": false
+ },
+ "2003": {
+  "name": "African Junior & Cadet Championships  Accra",
+  "skip": true,
+  "n": 0
+ },
+ "2004": {
+  "name": "ITTF Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2005": {
+  "name": "European Games",
+  "n": 0,
+  "done": false
+ },
+ "2006": {
+  "name": "ITTF Pan American Junior Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2007": {
+  "name": "European Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2008": {
+  "name": "Pan American Games",
+  "n": 0,
+  "done": false
+ },
+ "2009": {
+  "name": "ITTF Africa Cup",
+  "n": 0,
+  "done": false
+ },
+ "2010": {
+  "name": "LIEBHERR 2019 ITTF European Championships",
+  "n": 0,
+  "done": false
+ },
+ "2011": {
+  "name": "ITTF Asian Championships (Singles)  Yogyakarta",
+  "n": 0,
+  "done": false
+ },
+ "2012": {
+  "name": "All Africa Games",
+  "n": 0,
+  "done": false
+ },
+ "2013": {
+  "name": "ITTF Pan American Championships (Singles)  Asuncion",
+  "n": 0,
+  "done": false
+ },
+ "2014": {
+  "name": "Uncle Pop Women's World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2015": {
+  "name": "Chengdu Airlines 2019 ITTF Men’s World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2016": {
+  "name": "ZEN-NOH 2019 ITTF Team World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2017": {
+  "name": "NSDF World Junior Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2018": {
+  "name": "Seamaster 2019 ITTF World Tour Platinum Qatar Open",
+  "n": 0,
+  "done": false
+ },
+ "2019": {
+  "name": "Seamaster 2019 ITTF World Tour Platinum China Open",
+  "n": 0,
+  "done": false
+ },
+ "2020": {
+  "name": "Seamaster 2019 ITTF World Tour Hang Seng Hong Kong Open",
+  "n": 0,
+  "done": false
+ },
+ "2021": {
+  "name": "Seamaster 2019 ITTF World Tour Platinum LION Japan Open",
+  "n": 0,
+  "done": false
+ },
+ "2022": {
+  "name": "Seamaster 2019 ITTF World Tour SHINHAN Korea Open",
+  "n": 0,
+  "done": false
+ },
+ "2023": {
+  "name": "Seamaster 2019 ITTF World Tour Platinum Australian Open",
+  "n": 0,
+  "done": false
+ },
+ "2024": {
+  "name": "ITTF World Tour ASAREL Bulgaria Open",
+  "n": 0,
+  "done": false
+ },
+ "2025": {
+  "name": "ITTF World Tour Czech Open",
+  "n": 0,
+  "done": false
+ },
+ "2026": {
+  "name": "ITTF World Tour Swedish Open",
+  "n": 0,
+  "done": false
+ },
+ "2027": {
+  "name": "ITTF World Tour Platinum German Open",
+  "n": 0,
+  "done": false
+ },
+ "2028": {
+  "name": "2019 ITTF World Tour Platinum bet-at-home.com Austrian Open",
+  "n": 0,
+  "done": false
+ },
+ "2029": {
+  "name": "Agricultural Bank of China ITTF World Tour Grand Finals  Zhengzhou",
+  "n": 0,
+  "done": false
+ },
+ "2030": {
+  "name": "Seamaster 2019 ITTF Challenge Plus Portugal Open",
+  "n": 0,
+  "done": false
+ },
+ "2031": {
+  "name": "Seamaster 2019 ITTF Challenge Plus Oman Open",
+  "n": 0,
+  "done": false
+ },
+ "2032": {
+  "name": "Seamaster 2019 ITTF Challenge Spanish Open",
+  "n": 0,
+  "done": false
+ },
+ "2033": {
+  "name": "Seamaster 2019 ITTF Challenge Serbia Open",
+  "n": 0,
+  "done": false
+ },
+ "2034": {
+  "name": "Seamaster 2019 ITTF Challenge Slovenia Open",
+  "n": 0,
+  "done": false
+ },
+ "2035": {
+  "name": "Seamaster 2019 ITTF Challenge Croatia Open",
+  "n": 0,
+  "done": false
+ },
+ "2036": {
+  "name": "ITTF Challenge Thailand Open",
+  "n": 0,
+  "done": false
+ },
+ "2037": {
+  "name": "Seamaster 2019 ITTF Challenge Plus Pyongyang Open",
+  "n": 0,
+  "done": false
+ },
+ "2038": {
+  "name": "ITTF Challenge Plus Nigeria Open",
+  "n": 0,
+  "done": false
+ },
+ "2039": {
+  "name": "ITTF Challenge Plus Paraguay Open",
+  "n": 0,
+  "done": false
+ },
+ "2040": {
+  "name": "ITTF Challenge Mexico Open",
+  "n": 0,
+  "done": false
+ },
+ "2041": {
+  "name": "ITTF Challenge Polish Open",
+  "n": 0,
+  "done": false
+ },
+ "2042": {
+  "name": "2019 ITTF Challenge Belgosstrakh Belarus Open",
+  "n": 0,
+  "done": false
+ },
+ "2043": {
+  "name": "ITTF Challenge Morocco Open",
+  "n": 0,
+  "done": false
+ },
+ "2044": {
+  "name": "ITTF Challenge Indonesia Open",
+  "n": 0,
+  "done": false
+ },
+ "2045": {
+  "name": "ITTF Challenge Turkish Open",
+  "n": 0,
+  "done": false
+ },
+ "2046": {
+  "name": "2019 ITTF Challenge Plus Benemax-Virgo North American Open",
+  "n": 0,
+  "done": false
+ },
+ "2047": {
+  "name": "ITTF Junior Circuit Premium Bahrain Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2048": {
+  "name": "ITTF Junior Circuit Premium Czech Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2049": {
+  "name": "ITTF Junior Circuit Swedish Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2050": {
+  "name": "ITTF Junior Circuit Chile Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2051": {
+  "name": "ITTF Junior Circuit Premium Italian Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2052": {
+  "name": "ITTF Junior Circuit Ghana Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2053": {
+  "name": "ITTF Junior Circuit Premium French Junior and Cadet Open  Metz",
+  "skip": true,
+  "n": 0
+ },
+ "2054": {
+  "name": "ITTF Junior Circuit Premium Belgium Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2055": {
+  "name": "ITTF Junior Circuit Australian Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2056": {
+  "name": "ITTF Junior Circuit Spanish Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2057": {
+  "name": "ITTF Junior Circuit Golden Thailand Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2058": {
+  "name": "ITTF Junior Circuit Premium Polish Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2059": {
+  "name": "ITTF Junior Circuit Golden China Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2060": {
+  "name": "ITTF Junior Circuit Morocco Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2061": {
+  "name": "ITTF Junior Circuit Golden Hang Seng Hong Kong Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2062": {
+  "name": "ITTF Junior Circuit El Salvador Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2063": {
+  "name": "ITTF Junior Circuit Golden Croatia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2064": {
+  "name": "ITTF Junior Circuit Serbia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2065": {
+  "name": "ITTF Junior Circuit Premium Chinese Taipei Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2066": {
+  "name": "ITTF Junior Circuit Slovenia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2067": {
+  "name": "ITTF Junior Circuit North Macedonia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2068": {
+  "name": "ITTF Junior Circuit Egypt Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2069": {
+  "name": "ITTF Junior Circuit Premium Oman Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2070": {
+  "name": "ITTF Junior Circuit Slovak Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2071": {
+  "name": "ITTF Junior Circuit Premium Hungarian Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2072": {
+  "name": "ITTF Junior Circuit Portugal Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2073": {
+  "name": "Luxembourg Open  Luxembourg",
+  "n": 0,
+  "done": false
+ },
+ "2074": {
+  "name": "Opatija Milenij Open",
+  "n": 0,
+  "done": false
+ },
+ "2075": {
+  "name": "Lithuanian Cadet and Mini Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2076": {
+  "name": "XVIII Games of the Small States of Europe",
+  "n": 0,
+  "done": false
+ },
+ "2077": {
+  "name": "ITTF Oceania Junior Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2078": {
+  "name": "Northern European Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2079": {
+  "name": "30th Summer Universiade",
+  "n": 0,
+  "done": false
+ },
+ "2080": {
+  "name": "Commonwealth Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2081": {
+  "name": "T2 Diamond",
+  "n": 0,
+  "done": false
+ },
+ "2082": {
+  "name": "Asian Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2083": {
+  "name": "ITTF World Cadet Challenge",
+  "skip": true,
+  "n": 0
+ },
+ "2084": {
+  "name": "Caribbean Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2085": {
+  "name": "Central American Junior and Cadet Championships  Cancun",
+  "skip": true,
+  "n": 0
+ },
+ "2086": {
+  "name": "South American Junior and Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2087": {
+  "name": "Caribbean Junior and Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2088": {
+  "name": "Central American Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2089": {
+  "name": "South American Senior Championships  Buenos Aires",
+  "n": 0,
+  "done": false
+ },
+ "2090": {
+  "name": "Latin American Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2091": {
+  "name": "Latin American Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2092": {
+  "name": "ITTF-ATTU Asian Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2093": {
+  "name": "ITTF Pan American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2094": {
+  "name": "Europe Youth Top 10",
+  "skip": true,
+  "n": 0
+ },
+ "2095": {
+  "name": "ITTF World Team Qualification Event  Gondomar",
+  "n": 0,
+  "done": false
+ },
+ "2096": {
+  "name": "ITTF Pan America Cup  Guaynabo",
+  "n": 0,
+  "done": false
+ },
+ "2097": {
+  "name": "Europe Top 16 Cup  Montreux",
+  "n": 0,
+  "done": false
+ },
+ "2098": {
+  "name": "North American Mixed Doubles Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2099": {
+  "name": "ITTF-ATTU Asian Cup",
+  "n": 0,
+  "done": false
+ },
+ "2100": {
+  "name": "European U21 Championships  Varazdin",
+  "skip": true,
+  "n": 0
+ },
+ "2101": {
+  "name": "Hana Bank 2020 World Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2102": {
+  "name": "Asian Olympic Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2103": {
+  "name": "ITTF World Singles Qualification Event",
+  "n": 0,
+  "done": false
+ },
+ "2104": {
+  "name": "Pan American Junior Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2105": {
+  "name": "European Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2106": {
+  "name": "LIEBHERR European Individual Championships",
+  "n": 0,
+  "done": false
+ },
+ "2107": {
+  "name": "Asian Junior & Cadet Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2108": {
+  "name": "Europe Youth Top 10",
+  "skip": true,
+  "n": 0
+ },
+ "2109": {
+  "name": "ITTF Men's World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2110": {
+  "name": "ITTF Women's World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2111": {
+  "name": "ITTF World Cadet Challenge",
+  "skip": true,
+  "n": 0
+ },
+ "2112": {
+  "name": "ITTF World Junior Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2113": {
+  "name": "ITTF Challenge Spanish Open  Granada",
+  "n": 0,
+  "done": false
+ },
+ "2114": {
+  "name": "ITTF Challenge Plus Portugal Open  Lisbon",
+  "n": 0,
+  "done": false
+ },
+ "2115": {
+  "name": "ITTF Challenge Plus Oman Open  Muscat",
+  "n": 0,
+  "done": false
+ },
+ "2116": {
+  "name": "ITTF Challenge Polish Open  Gliwice",
+  "n": 0,
+  "done": false
+ },
+ "2117": {
+  "name": "ITTF Challenge Italian Open",
+  "n": 0,
+  "done": false
+ },
+ "2118": {
+  "name": "ITTF Challenge Slovenia Open",
+  "n": 0,
+  "done": false
+ },
+ "2119": {
+  "name": "ITTF Challenge Croatia Open",
+  "n": 0,
+  "done": false
+ },
+ "2120": {
+  "name": "ITTF Challenge Thailand Open",
+  "n": 0,
+  "done": false
+ },
+ "2121": {
+  "name": "ITTF Challenge Plus Belarus Open",
+  "n": 0,
+  "done": false
+ },
+ "2122": {
+  "name": "ITTF Challenge Plus Nigeria Open",
+  "n": 0,
+  "done": false
+ },
+ "2123": {
+  "name": "ITTF Challenge Plus Pyongyang Open",
+  "n": 0,
+  "done": false
+ },
+ "2124": {
+  "name": "ITTF Challenge Plus Belgium Open",
+  "n": 0,
+  "done": false
+ },
+ "2125": {
+  "name": "ITTF Challenge Plus North American Open",
+  "n": 0,
+  "done": false
+ },
+ "2126": {
+  "name": "ITTF World Tour Platinum German Open  Magdeburg",
+  "n": 0,
+  "done": false
+ },
+ "2127": {
+  "name": "ITTF World Tour Hungarian Open  Budapest",
+  "n": 0,
+  "done": false
+ },
+ "2128": {
+  "name": "ITTF World Tour Platinum Qatar Open  Doha",
+  "n": 0,
+  "done": false
+ },
+ "2129": {
+  "name": "ITTF World Tour Platinum Japan Open",
+  "n": 0,
+  "done": false
+ },
+ "2130": {
+  "name": "ITTF World Tour Hong Kong Open",
+  "n": 0,
+  "done": false
+ },
+ "2131": {
+  "name": "ITTF World Tour Platinum China Open",
+  "n": 0,
+  "done": false
+ },
+ "2132": {
+  "name": "ITTF World Tour Korea Open",
+  "n": 0,
+  "done": false
+ },
+ "2133": {
+  "name": "ITTF World Tour Platinum Australian Open",
+  "n": 0,
+  "done": false
+ },
+ "2134": {
+  "name": "ITTF World Tour Czech Open",
+  "n": 0,
+  "done": false
+ },
+ "2135": {
+  "name": "ITTF World Tour ASAREL Bulgaria Open",
+  "n": 0,
+  "done": false
+ },
+ "2136": {
+  "name": "ITTF World Tour Platinum Austrian Open",
+  "n": 0,
+  "done": false
+ },
+ "2137": {
+  "name": "ITTF World Tour Swedish Open",
+  "n": 0,
+  "done": false
+ },
+ "2138": {
+  "name": "ITTF World Tour Grand Finals",
+  "n": 0,
+  "done": false
+ },
+ "2139": {
+  "name": "ITTF Junior Circuit Premium Czech Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2140": {
+  "name": "ITTF Junior Circuit Swedish Junior and Cadet Open  Orebro",
+  "skip": true,
+  "n": 0
+ },
+ "2141": {
+  "name": "ITTF Junior Circuit Congo Junior and Cadet Open  Kinshasa",
+  "skip": true,
+  "n": 0
+ },
+ "2142": {
+  "name": "ITTF Junior Circuit Premium Italy Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2143": {
+  "name": "ITTF Junior Circuit Tunisia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2144": {
+  "name": "ITTF World Junior Circuit Madagascar Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2145": {
+  "name": "ITTF Junior Circuit Peru Junior and Cadet Open  Lima",
+  "skip": true,
+  "n": 0
+ },
+ "2146": {
+  "name": "ITTF World Junior Circuit Premium Belgium Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2147": {
+  "name": "ITTF World Junior Circuit Premium French Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2148": {
+  "name": "ITTF World Junior Circuit Premium India Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2149": {
+  "name": "ITTF World Junior Circuit Golden SET Thailand Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2150": {
+  "name": "ITTF World Junior Circuit Spanish Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2151": {
+  "name": "ITTF World Junior Circuit Premium Polish Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2152": {
+  "name": "ITTF World Junior Circuit Golden China Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2153": {
+  "name": "ITTF World Junior Circuit Argentina Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2154": {
+  "name": "ITTF World Junior Circuit Jordan Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2155": {
+  "name": "ITTF Junior Circuit Golden Hong Kong Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2156": {
+  "name": "ITTF World Junior Circuit El Salvador Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2157": {
+  "name": "ITTF World Junior Circuit Golden Chinese Taipei Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2158": {
+  "name": "ITTF World Junior Circuit North America Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2159": {
+  "name": "ITTF World Junior Circuit North America Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2160": {
+  "name": "ITTF World Junior Circuit Golden Croatia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2161": {
+  "name": "ITTF Junior Circuit Indonesia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2162": {
+  "name": "ITTF World Junior Circuit Slovenia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2163": {
+  "name": "ITTF World Junior Circuit Serbia Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2164": {
+  "name": "ITTF Junior Circuit Australian Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2165": {
+  "name": "ITTF Junior Circuit Egypt Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2166": {
+  "name": "ITTF Junior Circuit Premium Oman Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2167": {
+  "name": "ITTF Junior Circuit Premium Qatar Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2168": {
+  "name": "ITTF Junior Circuit Ecuador Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2169": {
+  "name": "ITTF Junior Circuit Premium Hungarian Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2170": {
+  "name": "ITTF Junior Circuit Slovak Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2171": {
+  "name": "ITTF Junior Circuit Portugal Junior and Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2172": {
+  "name": "T2 Diamond",
+  "n": 0,
+  "done": false
+ },
+ "2173": {
+  "name": "Pacific Games",
+  "n": 0,
+  "done": false
+ },
+ "2174": {
+  "name": "30th Southeast Asian Games (TT Competition)",
+  "n": 0,
+  "done": false
+ },
+ "2175": {
+  "name": "ITTF Africa Top 16 Cup, Tunisia",
+  "n": 0,
+  "done": false
+ },
+ "2176": {
+  "name": "Central American Junior and Cadet Championships  Belize",
+  "skip": true,
+  "n": 0
+ },
+ "2177": {
+  "name": "Caribbean Junior and Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2178": {
+  "name": "Caribbean Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2179": {
+  "name": "South American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2180": {
+  "name": "ITTF-Africa Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2181": {
+  "name": "2020 ITTF Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2182": {
+  "name": "ITTF Oceania Championships",
+  "n": 0,
+  "done": false
+ },
+ "2183": {
+  "name": "ITTF Oceania Junior Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2184": {
+  "name": "Pan American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2185": {
+  "name": "Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2186": {
+  "name": "South American Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2187": {
+  "name": "South Asian Games  Kathmandu",
+  "n": 0,
+  "done": false
+ },
+ "2188": {
+  "name": "African Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2189": {
+  "name": "ITTF World Veterans Tour",
+  "skip": true,
+  "n": 0
+ },
+ "2190": {
+  "name": "ITTF - World Veterans Tour",
+  "skip": true,
+  "n": 0
+ },
+ "2191": {
+  "name": "World Veterans Tour",
+  "skip": true,
+  "n": 0
+ },
+ "2192": {
+  "name": "ITTF World Veterans Tour",
+  "skip": true,
+  "n": 0
+ },
+ "2193": {
+  "name": "ITTF World Veterans Tour – Turkey",
+  "skip": true,
+  "n": 0
+ },
+ "2194": {
+  "name": "ITTF World Veterans Tour – Denmark",
+  "skip": true,
+  "n": 0
+ },
+ "2195": {
+  "name": "ITTF World Veterans Tour",
+  "skip": true,
+  "n": 0
+ },
+ "2196": {
+  "name": "Latin American Team Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2197": {
+  "name": "ITTF Oceania Olympic Team Qualification  Victoria",
+  "n": 0,
+  "done": false
+ },
+ "2198": {
+  "name": "North American Team Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2199": {
+  "name": "ITTF Oceania Singles/Mixed Doubles Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2200": {
+  "name": "African Singles and Mixed Doubles Olympic Qualification Tournament  Tunisia",
+  "n": 0,
+  "done": false
+ },
+ "2201": {
+  "name": "European Olympic Singles Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2202": {
+  "name": "Latin American Singles and Mixed Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2203": {
+  "name": "Western Asia Olympic Qualification Tournament  Amman",
+  "n": 0,
+  "done": false
+ },
+ "2204": {
+  "name": "South East Asian Qualification Tournament for AJCTTC",
+  "n": 0,
+  "done": false
+ },
+ "2205": {
+  "name": "South Asia Qualification Tournament for AJCTTC",
+  "n": 0,
+  "done": false
+ },
+ "2206": {
+  "name": "WTT Middle East Hub - WTT Contender Doha",
+  "n": 0,
+  "done": false
+ },
+ "2207": {
+  "name": "Caribbean Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2208": {
+  "name": "WTT Middle East Hub ‚ WTT Star Contender, Doha",
+  "n": 0,
+  "done": false
+ },
+ "2209": {
+  "name": "Caribbean Teams Qualification to Cali 2021 Pan American Junior Games, Havana",
+  "skip": true,
+  "n": 0
+ },
+ "2210": {
+  "name": "World Singles Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2211": {
+  "name": "Latin American Singles and Mixed Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2212": {
+  "name": "South American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2213": {
+  "name": "South American Teams Qualification to Cali 2021 Pan American Junior Games",
+  "skip": true,
+  "n": 0
+ },
+ "2214": {
+  "name": "Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2215": {
+  "name": "Central American Teams Qualification to Cali 2021 Pan American Junior Games",
+  "skip": true,
+  "n": 0
+ },
+ "2216": {
+  "name": "Pan American Singles Qualification to Cali 2021 Pan American Junior Games",
+  "skip": true,
+  "n": 0
+ },
+ "2217": {
+  "name": "Europe Top 16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2218": {
+  "name": "South American Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2219": {
+  "name": "LIEBHERR 2020 ITTF European Individual Championships",
+  "n": 0,
+  "done": false
+ },
+ "2220": {
+  "name": "2021 63rd European Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2221": {
+  "name": "Tokyo 2020 Olympic Games",
+  "n": 0,
+  "done": false
+ },
+ "2222": {
+  "name": "Tokyo 2020 Olympic Games ‚Table Tennis Dates",
+  "n": 0,
+  "done": false
+ },
+ "2223": {
+  "name": "Central American U11 & U13 Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2224": {
+  "name": "South American U11 & U13 Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2225": {
+  "name": "South American Veteran Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2226": {
+  "name": "Tokyo 2020 Paralympic Games",
+  "n": 0,
+  "done": false
+ },
+ "2227": {
+  "name": "Tokyo 2020 Paralympic Games  - Table Tennis Dates",
+  "n": 0,
+  "done": false
+ },
+ "2228": {
+  "name": "EuroMiniChamps",
+  "n": 0,
+  "done": false
+ },
+ "2229": {
+  "name": "ITTF Pan American Youth Championships (U19 & U15)",
+  "skip": true,
+  "n": 0
+ },
+ "2230": {
+  "name": "Cali 2021 Pan American Junior Games - Table Tennis",
+  "skip": true,
+  "n": 0
+ },
+ "2231": {
+  "name": "Central American Veteran Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2232": {
+  "name": "2021 European Championships",
+  "n": 0,
+  "done": false
+ },
+ "2233": {
+  "name": "ITTF Pan American U11 & U13 Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2234": {
+  "name": "2021 ITTF Pan American Championships",
+  "start": "2021-11-13",
+  "end": "2021-11-15",
+  "n": 125,
+  "synced": "2026-11-06T17:17:58Z",
+  "done": true
+ },
+ "2235": {
+  "name": "Pan American Veteran Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2236": {
+  "name": "2021 World Table Tennis Championships Finals,",
+  "n": 0,
+  "done": false
+ },
+ "2237": {
+  "name": "ITTF World Team Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2238": {
+  "name": "ITTF Fa20 Chile Para Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2239": {
+  "name": "ITTF World Tour Platinum German Open",
+  "n": 0,
+  "done": false
+ },
+ "2240": {
+  "name": "ITTF Fa20 Egypt Para Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2241": {
+  "name": "ITTF Challenge Spanish Open",
+  "n": 0,
+  "done": false
+ },
+ "2242": {
+  "name": "Central American Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2243": {
+  "name": "Universal ITTF Pan America Cup",
+  "n": 0,
+  "done": false
+ },
+ "2244": {
+  "name": "CCB 2020 ITTF Europe Top 16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2245": {
+  "name": "ITTF Challenge Plus Portugal Open",
+  "n": 0,
+  "done": false
+ },
+ "2246": {
+  "name": "ITTF World Junior Circuit Premium Czech Junior & Cadet Open, Hodonin",
+  "skip": true,
+  "n": 0
+ },
+ "2247": {
+  "name": "ITTF World Tour Hungarian Open",
+  "n": 0,
+  "done": false
+ },
+ "2248": {
+  "name": "ITTF World Junior Circuit Swedish Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2249": {
+  "name": "ITTF Fa20 Polish Para Open",
+  "skip": true,
+  "n": 0
+ },
+ "2250": {
+  "name": "ITTF-Africa Top 16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2251": {
+  "name": "Western Asia Olympic Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2252": {
+  "name": "African Singles and Mixed Doubles Olympic Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2253": {
+  "name": "ITTF World Tour Platinum Qatar Open",
+  "n": 0,
+  "done": false
+ },
+ "2254": {
+  "name": "European Under 21 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2255": {
+  "name": "ITTF World Junior Circuit Congo Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2256": {
+  "name": "South American Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2257": {
+  "name": "ITTF Fa40 Costa Brava Para Open",
+  "skip": true,
+  "n": 0
+ },
+ "2258": {
+  "name": "North American Singles & Mixed Doubles Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2259": {
+  "name": "ITTF World Junior Circuit Peru Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2260": {
+  "name": "ITTF Challenge Plus Oman Open",
+  "n": 0,
+  "done": false
+ },
+ "2261": {
+  "name": "ITTF Challenge Polish Open",
+  "n": 0,
+  "done": false
+ },
+ "2262": {
+  "name": "Hungarian Youth Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2263": {
+  "name": "Dishang 2020 ITTF Women's World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2264": {
+  "name": "Slovak Youth Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2265": {
+  "name": "Dishang 2020 ITTF Men's World Cup",
+  "n": 0,
+  "done": false
+ },
+ "2266": {
+  "name": "Bank of Communications 2020 ITTF Finals",
+  "n": 0,
+  "done": false
+ },
+ "2267": {
+  "name": "WTT Macao Presented By Galaxy Entertainment Group, Macao, China",
+  "n": 0,
+  "done": false
+ },
+ "2268": {
+  "name": "WTT 2021 Middle East Hub - SIM",
+  "start": "2021-02-08",
+  "end": "2021-02-09",
+  "n": 0,
+  "synced": "2026-11-06T17:18:58Z",
+  "done": true
+ },
+ "2269": {
+  "name": "WTT Star Contender Doha 2021",
+  "start": "2021-02-22",
+  "end": "2021-02-22",
+  "n": 0,
+  "synced": "2026-11-06T17:19:31Z",
+  "done": true
+ },
+ "2270": {
+  "name": "WTT Contender Doha 2021",
+  "n": 0,
+  "done": false
+ },
+ "2271": {
+  "name": "WTT Macao - Exhibition",
+  "n": 0,
+  "done": false
+ },
+ "2272": {
+  "name": "WTT 2021 - China - Grand Smash",
+  "n": 0,
+  "done": false
+ },
+ "2273": {
+  "name": "WTT 2021 - China - Champions",
+  "n": 0,
+  "done": false
+ },
+ "2274": {
+  "name": "World Singles Qualification Tournament",
+  "start": "2021-03-14",
+  "end": "2021-03-17",
+  "n": 0,
+  "synced": "2026-11-06T17:20:08Z",
+  "done": true
+ },
+ "2275": {
+  "name": "Asian Olympic Qualification Tournament",
+  "start": "2021-02-10",
+  "end": "2021-02-10",
+  "n": 0,
+  "synced": "2026-11-06T17:20:50Z",
+  "done": true
+ },
+ "2276": {
+  "name": "2021 European Olympic Singles Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2277": {
+  "name": "North American Singles & Mixed Doubles Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2278": {
+  "name": "European Youth Top 10",
+  "skip": true,
+  "n": 0
+ },
+ "2279": {
+  "name": "ITTF Para Fa20 Netherlands Open",
+  "skip": true,
+  "n": 0
+ },
+ "2280": {
+  "name": "ITTF World Veterans Tour – Doha",
+  "skip": true,
+  "n": 0
+ },
+ "2281": {
+  "name": "ITTF Junior Circuit Portugal Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2282": {
+  "name": "ITTF Para Copa Tango Junior",
+  "skip": true,
+  "n": 0
+ },
+ "2283": {
+  "name": "ITTF Para Fa20 XVII Copa Tango",
+  "skip": true,
+  "n": 0
+ },
+ "2284": {
+  "name": "Tabletennis11 Estonian Open",
+  "n": 0,
+  "done": false
+ },
+ "2285": {
+  "name": "30th Southeast Asian Games",
+  "n": 0,
+  "done": false
+ },
+ "2286": {
+  "name": "Finlandia Open 2019",
+  "n": 0,
+  "done": false
+ },
+ "2287": {
+  "name": "ITTF Para Fa20 Copa Costa Rica, San José",
+  "skip": true,
+  "n": 0
+ },
+ "2288": {
+  "name": "ITTF World Veterans Tour – Cardiff, Cardiff",
+  "skip": true,
+  "n": 0
+ },
+ "2289": {
+  "name": "US Open Table Tennis Championships, Fort Worth, Texas",
+  "n": 0,
+  "done": false
+ },
+ "2290": {
+  "name": "PTT Lignano Master Open",
+  "n": 0,
+  "done": false
+ },
+ "2291": {
+  "name": "PTT Slovakia Open",
+  "n": 0,
+  "done": false
+ },
+ "2292": {
+  "name": "PTT Slovenia Open",
+  "n": 0,
+  "done": false
+ },
+ "2293": {
+  "name": "Caribbean U15/U18, Habana (CUB), TBD May",
+  "skip": true,
+  "n": 0
+ },
+ "2294": {
+  "name": "PTT Sant Cugat Open 2018",
+  "n": 0,
+  "done": false
+ },
+ "2295": {
+  "name": "PTT US Open 2018",
+  "n": 0,
+  "done": false
+ },
+ "2296": {
+  "name": "PTT 2nd Indonesia Open",
+  "n": 0,
+  "done": false
+ },
+ "2297": {
+  "name": "2018 South East Asian Junior Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2298": {
+  "name": "Asia-Europe All Stars Challenge",
+  "n": 0,
+  "done": false
+ },
+ "2299": {
+  "name": "40th Flanders International Table Tennis Tournaments",
+  "n": 0,
+  "done": false
+ },
+ "2300": {
+  "name": "20th Flanders ITT Ostend Masters",
+  "skip": true,
+  "n": 0
+ },
+ "2301": {
+  "name": "14th Euro Mini Champ’s",
+  "n": 0,
+  "done": false
+ },
+ "2302": {
+  "name": "PTT China Open",
+  "n": 0,
+  "done": false
+ },
+ "2303": {
+  "name": "PTT Czech Open",
+  "n": 0,
+  "done": false
+ },
+ "2304": {
+  "name": "PTT Alwatani Championships",
+  "n": 0,
+  "done": false
+ },
+ "2305": {
+  "name": "PTT Spanish Open",
+  "n": 0,
+  "done": false
+ },
+ "2306": {
+  "name": "PTT Copa Tango Open",
+  "n": 0,
+  "done": false
+ },
+ "2307": {
+  "name": "PTT Copa Costa Rica",
+  "n": 0,
+  "done": false
+ },
+ "2308": {
+  "name": "PTT Thailand Open",
+  "n": 0,
+  "done": false
+ },
+ "2309": {
+  "name": "2019 Asian Junior & Cadet Championships Qualification (West Asia)",
+  "skip": true,
+  "n": 0
+ },
+ "2310": {
+  "name": "Asian Junior & Cadet Championships Qualification (Middle Asia)",
+  "skip": true,
+  "n": 0
+ },
+ "2311": {
+  "name": "Asian Junior & Cadet Championships Qualification (South East Asia)",
+  "skip": true,
+  "n": 0
+ },
+ "2312": {
+  "name": "2019 International Youth Tournament in memory of Dynamo coach A.Shkala",
+  "skip": true,
+  "n": 0
+ },
+ "2313": {
+  "name": "Asian Junior & Cadet Championships Qualification (East Asia)",
+  "skip": true,
+  "n": 0
+ },
+ "2314": {
+  "name": "Balkan Youth Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2315": {
+  "name": "Balkan Senior Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2316": {
+  "name": "Pan Am Games",
+  "n": 0,
+  "done": false
+ },
+ "2317": {
+  "name": "41st Flanders International Table Tennis Tournaments 2019",
+  "n": 0,
+  "done": false
+ },
+ "2318": {
+  "name": "21st Flanders ITT Ostend Masters 2019",
+  "skip": true,
+  "n": 0
+ },
+ "2319": {
+  "name": "21st Flanders Youth Cup & 17th Senior Cup 2019",
+  "skip": true,
+  "n": 0
+ },
+ "2320": {
+  "name": "ITTF Para Fa20 Lignano Open",
+  "skip": true,
+  "n": 0
+ },
+ "2321": {
+  "name": "ITTF Para Costa Brava Open",
+  "skip": true,
+  "n": 0
+ },
+ "2322": {
+  "name": "ITTF Para 11th Alwatani Championships, Amman",
+  "skip": true,
+  "n": 0
+ },
+ "2323": {
+  "name": "ITTF Oceania Para Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2324": {
+  "name": "ITTF Para Fa40 Slovenia Open",
+  "skip": true,
+  "n": 0
+ },
+ "2325": {
+  "name": "ITTF Para Fa20 Polish Open",
+  "skip": true,
+  "n": 0
+ },
+ "2326": {
+  "name": "ITTF Para Fa20 Copa Cristina Hoffmann",
+  "skip": true,
+  "n": 0
+ },
+ "2327": {
+  "name": "ITTF Para Fa20 Egypt Open",
+  "skip": true,
+  "n": 0
+ },
+ "2328": {
+  "name": "ITTF African Para Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2329": {
+  "name": "ITTF Asian Para Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2330": {
+  "name": "ITTF Para Fa20 Japan Open",
+  "skip": true,
+  "n": 0
+ },
+ "2331": {
+  "name": "ITTF Junior Circuit El Salvador Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2332": {
+  "name": "ITTF World Veterans Tour – Shenzhen Guangming District",
+  "skip": true,
+  "n": 0
+ },
+ "2333": {
+  "name": "ITTF Para FA20 Bangkok Open",
+  "skip": true,
+  "n": 0
+ },
+ "2334": {
+  "name": "Para Pan Am Games",
+  "skip": true,
+  "n": 0
+ },
+ "2335": {
+  "name": "ITTF Para Fa20 Czech Open",
+  "skip": true,
+  "n": 0
+ },
+ "2336": {
+  "name": "ITTF World Veterans Tour – Townsville",
+  "skip": true,
+  "n": 0
+ },
+ "2337": {
+  "name": "ITTF Para European Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2338": {
+  "name": "ITTF Para Fa20 Finland Open",
+  "skip": true,
+  "n": 0
+ },
+ "2339": {
+  "name": "ITTF Parkinsons’ World Table Tennis Championship",
+  "n": 0,
+  "done": false
+ },
+ "2340": {
+  "name": "INAS Global Games",
+  "n": 0,
+  "done": false
+ },
+ "2341": {
+  "name": "ITTF World Veterans Tour – Fort Lauderdale",
+  "skip": true,
+  "n": 0
+ },
+ "2342": {
+  "name": "ITTF Para Fa40 China Open",
+  "skip": true,
+  "n": 0
+ },
+ "2343": {
+  "name": "Hana Bank 2020 World Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2344": {
+  "name": "Central American Youth Championships (U15 & U19)",
+  "skip": true,
+  "n": 0
+ },
+ "2345": {
+  "name": "Tokyo 2020 Olympic Games",
+  "start": null,
+  "end": null,
+  "n": 0,
+  "synced": "2026-11-06T17:21:26Z",
+  "done": false,
+  "skip": true
+ },
+ "2346": {
+  "name": "2021 World Table Tennis Championships Finals",
+  "start": "2021-11-23",
+  "end": "2021-11-29",
+  "n": 375,
+  "synced": "2026-11-06T17:21:33Z",
+  "done": true
+ },
+ "2347": {
+  "name": "ITTF World Junior Circuit Tunisia Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2348": {
+  "name": "ITTF Fa40 Para China Open",
+  "skip": true,
+  "n": 0
+ },
+ "2349": {
+  "name": "ITTF Fa20 Lignano Masters Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2350": {
+  "name": "ITTF Fa20 12th Alwatani Para Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2351": {
+  "name": "ITTF Challenge Italian Open",
+  "n": 0,
+  "done": false
+ },
+ "2352": {
+  "name": "ITTF World Junior Circuit Madagascar Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2353": {
+  "name": "ITTF World Junior Circuit Premium Belgium Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2354": {
+  "name": "ITTF World Junior Circuit Premium French Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2355": {
+  "name": "2020 Asian Junior & Cadet Championships Qualification",
+  "skip": true,
+  "n": 0
+ },
+ "2356": {
+  "name": "ITTF World Junior Circuit Premium India Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2357": {
+  "name": "ITTF World Junior Circuit Golden SET Thailand Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2358": {
+  "name": "ITTF Paralympic World Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2359": {
+  "name": "ITTF World Junior Circuit Spanish Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2360": {
+  "name": "ITTF World Junior Circuit Premium Polish Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2361": {
+  "name": "ITTF Fa40 Slovenia Para Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2362": {
+  "name": "ITTF Fa40 Slovakia Para Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2363": {
+  "name": "ITTF Fa20 Czech Para Open",
+  "skip": true,
+  "n": 0
+ },
+ "2364": {
+  "name": "ITTF World Junior Circuit Golden China Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2365": {
+  "name": "ITTF World Junior Circuit Argentina Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2366": {
+  "name": "Hana Bank 2020 World Table Tennis Championships, Busan (KOR)",
+  "n": 0,
+  "done": false
+ },
+ "2367": {
+  "name": "ITTF Fa20 Girona Spanish Para Open",
+  "skip": true,
+  "n": 0
+ },
+ "2368": {
+  "name": "BRICS Sports Games",
+  "n": 0,
+  "done": false
+ },
+ "2369": {
+  "name": "ITTF World Junior Circuit Jordan Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2370": {
+  "name": "ITTF World Junior Circuit Golden Hang Seng Hong Kong Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2371": {
+  "name": "ITTF World Junior Circuit El Salvador Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2372": {
+  "name": "North European Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2373": {
+  "name": "ITTF World Junior Circuit Golden Chinese Taipei Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2374": {
+  "name": "ITTF World Junior Circuit North America Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2375": {
+  "name": "ITTF World Junior Circuit North America Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2376": {
+  "name": "Eurominichamps",
+  "n": 0,
+  "done": false
+ },
+ "2377": {
+  "name": "ITTF World Junior Circuit Golden Croatia Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2378": {
+  "name": "ITTF World Junior Circuit Indonesia Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2379": {
+  "name": "ITTF World Junior Circuit Slovenia Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2380": {
+  "name": "ITTF World Junior Circuit Serbia Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2381": {
+  "name": "ITTF Fa40 Thailand Para Open",
+  "skip": true,
+  "n": 0
+ },
+ "2382": {
+  "name": "Hana Bank 2020 World Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2383": {
+  "name": "First Commonwealth of Independent States Games",
+  "n": 0,
+  "done": false
+ },
+ "2384": {
+  "name": "ITTF World Junior Circuit Australian Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2385": {
+  "name": "ITTF World Junior Circuit Egypt Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2386": {
+  "name": "ITTF World Junior Circuit Premium Oman Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2387": {
+  "name": "ITTF World Junior Circuit Premium Qatar Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2388": {
+  "name": "ITTF World Junior Circuit Ecuador Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2389": {
+  "name": "ITTF-Africa 2021 WTTC Continental Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2390": {
+  "name": "ITTF World Junior Circuit Premium Hungarian Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2391": {
+  "name": "ITTF World Junior Circuit Slovak Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2392": {
+  "name": "ITTF World Junior Circuit Portugal Junior & Cadet Open",
+  "skip": true,
+  "n": 0
+ },
+ "2393": {
+  "name": "ITTF World Junior Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2394": {
+  "name": "ITTF Fa20 Dutch Open Para 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2395": {
+  "name": "ITTF Fa20 Indonesia Para Open 2020",
+  "skip": true,
+  "n": 0
+ },
+ "2396": {
+  "name": "Tabletennis11 Estonian Open",
+  "n": 0,
+  "done": false
+ },
+ "2397": {
+  "name": "2020 ITTF Swedish International Open",
+  "n": 0,
+  "done": false
+ },
+ "2398": {
+  "name": "2020 Finlandia Open",
+  "n": 0,
+  "done": false
+ },
+ "2399": {
+  "name": "ITTF Fa20 Para XVIII Copa Tango",
+  "skip": true,
+  "n": 0
+ },
+ "2400": {
+  "name": "ITTF Fa20 Copa Costa Rica",
+  "n": 0,
+  "done": false
+ },
+ "2401": {
+  "name": "ITTF Challenge Turkish Open",
+  "n": 0,
+  "done": false
+ },
+ "2402": {
+  "name": "ITTF World Veterans Tour",
+  "skip": true,
+  "n": 0
+ },
+ "2403": {
+  "name": "T2 Diamond",
+  "n": 0,
+  "done": false
+ },
+ "2404": {
+  "name": "ITTF Challenge Mexico Open",
+  "n": 0,
+  "done": false
+ },
+ "2405": {
+  "name": "ITTF Challenge Morocco Open",
+  "n": 0,
+  "done": false
+ },
+ "2406": {
+  "name": "",
+  "skip": true,
+  "n": 0
+ },
+ "2407": {
+  "name": "",
+  "skip": true,
+  "n": 0
+ },
+ "2408": {
+  "name": "",
+  "skip": true,
+  "n": 0
+ },
+ "2409": {
+  "name": "",
+  "skip": true,
+  "n": 0
+ },
+ "2410": {
+  "name": "WTT Contender Doha 2021",
+  "start": "2021-02-28",
+  "end": "2021-03-06",
+  "n": 30,
+  "synced": "2026-11-06T17:22:07Z",
+  "done": true
+ },
+ "2411": {
+  "name": "WTT Star Contender Doha 2021",
+  "start": "0001-01-01",
+  "end": "2021-03-13",
+  "n": 28,
+  "synced": "2026-11-06T17:22:14Z",
+  "done": true
+ },
+ "2412": {
+  "name": "ITTF Para XVIII Copa Tango",
+  "skip": true,
+  "n": 0
+ },
+ "2413": {
+  "name": "WTT Youth Contender Darwin 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2414": {
+  "name": "2021 European Under 21 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2415": {
+  "name": "WTT Youth Contender",
+  "skip": true,
+  "n": 0
+ },
+ "2416": {
+  "name": "ITTF Chile Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2417": {
+  "name": "ITTF China Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2418": {
+  "name": "WTT Youth Contender Abidjan 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2419": {
+  "name": "WTT Youth Contender San Jose 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2420": {
+  "name": "ITTF Copa Costa Rica 2021",
+  "n": 0,
+  "done": false
+ },
+ "2421": {
+  "name": "WTT Youth Contender Varaždin 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2422": {
+  "name": "WTT Youth Contender Havirov 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2423": {
+  "name": "ITTF Fa20 Czech Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2424": {
+  "name": "WTT Youth Contender Cuenca 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2425": {
+  "name": "WTT Youth Contender Cairo 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2426": {
+  "name": "WTT Youth Contender San Salvador 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2427": {
+  "name": "ITTF Fa20 Costa Brava Spanish Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2428": {
+  "name": "ITTF Finland Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2429": {
+  "name": "ITTF SQY French Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2430": {
+  "name": "WTT Youth Contender Accra 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2431": {
+  "name": "WTT Youth Contender Orestiada 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2432": {
+  "name": "WTT Youth Contender Hong Kong 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2433": {
+  "name": "WTT Youth Contender Szombathely 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2434": {
+  "name": "WTT Youth Contender Eilat 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2435": {
+  "name": "WTT Youth Contender Lignano 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2436": {
+  "name": "ITTF Lignano Masters Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2437": {
+  "name": "ITTF 12th Al-Watani Para Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2438": {
+  "name": "WTT Youth Star Contender Agadir 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2439": {
+  "name": "ITTF Dutch Open Para 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2440": {
+  "name": "WTT Youth Contender Muscat 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2441": {
+  "name": "WTT Youth Contender Assunción 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2442": {
+  "name": "South American Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2443": {
+  "name": "WTT Youth Star Contender Wladyslawowo 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2444": {
+  "name": "ITTF Polish Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2445": {
+  "name": "WTT Youth Contender Vila Real 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2446": {
+  "name": "WTT Youth Star Contender",
+  "skip": true,
+  "n": 0
+ },
+ "2447": {
+  "name": "WTT Youth Star Contender Lisbon 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2448": {
+  "name": "ITTF Fa40 Slovenia Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2449": {
+  "name": "Paralympic World Qualification Tournament",
+  "n": 0,
+  "done": false
+ },
+ "2450": {
+  "name": "WTT Youth Star Contender Otocec 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2451": {
+  "name": "WTT Youth Contender Otocec  2021 - Presented by I Feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2452": {
+  "name": "WTT Youth Contender Belgrade 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2453": {
+  "name": "ITTF Fa40 Slovakia Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2454": {
+  "name": "WTT Youth Contender Senec 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2455": {
+  "name": "ITTF Fa40 Thailand Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2456": {
+  "name": "WTT Youth Contender Bangkok 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2457": {
+  "name": "ITTF Fa20 Taichung Para Open",
+  "skip": true,
+  "n": 0
+ },
+ "2458": {
+  "name": "WTT Youth Contender Taipei 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2459": {
+  "name": "WTT Youth Star Contender Tunis 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2460": {
+  "name": "WTT Youth Contender Tunis 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2461": {
+  "name": "World Table Tennis Championships Finals",
+  "n": 0,
+  "done": false
+ },
+ "2462": {
+  "name": "WTT Youth Contender Vila Real 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2463": {
+  "name": "WTT Youth Contender Vila Real 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2464": {
+  "name": "WTT Youth Contender (For Ranking Purpose)",
+  "skip": true,
+  "n": 0
+ },
+ "2465": {
+  "name": "WTT Youth Star Contender Tunis 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2466": {
+  "name": "WTT Youth Contender Havirov 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2467": {
+  "name": "WTT Youth Star Contender Otocec 2021 - Presented by I Feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2468": {
+  "name": "Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2469": {
+  "name": "WTT Youth Star Contender Tunis 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2470": {
+  "name": "WTT Youth Contender Havirov 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2471": {
+  "name": "LIEBHERR 2020 ITTF European Individual Championships",
+  "n": 0,
+  "done": false
+ },
+ "2472": {
+  "name": "LIEBHERR 2020 ITTF European Individual Championships",
+  "n": 0,
+  "done": false
+ },
+ "2473": {
+  "name": "2021 ITTF African Championships",
+  "start": "2021-09-03",
+  "end": "2021-09-05",
+  "n": 31,
+  "synced": "2026-11-06T17:22:41Z",
+  "done": true
+ },
+ "2474": {
+  "name": "ITTF-ATTU Asian Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2475": {
+  "name": "First Commonwealth of Independent State Games",
+  "n": 0,
+  "done": false
+ },
+ "2476": {
+  "name": "ITTF Alicante Spanish Open 2021",
+  "n": 0,
+  "done": false
+ },
+ "2477": {
+  "name": "ITTF Fa40 Egypt Para Open 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2478": {
+  "name": "Cali 2021 Pan American Junior Games",
+  "skip": true,
+  "n": 0
+ },
+ "2479": {
+  "name": "2021 ITTF Finlandia International Open",
+  "start": "2021-12-03",
+  "end": "2021-12-05",
+  "n": 151,
+  "synced": "2026-11-06T17:23:17Z",
+  "done": true
+ },
+ "2480": {
+  "name": "2021 ITTF Czech International Open",
+  "start": "2021-08-21",
+  "end": "2021-08-24",
+  "n": 23,
+  "synced": "2026-11-06T17:23:23Z",
+  "done": true
+ },
+ "2481": {
+  "name": "2021 ITTF-Oceania Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2482": {
+  "name": "2021 ITTF-Oceania Cup and Pacific Cup",
+  "n": 0,
+  "done": false
+ },
+ "2483": {
+  "name": "WTT Youth Contender Tunis 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2484": {
+  "name": "2021 ITTF Kazakhstan International Open",
+  "start": "2021-09-16",
+  "end": "2021-09-18",
+  "n": 21,
+  "synced": "2026-11-06T17:23:31Z",
+  "done": true
+ },
+ "2485": {
+  "name": "2021 Europe Youth Top-10",
+  "skip": true,
+  "n": 0
+ },
+ "2486": {
+  "name": "WTT Youth Contender Hamilton 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2487": {
+  "name": "WTT Contender Budapest 2021",
+  "start": "2021-08-17",
+  "end": "2021-08-20",
+  "n": 15,
+  "synced": "2026-11-06T17:23:36Z",
+  "done": true
+ },
+ "2488": {
+  "name": "2021 Europe Top 16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2489": {
+  "name": "WTT Star Contender Doha 2021",
+  "start": "2021-09-22",
+  "end": "2021-09-24",
+  "n": 15,
+  "synced": "2026-11-06T17:23:42Z",
+  "done": true
+ },
+ "2490": {
+  "name": "TEST EVENT",
+  "n": 0,
+  "done": false
+ },
+ "2491": {
+  "name": "TEST EVENT",
+  "n": 0,
+  "done": false
+ },
+ "2492": {
+  "name": "TEST EVENT",
+  "start": "2021-08-10",
+  "end": "2021-08-10",
+  "n": 0,
+  "synced": "2026-11-06T17:24:24Z",
+  "done": true
+ },
+ "2493": {
+  "name": "WTT YOUTH CONTENDER VARAŽDIN 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2494": {
+  "name": "WTT Youth Contender Otocec 2021 - Presented by I Feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2495": {
+  "name": "WTT Youth Contender Tunis 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2496": {
+  "name": "WTT Youth Contender Belgrade 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2497": {
+  "name": "WTT Youth Contender Orestiada 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2498": {
+  "name": "WTT Youth Contender Muscat 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2499": {
+  "name": "WTT Youth Star Contender Lisbon 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2500": {
+  "name": "WTT Youth Star Contender Wladyslawowo 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2501": {
+  "name": "WTT Youth Contender San Salvador 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2502": {
+  "name": "WTT Contender Tunis 2021",
+  "start": "2021-10-27",
+  "end": "2021-10-29",
+  "n": 15,
+  "synced": "2026-11-06T17:24:33Z",
+  "done": true
+ },
+ "2503": {
+  "name": "WTT Contender Laško 2021 presented by I Feel Slovenia",
+  "start": "2021-11-01",
+  "end": "2021-11-07",
+  "n": 215,
+  "synced": "2026-11-06T17:24:39Z",
+  "done": true
+ },
+ "2504": {
+  "name": "WTT Contender Novo Mesto 2021 presented by I Feel Slovenia",
+  "start": "2021-11-08",
+  "end": "2021-11-14",
+  "n": 219,
+  "synced": "2026-11-06T17:24:46Z",
+  "done": true
+ },
+ "2505": {
+  "name": "WTT Youth Contender Cuenca 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2506": {
+  "name": "WTT Youth Contender Lignano 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2507": {
+  "name": "WTT Youth Contender Senec 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2508": {
+  "name": "WTT Youth Contender Szombathely 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2509": {
+  "name": "WTT Youth Contender Doha 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2510": {
+  "name": "2021 ITTF Ecuador International Open",
+  "start": "2021-11-03",
+  "end": "2021-11-06",
+  "n": 51,
+  "synced": "2026-11-06T17:24:51Z",
+  "done": true
+ },
+ "2511": {
+  "name": "ITTF World Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2512": {
+  "name": "Asian Para Youth Games",
+  "skip": true,
+  "n": 0
+ },
+ "2513": {
+  "name": "2021  ITTF Argentina International Open",
+  "n": 0,
+  "done": false
+ },
+ "2514": {
+  "name": "World Parkinson Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2515": {
+  "name": "Central American Veteran Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2516": {
+  "name": "WTT Cup Finals Singapore",
+  "start": "2021-12-04",
+  "end": "2021-12-07",
+  "n": 30,
+  "synced": "2026-11-06T17:25:26Z",
+  "done": true
+ },
+ "2517": {
+  "name": "WTT Youth Contender Eilat 2021",
+  "skip": true,
+  "n": 0
+ },
+ "2518": {
+  "name": "2021 World Table Tennis Championships Finals (TEST)",
+  "n": 0,
+  "done": false
+ },
+ "2519": {
+  "name": "WTT Feeder Düsseldorf",
+  "skip": true,
+  "n": 0
+ },
+ "2520": {
+  "name": "WTT Feeder Düsseldorf II",
+  "skip": true,
+  "n": 0
+ },
+ "2521": {
+  "name": "WTT Feeder Düsseldorf I",
+  "skip": true,
+  "n": 0
+ },
+ "2522": {
+  "name": "WTT Feeder Düsseldorf II",
+  "skip": true,
+  "n": 0
+ },
+ "2523": {
+  "name": "WTT Youth Star Contender Tunis 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2524": {
+  "name": "WTT Youth Contender Salta 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2525": {
+  "name": "WTT Youth Contender Spa 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2526": {
+  "name": "WTT Youth Contender Metz 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2527": {
+  "name": "WTT Youth Contender Vila Real 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2528": {
+  "name": "WTT Youth Star Contender Doha 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2529": {
+  "name": "WTT Youth Contender Sulaymaniyah 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2530": {
+  "name": "WTT Contender Muscat 2022",
+  "n": 0,
+  "done": false
+ },
+ "2531": {
+  "name": "WTT Contender Muscat 2022",
+  "start": "2022-02-27",
+  "end": "2022-03-05",
+  "n": 239,
+  "synced": "2026-11-06T17:25:37Z",
+  "done": true
+ },
+ "2532": {
+  "name": "WTT Contender Doha 2022",
+  "start": "2022-03-18",
+  "end": "2022-03-24",
+  "n": 283,
+  "synced": "2026-11-06T17:25:42Z",
+  "done": true
+ },
+ "2533": {
+  "name": "WTT Star Contender Doha 2022",
+  "start": "2022-03-25",
+  "end": "2022-03-31",
+  "n": 264,
+  "synced": "2026-11-06T17:25:48Z",
+  "done": true
+ },
+ "2534": {
+  "name": "WTT Feeder Doha 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2535": {
+  "name": "2022 ITTF World Team Championships Finals Presented by China Telecom",
+  "start": "2022-09-30",
+  "end": "2022-10-09",
+  "n": 0,
+  "synced": "2026-11-06T17:26:40Z",
+  "done": true
+ },
+ "2536": {
+  "name": "Singapore Smash 2022",
+  "start": "2022-03-07",
+  "end": "2022-03-20",
+  "n": 271,
+  "synced": "2026-11-06T17:26:45Z",
+  "done": true
+ },
+ "2537": {
+  "name": "WTT Macao",
+  "start": "2022-01-19",
+  "end": "2022-01-23",
+  "n": 45,
+  "synced": "2026-11-06T17:27:07Z",
+  "done": true
+ },
+ "2538": {
+  "name": "WTT Youth Contender Tunis 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2539": {
+  "name": "WTT Contender Zagreb 2022",
+  "start": "2022-06-13",
+  "end": "2022-06-19",
+  "n": 303,
+  "synced": "2026-11-06T17:27:14Z",
+  "done": true
+ },
+ "2540": {
+  "name": "WTT Feeder Otocec 2022 Presented by I Feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2541": {
+  "name": "WTT Feeder Olomouc 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2542": {
+  "name": "WTT Feeder Panagyurishte Presented by Asarel",
+  "skip": true,
+  "n": 0
+ },
+ "2543": {
+  "name": "WTT Youth Star Contender Otocec 2022 Presented by I Feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2544": {
+  "name": "WTT Youth Contender Tbilisi 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2545": {
+  "name": "WTT Youth Contender Linz 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2546": {
+  "name": "WTT Youth Contender Wladyslawowo 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2547": {
+  "name": "WTT Youth Contender Berlin 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2548": {
+  "name": "WTT Youth Contender Platja D'Aro 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2549": {
+  "name": "WTT Youth Contender Havirov 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2550": {
+  "name": "WTT Youth Contender Agadir 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2551": {
+  "name": "WTT Youth Contender Helsingborg 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2552": {
+  "name": "WTT Youth Contender Amman 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2553": {
+  "name": "WTT Youth Contender Otocec 2022 presented by I feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2554": {
+  "name": "WTT Youth Contender Varazdin 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2555": {
+  "name": "WTT Youth Contender Bangkok 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2556": {
+  "name": "WTT Youth Contender Darwin 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2557": {
+  "name": "WTT Youth Contender Podgorica 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2558": {
+  "name": "WTT Youth Contender Belgrade 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2559": {
+  "name": "WTT Youth Contender Szombathely 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2560": {
+  "name": "WTT Youth Contender Senec 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2561": {
+  "name": "WTT Youth Star Contender Skopje 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2562": {
+  "name": "WTT Youth Contender Jezzine 2022 Presented by White Land Foundation",
+  "skip": true,
+  "n": 0
+ },
+ "2563": {
+  "name": "2022 Europe Top-16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2564": {
+  "name": "WTT Youth Contender Lignano 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2565": {
+  "name": "2022 Caribbean Senior Championships",
+  "n": 0,
+  "done": false
+ },
+ "2566": {
+  "name": "WTT Youth Contender Lima 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2567": {
+  "name": "WTT Youth Contender Salta 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2568": {
+  "name": "WTT Contender Tunis 2022",
+  "start": "2022-08-01",
+  "end": "2022-08-06",
+  "n": 207,
+  "synced": "2026-11-06T17:27:29Z",
+  "done": true
+ },
+ "2569": {
+  "name": "WTT Feeder Fremont 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2570": {
+  "name": "WTT Feeder Westchester 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2571": {
+  "name": "WTT Youth Contender Cairo 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2572": {
+  "name": "WTT Feeder Fremont 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2573": {
+  "name": "TESTING EVENT - WTT Contender",
+  "n": 0,
+  "done": false
+ },
+ "2574": {
+  "name": "WTT Contender Lima 2022",
+  "start": "2022-06-14",
+  "end": "2022-06-19",
+  "n": 171,
+  "synced": "2026-11-06T17:27:36Z",
+  "done": true
+ },
+ "2575": {
+  "name": "WTT Contender 2022 - TESTING EVENT FOR EA MIGRATION",
+  "n": 0,
+  "done": false
+ },
+ "2576": {
+  "name": "ITTF Africa Cup",
+  "start": "2022-05-27",
+  "end": "2022-05-28",
+  "n": 58,
+  "synced": "2026-11-06T17:28:10Z",
+  "done": true
+ },
+ "2577": {
+  "name": "Northern Africa WTTC Finals Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2578": {
+  "name": "Eastern Africa WTTC Finals Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2579": {
+  "name": "Western Africa WTTC Finals Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2580": {
+  "name": "Southern Africa WTTC Finals Qualification",
+  "n": 0,
+  "done": false
+ },
+ "2581": {
+  "name": "TESTING EVENT - Feeder Fremont 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2582": {
+  "name": "WTT Youth Contender Cuenca 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2583": {
+  "name": "WTT Youth Star Contender Vila Nova de Gaia 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2584": {
+  "name": "Budapest Smash 2022",
+  "n": 0,
+  "done": false
+ },
+ "2585": {
+  "name": "2022 Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2586": {
+  "name": "2022 Caribbean Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2587": {
+  "name": "2022 South American Youth Championships, Lima",
+  "skip": true,
+  "n": 0
+ },
+ "2588": {
+  "name": "2022 Central American Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2589": {
+  "name": "WTT Contender Nova Gorica 2022 Presented by I Feel Slovenia",
+  "start": "2022-10-31",
+  "end": "2022-11-06",
+  "n": 289,
+  "synced": "2026-11-06T17:28:23Z",
+  "done": true
+ },
+ "2590": {
+  "name": "2022 ITTF World Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2591": {
+  "name": "WTT Star Contender European Summer Series 2022",
+  "start": "2022-07-11",
+  "end": "2022-07-17",
+  "n": 220,
+  "synced": "2026-11-06T17:28:29Z",
+  "done": true
+ },
+ "2592": {
+  "name": "WTT Feeder European Summer Series 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2593": {
+  "name": "WTT Champions European Summer Series 2022",
+  "start": "2022-07-18",
+  "end": "2022-07-23",
+  "n": 62,
+  "synced": "2026-11-06T17:29:01Z",
+  "done": true
+ },
+ "2594": {
+  "name": "Mediterranean Games Oran 2022",
+  "n": 0,
+  "done": false
+ },
+ "2595": {
+  "name": "Internal - WTT Testing Event July 2022",
+  "start": "2022-07-07",
+  "end": "2022-10-18",
+  "n": 0,
+  "synced": "2026-11-06T17:29:34Z",
+  "done": true
+ },
+ "2596": {
+  "name": "2022 South East Asian U15&U19 Training Camp",
+  "skip": true,
+  "n": 0
+ },
+ "2597": {
+  "name": "26th Southeast Asian Junior & Cadet Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2598": {
+  "name": "12th South East Asian Table Tennis Championships",
+  "n": 0,
+  "done": false
+ },
+ "2599": {
+  "name": "26th Asian Junior and Cadet Table Tennis Championships Qualifying Tournament (West Asia)",
+  "skip": true,
+  "n": 0
+ },
+ "2600": {
+  "name": "National Team West Asia Championships",
+  "n": 0,
+  "done": false
+ },
+ "2601": {
+  "name": "West Asia Club Championships",
+  "n": 0,
+  "done": false
+ },
+ "2602": {
+  "name": "26th Asian Junior & Cadet Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2603": {
+  "name": "Paris 2024 Olympic Games",
+  "start": null,
+  "end": null,
+  "n": 0,
+  "synced": "2026-11-06T17:29:38Z",
+  "done": false,
+  "skip": true
+ },
+ "2604": {
+  "name": "Paris 2024 Paralympic Games",
+  "n": 0,
+  "done": false
+ },
+ "2605": {
+  "name": "WTT Contender Muscat 2022",
+  "start": "2022-09-06",
+  "end": "2022-09-10",
+  "n": 137,
+  "synced": "2026-11-06T17:29:44Z",
+  "done": true
+ },
+ "2606": {
+  "name": "WTT Contender Almaty 2022",
+  "start": "2022-09-13",
+  "end": "2022-09-18",
+  "n": 171,
+  "synced": "2026-11-06T17:29:51Z",
+  "done": true
+ },
+ "2607": {
+  "name": "2022 African Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2608": {
+  "name": "2022 South American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2609": {
+  "name": "2022 ITTF-Africa Senior Championships",
+  "start": "2022-09-05",
+  "end": "2022-09-09",
+  "n": 150,
+  "synced": "2026-11-06T17:29:58Z",
+  "done": true
+ },
+ "2610": {
+  "name": "WTT Youth Star Contender Podgorica 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2611": {
+  "name": "2022 ITTF Pan American Championships",
+  "start": "2022-11-02",
+  "end": "2022-11-06",
+  "n": 124,
+  "synced": "2026-11-06T17:30:07Z",
+  "done": true
+ },
+ "2612": {
+  "name": "2022 European Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2613": {
+  "name": "2022 Pan American Youth Championships (U19)",
+  "skip": true,
+  "n": 0
+ },
+ "2614": {
+  "name": "2022 Commonwealth Games",
+  "n": 0,
+  "done": false
+ },
+ "2615": {
+  "name": "ITTF-Oceania Senior Championships",
+  "start": "2022-09-08",
+  "end": "2022-09-10",
+  "n": 95,
+  "synced": "2026-11-06T17:30:15Z",
+  "done": true
+ },
+ "2616": {
+  "name": "ITTF-Oceania Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2617": {
+  "name": "2022 European Championships",
+  "n": 0,
+  "done": false
+ },
+ "2618": {
+  "name": "2022 Simple Event Championships",
+  "n": 0,
+  "done": false
+ },
+ "2619": {
+  "name": "WTT Champions Macao 2022 Presented by Galaxy Entertainment Group",
+  "start": "2022-10-19",
+  "end": "2022-10-23",
+  "n": 62,
+  "synced": "2026-11-06T17:30:50Z",
+  "done": true
+ },
+ "2620": {
+  "name": "Simple Event 2022 Championships",
+  "n": 0,
+  "done": false
+ },
+ "2621": {
+  "name": "TEST 11",
+  "n": 0,
+  "done": false
+ },
+ "2622": {
+  "name": "TEST 11",
+  "n": 0,
+  "done": false
+ },
+ "2623": {
+  "name": "TEST 12",
+  "n": 0,
+  "done": false
+ },
+ "2624": {
+  "name": "TEST 111",
+  "n": 0,
+  "done": false
+ },
+ "2625": {
+  "name": "2022 Pan American Championships U15",
+  "skip": true,
+  "n": 0
+ },
+ "2626": {
+  "name": "2022 ITTF-Oceania U21 Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2627": {
+  "name": "WTT Cup Finals Xinxiang 2022 Presented by China Construction Bank",
+  "start": "2022-10-27",
+  "end": "2022-10-30",
+  "n": 29,
+  "synced": "2026-11-06T17:31:27Z",
+  "done": true
+ },
+ "2628": {
+  "name": "ITTF-ATTU Asian Cup",
+  "start": "2022-11-17",
+  "end": "2022-11-19",
+  "n": 32,
+  "synced": "2026-11-06T17:31:59Z",
+  "done": true
+ },
+ "2629": {
+  "name": "Singapore Smash 2023",
+  "start": "2023-03-07",
+  "end": "2023-03-19",
+  "n": 306,
+  "synced": "2026-11-06T17:32:05Z",
+  "done": true
+ },
+ "2630": {
+  "name": "WTT Feeder Fort Lauderdale 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2631": {
+  "name": "2022 European U21 Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2632": {
+  "name": "WTT Youth Contender Szombathely 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2633": {
+  "name": "WTT Youth Contender Senec 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2634": {
+  "name": "WTT Youth Contender Lignano 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2635": {
+  "name": "WTT Youth Contender Spa 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2636": {
+  "name": "WTT Youth Contender Metz 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2637": {
+  "name": "WTT Youth Contender Varazdin 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2638": {
+  "name": "WTT Youth Contender Otocec 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2639": {
+  "name": "WTT Youth Contender Linz 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2640": {
+  "name": "WTT Youth Star Contender Vila Nova de Gaia 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2641": {
+  "name": "WTT Youth Star Contender Doha 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2642": {
+  "name": "WTT Youth Contender Doha 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2643": {
+  "name": "WTT Youth Contender Vila Real 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2644": {
+  "name": "WTT Youth Star Contender Tunis 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2645": {
+  "name": "WTT Youth Contender Tunis 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2646": {
+  "name": "WTT Youth Contender Bangkok 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2647": {
+  "name": "WTT Youth Star Contender Skopje 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2648": {
+  "name": "WTT Youth Contender Sulaymaniyah 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2649": {
+  "name": "WTT Youth Contender Platja D'Aro 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2650": {
+  "name": "WTT Youth Contender Havirov 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2651": {
+  "name": "WTT Youth Contender Helsingborg 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2652": {
+  "name": "WTT Youth Contender Darwin 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2653": {
+  "name": "WTT Youth Contender Batumi 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2654": {
+  "name": "WTT Youth Contender Panagyurishte 2023 presented by ASAREL",
+  "skip": true,
+  "n": 0
+ },
+ "2655": {
+  "name": "WTT Youth Contender Rio de Janeiro 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2656": {
+  "name": "WTT Youth Star Contender Lima 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2657": {
+  "name": "WTT Youth Contender Podgorica 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2658": {
+  "name": "WTT Feeder Düsseldorf III 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2659": {
+  "name": "2022 ITTF World Team Championships Finals - INTERNAL TESTING",
+  "start": "2022-09-29",
+  "end": "2022-10-08",
+  "n": 0,
+  "synced": "2026-11-06T17:33:08Z",
+  "done": true
+ },
+ "2660": {
+  "name": "2023 ITTF World Table Tennis Championships Finals",
+  "start": "2023-05-20",
+  "end": "2023-05-28",
+  "n": 427,
+  "synced": "2026-11-06T17:33:17Z",
+  "done": true
+ },
+ "2661": {
+  "name": "2022 Europe Youth Top-10",
+  "skip": true,
+  "n": 0
+ },
+ "2662": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2663": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2664": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2665": {
+  "name": "2022 ITTF - Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2666": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2667": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2668": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2669": {
+  "name": "2022 ITTF-Oceania Cup",
+  "n": 0,
+  "done": false
+ },
+ "2670": {
+  "name": "2022 ITTF-Oceania Cup",
+  "start": "2022-12-18",
+  "end": "2022-12-18",
+  "n": 12,
+  "synced": "2026-11-06T17:33:57Z",
+  "done": true
+ },
+ "2671": {
+  "name": "WTT Youth Contender Jezzine 2023 presented by White Land Foundation",
+  "skip": true,
+  "n": 0
+ },
+ "2672": {
+  "name": "WTT Youth Contender Cairo 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2673": {
+  "name": "WTT Youth Contender Helsingborg 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2674": {
+  "name": "WTT Youth Contender Darwin 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2675": {
+  "name": "WTT Youth Contender Amman 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2676": {
+  "name": "WTT Youth Contender Rosario 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2677": {
+  "name": "WTT Youth Contender Wladyslawowo 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2678": {
+  "name": "WTT Youth Contender Asunción 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2679": {
+  "name": "WTT Youth Contender Hong Kong 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2680": {
+  "name": "South American Games Asuncion 2022",
+  "n": 0,
+  "done": false
+ },
+ "2681": {
+  "name": "WTT Youth Star Contender Podgorica 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2682": {
+  "name": "World Veteran Table Tennis Championships 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2683": {
+  "name": "WTT Youth Contender Hong Kong 2023 Presented by Hang Seng Bank",
+  "skip": true,
+  "n": 0
+ },
+ "2684": {
+  "name": "WTT Youth Contender Berlin 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2685": {
+  "name": "WTT Youth Contender Cheongyang 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2686": {
+  "name": "WTT Youth Contender Almaty 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2687": {
+  "name": "WTT Youth Contender Charleston 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2688": {
+  "name": "ITTF Summit 2022",
+  "n": 0,
+  "done": false
+ },
+ "2689": {
+  "name": "WTT Youth Contender Vientiane 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2690": {
+  "name": "WTT Youth Contender INTERNAL TESTING 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2691": {
+  "name": "WTT Contender Tunis 2023 Presented by KIA",
+  "start": "2023-06-20",
+  "end": "2023-06-25",
+  "n": 223,
+  "synced": "2026-11-06T17:34:11Z",
+  "done": true
+ },
+ "2692": {
+  "name": "WTT Contender Zagreb 2023",
+  "start": "2023-06-26",
+  "end": "2023-07-02",
+  "n": 276,
+  "synced": "2026-11-06T17:34:17Z",
+  "done": true
+ },
+ "2693": {
+  "name": "WTT Contender Lagos 2023",
+  "start": "2023-06-12",
+  "end": "2023-06-18",
+  "n": 194,
+  "synced": "2026-11-06T17:34:22Z",
+  "done": true
+ },
+ "2694": {
+  "name": "WTT Star Contender Ljubljana 2023 Presented by I Feel Slovenia",
+  "start": "2023-07-03",
+  "end": "2023-07-09",
+  "n": 280,
+  "synced": "2026-11-06T17:34:29Z",
+  "done": true
+ },
+ "2695": {
+  "name": "WTT Star Contender Bangkok 2023",
+  "start": "2023-04-23",
+  "end": "2023-04-29",
+  "n": 273,
+  "synced": "2026-11-06T17:34:35Z",
+  "done": true
+ },
+ "2696": {
+  "name": "WTT Star Contender Goa 2023",
+  "start": "2023-02-27",
+  "end": "2023-03-05",
+  "n": 230,
+  "synced": "2026-11-06T17:34:40Z",
+  "done": true
+ },
+ "2697": {
+  "name": "WTT Contender Amman 2023",
+  "start": "2023-02-06",
+  "end": "2023-02-12",
+  "n": 215,
+  "synced": "2026-11-06T17:34:45Z",
+  "done": true
+ },
+ "2698": {
+  "name": "WTT Contender Doha 2023",
+  "start": "2023-01-15",
+  "end": "2023-01-21",
+  "n": 247,
+  "synced": "2026-11-06T17:34:50Z",
+  "done": true
+ },
+ "2699": {
+  "name": "WTT Contender Durban 2023",
+  "start": "2023-01-10",
+  "end": "2023-01-15",
+  "n": 145,
+  "synced": "2026-11-06T17:34:55Z",
+  "done": true
+ },
+ "2700": {
+  "name": "WTT Feeder Amman 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2701": {
+  "name": "WTT Feeder Doha 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2702": {
+  "name": "WTT Feeder Düsseldorf 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2703": {
+  "name": "WTT Feeder Düsseldorf II 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2704": {
+  "name": "WTT Feeder Antalya 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2705": {
+  "name": "WTT Champions Frankfurt 2023",
+  "start": "2023-10-29",
+  "end": "2023-11-05",
+  "n": 62,
+  "synced": "2026-11-06T17:35:29Z",
+  "done": true
+ },
+ "2706": {
+  "name": "test1",
+  "n": 0,
+  "done": false
+ },
+ "2707": {
+  "name": "2022 Pacific Cup",
+  "start": "2022-12-17",
+  "end": "2022-12-18",
+  "n": 8,
+  "synced": "2026-11-06T17:36:00Z",
+  "done": true
+ },
+ "2708": {
+  "name": "Asian WTTC Continental Stage",
+  "n": 0,
+  "done": false
+ },
+ "2709": {
+  "name": "WTT Youth Contender Antalya 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2710": {
+  "name": "WTT Youth Contender Cuenca 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2711": {
+  "name": "ITTF World Youth Championships 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2712": {
+  "name": "TESTING -  Youth Star Contender Podgorica 2022",
+  "skip": true,
+  "n": 0
+ },
+ "2713": {
+  "name": "2023 ITTF-Oceania Senior & Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2714": {
+  "name": "2023 ITTF-Oceania Cup",
+  "start": "2023-12-10",
+  "end": "2023-12-10",
+  "n": 12,
+  "synced": "2026-11-06T17:36:35Z",
+  "done": true
+ },
+ "2715": {
+  "name": "2023 Pacific Games",
+  "n": 0,
+  "done": false
+ },
+ "2716": {
+  "name": "2023 ITTF-Oceania Para Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2717": {
+  "name": "2023 ITTF-Oceania Olympic Team & Mixed Doubles Qualification",
+  "start": "2023-09-03",
+  "end": "2023-09-03",
+  "n": 4,
+  "synced": "2026-11-06T17:37:18Z",
+  "done": true
+ },
+ "2718": {
+  "name": "2023 ITTF-Oceania Senior and Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2719": {
+  "name": "2023 ITTF-Oceania Youth Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2720": {
+  "name": "WTT Youth Contender Puerto Princesa 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2721": {
+  "name": "WTT Contender Lima 2023",
+  "start": "2023-07-31",
+  "end": "2023-08-06",
+  "n": 184,
+  "synced": "2026-11-06T17:37:25Z",
+  "done": true
+ },
+ "2722": {
+  "name": "WTT Contender Rio de Janeiro 2023",
+  "start": "2023-08-07",
+  "end": "2023-08-13",
+  "n": 219,
+  "synced": "2026-11-06T17:37:31Z",
+  "done": true
+ },
+ "2723": {
+  "name": "WTT Feeder Panagyurishte 2023 presented by ASAREL",
+  "skip": true,
+  "n": 0
+ },
+ "2724": {
+  "name": "WTT Feeder Olomouc 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2725": {
+  "name": "ITTF Summit 2023",
+  "n": 0,
+  "done": false
+ },
+ "2726": {
+  "name": "2024 ITTF World Masters Table Tennis Championships",
+  "skip": true,
+  "n": 0
+ },
+ "2727": {
+  "name": "WTT Youth Contender Mosquera 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2728": {
+  "name": "WTT Champions Macao 2023 Presented by Galaxy Entertainment Group",
+  "start": "2023-04-17",
+  "end": "2023-04-23",
+  "n": 62,
+  "synced": "2026-11-06T17:38:05Z",
+  "done": true
+ },
+ "2729": {
+  "name": "WTT Youth Contender Mosquera 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2730": {
+  "name": "WTT Youth Contender Al Ain 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2731": {
+  "name": "WTTC 2024 Eastern Africa Regional Qualifications",
+  "n": 0,
+  "done": false
+ },
+ "2732": {
+  "name": "WTT Feeder Biella 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2733": {
+  "name": "WTT Feeder Otocec 2023 presented by I Feel Slovenia",
+  "skip": true,
+  "n": 0
+ },
+ "2734": {
+  "name": "WTT Feeder Doha II 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2735": {
+  "name": "WTT Feeder Vila Nova de Gaia 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2736": {
+  "name": "2023 Europe Top-16 Cup",
+  "n": 0,
+  "done": false
+ },
+ "2737": {
+  "name": "WTT Champions Xinxiang 2023 Presented by Industrial and Commercial Bank of China",
+  "start": "2023-04-09",
+  "end": "2023-04-15",
+  "n": 62,
+  "synced": "2026-11-06T17:38:43Z",
+  "done": true
+ },
+ "2738": {
+  "name": "WTT Feeder Stockholm 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2739": {
+  "name": "WTT Contender Almaty 2023",
+  "start": "2023-08-29",
+  "end": "2023-09-03",
+  "n": 190,
+  "synced": "2026-11-06T17:38:48Z",
+  "done": true
+ },
+ "2740": {
+  "name": "WTT Feeder Bangkok 2023",
+  "skip": true,
+  "n": 0
+ },
+ "2741": {
+  "name": "WTT Contender Malmo 2023",
+  "n": 0,
+  "done": false
+ },
+ "2742": {
+  "name": "WTT Contender Antalya 2023",
+  "start": "2023-10-16",
+  "end": "2023-10-22",
+  "n": 140,
+  "synced": "2026-11-06T17:38:54Z",
+  "done": true
+ },
+ "2743": {
+  "name": "",
+  "skip": true,
+  "n": 0
+ },
+ "2744": {
+  "name": "WTTC 2024 Southern Africa Regional Qualifications",
+  "n": 0,
+  "done": false
+ },
+ "2745": {
+  "name": "ITTF Africa Cup",
+  "start": "2023-05-05",
+  "end": "2023-05-06",
+  "n": 52,
+  "synced": "2026-11-06T17:39:29Z",
+  "done": true
+ },
+ "2746": {
+  "name": "Qual. Event Central American and Caribbean Games 23",
+  "n": 0,
+  "done": false
+ },
+ "2747": {
+  "name": "2023 Central American Championships",
+  "n": 0,
+  "done": false
+ },
+ "2748": {
+  "name": "",
+  "skip": true,
+  "n": 0
+ },
+ "2749": {
+  "name": "WTTC 2024 Northern Africa Regional Qualifications",
+  "n": 0,
+  "done": false
+ },
  "2750": {
   "name": "WTT Feeder Havirov 2023",
   "start": "2023-07-27",
