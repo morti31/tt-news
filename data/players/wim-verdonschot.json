@@ -4,10 +4,18 @@
  "nat": "GER",
  "gender": "M",
  "born": "2005-05-15",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "Borussia Dortmund",
+   "league": "TTBL",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=201466"
+  "https://www.worldtabletennis.com/playerDescription?playerId=201466",
+  "https://www.tischtennis.de/news/calderano-besiegt-wim-verdonschot-zieht-fulminant-in-viertelfinale-ein.html",
+  "https://www.sport1.de/news/tischtennis/2026/11/frankfurt-kaufmann-verpasst-ueberraschung"
  ],
  "checked": "2026-11-06",
  "stub": true

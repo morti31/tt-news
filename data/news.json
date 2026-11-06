@@ -1,7 +1,202 @@
 {
-  "updated": "2026-11-06T16:35:00Z",
+  "updated": "2026-11-06T21:20:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day4-review",
+      "kind": "Review",
+      "day": 4,
+      "category": "International",
+      "date": "2026-11-06",
+      "published": "2026-11-06T21:20:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "top": true,
+      "headline": "WTT Champions Frankfurt day four review: Verdonschot knocks out Calderano as Winter beats Han Ying",
+      "summary": "Wim Verdonschot knocked out Hugo Calderano and Sabine Winter beat Han Ying on day four of WTT Champions Frankfurt, where Hina Hayata ended Annett Kaufmann's run and Kuai Man and Chen Yi went through.",
+      "matches": [
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Wim Verdonschot",
+              "nat": "GER"
+            },
+            {
+              "name": "Hugo Calderano",
+              "nat": "BRA"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              13,
+              11
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Sabine Winter",
+              "nat": "GER"
+            },
+            {
+              "name": "Han Ying",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            },
+            {
+              "name": "Benedikt Duda",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              15,
+              13
+            ],
+            [
+              12,
+              10
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Hina Hayata",
+              "nat": "JPN"
+            },
+            {
+              "name": "Annett Kaufmann",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "A2xfyuwjZuE",
+          "title": "Wim Verdonschot v Hugo Calderano, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "cxwuD4c3feM",
+          "title": "Han Ying v Sabine Winter, women's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "n0WcvuBPV5M",
+          "title": "Oh Junsung v Shunsuke Togami, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "5F4ZI6zclf8",
+          "title": "Hina Hayata v Annett Kaufmann, women's singles last 16",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Frankfurt 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3252"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        },
+        {
+          "name": "tischtennis.de (German): Verdonschot beats Calderano",
+          "url": "https://www.tischtennis.de/news/calderano-besiegt-wim-verdonschot-zieht-fulminant-in-viertelfinale-ein.html"
+        }
+      ]
+    },
     {
       "id": "youth-olympic-games-dakar-2026-lee-seungsoo-bronze",
       "category": "International",
@@ -134,7 +329,6 @@
       "published": "2026-11-05T20:45:00Z",
       "event": "wtt-champions-frankfurt-2026",
       "draw": "3252",
-      "top": true,
       "headline": "WTT Champions Frankfurt day three review: Wen Ruibo knocks out Wang Chuqin as Duda beats Jang Woojin",
       "summary": "Wen Ruibo beat Wang Chuqin 3-0 and Benedikt Duda knocked out Jang Woojin on day three of WTT Champions Frankfurt, where Hana Goda and Satsuki Odo reached the quarter-finals.",
       "matches": [

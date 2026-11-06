@@ -5,11 +5,21 @@
  "gender": "W",
  "born": "2006-06-23",
  "hand": "Left",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "SV DJK Kolbermoor",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=135493"
+  "https://www.worldtabletennis.com/playerDescription?playerId=135493",
+  "https://www.augsburger-allgemeine.de/sport/wtt-champions-im-tischtennis-tischtennis-star-kaufmann-in-frankfurt-ausgeschieden-115645777",
+  "https://www.sport1.de/news/tischtennis/2026/11/frankfurt-kaufmann-verpasst-ueberraschung"
  ],
  "checked": "2026-11-06",
- "stub": true
+ "stub": true,
+ "notes": [
+  "Said she felt extreme pain on her backhand during her last-16 defeat by Hina Hayata at WTT Champions Frankfurt in November 2026."
+ ]
 }
