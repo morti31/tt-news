@@ -318,3 +318,14 @@ document.addEventListener("click", function (ev) {
   }
 });
 </script>"""
+
+
+SUBNAVS = {"events": [("/events/", "Events"), ("/schedule.html", "Schedule and calendar")],
+           "players": [("/players/", "Player profiles"), ("/rankings.html", "World rankings")],
+           "guide": [("/guide/", "Guides"), ("/#Equipment", "Equipment news")]}
+
+
+def subnav(group, cur):
+    """The second row of links under a top-level section (Events, Players, Guide)."""
+    links = "".join(f'<a href="{u}"{' aria-current="page"' if u == cur else ""}>{t}</a>' for u, t in SUBNAVS[group])
+    return f'<nav class="subnav" aria-label="{group.title()}">{links}</nav>'

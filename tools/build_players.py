@@ -29,6 +29,8 @@ CATEGORIES = ["Olympic Games", "World Championships", "World Team Championships"
               "Continental and multi-sport", "WTT tour", "Other"]
 TIMELINE_ROWS = ["Olympic Games", "World Championships", "World Cup", "WTT Finals", "Singapore Smash", "Saudi Smash", "China Smash",
                  "United States Smash", "Europe Smash"]
+# Years each competition was held in the WTT era, where the match database can't tell (Olympics aren't in WTT's results)
+HELD_FIXED = {"Olympic Games": {2021, 2024}, "World Championships": {2021, 2023, 2025}, "World Cup": {2024, 2025, 2026}}
 ROUND_SHORT = {"FNL": "F", "SFNL": "SF", "QFNL": "QF", "8FNL": "R16", "R16": "R16", "R32": "R32", "R64": "R64", "R128": "R128", "BRNZ": "SF"}
 ROUND_RANK = {"W": 10, "F": 9, "SF": 8, "QF": 7, "R16": 6, "R32": 5, "R64": 4, "R128": 3, "Grp": 2, "Q": 1}
 
@@ -218,7 +220,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
         w = wtt.get(pid, {})
         born = p.get("born") or (lambda d: f"{d[6:10]}-{d[0:2]}-{d[3:5]}" if d and len(d) >= 10 else None)(w.get("dob"))
         hand = p.get("hand") or (w.get("hand") or "").replace(" Hand", "") or None
-        grip = p.get("grip") or w.get("grip")
+        grip = p.get("grip")   # WTT's grip field is unreliable (it lists Dang Qiu as penhold), so only researched values
         ms_stat = next((s for s in w.get("stats", []) if s.get("SubeventCode") in ("MS", "WS")), {})
         best = None
         if ms_stat.get("best_rank"):
@@ -371,14 +373,39 @@ def build(page, site, tag_items, tag_url, hubs, R):
         if rows_t:
             ylist = list(range(max(min(yrs), dt.date.today().year - 6), dt.date.today().year + 1))
             order_rows = [r for r in TIMELINE_ROWS if r in rows_t]
+            # which competitions were held in which years: fixed list, or any event of that name in the match database
+            covered = {int(v["start"][:4]) for v in db.events.values() if v.get("n") and v.get("start")}
+            held = {r: set(ys) for r, ys in HELD_FIXED.items()}
+            for v in db.events.values():
+                if v.get("n") and v.get("start"):
+                    rr = timeline_row(clean_event(v.get("name") or ""))
+                    if rr and rr not in HELD_FIXED:
+                        held.setdefault(rr, set()).add(int(v["start"][:4]))
+
+            for v in load(os.path.join(ROOT, "data", "schedule.json"), {}).get("events", []):   # events still to come this year
+                rr = timeline_row(v.get("name") or "")
+                if rr and v.get("start"):
+                    held.setdefault(rr, set()).add(int(v["start"][:4]))
+            for h in hubs.values():
+                rr = timeline_row(h.get("name") or "")
+                if rr and h.get("start"):
+                    held.setdefault(rr, set()).add(int(h["start"][:4]))
+
+            def cell(r, y):
+                v = rows_t[r].get(y)
+                if v:
+                    return f'<td class="tl-{v.lower()}">{v}</td>'
+                if (r in HELD_FIXED or y in covered) and y not in held.get(r, set()) and y <= dt.date.today().year:
+                    return '<td class="tl-nh">Not held</td>'
+                return '<td class="tl-x">–</td>'
             head_t = "".join(f'<th scope="col">{y}</th>' for y in ylist)
             body_t = ""
             for r in order_rows:
-                cells = "".join(f'<td class="tl-{rows_t[r].get(y, "x").lower()}">{rows_t[r].get(y, "–")}</td>' for y in ylist)
+                cells = "".join(cell(r, y) for y in ylist)
                 wins = sum(1 for v in rows_t[r].values() if v == "W")
                 body_t += f'<tr><th scope="row">{e(r)}</th>{cells}<td class="tl-tot">{wins}</td></tr>'
             timeline = (f'<h3 class="pl-h3">Singles at the majors and Grand Smashes</h3><div class="table-scroll"><table class="pl-tl"><thead><tr><th scope="col"></th>{head_t}<th scope="col">Titles</th></tr></thead>'
-                        f'<tbody>{body_t}</tbody></table></div><p class="small">W won, F final, SF semi-final, QF quarter-final, R16 last 16 and so on; Grp group stage, Q qualifying, – did not play or no record. '
+                        f'<tbody>{body_t}</tbody></table></div><p class="small">W won, F final, SF semi-final, QF quarter-final, R16 last 16 and so on; Grp group stage, Q qualifying, – did not play or no record, Not held: no event that year. '
                         f'Full results from {min(y for y in yrs if any(y in v for v in rows_t.values()))} from World Table Tennis\'s records; earlier years show medals only.</p>')
         titles_sec = ""
         if hon_html or timeline:
@@ -461,12 +488,17 @@ def build(page, site, tag_items, tag_url, hubs, R):
     # ---- index
     def group(g):
         ps = sorted((p for p in profiles.values() if p.get("gender") == g), key=lambda p: ((ranks.get(p["ittf_id"]) or {}).get("rank", 999), p["name"]))
-        return "".join(f'<li class="pl-tile"><a href="/players/{p["slug"]}.html">{player_card(p, (ranks.get(p["ittf_id"]) or {}).get("rank"), "small")}'
-                       f'<span class="pl-tile-name">{e(p["name"])}</span></a></li>' for p in ps)
-    idx = f'''<main class="wrap pl-page"><section class="sched-head"><div><h1>Players</h1>
+        top = [p for p in ps if (ranks.get(p["ittf_id"]) or {}).get("rank", 999) <= 10]
+        rest = [p for p in ps if p not in top]
+        cards = "".join(f'<li class="pl-tile"><a href="/players/{p["slug"]}.html">{player_card(p, (ranks.get(p["ittf_id"]) or {}).get("rank"), "small")}'
+                        f'<span class="pl-tile-name">{e(p["name"])}</span></a></li>' for p in top)
+        lis = "".join(f'<li><span class="rk-pos">{(ranks.get(p["ittf_id"]) or {}).get("rank", "")}</span>{components.flag(p.get("nat"))}'
+                      f'<a href="/players/{p["slug"]}.html">{e(p["name"])}</a><span class="rk-nat">{e(p.get("nat") or "")}</span></li>' for p in rest)
+        return f'<ul class="pl-tiles">{cards}</ul>' + (f'<ul class="pl-all">{lis}</ul>' if lis else "")
+    idx = f'''<main class="wrap pl-page">{components.subnav("players", "/players/")}<section class="sched-head"><div><h1>Players</h1>
 <p class="lede">Profiles of the world's leading men and women: results, season-by-season records, titles, head to heads and news. Every player who reaches the top 10 gets a profile, and it stays and keeps updating whatever their ranking.</p></div></section>
-<div class="rk-two"><section class="hub-sec"><h2 class="section-title">Women</h2><ul class="pl-tiles">{group("W")}</ul></section>
-<section class="hub-sec"><h2 class="section-title">Men</h2><ul class="pl-tiles">{group("M")}</ul></section></div></main>'''
+<div class="rk-two"><section class="hub-sec"><h2 class="section-title">Women</h2>{group("W")}</section>
+<section class="hub-sec"><h2 class="section-title">Men</h2>{group("M")}</section></div></main>'''
     open(os.path.join(ROOT, "players", "index.html"), "w", encoding="utf-8").write(
         page("Players: profiles of the world's best | Eleven", "Profiles of the top table tennis players: results, records, titles and news.", f"{site}/players/", idx))
     out_urls.append((f"{site}/players/", dt.date.today().isoformat()))

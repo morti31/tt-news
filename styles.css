@@ -1283,3 +1283,14 @@ html.mp-open { overflow: hidden; }
 @media (prefers-color-scheme: dark) { .pl-tl .tl-w { background: #4a3c08; color: #ffe9a3; } .pl-tl .tl-f { background: #2a313c; } .pl-tl .tl-sf { background: #3d2a1f; } }
 .pl-tl + .small { margin-bottom: 22px; }
 #honours .table-scroll + .small { margin-bottom: 24px; }
+.pl-tl .tl-nh { color: var(--muted); font-weight: 400; font-size: 11px; font-style: italic; }
+.pl-all { list-style: none; margin: 20px 0 0; padding: 0; columns: 2 220px; column-gap: 24px; }
+.pl-all li { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--rule); break-inside: avoid; font-size: 14px; }
+.pl-all .rk-pos { min-width: 28px; color: var(--muted); font-weight: 700; }
+.pl-all a { color: inherit; font-weight: 600; }
+.subnav { display: flex; gap: 6px; flex-wrap: wrap; margin: 14px 0 0; }
+.subnav a { font: 600 14px "Inter Tight", sans-serif; color: var(--muted); text-decoration: none; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--rule); }
+.subnav a:hover { color: var(--ink); border-color: var(--ink); }
+.subnav a[aria-current="page"] { color: #fff; background: var(--ink); border-color: var(--ink); }
+@media (prefers-color-scheme: dark) { .subnav a[aria-current="page"] { color: #11151b; background: #e8edf3; border-color: #e8edf3; } }
+@media (max-width: 440px) { .sections { gap: 0; } .sections button, .sections a { padding: 12px 7px 10px; font-size: 13.5px; } }

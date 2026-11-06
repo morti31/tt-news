@@ -127,7 +127,8 @@ def build(page, site, authors, avatar, linkify):
         shelves.append(f'<section class="shelf" id="{e(sh["key"])}"><div class="shelf-head"><span class="shelf-num">{e(sh["num"])}</span>'
                        f'<div><h2>{e(sh["title"])}</h2><p>{e(sh["intro"])}</p></div></div><ol class="gcards">{"".join(cards)}</ol></section>')
     path = "".join(f'<li><a href="#{e(sh["key"])}"><b>{e(sh["num"])}</b>{e(sh["title"])}</a></li>' for sh in plan["shelves"])
-    body = f"""<main class="wrap guide-home">
+    import components
+    body = f"""<main class="wrap guide-home">{components.subnav("guide", "/guide/")}
 <section class="sched-head"><div><h1>The Guide</h1>
 <p class="lede">{e(plan.get("intro", ""))}</p></div></section>
 <nav class="guide-path" aria-label="Guide sections"><ol>{path}</ol></nav>

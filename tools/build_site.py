@@ -43,8 +43,8 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/features/">Features</a></li><li><a href="/guide/">Guide</a></li><li><a href="/rankings.html">Rankings</a></li>
-<li><a href="/clubs/">Clubs</a></li><li><a href="/#Equipment">Equipment</a></li><li><a href="/schedule.html">Schedule</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/players/">Players</a></li><li><a href="/clubs/">Clubs</a></li>
+<li><a href="/features/">Features</a></li><li><a href="/guide/">Guide</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
@@ -705,7 +705,7 @@ def main():
         items.sort(key=lambda x: x[0], reverse=True)
         desc = f'The official ITTF world table tennis rankings, {R["label"].split(", ", 1)[1]}: the top 100 men and women with points and movement.'
         open(os.path.join(ROOT, "rankings.html"), "w", encoding="utf-8").write(
-            page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links())))
+            page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links()).replace('<main class="wrap rk">', '<main class="wrap rk">' + components.subnav("players", "/rankings.html"), 1)))
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
 
     today = dt.date.today().isoformat()
@@ -789,7 +789,7 @@ def build_hubs(arts):
         if ev.get("start"):
             open(os.path.join(ROOT, "events", ev["id"] + ".ics"), "w", encoding="utf-8", newline="").write(build_events.calendar(ev, schedule, SITE, stamp))
     open(os.path.join(ROOT, "events", "index.html"), "w", encoding="utf-8").write(
-        page("Events | Eleven", "Major table tennis tournaments: draws, results, schedules and news.", f"{SITE}/events/", build_events.index_page(EVENTS, today)))
+        page("Events | Eleven", "Major table tennis tournaments: draws, results, schedules and news.", f"{SITE}/events/", build_events.index_page(EVENTS, today).replace('<main class="wrap">', '<main class="wrap">' + components.subnav("events", "/events/"), 1)))
     json.dump(build_events.event_index(EVENTS), open(os.path.join(ROOT, "data", "event-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return [ev["id"] for ev in EVENTS["events"]]
 

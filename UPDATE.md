@@ -112,6 +112,10 @@ The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.
 - When an event finishes, its page shows the Champions from the draw. For events not on WTT (continental championships, the Asian Games), add `champions` to the hub in `data/events.json`: `[{"event": "Men's singles", "champion": {"name", "nat"}, "runner_up": {"name", "nat"}, "score": "4-1", "games": "11-5, ..."}]`, leaving out what isn't known.
 - Every finished event Eleven did not cover day by day gets a `story` on its hub: three or four paragraphs, "How it was won", in STYLE.md style, covering both draws, the finals, upsets of top seeds and the storylines. Facts come from the draw file or checked sources.
 
+## Event pages for past years
+
+A nightly scheduled task builds the event pages for one past year at a time (2025, then 2024, 2023, 2022, 2021), following "Past events and full draws" above: the qualifying events of that year (WTT Champions, Star Contender, Grand Smash, WTT Finals, World Cup, World Championships, Olympics, continental championships, Asian Games and European Games), with draws from WTT where the event is in its system and champions otherwise. Older pages carry a shorter "How it was won": two short paragraphs (finals and the main storyline), not four. New hubs are appended to the end of `events` in data/events.json so existing posters keep their look.
+
 ## Tags
 
 Every story gets up to three tags (tournament, players, club or league, country) automatically at build time, old and new alike. The tags show under the headline on cards and articles and link to /tag/<name>, a page with every story on that tag, a short header and links onward. Rankings link every player and country that has stories to its tag page.
@@ -133,6 +137,8 @@ The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.
 - `honours`: medals at the Olympics, World Championships, World Cup, WTT Finals and continental championships and multi-sport games, `{"year", "event": "<Competition>, <discipline>", "result": "Gold|Silver|Bronze"}`
 - `notes`: a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
 - `sources` (every page a fact came from) and `checked` (date)
+
+Every player in the world top 100 has a profile. Players outside the top 10 started as stubs (`"stub": true`): name, association, date of birth and playing hand from WTT, with results from the match database. The monthly check fills in up to 30 stubs a month, highest-ranked first (birthplace, height, grip, style, clubs, equipment, honours, sources), then removes `"stub"`. Don't take grip or style from WTT's player data: it is unreliable (it lists Dang Qiu as penhold).
 
 A profile is permanent: once a player has a file, never delete it, even if they drop out of the top 10 or the top 100, retire or change association. Their results, records and news keep updating from the match database and the tags, the monthly check keeps their bio file current, and the page shows "Outside the world top 100" when they have no ranking.
 
