@@ -25,6 +25,49 @@ LEVELS = [("WTT Finals", r"WTT Finals|Cup Finals"), ("World Championships", r"Wo
           ("WTT Star Contender", r"Star Contender"), ("WTT Contender", r"WTT Contender"), ("WTT Feeder", r"Feeder")]
 
 
+CATEGORIES = ["Olympic Games", "World Championships", "World Team Championships", "World Cup", "WTT Finals", "Grand Smash",
+              "Continental and multi-sport", "WTT tour", "Other"]
+TIMELINE_ROWS = ["Olympic Games", "World Championships", "World Cup", "WTT Finals", "Singapore Smash", "Saudi Smash", "China Smash",
+                 "United States Smash", "Europe Smash"]
+ROUND_SHORT = {"FNL": "F", "SFNL": "SF", "QFNL": "QF", "8FNL": "R16", "R16": "R16", "R32": "R32", "R64": "R64", "R128": "R128", "BRNZ": "SF"}
+ROUND_RANK = {"W": 10, "F": 9, "SF": 8, "QF": 7, "R16": 6, "R32": 5, "R64": 4, "R128": 3, "Grp": 2, "Q": 1}
+
+
+def smash_name(n):
+    m = re.search(r"(Singapore|Saudi|China|United States|US|Europe)\s+Smash", n)
+    if m:
+        return ("United States" if m.group(1) == "US" else m.group(1)) + " Smash"
+    return "Grand Smash"
+
+
+def category(n):
+    if re.search(r"Olympic", n) and "Youth" not in n:
+        return "Olympic Games"
+    if re.search(r"World (Team )?(Table Tennis )?Championships", n):
+        return "World Team Championships" if "Team" in n or n.strip().endswith("team") else "World Championships"
+    if re.search(r"World Cup", n) and "Mixed Team" not in n and "mixed team" not in n:
+        return "World Cup"
+    if re.search(r"WTT Finals|Cup Finals", n):
+        return "WTT Finals"
+    if "Smash" in n:
+        return "Grand Smash"
+    if re.search(r"Asian|European|Americas|African|Oceania|Pan American|Commonwealth|Europe Top", n):
+        return "Continental and multi-sport"
+    if re.search(r"WTT|Contender|Feeder|Champions", n):
+        return "WTT tour"
+    return "Other"
+
+
+def timeline_row(n):
+    c = category(n)
+    if c == "Grand Smash":
+        sn = smash_name(n)
+        return sn if sn in TIMELINE_ROWS else None
+    if c in ("Olympic Games", "World Championships", "World Cup", "WTT Finals"):
+        return c
+    return None
+
+
 def slugify(s):
     import unicodedata
     s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
@@ -189,7 +232,8 @@ def build(page, site, tag_items, tag_url, hubs, R):
             r_best = min(r for _, r in hist_ranks)
             first = next(wk for wk, r in hist_ranks if r == r_best)
             career_high = f"No. {r_best} ({dt.date.fromisoformat(first):%B %Y}, since records began)"
-        club = next((c for c in reversed(p.get("clubs") or []) if not c.get("to")), None)
+        now = [c for c in p.get("clubs") or [] if c.get("current")]
+        club_txt = "; ".join(c["club"] + (f' ({c["league"]})' if c.get("league") else "") for c in now) or None
 
         # ---- header
         mv = ""
@@ -201,7 +245,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
                  ("Birthplace", p.get("birthplace")), ("Height", f'{p["height_cm"]} cm' if p.get("height_cm") else None),
                  ("Plays", ", ".join(x for x in (f"{hand}-handed" if hand else None, grip) if x) or None),
                  ("Style", p.get("style")), ("Coach", p.get("coach")),
-                 ("Club", f'{club["club"]}{" (" + club["league"] + ")" if club.get("league") else ""}' if club else None)]
+                 ("Clubs" if len(now) > 1 else "Club", club_txt)]
         dl = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in facts if v)
         head = f'''<header class="pl-head">{player_card(p, rk["rank"] if rk else None)}
 <div class="pl-id"><p class="small-label">{"Men" if p.get("gender") == "M" else "Women"} · {components.flag(p.get("nat"))} {e(p.get("nat") or "")}</p>
@@ -256,34 +300,88 @@ def build(page, site, tag_items, tag_url, hubs, R):
                       f'<th scope="col">Date</th><th scope="col">Event</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(mrow(m) for m in recent)}</tbody></table></div>'
                       f'<p class="small">Official results from World Table Tennis. Times are UK dates.</p></section>') if recent else ""
 
-        # ---- titles from the database (finals won), and the researched honours
-        won_finals = [m for m in ms if m["r"] == "FNL" and won(m) and m["k"][1] in "SD"]
-        tl = {}
-        for m in won_finals:
-            nm = clean_event((db.events.get(m["e"]) or {}).get("name") or "")
-            tl.setdefault(level(nm), []).append((m.get("d") or "")[:4] + " · " + ev_link(m["e"]) + f' <span class="pl-sub">{e(KINDS.get(m["k"], ""))}</span>')
-        order = [lab for lab, _ in LEVELS] + ["Other"]
-        titles_html = "".join(f'<div class="pl-tgroup"><h3>{e(lab)} <span>{len(tl[lab])}</span></h3><ul>{"".join(f"<li>{x}</li>" for x in tl[lab])}</ul></div>' for lab in order if lab in tl)
-        hon = p.get("honours") or []
-        hon_groups = {}
-        for h in hon:
-            comp = h["event"].split(",")[0]
-            hon_groups.setdefault(comp, []).append(h)
-        medal = {"Gold": "g", "Silver": "s", "Bronze": "b"}
+        # ---- honours: championship medals (researched) and titles (from the database), the Grand Smashes on their own
+        medal = {"Gold": "g", "Silver": "s", "Bronze": "b", "Winner": "g", "Runner-up": "s", "Semi-final": "b"}
+        groups, seen_h = {}, set()
 
-        def hon_li(h):
-            what = h["event"].split(", ", 1)[1] if ", " in h["event"] else ""
-            return f'<li><span class="md md-{medal.get(h["result"], "x")}">{e(h["result"])}</span> {h["year"]} {e(what)}</li>'
-        hon_html = "".join(f'<div class="pl-tgroup"><h3>{e(c)}</h3><ul>{"".join(hon_li(h) for h in sorted(hs, key=lambda h: -h["year"]))}</ul></div>'
-                           for c, hs in hon_groups.items())
+        def add(cat, year, label, result, link=None):
+            key = (cat, year, label.lower())
+            if key in seen_h:
+                return
+            seen_h.add(key)
+            groups.setdefault(cat, []).append((year, label, result, link))
+        for h in p.get("honours") or []:
+            comp, _, disc = h["event"].partition(", ")
+            cat = category(comp)
+            label = (comp + " " if cat in ("Grand Smash", "Continental and multi-sport", "Other") else "") + (disc or "")
+            add(cat, h["year"], label.strip() or comp, h["result"])
+        for m in ms:
+            if m["r"] != "FNL" or not won(m) or m["k"][1] not in "SD":
+                continue
+            nm = clean_event((db.events.get(m["e"]) or {}).get("name") or "")
+            cat = category(nm)
+            yr = int((m.get("d") or "0000")[:4])
+            disc = KINDS.get(m["k"], "").split(" ", 1)[1] if " " in KINDS.get(m["k"], "") else ""
+            if cat in ("Grand Smash",):
+                label = smash_name(nm) + " " + disc
+            elif cat == "WTT tour":
+                label = re.sub(r"\s*\d{4}$", "", nm) + " " + disc
+            else:
+                label = disc
+            add(cat, yr, label.strip(), "Gold", ev_link(m["e"]))
+
+        def hli(x, cat):
+            year, label, result, link = x
+            res = result
+            if cat in ("Grand Smash", "WTT Finals", "WTT tour"):
+                res = {"Gold": "Winner", "Silver": "Runner-up", "Bronze": "Semi-final"}.get(result, result)
+            lab = e(label[:1].upper() + label[1:])
+            if link:
+                lab = f'{lab} <span class="pl-sub">{link}</span>'
+            return f'<li><span class="md md-{medal.get(res, "x")}">{e(res)}</span> <b>{year}</b> {lab}</li>'
+        cats = [c for c in CATEGORIES if c in groups]
+        hon_html = "".join(f'<div class="pl-tgroup"><h3>{e(c)} <span>{len(groups[c])}</span></h3><ul>{"".join(hli(x, c) for x in sorted(groups[c], key=lambda x: -x[0]))}</ul></div>' for c in cats)
+
+        # ---- performance timeline (singles), like a tennis player's Grand Slam table
+        rows_t, yrs = {}, set()
+        for m in singles:
+            nm = clean_event((db.events.get(m["e"]) or {}).get("name") or "")
+            row = timeline_row(nm)
+            if not row:
+                continue
+            yr = int((m.get("d") or "0000")[:4])
+            yrs.add(yr)
+            cur = rows_t.setdefault(row, {}).get(yr)
+            res = "W" if m["r"] == "FNL" and won(m) else ROUND_SHORT.get(m["r"], "Q" if m["r"].startswith("RND") else "Grp" if m["r"][:2] in ("GP", "RR") else m["r"])
+            if cur is None or ROUND_RANK.get(res, 0) > ROUND_RANK.get(cur, 0):
+                rows_t[row][yr] = res
+        for h in p.get("honours") or []:
+            comp, _, disc = h["event"].partition(", ")
+            if disc and disc.lower() != "singles":
+                continue
+            row = timeline_row(comp)
+            if not row:
+                continue
+            res = {"Gold": "W", "Silver": "F", "Bronze": "SF"}.get(h["result"])
+            if res and h["year"] not in rows_t.get(row, {}):
+                rows_t.setdefault(row, {})[h["year"]] = res
+                yrs.add(h["year"])
+        timeline = ""
+        if rows_t:
+            ylist = list(range(max(min(yrs), dt.date.today().year - 6), dt.date.today().year + 1))
+            order_rows = [r for r in TIMELINE_ROWS if r in rows_t]
+            head_t = "".join(f'<th scope="col">{y}</th>' for y in ylist)
+            body_t = ""
+            for r in order_rows:
+                cells = "".join(f'<td class="tl-{rows_t[r].get(y, "x").lower()}">{rows_t[r].get(y, "–")}</td>' for y in ylist)
+                wins = sum(1 for v in rows_t[r].values() if v == "W")
+                body_t += f'<tr><th scope="row">{e(r)}</th>{cells}<td class="tl-tot">{wins}</td></tr>'
+            timeline = (f'<h3 class="pl-h3">Singles at the majors and Grand Smashes</h3><div class="table-scroll"><table class="pl-tl"><thead><tr><th scope="col"></th>{head_t}<th scope="col">Titles</th></tr></thead>'
+                        f'<tbody>{body_t}</tbody></table></div><p class="small">W won, F final, SF semi-final, QF quarter-final, R16 last 16 and so on; Grp group stage, Q qualifying, – did not play or no record. '
+                        f'Full results from {min(y for y in yrs if any(y in v for v in rows_t.values()))} from World Table Tennis\'s records; earlier years show medals only.</p>')
         titles_sec = ""
-        if titles_html or hon_html:
-            titles_sec = '<section class="hub-sec" id="honours"><h2 class="section-title">Honours</h2>'
-            if hon_html:
-                titles_sec += f'<h3 class="pl-h3">Major championships</h3><div class="pl-tgroups">{hon_html}</div>'
-            if titles_html:
-                titles_sec += f'<h3 class="pl-h3">Titles on the WTT and ITTF tour since {min(years) if years else ""}</h3><div class="pl-tgroups">{titles_html}</div>'
-            titles_sec += "</section>"
+        if hon_html or timeline:
+            titles_sec = f'<section class="hub-sec" id="honours"><h2 class="section-title">Honours</h2>{timeline}<div class="pl-tgroups">{hon_html}</div></section>'
 
         # ---- head to head with the players met most
         h2h = {}
@@ -316,7 +414,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
         clubs = p.get("clubs") or []
         club_sec = ""
         if clubs:
-            lis = "".join(f'<li><b>{e(c["club"])}</b>{" · " + e(c["league"]) if c.get("league") else ""}<span class="pl-sub">{e(" to ".join(x for x in (c.get("from"), c.get("to")) if x) or ("Current" if c is club else ""))}</span></li>' for c in reversed(clubs))
+            lis = "".join(f'<li><b>{e(c["club"])}</b>{" · " + e(c["league"]) if c.get("league") else ""}<span class="pl-sub">{e(" to ".join(x for x in (c.get("from"), c.get("to")) if x) or ("Current" if c.get("current") else ""))}</span></li>' for c in reversed(clubs))
             club_sec = f'<section class="panel"><h2 class="panel-title">Clubs</h2><ul class="pl-list">{lis}</ul></section>'
         eq = p.get("equipment") or {}
         eq_rows = [(k, eq.get(x)) for k, x in (("Blade", "blade"), ("Forehand", "forehand"), ("Backhand", "backhand"), ("Sponsor", "sponsor")) if eq.get(x)]

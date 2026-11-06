@@ -1270,3 +1270,14 @@ html.mp-open { overflow: hidden; }
 .ev-month-h { font-size: 15px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 6px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
 .ev-count { font-size: 15px; font-weight: 600; color: var(--muted); margin-left: 8px; }
 @media (max-width: 600px) { .pl-matches .pl-res .pl-sub { display: none; } }
+.pl-tl { border-collapse: collapse; font-size: 13px; min-width: 100%; margin-bottom: 8px; }
+.pl-tl th, .pl-tl td { padding: 7px 8px; border-bottom: 1px solid var(--rule); text-align: center; white-space: nowrap; }
+.pl-tl thead th { font-size: 12px; color: var(--muted); font-weight: 700; }
+.pl-tl tbody th { text-align: left; font-weight: 700; padding-left: 0; }
+.pl-tl td { font-weight: 600; }
+.pl-tl .tl-w { background: #fbe9a8; color: #5a4300; }
+.pl-tl .tl-f { background: #e6e9ee; }
+.pl-tl .tl-sf { background: #f6e1d3; }
+.pl-tl .tl-x { color: var(--muted); font-weight: 400; }
+.pl-tl .tl-tot { font-weight: 800; }
+@media (prefers-color-scheme: dark) { .pl-tl .tl-w { background: #4a3c08; color: #ffe9a3; } .pl-tl .tl-f { background: #2a313c; } .pl-tl .tl-sf { background: #3d2a1f; } }

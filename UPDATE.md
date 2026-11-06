@@ -128,7 +128,7 @@ Every story gets up to three tags (tournament, players, club or league, country)
 The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.json`, one file per player; `wtt.json` beside them is written by the match sync, never by hand). Results, recent matches, season records, tour titles, head to heads and the ranking history come from Eleven's match database (`data/matches`, filled every six hours by `.github/workflows/match-sync.yml` from WTT's official results), so they update themselves. The bio file holds what the database can't know:
 
 - `born`, `birthplace`, `height_cm`, `hand`, `grip`, `style`, `coach`
-- `clubs`: `[{"club", "league"?, "from"?, "to"?}]`, the current club last and without `to`
+- `clubs`: `[{"club", "league"?, "from"?, "to"?, "current"?: true}]`, oldest first; mark every club the player plays for now with `"current": true` (players often have a club in more than one league, e.g. the T.League and the China Super League)
 - `equipment`: `{"blade", "forehand", "backhand", "sponsor", "confirmed": "YYYY-MM-DD", "source": url}`
 - `honours`: medals at the Olympics, World Championships, World Cup, WTT Finals and continental championships and multi-sport games, `{"year", "event": "<Competition>, <discipline>", "result": "Gold|Silver|Bronze"}`
 - `notes`: a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
