@@ -108,6 +108,17 @@ def hero(a):
     return ""
 
 
+SECTIONS = [("/events/", ("/events", "/schedule")), ("/players/", ("/players", "/rankings")), ("/clubs/", ("/clubs",)),
+            ("/features/", ("/features",)), ("/guide/", ("/guide",))]
+
+
+def nav_for(canonical):
+    """The masthead with the current section marked, worked out from the page's address. Anything else (news, tags) sits under Home."""
+    path = "/" + canonical.split("://", 1)[-1].split("/", 1)[-1] if "://" in canonical else canonical
+    cur = next((href for href, pre in SECTIONS if path.startswith(pre)), "/")
+    return NAV.replace(f'<a href="{cur}">', f'<a href="{cur}" aria-current="page">', 1)
+
+
 def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=None, og_type="website", robots=None):
     og_img = f'<meta property="og:image" content="{e(og_image)}">' if og_image else ""
     return f"""<!doctype html>
@@ -129,7 +140,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 {extra_head}
 </head>
 <body>
-{NAV.format(news_cur=' aria-current="page"' if news_cur else "")}
+{nav_for(canonical)}
 <section class="ticker" aria-label="Latest scores"><div class="wrap ticker-inner" id="ticker"></div></section>
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
 {body}

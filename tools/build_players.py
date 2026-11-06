@@ -158,17 +158,14 @@ def short_date(iso):
 
 
 def player_card(p, rank=None, size="big"):
-    """Eleven's player card: the association's flag, faded, behind the player's name. No photo."""
-    words = p["name"].split()
-    fam_first = p.get("nat") in FAMILY_FIRST
-    fam, giv = (words[0], " ".join(words[1:])) if fam_first else (words[-1], " ".join(words[:-1]))
+    """Eleven's player card: navy or plum base, the association's flag faded into the top corner, the orange stripe and the full name. No photo."""
     code = components.FLAGS.get((p.get("nat") or "").upper())
     bg = f'<span class="fi fi-{code} pc-flag" aria-hidden="true"></span>' if code else ""
     rk = f'<span class="pc-rank">No. {rank}</span>' if rank else ""
-    first, second = (fam, giv) if fam_first else (giv, fam)
-    return (f'<div class="pcard pcard-{size}" aria-hidden="true">{bg}<span class="pc-shade"></span><span class="pc-mark">Eleven</span>{rk}'
+    g = e(p.get("gender") or "M").lower()
+    return (f'<div class="pcard pcard-{size} pc-{g}" aria-hidden="true">{bg}<span class="pc-mark">Eleven</span>'
             f'<span class="pc-name"><span class="pc-n2">{e(p["name"])}</span></span>'
-            f'<span class="pc-nat">{components.flag(p.get("nat"))}{e(p.get("nat") or "")}</span></div>')
+            f'<span class="pc-foot">{components.flag(p.get("nat"))}<span class="pc-nat">{e(p.get("nat") or "")}</span>{rk}</span></div>')
 
 
 def build(page, site, tag_items, tag_url, hubs, R):
