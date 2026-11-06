@@ -1,7 +1,92 @@
 {
-  "updated": "2026-11-06T08:25:00Z",
+  "updated": "2026-11-06T16:35:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "youth-olympic-games-dakar-2026-lee-seungsoo-bronze",
+      "category": "International",
+      "kind": "Update",
+      "lang": "Korean",
+      "date": "2026-11-06",
+      "published": "2026-11-06T16:35:00Z",
+      "headline": "Youth Olympic Games: Lee Seungsoo wins South Korea's first table tennis medal since 2010",
+      "summary": "South Korea's Lee Seungsoo, 15, beat Hong Kong's Li Ki Ho 4-2 for the men's singles bronze in Dakar, taking the deciding game 15-13.",
+      "score": "4-2",
+      "matches": [
+        {
+          "label": "Men's singles bronze medal match",
+          "event": "Youth Olympic Games, Dakar",
+          "sides": [
+            {
+              "name": "Lee Seungsoo",
+              "nat": "KOR"
+            },
+            {
+              "name": "Li Ki Ho",
+              "nat": "HKG"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              15,
+              13
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Lee Seungsoo won the Youth Olympic men's singles bronze in Dakar on Thursday, South Korea's first table tennis medal at the Games since the inaugural edition in Singapore in 2010.",
+        "The 15-year-old won the first three games against Hong Kong's Li Ki Ho, lost the fourth and then a 17-15 fifth, and took the sixth 15-13. In 2010 Kim Donghyun and Yang Haeun won mixed team silver and Yang won women's singles bronze; South Korea had not won a medal at the two Games since.",
+        "Lee won all his group matches, came through a seven-game match in the last 16, won his quarter-final 4-1, then lost 4-2 in the semi-final to Japan's Ryusei Kawakami, who went on to win the gold. OSEN reported that Lee had won three of their eight previous meetings on the junior circuit. Lee and Heo Yerim reached the mixed doubles quarter-finals, where they lost to Taiwan's Lin Chin-ting and Chen Min-hsin.",
+        "Lee, who won the under-19 boys' singles at WTT Youth Star Contender Gangneung this year, is due to play his first senior event at WTT Contender Istanbul from 10 to 15 November, Sports Kyunghyang reported."
+      ],
+      "sources": [
+        {
+          "name": "Newspim (Korean): Lee Seungsoo wins Youth Olympic bronze",
+          "url": "https://www.newspim.com/news/view/20261106000889"
+        },
+        {
+          "name": "Sports Kyunghyang (Korean): Lee Seungsoo takes men's singles bronze",
+          "url": "https://sports.khan.co.kr/article/202611061627003"
+        },
+        {
+          "name": "Money Today / OSEN (Korean): first Youth Olympic medal in 16 years",
+          "url": "https://www.mt.co.kr/amp/sports/2026/11/06/202611061501772170O"
+        },
+        {
+          "name": "MBC News (Korean): Lee Seungsoo wins bronze in Dakar",
+          "url": "https://imnews.imbc.com/news/2026/sports/article/6863710_36946.html"
+        },
+        {
+          "name": "Chosun Ilbo: Lee Seungsoo's bronze ends 16-year drought",
+          "url": "https://www.chosun.com/english/sports-en/2026/11/06/4YPV4KENVBBDZMTFZSLNRWMK6M/"
+        }
+      ]
+    },
     {
       "id": "wtt-champions-frankfurt-2026-day4-preview",
       "kind": "Preview",
