@@ -122,3 +122,27 @@ Every story gets up to three tags (tournament, players, club or league, country)
 - Tournaments with an event hub use the hub (so `WTT Champions Frankfurt 2026` links to the event page). Other competitions are listed in `COMPETITIONS` in `tools/tags.py`.
 - A tag page with one story is kept out of Google (noindex) until it has two.
 - Rules of thumb: a tournament tag needs the name in the headline or standfirst; a player needs the name in the headline or standfirst, or three mentions in the body; countries and clubs are the lowest priority.
+
+## Player profiles
+
+The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.json`, one file per player; `wtt.json` beside them is written by the match sync, never by hand). Results, recent matches, season records, tour titles, head to heads and the ranking history come from Eleven's match database (`data/matches`, filled every six hours by `.github/workflows/match-sync.yml` from WTT's official results), so they update themselves. The bio file holds what the database can't know:
+
+- `born`, `birthplace`, `height_cm`, `hand`, `grip`, `style`, `coach`
+- `clubs`: `[{"club", "league"?, "from"?, "to"?}]`, the current club last and without `to`
+- `equipment`: `{"blade", "forehand", "backhand", "sponsor", "confirmed": "YYYY-MM-DD", "source": url}`
+- `honours`: medals at the Olympics, World Championships, World Cup, WTT Finals and continental championships and multi-sport games, `{"year", "event": "<Competition>, <discipline>", "result": "Gold|Silver|Bronze"}`
+- `notes`: a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
+- `sources` (every page a fact came from) and `checked` (date)
+
+To add a player (when someone enters the top 10, or later the top 20 and beyond): create the file with `name` exactly as in data/rankings.json, `ittf_id`, `nat`, `gender` (M or W), then research the rest from Wikipedia, the player's federation, club and sponsor pages, citing each. Profile pages, links from the rankings, tag pages and articles appear on the next build.
+
+## Knock-on changes (do these in every run)
+
+A story is never only a story. Before committing, apply what it changes everywhere else on the site, in the same commit:
+
+- **Player profiles**: an injury, withdrawal or comeback → update that player's `notes` (dated, e.g. "Withdrew from WTT Champions Frankfurt in November 2026 with a back injury"), and remove notes that no longer apply; a club move → `clubs`; a new sponsor or blade → `equipment` with `confirmed` and `source`; a medal at a major championship → `honours`. Match results need nothing: the match sync adds them.
+- **Event pages**: withdrawals, venue or date changes and champions go into `data/events.json` and the schedule; a finished event Eleven did not cover day by day gets its `story`.
+- **Club pages**: league results and table changes for the manual leagues (see Club leagues).
+- **Tags**: a player or competition the build does not know goes into `data/tag-registry.json`.
+- **Rankings**: if WTT publishes a new ranking, the sync picks it up; mention big moves in the news.
+- **Earlier stories**: correct anything a new story shows to be wrong, adding `modified`.

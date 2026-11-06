@@ -14,6 +14,7 @@ import build_rankings
 import build_guides
 import build_clubs
 import build_tags
+import build_players
 import tags as tagmod
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -169,6 +170,7 @@ def story_list(arts):
     return out
 
 
+PROFILES = {}    # player name -> /players/<slug>.html (data/players/*.json)
 TG = None        # the Tagger (tools/tags.py)
 TAGFULL = {}     # story id or slug -> up to 8 tags, shown at the foot of the article
 TAGMAP = {}      # story id or slug -> its 2 or 3 display tag slugs
@@ -371,12 +373,16 @@ def autolink(blocks, a):
     """Internal links for SEO: the first mention in a story of each event page (by name, name and year, or host
     city) and of the world rankings becomes a link. Text already inside a link, headings and quotes stay as they are."""
     targets = []
+    cities = {}
+    for h in HUBS.values():
+        cities[h.get("city")] = cities.get(h.get("city"), 0) + 1
     for h in HUBS.values():
         if not h.get("start"):
             continue
-        names = [f'{h["name"]} {h["year"]}', h["name"]] + ([h["city"]] if h.get("city") else [])
+        names = [f'{h["name"]} {h["year"]}', h["name"]] + ([h["city"]] if h.get("city") and cities[h["city"]] == 1 else [])
         targets.append((f'/events/{h["id"]}.html', names))
     targets.append(("/rankings.html", ["world rankings", "world ranking", "world number one", "world No 1"]))
+    targets += [(u, [n]) for n, u in PROFILES.items()]
     done, out, inlink = set(), [], False
     for b in blocks:
         if not b.startswith(("<p>", "<ul")):
@@ -608,7 +614,11 @@ def main():
     global STORIES
     arts = load_articles()
     STORIES = story_list(arts)
-    global TG, TAGMAP, TAG_ITEMS, TAGFULL
+    global TG, TAGMAP, TAG_ITEMS, TAGFULL, PROFILES
+    for f in glob.glob(os.path.join(ROOT, "data", "players", "*.json")):
+        if not f.endswith("wtt.json"):
+            pp = json.load(open(f, encoding="utf-8"))
+            PROFILES[pp["name"]] = f"/players/{os.path.splitext(os.path.basename(f))[0]}.html"
     TG, TAGMAP, TAG_ITEMS, TAGFULL = make_tags(arts)
     json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v] for k, v in TAGMAP.items() if v},
               open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)
@@ -725,6 +735,8 @@ def main():
     club_stories.sort(key=lambda i: i["published"], reverse=True)
     urls += build_clubs.build(page, SITE, club_stories)
     urls += build_tags.build(page, SITE, TG, TAG_ITEMS, build_rankings.load(), HUBS)
+    purls, _ = build_players.build(page, SITE, TAG_ITEMS, lambda slug: f"/tag/{slug}.html", HUBS, build_rankings.load())
+    urls += purls
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
@@ -746,6 +758,7 @@ def tag_links():
     """Player and country tags that have stories, for the rankings page."""
     have = {s for it in TAG_ITEMS for s in it["all"]}
     pl = {t["name"]: build_tags.url(TG, s) for s, t in TG.tags.items() if t["type"] == "player" and s in have}
+    pl.update(PROFILES)
     co = {t["code"]: build_tags.url(TG, s) for s, t in TG.tags.items() if t["type"] == "country" and s in have}
     return {"p": pl, "c": co}
 
@@ -890,7 +903,7 @@ def clean_url(text):
 
 def clean_urls():
     files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "calendar.ics")]
-    for d in ("news", "events", "features", "guide", "tag"):
+    for d in ("news", "events", "features", "guide", "tag", "players"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
     files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json", "tags.json")]
     for f in files:

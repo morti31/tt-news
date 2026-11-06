@@ -63,6 +63,9 @@ def header(tg, t, R, hubs, entries, taglinks):
             if p:
                 bits.append(f"World No. {p['rank']} in the {label} singles rankings, {p['points']:,} points")
         meta = bits or ["Outside the world top 100"]
+        prof = os.path.join(ROOT, "data", "players", t["slug"] + ".json")
+        if os.path.exists(prof):
+            links.insert(0, (f"/players/{t['slug']}.html", "Full profile"))
         links.append(("/rankings.html", "World rankings"))
     elif t["type"] == "country":
         code = t.get("code")
