@@ -106,6 +106,12 @@ The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.
 - By hand (`"auto": false`): `proa-men`, `proa-women` (FFTT and the clubs' sites), `cttsl-men`, `cttsl-women` (CTTA, Xinhua, Sina, Tencent), `cl-men`, `cl-women` (ETTU), `utt` (Ultimate Table Tennis). In every run where a league in season has played, update its file from the official source or two reliable reports: `status`, `updated`, the table and new results (`score: [home, away]`, `status: "finished"`), and the next fixtures. Use `"when": null` with a `round` when the date isn't known, and `"date_only": true` when only the day is. Never guess a score, date or table position. Same format as the automatic files (see the docstring in `tools/club_sync.py`).
 - News: club stories appear on their league page when the headline or summary names the league. Add `"league": "<slug>"` (`bundesliga`, `super-league`, `t-league`, `pro-a`, `champions-league`, `mltt`, `utt`) to any club story that doesn't, and write club news as before (category Clubs, equal weight to men's and women's leagues).
 
+## Past events and full draws
+
+- The WTT sync saves every draw WTT has for an event on now (singles, doubles, mixed and team), and the event page shows them as tabs in the draw and as filters in Matches. By hand: `python3 tools/fetch_draw.py <wtt id> "<name>" <utc offset> --all`.
+- When an event finishes, its page shows the Champions from the draw. For events not on WTT (continental championships, the Asian Games), add `champions` to the hub in `data/events.json`: `[{"event": "Men's singles", "champion": {"name", "nat"}, "runner_up": {"name", "nat"}, "score": "4-1", "games": "11-5, ..."}]`, leaving out what isn't known.
+- Every finished event Eleven did not cover day by day gets a `story` on its hub: three or four paragraphs, "How it was won", in STYLE.md style, covering both draws, the finals, upsets of top seeds and the storylines. Facts come from the draw file or checked sources.
+
 ## Tags
 
 Every story gets up to three tags (tournament, players, club or league, country) automatically at build time, old and new alike. The tags show under the headline on cards and articles and link to /tag/<name>, a page with every story on that tag, a short header and links onward. Rankings link every player and country that has stories to its tag page.

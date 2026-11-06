@@ -36,9 +36,19 @@ def _round(label):
     return ROUNDS.get(s, s)
 
 
+ORDER = ["women's singles", "men's singles", "women's doubles", "men's doubles", "mixed doubles", "women's team", "men's team", "mixed team"]
+
+
 def _gender(label):
-    l = label.lower()
-    return "w" if "women" in l else "x" if "mixed" in l else "m" if "men" in l else "o"
+    """Filter key for a match's event: w, m (singles, as before), or the event name for doubles and teams."""
+    l = label.lower().strip()
+    if l in ("women's singles", "women"):
+        return "w"
+    if l in ("men's singles", "men"):
+        return "m"
+    if not l:
+        return "o"
+    return re.sub(r"[^a-z]+", "-", l).strip("-")
 
 
 def _uk(iso):
@@ -83,6 +93,8 @@ def rows(ev, schedule):
         path = os.path.join(ROOT, "data", "draws", f'{ev["draw"]}.json')
         draw = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else None
     people = _people(draw)
+    if ev.get("end") and ev["end"] < dt.date.today().isoformat():   # a finished event: today's world ranks would mislead
+        people = {k: {x: y for x, y in v.items() if x != "rank"} for k, v in people.items()}
     sid = ev.get("schedule_id")
     fx = [f for f in schedule.get("fixtures", []) if sid and f.get("event_id") == sid]
     sessions = [f for f in fx if not f["id"].startswith("wtt-") and " v " not in f["name"]]
@@ -197,12 +209,16 @@ def section(ev, schedule, today_iso=None):
         note = "" if by_day[d] else '<p class="mc-empty">The matches for this day appear here once WTT publishes the order of play, usually the evening before.</p>'
         panels.append(f'<div class="mc-day" role="tabpanel" data-day="{d.isoformat()}"{"" if d == pick else " hidden"}><ol class="mc-list">{"".join(items)}</ol>{note}</div>')
 
-    genders = {_gender(r["event"]) for r in matches} - {"o"}
-    names = {"w": "Women's singles", "m": "Men's singles", "x": "Mixed"}
+    names = {}
+    for r in matches:
+        g = _gender(r["event"])
+        if g != "o":
+            names.setdefault(g, r["event"][:1].upper() + r["event"][1:].lower())
+    keys = sorted(names, key=lambda g: ORDER.index(names[g].lower()) if names[g].lower() in ORDER else 99)
     filt = ""
-    if len(genders) > 1:
+    if len(keys) > 1:
         filt = '<div class="toggle mc-filter" role="group" aria-label="Show">' + '<button type="button" data-g="all" aria-pressed="true">All</button>' + "".join(
-            f'<button type="button" data-g="{g}" aria-pressed="false">{names[g]}</button>' for g in ("w", "m", "x") if g in genders) + "</div>"
+            f'<button type="button" data-g="{g}" aria-pressed="false">{e(names[g])}</button>' for g in keys) + "</div>"
     return f'''<section class="hub-sec mc" id="matches" aria-labelledby="matches-h"{f' data-wtt="{e(str(ev["wtt_id"]))}"' if ev.get("wtt_id") else ""}>
 <div class="mc-head"><h2 class="section-title" id="matches-h">Matches</h2>{filt}</div>
 <div class="mc-tabs" role="tablist" aria-label="Day">{"".join(tabs)}</div>

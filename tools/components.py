@@ -203,6 +203,11 @@ def champions(ref):
         w = m["winner"]
         sc, _, games = m["score"].partition(" ")
         a, b = sc.split("-")
+        gl = [g for g in (x.split(":") for x in games.strip("()").split(",") if ":" in x) if g != ["0", "0"]]
+        if gl and all(sorted(g) == ["0", "11"] for g in gl):   # WTT records a walkover as 11-0 games
+            out.append({"key": key, "event": ev["name"], "champion": m["players"][w], "runner_up": m["players"][1 - w],
+                        "score": "", "games": "", "walkover": True, "when": m.get("when")})
+            continue
         out.append({"key": key, "event": ev["name"], "champion": m["players"][w], "runner_up": m["players"][1 - w],
                     "score": f"{max(a, b)}-{min(a, b)}", "games": ", ".join(f"{g[w]}-{g[1 - w]}" for g in (x.split(":") for x in games.strip("()").split(",") if ":" in x) if g != ["0", "0"]), "when": m.get("when")})
     return out

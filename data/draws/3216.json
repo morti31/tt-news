@@ -1,0 +1,1055 @@
+{
+ "event": "World Team Championships",
+ "wtt_event_id": "3216",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3216&selectedTab=Draws",
+ "updated": "2026-11-06T12:00:00Z",
+ "events": {
+  "wteam": {
+   "name": "Women's team",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Poland",
+         "nat": "POL"
+        }
+       ],
+       "when": "2026-05-04T11:30:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kazakhstan",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Sweden",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2026-05-04T09:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Serbia",
+         "nat": "SRB"
+        },
+        {
+         "name": "Singapore",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2026-05-05T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Canada",
+         "nat": "CAN"
+        },
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-04T18:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 5
+        },
+        {
+         "name": "Switzerland",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2026-05-05T16:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Italy",
+         "nat": "ITA"
+        },
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-05-05T09:00:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Egypt",
+         "nat": "EGY",
+         "seed": 8
+        },
+        {
+         "name": "Slovakia",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-05-05T18:30:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Netherlands",
+         "nat": "NED"
+        },
+        {
+         "name": "Romania",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-04T18:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Malaysia",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-05-04T18:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Austria",
+         "nat": "AUT"
+        },
+        {
+         "name": "North Korea",
+         "nat": "PRK"
+        }
+       ],
+       "when": "2026-05-04T16:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        },
+        {
+         "name": "Wales",
+         "nat": "WAL"
+        }
+       ],
+       "when": "2026-05-04T09:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Puerto Rico",
+         "nat": "PUR"
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2026-05-05T11:30:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "England",
+         "nat": "ENG"
+        },
+        {
+         "name": "Ukraine",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2026-05-04T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "United States",
+         "nat": "USA"
+        },
+        {
+         "name": "India",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-05-05T18:30:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Brazil",
+         "nat": "BRA"
+        },
+        {
+         "name": "Luxembourg",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2026-05-05T16:00:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Croatia",
+         "nat": "CRO"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-05T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Sweden",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2026-05-06T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Singapore",
+         "nat": "SGP"
+        },
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-06T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 5
+        },
+        {
+         "name": "Italy",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-05-06T18:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Egypt",
+         "nat": "EGY",
+         "seed": 8
+        },
+        {
+         "name": "Romania",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-06T16:00:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "North Korea",
+         "nat": "PRK"
+        }
+       ],
+       "when": "2026-05-06T18:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2026-05-06T09:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ukraine",
+         "nat": "UKR"
+        },
+        {
+         "name": "United States",
+         "nat": "USA"
+        }
+       ],
+       "when": "2026-05-06T16:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Luxembourg",
+         "nat": "LUX"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-06T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-07T09:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 5
+        },
+        {
+         "name": "Romania",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-08T16:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-05-07T16:00:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ukraine",
+         "nat": "UKR"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-08T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Romania",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-09T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-09T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-10T10:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mteam": {
+   "name": "Men's team",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sweden",
+         "nat": "SWE",
+         "seed": 3
+        },
+        {
+         "name": "Hungary",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2026-05-05T16:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Italy",
+         "nat": "ITA"
+        },
+        {
+         "name": "Croatia",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2026-05-04T09:00:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Denmark",
+         "nat": "DEN",
+         "seed": 8
+        },
+        {
+         "name": "Canada",
+         "nat": "CAN"
+        }
+       ],
+       "when": "2026-05-04T18:30:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Serbia",
+         "nat": "SRB"
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-05T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Slovenia",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2026-05-05T18:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        },
+        {
+         "name": "North Korea",
+         "nat": "PRK"
+        }
+       ],
+       "when": "2026-05-04T09:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Spain",
+         "nat": "ESP"
+        },
+        {
+         "name": "Kazakhstan",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-04T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Belgium",
+         "nat": "BEL"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-04T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Slovakia",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-05-05T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Austria",
+         "nat": "AUT"
+        },
+        {
+         "name": "India",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-05-05T16:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Romania",
+         "nat": "ROU"
+        },
+        {
+         "name": "Poland",
+         "nat": "POL"
+        }
+       ],
+       "when": "2026-05-04T16:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Australia",
+         "nat": "AUS"
+        },
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        }
+       ],
+       "when": "2026-05-05T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "England",
+         "nat": "ENG"
+        },
+        {
+         "name": "Moldova",
+         "nat": "MDA"
+        }
+       ],
+       "when": "2026-05-04T16:00:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Singapore",
+         "nat": "SGP"
+        },
+        {
+         "name": "Brazil",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-05-05T18:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        },
+        {
+         "name": "Egypt",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2026-05-05T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "United States",
+         "nat": "USA"
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-04T16:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sweden",
+         "nat": "SWE",
+         "seed": 3
+        },
+        {
+         "name": "Croatia",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2026-05-06T16:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Denmark",
+         "nat": "DEN",
+         "seed": 8
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-06T09:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-05-06T16:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kazakhstan",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-06T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Austria",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-05-06T18:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Romania",
+         "nat": "ROU"
+        },
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        }
+       ],
+       "when": "2026-05-06T09:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "England",
+         "nat": "ENG"
+        },
+        {
+         "name": "Brazil",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-05-06T18:30:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-06T11:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sweden",
+         "nat": "SWE",
+         "seed": 3
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-07T18:30:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-07T11:30:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        }
+       ],
+       "when": "2026-05-08T11:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Brazil",
+         "nat": "BRA"
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-08T18:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-09T16:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-09T18:30:00Z",
+       "score": "3-1",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        }
+       ],
+       "when": "2026-05-10T15:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

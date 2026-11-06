@@ -1,128 +1,989 @@
 {
-  "style": "grid",
-  "groups": [
-    "WTT Series",
-    "Majors",
-    "Continental"
-  ],
-  "events": [
+ "style": "grid",
+ "groups": [
+  "WTT Series",
+  "Majors",
+  "Continental"
+ ],
+ "events": [
+  {
+   "id": "wtt-champions-montpellier-2026",
+   "schedule_id": "wtt-champions-montpellier-2026",
+   "name": "WTT Champions Montpellier",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Montpellier",
+   "country": "France",
+   "year": "2026",
+   "start": "2026-10-27",
+   "end": "2026-11-01",
+   "venue": "Sud de France Arena",
+   "events": "Men's and women's singles",
+   "coords": "43.61° N  3.88° E",
+   "draw": "3250",
+   "live": true,
+   "wtt_id": "3250",
+   "utc_offset": 1
+  },
+  {
+   "id": "asian-championships-2026",
+   "name": "Asian Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "Asian Championships",
+   "city": "Tashkent",
+   "country": "Uzbekistan",
+   "year": "2026",
+   "start": "2026-10-19",
+   "end": "2026-10-25",
+   "events": "Teams, singles and doubles",
+   "coords": "41.30° N  69.24° E",
+   "region": "Asia",
+   "champions": [
     {
-      "id": "wtt-champions-montpellier-2026",
-      "schedule_id": "wtt-champions-montpellier-2026",
-      "name": "WTT Champions Montpellier",
-      "group": "WTT Series",
-      "tier": "champions",
-      "series": "WTT Champions",
-      "city": "Montpellier",
-      "country": "France",
-      "year": "2026",
-      "start": "2026-10-27",
-      "end": "2026-11-01",
-      "venue": "Sud de France Arena",
-      "events": "Men's and women's singles",
-      "coords": "43.61° N  3.88° E",
-      "draw": "3250",
-      "live": true,
-      "wtt_id": "3250",
-      "utc_offset": 1
+     "event": "Men's singles",
+     "champion": {
+      "name": "Tomokazu Harimoto",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "Li Tianyang",
+      "nat": "CHN"
+     },
+     "score": "3-2",
+     "games": "1-11, 9-11, 11-7, 11-8, 11-7"
     },
     {
-      "id": "asian-championships-2026",
-      "name": "Asian Championships",
-      "group": "Continental",
-      "tier": "continental",
-      "series": "Asian Championships",
-      "city": "Tashkent",
-      "country": "Uzbekistan",
-      "year": "2026",
-      "start": "2026-10-19",
-      "end": "2026-10-25",
-      "events": "Teams, singles and doubles",
-      "coords": "41.30° N  69.24° E",
-      "region": "Asia"
+     "event": "Women's singles",
+     "champion": {
+      "name": "Chen Yi",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Miwa Harimoto",
+      "nat": "JPN"
+     },
+     "score": "3-0",
+     "games": "11-5, 11-8, 11-6"
     },
     {
-      "id": "americas-championships-2026",
-      "name": "Americas Championships",
-      "group": "Continental",
-      "tier": "continental",
-      "series": "Americas Championships",
-      "city": "Lima",
-      "country": "Peru",
-      "year": "2026",
-      "end": "2026-10-25",
-      "dates_text": "October 2026",
-      "events": "Teams, singles and doubles",
-      "coords": "12.05° S  77.04° W",
-      "region": "Americas"
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Lin Shidong / Huang Youzheng",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Wen Ruibo / Yuan Licen",
+      "nat": "CHN"
+     },
+     "score": "3-1",
+     "games": ""
     },
     {
-      "id": "wtt-champions-frankfurt-2026",
-      "schedule_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt",
-      "group": "WTT Series",
-      "tier": "champions",
-      "series": "WTT Champions",
-      "city": "Frankfurt",
-      "country": "Germany",
-      "venue": "Süwag Energie Arena",
-      "year": "2026",
-      "start": "2026-11-03",
-      "end": "2026-11-08",
-      "events": "Men's and women's singles",
-      "coords": "50.11° N  8.68° E",
-      "live": true,
-      "wtt_id": "3252",
-      "utc_offset": 1,
-      "draw": "3252"
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Kuai Man / Wang Yidi",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Miwa Harimoto / Hina Hayata",
+      "nat": "JPN"
+     },
+     "score": "",
+     "games": ""
     },
     {
-      "id": "wtt-star-contender-muscat-2026",
-      "schedule_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat",
-      "group": "WTT Series",
-      "tier": "star",
-      "series": "WTT Star Contender",
-      "city": "Muscat",
-      "country": "Oman",
-      "year": "2026",
-      "start": "2026-11-16",
-      "end": "2026-11-21",
-      "events": "Singles and doubles",
-      "coords": "23.59° N  58.41° E",
-      "live": true
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Sora Matsushima / Miwa Harimoto",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "Huang Youzheng / Chen Yi",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
     },
     {
-      "id": "mixed-team-world-cup-2026",
-      "schedule_id": "mixed-team-world-cup-2026",
-      "name": "Mixed Team World Cup",
-      "group": "Majors",
-      "tier": "world",
-      "series": "Mixed Team World Cup",
-      "city": "Chengdu",
-      "country": "China",
-      "year": "2026",
-      "start": "2026-11-29",
-      "end": "2026-12-06",
-      "events": "Mixed teams",
-      "coords": "30.66° N  104.07° E",
-      "live": true
+     "event": "Men's team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "South Korea",
+      "nat": "KOR"
+     },
+     "score": "3-0",
+     "games": ""
     },
     {
-      "id": "wtt-finals-hong-kong-2026",
-      "schedule_id": "wtt-finals-hong-kong-2026",
-      "name": "WTT Finals Hong Kong",
-      "group": "WTT Series",
-      "tier": "champions",
-      "series": "WTT Finals",
-      "city": "Hong Kong",
-      "country": "China",
-      "year": "2026",
-      "start": "2026-12-08",
-      "end": "2026-12-13",
-      "events": "The season's leading players",
-      "coords": "22.32° N  114.17° E",
-      "live": true
+     "event": "Women's team",
+     "champion": {
+      "name": "Japan",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "score": "3-2",
+     "games": ""
     }
-  ]
+   ],
+   "story": [
+    "China and Japan shared all seven titles in Tashkent, four to three. Tomokazu Harimoto came from two games down to beat Li Tianyang for the men's singles title, denying China a clean sweep of the men's events.",
+    "Chen Yi beat Miwa Harimoto 3-0 in the women's final, and Japan's women came from 2-1 down to beat China 3-2 in the team final, with Honoka Hashimoto winning the decider. Miwa Harimoto reached three finals and won the mixed doubles with Sora Matsushima.",
+    "China's men beat South Korea 3-0 in the team final. The Koreans, without Lim Jonghoon or Jang Woojin, had knocked out Japan 3-1 in the semi-finals. The championships also decided Asian qualifying places for the 2027 World Championships."
+   ],
+   "venue": null
+  },
+  {
+   "id": "americas-championships-2026",
+   "name": "Americas Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "Americas Championships",
+   "city": "Lima",
+   "country": "Peru",
+   "year": "2026",
+   "end": "2026-10-25",
+   "dates_text": "October 2026",
+   "events": "Teams, singles and doubles",
+   "coords": "12.05° S  77.04° W",
+   "region": "Americas",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Hugo Calderano",
+      "nat": "BRA"
+     },
+     "runner_up": {
+      "name": "Guilherme Teodoro",
+      "nat": "BRA"
+     },
+     "score": "4-1",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Adriana Diaz",
+      "nat": "PUR"
+     },
+     "runner_up": {
+      "name": "Mo Zhang",
+      "nat": "CAN"
+     },
+     "score": "4-2",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Nicolas Burgos / Gustavo Gomez",
+      "nat": "CHI"
+     },
+     "runner_up": {
+      "name": "Medina / Rios",
+      "nat": "VEN"
+     },
+     "score": "3-0",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Giulia Takahashi / Laura Watanabe",
+      "nat": "BRA"
+     },
+     "runner_up": {
+      "name": "Sally Moyland / Lily Zhang",
+      "nat": "USA"
+     },
+     "score": "3-0",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Edward Ly / Mo Zhang",
+      "nat": "CAN"
+     },
+     "runner_up": {
+      "name": "Guilherme Teodoro / Giulia Takahashi",
+      "nat": "BRA"
+     },
+     "score": "3-0",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "United States",
+      "nat": "USA"
+     },
+     "runner_up": {
+      "name": "Puerto Rico",
+      "nat": "PUR"
+     },
+     "score": "3-0",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Hugo Calderano and Adriana Diaz won the singles titles in Lima, where five countries won titles and none won more than two.",
+    "Calderano, the only player from the Americas in the men's world top 10, beat his Brazilian teammate Guilherme Teodoro 4-1 in the final. Diaz beat Canada's Mo Zhang 4-2 for her seventh continental singles title and her third in a row.",
+    "Zhang won the mixed doubles with Edward Ly, Chile's Nicolas Burgos and Gustavo Gomez the men's doubles, and Brazil's Giulia Takahashi and Laura Watanabe the women's doubles. The US women beat Puerto Rico 3-0 in the team final."
+   ],
+   "venue": "Polideportivo 3 de Videna"
+  },
+  {
+   "id": "wtt-champions-frankfurt-2026",
+   "schedule_id": "wtt-champions-frankfurt-2026",
+   "name": "WTT Champions Frankfurt",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Frankfurt",
+   "country": "Germany",
+   "venue": "Süwag Energie Arena",
+   "year": "2026",
+   "start": "2026-11-03",
+   "end": "2026-11-08",
+   "events": "Men's and women's singles",
+   "coords": "50.11° N  8.68° E",
+   "live": true,
+   "wtt_id": "3252",
+   "utc_offset": 1,
+   "draw": "3252"
+  },
+  {
+   "id": "wtt-star-contender-muscat-2026",
+   "schedule_id": "wtt-star-contender-muscat-2026",
+   "name": "WTT Star Contender Muscat",
+   "group": "WTT Series",
+   "tier": "star",
+   "series": "WTT Star Contender",
+   "city": "Muscat",
+   "country": "Oman",
+   "year": "2026",
+   "start": "2026-11-16",
+   "end": "2026-11-21",
+   "events": "Singles and doubles",
+   "coords": "23.59° N  58.41° E",
+   "live": true
+  },
+  {
+   "id": "mixed-team-world-cup-2026",
+   "schedule_id": "mixed-team-world-cup-2026",
+   "name": "Mixed Team World Cup",
+   "group": "Majors",
+   "tier": "world",
+   "series": "Mixed Team World Cup",
+   "city": "Chengdu",
+   "country": "China",
+   "year": "2026",
+   "start": "2026-11-29",
+   "end": "2026-12-06",
+   "events": "Mixed teams",
+   "coords": "30.66° N  104.07° E",
+   "live": true
+  },
+  {
+   "id": "wtt-finals-hong-kong-2026",
+   "schedule_id": "wtt-finals-hong-kong-2026",
+   "name": "WTT Finals Hong Kong",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Finals",
+   "city": "Hong Kong",
+   "country": "China",
+   "year": "2026",
+   "start": "2026-12-08",
+   "end": "2026-12-13",
+   "events": "The season's leading players",
+   "coords": "22.32° N  114.17° E",
+   "live": true
+  },
+  {
+   "id": "wtt-champions-doha-2026",
+   "name": "WTT Champions Doha",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Doha",
+   "country": "Qatar",
+   "venue": "Lusail Sports Arena",
+   "start": "2026-01-07",
+   "end": "2026-01-11",
+   "events": "Men's and women's singles",
+   "coords": "25.29° N  51.53° E",
+   "draw": "3231",
+   "wtt_id": "3231",
+   "utc_offset": 3,
+   "story": [
+    "Lin Yun-Ju and Zhu Yuling won the first WTT Champions event of the year in Doha, in a week without Wang Chuqin or Sun Yingsha. Lin, outside the top eight seeds, beat South Korea's Jang Woojin 4-0 in the final, 11-7, 11-9, 11-9, 13-11.",
+    "His route was the harder part. Lin beat Sora Matsushima 4-0 in the quarter-finals and then came from two games down to beat Tomokazu Harimoto 4-3 in the semi-finals. Jang, also unseeded, knocked out Truls Moregard and then the top seed, Lin Shidong, 4-2. The biggest shock came in the first round, where Dimitrij Ovtcharov beat the second seed, Hugo Calderano, 3-2.",
+    "Zhu, the sixth seed, won the women's title for Macao by beating Chen Xingtong 4-2, taking the sixth game 13-11. She beat Wang Yidi in the quarter-finals and Germany's Han Ying in the semi-finals. Han had knocked out the top seed, Wang Manyu, 4-3 a round earlier.",
+    "Zhu stayed in Doha and won the Star Contender event the following week."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-star-contender-doha-2026",
+   "name": "WTT Star Contender Doha",
+   "group": "WTT Series",
+   "tier": "star",
+   "series": "WTT Star Contender",
+   "city": "Doha",
+   "country": "Qatar",
+   "venue": "Lusail Sports Arena",
+   "start": "2026-01-13",
+   "end": "2026-01-18",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "25.29° N  51.53° E",
+   "draw": "3232",
+   "wtt_id": "3232",
+   "utc_offset": 3,
+   "story": [
+    "Zhu Yuling completed a Doha double a week after winning WTT Champions Doha, and Zhou Qihao won the men's title without being seeded. Zhu, the second seed, lost the first two games of the final to Japan's Hitomi Sato and then won four in a row, 11-7, 11-6, 11-6, 11-5.",
+    "Sato had the week of her career to that point. Unseeded, she beat the top seed, Kuai Man, 3-0 in the last 16 and reached the final without dropping a game in her quarter-final or semi-final.",
+    "The men's draw fell apart around Zhou. Ovtcharov beat the top seed, Lin Shidong, in the last 16, and China's Xue Fei knocked out the third seed, Tomokazu Harimoto. Zhou beat the fourth seed, Liang Jingkun, in the first round, then Ovtcharov 3-2 in the semi-finals and Wen Ruibo 4-2 in the final. Wen had beaten Hugo Calderano, the second seed, 3-2 in the semi-finals.",
+    "Japan's Sakura Yokoi and Satsuki Odo won the women's doubles, South Korea's Jang Woojin and Cho Daeseong beat Huang Youzheng and Wen 3-2 in the men's doubles, and Hong Kong's Wong Chun Ting and Doo Hoi Kem won the mixed."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-star-contender-chennai-2026",
+   "name": "WTT Star Contender Chennai",
+   "group": "WTT Series",
+   "tier": "star",
+   "series": "WTT Star Contender",
+   "city": "Chennai",
+   "country": "India",
+   "venue": "Tamil Nadu Physical Education and Sports University",
+   "start": "2026-02-10",
+   "end": "2026-02-15",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "13.08° N  80.27° E",
+   "draw": "3233",
+   "wtt_id": "3233",
+   "utc_offset": 5.5,
+   "story": [
+    "The Czech Republic's Lubomir Jancarik won the biggest title of his career in Chennai, and Satsuki Odo won the women's event as top seed without dropping a game in the final.",
+    "Jancarik was unseeded and beat the fourth seed, India's Manav Thakkar, in the first round. He beat Sathiyan Gnanasekaran in the quarter-finals and South Korea's Park Ganghyeon 3-2 in the semi-finals, and then France's Thibault Poret 4-2 in the final. Poret had reached the final after a walkover from the top seed, Oh Junsung, and a 3-0 win over his teammate Flavien Coton. Ovtcharov, the second seed, lost to Park in the quarter-finals.",
+    "Odo beat Japan's Miu Hirano 4-0 in the final, 11-2, 11-7, 13-11, 11-5. Hirano had knocked out the second seed, Miyu Nagasaki, 3-2 in the last 16.",
+    "India's Harmeet Desai and Yashaswini Ghorpade reached the mixed doubles final in front of a home crowd and lost 3-0 to Romania's Eduard Ionescu and Bernadette Szőcs. Coton and Poret won the men's doubles after another walkover from Oh and Lim Jonghoon, and Japan's Sakura Yokoi and Sachi Aoki won the women's doubles."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "singapore-smash-2026",
+   "name": "Singapore Smash",
+   "group": "WTT Series",
+   "tier": "smash",
+   "series": "WTT Grand Smash",
+   "city": "Singapore",
+   "country": "Singapore",
+   "venue": "The Kallang",
+   "start": "2026-02-19",
+   "end": "2026-03-01",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "1.30° N  103.87° E",
+   "draw": "3234",
+   "wtt_id": "3234",
+   "utc_offset": 8,
+   "story": [
+    "Wang Chuqin and Sun Yingsha, the top seeds, won the first Grand Smash of the year. Sun beat Wang Manyu 4-2 in an all-Chinese women's final, winning the fifth game 12-10 and the sixth 11-9 after Wang had levelled at 2-2. It was her third Singapore Smash title.",
+    "Wang Chuqin beat Taiwan's Lin Yun-Ju 4-0 in the men's final, 11-3, 11-8, 11-8, 11-9, after a 4-1 win over Félix Lebrun in the semi-finals. Lebrun had knocked out the third seed, Lin Shidong, in the quarter-finals. Two of the top four seeds went out in the last 16: Hugo Calderano lost to China's Chen Yuanyu, and Tomokazu Harimoto to Germany's Patrick Franziska.",
+    "Germany's Sabine Winter was the surprise of the women's draw. Unseeded, she beat the fourth seed, Zhu Yuling, and the seventh, Wang Yidi, to reach the semi-finals, where she lost to Wang Manyu.",
+    "Félix and Alexis Lebrun won their first Grand Smash doubles title, beating Lin Shidong and Huang Youzheng 3-0. Miwa Harimoto and Hina Hayata won the women's doubles, and Brazil's Hugo Calderano and Bruna Takahashi beat the top seeds, Lim Jonghoon and Shin Yubin, 3-0 for the mixed title."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-champions-chongqing-2026",
+   "name": "WTT Champions Chongqing",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Chongqing",
+   "country": "China",
+   "start": "2026-03-10",
+   "end": "2026-03-15",
+   "events": "Men's and women's singles",
+   "coords": "29.56° N  106.55° E",
+   "draw": "3235",
+   "wtt_id": "3235",
+   "utc_offset": 8,
+   "story": [
+    "Félix Lebrun and Miwa Harimoto won in Chongqing, where all four of the top women's seeds were out by the end of the quarter-finals and the men's top seed, Wang Chuqin, lost in the last eight.",
+    "Harimoto, the eighth seed, beat Kuai Man 4-3 in the final, winning the deciding game 11-5. Kuai had knocked out the top seed, Sun Yingsha, 4-2 in the quarter-finals. Wang Manyu, the second seed, lost 3-0 to Japan's Satsuki Odo in the first round, and Chen Xingtong and Zhu Yuling also fell early.",
+    "Lebrun, the fifth seed, beat Hugo Calderano 4-3 in the quarter-finals and Sora Matsushima 4-3 in the semi-finals. Matsushima had beaten Wang Chuqin 4-2. In the final Lebrun beat China's Wen Ruibo 4-1, 11-5, 11-8, 9-11, 11-7, 13-11.",
+    "Wen, unseeded, had the run of the week. He beat the second seed, Truls Moregard, in the last 16, Germany's Dang Qiu in the quarter-finals and Tomokazu Harimoto 4-2 in the semi-finals, winning the sixth game 21-19."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "world-cup-macao-2026",
+   "name": "World Cup Macao",
+   "group": "Majors",
+   "tier": "world",
+   "series": "ITTF World Cup",
+   "city": "Macao",
+   "country": "China",
+   "venue": "Galaxy Arena",
+   "start": "2026-03-30",
+   "end": "2026-04-05",
+   "events": "Men's and women's singles",
+   "coords": "22.15° N  113.56° E",
+   "draw": "3379",
+   "wtt_id": "3379",
+   "utc_offset": 8,
+   "story": [
+    "Wang Chuqin and Sun Yingsha won the World Cup in Macao. The event opened with groups, and the winners went into a 16-player knockout draw.",
+    "Wang came closest to losing. Darko Jorgic led him 3-1 in the quarter-finals before Wang won the last three games, and in the final Japan's Sora Matsushima led 3-2. Wang took the last two games 11-4, 11-8 to win 4-3, after a second game he won 18-16. Matsushima, the seventh seed, had beaten Truls Moregard 4-0 and Lin Yun-Ju 4-3 on the way.",
+    "Sun beat Wang Manyu 4-1 in an all-Chinese women's final, 11-9, 11-8, 13-11, 8-11, 11-7. Her hardest match was in the quarter-finals, where Egypt's Hana Goda took her to 13-11 in the seventh game. Sabine Winter, unseeded, beat Wang Yidi 4-0 to reach the semi-finals, where Sun beat her by the same score."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "world-team-championships-2026",
+   "name": "World Team Championships",
+   "group": "Majors",
+   "tier": "world",
+   "series": "World Team Championships",
+   "city": "London",
+   "country": "England",
+   "venue": "OVO Arena Wembley",
+   "start": "2026-04-28",
+   "end": "2026-05-10",
+   "events": "Men's and women's teams",
+   "coords": "51.56° N  0.28° W",
+   "draw": "3216",
+   "wtt_id": "3216",
+   "utc_offset": 1,
+   "story": [
+    "China won both team titles at the centenary World Championships in London, 100 years after the first world championships were held in the city. The group stage was played at the Copper Box Arena and OVO Arena Wembley, and the knockout rounds at Wembley.",
+    "China's men beat Japan 3-0 in the final for their 12th men's title in a row. Japan reached the final by beating Germany 3-1 and Chinese Taipei 3-0, while China beat South Korea 3-0 and France 3-1. Chinese Taipei and France took bronze.",
+    "The women's final was closer. China beat Japan 3-2, after Japan had beaten Ukraine and Germany 3-0. China beat South Korea and Romania without losing a match. Romania, who beat France 3-1 in the quarter-finals, and Germany took bronze."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-star-contender-ljubljana-2026",
+   "name": "WTT Star Contender Ljubljana",
+   "group": "WTT Series",
+   "tier": "star",
+   "series": "WTT Star Contender",
+   "city": "Ljubljana",
+   "country": "Slovenia",
+   "venue": "Hala Tivoli",
+   "start": "2026-06-16",
+   "end": "2026-06-21",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "46.06° N  14.51° E",
+   "draw": "3241",
+   "wtt_id": "3241",
+   "utc_offset": 2,
+   "story": [
+    "Japan won four of the five titles in Ljubljana. Shunsuke Togami, unseeded, won the men's singles and doubles, and Hina Hayata won the women's singles and doubles.",
+    "The top two men's seeds went out early: Félix Lebrun lost to Hiroto Shinozuka in the last 16, and Lin Shidong to Yukiya Uda in the first round. Togami beat Germany's Dang Qiu 3-2 in the semi-finals and then Hugo Calderano 4-3 in the final, winning the seventh game 11-7.",
+    "Hayata, the eighth seed, beat her doubles partner and the top seed, Miwa Harimoto, 3-0 in the semi-finals. In the final she beat Macao's Zhu Yuling 4-3, 11-9 in the seventh game.",
+    "Togami and Shinozuka beat Wen Ruibo and Huang Youzheng 3-2 for the men's doubles, Harimoto and Hayata beat their teammates Satsuki Odo and Sakura Yokoi for the women's, and South Korea's Lim Jonghoon and Shin Yubin beat Germany's Dang Qiu and Sabine Winter in the mixed."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "united-states-smash-2026",
+   "name": "United States Smash",
+   "group": "WTT Series",
+   "tier": "smash",
+   "series": "WTT Grand Smash",
+   "city": "Los Angeles",
+   "country": "United States",
+   "venue": "Ontario Convention Center",
+   "start": "2026-06-26",
+   "end": "2026-07-05",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "34.06° N  117.60° W",
+   "draw": "3242",
+   "wtt_id": "3242",
+   "utc_offset": -7,
+   "story": [
+    "Sora Matsushima won the United States Smash, held at the Ontario Convention Center outside Los Angeles, and Sun Yingsha won the women's event.",
+    "The men's top two seeds went out in the last 16. Denmark's Anders Lind beat Wang Chuqin 3-1, and Vladimir Sidorenko, a neutral athlete, beat Tomokazu Harimoto 3-0. Sidorenko then beat the third seed, Truls Moregard, 4-3 in the semi-finals. Matsushima, the sixth seed, beat Félix Lebrun 4-1 and then Sidorenko 4-2 in the final.",
+    "Sun beat Kuai Man 4-3 in the women's final, winning the seventh game 11-4 after Kuai had come back from 3-1 down. The second seed, Wang Manyu, lost 3-0 to Japan's Hitomi Sato in the first round, and Kuai beat Miwa Harimoto 4-3 in the semi-finals.",
+    "Wang Manyu and Kuai won the women's doubles, Wen Ruibo and Yuan Licen beat the top seeds, Lin Shidong and Huang Youzheng, 3-2 in the men's, and Lim Jonghoon and Shin Yubin beat Wang Chuqin and Sun 3-2 in the mixed."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-star-contender-sao-jose-dos-campos-2026",
+   "name": "WTT Star Contender São José dos Campos",
+   "group": "WTT Series",
+   "tier": "star",
+   "series": "WTT Star Contender",
+   "city": "São José dos Campos",
+   "country": "Brazil",
+   "venue": "Vale Sul Shopping",
+   "start": "2026-07-21",
+   "end": "2026-07-26",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "23.18° S  45.88° W",
+   "draw": "3244",
+   "wtt_id": "3244",
+   "utc_offset": -3,
+   "story": [
+    "Hugo Calderano won at home in Brazil, beating Alexis Lebrun 4-3 in the final with an 11-9 seventh game. The top seed needed five games in the semi-finals against Japan's Yukiya Uda, where he won the fourth game 21-19 to level the match.",
+    "Hina Hayata won the women's singles as top seed, beating her compatriot Hitomi Sato 4-2 in the final, and added the women's doubles with Kaho Akae.",
+    "Calderano and Bruna Takahashi, the top seeds, lost the mixed doubles final 3-1 to Japan's Shunsuke Togami and Satsuki Odo. Hong Kong's Wong Chun Ting and Chan Baldwin won the men's doubles, beating France's Joe Seyfried and Vincent Picard 3-2."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-champions-yokohama-2026",
+   "name": "WTT Champions Yokohama",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Yokohama",
+   "country": "Japan",
+   "venue": "Yokohama BUNTAI",
+   "start": "2026-08-04",
+   "end": "2026-08-09",
+   "events": "Men's and women's singles",
+   "coords": "35.44° N  139.64° E",
+   "draw": "3245",
+   "wtt_id": "3245",
+   "utc_offset": 9,
+   "story": [
+    "Tomokazu and Miwa Harimoto, brother and sister, won both titles at Japan's home Champions event.",
+    "Miwa, the top seed, beat Chen Xingtong 4-2 in the final, 13-11, 11-7, 9-11, 11-9, 1-11, 11-7, after a 4-2 win over Wang Yidi in the semi-finals.",
+    "Tomokazu, the third seed, beat the top seed and his teammate Sora Matsushima 4-2 in the semi-finals. In the final he beat South Korea's Oh Junsung 4-1. Oh, unseeded, had beaten Hiroto Shinozuka 4-1 in the other semi-final. Lim Jonghoon knocked out the fourth seed, Lin Yun-Ju, in the first round."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "europe-smash-2026",
+   "name": "Europe Smash",
+   "group": "WTT Series",
+   "tier": "smash",
+   "series": "WTT Grand Smash",
+   "city": "Malmö",
+   "country": "Sweden",
+   "venue": "Malmö Arena",
+   "start": "2026-08-08",
+   "end": "2026-08-16",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "55.60° N  13.00° E",
+   "draw": "3246",
+   "wtt_id": "3246",
+   "utc_offset": 2,
+   "story": [
+    "Félix Lebrun and Wang Manyu won the Europe Smash in Malmö, and the Lebrun brothers added the men's doubles.",
+    "Sweden's Truls Moregard, the top seed, lost his first match at home, 3-0 to Germany's Dimitrij Ovtcharov. Lebrun, the third seed, beat Darko Jorgic 4-0 in the semi-finals and Tomokazu Harimoto 4-1 in the final, 11-5, 11-8, 5-11, 11-9, 11-9. Harimoto had beaten Sora Matsushima 4-3 in the other semi-final.",
+    "Wang Manyu, the top seed, beat her teammate Wang Yidi 4-2 in the women's final. Wang Yidi had knocked out the second seed, Miwa Harimoto, 4-2 in the semi-finals.",
+    "Félix and Alexis Lebrun beat Hong Kong's Wong Chun Ting and Chan Baldwin 3-0 in the men's doubles final. Miwa Harimoto and Hina Hayata won the women's doubles, and Lin Shidong and Kuai Man the mixed."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-champions-macao-2026",
+   "name": "WTT Champions Macao",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Macao",
+   "country": "China",
+   "venue": "Macao East Asian Games Dome",
+   "start": "2026-09-08",
+   "end": "2026-09-13",
+   "events": "Men's and women's singles",
+   "coords": "22.16° N  113.56° E",
+   "draw": "3248",
+   "wtt_id": "3248",
+   "utc_offset": 8,
+   "story": [
+    "Truls Moregard and Miwa Harimoto won WTT Champions Macao. Moregard, the third seed, beat Hugo Calderano 4-1 in the final after saving his semi-final against Tomokazu Harimoto, which he won 16-14 in the seventh game.",
+    "Miwa Harimoto, the top seed, led China's Chen Yi 2-0 in the final, trailed 3-2 and won the last two games, the seventh 12-10. Chen, the eighth seed, had beaten Hina Hayata 4-3 in the semi-finals.",
+    "Two of the top three women's seeds lost their first match. Egypt's Dina Meshref beat the third seed, Wang Yidi, 3-1, and Germany's Han Ying beat the second seed, Kuai Man, 3-2. France's Flavien Coton knocked out the men's fourth seed, Lin Yun-Ju."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "wtt-star-contender-astana-2026",
+   "name": "WTT Star Contender Astana",
+   "group": "WTT Series",
+   "tier": "star",
+   "series": "WTT Star Contender",
+   "city": "Astana",
+   "country": "Kazakhstan",
+   "venue": "Martial Arts Palace",
+   "start": "2026-09-15",
+   "end": "2026-09-20",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "51.17° N  71.45° E",
+   "draw": "3254",
+   "wtt_id": "3254",
+   "utc_offset": 5,
+   "story": [
+    "Japan's Miyuu Kihara won the women's singles in Astana without being seeded, and Germany's Dang Qiu beat the top seed, Alexis Lebrun, in the men's final.",
+    "Kihara beat the second seed, Satsuki Odo, 3-2 in the semi-finals and Hitomi Sato 4-3 in the final, 11-8 in the seventh game. She also won the women's doubles with Miu Hirano and reached the mixed doubles final with Hiromu Kobayashi.",
+    "Dang, the second seed, lost the first game of the final and then won four of the next five against Lebrun, 4-2. China's Li Tianyang, unseeded, knocked out the third seed, Darko Jorgic, and reached the semi-finals.",
+    "Romania's Eduard Ionescu and Darius Movileanu won the men's doubles, and China's Chen Junsong and Wang Yidi the mixed."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "china-smash-2026",
+   "name": "China Smash",
+   "group": "WTT Series",
+   "tier": "smash",
+   "series": "WTT Grand Smash",
+   "city": "Beijing",
+   "country": "China",
+   "venue": "Shougang Park",
+   "start": "2026-10-01",
+   "end": "2026-10-11",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "39.91° N  116.16° E",
+   "draw": "3249",
+   "wtt_id": "3249",
+   "utc_offset": 8,
+   "story": [
+    "Sora Matsushima and Wang Manyu won the China Smash in Beijing, which started without Wang Chuqin and Lin Shidong. Both men withdrew injured two days after the Asian Games men's singles final.",
+    "Matsushima, the second seed, led Taiwan's Lin Yun-Ju 2-0 in the final, trailed 3-2 and won the last two games, the seventh 11-9. Lin had beaten Hugo Calderano 4-3 in the semi-finals, and China's Zhou Qihao knocked out the third seed, Tomokazu Harimoto, 3-0 in the last 16.",
+    "Sun Yingsha, the second seed, lost her first match, 3-1 to Thailand's Orawan Paranang. Wang Manyu, the top seed, beat Japan's Hitomi Sato 4-0 in the final. Sato, unseeded, had beaten Chen Xingtong 4-1 in the semi-finals.",
+    "Wang Manyu and Kuai Man won the women's doubles against Miwa Harimoto and Hina Hayata. South Korea's Lim Jonghoon won two titles: the men's doubles with Oh Junsung, beating the Lebrun brothers 3-1, and the mixed with Shin Yubin."
+   ],
+   "year": "2026",
+   "live": true
+  },
+  {
+   "id": "asian-games-2026",
+   "name": "Asian Games",
+   "group": "Majors",
+   "tier": "continental",
+   "region": "Asia",
+   "series": "Asian Games",
+   "city": "Aichi-Nagoya",
+   "country": "Japan",
+   "venue": "Sky Hall Toyota",
+   "start": "2026-09-20",
+   "end": "2026-09-28",
+   "events": "Teams, singles and doubles",
+   "coords": "35.08° N  137.16° E",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Lin Shidong",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Wang Chuqin",
+      "nat": "CHN"
+     },
+     "score": "4-0",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Wang Manyu",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Sun Yingsha",
+      "nat": "CHN"
+     },
+     "score": "4-2",
+     "games": "11-8, 11-9, 11-13, 11-9, 4-11, 15-13"
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Huang Youzheng / Lin Shidong",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Tomokazu Harimoto / Hiroto Shinozuka",
+      "nat": "JPN"
+     },
+     "score": "4-2",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Wang Manyu / Kuai Man",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Miwa Harimoto / Hina Hayata",
+      "nat": "JPN"
+     },
+     "score": "4-0",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Lin Shidong / Kuai Man",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Wang Chuqin / Sun Yingsha",
+      "nat": "CHN"
+     },
+     "score": "4-0",
+     "games": ""
+    },
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "Japan",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "score": "3-2",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Japan",
+      "nat": "JPN"
+     },
+     "score": "3-0",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Japan's men ended China's 32-year hold on the Asian Games team title, and Lin Shidong won three gold medals at Sky Hall Toyota.",
+    "Japan beat China 3-2 in the men's team final. Wang Chuqin beat Sora Matsushima in the opening match and Tomokazu Harimoto beat Wang 3-0 to level at 2-2, before Matsushima beat Wen Ruibo 3-2 in the decider. China had won the event at every Games since 1994.",
+    "Lin won the mixed doubles with Kuai Man, beating Wang Chuqin and Sun Yingsha 4-0, the men's doubles with Huang Youzheng against Harimoto and Hiroto Shinozuka, and the men's singles against Wang Chuqin on the last day. Two days later both Lin and Wang withdrew injured from the China Smash.",
+    "Wang Manyu won the women's singles, beating Sun 4-2 and taking the sixth game 15-13, eight years after her first Asian Games singles title in 2018. She also won the women's doubles with Kuai, and China beat Japan 3-0 in the women's team final."
+   ],
+   "year": "2026"
+  },
+  {
+   "id": "european-championships-2026",
+   "name": "European Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "region": "Europe",
+   "series": "European Championships",
+   "city": "Ljubljana",
+   "country": "Slovenia",
+   "venue": "Arena Stožice",
+   "start": "2026-10-11",
+   "end": "2026-10-18",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "46.08° N  14.52° E",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Félix Lebrun",
+      "nat": "FRA"
+     },
+     "runner_up": {
+      "name": "Anton Källberg",
+      "nat": "SWE"
+     },
+     "score": "4-3",
+     "games": "7-11, 11-9, 13-11, 8-11, 9-11, 11-6, 11-1"
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Elizabet Abraamian",
+      "nat": "RUS"
+     },
+     "runner_up": {
+      "name": "Annett Kaufmann",
+      "nat": "GER"
+     },
+     "score": "4-3",
+     "games": "15-13, 11-5, 5-11, 9-11, 12-10, 6-11, 11-6"
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Félix Lebrun / Alexis Lebrun",
+      "nat": "FRA"
+     },
+     "runner_up": {
+      "name": "Kristian Karlsson / Anton Källberg",
+      "nat": "SWE"
+     },
+     "score": "3-2",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Tatiana Kukulkova / Natalia Bajor",
+      "nat": "SVK"
+     },
+     "runner_up": {
+      "name": "Zuzanna Wielgos / Anna Brzyska",
+      "nat": "POL"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Benedikt Duda / Nina Mittelham",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Alexis Lebrun / Charlotte Lutz",
+      "nat": "FRA"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Félix Lebrun won the European men's singles title in Ljubljana, two years after his brother Alexis won it in Linz, and Elizabet Abraamian became the first qualifier to win the women's title.",
+    "Lebrun, the top seed, trailed Sweden's Anton Källberg 3-2 in the final and won the last two games 11-6, 11-1. \"I played the best game of my life in the last one,\" he told the ETTU. A day earlier the Lebrun brothers had kept their men's doubles title, beating Källberg and Kristian Karlsson 3-2. France's Léo de Nodrest, seeded 67th, became the first men's qualifier to reach the semi-finals since qualification groups began in 2012.",
+    "Abraamian, seeded 35th, beat Germany's Annett Kaufmann 4-3 in the last match of the championships. Kaufmann led 10-8 in the fifth game, but Abraamian won it 12-10 and took the seventh 11-6. Both had already played a seven-game semi-final that day. France's Prithika Pavade, who knocked out the top seed, Sabine Winter, took bronze with Nina Mittelham.",
+    "Germany's Benedikt Duda and Mittelham won the mixed doubles, and Slovakia's Tatiana Kukulkova and Poland's Natalia Bajor the women's doubles. France topped the medal table with six medals."
+   ],
+   "year": "2026"
+  },
+  {
+   "id": "african-championships-2026",
+   "name": "African Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "region": "Africa",
+   "series": "African Championships",
+   "city": "Tangier",
+   "country": "Morocco",
+   "start": "2026-10-18",
+   "end": "2026-10-25",
+   "events": "Teams, singles and doubles",
+   "coords": "35.76° N  5.83° W",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Youssef Abdelaziz",
+      "nat": "EGY"
+     },
+     "runner_up": {
+      "name": "Omar Assar",
+      "nat": "EGY"
+     },
+     "score": "4-1",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Hana Goda",
+      "nat": "EGY"
+     },
+     "runner_up": {
+      "name": "Dina Meshref",
+      "nat": "EGY"
+     },
+     "score": "4-1",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Youssef Abdelaziz / Mohamed El-Beily",
+      "nat": "EGY"
+     },
+     "runner_up": {
+      "name": "",
+      "nat": ""
+     },
+     "score": "",
+     "games": "",
+     "note": "Egypt's third individual title of the week"
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Hana Goda / Dina Meshref",
+      "nat": "EGY"
+     },
+     "runner_up": {
+      "name": "",
+      "nat": ""
+     },
+     "score": "",
+     "games": "",
+     "note": "Goda's second title of the week"
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Youssef Abdelaziz / Mariam Alhodaby",
+      "nat": "EGY"
+     },
+     "runner_up": {
+      "name": "",
+      "nat": ""
+     },
+     "score": "",
+     "games": "",
+     "note": "Abdelaziz's third title of the week"
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "Egypt",
+      "nat": "EGY"
+     },
+     "runner_up": {
+      "name": "Tunisia",
+      "nat": "TUN"
+     },
+     "score": "3-0",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Egypt won every individual title at the African Championships in Tangier. Youssef Abdelaziz beat his teammate Omar Assar 4-1 in the men's singles final and also won the men's and mixed doubles.",
+    "Hana Goda, 18, won her fourth African women's singles title in a row, beating Dina Meshref 4-1, and the pair also won the women's doubles. Egypt took all four medals in the women's singles.",
+    "Egypt's women won the team event without losing a match in the final, beating Tunisia 3-0."
+   ],
+   "year": "2026"
+  }
+ ]
 }

@@ -104,8 +104,7 @@ def main():
             print(f"{ev['id']}: {len(fx)} matches from WTT (UTC{offset:+g})")
         if ev.get("draw"):
             try:
-                draws = {k: {"name": label, "rounds": fetch_draw.convert(fetch_draw.fetch(ev["draw"], code), offset if fx else ev.get("utc_offset", 0))}
-                         for k, (label, code) in fetch_draw.SUBEVENTS.items()}
+                draws = fetch_draw.fetch_all(ev["draw"], offset if fx else ev.get("utc_offset", 0))   # singles, doubles, mixed and teams
                 path = os.path.join(ROOT, "data", "draws", f'{ev["draw"]}.json')
                 old = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
                 if old.get("events") != draws:
