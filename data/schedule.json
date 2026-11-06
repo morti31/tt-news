@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T21:57:00Z",
+  "updated": "2026-11-06T02:22:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -943,12 +943,92 @@
       "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
     },
     {
+      "id": "wtt-3252-ttewsinglesqfnl000300",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Women's Singles, Quarterfinal, Match 3",
+      "start": "2026-11-07T12:00:00Z",
+      "end": "2026-11-07T12:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------QFNL000300--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttemsinglesqfnl000300",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Men's Singles, Quarterfinal, Match 3",
+      "start": "2026-11-07T12:45:00Z",
+      "end": "2026-11-07T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------QFNL000300--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttewsinglesqfnl000400",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Women's Singles, Quarterfinal, Match 4",
+      "start": "2026-11-07T13:30:00Z",
+      "end": "2026-11-07T14:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------QFNL000400--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttemsinglesqfnl000400",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Men's Singles, Quarterfinal, Match 4",
+      "start": "2026-11-07T14:15:00Z",
+      "end": "2026-11-07T15:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------QFNL000400--",
+      "detail": "Table 1"
+    },
+    {
       "id": "frankfurt-2026-11-07-s2",
       "event_id": "wtt-champions-frankfurt-2026",
       "name": "WTT Champions Frankfurt: quarter-finals, session 2",
       "start": "2026-11-07T17:30:00Z",
       "end": "2026-11-07T21:30:00Z",
       "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
+    },
+    {
+      "id": "wtt-3252-ttewsinglesqfnl000100",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Hana Goda v Satsuki Odo, women's singles, quarterfinal",
+      "start": "2026-11-07T17:30:00Z",
+      "end": "2026-11-07T18:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------QFNL000100--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttemsinglesqfnl000200",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Men's Singles, Quarterfinal, Match 2",
+      "start": "2026-11-07T18:15:00Z",
+      "end": "2026-11-07T19:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------QFNL000200--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttewsinglesqfnl000200",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Women's Singles, Quarterfinal, Match 2",
+      "start": "2026-11-07T19:00:00Z",
+      "end": "2026-11-07T19:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEWSINGLES-----------QFNL000200--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3252-ttemsinglesqfnl000100",
+      "event_id": "wtt-champions-frankfurt-2026",
+      "name": "WTT Champions Frankfurt: Men's Singles, Quarterfinal, Match 1",
+      "start": "2026-11-07T19:45:00Z",
+      "end": "2026-11-07T20:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
+      "code": "TTEMSINGLES-----------QFNL000100--",
+      "detail": "Table 1"
     },
     {
       "id": "frankfurt-2026-11-08-s1",
