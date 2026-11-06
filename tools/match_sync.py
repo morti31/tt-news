@@ -286,6 +286,7 @@ def main():
     R = load(os.path.join(ROOT, "data", "rankings.json"), {})
     top100 = [p.get("ittf_id") for g in ("men", "women") for p in R.get(g, []) if p.get("ittf_id")]
     want = [p for p in prof if p] + (top100 if dt.date.today().weekday() == 0 or "--players" in sys.argv else [])
+    # profiled players are refreshed every Monday whatever their ranking, so a profile keeps updating after a player leaves the top 100
     want = [p for p in dict.fromkeys(want) if "--players" in sys.argv or p not in wtt or dt.date.today().weekday() == 0]
     if want:
         players_from_wtt(want, wtt)

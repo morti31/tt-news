@@ -459,11 +459,11 @@ def build(page, site, tag_items, tag_url, hubs, R):
 
     # ---- index
     def group(g):
-        ps = sorted((p for p in profiles.values() if p.get("gender") == g), key=lambda p: (ranks.get(p["ittf_id"]) or {}).get("rank", 999))
+        ps = sorted((p for p in profiles.values() if p.get("gender") == g), key=lambda p: ((ranks.get(p["ittf_id"]) or {}).get("rank", 999), p["name"]))
         return "".join(f'<li class="pl-tile"><a href="/players/{p["slug"]}.html">{player_card(p, (ranks.get(p["ittf_id"]) or {}).get("rank"), "small")}'
                        f'<span class="pl-tile-name">{e(p["name"])}</span></a></li>' for p in ps)
     idx = f'''<main class="wrap pl-page"><section class="sched-head"><div><h1>Players</h1>
-<p class="lede">Profiles of the world's top 10 men and women: results, season-by-season records, titles, head to heads and news. More players are on the way.</p></div></section>
+<p class="lede">Profiles of the world's leading men and women: results, season-by-season records, titles, head to heads and news. Every player who reaches the top 10 gets a profile, and it stays and keeps updating whatever their ranking.</p></div></section>
 <div class="rk-two"><section class="hub-sec"><h2 class="section-title">Women</h2><ul class="pl-tiles">{group("W")}</ul></section>
 <section class="hub-sec"><h2 class="section-title">Men</h2><ul class="pl-tiles">{group("M")}</ul></section></div></main>'''
     open(os.path.join(ROOT, "players", "index.html"), "w", encoding="utf-8").write(

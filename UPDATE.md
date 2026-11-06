@@ -134,6 +134,8 @@ The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.
 - `notes`: a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
 - `sources` (every page a fact came from) and `checked` (date)
 
+A profile is permanent: once a player has a file, never delete it, even if they drop out of the top 10 or the top 100, retire or change association. Their results, records and news keep updating from the match database and the tags, the monthly check keeps their bio file current, and the page shows "Outside the world top 100" when they have no ranking.
+
 To add a player (when someone enters the top 10, or later the top 20 and beyond): create the file with `name` exactly as in data/rankings.json, `ittf_id`, `nat`, `gender` (M or W), then research the rest from Wikipedia, the player's federation, club and sponsor pages, citing each. Profile pages, links from the rankings, tag pages and articles appear on the next build.
 
 ## Knock-on changes (do these in every run)
