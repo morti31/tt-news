@@ -1,7 +1,29 @@
 {
-  "updated": "2026-11-06T21:20:00Z",
+  "updated": "2026-11-07T00:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day5-preview",
+      "kind": "Preview",
+      "day": 5,
+      "category": "International",
+      "date": "2026-11-07",
+      "published": "2026-11-07T00:40:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "headline": "WTT Champions Frankfurt day five preview: Winter meets Chen Yi as Matsushima plays Franziska",
+      "summary": "Dang Qiu, Patrick Franziska, Wim Verdonschot and Sabine Winter play for semi-final places in Frankfurt on Saturday, with the women's defending champion, Hina Hayata, opening the day against Kuai Man.",
+      "sources": [
+        {
+          "name": "WTT Champions Frankfurt 2026: schedule, draw and results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3252"
+        },
+        {
+          "name": "ITTF world ranking, week 45",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
+    },
     {
       "id": "wtt-champions-frankfurt-2026-day4-review",
       "kind": "Review",
@@ -3710,20 +3732,6 @@
       "event": "asian-championships-2026"
     },
     {
-      "id": "world-hopes-sheffield-2026",
-      "category": "England",
-      "headline": "ITTF World Hopes Week in Sheffield: a big learning curve for England's Sai Prasanna Kumar and Isabella Xiao Xu",
-      "summary": "The ITTF's camp for the world's best under-12s came to the English Institute of Sport in Sheffield, ending in a competition where every game counted.",
-      "date": "2026-10-23",
-      "sources": [
-        {
-          "name": "Table Tennis England",
-          "url": "https://www.tabletennisengland.co.uk/news/2026/big-learning-curve-for-english-duo-at-ittf-world-hopes-week/"
-        }
-      ],
-      "published": "2026-10-26T15:41:00Z"
-    },
-    {
       "id": "mltt-houston-2026",
       "category": "Clubs",
       "headline": "Major League Table Tennis Week 4 preview: Texas Smash host Chicago, Atlanta and Carolina in Houston",
@@ -3740,24 +3748,6 @@
         "src": "img/cartoons/houston.svg"
       },
       "published": "2026-10-26T15:34:00Z"
-    },
-    {
-      "id": "dimpled-ball-2026",
-      "category": "Equipment",
-      "headline": "Could a dimpled ball change table tennis? What one physicist's model predicts",
-      "summary": "A retired chemist and former college player has modelled a golf-style dimpled ball.",
-      "date": "2026-10-23",
-      "sources": [
-        {
-          "name": "Table Tennis England",
-          "url": "https://www.tabletennisengland.co.uk/news/2026/a-table-tennis-ball-with-dimples-that-could-be-a-whole-new-ball-game/"
-        }
-      ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/dimpled-ball.svg"
-      },
-      "published": "2026-10-26T15:27:00Z"
     }
   ],
   "results": [
