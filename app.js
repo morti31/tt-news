@@ -40,7 +40,7 @@
   const kicker = (s) => {
     const hub = s.event && hubs[s.event];
     const daily = s.day && ["Preview", "Review"].includes(s.kind) ? `Day ${s.day} ${s.kind.toLowerCase()}` : s.kind === "Update" ? "Quick update" : "";
-    const text = [hub ? hub.name : s.category, daily].filter(Boolean).join(" · ");
+    const text = [hub ? hub.name : (s.category === "Features" ? "Analysis" : s.category), daily].filter(Boolean).join(" · ");
     return `<span class="kicker" style="color:var(--${s.category}, var(--ink))">${esc(text)}</span>`;
   };
 
@@ -330,11 +330,11 @@
     document.querySelectorAll("#tabs button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.cat === cat)));
     show(cat);
   };
-  // Features: the newest three long reads
+  // Analysis (the Features category): the newest three long reads
   function renderFeatures() {
     const fs = [...data.features].sort((a, b) => b.published.localeCompare(a.published)).slice(0, 3);
     if (!fs.length) return;
-    $("feat-row").innerHTML = `<div class="sec-head"><h2 id="feat-h">Features</h2><a href="/features/">All features</a></div><div class="feat-grid" style="--n:${fs.length}">` +
+    $("feat-row").innerHTML = `<div class="sec-head"><h2 id="feat-h">Analysis</h2><a href="/features/">All analysis</a></div><div class="feat-grid" style="--n:${fs.length}">` +
       fs.map((f) => `<article class="feat"><a href="${esc(f.url)}">${f.cover ? `<img src="${esc(f.cover)}" alt="" loading="lazy">` : ""}
         <span class="kicker" style="color:var(--ball)">${esc(f.kind)}</span><h3>${esc(f.title)}</h3><p>${esc(f.standfirst)}</p><span class="meta">By ${esc(f.author)}</span></a></article>`).join("") + "</div>";
   }

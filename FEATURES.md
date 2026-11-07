@@ -1,5 +1,7 @@
 # Features: one a day
 
+The site calls this section **Analysis** (nav, section heading, labels). The URL stays /features/ and the data category stays "Features".
+
 A daily scheduled run writes one feature (analysis, opinion or original data), at least 1,000 words, and publishes it straight to `main`. There is no approval step, so every fact, name, number and quote must be checked against its source before committing. Tom is told by push notification and asks for changes afterwards if he wants them.
 
 ## Each run
@@ -55,7 +57,7 @@ Follow STYLE.md (Guardian style) throughout; its Features section is the model. 
 
 ```json
 {
-  "slug": "...", "category": "Features", "kind": "Analysis | Feature | Opinion",
+  "slug": "...", "category": "Features", "kind": "Analysis | Opinion",
   "date": "YYYY-MM-DD", "published": "YYYY-MM-DDTHH:MM:00Z",
   "title": "...", "seo_title": "...", "description": "...", "standfirst": "...",
   "body": ["paragraph", "paragraph with an [internal link](/rankings.html)", "..."],

@@ -99,7 +99,7 @@ def header(tg, t, R, hubs, entries, taglinks):
 
 
 def story_li(tg, it, skip):
-    kind = it.get("kind") or it["category"]
+    kind = {"Features": "Analysis", "Feature": "Analysis"}.get(it.get("kind") or it["category"], it.get("kind") or it["category"])
     return (f'<li class="archive-item"><a href="{e(it["url"])}"><span class="tag" style="color:var(--{e(it["category"])}, var(--ink))">{e(kind)}</span>'
             f'<h2>{e(it["title"])}</h2><p>{e(it["summary"])}</p><time datetime="{e(it["published"])}">By Eleven Team, {e(it["when"])}</time></a>'
             f'{chips(tg, it["tags"], MAX_TAGS, skip)}</li>')

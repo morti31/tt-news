@@ -44,7 +44,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
 <li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Clubs</a></li>
-<li><a href="/features/">Features</a></li><li><a href="/guide/">Guide</a></li>
+<li><a href="/features/">Analysis</a></li><li><a href="/guide/">Guide</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
@@ -210,7 +210,7 @@ def make_tags(arts):
         disp = tg.pick(sc)
         tagmap[key] = disp
         full[key] = tagmod.footer(tg, sc)
-        kind = a.get("kind") or a["category"]
+        kind = LABEL.get(a.get("kind") or a["category"], a.get("kind") or a["category"])
         if a.get("day") and kind in ("Preview", "Review"):
             kind = f"Day {a['day']} {kind.lower()}"
         items.append({"id": key, "url": f"/news/{slug}.html", "title": title, "summary": stand, "published": a.get("published") or a["date"] + "T09:00:00Z",
@@ -360,6 +360,9 @@ def chart(c):
     return f'<figure class="chart"><figcaption>{e(c.get("title", ""))}</figcaption><ul>{bars}</ul>{note}{src}</figure>'
 
 
+LABEL = {"Features": "Analysis", "Feature": "Analysis"}   # shown to readers; data keeps the old keys
+
+
 def feature_cover(a):
     p = f"img/features/{a['slug']}.jpg"
     return "/" + p if os.path.exists(os.path.join(ROOT, p)) else None
@@ -466,7 +469,7 @@ def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
     words = sum(len(p.split()) for p in a["body"])
-    kind = a.get("kind") or a["category"]
+    kind = LABEL.get(a.get("kind") or a["category"], a.get("kind") or a["category"])
     if a.get("day") and kind in ("Preview", "Review"):   # daily tournament coverage: "Day 2 preview"
         kind = f"Day {a['day']} {kind.lower()}"
     if kind == "Update":   # rare short story, kept out of Google (see UPDATE.md)
@@ -475,7 +478,7 @@ def article_page(a, others, brief=False):
     tag += "</span>"
     ev = event_of(a)
     crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
-             else f'<a href="/#{e(a["category"])}">{e(a["category"])}</a>')
+             else f'<a href="/#{e(a["category"])}">{e(LABEL.get(a["category"], a["category"]))}</a>')
     ps = autolink([block(p) for p in a["body"]], a)
     for ch in sorted(a.get("charts") or [], key=lambda c: -c.get("after", 0)):
         ps.insert(min(ch.get("after", len(ps)), len(ps)), chart(ch))
@@ -494,7 +497,7 @@ def article_page(a, others, brief=False):
     seen = {ev0["id"]} if ev0 else set()   # this story's own poster is already at the top
     more_html = "".join(
         f'<article class="promo">{story_thumb(i, seen)}<div><span class="kicker" style="color:var(--{e(i["category"])}, var(--ink))">'
-        f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else i["category"])}</span>'
+        f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else LABEL.get(i["category"], i["category"]))}</span>'
         f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(TEAM["name"])}</span>{build_tags.chips(TG, TAGMAP.get(i["id"], []), 2)}</div></article>'
         for i in rest[:16])
     extras = side_extras(a, ev0)
@@ -648,7 +651,7 @@ def main():
         open(os.path.join(ROOT, "news", a["slug"] + ".html"), "w", encoding="utf-8").write(article_page(a, others))
 
     def archive_item(a):
-        return (f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(a['category'])}</span>
+        return (f"""<li class="archive-item"><a href="/news/{e(a['slug'])}.html"><span class="tag" style="color:var(--{e(a['category'])}, var(--ink))">{e(LABEL.get(a['category'], a['category']))}</span>
 <h2>{e(a['title'])}</h2><p>{e(a['standfirst'])}</p><time datetime="{e(a.get('published', a['date']))}">By {e(author_of(a)["name"])}, {pub_time(a)}</time></a>{build_tags.chips(TG, TAGMAP.get(a.get("story_id") or a["slug"], []))}</li>""")
 
     def page_url(n):
@@ -696,16 +699,16 @@ def main():
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hubs = build_hubs(arts)
     feats = [a for a in arts if a.get("category") == "Features"]
-    fdata = [{"slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "standfirst": a.get("standfirst", ""), "kind": a.get("kind", "Feature"),
+    fdata = [{"slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "standfirst": a.get("standfirst", ""), "kind": LABEL.get(a.get("kind", "Feature"), a.get("kind", "Feature")),
               "published": a.get("published", a["date"]), "cover": feature_cover(a), "author": author_of(a)["name"]} for a in feats]
     json.dump(fdata, open(os.path.join(ROOT, "data", "features.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     os.makedirs(os.path.join(ROOT, "features"), exist_ok=True)
     cards = "".join(f'''<li class="ev-card"><a href="{f["url"]}">{f'<img src="{f["cover"]}" alt="" loading="lazy" width="1600" height="900">' if f["cover"] else ""}
 <span class="ev-group" style="--tier:#f37021">{e(f["kind"])}</span><h3>{e(f["title"])}</h3><p>{e(f["standfirst"])}</p></a></li>''' for f in fdata)
-    fbody = f"""<main class="wrap"><section class="sched-head"><div><h1>Features</h1><p class="lede">Analysis, opinion and original data on table tennis around the world.</p></div></section>
-<ul class="ev-cards">{cards or '<li class="empty">The first features are on their way.</li>'}</ul></main>"""
+    fbody = f"""<main class="wrap"><section class="sched-head"><div><h1>Analysis</h1><p class="lede">Long reads, opinion and original data on table tennis around the world.</p></div></section>
+<ul class="ev-cards">{cards or '<li class="empty">The first analysis pieces are on their way.</li>'}</ul></main>"""
     open(os.path.join(ROOT, "features", "index.html"), "w", encoding="utf-8").write(
-        page("Features: table tennis analysis, opinion and data | Eleven", "Long reads on table tennis: analysis, opinion and original data from Eleven.", f"{SITE}/features/", fbody))
+        page("Analysis: table tennis long reads, opinion and data | Eleven", "Long reads on table tennis: analysis, opinion and original data from Eleven.", f"{SITE}/features/", fbody))
 
     open(os.path.join(ROOT, "about.html"), "w", encoding="utf-8").write(about_page())
     R = build_rankings.load()
