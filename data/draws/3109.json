@@ -1,0 +1,543 @@
+{
+ "event": "World Cup Macao",
+ "wtt_event_id": "3109",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3109&selectedTab=Draws",
+ "updated": "2026-11-07T02:37:00Z",
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Sofia Polcanova",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2025-04-17T04:30:00Z",
+       "score": "4-0 (11:3,11:4,15:13,11:9,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Cheng I-Ching",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-04-17T03:45:00Z",
+       "score": "3-4 (11:13,8:11,5:11,11:6,17:15,11:4,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU"
+        },
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2025-04-17T12:15:00Z",
+       "score": "0-4 (8:11,7:11,7:11,5:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-04-17T03:00:00Z",
+       "score": "0-4 (7:11,9:11,6:11,8:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jia Nan Yuan",
+         "nat": "FRA"
+        },
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2025-04-17T10:45:00Z",
+       "score": "1-4 (11:9,5:11,12:14,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN"
+        },
+        {
+         "name": "Adriana Diaz",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2025-04-17T05:15:00Z",
+       "score": "4-1 (9:11,12:10,11:9,11:8,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Suh Hyo Won",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-04-17T11:30:00Z",
+       "score": "4-0 (11:5,11:7,11:4,11:6,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-04-17T10:00:00Z",
+       "score": "3-4 (11:8,11:5,7:11,14:12,7:11,7:11,10:12)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Cheng I-Ching",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-04-18T10:00:00Z",
+       "score": "4-1 (11:6,11:5,6:11,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        },
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-04-18T05:15:00Z",
+       "score": "1-4 (8:11,11:6,11:13,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Mima Ito",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-04-18T03:45:00Z",
+       "score": "2-4 (7:11,11:5,9:11,11:9,10:12,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-04-18T11:30:00Z",
+       "score": "4-2 (5:11,10:12,11:6,18:16,11:9,11:5,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-04-19T11:30:00Z",
+       "score": "4-1 (11:7,11:8,11:2,10:12,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-04-19T06:00:00Z",
+       "score": "3-4 (11:9,11:6,4:11,9:11,11:8,9:11,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-04-20T11:30:00Z",
+       "score": "4-0 (11:9,11:6,11:9,11:6,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2025-04-17T05:15:00Z",
+       "score": "4-3 (13:11,11:5,12:14,9:11,9:11,11:7,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA"
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 7
+        }
+       ],
+       "when": "2025-04-17T12:15:00Z",
+       "score": "2-4 (11:13,11:6,10:12,11:8,12:14,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2025-04-17T04:30:00Z",
+       "score": "2-4 (4:11,14:16,11:8,6:11,11:9,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Togami",
+         "nat": "JPN"
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-04-17T03:45:00Z",
+       "score": "2-4 (4:11,7:11,5:11,11:6,12:10,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-04-17T03:00:00Z",
+       "score": "4-0 (11:7,11:9,12:10,11:8,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN"
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-04-17T11:30:00Z",
+       "score": "1-4 (6:11,14:12,6:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER"
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-04-17T10:00:00Z",
+       "score": "4-3 (11:9,9:11,7:11,11:6,6:11,11:7,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kanak Jha",
+         "nat": "USA"
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-04-17T10:45:00Z",
+       "score": "1-4 (4:11,11:8,8:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 7
+        }
+       ],
+       "when": "2025-04-18T10:45:00Z",
+       "score": "4-0 (11:7,11:9,20:18,11:6,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-04-18T03:00:00Z",
+       "score": "2-4 (5:11,3:11,16:14,9:11,19:17,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-04-18T12:15:00Z",
+       "score": "1-4 (11:8,8:11,8:11,8:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER"
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-04-18T04:30:00Z",
+       "score": "3-4 (2:11,13:11,9:11,11:3,7:11,11:7,10:12)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-04-19T12:15:00Z",
+       "score": "4-1 (13:15,11:4,11:5,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 5
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-04-19T06:45:00Z",
+       "score": "4-3 (14:12,5:11,6:11,7:11,11:7,11:5,12:10)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-04-20T12:15:00Z",
+       "score": "1-4 (11:6,7:11,9:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

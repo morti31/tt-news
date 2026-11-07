@@ -1,0 +1,610 @@
+{
+ "event": "WTT Finals Hong Kong",
+ "wtt_event_id": "3112",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3112&selectedTab=Draws",
+ "updated": "2026-11-07T02:37:00Z",
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 5
+        }
+       ],
+       "when": "2025-12-11T12:05:00Z",
+       "score": "4-0 (11:3,11:9,11:7,11:7,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-11T05:55:00Z",
+       "score": "3-4 (12:10,12:14,11:8,11:9,6:11,11:13,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-11T10:35:00Z",
+       "score": "4-0 (11:5,11:6,11:6,11:5,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-11T04:25:00Z",
+       "score": "4-0 (11:8,11:7,11:6,12:10,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zhu Yuling",
+         "nat": "MAC",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-10T05:55:00Z",
+       "score": "4-3 (11:6,7:11,11:6,10:12,11:9,4:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-10T04:25:00Z",
+       "score": "2-4 (11:7,3:11,11:8,10:12,12:14,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joo Cheonhui",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-10T12:05:00Z",
+       "score": "4-2 (11:7,11:9,10:12,6:11,11:9,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-10T10:35:00Z",
+       "score": "2-4 (6:11,8:11,13:11,6:11,11:9,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-12T12:40:00Z",
+       "score": "4-0 (12:10,11:6,11:6,11:1,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-12T11:10:00Z",
+       "score": "4-2 (11:6,4:11,9:11,16:14,11:4,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-12T04:10:00Z",
+       "score": "4-1 (7:11,11:8,11:9,11:7,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joo Cheonhui",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-12T05:40:00Z",
+       "score": "1-4 (7:11,8:11,11:9,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-12-13T11:30:00Z",
+       "score": "2-4 (8:11,11:7,10:12,11:7,3:11,0:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-13T12:15:00Z",
+       "score": "0-4 (9:11,3:11,10:12,8:11,0:0,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-14T11:30:00Z",
+       "score": "2-4 (7:11,11:8,8:11,8:11,11:9,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Sora Matsushima",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-10T11:20:00Z",
+       "score": "4-3 (6:11,9:11,11:4,12:14,12:10,11:4,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Dang Qiu",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-12-10T05:10:00Z",
+       "score": "4-1 (8:11,11:7,11:9,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Anders Lind",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2025-12-10T12:50:00Z",
+       "score": "4-1 (14:12,11:7,11:5,8:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER"
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-12-10T03:40:00Z",
+       "score": "2-4 (10:12,11:6,11:5,8:11,5:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-12-11T11:20:00Z",
+       "score": "4-2 (5:11,11:5,11:9,5:11,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-11T12:50:00Z",
+       "score": "4-2 (5:11,12:10,11:6,8:11,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2025-12-11T05:10:00Z",
+       "score": "2-4 (11:7,9:11,14:16,9:11,13:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-11T03:40:00Z",
+       "score": "0-4 (13:15,3:11,4:11,9:11,0:0,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-12-12T04:55:00Z",
+       "score": "4-1 (11:6,11:4,11:9,8:11,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-12-12T11:55:00Z",
+       "score": "4-2 (6:11,7:11,12:10,11:4,11:2,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2025-12-13T06:40:00Z",
+       "score": "4-3 (12:14,11:8,12:10,11:3,8:11,7:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-13T07:25:00Z",
+       "score": "0-4 (3:11,7:11,5:11,3:11,0:0,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2025-12-14T06:15:00Z",
+       "score": "0-4 (0:11,0:11,0:11,0:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-14T05:30:00Z",
+       "score": "4-3 (12:10,11:4,10:12,10:12,11:6,7:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2025-12-14T12:30:00Z",
+       "score": "2-4 (8:11,11:5,9:11,12:10,12:14,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin / Sun Yingsha",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Sora Matsushima / Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2025-12-13T06:05:00Z",
+       "score": "3-0 (11:6,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Lim Jonghoon / Shin Yubin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-13T05:30:00Z",
+       "score": "1-3 (11:6,6:11,2:11,12:14,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin / Sun Yingsha",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Lim Jonghoon / Shin Yubin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-13T13:00:00Z",
+       "score": "0-3 (9:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
