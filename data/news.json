@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T00:40:00Z",
+  "updated": "2026-11-07T08:25:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
     {
@@ -21,6 +21,36 @@
         {
           "name": "ITTF world ranking, week 45",
           "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
+    },
+    {
+      "id": "fftt-data-leak-claim-2026",
+      "category": "International",
+      "kind": "Update",
+      "date": "2026-11-07",
+      "published": "2026-11-07T08:25:00Z",
+      "lang": "French",
+      "headline": "Hacker claims to be selling data on 1.6 million people taken from the French Table Tennis Federation",
+      "summary": "A seller on a cybercriminal forum says it holds records on 1.6 million people from France's table tennis federation, which has not confirmed a new breach.",
+      "body": [
+        "A hacker has offered for sale on a cybercriminal forum what it says are records on 1,645,606 people taken from the French Table Tennis Federation (FFTT), two French data-breach websites reported on Thursday. The federation has not publicly confirmed the claim.",
+        "The seller says the files include names, dates of birth, contact details and licence records, along with 1,864 identity documents and 383 proofs of address. A sample of 925 records examined by Fuites Infos and Cyberattaque.org held identity, contact and licence details, including those of minors, and for many players the date of their medical certificate and the name of the doctor who signed it. Neither site found passwords or bank details in the sample.",
+        "The number claimed is far higher than the FFTT's membership, which Cyberattaque.org puts at about 246,000 licensed players this season, and the newest records in the sample date from October 2025. Cyberattaque.org said the files could include historical records.",
+        "In September 2025 the FFTT said a compromised account had been used to take information in bulk from its database of licensed players, including names, dates and places of birth, nationality, addresses, email addresses and phone numbers. It said no bank or health data had been reached, that it had filed a complaint and informed France's data protection authority, the CNIL, and its cyber-security agency, ANSSI, and it urged members to be very careful with messages asking for passwords or bank details."
+      ],
+      "sources": [
+        {
+          "name": "Fuites Infos (French): FFTT data leak claimed, 1,645,606 people",
+          "url": "https://fuitesinfos.fr/article/2026-11-05-federation-francaise-de-tennis-de-table"
+        },
+        {
+          "name": "Cyberattaque.org (French): 1.6 million people claimed in FFTT leak",
+          "url": "https://www.cyberattaque.org/fftt-cyberattaque-federation-francaise-de-tennis-de-table/"
+        },
+        {
+          "name": "FFTT (French): statement on cyberattack and data theft",
+          "url": "https://www.fftt.com/actualites/federation/communique-cyberattaque-et-vol-de-donnees/"
         }
       ]
     },
