@@ -11,11 +11,24 @@
    "current": true
   }
  ],
- "honours": [],
+ "honours": [
+  {
+   "year": 2026,
+   "event": "World Team Championships",
+   "result": "Bronze"
+  },
+  {
+   "year": 2022,
+   "event": "World Team Championships",
+   "result": "Bronze"
+  }
+ ],
  "sources": [
   "https://www.worldtabletennis.com/playerDescription?playerId=135493",
   "https://www.augsburger-allgemeine.de/sport/wtt-champions-im-tischtennis-tischtennis-star-kaufmann-in-frankfurt-ausgeschieden-115645777",
-  "https://www.sport1.de/news/tischtennis/2026/11/frankfurt-kaufmann-verpasst-ueberraschung"
+  "https://www.sport1.de/news/tischtennis/2026/11/frankfurt-kaufmann-verpasst-ueberraschung",
+  "https://www.allabouttabletennis.com/world-championships-2022-womens-team-event.html",
+  "https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships"
  ],
  "checked": "2026-11-06",
  "stub": true,

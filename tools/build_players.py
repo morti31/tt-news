@@ -27,10 +27,10 @@ LEVELS = [("WTT Finals", r"WTT Finals|Cup Finals"), ("World Championships", r"Wo
 
 CATEGORIES = ["Olympic Games", "World Championships", "World Team Championships", "World Cup", "WTT Finals", "Grand Smash",
               "Continental and multi-sport", "WTT tour", "Other"]
-TIMELINE_ROWS = ["Olympic Games", "World Championships", "World Cup", "WTT Finals", "Singapore Smash", "Saudi Smash", "China Smash",
+TIMELINE_ROWS = ["Olympic Games", "World Championships", "World Team Championships", "World Cup", "WTT Finals", "Singapore Smash", "Saudi Smash", "China Smash",
                  "United States Smash", "Europe Smash"]
 # Years each competition was held in the WTT era, where the match database can't tell (Olympics aren't in WTT's results)
-HELD_FIXED = {"Olympic Games": {2021, 2024}, "World Championships": {2021, 2023, 2025}, "World Cup": {2024, 2025, 2026}}
+HELD_FIXED = {"Olympic Games": {2021, 2024}, "World Championships": {2021, 2023, 2025}, "World Team Championships": {2022, 2024, 2026}, "World Cup": {2024, 2025, 2026}}
 ROUND_SHORT = {"FNL": "F", "SFNL": "SF", "QFNL": "QF", "8FNL": "R16", "R16": "R16", "R32": "R32", "R64": "R64", "R128": "R128", "BRNZ": "SF"}
 ROUND_RANK = {"W": 10, "F": 9, "SF": 8, "QF": 7, "R16": 6, "R32": 5, "R64": 4, "R128": 3, "Grp": 2, "Q": 1}
 
@@ -65,7 +65,7 @@ def timeline_row(n):
     if c == "Grand Smash":
         sn = smash_name(n)
         return sn if sn in TIMELINE_ROWS else None
-    if c in ("Olympic Games", "World Championships", "World Cup", "WTT Finals"):
+    if c in ("Olympic Games", "World Championships", "World Team Championships", "World Cup", "WTT Finals"):
         return c
     return None
 
@@ -358,15 +358,28 @@ def build(page, site, tag_items, tag_url, hubs, R):
             res = "W" if m["r"] == "FNL" and won(m) else ROUND_SHORT.get(m["r"], "Q" if m["r"].startswith("RND") else "Grp" if m["r"][:2] in ("GP", "RR") else m["r"])
             if cur is None or ROUND_RANK.get(res, 0) > ROUND_RANK.get(cur, 0):
                 rows_t[row][yr] = res
+        # World Team Championships: the team's finish, from the rubbers the player played (medals below add W, F and SF)
+        for m in team_s:
+            nm = clean_event((db.events.get(m["e"]) or {}).get("name") or "")
+            if timeline_row(nm) != "World Team Championships":
+                continue
+            yr = int((m.get("d") or "0000")[:4])
+            res = "F" if m["r"] == "FNL" else ROUND_SHORT.get(m["r"], "Grp" if m["r"][:2] in ("GP", "RR") else None)
+            if not res:
+                continue
+            yrs.add(yr)
+            cur = rows_t.setdefault("World Team Championships", {}).get(yr)
+            if cur is None or ROUND_RANK.get(res, 0) > ROUND_RANK.get(cur, 0):
+                rows_t["World Team Championships"][yr] = res
         for h in p.get("honours") or []:
             comp, _, disc = h["event"].partition(", ")
-            if disc and disc.lower() != "singles":
+            if disc and disc.lower() != "singles" and "Team Championships" not in comp:
                 continue
             row = timeline_row(comp)
             if not row:
                 continue
             res = {"Gold": "W", "Silver": "F", "Bronze": "SF"}.get(h["result"])
-            if res and h["year"] not in rows_t.get(row, {}):
+            if res and (h["year"] not in rows_t.get(row, {}) or ROUND_RANK.get(res, 0) > ROUND_RANK.get(rows_t[row][h["year"]], 0)):
                 rows_t.setdefault(row, {})[h["year"]] = res
                 yrs.add(h["year"])
         timeline = ""
@@ -404,8 +417,8 @@ def build(page, site, tag_items, tag_url, hubs, R):
                 cells = "".join(cell(r, y) for y in ylist)
                 wins = sum(1 for v in rows_t[r].values() if v == "W")
                 body_t += f'<tr><th scope="row">{e(r)}</th>{cells}<td class="tl-tot">{wins}</td></tr>'
-            timeline = (f'<h3 class="pl-h3">Singles at the majors and Grand Smashes</h3><div class="table-scroll"><table class="pl-tl"><thead><tr><th scope="col"></th>{head_t}<th scope="col">Titles</th></tr></thead>'
-                        f'<tbody>{body_t}</tbody></table></div><p class="small">W won, F final, SF semi-final, QF quarter-final, R16 last 16 and so on; Grp group stage, Q qualifying, – did not play or no record, Not held: no event that year. '
+            timeline = (f'<h3 class="pl-h3">At the majors and Grand Smashes</h3><div class="table-scroll"><table class="pl-tl"><thead><tr><th scope="col"></th>{head_t}<th scope="col">Titles</th></tr></thead>'
+                        f'<tbody>{body_t}</tbody></table></div><p class="small">W won, F final, SF semi-final, QF quarter-final, R16 last 16 and so on; Grp group stage, Q qualifying, – did not play or no record, Not held: no event that year. Singles, except the World Team Championships, which show the team\'s finish in years the player played or won a medal. '
                         f'Full results from {min(y for y in yrs if any(y in v for v in rows_t.values()))} from World Table Tennis\'s records; earlier years show medals only.</p>')
         titles_sec = ""
         if hon_html or timeline:

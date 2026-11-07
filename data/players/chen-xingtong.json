@@ -5,9 +5,28 @@
  "gender": "W",
  "born": "1997-05-27",
  "clubs": [],
- "honours": [],
+ "honours": [
+  {
+   "year": 2026,
+   "event": "World Team Championships",
+   "result": "Gold"
+  },
+  {
+   "year": 2024,
+   "event": "World Team Championships",
+   "result": "Gold"
+  },
+  {
+   "year": 2022,
+   "event": "World Team Championships",
+   "result": "Gold"
+  }
+ ],
  "sources": [
-  "https://www.wikiwand.com/en/articles/Chen_Xingtong"
+  "https://www.wikiwand.com/en/articles/Chen_Xingtong",
+  "https://www.allabouttabletennis.com/world-championships-2022-womens-team-event.html",
+  "https://en.wikipedia.org/wiki/2024_World_Team_Table_Tennis_Championships",
+  "https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships"
  ],
  "checked": "2026-11-06"
 }

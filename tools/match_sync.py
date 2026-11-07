@@ -88,7 +88,7 @@ def compact(r, players):
         m["d"] = when
     elif r.get("startDateLocal"):
         m["d"] = r["startDateLocal"][:19] + "L"   # local time only
-    irm = [c.get("irm") for c in sides]
+    irm = [c.get("irm") if (c.get("irm") or "").upper() not in ("", "OK") else None for c in sides]
     ov = (mc.get("resultOverallScores") or mc.get("overallScores") or "").split("-")
     try:
         s = [int(ov[0]), int(ov[1])]
@@ -182,6 +182,29 @@ def event_name(eid):
         return None
 
 
+def rubbers(rs, players):
+    """The individual matches inside team ties (WTT keeps them under teamParentData), so players' team-event
+    records and the World Team Championships row of their profiles have who actually played."""
+    out = []
+    for r in rs or []:
+        tp = (r.get("match_card") or {}).get("teamParentData") or {}
+        for x in ((tp.get("extended_info") or {}).get("matches") or []):
+            mr = x.get("match_result") or {}
+            if not mr.get("documentCode") or (mr.get("resultStatus") or "").upper() not in ("OFFICIAL", ""):
+                continue
+            sides = mr.get("competitiors") or []
+            n = [len([p for p in (c.get("players") or []) if p.get("playerId")]) for c in sides]
+            if len(n) != 2 or n[0] != n[1] or n[0] not in (1, 2):
+                continue
+            m = compact({"documentCode": mr["documentCode"], "eventId": r.get("eventId"), "fullResults": "OFFICIAL",
+                         "startDateLocal": r.get("startDateLocal"), "match_card": mr}, players)
+            if m:
+                m["k"] = m["k"][0] + ("S" if n[0] == 1 else "D")
+                m["tm"] = 1
+                out.append(m)
+    return out
+
+
 def sync_event(eid, events, years, players, senior_only=False):
     if senior_only:   # backfill: look at the name first and skip youth, para and veterans events without fetching their results
         ev0 = events.setdefault(eid, {})
@@ -192,6 +215,7 @@ def sync_event(eid, events, years, players, senior_only=False):
             return 0
     rs = get(f"{LIVE}/GetOfficialResult?EventId={eid}&include_match_card=true&take=5000")
     ms = [m for m in (compact(r, players) for r in rs or []) if m]
+    ms += rubbers(rs, players)
     if rs and len(ms) < len(rs) / 4:   # no match cards (older events): use the draws
         dates0 = sorted((r.get("startDateLocal") or "")[:4] for r in rs if r.get("startDateLocal"))
         if dates0 and int(dates0[-1]) >= FIRST_YEAR:

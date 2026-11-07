@@ -6,9 +6,16 @@
  "born": "2001-08-06",
  "hand": "Left",
  "clubs": [],
- "honours": [],
+ "honours": [
+  {
+   "year": 2026,
+   "event": "World Team Championships",
+   "result": "Silver"
+  }
+ ],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=122777"
+  "https://www.worldtabletennis.com/playerDescription?playerId=122777",
+  "https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships"
  ],
  "checked": "2026-11-06",
  "stub": true

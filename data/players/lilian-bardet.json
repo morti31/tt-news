@@ -6,9 +6,16 @@
  "born": "2001-01-03",
  "hand": "Right",
  "clubs": [],
- "honours": [],
+ "honours": [
+  {
+   "year": 2024,
+   "event": "World Team Championships",
+   "result": "Silver"
+  }
+ ],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=122002"
+  "https://www.worldtabletennis.com/playerDescription?playerId=122002",
+  "https://en.wikipedia.org/wiki/2024_World_Team_Table_Tennis_Championships"
  ],
  "checked": "2026-11-06",
  "stub": true

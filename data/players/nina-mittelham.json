@@ -6,9 +6,22 @@
  "born": "1996-11-23",
  "hand": "Right",
  "clubs": [],
- "honours": [],
+ "honours": [
+  {
+   "year": 2026,
+   "event": "World Team Championships",
+   "result": "Bronze"
+  },
+  {
+   "year": 2022,
+   "event": "World Team Championships",
+   "result": "Bronze"
+  }
+ ],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=114726"
+  "https://www.worldtabletennis.com/playerDescription?playerId=114726",
+  "https://www.allabouttabletennis.com/world-championships-2022-womens-team-event.html",
+  "https://en.wikipedia.org/wiki/2026_World_Team_Table_Tennis_Championships"
  ],
  "checked": "2026-11-06",
  "stub": true
