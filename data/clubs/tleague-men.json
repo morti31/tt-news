@@ -1,7 +1,7 @@
 {
  "id": "tleague-men",
  "auto": true,
- "updated": "2026-11-07T10:29:00Z",
+ "updated": "2026-11-07T16:56:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -33,35 +33,35 @@
      {
       "pos": 2,
       "team": "Ryukyu Asteeda",
-      "pts": 20,
-      "p": 11,
-      "w": 6,
+      "pts": 23,
+      "p": 12,
+      "w": 7,
       "l": 5,
-      "for": 24,
-      "against": 21,
-      "diff": 3
+      "for": 27,
+      "against": 22,
+      "diff": 5
      },
      {
       "pos": 3,
       "team": "Kinoshita Meister Tokyo",
-      "pts": 20,
-      "p": 11,
-      "w": 6,
+      "pts": 23,
+      "p": 12,
+      "w": 7,
       "l": 5,
-      "for": 23,
-      "against": 22,
-      "diff": 1
+      "for": 26,
+      "against": 23,
+      "diff": 3
      },
      {
       "pos": 4,
       "team": "Okayama Rivets",
       "pts": 20,
-      "p": 12,
+      "p": 13,
       "w": 6,
-      "l": 6,
-      "for": 24,
-      "against": 26,
-      "diff": -2
+      "l": 7,
+      "for": 25,
+      "against": 29,
+      "diff": -4
      },
      {
       "pos": 5,
@@ -78,12 +78,12 @@
       "pos": 6,
       "team": "Shizuoka Jade",
       "pts": 11,
-      "p": 11,
+      "p": 12,
       "w": 3,
-      "l": 8,
-      "for": 18,
-      "against": 29,
-      "diff": -11
+      "l": 9,
+      "for": 19,
+      "against": 32,
+      "diff": -13
      }
     ]
    }
@@ -445,8 +445,11 @@
    "when": "2026-11-07T08:00:00Z",
    "home": "Ryukyu Asteeda",
    "away": "Okayama Rivets",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-08T03:00:00Z",

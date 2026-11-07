@@ -1,7 +1,7 @@
 {
  "id": "tleague-women",
  "auto": true,
- "updated": "2026-11-07T10:29:00Z",
+ "updated": "2026-11-07T16:56:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -22,24 +22,24 @@
      {
       "pos": 1,
       "team": "Top Otome Pingpongs Nagoya",
-      "pts": 33,
-      "p": 13,
+      "pts": 34,
+      "p": 14,
       "w": 11,
-      "l": 2,
-      "for": 35,
-      "against": 21,
-      "diff": 14
+      "l": 3,
+      "for": 37,
+      "against": 24,
+      "diff": 13
      },
      {
       "pos": 2,
       "team": "Nippon Paint Mallets",
-      "pts": 26,
-      "p": 12,
-      "w": 8,
+      "pts": 30,
+      "p": 13,
+      "w": 9,
       "l": 4,
-      "for": 30,
+      "for": 34,
       "against": 21,
-      "diff": 9
+      "diff": 13
      },
      {
       "pos": 3,
@@ -55,24 +55,24 @@
      {
       "pos": 4,
       "team": "Kinoshita Abyell Kanagawa",
-      "pts": 17,
-      "p": 12,
-      "w": 5,
+      "pts": 20,
+      "p": 13,
+      "w": 6,
       "l": 7,
-      "for": 22,
-      "against": 29,
-      "diff": -7
+      "for": 25,
+      "against": 31,
+      "diff": -6
      },
      {
       "pos": 5,
       "team": "Kyoto Kaguya Rise",
       "pts": 12,
-      "p": 11,
+      "p": 12,
       "w": 3,
-      "l": 8,
+      "l": 9,
       "for": 17,
-      "against": 29,
-      "diff": -12
+      "against": 33,
+      "diff": -16
      },
      {
       "pos": 6,
@@ -445,8 +445,11 @@
    "when": "2026-11-07T08:30:00Z",
    "home": "Top Otome Pingpongs Nagoya",
    "away": "Kinoshita Abyell Kanagawa",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-08T05:00:00Z",
