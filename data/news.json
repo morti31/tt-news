@@ -1,7 +1,222 @@
 {
-  "updated": "2026-11-07T12:20:00Z",
+  "updated": "2026-11-07T21:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day5-review",
+      "kind": "Review",
+      "day": 5,
+      "category": "International",
+      "date": "2026-11-07",
+      "published": "2026-11-07T21:45:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "top": true,
+      "headline": "WTT Champions Frankfurt day five review: Franziska knocks out Matsushima as Winter beats Chen Yi",
+      "summary": "Patrick Franziska beat the defending champion, Sora Matsushima, and Sabine Winter swept Chen Yi aside in the WTT Champions Frankfurt quarter-finals, where Hina Hayata beat Kuai Man in seven games and Lin Yun-Ju knocked out Wen Ruibo.",
+      "matches": [
+        {
+          "label": "Men's singles, quarter-final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            },
+            {
+              "name": "Sora Matsushima",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              12,
+              10
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, quarter-final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Sabine Winter",
+              "nat": "GER"
+            },
+            {
+              "name": "Chen Yi",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            0
+          ],
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, quarter-final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Lin Yun-Ju",
+              "nat": "TPE"
+            },
+            {
+              "name": "Wen Ruibo",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            0
+          ],
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, quarter-final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Hina Hayata",
+              "nat": "JPN"
+            },
+            {
+              "name": "Kuai Man",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "aXQ3a-1DKbE",
+          "title": "Hina Hayata v Kuai Man, women's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "26MnY8ELp9A",
+          "title": "Lin Yun-Ju v Wen Ruibo, men's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "8tgINEorSfI",
+          "title": "Chen Xingtong v Miwa Harimoto, women's singles quarter-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "TUjd5jbSIT0",
+          "title": "Shunsuke Togami v Wim Verdonschot, men's singles quarter-final",
+          "channel": "World Table Tennis"
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Frankfurt 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3252"
+        },
+        {
+          "name": "World Table Tennis on YouTube: match highlights",
+          "url": "https://www.youtube.com/@WTTGlobal/videos"
+        },
+        {
+          "name": "TV Tokyo (Japanese): Hayata beats Kuai Man",
+          "url": "https://www.tv-tokyo.co.jp/tabletennis/news/2026/11/042879.html"
+        }
+      ]
+    },
     {
       "id": "youth-olympic-games-dakar-2026-china-coaches-pressure",
       "category": "International",
@@ -78,7 +293,6 @@
       "published": "2026-11-06T21:20:00Z",
       "event": "wtt-champions-frankfurt-2026",
       "draw": "3252",
-      "top": true,
       "headline": "WTT Champions Frankfurt day four review: Verdonschot knocks out Calderano as Winter beats Han Ying",
       "summary": "Wim Verdonschot knocked out Hugo Calderano and Sabine Winter beat Han Ying on day four of WTT Champions Frankfurt, where Hina Hayata ended Annett Kaufmann's run and Kuai Man and Chen Yi went through.",
       "matches": [
