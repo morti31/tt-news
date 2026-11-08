@@ -63,7 +63,8 @@ def when_html(m, with_day=True):
         return '<span class="cl-when tbc"></span>'
     t = uk(m["when"])
     if m.get("date_only") or m.get("tbc"):
-        return f'<span class="cl-when">{f"{t:%a} {t.day} {t:%b}" if with_day else "Time tbc"}</span>'
+        txt = f"{t:%a} {t.day} {t:%b}" if with_day else ("" if m.get("score") is not None else "Time tbc")
+        return f'<span class="cl-when">{txt}</span>'
     fmt = "dhm" if with_day else "hm"
     txt = f"{t:%a} {t.day} {t:%b}, {t:%H:%M}" if with_day else f"{t:%H:%M}"
     return f'<span class="cl-when"><time datetime="{e(m["when"])}" data-lt="{fmt}">{txt}</time></span>'
@@ -121,7 +122,8 @@ def merged(lg, kind, n, now):
                 items.append((m, tag))
             elif kind == "fixtures" and not done and (not m.get("when") or m["when"] >= (now - dt.timedelta(hours=6)).strftime("%Y-%m-%dT%H:%M")):
                 items.append((m, tag))
-    key = lambda x: x[0].get("when") or ("0000" if kind == "results" else "9999")
+    rn = lambda m: int((re.findall(r"\d+", m.get("round") or "") or [0])[0])
+    key = lambda x: (x[0].get("when") or ("0000" if kind == "results" else "9999"), rn(x[0]))
     items.sort(key=key, reverse=kind == "results")
     return items[:n]
 
@@ -174,9 +176,14 @@ def league_page(lg, stories, now):
     for *_, d in comps:
         if d and d.get("source"):
             seen.setdefault(d["source"]["name"], d["source"]["url"])
-    srcs = " and ".join(f'<a href="{e(u)}" rel="noopener">{e(n)}</a>' for n, u in seen.items())
+    for *_, d in comps:
+        for x in (d or {}).get("sources") or []:
+            seen.setdefault(x["name"], x["url"])
+    srcs = ", ".join(list(f'<a href="{e(u)}" rel="noopener">{e(n)}</a>' for n, u in seen.items())[:-1]) + (" and " if len(seen) > 1 else "") + "".join(f'<a href="{e(u)}" rel="noopener">{e(n)}</a>' for n, u in list(seen.items())[-1:])
     upd = max((d.get("updated") or "" for *_, d in comps if d), default="")
     res, fix = merged(lg, "results", 12, now), merged(lg, "fixtures", 12, now)
+    older = merged(lg, "results", 2000, now)[12:]
+    more = (f'<details class="cl-all"><summary>All {len(older) + len(res)} results this season</summary>{grouped(older, mixed)}</details>') if older else ""
     tables = "".join(f'<div class="cl-comp"><h3 class="cl-comp-h"><span class="cl-tag">{e(tag)}</span>{e(title)}</h3>{table_html(d, f"{tag} {title}")}</div>' for cid, tag, title, d in comps)
     mine = stories_for(lg, stories)
     jump = "".join(f'<a href="#{k}">{v}</a>' for k, v in (("results", "Results"), ("fixtures", "Fixtures"), ("tables", "Tables"), ("news", "News"), ("about", "About")) if k != "news" or mine)
@@ -185,7 +192,7 @@ def league_page(lg, stories, now):
 <header class="hub-head cl-head"><div><span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span>
 <h1>{e(lg["name"])} {e(season)}</h1><p class="cl-status">{e(status_of(lg))}</p></div></header>
 <nav class="hub-jump" aria-label="On this page">{jump}</nav>
-<div class="cl-hub-top"><section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{grouped(res, mixed) or '<p class="cl-none">No results yet this season.</p>'}</section>
+<div class="cl-hub-top"><section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{grouped(res, mixed) or '<p class="cl-none">No results yet this season.</p>'}{more}</section>
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Fixtures</h2>{grouped(fix, mixed) or '<p class="cl-none">No fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span> Times can change, so check with the clubs before travelling.</p></section></div>
 <section class="hub-sec" id="tables"><h2 class="section-title">{"Table" if mixed else "Tables"}</h2><div class="cl-tables{" one" if mixed else ""}">{tables}</div></section>

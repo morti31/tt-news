@@ -1312,3 +1312,8 @@ html.mp-open { overflow: hidden; }
 .rk-name a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .rk-name a:hover { text-decoration-thickness: 2px; }
 .rankings .nm a, .rl-name a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.cl-all { margin-top: 16px; }
+.cl-all > summary { cursor: pointer; font-weight: 700; color: var(--accent, #e8590c); padding: 10px 0; list-style: none; }
+.cl-all > summary::-webkit-details-marker { display: none; }
+.cl-all > summary::after { content: " ▾"; }
+.cl-all[open] > summary::after { content: " ▴"; }

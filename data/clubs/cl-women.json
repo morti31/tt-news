@@ -1,7 +1,7 @@
 {
  "id": "cl-women",
  "auto": false,
- "updated": "2026-11-05T15:00:00Z",
+ "updated": "2026-11-08T22:50:00Z",
  "season": "2026-27",
  "status": "Stage 1 complete; Stage 2 is a single group of eight",
  "source": {
@@ -10,32 +10,58 @@
  },
  "table": {
   "columns": [
-   "w"
+   "p",
+   "w",
+   "l",
+   "games"
   ],
   "groups": [
    {
     "name": "Stage 1, Group A (Budaörs)",
     "rows": [
      {
-      "pos": 1,
       "team": "Linz AG Froschberg",
+      "p": 3,
       "w": 3,
+      "l": 0,
+      "for": 24,
+      "against": 10,
+      "pos": 1,
+      "diff": 14,
       "q": true
      },
      {
-      "pos": 2,
       "team": "STK Dr. Časl Zagreb",
-      "w": 2
+      "p": 3,
+      "w": 2,
+      "l": 1,
+      "for": 23,
+      "against": 11,
+      "pos": 2,
+      "diff": 12,
+      "q": false
      },
      {
-      "pos": 3,
       "team": "MIRÓ Ganxets",
-      "w": 1
+      "p": 3,
+      "w": 1,
+      "l": 2,
+      "for": 12,
+      "against": 23,
+      "pos": 3,
+      "diff": -11,
+      "q": false
      },
      {
-      "pos": 4,
       "team": "KU AZS Politechnika Rzeszów",
-      "w": 0
+      "p": 3,
+      "w": 0,
+      "l": 3,
+      "for": 9,
+      "against": 24,
+      "pos": 4,
+      "diff": -15,
+      "q": false
      }
     ]
    },
@@ -43,30 +69,224 @@
     "name": "Stage 1, Group B (Budaörs)",
     "rows": [
      {
-      "pos": 1,
       "team": "SKST Plus Hodonín",
+      "p": 3,
       "w": 3,
+      "l": 0,
+      "for": 24,
+      "against": 8,
+      "pos": 1,
+      "diff": 16,
       "q": true
      },
      {
-      "pos": 2,
       "team": "ASD Quattro Mori Cagliari",
-      "w": 2
+      "p": 3,
+      "w": 2,
+      "l": 1,
+      "for": 20,
+      "against": 20,
+      "pos": 2,
+      "diff": 0,
+      "q": false
      },
      {
-      "pos": 3,
       "team": "SH-ITB Budaörsi SC",
-      "w": 1
+      "p": 3,
+      "w": 1,
+      "l": 2,
+      "for": 15,
+      "against": 20,
+      "pos": 3,
+      "diff": -5,
+      "q": false
      },
      {
-      "pos": 4,
       "team": "Son Cladera TTC Mallorca",
-      "w": 0
+      "p": 3,
+      "w": 0,
+      "l": 3,
+      "for": 13,
+      "against": 24,
+      "pos": 4,
+      "diff": -11,
+      "q": false
      }
     ]
    }
   ],
   "note": "Group winners join six seeded clubs in Stage 2, where each club plays every other club once."
  },
- "matches": []
+ "matches": [
+  {
+   "when": "2026-08-28T10:00:00Z",
+   "home": "MIRÓ Ganxets",
+   "away": "KU AZS Politechnika Rzeszów",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group A",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-28T10:00:00Z",
+   "home": "Linz AG Froschberg",
+   "away": "STK Dr. Časl Zagreb",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group A",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-28T10:00:00Z",
+   "home": "SKST Plus Hodonín",
+   "away": "SH-ITB Budaörsi SC",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group B",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-28T10:00:00Z",
+   "home": "ASD Quattro Mori Cagliari",
+   "away": "Son Cladera TTC Mallorca",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group B",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-29T10:00:00Z",
+   "home": "STK Dr. Časl Zagreb",
+   "away": "KU AZS Politechnika Rzeszów",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group A",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-29T10:00:00Z",
+   "home": "Linz AG Froschberg",
+   "away": "MIRÓ Ganxets",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group A",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-29T10:00:00Z",
+   "home": "ASD Quattro Mori Cagliari",
+   "away": "SH-ITB Budaörsi SC",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group B",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-29T10:00:00Z",
+   "home": "SKST Plus Hodonín",
+   "away": "Son Cladera TTC Mallorca",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group B",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-30T10:00:00Z",
+   "home": "Linz AG Froschberg",
+   "away": "KU AZS Politechnika Rzeszów",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group A",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-30T10:00:00Z",
+   "home": "STK Dr. Časl Zagreb",
+   "away": "MIRÓ Ganxets",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group A",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-30T10:00:00Z",
+   "home": "SH-ITB Budaörsi SC",
+   "away": "Son Cladera TTC Mallorca",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group B",
+   "venue": "Budaörs",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-30T10:00:00Z",
+   "home": "SKST Plus Hodonín",
+   "away": "ASD Quattro Mori Cagliari",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Stage 1, Group B",
+   "venue": "Budaörs",
+   "date_only": true
+  }
+ ],
+ "sources": [
+  {
+   "name": "ETTU: Stage 1 day one",
+   "url": "https://www.ettu.org/ettu-champions-league-women-gets-underway-in-budaors/"
+  },
+  {
+   "name": "ETTU: Stage 1 day two",
+   "url": "https://www.ettu.org/day-2-underway-in-ettu-champions-league-women-in-budaors/"
+  },
+  {
+   "name": "ETTU: Stage 1 final day",
+   "url": "https://www.ettu.org/?p=51928"
+  }
+ ]
 }

@@ -1,7 +1,7 @@
 {
  "id": "proa-women",
  "auto": false,
- "updated": "2026-11-05T15:00:00Z",
+ "updated": "2026-11-08T22:40:00Z",
  "season": "2026-27",
  "status": "Regular season, after matchday 3",
  "source": {
@@ -111,6 +111,138 @@
   {
    "when": null,
    "home": "Metz TT",
+   "away": "Lys Lille Métropole",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 1"
+  },
+  {
+   "when": null,
+   "home": "Étival",
+   "away": "Joué-lès-Tours",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 1"
+  },
+  {
+   "when": null,
+   "home": "Saint-Quentin",
+   "away": "Quimper",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 1"
+  },
+  {
+   "when": null,
+   "home": "Saint-Denis",
+   "away": "Entente Saint-Pierraise",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 1"
+  },
+  {
+   "when": null,
+   "home": "Alliance Nîmes/Montpellier",
+   "away": "Le Mans",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 1"
+  },
+  {
+   "when": null,
+   "home": "Poitiers",
+   "away": "Grand-Quevilly",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 1"
+  },
+  {
+   "when": null,
+   "home": "Joué-lès-Tours",
+   "away": "Metz TT",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2"
+  },
+  {
+   "when": null,
+   "home": "Quimper",
+   "away": "Étival",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2"
+  },
+  {
+   "when": null,
+   "home": "Le Mans",
+   "away": "Saint-Denis",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2"
+  },
+  {
+   "when": null,
+   "home": "Entente Saint-Pierraise",
+   "away": "Saint-Quentin",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2"
+  },
+  {
+   "when": null,
+   "home": "Grand-Quevilly",
+   "away": "Alliance Nîmes/Montpellier",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2"
+  },
+  {
+   "when": null,
+   "home": "Lys Lille Métropole",
+   "away": "Poitiers",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 2"
+  },
+  {
+   "when": null,
+   "home": "Metz TT",
    "away": "Quimper",
    "score": [
     1,
@@ -173,6 +305,20 @@
    ],
    "status": "finished",
    "round": "Matchday 3"
+  }
+ ],
+ "sources": [
+  {
+   "name": "FFTT: Pro A women, matchday 1",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-dames-une-j1-pleine-de-surprises/"
+  },
+  {
+   "name": "FFTT: Pro A women, matchday 2",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-dames-j2-les-favoris-enchainent/"
+  },
+  {
+   "name": "FFTT: Pro A, men's matchday 4 and women's matchday 3",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-favoris-tombent-les-outsiders-frappent-fort/"
   }
  ]
 }
