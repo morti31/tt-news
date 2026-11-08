@@ -1,0 +1,398 @@
+{
+ "id": "mltt",
+ "auto": true,
+ "updated": "2026-11-08T21:48:40Z",
+ "source": {
+  "name": "MLTT",
+  "url": "https://www.mltt.com/teams"
+ },
+ "teams": [
+  {
+   "team": "Princeton Revolution",
+   "players": [
+    {
+     "name": "Benedek Olah",
+     "nat": "FIN"
+    },
+    {
+     "name": "Jinxin Wang",
+     "nat": "USA"
+    },
+    {
+     "name": "Kang Dong-Soo",
+     "nat": "KOR"
+    },
+    {
+     "name": "Koyo Kanamitsu",
+     "nat": "JPN"
+    },
+    {
+     "name": "Jiangshan Guo",
+     "nat": "USA"
+    },
+    {
+     "name": "Hsien-Tzu Cheng",
+     "nat": "TPE"
+    },
+    {
+     "name": "Cho Seungmin",
+     "nat": "KOR"
+    },
+    {
+     "name": "Yang Shuo",
+     "nat": "CHN"
+    },
+    {
+     "name": "Carlos Hernandez",
+     "nat": "CUB"
+    }
+   ],
+   "coach": "Mathias Habesohn"
+  },
+  {
+   "team": "New York Slice",
+   "players": [
+    {
+     "name": "Tao Wenzhang",
+     "nat": "USA"
+    },
+    {
+     "name": "Kaden Xu",
+     "nat": "USA"
+    },
+    {
+     "name": "Koki Niwa",
+     "nat": "JPN"
+    },
+    {
+     "name": "Yiran Wu",
+     "nat": "CHN"
+    },
+    {
+     "name": "Li He",
+     "nat": "CHN"
+    },
+    {
+     "name": "Mohamed Elbeiali",
+     "nat": "EGY"
+    },
+    {
+     "name": "Wu Yuan-Yu",
+     "nat": "TPE"
+    },
+    {
+     "name": "Johan Hagberg",
+     "nat": "SWE"
+    }
+   ],
+   "coach": "Adam Hugh"
+  },
+  {
+   "team": "Carolina Gold Rush",
+   "players": [
+    {
+     "name": "Enzo Angles",
+     "nat": "FRA"
+    },
+    {
+     "name": "Kai Zhang",
+     "nat": "USA"
+    },
+    {
+     "name": "Edward Ly",
+     "nat": "CAN"
+    },
+    {
+     "name": "Eugene Wang",
+     "nat": "CAN"
+    },
+    {
+     "name": "Chen Sun",
+     "nat": "CHN"
+    },
+    {
+     "name": "Mohammed Shouman",
+     "nat": "EGY"
+    },
+    {
+     "name": "Park Chan-Hyeok",
+     "nat": "KOR"
+    },
+    {
+     "name": "Hong Lin",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Shigang “Alex” Yang"
+  },
+  {
+   "team": "Florida Crocs",
+   "players": [
+    {
+     "name": "Daniel Gorak",
+     "nat": "POL"
+    },
+    {
+     "name": "Marc Duran",
+     "nat": "ESP"
+    },
+    {
+     "name": "Angel Naranjo",
+     "nat": "PUR"
+    },
+    {
+     "name": "Jishan “All In” Liang",
+     "nat": "USA"
+    },
+    {
+     "name": "Asuka Sakai",
+     "nat": "JPN"
+    },
+    {
+     "name": "Hwang Jinha",
+     "nat": "KOR"
+    },
+    {
+     "name": "Yufei Yang",
+     "nat": "CHN"
+    },
+    {
+     "name": "Andrea Todorovic",
+     "nat": "SRB"
+    },
+    {
+     "name": "Omar Assar",
+     "nat": "EGY"
+    }
+   ],
+   "coach": "Frank Arias"
+  },
+  {
+   "team": "Atlanta Blazers",
+   "players": [
+    {
+     "name": "Quadri Aruna",
+     "nat": "NGR"
+    },
+    {
+     "name": "Tom Feng",
+     "nat": "USA"
+    },
+    {
+     "name": "Yuya Oshima",
+     "nat": "JPN"
+    },
+    {
+     "name": "Kayama Yu",
+     "nat": "JPN"
+    },
+    {
+     "name": "Kim Woojin",
+     "nat": "KOR"
+    },
+    {
+     "name": "Rachel Sung",
+     "nat": "USA"
+    },
+    {
+     "name": "Braxton Chang",
+     "nat": "TPE"
+    },
+    {
+     "name": "Yuanxinai Yuan",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Koji Itagaki"
+  },
+  {
+   "team": "Portland Paddlers",
+   "players": [
+    {
+     "name": "Hampus Nordberg",
+     "nat": "SWE"
+    },
+    {
+     "name": "Jens Lundqvist",
+     "nat": "SWE"
+    },
+    {
+     "name": "Nikhil Kumar",
+     "nat": "USA"
+    },
+    {
+     "name": "Kotomi Omoda",
+     "nat": "JPN"
+    },
+    {
+     "name": "Sid Naresh",
+     "nat": "USA"
+    },
+    {
+     "name": "Min Hyeok Kim",
+     "nat": "KOR"
+    },
+    {
+     "name": "Minseo Oh",
+     "nat": "KOR"
+    },
+    {
+     "name": "Yerin Kim",
+     "nat": "KOR"
+    }
+   ],
+   "coach": "Christian Lillieroos"
+  },
+  {
+   "team": "Texas Smash",
+   "players": [
+    {
+     "name": "Amy Wang",
+     "nat": "USA"
+    },
+    {
+     "name": "David McBeath",
+     "nat": "ENG"
+    },
+    {
+     "name": "Nandan Naresh",
+     "nat": "USA"
+    },
+    {
+     "name": "Hiromitsu Kasahara",
+     "nat": "JPN"
+    },
+    {
+     "name": "Senura Silva",
+     "nat": "SRI"
+    },
+    {
+     "name": "Anastasiia Kolish"
+    },
+    {
+     "name": "Takuya Jin",
+     "nat": "JPN"
+    },
+    {
+     "name": "Choi Inhyeok",
+     "nat": "KOR"
+    }
+   ],
+   "coach": "Paul Drinkhall"
+  },
+  {
+   "team": "Los Angeles Spinners",
+   "players": [
+    {
+     "name": "Adi Sareen",
+     "nat": "AUS"
+    },
+    {
+     "name": "Lubomír Pistej",
+     "nat": "SVK"
+    },
+    {
+     "name": "Kou Lei",
+     "nat": "UKR"
+    },
+    {
+     "name": "Matilda Ekholm",
+     "nat": "SWE"
+    },
+    {
+     "name": "Marcos Madrid Mantilla",
+     "nat": "MEX"
+    },
+    {
+     "name": "Alexandre Robinot",
+     "nat": "FRA"
+    },
+    {
+     "name": "Zhang Binyue",
+     "nat": "CHN"
+    },
+    {
+     "name": "An Jaehyun",
+     "nat": "KOR"
+    }
+   ],
+   "coach": "Romain Lorentz"
+  },
+  {
+   "team": "Bay Area Blasters",
+   "players": [
+    {
+     "name": "Elsayed Lashin",
+     "nat": "EGY"
+    },
+    {
+     "name": "Lily Zhang",
+     "nat": "USA"
+    },
+    {
+     "name": "Jinbao Ma",
+     "nat": "USA"
+    },
+    {
+     "name": "Chihwei Yeh",
+     "nat": "TPE"
+    },
+    {
+     "name": "Chi Ge",
+     "nat": "CHN"
+    },
+    {
+     "name": "Taehyun Kim",
+     "nat": "KOR"
+    },
+    {
+     "name": "Antoine Hachard",
+     "nat": "FRA"
+    },
+    {
+     "name": "Baek Kwang-Il",
+     "nat": "KOR"
+    }
+   ],
+   "coach": "Tim Wang"
+  },
+  {
+   "team": "Chicago Wind",
+   "players": [
+    {
+     "name": "Alex Cazacu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Daniel Tran",
+     "nat": "USA"
+    },
+    {
+     "name": "Emmanuel Lebesson",
+     "nat": "FRA"
+    },
+    {
+     "name": "Mo Zhang",
+     "nat": "CAN"
+    },
+    {
+     "name": "Sean Zhang",
+     "nat": "USA"
+    },
+    {
+     "name": "Robert Gardos",
+     "nat": "AUT"
+    },
+    {
+     "name": "Jeongwoo Park",
+     "nat": "KOR"
+    },
+    {
+     "name": "Cao Yantao",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Eric Owens"
+  }
+ ]
+}

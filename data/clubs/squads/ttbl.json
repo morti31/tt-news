@@ -1,0 +1,387 @@
+{
+ "id": "ttbl",
+ "auto": true,
+ "updated": "2026-11-08T21:48:07Z",
+ "source": {
+  "name": "TTBL",
+  "url": "https://www.ttbl.de/bundesliga/teams"
+ },
+ "teams": [
+  {
+   "team": "Borussia Düsseldorf",
+   "players": [
+    {
+     "name": "Fan Zhendong",
+     "nat": "CHN"
+    },
+    {
+     "name": "Dang Qiu",
+     "nat": "GER"
+    },
+    {
+     "name": "Anton Källberg",
+     "nat": "SWE"
+    },
+    {
+     "name": "Kanak Jha",
+     "nat": "GER"
+    },
+    {
+     "name": "Li Yongyin",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Danny Heister"
+  },
+  {
+   "team": "TTF Ochsenhausen",
+   "players": [
+    {
+     "name": "Shunsuke Togami",
+     "nat": "JPN"
+    },
+    {
+     "name": "Iulian Chirita",
+     "nat": "ROU"
+    },
+    {
+     "name": "Darius Movileanu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Tiago Abiodun",
+     "nat": "POR"
+    },
+    {
+     "name": "Daniel Berzosa",
+     "nat": "ESP"
+    }
+   ],
+   "coach": "Bogdan Pugna"
+  },
+  {
+   "team": "1. FC Saarbrücken",
+   "players": [
+    {
+     "name": "Hugo Calderano",
+     "nat": "POR"
+    },
+    {
+     "name": "Patrick Franziska",
+     "nat": "GER"
+    },
+    {
+     "name": "Alvaro Robles",
+     "nat": "ESP"
+    },
+    {
+     "name": "Eduard Ionescu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Danilo Faso",
+     "nat": "FRA"
+    },
+    {
+     "name": "Dennis Klein",
+     "nat": "GER"
+    },
+    {
+     "name": "Albert Vilardell",
+     "nat": "ESP"
+    },
+    {
+     "name": "Samuel Arpas",
+     "nat": "SVK"
+    },
+    {
+     "name": "Robert Podar",
+     "nat": "ROU"
+    }
+   ],
+   "coach": "Zhi Wang"
+  },
+  {
+   "team": "TTC Bad Homburg",
+   "players": [
+    {
+     "name": "Csaba Andras",
+     "nat": "HUN"
+    },
+    {
+     "name": "Ivor Ban",
+     "nat": "CRO"
+    },
+    {
+     "name": "Juan Perez",
+     "nat": "ESP"
+    },
+    {
+     "name": "Benno Oehme",
+     "nat": "GER"
+    },
+    {
+     "name": "Finn Luu",
+     "nat": "AUS"
+    },
+    {
+     "name": "Max Lante",
+     "nat": "GER"
+    },
+    {
+     "name": "Pepe Meteling",
+     "nat": "GER"
+    },
+    {
+     "name": "Lukas Vatheuer",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Slobodan Grujic"
+  },
+  {
+   "team": "Borussia Dortmund",
+   "players": [
+    {
+     "name": "Anders Lind",
+     "nat": "DEN"
+    },
+    {
+     "name": "Joao Geraldo",
+     "nat": "POR"
+    },
+    {
+     "name": "Wim Verdonschot",
+     "nat": "GER"
+    },
+    {
+     "name": "Kristian Karlsson",
+     "nat": "SWE"
+    },
+    {
+     "name": "Adam Szudi",
+     "nat": "HUN"
+    },
+    {
+     "name": "Cedric Nuytinck",
+     "nat": "BEL"
+    },
+    {
+     "name": "Erik Bottroff",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Evgeny Fadeev"
+  },
+  {
+   "team": "Werder Bremen",
+   "players": [
+    {
+     "name": "Kirill Gerassimenko",
+     "nat": "KAZ"
+    },
+    {
+     "name": "Mattias Karlsson",
+     "nat": "SWE"
+    },
+    {
+     "name": "Irvin Bertrand",
+     "nat": "FRA"
+    },
+    {
+     "name": "Marcelo Aguirre",
+     "nat": "ITA"
+    }
+   ],
+   "coach": "Cristian Tamas"
+  },
+  {
+   "team": "TTC Grenzau",
+   "players": [
+    {
+     "name": "Liam Pitchford",
+     "nat": "GBR"
+    },
+    {
+     "name": "Feng Yi-Hsin",
+     "nat": "TPE"
+    },
+    {
+     "name": "Martin Allegro",
+     "nat": "BEL"
+    },
+    {
+     "name": "Maciej Kubik",
+     "nat": "POL"
+    },
+    {
+     "name": "Samuel Walker",
+     "nat": "GBR"
+    },
+    {
+     "name": "Yanning Liang",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Zhibin Chen"
+  },
+  {
+   "team": "TTC Fulda-Maberzell",
+   "players": [
+    {
+     "name": "Dimitrij Ovtcharov",
+     "nat": "GER"
+    },
+    {
+     "name": "Jonathan Groth",
+     "nat": "DEN"
+    },
+    {
+     "name": "Ruwen Filus",
+     "nat": "GER"
+    },
+    {
+     "name": "Fanbo Meng",
+     "nat": "GER"
+    },
+    {
+     "name": "Andrei Istrate",
+     "nat": "ROU"
+    }
+   ],
+   "coach": "Qing Yu Meng"
+  },
+  {
+   "team": "Post SV Mühlhausen",
+   "players": [
+    {
+     "name": "Steffen Mengel",
+     "nat": "GER"
+    },
+    {
+     "name": "Marcos Freitas",
+     "nat": "POR"
+    },
+    {
+     "name": "Ovidiu Ionescu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Kay Stumper",
+     "nat": "GER"
+    },
+    {
+     "name": "Yeh Yi-En",
+     "nat": "TPE"
+    },
+    {
+     "name": "Nico Müller",
+     "nat": "GER"
+    },
+    {
+     "name": "Ivo Quett",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Erik Schreyer"
+  },
+  {
+   "team": "TTC Bergneustadt",
+   "players": [
+    {
+     "name": "Benedikt Duda",
+     "nat": "GER"
+    },
+    {
+     "name": "Romain Ruiz",
+     "nat": "FRA"
+    },
+    {
+     "name": "Adrien Rassenfosse",
+     "nat": "BEL"
+    },
+    {
+     "name": "Cedric Meissner",
+     "nat": "GER"
+    },
+    {
+     "name": "Phil Schweitzer",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Frederik Duda"
+  },
+  {
+   "team": "ASC Grünwettersbach",
+   "players": [
+    {
+     "name": "Tiago Apolonia",
+     "nat": "POR"
+    },
+    {
+     "name": "Tom Jarvis",
+     "nat": "GBR"
+    },
+    {
+     "name": "Ricardo Walther",
+     "nat": "GER"
+    },
+    {
+     "name": "Florian Bluhm",
+     "nat": "GER"
+    },
+    {
+     "name": "Tobias Hippler",
+     "nat": "GER"
+    },
+    {
+     "name": "Damian Floro",
+     "nat": "SVK"
+    },
+    {
+     "name": "Adrian Gossow",
+     "nat": "GER"
+    },
+    {
+     "name": "Florian Bluhm",
+     "nat": "GER"
+    },
+    {
+     "name": "Chang Tao-Yu",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Kilian Ort"
+  },
+  {
+   "team": "TSV Bad Königshofen",
+   "players": [
+    {
+     "name": "Andre Bertelsmeier",
+     "nat": "GER"
+    },
+    {
+     "name": "Bastian Steger",
+     "nat": "GER"
+    },
+    {
+     "name": "Daniel Habesohn",
+     "nat": "AUT"
+    },
+    {
+     "name": "Liao Cheng-Ting",
+     "nat": "TPE"
+    },
+    {
+     "name": "Filip Zeljko",
+     "nat": "CRO"
+    },
+    {
+     "name": "Volodymyr Nevizhyn",
+     "nat": "UKR"
+    }
+   ],
+   "coach": "Timo Neumann"
+  }
+ ]
+}
