@@ -1,7 +1,132 @@
 {
-  "updated": "2026-11-07T21:45:00Z",
+  "updated": "2026-11-08T18:55:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-frankfurt-2026-day6-review",
+      "kind": "Review",
+      "day": 6,
+      "category": "International",
+      "date": "2026-11-08",
+      "published": "2026-11-08T18:55:00Z",
+      "event": "wtt-champions-frankfurt-2026",
+      "draw": "3252",
+      "top": true,
+      "headline": "WTT Champions Frankfurt finals: Hina Hayata retains her title as Tomokazu Harimoto beats Franziska",
+      "summary": "Hina Hayata beat Satsuki Odo 4-2 to retain her WTT Champions Frankfurt title and Tomokazu Harimoto came from 2-1 down to beat Patrick Franziska 4-2, giving Japan both singles titles.",
+      "matches": [
+        {
+          "label": "Women's singles, final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Hina Hayata",
+              "nat": "JPN"
+            },
+            {
+              "name": "Satsuki Odo",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Tomokazu Harimoto",
+              "nat": "JPN"
+            },
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              2,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "o_wrwNV7dUo",
+          "title": "Hina Hayata v Miwa Harimoto, women's singles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "GgGajZiZoK8",
+          "title": "Lin Yun-Ju v Tomokazu Harimoto, men's singles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "V6aDCIbFViY",
+          "title": "Satsuki Odo v Sabine Winter, women's singles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "jJ4tUxiErKk",
+          "title": "Patrick Franziska v Shunsuke Togami, men's singles semi-final",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
     {
       "id": "wtt-youth-contender-podgorica-2026-samaraweera-double-gold",
       "category": "International",
@@ -85,7 +210,6 @@
       "published": "2026-11-07T21:45:00Z",
       "event": "wtt-champions-frankfurt-2026",
       "draw": "3252",
-      "top": true,
       "headline": "WTT Champions Frankfurt day five review: Franziska knocks out Matsushima as Winter beats Chen Yi",
       "summary": "Patrick Franziska beat the defending champion, Sora Matsushima, and Sabine Winter swept Chen Yi aside in the WTT Champions Frankfurt quarter-finals, where Hina Hayata beat Kuai Man in seven games and Lin Yun-Ju knocked out Wen Ruibo.",
       "matches": [
