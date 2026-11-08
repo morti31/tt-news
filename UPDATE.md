@@ -163,3 +163,9 @@ A story is never only a story. Before committing, apply what it changes everywhe
 - **Tags**: a player or competition the build does not know goes into `data/tag-registry.json`.
 - **Rankings**: if WTT publishes a new ranking, the sync picks it up; mention big moves in the news.
 - **Earlier stories**: correct anything a new story shows to be wrong, adding `modified`.
+
+## Results beyond WTT
+
+- WTT and ITTF events (feeders included) come from WTT's results via `tools/match_sync.py`. Club leagues come straight from the leagues' own sites via `tools/league_sync.py` (`.github/workflows/league-sync.yml`, every six hours) into `data/leagues/<league>/<season>.json`: so far the Tischtennis Bundesliga (ttbl.de) and the Nojima T.League (tleague.jp). Use these files as the primary source for club results and quote the league's own match page.
+- 11EDGE (11edge.io) is a reference only. Its terms forbid scraping and its robots.txt blocks AI crawlers, so never fetch it in a run. If Tom pastes one of its pages, it can be used to cross-check a fact and credited as "11EDGE".
+- Never publish betting odds, implied probabilities, tips or anything about gambling, and never use odds sites as sources.

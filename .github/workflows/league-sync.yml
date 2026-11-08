@@ -1,0 +1,36 @@
+name: League sync
+# Eleven's club league database (data/leagues): ties and rubbers from the leagues' own sites, every six hours.
+on:
+  schedule:
+    - cron: "10 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Optional: a league to load every season of, e.g. 'ttbl' or 'tleague'"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: league-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync leagues
+        env:
+          BACKFILL: ${{ inputs.backfill }}
+        run: |
+          if [ -n "$BACKFILL" ]; then python3 tools/league_sync.py --backfill $BACKFILL; else python3 tools/league_sync.py; fi
+      - name: Commit changes
+        run: |
+          git config user.name "Tom Mortimer"
+          git config user.email "tommorti@gmail.com"
+          git add data/leagues 2>/dev/null || true
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "League sync $(date -u +'%Y-%m-%d %H:%M')"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 15; done
+          exit 1
