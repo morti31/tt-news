@@ -69,6 +69,15 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
    - Check every live or upcoming event in the next 14 days on each run, not just new ones: if a date, venue, session time or match time has moved, update the existing entry in place (same `id`) rather than adding a new one.
 8. Set `updated` in both JSON files to the current UTC time, check the JSON parses, then commit with a message like `Update 2026-10-27 09:00` and push.
 
+## Catching up after missed runs
+
+Runs sometimes don't happen (usage limits, outages). Every run starts by checking for gaps, so the site never looks as if it stopped:
+
+- Compare the "updated" time in `data/news.json` with now. If it is more than one scheduled interval old, this is a catch-up run: search the whole gap, not just the last few hours.
+- At a big tournament (3 stars or more), check that every playing day since the last run has both its preview and its review. Publish any that are missing, oldest first, with the real `published` time (never back-date) and `date` set to the day they cover. A preview for a day already played keeps its preview form and order of play; publish it just before that day's review so the daily run reads in order. A finished event's finals review comes last and leads as the `top` story.
+- Publish the gap's other news as usual (full articles where the material supports one, quick updates otherwise), and apply its knock-on changes.
+- Only set "updated" in `data/news.json` to now once the whole gap is covered, so a run that stops halfway leaves the rest for the next one.
+
 ## Schedule
 
 Every 4 hours as standard. Hourly while an event with prestige 3.5 or above is on (Mixed Team World Cup, WTT Finals, China Super League Finals, Grand Smashes, World Championships, Olympics).
