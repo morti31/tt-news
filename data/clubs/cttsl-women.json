@@ -1,61 +1,625 @@
 {
  "id": "cttsl-women",
  "auto": false,
- "updated": "2026-11-05T15:00:00Z",
+ "updated": "2026-11-08T22:30:00Z",
  "season": "2026",
- "status": "Finals in Guangzhou, 25 to 27 December",
+ "status": "Regular season complete; finals in Guangzhou, 25 to 27 December",
  "source": {
   "name": "Chinese Table Tennis Association",
   "url": "https://www.news.cn/sports/20260727/88752232a9894fefb7f4c5b903b33081/c.html"
  },
  "table": {
-  "columns": [],
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "games"
+  ],
   "groups": [
    {
     "name": "Regular season, final order",
     "rows": [
      {
-      "pos": 1,
       "team": "Shandong Luneng",
-      "q": true
+      "p": 10,
+      "w": 9,
+      "l": 1,
+      "for": 78,
+      "against": 40,
+      "pos": 1,
+      "q": true,
+      "diff": 38
      },
      {
-      "pos": 2,
       "team": "Shandong Weiqiao",
-      "q": true
+      "p": 10,
+      "w": 8,
+      "l": 2,
+      "for": 71,
+      "against": 34,
+      "pos": 2,
+      "q": true,
+      "diff": 37
      },
      {
-      "pos": 3,
       "team": "Shanghai Centre",
-      "q": true
+      "p": 9,
+      "w": 7,
+      "l": 2,
+      "for": 66,
+      "against": 43,
+      "pos": 3,
+      "q": true,
+      "diff": 23
      },
      {
-      "pos": 4,
       "team": "Huangshi Dongchu",
-      "q": true
+      "p": 10,
+      "w": 5,
+      "l": 5,
+      "for": 55,
+      "against": 61,
+      "pos": 4,
+      "q": true,
+      "diff": -6
      },
      {
+      "team": "Shenzhen University",
+      "p": 10,
+      "w": 3,
+      "l": 7,
+      "for": 47,
+      "against": 66,
       "pos": 5,
-      "team": "Shenzhen University"
+      "q": false,
+      "diff": -19
      },
      {
+      "team": "Tianjin 729",
+      "p": 10,
+      "w": 5,
+      "l": 5,
+      "for": 58,
+      "against": 60,
       "pos": 6,
-      "team": "Tianjin 729"
+      "q": false,
+      "diff": -2
      },
      {
+      "team": "East China University of Science and Technology",
+      "p": 9,
+      "w": 2,
+      "l": 7,
+      "for": 41,
+      "against": 64,
       "pos": 7,
-      "team": "East China University of Science and Technology"
+      "q": false,
+      "diff": -23
      },
      {
+      "team": "Chengdu Gaoxin Ruoshuiju",
+      "p": 10,
+      "w": 0,
+      "l": 10,
+      "for": 32,
+      "against": 80,
       "pos": 8,
-      "team": "Chengdu Gaoxin Ruoshuiju"
+      "q": false,
+      "diff": -48
      }
     ]
    }
   ],
-  "note": "The top four go through to the finals in Guangzhou."
+  "note": "Final order as published by the Chinese Table Tennis Association. Played, won and lost from Eleven's record of the results; one tie from 26 July whose score we could not confirm is not yet included. The top four go through to the finals in Guangzhou."
  },
  "matches": [
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    0
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shanghai Centre",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Tianjin 729",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Shandong Weiqiao",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Tianjin 729",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    0
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Tianjin 729",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "East China University of Science and Technology",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Tianjin 729",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Tianjin 729",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    0
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Shenzhen University",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    0
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Tianjin 729",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Tianjin 729",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shenzhen University",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shenzhen University",
+   "away": "Tianjin 729",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shanghai Centre",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Tianjin 729",
+   "away": "East China University of Science and Technology",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Shandong Weiqiao",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Shanghai Centre",
+   "away": "Tianjin 729",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Shenzhen University",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "East China University of Science and Technology",
+   "away": "Chengdu Gaoxin Ruoshuiju",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
   {
    "when": "2026-12-25T02:00:00Z",
    "home": "Finals",
@@ -65,6 +629,24 @@
    "round": "Finals, Guangzhou",
    "date_only": true,
    "label": "Super League women's finals begin in Guangzhou"
+  }
+ ],
+ "sources": [
+  {
+   "name": "China Sports Daily's Table Tennis World (Chinese): points-round results, 31 July",
+   "url": "https://news.qq.com/rain/a/20260731A0CMYL00"
+  },
+  {
+   "name": "Yangtse Evening Post (Chinese): Dalian stage ends, 26 July",
+   "url": "https://www.yzwb.net/news/ty/202607/t20260727_376454.html"
+  },
+  {
+   "name": "Yangtse Evening Post (Chinese): regular season ends, 1 August",
+   "url": "https://www.yzwb.net/news/ty/202608/t20260802_378578.html"
+  },
+  {
+   "name": "CCTV (Chinese): results, 29 July",
+   "url": "https://sports.cctv.com/2026/07/29/ARTIN6G6oPks5rR3t5BKbdw4260729.shtml"
   }
  ]
 }

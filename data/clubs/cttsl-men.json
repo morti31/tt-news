@@ -1,69 +1,907 @@
 {
  "id": "cttsl-men",
  "auto": false,
- "updated": "2026-11-05T15:00:00Z",
+ "updated": "2026-11-08T22:30:00Z",
  "season": "2026",
- "status": "Finals in Guangzhou, 25 to 27 December",
+ "status": "Regular season complete; finals in Guangzhou, 25 to 27 December",
  "source": {
   "name": "Chinese Table Tennis Association",
   "url": "https://www.news.cn/sports/20260727/88752232a9894fefb7f4c5b903b33081/c.html"
  },
  "table": {
-  "columns": [],
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "games"
+  ],
   "groups": [
    {
     "name": "Regular season, final order",
     "rows": [
      {
-      "pos": 1,
       "team": "Shandong Weiqiao",
-      "q": true
+      "p": 12,
+      "w": 12,
+      "l": 0,
+      "for": 96,
+      "against": 41,
+      "pos": 1,
+      "q": true,
+      "diff": 55
      },
      {
-      "pos": 2,
       "team": "Beijing Yidian Xindong",
-      "q": true
+      "p": 12,
+      "w": 6,
+      "l": 6,
+      "for": 75,
+      "against": 74,
+      "pos": 2,
+      "q": true,
+      "diff": 1
      },
      {
-      "pos": 3,
       "team": "Shanghai Real Estate Group",
-      "q": true
+      "p": 12,
+      "w": 9,
+      "l": 3,
+      "for": 82,
+      "against": 60,
+      "pos": 3,
+      "q": true,
+      "diff": 22
      },
      {
-      "pos": 4,
       "team": "Huangshi Dongchu",
-      "q": true
+      "p": 12,
+      "w": 9,
+      "l": 3,
+      "for": 83,
+      "against": 56,
+      "pos": 4,
+      "q": true,
+      "diff": 27
      },
      {
+      "team": "Shandong Luneng",
+      "p": 12,
+      "w": 6,
+      "l": 6,
+      "for": 74,
+      "against": 68,
       "pos": 5,
-      "team": "Shandong Luneng"
+      "q": false,
+      "diff": 6
      },
      {
+      "team": "Shantou Mingrun",
+      "p": 12,
+      "w": 4,
+      "l": 8,
+      "for": 66,
+      "against": 83,
       "pos": 6,
-      "team": "Shantou Mingrun"
+      "q": false,
+      "diff": -17
      },
      {
+      "team": "Zhongchao Cable Fujian Fu'an",
+      "p": 11,
+      "w": 6,
+      "l": 5,
+      "for": 67,
+      "against": 62,
       "pos": 7,
-      "team": "Zhongchao Cable Fujian Fu'an"
+      "q": false,
+      "diff": 5
      },
      {
+      "team": "Sichuan Fenggu",
+      "p": 12,
+      "w": 3,
+      "l": 9,
+      "for": 54,
+      "against": 80,
       "pos": 8,
-      "team": "Sichuan Fenggu"
+      "q": false,
+      "diff": -26
      },
      {
+      "team": "Mili Pingpong",
+      "p": 12,
+      "w": 4,
+      "l": 8,
+      "for": 62,
+      "against": 77,
       "pos": 9,
-      "team": "Mili Pingpong"
+      "q": false,
+      "diff": -15
      },
      {
+      "team": "Anhui Zhongcheng Yinhe",
+      "p": 11,
+      "w": 0,
+      "l": 11,
+      "for": 30,
+      "against": 88,
       "pos": 10,
-      "team": "Anhui Zhongcheng Yinhe"
+      "q": false,
+      "diff": -58
      }
     ]
    }
   ],
-  "note": "The top four go through to the finals in Guangzhou."
+  "note": "Final order as published by the Chinese Table Tennis Association. Played, won and lost from Eleven's record of the results; two ties from 26 July whose scores we could not confirm are not yet included. The top four go through to the finals in Guangzhou."
  },
  "matches": [
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Zhongchao Cable Fujian Fu'an",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Beijing Yidian Xindong",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Beijing Yidian Xindong",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Zhongchao Cable Fujian Fu'an",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    0
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Sichuan Fenggu",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Beijing Yidian Xindong",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Zhongchao Cable Fujian Fu'an",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shantou Mingrun",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shantou Mingrun",
+   "away": "Beijing Yidian Xindong",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Zhongchao Cable Fujian Fu'an",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Mili Pingpong",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-25T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Beijing Yidian Xindong",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Zhongchao Cable Fujian Fu'an",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Shanghai Real Estate Group",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-26T08:00:00Z",
+   "home": "Beijing Yidian Xindong",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Dalian)",
+   "venue": "Dalian",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Sichuan Fenggu",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Mili Pingpong",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    1
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Beijing Yidian Xindong",
+   "away": "Zhongchao Cable Fujian Fu'an",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-29T08:00:00Z",
+   "home": "Mili Pingpong",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shanghai Real Estate Group",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Beijing Yidian Xindong",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shantou Mingrun",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Zhongchao Cable Fujian Fu'an",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Beijing Yidian Xindong",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-30T08:00:00Z",
+   "home": "Zhongchao Cable Fujian Fu'an",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, round robin (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    6
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shantou Mingrun",
+   "away": "Zhongchao Cable Fujian Fu'an",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Beijing Yidian Xindong",
+   "away": "Shandong Luneng",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Beijing Yidian Xindong",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Huangshi Dongchu",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shanghai Real Estate Group",
+   "away": "Zhongchao Cable Fujian Fu'an",
+   "score": [
+    8,
+    5
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Sichuan Fenggu",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-31T08:00:00Z",
+   "home": "Mili Pingpong",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Shandong Weiqiao",
+   "away": "Shanghai Real Estate Group",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Beijing Yidian Xindong",
+   "away": "Huangshi Dongchu",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Zhongchao Cable Fujian Fu'an",
+   "away": "Mili Pingpong",
+   "score": [
+    8,
+    2
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Shandong Luneng",
+   "away": "Shantou Mingrun",
+   "score": [
+    8,
+    3
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
+  {
+   "when": "2026-08-01T08:00:00Z",
+   "home": "Sichuan Fenggu",
+   "away": "Anhui Zhongcheng Yinhe",
+   "score": [
+    8,
+    4
+   ],
+   "status": "finished",
+   "round": "Regular season, points round (Xiongan)",
+   "venue": "Xiongan",
+   "date_only": true
+  },
   {
    "when": "2026-12-25T02:00:00Z",
    "home": "Finals",
@@ -73,6 +911,24 @@
    "round": "Finals, Guangzhou",
    "date_only": true,
    "label": "Super League men's finals begin in Guangzhou"
+  }
+ ],
+ "sources": [
+  {
+   "name": "China Sports Daily's Table Tennis World (Chinese): points-round results, 31 July",
+   "url": "https://news.qq.com/rain/a/20260731A0CMYL00"
+  },
+  {
+   "name": "Yangtse Evening Post (Chinese): Dalian stage ends, 26 July",
+   "url": "https://www.yzwb.net/news/ty/202607/t20260727_376454.html"
+  },
+  {
+   "name": "Yangtse Evening Post (Chinese): regular season ends, 1 August",
+   "url": "https://www.yzwb.net/news/ty/202608/t20260802_378578.html"
+  },
+  {
+   "name": "CCTV (Chinese): results, 29 July",
+   "url": "https://sports.cctv.com/2026/07/29/ARTIN6G6oPks5rR3t5BKbdw4260729.shtml"
   }
  ]
 }
