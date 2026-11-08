@@ -81,9 +81,8 @@ def dttbl_women():
     for href in dict.fromkeys(re.findall(r'href="(/cgi-bin/WebObjects/nuLigaTTDE\.woa/wa/teamPortrait\?[^"]+)"', page)):
         tp = cs.get("https://dttb.click-tt.de" + html.unescape(href))
         lines = text_lines(tp)
-        title = re.search(r"<h1>(.*?)</h1>", tp, re.S)
-        name = re.sub(r"\s*\d+\.\s*Damen.*", "", html.unescape(re.sub(r"<[^>]+>", " ", title.group(1))).split("\n")[-1].strip() if title else "")
-        name = re.sub(r"\s+", " ", name).strip()
+        head = next((l for l in lines if re.search(r"\d+\.\s*Damen", l)), "")
+        name = re.sub(r"\s*\d+\.\s*Damen.*", "", head).strip()
         players = []
         if "Spielerbilanzen" in " ".join(lines):
             i = next(k for k, l in enumerate(lines) if l.startswith("Spielerbilanzen"))
@@ -93,9 +92,7 @@ def dttbl_women():
                     nm = f"{m.group(2).strip()} {m.group(1).strip()}"
                     if nm not in [p["name"] for p in players]:
                         players.append({"name": nm})
-        for k, v in cs.DTTBL_NAMES.items():
-            if k.lower() in name.lower() or name.lower() in k.lower():
-                name = v
+        name = next((v for k, v in cs.DTTBL_NAMES.items() if name and (k.lower() == name.lower() or k.lower() in name.lower() or name.lower() in k.lower())), name)
         if players:
             teams.append({"team": name, "players": players})
     return {"source": {"name": "DTTB click-TT", "url": url}, "note": "Players who have played this season.", "teams": teams}
@@ -110,7 +107,9 @@ def tleague(gender):
     for slug in slugs:
         if (slug in men) != (gender == "m"):
             continue
-        page = cs.get(f"{cs.TL}/team/{slug}/")
+        page = cs.get(f"{cs.TL}/team/{slug}/player/") or ""
+        if "player=" not in page:
+            page = cs.get(f"{cs.TL}/team/{slug}/") or ""
         ps = []
         for pid in dict.fromkeys(re.findall(r"detail\.php\?player=(\d+)", page)):
             if pid not in known:
@@ -154,17 +153,21 @@ def mltt():
     return {"source": {"name": "MLTT", "url": "https://www.mltt.com/teams"}, "teams": teams}
 
 
+UTT_TEAMS = {"ahmedabad-apl-pipers": "Ahmedabad APL Pipers", "dabang-delhi-t-t-c": "Dabang Delhi TTC", "dempo-goa-challengers": "Dempo Goa Challengers",
+             "hvr-kolkata-thunder-blades": "HVR Kolkata ThunderBlades", "pbg-pune-jaguars": "PBG Pune Jaguars", "u-mumba-tt": "U Mumba TT",
+             "up-prometheans": "UP Prometheans"}
+
+
 def utt():
     teams = []
     for path, lines, players, coach in roster_pages("https://www.ultimatetabletennis.in", "/teams", r'href="(/teams/[a-z0-9-]+)"', "Players", {"Coaches", "Leagues"}):
-        k = lines.index("Players")
-        name = next((l for l in lines[:k] if l not in ("Leagues", "Seasons", "Leaderboards", "Teams", "Impact", "UTT+", "TTSL", "Butterfly Challenger Cup",
-                                                       "National", "International", "About", "Media", "News", "Gallery", "Connect")), path)
+        slug = re.sub(r"-\d+$", "", path.rsplit("/", 1)[1])
+        name = UTT_TEAMS.get(slug, " ".join(w.capitalize() for w in slug.split("-")))
         coaches = []
         if "Coaches" in lines:
             c = lines.index("Coaches")
             coaches = [lines[x] for x in range(c + 1, min(c + 7, len(lines)), 2) if nat(lines[x + 1]) or lines[x + 1] in ("India",)]
-        teams.append({"team": {"HVR Kolkata Thunder Blades": "HVR Kolkata ThunderBlades", "Dabang Delhi T.T.C.": "Dabang Delhi TTC"}.get(name, name),
+        teams.append({"team": name,
                       "players": players, **({"coach": ", ".join(coaches)} if coaches else {})})
     return {"source": {"name": "Ultimate Table Tennis", "url": "https://www.ultimatetabletennis.in/teams"}, "teams": teams}
 

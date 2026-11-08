@@ -115,6 +115,14 @@ The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.
 - By hand (`"auto": false`): `proa-men`, `proa-women` (FFTT and the clubs' sites), `cttsl-men`, `cttsl-women` (CTTA, Xinhua, Sina, Tencent), `cl-men`, `cl-women` (ETTU), `utt` (Ultimate Table Tennis). In every run where a league in season has played, update its file from the official source or two reliable reports: `status`, `updated`, the table and new results (`score: [home, away]`, `status: "finished"`), and the next fixtures. Use `"when": null` with a `round` when the date isn't known, and `"date_only": true` when only the day is. Never guess a score, date or table position. Same format as the automatic files (see the docstring in `tools/club_sync.py`).
 - News: club stories appear on their league page when the headline or summary names the league. Add `"league": "<slug>"` (`bundesliga`, `super-league`, `t-league`, `pro-a`, `champions-league`, `mltt`, `utt`) to any club story that doesn't, and write club news as before (category Clubs, equal weight to men's and women's leagues).
 
+
+## Club squads
+
+- Squads for every league on the Clubs pages live in `data/clubs/squads/<competition>.json` and show in a Squads section on each league page, with players linked to their profiles.
+- Automatic (`"auto": true`): `ttbl`, `dttbl-women`, `tleague-men`, `tleague-women`, `mltt`, `utt`. `tools/squad_sync.py` refreshes them once a day in the club-sync workflow. Don't edit these by hand; if a parser breaks (a team with no players), fix it.
+- By hand (`"auto": false`): `cttsl-men`, `cttsl-women` (each club's registered squad, from CTTA or reliable Chinese reports, names in pinyin, family name first), `cl-men`, `cl-women` (ETTU's team roster PDFs on the competition pages), `proa-men`, `proa-women` (not yet filled: build them from the clubs' own sites and FFTT match reports, never from Wikipedia alone).
+- Monitoring: on every run, check the news scan and the leagues' own news for transfers, signings, loans, retirements and injuries that change a squad, and update the manual files the same run (set `updated`). A transfer of a ranked or profiled player is also a news story. Each new season, replace the squads once the leagues publish them.
+
 ## Past events and full draws
 
 - The WTT sync saves every draw WTT has for an event on now (singles, doubles, mixed and team), and the event page shows them as tabs in the draw and as filters in Matches. By hand: `python3 tools/fetch_draw.py <wtt id> "<name>" <utc offset> --all`.
