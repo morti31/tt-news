@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T20:40:00Z",
+  "updated": "2026-11-08T22:27:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -729,46 +729,6 @@
       "start": "2026-11-07T17:30:00Z",
       "end": "2026-11-07T21:30:00Z",
       "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
-    },
-    {
-      "id": "wtt-3252-ttewsinglesqfnl000100",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Hana Goda v Satsuki Odo, women's singles, quarterfinal",
-      "start": "2026-11-07T17:30:00Z",
-      "end": "2026-11-07T18:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "code": "TTEWSINGLES-----------QFNL000100--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsinglesqfnl000200",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Shunsuke Togami v Wim Verdonschot, men's singles, quarterfinal",
-      "start": "2026-11-07T18:15:00Z",
-      "end": "2026-11-07T19:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "code": "TTEMSINGLES-----------QFNL000200--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttewsinglesqfnl000200",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Sabine Winter v Chen Yi, women's singles, quarterfinal",
-      "start": "2026-11-07T19:00:00Z",
-      "end": "2026-11-07T19:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "code": "TTEWSINGLES-----------QFNL000200--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3252-ttemsinglesqfnl000100",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: Sora Matsushima v Patrick Franziska, men's singles, quarterfinal",
-      "start": "2026-11-07T19:45:00Z",
-      "end": "2026-11-07T20:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3252",
-      "code": "TTEMSINGLES-----------QFNL000100--",
-      "detail": "Table 1"
     },
     {
       "id": "frankfurt-2026-11-08-s1",
