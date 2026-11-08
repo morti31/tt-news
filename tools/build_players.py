@@ -4,10 +4,11 @@ Called from build_site.py. Inputs:
   data/players/<slug>.json     the bio file (researched; see UPDATE.md "Player profiles")
   data/players/wtt.json        WTT's own record (date of birth, hand, grip, best rank), from tools/match_sync.py
   data/matches/*.json          Eleven's match database, from tools/match_sync.py
+  data/leagues/<league>/*.json   club league ties and rubbers, from tools/league_sync.py
   data/rankings.json, data/ranking-history.json
   the stories and their tags (build_site.make_tags), the event pages (events.json)
 """
-import glob, html, json, os, re, datetime as dt
+import glob, html, json, os, re, unicodedata, datetime as dt
 import components
 
 e = html.escape
@@ -129,6 +130,41 @@ class DB:
                 for pid in side:
                     self.by_player.setdefault(pid, []).append(m)
 
+        self.club_by_player = self.load_leagues()
+
+    LEAGUES = {"ttbl": "Bundesliga", "tleague": "T.League"}
+
+    def load_leagues(self):
+        """Club rubbers keyed by ITTF id. League players are matched to WTT's players by name, only where exactly one fits."""
+        def key(n):
+            n = unicodedata.normalize("NFKD", n or "").encode("ascii", "ignore").decode().lower()
+            return " ".join(sorted(re.findall(r"[a-z]+", n)))
+        by_name = {}
+        for pid, (raw, org) in self.players.items():
+            by_name.setdefault(key(raw), []).append(pid)
+        out = {}
+        for lg, label in self.LEAGUES.items():
+            ldir = os.path.join(ROOT, "data", "leagues", lg)
+            lp = load(os.path.join(ldir, "players.json"), {})
+            ids = {}
+            for k, v in lp.items():
+                hit = by_name.get(key(v.get("name")), [])
+                if len(hit) == 1:
+                    ids[k] = hit[0]
+            for f in sorted(glob.glob(os.path.join(ldir, "[0-9]*.json"))):
+                for t in load(f, {}).get("ties", []):
+                    for r in t.get("r", []):
+                        for sd in (0, 1):
+                            for x in r["p"][sd]:
+                                if x in ids:
+                                    out.setdefault(ids[x], []).append({"league": label, "tie": t, "r": r, "side": sd,
+                                                                       "opp": [lp.get(o, {}).get("name", o) for o in r["p"][1 - sd]],
+                                                                       "opp_ids": [ids.get(o) for o in r["p"][1 - sd]],
+                                                                       "partner": [lp.get(o, {}).get("name", o) for o in r["p"][sd] if o != x]})
+        for v in out.values():
+            v.sort(key=lambda c: c["tie"].get("d") or "", reverse=True)
+        return out
+
     def name(self, pid, profiles):
         if pid in profiles:
             return profiles[pid]["name"]
@@ -137,6 +173,11 @@ class DB:
 
     def org(self, pid):
         return (self.players.get(pid) or [None, None])[1]
+
+
+def _title(n):
+    """'Yuya OSHIMA' or 'Benedikt DUDA' -> 'Yuya Oshima'"""
+    return " ".join(w.capitalize() if w.isupper() and len(w) > 1 else w for w in (n or "").split())
 
 
 def age(born):
@@ -302,6 +343,33 @@ def build(page, site, tag_items, tag_url, hubs, R):
         recent_sec = (f'<section class="hub-sec" id="matches"><h2 class="section-title">Recent matches</h2><div class="table-scroll"><table class="pl-table pl-matches"><thead><tr>'
                       f'<th scope="col">Date</th><th scope="col">Event</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(mrow(m) for m in recent)}</tbody></table></div>'
                       f'<p class="small">Official results from World Table Tennis. Times are UK dates.</p></section>') if recent else ""
+
+        # ---- club matches, from the leagues' own results
+        club = db.club_by_player.get(pid, [])
+        club_sec = ""
+        if club:
+            def crow(c):
+                t, r, sd = c["tie"], c["r"], c["side"]
+                won_ = r["w"] == sd
+                gs = [g.split("-") for g in (r.get("g") or "").split(",") if "-" in g]
+                games = ", ".join(f"{a}-{b}" if sd == 0 else f"{b}-{a}" for a, b in gs)
+                mine, theirs = (t["home"], t["away"]) if sd == 0 else (t["away"], t["home"])
+                opp = " / ".join(who(oid) if oid else e(_title(on)) for on, oid in zip(c["opp"], c["opp_ids"]))
+                with_ = f' <span class="pl-with">with {" / ".join(e(_title(x)) for x in c["partner"])}</span>' if c["partner"] else ""
+                tie_sc = f'{t["s"][sd]}-{t["s"][1 - sd]}'
+                return (f'<tr class="{"pl-w" if won_ else "pl-l"}"><td class="pl-date">{e(short_date(t["d"])) if t.get("d") else ""}</td>'
+                        f'<td><a href="{e(t["url"])}" rel="noopener">{e(c["league"])}</a><span class="pl-sub">{e(mine)} {e(tie_sc)} {e(theirs)}</span></td>'
+                        f'<td>{opp}{with_}</td><td class="pl-res"><b>{"W" if won_ else "L"}</b> {r["s"][sd]}-{r["s"][1 - sd]}<span class="pl-sub">{e(games)}</span></td></tr>')
+            recs = {}
+            for c in club:
+                if c["r"]["k"] != "S":
+                    continue
+                recs.setdefault(c["league"], [0, 0])[0 if c["r"]["w"] == c["side"] else 1] += 1
+            rec_txt = "; ".join(f"{lg}: {w}-{l} in singles" for lg, (w, l) in recs.items())
+            club_sec = (f'<section class="hub-sec" id="club"><h2 class="section-title">Club matches</h2>'
+                        f'<p class="small">{e(rec_txt)}, all seasons on record.</p><div class="table-scroll"><table class="pl-table pl-matches"><thead><tr>'
+                        f'<th scope="col">Date</th><th scope="col">League</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(crow(c) for c in club[:20])}</tbody></table></div>'
+                        f'<p class="small">Official results from the leagues: the Tischtennis Bundesliga and the T.League.</p></section>')
 
         # ---- honours: championship medals (researched) and titles (from the database), the Grand Smashes on their own
         medal = {"Gold": "g", "Silver": "s", "Bronze": "b", "Winner": "g", "Runner-up": "s", "Semi-final": "b"}
@@ -479,7 +547,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
         def host(u):
             return re.sub(r"^https?://(www[.])?", "", u).split("/")[0]
         srcs = ", ".join(f'<a href="{e(u)}" rel="noopener">{e(host(u))}</a>' for u in p.get("sources") or [])
-        jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("matches", "Matches", recent_sec), ("seasons", "Seasons", season), ("honours", "Honours", titles_sec),
+        jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("matches", "Matches", recent_sec), ("club", "Club", club_sec), ("seasons", "Seasons", season), ("honours", "Honours", titles_sec),
                                                                    ("h2h", "Head to head", h2h_sec), ("ranking", "Ranking", rank_sec)) if sec)
         body = f'''<main class="wrap pl-page">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/players/">Players</a> / {e(p["name"])}</nav>
@@ -487,7 +555,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
 {f'<nav class="hub-jump" aria-label="On this page">{jump}</nav>' if jump else ""}
 <div class="hub-grid"><div class="hub-main">
 {notes and f'<section class="hub-sec pl-notes">{notes}</section>'}
-{recent_sec}{season}{titles_sec}{h2h_sec}{rank_sec}
+{recent_sec}{club_sec}{season}{titles_sec}{h2h_sec}{rank_sec}
 <p class="small pl-src">Results, rankings and playing details from World Table Tennis. Biography, clubs, equipment and championship medals from {srcs or "published sources"}, checked {long_date(p.get("checked", dt.date.today().isoformat()))}.</p>
 </div>
 <aside class="article-side">{news_sec}{club_sec}{eq_sec}<div class="ad ad-side" data-ad="sidebar"></div></aside></div>
