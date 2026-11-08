@@ -1,5 +1,5 @@
 name: Club sync
-# Pulls club league tables, fixtures and results (TTBL, women's Bundesliga, T.League, MLTT) every hour.
+# Pulls club league tables, fixtures and results (TTBL, women's Bundesliga, T.League, MLTT) every hour, and every league's squads once a day.
 on:
   schedule:
     - cron: "23 * * * *"
@@ -16,6 +16,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Sync club leagues
         run: python3 tools/club_sync.py
+      - name: Sync club squads (once a day, in the 05:00 UTC run, or when run by hand)
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ] || [ "$(date -u +%H)" = "05" ]; then python3 tools/squad_sync.py; else echo "Squads sync once a day"; fi
       - name: Commit changes
         run: |
           git config user.name "Tom Mortimer"

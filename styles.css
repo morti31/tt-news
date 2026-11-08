@@ -1317,3 +1317,11 @@ html.mp-open { overflow: hidden; }
 .cl-all > summary::-webkit-details-marker { display: none; }
 .cl-all > summary::after { content: " ▾"; }
 .cl-all[open] > summary::after { content: " ▴"; }
+.cl-squads { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin: 8px 0 6px; }
+.cl-squad { background: var(--card); border-radius: 12px; box-shadow: var(--shadow); padding: 12px 14px; border-top: 3px solid var(--tier, var(--accent)); }
+.cl-squad h4 { margin: 0 0 6px; font-size: 15px; }
+.cl-squad ul { list-style: none; margin: 0; padding: 0; font-size: 14px; line-height: 1.6; }
+.cl-squad li .fi { margin-right: 6px; }
+.cl-squad a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+.cl-coach { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+#squads .cl-comp + .cl-comp { margin-top: 22px; }

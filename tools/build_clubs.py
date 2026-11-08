@@ -49,6 +49,39 @@ COLS = {"p": ("P", "Played"), "w": ("W", "Won"), "d": ("D", "Drawn"), "l": ("L",
         "games": ("Games", "Games won and lost"), "matches": ("Matches", "Individual matches won and lost"), "points": ("Points", "Points won and lost")}
 
 
+def load_squads(cid):
+    path = os.path.join(ROOT, "data", "clubs", "squads", f"{cid}.json")
+    try:
+        return json.load(open(path, encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def squads_html(comps, profiles):
+    """Every team's squad, men's and women's competitions side by side, players linked to their profiles."""
+    import components
+    blocks = []
+    for cid, tag, title, _ in comps:
+        sq = load_squads(cid)
+        if not sq or not sq.get("teams"):
+            continue
+        cards = []
+        for t in sorted(sq["teams"], key=lambda t: t["team"]):
+            lis = "".join(
+                f'<li>{components.flag(p.get("nat")) if p.get("nat") else ""}'
+                + (f'<a href="{profiles[p["name"]]}">{e(p["name"])}</a>' if p["name"] in profiles else e(p["name"])) + "</li>"
+                for p in t["players"])
+            coach = f'<p class="cl-coach">Coach: {e(t["coach"])}</p>' if t.get("coach") else ""
+            cards.append(f'<div class="cl-squad"><h4>{e(t["team"])}</h4><ul>{lis}</ul>{coach}</div>')
+        note = f' {e(sq["note"])}' if sq.get("note") else ""
+        src = sq.get("source") or {}
+        upd = sq.get("updated")
+        blocks.append(f'<div class="cl-comp"><h3 class="cl-comp-h"><span class="cl-tag">{e(tag)}</span>{e(title)} squads</h3><div class="cl-squads">{"".join(cards)}</div>'
+                      f'<p class="cl-note">From <a href="{e(src.get("url", "#"))}" rel="noopener">{e(src.get("name", ""))}</a>'
+                      f'{f", checked {uk(upd).day} {uk(upd):%B %Y}" if upd else ""}.{note}</p></div>')
+    return "".join(blocks)
+
+
 def load(cid):
     p = os.path.join(ROOT, "data", "clubs", f"{cid}.json")
     return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
@@ -186,7 +219,12 @@ def league_page(lg, stories, now):
     more = (f'<details class="cl-all"><summary>All {len(older) + len(res)} results this season</summary>{grouped(older, mixed)}</details>') if older else ""
     tables = "".join(f'<div class="cl-comp"><h3 class="cl-comp-h"><span class="cl-tag">{e(tag)}</span>{e(title)}</h3>{table_html(d, f"{tag} {title}")}</div>' for cid, tag, title, d in comps)
     mine = stories_for(lg, stories)
-    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v in (("results", "Results"), ("fixtures", "Fixtures"), ("tables", "Tables"), ("news", "News"), ("about", "About")) if k != "news" or mine)
+    try:
+        profiles = json.load(open(os.path.join(ROOT, "data", "profiles.json"), encoding="utf-8"))
+    except Exception:
+        profiles = {}
+    squads = squads_html(comps, profiles)
+    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v in (("results", "Results"), ("fixtures", "Fixtures"), ("tables", "Tables"), ("squads", "Squads"), ("news", "News"), ("about", "About")) if (k != "news" or mine) and (k != "squads" or squads))
     body = f'''<main class="wrap cl-page" style="--tier:{lg["colour"]}">
 <p class="crumbs"><a href="/">Home</a> / <a href="/clubs/">Clubs</a> / {e(lg["name"])}</p>
 <header class="hub-head cl-head"><div><span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span>
@@ -196,6 +234,7 @@ def league_page(lg, stories, now):
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Fixtures</h2>{grouped(fix, mixed) or '<p class="cl-none">No fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span> Times can change, so check with the clubs before travelling.</p></section></div>
 <section class="hub-sec" id="tables"><h2 class="section-title">{"Table" if mixed else "Tables"}</h2><div class="cl-tables{" one" if mixed else ""}">{tables}</div></section>
+{f'<section class="hub-sec" id="squads"><h2 class="section-title">Squads</h2>{squads}</section>' if squads else ""}
 {f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2>{news_list(mine, 12)}</section>' if mine else ""}
 <section class="hub-sec" id="about"><h2 class="section-title">About the league</h2><p class="cl-about">{e(lg["about"])}</p>
 <p class="small">Tables, fixtures and results from {srcs}{f', updated {uk(upd).day} {uk(upd):%B} at {uk(upd):%H:%M} UK time' if upd else ""}.</p></section>
