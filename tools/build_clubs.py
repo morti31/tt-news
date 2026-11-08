@@ -59,7 +59,14 @@ def load_squads(cid):
 
 def squads_html(comps, profiles):
     """Every team's squad, men's and women's competitions side by side, players linked to their profiles."""
-    import components
+    import components, unicodedata
+    def key(n):
+        n = unicodedata.normalize("NFKD", n or "").encode("ascii", "ignore").decode().lower()
+        return " ".join(sorted(re.findall(r"[a-z]+", n)))
+    by_key = {key(n): (n, u) for n, u in profiles.items()}
+    def link(name):
+        hit = by_key.get(key(name))
+        return f'<a href="{hit[1]}">{e(hit[0])}</a>' if hit else e(name)
     blocks = []
     for cid, tag, title, _ in comps:
         sq = load_squads(cid)
@@ -69,7 +76,7 @@ def squads_html(comps, profiles):
         for t in sorted(sq["teams"], key=lambda t: t["team"]):
             lis = "".join(
                 f'<li>{components.flag(p.get("nat")) if p.get("nat") else ""}'
-                + (f'<a href="{profiles[p["name"]]}">{e(p["name"])}</a>' if p["name"] in profiles else e(p["name"])) + "</li>"
+                + link(p["name"]) + "</li>"
                 for p in t["players"])
             coach = f'<p class="cl-coach">Coach: {e(t["coach"])}</p>' if t.get("coach") else ""
             cards.append(f'<div class="cl-squad"><h4>{e(t["team"])}</h4><ul>{lis}</ul>{coach}</div>')
