@@ -1,21 +1,390 @@
 {
  "id": "utt",
  "auto": false,
- "updated": "2026-11-05T15:00:00Z",
+ "updated": "2026-11-08T21:50:00Z",
  "season": "Season 7 (2026)",
  "status": "Season complete: U Mumba TT are champions",
  "source": {
   "name": "Ultimate Table Tennis",
-  "url": "https://www.ultimatetabletennis.in/"
+  "url": "https://www.ultimatetabletennis.in/media/news"
  },
  "table": {
-  "columns": [],
-  "groups": []
+  "columns": [
+   "p",
+   "w",
+   "l",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": "League phase",
+    "rows": [
+     {
+      "team": "Dempo Goa Challengers",
+      "p": 6,
+      "w": 6,
+      "l": 0,
+      "for": 56,
+      "against": 34,
+      "pos": 1,
+      "diff": 22,
+      "q": true,
+      "pts": 56
+     },
+     {
+      "team": "HVR Kolkata ThunderBlades",
+      "p": 6,
+      "w": 4,
+      "l": 2,
+      "for": 49,
+      "against": 41,
+      "pos": 2,
+      "diff": 8,
+      "q": true,
+      "pts": 49
+     },
+     {
+      "team": "U Mumba TT",
+      "p": 6,
+      "w": 3,
+      "l": 3,
+      "for": 48,
+      "against": 42,
+      "pos": 3,
+      "diff": 6,
+      "q": true,
+      "pts": 48
+     },
+     {
+      "team": "Dabang Delhi TTC",
+      "p": 6,
+      "w": 4,
+      "l": 2,
+      "for": 46,
+      "against": 44,
+      "pos": 4,
+      "diff": 2,
+      "q": true,
+      "pts": 46
+     },
+     {
+      "team": "Ahmedabad APL Pipers",
+      "p": 6,
+      "w": 2,
+      "l": 4,
+      "for": 45,
+      "against": 45,
+      "pos": 5,
+      "diff": 0,
+      "q": false,
+      "pts": 45
+     },
+     {
+      "team": "PBG Pune Jaguars",
+      "p": 6,
+      "w": 1,
+      "l": 5,
+      "for": 39,
+      "against": 51,
+      "pos": 6,
+      "diff": -12,
+      "q": false,
+      "pts": 39
+     },
+     {
+      "team": "UP Prometheans",
+      "p": 6,
+      "w": 1,
+      "l": 5,
+      "for": 32,
+      "against": 58,
+      "pos": 7,
+      "diff": -26,
+      "q": false,
+      "pts": 32
+     }
+    ]
+   }
+  ],
+  "note": "Eleven's table from the official results. UTT ranks teams on points, one for each game won; the top four reached the semi-finals."
  },
  "note": "Dempo Goa Challengers went through the league phase unbeaten before losing the final.",
  "matches": [
   {
-   "when": "2026-07-25T14:00:00Z",
+   "when": "2026-07-09T14:00:00Z",
+   "home": "Dempo Goa Challengers",
+   "away": "U Mumba TT",
+   "score": [
+    10,
+    5
+   ],
+   "status": "finished",
+   "round": "League, tie 1",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-10T14:00:00Z",
+   "home": "Dabang Delhi TTC",
+   "away": "UP Prometheans",
+   "score": [
+    9,
+    6
+   ],
+   "status": "finished",
+   "round": "League, tie 2",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-10T14:00:00Z",
+   "home": "HVR Kolkata ThunderBlades",
+   "away": "PBG Pune Jaguars",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "League, tie 3",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-11T14:00:00Z",
+   "home": "Dabang Delhi TTC",
+   "away": "HVR Kolkata ThunderBlades",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "League, tie 4",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-11T14:00:00Z",
+   "home": "Ahmedabad APL Pipers",
+   "away": "U Mumba TT",
+   "score": [
+    9,
+    6
+   ],
+   "status": "finished",
+   "round": "League, tie 5",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-12T14:00:00Z",
+   "home": "UP Prometheans",
+   "away": "PBG Pune Jaguars",
+   "score": [
+    6,
+    9
+   ],
+   "status": "finished",
+   "round": "League, tie 6",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-12T14:00:00Z",
+   "home": "Ahmedabad APL Pipers",
+   "away": "Dempo Goa Challengers",
+   "score": [
+    7,
+    8
+   ],
+   "status": "finished",
+   "round": "League, tie 7",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-13T14:00:00Z",
+   "home": "Dempo Goa Challengers",
+   "away": "HVR Kolkata ThunderBlades",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "League, tie 8",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-14T14:00:00Z",
+   "home": "Ahmedabad APL Pipers",
+   "away": "UP Prometheans",
+   "score": [
+    7,
+    8
+   ],
+   "status": "finished",
+   "round": "League, tie 9",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-15T14:00:00Z",
+   "home": "Dabang Delhi TTC",
+   "away": "U Mumba TT",
+   "score": [
+    7,
+    8
+   ],
+   "status": "finished",
+   "round": "League, tie 10",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-16T14:00:00Z",
+   "home": "U Mumba TT",
+   "away": "PBG Pune Jaguars",
+   "score": [
+    9,
+    6
+   ],
+   "status": "finished",
+   "round": "League, tie 11",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-17T14:00:00Z",
+   "home": "Ahmedabad APL Pipers",
+   "away": "HVR Kolkata ThunderBlades",
+   "score": [
+    6,
+    9
+   ],
+   "status": "finished",
+   "round": "League, tie 12",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-17T14:00:00Z",
+   "home": "Dabang Delhi TTC",
+   "away": "Dempo Goa Challengers",
+   "score": [
+    3,
+    12
+   ],
+   "status": "finished",
+   "round": "League, tie 13",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-18T14:00:00Z",
+   "home": "Ahmedabad APL Pipers",
+   "away": "PBG Pune Jaguars",
+   "score": [
+    10,
+    5
+   ],
+   "status": "finished",
+   "round": "League, tie 14",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-18T14:00:00Z",
+   "home": "UP Prometheans",
+   "away": "U Mumba TT",
+   "score": [
+    2,
+    13
+   ],
+   "status": "finished",
+   "round": "League, tie 15",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-19T14:00:00Z",
+   "home": "Dempo Goa Challengers",
+   "away": "PBG Pune Jaguars",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "League, tie 16",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-19T14:00:00Z",
+   "home": "HVR Kolkata ThunderBlades",
+   "away": "UP Prometheans",
+   "score": [
+    10,
+    5
+   ],
+   "status": "finished",
+   "round": "League, tie 17",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-20T14:00:00Z",
+   "home": "Ahmedabad APL Pipers",
+   "away": "Dabang Delhi TTC",
+   "score": [
+    6,
+    9
+   ],
+   "status": "finished",
+   "round": "League, tie 18",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-21T14:00:00Z",
+   "home": "HVR Kolkata ThunderBlades",
+   "away": "U Mumba TT",
+   "score": [
+    8,
+    7
+   ],
+   "status": "finished",
+   "round": "League, tie 19",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-22T14:00:00Z",
+   "home": "Dempo Goa Challengers",
+   "away": "UP Prometheans",
+   "score": [
+    10,
+    5
+   ],
+   "status": "finished",
+   "round": "League, tie 20",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-23T14:00:00Z",
+   "home": "Dabang Delhi TTC",
+   "away": "PBG Pune Jaguars",
+   "score": [
+    10,
+    5
+   ],
+   "status": "finished",
+   "round": "League, tie 21",
+   "venue": "Goa",
+   "date_only": true
+  },
+  {
+   "when": "2026-07-24T14:00:00Z",
    "home": "Dempo Goa Challengers",
    "away": "Dabang Delhi TTC",
    "score": [
@@ -24,7 +393,8 @@
    ],
    "status": "finished",
    "round": "Semi-final",
-   "date_only": true
+   "date_only": true,
+   "venue": "Goa"
   },
   {
    "when": "2026-07-25T14:00:00Z",
@@ -36,7 +406,8 @@
    ],
    "status": "finished",
    "round": "Semi-final",
-   "date_only": true
+   "date_only": true,
+   "venue": "Goa"
   },
   {
    "when": "2026-07-26T14:00:00Z",
