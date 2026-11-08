@@ -1,7 +1,7 @@
 {
  "id": "tleague-women",
  "auto": true,
- "updated": "2026-11-07T16:56:00Z",
+ "updated": "2026-11-08T15:25:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -22,13 +22,13 @@
      {
       "pos": 1,
       "team": "Top Otome Pingpongs Nagoya",
-      "pts": 34,
-      "p": 14,
+      "pts": 35,
+      "p": 15,
       "w": 11,
-      "l": 3,
-      "for": 37,
-      "against": 24,
-      "diff": 13
+      "l": 4,
+      "for": 39,
+      "against": 27,
+      "diff": 12
      },
      {
       "pos": 2,
@@ -44,13 +44,13 @@
      {
       "pos": 3,
       "team": "Nippon Life Red Elf",
-      "pts": 22,
-      "p": 9,
-      "w": 6,
+      "pts": 25,
+      "p": 10,
+      "w": 7,
       "l": 3,
-      "for": 25,
-      "against": 13,
-      "diff": 12
+      "for": 28,
+      "against": 14,
+      "diff": 14
      },
      {
       "pos": 4,
@@ -67,23 +67,23 @@
       "pos": 5,
       "team": "Kyoto Kaguya Rise",
       "pts": 12,
-      "p": 12,
+      "p": 13,
       "w": 3,
-      "l": 9,
-      "for": 17,
-      "against": 33,
-      "diff": -16
+      "l": 10,
+      "for": 18,
+      "against": 36,
+      "diff": -18
      },
      {
       "pos": 6,
       "team": "Kyushu Karina",
-      "pts": 6,
-      "p": 11,
-      "w": 1,
+      "pts": 9,
+      "p": 12,
+      "w": 2,
       "l": 10,
-      "for": 16,
-      "against": 32,
-      "diff": -16
+      "for": 19,
+      "against": 34,
+      "diff": -15
      }
     ]
    }
@@ -455,15 +455,21 @@
    "when": "2026-11-08T05:00:00Z",
    "home": "Top Otome Pingpongs Nagoya",
    "away": "Kyushu Karina",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-08T06:00:00Z",
    "home": "Kyoto Kaguya Rise",
    "away": "Nippon Life Red Elf",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-14T05:00:00Z",
