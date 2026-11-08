@@ -1,7 +1,7 @@
 {
  "id": "dttbl-women",
  "auto": true,
- "updated": "2026-11-05T15:27:00Z",
+ "updated": "2026-11-08T20:39:00Z",
  "season": "2026-27",
  "source": {
   "name": "DTTB click-TT",
@@ -22,6 +22,18 @@
     "rows": [
      {
       "pos": 1,
+      "team": "TTC Weinheim",
+      "p": 3,
+      "w": 3,
+      "d": 0,
+      "l": 0,
+      "for": 18,
+      "against": 4,
+      "diff": 14,
+      "pts": 6
+     },
+     {
+      "pos": 2,
       "team": "SV DJK Kolbermoor",
       "p": 3,
       "w": 3,
@@ -33,31 +45,31 @@
       "pts": 6
      },
      {
-      "pos": 2,
-      "team": "TTC Weinheim",
-      "p": 2,
-      "w": 2,
-      "d": 0,
-      "l": 0,
-      "for": 12,
-      "against": 3,
-      "diff": 9,
-      "pts": 4
-     },
-     {
       "pos": 3,
-      "team": "TTC Berlin Eastside",
+      "team": "TSV Dachau",
       "p": 3,
       "w": 2,
       "d": 0,
       "l": 1,
-      "for": 16,
-      "against": 9,
-      "diff": 7,
+      "for": 13,
+      "against": 10,
+      "diff": 3,
       "pts": 4
      },
      {
       "pos": 4,
+      "team": "TTC Berlin Eastside",
+      "p": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "for": 17,
+      "against": 15,
+      "diff": 2,
+      "pts": 4
+     },
+     {
+      "pos": 5,
       "team": "TG Langenselbold",
       "p": 5,
       "w": 2,
@@ -69,27 +81,15 @@
       "pts": 4
      },
      {
-      "pos": 5,
-      "team": "TuS Fürstenfeldbruck",
-      "p": 2,
-      "w": 1,
-      "d": 0,
-      "l": 1,
-      "for": 8,
-      "against": 8,
-      "diff": 0,
-      "pts": 2
-     },
-     {
       "pos": 6,
-      "team": "TSV Dachau",
-      "p": 2,
+      "team": "TuS Fürstenfeldbruck",
+      "p": 3,
       "w": 1,
       "d": 0,
-      "l": 1,
-      "for": 7,
-      "against": 8,
-      "diff": -1,
+      "l": 2,
+      "for": 10,
+      "against": 14,
+      "diff": -4,
       "pts": 2
      },
      {
@@ -234,17 +234,23 @@
   },
   {
    "when": "2026-11-08T13:00:00Z",
-   "home": "TSV Dachau",
-   "away": "TuS Fürstenfeldbruck",
-   "score": null,
-   "status": "scheduled"
+   "home": "TTC Weinheim",
+   "away": "TTC Berlin Eastside",
+   "score": [
+    6,
+    1
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-08T13:00:00Z",
-   "home": "TTC Weinheim",
-   "away": "TTC Berlin Eastside",
-   "score": null,
-   "status": "scheduled"
+   "home": "TSV Dachau",
+   "away": "TuS Fürstenfeldbruck",
+   "score": [
+    6,
+    2
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-14T13:00:00Z",
