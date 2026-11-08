@@ -1,7 +1,7 @@
 {
  "id": "tleague-women",
  "auto": true,
- "updated": "2026-11-08T21:48:39Z",
+ "updated": "2026-11-08T21:52:13Z",
  "source": {
   "name": "T.League",
   "url": "https://tleague.jp/team/"
@@ -41,7 +41,32 @@
   },
   {
    "team": "Nippon Paint Mallets",
-   "players": []
+   "players": [
+    {
+     "name": "Cocona Muramatsu"
+    },
+    {
+     "name": "Mana Shintani"
+    },
+    {
+     "name": "Sachi Aoki"
+    },
+    {
+     "name": "Sakura Yokoi"
+    },
+    {
+     "name": "Saki Shibata"
+    },
+    {
+     "name": "Satsuki Odo"
+    },
+    {
+     "name": "Mao Takamori"
+    },
+    {
+     "name": "Hitomi Sato"
+    }
+   ]
   },
   {
    "team": "Nippon Life Red Elf",
@@ -80,11 +105,82 @@
   },
   {
    "team": "Kinoshita Abyell Kanagawa",
-   "players": []
+   "players": [
+    {
+     "name": "Ryu Hanna"
+    },
+    {
+     "name": "Choi Hyojoo"
+    },
+    {
+     "name": "Kotona Okada"
+    },
+    {
+     "name": "Miyuu Nagasaki"
+    },
+    {
+     "name": "Senri Tsukasa"
+    },
+    {
+     "name": "Adriana Diaz"
+    },
+    {
+     "name": "Miwa Harimoto"
+    },
+    {
+     "name": "Mirei Makino"
+    },
+    {
+     "name": "Waka Fujimoto"
+    },
+    {
+     "name": "Cheng I-Ching"
+    },
+    {
+     "name": "Aoba Takahashi"
+    },
+    {
+     "name": "Hana Sakurai"
+    }
+   ]
   },
   {
    "team": "Kyoto Kaguya Rise",
-   "players": []
+   "players": [
+    {
+     "name": "Honoka Matsuzawa"
+    },
+    {
+     "name": "Tian Minyi"
+    },
+    {
+     "name": "Yukari Sugasawa"
+    },
+    {
+     "name": "Shiki Kusakabe"
+    },
+    {
+     "name": "Miku Izumo"
+    },
+    {
+     "name": "Maki Shiomi"
+    },
+    {
+     "name": "Hiyori Okazaki"
+    },
+    {
+     "name": "Mika Tamura"
+    },
+    {
+     "name": "Kotori Yoshimatsu"
+    },
+    {
+     "name": "Ringo Kobayashi"
+    },
+    {
+     "name": "Kana Hanai"
+    }
+   ]
   },
   {
    "team": "Kyushu Karina",
