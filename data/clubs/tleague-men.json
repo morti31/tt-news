@@ -1,7 +1,7 @@
 {
  "id": "tleague-men",
  "auto": true,
- "updated": "2026-11-07T16:56:00Z",
+ "updated": "2026-11-08T07:34:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -455,8 +455,11 @@
    "when": "2026-11-08T03:00:00Z",
    "home": "Shizuoka Jade",
    "away": "Kanazawa Port",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    0,
+    4
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-08T08:00:00Z",
