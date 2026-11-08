@@ -346,7 +346,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
 
         # ---- club matches, from the leagues' own results
         club = db.club_by_player.get(pid, [])
-        club_sec = ""
+        league_sec = ""
         if club:
             def crow(c):
                 t, r, sd = c["tie"], c["r"], c["side"]
@@ -366,7 +366,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
                     continue
                 recs.setdefault(c["league"], [0, 0])[0 if c["r"]["w"] == c["side"] else 1] += 1
             rec_txt = "; ".join(f"{lg}: {w}-{l} in singles" for lg, (w, l) in recs.items())
-            club_sec = (f'<section class="hub-sec" id="club"><h2 class="section-title">Club matches</h2>'
+            league_sec = (f'<section class="hub-sec" id="club"><h2 class="section-title">Club matches</h2>'
                         f'<p class="small">{e(rec_txt)}, all seasons on record.</p><div class="table-scroll"><table class="pl-table pl-matches"><thead><tr>'
                         f'<th scope="col">Date</th><th scope="col">League</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(crow(c) for c in club[:20])}</tbody></table></div>'
                         f'<p class="small">Official results from the leagues: the Tischtennis Bundesliga and the T.League.</p></section>')
@@ -547,7 +547,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
         def host(u):
             return re.sub(r"^https?://(www[.])?", "", u).split("/")[0]
         srcs = ", ".join(f'<a href="{e(u)}" rel="noopener">{e(host(u))}</a>' for u in p.get("sources") or [])
-        jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("matches", "Matches", recent_sec), ("club", "Club", club_sec), ("seasons", "Seasons", season), ("honours", "Honours", titles_sec),
+        jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("matches", "Matches", recent_sec), ("club", "Club", league_sec), ("seasons", "Seasons", season), ("honours", "Honours", titles_sec),
                                                                    ("h2h", "Head to head", h2h_sec), ("ranking", "Ranking", rank_sec)) if sec)
         body = f'''<main class="wrap pl-page">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/players/">Players</a> / {e(p["name"])}</nav>
@@ -555,7 +555,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
 {f'<nav class="hub-jump" aria-label="On this page">{jump}</nav>' if jump else ""}
 <div class="hub-grid"><div class="hub-main">
 {notes and f'<section class="hub-sec pl-notes">{notes}</section>'}
-{recent_sec}{club_sec}{season}{titles_sec}{h2h_sec}{rank_sec}
+{recent_sec}{league_sec}{season}{titles_sec}{h2h_sec}{rank_sec}
 <p class="small pl-src">Results, rankings and playing details from World Table Tennis. Biography, clubs, equipment and championship medals from {srcs or "published sources"}, checked {long_date(p.get("checked", dt.date.today().isoformat()))}.</p>
 </div>
 <aside class="article-side">{news_sec}{club_sec}{eq_sec}<div class="ad ad-side" data-ad="sidebar"></div></aside></div>
