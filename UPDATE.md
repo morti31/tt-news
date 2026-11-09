@@ -146,6 +146,8 @@ Every story gets up to three tags (tournament, players, club or league, country)
 
 ## Player profiles
 
+**Who gets a page** is decided by `tools/people.py` on every build, never by hand. Under 16: never. 16 or 17: only if they already play senior events (senior world top 100 now or before, or a main-draw match at WTT Contender level or higher). No date of birth: only with that senior record, and not at all if they have any youth-event record (they wait until `data/players/wanted.json` gets their date of birth from WTT via the match sync). Adults: the senior record, a club squad place, or a written bio. Youth events never count. Anyone else is plain text: no link, no tag chip, no page. Players with a page but no bio file get a page built from results and news; writing a bio file for them upgrades it. Player tags link to the profile's News tab, and old `/tag/<player>` links redirect there (`_redirects`, generated section).
+
 The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.json`, one file per player; `wtt.json` beside them is written by the match sync, never by hand). Results, recent matches, season records, tour titles, head to heads and the ranking history come from Eleven's match database (`data/matches`, filled every six hours by `.github/workflows/match-sync.yml` from WTT's official results), so they update themselves. The bio file holds what the database can't know:
 
 - `born`, `birthplace`, `height_cm`, `hand`, `grip`, `style`, `coach`

@@ -10,6 +10,7 @@ Called from build_site.py. Inputs:
 """
 import glob, html, json, os, re, unicodedata, datetime as dt
 import components
+import entity
 
 e = html.escape
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -209,26 +210,35 @@ def player_card(p, rank=None, size="big"):
             f'<span class="pc-foot">{components.flag(p.get("nat"))}<span class="pc-nat">{e(p.get("nat") or "")}</span>{rk}</span></div>')
 
 
-def build(page, site, tag_items, tag_url, hubs, R):
-    """Writes players/<slug>.html and players/index.html. Returns sitemap rows and {ittf id: url} for links elsewhere."""
-    profiles = {}
-    for f in sorted(glob.glob(os.path.join(ROOT, "data", "players", "*.json"))):
-        if os.path.basename(f) == "wtt.json":
-            continue
-        p = json.load(open(f, encoding="utf-8"))
-        p["slug"] = os.path.splitext(os.path.basename(f))[0]
-        profiles[p["ittf_id"]] = p
+_DB = None
+
+
+def database():
+    global _DB
+    if _DB is None:
+        _DB = DB()
+    return _DB
+
+
+def build(page, site, tag_items, hubs, R, roster, tg):
+    """Writes players/<slug>.html and players/index.html for every player the roster allows (tools/people.py).
+    Returns sitemap rows and {ittf id: url} for links elsewhere."""
+    import build_tags
+    profiles = {(p.get("ittf_id") or "slug:" + p["slug"]): p for p in roster.pages.values()}
     if not profiles:
         return [], {}
+    slugs_for = {}
+    for tslug, u in roster.urls.items():
+        slugs_for.setdefault(u, set()).add(tslug)
     wtt = load(os.path.join(ROOT, "data", "players", "wtt.json"), {})
     hist = load(os.path.join(ROOT, "data", "ranking-history.json"), {"weeks": {}})
-    db = DB()
+    db = database()
     hub_by_wtt = {str(h.get("wtt_id") or h.get("draw")): h for h in hubs.values() if h.get("wtt_id") or h.get("draw")}
     ranks = {}
     for g in ("men", "women"):
         for p in (R or {}).get(g, []):
             ranks[p.get("ittf_id")] = p
-    urls = {pid: f"/players/{p['slug']}.html" for pid, p in profiles.items()}
+    urls = {pid: f"/players/{p['slug']}.html" for pid, p in profiles.items() if not pid.startswith("slug:")}
     os.makedirs(os.path.join(ROOT, "players"), exist_ok=True)
     for old in glob.glob(os.path.join(ROOT, "players", "*.html")):
         os.remove(old)
@@ -291,8 +301,9 @@ def build(page, site, tag_items, tag_url, hubs, R):
                  ("Style", p.get("style")), ("Coach", p.get("coach")),
                  ("Clubs" if len(now) > 1 else "Club", club_txt)]
         dl = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in facts if v)
+        gl = {"M": "Men", "W": "Women"}.get(p.get("gender"))
         head = f'''<header class="pl-head">{player_card(p, rk["rank"] if rk else None)}
-<div class="pl-id"><p class="small-label">{"Men" if p.get("gender") == "M" else "Women"} · {components.flag(p.get("nat"))} {e(p.get("nat") or "")}</p>
+<div class="pl-id"><p class="small-label">{f"{gl} · " if gl else ""}{components.flag(p.get("nat"))} {e(p.get("nat") or "")}</p>
 <h1>{e(p["name"])}</h1>
 <p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else "Outside the world top 100"}</p></div>
 <dl class="pl-facts">{dl}</dl></header>'''
@@ -339,10 +350,13 @@ def build(page, site, tag_items, tag_url, hubs, R):
             return (f'<tr class="{"pl-w" if res == "W" else "pl-l"}"><td class="pl-date">{e(short_date(when)) if when else ""}</td>'
                     f'<td>{ev_link(m["e"])}<span class="pl-sub">{e(what)}</span></td>'
                     f'<td>{" / ".join(who(x) for x in opp)}{with_}</td><td class="pl-res"><b>{res}</b> {e(sc)}<span class="pl-sub">{e(games)}</span></td></tr>')
+        def mtable(rows_):
+            return (f'<div class="table-scroll"><table class="pl-table pl-matches"><thead><tr><th scope="col">Date</th><th scope="col">Event</th>'
+                    f'<th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(mrow(m) for m in rows_)}</tbody></table></div>')
         recent = ms[:20]
-        recent_sec = (f'<section class="hub-sec" id="matches"><h2 class="section-title">Recent matches</h2><div class="table-scroll"><table class="pl-table pl-matches"><thead><tr>'
-                      f'<th scope="col">Date</th><th scope="col">Event</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(mrow(m) for m in recent)}</tbody></table></div>'
+        recent_sec = (f'<section class="hub-sec" id="recent"><h2 class="section-title">Recent matches</h2>{mtable(recent)}'
                       f'<p class="small">Official results from World Table Tennis. Times are UK dates.</p></section>') if recent else ""
+        latest_sec = (f'<section class="hub-sec"><h2 class="section-title">Latest results</h2>{mtable(ms[:5])}{entity.tab_link("results", "All results")}</section>') if ms else ""
 
         # ---- club matches, from the leagues' own results
         club = db.club_by_player.get(pid, [])
@@ -366,7 +380,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
                     continue
                 recs.setdefault(c["league"], [0, 0])[0 if c["r"]["w"] == c["side"] else 1] += 1
             rec_txt = "; ".join(f"{lg}: {w}-{l} in singles" for lg, (w, l) in recs.items())
-            league_sec = (f'<section class="hub-sec" id="club"><h2 class="section-title">Club matches</h2>'
+            league_sec = (f'<section class="hub-sec" id="club-matches"><h2 class="section-title">Club matches</h2>'
                         f'<p class="small">{e(rec_txt)}, all seasons on record.</p><div class="table-scroll"><table class="pl-table pl-matches"><thead><tr>'
                         f'<th scope="col">Date</th><th scope="col">League</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(crow(c) for c in club[:20])}</tbody></table></div>'
                         f'<p class="small">Official results from the leagues: the Tischtennis Bundesliga and the T.League.</p></section>')
@@ -490,7 +504,7 @@ def build(page, site, tag_items, tag_url, hubs, R):
                         f'Full results from {min(y for y in yrs if any(y in v for v in rows_t.values()))} from World Table Tennis\'s records; earlier years show medals only.</p>')
         titles_sec = ""
         if hon_html or timeline:
-            titles_sec = f'<section class="hub-sec" id="honours"><h2 class="section-title">Honours</h2>{timeline}<div class="pl-tgroups">{hon_html}</div></section>'
+            titles_sec = f'<section class="hub-sec" id="medals"><h2 class="section-title">Honours</h2>{timeline}<div class="pl-tgroups">{hon_html}</div></section>'
 
         # ---- head to head with the players met most
         h2h = {}
@@ -516,15 +530,15 @@ def build(page, site, tag_items, tag_url, hubs, R):
             xs = [24 + i * (W_ - 48) / (len(pts) - 1) for i in range(len(pts))]
             ys = [16 + (r - lo) / max(1, hi - lo) * (H_ - 40) for _, r in pts]
             path = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in zip(xs, ys))
-            rank_sec = (f'<section class="hub-sec" id="ranking"><h2 class="section-title">World ranking</h2><svg class="pl-rk" viewBox="0 0 {W_} {H_}" role="img" aria-label="World ranking by week">'
+            rank_sec = (f'<section class="hub-sec" id="ranking-chart"><h2 class="section-title">World ranking</h2><svg class="pl-rk" viewBox="0 0 {W_} {H_}" role="img" aria-label="World ranking by week">'
                         f'<path d="{path}" fill="none" stroke="currentColor" stroke-width="2"/></svg><p class="small">Weekly world ranking since {long_date(pts[0][0])}. Higher is better.</p></section>')
 
         # ---- clubs, equipment
         clubs = p.get("clubs") or []
-        club_sec = ""
+        club_list = ""
         if clubs:
             lis = "".join(f'<li><b>{e(c["club"])}</b>{" · " + e(c["league"]) if c.get("league") else ""}<span class="pl-sub">{e(" to ".join(x for x in (c.get("from"), c.get("to")) if x) or ("Current" if c.get("current") else ""))}</span></li>' for c in reversed(clubs))
-            club_sec = f'<section class="panel"><h2 class="panel-title">Clubs</h2><ul class="pl-list">{lis}</ul></section>'
+            club_list = f'<section class="hub-sec" id="club-history"><h2 class="section-title">Clubs</h2><ul class="pl-list">{lis}</ul></section>'
         eq = p.get("equipment") or {}
         eq_rows = [(k, eq.get(x)) for k, x in (("Blade", "blade"), ("Forehand", "forehand"), ("Backhand", "backhand"), ("Sponsor", "sponsor")) if eq.get(x)]
         eq_sec = ""
@@ -533,38 +547,50 @@ def build(page, site, tag_items, tag_url, hubs, R):
             eq_sec = (f'<section class="panel"><h2 class="panel-title">Equipment</h2><dl class="pl-facts pl-eq">{"".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in eq_rows)}</dl>'
                       f'<p class="small">Last confirmed {long_date(eq["confirmed"])}.{src} Players change equipment, so this can go out of date.</p></section>')
 
-        # ---- news
-        tslug = slugify(p["name"])
-        news = [it for it in tag_items if tslug in it["all"]]
-        news.sort(key=lambda it: it["published"], reverse=True)
-        news_sec = ""
+        # ---- news: every story tagged with this player (any spelling the roster maps here)
+        mine = slugs_for.get(f"/players/{p['slug']}.html", set()) | {slugify(p["name"])}
+        news = sorted((it for it in tag_items if mine & set(it["all"])), key=lambda it: it["published"], reverse=True)
+        skip = next(iter(mine & set(news[0]["all"])), None) if news else None
+        news_tab = (f'<p class="small">{len(news)} {"story" if len(news) == 1 else "stories"}, newest first.</p>'
+                    f'<ul class="archive">{"".join(build_tags.story_li(tg, it, skip) for it in news)}</ul>') if news else ""
+        news_over = ""
         if news:
-            lis = "".join(f'<li><a href="{e(it["url"])}">{e(it["title"])}</a><span class="meta">{e(it["when"])}</span></li>' for it in news[:8])
-            more = f'<a class="panel-link" href="{tag_url(tslug)}">All {len(news)} stories</a>' if len(news) > 8 else ""
-            news_sec = f'<section class="panel"><h2 class="panel-title">Latest news</h2><ul class="pl-news">{lis}</ul>{more}</section>'
+            lis = "".join(f'<li><a href="{e(it["url"])}">{e(it["title"])}</a><span class="meta">{e(it["when"])}</span></li>' for it in news[:4])
+            news_over = (f'<section class="hub-sec"><h2 class="section-title">Latest news</h2><ul class="pl-news">{lis}</ul>'
+                         f'{entity.tab_link("news", f"All {len(news)} stories") if len(news) > 4 else ""}</section>')
 
         notes = "".join(f"<p>{e(n)}</p>" for n in p.get("notes") or [])
         def host(u):
             return re.sub(r"^https?://(www[.])?", "", u).split("/")[0]
         srcs = ", ".join(f'<a href="{e(u)}" rel="noopener">{e(host(u))}</a>' for u in p.get("sources") or [])
-        jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("matches", "Matches", recent_sec), ("club", "Club", league_sec), ("seasons", "Seasons", season), ("honours", "Honours", titles_sec),
-                                                                   ("h2h", "Head to head", h2h_sec), ("ranking", "Ranking", rank_sec)) if sec)
-        body = f'''<main class="wrap pl-page">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/players/">Players</a> / {e(p["name"])}</nav>
-{head}
-{f'<nav class="hub-jump" aria-label="On this page">{jump}</nav>' if jump else ""}
-<div class="hub-grid"><div class="hub-main">
-{notes and f'<section class="hub-sec pl-notes">{notes}</section>'}
-{recent_sec}{league_sec}{season}{titles_sec}{h2h_sec}{rank_sec}
-<p class="small pl-src">Results, rankings and playing details from World Table Tennis. Biography, clubs, equipment and championship medals from {srcs or "published sources"}, checked {long_date(p.get("checked", dt.date.today().isoformat()))}.</p>
-</div>
-<aside class="article-side">{news_sec}{club_sec}{eq_sec}<div class="ad ad-side" data-ad="sidebar"></div></aside></div>
-</main>
-{components.SCRIPT}'''
+        if p.get("generated"):
+            src_line = "Results, rankings and playing details from World Table Tennis. Eleven has not written a biography for this player yet."
+        else:
+            src_line = (f'Results, rankings and playing details from World Table Tennis. Biography, clubs, equipment and championship medals from {srcs or "published sources"}, '
+                        f'checked {long_date(p.get("checked", dt.date.today().isoformat()))}.')
+        hon_over = ""
+        if groups:
+            n_titles = sum(1 for c in groups for x in groups[c] if x[2] in ("Gold", "Winner"))
+            big = [c for c in CATEGORIES[:6] if c in groups]
+            hon_over = (f'<section class="hub-sec"><h2 class="section-title">Honours</h2><p>{n_titles} {"title or gold medal" if n_titles == 1 else "titles and gold medals"} on record'
+                        f'{", including " + ", ".join(big[:3]) if big else ""}.</p>{entity.tab_link("honours", "All honours")}</section>')
+        overview = (f'<section class="hub-sec pl-notes">{notes}</section>' if notes else "") + latest_sec + news_over + hon_over
+        results_tab = recent_sec + season + h2h_sec
+        rank_tab = rank_sec if (rank_sec or rk) else ""
+        if rk and not rank_sec:
+            rank_tab = f'<p>World No. {rk["rank"]} with {rk["points"]:,} points.</p>'
+        club_tab = club_list + league_sec
+        tabs = [("overview", "Overview", overview or f'<p>{e(p["name"])} has no results on record yet.</p>'), ("news", "News", news_tab),
+                ("results", "Results", results_tab), ("honours", "Honours", titles_sec), ("rankings", "Ranking", rank_tab), ("clubs", "Club", club_tab)]
+        body = entity.page([("/", "Home"), ("/players/", "Players"), (None, p["name"])], head, tabs,
+                           aside=f'{eq_sec}<div class="ad ad-side" data-ad="sidebar"></div>', cls="pl-page")
+        body = body.replace("</main>", f'<p class="small pl-src">{src_line}</p></main>', 1) + components.SCRIPT
+        thin = p.get("generated") and not ms and len(news) < 2
         title = f'{p["name"]}: profile, results, rankings and titles | Eleven'
         desc = f'{p["name"]} ({p.get("nat")}): world ranking, recent results, season-by-season record, titles, head to heads and news.'
-        open(os.path.join(ROOT, "players", p["slug"] + ".html"), "w", encoding="utf-8").write(page(title, desc, f"{site}/players/{p['slug']}.html", body))
-        out_urls.append((f"{site}/players/{p['slug']}.html", dt.date.today().isoformat()))
+        open(os.path.join(ROOT, "players", p["slug"] + ".html"), "w", encoding="utf-8").write(page(title, desc, f"{site}/players/{p['slug']}.html", body, robots="noindex,follow" if thin else None))
+        if not thin:
+            out_urls.append((f"{site}/players/{p['slug']}.html", dt.date.today().isoformat()))
 
     # ---- index
     def group(g):

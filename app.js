@@ -22,10 +22,6 @@
   }
   const hubs = data.hubs, arts = data.articles, authors = data.authors || {};
 
-  $("updated").textContent = "Last updated " + new Date(data.updated).toLocaleString("en-GB", {
-    weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit"
-  });
-
   // ---- Story pieces
   const stamp = (s) => ((arts[s.id] || {}).published) || s.published;
   const when = (s) => {

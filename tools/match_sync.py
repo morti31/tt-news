@@ -319,10 +319,12 @@ def main():
     wpath = os.path.join(ROOT, "data", "players", "wtt.json")
     wtt = load(wpath, {})
     prof = [json.load(open(os.path.join(ROOT, "data", "players", f), encoding="utf-8")).get("ittf_id")
-            for f in os.listdir(os.path.join(ROOT, "data", "players")) if f.endswith(".json") and f != "wtt.json"] if os.path.isdir(os.path.join(ROOT, "data", "players")) else []
+            for f in os.listdir(os.path.join(ROOT, "data", "players")) if f.endswith(".json") and f not in ("wtt.json", "wanted.json")] if os.path.isdir(os.path.join(ROOT, "data", "players")) else []
     R = load(os.path.join(ROOT, "data", "rankings.json"), {})
     top100 = [p.get("ittf_id") for g in ("men", "women") for p in R.get(g, []) if p.get("ittf_id")]
-    want = [p for p in prof if p] + (top100 if dt.date.today().weekday() == 0 or "--players" in sys.argv else [])
+    # players the site build needs a date of birth for before it can give them a page (tools/people.py)
+    wanted = [p for p in load(os.path.join(ROOT, "data", "players", "wanted.json"), []) if p not in wtt]
+    want = [p for p in prof if p] + wanted + (top100 if dt.date.today().weekday() == 0 or "--players" in sys.argv else [])
     # profiled players are refreshed every Monday whatever their ranking, so a profile keeps updating after a player leaves the top 100
     want = [p for p in dict.fromkeys(want) if "--players" in sys.argv or p not in wtt or dt.date.today().weekday() == 0]
     if want:

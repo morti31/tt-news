@@ -11,13 +11,20 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 PLURAL = {"tournament": "Tournaments", "player": "Players", "country": "Countries", "club": "Clubs and leagues"}
 
 
+# Set by build_site.py from the roster (tools/people.py) before any page is written:
+ENTITY = {}      # tag slug -> the thing's own page (a player's profile), used instead of /tag/<slug>.html
+BLOCKED = set()  # player tags that must never link or show (under-age or not enough of a record)
+
+
 def url(tg, slug):
+    if slug in ENTITY:
+        return ENTITY[slug] + "#news"
     return f"/tag/{slug}.html"
 
 
 def chips(tg, slugs, n=MAX_TAGS, skip=None):
     """The small row of tag links under a story. n is 2 or 3."""
-    out = [s for s in slugs if s != skip][:n]
+    out = [s for s in slugs if s != skip and s not in BLOCKED][:n]
     if not out:
         return ""
     lis = "".join(f'<li><a class="tg tg-{tg.tags[s]["type"]}" href="{url(tg, s)}">{e(tg.tags[s]["name"])}</a></li>' for s in out)
@@ -114,8 +121,16 @@ def build(page, site, tg, items, R, hubs):
             members.setdefault(s, []).append(it)
     urls, built = [], []
     today = dt.date.today().isoformat()
+    for old in os.listdir(os.path.join(ROOT, "tag")):   # pages for tags that now live elsewhere, or are blocked, go
+        if old.endswith(".html") and old != "index.html":
+            os.remove(os.path.join(ROOT, "tag", old))
     for slug, entries in sorted(members.items()):
+        if slug in BLOCKED:
+            continue
         t = tg.tags[slug]
+        if slug in ENTITY:   # the player's profile carries the stories (its News tab)
+            built.append((slug, len(entries)))
+            continue
         entries.sort(key=lambda x: x["published"], reverse=True)
         n = len(entries)
         lis = "".join(story_li(tg, it, slug) for it in entries)
@@ -136,7 +151,7 @@ def build(page, site, tg, items, R, hubs):
     for typ in ("tournament", "player", "club", "country"):
         rows = sorted([(s, n) for s, n in built if tg.tags[s]["type"] == typ], key=lambda x: (-x[1], tg.tags[x[0]]["name"]))
         if rows:
-            lis = "".join(f'<li><a href="{url(tg, s)}">{e(tg.tags[s]["name"])}</a><span class="meta">{n}</span></li>' for s, n in rows)
+            lis = "".join(f'<li><a href="{ENTITY.get(s) or url(tg, s)}">{e(tg.tags[s]["name"])}</a><span class="meta">{n}</span></li>' for s, n in rows)
             groups += f'<section class="hub-sec"><h2 class="section-title">{PLURAL[typ]}</h2><ul class="tag-index">{lis}</ul></section>'
     idx = f'''<main class="wrap tag-page"><section class="sched-head"><div><h1>Topics</h1>
 <p class="lede">Tournaments, players, countries and clubs in the news on Eleven. Each page gathers every story on that topic.</p></div></section>{groups}</main>'''

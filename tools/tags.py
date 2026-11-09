@@ -90,6 +90,7 @@ class Tagger:
         self.rx = []         # (slug, regex, kind)
         self.players = {}    # slug -> {"name","nat","tok"}
         self._add_competitions(hubs)
+        self._not_players = {norm(n) for _, (n, al) in COUNTRIES.items() for n in [n, *al]} | {norm(t) for t in club_teams}
         self._add_players(rankings, article_matches, extra or [])
         self._add_countries()
         self._add_clubs(club_leagues, club_teams)
@@ -145,7 +146,7 @@ class Tagger:
             for s in m.get("sides", []):
                 for nm in re.split(r"\s*(?:/|&)\s*", s["name"]):
                     nm = nm.strip()
-                    if len(nm.split()) >= 2 and norm(nm) not in seen:
+                    if len(nm.split()) >= 2 and norm(nm) not in seen and norm(nm) not in self._not_players:   # team matches name countries and clubs
                         seen[norm(nm)] = {"name": nm, "nat": s.get("nat"), "rank": {}}
         for r in extra:
             if r.get("type") == "player" and norm(r["name"]) not in seen:
