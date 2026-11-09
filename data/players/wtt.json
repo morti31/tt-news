@@ -837,6 +837,43 @@
   ],
   "checked": "2026-11-09"
  },
+ "111683": {
+  "name": "Gustavo GOMEZ",
+  "org": "CHI",
+  "dob": "02/28/1994",
+  "hand": "Left Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "55",
+    "best_rank_year": "2009",
+    "best_rank_month": "6",
+    "total_matches": "37",
+    "total_wins": "18",
+    "total_losses": "19",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   },
+   {
+    "SubeventCode": "MT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "8",
+    "total_wins": "3",
+    "total_losses": "5",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "111772": {
   "name": "Jie LI",
   "org": "NED",
@@ -1152,6 +1189,30 @@
     "total_losses": "2",
     "tournament_wins": "0",
     "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "112442": {
+  "name": "Liam PITCHFORD",
+  "org": "ENG",
+  "dob": "07/12/1993",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "4",
+    "best_rank_year": "2014",
+    "best_rank_month": "6",
+    "total_matches": "19",
+    "total_wins": "12",
+    "total_losses": "7",
+    "tournament_wins": "1",
+    "finals_wins": "1",
     "finals_losses": "0"
    }
   ],
@@ -1808,6 +1869,16 @@
     "finals_losses": "0"
    }
   ],
+  "checked": "2026-11-09"
+ },
+ "115910": {
+  "name": "LIN Gaoyuan",
+  "org": "CHN",
+  "dob": "03/19/1995",
+  "hand": "Left Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [],
   "checked": "2026-11-09"
  },
  "115920": {
@@ -3182,6 +3253,43 @@
   ],
   "checked": "2026-11-09"
  },
+ "122425": {
+  "name": "Edward LY",
+  "org": "CAN",
+  "dob": "01/29/2003",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "28",
+    "best_rank_year": "2018",
+    "best_rank_month": "6",
+    "total_matches": "37",
+    "total_wins": "16",
+    "total_losses": "21",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   },
+   {
+    "SubeventCode": "MT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "9",
+    "total_wins": "5",
+    "total_losses": "4",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "122428": {
   "name": "Andreea DRAGOMAN",
   "org": "ROU",
@@ -3520,6 +3628,43 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "1"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "123550": {
+  "name": "Camille LUTZ",
+  "org": "FRA",
+  "dob": "07/17/2002",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "22",
+    "best_rank_year": "2017",
+    "best_rank_month": "5",
+    "total_matches": "35",
+    "total_wins": "17",
+    "total_losses": "18",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   },
+   {
+    "SubeventCode": "WT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "5",
+    "total_wins": "2",
+    "total_losses": "3",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
    }
   ],
   "checked": "2026-11-09"
@@ -4295,6 +4440,67 @@
   ],
   "checked": "2026-11-09"
  },
+ "131917": {
+  "name": "Payas JAIN",
+  "org": "IND",
+  "dob": "09/26/2004",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "4",
+    "best_rank_year": "2019",
+    "best_rank_month": "1",
+    "total_matches": "49",
+    "total_wins": "25",
+    "total_losses": "24",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "1"
+   },
+   {
+    "SubeventCode": "MT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "5",
+    "total_wins": "2",
+    "total_losses": "3",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "132022": {
+  "name": "Kay STUMPER",
+  "org": "GER",
+  "dob": "10/15/2002",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "9",
+    "best_rank_year": "2017",
+    "best_rank_month": "2",
+    "total_matches": "23",
+    "total_wins": "13",
+    "total_losses": "10",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "132132": {
   "name": "CHEN Yi",
   "org": "CHN",
@@ -4552,6 +4758,67 @@
   ],
   "checked": "2026-11-09"
  },
+ "133441": {
+  "name": "Nicolas BURGOS",
+  "org": "CHI",
+  "dob": "12/17/2001",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "5",
+    "best_rank_year": "2019",
+    "best_rank_month": "12",
+    "total_matches": "16",
+    "total_wins": "6",
+    "total_losses": "10",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "133478": {
+  "name": "Giulia TAKAHASHI",
+  "org": "BRA",
+  "dob": "04/02/2005",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "3",
+    "best_rank_year": "2020",
+    "best_rank_month": "12",
+    "total_matches": "23",
+    "total_wins": "9",
+    "total_losses": "14",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   },
+   {
+    "SubeventCode": "WT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "8",
+    "total_wins": "4",
+    "total_losses": "4",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "133694": {
   "name": "Shunsuke TOGAMI",
   "org": "JPN",
@@ -4707,6 +4974,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "1"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "133848": {
+  "name": "YUAN Licen",
+  "org": "CHN",
+  "dob": "05/28/2000",
+  "hand": "Left Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "15",
+    "best_rank_year": "2018",
+    "best_rank_month": "8",
+    "total_matches": "26",
+    "total_wins": "19",
+    "total_losses": "7",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
    }
   ],
   "checked": "2026-11-09"
@@ -5567,6 +5858,43 @@
   ],
   "checked": "2026-11-09"
  },
+ "136420": {
+  "name": "Laura WATANABE",
+  "org": "BRA",
+  "dob": "03/26/2004",
+  "hand": "Right",
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "21",
+    "best_rank_year": "2019",
+    "best_rank_month": "11",
+    "total_matches": "27",
+    "total_wins": "12",
+    "total_losses": "15",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   },
+   {
+    "SubeventCode": "WT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "4",
+    "total_wins": "2",
+    "total_losses": "2",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "136539": {
   "name": "WANG Xiaotong",
   "org": "CHN",
@@ -5807,6 +6135,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "137666": {
+  "name": "LIN Chin-Ting",
+  "org": "TPE",
+  "dob": "09/06/2009",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "179",
+    "best_rank_year": "2026",
+    "best_rank_month": "10",
+    "total_matches": "98",
+    "total_wins": "69",
+    "total_losses": "29",
+    "tournament_wins": "2",
+    "finals_wins": "2",
+    "finals_losses": "1"
    }
   ],
   "checked": "2026-11-09"
@@ -6153,6 +6505,30 @@
   ],
   "checked": "2026-11-09"
  },
+ "145404": {
+  "name": "Emanuel OTALVARO",
+  "org": "COL",
+  "dob": "07/14/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "104",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "48",
+    "total_wins": "36",
+    "total_losses": "12",
+    "tournament_wins": "3",
+    "finals_wins": "3",
+    "finals_losses": "1"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "145799": {
   "name": "Andre BERTELSMEIER",
   "org": "GER",
@@ -6360,6 +6736,54 @@
   ],
   "checked": "2026-11-09"
  },
+ "201164": {
+  "name": "LEE Seungsoo",
+  "org": "KOR",
+  "dob": "08/14/2011",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "173",
+    "best_rank_year": "2025",
+    "best_rank_month": "10",
+    "total_matches": "116",
+    "total_wins": "93",
+    "total_losses": "23",
+    "tournament_wins": "7",
+    "finals_wins": "7",
+    "finals_losses": "2"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "201274": {
+  "name": "LI Ki Ho",
+  "org": "HKG",
+  "dob": "12/10/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "207",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "114",
+    "total_wins": "91",
+    "total_losses": "23",
+    "tournament_wins": "4",
+    "finals_wins": "4",
+    "finals_losses": "1"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "201368": {
   "name": "Syndrela DAS",
   "org": "IND",
@@ -6397,6 +6821,67 @@
   ],
   "checked": "2026-11-09"
  },
+ "201438": {
+  "name": "Kulapassr VIJITVIRIYAGUL",
+  "org": "THA",
+  "dob": "07/03/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "261",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "49",
+    "total_wins": "28",
+    "total_losses": "21",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "201453": {
+  "name": "LOY Ming Ying",
+  "org": "SGP",
+  "dob": "10/26/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "121",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "61",
+    "total_wins": "36",
+    "total_losses": "25",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "1"
+   },
+   {
+    "SubeventCode": "WT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "8",
+    "total_wins": "5",
+    "total_losses": "3",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
  "201466": {
   "name": "Wim VERDONSCHOT",
   "org": "GER",
@@ -6408,7 +6893,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "40",
+    "best_rank": "38",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "46",
@@ -6416,6 +6901,43 @@
     "total_losses": "15",
     "tournament_wins": "1",
     "finals_wins": "1",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "202414": {
+  "name": "Thitaphat PREECHAYAN",
+  "org": "THA",
+  "dob": "03/23/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "256",
+    "best_rank_year": "2026",
+    "best_rank_month": "8",
+    "total_matches": "80",
+    "total_wins": "49",
+    "total_losses": "31",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   },
+   {
+    "SubeventCode": "MT",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": null,
+    "best_rank_year": null,
+    "best_rank_month": null,
+    "total_matches": "10",
+    "total_wins": "5",
+    "total_losses": "5",
+    "tournament_wins": "0",
+    "finals_wins": "0",
     "finals_losses": "0"
    }
   ],
@@ -6441,6 +6963,54 @@
     "tournament_wins": "3",
     "finals_wins": "3",
     "finals_losses": "2"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "203313": {
+  "name": "CHEN Min-Hsin",
+  "org": "TPE",
+  "dob": "07/12/2009",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "135",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "54",
+    "total_wins": "37",
+    "total_losses": "17",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "2"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "203472": {
+  "name": "LI Hechen",
+  "org": "CHN",
+  "dob": "03/14/2009",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "140",
+    "best_rank_year": "2025",
+    "best_rank_month": "7",
+    "total_matches": "41",
+    "total_wins": "28",
+    "total_losses": "13",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "1"
    }
   ],
   "checked": "2026-11-09"
@@ -6502,6 +7072,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-09"
+ },
+ "209007": {
+  "name": "YAO Ruixuan",
+  "org": "CHN",
+  "dob": "07/02/2009",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "141",
+    "best_rank_year": "2026",
+    "best_rank_month": "4",
+    "total_matches": "83",
+    "total_wins": "64",
+    "total_losses": "19",
+    "tournament_wins": "3",
+    "finals_wins": "3",
+    "finals_losses": "2"
    }
   ],
   "checked": "2026-11-09"
