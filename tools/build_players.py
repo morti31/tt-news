@@ -574,13 +574,13 @@ def build(page, site, tag_items, hubs, R, roster, tg):
             hon_over = (f'<section class="hub-sec"><h2 class="section-title">Honours</h2><p>{n_titles} {"title or gold medal" if n_titles == 1 else "titles and gold medals"} on record'
                         f'{", including " + ", ".join(big[:3]) if big else ""}.</p>{entity.tab_link("honours", "All honours")}</section>')
         overview = (f'<section class="hub-sec pl-notes">{notes}</section>' if notes else "") + latest_sec + news_over + hon_over
-        results_tab = recent_sec + season + h2h_sec
+        results_tab = recent_sec + season + h2h_sec + rank_sec
         rank_tab = rank_sec if (rank_sec or rk) else ""
         if rk and not rank_sec:
             rank_tab = f'<p>World No. {rk["rank"]} with {rk["points"]:,} points.</p>'
         club_tab = club_list + league_sec
         tabs = [("overview", "Overview", overview or f'<p>{e(p["name"])} has no results on record yet.</p>'), ("news", "News", news_tab),
-                ("results", "Results", results_tab), ("honours", "Honours", titles_sec), ("rankings", "Ranking", rank_tab), ("clubs", "Club", club_tab)]
+                ("results", "Results", results_tab), ("honours", "Honours", titles_sec), ("clubs", "Club", club_tab)]
         body = entity.page([("/", "Home"), ("/players/", "Players"), (None, p["name"])], head, tabs,
                            aside=f'{eq_sec}<div class="ad ad-side" data-ad="sidebar"></div>', cls="pl-page")
         body = body.replace("</main>", f'<p class="small pl-src">{src_line}</p></main>', 1) + components.SCRIPT
