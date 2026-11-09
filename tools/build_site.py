@@ -138,6 +138,8 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="/styles.css">
 {extra_head}
+<meta name="google-adsense-account" content="ca-pub-7633315595642330">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7633315595642330" crossorigin="anonymous"></script>
 </head>
 <body>
 {nav_for(canonical)}
