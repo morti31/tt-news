@@ -1,9 +1,9 @@
 {
  "id": "proa-women",
  "auto": false,
- "updated": "2026-11-08T22:40:00Z",
+ "updated": "2026-11-09T00:10:00Z",
  "season": "2026-27",
- "status": "Regular season, after matchday 3",
+ "status": "Regular season, matchday 4 played on 8 November",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -28,75 +28,75 @@
      {
       "pos": 2,
       "team": "Grand-Quevilly",
-      "p": 3,
-      "w": 2,
+      "p": 4,
+      "w": 3,
       "l": 1
      },
      {
       "pos": 2,
+      "team": "Saint-Denis",
+      "p": 4,
+      "w": 3,
+      "l": 1
+     },
+     {
+      "pos": 4,
       "team": "Le Mans",
       "p": 3,
       "w": 2,
       "l": 1
      },
      {
-      "pos": 2,
+      "pos": 4,
       "team": "Metz TT",
       "p": 3,
       "w": 2,
       "l": 1
      },
      {
-      "pos": 2,
-      "team": "Poitiers",
-      "p": 3,
-      "w": 2,
-      "l": 1
-     },
-     {
-      "pos": 2,
-      "team": "Saint-Denis",
-      "p": 3,
-      "w": 2,
-      "l": 1
-     },
-     {
-      "pos": 2,
-      "team": "Saint-Quentin",
-      "p": 3,
-      "w": 2,
-      "l": 1
-     },
-     {
-      "pos": 8,
+      "pos": 6,
       "team": "Joué-lès-Tours",
-      "p": 3,
-      "w": 1,
+      "p": 4,
+      "w": 2,
       "l": 2
      },
      {
-      "pos": 8,
+      "pos": 6,
+      "team": "Poitiers",
+      "p": 4,
+      "w": 2,
+      "l": 2
+     },
+     {
+      "pos": 6,
+      "team": "Saint-Quentin",
+      "p": 4,
+      "w": 2,
+      "l": 2
+     },
+     {
+      "pos": 9,
       "team": "Alliance Nîmes/Montpellier",
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "l": 2
-     },
-     {
-      "pos": 8,
-      "team": "Quimper",
-      "p": 3,
-      "w": 1,
-      "l": 2
-     },
-     {
-      "pos": 11,
-      "team": "Lys Lille Métropole",
-      "p": 3,
-      "w": 0,
       "l": 3
      },
      {
-      "pos": 11,
+      "pos": 9,
+      "team": "Lys Lille Métropole",
+      "p": 4,
+      "w": 1,
+      "l": 3
+     },
+     {
+      "pos": 9,
+      "team": "Quimper",
+      "p": 4,
+      "w": 1,
+      "l": 3
+     },
+     {
+      "pos": 12,
       "team": "Entente Saint-Pierraise",
       "p": 3,
       "w": 0,
@@ -105,7 +105,7 @@
     ]
    }
   ],
-  "note": "Won and lost from FFTT's match reports. Teams on the same record share a place here; the official table separates them on points."
+  "note": "Won and lost from match reports. Teams on the same record share a place here; the official table separates them on points. Matchday 4 (8 November): Grand-Quevilly beat Saint-Quentin (score to be confirmed); Étival, Le Mans, Metz and Entente Saint-Pierraise results to be added once FFTT publishes them."
  },
  "matches": [
   {
@@ -305,6 +305,42 @@
    ],
    "status": "finished",
    "round": "Matchday 3"
+  },
+  {
+   "when": "2026-11-08T12:00:00Z",
+   "date_only": true,
+   "home": "Quimper",
+   "away": "Joué-lès-Tours",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": "2026-11-08T12:00:00Z",
+   "date_only": true,
+   "home": "Alliance Nîmes/Montpellier",
+   "away": "Lys Lille Métropole",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
+  },
+  {
+   "when": "2026-11-08T12:00:00Z",
+   "date_only": true,
+   "home": "Poitiers",
+   "away": "Saint-Denis",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 4"
   }
  ],
  "sources": [
@@ -319,6 +355,22 @@
   {
    "name": "FFTT: Pro A, men's matchday 4 and women's matchday 3",
    "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-favoris-tombent-les-outsiders-frappent-fort/"
+  },
+  {
+   "name": "Ouest-France via maville: Quimper 2-3 Joué-lès-Tours",
+   "url": "https://brest.maville.com/sport/infos/detail_-finistere-sud-tennis-de-table-pro-a-dames-quimper-craque-face-a-joue-les-tours-apres-avoir-mene_-7561620_actu.Htm"
+  },
+  {
+   "name": "Haute-Provence Info: Nîmes-Montpellier v Lille in Manosque",
+   "url": "https://www.hauteprovenceinfo.com/actualite-51488-tennis-de-table-lille-s-impose-au-5e-set-du-5e-match-face-a-nimes-montpellier-a-manosque"
+  },
+  {
+   "name": "La Nouvelle République via Titres Presse: Poitiers v Saint-Denis",
+   "url": "https://www.titrespresse.com/28334852603/pro-poitiers-jianan"
+  },
+  {
+   "name": "L'Aisne nouvelle: Saint-Quentin lose at Grand-Quevilly",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNODZwb3dIS3dUbXVLeGRnanlIbWN"
   }
  ]
 }
