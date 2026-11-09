@@ -1,9 +1,9 @@
 {
  "id": "cl-women",
  "auto": false,
- "updated": "2026-11-08T22:50:00Z",
+ "updated": "2026-11-09T12:25:00Z",
  "season": "2026-27",
- "status": "Stage 1 complete; Stage 2 is a single group of eight",
+ "status": "Stage 2 (single group of eight) starts on 10 November",
  "source": {
   "name": "ETTU",
   "url": "https://www.ettu.org/european-champions-league-women/"
@@ -16,6 +16,91 @@
    "games"
   ],
   "groups": [
+   {
+    "name": "Stage 2 (single group)",
+    "rows": [
+     {
+      "team": "KTS Enea Siarkopol Tarnobrzeg",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 1,
+      "diff": 0
+     },
+     {
+      "team": "Metz TT",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 2,
+      "diff": 0
+     },
+     {
+      "team": "TTC Berlin eastside",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 3,
+      "diff": 0
+     },
+     {
+      "team": "Etival ASRTT",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 4,
+      "diff": 0
+     },
+     {
+      "team": "UCAM Cartagena T.M",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 5,
+      "diff": 0
+     },
+     {
+      "team": "Saint-Quentin TT",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 6,
+      "diff": 0
+     },
+     {
+      "team": "Linz AG Froschberg",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 7,
+      "diff": 0
+     },
+     {
+      "team": "SKST Plus Hodonín",
+      "p": 0,
+      "w": 0,
+      "l": 0,
+      "for": 0,
+      "against": 0,
+      "pos": 8,
+      "diff": 0
+     }
+    ]
+   },
    {
     "name": "Stage 1, Group A (Budaörs)",
     "rows": [
@@ -273,6 +358,70 @@
    "round": "Stage 1, Group B",
    "venue": "Budaörs",
    "date_only": true
+  },
+  {
+   "when": "2026-11-10T17:00:00Z",
+   "home": "SKST Plus Hodonín",
+   "away": "UCAM Cartagena T.M",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 1"
+  },
+  {
+   "when": "2026-11-10T17:30:00Z",
+   "home": "KTS Enea Siarkopol Tarnobrzeg",
+   "away": "Etival ASRTT",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 1"
+  },
+  {
+   "when": "2026-11-10T18:30:00Z",
+   "home": "Saint-Quentin TT",
+   "away": "Linz AG Froschberg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 1"
+  },
+  {
+   "when": "2026-11-11T17:00:00Z",
+   "home": "TTC Berlin eastside",
+   "away": "Metz TT",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 1"
+  },
+  {
+   "when": "2026-11-14T18:00:00Z",
+   "home": "UCAM Cartagena T.M",
+   "away": "KTS Enea Siarkopol Tarnobrzeg",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 2"
+  },
+  {
+   "when": "2026-11-14T18:00:00Z",
+   "home": "Etival ASRTT",
+   "away": "SKST Plus Hodonín",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 2"
+  },
+  {
+   "when": "2026-11-14T18:30:00Z",
+   "home": "Metz TT",
+   "away": "Saint-Quentin TT",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 2"
+  },
+  {
+   "when": "2026-11-15T15:00:00Z",
+   "home": "Linz AG Froschberg",
+   "away": "TTC Berlin eastside",
+   "score": null,
+   "status": "scheduled",
+   "round": "Stage 2, round 2"
   }
  ],
  "sources": [
@@ -287,6 +436,10 @@
   {
    "name": "ETTU: Stage 1 final day",
    "url": "https://www.ettu.org/?p=51928"
+  },
+  {
+   "name": "ETTU: Europe's elite eight set for Champions League Women",
+   "url": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
   }
  ]
 }

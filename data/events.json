@@ -275,7 +275,9 @@
    "end": "2026-11-21",
    "events": "Singles and doubles",
    "coords": "23.59° N  58.41° E",
-   "live": true
+   "live": true,
+   "wtt_id": "3256",
+   "utc_offset": 4
   },
   {
    "id": "mixed-team-world-cup-2026",
@@ -307,7 +309,9 @@
    "end": "2026-12-13",
    "events": "The season's leading players",
    "coords": "22.32° N  114.17° E",
-   "live": true
+   "live": true,
+   "wtt_id": "3255",
+   "utc_offset": 8
   },
   {
    "id": "wtt-champions-doha-2026",
