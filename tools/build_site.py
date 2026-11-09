@@ -49,7 +49,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a><a href="/privacy.html">Privacy</a></nav>
 <p>Table tennis news, results and fixtures from around the world.</p></div></footer>"""
 
 
@@ -724,9 +724,10 @@ def main():
         open(os.path.join(ROOT, "rankings.html"), "w", encoding="utf-8").write(
             page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links()).replace('<main class="wrap rk">', '<main class="wrap rk">' + components.subnav("players", "/rankings.html"), 1)))
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
+    open(os.path.join(ROOT, "privacy.html"), "w", encoding="utf-8").write(privacy_page())
 
     today = dt.date.today().isoformat()
-    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
+    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/privacy.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/page-{n}.html", today) for n in range(2, max(1, -(-len(arts) // NEWS_PER_PAGE)) + 1)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts if words_of(a) >= MIN_WORDS]
     urls += [(f"{SITE}/features/", today)]
@@ -834,6 +835,34 @@ def about_page():
     return page("About | Eleven", "About Eleven: table tennis news, results, rankings and fixtures from around the world.", f"{SITE}/about.html", body)
 
 
+def privacy_page():
+    body = """<main class="wrap info-wrap">
+<section class="sched-head"><div><h1>Privacy and cookies</h1>
+<p class="lede">What Eleven collects, who handles it and the choices you have. Last updated 9 November 2026.</p></div></section>
+<div class="info-grid"><div class="info-body">
+<h2>Who we are</h2>
+<p>Eleven (eleventabletennis.com) is a table tennis news site run by the Eleven Team. We are the controller of the personal data described here. To ask about your data, use the <a href="/contact">contact page</a>.</p>
+<h2>What we collect</h2>
+<p><strong>Contact form.</strong> If you write to us, we receive your name, email address, the topic and your message. We use them only to reply and to keep a record of the conversation, and we keep them for as long as that is needed. The form is delivered by Web3Forms, which passes the message to our inbox.</p>
+<p><strong>Visit data.</strong> Our host, Cloudflare, processes your IP address and basic request details to deliver the site and keep it secure. We use Cloudflare Web Analytics to count visits. It does not use cookies and does not follow you across other sites.</p>
+<p><strong>Fonts and icons.</strong> Pages load fonts from Google Fonts and flag icons from the jsDelivr network, so your browser sends its IP address to those providers when a page opens.</p>
+<h2>Advertising and cookies</h2>
+<p>Eleven shows ads served by Google AdSense. Google and its partners use cookies and similar technologies to show ads and measure them. If you are in the UK or the European Economic Area, we ask for your consent first, and ads that are personalised to you appear only if you agree. You can change your choice at any time with the privacy settings link on the site, or by clearing cookies in your browser.</p>
+<p>Without consent, Google may still show ads that are not personalised, using the page you are on rather than your history. You can manage personalised advertising in <a href="https://adssettings.google.com" rel="noopener">your Google ad settings</a> or through <a href="https://www.youronlinechoices.com" rel="noopener">Your Online Choices</a>. Google explains how it uses data from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Outside advertising, Eleven sets no cookies of its own.</p>
+<h2>Our legal basis</h2>
+<p>We handle contact messages because it is in our legitimate interest to answer the people who write to us. We rely on your consent for advertising cookies and similar technologies, and you can withdraw it at any time. Site security and delivery are also legitimate interests.</p>
+<h2>Who receives your data</h2>
+<p>Cloudflare (hosting and analytics), Web3Forms (the contact form), Google (ads and fonts) and jsDelivr (icons). Some of these providers are based outside the UK. They use recognised safeguards for those transfers. We do not sell personal data.</p>
+<h2>Your rights</h2>
+<p>Under UK data protection law you can ask to see the data we hold about you, correct it, delete it, restrict or object to its use, and receive a copy. Contact us through the <a href="/contact">contact page</a> and we will reply within a month. If you are unhappy with how we handle your data, you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk" rel="noopener">ico.org.uk</a>.</p>
+<h2>Changes</h2>
+<p>We will update this page if what we collect changes, and change the date at the top.</p>
+</div></div>
+</main>"""
+    return page("Privacy and cookies | Eleven", "How Eleven handles personal data, cookies and advertising.", f"{SITE}/privacy.html", body)
+
+
 def contact_page():
     key = NEWS.get("contact", {}).get("web3forms_key", "")
     body = f"""<main class="wrap info-wrap">
@@ -919,7 +948,7 @@ def clean_url(text):
 
 
 def clean_urls():
-    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "calendar.ics")]
+    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "privacy.html", "calendar.ics")]
     for d in ("news", "events", "features", "guide", "tag", "players"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
     files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json", "tags.json")]
