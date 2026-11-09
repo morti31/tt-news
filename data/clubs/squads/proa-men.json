@@ -1,0 +1,312 @@
+{
+ "id": "proa-men",
+ "auto": false,
+ "updated": "2026-11-09T05:00:00Z",
+ "source": {
+  "name": "FFTT: Pro A / Pro B championships",
+  "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
+ },
+ "note": "Registered players for the 2026/27 season.",
+ "teams": [
+  {
+   "team": "SPO Rouen",
+   "players": [
+    {
+     "name": "Thibault Poret",
+     "nat": "FRA"
+    },
+    {
+     "name": "Alexandre Robinot",
+     "nat": "FRA"
+    },
+    {
+     "name": "Nathan Pilard",
+     "nat": "FRA"
+    },
+    {
+     "name": "Esteban Dorr",
+     "nat": "FRA"
+    }
+   ]
+  },
+  {
+   "team": "Loire Nord TT (Roanne)",
+   "players": [
+    {
+     "name": "Elias Ranefur",
+     "nat": "SWE"
+    },
+    {
+     "name": "Florian Bourrassaud",
+     "nat": "FRA"
+    },
+    {
+     "name": "Wang Yang",
+     "nat": "SVK"
+    },
+    {
+     "name": "Liu Yebo"
+    },
+    {
+     "name": "Xu Haidong",
+     "nat": "CHN"
+    }
+   ]
+  },
+  {
+   "team": "GV Hennebont",
+   "players": [
+    {
+     "name": "Simon Gauzy",
+     "nat": "FRA"
+    },
+    {
+     "name": "Vladimir Sidorenko",
+     "nat": "RUS"
+    },
+    {
+     "name": "Lev Katsman",
+     "nat": "RUS"
+    },
+    {
+     "name": "Alan Kurmangaliyev",
+     "nat": "KAZ"
+    },
+    {
+     "name": "Wen Ruibo",
+     "nat": "CHN"
+    },
+    {
+     "name": "Chen Yuanyu",
+     "nat": "CHN"
+    },
+    {
+     "name": "Zhou Qihao",
+     "nat": "CHN"
+    },
+    {
+     "name": "Alexander Gillen",
+     "nat": "IRL"
+    },
+    {
+     "name": "Xin Wang",
+     "nat": "FRA"
+    },
+    {
+     "name": "Pierre Bailly",
+     "nat": "FRA"
+    }
+   ]
+  },
+  {
+   "team": "Bruille",
+   "players": [
+    {
+     "name": "Flavien Coton",
+     "nat": "FRA"
+    },
+    {
+     "name": "Liu Jialiang"
+    },
+    {
+     "name": "Park Gyuhyeon",
+     "nat": "KOR"
+    },
+    {
+     "name": "Florian Lambiet",
+     "nat": "BEL"
+    },
+    {
+     "name": "Léo De Nodrest",
+     "nat": "FRA"
+    },
+    {
+     "name": "Luka Mladenovic",
+     "nat": "LUX"
+    }
+   ]
+  },
+  {
+   "team": "TFTT Thorigné-Fouillard",
+   "players": [
+    {
+     "name": "Jules Rolland",
+     "nat": "FRA"
+    },
+    {
+     "name": "Vincent Picard",
+     "nat": "FRA"
+    },
+    {
+     "name": "Alexis Kouraichi",
+     "nat": "FRA"
+    },
+    {
+     "name": "Noshad Alamiyan",
+     "nat": "IRI"
+    }
+   ]
+  },
+  {
+   "team": "Alliance Nîmes/Montpellier",
+   "players": [
+    {
+     "name": "Félix Lebrun",
+     "nat": "FRA"
+    },
+    {
+     "name": "Alexis Lebrun",
+     "nat": "FRA"
+    },
+    {
+     "name": "Manav Thakkar",
+     "nat": "IND"
+    },
+    {
+     "name": "Antoine Hachard",
+     "nat": "FRA"
+    },
+    {
+     "name": "Grégoire Jean",
+     "nat": "FRA"
+    },
+    {
+     "name": "Rémi Bételu",
+     "nat": "FRA"
+    },
+    {
+     "name": "Felipe Doti Arado",
+     "nat": "BRA"
+    },
+    {
+     "name": "Laurent Cova",
+     "nat": "FRA"
+    }
+   ]
+  },
+  {
+   "team": "La Romagne",
+   "players": [
+    {
+     "name": "Nima Alamian",
+     "nat": "IRI"
+    },
+    {
+     "name": "Clément Laine-Campino",
+     "nat": "FRA"
+    },
+    {
+     "name": "Antonin Landreau",
+     "nat": "FRA"
+    },
+    {
+     "name": "Brice Ollivier"
+    },
+    {
+     "name": "Benjamin Fruchart"
+    }
+   ]
+  },
+  {
+   "team": "Loups d'Angers",
+   "players": [
+    {
+     "name": "Lilian Bardet",
+     "nat": "FRA"
+    },
+    {
+     "name": "Joé Seyfried",
+     "nat": "FRA"
+    },
+    {
+     "name": "Can Akkuzu",
+     "nat": "FRA"
+    },
+    {
+     "name": "Bastien Rembert",
+     "nat": "FRA"
+    },
+    {
+     "name": "Samuel Kulczycki",
+     "nat": "POL"
+    }
+   ]
+  },
+  {
+   "team": "TT Saint-Denis",
+   "players": [
+    {
+     "name": "Harmeet Desai",
+     "nat": "IND"
+    },
+    {
+     "name": "Tristan Flore",
+     "nat": "FRA"
+    },
+    {
+     "name": "Mathieu De Saintilan",
+     "nat": "FRA"
+    },
+    {
+     "name": "Hugo Deschamps",
+     "nat": "FRA"
+    }
+   ]
+  },
+  {
+   "team": "Chartres",
+   "players": [
+    {
+     "name": "Bence Majoros",
+     "nat": "HUN"
+    },
+    {
+     "name": "Vitor Ishiy",
+     "nat": "BRA"
+    },
+    {
+     "name": "John Oyebode",
+     "nat": "ITA"
+    },
+    {
+     "name": "Antoine Noirault",
+     "nat": "FRA"
+    },
+    {
+     "name": "David Szantosi",
+     "nat": "HUN"
+    }
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "name": "FFTT: Pro A men preview, who will succeed SPO Rouen?",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-messieurs-qui-pour-succeder-au-spo-rouen/"
+  },
+  {
+   "name": "FFTT: Pro A men, first three matchdays",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-messieurs-rouen-hennebont-bruille-et-roanne-prennent-les-commandes/"
+  },
+  {
+   "name": "FFTT: Pro A, men's matchday 4 and women's matchday 3",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-favoris-tombent-les-outsiders-frappent-fort/"
+  },
+  {
+   "name": "FFTT: Pro A player of the month nominees, September",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/elisez-la-joueuse-et-le-joueur-du-mois-de-septembre-en-pro-a/"
+  },
+  {
+   "name": "FFTT: Pro A player of the month nominees, October",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/elisez-la-joueuse-et-le-joueur-du-mois-de-octobre-en-pro-a/"
+  },
+  {
+   "name": "FFTT: Audrey Zarif and Nathan Pilard, players of the month",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/audrey-zarif-et-nathan-pilard-elus-joueuse-et-joueur-du-mois-en-pro-a/"
+  },
+  {
+   "name": "ETTU: 2026/27 Champions League Men team rosters (PDF)",
+   "url": "https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2026/08/2026-Team_Roster_ECLM.pdf"
+  }
+ ]
+}

@@ -1,7 +1,243 @@
 {
-  "updated": "2026-11-09T00:15:00Z",
+  "updated": "2026-11-09T04:55:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-champions-2026-season-japan-six-titles-china-one",
+      "category": "International",
+      "date": "2026-11-09",
+      "published": "2026-11-09T04:45:00Z",
+      "headline": "Japan take half of the 2026 WTT Champions singles titles as China's men end the series without one",
+      "summary": "Hina Hayata and Tomokazu Harimoto's wins in Frankfurt left Japan with six of the year's 12 WTT Champions singles titles, while Sun Yingsha's win in Montpellier was China's only one.",
+      "matches": [
+        {
+          "label": "Women's singles, final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Hina Hayata",
+              "nat": "JPN"
+            },
+            {
+              "name": "Satsuki Odo",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, final",
+          "event": "WTT Champions Frankfurt",
+          "sides": [
+            {
+              "name": "Tomokazu Harimoto",
+              "nat": "JPN"
+            },
+            {
+              "name": "Patrick Franziska",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              2,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, final",
+          "event": "WTT Champions Montpellier",
+          "sides": [
+            {
+              "name": "Sun Yingsha",
+              "nat": "CHN"
+            },
+            {
+              "name": "Kuai Man",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, final",
+          "event": "WTT Champions Chongqing",
+          "sides": [
+            {
+              "name": "Félix Lebrun",
+              "nat": "FRA"
+            },
+            {
+              "name": "Wen Ruibo",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              13,
+              11
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT Champions Frankfurt 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3252"
+        },
+        {
+          "name": "WTT Champions Montpellier 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250"
+        },
+        {
+          "name": "WTT Champions Macao 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3248"
+        },
+        {
+          "name": "WTT Champions Yokohama 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3245"
+        },
+        {
+          "name": "WTT Champions Chongqing 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3235"
+        },
+        {
+          "name": "WTT Champions Doha 2026: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3231"
+        },
+        {
+          "name": "WTT Champions Frankfurt 2025: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3100"
+        },
+        {
+          "name": "WTT Finals Hong Kong 2025: official results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3112"
+        },
+        {
+          "name": "World Table Tennis: Tomokazu Harimoto wins 10th WTT title at Champions Frankfurt",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1wT0d4a2l1Tm5SbHFGRHRsZU1vekFQWlY1TTRYU1VINjQ4RVZod3ZWTzN5akQ3UFlKRFZHVXdXOURacjVMOGhBMVYtTWFNYjdKcm1aekpJOTdVZEQ3TjJTc1A2blE5dw?oc=5"
+        },
+        {
+          "name": "L'Équipe (French): Harimoto wins in Frankfurt and takes world No 2 from Félix Lebrun",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOV1lKcURTZ1JWTzV1V05Xc2NBSUlia0xZZUZ4aEhORW1tdHJGaFY3LWlRUHZmRmdmTElZM0RCMFo4X0M5c0dTTEVudFFQdmFZTnl4TzNtc0JPRHVXbmR5ZEdEaWw5am1LWTFoY2huTHRXQ1F0aGRpby0yVGR2YUtTZ3BxRTBqQ2F2RTI2V05nWWE5Ni1Xbi1kbklROGNKdHNlM1U3UzdtNEl6YUpfdENyWmtVQ3AwYXVaa2pMcXJ3aHRmTXliRV9jRWwwSFdYb29TUnBxMVQyaU91RWZlb0pyX1o2bEVseEpxbTNtRFptOA?oc=5"
+        },
+        {
+          "name": "Sina (Chinese): commentary on China's defeats in Frankfurt",
+          "url": "https://k.sina.com.cn/article_2131593523_7f0d893302001q2tk.html"
+        }
+      ],
+      "videos": [
+        {
+          "id": "zONYY-ak4E4",
+          "title": "Patrick Franziska v Tomokazu Harimoto, men's singles final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "2nDkvAwSlXA",
+          "title": "Satsuki Odo v Hina Hayata, women's singles final",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
     {
       "id": "pro-a-women-2026-27-matchday-4-joue-comeback-quimper-lille-manosque",
       "category": "Clubs",
@@ -162,6 +398,16 @@
       ],
       "videos": [
         {
+          "id": "2nDkvAwSlXA",
+          "title": "Satsuki Odo v Hina Hayata, women's singles final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "zONYY-ak4E4",
+          "title": "Patrick Franziska v Tomokazu Harimoto, men's singles final",
+          "channel": "World Table Tennis"
+        },
+        {
           "id": "o_wrwNV7dUo",
           "title": "Hina Hayata v Miwa Harimoto, women's singles semi-final",
           "channel": "World Table Tennis"
@@ -170,18 +416,9 @@
           "id": "GgGajZiZoK8",
           "title": "Lin Yun-Ju v Tomokazu Harimoto, men's singles semi-final",
           "channel": "World Table Tennis"
-        },
-        {
-          "id": "V6aDCIbFViY",
-          "title": "Satsuki Odo v Sabine Winter, women's singles semi-final",
-          "channel": "World Table Tennis"
-        },
-        {
-          "id": "jJ4tUxiErKk",
-          "title": "Patrick Franziska v Shunsuke Togami, men's singles semi-final",
-          "channel": "World Table Tennis"
         }
-      ]
+      ],
+      "modified": "2026-11-09T04:50:00Z"
     },
     {
       "id": "wtt-youth-contender-podgorica-2026-samaraweera-double-gold",
@@ -4005,24 +4242,6 @@
       ]
     },
     {
-      "id": "u21-national-cup-2026",
-      "category": "England",
-      "headline": "Pashley and Trumpauskas retain Under-21 National Cup titles",
-      "summary": "Ella Pashley went unbeaten at Highfields TTC in Wellingborough, beating Sophie Earley 3-0 in the final round. Larry Trumpauskas lost one match on his way to keeping the men's title.",
-      "date": "2026-10-26",
-      "sources": [
-        {
-          "name": "Table Tennis England",
-          "url": "https://www.tabletennisengland.co.uk/news/2026/mission-accomplished-as-ella-pashley-and-larry-trumpauskas-retain-u21-national-cup-titles/"
-        }
-      ],
-      "image": {
-        "type": "cartoon",
-        "src": "img/cartoons/wellingborough.svg"
-      },
-      "author": "michelle"
-    },
-    {
       "id": "african-champs-2026",
       "category": "International",
       "headline": "African Championships 2026: Youssef Abdelaziz and Hana Goda win singles titles as Egypt sweep the board",
@@ -4224,25 +4443,6 @@
       ],
       "draw": "3250",
       "event": "wtt-champions-montpellier-2026"
-    },
-    {
-      "id": "asian-ms-final-2026",
-      "category": "International",
-      "headline": "Asian Championships 2026: Harimoto and Chen Yi win singles titles as China and Japan share the honours",
-      "summary": "Tomokazu Harimoto came from two games down to beat Li Tianyang and Chen Yi swept Miwa Harimoto, while Japan's women beat China in the team final.",
-      "date": "2026-10-25",
-      "sources": [
-        {
-          "name": "tabletennis.media",
-          "url": "https://tabletennis.media/tournaments/2026-asian-table-tennis-championships/"
-        },
-        {
-          "name": "Butterfly",
-          "url": "https://butterflyonline.com/china-wins-4-japan-wins-3-at-asian-championships/"
-        }
-      ],
-      "author": "michael",
-      "event": "asian-championships-2026"
     },
     {
       "id": "mltt-houston-2026",
