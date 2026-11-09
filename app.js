@@ -219,15 +219,26 @@
     b.replaceWith(f);
   });
 
-  // ---- Events row: posters for the event on now and the next ones
+  // ---- Events row: upcoming (on now and next) and recent (just finished), as two tabs
   function renderEvents() {
-    const urls = new Set();
-    const list = Object.values(hubs).filter((h) => h.end && h.end >= today && !urls.has(h.url) && urls.add(h.url))
-      .sort((a, b) => (a.start || "").localeCompare(b.start || "")).slice(0, 4);
-    if (!list.length) return;
+    const uniq = (arr) => { const u = new Set(); return arr.filter((h) => !u.has(h.url) && u.add(h.url)); };
+    const all = uniq(Object.values(hubs).filter((h) => h.end && h.start));
+    const up = all.filter((h) => h.end >= today).sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
+    const past = all.filter((h) => h.end < today).sort((a, b) => b.end.localeCompare(a.end)).slice(0, 4);
+    if (!up.length && !past.length) return;
+    const tile = (h, recent) => `<a class="ev-tile" href="${esc(h.url)}"><img src="${esc(h.tile || h.poster)}" alt="" loading="lazy">
+        <h3>${esc(h.name)}</h3><span>${recent ? `Finished ${fmt(h.end)} · Results` : h.start <= today ? "On now" : `${fmt(h.start)} to ${fmt(h.end)}`}</span></a>`;
+    const first = up.length ? "up" : "past";
     $("ev-row").innerHTML = `<div class="sec-head"><h2 id="evrow-h">Major events</h2><a href="/events/">All events</a></div>
-      <div class="ev-tiles">${list.map((h) => `<a class="ev-tile" href="${esc(h.url)}"><img src="${esc(h.tile || h.poster)}" alt="" loading="lazy">
-        <h3>${esc(h.name)}</h3><span>${h.start <= today ? "On now" : `${fmt(h.start)} to ${fmt(h.end)}`}</span></a>`).join("")}</div>`;
+      <div class="ev-tabs" role="tablist" aria-label="Major events">
+        <button type="button" role="tab" data-ev="up" aria-selected="${first === "up"}"${up.length ? "" : " disabled"}>Upcoming</button>
+        <button type="button" role="tab" data-ev="past" aria-selected="${first === "past"}"${past.length ? "" : " disabled"}>Recent</button></div>
+      <div class="ev-tiles" data-panel="up"${first === "up" ? "" : " hidden"}>${up.map((h) => tile(h, false)).join("")}</div>
+      <div class="ev-tiles" data-panel="past"${first === "past" ? "" : " hidden"}>${past.map((h) => tile(h, true)).join("")}</div>`;
+    $("ev-row").querySelectorAll(".ev-tabs button").forEach((b) => b.addEventListener("click", () => {
+      $("ev-row").querySelectorAll(".ev-tabs button").forEach((x) => x.setAttribute("aria-selected", String(x === b)));
+      $("ev-row").querySelectorAll("[data-panel]").forEach((p) => { p.hidden = p.dataset.panel !== b.dataset.ev; });
+    }));
   }
 
   // ---- Stories

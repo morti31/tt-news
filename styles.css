@@ -1325,3 +1325,7 @@ html.mp-open { overflow: hidden; }
 .cl-squad a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
 .cl-coach { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 #squads .cl-comp + .cl-comp { margin-top: 22px; }
+.ev-tabs { display: flex; gap: 6px; margin: 4px 0 14px; }
+.ev-tabs button { font: inherit; font-size: 14px; font-weight: 700; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--muted); cursor: pointer; }
+.ev-tabs button[aria-selected="true"] { background: var(--ink, #111); color: var(--bg, #fff); border-color: transparent; }
+.ev-tabs button:disabled { opacity: .45; cursor: default; }
