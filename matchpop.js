@@ -5,6 +5,11 @@
 (function () {
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const FLAGS = {"CHN": "cn", "TPE": "tw", "RUS": "ru", "JPN": "jp", "KOR": "kr", "PRK": "kp", "HKG": "hk", "MAC": "mo", "SGP": "sg", "IND": "in", "IRI": "ir", "KAZ": "kz", "THA": "th", "MAS": "my", "INA": "id", "QAT": "qa", "EGY": "eg", "NGR": "ng", "ALG": "dz", "TUN": "tn", "FRA": "fr", "GER": "de", "SWE": "se", "DEN": "dk", "NOR": "no", "FIN": "fi", "ENG": "gb-eng", "SCO": "gb-sct", "WAL": "gb-wls", "GBR": "gb", "IRL": "ie", "POR": "pt", "ESP": "es", "ITA": "it", "AUT": "at", "SUI": "ch", "BEL": "be", "NED": "nl", "LUX": "lu", "POL": "pl", "CZE": "cz", "SVK": "sk", "SLO": "si", "CRO": "hr", "SRB": "rs", "GRE": "gr", "TUR": "tr", "ROU": "ro", "HUN": "hu", "UKR": "ua", "BRA": "br", "ARG": "ar", "CHI": "cl", "PUR": "pr", "CAN": "ca", "USA": "us", "AUS": "au", "NZL": "nz", "MON": "mc"};
+  // Player names link to their profile when we have one (data/profiles.json maps name to page)
+  const plain = (n) => String(n).normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  let profiles = {};
+  fetch("/data/profiles.json").then((r) => (r.ok ? r.json() : {})).then((d) => { profiles = Object.fromEntries(Object.entries(d).map(([k, v]) => [plain(k), v])); }).catch(() => {});
+  const who = (name) => String(name || "").split(" / ").map((n) => { const u = profiles[plain(n)]; return u ? `<a class="mp-prof" href="${esc(u)}">${esc(n.trim())}</a>` : esc(n.trim()); }).join(" / ");
   const flag = (c) => (FLAGS[c] ? `<span class="fi fi-${FLAGS[c]}" aria-hidden="true"></span>` : "");
   // Second references by surname: family name first for Chinese, Korean and similar names (as the worker writes them)
   const FAMILY_FIRST = new Set(["CHN", "TPE", "KOR", "HKG", "MAC", "PRK"]);
@@ -41,7 +46,7 @@
         const cur = live && k === m.games.length - 1;
         return `<td class="${cur ? "cur" : ""}${!cur && g[i] > g[1 - i] ? " gw" : ""}">${g[i]}</td>`;
       }).join("");
-      return `<tr class="mp-side s${i}${won === i ? " won" : ""}"><th scope="row"><span class="mp-chip"></span>${flag(s.nat)}<span class="mp-name">${esc(s.name)}</span>${s.rank ? `<span class="wr" title="World No ${s.rank}">${s.rank}</span>` : ""}${live && m.server === i ? '<span class="mp-serve" title="Serving"></span>' : ""}</th><td class="sets">${m.score[i]}</td>${cells}</tr>`;
+      return `<tr class="mp-side s${i}${won === i ? " won" : ""}"><th scope="row"><span class="mp-chip"></span>${flag(s.nat)}<span class="mp-name">${who(s.name)}</span>${s.rank ? `<span class="wr" title="World No ${s.rank}">${s.rank}</span>` : ""}${live && m.server === i ? '<span class="mp-serve" title="Serving"></span>' : ""}</th><td class="sets">${m.score[i]}</td>${cells}</tr>`;
     };
     return `<table class="mp-board"><caption class="sr-only">${esc(m.sides.map((s) => s.name).join(" v "))}</caption><tbody>${row(0)}${row(1)}</tbody></table>`;
   }

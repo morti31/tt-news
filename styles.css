@@ -1329,3 +1329,6 @@ html.mp-open { overflow: hidden; }
 .ev-tabs button { font: inherit; font-size: 14px; font-weight: 700; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--muted); cursor: pointer; }
 .ev-tabs button[aria-selected="true"] { background: var(--ink, #111); color: var(--bg, #fff); border-color: transparent; }
 .ev-tabs button:disabled { opacity: .45; cursor: default; }
+
+.mp-prof { color: inherit; text-decoration: none; border-bottom: 1px solid color-mix(in srgb, currentColor 35%, transparent); }
+.mp-prof:hover, .mp-prof:focus-visible { border-bottom-color: currentColor; }
