@@ -1,0 +1,48 @@
+{
+ "slug": "french-table-tennis-federation-fftt-confirms-cyberattack-data-theft-2026",
+ "story_id": "fftt-data-leak-claim-2026",
+ "category": "International",
+ "date": "2026-11-09",
+ "published": "2026-11-09T16:55:00Z",
+ "lang": "French",
+ "title": "French Table Tennis Federation confirms a second cyberattack and the theft of players' personal data",
+ "seo_title": "FFTT confirms new cyberattack and data theft",
+ "description": "The French Table Tennis Federation says a new intrusion exposed licence data, medical certificate details and ID documents, and asks members to change passwords.",
+ "standfirst": "The federation says a compromised account was used again, and that identity documents and details from medical certificates were among the files taken.",
+ "body": [
+  "The French Table Tennis Federation (FFTT) has confirmed that it suffered a new cyberattack in which the personal data of its licensed players was stolen 14 months after an earlier breach.",
+  "In a statement on Monday, the federation said recent analysis of a sample of the stolen files showed that some records had been modified as late as 11 October 2025, after the attack it disclosed in September 2025, which pointed to a second intrusion. As in 2025, the attacker got in through a compromised account and downloaded data from the licence database in bulk.",
+  "## What was taken",
+  "The FFTT said the stolen data included licence numbers, names, gender, dates and places of birth, nationality, postal addresses, email addresses and phone numbers.",
+  "It also confirmed that medical information linked to licences was in the files, though not full certificates: the name and registration number of the doctor who signed a player's certificate, the certificate dates, and information from health questionnaires.",
+  "Documents uploaded for administrative procedures such as transfers were also compromised, the federation said, including copies of identity cards and passports and proofs of address or employment status. No passwords or bank details were found in the sample.",
+  "## Claims the federation cannot check",
+  "The statement did not give a number of people affected. The federation said its information rested on the attacker's own claims, which could not be fully verified, and that it could not confirm from the sample that every document listed was in the full archive. It added that a file with hundreds of columns did not mean every column was filled in for every person.",
+  "The confirmation follows reports on Thursday by two French data-breach websites, Fuites Infos and Cyberattaque.org, that a seller on a cybercriminal forum was offering records on 1,645,606 people taken from the FFTT, along with 1,864 identity documents and 383 proofs of address. A sample of 925 records examined by the two sites included the details of minors.",
+  "The figure claimed is far higher than the federation's membership, which Cyberattaque.org puts at about 246,000 licensed players this season, and the site said the files could include historical records. The FFTT's statement does not mention the forum or the sale.",
+  "## What members are asked to do",
+  "Because the intrusion again used a stolen login, the federation asked members to change the password they use to log in to their SPID account. It also urged them to be very careful with unexpected messages that appear to come from the FFTT or anyone else, particularly those with attachments or asking for account details, passwords or bank details, and to watch for phishing, scams and identity theft.",
+  "The FFTT said it deeply regretted the situation and that all its departments were working on it. It has filed a complaint, informed France's cyber-security agency, ANSSI, and its data protection authority, the CNIL, and has answered requests from specialist police officers for the investigation.",
+  "The federation will write to all its members, and has set up an email address, cyber@fftt.org, for questions.",
+  "## The 2025 breach",
+  "In September 2025 the FFTT said a compromised account had been used to take information in bulk from the same database, including names, dates and places of birth, nationality, addresses, email addresses and phone numbers. It said then that no bank or health data had been reached, and it filed a complaint and informed the CNIL and ANSSI."
+ ],
+ "sources": [
+  {
+   "name": "FFTT (French): La FFTT victime d'une cyberattaque et d'un vol de données",
+   "url": "https://www.fftt.com/actualites/federation/la-fftt-victime-dune-cyberattaque-et-dun-vol-de-donnees/"
+  },
+  {
+   "name": "Fuites Infos (French): FFTT data leak claimed, 1,645,606 people",
+   "url": "https://fuitesinfos.fr/article/2026-11-05-federation-francaise-de-tennis-de-table"
+  },
+  {
+   "name": "Cyberattaque.org (French): 1.6 million people claimed in FFTT leak",
+   "url": "https://www.cyberattaque.org/fftt-cyberattaque-federation-francaise-de-tennis-de-table/"
+  },
+  {
+   "name": "FFTT (French): statement on the 2025 cyberattack and data theft",
+   "url": "https://www.fftt.com/actualites/federation/communique-cyberattaque-et-vol-de-donnees/"
+  }
+ ]
+}

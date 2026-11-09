@@ -1,7 +1,99 @@
 {
- "updated": "2026-11-09T12:25:00Z",
+ "updated": "2026-11-09T16:55:00Z",
  "live_results_url": "https://www.worldtabletennis.com/",
  "stories": [
+  {
+   "id": "liam-pitchford-wtt-feeder-vila-nova-de-gaia-2026",
+   "category": "England",
+   "date": "2026-11-09",
+   "published": "2026-11-09T16:50:00Z",
+   "headline": "Liam Pitchford wins WTT Feeder Vila Nova de Gaia from qualifying as Fu Yu takes the women's title",
+   "summary": "England's Liam Pitchford won nine matches in a row to take the title as he returns from hip surgery, and Portugal's Fu Yu won the women's singles without dropping a game in the final.",
+   "matches": [
+    {
+     "label": "Men's singles final",
+     "event": "WTT Feeder Vila Nova de Gaia",
+     "sides": [
+      {
+       "name": "Liam Pitchford",
+       "nat": "ENG"
+      },
+      {
+       "name": "Deni Kozul",
+       "nat": "SLO"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       8,
+       11
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "Women's singles final",
+     "event": "WTT Feeder Vila Nova de Gaia",
+     "sides": [
+      {
+       "name": "Fu Yu",
+       "nat": "POR"
+      },
+      {
+       "name": "Kim Seongjin",
+       "nat": "KOR"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "WTT: WTT Feeder Vila Nova de Gaia 2026 official results",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3370"
+    },
+    {
+     "name": "Table Tennis England: This makes the recovery work worth it, says Liam Pitchford after Feeder victory",
+     "url": "https://www.tabletennisengland.co.uk/news/2026/this-makes-the-recovery-work-worth-it-says-liam-pitchford-after-feeder-victory/"
+    },
+    {
+     "name": "Table Tennis England: WTT Feeder Vila Nova de Gaia 2026",
+     "url": "https://www.tabletennisengland.co.uk/news/2026/wtt-feeder-vila-nova-de-gaia-2026/"
+    }
+   ]
+  },
   {
    "id": "ettu-champions-league-women-2026-27-stage-2-preview",
    "category": "Clubs",
@@ -832,19 +924,16 @@
   {
    "id": "fftt-data-leak-claim-2026",
    "category": "International",
-   "kind": "Update",
-   "date": "2026-11-07",
+   "date": "2026-11-09",
    "published": "2026-11-07T08:25:00Z",
    "lang": "French",
-   "headline": "Hacker claims to be selling data on 1.6 million people taken from the French Table Tennis Federation",
-   "summary": "A seller on a cybercriminal forum says it holds records on 1.6 million people from France's table tennis federation, which has not confirmed a new breach.",
-   "body": [
-    "A hacker has offered for sale on a cybercriminal forum what it says are records on 1,645,606 people taken from the French Table Tennis Federation (FFTT), two French data-breach websites reported on Thursday. The federation has not publicly confirmed the claim.",
-    "The seller says the files include names, dates of birth, contact details and licence records, along with 1,864 identity documents and 383 proofs of address. A sample of 925 records examined by Fuites Infos and Cyberattaque.org held identity, contact and licence details, including those of minors, and for many players the date of their medical certificate and the name of the doctor who signed it. Neither site found passwords or bank details in the sample.",
-    "The number claimed is far higher than the FFTT's membership, which Cyberattaque.org puts at about 246,000 licensed players this season, and the newest records in the sample date from October 2025. Cyberattaque.org said the files could include historical records.",
-    "In September 2025 the FFTT said a compromised account had been used to take information in bulk from its database of licensed players, including names, dates and places of birth, nationality, addresses, email addresses and phone numbers. It said no bank or health data had been reached, that it had filed a complaint and informed France's data protection authority, the CNIL, and its cyber-security agency, ANSSI, and it urged members to be very careful with messages asking for passwords or bank details."
-   ],
+   "headline": "French Table Tennis Federation confirms second cyberattack and theft of players' data",
+   "summary": "France's table tennis federation says a new intrusion through a compromised account exposed licence records, ID documents and details from medical certificates.",
    "sources": [
+    {
+     "name": "FFTT (French): La FFTT victime d'une cyberattaque et d'un vol de données",
+     "url": "https://www.fftt.com/actualites/federation/la-fftt-victime-dune-cyberattaque-et-dun-vol-de-donnees/"
+    },
     {
      "name": "Fuites Infos (French): FFTT data leak claimed, 1,645,606 people",
      "url": "https://fuitesinfos.fr/article/2026-11-05-federation-francaise-de-tennis-de-table"
@@ -854,10 +943,11 @@
      "url": "https://www.cyberattaque.org/fftt-cyberattaque-federation-francaise-de-tennis-de-table/"
     },
     {
-     "name": "FFTT (French): statement on cyberattack and data theft",
+     "name": "FFTT (French): statement on the 2025 cyberattack and data theft",
      "url": "https://www.fftt.com/actualites/federation/communique-cyberattaque-et-vol-de-donnees/"
     }
-   ]
+   ],
+   "modified": "2026-11-09T16:55:00Z"
   },
   {
    "id": "wtt-champions-frankfurt-2026-day4-review",
