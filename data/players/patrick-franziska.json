@@ -5,11 +5,20 @@
  "gender": "M",
  "born": "1992-06-11",
  "hand": "Right",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "1. FC Saarbrücken",
+   "league": "Tischtennis Bundesliga",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=102832"
+  "https://www.worldtabletennis.com/playerDescription?playerId=102832",
+  "https://www.ttbl.de/bundesliga/teams",
+  "https://www.tagesspiegel.de/sport/dpa-patrick-franziska-trikottrockner-gesucht-tischtennis-star-nimmt-laubblaser-16259361.html"
  ],
- "checked": "2026-11-06",
- "stub": true
+ "checked": "2026-11-09",
+ "stub": true,
+ "notes": "Reached the WTT Champions finals in Montpellier and Frankfurt in consecutive weeks in November 2026, losing to Jang Woojin and Tomokazu Harimoto."
 }
