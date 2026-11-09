@@ -257,6 +257,10 @@ const json = (data, status = 200, maxAge = 8) =>
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    // The old workers.dev address and www both go to the main domain (the API stays reachable for tooling)
+    if ((url.hostname.endsWith(".workers.dev") && !url.pathname.startsWith("/api/")) || url.hostname === "www.eleventabletennis.com") {
+      return Response.redirect("https://eleventabletennis.com" + url.pathname + url.search, 301);
+    }
     if (url.pathname === "/api/live") {
       const id = url.searchParams.get("event") || "";
       if (!/^\d{1,6}$/.test(id)) return json({ error: "event must be a WTT event id" }, 400);

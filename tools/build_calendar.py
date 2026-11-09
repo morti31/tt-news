@@ -7,7 +7,7 @@ UIDs are stable, so subscribers' calendars update in place instead of duplicatin
 import json, os, datetime as dt
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
-SITE = "https://tt-news.tommorti.workers.dev"
+SITE = "https://eleventabletennis.com"
 data = json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8"))
 
 

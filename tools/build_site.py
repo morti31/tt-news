@@ -18,7 +18,7 @@ import build_players
 import tags as tagmod
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-SITE = os.environ.get("SITE_URL", "https://tt-news.tommorti.workers.dev")
+SITE = os.environ.get("SITE_URL", "https://eleventabletennis.com")
 NEWS = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))
 # One byline for everything: no individual writers are named anywhere on the site
 TEAM = {"name": "Eleven Team", "bio": "", "photo": "", "colour": "#17202b", "initials": "ET"}
@@ -907,7 +907,7 @@ def check_schedule():
     return problems
 
 
-CLEAN_RE = re.compile(r"(?<=[\"'(=\s>])((?:https://tt-news\.tommorti\.workers\.dev)?/(?:[\w\-]+/)*)([\w\-]+)\.html")
+CLEAN_RE = re.compile(r"(?<=[\"'(=\s>])((?:https://(?:eleventabletennis\.com|tt-news\.tommorti\.workers\.dev))?/(?:[\w\-]+/)*)([\w\-]+)\.html")
 
 
 def clean_url(text):

@@ -9,7 +9,7 @@ A daily scheduled run writes one feature (analysis, opinion or original data), a
 1. Pull `main`.
 2. Pick the topic, keeping the audience mix (below) level: look at the audience tags on the last six items under **Done** and take the first item under **Up next** whose audience is the least represented there. If a news event makes another backlog idea timely (a result, an injury, a ranking change), take that one instead and write it for whichever audience suits it. When fewer than four ideas are left, add five new ones to the end of **Up next**, tagged so that the backlog stays about a third each.
 3. Research, write, build the data and make the cover (below).
-4. Move the topic to **Done** with the date and slug, commit everything to `main` and push. Then send Tom a push notification: "Today's feature is live: <headline> <link>", using the clean link `https://tt-news.tommorti.workers.dev/news/<slug>`.
+4. Move the topic to **Done** with the date and slug, commit everything to `main` and push. Then send Tom a push notification: "Today's feature is live: <headline> <link>", using the clean link `https://eleventabletennis.com/news/<slug>`.
 
 ## Audience: a third each
 
