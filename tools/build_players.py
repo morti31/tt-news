@@ -551,8 +551,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         mine = slugs_for.get(f"/players/{p['slug']}.html", set()) | {slugify(p["name"])}
         news = sorted((it for it in tag_items if mine & set(it["all"])), key=lambda it: it["published"], reverse=True)
         skip = next(iter(mine & set(news[0]["all"])), None) if news else None
-        news_tab = (f'<p class="small">{len(news)} {"story" if len(news) == 1 else "stories"}, newest first.</p>'
-                    f'<ul class="archive">{"".join(build_tags.story_li(tg, it, skip) for it in news)}</ul>') if news else ""
+        news_tab = (f'<ul class="archive">{"".join(build_tags.story_li(tg, it, skip) for it in news)}</ul>') if news else ""
         news_over = ""
         if news:
             lis = "".join(f'<li><a href="{e(it["url"])}">{e(it["title"])}</a><span class="meta">{e(it["when"])}</span></li>' for it in news[:4])
