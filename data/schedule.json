@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T16:15:00Z",
+  "updated": "2026-11-10T12:15:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -475,6 +475,39 @@
       "series": "WTT",
       "type": "Season finals",
       "prestige": 3.5
+    },
+    {
+      "id": "european-under-13-championships-2026",
+      "name": "European Under-13 Championships",
+      "start": "2026-11-11",
+      "end": "2026-11-15",
+      "city": "Nevşehir",
+      "country": "Türkiye",
+      "series": "Majors",
+      "type": "European youth championships",
+      "prestige": 1
+    },
+    {
+      "id": "world-para-championships-2026",
+      "name": "World Para Championships",
+      "start": "2026-11-13",
+      "end": "2026-11-19",
+      "city": "Pattaya",
+      "country": "Thailand",
+      "series": "Majors",
+      "type": "Para world championships",
+      "prestige": 2.5
+    },
+    {
+      "id": "wtt-star-contender-germany-2027",
+      "name": "WTT Star Contender Germany",
+      "start": "2027-11-09",
+      "end": "2027-11-14",
+      "city": "Germany",
+      "country": "Germany",
+      "series": "WTT",
+      "type": "WTT Star Contender",
+      "prestige": 2
     }
   ],
   "tbc": [
