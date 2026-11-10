@@ -126,7 +126,7 @@ The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.
 
 ## Automatic event pages for WTT events
 
-`tools/wtt_sync.py` (every 30 minutes, GitHub) gives every senior WTT event (Contender, Star Contender, Feeder, Champions, Smash, Finals) its own event page as it comes within 3 days, so the live scores, order of play, results and draw flow in with no hand-made page. The event ids come from the match database (`data/matches/events.json`); pages made this way carry `"auto": true` in `data/events.json` and take their dates from WTT's order of play. They have no poster or write-up. To give one a poster, a venue or a "How it was won" story, edit the entry and delete `"auto": true`, and the sync leaves it alone. Under-15 events never get one (see "Age level" in step 2): the youth, junior, cadet and hopes names are excluded.
+`tools/wtt_sync.py` (every 30 minutes, GitHub) gives every senior WTT event (Contender, Star Contender, Feeder, Champions, Smash, Finals) its own event page as it comes within 3 days, so the live scores, order of play, results and draw flow in with no hand-made page. The event ids come from the match database (`data/matches/events.json`); pages made this way carry `"auto": true` in `data/events.json` and take their dates from WTT's order of play. The sync renders Eleven's poster for each one (the workflow installs a browser only when a poster is missing); they have no write-up. To give one a poster, a venue or a "How it was won" story, edit the entry and delete `"auto": true`, and the sync leaves it alone. Under-15 events never get one (see "Age level" in step 2): the youth, junior, cadet and hopes names are excluded.
 
 ## Past events and full draws
 
