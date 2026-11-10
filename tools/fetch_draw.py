@@ -17,7 +17,7 @@ ALL_SUBEVENTS = {"women": ("Women's singles", "TTEWSINGLES"), "men": ("Men's sin
                  "wdoubles": ("Women's doubles", "TTEWDOUBLES"), "mdoubles": ("Men's doubles", "TTEMDOUBLES"),
                  "mixed": ("Mixed doubles", "TTEXDOUBLES"), "wteam": ("Women's team", "TTEWTEAM"), "mteam": ("Men's team", "TTEMTEAM"),
                  "xteam": ("Mixed team", "TTEXTEAM")}
-ROUNDS = {"R64-": "Last 64", "R32-": "Last 32", "8FNL": "Last 16", "QFNL": "Quarter-finals", "SFNL": "Semi-finals", "FNL-": "Final"}
+ROUNDS = {"R128": "Last 128", "R64-": "Last 64", "R32-": "Last 32", "8FNL": "Last 16", "QFNL": "Quarter-finals", "SFNL": "Semi-finals", "FNL-": "Final"}
 FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
 # WTT data drops accents and uses its own forms for some names
 FIXES = {"Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo",
@@ -85,7 +85,19 @@ def fetch(eid, code):
     if body[:2] == b"\x1f\x8b":
         import gzip
         body = gzip.decompress(body)
-    return json.loads(body.decode("utf-8-sig"))
+    return _modern(json.loads(body.decode("utf-8-sig")))
+
+
+OLD_KEYS = {"WLT": "Wlt", "Organisation": "Organization", "IRM": "Irm", "IFId": "IfId"}
+
+
+def _modern(x):
+    """Records from early 2021 spell some field names differently: give them today's names."""
+    if isinstance(x, dict):
+        return {OLD_KEYS.get(k, k): _modern(v) for k, v in x.items()}
+    if isinstance(x, list):
+        return [_modern(v) for v in x]
+    return x
 
 
 def convert(j, offset):
@@ -116,7 +128,10 @@ def convert(j, offset):
                 match["when"] = when
             if m.get("Result"):
                 team = any(((p.get("Competitor") or {}).get("Type") == "T" and len(((p.get("Competitor") or {}).get("Composition") or {}).get("Athlete") or []) > 2) for p in places)
-                match["score"] = m["Result"].split(" ")[0] if team else m["Result"]
+                head, _, games = m["Result"].partition(" ")
+                if ":" not in games:
+                    games = games.replace("-", ":")   # early 2021 wrote games as 11-7
+                match["score"] = head if team else f"{head} {games}".strip()
             if winner is not None:
                 match["winner"] = winner
             matches.append(match)
