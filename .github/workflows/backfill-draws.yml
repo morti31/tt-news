@@ -1,0 +1,27 @@
+name: Backfill draws
+# One-off helper: fetches WTT's draws for past events (tools/backfill_events.py) and pushes them to the
+# "backfill" branch, so they can be checked before the event pages are made. Run by hand only.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "WTT event ids, space separated (blank: every senior event since 2021 without a draw file)"
+        required: false
+permissions:
+  contents: write
+jobs:
+  draws:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch draws and push them to the backfill branch
+        env:
+          IDS: ${{ inputs.ids }}
+        run: |
+          python3 tools/backfill_events.py draws $IDS | tee backfill.log
+          git config user.name "Tom Mortimer"
+          git config user.email "tommorti@gmail.com"
+          git checkout -q -b backfill
+          git add -f data/draws backfill.log
+          git commit -q -m "Backfill draws"
+          git push -q -f origin backfill
