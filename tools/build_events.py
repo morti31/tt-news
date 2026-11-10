@@ -267,9 +267,10 @@ def index_page(data, today):
     groups = data.get("groups", ["WTT Series", "Majors", "Continental"])
 
     def card(ev):
-        return f'''<li class="ev-card"><a href="/events/{ev["id"]}.html">
+        label = ev["series"] if ev["group"] == "WTT Series" and ev.get("series") else ev["group"]
+        return f'''<li class="ev-card" data-g="{e(ev["group"])}" data-s="{e(ev.get("series", ""))}"><a href="/events/{ev["id"]}.html">
 {f'<img src="{poster(ev)}" alt="" loading="lazy" width="1600" height="900">' if poster(ev) else ""}
-<span class="ev-group" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">{e(ev["group"])}</span>
+<span class="ev-group" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">{e(label)}</span>
 <h3>{e(ev["name"])} {e(ev["year"])}</h3><p>{e(dates(ev))}, {e(ev["city"])}</p></a></li>'''
 
     for key, title in (("now", "On now"), ("next", "Coming up")):
@@ -291,20 +292,35 @@ def index_page(data, today):
         n = sum(len(v) for v in months.values())
         sections.append(f'<section class="hub-sec ev-year" id="y{y}"><h2 class="section-title">{y} <span class="ev-count">{n} event{"s" if n != 1 else ""}</span></h2>{body}</section>')
     filt = "".join(f'<button data-g="{e(g)}" aria-pressed="false">{e(g)}</button>' for g in groups)
+    order = ["WTT Grand Smash", "WTT Finals", "WTT Champions", "WTT Star Contender", "WTT Contender", "WTT Feeder"]
+    present = {ev.get("series") for ev in data["events"] if ev["group"] == "WTT Series"}
+    levels = "".join(f'<button data-s="{e(x)}" aria-pressed="false">{e(x.replace("WTT ", "", 1))}</button>' for x in order if x in present)
     return f"""<main class="wrap">
 <section class="sched-head"><div><h1>Events</h1><p class="lede">The major tournaments: draws, results, schedules and news in one place.</p></div></section>
 <div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
+<div class="toggle sched-filter ev-levels" role="group" aria-label="Filter WTT events by level" hidden><button data-s="" aria-pressed="true">All WTT</button>{levels}</div>
 {"".join(sections[:len(sections) - len(years)])}
 {year_nav}
 {"".join(sections[len(sections) - len(years):])}
 <p class="small">The full calendar, including club competitions, is on the <a href="/schedule.html">schedule</a>.</p>
 </main>
 <script>
-document.querySelector(".ev-filter").addEventListener("click", (ev) => {{
-  const b = ev.target.closest("button"); if (!b) return;
-  document.querySelectorAll(".ev-filter button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-  document.querySelectorAll(".ev-card").forEach((c) => {{ c.hidden = !!b.dataset.g && c.querySelector(".ev-group").textContent !== b.dataset.g; }});
+let G = "", S = "";
+const levels = document.querySelector(".ev-levels");
+function apply() {{
+  levels.hidden = G !== "WTT Series";
+  document.querySelectorAll(".ev-filter button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === G)));
+  levels.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.s === S)));
+  document.querySelectorAll(".ev-card").forEach((c) => {{ c.hidden = (!!G && c.dataset.g !== G) || (!!S && c.dataset.s !== S); }});
   document.querySelectorAll(".ev-cards").forEach((l) => {{ const box = l.closest(".ev-month") || l.closest("section"); box.hidden = ![...l.children].some((c) => !c.hidden); }});
   document.querySelectorAll(".ev-year").forEach((sec) => {{ sec.hidden = ![...sec.querySelectorAll(".ev-month")].some((m) => !m.hidden); }});
+}}
+document.querySelector(".ev-filter").addEventListener("click", (ev) => {{
+  const b = ev.target.closest("button"); if (!b) return;
+  G = b.dataset.g; S = ""; apply();
+}});
+levels.addEventListener("click", (ev) => {{
+  const b = ev.target.closest("button"); if (!b) return;
+  S = b.dataset.s; apply();
 }});
 </script>"""
