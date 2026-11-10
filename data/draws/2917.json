@@ -1,0 +1,1035 @@
+{
+ "event": "Oceania Championships",
+ "wtt_event_id": "2917",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2917&selectedTab=Draws",
+ "updated": "2026-11-10T02:29:00Z",
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yangzi Liu",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jacqui Wood",
+         "nat": "NZL"
+        },
+        {
+         "name": "Melissa Tapper",
+         "nat": "AUS",
+         "seed": 5
+        }
+       ],
+       "when": "2024-10-17T06:00:00Z",
+       "score": "0-4 (1:11,4:11,3:11,2:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Constantina Psihogios",
+         "nat": "AUS",
+         "seed": 6
+        },
+        {
+         "name": "Jocelyn Lam",
+         "nat": "NZL",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-17T06:00:00Z",
+       "score": "4-1 (11:13,13:11,11:3,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Minhyung Jee",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yangzi Liu",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "Melissa Tapper",
+         "nat": "AUS",
+         "seed": 5
+        }
+       ],
+       "when": "2024-10-17T21:50:00Z",
+       "score": "4-0 (11:4,11:8,11:4,11:7,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Constantina Psihogios",
+         "nat": "AUS",
+         "seed": 6
+        },
+        {
+         "name": "Minhyung Jee",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-17T21:50:00Z",
+       "score": "2-4 (3:11,11:5,11:13,10:12,11:9,3:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yangzi Liu",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "Minhyung Jee",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-18T02:30:00Z",
+       "score": "3-4 (11:1,11:7,11:5,12:14,10:12,3:11,9:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeremy Dey",
+         "nat": "NCL",
+         "seed": 5
+        },
+        {
+         "name": "Alfred Dela Pena",
+         "nat": "NZL",
+         "seed": 4
+        }
+       ],
+       "when": "2024-10-17T04:00:00Z",
+       "score": "0-4 (9:11,7:11,6:11,5:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Timothy Choi",
+         "nat": "NZL"
+        },
+        {
+         "name": "Joshua Yee",
+         "nat": "FIJ",
+         "seed": 8
+        }
+       ],
+       "when": "2024-10-17T04:00:00Z",
+       "score": "4-0 (12:10,11:8,11:4,11:8,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hwan Bae",
+         "nat": "AUS"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bei Yan Zhang",
+         "nat": "FIJ"
+        },
+        {
+         "name": "Dean Shu",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-17T04:00:00Z",
+       "score": "0-4 (3:11,8:11,6:11,5:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maxwell Henderson",
+         "nat": "NZL"
+        },
+        {
+         "name": "Jerome Morisseau",
+         "nat": "NCL",
+         "seed": 6
+        }
+       ],
+       "when": "2024-10-17T04:00:00Z",
+       "score": "4-0 (11:4,11:8,11:5,11:5,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Finn Luu",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "Alfred Dela Pena",
+         "nat": "NZL",
+         "seed": 4
+        }
+       ],
+       "when": "2024-10-17T06:40:00Z",
+       "score": "4-1 (10:12,11:5,11:6,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Timothy Choi",
+         "nat": "NZL"
+        },
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-17T06:40:00Z",
+       "score": "0-4 (8:11,6:11,3:11,10:12,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hwan Bae",
+         "nat": "AUS"
+        },
+        {
+         "name": "Dean Shu",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-17T06:40:00Z",
+       "score": "4-2 (11:6,11:7,6:11,11:3,7:11,11:1,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maxwell Henderson",
+         "nat": "NZL"
+        },
+        {
+         "name": "Finn Luu",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-17T06:40:00Z",
+       "score": "0-4 (6:11,7:11,4:11,1:11,0:0,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-17T22:30:00Z",
+       "score": "2-4 (11:3,4:11,11:7,10:12,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hwan Bae",
+         "nat": "AUS"
+        },
+        {
+         "name": "Finn Luu",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-17T22:30:00Z",
+       "score": "4-0 (11:8,11:9,11:7,11:5,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS",
+         "seed": 3
+        },
+        {
+         "name": "Hwan Bae",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-18T03:10:00Z",
+       "score": "1-4 (11:9,6:11,7:11,10:12,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Minhyung Jee / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Josephine Chong / Ayumi Moriyama",
+         "nat": "NZL"
+        },
+        {
+         "name": "Juiel Thompson / Maylis Giret",
+         "nat": "COK/NCL"
+        }
+       ],
+       "when": "2024-10-15T21:30:00Z",
+       "score": "3-0 (11:5,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Melissa Tapper / Constantina Psihogios",
+         "nat": "AUS"
+        },
+        {
+         "name": "Jacqui Wood / Lydia Mercer-Beumelburg",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-15T21:30:00Z",
+       "score": "3-0 (11:1,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Jocelyn Lam / Lisa Gear",
+         "nat": "NZL"
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Minhyung Jee / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Josephine Chong / Ayumi Moriyama",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-15T23:30:00Z",
+       "score": "3-0 (11:3,12:10,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Melissa Tapper / Constantina Psihogios",
+         "nat": "AUS"
+        },
+        {
+         "name": "Jocelyn Lam / Lisa Gear",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-15T23:30:00Z",
+       "score": "3-0 (13:11,11:3,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Minhyung Jee / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Melissa Tapper / Constantina Psihogios",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-17T23:10:00Z",
+       "score": "3-0 (11:3,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jerome Morisseau / Jeremy Dey",
+         "nat": "NCL",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dean Shu / Timothy Choi",
+         "nat": "NZL"
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bei Yan Zhang / Guojin Loo",
+         "nat": "FIJ"
+        },
+        {
+         "name": "Jack Chen / Alex Liu Cao",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-15T21:00:00Z",
+       "score": "0-3 (2:11,4:11,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Aditya Sareen / Hwan Bae",
+         "nat": "AUS",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Olivier Clouet / Tauvira Tararo",
+         "nat": "NCL/COK",
+         "seed": 4
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maxwell Henderson / Alfred Dela Pena",
+         "nat": "NZL"
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Qi Wang / Joshua Yee",
+         "nat": "FIJ",
+         "seed": 5
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Finn Luu / Nicholas Lum",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jerome Morisseau / Jeremy Dey",
+         "nat": "NCL",
+         "seed": 1
+        },
+        {
+         "name": "Dean Shu / Timothy Choi",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-15T22:00:00Z",
+       "score": "0-3 (3:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jack Chen / Alex Liu Cao",
+         "nat": "NZL"
+        },
+        {
+         "name": "Aditya Sareen / Hwan Bae",
+         "nat": "AUS",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-15T22:00:00Z",
+       "score": "0-3 (7:11,4:11,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Olivier Clouet / Tauvira Tararo",
+         "nat": "NCL/COK",
+         "seed": 4
+        },
+        {
+         "name": "Maxwell Henderson / Alfred Dela Pena",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-15T22:00:00Z",
+       "score": "0-3 (3:11,2:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Wang / Joshua Yee",
+         "nat": "FIJ",
+         "seed": 5
+        },
+        {
+         "name": "Finn Luu / Nicholas Lum",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-15T22:00:00Z",
+       "score": "0-3 (2:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dean Shu / Timothy Choi",
+         "nat": "NZL"
+        },
+        {
+         "name": "Aditya Sareen / Hwan Bae",
+         "nat": "AUS",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-16T00:00:00Z",
+       "score": "1-3 (9:11,11:6,15:17,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maxwell Henderson / Alfred Dela Pena",
+         "nat": "NZL"
+        },
+        {
+         "name": "Finn Luu / Nicholas Lum",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-16T00:00:00Z",
+       "score": "0-3 (10:12,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen / Hwan Bae",
+         "nat": "AUS",
+         "seed": 3
+        },
+        {
+         "name": "Finn Luu / Nicholas Lum",
+         "nat": "AUS",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-17T23:50:00Z",
+       "score": "1-3 (5:11,11:9,9:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maxwell Henderson / Lisa Gear",
+         "nat": "NZL"
+        },
+        {
+         "name": "Jacqui Wood / Alfred Dela Pena",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-17T01:00:00Z",
+       "score": "3-1 (9:11,11:6,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dean Shu / Jocelyn Lam",
+         "nat": "NZL"
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Aditya Sareen / Melissa Tapper",
+         "nat": "AUS"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jeremy Dey / Maylis Giret",
+         "nat": "NCL"
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jack Chen / Lydia Mercer-Beumelburg",
+         "nat": "NZL"
+        },
+        {
+         "name": "Hwan Bae / Constantina Psihogios",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-17T01:00:00Z",
+       "score": "0-3 (6:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayumi Moriyama / Timothy Choi",
+         "nat": "NZL"
+        },
+        {
+         "name": "Tauvira Tararo / Juiel Thompson",
+         "nat": "COK"
+        }
+       ],
+       "when": "2024-10-17T01:00:00Z",
+       "score": "3-0 (11:0,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Finn Luu / Minhyung Jee",
+         "nat": "AUS"
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Maxwell Henderson / Lisa Gear",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-17T02:00:00Z",
+       "score": "3-0 (11:4,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dean Shu / Jocelyn Lam",
+         "nat": "NZL"
+        },
+        {
+         "name": "Aditya Sareen / Melissa Tapper",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-17T02:00:00Z",
+       "score": "3-1 (5:11,11:8,11:9,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeremy Dey / Maylis Giret",
+         "nat": "NCL"
+        },
+        {
+         "name": "Hwan Bae / Constantina Psihogios",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-17T02:00:00Z",
+       "score": "0-3 (4:11,9:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayumi Moriyama / Timothy Choi",
+         "nat": "NZL"
+        },
+        {
+         "name": "Finn Luu / Minhyung Jee",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-17T02:00:00Z",
+       "score": "1-3 (6:11,6:11,11:7,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Dean Shu / Jocelyn Lam",
+         "nat": "NZL"
+        }
+       ],
+       "when": "2024-10-17T03:00:00Z",
+       "score": "3-0 (11:5,11:9,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hwan Bae / Constantina Psihogios",
+         "nat": "AUS"
+        },
+        {
+         "name": "Finn Luu / Minhyung Jee",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-17T03:00:00Z",
+       "score": "0-3 (5:11,8:11,14:16,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Finn Luu / Minhyung Jee",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2024-10-18T00:30:00Z",
+       "score": "3-0 (11:7,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wteam": {
+   "name": "Women's team",
+   "rounds": [
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Australia",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "New Zealand",
+         "nat": "NZL",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-15T06:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
