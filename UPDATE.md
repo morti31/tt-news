@@ -148,6 +148,10 @@ Past years are complete back to 2021 (finished 10 November 2026): every WTT Seri
 - New events get their pages from `tools/wtt_sync.py` as they start (see "Automatic event pages for WTT events"). New hubs are appended to the end of `events` in data/events.json so existing posters keep their look.
 - The events index shows one year at a time (tabs); `/events/#y2024` opens a year.
 
+## Homepage Latest section
+
+Latest is three columns: Events (stories with an `event`), Clubs (category Clubs) and Other news (everything else). Each column shows its newest story as a picture card and the next three as headlines. Every card needs a picture: the site uses the story's video, event poster, photo or illustration, and otherwise a club league's poster (chosen from the league named in the headline) or a topic poster (rankings, England, equipment, news) from `img/posters/league-*.jpg` and `topic-*.jpg`. When a new league is added to `tools/build_clubs.py`, render its poster with `python3 tools/posters.py --extras`. A story that deserves its own picture (a signing, a retirement, an obituary) should get an illustration or licensed photo as step 1 describes, so the topic posters are a fallback, not the norm.
+
 ## Tags
 
 Every story gets up to three tags (tournament, players, club or league, country) automatically at build time, old and new alike. The tags show under the headline on cards and articles and link to /tag/<name>, a page with every story on that tag, a short header and links onward. Rankings link every player and country that has stories to its tag page.

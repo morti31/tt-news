@@ -235,15 +235,19 @@ def grid(ev, uid):
     b.append(t(title, L - size * 0.02, base, size, ink, 800, track=-0.005, stretch=75))
     y = base + 40
     b.append(f'<rect x="{L}" y="{y:.0f}" width="{R - L}" height="1" fill="{ink}" fill-opacity=".35"/>')
-    cols = (("Dates", date_range(ev)), ("Venue", place(ev)), ("Events", ev["events"]))
+    cols = ev.get("cols") or (("Dates", date_range(ev)), ("Venue", place(ev)), ("Events", ev["events"]))
     colw = (R - L) / 3
     for i, (k, v) in enumerate(cols):
         x = L + i * colw
         b.append(label(k, x, y + 42, ink, 14, opacity=.55))
         for j, ln in enumerate(_wrap(v, 20)[:2]):
             b.append(t(ln, x, y + 76 + j * 28, 22, ink, 600))
-    b += _days(ev, uid, L, R, 690, H - 64, ink)
-    b.append(label("Eleven event series", L, H - 26, ink, 12, opacity=.45))
+    if ev.get("strap"):     # leagues and news topics: a line of text where an event has its days
+        b.append(f'<rect x="{L}" y="690" width="{R - L}" height="1" fill="{ink}" fill-opacity=".35"/>')
+        b.append(t(ev["strap"], L, 800, fit(ev["strap"], R - L, 84, -0.02), ink, 300, track=-0.02))
+    else:
+        b += _days(ev, uid, L, R, 690, H - 64, ink)
+    b.append(label("Eleven event series" if not ev.get("strap") else "Eleven", L, H - 26, ink, 12, opacity=.45))
     b.append(noise)
     return b
 
@@ -412,6 +416,47 @@ def svg(ev, style):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{e(lbl)}">\n{body}\n</svg>\n'
 
 
+def extras():
+    """Posters that are not for an event: one per club league and one per recurring news topic. The homepage's
+    Latest cards use them for stories with no video or event poster, so every card has a picture.
+    Rendered to img/posters/league-<slug>.jpg and img/posters/topic-<name>.jpg (python3 tools/posters.py --extras)."""
+    import build_clubs
+    out = []
+    for lg in build_clubs.LEAGUES:
+        comps = ", ".join(dict.fromkeys(c[2] for c in lg["comps"]))
+        out.append({"id": f'league-{lg["slug"]}', "name": lg["name"], "series": "Club table tennis", "city": lg["name"], "country": lg["country"], "tier": "club",
+                    "year": "", "events": "", "strap": lg["country"],
+                    "cols": (("Competitions", comps), ("Country", lg["country"]), ("On Eleven", "Tables, fixtures and results"))})
+    for slug, title, series, tier, strap, cols in (
+            ("rankings", "Rankings", "ITTF world ranking", "champions", "Published every week", (("Lists", "Men and women"), ("Source", "ITTF"), ("On Eleven", "The full top 200"))),
+            ("england", "England", "Table tennis in England", "world", "News from home", (("Covers", "Players, leagues and clubs"), ("Body", "Table Tennis England"), ("On Eleven", "Results and reports"))),
+            ("equipment", "Equipment", "Blades, rubbers and balls", "contender", "Kit and sponsors", (("Covers", "Deals and launches"), ("Rules", "ITTF approvals"), ("On Eleven", "News and guides"))),
+            ("news", "News", "World table tennis", "champions", "Around the world", (("Covers", "Players and federations"), ("From", "Asia, Europe and beyond"), ("On Eleven", "Checked at source")))):
+        out.append({"id": f"topic-{slug}", "name": title, "series": series, "city": title, "country": "", "tier": tier, "year": "", "events": "", "strap": strap, "cols": cols})
+    return out
+
+
+def render_extras():
+    evs = assign_variants(extras())
+    out = os.path.join(ROOT, "img", "posters")
+    font = os.path.join(ROOT, "tools", "BricolageGrotesque-variable.woff2")
+    import base64
+    b64 = base64.b64encode(open(font, "rb").read()).decode()
+    css = (f"@font-face{{font-family:'Bricolage Grotesque';src:url(data:font/woff2;base64,{b64}) format('woff2');font-weight:200 800;font-stretch:75% 100%}}"
+           "html,body{margin:0;background:#000}svg{display:block}")
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        pg = browser.new_page(viewport={"width": W, "height": H})
+        for ev in evs:
+            pg.set_content(f"<html><head><style>{css} svg{{width:{W}px;height:{H}px}}</style></head><body>{svg(ev, 'grid')}</body></html>")
+            pg.evaluate("document.fonts.ready.then(() => document.fonts.size)")
+            pg.wait_for_timeout(300)
+            pg.screenshot(path=os.path.join(out, f'{ev["id"]}.jpg'), type="jpeg", quality=84)
+            print("poster:", ev["id"], ev["_v"])
+        browser.close()
+
+
 def missing():
     data = json.load(open(os.path.join(ROOT, "data", "events.json"), encoding="utf-8"))
     out = os.path.join(ROOT, "img", "posters")
@@ -449,6 +494,10 @@ def main(only=None):
 
 if __name__ == "__main__":
     import sys
+    if sys.argv[1:] == ["--extras"]:
+        sys.path.insert(0, os.path.dirname(__file__))
+        render_extras()
+        sys.exit(0)
     if sys.argv[1:] == ["--need"]:
         sys.exit(0 if missing() else 1)
     if sys.argv[1:] == ["--missing"]:

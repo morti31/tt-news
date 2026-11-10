@@ -277,11 +277,42 @@
     const more = rest;
     $("second").innerHTML = tops.map((s) => `<li><a href="${esc(url(s))}">${esc(s.headline)}</a><span class="meta">${when(s)}</span></li>`).join("");
     $("second").closest(".tops").hidden = !tops.length;
-    $("stories").innerHTML = more.map((s) => `<article class="promo">${art(s, "small")}<div>${kicker(s)}
-      <h3><a class="stretch" href="${esc(url(s))}">${esc(s.headline)}</a></h3><span class="meta">${when(s)} · By ${esc(who(s))}</span>${tagRow(s, 2)}</div></article>`).join("");
+    $("stories").innerHTML = latestColumns(more);
     $("empty").hidden = more.length > 0;
     fillCartoons();
     balance();
+  }
+
+  // Latest: three columns, Events, Clubs and Other news. Each has a picture card for its newest story and
+  // three headlines under it. Every card has a picture: video, event poster, photo or illustration first, then
+  // the league's poster for club stories and a topic poster for the rest (img/posters/league-*, topic-*).
+  const LEAGUE_POSTER = [[/Champions League/i, "champions-league"], [/Bundesliga|TTBL/i, "bundesliga"], [/Super League|CTTSL/i, "super-league"],
+    [/T\.? ?League/i, "t-league"], [/Pro A\b/i, "pro-a"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
+  function fallbackPic(s) {
+    const text = `${s.headline} ${s.summary || ""}`;
+    let src;
+    if (s.event && hubs[s.event] && hubs[s.event].poster) src = hubs[s.event].poster;
+    else if (s.category === "Clubs") { const m = LEAGUE_POSTER.find(([rx]) => rx.test(text)); src = `/img/posters/league-${m ? m[1] : "champions-league"}.jpg`; }
+    else if (/world (No|ranking)|rankings?\b/i.test(s.headline)) src = "/img/posters/topic-rankings.jpg";
+    else if (s.category === "England") src = "/img/posters/topic-england.jpg";
+    else if (s.category === "Equipment") src = "/img/posters/topic-equipment.jpg";
+    else src = "/img/posters/topic-news.jpg";
+    return `<div class="pic poster"><img src="${esc(src)}" alt="" loading="lazy"></div>`;
+  }
+  function latestColumns(list) {
+    const group = (s) => (s.category === "Clubs" ? "clubs" : s.event ? "events" : "other");
+    const cols = [["events", "Events", "/events/"], ["clubs", "Clubs", "/clubs/"], ["other", "Other news", "/news/"]];
+    return `<div class="l3">${cols.map(([k, title, href]) => {
+      const items = list.filter((s) => group(s) === k).slice(0, 4);
+      if (!items.length) return "";
+      const [first, ...rest] = items;
+      seen = new Set();
+      const pic = art(first, "small") || fallbackPic(first);
+      return `<section class="l3-col" aria-label="${esc(title)}"><h3 class="l3-h"><a href="${href}">${esc(title)}</a></h3>
+        <article class="l3-card">${pic}<span class="l3-meta">${when(first)}${first.kind === "Update" ? " · Quick update" : ""}</span>
+        <h4><a class="stretch" href="${esc(url(first))}">${esc(first.headline)}</a></h4></article>
+        <ul class="l3-list">${rest.map((s) => `<li><a href="${esc(url(s))}"><span class="l3-meta">${when(s)}</span><span class="l3-t">${esc(s.headline)}</span></a></li>`).join("")}</ul></section>`;
+    }).join("")}</div>`;
   }
 
   // Latest stops where the sidebar stops, so the right-hand column never leaves white space beside it.
@@ -290,6 +321,12 @@
   function balance() {
     const list = $("stories"), aside = document.querySelector(".layout > aside");
     if (!list || !aside) return;
+    if (list.querySelector(".l3")) {   // the three-column Latest is a fixed size: no trimming, one link to all news
+      let more = $("latest-more");
+      if (!more) { more = document.createElement("a"); more.id = "latest-more"; more.className = "panel-link latest-more"; more.href = "/news/"; list.after(more); }
+      more.textContent = "More news"; more.hidden = false;
+      return;
+    }
     const items = [...list.children];
     items.forEach((el) => (el.hidden = false));
     const oneCol = getComputedStyle(list.closest(".layout")).gridTemplateColumns.split(" ").length < 2;
