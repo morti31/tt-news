@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-10T23:45:00Z",
+  "updated": "2026-11-10T23:28:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
     {
       "id": "ettu-champions-league-women-2026-27-stage-2-round-1",
       "category": "Clubs",
       "date": "2026-11-10",
-      "published": "2026-11-10T23:40:00Z",
+      "published": "2026-11-10T23:25:00Z",
       "league": "champions-league",
       "headline": "Etival beat holders Tarnobrzeg by one game as ETTU Champions League Women Stage 2 opens",
       "summary": "The defending champions lost 8-7 on games at home to Etival on the opening night of Stage 2, while Cartagena and Saint-Quentin both won 11-4.",
@@ -193,6 +193,298 @@
         }
       ],
       "top": true
+    },
+    {
+      "id": "ttbl-2026-27-muhlhausen-beat-fulda-ovtcharov-ionescu",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "bundesliga",
+      "lang": "German",
+      "date": "2026-11-10",
+      "published": "2026-11-10T23:26:00Z",
+      "score": "3-0",
+      "headline": "Tischtennis Bundesliga: Ovidiu Ionescu beats Dimitrij Ovtcharov as Mühlhausen win 3-0 against Fulda",
+      "summary": "Post SV Mühlhausen beat TTC Fulda-Maberzell 3-0 for their first home win of the Tischtennis Bundesliga season, with Ovidiu Ionescu taking the deciding game against Dimitrij Ovtcharov 11-3.",
+      "matches": [
+        {
+          "label": "Tischtennis Bundesliga",
+          "event": "Tischtennis Bundesliga, Mühlhausen",
+          "sides": [
+            {
+              "name": "Post SV Mühlhausen"
+            },
+            {
+              "name": "TTC Fulda-Maberzell"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Steffen Mengel",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Jonathan Groth",
+                  "nat": "DEN"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Ovidiu Ionescu",
+                  "nat": "ROU"
+                },
+                {
+                  "name": "Dimitrij Ovtcharov",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                2
+              ],
+              "games": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  3
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Marcos Freitas",
+                  "nat": "POR"
+                },
+                {
+                  "name": "Fanbo Meng",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Post SV Mühlhausen beat TTC Fulda-Maberzell 3-0 on Tuesday night for their first home win of the Tischtennis Bundesliga season, and moved up from 10th to seventh.",
+        "Steffen Mengel put Mühlhausen ahead by beating Jonathan Groth 11-7, 12-10, 6-11, 11-7. Ovidiu Ionescu then beat Dimitrij Ovtcharov, the former world No 1, in five games, leading twice before running away with the decider 11-3.",
+        "Marcos Freitas finished the match by beating Fanbo Meng 11-4, 11-9, 11-9 in a meeting of two left-handers. Mühlhausen lost their first three matches of the season and have now won three of their last four, including a 3-2 win at Bergneustadt."
+      ],
+      "sources": [
+        {
+          "name": "TTBL (German): Mühlhausen celebrate home win against Fulda",
+          "url": "http://ttbl.de/news/post/6af3882a426bb40001be8786"
+        },
+        {
+          "name": "MDR (German): Post SV Mühlhausen beat TTC Fulda with Ovtcharov",
+          "url": "https://www.mdr.de/sport/sportarten/tischtennis/tt-bundesliga-post-sv-niederlage-duesseldorf-,tischtennis-muehlhausen-110.html"
+        }
+      ]
+    },
+    {
+      "id": "pro-a-men-2026-27-matchday-5-angers-chartres-saint-denis-hennebont-roanne",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "pro-a",
+      "lang": "French",
+      "date": "2026-11-10",
+      "published": "2026-11-10T23:24:00Z",
+      "headline": "Pro A: Angers win at Chartres and Saint-Denis beat La Romagne as Hennebont end Roanne's unbeaten start",
+      "summary": "Loups d'Angers ended a run of three 3-0 defeats by winning 3-1 at bottom club Chartres on the fifth matchday of the French men's Pro A on Tuesday.",
+      "body": [
+        "Loups d'Angers won 3-1 at Chartres on Tuesday night to end a run of three successive 3-0 defeats in the French men's Pro A. Chartres, the promoted side, have lost all five of their matches and stay bottom, despite close to 350 supporters in their hall on the eve of a public holiday.",
+        "Saint-Denis, also promoted, beat La Romagne 3-1 at home. Before the fifth matchday both clubs' only win had come against Chartres. Angers host La Romagne on 22 November.",
+        "GV Hennebont beat Loire Nord TT of Roanne, who had won their first four matches, and moved above them into second. Hennebont played without their Chinese players and Vladimir Sidorenko, and Roanne were also short of players; Lev Katsman led the home side. SPO Rouen stay top with five wins from five after beating TFTT Thorigné-Fouillard.",
+        "The full table is on Eleven's [Pro A page](/clubs/pro-a.html)."
+      ],
+      "sources": [
+        {
+          "name": "L'Écho Républicain (French): Chartres finish in the jaws of the Angers wolves",
+          "url": "https://www.lechorepublicain.fr/chartres-28000/sports/tennis-de-table-proa-chartres-finit-dans-la-gueule-des-loups-d-angers_15079563/"
+        },
+        {
+          "name": "Le Courrier de l'Ouest via maville (French): Les Loups reprennent du poil de la bête",
+          "url": "https://cholet.maville.com/sport/detail_-tennis-de-table-pro-a-les-loups-reprennent-du-poil-de-la-bete_region-7564578_actu.Htm"
+        },
+        {
+          "name": "Le Courrier de l'Ouest via maville (French): La Romagne en demi-teinte s'incline encore",
+          "url": "https://cholet.maville.com/sport/detail_-tennis-de-table-pro-a-la-romagne-en-demi-teinte-s-incline-encore_fil-7564579_actu.Htm"
+        },
+        {
+          "name": "Ouest-France via maville (French): Hennebont end Roanne's unbeaten run",
+          "url": "https://caen.maville.com/sport/infos/detail_-ille-et-vilaine-tennis-de-table-grace-a-un-exploit-de-lev-katsman-hennebont-met-fin-a-l-invincibilite-de-roanne-et-s-affirme_-7564559_actu.Htm"
+        },
+        {
+          "name": "SPO Rouen: Pro A table",
+          "url": "https://sporouen-tennisdetable.fr/classement-pro-a/"
+        }
+      ]
+    },
+    {
+      "id": "wtt-contender-istanbul-2026-qualifying-day-one-ao-hualei-tianer-yu",
+      "category": "International",
+      "kind": "Update",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-10",
+      "published": "2026-11-10T23:22:00Z",
+      "headline": "WTT Contender Istanbul: Ao Hualei wins 16-14 in the decider as Tianer Yu comes through her first qualifying match",
+      "summary": "China's Ao Hualei lost the first game 11-1 and needed a 16-14 decider to beat Iran's Amin Ahmadian on the opening day of qualifying, and now meets England's Connor Green.",
+      "matches": [
+        {
+          "label": "Men's singles, qualifying round 1",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Ao Hualei",
+              "nat": "CHN"
+            },
+            {
+              "name": "Amin Ahmadian",
+              "nat": "IRI"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              1,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              16,
+              14
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, qualifying round 1",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Tianer Yu",
+              "nat": "ENG"
+            },
+            {
+              "name": "Sarvinoz Mirkadirova",
+              "nat": "KAZ"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Ao Hualei, the runner-up at China's National Championships, came close to going out on the first day of qualifying at WTT Contender Istanbul on Tuesday. He won one point in the first game against Iran's Amin Ahmadian and, after levelling the match, needed extra points in the decider, winning it 16-14 after 43 minutes. Chinese reports said Ao let four match points go and saved two before he closed it out. He plays England's Connor Green, who had a bye, in the next qualifying round.",
+        "China's three other players on the opening day won in straight games. Wei Jingming beat Turkey's Ozge Yilmaz 11-5, 11-2, 11-2, Feng Yixuan beat Tiffany Ke of the US 13-11, 11-5, 11-8, and Quan Kaiyuan beat Uzbekistan's Khasanboy Teshaboev 11-6, 11-2, 11-8.",
+        "England's Tianer Yu, the world No 358, beat Kazakhstan's Sarvinoz Mirkadirova, ranked 187th, 8-11, 11-5, 11-9, 11-7. Four Turkish players won in front of the home crowd: Sibel Altinkaya beat Slovenia's Lara Opeka in five games, Ibrahim Gunduz beat Spain's Norbert Tauler 11-4 in the decider, Gorkem Ocal beat Denmark's Martin Buch after losing the first game 11-2, and Tugay Yilmaz beat Uzbekistan's Shahbozbek Gulomiddinov 11-3, 11-5, 11-6.",
+        "Qualifying finishes on Wednesday, when the remaining places in the main draws are decided. Tom Jarvis and Anna Hursey [go straight into the main draw](/news/tom-jarvis-wtt-contender-istanbul-2026-england.html), and the event runs until Sunday."
+      ],
+      "sources": [
+        {
+          "name": "WTT: WTT Contender Istanbul 2026 results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257"
+        },
+        {
+          "name": "Sohu (Chinese): Istanbul schedule for 11 November and China's first-day wins",
+          "url": "https://m.sohu.com/a/1099833796_801690"
+        }
+      ]
     },
     {
       "id": "hina-hayata-frankfurt-reflection-2026",
