@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-08T20:39:00Z",
+ "updated": "2026-11-10T02:18:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -22,13 +22,13 @@
      {
       "pos": 1,
       "team": "Borussia Düsseldorf",
-      "p": 6,
-      "w": 6,
+      "p": 7,
+      "w": 7,
       "l": 0,
-      "for": 18,
-      "against": 3,
-      "diff": 15,
-      "pts": 12
+      "for": 21,
+      "against": 5,
+      "diff": 16,
+      "pts": 14
      },
      {
       "pos": 2,
@@ -88,12 +88,12 @@
      {
       "pos": 7,
       "team": "TTC Grenzau",
-      "p": 6,
+      "p": 7,
       "w": 3,
-      "l": 3,
-      "for": 12,
-      "against": 15,
-      "diff": -3,
+      "l": 4,
+      "for": 14,
+      "against": 18,
+      "diff": -4,
       "pts": 6
      },
      {
@@ -629,8 +629,11 @@
    "when": "2026-11-09T18:00:00Z",
    "home": "TTC Grenzau",
    "away": "Borussia Düsseldorf",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
    "round": "Matchday 7",
    "venue": "Höhr-Grenzhausen"
   },
