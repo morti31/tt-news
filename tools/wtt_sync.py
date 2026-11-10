@@ -21,8 +21,36 @@ FAMILY_FIRST = fetch_draw.FAMILY_FIRST
 
 
 def get(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=30) as r:
-        return json.load(r)
+    # Ask for identity or gzip only, and undo whatever compression the CDN still applies
+    # (Azure Front Door sometimes serves the ranking file compressed regardless).
+    req = urllib.request.Request(url, headers={**HEADERS, "Accept-Encoding": "gzip, deflate"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        body = r.read()
+        enc = (r.headers.get("Content-Encoding") or "").lower()
+    return json.loads(decompress(body, enc).decode("utf-8-sig"))
+
+
+def decompress(body, enc=""):
+    import gzip, zlib
+    if enc == "gzip" or body[:2] == b"\x1f\x8b":
+        return gzip.decompress(body)
+    if enc == "deflate":
+        try:
+            return zlib.decompress(body)
+        except zlib.error:
+            return zlib.decompress(body, -zlib.MAX_WBITS)
+    if enc == "br" or (body[:1] not in (b"{", b"[", b" ", b"\n", b"\r", b"\t", b"\xef")):
+        try:
+            import brotli
+            return brotli.decompress(body)
+        except ImportError:
+            pass
+        for wbits in (zlib.MAX_WBITS | 32, -zlib.MAX_WBITS):
+            try:
+                return zlib.decompress(body, wbits)
+            except zlib.error:
+                continue
+    return body
 
 
 def person(comp):

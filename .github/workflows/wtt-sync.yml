@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Sync from WTT
         run: |
+          python3 -m pip install -q brotli 2>/dev/null || true
           python3 tools/wtt_sync.py
           python3 tools/build_calendar.py
       - name: Commit changes
