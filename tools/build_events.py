@@ -224,8 +224,8 @@ def hub(ev, items, schedule, today, news):
     empty = "" if (mc or results or draw or fixtures or items or champ_sec or story_sec) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
     jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("champions", "Champions", champ_sec), ("story", "How it was won", story_sec), ("live", "Live", "" if mc else live_sec), ("matches", "Matches", mc), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
                                                                 ("watch", "Watch", watch), ("news", "News", news_sec)) if sec)
-    facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev["events"]),
-                                                                   ("Level", TIER_NAMES.get(ev["tier"], ""))) if v)
+    facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev.get("events", "")),
+                                                                   ("Level", ev.get("level") or TIER_NAMES.get(ev["tier"], ""))) if v)
     # The sidebar sits beside the first sections only (live scores and results, or whatever comes first);
     # the long sections (draw, schedule, highlights, news) run full width below it, so there is no
     # empty column on the right.

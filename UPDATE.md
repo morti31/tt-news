@@ -124,6 +124,10 @@ The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.
 - By hand (`"auto": false`): `cttsl-men`, `cttsl-women` (each club's registered squad, from CTTA or reliable Chinese reports, names in pinyin, family name first), `cl-men`, `cl-women` (ETTU's team roster PDFs on the competition pages), `proa-men`, `proa-women` (not yet filled: build them from the clubs' own sites and FFTT match reports, never from Wikipedia alone).
 - Monitoring: on every run, check the news scan and the leagues' own news for transfers, signings, loans, retirements and injuries that change a squad, and update the manual files the same run (set `updated`). A transfer of a ranked or profiled player is also a news story. Each new season, replace the squads once the leagues publish them.
 
+## Automatic event pages for WTT events
+
+`tools/wtt_sync.py` (every 30 minutes, GitHub) gives every senior WTT event (Contender, Star Contender, Feeder, Champions, Smash, Finals) its own event page as it comes within 3 days, so the live scores, order of play, results and draw flow in with no hand-made page. The event ids come from the match database (`data/matches/events.json`); pages made this way carry `"auto": true` in `data/events.json` and take their dates from WTT's order of play. They have no poster or write-up. To give one a poster, a venue or a "How it was won" story, edit the entry and delete `"auto": true`, and the sync leaves it alone. Under-15 events never get one (see "Age level" in step 2): the youth, junior, cadet and hopes names are excluded.
+
 ## Past events and full draws
 
 - The WTT sync saves every draw WTT has for an event on now (singles, doubles, mixed and team), and the event page shows them as tabs in the draw and as filters in Matches. By hand: `python3 tools/fetch_draw.py <wtt id> "<name>" <utc offset> --all`.

@@ -104,9 +104,113 @@ def fixtures(ev):
     return sorted(out, key=lambda f: f["start"]), offset
 
 
+WTT_NAME = re.compile(r"^WTT (Star Contender|Contender|Feeder|Champions|Grand Smash|Smash|Finals)\b", re.I)
+SERIES = {"star contender": ("star", "WTT Star Contender"), "contender": ("contender", "WTT Contender"), "feeder": ("contender", "WTT Feeder"),
+          "champions": ("champions", "WTT Champions"), "grand smash": ("smash", "WTT Grand Smash"), "smash": ("smash", "WTT Grand Smash"),
+          "finals": ("champions", "WTT Finals")}
+
+
+def slug(s):
+    import unicodedata
+    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+
+
+# Host countries for places that have no event page yet (a new city falls back to the city's own name)
+COUNTRY_OF = {"istanbul": "Türkiye", "gdansk": "Poland", "doha": "Qatar", "dusseldorf": "Germany", "vila-nova-de-gaia": "Portugal", "tunis": "Tunisia",
+              "buenos-aires": "Argentina", "panagyurishte": "Bulgaria", "havirov": "Czechia", "lagos": "Nigeria", "spokane": "United States",
+              "fukuoka": "Japan", "nice": "France", "baku": "Azerbaijan", "szombathely": "Hungary", "olomouc": "Czechia", "metz": "France",
+              "tashkent": "Uzbekistan", "lima": "Peru", "cappadocia": "Türkiye", "skopje": "North Macedonia", "zagreb": "Croatia", "pontevedra": "Spain",
+              "cairo": "Egypt", "amman": "Jordan", "bangkok": "Thailand", "muscat": "Oman", "kuala-lumpur": "Malaysia", "manila": "Philippines", "chennai": "India"}
+
+
+def event_span(units):
+    """(first day, last day, "Singles and doubles") from an order of play."""
+    days = sorted({u["StartDate"][:10] for u in units if u.get("StartDate")})
+    codes = " ".join(u.get("Code", "") for u in units)
+    kinds = [k for k, hit in (("singles", "SINGLES" in codes), ("doubles", "DOUBLES" in codes.replace("XDOUBLES", "")), ("mixed doubles", "XDOUBLES" in codes)) if hit]
+    text = {1: kinds[0] if kinds else "", 2: " and ".join(kinds), 3: "Singles, doubles and mixed doubles"}[min(len(kinds), 3)] if kinds else ""
+    return (days[0], days[-1], text[:1].upper() + text[1:]) if days else (None, None, "")
+
+
+def auto_hubs(doc, sched, today):
+    """Every senior WTT event that is on now or starts within 3 days gets an event page, so its live scores, order of
+    play, results and draw flow in without anyone adding it by hand. The event ids come from Eleven's match database
+    (data/matches/events.json, which lists WTT's events ahead of time); an event that already has a page is left alone.
+    Pages made here carry "auto": true; remove that flag to take one over by hand. Dates are refreshed from WTT's order
+    of play on every run. Returns True if events.json changed."""
+    mpath = os.path.join(ROOT, "data", "matches", "events.json")
+    if not os.path.exists(mpath):
+        return False
+    known = json.load(open(mpath, encoding="utf-8"))
+    have = {str(x) for ev in doc["events"] for x in (ev.get("wtt_id"), ev.get("draw")) if x}
+    by_city = {}
+    for ev in doc["events"]:
+        by_city.setdefault(slug(ev["city"]), (ev["city"], ev["country"], ev.get("utc_offset")))
+    sch = {slug(e["name"]) + "-" + e["start"][:4]: e for e in sched.get("events", []) if e.get("start")}
+    changed = False
+    for wid, info in sorted(known.items(), key=lambda kv: int(kv[0])):
+        name = (info.get("name") or "").strip()
+        m = WTT_NAME.match(name)
+        year = re.search(r"\b(20\d\d)\b", name)
+        if not m or not year or info.get("skip") or info.get("done") or int(year.group(1)) not in (today.year, today.year + 1):
+            continue
+        mine = next((ev for ev in doc["events"] if str(ev.get("wtt_id")) == wid and ev.get("auto")), None)
+        if wid in have and not mine:
+            continue
+        try:
+            units = [u for block in get(f"{CMS}/GetEventSchedule/{wid}") for u in (block.get("Competition") or {}).get("Unit", [])]
+        except Exception as err:
+            print(f"{name}: schedule unavailable ({err})")
+            continue
+        first, last, kinds = event_span(units)
+        if not first:
+            continue
+        a, b = dt.date.fromisoformat(first), dt.date.fromisoformat(last)
+        if mine is None and not (a - dt.timedelta(days=3) <= today <= b + dt.timedelta(days=1)):
+            continue
+        base = re.sub(r"\s+(Presented|Powered) [Bb]y.*$", "", name)
+        base = re.sub(r"\s*\b20\d\d\b.*$", "", base).strip()                      # "WTT Contender Istanbul"
+        city = re.sub(r"^WTT (Star Contender|Contender|Feeder|Champions|Grand Smash|Smash|Finals)\s*", "", base).strip()
+        city = re.sub(r"\s+[IVX]+$", "", city)                                            # "Doha II" is Doha
+        city_key = slug(city)
+        known_city = by_city.get(city_key)
+        sch_ev = sch.get(slug(base) + "-" + year.group(1))
+        tier, series = SERIES[m.group(1).lower()]
+        offset = (known_city or (None, None, None))[2]
+        hub = {"id": slug(base) + "-" + year.group(1), "name": base, "group": "WTT Series", "tier": tier, "series": series, "level": series,
+               "city": city, "country": (sch_ev or {}).get("country") or (known_city or (city, COUNTRY_OF.get(city_key) or city))[1] or city, "year": year.group(1),
+               "start": first, "end": last, "events": kinds, "live": True, "wtt_id": wid, "draw": wid, "auto": True}
+        if sch_ev:
+            hub["schedule_id"] = sch_ev["id"]
+        if offset is not None:
+            hub["utc_offset"] = offset
+        if mine:
+            new = {**mine, "start": first, "end": last, "events": kinds or mine.get("events", "")}
+            if new != mine:
+                mine.update(new)
+                changed = True
+                print(f"{mine['id']}: dates now {first} to {last}")
+            continue
+        doc["events"].append(hub)
+        have.add(wid)
+        changed = True
+        print(f"{hub['id']}: new event page (WTT id {wid}, {first} to {last})")
+    return changed
+
+
 def main():
     today = dt.date.today()
-    events = json.load(open(os.path.join(ROOT, "data", "events.json"), encoding="utf-8"))["events"]
+    ev_path = os.path.join(ROOT, "data", "events.json")
+    ev_doc = json.load(open(ev_path, encoding="utf-8"))
+    events = ev_doc["events"]
+    sched0 = json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8"))
+    try:
+        if auto_hubs(ev_doc, sched0, today):
+            with open(ev_path, "w", encoding="utf-8") as f:
+                json.dump(ev_doc, f, ensure_ascii=False, indent=1)
+    except Exception as err:
+        print(f"auto event pages: {err}")
     sched_path = os.path.join(ROOT, "data", "schedule.json")
     sched = json.load(open(sched_path, encoding="utf-8"))
     changed = False
