@@ -15,6 +15,10 @@ TIER_NAMES = {"world": "World event", "smash": "Grand Smash", "champions": "WTT 
               "star": "WTT Star Contender", "contender": "WTT Contender", "club": "Club competition"}
 
 
+# Events without the top players: off the homepage's "Major events" row, and no champions panel under the top stories
+MINOR = {"WTT Feeder", "WTT Contender"}
+
+
 def load():
     path = os.path.join(ROOT, "data", "events.json")
     data = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {"events": []}
@@ -75,16 +79,23 @@ def index_entry(ev):
     c = posters.palette(ev)[0]
     bg, rule, ink = TINTS.get(c, ("#f1f3f7", "#dde1e8", "#111418"))
     return {"url": f"/events/{ev['id']}.html", "name": ev["name"], "year": ev["year"], "poster": poster(ev), "tile": tile(ev),
-            "wtt": ev.get("wtt_id"), "series": ev["series"], "city": ev["city"], "venue": ev.get("venue"), "start": ev.get("start"),
+            "wtt": ev.get("wtt_id"), "series": ev["series"], **({"minor": 1} if ev.get("series") in MINOR else {}), "city": ev["city"], "venue": ev.get("venue"), "start": ev.get("start"),
             "end": ev.get("end"), "group": ev["group"], "stream_q": ev.get("stream_q") or f'{ev["city"]} {ev["year"]}', "colour": c, "tint": bg, "tint_rule": rule, "tint_ink": ink,
             "champions": components.champions(ev.get("draw"))}
 
 
 def event_index(data):
-    """Hub lookup for the homepage and widgets, keyed by hub id and by schedule id."""
+    """Hub lookup for the homepage and widgets, keyed by hub id and by schedule id. Every page loads this file, so it
+    holds only what those scripts can use: events that are coming up or ended in the last 400 days."""
     out = {}
+    cutoff = (dt.date.today() - dt.timedelta(days=400)).isoformat()
+    recent = (dt.date.today() - dt.timedelta(days=14)).isoformat()
     for ev in data["events"]:
+        if (ev.get("end") or "9999") < cutoff:
+            continue
         out[ev["id"]] = index_entry(ev)
+        if (ev.get("end") or "9999") < recent:
+            out[ev["id"]]["champions"] = []   # only used to tell that an event on now (or just over) has finished
         if ev.get("schedule_id"):
             out[ev["schedule_id"]] = out[ev["id"]]
     return out

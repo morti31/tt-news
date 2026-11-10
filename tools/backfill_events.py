@@ -80,7 +80,7 @@ SPECIAL = {
 # Dates WTT's records get wrong (they hold only part of the event): id -> (start, end)
 DATES = {"2345": ("2021-07-24", "2021-08-06"), "2473": ("2021-09-01", "2021-09-07"), "2615": ("2022-09-05", "2022-09-10")}
 # What was played, where the draws WTT holds do not show all of it: id -> text
-PLAYED = {"2473": "Teams, singles and doubles", "2615": "Teams, singles and doubles"}
+PLAYED = {"2473": "Teams, singles and doubles", "2615": "Teams, singles and doubles", "2789": "Teams, singles and doubles"}
 REGION = {"Pan American Championships": "Americas", "African Championships": "Africa", "Oceania Championships": "Oceania"}
 # Ids to try that the match database holds no matches for
 EXTRA = ["2345", "2535", "2776", "2787", "2789", "2860", "2979", "3263"]

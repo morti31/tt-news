@@ -119,7 +119,7 @@
   const plusDays = (iso, n) => new Date(day(iso).getTime() + n * 864e5).toISOString().slice(0, 10);
   const finished = onHub ? null : Object.entries(hubs)
     .filter(([id, h]) => id === Object.keys(hubs).find((k) => hubs[k] === h))   // each hub once, by its own id
-    .filter(([, h]) => done(h) && h.end && h.start <= today && plusDays(h.end, 3) >= today)
+    .filter(([, h]) => done(h) && !h.minor && h.end && h.start <= today && plusDays(h.end, 3) >= today)   // not Feeders or Contenders
     .sort((a, b) => b[1].end.localeCompare(a[1].end))[0];
   function renderChampions() {
     const el = $("champs");
@@ -178,7 +178,7 @@
   // Newest WTT match highlights for the event on now (or the latest one), straight from WTT's YouTube channel.
   // Falls back to the hand-picked list in news.json if the feed is empty or down.
   async function renderWatch() {
-    const started = Object.values(hubs).filter((h) => h.start && h.start <= today && h.stream_q)
+    const started = Object.values(hubs).filter((h) => h.start && h.start <= today && h.stream_q && !h.minor)
       .sort((a, b) => b.start.localeCompare(a.start));
     const target = onHub || started[0];
     if (target) {
@@ -238,7 +238,7 @@
   // ---- Events row: upcoming (on now and next) and recent (just finished), as two tabs
   function renderEvents() {
     const uniq = (arr) => { const u = new Set(); return arr.filter((h) => !u.has(h.url) && u.add(h.url)); };
-    const all = uniq(Object.values(hubs).filter((h) => h.end && h.start));
+    const all = uniq(Object.values(hubs).filter((h) => h.end && h.start && h.series !== "WTT Feeder"));   // Feeders have pages but are not major events
     const up = all.filter((h) => h.end >= today).sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
     const past = all.filter((h) => h.end < today).sort((a, b) => b.end.localeCompare(a.end)).slice(0, 4);
     if (!up.length && !past.length) return;

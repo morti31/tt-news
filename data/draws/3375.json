@@ -1,0 +1,1845 @@
+{
+ "event": "WTT Feeder Linz",
+ "wtt_event_id": "3375",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3375&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 2.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 1
+        },
+        {
+         "name": "Jessica Reyes Lai",
+         "nat": "USA"
+        }
+       ],
+       "when": "2026-09-25T10:20:00Z",
+       "score": "3-0 (11:6,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elina Fuchs",
+         "nat": "AUT"
+        },
+        {
+         "name": "Katsiaryna Baravok",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-25T10:20:00Z",
+       "score": "0-3 (9:11,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dora Cosic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-25T10:20:00Z",
+       "score": "3-0 (11:9,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nina Guo Zheng",
+         "nat": "FRA"
+        },
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-25T09:10:00Z",
+       "score": "3-0 (11:8,12:10,15:13,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG",
+         "seed": 4
+        },
+        {
+         "name": "Sophia Pichler",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T17:05:00Z",
+       "score": "3-0 (11:1,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        }
+       ],
+       "when": "2026-09-25T09:45:00Z",
+       "score": "3-2 (4:11,11:5,3:11,12:10,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Chen Min-Hsin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-25T09:45:00Z",
+       "score": "3-0 (11:6,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Josephina Neumann",
+         "nat": "GER"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-25T10:55:00Z",
+       "score": "1-3 (11:4,5:11,4:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO",
+         "seed": 6
+        },
+        {
+         "name": "Nina Skerbinz",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T17:05:00Z",
+       "score": "1-3 (7:11,8:11,11:6,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lilou Massart",
+         "nat": "BEL"
+        },
+        {
+         "name": "Sayali Wani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-25T15:55:00Z",
+       "score": "2-3 (11:7,12:14,7:11,11:8,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karin Grofova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-09-25T16:30:00Z",
+       "score": "3-1 (12:10,11:9,9:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ainhoa Cristobal",
+         "nat": "ESP"
+        },
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-25T16:30:00Z",
+       "score": "0-3 (4:11,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 8
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-09-25T09:45:00Z",
+       "score": "3-2 (4:11,11:9,11:6,9:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Claire Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Miriam Carnovale",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-09-25T17:05:00Z",
+       "score": "2-3 (12:10,11:2,8:11,7:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sara Tokic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Karoline Mischek-Colucci",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T16:30:00Z",
+       "score": "3-2 (11:7,11:8,5:11,9:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lilian Ma",
+         "nat": "USA"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-25T17:40:00Z",
+       "score": "1-3 (9:11,11:7,6:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 1
+        },
+        {
+         "name": "Katsiaryna Baravok",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-26T10:55:00Z",
+       "score": "3-0 (11:5,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dora Cosic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Nina Guo Zheng",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-09-26T10:20:00Z",
+       "score": "1-3 (12:14,11:9,5:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG",
+         "seed": 4
+        },
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-26T11:30:00Z",
+       "score": "0-3 (5:11,8:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-26T11:30:00Z",
+       "score": "3-0 (11:5,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nina Skerbinz",
+         "nat": "AUT"
+        },
+        {
+         "name": "Sayali Wani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-26T10:55:00Z",
+       "score": "1-3 (2:11,11:9,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karin Grofova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-26T10:55:00Z",
+       "score": "0-3 (5:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 8
+        },
+        {
+         "name": "Miriam Carnovale",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-09-26T11:30:00Z",
+       "score": "3-0 (12:10,13:11,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sara Tokic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T12:05:00Z",
+       "score": "0-3 (3:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 1
+        },
+        {
+         "name": "Nina Guo Zheng",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-09-26T15:40:00Z",
+       "score": "3-1 (12:10,6:11,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-26T15:40:00Z",
+       "score": "0-3 (10:12,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sayali Wani",
+         "nat": "IND"
+        },
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-26T16:15:00Z",
+       "score": "0-3 (6:11,5:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 8
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T16:15:00Z",
+       "score": "0-3 (8:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 1
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-27T08:00:00Z",
+       "score": "3-2 (11:7,11:6,6:11,8:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-27T08:35:00Z",
+       "score": "0-3 (7:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 1
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-27T16:15:00Z",
+       "score": "3-1 (11:8,8:11,11:9,11:4,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Csaba Andras",
+         "nat": "HUN",
+         "seed": 1
+        },
+        {
+         "name": "Julian Rzihauschek",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T12:05:00Z",
+       "score": "3-2 (10:12,11:9,11:4,8:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diego Lillo",
+         "nat": "ESP"
+        },
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-09-25T18:15:00Z",
+       "score": "3-1 (10:12,11:9,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Norbert Tauler",
+         "nat": "ESP"
+        },
+        {
+         "name": "Stepan Brhel",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2026-09-25T18:15:00Z",
+       "score": "3-1 (11:8,7:11,14:12,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Abiodun",
+         "nat": "POR"
+        },
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-25T18:15:00Z",
+       "score": "3-1 (11:6,10:12,11:2,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU",
+         "seed": 3
+        },
+        {
+         "name": "Mael Van Dessel",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2026-09-25T17:40:00Z",
+       "score": "3-0 (11:9,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        },
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-09-25T12:05:00Z",
+       "score": "3-2 (12:14,11:8,11:13,11:1,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mykhailo Lovha",
+         "nat": "SVK"
+        },
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T11:30:00Z",
+       "score": "1-3 (11:9,5:11,5:11,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        },
+        {
+         "name": "Angel Naranjo",
+         "nat": "PUR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-09-25T10:55:00Z",
+       "score": "3-2 (11:7,6:11,13:11,2:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Connor Green",
+         "nat": "ENG",
+         "seed": 6
+        },
+        {
+         "name": "Albert Vilardell",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-09-25T12:05:00Z",
+       "score": "3-2 (7:11,11:8,11:5,3:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Juan Perez",
+         "nat": "ESP"
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2026-09-25T17:40:00Z",
+       "score": "3-1 (11:5,5:11,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nandan Naresh",
+         "nat": "USA"
+        },
+        {
+         "name": "Sarthak Arya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-25T18:50:00Z",
+       "score": "3-0 (11:9,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka",
+         "nat": "SVK"
+        },
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-25T11:30:00Z",
+       "score": "0-3 (5:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Botond Varga",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2026-09-25T18:50:00Z",
+       "score": "3-0 (11:9,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Berzosa",
+         "nat": "ESP"
+        },
+        {
+         "name": "Nikon Shutov",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-25T18:50:00Z",
+       "score": "0-3 (2:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mateusz Zalewski",
+         "nat": "POL"
+        },
+        {
+         "name": "Petr Hodina",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T10:55:00Z",
+       "score": "3-1 (6:11,11:7,11:3,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhenlong Liu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-25T11:30:00Z",
+       "score": "1-3 (9:11,8:11,11:9,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Csaba Andras",
+         "nat": "HUN",
+         "seed": 1
+        },
+        {
+         "name": "Diego Lillo",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-09-26T12:40:00Z",
+       "score": "2-3 (12:10,6:11,6:11,11:5,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Norbert Tauler",
+         "nat": "ESP"
+        },
+        {
+         "name": "Tiago Abiodun",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-09-26T12:05:00Z",
+       "score": "0-3 (8:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU",
+         "seed": 3
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        }
+       ],
+       "when": "2026-09-26T12:40:00Z",
+       "score": "3-2 (9:11,11:5,9:11,11:3,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        },
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-09-26T13:15:00Z",
+       "score": "0-3 (4:11,1:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Connor Green",
+         "nat": "ENG",
+         "seed": 6
+        },
+        {
+         "name": "Juan Perez",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-09-26T13:15:00Z",
+       "score": "3-1 (11:8,4:11,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nandan Naresh",
+         "nat": "USA"
+        },
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-26T12:40:00Z",
+       "score": "1-3 (11:13,4:11,11:9,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Nikon Shutov",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-26T12:05:00Z",
+       "score": "3-0 (11:4,11:8,17:15,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mateusz Zalewski",
+         "nat": "POL"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T13:15:00Z",
+       "score": "1-3 (6:11,3:11,11:6,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Diego Lillo",
+         "nat": "ESP"
+        },
+        {
+         "name": "Tiago Abiodun",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-09-26T17:25:00Z",
+       "score": "3-2 (11:9,11:6,6:11,5:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU",
+         "seed": 3
+        },
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-09-26T16:50:00Z",
+       "score": "3-1 (11:9,9:11,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Connor Green",
+         "nat": "ENG",
+         "seed": 6
+        },
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-26T16:50:00Z",
+       "score": "1-3 (9:11,11:6,2:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T17:25:00Z",
+       "score": "1-3 (11:9,2:11,9:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Diego Lillo",
+         "nat": "ESP"
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-27T09:10:00Z",
+       "score": "2-3 (13:11,11:13,8:11,11:8,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO",
+         "seed": 4
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-27T09:45:00Z",
+       "score": "2-3 (13:11,6:11,8:11,11:7,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU",
+         "seed": 3
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-27T15:40:00Z",
+       "score": "2-3 (13:11,11:3,9:11,7:11,8:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho / Tatiana Kukulkova",
+         "nat": "ENG/SVK",
+         "seed": 1
+        },
+        {
+         "name": "Taneesha Kotecha / Sayali Wani",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-25T13:15:00Z",
+       "score": "2-3 (10:12,11:13,11:7,11:7,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vanessa Tang / Sophia Pichler",
+         "nat": "AUT"
+        },
+        {
+         "name": "Nina Skerbinz / Karoline Mischek-Colucci",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T13:50:00Z",
+       "score": "0-3 (9:11,2:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Brzyska / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 3
+        },
+        {
+         "name": "Ana Nikoiani / Lara Opeka",
+         "nat": "GEO/SLO"
+        }
+       ],
+       "when": "2026-09-25T13:50:00Z",
+       "score": "3-0 (11:4,14:12,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lizaveta Tsimashkova / Ulyana Miashchanskaya",
+         "nat": "BLR"
+        },
+        {
+         "name": "Clemence Chevallier / Elise Pujol",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-25T12:40:00Z",
+       "score": "3-0 (11:4,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eugenia Sastre / Dominika Wiltschkova",
+         "nat": "ESP/SVK",
+         "seed": 7
+        },
+        {
+         "name": "Ema Cincurova / Nikoleta Puchovanova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-09-25T12:40:00Z",
+       "score": "3-0 (14:12,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Berzosa / Silvia Coll",
+         "nat": "ESP"
+        },
+        {
+         "name": "Ainhoa Cristobal / Elvira Rad",
+         "nat": "ESP",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-25T12:40:00Z",
+       "score": "3-1 (12:10,11:7,7:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jessica Reyes Lai / Lilou Massart",
+         "nat": "USA/BEL"
+        },
+        {
+         "name": "Sara Tokic / Ana Tofant",
+         "nat": "SLO",
+         "seed": 8
+        }
+       ],
+       "when": "2026-09-25T13:15:00Z",
+       "score": "3-2 (11:9,9:11,11:7,5:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elina Fuchs / Julia Dur",
+         "nat": "AUT"
+        },
+        {
+         "name": "Natalia Bajor / Katarzyna Wegrzyn",
+         "nat": "POL",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-25T13:15:00Z",
+       "score": "1-3 (5:11,11:8,5:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha / Sayali Wani",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Nina Skerbinz / Karoline Mischek-Colucci",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-26T09:45:00Z",
+       "score": "1-3 (8:11,10:12,13:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Brzyska / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 3
+        },
+        {
+         "name": "Lizaveta Tsimashkova / Ulyana Miashchanskaya",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-26T09:10:00Z",
+       "score": "3-0 (11:5,11:3,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eugenia Sastre / Dominika Wiltschkova",
+         "nat": "ESP/SVK",
+         "seed": 7
+        },
+        {
+         "name": "Maria Berzosa / Silvia Coll",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-09-26T09:10:00Z",
+       "score": "3-1 (11:9,11:5,7:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jessica Reyes Lai / Lilou Massart",
+         "nat": "USA/BEL"
+        },
+        {
+         "name": "Natalia Bajor / Katarzyna Wegrzyn",
+         "nat": "POL",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T09:10:00Z",
+       "score": "3-1 (11:9,11:8,9:11,11:3,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nina Skerbinz / Karoline Mischek-Colucci",
+         "nat": "AUT"
+        },
+        {
+         "name": "Anna Brzyska / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-26T14:30:00Z",
+       "score": "0-3 (6:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Eugenia Sastre / Dominika Wiltschkova",
+         "nat": "ESP/SVK",
+         "seed": 7
+        },
+        {
+         "name": "Jessica Reyes Lai / Lilou Massart",
+         "nat": "USA/BEL"
+        }
+       ],
+       "when": "2026-09-26T14:30:00Z",
+       "score": "0-3 (5:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anna Brzyska / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 3
+        },
+        {
+         "name": "Jessica Reyes Lai / Lilou Massart",
+         "nat": "USA/BEL"
+        }
+       ],
+       "when": "2026-09-27T14:30:00Z",
+       "score": "3-0 (11:8,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniel Berzosa / Juan Perez",
+         "nat": "ESP",
+         "seed": 1
+        },
+        {
+         "name": "Maciej Kolodziejczyk / Zhenlong Liu",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T14:45:00Z",
+       "score": "3-0 (14:12,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "De Andre Calderon / Felix Wetzel",
+         "nat": "LCA/MLT"
+        },
+        {
+         "name": "Mykhailo Lovha / Samuel Arpas",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-09-25T15:55:00Z",
+       "score": "0-3 (3:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Csaba Andras",
+         "nat": "CRO/HUN",
+         "seed": 3
+        },
+        {
+         "name": "Sarthak Arya / Kumar Harshit",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-25T15:20:00Z",
+       "score": "3-0 (11:4,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Damian Floro / Samuel Palusek",
+         "nat": "SVK",
+         "seed": 7
+        },
+        {
+         "name": "Nishant Lebaka / Nandan Naresh",
+         "nat": "USA"
+        }
+       ],
+       "when": "2026-09-25T15:20:00Z",
+       "score": "3-1 (5:11,12:10,11:2,16:14,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mael Van Dessel / Tom Scholtes",
+         "nat": "LUX",
+         "seed": 8
+        },
+        {
+         "name": "Connor Green / Mateusz Zalewski",
+         "nat": "ENG/POL",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-25T14:45:00Z",
+       "score": "2-3 (6:11,11:9,11:9,5:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Julian Rzihauschek / Petr Hodina",
+         "nat": "AUT"
+        },
+        {
+         "name": "Rafael De Las Heras / Diego Lillo",
+         "nat": "ESP",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-25T15:20:00Z",
+       "score": "0-3 (8:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Itay Avivi / Eitay Shushan",
+         "nat": "ISR"
+        },
+        {
+         "name": "Albert Vilardell / Jakub Zelinka",
+         "nat": "ESP/SVK",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-25T14:45:00Z",
+       "score": "2-3 (11:6,9:11,8:11,11:9,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Heorhi Kunats / Nikon Shutov",
+         "nat": "BLR"
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-25T15:55:00Z",
+       "score": "3-2 (7:11,11:8,9:11,12:10,11:6)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniel Berzosa / Juan Perez",
+         "nat": "ESP",
+         "seed": 1
+        },
+        {
+         "name": "Mykhailo Lovha / Samuel Arpas",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-09-26T10:20:00Z",
+       "score": "3-1 (5:11,11:3,11:9,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Csaba Andras",
+         "nat": "CRO/HUN",
+         "seed": 3
+        },
+        {
+         "name": "Damian Floro / Samuel Palusek",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-26T09:45:00Z",
+       "score": "3-0 (11:5,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Connor Green / Mateusz Zalewski",
+         "nat": "ENG/POL",
+         "seed": 5
+        },
+        {
+         "name": "Rafael De Las Heras / Diego Lillo",
+         "nat": "ESP",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-26T09:45:00Z",
+       "score": "3-0 (11:6,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Albert Vilardell / Jakub Zelinka",
+         "nat": "ESP/SVK",
+         "seed": 6
+        },
+        {
+         "name": "Heorhi Kunats / Nikon Shutov",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-26T10:20:00Z",
+       "score": "1-3 (9:11,12:10,5:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniel Berzosa / Juan Perez",
+         "nat": "ESP",
+         "seed": 1
+        },
+        {
+         "name": "Ivor Ban / Csaba Andras",
+         "nat": "CRO/HUN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-26T15:05:00Z",
+       "score": "0-3 (7:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Connor Green / Mateusz Zalewski",
+         "nat": "ENG/POL",
+         "seed": 5
+        },
+        {
+         "name": "Heorhi Kunats / Nikon Shutov",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-26T15:05:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Csaba Andras",
+         "nat": "CRO/HUN",
+         "seed": 3
+        },
+        {
+         "name": "Connor Green / Mateusz Zalewski",
+         "nat": "ENG/POL",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-27T15:05:00Z",
+       "score": "3-2 (5:11,11:5,11:8,8:11,11:5)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Connor Green / Tin-Tin Ho",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Ivan Hencl / Dora Cosic",
+         "nat": "CRO",
+         "seed": 8
+        }
+       ],
+       "when": "2026-09-25T08:35:00Z",
+       "score": "3-2 (4:11,11:6,9:11,12:10,17:15)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula / Sayali Wani",
+         "nat": "IND"
+        },
+        {
+         "name": "Martin Baechler / Clemence Chevallier",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-25T08:35:00Z",
+       "score": "3-0 (11:8,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mateusz Zalewski / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Nikon Shutov / Lizaveta Tsimashkova",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2026-09-25T08:00:00Z",
+       "score": "1-3 (7:11,11:8,9:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mykhailo Lovha / Lilou Massart",
+         "nat": "SVK/BEL",
+         "seed": 7
+        },
+        {
+         "name": "Maciej Kolodziejczyk / Karoline Mischek-Colucci",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2026-09-25T09:10:00Z",
+       "score": "3-1 (11:8,7:11,12:10,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhenlong Liu / Nina Skerbinz",
+         "nat": "AUT"
+        },
+        {
+         "name": "Mael Van Dessel / Sarah De Nutte",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2026-09-25T09:10:00Z",
+       "score": "1-3 (6:11,9:11,12:10,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka / Nikoleta Puchovanova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Nandan Naresh / Jessica Reyes Lai",
+         "nat": "USA",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-25T08:35:00Z",
+       "score": "3-1 (11:9,11:9,7:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo / Natalia Bajor",
+         "nat": "PUR/POL",
+         "seed": 5
+        },
+        {
+         "name": "Shunsuke Okano / Misuzu Takeya",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-09-25T08:00:00Z",
+       "score": "0-3 (7:11,8:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sarthak Arya / Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Samuel Arpas / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-25T08:00:00Z",
+       "score": "2-3 (9:11,11:8,11:2,5:11,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Connor Green / Tin-Tin Ho",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Snehit Suravajjula / Sayali Wani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-26T08:00:00Z",
+       "score": "3-0 (11:6,11:4,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikon Shutov / Lizaveta Tsimashkova",
+         "nat": "BLR"
+        },
+        {
+         "name": "Mykhailo Lovha / Lilou Massart",
+         "nat": "SVK/BEL",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-26T08:00:00Z",
+       "score": "1-3 (8:11,11:7,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mael Van Dessel / Sarah De Nutte",
+         "nat": "LUX"
+        },
+        {
+         "name": "Jakub Zelinka / Nikoleta Puchovanova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-09-26T08:35:00Z",
+       "score": "0-3 (10:12,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano / Misuzu Takeya",
+         "nat": "JPN"
+        },
+        {
+         "name": "Samuel Arpas / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T08:35:00Z",
+       "score": "1-3 (11:9,9:11,9:11,11:13,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Connor Green / Tin-Tin Ho",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Mykhailo Lovha / Lilou Massart",
+         "nat": "SVK/BEL",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-26T18:00:00Z",
+       "score": "3-1 (11:8,4:11,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka / Nikoleta Puchovanova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Samuel Arpas / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-26T18:00:00Z",
+       "score": "3-1 (5:11,11:7,11:8,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Connor Green / Tin-Tin Ho",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Jakub Zelinka / Nikoleta Puchovanova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2026-09-27T10:20:00Z",
+       "score": "1-3 (9:11,8:11,11:8,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

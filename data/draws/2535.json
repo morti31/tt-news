@@ -1,0 +1,547 @@
+{
+ "event": "World Team Championships",
+ "wtt_event_id": "2535",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2535&selectedTab=Draws",
+ "updated": "2026-11-10T15:09:00Z",
+ "utc_offset": 8.0,
+ "events": {
+  "wteam": {
+   "name": "Women's team",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Hungary",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-10-05T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        },
+        {
+         "name": "Luxembourg",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2022-10-05T11:30:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        },
+        {
+         "name": "India",
+         "nat": "IND"
+        }
+       ],
+       "when": "2022-10-05T07:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Czech Republic",
+         "nat": "CZE"
+        },
+        {
+         "name": "Singapore",
+         "nat": "SGP",
+         "seed": 8
+        }
+       ],
+       "when": "2022-10-05T03:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Romania",
+         "nat": "ROU",
+         "seed": 6
+        }
+       ],
+       "when": "2022-10-05T07:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Puerto Rico",
+         "nat": "PUR"
+        },
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2022-10-05T03:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Slovakia",
+         "nat": "SVK"
+        },
+        {
+         "name": "France",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-10-05T07:00:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-05T11:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        }
+       ],
+       "when": "2022-10-06T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        },
+        {
+         "name": "Singapore",
+         "nat": "SGP",
+         "seed": 8
+        }
+       ],
+       "when": "2022-10-06T03:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2022-10-06T03:00:00Z",
+       "score": "2-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Slovakia",
+         "nat": "SVK"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-06T11:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ],
+       "when": "2022-10-07T07:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-07T11:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-08T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mteam": {
+   "name": "Men's team",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "India",
+         "nat": "IND"
+        }
+       ],
+       "when": "2022-10-06T07:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Belgium",
+         "nat": "BEL"
+        },
+        {
+         "name": "Sweden",
+         "nat": "SWE",
+         "seed": 5
+        }
+       ],
+       "when": "2022-10-06T03:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        },
+        {
+         "name": "Slovenia",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2022-10-06T03:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Brazil",
+         "nat": "BRA",
+         "seed": 6
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-05T07:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Poland",
+         "nat": "POL"
+        }
+       ],
+       "when": "2022-10-05T03:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        },
+        {
+         "name": "Egypt",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2022-10-05T03:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Croatia",
+         "nat": "CRO"
+        },
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-06T07:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "England",
+         "nat": "ENG",
+         "seed": 8
+        },
+        {
+         "name": "France",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-10-05T11:30:00Z",
+       "score": "2-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Sweden",
+         "nat": "SWE",
+         "seed": 5
+        }
+       ],
+       "when": "2022-10-07T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Portugal",
+         "nat": "POR"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-07T07:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Hong Kong",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2022-10-07T03:00:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 2
+        },
+        {
+         "name": "France",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-10-07T03:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-08T07:00:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-08T03:00:00Z",
+       "score": "2-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Germany",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-09T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -7,6 +7,7 @@ player outside the top 100), add it to data/tag-registry.json (see UPDATE.md).
 
 Output (used by build_site.py): Tagger.tags_for(item) -> up to 3 display tags, Tagger.pages() -> every tag with its stories.
 """
+import datetime as dt
 import json, os, re, unicodedata
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -89,6 +90,7 @@ class Tagger:
         self.by_name = {}    # normalised name -> slug
         self.rx = []         # (slug, regex, kind)
         self.players = {}    # slug -> {"name","nat","tok"}
+        self.family, self.editions, self.year_rx = {}, {}, {}   # event pages that share a name across years
         self._add_competitions(hubs)
         self._not_players = {norm(n) for _, (n, al) in COUNTRIES.items() for n in [n, *al]} | {norm(t) for t in club_teams}
         self._add_players(rankings, article_matches, extra or [])
@@ -124,6 +126,11 @@ class Tagger:
             names = {h["name"], f'{h["name"]} {h["year"]}'}
             for n in names:
                 self.rx.append((slug, word_rx(n), "tournament"))
+            # Editions of one event ("WTT Feeder Düsseldorf" 2023, 2024, "Düsseldorf II" 2024 ...): see _one_edition
+            fam = norm(re.sub(r"\s+[IVX]+$", "", h["name"]))
+            self.family[slug] = fam
+            self.editions.setdefault(fam, []).append(slug)
+            self.year_rx[slug] = word_rx(f'{h["name"]} {h["year"]}')
         for name, aliases in COMPETITIONS:
             if norm(name) in self.by_name or any(norm(a) == norm(name) and norm(a) in self.by_name for a in aliases):
                 pass
@@ -232,10 +239,40 @@ class Tagger:
                 if len([o for o in owners if o in sc]) == 1:
                     r = re.compile(r"(?<![\w])" + re.escape(t) + r"(?![\w])")
                     add(slug, min(len(r.findall(title)), 2) * 10 + min(len(r.findall(stand)), 2) * 4 + min(len(r.findall(body)), 6))
+        self._one_edition(sc, item, " . ".join((title, stand, body)))
         for nm in item.get("manual") or []:
             slug = self.by_name.get(norm(nm)) or self._tag(nm, "player")
             sc[slug] = sc.get(slug, 0) + 100
         return sc
+
+    def _one_edition(self, sc, item, text):
+        """An event's name without a year ("WTT Champions Frankfurt") matches every year's page. Keep the editions the
+        story names with their year and the story's own event; failing those, the edition nearest the story's date."""
+        day = (item.get("date") or "")[:10]
+        try:
+            when = dt.date.fromisoformat(day)
+        except ValueError:
+            when = dt.date.today()
+        for fam in {self.family[s] for s in sc if s in self.family}:
+            members = self.editions[fam]
+            if len(members) < 2:
+                continue
+            scored = [s for s in members if s in sc]
+            keep = {s for s in members if self.year_rx[s].search(text) or self.tags[s].get("hub") == item.get("event")}
+            if not keep:
+                def gap(s):
+                    t = self.tags[s]
+                    if not t.get("start"):
+                        return (10 ** 6, "")
+                    a, b = dt.date.fromisoformat(t["start"]), dt.date.fromisoformat(t.get("end") or t["start"])
+                    return (0 if a <= when <= b else min(abs((a - when).days), abs((when - b).days)), -a.toordinal())
+                keep = {min(members, key=gap)}
+            best = max(sc[s] for s in scored)
+            for s in scored:
+                if s not in keep:
+                    del sc[s]
+            for s in keep:
+                sc.setdefault(s, best)
 
     def pick(self, sc, n=MAX_TAGS):
         """Up to n tags, best first: the tournament, then the players, then the club or country."""

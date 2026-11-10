@@ -1,0 +1,1852 @@
+{
+ "event": "WTT Feeder Tashkent",
+ "wtt_event_id": "3365",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3365&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 5.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Shriya Anand",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-07-26T06:10:00Z",
+       "score": "3-0 (11:4,11:4,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        },
+        {
+         "name": "Zhanerke Koshkumbayeva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-07-26T13:15:00Z",
+       "score": "3-0 (11:9,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Angelina Romanovskaya",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-26T12:40:00Z",
+       "score": "0-3 (7:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-26T13:15:00Z",
+       "score": "3-1 (6:11,11:8,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Selena Selvakumar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-07-26T13:15:00Z",
+       "score": "3-0 (15:13,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ekaterina Zironova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Laylo Kamolova",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T06:10:00Z",
+       "score": "3-0 (11:6,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Dilnavoz Amonova",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T06:10:00Z",
+       "score": "3-0 (11:6,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ulyana Miashchanskaya",
+         "nat": "AIN"
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-26T12:40:00Z",
+       "score": "0-3 (3:11,9:11,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-07-26T12:40:00Z",
+       "score": "3-0 (11:5,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nigina Yuldosheva",
+         "nat": "UZB"
+        },
+        {
+         "name": "Shoira Kodirova",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T06:10:00Z",
+       "score": "3-0 (11:9,13:11,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        },
+        {
+         "name": "Yuna Ojio",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-07-26T13:15:00Z",
+       "score": "1-3 (11:9,10:12,8:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Pranati Paramesh",
+         "nat": "IND"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-26T06:45:00Z",
+       "score": "0-3 (5:11,11:13,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Tutiyokhon Ozodjonova",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T06:45:00Z",
+       "score": "3-0 (11:9,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diyora Otabayeva",
+         "nat": "UZB"
+        },
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-07-26T12:40:00Z",
+       "score": "0-3 (5:11,2:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zlata Terekhova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Hardee Patel",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-07-26T06:45:00Z",
+       "score": "3-0 (11:7,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Almaira Nebuchadnezzar",
+         "nat": "INA"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-26T06:45:00Z",
+       "score": "1-3 (2:11,7:11,11:9,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T07:10:00Z",
+       "score": "3-0 (11:9,13:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mariia Tailakova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-07-27T07:45:00Z",
+       "score": "3-2 (6:11,11:8,8:11,11:3,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Ekaterina Zironova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T07:10:00Z",
+       "score": "3-0 (11:3,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-27T07:45:00Z",
+       "score": "1-3 (5:11,8:11,11:8,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Nigina Yuldosheva",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-27T07:10:00Z",
+       "score": "3-0 (11:3,11:8,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuna Ojio",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-27T07:45:00Z",
+       "score": "3-0 (11:3,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-07-27T07:10:00Z",
+       "score": "1-3 (13:15,11:5,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zlata Terekhova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T07:45:00Z",
+       "score": "0-3 (8:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T12:40:00Z",
+       "score": "3-1 (11:5,10:12,11:6,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-27T13:15:00Z",
+       "score": "3-0 (11:7,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Yuna Ojio",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-07-27T12:40:00Z",
+       "score": "1-3 (8:11,2:11,11:2,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T13:15:00Z",
+       "score": "0-3 (6:11,12:14,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-28T05:35:00Z",
+       "score": "3-2 (15:13,10:12,11:7,4:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuna Ojio",
+         "nat": "JPN"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-28T05:00:00Z",
+       "score": "3-2 (4:11,13:11,11:13,11:7,11:7)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Yuna Ojio",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-07-28T12:40:00Z",
+       "score": "0-3 (8:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 1
+        },
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2026-07-26T07:20:00Z",
+       "score": "3-0 (11:6,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ruzimukhammad Rakhmonov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2026-07-26T07:20:00Z",
+       "score": "0-3 (9:11,2:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Lee Seongmin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-07-26T07:20:00Z",
+       "score": "3-0 (11:9,11:4,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aidos Kenzhigulov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-26T07:20:00Z",
+       "score": "1-3 (5:11,10:12,12:10,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Lim Yunoh",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-07-26T07:55:00Z",
+       "score": "3-2 (11:9,9:11,11:9,6:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dmitrii Vinogradov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Nikon Shutov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-26T07:55:00Z",
+       "score": "3-0 (11:6,11:8,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shahbozbek Gulomiddinov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Denis Ivonin",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-26T07:55:00Z",
+       "score": "0-3 (4:11,3:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Byunghyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hwan Bae",
+         "nat": "AUS",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-26T07:55:00Z",
+       "score": "3-0 (11:4,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 8
+        },
+        {
+         "name": "Han Doyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-07-26T13:50:00Z",
+       "score": "2-3 (4:11,11:4,12:10,6:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-26T13:50:00Z",
+       "score": "0-3 (6:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lev Katsman",
+         "nat": "AIN"
+        },
+        {
+         "name": "Preyesh Suresh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-07-26T13:50:00Z",
+       "score": "3-0 (11:3,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shokhrukh Iskandarov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Ozodbek Kakharov",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T13:50:00Z",
+       "score": "3-0 (11:2,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryuusei Kawakami",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Amirreza Abbasi",
+         "nat": "MLT"
+        }
+       ],
+       "when": "2026-07-26T14:25:00Z",
+       "score": "3-2 (7:11,5:11,11:9,11:6,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Gaon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Musobek Toliev",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T14:25:00Z",
+       "score": "3-0 (11:3,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hung Che-Yen",
+         "nat": "TPE"
+        },
+        {
+         "name": "Balamurugan Rajasekaran",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-26T14:25:00Z",
+       "score": "3-2 (11:8,11:8,9:11,8:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Chin-Ting",
+         "nat": "TPE"
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-26T14:25:00Z",
+       "score": "2-3 (6:11,11:8,6:11,12:10,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 1
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2026-07-27T08:55:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-27T08:55:00Z",
+       "score": "1-3 (3:11,11:8,8:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Dmitrii Vinogradov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T08:20:00Z",
+       "score": "3-2 (13:15,7:11,11:8,11:5,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Denis Ivonin",
+         "nat": "AIN"
+        },
+        {
+         "name": "Kim Byunghyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-07-27T08:55:00Z",
+       "score": "3-0 (11:6,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Han Doyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-27T08:55:00Z",
+       "score": "0-3 (6:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lev Katsman",
+         "nat": "AIN"
+        },
+        {
+         "name": "Shokhrukh Iskandarov",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-27T08:20:00Z",
+       "score": "3-0 (12:10,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryuusei Kawakami",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Kim Gaon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-07-27T08:20:00Z",
+       "score": "3-0 (11:4,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hung Che-Yen",
+         "nat": "TPE"
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T08:20:00Z",
+       "score": "1-3 (7:11,3:11,11:4,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 1
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-27T14:25:00Z",
+       "score": "2-3 (11:8,11:7,5:11,5:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Denis Ivonin",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T14:25:00Z",
+       "score": "3-1 (11:7,7:11,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        },
+        {
+         "name": "Lev Katsman",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T13:50:00Z",
+       "score": "3-0 (11:6,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryuusei Kawakami",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T13:50:00Z",
+       "score": "3-0 (11:9,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN",
+         "seed": 5
+        },
+        {
+         "name": "Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-28T06:45:00Z",
+       "score": "3-1 (12:10,9:11,12:10,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        },
+        {
+         "name": "Ryuusei Kawakami",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-28T06:10:00Z",
+       "score": "3-2 (11:7,11:8,8:11,10:12,11:4)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN",
+         "seed": 5
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-28T13:15:00Z",
+       "score": "3-1 (12:10,7:11,11:6,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wong Hoi Tung / Kong Tsz Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Aleksandra Bokova / Zlata Terekhova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-26T09:05:00Z",
+       "score": "2-3 (12:10,3:11,8:11,11:5,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Gulsevar Ergasheva / Maryia Vakhliayeva",
+         "nat": "UZB/AIN"
+        },
+        {
+         "name": "Diloromkhon Arslonova / Odinakhon Arslonova",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T08:30:00Z",
+       "score": "3-1 (11:3,8:11,11:4,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Ni Ketut Maharani / Komang Sudarnita",
+         "nat": "INA"
+        }
+       ],
+       "when": "2026-07-26T09:05:00Z",
+       "score": "3-0 (11:8,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ulyana Miashchanskaya / Katsiaryna Baravok",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Mariia Tailakova / Ekaterina Zironova",
+         "nat": "AIN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-26T08:30:00Z",
+       "score": "1-3 (11:8,6:11,9:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dilnavoz Amonova / Tutiyokhon Ozodjonova",
+         "nat": "UZB"
+        },
+        {
+         "name": "Sarvinoz Mirkadirova / Zhanerke Koshkumbayeva",
+         "nat": "KAZ",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-26T08:30:00Z",
+       "score": "0-3 (10:12,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Farzonakhon Furkatova / Tasmina Anvarjonova",
+         "nat": "UZB"
+        },
+        {
+         "name": "Vlada Voronina / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-26T09:05:00Z",
+       "score": "0-3 (1:11,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hosila Chorieva / Salomat Hudoyberdieva",
+         "nat": "UZB"
+        },
+        {
+         "name": "Pranati Paramesh / Selena Selvakumar",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-26T08:30:00Z",
+       "score": "0-3 (8:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Angelina Orazmetova / Nigina Yuldosheva",
+         "nat": "UZB"
+        },
+        {
+         "name": "Sibel Altinkaya / Ece Harac",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-26T09:05:00Z",
+       "score": "0-3 (2:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Aleksandra Bokova / Zlata Terekhova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Gulsevar Ergasheva / Maryia Vakhliayeva",
+         "nat": "UZB/AIN"
+        }
+       ],
+       "when": "2026-07-27T06:00:00Z",
+       "score": "3-0 (11:6,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Mariia Tailakova / Ekaterina Zironova",
+         "nat": "AIN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-27T06:00:00Z",
+       "score": "3-0 (11:1,15:13,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sarvinoz Mirkadirova / Zhanerke Koshkumbayeva",
+         "nat": "KAZ",
+         "seed": 5
+        },
+        {
+         "name": "Vlada Voronina / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-27T06:00:00Z",
+       "score": "0-3 (3:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Pranati Paramesh / Selena Selvakumar",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Sibel Altinkaya / Ece Harac",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T06:00:00Z",
+       "score": "1-3 (7:11,6:11,11:7,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Aleksandra Bokova / Zlata Terekhova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Chen Szu-Yu / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-27T11:30:00Z",
+       "score": "1-3 (8:11,13:11,14:16,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 4
+        },
+        {
+         "name": "Sibel Altinkaya / Ece Harac",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T11:30:00Z",
+       "score": "3-2 (12:10,7:11,11:7,5:11,11:3)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Vlada Voronina / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-28T11:30:00Z",
+       "score": "3-1 (11:1,11:8,8:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Kirill Gerassimenko / Iskender Kharki",
+         "nat": "KAZ",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-26T11:30:00Z",
+       "score": "2-3 (11:13,13:11,11:9,8:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shokhrukh Iskandarov / Kutbidillo Teshaboev",
+         "nat": "UZB"
+        },
+        {
+         "name": "Lee Hyeonho / Lee Seongmin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-07-26T11:30:00Z",
+       "score": "3-1 (11:9,8:11,11:7,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 3
+        },
+        {
+         "name": "Arjav Gupta / Balamurugan Rajasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-07-26T11:30:00Z",
+       "score": "3-0 (11:4,15:13,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Denis Ivonin / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Aslbek Komilov / Shohijakhon Tursinboev",
+         "nat": "UZB",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-26T11:30:00Z",
+       "score": "3-0 (11:4,11:2,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar / Shihan Palkhivala",
+         "nat": "IND"
+        },
+        {
+         "name": "Musobek Toliev / Shahbozbek Gulomiddinov",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-26T12:05:00Z",
+       "score": "1-3 (11:9,9:11,10:12,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ruzimukhammad Rakhmonov / Zokhidjon Sadriddinov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-26T12:05:00Z",
+       "score": "0-3 (7:11,7:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Heorhi Kunats / Nikon Shutov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Kim Byunghyeon / Han Doyun",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-26T12:05:00Z",
+       "score": "0-3 (8:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Biloliddin Komiljonov / Jamshchid Rakhimberganov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Lev Katsman / Maksim Grebnev",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-26T12:05:00Z",
+       "score": "0-3 (6:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko / Iskender Kharki",
+         "nat": "KAZ",
+         "seed": 6
+        },
+        {
+         "name": "Shokhrukh Iskandarov / Kutbidillo Teshaboev",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-07-27T06:35:00Z",
+       "score": "3-0 (11:5,11:1,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 3
+        },
+        {
+         "name": "Denis Ivonin / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-27T06:35:00Z",
+       "score": "1-3 (9:11,6:11,11:7,13:15,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Musobek Toliev / Shahbozbek Gulomiddinov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-27T06:35:00Z",
+       "score": "1-3 (6:11,11:5,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Byunghyeon / Han Doyun",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Lev Katsman / Maksim Grebnev",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T06:35:00Z",
+       "score": "2-3 (11:8,3:11,5:11,11:9,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko / Iskender Kharki",
+         "nat": "KAZ",
+         "seed": 6
+        },
+        {
+         "name": "Denis Ivonin / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-27T12:05:00Z",
+       "score": "3-1 (11:6,11:5,11:13,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 4
+        },
+        {
+         "name": "Lev Katsman / Maksim Grebnev",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-27T12:05:00Z",
+       "score": "1-3 (11:6,5:11,7:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko / Iskender Kharki",
+         "nat": "KAZ",
+         "seed": 6
+        },
+        {
+         "name": "Lev Katsman / Maksim Grebnev",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-28T12:05:00Z",
+       "score": "0-3 (10:12,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 1
+        },
+        {
+         "name": "Heorhi Kunats / Katsiaryna Baravok",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-26T05:35:00Z",
+       "score": "3-1 (11:9,13:15,11:5,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar / Hardee Patel",
+         "nat": "IND"
+        },
+        {
+         "name": "Nikon Shutov / Ulyana Miashchanskaya",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-26T05:00:00Z",
+       "score": "0-3 (8:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 3
+        },
+        {
+         "name": "Muhammad Junindra / Almaira Nebuchadnezzar",
+         "nat": "INA"
+        }
+       ],
+       "when": "2026-07-26T05:00:00Z",
+       "score": "3-1 (11:7,6:11,11:9,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Preyesh Suresh / Selena Selvakumar",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Lin Chin-Ting / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-26T05:35:00Z",
+       "score": "0-3 (8:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seongmin / Kim Haneul",
+         "nat": "KOR"
+        },
+        {
+         "name": "Maksim Grebnev / Vlada Voronina",
+         "nat": "AIN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-26T05:35:00Z",
+       "score": "0-3 (3:11,4:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Zakharov / Zhanerke Koshkumbayeva",
+         "nat": "KAZ",
+         "seed": 8
+        },
+        {
+         "name": "Lev Katsman / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-26T05:35:00Z",
+       "score": "0-3 (4:11,7:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Balamurugan Rajasekaran / Pranati Paramesh",
+         "nat": "IND"
+        },
+        {
+         "name": "Hwan Bae / Wong Hoi Tung",
+         "nat": "AUS/HKG"
+        }
+       ],
+       "when": "2026-07-26T05:00:00Z",
+       "score": "2-3 (9:11,11:5,12:10,9:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Tien-Yu / Chien Tung-Chuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Iskender Kharki / Sarvinoz Mirkadirova",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-26T05:00:00Z",
+       "score": "3-2 (5:11,11:9,8:11,11:6,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 1
+        },
+        {
+         "name": "Nikon Shutov / Ulyana Miashchanskaya",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-07-27T05:00:00Z",
+       "score": "3-0 (11:8,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 3
+        },
+        {
+         "name": "Lin Chin-Ting / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-27T05:00:00Z",
+       "score": "3-0 (12:10,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Vlada Voronina",
+         "nat": "AIN",
+         "seed": 6
+        },
+        {
+         "name": "Lev Katsman / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-27T05:00:00Z",
+       "score": "1-3 (11:9,10:12,13:15,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hwan Bae / Wong Hoi Tung",
+         "nat": "AUS/HKG"
+        },
+        {
+         "name": "Tsai Tien-Yu / Chien Tung-Chuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-07-27T05:00:00Z",
+       "score": "0-3 (15:17,5:11,1:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 1
+        },
+        {
+         "name": "Nikita Artemenko / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-27T15:00:00Z",
+       "score": "3-1 (11:4,1:11,11:6,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lev Katsman / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 4
+        },
+        {
+         "name": "Tsai Tien-Yu / Chien Tung-Chuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-07-27T15:00:00Z",
+       "score": "3-1 (11:8,11:6,5:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 1
+        },
+        {
+         "name": "Lev Katsman / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-28T07:20:00Z",
+       "score": "3-2 (5:11,11:8,13:11,8:11,11:5)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

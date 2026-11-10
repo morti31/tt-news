@@ -1,0 +1,1835 @@
+{
+ "event": "WTT Contender Novo Mesto",
+ "wtt_event_id": "2504",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2504&selectedTab=Draws",
+ "updated": "2026-11-10T15:09:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Prithika Pavade",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-11-11T18:25:00Z",
+       "score": "3-0 (13:11,11:7,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Georgina Pota",
+         "nat": "HUN"
+        },
+        {
+         "name": "Ye Lin",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2021-11-11T14:25:00Z",
+       "score": "2-3 (11:9,13:11,4:11,3:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva",
+         "nat": "RUS"
+        },
+        {
+         "name": "Sabine Winter",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-11-11T18:25:00Z",
+       "score": "2-3 (9:11,11:7,9:11,11:7,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-11T14:25:00Z",
+       "score": "0-3 (9:11,3:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Britt Eerland",
+         "nat": "NED",
+         "seed": 3
+        },
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2021-11-11T19:10:00Z",
+       "score": "3-1 (9:11,11:7,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-11T17:40:00Z",
+       "score": "1-3 (7:11,4:11,11:8,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        },
+        {
+         "name": "Katarina Strazar",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2021-11-11T19:55:00Z",
+       "score": "3-0 (11:5,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP"
+        },
+        {
+         "name": "Suthasini Sawettabut",
+         "nat": "THA",
+         "seed": 6
+        }
+       ],
+       "when": "2021-11-11T19:55:00Z",
+       "score": "3-0 (11:2,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2021-11-11T17:40:00Z",
+       "score": "3-0 (11:8,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-11-11T19:10:00Z",
+       "score": "3-1 (8:11,11:6,11:7,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2021-11-11T13:40:00Z",
+       "score": "3-0 (11:7,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Nina Mittelham",
+         "nat": "GER",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-11T15:55:00Z",
+       "score": "3-0 (11:2,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hana Matelova",
+         "nat": "CZE",
+         "seed": 7
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-11-11T13:40:00Z",
+       "score": "1-3 (11:8,8:11,10:12,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-11-11T15:10:00Z",
+       "score": "1-3 (11:7,5:11,6:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        },
+        {
+         "name": "Yana Noskova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-11-11T15:55:00Z",
+       "score": "1-3 (11:9,8:11,10:12,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        },
+        {
+         "name": "Polina Mikhailova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-11-11T15:10:00Z",
+       "score": "3-0 (11:8,11:6,11:3,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Ye Lin",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2021-11-12T16:00:00Z",
+       "score": "3-0 (11:4,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sabine Winter",
+         "nat": "GER"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-12T12:25:00Z",
+       "score": "1-3 (8:11,11:6,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Britt Eerland",
+         "nat": "NED",
+         "seed": 3
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-12T18:15:00Z",
+       "score": "1-3 (11:9,6:11,3:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        },
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2021-11-12T13:10:00Z",
+       "score": "0-3 (10:12,3:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Yangzi Liu",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2021-11-12T16:45:00Z",
+       "score": "2-3 (9:11,8:11,11:6,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN"
+        },
+        {
+         "name": "Liu Weishan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-12T11:40:00Z",
+       "score": "1-3 (12:10,6:11,11:13,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jieni Shao",
+         "nat": "POR"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-11-12T13:55:00Z",
+       "score": "1-3 (11:5,10:12,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yana Noskova",
+         "nat": "RUS"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-12T17:30:00Z",
+       "score": "3-1 (10:12,11:3,11:6,11:4,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-13T12:45:00Z",
+       "score": "2-3 (8:11,8:11,11:2,11:4,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE"
+        },
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2021-11-13T12:00:00Z",
+       "score": "3-1 (11:8,10:12,11:7,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Liu Weishan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-13T12:45:00Z",
+       "score": "0-3 (4:11,10:12,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        },
+        {
+         "name": "Yana Noskova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-11-13T12:00:00Z",
+       "score": "3-1 (5:11,11:4,11:8,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 8
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-13T16:00:00Z",
+       "score": "4-2 (13:15,8:11,11:5,11:9,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-11-13T16:50:00Z",
+       "score": "4-0 (11:7,12:10,11:5,11:4,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 8
+        },
+        {
+         "name": "Liu Weishan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-14T16:30:00Z",
+       "score": "1-4 (12:10,2:11,5:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2021-11-11T13:40:00Z",
+       "score": "3-0 (11:3,11:6,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bojan Tokic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "SEN"
+        }
+       ],
+       "when": "2021-11-11T15:10:00Z",
+       "score": "3-0 (13:11,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-11T17:40:00Z",
+       "score": "1-3 (13:11,9:11,11:13,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        },
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-11T19:55:00Z",
+       "score": "1-3 (11:8,8:11,8:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Alexander Shibaev",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-11-11T13:40:00Z",
+       "score": "3-0 (11:5,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Takuya Jin",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-11-11T15:10:00Z",
+       "score": "0-3 (4:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS"
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2021-11-11T19:55:00Z",
+       "score": "3-1 (11:4,8:11,13:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE"
+        },
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-11T15:55:00Z",
+       "score": "2-3 (12:10,6:11,9:11,11:7,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE",
+         "seed": 7
+        },
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-11-11T14:25:00Z",
+       "score": "1-3 (5:11,8:11,11:8,15:17,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Daniel Habesohn",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-11-11T14:25:00Z",
+       "score": "3-0 (15:13,14:12,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2021-11-11T18:25:00Z",
+       "score": "3-0 (11:7,11:4,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-11T18:25:00Z",
+       "score": "1-3 (11:5,8:11,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 6
+        },
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-11-11T15:55:00Z",
+       "score": "3-0 (12:10,11:7,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-11-11T19:10:00Z",
+       "score": "3-1 (11:9,11:13,12:10,16:14,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-11T19:10:00Z",
+       "score": "2-3 (11:8,6:11,6:11,11:9,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuto Kizukuri",
+         "nat": "JPN"
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-11T17:40:00Z",
+       "score": "3-2 (11:4,5:11,10:12,11:5,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Bojan Tokic",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2021-11-12T16:00:00Z",
+       "score": "3-0 (11:9,12:10,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE"
+        },
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-12T17:30:00Z",
+       "score": "3-2 (11:8,7:11,9:11,11:9,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-11-12T12:25:00Z",
+       "score": "3-0 (11:6,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS"
+        },
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-12T13:55:00Z",
+       "score": "1-3 (9:11,9:11,11:8,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-12T11:40:00Z",
+       "score": "0-3 (7:11,3:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-12T13:10:00Z",
+       "score": "0-3 (12:14,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 6
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-11-12T16:45:00Z",
+       "score": "3-1 (11:9,11:3,5:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yuto Kizukuri",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-11-12T18:15:00Z",
+       "score": "3-1 (11:4,13:11,12:14,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-11-13T13:30:00Z",
+       "score": "3-1 (12:14,11:9,11:8,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-13T14:15:00Z",
+       "score": "3-1 (2:11,11:5,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-13T14:15:00Z",
+       "score": "1-3 (4:11,11:9,4:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 6
+        },
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-13T13:30:00Z",
+       "score": "3-2 (7:11,11:8,5:11,11:8,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2021-11-13T18:30:00Z",
+       "score": "1-4 (5:11,9:11,7:11,11:8,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 6
+        }
+       ],
+       "when": "2021-11-13T17:40:00Z",
+       "score": "4-1 (11:8,10:12,11:5,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-14T17:20:00Z",
+       "score": "4-3 (9:11,10:12,11:5,11:5,9:11,11:8,12:10)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Zeng Jian / Ye Lin",
+         "nat": "SGP",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-11T10:20:00Z",
+       "score": "3-2 (11:7,8:11,3:11,11:8,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / Valentina Roncallo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Prithika Pavade / Pauline Chasselin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-11-11T09:40:00Z",
+       "score": "0-3 (11:13,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nina Mittelham / Sabine Winter",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Rui Xuan Goi / Xin Ru Wong",
+         "nat": "SGP",
+         "seed": 6
+        }
+       ],
+       "when": "2021-11-11T10:20:00Z",
+       "score": "3-0 (11:9,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jennifer Jonsson / Filippa Bergand",
+         "nat": "SWE"
+        },
+        {
+         "name": "Katarina Strazar / Lea Paulin",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2021-11-11T09:00:00Z",
+       "score": "2-3 (6:11,8:11,11:9,11:7,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Minhyung Jee / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Bernadett Balint / Mercedes Nagyvaradi",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-11-11T09:40:00Z",
+       "score": "3-0 (11:8,11:7,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ida Jazbec / Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Yana Noskova / Olga Vorobeva",
+         "nat": "RUS",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-11T11:00:00Z",
+       "score": "0-3 (10:12,3:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Britt Eerland / Georgina Pota",
+         "nat": "NED/HUN",
+         "seed": 7
+        },
+        {
+         "name": "Liu Weishan / Wang Yidi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-11T09:00:00Z",
+       "score": "0-3 (4:11,5:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chantal Mantz / Yuan Wan",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Barbora Balazova / Hana Matelova",
+         "nat": "SVK/CZE",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-11T11:00:00Z",
+       "score": "2-3 (6:11,7:11,13:11,11:3,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Prithika Pavade / Pauline Chasselin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-11-12T09:40:00Z",
+       "score": "1-3 (7:11,11:2,4:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nina Mittelham / Sabine Winter",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Katarina Strazar / Lea Paulin",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2021-11-12T09:00:00Z",
+       "score": "3-1 (13:11,7:11,11:1,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Minhyung Jee / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Yana Noskova / Olga Vorobeva",
+         "nat": "RUS",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-12T09:40:00Z",
+       "score": "3-2 (11:5,8:11,7:11,11:7,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan / Wang Yidi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Barbora Balazova / Hana Matelova",
+         "nat": "SVK/CZE",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-12T09:00:00Z",
+       "score": "3-1 (11:5,11:7,12:14,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Prithika Pavade / Pauline Chasselin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Nina Mittelham / Sabine Winter",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "when": "2021-11-13T09:00:00Z",
+       "score": "1-3 (11:2,9:11,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Minhyung Jee / Yangzi Liu",
+         "nat": "AUS"
+        },
+        {
+         "name": "Liu Weishan / Wang Yidi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-13T09:00:00Z",
+       "score": "1-3 (6:11,11:9,5:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nina Mittelham / Sabine Winter",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Liu Weishan / Wang Yidi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-14T10:40:00Z",
+       "score": "0-3 (4:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar / Sharath Kamal Achanta",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Hiroto Shinozuka / Yuma Tanigaki",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-11-11T09:40:00Z",
+       "score": "1-3 (7:11,4:11,12:10,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula / Jeet Chandra",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-11T10:20:00Z",
+       "score": "0-3 (5:11,2:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Habesohn / Robert Gardos",
+         "nat": "AUT",
+         "seed": 3
+        },
+        {
+         "name": "Lin Gaoyuan / Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-11T11:00:00Z",
+       "score": "1-3 (2:11,9:11,11:9,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexis Lebrun / Félix Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Deni Kozul / Darko Jorgic",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2021-11-11T09:00:00Z",
+       "score": "3-2 (15:13,11:9,9:11,10:12,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Källberg / Truls Moregard",
+         "nat": "SWE",
+         "seed": 7
+        },
+        {
+         "name": "Amin Ahmadian / Zhe Yu Clarence Chew",
+         "nat": "IRI/SGP"
+        }
+       ],
+       "when": "2021-11-11T10:20:00Z",
+       "score": "3-0 (11:6,13:11,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tilen Cvetko / Peter Hribar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Kilian Ort / Tobias Hippler",
+         "nat": "GER",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-11T09:40:00Z",
+       "score": "0-3 (4:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Walker / Aleksandr Khanin",
+         "nat": "ENG/BLR",
+         "seed": 6
+        },
+        {
+         "name": "Dillon Chambers / Xavier Dixon",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2021-11-11T11:00:00Z",
+       "score": "3-1 (11:8,11:6,9:11,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Putuntica / Kirill Gerassimenko",
+         "nat": "MDA/KAZ"
+        },
+        {
+         "name": "Liang Jingkun / Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-11T09:00:00Z",
+       "score": "1-3 (7:11,7:11,11:7,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka / Yuma Tanigaki",
+         "nat": "JPN"
+        },
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-12T09:00:00Z",
+       "score": "3-2 (3:11,11:5,11:6,7:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan / Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Alexis Lebrun / Félix Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-11-12T09:40:00Z",
+       "score": "3-0 (11:6,11:3,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Källberg / Truls Moregard",
+         "nat": "SWE",
+         "seed": 7
+        },
+        {
+         "name": "Kilian Ort / Tobias Hippler",
+         "nat": "GER",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-12T09:00:00Z",
+       "score": "1-3 (11:6,9:11,8:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Walker / Aleksandr Khanin",
+         "nat": "ENG/BLR",
+         "seed": 6
+        },
+        {
+         "name": "Liang Jingkun / Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-12T09:40:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka / Yuma Tanigaki",
+         "nat": "JPN"
+        },
+        {
+         "name": "Lin Gaoyuan / Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-13T09:40:00Z",
+       "score": "2-3 (11:8,11:8,7:11,8:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort / Tobias Hippler",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Liang Jingkun / Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-13T09:40:00Z",
+       "score": "0-3 (8:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan / Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Liang Jingkun / Wang Chuqin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-14T11:20:00Z",
+       "score": "3-1 (13:11,7:11,11:7,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles / Maria Xiao",
+         "nat": "ESP",
+         "seed": 1
+        },
+        {
+         "name": "Wang Chuqin / Wang Yidi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2021-11-11T13:00:00Z",
+       "score": "0-3 (6:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Suthasini Sawettabut / Padasak Tanviriyavechakul",
+         "nat": "THA",
+         "seed": 5
+        },
+        {
+         "name": "Karoline Mischek / Robert Gardos",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-11-11T13:00:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva / Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 3
+        },
+        {
+         "name": "Daniel Habesohn / Sofia Polcanova",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-11-11T13:00:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nicholas Lum / Minhyung Jee",
+         "nat": "AUS"
+        },
+        {
+         "name": "Aleksandr Khanin / Katsiaryna Baravok",
+         "nat": "BLR",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-11T17:00:00Z",
+       "score": "1-3 (5:11,9:11,11:3,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ana Tofant / Peter Hribar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Lubomir Jancarik / Hana Matelova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2021-11-11T13:00:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rui Xuan Goi / Josh Shao Han Chua",
+         "nat": "SGP"
+        },
+        {
+         "name": "Archana Girish Kamath / Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2021-11-11T17:00:00Z",
+       "score": "3-1 (4:11,11:7,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian / Zhe Yu Clarence Chew",
+         "nat": "SGP",
+         "seed": 7
+        },
+        {
+         "name": "Jieni Shao / Tiago Apolonia",
+         "nat": "POR",
+         "seed": 6
+        }
+       ],
+       "when": "2021-11-11T17:00:00Z",
+       "score": "1-3 (9:11,7:11,13:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Katarina Strazar / Deni Kozul",
+         "nat": "SLO"
+        },
+        {
+         "name": "Prithika Pavade / Simon Gauzy",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-11T17:00:00Z",
+       "score": "0-3 (2:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin / Wang Yidi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Suthasini Sawettabut / Padasak Tanviriyavechakul",
+         "nat": "THA",
+         "seed": 5
+        }
+       ],
+       "when": "2021-11-12T11:00:00Z",
+       "score": "3-1 (11:3,9:11,11:5,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva / Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 3
+        },
+        {
+         "name": "Aleksandr Khanin / Katsiaryna Baravok",
+         "nat": "BLR",
+         "seed": 8
+        }
+       ],
+       "when": "2021-11-12T11:00:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Jancarik / Hana Matelova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Rui Xuan Goi / Josh Shao Han Chua",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2021-11-12T11:00:00Z",
+       "score": "3-1 (13:11,10:12,11:5,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jieni Shao / Tiago Apolonia",
+         "nat": "POR",
+         "seed": 6
+        },
+        {
+         "name": "Prithika Pavade / Simon Gauzy",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-12T11:00:00Z",
+       "score": "2-3 (12:10,2:11,11:13,11:8,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin / Wang Yidi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Olga Vorobeva / Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 3
+        }
+       ],
+       "when": "2021-11-12T19:00:00Z",
+       "score": "3-0 (11:7,11:2,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Jancarik / Hana Matelova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Prithika Pavade / Simon Gauzy",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-12T19:00:00Z",
+       "score": "0-3 (5:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin / Wang Yidi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Prithika Pavade / Simon Gauzy",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-11-14T10:00:00Z",
+       "score": "3-1 (11:5,11:6,9:11,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

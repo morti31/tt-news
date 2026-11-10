@@ -1,0 +1,547 @@
+{
+ "event": "WTT Cup Finals Xinxiang",
+ "wtt_event_id": "2627",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2627&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 8.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Nina Mittelham",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-27T10:20:00Z",
+       "score": "3-0 (11:8,11:4,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kasumi Ishikawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2022-10-27T02:00:00Z",
+       "score": "1-3 (11:7,5:11,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2022-10-27T09:00:00Z",
+       "score": "3-0 (11:1,11:2,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Adriana Diaz",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2022-10-27T06:00:00Z",
+       "score": "1-3 (12:10,5:11,8:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        }
+       ],
+       "when": "2022-10-27T03:20:00Z",
+       "score": "3-0 (11:7,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Han Ying",
+         "nat": "GER"
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-27T04:40:00Z",
+       "score": "1-3 (11:6,6:11,5:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON"
+        }
+       ],
+       "when": "2022-10-27T13:00:00Z",
+       "score": "3-1 (11:9,9:11,11:8,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jia Nan Yuan",
+         "nat": "FRA"
+        },
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-27T11:40:00Z",
+       "score": "1-3 (11:7,11:13,4:11,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Kasumi Ishikawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2022-10-28T11:40:00Z",
+       "score": "3-0 (11:6,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Adriana Diaz",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2022-10-28T09:00:00Z",
+       "score": "3-0 (11:7,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-28T07:40:00Z",
+       "score": "0-3 (4:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-28T13:00:00Z",
+       "score": "1-3 (11:7,8:11,7:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2022-10-29T11:00:00Z",
+       "score": "4-1 (11:6,11:4,4:11,14:12,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-29T12:30:00Z",
+       "score": "1-4 (9:11,3:11,9:11,13:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-30T11:00:00Z",
+       "score": "4-3 (4:11,11:4,11:8,12:10,6:11,10:12,12:10)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Fan Zhendong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-27T05:20:00Z",
+       "score": "2-3 (3:11,11:9,7:11,11:5,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-27T02:40:00Z",
+       "score": "3-0 (11:4,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Timo Boll",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-27T09:40:00Z",
+       "score": "2-3 (11:9,9:11,8:11,11:6,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Dang Qiu",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-27T12:20:00Z",
+       "score": "3-1 (10:12,11:8,11:8,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 5
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-27T13:40:00Z",
+       "score": "1-3 (5:11,6:11,12:10,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 7
+        },
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2022-10-27T04:00:00Z",
+       "score": "3-1 (11:4,11:6,8:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 8
+        },
+        {
+         "name": "Ma Long",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-27T11:00:00Z",
+       "score": "1-3 (11:9,10:12,2:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Fan Zhendong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-28T08:20:00Z",
+       "score": "2-3 (11:4,6:11,8:11,11:7,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Timo Boll",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-10-28T07:00:00Z",
+       "score": "3-0 (11:8,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2022-10-28T12:20:00Z",
+       "score": "3-0 (11:8,11:3,15:13,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 7
+        },
+        {
+         "name": "Ma Long",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-28T11:00:00Z",
+       "score": "2-3 (4:11,11:7,7:11,11:8,3:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2022-10-29T11:45:00Z",
+       "score": "0-4 (7:11,6:11,5:11,7:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Ma Long",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-10-29T13:15:00Z",
+       "score": "4-3 (11:7,11:5,11:5,9:11,7:11,11:13,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-10-30T12:00:00Z",
+       "score": "2-4 (11:8,8:11,9:11,8:11,11:8,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

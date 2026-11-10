@@ -1,0 +1,2756 @@
+{
+ "event": "WTT Feeder Istanbul",
+ "wtt_event_id": "3199",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3199&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 3.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Victoria Strassburger",
+         "nat": "BRA"
+        },
+        {
+         "name": "Matilda Hansson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2025-09-13T07:35:00Z",
+       "score": "1-3 (11:2,6:11,10:12,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ming Ying Loy",
+         "nat": "SGP"
+        },
+        {
+         "name": "Lin Qian Ser",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T08:10:00Z",
+       "score": "1-3 (2:11,7:11,11:6,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Laura Watanabe",
+         "nat": "BRA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leah Tveit",
+         "nat": "SWE"
+        },
+        {
+         "name": "Camila Obando",
+         "nat": "VEN"
+        }
+       ],
+       "when": "2025-09-13T07:35:00Z",
+       "score": "3-0 (11:8,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-13T08:45:00Z",
+       "score": "3-1 (12:10,8:11,12:10,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Cristina Gomez",
+         "nat": "VEN"
+        }
+       ],
+       "when": "2025-09-13T08:10:00Z",
+       "score": "3-1 (11:3,11:6,6:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elina Rahimi",
+         "nat": "IRI"
+        },
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-13T08:45:00Z",
+       "score": "0-3 (8:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Varady",
+         "nat": "SVK"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lara Opeka",
+         "nat": "SLO"
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T08:45:00Z",
+       "score": "0-3 (5:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bianca Mei-Rosu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Roxy Gonzalez",
+         "nat": "VEN"
+        }
+       ],
+       "when": "2025-09-13T08:10:00Z",
+       "score": "3-1 (11:7,11:6,10:12,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 8
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Josephina Neumann",
+         "nat": "GER"
+        },
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2025-09-13T08:10:00Z",
+       "score": "1-3 (6:11,11:8,6:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Sara Tokic",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2025-09-13T08:10:00Z",
+       "score": "0-3 (4:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ozge Yilmaz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-09-13T08:45:00Z",
+       "score": "1-3 (9:11,7:11,11:5,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dora Cosic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-09-13T08:45:00Z",
+       "score": "2-3 (11:5,11:1,7:11,8:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR",
+         "seed": 5
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mahshid Ashtari",
+         "nat": "IRI"
+        },
+        {
+         "name": "Nomin Baasan",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2025-09-13T08:10:00Z",
+       "score": "0-3 (4:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karina Shiray",
+         "nat": "BRA"
+        },
+        {
+         "name": "Chloe Lai",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T08:45:00Z",
+       "score": "1-3 (9:11,11:7,8:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Krittwika Roy",
+         "nat": "IND"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhao Yun Tan",
+         "nat": "SGP"
+        },
+        {
+         "name": "Kim Dahee",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-13T07:35:00Z",
+       "score": "3-2 (8:11,9:11,13:11,11:5,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Panfilova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2025-09-13T07:35:00Z",
+       "score": "1-3 (11:9,8:11,5:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Matilda Hansson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2025-09-13T14:05:00Z",
+       "score": "3-0 (11:4,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Qian Ser",
+         "nat": "SGP"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2025-09-13T14:40:00Z",
+       "score": "3-0 (11:4,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Laura Watanabe",
+         "nat": "BRA"
+        },
+        {
+         "name": "Leah Tveit",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2025-09-13T14:40:00Z",
+       "score": "2-3 (11:5,11:8,8:11,6:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2025-09-13T14:05:00Z",
+       "score": "3-2 (11:6,11:5,7:11,8:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T14:40:00Z",
+       "score": "1-3 (11:7,7:11,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T14:40:00Z",
+       "score": "3-2 (8:11,11:13,12:10,11:7,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Varady",
+         "nat": "SVK"
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T14:05:00Z",
+       "score": "1-3 (1:11,5:11,15:13,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bianca Mei-Rosu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-13T14:40:00Z",
+       "score": "0-3 (8:11,3:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 8
+        },
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2025-09-13T14:05:00Z",
+       "score": "3-2 (7:11,9:11,11:7,11:5,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sara Tokic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-13T14:40:00Z",
+       "score": "3-0 (11:8,11:7,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        },
+        {
+         "name": "Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-09-13T15:15:00Z",
+       "score": "3-1 (11:9,6:11,11:5,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-09-13T15:15:00Z",
+       "score": "3-2 (11:7,5:11,8:11,11:8,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR",
+         "seed": 5
+        },
+        {
+         "name": "Nomin Baasan",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2025-09-13T15:15:00Z",
+       "score": "3-2 (11:2,10:12,8:11,11:5,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chloe Lai",
+         "nat": "SGP"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T15:15:00Z",
+       "score": "1-3 (2:11,11:8,8:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Krittwika Roy",
+         "nat": "IND"
+        },
+        {
+         "name": "Zhao Yun Tan",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T15:15:00Z",
+       "score": "0-3 (7:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-13T15:15:00Z",
+       "score": "1-3 (7:11,4:11,11:8,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Lin Qian Ser",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-14T08:45:00Z",
+       "score": "3-1 (11:3,11:8,7:11,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leah Tveit",
+         "nat": "SWE"
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-14T08:10:00Z",
+       "score": "0-3 (6:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-14T08:45:00Z",
+       "score": "3-1 (5:11,11:8,11:8,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mariia Tailakova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-14T08:45:00Z",
+       "score": "1-3 (11:5,7:11,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 8
+        },
+        {
+         "name": "Sara Tokic",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2025-09-14T08:45:00Z",
+       "score": "3-1 (11:9,11:7,6:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-09-14T08:10:00Z",
+       "score": "3-0 (11:8,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR",
+         "seed": 5
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-14T08:10:00Z",
+       "score": "2-3 (11:4,9:11,9:11,11:2,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhao Yun Tan",
+         "nat": "SGP"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-14T08:10:00Z",
+       "score": "2-3 (11:6,11:6,9:11,8:11,12:14)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-14T16:25:00Z",
+       "score": "0-3 (8:11,9:11,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-14T16:25:00Z",
+       "score": "1-3 (2:11,8:11,15:13,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 8
+        },
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-14T15:50:00Z",
+       "score": "1-3 (10:12,4:11,11:7,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-14T15:50:00Z",
+       "score": "3-1 (11:6,10:12,11:7,13:11,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN"
+        },
+        {
+         "name": "Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-15T07:00:00Z",
+       "score": "0-3 (8:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-15T07:35:00Z",
+       "score": "0-3 (8:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-15T14:40:00Z",
+       "score": "3-0 (11:6,12:10,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar",
+         "nat": "IND"
+        },
+        {
+         "name": "Jakub Zelinka",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-13T09:20:00Z",
+       "score": "0-3 (11:13,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        },
+        {
+         "name": "Miguel Pantoja",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-09-13T10:30:00Z",
+       "score": "3-0 (12:10,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen",
+         "nat": "AUT"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-09-13T09:20:00Z",
+       "score": "1-3 (12:10,14:16,8:11,15:17,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-13T09:20:00Z",
+       "score": "0-3 (4:11,11:13,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Carlos Rios",
+         "nat": "VEN"
+        },
+        {
+         "name": "Alexander Valuch",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-13T09:20:00Z",
+       "score": "0-3 (6:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Norbert Tauler",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-09-13T09:20:00Z",
+       "score": "3-0 (11:8,11:9,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "AIN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        },
+        {
+         "name": "Gorkem Ocal",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T09:55:00Z",
+       "score": "3-1 (12:10,12:10,8:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi",
+         "nat": "ITA"
+        },
+        {
+         "name": "Josh Chua",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T09:55:00Z",
+       "score": "1-3 (7:11,10:12,11:9,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2025-09-13T09:55:00Z",
+       "score": "3-0 (11:5,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Raymondo Medina",
+         "nat": "VEN"
+        },
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-13T09:55:00Z",
+       "score": "2-3 (17:15,11:8,4:11,3:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Koen Pang",
+         "nat": "SGP"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cristian Pletea",
+         "nat": "ROU"
+        },
+        {
+         "name": "Clarence Chew",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T09:55:00Z",
+       "score": "3-1 (13:15,11:5,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lev Katsman",
+         "nat": "AIN"
+        },
+        {
+         "name": "Divyansh Srivastava",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-09-13T09:55:00Z",
+       "score": "2-3 (11:9,8:11,13:11,5:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hiromu Kobayashi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Emanuel Otalvaro",
+         "nat": "COL"
+        }
+       ],
+       "when": "2025-09-13T09:20:00Z",
+       "score": "3-1 (11:9,11:5,9:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhenlong Liu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T10:30:00Z",
+       "score": "0-3 (5:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T10:30:00Z",
+       "score": "0-3 (3:11,2:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cesar Castillo",
+         "nat": "VEN"
+        },
+        {
+         "name": "Martin Andersen",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2025-09-13T10:30:00Z",
+       "score": "0-3 (7:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Jakub Zelinka",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-13T15:50:00Z",
+       "score": "3-1 (11:7,4:11,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        },
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2025-09-13T17:00:00Z",
+       "score": "3-0 (11:5,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-09-13T15:50:00Z",
+       "score": "3-2 (11:7,8:11,11:5,8:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR",
+         "seed": 6
+        }
+       ],
+       "when": "2025-09-13T16:25:00Z",
+       "score": "3-1 (4:11,13:11,11:5,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Alexander Valuch",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-13T17:00:00Z",
+       "score": "3-1 (13:11,11:7,16:18,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T15:50:00Z",
+       "score": "0-3 (8:11,4:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-09-13T17:00:00Z",
+       "score": "1-3 (11:2,10:12,10:12,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Chua",
+         "nat": "SGP"
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2025-09-13T16:25:00Z",
+       "score": "1-3 (9:11,6:11,11:7,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Shunsuke Okano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-09-13T16:25:00Z",
+       "score": "1-3 (6:11,10:12,11:5,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Koen Pang",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T15:50:00Z",
+       "score": "1-3 (12:10,4:11,8:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        },
+        {
+         "name": "Cristian Pletea",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2025-09-13T16:25:00Z",
+       "score": "3-2 (11:9,10:12,7:11,11:6,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyansh Srivastava",
+         "nat": "IND"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-13T15:50:00Z",
+       "score": "0-3 (9:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Hiromu Kobayashi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-09-13T16:25:00Z",
+       "score": "3-1 (11:6,5:11,12:10,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-09-13T16:25:00Z",
+       "score": "1-3 (12:14,11:13,13:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T15:50:00Z",
+       "score": "2-3 (12:10,5:11,11:3,8:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Andersen",
+         "nat": "DEN"
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-13T17:00:00Z",
+       "score": "1-3 (9:11,11:6,5:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2025-09-14T09:20:00Z",
+       "score": "3-2 (11:4,9:11,11:6,8:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-14T09:55:00Z",
+       "score": "0-3 (8:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-14T09:20:00Z",
+       "score": "0-3 (10:12,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2025-09-14T09:20:00Z",
+       "score": "3-2 (10:12,5:11,11:6,11:5,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Koen Pang",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-14T09:55:00Z",
+       "score": "3-2 (9:11,11:3,11:9,11:13,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-14T09:20:00Z",
+       "score": "0-3 (2:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-09-14T09:55:00Z",
+       "score": "0-3 (8:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-14T09:55:00Z",
+       "score": "3-2 (8:11,11:6,7:11,11:8,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-09-14T17:35:00Z",
+       "score": "2-3 (9:11,11:7,11:5,6:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "AIN"
+        },
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-09-14T17:00:00Z",
+       "score": "3-0 (11:7,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-14T17:00:00Z",
+       "score": "0-3 (10:12,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE"
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-14T17:35:00Z",
+       "score": "2-3 (11:9,7:11,11:9,7:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        },
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-15T08:10:00Z",
+       "score": "1-3 (8:11,13:11,8:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-15T08:45:00Z",
+       "score": "3-0 (11:7,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "AIN"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-15T15:15:00Z",
+       "score": "3-0 (11:9,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Barbora Varady / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Jana Vasendova / Helena Sommerova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2025-09-13T10:30:00Z",
+       "score": "3-1 (11:8,11:9,9:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sibel Altinkaya / Merve Demir",
+         "nat": "TUR"
+        },
+        {
+         "name": "Victoria Strassburger / Karina Shiray",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2025-09-13T10:30:00Z",
+       "score": "3-1 (12:10,10:12,11:8,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo / Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Elina Rahimi / Mahshid Ashtari",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2025-09-13T11:05:00Z",
+       "score": "3-0 (11:8,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Panfilova / Mariia Tailakova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Mateja Jeger / Dora Cosic",
+         "nat": "CRO",
+         "seed": 8
+        }
+       ],
+       "when": "2025-09-13T11:05:00Z",
+       "score": "3-1 (6:11,11:7,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ana Tofant / Sara Tokic",
+         "nat": "SLO",
+         "seed": 6
+        },
+        {
+         "name": "Lin Qian Ser / Ming Ying Loy",
+         "nat": "SGP",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-13T11:05:00Z",
+       "score": "2-3 (4:11,11:7,11:6,9:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Roxy Gonzalez / Camila Obando",
+         "nat": "VEN"
+        },
+        {
+         "name": "Poymantee Baisya / Krittwika Roy",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-13T11:10:00Z",
+       "score": "3-0 (11:7,11:9,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac / Ozge Yilmaz",
+         "nat": "TUR",
+         "seed": 5
+        },
+        {
+         "name": "Elizabet Abraamian / Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-13T11:10:00Z",
+       "score": "0-3 (9:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhao Yun Tan / Chloe Lai",
+         "nat": "SGP"
+        },
+        {
+         "name": "Laura Watanabe / Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-13T11:05:00Z",
+       "score": "0-3 (6:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Barbora Varady / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Sibel Altinkaya / Merve Demir",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-14T07:00:00Z",
+       "score": "3-0 (11:1,11:8,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo / Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Maria Panfilova / Mariia Tailakova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-14T07:00:00Z",
+       "score": "3-1 (11:7,11:4,9:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Qian Ser / Ming Ying Loy",
+         "nat": "SGP",
+         "seed": 7
+        },
+        {
+         "name": "Roxy Gonzalez / Camila Obando",
+         "nat": "VEN"
+        }
+       ],
+       "when": "2025-09-14T07:00:00Z",
+       "score": "3-0 (12:10,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian / Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Laura Watanabe / Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-14T07:00:00Z",
+       "score": "3-2 (9:11,11:2,11:9,10:12,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Barbora Varady / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Yoo Siwoo / Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-09-14T14:40:00Z",
+       "score": "3-0 (11:9,16:14,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Qian Ser / Ming Ying Loy",
+         "nat": "SGP",
+         "seed": 7
+        },
+        {
+         "name": "Elizabet Abraamian / Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-14T14:40:00Z",
+       "score": "1-3 (4:11,9:11,11:7,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Barbora Varady / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Elizabet Abraamian / Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2025-09-15T13:30:00Z",
+       "score": "1-3 (9:11,11:8,8:11,13:15,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Jakub Zelinka",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Mudit Dani / Anirban Ghosh",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2025-09-13T13:30:00Z",
+       "score": "3-0 (11:5,14:12,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miguel Pantoja / Rafael De Las Heras",
+         "nat": "ESP",
+         "seed": 7
+        },
+        {
+         "name": "Koen Pang / Ellsworth Le",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-13T13:30:00Z",
+       "score": "0-3 (7:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Clarence Chew / Josh Chua",
+         "nat": "SGP",
+         "seed": 3
+        },
+        {
+         "name": "Kenan Kahraman / Gorkem Ocal",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T13:30:00Z",
+       "score": "1-3 (11:9,3:11,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko / Evgeny Tikhonov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Oh Seunghwan / Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-13T13:30:00Z",
+       "score": "2-3 (12:10,8:11,11:9,8:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Carlos Rios / Jesus Tovar",
+         "nat": "VEN"
+        },
+        {
+         "name": "Tommaso Giovannetti / Federico Vallino",
+         "nat": "ITA",
+         "seed": 8
+        }
+       ],
+       "when": "2025-09-13T13:30:00Z",
+       "score": "3-2 (1:11,11:6,4:11,11:8,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Norbert Tauler / Martin Andersen",
+         "nat": "ESP/DEN"
+        },
+        {
+         "name": "Ibrahim Gunduz / Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-09-13T14:05:00Z",
+       "score": "3-2 (11:9,11:7,12:14,9:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Lev Katsman",
+         "nat": "AIN",
+         "seed": 6
+        },
+        {
+         "name": "Alexander Chen / Tugay Yilmaz",
+         "nat": "AUT/TUR"
+        }
+       ],
+       "when": "2025-09-13T14:05:00Z",
+       "score": "3-0 (11:3,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cesar Castillo / Raymondo Medina",
+         "nat": "VEN"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Akash Pal",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-13T13:30:00Z",
+       "score": "3-2 (3:11,11:7,7:11,11:9,11:7)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Jakub Zelinka",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Koen Pang / Ellsworth Le",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-09-14T07:35:00Z",
+       "score": "3-1 (9:11,11:9,11:3,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kenan Kahraman / Gorkem Ocal",
+         "nat": "TUR"
+        },
+        {
+         "name": "Oh Seunghwan / Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-14T07:35:00Z",
+       "score": "1-3 (12:10,10:12,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Carlos Rios / Jesus Tovar",
+         "nat": "VEN"
+        },
+        {
+         "name": "Norbert Tauler / Martin Andersen",
+         "nat": "ESP/DEN"
+        }
+       ],
+       "when": "2025-09-14T07:35:00Z",
+       "score": "0-3 (10:12,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Lev Katsman",
+         "nat": "AIN",
+         "seed": 6
+        },
+        {
+         "name": "Cesar Castillo / Raymondo Medina",
+         "nat": "VEN"
+        }
+       ],
+       "when": "2025-09-14T07:35:00Z",
+       "score": "3-0 (11:4,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Jakub Zelinka",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Oh Seunghwan / Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-09-14T15:15:00Z",
+       "score": "3-1 (16:14,11:8,10:12,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Norbert Tauler / Martin Andersen",
+         "nat": "ESP/DEN"
+        },
+        {
+         "name": "Maksim Grebnev / Lev Katsman",
+         "nat": "AIN",
+         "seed": 6
+        }
+       ],
+       "when": "2025-09-14T15:15:00Z",
+       "score": "0-3 (3:11,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Jakub Zelinka",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Maksim Grebnev / Lev Katsman",
+         "nat": "AIN",
+         "seed": 6
+        }
+       ],
+       "when": "2025-09-15T14:05:00Z",
+       "score": "3-2 (7:11,11:3,11:6,7:11,11:8)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Vladimir Sidorenko / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2025-09-13T07:00:00Z",
+       "score": "2-3 (10:12,11:6,12:10,8:11,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hiromu Kobayashi / Reina Aso",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kim Daewoo / Yoo Siwoo",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2025-09-13T07:00:00Z",
+       "score": "3-1 (12:10,10:12,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz / Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 4
+        },
+        {
+         "name": "Shunsuke Okano / Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-13T07:35:00Z",
+       "score": "0-3 (8:11,11:13,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lev Katsman / Elizabet Abraamian",
+         "nat": "AIN"
+        },
+        {
+         "name": "Abdullah Yigenler / Ozge Yilmaz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T07:00:00Z",
+       "score": "2-3 (8:11,11:2,11:13,11:4,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen / Choi Haeeun",
+         "nat": "AUT/KOR"
+        },
+        {
+         "name": "Mudit Dani / Manika Batra",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2025-09-13T07:35:00Z",
+       "score": "3-2 (4:11,11:8,11:9,3:11,16:14)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sarth Mishra / Laura Watanabe",
+         "nat": "IND/BRA"
+        },
+        {
+         "name": "Koen Pang / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-13T07:00:00Z",
+       "score": "0-3 (8:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Tugay Yilmaz / Ece Harac",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T07:00:00Z",
+       "score": "2-3 (5:11,10:12,11:4,11:8,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ellsworth Le / Chloe Lai",
+         "nat": "SGP"
+        },
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-13T07:00:00Z",
+       "score": "0-3 (7:11,10:12,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Hiromu Kobayashi / Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-09-13T17:35:00Z",
+       "score": "3-2 (11:8,11:7,9:11,5:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano / Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Abdullah Yigenler / Ozge Yilmaz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-09-13T17:55:00Z",
+       "score": "3-0 (11:7,11:6,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen / Choi Haeeun",
+         "nat": "AUT/KOR"
+        },
+        {
+         "name": "Koen Pang / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-13T17:35:00Z",
+       "score": "0-3 (10:12,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tugay Yilmaz / Ece Harac",
+         "nat": "TUR"
+        },
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-13T18:10:00Z",
+       "score": "0-3 (8:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko / Mariia Tailakova",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Shunsuke Okano / Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-09-14T14:05:00Z",
+       "score": "0-3 (7:11,8:11,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Koen Pang / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 3
+        },
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-09-14T13:30:00Z",
+       "score": "3-0 (14:12,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano / Kyoka Idesawa",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Koen Pang / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 3
+        }
+       ],
+       "when": "2025-09-15T09:20:00Z",
+       "score": "3-2 (10:12,8:11,11:9,11:9,11:6)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

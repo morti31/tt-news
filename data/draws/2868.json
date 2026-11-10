@@ -1,0 +1,1850 @@
+{
+ "event": "WTT Contender Lagos",
+ "wtt_event_id": "2868",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2868&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Archana Girish Kamath",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-06-20T15:10:00Z",
+       "score": "3-0 (15:13,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yao Zixuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Rofiat Jimoh",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T15:10:00Z",
+       "score": "3-0 (11:2,11:0,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sun Sinan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T10:45:00Z",
+       "score": "3-0 (11:7,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joanita Borteye",
+         "nat": "GHA"
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2024-06-20T18:05:00Z",
+       "score": "0-3 (4:11,3:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Ajoke Ojomu",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T15:45:00Z",
+       "score": "3-0 (11:9,11:6,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cynthia Kwabi",
+         "nat": "GHA"
+        },
+        {
+         "name": "Aishat Rabiu",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T17:30:00Z",
+       "score": "1-3 (7:11,9:11,11:8,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Cecilia Akpan",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T14:35:00Z",
+       "score": "3-1 (11:5,10:12,11:8,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kehinde Oyeniyi",
+         "nat": "NGR"
+        },
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-20T14:35:00Z",
+       "score": "0-3 (2:11,3:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Offiong Edem",
+         "nat": "NGR",
+         "seed": 7
+        },
+        {
+         "name": "Fatimo Bello",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T10:10:00Z",
+       "score": "2-3 (6:11,13:11,11:9,9:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Blessing Labanti",
+         "nat": "GHA"
+        },
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-06-20T14:00:00Z",
+       "score": "0-3 (6:11,3:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Halima Hussain",
+         "nat": "NGR"
+        },
+        {
+         "name": "Farida Badawy",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2024-06-20T17:30:00Z",
+       "score": "0-3 (9:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hope Udoaka",
+         "nat": "NGR"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-06-20T15:45:00Z",
+       "score": "0-3 (8:11,3:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 5
+        },
+        {
+         "name": "Sukurat Aiyelbegan",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T10:45:00Z",
+       "score": "3-1 (14:16,11:5,11:6,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mojisola Ajibike",
+         "nat": "NGR"
+        },
+        {
+         "name": "Aminat Fashola",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T10:10:00Z",
+       "score": "1-3 (14:12,5:11,5:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bernice Borquaye",
+         "nat": "GHA"
+        },
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T14:00:00Z",
+       "score": "0-3 (2:11,1:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Huiyao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-20T18:05:00Z",
+       "score": "3-2 (7:11,11:6,11:7,7:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Yao Zixuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T11:20:00Z",
+       "score": "3-1 (8:11,11:9,11:8,11:1,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2024-06-21T15:10:00Z",
+       "score": "1-3 (11:5,8:11,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Aishat Rabiu",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-21T11:20:00Z",
+       "score": "3-0 (11:3,11:6,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-21T16:20:00Z",
+       "score": "2-3 (11:3,11:13,11:6,5:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fatimo Bello",
+         "nat": "NGR"
+        },
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-06-21T10:10:00Z",
+       "score": "1-3 (10:12,11:8,2:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Farida Badawy",
+         "nat": "EGY"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-06-21T15:45:00Z",
+       "score": "3-2 (11:8,11:9,8:11,9:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 5
+        },
+        {
+         "name": "Aminat Fashola",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-21T10:10:00Z",
+       "score": "3-0 (11:8,13:11,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        },
+        {
+         "name": "Xu Huiyao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T16:55:00Z",
+       "score": "3-1 (9:11,11:4,12:10,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2024-06-22T09:00:00Z",
+       "score": "2-3 (9:11,11:3,11:9,9:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-22T09:00:00Z",
+       "score": "3-0 (11:6,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        },
+        {
+         "name": "Farida Badawy",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2024-06-22T10:10:00Z",
+       "score": "3-0 (11:6,14:12,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 5
+        },
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-22T10:10:00Z",
+       "score": "1-3 (11:7,9:11,4:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-22T16:15:00Z",
+       "score": "2-3 (8:11,15:13,9:11,11:9,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        },
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-22T14:45:00Z",
+       "score": "2-3 (7:11,11:7,2:11,13:11,4:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-23T14:30:00Z",
+       "score": "4-1 (10:12,11:9,11:6,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Kim Minwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-06-20T15:10:00Z",
+       "score": "3-0 (12:10,11:3,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "James Marfo",
+         "nat": "GHA"
+        },
+        {
+         "name": "Kang Youde",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T10:10:00Z",
+       "score": "0-3 (2:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG"
+        },
+        {
+         "name": "Ning Xiankun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T10:45:00Z",
+       "score": "2-3 (12:10,7:11,11:13,11:9,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulbasit Abdulfatai",
+         "nat": "NGR"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-20T10:45:00Z",
+       "score": "0-3 (4:11,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Godwin Alabi",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2024-06-20T11:20:00Z",
+       "score": "3-0 (11:6,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulrahaman Abdullahi",
+         "nat": "NGR"
+        },
+        {
+         "name": "Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T11:20:00Z",
+       "score": "0-3 (9:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Matthew Kuti",
+         "nat": "NGR"
+        },
+        {
+         "name": "Thibault Poret",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-06-20T15:10:00Z",
+       "score": "0-3 (9:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miguel Pantoja",
+         "nat": "ESP"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-20T11:55:00Z",
+       "score": "0-3 (6:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Amir Atanda Adou",
+         "nat": "BEN"
+        }
+       ],
+       "when": "2024-06-20T10:10:00Z",
+       "score": "3-0 (11:5,11:3,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Azeez Solanke",
+         "nat": "NGR"
+        },
+        {
+         "name": "Manush Utpalbhai Shah",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-06-20T11:55:00Z",
+       "score": "0-3 (1:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-06-20T15:45:00Z",
+       "score": "1-3 (6:11,4:11,14:12,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Michael Yeboah",
+         "nat": "GHA"
+        },
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-20T15:45:00Z",
+       "score": "0-3 (5:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Olajide Omotayo",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T16:20:00Z",
+       "score": "3-0 (11:4,11:8,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fei Junhang",
+         "nat": "CHN"
+        },
+        {
+         "name": "Mustapha Mustapha",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T16:20:00Z",
+       "score": "3-0 (11:2,11:2,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Muizz Adegoke",
+         "nat": "NGR"
+        },
+        {
+         "name": "Amadi Omeh",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T16:55:00Z",
+       "score": "3-2 (11:5,9:11,8:11,11:4,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        },
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-20T16:55:00Z",
+       "score": "1-3 (9:11,8:11,11:8,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Kang Youde",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T14:35:00Z",
+       "score": "3-0 (12:10,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ning Xiankun",
+         "nat": "CHN"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-21T10:45:00Z",
+       "score": "3-0 (11:8,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T16:55:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Thibault Poret",
+         "nat": "FRA"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-21T09:35:00Z",
+       "score": "3-2 (11:8,11:8,4:11,5:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Manush Utpalbhai Shah",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-06-21T15:45:00Z",
+       "score": "3-1 (11:5,11:9,10:12,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-21T09:35:00Z",
+       "score": "3-0 (11:4,11:5,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Fei Junhang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T16:20:00Z",
+       "score": "3-0 (11:7,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Muizz Adegoke",
+         "nat": "NGR"
+        },
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-21T10:45:00Z",
+       "score": "0-3 (3:11,1:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Ning Xiankun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-22T09:35:00Z",
+       "score": "3-0 (11:4,14:12,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Thibault Poret",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-06-22T10:45:00Z",
+       "score": "2-3 (8:11,11:9,7:11,11:9,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-06-22T10:45:00Z",
+       "score": "3-2 (3:11,15:13,11:9,8:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-22T09:35:00Z",
+       "score": "2-3 (11:9,10:12,11:5,13:15,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Thibault Poret",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-06-22T15:30:00Z",
+       "score": "3-1 (10:12,11:5,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-22T17:00:00Z",
+       "score": "3-2 (5:11,12:14,11:5,12:10,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER",
+         "seed": 8
+        }
+       ],
+       "when": "2024-06-23T15:15:00Z",
+       "score": "4-1 (11:7,11:7,7:11,12:10,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Yao Zixuan / Xu Huiyao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T11:20:00Z",
+       "score": "3-2 (14:12,8:11,8:11,11:5,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kabirat Ayoola / Hope Udoaka",
+         "nat": "NGR"
+        },
+        {
+         "name": "Yoo Siwoo / Farida Badawy",
+         "nat": "KOR/EGY"
+        }
+       ],
+       "when": "2024-06-20T11:20:00Z",
+       "score": "0-3 (2:11,8:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Archana Girish Kamath / Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Bernice Borquaye / Cynthia Kwabi",
+         "nat": "GHA",
+         "seed": 8
+        }
+       ],
+       "when": "2024-06-20T11:55:00Z",
+       "score": "3-0 (11:2,11:2,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sukurat Aiyelbegan / Rofiat Jimoh",
+         "nat": "NGR"
+        },
+        {
+         "name": "Aziza Sezuo / Aishat Rabiu",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T16:55:00Z",
+       "score": "3-2 (11:13,11:4,11:7,8:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ding Yijie / Sun Sinan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Joanita Borteye / Blessing Labanti",
+         "nat": "GHA",
+         "seed": 5
+        }
+       ],
+       "when": "2024-06-20T16:20:00Z",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kehinde Oyeniyi / Abosede Odusanya",
+         "nat": "NGR"
+        },
+        {
+         "name": "Fatimo Bello / Ajoke Ojomu",
+         "nat": "NGR",
+         "seed": 3
+        }
+       ],
+       "when": "2024-06-20T16:20:00Z",
+       "score": "3-2 (11:9,7:11,20:18,13:15,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Asiaju Bisola / Kehinde Akinyinka",
+         "nat": "NGR"
+        },
+        {
+         "name": "Cecilia Akpan / Offiong Edem",
+         "nat": "NGR",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-20T16:55:00Z",
+       "score": "1-3 (11:8,6:11,6:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Halima Hussain / Mojisola Ajibike",
+         "nat": "NGR"
+        },
+        {
+         "name": "Yashaswini Ghorpade / Diya Parag Chitale",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-20T11:55:00Z",
+       "score": "1-3 (12:10,5:11,1:11,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Yoo Siwoo / Farida Badawy",
+         "nat": "KOR/EGY"
+        }
+       ],
+       "when": "2024-06-21T11:55:00Z",
+       "score": "3-0 (11:5,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Archana Girish Kamath / Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Sukurat Aiyelbegan / Rofiat Jimoh",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-21T14:35:00Z",
+       "score": "3-0 (11:8,11:4,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ding Yijie / Sun Sinan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Kehinde Oyeniyi / Abosede Odusanya",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-21T10:10:00Z",
+       "score": "3-0 (11:7,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cecilia Akpan / Offiong Edem",
+         "nat": "NGR",
+         "seed": 6
+        },
+        {
+         "name": "Yashaswini Ghorpade / Diya Parag Chitale",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-21T11:20:00Z",
+       "score": "1-3 (13:11,4:11,6:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Archana Girish Kamath / Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-22T11:20:00Z",
+       "score": "0-3 (7:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ding Yijie / Sun Sinan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Yashaswini Ghorpade / Diya Parag Chitale",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-22T11:20:00Z",
+       "score": "1-3 (12:14,11:6,6:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Archana Girish Kamath / Sreeja Akula",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Yashaswini Ghorpade / Diya Parag Chitale",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-23T13:00:00Z",
+       "score": "3-0 (11:9,11:6,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Rafael De Las Heras / Miguel Pantoja",
+         "nat": "ESP",
+         "seed": 5
+        }
+       ],
+       "when": "2024-06-20T14:00:00Z",
+       "score": "3-0 (15:13,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Minwoo / Kim Woojin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Fei Junhang / Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T14:00:00Z",
+       "score": "1-3 (5:11,7:11,11:8,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amadi Omeh / Matthew Kuti",
+         "nat": "NGR",
+         "seed": 3
+        },
+        {
+         "name": "Godwin Alabi / Francis Antwi",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2024-06-20T14:35:00Z",
+       "score": "3-1 (11:13,11:8,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Israel Aklie / Michael Yeboah",
+         "nat": "GHA",
+         "seed": 8
+        },
+        {
+         "name": "Azeez Solanke / Olajide Omotayo",
+         "nat": "NGR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-20T14:35:00Z",
+       "score": "0-3 (5:11,4:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Olayinka Oladipupo / Adebowale Akinyemi",
+         "nat": "NGR"
+        },
+        {
+         "name": "Ning Xiankun / Kang Youde",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T17:30:00Z",
+       "score": "0-3 (7:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joshua Oladiran / Akinwale Fagbamila",
+         "nat": "NGR"
+        },
+        {
+         "name": "Sharath Kamal Achanta / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-20T17:30:00Z",
+       "score": "0-3 (6:11,2:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Akayade / Emmanuel Commey",
+         "nat": "GHA",
+         "seed": 6
+        },
+        {
+         "name": "Mathew Fabunmi / Abdulbasit Abdulfatai",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T18:05:00Z",
+       "score": "1-3 (11:9,7:11,7:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rilwan Akanbi / Abdulrahaman Abdullahi",
+         "nat": "NGR"
+        },
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-20T18:05:00Z",
+       "score": "0-3 (5:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Fei Junhang / Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T10:45:00Z",
+       "score": "2-3 (10:12,8:11,11:6,13:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amadi Omeh / Matthew Kuti",
+         "nat": "NGR",
+         "seed": 3
+        },
+        {
+         "name": "Azeez Solanke / Olajide Omotayo",
+         "nat": "NGR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-21T11:55:00Z",
+       "score": "2-3 (11:9,9:11,7:11,11:5,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ning Xiankun / Kang Youde",
+         "nat": "CHN"
+        },
+        {
+         "name": "Sharath Kamal Achanta / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-21T11:55:00Z",
+       "score": "3-2 (10:12,11:13,11:5,12:10,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mathew Fabunmi / Abdulbasit Abdulfatai",
+         "nat": "NGR"
+        },
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-21T15:10:00Z",
+       "score": "0-3 (7:11,3:11,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Fei Junhang / Luo Jiecheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Azeez Solanke / Olajide Omotayo",
+         "nat": "NGR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-22T11:55:00Z",
+       "score": "2-3 (10:12,11:7,11:4,8:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ning Xiankun / Kang Youde",
+         "nat": "CHN"
+        },
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-22T11:55:00Z",
+       "score": "0-3 (4:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Azeez Solanke / Olajide Omotayo",
+         "nat": "NGR",
+         "seed": 7
+        },
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-23T13:45:00Z",
+       "score": "0-3 (8:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon / Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Yao Zixuan / Kang Youde",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T09:00:00Z",
+       "score": "3-0 (11:5,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Olajide Omotayo / Offiong Edem",
+         "nat": "NGR",
+         "seed": 5
+        },
+        {
+         "name": "Akinwale Fagbamila / Kehinde Akinyinka",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-06-20T09:00:00Z",
+       "score": "3-1 (11:6,9:11,11:5,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Archana Girish Kamath / Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Sreeja Akula",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-06-20T09:00:00Z",
+       "score": "3-1 (11:7,2:11,14:12,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bernice Borquaye / Francis Antwi",
+         "nat": "GHA"
+        },
+        {
+         "name": "Fatimo Bello / Matthew Kuti",
+         "nat": "NGR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-20T09:35:00Z",
+       "score": "1-3 (11:8,4:11,11:13,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ning Xiankun / Ding Yijie",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kim Woojin / Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-06-20T09:00:00Z",
+       "score": "0-3 (11:13,4:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Azeez Solanke / Ajoke Ojomu",
+         "nat": "NGR"
+        },
+        {
+         "name": "Diya Parag Chitale / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-06-20T09:35:00Z",
+       "score": "0-3 (7:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cynthia Kwabi / Emmanuel Commey",
+         "nat": "GHA",
+         "seed": 8
+        },
+        {
+         "name": "Xu Huiyao / Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-20T09:35:00Z",
+       "score": "0-3 (7:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fei Junhang / Sun Sinan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yashaswini Ghorpade / Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-20T09:35:00Z",
+       "score": "1-3 (9:11,9:11,13:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon / Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Olajide Omotayo / Offiong Edem",
+         "nat": "NGR",
+         "seed": 5
+        }
+       ],
+       "when": "2024-06-21T09:35:00Z",
+       "score": "3-1 (11:4,11:9,5:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Archana Girish Kamath / Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Fatimo Bello / Matthew Kuti",
+         "nat": "NGR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-06-21T09:00:00Z",
+       "score": "3-0 (11:4,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Woojin / Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Diya Parag Chitale / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-06-21T09:00:00Z",
+       "score": "0-3 (6:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Huiyao / Luo Jiecheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yashaswini Ghorpade / Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-06-21T09:00:00Z",
+       "score": "3-1 (9:11,15:13,12:10,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon / Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Archana Girish Kamath / Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2024-06-21T14:00:00Z",
+       "score": "3-0 (11:5,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Xu Huiyao / Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-21T14:00:00Z",
+       "score": "1-3 (11:6,7:11,3:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon / Shin Yubin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Xu Huiyao / Luo Jiecheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-06-22T14:00:00Z",
+       "score": "3-0 (11:4,11:9,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

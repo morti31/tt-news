@@ -1,0 +1,2819 @@
+{
+ "event": "WTT Feeder Varaždin",
+ "wtt_event_id": "2882",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2882&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 2.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-04-04T08:35:00Z",
+       "score": "1-3 (8:11,5:11,11:7,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-04T08:35:00Z",
+       "score": "2-3 (9:11,11:1,8:11,11:5,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Jingyi Zhou",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2024-04-04T18:00:00Z",
+       "score": "3-0 (11:2,11:8,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T09:10:00Z",
+       "score": "1-3 (8:11,11:9,10:12,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wang Yi-Ju",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-04-04T09:10:00Z",
+       "score": "3-0 (11:7,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Reeth Tennison",
+         "nat": "IND"
+        },
+        {
+         "name": "Anne Uesawa",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-04T09:10:00Z",
+       "score": "2-3 (11:9,11:8,4:11,6:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T09:45:00Z",
+       "score": "3-0 (11:8,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-04T09:45:00Z",
+       "score": "1-3 (11:8,3:11,6:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-04-04T09:45:00Z",
+       "score": "3-1 (7:11,11:2,11:6,11:1,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        },
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2024-04-04T16:50:00Z",
+       "score": "3-2 (9:11,11:3,9:11,11:2,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Silvia Coll",
+         "nat": "ESP"
+        },
+        {
+         "name": "Solomiya Brateyko",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2024-04-04T16:50:00Z",
+       "score": "3-2 (6:11,11:8,9:11,11:7,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        },
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-04T12:05:00Z",
+       "score": "3-1 (9:11,11:8,14:12,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        },
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2024-04-04T10:55:00Z",
+       "score": "2-3 (4:11,11:8,11:4,12:14,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sara Tokic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-04T10:55:00Z",
+       "score": "0-3 (7:11,9:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-04-04T11:30:00Z",
+       "score": "3-0 (11:7,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Veronika Matiunina",
+         "nat": "UKR"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ],
+       "when": "2024-04-04T09:10:00Z",
+       "score": "2-3 (8:11,6:11,11:9,11:6,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP",
+         "seed": 8
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-04-04T16:15:00Z",
+       "score": "3-0 (11:9,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2024-04-04T16:15:00Z",
+       "score": "1-3 (11:13,13:11,4:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Chiao",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kim Hayeong",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T11:30:00Z",
+       "score": "1-3 (9:11,13:11,4:11,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Yee Lok",
+         "nat": "HKG"
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T18:00:00Z",
+       "score": "2-3 (11:9,11:7,8:11,9:11,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Georgina Pota",
+         "nat": "HUN"
+        },
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-04T12:05:00Z",
+       "score": "0-3 (5:11,10:12,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Xin Ru Wong",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2024-04-04T10:20:00Z",
+       "score": "3-0 (11:8,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Ho Ching",
+         "nat": "HKG"
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-04T09:45:00Z",
+       "score": "3-2 (11:6,11:13,11:9,10:12,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX"
+        },
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-04T15:40:00Z",
+       "score": "0-3 (3:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2024-04-04T11:30:00Z",
+       "score": "3-0 (11:7,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Kim Hana",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T11:30:00Z",
+       "score": "1-3 (3:11,11:5,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2024-04-04T15:40:00Z",
+       "score": "2-3 (11:3,14:16,11:8,9:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-04T17:25:00Z",
+       "score": "1-3 (11:3,4:11,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Elena Zaharia",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-04-04T10:20:00Z",
+       "score": "3-2 (11:9,4:11,9:11,13:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        },
+        {
+         "name": "Melanie Diaz",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2024-04-04T17:25:00Z",
+       "score": "3-0 (11:8,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        },
+        {
+         "name": "Anna Hursey",
+         "nat": "WAL"
+        }
+       ],
+       "when": "2024-04-04T11:30:00Z",
+       "score": "3-1 (11:1,11:5,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hana Arapovic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-04T11:30:00Z",
+       "score": "3-2 (11:6,11:3,1:11,2:11,13:11)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-05T08:35:00Z",
+       "score": "2-3 (11:6,7:11,11:7,8:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T08:35:00Z",
+       "score": "3-0 (11:8,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Anne Uesawa",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T14:30:00Z",
+       "score": "3-0 (11:6,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND"
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-05T09:10:00Z",
+       "score": "3-2 (8:11,12:10,11:9,6:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-04-05T15:05:00Z",
+       "score": "3-2 (12:10,7:11,11:9,6:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Silvia Coll",
+         "nat": "ESP"
+        },
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T14:30:00Z",
+       "score": "0-3 (7:11,3:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T14:30:00Z",
+       "score": "0-3 (7:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ],
+       "when": "2024-04-05T10:20:00Z",
+       "score": "3-2 (11:6,6:11,11:7,4:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP",
+         "seed": 8
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2024-04-05T14:30:00Z",
+       "score": "3-1 (10:12,11:7,11:3,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Hayeong",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-05T09:10:00Z",
+       "score": "1-3 (11:1,8:11,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        },
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-04-05T09:45:00Z",
+       "score": "3-0 (11:9,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Ho Ching",
+         "nat": "HKG"
+        },
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-05T10:20:00Z",
+       "score": "3-2 (5:11,7:11,11:8,13:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Kim Hana",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-05T15:05:00Z",
+       "score": "3-2 (11:7,5:11,6:11,11:8,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-05T15:05:00Z",
+       "score": "2-3 (11:8,7:11,9:11,14:12,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2024-04-05T09:45:00Z",
+       "score": "2-3 (9:11,9:11,11:6,11:4,1:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        },
+        {
+         "name": "Hana Arapovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T15:05:00Z",
+       "score": "2-3 (4:11,11:3,11:9,7:11,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T18:00:00Z",
+       "score": "1-3 (11:7,1:11,3:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-05T18:00:00Z",
+       "score": "3-0 (11:7,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T18:00:00Z",
+       "score": "3-1 (11:8,11:9,10:12,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T18:35:00Z",
+       "score": "1-3 (10:12,9:11,11:9,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP",
+         "seed": 8
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-05T18:35:00Z",
+       "score": "3-0 (11:9,12:10,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        },
+        {
+         "name": "Lee Ho Ching",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-04-05T18:35:00Z",
+       "score": "3-0 (11:6,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-05T18:00:00Z",
+       "score": "3-1 (11:13,11:6,11:6,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        },
+        {
+         "name": "Hana Arapovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T18:35:00Z",
+       "score": "3-1 (12:14,11:9,12:10,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-06T09:25:00Z",
+       "score": "1-3 (6:11,11:9,4:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-06T08:50:00Z",
+       "score": "0-3 (8:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP",
+         "seed": 8
+        },
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-06T08:50:00Z",
+       "score": "1-3 (6:11,11:8,3:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2024-04-06T09:25:00Z",
+       "score": "3-0 (11:6,11:5,14:12,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-06T14:30:00Z",
+       "score": "3-1 (11:4,8:11,14:12,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        },
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 5
+        }
+       ],
+       "when": "2024-04-06T15:05:00Z",
+       "score": "3-0 (11:8,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-07T14:30:00Z",
+       "score": "1-3 (8:11,11:9,8:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kao Cheng-Jui",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-04-04T16:50:00Z",
+       "score": "3-1 (11:9,8:11,11:9,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        },
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "SEN"
+        }
+       ],
+       "when": "2024-04-04T14:30:00Z",
+       "score": "3-2 (10:12,5:11,11:9,11:6,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Santiago Lorenzo",
+         "nat": "ARG"
+        },
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2024-04-04T09:45:00Z",
+       "score": "3-1 (13:11,1:11,11:4,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        },
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-04T15:40:00Z",
+       "score": "3-1 (12:10,13:11,5:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andy Pereira",
+         "nat": "CUB"
+        },
+        {
+         "name": "Deni Kozul",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2024-04-04T12:40:00Z",
+       "score": "0-3 (7:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-04T12:05:00Z",
+       "score": "0-3 (10:12,17:19,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Guilherme Teodoro",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2024-04-04T12:05:00Z",
+       "score": "3-0 (11:7,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yew En Koen Pang",
+         "nat": "SGP"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 8
+        }
+       ],
+       "when": "2024-04-04T15:40:00Z",
+       "score": "2-3 (11:7,5:11,6:11,11:6,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Daniel Gonzalez",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2024-04-04T14:30:00Z",
+       "score": "3-0 (15:13,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Brian Afanador",
+         "nat": "PUR"
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2024-04-04T18:00:00Z",
+       "score": "2-3 (11:5,3:11,11:6,7:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Irvin Bertrand",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kim Minhyeok",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T15:05:00Z",
+       "score": "3-1 (11:8,12:10,12:14,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhe Yu Clarence Chew",
+         "nat": "SGP"
+        },
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2024-04-04T15:05:00Z",
+       "score": "2-3 (12:10,5:11,11:4,7:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Habesohn",
+         "nat": "AUT"
+        },
+        {
+         "name": "Bence Majoros",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2024-04-04T09:45:00Z",
+       "score": "3-1 (11:7,11:9,8:11,15:13,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izaac Quek",
+         "nat": "SGP"
+        },
+        {
+         "name": "Tom Jarvis",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2024-04-04T15:40:00Z",
+       "score": "3-2 (7:11,11:4,11:9,9:11,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-04T16:15:00Z",
+       "score": "3-1 (13:11,3:11,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2024-04-04T12:05:00Z",
+       "score": "0-3 (7:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T16:15:00Z",
+       "score": "2-3 (11:5,11:9,9:11,10:12,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Borna Petek",
+         "nat": "CRO"
+        },
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-04-04T16:15:00Z",
+       "score": "0-3 (9:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Sanzhar Zhubanov",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-04-04T15:40:00Z",
+       "score": "3-0 (11:6,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Felix Wetzel",
+         "nat": "MLT"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-04T16:15:00Z",
+       "score": "1-3 (6:11,11:8,2:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-04-04T09:10:00Z",
+       "score": "2-3 (15:17,11:3,11:2,12:14,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        },
+        {
+         "name": "Chan Baldwin",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-04-04T16:50:00Z",
+       "score": "1-3 (11:7,4:11,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT"
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-04-04T16:50:00Z",
+       "score": "2-3 (6:11,12:10,11:5,5:11,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Thibault Poret",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2024-04-04T16:50:00Z",
+       "score": "0-3 (9:11,11:13,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Frane Kojic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T17:25:00Z",
+       "score": "3-2 (11:7,15:13,14:16,11:13,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yan-Cheng",
+         "nat": "TPE"
+        },
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T17:25:00Z",
+       "score": "0-3 (7:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hunor Szocs",
+         "nat": "ROU"
+        },
+        {
+         "name": "Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T17:25:00Z",
+       "score": "1-3 (11:8,4:11,4:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nima Alamian",
+         "nat": "IRI"
+        },
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-04-04T17:25:00Z",
+       "score": "3-1 (11:8,11:5,8:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        },
+        {
+         "name": "Cho Kijeong",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T18:00:00Z",
+       "score": "3-1 (11:8,10:12,11:4,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        },
+        {
+         "name": "Laurens Devos",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2024-04-04T18:00:00Z",
+       "score": "3-2 (11:9,11:1,8:11,7:11,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Allegro",
+         "nat": "BEL"
+        },
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-04T18:00:00Z",
+       "score": "3-0 (11:7,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liao Cheng-Ting",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-04T09:10:00Z",
+       "score": "2-3 (11:9,5:11,11:4,10:12,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kao Cheng-Jui",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2024-04-05T08:35:00Z",
+       "score": "1-3 (7:11,12:10,4:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Santiago Lorenzo",
+         "nat": "ARG"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2024-04-05T08:35:00Z",
+       "score": "0-3 (5:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Deni Kozul",
+         "nat": "SLO"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T09:10:00Z",
+       "score": "1-3 (2:11,11:9,10:12,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 8
+        }
+       ],
+       "when": "2024-04-05T09:10:00Z",
+       "score": "3-1 (11:9,9:11,11:2,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2024-04-05T10:55:00Z",
+       "score": "3-1 (13:11,14:16,11:2,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Irvin Bertrand",
+         "nat": "FRA"
+        },
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2024-04-05T09:45:00Z",
+       "score": "3-0 (11:8,14:12,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Habesohn",
+         "nat": "AUT"
+        },
+        {
+         "name": "Izaac Quek",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2024-04-05T11:30:00Z",
+       "score": "1-3 (7:11,4:11,11:8,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2024-04-05T10:20:00Z",
+       "score": "3-1 (11:8,8:11,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        },
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-04-05T09:45:00Z",
+       "score": "1-3 (11:8,11:13,9:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-05T11:30:00Z",
+       "score": "3-0 (11:9,11:2,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Chan Baldwin",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-04-05T10:55:00Z",
+       "score": "3-1 (7:11,11:6,12:10,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2024-04-05T10:55:00Z",
+       "score": "2-3 (11:7,13:15,12:10,8:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T11:30:00Z",
+       "score": "3-1 (11:6,11:6,7:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gyuhyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Nima Alamian",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2024-04-05T11:30:00Z",
+       "score": "3-1 (12:10,8:11,12:10,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2024-04-05T10:20:00Z",
+       "score": "3-2 (10:12,11:8,4:11,11:9,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Allegro",
+         "nat": "BEL"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-05T10:55:00Z",
+       "score": "2-3 (11:5,17:19,6:11,11:9,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2024-04-05T16:50:00Z",
+       "score": "3-2 (11:8,11:6,4:11,10:12,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN"
+        },
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-04-05T16:50:00Z",
+       "score": "0-3 (11:13,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Irvin Bertrand",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-05T17:25:00Z",
+       "score": "3-1 (9:11,11:7,11:7,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izaac Quek",
+         "nat": "SGP"
+        },
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-05T16:50:00Z",
+       "score": "2-3 (11:9,11:7,5:11,7:11,2:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-05T17:25:00Z",
+       "score": "3-0 (11:5,11:3,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2024-04-05T16:50:00Z",
+       "score": "1-3 (4:11,13:11,3:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-05T17:25:00Z",
+       "score": "3-2 (9:11,8:11,11:6,11:3,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-05T17:25:00Z",
+       "score": "3-0 (11:8,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        },
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-04-06T10:00:00Z",
+       "score": "2-3 (11:6,11:9,6:11,10:12,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-06T10:35:00Z",
+       "score": "3-0 (14:12,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2024-04-06T10:35:00Z",
+       "score": "1-3 (11:6,3:11,4:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-06T10:00:00Z",
+       "score": "3-2 (5:11,11:2,13:15,11:8,11:7)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-06T16:15:00Z",
+       "score": "1-3 (16:18,11:7,10:12,1:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 3
+        },
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-06T15:40:00Z",
+       "score": "0-3 (8:11,8:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-07T15:05:00Z",
+       "score": "3-2 (7:11,11:6,7:11,13:11,12:10)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Dora Cosic / Andrea Pavlovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T14:30:00Z",
+       "score": "3-0 (11:7,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun / Kim Nayeong",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Tatiana Kukulkova / Ema Labosova",
+         "nat": "SVK",
+         "seed": 8
+        }
+       ],
+       "when": "2024-04-04T14:30:00Z",
+       "score": "3-0 (11:6,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jingyi Zhou / Xin Ru Wong",
+         "nat": "SGP",
+         "seed": 4
+        },
+        {
+         "name": "Mateja Jeger / Lea Rakovac",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T15:05:00Z",
+       "score": "3-2 (8:11,11:9,7:11,11:9,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Veronika Matiunina / Solomiya Brateyko",
+         "nat": "UKR"
+        },
+        {
+         "name": "Ng Wing Lam / Lam Yee Lok",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-04T14:30:00Z",
+       "score": "1-3 (7:11,11:8,7:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sara Tokic / Ana Tofant",
+         "nat": "SLO"
+        },
+        {
+         "name": "Stephanie Loeuillette / Oceane Guisnel",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-04-04T15:05:00Z",
+       "score": "2-3 (2:11,15:17,11:8,11:7,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kim Hayeong / Lee Eunhye",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2024-04-04T15:05:00Z",
+       "score": "3-1 (9:11,11:4,13:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn / Katarzyna Wegrzyn",
+         "nat": "POL",
+         "seed": 7
+        },
+        {
+         "name": "Ivana Malobabic / Hana Arapovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T15:05:00Z",
+       "score": "3-1 (11:8,5:11,11:8,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Melanie Diaz / Brianna Burgos",
+         "nat": "PUR"
+        },
+        {
+         "name": "Andrea Todorovic / Sibel Altinkaya",
+         "nat": "SRB/TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-04T14:30:00Z",
+       "score": "0-3 (11:13,10:12,13:15,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Yang Ha Eun / Kim Nayeong",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2024-04-05T16:15:00Z",
+       "score": "3-1 (9:11,11:9,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jingyi Zhou / Xin Ru Wong",
+         "nat": "SGP",
+         "seed": 4
+        },
+        {
+         "name": "Ng Wing Lam / Lam Yee Lok",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-05T16:15:00Z",
+       "score": "0-3 (12:14,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette / Oceane Guisnel",
+         "nat": "FRA"
+        },
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T16:15:00Z",
+       "score": "0-3 (4:11,9:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn / Katarzyna Wegrzyn",
+         "nat": "POL",
+         "seed": 7
+        },
+        {
+         "name": "Andrea Todorovic / Sibel Altinkaya",
+         "nat": "SRB/TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-05T16:15:00Z",
+       "score": "3-2 (7:11,11:7,3:11,11:7,11:5)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Ng Wing Lam / Lam Yee Lok",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-06T11:10:00Z",
+       "score": "3-2 (11:9,11:8,6:11,3:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Anna Wegrzyn / Katarzyna Wegrzyn",
+         "nat": "POL",
+         "seed": 7
+        }
+       ],
+       "when": "2024-04-06T11:10:00Z",
+       "score": "3-0 (11:6,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-07T15:40:00Z",
+       "score": "1-3 (8:11,9:11,11:3,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Izaac Quek / Yew En Koen Pang",
+         "nat": "SGP",
+         "seed": 1
+        },
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-04T10:20:00Z",
+       "score": "2-3 (11:8,6:11,11:7,11:13,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Shao Han Chua / Zhe Yu Clarence Chew",
+         "nat": "SGP",
+         "seed": 8
+        },
+        {
+         "name": "Payas Jain / Harmeet Desai",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-04-04T10:20:00Z",
+       "score": "3-1 (11:8,10:12,11:3,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Bastien Rembert / Jules Rolland",
+         "nat": "FRA",
+         "seed": 5
+        }
+       ],
+       "when": "2024-04-04T10:20:00Z",
+       "score": "3-1 (11:7,9:11,11:8,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gyeongtae / Jeong Yeonghun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Jo Yokotani / Shunsuke Okano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-04T10:55:00Z",
+       "score": "1-3 (11:13,11:9,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Borna Petek",
+         "nat": "CRO"
+        },
+        {
+         "name": "Daniel Gonzalez / Angel Naranjo",
+         "nat": "PUR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-04-04T10:55:00Z",
+       "score": "3-2 (5:11,11:8,15:13,6:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Iulian Chirita / Andrei Istrate",
+         "nat": "ROU"
+        },
+        {
+         "name": "Yiu Kwan To / Chan Baldwin",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-04T10:55:00Z",
+       "score": "2-3 (10:12,12:14,11:8,11:9,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi / John Oyebode",
+         "nat": "ITA"
+        },
+        {
+         "name": "Gil Minseok / Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T10:55:00Z",
+       "score": "0-3 (9:11,13:15,13:15,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivan Hencl / Leon Benko",
+         "nat": "CRO"
+        },
+        {
+         "name": "Martin Allegro / Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-04T10:20:00Z",
+       "score": "0-3 (3:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Josh Shao Han Chua / Zhe Yu Clarence Chew",
+         "nat": "SGP",
+         "seed": 8
+        }
+       ],
+       "when": "2024-04-05T15:40:00Z",
+       "score": "3-0 (11:8,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Jo Yokotani / Shunsuke Okano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-05T15:40:00Z",
+       "score": "1-3 (2:11,8:11,11:6,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Borna Petek",
+         "nat": "CRO"
+        },
+        {
+         "name": "Yiu Kwan To / Chan Baldwin",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-05T15:40:00Z",
+       "score": "3-2 (11:7,2:11,11:3,7:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gil Minseok / Park Gyuhyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Martin Allegro / Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-05T15:40:00Z",
+       "score": "3-0 (11:4,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Jo Yokotani / Shunsuke Okano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-04-06T11:45:00Z",
+       "score": "3-1 (10:12,11:7,11:2,16:14,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Borna Petek",
+         "nat": "CRO"
+        },
+        {
+         "name": "Gil Minseok / Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-06T11:45:00Z",
+       "score": "2-3 (8:11,11:7,9:11,11:9,12:14)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Gil Minseok / Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-07T16:15:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Zeng Jian / Zhe Yu Clarence Chew",
+         "nat": "SGP",
+         "seed": 5
+        }
+       ],
+       "when": "2024-04-04T08:00:00Z",
+       "score": "3-0 (11:5,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi / Guilherme Teodoro",
+         "nat": "BRA"
+        },
+        {
+         "name": "Ronald Redjep / Lea Rakovac",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-04T08:00:00Z",
+       "score": "3-2 (9:11,11:7,2:11,11:6,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xia Lian Ni / Luka Mladenovic",
+         "nat": "LUX",
+         "seed": 3
+        },
+        {
+         "name": "Xin Ru Wong / Yew En Koen Pang",
+         "nat": "SGP",
+         "seed": 7
+        }
+       ],
+       "when": "2024-04-04T08:00:00Z",
+       "score": "2-3 (11:9,11:7,10:12,7:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban / Hana Arapovic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Izaac Quek / Jingyi Zhou",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2024-04-04T08:00:00Z",
+       "score": "3-0 (11:9,11:9,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 8
+        },
+        {
+         "name": "Kim Hayeong / Park Gyeongtae",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-04-04T08:35:00Z",
+       "score": "1-3 (6:11,7:11,11:8,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate / Ioana Singeorzan",
+         "nat": "ROU"
+        },
+        {
+         "name": "Kristian Karlsson / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-04T08:35:00Z",
+       "score": "1-3 (11:7,5:11,5:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 6
+        },
+        {
+         "name": "Anton Limonov / Solomiya Brateyko",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2024-04-04T08:35:00Z",
+       "score": "3-1 (12:10,10:12,11:8,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz / Sibel Altinkaya",
+         "nat": "TUR"
+        },
+        {
+         "name": "Manika Batra / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-04T08:35:00Z",
+       "score": "0-3 (10:12,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Giulia Takahashi / Guilherme Teodoro",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2024-04-05T08:00:00Z",
+       "score": "3-0 (11:4,11:5,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xin Ru Wong / Yew En Koen Pang",
+         "nat": "SGP",
+         "seed": 7
+        },
+        {
+         "name": "Ivor Ban / Hana Arapovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-04-05T08:00:00Z",
+       "score": "3-2 (11:8,12:10,9:11,3:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Hayeong / Park Gyeongtae",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kristian Karlsson / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-05T08:00:00Z",
+       "score": "2-3 (3:11,6:11,11:6,11:9,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 6
+        },
+        {
+         "name": "Manika Batra / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-04-05T08:00:00Z",
+       "score": "3-2 (9:11,11:6,4:11,13:11,14:12)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Xin Ru Wong / Yew En Koen Pang",
+         "nat": "SGP",
+         "seed": 7
+        }
+       ],
+       "when": "2024-04-06T08:00:00Z",
+       "score": "2-3 (8:11,11:5,17:15,7:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 6
+        }
+       ],
+       "when": "2024-04-06T08:00:00Z",
+       "score": "3-2 (15:13,7:11,9:11,11:8,11:6)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xin Ru Wong / Yew En Koen Pang",
+         "nat": "SGP",
+         "seed": 7
+        },
+        {
+         "name": "Kristian Karlsson / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2024-04-06T17:00:00Z",
+       "score": "2-3 (9:11,11:9,11:8,10:12,6:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1849 @@
+{
+ "event": "WTT Feeder Vadodara",
+ "wtt_event_id": "3353",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3353&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 5.5,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Jennifer Varghese",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T12:45:00Z",
+       "score": "3-0 (11:8,11:3,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debolina Das",
+         "nat": "IND"
+        },
+        {
+         "name": "Ananya Chande",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T05:40:00Z",
+       "score": "0-3 (3:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kavya Bhatt",
+         "nat": "IND"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T12:45:00Z",
+       "score": "2-3 (9:11,10:12,11:6,11:9,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sampada Bhiwandkar",
+         "nat": "IND"
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-09T06:15:00Z",
+       "score": "1-3 (9:11,3:11,19:17,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Ananya Muralidharan",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T06:15:00Z",
+       "score": "3-0 (11:9,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Neha Kumari",
+         "nat": "IND"
+        },
+        {
+         "name": "Sayali Wani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T06:15:00Z",
+       "score": "1-3 (6:11,11:7,6:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Garima Goyal",
+         "nat": "IND"
+        },
+        {
+         "name": "Anusha Kutumbale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T06:15:00Z",
+       "score": "2-3 (11:9,4:11,8:11,15:13,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Selena Selvakumar",
+         "nat": "IND"
+        },
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-01-09T12:10:00Z",
+       "score": "1-3 (2:11,11:8,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Avani Tripathi",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T12:10:00Z",
+       "score": "3-0 (11:4,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pritha Vartikar",
+         "nat": "IND"
+        },
+        {
+         "name": "Maria Rony",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T12:10:00Z",
+       "score": "1-3 (11:13,11:3,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        },
+        {
+         "name": "Tanishka Kalbhairav",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T05:40:00Z",
+       "score": "3-2 (7:11,11:7,11:5,9:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hansini Mathan",
+         "nat": "IND"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-01-09T05:40:00Z",
+       "score": "3-0 (11:8,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Naisha Rewaskar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T12:45:00Z",
+       "score": "3-0 (11:9,11:6,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yashini Sivasankar",
+         "nat": "IND"
+        },
+        {
+         "name": "Hardee Patel",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T05:40:00Z",
+       "score": "3-2 (7:11,6:11,11:3,11:7,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Suhana Saini",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T12:10:00Z",
+       "score": "3-1 (8:11,11:7,11:6,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-09T12:45:00Z",
+       "score": "2-3 (12:10,11:7,9:11,13:15,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Ananya Chande",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T06:40:00Z",
+       "score": "3-0 (11:4,11:2,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-10T07:15:00Z",
+       "score": "1-3 (9:11,11:8,6:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Sayali Wani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T06:40:00Z",
+       "score": "3-0 (11:3,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anusha Kutumbale",
+         "nat": "IND"
+        },
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-01-10T07:15:00Z",
+       "score": "3-0 (11:6,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Maria Rony",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T06:40:00Z",
+       "score": "3-2 (10:12,9:11,11:4,11:8,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hansini Mathan",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T07:15:00Z",
+       "score": "3-2 (9:11,11:5,6:11,11:5,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Yashini Sivasankar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T07:15:00Z",
+       "score": "3-0 (11:9,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T06:40:00Z",
+       "score": "3-1 (8:11,11:9,11:9,13:11,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-10T12:45:00Z",
+       "score": "1-3 (7:11,8:11,11:7,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Anusha Kutumbale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T12:10:00Z",
+       "score": "1-3 (9:11,11:8,3:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-01-10T12:45:00Z",
+       "score": "0-3 (4:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T12:10:00Z",
+       "score": "3-1 (12:10,8:11,11:8,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Anusha Kutumbale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-11T05:05:00Z",
+       "score": "0-3 (10:12,5:11,14:16,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        },
+        {
+         "name": "Syndrela Das",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2026-01-11T04:30:00Z",
+       "score": "3-2 (11:4,8:11,7:11,11:4,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anusha Kutumbale",
+         "nat": "IND"
+        },
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-01-11T12:10:00Z",
+       "score": "0-3 (6:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manush Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Parth Magar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T06:50:00Z",
+       "score": "3-0 (11:7,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Gupta",
+         "nat": "IND"
+        },
+        {
+         "name": "Jash Modi",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T13:55:00Z",
+       "score": "0-3 (7:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ronit Bhanja",
+         "nat": "IND"
+        },
+        {
+         "name": "Yashansh Malik",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T06:50:00Z",
+       "score": "2-3 (11:7,9:11,9:11,11:7,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Priyanuj Bhattacharyya",
+         "nat": "IND"
+        },
+        {
+         "name": "Navid Shams",
+         "nat": "IRI",
+         "seed": 8
+        }
+       ],
+       "when": "2026-01-09T06:50:00Z",
+       "score": "3-1 (9:11,11:8,11:8,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Pratham Madlani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T07:25:00Z",
+       "score": "3-0 (11:5,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyansh Srivastava",
+         "nat": "IND"
+        },
+        {
+         "name": "Balamurugan Rajasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T07:25:00Z",
+       "score": "3-0 (11:6,11:9,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ved Sheth",
+         "nat": "USA"
+        },
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T07:25:00Z",
+       "score": "2-3 (7:11,11:7,6:11,11:6,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abhinandh Pradhivadhi",
+         "nat": "IND"
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-01-09T07:25:00Z",
+       "score": "1-3 (6:11,11:3,8:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Kushal Chopda",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T13:20:00Z",
+       "score": "3-0 (11:9,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sarth Mishra",
+         "nat": "IND"
+        },
+        {
+         "name": "Sarthak Arya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T13:20:00Z",
+       "score": "0-3 (6:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Abhilash Raval",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T13:20:00Z",
+       "score": "3-0 (11:8,11:3,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar",
+         "nat": "IND"
+        },
+        {
+         "name": "Edward Ly",
+         "nat": "CAN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-09T13:20:00Z",
+       "score": "1-3 (5:11,6:11,11:9,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Abdulrahman Al Taher",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2026-01-09T06:50:00Z",
+       "score": "3-1 (11:6,9:11,11:3,11:1,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shankhadip Das",
+         "nat": "IND"
+        },
+        {
+         "name": "Harkunwar Singh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T13:55:00Z",
+       "score": "3-1 (11:4,9:11,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rajeev Chikanbanjar",
+         "nat": "NEP",
+         "seed": 6
+        },
+        {
+         "name": "Sougata Sarkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T13:55:00Z",
+       "score": "0-3 (7:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sanil Shetty",
+         "nat": "IND"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-09T13:55:00Z",
+       "score": "3-2 (6:11,5:11,14:12,13:11,11:7)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manush Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Jash Modi",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T07:50:00Z",
+       "score": "3-1 (11:7,8:11,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yashansh Malik",
+         "nat": "IND"
+        },
+        {
+         "name": "Priyanuj Bhattacharyya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T07:50:00Z",
+       "score": "2-3 (3:11,11:4,11:6,6:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Divyansh Srivastava",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T07:50:00Z",
+       "score": "3-1 (11:6,8:11,11:6,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-01-10T07:50:00Z",
+       "score": "1-3 (8:11,6:11,11:6,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Sarthak Arya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T08:25:00Z",
+       "score": "3-0 (11:9,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Edward Ly",
+         "nat": "CAN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-10T08:25:00Z",
+       "score": "1-3 (13:11,10:12,6:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Shankhadip Das",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T08:25:00Z",
+       "score": "3-0 (11:5,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sougata Sarkar",
+         "nat": "IND"
+        },
+        {
+         "name": "Sanil Shetty",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T08:25:00Z",
+       "score": "3-2 (5:11,7:11,14:12,11:6,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manush Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Priyanuj Bhattacharyya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T13:55:00Z",
+       "score": "3-1 (12:10,11:5,4:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-01-10T13:20:00Z",
+       "score": "3-0 (11:9,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Edward Ly",
+         "nat": "CAN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-10T13:20:00Z",
+       "score": "3-1 (11:6,11:3,10:12,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Sougata Sarkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T13:55:00Z",
+       "score": "3-0 (11:7,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manush Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2026-01-11T06:15:00Z",
+       "score": "3-1 (6:11,11:9,14:12,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2026-01-11T05:40:00Z",
+       "score": "3-0 (11:5,12:10,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manush Shah",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-11T12:45:00Z",
+       "score": "3-2 (7:11,10:12,11:6,11:6,11:8)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yoo Yerin / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Kavya Baskar / Pranati Paramesh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T08:00:00Z",
+       "score": "1-0 (11:8,0:0,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nithya Mani / Ananya Muralidharan",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Suhana Saini / Hardee Patel",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-09T08:00:00Z",
+       "score": "0-3 (6:11,10:12,14:16,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anusha Kutumbale / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Sampada Bhiwandkar / Hansini Mathan",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T08:00:00Z",
+       "score": "1-1 (11:9,13:15,1:3,0:0,0:0)"
+      },
+      {
+       "players": [
+        {
+         "name": "Tanishka Kalbhairav / Maria Rony",
+         "nat": "IND"
+        },
+        {
+         "name": "Selena Selvakumar / Jennifer Varghese",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T08:00:00Z",
+       "score": "2-3 (11:7,8:11,8:11,12:10,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick / Syndrela Das",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Kavya Bhatt / Avani Tripathi",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T08:35:00Z",
+       "score": "2-3 (11:7,6:11,9:11,14:12,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Neha Kumari / Mukta Dalvi",
+         "nat": "IND"
+        },
+        {
+         "name": "Park Gahyeon / Lee Zion",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-09T08:35:00Z",
+       "score": "0-3 (7:11,4:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Pritha Vartikar / Ananya Chande",
+         "nat": "IND"
+        },
+        {
+         "name": "Sayali Wani / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2026-01-09T08:35:00Z",
+       "score": "1-3 (11:9,4:11,5:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yashini Sivasankar / Thanuja Nagarajan",
+         "nat": "IND"
+        },
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-09T08:35:00Z",
+       "score": "0-3 (5:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yoo Yerin / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Suhana Saini / Hardee Patel",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-10T05:30:00Z",
+       "score": "3-1 (11:4,11:4,7:11,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sampada Bhiwandkar / Hansini Mathan",
+         "nat": "IND"
+        },
+        {
+         "name": "Selena Selvakumar / Jennifer Varghese",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T05:30:00Z",
+       "score": "1-3 (11:13,11:9,8:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kavya Bhatt / Avani Tripathi",
+         "nat": "IND"
+        },
+        {
+         "name": "Park Gahyeon / Lee Zion",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-10T05:30:00Z",
+       "score": "1-3 (3:11,11:6,4:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sayali Wani / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T05:30:00Z",
+       "score": "1-3 (7:11,7:11,12:10,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yoo Yerin / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Selena Selvakumar / Jennifer Varghese",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T11:00:00Z",
+       "score": "3-2 (8:11,5:11,11:5,11:7,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gahyeon / Lee Zion",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T11:00:00Z",
+       "score": "0-3 (8:11,3:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yoo Yerin / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Ayhika Mukherjee / Sutirtha Mukherjee",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-11T11:00:00Z",
+       "score": "3-2 (4:11,11:9,11:9,4:11,11:9)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Payas Jain",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Subrat Verma / Sougata Sarkar",
+         "nat": "IND"
+        },
+        {
+         "name": "Rubin Maharjan / Rajeev Chikanbanjar",
+         "nat": "NEP"
+        }
+       ],
+       "when": "2026-01-09T11:00:00Z",
+       "score": "3-0 (11:7,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai / Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Umesh Kumar / Rajiv Sahu",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T11:00:00Z",
+       "score": "3-0 (11:5,11:3,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Navid Shams / Edward Ly",
+         "nat": "IRI/CAN",
+         "seed": 5
+        },
+        {
+         "name": "Ayaz Murad / Abhilash Raval",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2026-01-09T11:00:00Z",
+       "score": "3-1 (11:4,11:8,8:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sanyog Kapali / Alex Maharjan",
+         "nat": "NEP"
+        },
+        {
+         "name": "Riyan Dutta / Kumar Harshit",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T11:00:00Z",
+       "score": "0-3 (5:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ronit Bhanja / Oishik Ghosh",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-09T11:35:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar / Neil Mulye",
+         "nat": "IND"
+        },
+        {
+         "name": "Kunwar Thapar / Hitesh Dogra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T11:35:00Z",
+       "score": "3-0 (11:6,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyansh Srivastava / Sarth Mishra",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Akash Pal / Mudit Dani",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-09T11:35:00Z",
+       "score": "1-3 (8:11,11:8,12:14,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Payas Jain",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Subrat Verma / Sougata Sarkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T06:05:00Z",
+       "score": "3-0 (11:6,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai / Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Navid Shams / Edward Ly",
+         "nat": "IRI/CAN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-01-10T06:05:00Z",
+       "score": "3-0 (11:8,13:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Riyan Dutta / Kumar Harshit",
+         "nat": "IND"
+        },
+        {
+         "name": "Ronit Bhanja / Oishik Ghosh",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-01-10T06:05:00Z",
+       "score": "1-3 (4:11,6:11,11:8,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar / Neil Mulye",
+         "nat": "IND"
+        },
+        {
+         "name": "Akash Pal / Mudit Dani",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T06:05:00Z",
+       "score": "0-3 (6:11,4:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Payas Jain",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Harmeet Desai / Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2026-01-10T11:35:00Z",
+       "score": "3-2 (9:11,11:9,3:11,11:8,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ronit Bhanja / Oishik Ghosh",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Akash Pal / Mudit Dani",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T11:35:00Z",
+       "score": "1-3 (11:8,8:11,8:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Payas Jain",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Akash Pal / Mudit Dani",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-11T11:35:00Z",
+       "score": "3-1 (12:10,11:7,7:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Payas Jain / Syndrela Das",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2026-01-09T05:05:00Z",
+       "score": "2-3 (11:4,6:11,8:11,12:10,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Divyansh Srivastava / Pritha Vartikar",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Preyesh Suresh / Selena Selvakumar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T04:30:00Z",
+       "score": "0-3 (11:13,12:14,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Balamurugan Rajasekaran / Jennifer Varghese",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-01-09T05:05:00Z",
+       "score": "3-0 (11:5,11:8,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abhinandh Pradhivadhi / Nithya Mani",
+         "nat": "IND"
+        },
+        {
+         "name": "Arnav Karnavar / Sampada Bhiwandkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T04:30:00Z",
+       "score": "3-1 (9:11,11:2,11:5,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Gupta / Garima Goyal",
+         "nat": "IND"
+        },
+        {
+         "name": "Raegan Albuquerque / Suhana Saini",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T04:30:00Z",
+       "score": "1-3 (8:11,7:11,11:7,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rubin Maharjan / Evana Thapa",
+         "nat": "NEP"
+        },
+        {
+         "name": "Mudit Dani / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-09T05:05:00Z",
+       "score": "0-3 (6:11,10:12,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Priyanuj Bhattacharyya / Kavya Bhatt",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Ronit Bhanja / Sutirtha Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-09T04:30:00Z",
+       "score": "2-3 (4:11,11:9,11:3,8:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jash Modi / Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Harmeet Desai / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-09T05:05:00Z",
+       "score": "0-3 (5:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Payas Jain / Syndrela Das",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Preyesh Suresh / Selena Selvakumar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T04:30:00Z",
+       "score": "3-2 (6:11,11:9,11:7,7:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Abhinandh Pradhivadhi / Nithya Mani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-01-10T04:30:00Z",
+       "score": "3-0 (11:5,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Raegan Albuquerque / Suhana Saini",
+         "nat": "IND"
+        },
+        {
+         "name": "Mudit Dani / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-01-10T04:30:00Z",
+       "score": "3-2 (11:13,11:9,11:8,5:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ronit Bhanja / Sutirtha Mukherjee",
+         "nat": "IND"
+        },
+        {
+         "name": "Harmeet Desai / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T04:30:00Z",
+       "score": "2-3 (12:10,7:11,11:8,8:11,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Payas Jain / Syndrela Das",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Ankur Bhattacharjee / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2026-01-10T14:30:00Z",
+       "score": "3-0 (11:6,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Raegan Albuquerque / Suhana Saini",
+         "nat": "IND"
+        },
+        {
+         "name": "Harmeet Desai / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-10T14:30:00Z",
+       "score": "0-3 (9:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Payas Jain / Syndrela Das",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Harmeet Desai / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-01-11T06:50:00Z",
+       "score": "3-1 (8:11,11:9,11:3,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

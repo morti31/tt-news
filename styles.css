@@ -1348,4 +1348,5 @@ html.mp-open { overflow: hidden; }
 .ent-more:hover { color: var(--ball); }
 .ent-page .hub-sec > .section-title:first-child { margin-top: 0; }
 @media (max-width: 600px) { .ent-tabs a { padding: 10px 12px 8px; font-size: 15px; } }
-.live-card .row span { white-space: normal; }
+/* "On now" cards grow to fit a long event name rather than cutting it off */
+.score-card.live-card { width: auto; min-width: 210px; max-width: 460px; }

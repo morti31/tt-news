@@ -1,0 +1,2819 @@
+{
+ "event": "WTT Feeder Biella",
+ "wtt_event_id": "2732",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2732&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Arianna Barani",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T09:10:00Z",
+       "score": "3-0 (11:3,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Solomiya Brateyko",
+         "nat": "UKR"
+        },
+        {
+         "name": "Lilou Massart",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-14T11:30:00Z",
+       "score": "3-0 (11:1,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Malamatenia Papadimitriou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T12:05:00Z",
+       "score": "0-3 (3:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Camila Arguelles",
+         "nat": "ARG"
+        }
+       ],
+       "when": "2023-12-14T12:40:00Z",
+       "score": "3-0 (11:3,11:1,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elisavet Terpou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-12-14T09:45:00Z",
+       "score": "1-3 (5:11,11:6,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margo Degraef",
+         "nat": "BEL"
+        },
+        {
+         "name": "Nathalie Marchetti",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-14T09:45:00Z",
+       "score": "0-3 (9:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miriam Carnovale",
+         "nat": "ITA"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-14T09:10:00Z",
+       "score": "0-3 (7:11,8:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 3
+        },
+        {
+         "name": "Ozge Yilmaz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2023-12-14T09:45:00Z",
+       "score": "3-0 (11:4,13:11,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tania Plaian",
+         "nat": "ROU"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2023-12-14T11:30:00Z",
+       "score": "3-2 (11:7,9:11,8:11,11:4,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T11:30:00Z",
+       "score": "3-0 (11:9,11:1,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        },
+        {
+         "name": "Dora Madarasz",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2023-12-14T09:10:00Z",
+       "score": "3-1 (11:6,7:11,11:7,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2023-12-14T11:30:00Z",
+       "score": "3-2 (11:9,7:11,6:11,11:4,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Pavlovic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2023-12-14T12:05:00Z",
+       "score": "3-2 (11:7,4:11,7:11,12:10,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Melanie Diaz",
+         "nat": "PUR"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-12-14T09:45:00Z",
+       "score": "0-3 (5:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-12-14T12:05:00Z",
+       "score": "2-3 (11:3,8:11,7:11,11:8,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreea Dragoman",
+         "nat": "ROU",
+         "seed": 8
+        },
+        {
+         "name": "Tijana Jokic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-12-14T12:05:00Z",
+       "score": "3-0 (11:9,12:10,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jana Vasendova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Elvira Rad",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-14T12:40:00Z",
+       "score": "2-3 (11:9,7:11,11:8,13:15,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T13:15:00Z",
+       "score": "3-2 (11:6,8:11,7:11,11:8,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Linda Zaderova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-14T09:10:00Z",
+       "score": "1-3 (11:7,6:11,8:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Valentina Roncallo",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T12:40:00Z",
+       "score": "3-0 (11:2,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Aikaterini Toliou",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-14T13:15:00Z",
+       "score": "3-2 (11:6,11:8,10:12,4:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Anna Wegrzyn",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-12-14T12:40:00Z",
+       "score": "3-0 (11:6,11:5,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Irene Moretti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Britt Eerland",
+         "nat": "NED",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-14T13:15:00Z",
+       "score": "0-3 (4:11,6:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 6
+        },
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-12-14T13:15:00Z",
+       "score": "1-3 (8:11,11:6,11:13,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-14T13:50:00Z",
+       "score": "0-3 (7:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zdena Blaskova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Fadwa Garci",
+         "nat": "TUN"
+        }
+       ],
+       "when": "2023-12-14T13:50:00Z",
+       "score": "3-0 (11:4,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikoleta Stefanova",
+         "nat": "ITA"
+        },
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T13:50:00Z",
+       "score": "3-2 (14:16,5:11,11:8,11:9,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Martine Toftaker",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2023-12-14T13:50:00Z",
+       "score": "3-2 (11:7,8:11,11:6,6:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yat Poon",
+         "nat": "ENG"
+        },
+        {
+         "name": "Sofia Minurri",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T14:25:00Z",
+       "score": "3-0 (11:7,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dragana Vignjevic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T14:25:00Z",
+       "score": "1-3 (5:11,11:7,6:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2023-12-15T09:35:00Z",
+       "score": "0-3 (8:11,6:11,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Solomiya Brateyko",
+         "nat": "UKR"
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T11:20:00Z",
+       "score": "0-3 (4:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-12-15T11:20:00Z",
+       "score": "3-2 (11:9,12:10,6:11,4:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nathalie Marchetti",
+         "nat": "BEL"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-15T09:35:00Z",
+       "score": "0-3 (9:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 3
+        },
+        {
+         "name": "Tania Plaian",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-15T09:35:00Z",
+       "score": "3-0 (11:6,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        },
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-15T10:45:00Z",
+       "score": "1-3 (11:8,13:15,8:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Andrea Pavlovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-12-15T10:10:00Z",
+       "score": "3-1 (9:11,11:8,11:7,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-12-15T10:10:00Z",
+       "score": "3-2 (5:11,11:9,11:8,6:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andreea Dragoman",
+         "nat": "ROU",
+         "seed": 8
+        },
+        {
+         "name": "Elvira Rad",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-15T10:10:00Z",
+       "score": "3-0 (11:8,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA"
+        },
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-15T10:45:00Z",
+       "score": "1-3 (8:11,6:11,12:10,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-12-15T10:45:00Z",
+       "score": "3-0 (11:9,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Britt Eerland",
+         "nat": "NED",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-15T10:45:00Z",
+       "score": "1-3 (5:11,13:15,11:9,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-15T10:10:00Z",
+       "score": "3-1 (11:9,11:9,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zdena Blaskova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Nikoleta Stefanova",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T11:20:00Z",
+       "score": "1-3 (7:11,3:11,12:10,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Yat Poon",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2023-12-15T09:35:00Z",
+       "score": "3-0 (11:3,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-15T11:20:00Z",
+       "score": "0-3 (9:11,8:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T17:10:00Z",
+       "score": "3-1 (11:8,11:13,11:5,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-15T17:45:00Z",
+       "score": "1-3 (6:11,8:11,11:6,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 3
+        },
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-15T17:45:00Z",
+       "score": "3-0 (11:8,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-12-15T17:10:00Z",
+       "score": "3-2 (9:11,11:7,11:5,11:13,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andreea Dragoman",
+         "nat": "ROU",
+         "seed": 8
+        },
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-15T17:10:00Z",
+       "score": "1-3 (11:7,7:11,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Britt Eerland",
+         "nat": "NED",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-15T17:45:00Z",
+       "score": "3-2 (6:11,11:9,7:11,12:10,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Nikoleta Stefanova",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T17:45:00Z",
+       "score": "3-1 (7:11,11:8,12:10,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-15T17:10:00Z",
+       "score": "2-3 (11:9,8:11,11:4,5:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-16T11:00:00Z",
+       "score": "3-2 (12:14,11:5,11:4,10:12,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 3
+        },
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-16T15:35:00Z",
+       "score": "3-1 (11:6,12:14,12:10,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-16T15:00:00Z",
+       "score": "3-0 (11:6,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-16T11:35:00Z",
+       "score": "3-1 (9:11,11:9,11:7,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 3
+        }
+       ],
+       "when": "2023-12-17T09:00:00Z",
+       "score": "0-3 (5:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        },
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-12-17T09:35:00Z",
+       "score": "3-0 (11:6,11:9,11:3,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 3
+        },
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-17T16:10:00Z",
+       "score": "1-3 (10:12,5:11,11:8,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jonathan Groth",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T15:00:00Z",
+       "score": "3-1 (11:3,9:11,11:1,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Anton Limonov",
+         "nat": "UKR",
+         "seed": 6
+        }
+       ],
+       "when": "2023-12-14T15:00:00Z",
+       "score": "3-2 (8:11,11:9,12:10,9:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Gonzalez",
+         "nat": "PUR"
+        },
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T15:35:00Z",
+       "score": "1-3 (9:11,1:11,11:7,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Daniele Pinto",
+         "nat": "ITA"
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-14T15:00:00Z",
+       "score": "2-3 (9:11,11:8,8:11,11:8,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-12-14T15:35:00Z",
+       "score": "3-0 (11:8,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        },
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T16:10:00Z",
+       "score": "3-2 (9:11,8:11,11:6,11:1,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Jordy Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T15:35:00Z",
+       "score": "3-1 (11:7,11:5,6:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Milosz Redzimski",
+         "nat": "POL"
+        },
+        {
+         "name": "Yaroslav Zhmudenko",
+         "nat": "UKR",
+         "seed": 8
+        }
+       ],
+       "when": "2023-12-14T15:00:00Z",
+       "score": "1-3 (6:11,11:5,6:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sora Matsushima",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Florian Bourrassaud",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T16:10:00Z",
+       "score": "2-3 (7:11,6:11,11:5,11:9,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Javen Choong",
+         "nat": "MAS"
+        },
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-14T16:10:00Z",
+       "score": "0-3 (6:11,6:11,12:14,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        },
+        {
+         "name": "Juan Perez",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-14T16:10:00Z",
+       "score": "3-2 (13:11,8:11,13:11,9:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Cavaille",
+         "nat": "FRA"
+        },
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-14T15:35:00Z",
+       "score": "0-3 (4:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Lilian Bardet",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T20:15:00Z",
+       "score": "3-2 (11:5,4:11,10:12,11:3,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fabio Rakotoarimanana",
+         "nat": "MAD"
+        },
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-14T18:30:00Z",
+       "score": "1-3 (12:10,4:11,9:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jiri Martinko",
+         "nat": "CZE"
+        },
+        {
+         "name": "Nima Alamian",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2023-12-14T20:15:00Z",
+       "score": "2-3 (8:11,14:12,8:11,11:4,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN"
+        },
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-14T18:30:00Z",
+       "score": "0-3 (8:11,1:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX",
+         "seed": 7
+        },
+        {
+         "name": "Dimitrije Levajac",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-12-14T17:55:00Z",
+       "score": "3-1 (8:11,11:9,12:10,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Felix Wetzel",
+         "nat": "MLT"
+        },
+        {
+         "name": "Navid Shams",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2023-12-14T18:30:00Z",
+       "score": "2-3 (5:11,11:9,9:11,11:5,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Razafinarivo",
+         "nat": "MAD"
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-14T17:55:00Z",
+       "score": "0-3 (5:11,12:14,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hugo Deschamps",
+         "nat": "FRA"
+        },
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2023-12-14T18:30:00Z",
+       "score": "1-3 (11:7,7:11,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Peter Hribar",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2023-12-14T19:05:00Z",
+       "score": "3-2 (8:11,4:11,11:5,11:9,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        },
+        {
+         "name": "Tommaso Giovannetti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T19:05:00Z",
+       "score": "3-0 (11:9,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Takuya Jin",
+         "nat": "JPN"
+        },
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2023-12-14T19:05:00Z",
+       "score": "2-3 (5:11,13:11,8:11,17:15,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adam Szudi",
+         "nat": "HUN"
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-14T20:15:00Z",
+       "score": "1-3 (11:7,9:11,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Noshad Alamiyan",
+         "nat": "IRI",
+         "seed": 6
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-14T19:40:00Z",
+       "score": "3-2 (7:11,7:11,11:9,11:3,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        },
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-14T19:40:00Z",
+       "score": "3-0 (11:7,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Puppo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Paul Drinkhall",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2023-12-14T19:40:00Z",
+       "score": "3-1 (11:9,11:8,4:11,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cristian Pletea",
+         "nat": "ROU"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2023-12-14T17:55:00Z",
+       "score": "1-3 (12:10,9:11,6:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T17:55:00Z",
+       "score": "1-3 (7:11,9:11,11:4,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo",
+         "nat": "PUR"
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-14T19:40:00Z",
+       "score": "0-3 (4:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        },
+        {
+         "name": "Tomas Polansky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2023-12-14T20:15:00Z",
+       "score": "3-1 (3:11,11:6,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Antonino Amato",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T19:05:00Z",
+       "score": "2-3 (11:3,12:10,4:11,8:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jonathan Groth",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-12-15T11:55:00Z",
+       "score": "3-0 (11:4,13:11,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-15T11:55:00Z",
+       "score": "1-3 (7:11,11:7,7:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        },
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-15T11:55:00Z",
+       "score": "2-3 (11:3,8:11,11:9,8:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Yaroslav Zhmudenko",
+         "nat": "UKR",
+         "seed": 8
+        }
+       ],
+       "when": "2023-12-15T12:30:00Z",
+       "score": "2-3 (11:7,11:8,7:11,8:11,12:14)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud",
+         "nat": "FRA"
+        },
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-15T12:30:00Z",
+       "score": "0-3 (8:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        },
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-15T12:30:00Z",
+       "score": "0-3 (5:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-15T11:55:00Z",
+       "score": "3-1 (11:7,11:8,10:12,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nima Alamian",
+         "nat": "IRI"
+        },
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-15T12:30:00Z",
+       "score": "2-3 (11:8,11:8,7:11,10:12,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX",
+         "seed": 7
+        },
+        {
+         "name": "Navid Shams",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2023-12-15T13:05:00Z",
+       "score": "1-3 (8:11,7:11,11:4,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2023-12-15T13:05:00Z",
+       "score": "3-2 (11:7,8:11,13:11,10:12,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2023-12-15T13:05:00Z",
+       "score": "3-1 (7:11,11:6,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-15T13:05:00Z",
+       "score": "1-3 (12:10,7:11,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Noshad Alamiyan",
+         "nat": "IRI",
+         "seed": 6
+        },
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2023-12-15T13:40:00Z",
+       "score": "3-0 (11:6,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Puppo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2023-12-15T13:40:00Z",
+       "score": "0-3 (8:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-15T13:45:00Z",
+       "score": "2-3 (11:9,10:12,11:5,12:14,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        },
+        {
+         "name": "Antonino Amato",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T13:40:00Z",
+       "score": "3-0 (15:13,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jonathan Groth",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-12-15T18:55:00Z",
+       "score": "0-3 (8:11,10:12,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        },
+        {
+         "name": "Yaroslav Zhmudenko",
+         "nat": "UKR",
+         "seed": 8
+        }
+       ],
+       "when": "2023-12-15T18:20:00Z",
+       "score": "3-1 (6:11,11:8,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        },
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-15T18:55:00Z",
+       "score": "0-3 (8:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-15T18:55:00Z",
+       "score": "1-3 (6:11,7:11,11:8,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Navid Shams",
+         "nat": "IRI"
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-15T18:20:00Z",
+       "score": "2-3 (11:7,5:11,9:11,11:6,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-15T18:20:00Z",
+       "score": "0-3 (3:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Noshad Alamiyan",
+         "nat": "IRI",
+         "seed": 6
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2023-12-15T18:20:00Z",
+       "score": "3-1 (11:13,11:6,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-12-15T18:55:00Z",
+       "score": "3-1 (11:8,7:11,11:6,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        },
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-16T16:10:00Z",
+       "score": "2-3 (9:11,11:8,11:13,11:7,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN"
+        },
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-16T12:45:00Z",
+       "score": "1-3 (11:8,10:12,9:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-16T12:10:00Z",
+       "score": "0-3 (8:11,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Noshad Alamiyan",
+         "nat": "IRI",
+         "seed": 6
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-16T16:45:00Z",
+       "score": "1-3 (10:12,11:5,6:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        },
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-17T10:10:00Z",
+       "score": "1-3 (9:11,11:6,8:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-17T10:45:00Z",
+       "score": "0-3 (10:12,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-17T16:45:00Z",
+       "score": "3-2 (12:14,11:5,18:16,5:11,11:3)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Ece Harac / Ozge Yilmaz",
+         "nat": "TUR",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-14T16:45:00Z",
+       "score": "3-0 (11:4,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin / Nicole Arlia",
+         "nat": "ITA"
+        },
+        {
+         "name": "Camila Arguelles / Ana Tofant",
+         "nat": "ARG/SLO"
+        }
+       ],
+       "when": "2023-12-14T16:45:00Z",
+       "score": "3-1 (9:11,11:7,11:5,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn / Anna Wegrzyn",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Ioana Singeorzan / Tania Plaian",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2023-12-14T16:45:00Z",
+       "score": "3-1 (11:9,11:9,6:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rachel Moret / Nikoleta Stefanova",
+         "nat": "SUI/ITA"
+        },
+        {
+         "name": "Martine Toftaker / Lilou Massart",
+         "nat": "NOR/BEL"
+        }
+       ],
+       "when": "2023-12-14T16:45:00Z",
+       "score": "3-2 (6:11,11:7,11:6,9:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Pavlovic / Solomiya Brateyko",
+         "nat": "CRO/UKR"
+        },
+        {
+         "name": "Gaia Monfardini / Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 8
+        }
+       ],
+       "when": "2023-12-14T17:20:00Z",
+       "score": "1-3 (6:11,8:11,11:6,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao / Misuzu Takeya",
+         "nat": "JPN"
+        },
+        {
+         "name": "Andrea Todorovic / Sibel Altinkaya",
+         "nat": "SRB/TUR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-12-14T17:20:00Z",
+       "score": "3-1 (11:7,11:9,9:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miriam Carnovale / Sofia Minurri",
+         "nat": "ITA"
+        },
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB",
+         "seed": 6
+        }
+       ],
+       "when": "2023-12-14T17:20:00Z",
+       "score": "0-3 (9:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette / Oceane Guisnel",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Audrey Zarif / Camille Lutz",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-14T17:20:00Z",
+       "score": "3-1 (11:5,11:13,11:7,11:5,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Giorgia Piccolin / Nicole Arlia",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T16:00:00Z",
+       "score": "3-2 (4:11,11:3,11:7,5:11,20:18)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn / Anna Wegrzyn",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Rachel Moret / Nikoleta Stefanova",
+         "nat": "SUI/ITA"
+        }
+       ],
+       "when": "2023-12-15T16:00:00Z",
+       "score": "3-0 (11:8,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Asuka Sasao / Misuzu Takeya",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-15T16:00:00Z",
+       "score": "1-3 (9:11,7:11,12:10,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB",
+         "seed": 6
+        },
+        {
+         "name": "Stephanie Loeuillette / Oceane Guisnel",
+         "nat": "FRA",
+         "seed": 7
+        }
+       ],
+       "when": "2023-12-15T16:00:00Z",
+       "score": "3-0 (11:7,11:3,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Katarzyna Wegrzyn / Anna Wegrzyn",
+         "nat": "POL",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-16T09:50:00Z",
+       "score": "1-3 (7:11,11:8,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao / Misuzu Takeya",
+         "nat": "JPN"
+        },
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB",
+         "seed": 6
+        }
+       ],
+       "when": "2023-12-16T09:50:00Z",
+       "score": "3-1 (11:7,6:11,11:3,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn / Anna Wegrzyn",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Asuka Sasao / Misuzu Takeya",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-12-17T15:00:00Z",
+       "score": "0-3 (9:11,7:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sora Matsushima / Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Giorgos Konstantinopoulos / Ioannis Sgouropoulos",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-14T10:20:00Z",
+       "score": "3-0 (11:4,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Alberto Lillo / Albert Vilardell",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-14T10:55:00Z",
+       "score": "3-1 (9:11,11:8,13:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Razafinarivo / Fabio Rakotoarimanana",
+         "nat": "MAD",
+         "seed": 3
+        },
+        {
+         "name": "Thor Christensen / Martin Buch Andersen",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2023-12-14T10:20:00Z",
+       "score": "3-1 (11:8,12:14,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tommaso Giovannetti / Leonardo Mutti",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Matteo Mutti / Daniele Pinto",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T10:55:00Z",
+       "score": "0-3 (6:11,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Panagiotis Gionis / Konstantinos Angelakis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Federico Vallino / Giacomo Allegranza",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T10:55:00Z",
+       "score": "3-0 (11:8,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jordy Piccolin / Antonino Amato",
+         "nat": "ITA"
+        },
+        {
+         "name": "Adrien Rassenfosse / Florent Lambiet",
+         "nat": "BEL",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-14T10:20:00Z",
+       "score": "2-3 (8:11,11:7,11:8,8:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo / Daniel Gonzalez",
+         "nat": "PUR",
+         "seed": 5
+        },
+        {
+         "name": "Juan Perez / Rafael De Las Heras",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2023-12-14T10:20:00Z",
+       "score": "3-0 (14:12,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Noshad Alamiyan / Nima Alamian",
+         "nat": "IRI",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-14T11:00:00Z",
+       "score": "3-0 (11:7,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sora Matsushima / Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Esteban Dorr / Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 7
+        }
+       ],
+       "when": "2023-12-15T16:35:00Z",
+       "score": "2-3 (13:15,11:8,6:11,11:6,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Razafinarivo / Fabio Rakotoarimanana",
+         "nat": "MAD",
+         "seed": 3
+        },
+        {
+         "name": "Matteo Mutti / Daniele Pinto",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-15T16:35:00Z",
+       "score": "3-2 (11:5,11:6,6:11,9:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Panagiotis Gionis / Konstantinos Angelakis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Adrien Rassenfosse / Florent Lambiet",
+         "nat": "BEL",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-15T16:35:00Z",
+       "score": "3-1 (8:11,11:7,11:3,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo / Daniel Gonzalez",
+         "nat": "PUR",
+         "seed": 5
+        },
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 6
+        }
+       ],
+       "when": "2023-12-15T16:35:00Z",
+       "score": "1-3 (7:11,8:11,12:10,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Antoine Razafinarivo / Fabio Rakotoarimanana",
+         "nat": "MAD",
+         "seed": 3
+        }
+       ],
+       "when": "2023-12-16T10:25:00Z",
+       "score": "3-0 (12:10,11:3,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Panagiotis Gionis / Konstantinos Angelakis",
+         "nat": "GRE"
+        },
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 6
+        }
+       ],
+       "when": "2023-12-16T10:25:00Z",
+       "score": "3-2 (11:4,6:11,11:3,7:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Florian Bourrassaud",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Panagiotis Gionis / Konstantinos Angelakis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-17T15:35:00Z",
+       "score": "3-1 (11:4,11:8,6:11,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Andrea Pavlovic / Ivor Ban",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-12-14T08:00:00Z",
+       "score": "3-0 (11:3,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi / Valentina Roncallo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Jan Valenta / Zdena Blaskova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2023-12-14T08:00:00Z",
+       "score": "0-3 (8:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Dimitrije Levajac",
+         "nat": "SRB",
+         "seed": 3
+        },
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 8
+        }
+       ],
+       "when": "2023-12-14T08:00:00Z",
+       "score": "3-2 (10:12,11:3,11:9,8:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Fadwa Garci / Marcos Madrid",
+         "nat": "TUN/MEX",
+         "seed": 7
+        }
+       ],
+       "when": "2023-12-14T08:00:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Limonov / Solomiya Brateyko",
+         "nat": "UKR",
+         "seed": 6
+        },
+        {
+         "name": "Tommaso Giovannetti / Nicole Arlia",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-12-14T08:35:00Z",
+       "score": "3-1 (7:11,11:7,11:7,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rachel Moret / Florian Bourrassaud",
+         "nat": "SUI/FRA"
+        },
+        {
+         "name": "Ibrahim Gunduz / Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 4
+        }
+       ],
+       "when": "2023-12-14T08:35:00Z",
+       "score": "3-1 (5:11,11:5,11:8,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Georgios Stamatouros / Malamatenia Papadimitriou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Aikaterini Toliou / Konstantinos Angelakis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-12-14T08:35:00Z",
+       "score": "3-2 (9:11,11:6,9:11,11:9,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mahdi Ahmadian / Yat Poon",
+         "nat": "REF/ENG"
+        },
+        {
+         "name": "Lubomir Pistej / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-14T08:35:00Z",
+       "score": "0-3 (6:11,3:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Jan Valenta / Zdena Blaskova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2023-12-15T09:00:00Z",
+       "score": "3-0 (11:8,13:11,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Dimitrije Levajac",
+         "nat": "SRB",
+         "seed": 3
+        },
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        }
+       ],
+       "when": "2023-12-15T09:00:00Z",
+       "score": "3-0 (11:8,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Limonov / Solomiya Brateyko",
+         "nat": "UKR",
+         "seed": 6
+        },
+        {
+         "name": "Rachel Moret / Florian Bourrassaud",
+         "nat": "SUI/FRA"
+        }
+       ],
+       "when": "2023-12-15T09:00:00Z",
+       "score": "3-0 (11:9,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Georgios Stamatouros / Malamatenia Papadimitriou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Lubomir Pistej / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-15T09:00:00Z",
+       "score": "2-3 (7:11,7:11,13:11,13:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Izabela Lupulesku / Dimitrije Levajac",
+         "nat": "SRB",
+         "seed": 3
+        }
+       ],
+       "when": "2023-12-16T09:00:00Z",
+       "score": "0-3 (8:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Limonov / Solomiya Brateyko",
+         "nat": "UKR",
+         "seed": 6
+        },
+        {
+         "name": "Lubomir Pistej / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-16T09:00:00Z",
+       "score": "0-3 (5:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Dimitrije Levajac",
+         "nat": "SRB",
+         "seed": 3
+        },
+        {
+         "name": "Lubomir Pistej / Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-12-16T17:20:00Z",
+       "score": "1-3 (6:11,11:6,9:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

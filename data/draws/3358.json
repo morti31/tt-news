@@ -1,0 +1,1847 @@
+{
+ "event": "WTT Feeder Istanbul",
+ "wtt_event_id": "3358",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3358&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 3.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN",
+         "seed": 1
+        },
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2026-05-12T15:10:00Z",
+       "score": "3-1 (9:11,11:7,11:4,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T15:10:00Z",
+       "score": "3-0 (11:4,16:14,17:15,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bianca Mei-Rosu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Zauresh Akasheva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-12T15:10:00Z",
+       "score": "1-3 (6:11,8:11,14:12,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-12T15:45:00Z",
+       "score": "0-3 (2:11,10:12,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Maftuna Gulimova",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-05-12T08:45:00Z",
+       "score": "3-0 (11:5,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arina Slautina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-05-12T15:10:00Z",
+       "score": "2-3 (11:8,10:12,11:5,8:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-12T08:45:00Z",
+       "score": "0-3 (6:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kornelija Riliskyte",
+         "nat": "LTU"
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-12T08:10:00Z",
+       "score": "2-3 (11:8,11:8,5:11,9:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Sachi Aoki",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-05-12T08:45:00Z",
+       "score": "0-3 (9:11,11:13,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Peng Yu-han",
+         "nat": "TPE"
+        },
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-12T08:10:00Z",
+       "score": "3-2 (7:11,13:15,11:9,11:6,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER"
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-05-12T08:10:00Z",
+       "score": "3-1 (16:14,11:7,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-12T15:45:00Z",
+       "score": "3-0 (11:8,11:8,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO",
+         "seed": 5
+        },
+        {
+         "name": "Maria Panfilova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T15:45:00Z",
+       "score": "1-3 (5:11,11:8,8:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        },
+        {
+         "name": "Tania Plaian",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-05-12T08:45:00Z",
+       "score": "3-1 (11:7,11:7,8:11,15:13,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Hoi Man",
+         "nat": "HKG"
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2026-05-12T15:45:00Z",
+       "score": "2-3 (9:11,11:6,8:11,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-12T08:10:00Z",
+       "score": "2-3 (11:8,8:11,8:11,13:11,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN",
+         "seed": 1
+        },
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-05-13T09:45:00Z",
+       "score": "3-0 (11:7,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zauresh Akasheva",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-13T09:10:00Z",
+       "score": "0-3 (7:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-05-13T09:45:00Z",
+       "score": "3-1 (11:7,5:11,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-13T09:10:00Z",
+       "score": "1-3 (9:11,13:11,9:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sachi Aoki",
+         "nat": "JPN"
+        },
+        {
+         "name": "Peng Yu-han",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-05-13T09:45:00Z",
+       "score": "3-2 (11:5,8:11,8:11,11:6,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER"
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-13T09:45:00Z",
+       "score": "3-1 (11:7,7:11,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Panfilova",
+         "nat": "AIN"
+        },
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-05-13T09:10:00Z",
+       "score": "2-3 (11:5,9:11,11:6,10:12,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-13T09:10:00Z",
+       "score": "2-3 (11:9,4:11,4:11,11:9,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "AIN",
+         "seed": 1
+        },
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-13T14:40:00Z",
+       "score": "1-3 (7:11,11:6,5:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 4
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-13T14:40:00Z",
+       "score": "2-3 (6:11,11:7,12:10,7:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sachi Aoki",
+         "nat": "JPN"
+        },
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER"
+        }
+       ],
+       "when": "2026-05-13T15:15:00Z",
+       "score": "0-3 (8:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-13T15:15:00Z",
+       "score": "1-3 (11:7,4:11,5:11,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 8
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-14T08:10:00Z",
+       "score": "1-3 (11:7,11:13,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-14T07:00:00Z",
+       "score": "0-3 (10:12,8:11,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-14T14:40:00Z",
+       "score": "1-3 (10:12,11:9,9:11,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Jan Valenta",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2026-05-12T09:20:00Z",
+       "score": "3-0 (11:6,11:6,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kenan Kahraman",
+         "nat": "TUR"
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T09:20:00Z",
+       "score": "2-3 (5:11,11:6,13:15,13:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Schweiger",
+         "nat": "GER"
+        },
+        {
+         "name": "Edward Ly",
+         "nat": "CAN"
+        }
+       ],
+       "when": "2026-05-12T09:20:00Z",
+       "score": "3-1 (12:10,11:7,5:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-05-12T09:20:00Z",
+       "score": "3-0 (12:10,11:7,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-05-12T09:55:00Z",
+       "score": "3-0 (11:9,12:10,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gorkem Ocal",
+         "nat": "TUR"
+        },
+        {
+         "name": "Alan Kurmangaliyev",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-12T09:55:00Z",
+       "score": "1-3 (8:11,11:7,6:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-05-12T09:55:00Z",
+       "score": "3-1 (15:13,4:11,11:2,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amirreza Abbasi",
+         "nat": "MLT"
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-12T09:55:00Z",
+       "score": "2-3 (11:6,7:11,11:7,7:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T16:20:00Z",
+       "score": "3-0 (11:4,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nam Seongbeen",
+         "nat": "KOR"
+        },
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-05-12T16:55:00Z",
+       "score": "2-3 (8:11,11:7,9:11,12:10,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        },
+        {
+         "name": "Dmitrii Vinogradov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T16:20:00Z",
+       "score": "3-0 (12:10,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Woo Hyeonggyu",
+         "nat": "KOR"
+        },
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-12T16:20:00Z",
+       "score": "3-1 (11:7,6:11,11:2,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        },
+        {
+         "name": "Stepan Brhel",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2026-05-12T16:55:00Z",
+       "score": "3-1 (11:8,11:4,6:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO"
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T16:55:00Z",
+       "score": "1-3 (8:11,9:11,13:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-05-12T16:55:00Z",
+       "score": "3-0 (11:5,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        },
+        {
+         "name": "Kazuki Hamada",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-12T16:20:00Z",
+       "score": "3-1 (11:6,9:11,11:8,13:11,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-13T10:20:00Z",
+       "score": "3-2 (11:7,7:11,11:4,9:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Schweiger",
+         "nat": "GER"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-05-13T10:20:00Z",
+       "score": "1-3 (11:13,5:11,13:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Alan Kurmangaliyev",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-13T10:55:00Z",
+       "score": "3-1 (11:6,7:11,11:5,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-13T10:20:00Z",
+       "score": "2-3 (11:13,13:11,11:6,6:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-05-13T10:20:00Z",
+       "score": "1-3 (2:11,14:12,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        },
+        {
+         "name": "Woo Hyeonggyu",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-13T10:55:00Z",
+       "score": "0-3 (6:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        },
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-13T10:55:00Z",
+       "score": "3-2 (7:11,11:7,11:9,8:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-05-13T10:55:00Z",
+       "score": "1-3 (7:11,8:11,11:7,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-05-13T16:25:00Z",
+       "score": "3-0 (12:10,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-13T15:50:00Z",
+       "score": "2-3 (7:11,5:11,11:7,11:9,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        },
+        {
+         "name": "Woo Hyeonggyu",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-13T16:25:00Z",
+       "score": "3-1 (11:7,7:11,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-05-13T15:50:00Z",
+       "score": "3-0 (11:7,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-14T08:45:00Z",
+       "score": "3-1 (15:13,5:11,12:10,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2026-05-14T07:35:00Z",
+       "score": "2-3 (11:5,11:9,5:11,12:14,3:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2026-05-14T15:15:00Z",
+       "score": "3-0 (11:9,11:9,11:2,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan / Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esmerlyn Castro / Eva Brito",
+         "nat": "DOM"
+        },
+        {
+         "name": "Sachi Aoki / Cocona Muramatsu",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-05-12T10:30:00Z",
+       "score": "0-3 (4:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Lee Hoi Man",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Lee Zion / Kim Eunseo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-12T10:30:00Z",
+       "score": "3-0 (11:5,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina / Valeriia Shcherbatykh",
+         "nat": "AIN"
+        },
+        {
+         "name": "Andrea Teglas / Bianca Mei-Rosu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-05-12T10:30:00Z",
+       "score": "3-0 (11:7,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner / Sophia Klee",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Zauresh Akasheva / Zhanerke Koshkumbayeva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-12T10:30:00Z",
+       "score": "3-1 (12:10,9:11,11:6,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-12T11:06:00Z",
+       "score": "2-3 (6:11,12:10,11:7,11:13,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor / Lea Rakovac",
+         "nat": "POL/CRO",
+         "seed": 5
+        },
+        {
+         "name": "Maria Yovkova / Kalina Hristova",
+         "nat": "BUL"
+        }
+       ],
+       "when": "2026-05-12T11:05:00Z",
+       "score": "3-1 (8:11,11:8,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das / Kotona Okada",
+         "nat": "IND/JPN",
+         "seed": 7
+        },
+        {
+         "name": "Elizabet Abraamian / Maria Panfilova",
+         "nat": "AIN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-12T11:05:00Z",
+       "score": "3-0 (11:9,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan / Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Sachi Aoki / Cocona Muramatsu",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-05-13T08:00:00Z",
+       "score": "3-1 (11:9,11:9,6:11,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Lee Hoi Man",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Vlada Voronina / Valeriia Shcherbatykh",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-13T08:00:00Z",
+       "score": "3-1 (4:11,13:11,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner / Sophia Klee",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-13T08:00:00Z",
+       "score": "1-3 (9:11,11:6,3:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor / Lea Rakovac",
+         "nat": "POL/CRO",
+         "seed": 5
+        },
+        {
+         "name": "Syndrela Das / Kotona Okada",
+         "nat": "IND/JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-13T08:00:00Z",
+       "score": "1-3 (11:13,7:11,11:6,11:13,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan / Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Ng Wing Lam / Lee Hoi Man",
+         "nat": "HKG",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-13T13:30:00Z",
+       "score": "3-2 (9:11,12:14,11:8,11:3,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Syndrela Das / Kotona Okada",
+         "nat": "IND/JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-13T13:30:00Z",
+       "score": "3-1 (11:7,11:5,9:11,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan / Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-14T13:30:00Z",
+       "score": "1-3 (8:11,10:12,11:3,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Payas Jain",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Stepan Brhel / Jakub Kaucky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2026-05-12T14:35:00Z",
+       "score": "0-3 (9:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong / Nam Seongbeen",
+         "nat": "KOR"
+        },
+        {
+         "name": "Woo Hyeonggyu / Choi Jiwook",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-05-12T14:00:00Z",
+       "score": "2-3 (8:11,12:10,9:11,11:5,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama / Kazuki Hamada",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Sarvarbek Gulomov / Shahbozbek Gulomiddinov",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-05-12T14:00:00Z",
+       "score": "3-0 (11:5,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jan Valenta / Ondrej Kveton",
+         "nat": "CZE"
+        },
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-12T14:00:00Z",
+       "score": "2-3 (11:8,7:11,8:11,11:9,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrej Gacina / Ivor Ban",
+         "nat": "CRO"
+        },
+        {
+         "name": "Maksim Grebnev / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-05-12T14:35:00Z",
+       "score": "0-3 (9:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zokhid Kenjaev / Shokhrukh Iskandarov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Mudit Dani / Akash Pal",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-12T14:00:00Z",
+       "score": "0-3 (8:11,8:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kenan Kahraman / Gorkem Ocal",
+         "nat": "TUR",
+         "seed": 8
+        },
+        {
+         "name": "Daniele Pinto / Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-05-12T14:35:00Z",
+       "score": "3-0 (11:7,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila / Rafael Cabrera",
+         "nat": "DOM"
+        },
+        {
+         "name": "Ibrahim Gunduz / Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-12T14:35:00Z",
+       "score": "0-3 (9:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Stepan Brhel / Jakub Kaucky",
+         "nat": "CZE"
+        },
+        {
+         "name": "Woo Hyeonggyu / Choi Jiwook",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-05-13T08:35:00Z",
+       "score": "0-3 (4:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama / Kazuki Hamada",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-13T08:35:00Z",
+       "score": "3-1 (9:11,12:10,16:14,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 5
+        },
+        {
+         "name": "Mudit Dani / Akash Pal",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2026-05-13T08:35:00Z",
+       "score": "3-1 (11:2,11:5,7:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kenan Kahraman / Gorkem Ocal",
+         "nat": "TUR",
+         "seed": 8
+        },
+        {
+         "name": "Ibrahim Gunduz / Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-13T08:35:00Z",
+       "score": "1-3 (11:13,7:11,11:9,11:13,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Woo Hyeonggyu / Choi Jiwook",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Ryoichi Yoshiyama / Kazuki Hamada",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-13T14:05:00Z",
+       "score": "2-3 (5:11,7:11,11:2,11:5,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 5
+        },
+        {
+         "name": "Ibrahim Gunduz / Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-13T14:05:00Z",
+       "score": "3-0 (11:2,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama / Kazuki Hamada",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Maksim Grebnev / Nikita Artemenko",
+         "nat": "AIN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-05-14T14:05:00Z",
+       "score": "3-1 (11:9,11:9,10:12,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Payas Jain / Syndrela Das",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Evgeny Tikhonov / Maria Panfilova",
+         "nat": "AIN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-05-12T07:35:00Z",
+       "score": "1-3 (6:11,6:11,11:4,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sarvarbek Gulomov / Maftuna Gulimova",
+         "nat": "UZB"
+        },
+        {
+         "name": "Choi Jiwook / Kim Eunseo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-12T07:00:00Z",
+       "score": "0-3 (7:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Swastika Ghosh",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Anastasios Riniotis / Elisavet Terpou",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2026-05-12T07:00:00Z",
+       "score": "1-3 (7:11,11:6,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alan Kurmangaliyev / Zauresh Akasheva",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Edward Ly / Mo Zhang",
+         "nat": "CAN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-05-12T07:00:00Z",
+       "score": "3-0 (11:9,11:2,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Schweiger / Franziska Schreiner",
+         "nat": "GER"
+        },
+        {
+         "name": "Cedric Meissner / Lee Hoi Man",
+         "nat": "GER/HKG",
+         "seed": 7
+        }
+       ],
+       "when": "2026-05-12T07:35:00Z",
+       "score": "3-1 (12:10,12:10,5:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-05-12T07:00:00Z",
+       "score": "3-2 (10:12,6:11,11:7,11:8,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila / Eva Brito",
+         "nat": "DOM"
+        },
+        {
+         "name": "Maksim Grebnev / Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-05-12T07:35:00Z",
+       "score": "2-3 (11:7,11:13,4:11,11:8,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dmitrii Vinogradov / Arina Slautina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-12T07:35:00Z",
+       "score": "1-3 (7:11,11:3,6:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov / Maria Panfilova",
+         "nat": "AIN",
+         "seed": 6
+        },
+        {
+         "name": "Choi Jiwook / Kim Eunseo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-05-13T07:00:00Z",
+       "score": "1-3 (8:11,7:11,11:8,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anastasios Riniotis / Elisavet Terpou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Alan Kurmangaliyev / Zauresh Akasheva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-13T07:00:00Z",
+       "score": "1-3 (11:9,9:11,9:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Schweiger / Franziska Schreiner",
+         "nat": "GER"
+        },
+        {
+         "name": "Nikita Artemenko / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-05-13T07:00:00Z",
+       "score": "0-3 (14:16,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev / Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-13T07:00:00Z",
+       "score": "2-3 (6:11,11:7,11:5,7:11,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Choi Jiwook / Kim Eunseo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Alan Kurmangaliyev / Zauresh Akasheva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-05-13T17:00:00Z",
+       "score": "3-1 (6:11,11:5,11:6,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko / Valeriia Shcherbatykh",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-13T17:00:00Z",
+       "score": "0-3 (9:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Choi Jiwook / Kim Eunseo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2026-05-14T09:20:00Z",
+       "score": "1-3 (11:7,8:11,7:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

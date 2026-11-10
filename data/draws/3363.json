@@ -1,0 +1,1858 @@
+{
+ "event": "WTT Feeder Asunción",
+ "wtt_event_id": "3363",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3363&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": -3.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Ana Sandoval",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T20:40:00Z",
+       "score": "3-0 (11:6,11:2,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Valentina Rios",
+         "nat": "CHI"
+        },
+        {
+         "name": "Ana Codina",
+         "nat": "ARG"
+        }
+       ],
+       "when": "2026-07-10T14:45:00Z",
+       "score": "3-1 (11:5,11:7,7:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Edmarie Leon",
+         "nat": "PUR"
+        },
+        {
+         "name": "Karina Shiray",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-10T14:45:00Z",
+       "score": "2-3 (11:9,9:11,11:9,9:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Clio Barcenas",
+         "nat": "MEX"
+        },
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-10T20:40:00Z",
+       "score": "0-3 (9:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Zhiying Zeng",
+         "nat": "CHI"
+        }
+       ],
+       "when": "2026-07-10T14:10:00Z",
+       "score": "3-0 (11:6,11:6,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arantxa Cossio",
+         "nat": "MEX"
+        },
+        {
+         "name": "Beatriz Kanashiro",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-10T14:45:00Z",
+       "score": "2-3 (10:12,11:8,11:13,11:6,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kristal Melendez",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2026-07-10T14:10:00Z",
+       "score": "3-0 (11:8,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Victoria Strassburger",
+         "nat": "BRA"
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-10T20:40:00Z",
+       "score": "0-3 (8:11,4:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Sofia Vega",
+         "nat": "CHI"
+        }
+       ],
+       "when": "2026-07-10T14:10:00Z",
+       "score": "3-1 (11:3,11:9,9:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Reina Aso",
+         "nat": "JPN"
+        },
+        {
+         "name": "Eva Brito",
+         "nat": "DOM"
+        }
+       ],
+       "when": "2026-07-10T20:40:00Z",
+       "score": "3-0 (11:7,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Paloma Rivarola",
+         "nat": "PAR"
+        },
+        {
+         "name": "Nahiara Antar",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T14:10:00Z",
+       "score": "0-3 (4:11,12:14,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Paulina Vega",
+         "nat": "CHI"
+        },
+        {
+         "name": "Daniela Ortega",
+         "nat": "CHI",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-10T21:15:00Z",
+       "score": "0-3 (8:11,8:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Laura Watanabe",
+         "nat": "BRA",
+         "seed": 7
+        },
+        {
+         "name": "Alondra Rodriguez",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2026-07-10T21:15:00Z",
+       "score": "1-3 (11:6,8:11,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        },
+        {
+         "name": "Sabrina Miyabara",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-10T21:15:00Z",
+       "score": "2-3 (9:11,8:11,11:8,11:7,16:18)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Claire Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Florencia Paiva",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T21:15:00Z",
+       "score": "3-0 (11:3,11:4,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esmerlyn Castro",
+         "nat": "DOM"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-10T14:45:00Z",
+       "score": "0-3 (7:11,6:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Valentina Rios",
+         "nat": "CHI"
+        }
+       ],
+       "when": "2026-07-11T15:10:00Z",
+       "score": "3-0 (11:9,11:1,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Karina Shiray",
+         "nat": "BRA"
+        },
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-11T15:45:00Z",
+       "score": "0-3 (7:11,2:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Beatriz Kanashiro",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-11T15:10:00Z",
+       "score": "3-2 (11:3,4:11,3:11,11:8,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-11T15:45:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-07-11T15:45:00Z",
+       "score": "3-1 (12:10,8:11,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nahiara Antar",
+         "nat": "PAR"
+        },
+        {
+         "name": "Daniela Ortega",
+         "nat": "CHI",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-11T15:45:00Z",
+       "score": "0-3 (1:11,3:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alondra Rodriguez",
+         "nat": "PUR"
+        },
+        {
+         "name": "Sabrina Miyabara",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-11T15:10:00Z",
+       "score": "3-0 (14:12,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Claire Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T15:10:00Z",
+       "score": "3-1 (13:11,5:11,11:7,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-11T20:40:00Z",
+       "score": "3-0 (13:11,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-11T21:15:00Z",
+       "score": "3-1 (11:7,12:14,11:2,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Daniela Ortega",
+         "nat": "CHI",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-11T21:15:00Z",
+       "score": "3-0 (11:8,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alondra Rodriguez",
+         "nat": "PUR"
+        },
+        {
+         "name": "Claire Picard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-11T20:40:00Z",
+       "score": "0-3 (7:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-12T13:00:00Z",
+       "score": "0-3 (7:11,8:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Claire Picard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-12T13:35:00Z",
+       "score": "3-0 (12:10,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-12T20:40:00Z",
+       "score": "3-2 (11:5,11:8,11:13,9:11,11:7)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Fumiya Igarashi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-07-10T21:50:00Z",
+       "score": "3-0 (11:5,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steven Moreno",
+         "nat": "PUR"
+        },
+        {
+         "name": "Tobias Hippler",
+         "nat": "GER"
+        }
+       ],
+       "when": "2026-07-10T21:50:00Z",
+       "score": "2-3 (11:8,9:11,9:11,11:8,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dennis Carvalho",
+         "nat": "BRA"
+        },
+        {
+         "name": "Hamilton Yamane",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-10T22:25:00Z",
+       "score": "0-3 (2:11,9:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Thiago Monteiro",
+         "nat": "BRA",
+         "seed": 7
+        },
+        {
+         "name": "Gustavo Gomez",
+         "nat": "CHI",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-10T15:55:00Z",
+       "score": "3-1 (11:3,10:12,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro",
+         "nat": "BRA",
+         "seed": 4
+        },
+        {
+         "name": "Remi Chambet-Weil",
+         "nat": "NED"
+        }
+       ],
+       "when": "2026-07-10T15:20:00Z",
+       "score": "3-1 (11:7,5:11,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jabdiel Torres",
+         "nat": "PUR",
+         "seed": 2
+        },
+        {
+         "name": "Emanuel Otalvaro",
+         "nat": "COL"
+        }
+       ],
+       "when": "2026-07-10T15:20:00Z",
+       "score": "0-3 (6:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bosman Botha",
+         "nat": "USA"
+        }
+       ],
+       "when": "2026-07-10T15:20:00Z",
+       "score": "3-0 (11:7,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Enrique Rios",
+         "nat": "PUR",
+         "seed": 1
+        },
+        {
+         "name": "Angel Naranjo",
+         "nat": "PUR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-10T15:55:00Z",
+       "score": "2-3 (11:8,9:11,3:11,11:9,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Leonardo Iizuka",
+         "nat": "BRA",
+         "seed": 6
+        },
+        {
+         "name": "Norbert Tauler",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-07-10T15:55:00Z",
+       "score": "2-3 (14:12,5:11,7:11,11:8,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR"
+        },
+        {
+         "name": "Felipe Arado",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-10T15:55:00Z",
+       "score": "3-2 (11:13,11:5,6:11,11:5,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jose Guillot",
+         "nat": "ESP"
+        },
+        {
+         "name": "Miguel Pantoja",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2026-07-10T21:50:00Z",
+       "score": "1-3 (11:7,8:11,3:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "DEN"
+        },
+        {
+         "name": "Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-10T22:25:00Z",
+       "score": "3-1 (9:11,11:7,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Juan Perez",
+         "nat": "ESP",
+         "seed": 7
+        },
+        {
+         "name": "Alexis Kouraichi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-10T22:25:00Z",
+       "score": "1-3 (8:11,11:7,7:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivan Pastore",
+         "nat": "PAR"
+        },
+        {
+         "name": "Axel Bertolo",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T15:20:00Z",
+       "score": "3-0 (11:9,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eusebio Vos",
+         "nat": "CHI"
+        },
+        {
+         "name": "Ramon Vila",
+         "nat": "DOM",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-10T21:50:00Z",
+       "score": "0-3 (5:11,7:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sebastian Bedoya",
+         "nat": "COL"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-10T22:25:00Z",
+       "score": "0-3 (4:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Tobias Hippler",
+         "nat": "GER"
+        }
+       ],
+       "when": "2026-07-11T16:20:00Z",
+       "score": "3-1 (11:4,12:14,11:6,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hamilton Yamane",
+         "nat": "BRA",
+         "seed": 5
+        },
+        {
+         "name": "Thiago Monteiro",
+         "nat": "BRA",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-11T16:55:00Z",
+       "score": "0-3 (9:11,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro",
+         "nat": "BRA",
+         "seed": 4
+        },
+        {
+         "name": "Emanuel Otalvaro",
+         "nat": "COL"
+        }
+       ],
+       "when": "2026-07-11T16:20:00Z",
+       "score": "3-0 (11:6,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Angel Naranjo",
+         "nat": "PUR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-11T16:20:00Z",
+       "score": "3-1 (5:11,11:7,11:3,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Norbert Tauler",
+         "nat": "ESP"
+        },
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-11T16:55:00Z",
+       "score": "2-3 (9:11,11:8,6:11,11:7,12:14)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miguel Pantoja",
+         "nat": "ESP"
+        },
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2026-07-11T16:55:00Z",
+       "score": "2-3 (7:11,11:13,14:12,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexis Kouraichi",
+         "nat": "FRA"
+        },
+        {
+         "name": "Ivan Pastore",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-11T16:20:00Z",
+       "score": "3-0 (11:4,15:13,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila",
+         "nat": "DOM",
+         "seed": 3
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T16:55:00Z",
+       "score": "0-3 (8:11,11:13,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Thiago Monteiro",
+         "nat": "BRA",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-11T21:50:00Z",
+       "score": "3-0 (11:7,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro",
+         "nat": "BRA",
+         "seed": 4
+        },
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-11T21:50:00Z",
+       "score": "3-2 (11:9,11:13,13:15,11:7,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR"
+        },
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2026-07-11T22:25:00Z",
+       "score": "3-2 (6:11,11:8,11:9,5:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexis Kouraichi",
+         "nat": "FRA"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T22:25:00Z",
+       "score": "3-1 (11:5,11:8,9:11,11:5,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Guilherme Teodoro",
+         "nat": "BRA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-12T14:10:00Z",
+       "score": "3-2 (15:13,9:11,4:11,11:5,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR"
+        },
+        {
+         "name": "Alexis Kouraichi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-12T14:45:00Z",
+       "score": "2-3 (11:13,11:6,11:8,4:11,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Alexis Kouraichi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-07-12T21:15:00Z",
+       "score": "2-3 (11:9,8:11,9:11,11:7,8:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniela Ortega / Paulina Vega",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Nahiara Antar / Paloma Rivarola",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T16:30:00Z",
+       "score": "3-0 (11:4,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Victoria Strassburger / Beatriz Kanashiro",
+         "nat": "BRA"
+        },
+        {
+         "name": "Zhiying Zeng / Sofia Vega",
+         "nat": "CHI",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-10T16:30:00Z",
+       "score": "2-3 (7:11,11:9,12:10,6:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Valentina Rios / Lucia Cordero",
+         "nat": "CHI/GUA",
+         "seed": 3
+        },
+        {
+         "name": "Karina Shiray / Beatriz Fiore",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-10T16:30:00Z",
+       "score": "3-1 (11:3,11:7,7:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ana Isaza / Ana Gomez",
+         "nat": "COL"
+        },
+        {
+         "name": "Ana Codina / Candela Molero",
+         "nat": "ARG",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-10T16:30:00Z",
+       "score": "2-3 (13:11,7:11,11:6,8:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Florencia Paiva / Ana Sandoval",
+         "nat": "PAR"
+        },
+        {
+         "name": "Brianna Burgos / Alondra Rodriguez",
+         "nat": "PUR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-07-10T17:05:00Z",
+       "score": "0-3 (6:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sofia Kano / Jessica Prates",
+         "nat": "BRA"
+        },
+        {
+         "name": "Tsai Yun-En / Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-10T17:05:00Z",
+       "score": "1-3 (7:11,7:11,11:8,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Esmerlyn Castro / Eva Brito",
+         "nat": "DOM"
+        },
+        {
+         "name": "Edmarie Leon / Kristal Melendez",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2026-07-10T17:05:00Z",
+       "score": "1-3 (6:11,7:11,11:9,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giulia Takahashi / Laura Watanabe",
+         "nat": "BRA",
+         "seed": 5
+        },
+        {
+         "name": "Clio Barcenas / Arantxa Cossio",
+         "nat": "MEX",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-10T17:05:00Z",
+       "score": "3-1 (9:11,11:2,11:6,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniela Ortega / Paulina Vega",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Zhiying Zeng / Sofia Vega",
+         "nat": "CHI",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-11T14:00:00Z",
+       "score": "3-0 (14:12,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Valentina Rios / Lucia Cordero",
+         "nat": "CHI/GUA",
+         "seed": 3
+        },
+        {
+         "name": "Ana Codina / Candela Molero",
+         "nat": "ARG",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-11T14:00:00Z",
+       "score": "3-0 (11:8,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Brianna Burgos / Alondra Rodriguez",
+         "nat": "PUR",
+         "seed": 6
+        },
+        {
+         "name": "Tsai Yun-En / Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-11T14:00:00Z",
+       "score": "2-3 (12:10,13:11,8:11,10:12,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Edmarie Leon / Kristal Melendez",
+         "nat": "PUR"
+        },
+        {
+         "name": "Giulia Takahashi / Laura Watanabe",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-11T14:00:00Z",
+       "score": "3-1 (6:11,11:6,11:8,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniela Ortega / Paulina Vega",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Valentina Rios / Lucia Cordero",
+         "nat": "CHI/GUA",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-11T19:30:00Z",
+       "score": "3-1 (12:10,11:8,4:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En / Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Edmarie Leon / Kristal Melendez",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2026-07-11T19:30:00Z",
+       "score": "3-1 (11:3,11:9,6:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Daniela Ortega / Paulina Vega",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Tsai Yun-En / Huang Yu-Jie",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-12T19:30:00Z",
+       "score": "1-3 (5:11,6:11,12:10,3:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Felipe Arado / Hamilton Yamane",
+         "nat": "BRA",
+         "seed": 7
+        }
+       ],
+       "when": "2026-07-10T19:30:00Z",
+       "score": "3-0 (11:5,13:11,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Enrique Rios / Jabdiel Torres",
+         "nat": "PUR",
+         "seed": 8
+        },
+        {
+         "name": "Carlos Zapata / Juan Jimenez",
+         "nat": "COL"
+        }
+       ],
+       "when": "2026-07-10T19:30:00Z",
+       "score": "3-0 (11:8,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miguel Pantoja / Norbert Tauler",
+         "nat": "ESP",
+         "seed": 4
+        },
+        {
+         "name": "Marcelo Aguirre / Ivan Pastore",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T19:30:00Z",
+       "score": "0-3 (8:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Chambet-Weil / Yoan Rebetez",
+         "nat": "NED/SUI"
+        },
+        {
+         "name": "Dennis Carvalho / Felipe Alvarez",
+         "nat": "BRA/ARG"
+        }
+       ],
+       "when": "2026-07-10T19:30:00Z",
+       "score": "3-0 (11:2,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Axel Bertolo / Manuel Morinigo",
+         "nat": "PAR"
+        },
+        {
+         "name": "Samuel Baquero / Daniel Cruz",
+         "nat": "COL"
+        }
+       ],
+       "when": "2026-07-10T20:05:00Z",
+       "score": "3-1 (3:11,11:7,17:15,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nicolas Callaba / Franco Varela",
+         "nat": "ARG"
+        },
+        {
+         "name": "Léo de Nodrest / Vincent Picard",
+         "nat": "FRA",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-10T20:05:00Z",
+       "score": "1-3 (9:11,7:11,11:9,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Thiago Monteiro / Ibrahima Diaw",
+         "nat": "BRA/DEN"
+        },
+        {
+         "name": "Angel Naranjo / Steven Moreno",
+         "nat": "PUR",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-10T20:05:00Z",
+       "score": "1-3 (6:11,11:7,10:12,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila / Isaac Vila",
+         "nat": "DOM",
+         "seed": 6
+        },
+        {
+         "name": "Guilherme Teodoro / Leonardo Iizuka",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-10T20:05:00Z",
+       "score": "0-3 (7:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Enrique Rios / Jabdiel Torres",
+         "nat": "PUR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-11T14:35:00Z",
+       "score": "3-1 (11:5,6:11,11:3,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre / Ivan Pastore",
+         "nat": "PAR"
+        },
+        {
+         "name": "Remi Chambet-Weil / Yoan Rebetez",
+         "nat": "NED/SUI"
+        }
+       ],
+       "when": "2026-07-11T14:35:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Axel Bertolo / Manuel Morinigo",
+         "nat": "PAR"
+        },
+        {
+         "name": "Léo de Nodrest / Vincent Picard",
+         "nat": "FRA",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-11T14:35:00Z",
+       "score": "0-3 (7:11,4:11,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo / Steven Moreno",
+         "nat": "PUR",
+         "seed": 5
+        },
+        {
+         "name": "Guilherme Teodoro / Leonardo Iizuka",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T14:35:00Z",
+       "score": "0-3 (8:11,3:11,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Marcelo Aguirre / Ivan Pastore",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-11T20:05:00Z",
+       "score": "3-1 (6:11,12:10,11:7,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest / Vincent Picard",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Guilherme Teodoro / Leonardo Iizuka",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T20:05:00Z",
+       "score": "3-0 (11:8,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Léo de Nodrest / Vincent Picard",
+         "nat": "FRA",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-12T20:05:00Z",
+       "score": "1-3 (6:11,5:11,11:7,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro / Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 1
+        },
+        {
+         "name": "Vincent Picard / Claire Picard",
+         "nat": "FRA",
+         "seed": 8
+        }
+       ],
+       "when": "2026-07-10T13:35:00Z",
+       "score": "3-0 (11:9,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila / Eva Brito",
+         "nat": "DOM"
+        },
+        {
+         "name": "Marcelo Aguirre / Florencia Paiva",
+         "nat": "PAR"
+        }
+       ],
+       "when": "2026-07-10T13:35:00Z",
+       "score": "3-0 (11:4,13:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Daniela Ortega",
+         "nat": "CHI",
+         "seed": 3
+        },
+        {
+         "name": "Leonardo Iizuka / Victoria Strassburger",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2026-07-10T13:00:00Z",
+       "score": "3-1 (11:7,3:11,14:12,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Isaac Vila / Esmerlyn Castro",
+         "nat": "DOM"
+        },
+        {
+         "name": "Bosman Botha / Amy Wang",
+         "nat": "USA"
+        }
+       ],
+       "when": "2026-07-10T13:35:00Z",
+       "score": "3-0 (14:12,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jose Guillot / Edmarie Leon",
+         "nat": "ESP/PUR"
+        },
+        {
+         "name": "Felipe Arado / Laura Watanabe",
+         "nat": "BRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-07-10T13:00:00Z",
+       "score": "3-1 (8:11,11:6,12:10,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eusebio Vos / Valentina Rios",
+         "nat": "CHI",
+         "seed": 6
+        },
+        {
+         "name": "Steven Moreno / Brianna Burgos",
+         "nat": "PUR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-10T13:00:00Z",
+       "score": "0-3 (4:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tobias Hippler / Ana Tofant",
+         "nat": "GER/SLO"
+        },
+        {
+         "name": "Fumiya Igarashi / Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-07-10T13:35:00Z",
+       "score": "2-3 (11:6,3:11,11:8,6:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Chambet-Weil / Lucia Cordero",
+         "nat": "NED/GUA",
+         "seed": 7
+        },
+        {
+         "name": "Nicolas Burgos / Paulina Vega",
+         "nat": "CHI",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-10T13:00:00Z",
+       "score": "2-3 (8:11,8:11,11:8,11:2,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro / Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 1
+        },
+        {
+         "name": "Ramon Vila / Eva Brito",
+         "nat": "DOM"
+        }
+       ],
+       "when": "2026-07-11T13:00:00Z",
+       "score": "3-1 (12:10,7:11,11:5,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Daniela Ortega",
+         "nat": "CHI",
+         "seed": 3
+        },
+        {
+         "name": "Isaac Vila / Esmerlyn Castro",
+         "nat": "DOM"
+        }
+       ],
+       "when": "2026-07-11T13:00:00Z",
+       "score": "3-0 (11:6,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jose Guillot / Edmarie Leon",
+         "nat": "ESP/PUR"
+        },
+        {
+         "name": "Steven Moreno / Brianna Burgos",
+         "nat": "PUR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-11T13:00:00Z",
+       "score": "0-3 (7:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fumiya Igarashi / Reina Aso",
+         "nat": "JPN"
+        },
+        {
+         "name": "Nicolas Burgos / Paulina Vega",
+         "nat": "CHI",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T13:00:00Z",
+       "score": "2-3 (4:11,8:11,11:7,11:5,14:16)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro / Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 1
+        },
+        {
+         "name": "Gustavo Gomez / Daniela Ortega",
+         "nat": "CHI",
+         "seed": 3
+        }
+       ],
+       "when": "2026-07-11T23:00:00Z",
+       "score": "0-3 (16:18,8:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steven Moreno / Brianna Burgos",
+         "nat": "PUR",
+         "seed": 4
+        },
+        {
+         "name": "Nicolas Burgos / Paulina Vega",
+         "nat": "CHI",
+         "seed": 2
+        }
+       ],
+       "when": "2026-07-11T23:00:00Z",
+       "score": "3-2 (5:11,13:15,11:8,11:6,12:10)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Daniela Ortega",
+         "nat": "CHI",
+         "seed": 3
+        },
+        {
+         "name": "Steven Moreno / Brianna Burgos",
+         "nat": "PUR",
+         "seed": 4
+        }
+       ],
+       "when": "2026-07-12T15:20:00Z",
+       "score": "3-1 (6:11,11:6,11:5,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

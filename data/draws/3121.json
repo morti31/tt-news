@@ -1,0 +1,1855 @@
+{
+ "event": "WTT Contender Lagos",
+ "wtt_event_id": "3121",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3121&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-07-24T11:20:00Z",
+       "score": "0-3 (7:11,8:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fatimo Bello",
+         "nat": "NGR"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-24T16:40:00Z",
+       "score": "0-3 (7:11,3:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ajoke Ojomu",
+         "nat": "NGR"
+        },
+        {
+         "name": "Asiaju Bisola",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T11:55:00Z",
+       "score": "3-2 (10:12,9:11,11:2,11:7,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aishat Rabiu",
+         "nat": "NGR"
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-24T10:45:00Z",
+       "score": "0-3 (7:11,2:11,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Prithika Pavade",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-07-24T19:00:00Z",
+       "score": "3-0 (12:10,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Iyanu Oluwa Falana",
+         "nat": "NGR"
+        },
+        {
+         "name": "Cynthia Kwabi",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2025-07-24T10:10:00Z",
+       "score": "2-3 (7:11,8:11,11:7,11:3,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kadijat Okanlawon",
+         "nat": "NGR"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2025-07-24T17:15:00Z",
+       "score": "0-3 (2:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Favour Ojo",
+         "nat": "NGR"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-24T10:45:00Z",
+       "score": "0-3 (4:11,3:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 6
+        },
+        {
+         "name": "Joy Emmanuel",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T16:05:00Z",
+       "score": "3-0 (11:4,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-07-24T19:00:00Z",
+       "score": "3-1 (11:4,10:12,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aminat Fashola",
+         "nat": "NGR"
+        },
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-07-24T16:05:00Z",
+       "score": "0-3 (4:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Krittwika Roy",
+         "nat": "IND"
+        },
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 3
+        }
+       ],
+       "when": "2025-07-24T11:55:00Z",
+       "score": "1-3 (11:8,9:11,8:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Onyinyechi Mbah",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T16:40:00Z",
+       "score": "3-0 (11:6,11:1,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-24T17:15:00Z",
+       "score": "2-3 (11:6,15:17,11:13,14:12,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alaa Yehia",
+         "nat": "EGY"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-07-24T11:20:00Z",
+       "score": "3-1 (8:11,11:5,14:12,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kabirat Ayoola",
+         "nat": "NGR"
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-24T10:10:00Z",
+       "score": "0-3 (1:11,3:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-25T11:20:00Z",
+       "score": "3-1 (9:11,11:9,11:3,11:1,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ajoke Ojomu",
+         "nat": "NGR"
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-25T11:55:00Z",
+       "score": "1-3 (4:11,3:11,11:9,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Prithika Pavade",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Cynthia Kwabi",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2025-07-25T10:10:00Z",
+       "score": "3-0 (11:2,11:3,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-25T10:45:00Z",
+       "score": "1-3 (11:5,15:17,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 6
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-25T10:45:00Z",
+       "score": "3-2 (11:5,9:11,4:11,12:10,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        },
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 3
+        }
+       ],
+       "when": "2025-07-25T11:20:00Z",
+       "score": "3-0 (11:9,11:3,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-25T11:55:00Z",
+       "score": "3-2 (9:11,11:3,11:6,9:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alaa Yehia",
+         "nat": "EGY"
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T10:10:00Z",
+       "score": "0-3 (3:11,5:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-25T16:40:00Z",
+       "score": "3-0 (11:7,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Prithika Pavade",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-25T17:15:00Z",
+       "score": "3-0 (11:7,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 6
+        },
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-07-25T17:50:00Z",
+       "score": "0-3 (8:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T18:25:00Z",
+       "score": "0-3 (8:11,3:11,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Prithika Pavade",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "when": "2025-07-26T09:35:00Z",
+       "score": "3-2 (11:7,11:4,11:13,6:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-26T09:00:00Z",
+       "score": "0-3 (3:11,8:11,1:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-26T14:30:00Z",
+       "score": "1-4 (7:11,3:11,4:11,11:9,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Muizz Adegoke",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T10:45:00Z",
+       "score": "3-0 (11:3,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        },
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-07-24T11:20:00Z",
+       "score": "0-3 (8:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Betelu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Romain Ruiz",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-24T10:10:00Z",
+       "score": "1-3 (11:9,5:11,5:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi",
+         "nat": "ITA"
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-24T16:40:00Z",
+       "score": "1-3 (13:11,5:11,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ylane Batix",
+         "nat": "CMR",
+         "seed": 4
+        },
+        {
+         "name": "Abdulbasit Abdulfatai",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T16:05:00Z",
+       "score": "3-0 (11:7,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Olajide Omotayo",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T16:40:00Z",
+       "score": "3-0 (11:8,15:13,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-24T16:05:00Z",
+       "score": "1-3 (12:10,6:11,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rilwan Akanbi",
+         "nat": "NGR"
+        },
+        {
+         "name": "Wassim Essid",
+         "nat": "TUN",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-24T11:55:00Z",
+       "score": "0-3 (5:11,11:13,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Arnav Karnavar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-07-24T19:00:00Z",
+       "score": "3-1 (7:11,11:9,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        },
+        {
+         "name": "Samuel Boboye",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T17:15:00Z",
+       "score": "3-0 (11:9,11:3,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Mustapha Mustapha",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T17:15:00Z",
+       "score": "3-2 (17:15,12:14,11:6,7:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-24T19:00:00Z",
+       "score": "3-1 (7:11,11:8,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Matthew Kuti",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T10:45:00Z",
+       "score": "3-0 (11:2,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Agbodjan",
+         "nat": "TOG"
+        },
+        {
+         "name": "Taiwo Mati",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T11:55:00Z",
+       "score": "0-3 (7:11,11:13,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xuqi Lin",
+         "nat": "AUS"
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-07-24T10:10:00Z",
+       "score": "1-3 (9:11,4:11,11:6,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Chambet-Weil",
+         "nat": "NED"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-24T11:20:00Z",
+       "score": "0-3 (8:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-07-25T10:10:00Z",
+       "score": "3-0 (11:5,11:6,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Romain Ruiz",
+         "nat": "FRA"
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-25T10:10:00Z",
+       "score": "0-3 (5:11,2:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ylane Batix",
+         "nat": "CMR",
+         "seed": 4
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-07-25T10:45:00Z",
+       "score": "0-3 (6:11,2:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        },
+        {
+         "name": "Wassim Essid",
+         "nat": "TUN",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-25T11:55:00Z",
+       "score": "3-0 (11:8,11:4,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-25T10:45:00Z",
+       "score": "0-3 (6:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-25T11:20:00Z",
+       "score": "2-3 (11:8,3:11,11:2,5:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Taiwo Mati",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-25T11:55:00Z",
+       "score": "3-1 (11:7,7:11,12:10,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T11:20:00Z",
+       "score": "0-3 (8:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-25T18:25:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-25T17:15:00Z",
+       "score": "1-3 (10:12,13:11,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-07-25T17:50:00Z",
+       "score": "3-2 (11:9,11:8,5:11,2:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T16:40:00Z",
+       "score": "0-3 (9:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-26T10:10:00Z",
+       "score": "3-2 (11:5,13:15,11:4,7:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-26T10:45:00Z",
+       "score": "1-3 (11:7,9:11,8:11,12:14,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anders Lind",
+         "nat": "DEN",
+         "seed": 1
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-26T15:15:00Z",
+       "score": "4-1 (11:4,13:11,10:12,13:11,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Fatimoh Ahmed / Maryam Ahmed",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T12:30:00Z",
+       "score": "3-0 (11:3,11:2,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abosede Akinsete / Abosede Odusanya",
+         "nat": "NGR",
+         "seed": 8
+        },
+        {
+         "name": "Bernice Borquaye / Agnes Coleman",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2025-07-24T13:05:00Z",
+       "score": "3-0 (11:1,11:2,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Krittwika Roy / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Asiaju Bisola / Iyanu Oluwa Falana",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T17:50:00Z",
+       "score": "3-0 (11:4,11:8,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fatimo Bello / Aminat Fashola",
+         "nat": "NGR",
+         "seed": 5
+        },
+        {
+         "name": "Onyinyechi Mbah / Deborah Faleye",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T13:05:00Z",
+       "score": "3-0 (11:8,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fu Yu / Jieni Shao",
+         "nat": "POR",
+         "seed": 7
+        },
+        {
+         "name": "Favour Ojo / Kadijat Okanlawon",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T18:25:00Z",
+       "score": "3-0 (11:4,11:4,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sadiat Alimat Akeem / Halima Hussain",
+         "nat": "NGR"
+        },
+        {
+         "name": "Kabirat Ayoola / Aishat Rabiu",
+         "nat": "NGR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-07-24T17:50:00Z",
+       "score": "0-3 (5:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin / Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Sukurat Aiyelabegan / Rofiat Jimoh",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T12:30:00Z",
+       "score": "3-0 (11:2,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chinenye Okafor / Aziza Sezuo",
+         "nat": "NGR"
+        },
+        {
+         "name": "Hana Goda / Dina Meshref",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-24T18:25:00Z",
+       "score": "0-3 (4:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Abosede Akinsete / Abosede Odusanya",
+         "nat": "NGR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-25T09:35:00Z",
+       "score": "3-0 (11:6,11:2,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Krittwika Roy / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Fatimo Bello / Aminat Fashola",
+         "nat": "NGR",
+         "seed": 5
+        }
+       ],
+       "when": "2025-07-25T09:35:00Z",
+       "score": "3-1 (11:2,11:5,8:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fu Yu / Jieni Shao",
+         "nat": "POR",
+         "seed": 7
+        },
+        {
+         "name": "Kabirat Ayoola / Aishat Rabiu",
+         "nat": "NGR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-07-25T09:00:00Z",
+       "score": "3-1 (11:5,6:11,12:10,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin / Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Hana Goda / Dina Meshref",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T09:00:00Z",
+       "score": "1-3 (6:11,9:11,11:8,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Krittwika Roy / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-07-25T16:05:00Z",
+       "score": "3-1 (11:8,11:2,12:14,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fu Yu / Jieni Shao",
+         "nat": "POR",
+         "seed": 7
+        },
+        {
+         "name": "Hana Goda / Dina Meshref",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T15:30:00Z",
+       "score": "0-3 (9:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong / Ryu Hanna",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Hana Goda / Dina Meshref",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-26T11:30:00Z",
+       "score": "3-2 (8:11,11:4,11:7,9:11,11:6)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Muizz Adegoke / Matthew Kuti",
+         "nat": "NGR",
+         "seed": 1
+        },
+        {
+         "name": "Taiwo Mati / Amadi Omeh",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T18:25:00Z",
+       "score": "3-0 (11:6,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "James Marfo / Emmanuel Commey",
+         "nat": "GHA"
+        },
+        {
+         "name": "Yaya Azeez / Usman Ayoola",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T13:05:00Z",
+       "score": "3-1 (11:7,11:6,8:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wassim Essid / Remi Chambet-Weil",
+         "nat": "TUN/NED",
+         "seed": 3
+        },
+        {
+         "name": "Hussein Adeoye / Sodiq Adesanya",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T18:25:00Z",
+       "score": "3-0 (11:6,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Akash Pal",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Olajide Omotayo / Azeez Solanke",
+         "nat": "NGR",
+         "seed": 5
+        }
+       ],
+       "when": "2025-07-24T13:05:00Z",
+       "score": "3-1 (11:6,5:11,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulbasit Abdulfatai / Mathew Fabunmi",
+         "nat": "NGR",
+         "seed": 6
+        },
+        {
+         "name": "Tobi Adebakin / Qudus Oladejo",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T17:50:00Z",
+       "score": "3-2 (11:7,12:14,12:10,4:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar / Layan Neumann",
+         "nat": "IND/MEX"
+        },
+        {
+         "name": "Mudit Dani / Anirban Ghosh",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2025-07-24T17:50:00Z",
+       "score": "1-3 (6:11,13:11,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest / Jules Rolland",
+         "nat": "FRA",
+         "seed": 8
+        },
+        {
+         "name": "Abayomi Animasahun / Amidu Lawal",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T12:30:00Z",
+       "score": "3-0 (11:4,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Godwin Alabi / Francis Antwi",
+         "nat": "GHA"
+        },
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-24T12:30:00Z",
+       "score": "0-3 (3:11,10:12,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Muizz Adegoke / Matthew Kuti",
+         "nat": "NGR",
+         "seed": 1
+        },
+        {
+         "name": "James Marfo / Emmanuel Commey",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2025-07-25T09:35:00Z",
+       "score": "2-3 (11:13,5:11,11:5,11:8,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wassim Essid / Remi Chambet-Weil",
+         "nat": "TUN/NED",
+         "seed": 3
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Akash Pal",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-25T09:00:00Z",
+       "score": "1-3 (8:11,11:9,5:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulbasit Abdulfatai / Mathew Fabunmi",
+         "nat": "NGR",
+         "seed": 6
+        },
+        {
+         "name": "Mudit Dani / Anirban Ghosh",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2025-07-25T09:35:00Z",
+       "score": "0-3 (5:11,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest / Jules Rolland",
+         "nat": "FRA",
+         "seed": 8
+        },
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-25T09:00:00Z",
+       "score": "3-1 (7:11,11:8,11:6,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "James Marfo / Emmanuel Commey",
+         "nat": "GHA"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Akash Pal",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-25T15:30:00Z",
+       "score": "0-3 (3:11,3:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani / Anirban Ghosh",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Léo de Nodrest / Jules Rolland",
+         "nat": "FRA",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-25T16:05:00Z",
+       "score": "1-3 (8:11,5:11,11:9,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Akash Pal",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Léo de Nodrest / Jules Rolland",
+         "nat": "FRA",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-26T12:05:00Z",
+       "score": "3-0 (11:9,11:4,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Muizz Adegoke / Aishat Rabiu",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T09:00:00Z",
+       "score": "3-0 (11:5,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Chambet-Weil / Sibel Altinkaya",
+         "nat": "NED/TUR",
+         "seed": 8
+        },
+        {
+         "name": "Yaya Azeez / Deborah Faleye",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T09:00:00Z",
+       "score": "3-0 (11:5,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matthew Kuti / Ajoke Ojomu",
+         "nat": "NGR",
+         "seed": 3
+        },
+        {
+         "name": "Taiwo Mati / Favour Ojo",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2025-07-24T09:00:00Z",
+       "score": "3-2 (8:11,11:6,8:11,11:9,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Monday Olabiyi / Madinath Yessoufou",
+         "nat": "BEN"
+        }
+       ],
+       "when": "2025-07-24T09:00:00Z",
+       "score": "3-0 (11:4,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Francis Antwi / Bernice Borquaye",
+         "nat": "GHA"
+        }
+       ],
+       "when": "2025-07-24T09:35:00Z",
+       "score": "3-0 (11:3,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh / Krittwika Roy",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 4
+        }
+       ],
+       "when": "2025-07-24T09:35:00Z",
+       "score": "3-1 (5:11,11:5,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi / Debora Vivarelli",
+         "nat": "ITA"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Sreeja Akula",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-07-24T09:35:00Z",
+       "score": "1-3 (11:13,12:10,3:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland / Prithika Pavade",
+         "nat": "FRA"
+        },
+        {
+         "name": "Wassim Essid / Hana Goda",
+         "nat": "TUN/EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2025-07-24T09:35:00Z",
+       "score": "3-2 (8:11,11:8,2:11,11:5,11:7)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Remi Chambet-Weil / Sibel Altinkaya",
+         "nat": "NED/TUR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-07-24T15:30:00Z",
+       "score": "3-0 (11:9,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matthew Kuti / Ajoke Ojomu",
+         "nat": "NGR",
+         "seed": 3
+        },
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-07-24T15:30:00Z",
+       "score": "0-3 (6:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani / Taneesha Kotecha",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Anirban Ghosh / Krittwika Roy",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2025-07-24T15:30:00Z",
+       "score": "0-3 (9:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Jules Rolland / Prithika Pavade",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-24T15:30:00Z",
+       "score": "0-3 (4:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-07-25T12:30:00Z",
+       "score": "3-1 (11:6,11:7,9:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh / Krittwika Roy",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Jules Rolland / Prithika Pavade",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-25T12:30:00Z",
+       "score": "0-3 (11:13,6:11,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Jules Rolland / Prithika Pavade",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-07-25T19:00:00Z",
+       "score": "1-3 (10:12,6:11,11:6,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,2758 @@
+{
+ "event": "WTT Feeder Bangkok",
+ "wtt_event_id": "2740",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2740&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 7.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kulapassr Vijitviriyagul",
+         "nat": "THA"
+        },
+        {
+         "name": "Supamas Pankhaoyoy",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T04:10:00Z",
+       "score": "3-2 (11:8,9:11,11:2,9:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-06T04:45:00Z",
+       "score": "3-0 (11:9,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Archana Girish Kamath",
+         "nat": "IND"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Reeth Tennison",
+         "nat": "IND"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shruti Vijay Amrute",
+         "nat": "IND"
+        },
+        {
+         "name": "Ishara Madurangi",
+         "nat": "SRI"
+        }
+       ],
+       "when": "2023-09-06T04:45:00Z",
+       "score": "3-0 (11:9,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Thanwarat Chantana",
+         "nat": "THA"
+        },
+        {
+         "name": "Kim Seoyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T10:45:00Z",
+       "score": "0-3 (4:11,3:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Radhapriya Goel",
+         "nat": "IND"
+        },
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T04:45:00Z",
+       "score": "1-3 (9:11,6:11,13:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Chiao",
+         "nat": "TPE"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T10:45:00Z",
+       "score": "3-1 (8:11,11:8,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yoon Hyobin",
+         "nat": "KOR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Yee Lok",
+         "nat": "HKG"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiffany Ke",
+         "nat": "USA"
+        },
+        {
+         "name": "Yan Yutong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T04:10:00Z",
+       "score": "1-3 (13:15,11:6,7:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sim Hyunju",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T10:45:00Z",
+       "score": "3-0 (11:4,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Ying-Chen",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sun Sinan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T10:10:00Z",
+       "score": "2-3 (6:11,5:11,11:9,11:5,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        },
+        {
+         "name": "Wirakarn Tayapitak",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T10:10:00Z",
+       "score": "0-3 (7:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mak Ming Shum",
+         "nat": "HKG"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T04:10:00Z",
+       "score": "1-3 (5:11,17:15,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Wiranchana Sreechak",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T10:10:00Z",
+       "score": "3-1 (6:11,11:9,11:4,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Hsing-Yin",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Nanapat Kola",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T10:45:00Z",
+       "score": "3-2 (11:7,11:6,6:11,9:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kullarat Wonglapassakul",
+         "nat": "THA"
+        },
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T04:10:00Z",
+       "score": "0-3 (8:11,1:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nithya Mani",
+         "nat": "IND"
+        },
+        {
+         "name": "Natsima Dikaeng",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T10:10:00Z",
+       "score": "3-0 (11:7,11:8,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T04:45:00Z",
+       "score": "3-0 (11:9,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Kulapassr Vijitviriyagul",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-07T03:35:00Z",
+       "score": "3-2 (9:11,8:11,11:3,11:5,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Archana Girish Kamath",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T05:55:00Z",
+       "score": "3-0 (11:6,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Reeth Tennison",
+         "nat": "IND"
+        },
+        {
+         "name": "Shruti Vijay Amrute",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T05:55:00Z",
+       "score": "3-2 (11:6,9:11,11:5,7:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seoyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-07T03:35:00Z",
+       "score": "1-3 (10:12,8:11,11:9,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T04:10:00Z",
+       "score": "3-0 (12:10,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Chiao",
+         "nat": "TPE"
+        },
+        {
+         "name": "Yoon Hyobin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T05:55:00Z",
+       "score": "3-1 (9:11,11:7,15:13,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Yee Lok",
+         "nat": "HKG"
+        },
+        {
+         "name": "Yan Yutong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T04:10:00Z",
+       "score": "0-3 (9:11,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-07T05:55:00Z",
+       "score": "2-3 (12:14,11:4,12:10,4:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Sun Sinan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T06:30:00Z",
+       "score": "3-0 (11:6,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wirakarn Tayapitak",
+         "nat": "THA"
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T03:35:00Z",
+       "score": "0-3 (6:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T03:35:00Z",
+       "score": "3-0 (11:7,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-09-07T04:10:00Z",
+       "score": "3-1 (11:8,11:6,8:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Hsing-Yin",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-09-07T06:30:00Z",
+       "score": "3-1 (10:12,15:13,11:6,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ding Yijie",
+         "nat": "CHN"
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-07T04:10:00Z",
+       "score": "2-3 (3:11,11:8,13:15,12:10,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE"
+        },
+        {
+         "name": "Nithya Mani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T06:30:00Z",
+       "score": "1-3 (13:15,4:11,11:9,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-07T06:30:00Z",
+       "score": "3-2 (11:13,7:11,11:6,11:4,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T11:45:00Z",
+       "score": "1-3 (11:13,11:8,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Reeth Tennison",
+         "nat": "IND"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-07T11:10:00Z",
+       "score": "0-3 (5:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Huang Yu-Chiao",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-07T11:10:00Z",
+       "score": "3-2 (6:11,11:4,9:11,11:4,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yan Yutong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-07T11:45:00Z",
+       "score": "1-3 (8:11,11:7,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T11:45:00Z",
+       "score": "3-1 (11:9,14:12,7:11,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T11:45:00Z",
+       "score": "0-3 (10:12,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Hsing-Yin",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-07T11:10:00Z",
+       "score": "1-3 (3:11,10:12,11:8,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nithya Mani",
+         "nat": "IND"
+        },
+        {
+         "name": "Huang Hsin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-07T11:10:00Z",
+       "score": "2-3 (7:11,11:7,11:8,6:11,3:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-08T10:55:00Z",
+       "score": "2-3 (11:7,7:11,11:9,8:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-08T04:45:00Z",
+       "score": "3-0 (11:8,11:8,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-08T10:20:00Z",
+       "score": "3-0 (11:2,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Huang Hsin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-08T04:10:00Z",
+       "score": "3-0 (11:9,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Xu Yi",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-09T04:00:00Z",
+       "score": "3-2 (6:11,11:7,11:9,8:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-09T04:35:00Z",
+       "score": "1-3 (7:11,13:11,9:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-09T10:10:00Z",
+       "score": "3-0 (11:8,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Junsong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yashansh Malik",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T05:20:00Z",
+       "score": "1-3 (7:11,11:9,8:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Nawachet Prasongpol",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T05:20:00Z",
+       "score": "3-0 (11:8,14:12,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Li Hon Ming",
+         "nat": "HKG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin Ho Wah",
+         "nat": "HKG"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Afzaal Ahmad",
+         "nat": "PAK"
+        },
+        {
+         "name": "Chen Hengda",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T05:20:00Z",
+       "score": "0-3 (2:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kakeru Sone",
+         "nat": "JPN"
+        },
+        {
+         "name": "Rogelio Castro",
+         "nat": "MEX"
+        }
+       ],
+       "when": "2023-09-06T05:20:00Z",
+       "score": "3-0 (11:8,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kang Dongsoo",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liao Cheng-Ting",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Munsu",
+         "nat": "KOR"
+        },
+        {
+         "name": "Amalraj Anthony",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T05:55:00Z",
+       "score": "3-0 (11:6,12:10,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kwak Yu Bin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sun Yang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T05:55:00Z",
+       "score": "3-0 (11:5,11:2,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Cancheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T05:55:00Z",
+       "score": "1-3 (3:11,11:8,8:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tanapat Thanmathikom",
+         "nat": "THA"
+        },
+        {
+         "name": "Yang Chia-An",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-06T05:55:00Z",
+       "score": "0-3 (7:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kazuhiro Yoshimura",
+         "nat": "JPN"
+        },
+        {
+         "name": "Choi Inhyeok",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T11:55:00Z",
+       "score": "3-2 (5:11,11:9,11:5,5:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sanil Shetty",
+         "nat": "IND"
+        },
+        {
+         "name": "Taehyun Kim",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2023-09-06T11:20:00Z",
+       "score": "1-3 (7:11,11:8,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Shao Han Chua",
+         "nat": "SGP"
+        },
+        {
+         "name": "Puripong Saelee",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T11:55:00Z",
+       "score": "2-3 (11:8,11:6,6:11,9:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hsin-Yang",
+         "nat": "TPE"
+        },
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T11:55:00Z",
+       "score": "3-0 (11:7,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Satoshi Aida",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chayaduj Maungwhan",
+         "nat": "THA"
+        },
+        {
+         "name": "Kim Yanghyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T11:20:00Z",
+       "score": "0-3 (9:11,11:13,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        },
+        {
+         "name": "Park Chan-Hyeok",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T11:55:00Z",
+       "score": "0-3 (2:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Peng Wang-Wei",
+         "nat": "TPE"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Choy Chun Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-09-06T11:20:00Z",
+       "score": "3-1 (11:9,12:10,9:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ludovic Gombos",
+         "nat": "USA"
+        },
+        {
+         "name": "Pau Yik Man",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-09-06T11:20:00Z",
+       "score": "0-3 (6:11,1:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yashansh Malik",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T04:45:00Z",
+       "score": "3-0 (11:1,11:1,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Li Hon Ming",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-09-07T05:20:00Z",
+       "score": "3-1 (5:11,11:6,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin Ho Wah",
+         "nat": "HKG"
+        },
+        {
+         "name": "Chen Hengda",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T04:45:00Z",
+       "score": "3-2 (11:8,11:7,7:11,3:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kakeru Sone",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kang Dongsoo",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-07T04:45:00Z",
+       "score": "3-2 (9:11,9:11,11:8,11:8,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liao Cheng-Ting",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Kim Munsu",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T04:45:00Z",
+       "score": "3-1 (11:8,7:11,11:8,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kwak Yu Bin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-09-07T05:20:00Z",
+       "score": "3-2 (11:4,11:9,9:11,6:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T05:20:00Z",
+       "score": "3-0 (11:9,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Chia-An",
+         "nat": "TPE"
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-07T05:20:00Z",
+       "score": "0-3 (5:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Kazuhiro Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-07T07:40:00Z",
+       "score": "0-3 (7:11,6:11,12:14,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Taehyun Kim",
+         "nat": "AUT"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T07:05:00Z",
+       "score": "0-3 (6:11,9:11,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE"
+        },
+        {
+         "name": "Puripong Saelee",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-07T07:40:00Z",
+       "score": "3-0 (11:7,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hsin-Yang",
+         "nat": "TPE"
+        },
+        {
+         "name": "Satoshi Aida",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2023-09-07T07:40:00Z",
+       "score": "3-0 (11:8,11:6,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        },
+        {
+         "name": "Kim Yanghyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T07:05:00Z",
+       "score": "3-1 (13:11,6:11,11:1,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Chan-Hyeok",
+         "nat": "KOR"
+        },
+        {
+         "name": "Peng Wang-Wei",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-07T07:05:00Z",
+       "score": "3-2 (7:11,11:8,11:8,8:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-07T07:05:00Z",
+       "score": "3-0 (11:9,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pau Yik Man",
+         "nat": "HKG"
+        },
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-07T07:45:00Z",
+       "score": "0-3 (7:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T12:55:00Z",
+       "score": "3-1 (8:11,11:5,12:10,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin Ho Wah",
+         "nat": "HKG"
+        },
+        {
+         "name": "Kakeru Sone",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-07T12:55:00Z",
+       "score": "0-3 (8:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liao Cheng-Ting",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Kwak Yu Bin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T12:20:00Z",
+       "score": "2-3 (11:6,11:4,10:12,8:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-07T12:20:00Z",
+       "score": "2-3 (15:13,7:11,5:11,13:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kazuhiro Yoshimura",
+         "nat": "JPN"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T12:55:00Z",
+       "score": "1-3 (9:11,11:5,9:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE"
+        },
+        {
+         "name": "Li Hsin-Yang",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-07T12:20:00Z",
+       "score": "3-1 (7:11,13:11,16:14,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        },
+        {
+         "name": "Park Chan-Hyeok",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T13:10:00Z",
+       "score": "2-3 (11:7,12:10,6:11,9:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-07T12:20:00Z",
+       "score": "3-1 (11:6,11:6,9:11,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Kakeru Sone",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-08T05:20:00Z",
+       "score": "3-1 (11:7,11:7,10:12,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kwak Yu Bin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-08T05:55:00Z",
+       "score": "0-3 (9:11,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-09-08T11:30:00Z",
+       "score": "3-2 (11:13,12:10,2:11,11:8,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Chan-Hyeok",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-08T12:05:00Z",
+       "score": "1-3 (11:6,8:11,9:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-09T05:10:00Z",
+       "score": "2-3 (11:4,13:15,11:6,4:11,18:20)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-09T05:45:00Z",
+       "score": "3-0 (13:11,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-09T10:45:00Z",
+       "score": "3-0 (11:8,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna / Kim Nayeong",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Yoon Hyobin / Sim Hyunju",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T07:05:00Z",
+       "score": "0-3 (2:11,3:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shruti Vijay Amrute / Swastika Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Xu Yi / Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T07:05:00Z",
+       "score": "0-3 (3:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman / Zhang Xiangyu",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Nanapat Kola / Wirakarn Tayapitak",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T06:30:00Z",
+       "score": "3-0 (11:4,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Yee Lok / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 7
+        },
+        {
+         "name": "Liu Hsing-Yin / Cheng Hsien-Tzu",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ],
+       "when": "2023-09-06T06:30:00Z",
+       "score": "3-0 (13:11,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nithya Mani / Radhapriya Goel",
+         "nat": "IND"
+        },
+        {
+         "name": "Kulapassr Vijitviriyagul / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T07:05:00Z",
+       "score": "2-3 (12:10,11:7,9:11,6:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Poymantee Baisya / Reeth Tennison",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Lee Zion / Kim Seoyun",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-09-06T06:30:00Z",
+       "score": "0-3 (8:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Supamas Pankhaoyoy / Natsima Dikaeng",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T06:30:00Z",
+       "score": "3-0 (11:5,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Hsin / Huang Yu-Chiao",
+         "nat": "TPE"
+        },
+        {
+         "name": "Fan Shuhan / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-06T07:05:00Z",
+       "score": "1-3 (9:11,8:11,13:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yoon Hyobin / Sim Hyunju",
+         "nat": "KOR"
+        },
+        {
+         "name": "Xu Yi / Ding Yijie",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-07T10:00:00Z",
+       "score": "2-3 (5:11,11:2,10:12,11:6,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman / Zhang Xiangyu",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Lam Yee Lok / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 7
+        }
+       ],
+       "when": "2023-09-07T10:00:00Z",
+       "score": "3-1 (9:11,12:10,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kulapassr Vijitviriyagul / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Lee Zion / Kim Seoyun",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-09-07T10:00:00Z",
+       "score": "3-1 (3:11,11:5,11:8,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Fan Shuhan / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-07T10:00:00Z",
+       "score": "0-3 (6:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xu Yi / Ding Yijie",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zong Geman / Zhang Xiangyu",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-08T08:00:00Z",
+       "score": "1-3 (11:9,7:11,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kulapassr Vijitviriyagul / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Fan Shuhan / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-08T08:35:00Z",
+       "score": "0-3 (3:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zong Geman / Zhang Xiangyu",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Fan Shuhan / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-09T09:00:00Z",
+       "score": "1-3 (11:13,11:6,8:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin Ho Wah / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Akash Pal / Abhimanyu Mitra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T09:35:00Z",
+       "score": "3-0 (11:8,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Sangyeon / Kim Yanghyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wen Ruibo / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-06T09:00:00Z",
+       "score": "0-3 (7:11,8:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Pau Yik Man / Choy Chun Kit",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Chen Junsong / Zhu Jiaqi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T09:00:00Z",
+       "score": "0-3 (4:11,11:13,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sanil Shetty / Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Chayaduj Maungwhan / Nawachet Prasongpol",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T09:00:00Z",
+       "score": "2-3 (11:5,6:11,11:6,6:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Puripong Saelee / Tanapat Thanmathikom",
+         "nat": "THA"
+        },
+        {
+         "name": "Kim Daewoo / Choi Inhyeok",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-06T09:35:00Z",
+       "score": "0-3 (8:11,2:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Shao Han Chua / Jay Shern Fong",
+         "nat": "SGP/MAS",
+         "seed": 7
+        },
+        {
+         "name": "Mizuki Oikawa / Kazuhiro Yoshimura",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-06T09:00:00Z",
+       "score": "2-3 (9:11,6:11,11:8,11:5,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Park Chan-Hyeok / Kang Dongsoo",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Yang Chia-An / Lin Yen-Chun",
+         "nat": "TPE",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-06T09:35:00Z",
+       "score": "3-1 (8:11,11:8,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jo Yokotani / Maharu Yoshimura",
+         "nat": "JPN"
+        },
+        {
+         "name": "Snehit Suravajjula / Jeet Chandra",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-06T09:35:00Z",
+       "score": "3-0 (12:10,14:12,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin Ho Wah / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Wen Ruibo / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-07T10:35:00Z",
+       "score": "3-2 (4:11,11:13,11:4,11:9,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Junsong / Zhu Jiaqi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chayaduj Maungwhan / Nawachet Prasongpol",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-07T10:35:00Z",
+       "score": "3-0 (11:2,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo / Choi Inhyeok",
+         "nat": "KOR"
+        },
+        {
+         "name": "Mizuki Oikawa / Kazuhiro Yoshimura",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-07T10:35:00Z",
+       "score": "0-3 (6:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Park Chan-Hyeok / Kang Dongsoo",
+         "nat": "KOR",
+         "seed": 5
+        },
+        {
+         "name": "Jo Yokotani / Maharu Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-07T10:35:00Z",
+       "score": "0-3 (9:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin Ho Wah / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Chen Junsong / Zhu Jiaqi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-08T09:10:00Z",
+       "score": "0-3 (8:11,4:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa / Kazuhiro Yoshimura",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Jo Yokotani / Maharu Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-09-08T09:45:00Z",
+       "score": "3-1 (6:11,11:5,11:6,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Junsong / Zhu Jiaqi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Mizuki Oikawa / Kazuhiro Yoshimura",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-09T09:35:00Z",
+       "score": "3-1 (11:7,9:11,13:11,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong / Lee Zion",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Fan Shuhan / Chen Junsong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-09-06T03:00:00Z",
+       "score": "1-3 (12:10,8:11,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh / Yashansh Malik",
+         "nat": "IND"
+        },
+        {
+         "name": "Jeet Chandra / Reeth Tennison",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2023-09-06T03:00:00Z",
+       "score": "0-3 (4:11,8:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Hoi Tung / Chan Baldwin Ho Wah",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Kong Tsz Lam / Choy Chun Kit",
+         "nat": "HKG",
+         "seed": 5
+        }
+       ],
+       "when": "2023-09-06T03:00:00Z",
+       "score": "1-3 (8:11,11:4,9:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo / Sim Hyunju",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shruti Vijay Amrute / Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-09-06T03:00:00Z",
+       "score": "3-0 (11:8,11:7,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kim Seoyun / Kim Minhyeok",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2023-09-06T03:35:00Z",
+       "score": "3-1 (8:11,11:4,11:4,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Ying-Chen / Li Hsin-Yang",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kwak Yu Bin / Yoon Hyobin",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-06T03:35:00Z",
+       "score": "1-3 (12:10,5:11,8:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Puripong Saelee / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Nanapat Kola / Chayaduj Maungwhan",
+         "nat": "THA"
+        }
+       ],
+       "when": "2023-09-06T03:35:00Z",
+       "score": "3-2 (11:13,11:4,11:4,10:12,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Ng Wing Lam / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2023-09-06T03:35:00Z",
+       "score": "3-0 (14:12,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan / Chen Junsong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Jeet Chandra / Reeth Tennison",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2023-09-07T03:00:00Z",
+       "score": "3-1 (11:8,10:12,11:7,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam / Choy Chun Kit",
+         "nat": "HKG",
+         "seed": 5
+        },
+        {
+         "name": "Kim Daewoo / Sim Hyunju",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-07T03:00:00Z",
+       "score": "0-3 (6:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kwak Yu Bin / Yoon Hyobin",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2023-09-07T03:00:00Z",
+       "score": "2-3 (12:10,4:11,11:7,7:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Puripong Saelee / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Qin Yuxuan / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-07T03:00:00Z",
+       "score": "1-3 (10:12,11:8,11:13,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan / Chen Junsong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kim Daewoo / Sim Hyunju",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-09-08T03:35:00Z",
+       "score": "3-1 (15:13,11:2,9:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kwak Yu Bin / Yoon Hyobin",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Qin Yuxuan / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-08T03:00:00Z",
+       "score": "0-3 (5:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan / Chen Junsong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qin Yuxuan / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-09-08T12:40:00Z",
+       "score": "0-3 (7:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

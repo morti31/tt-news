@@ -1,0 +1,2828 @@
+{
+ "event": "WTT Feeder Stockholm",
+ "wtt_event_id": "2738",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2738&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 2.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Solomiya Brateyko",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2023-10-04T09:45:00Z",
+       "score": "3-1 (11:7,4:11,11:7,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-10-04T09:10:00Z",
+       "score": "3-1 (11:7,8:11,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        },
+        {
+         "name": "Sophia Klee",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-04T08:35:00Z",
+       "score": "3-0 (11:9,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Martine Toftaker",
+         "nat": "NOR"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T09:45:00Z",
+       "score": "2-3 (16:14,14:12,10:12,11:13,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T09:45:00Z",
+       "score": "0-3 (11:13,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        },
+        {
+         "name": "Chantal Mantz",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-04T08:35:00Z",
+       "score": "3-0 (11:7,11:1,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2023-10-04T15:10:00Z",
+       "score": "2-3 (11:13,11:4,12:10,5:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marina Donner",
+         "nat": "FIN"
+        },
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-04T08:35:00Z",
+       "score": "0-3 (3:11,8:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Paulina Krzysiek",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T09:10:00Z",
+       "score": "3-0 (11:9,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vivien Scholz",
+         "nat": "LUX"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-04T09:45:00Z",
+       "score": "0-3 (7:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        },
+        {
+         "name": "Martyna Lis",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T09:45:00Z",
+       "score": "3-0 (11:6,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2023-10-04T09:45:00Z",
+       "score": "3-2 (11:5,7:11,13:11,3:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Lucia Cordero",
+         "nat": "GUA"
+        }
+       ],
+       "when": "2023-10-04T08:35:00Z",
+       "score": "3-0 (11:2,11:9,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nathalie Marchetti",
+         "nat": "BEL"
+        },
+        {
+         "name": "Nithya Mani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-10-04T09:10:00Z",
+       "score": "3-1 (12:10,11:13,11:7,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2023-10-04T15:10:00Z",
+       "score": "3-2 (10:12,11:4,8:11,11:4,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "when": "2023-10-04T14:35:00Z",
+       "score": "0-3 (9:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 7
+        },
+        {
+         "name": "Hana Arapovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-10-04T14:35:00Z",
+       "score": "3-2 (6:11,8:11,11:9,11:9,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Pavlovic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T14:35:00Z",
+       "score": "1-3 (17:15,10:12,11:13,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-04T14:35:00Z",
+       "score": "3-0 (11:7,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ozge Yilmaz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T09:10:00Z",
+       "score": "0-3 (6:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hanna Haponova",
+         "nat": "UKR"
+        },
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-10-04T15:10:00Z",
+       "score": "2-3 (6:11,11:8,12:10,2:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Maria Perdomo",
+         "nat": "COL"
+        }
+       ],
+       "when": "2023-10-04T15:10:00Z",
+       "score": "3-0 (11:7,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX"
+        },
+        {
+         "name": "Ilona Sztwiertnia",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T15:10:00Z",
+       "score": "3-1 (11:7,8:11,11:5,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Sian Alice Chang",
+         "nat": "MAS"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-04T09:10:00Z",
+       "score": "0-3 (1:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Aleksandra Michalak",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T09:10:00Z",
+       "score": "3-1 (9:11,11:6,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Clio Barcenas",
+         "nat": "MEX"
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-10-04T15:10:00Z",
+       "score": "2-3 (5:11,5:11,11:7,11:8,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Tessy Gonderinger",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2023-10-04T15:45:00Z",
+       "score": "3-0 (11:7,11:6,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT"
+        },
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-04T15:45:00Z",
+       "score": "1-3 (9:11,7:11,11:9,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Arantxa Cossio Aceves",
+         "nat": "MEX"
+        },
+        {
+         "name": "Leah Tveit",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T15:45:00Z",
+       "score": "3-0 (11:8,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Edmarie Leon",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2023-10-04T15:45:00Z",
+       "score": "3-0 (11:4,11:1,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matilda Hansson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Pauline Chasselin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T15:45:00Z",
+       "score": "1-3 (17:19,11:9,8:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Katerina Tomanovska",
+         "nat": "CZE"
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-04T15:45:00Z",
+       "score": "0-3 (9:11,3:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T08:35:00Z",
+       "score": "3-0 (11:9,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-05T08:35:00Z",
+       "score": "3-2 (9:11,11:8,11:6,7:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T09:10:00Z",
+       "score": "0-3 (3:11,11:13,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR"
+        },
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-05T08:35:00Z",
+       "score": "0-3 (7:11,2:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-05T10:55:00Z",
+       "score": "3-0 (11:8,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        },
+        {
+         "name": "Huang Yu-Jie",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-10-05T09:10:00Z",
+       "score": "3-0 (11:8,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Nathalie Marchetti",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-10-05T08:35:00Z",
+       "score": "3-0 (15:13,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "when": "2023-10-05T09:10:00Z",
+       "score": "2-3 (11:3,6:11,6:11,12:10,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 7
+        },
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-05T10:55:00Z",
+       "score": "0-3 (9:11,10:12,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T11:30:00Z",
+       "score": "0-3 (10:12,7:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-05T11:30:00Z",
+       "score": "2-3 (13:15,11:7,4:11,11:5,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-05T09:10:00Z",
+       "score": "2-3 (12:10,3:11,11:5,6:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-10-05T11:30:00Z",
+       "score": "3-1 (9:11,11:3,15:13,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-05T10:55:00Z",
+       "score": "0-3 (4:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Arantxa Cossio Aceves",
+         "nat": "MEX"
+        },
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2023-10-05T10:55:00Z",
+       "score": "0-3 (3:11,1:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Pauline Chasselin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T11:30:00Z",
+       "score": "1-3 (15:13,4:11,6:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T16:10:00Z",
+       "score": "3-0 (11:6,11:4,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        },
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-05T16:10:00Z",
+       "score": "3-1 (8:11,11:9,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-10-05T16:10:00Z",
+       "score": "0-3 (5:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "when": "2023-10-05T16:10:00Z",
+       "score": "3-0 (14:12,11:5,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T16:45:00Z",
+       "score": "0-3 (6:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-05T16:45:00Z",
+       "score": "2-3 (11:9,11:9,8:11,7:11,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-05T16:45:00Z",
+       "score": "3-2 (15:13,3:11,11:7,3:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T16:45:00Z",
+       "score": "3-1 (11:9,5:11,11:7,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-06T09:10:00Z",
+       "score": "3-1 (11:7,8:11,11:9,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        },
+        {
+         "name": "Ivana Malobabic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-10-06T09:45:00Z",
+       "score": "3-0 (11:5,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-06T15:20:00Z",
+       "score": "0-3 (7:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2023-10-06T15:55:00Z",
+       "score": "3-0 (11:9,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-10-07T08:00:00Z",
+       "score": "3-1 (11:5,11:6,9:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-10-07T08:35:00Z",
+       "score": "2-3 (4:11,11:6,4:11,11:6,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Sakura Mori",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2023-10-07T15:10:00Z",
+       "score": "2-3 (11:9,7:11,7:11,11:7,9:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-10-04T10:20:00Z",
+       "score": "3-2 (15:17,11:9,9:11,11:4,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jordy Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Eric Jouti",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2023-10-04T10:20:00Z",
+       "score": "3-0 (12:10,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kubik",
+         "nat": "POL"
+        },
+        {
+         "name": "Carlos Ishida",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2023-10-04T10:20:00Z",
+       "score": "3-0 (11:3,11:6,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "Benedek Olah",
+         "nat": "FIN"
+        }
+       ],
+       "when": "2023-10-04T10:20:00Z",
+       "score": "3-1 (7:11,11:8,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX"
+        },
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-10-04T10:20:00Z",
+       "score": "2-3 (11:5,8:11,14:12,10:12,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diego Orantes",
+         "nat": "ESA"
+        },
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T10:20:00Z",
+       "score": "0-3 (9:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-10-04T10:55:00Z",
+       "score": "3-2 (11:4,6:11,8:11,11:6,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anders Eriksson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-04T10:55:00Z",
+       "score": "3-1 (11:6,11:6,9:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jonathan Groth",
+         "nat": "DEN",
+         "seed": 4
+        },
+        {
+         "name": "Tom Jarvis",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2023-10-04T10:55:00Z",
+       "score": "2-3 (11:6,10:12,8:11,11:7,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hampus Soderlund",
+         "nat": "SWE"
+        },
+        {
+         "name": "Angel Naranjo",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2023-10-04T10:55:00Z",
+       "score": "3-2 (8:11,12:10,11:8,9:11,11:2)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choy Chun Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-04T10:55:00Z",
+       "score": "0-3 (1:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Benno Oehme",
+         "nat": "GER"
+        },
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-10-04T10:55:00Z",
+       "score": "1-3 (9:11,11:8,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Cedric Tschanz",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2023-10-04T11:30:00Z",
+       "score": "3-0 (11:5,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ioannis Sgouropoulos",
+         "nat": "GRE"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2023-10-04T11:30:00Z",
+       "score": "1-3 (8:11,9:11,11:7,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER"
+        },
+        {
+         "name": "Flavien Coton",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T11:30:00Z",
+       "score": "3-2 (9:11,13:15,11:5,11:2,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Viktor Brodd",
+         "nat": "SWE"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 7
+        }
+       ],
+       "when": "2023-10-04T11:30:00Z",
+       "score": "2-3 (11:9,11:6,7:11,7:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yaroslav Zhmudenko",
+         "nat": "UKR",
+         "seed": 6
+        },
+        {
+         "name": "Konstantinos Angelakis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2023-10-04T16:20:00Z",
+       "score": "1-3 (8:11,11:5,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        },
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2023-10-04T16:20:00Z",
+       "score": "2-3 (7:11,11:9,11:5,10:12,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        },
+        {
+         "name": "Adam Stalzer",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2023-10-04T16:20:00Z",
+       "score": "3-2 (8:11,11:7,11:5,10:12,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "David Serdaroglu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T16:20:00Z",
+       "score": "2-3 (7:11,7:11,11:7,12:10,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2023-10-04T16:20:00Z",
+       "score": "3-2 (11:7,9:11,11:8,2:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yeh Chih-Wei",
+         "nat": "TPE"
+        },
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T16:55:00Z",
+       "score": "1-3 (11:13,9:11,11:5,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T16:55:00Z",
+       "score": "0-3 (10:12,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Felix Wetzel",
+         "nat": "MLT"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-04T16:55:00Z",
+       "score": "1-3 (5:11,11:7,6:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 5
+        },
+        {
+         "name": "Park Gyeongtae",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-10-04T16:55:00Z",
+       "score": "3-0 (11:8,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Guilherme Teodoro",
+         "nat": "BRA"
+        },
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T16:20:00Z",
+       "score": "0-3 (5:11,2:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "David Mcbeath",
+         "nat": "ENG"
+        },
+        {
+         "name": "Dimitrije Levajac",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-04T16:55:00Z",
+       "score": "0-3 (9:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Georgios Stamatouros",
+         "nat": "GRE"
+        },
+        {
+         "name": "Lilian Bardet",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T17:30:00Z",
+       "score": "0-3 (8:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR"
+        },
+        {
+         "name": "Peter Hribar",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2023-10-04T17:30:00Z",
+       "score": "2-3 (11:6,10:12,15:17,11:9,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kazuki Hamada",
+         "nat": "JPN"
+        },
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2023-10-04T16:55:00Z",
+       "score": "3-0 (11:9,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Limonov",
+         "nat": "UKR"
+        },
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T17:30:00Z",
+       "score": "0-3 (6:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ivor Ban",
+         "nat": "CRO"
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-04T17:30:00Z",
+       "score": "0-3 (4:11,8:11,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Jordy Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-10-05T09:45:00Z",
+       "score": "3-0 (11:1,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kubik",
+         "nat": "POL"
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2023-10-05T09:45:00Z",
+       "score": "3-2 (11:4,11:8,7:11,6:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        },
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T09:45:00Z",
+       "score": "3-1 (8:11,11:5,11:6,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Anders Eriksson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-05T10:20:00Z",
+       "score": "0-3 (9:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Jarvis",
+         "nat": "ENG"
+        },
+        {
+         "name": "Hampus Soderlund",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-05T12:40:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-10-05T10:20:00Z",
+       "score": "3-1 (11:2,7:11,11:7,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2023-10-05T09:45:00Z",
+       "score": "3-2 (6:11,5:11,11:6,11:9,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kay Stumper",
+         "nat": "GER"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 7
+        }
+       ],
+       "when": "2023-10-05T10:20:00Z",
+       "score": "2-3 (11:6,11:8,5:11,9:11,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Konstantinos Angelakis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2023-10-05T12:05:00Z",
+       "score": "3-1 (11:8,7:11,11:5,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND"
+        },
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T10:20:00Z",
+       "score": "1-3 (5:11,7:11,11:5,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Alexandre Cassin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T12:05:00Z",
+       "score": "3-1 (12:10,8:11,11:2,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-05T12:05:00Z",
+       "score": "3-2 (11:7,11:9,4:11,6:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 5
+        },
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T12:40:00Z",
+       "score": "0-3 (8:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dimitrije Levajac",
+         "nat": "SRB"
+        },
+        {
+         "name": "Lilian Bardet",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T12:40:00Z",
+       "score": "3-0 (11:6,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Peter Hribar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Kazuki Hamada",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-10-05T12:05:00Z",
+       "score": "1-3 (8:11,11:9,1:11,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T12:40:00Z",
+       "score": "2-3 (8:11,3:11,11:9,14:12,11:13)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Maciej Kubik",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-05T17:20:00Z",
+       "score": "3-1 (7:11,11:5,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        },
+        {
+         "name": "Anders Eriksson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-05T17:20:00Z",
+       "score": "3-1 (11:4,11:9,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Jarvis",
+         "nat": "ENG"
+        },
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-10-05T17:20:00Z",
+       "score": "0-3 (7:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 7
+        }
+       ],
+       "when": "2023-10-05T17:20:00Z",
+       "score": "0-3 (6:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Konstantinos Angelakis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-05T17:55:00Z",
+       "score": "0-3 (6:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-05T17:55:00Z",
+       "score": "1-3 (7:11,11:7,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        },
+        {
+         "name": "Dimitrije Levajac",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-05T17:55:00Z",
+       "score": "3-2 (9:11,11:6,11:9,8:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kazuki Hamada",
+         "nat": "JPN"
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T17:55:00Z",
+       "score": "1-3 (6:11,11:3,3:11,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-10-06T17:05:00Z",
+       "score": "3-0 (11:5,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 7
+        }
+       ],
+       "when": "2023-10-06T16:30:00Z",
+       "score": "0-3 (7:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA"
+        },
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-06T10:20:00Z",
+       "score": "0-3 (8:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-06T10:55:00Z",
+       "score": "2-3 (9:11,11:5,14:12,8:11,2:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 7
+        }
+       ],
+       "when": "2023-10-07T09:10:00Z",
+       "score": "3-0 (11:9,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-07T09:45:00Z",
+       "score": "0-3 (5:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-07T15:45:00Z",
+       "score": "3-0 (11:9,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Matilda Hansson / Filippa Bergand",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T12:05:00Z",
+       "score": "3-0 (11:7,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Paulina Krzysiek / Ilona Sztwiertnia",
+         "nat": "POL"
+        },
+        {
+         "name": "Tatiana Kukulkova / Ema Labosova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "when": "2023-10-04T11:30:00Z",
+       "score": "3-1 (11:5,8:11,11:7,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 4
+        },
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-04T11:30:00Z",
+       "score": "1-3 (5:11,7:11,11:5,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Martyna Lis / Aleksandra Michalak",
+         "nat": "POL"
+        },
+        {
+         "name": "Amelie Solja / Vivien Scholz",
+         "nat": "AUT/LUX",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-04T12:05:00Z",
+       "score": "1-3 (11:4,7:11,11:13,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac / Ozge Yilmaz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Ivana Malobabic / Andrea Pavlovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2023-10-04T12:05:00Z",
+       "score": "3-2 (3:11,11:9,5:11,11:6,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu / Chien Tung-Chuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sarah De Nutte / Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-04T12:05:00Z",
+       "score": "0-3 (10:12,8:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok / Pauline Chasselin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Clio Barcenas / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 6
+        }
+       ],
+       "when": "2023-10-04T12:05:00Z",
+       "score": "3-0 (11:2,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Oceane Guisnel / Stephanie Loeuillette",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Camille Lutz / Barbora Balazova",
+         "nat": "FRA/SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-04T12:05:00Z",
+       "score": "2-3 (8:11,11:6,11:8,9:11,10:12)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Paulina Krzysiek / Ilona Sztwiertnia",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-05T15:00:00Z",
+       "score": "3-0 (11:9,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Amelie Solja / Vivien Scholz",
+         "nat": "AUT/LUX",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-05T15:00:00Z",
+       "score": "3-2 (11:9,9:11,11:8,8:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac / Ozge Yilmaz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Sarah De Nutte / Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-05T15:00:00Z",
+       "score": "0-3 (9:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok / Pauline Chasselin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Camille Lutz / Barbora Balazova",
+         "nat": "FRA/SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T15:00:00Z",
+       "score": "0-3 (9:11,9:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2023-10-06T13:35:00Z",
+       "score": "3-1 (4:11,11:9,11:7,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sarah De Nutte / Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        },
+        {
+         "name": "Camille Lutz / Barbora Balazova",
+         "nat": "FRA/SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-06T13:00:00Z",
+       "score": "3-1 (11:6,11:8,7:11,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Linda Bergstrom / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Sarah De Nutte / Xia Lian Ni",
+         "nat": "LUX",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-07T14:00:00Z",
+       "score": "0-3 (4:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Jeet Chandra / Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2023-10-04T14:00:00Z",
+       "score": "3-0 (11:4,13:11,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo / Jabdiel Torres",
+         "nat": "PUR"
+        },
+        {
+         "name": "Samuel Walker / Tom Jarvis",
+         "nat": "ENG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-04T14:00:00Z",
+       "score": "0-3 (3:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland / Bastien Rembert",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Anders Eriksson / Hampus Soderlund",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T14:00:00Z",
+       "score": "3-0 (11:3,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Balazs Lei / Oliver Both",
+         "nat": "HUN"
+        },
+        {
+         "name": "Julian Ramos / Santiago Montes",
+         "nat": "COL"
+        }
+       ],
+       "when": "2023-10-04T14:00:00Z",
+       "score": "3-0 (11:5,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Tschanz / Pedro Osiro",
+         "nat": "SUI"
+        },
+        {
+         "name": "Adam Stalzer / Tomas Koldas",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2023-10-04T14:00:00Z",
+       "score": "2-3 (11:7,11:7,8:11,5:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Borgar Haug / Park Gyeongtae",
+         "nat": "NOR/KOR"
+        },
+        {
+         "name": "Truls Moregard / Anton Källberg",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-10-04T14:00:00Z",
+       "score": "0-3 (7:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choy Chun Kit / Kwan Man Ho",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Elias Ranefur / Viktor Brodd",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T14:35:00Z",
+       "score": "3-0 (11:7,11:8,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Carlos Ishida / Guilherme Teodoro",
+         "nat": "BRA",
+         "seed": 7
+        },
+        {
+         "name": "Florent Lambiet / Eric Jouti",
+         "nat": "BEL/BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-04T14:35:00Z",
+       "score": "2-3 (11:8,11:7,8:11,8:11,11:13)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Samuel Walker / Tom Jarvis",
+         "nat": "ENG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-05T15:35:00Z",
+       "score": "3-1 (11:9,5:11,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland / Bastien Rembert",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Balazs Lei / Oliver Both",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2023-10-05T15:35:00Z",
+       "score": "3-1 (11:2,6:11,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adam Stalzer / Tomas Koldas",
+         "nat": "CZE"
+        },
+        {
+         "name": "Truls Moregard / Anton Källberg",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-10-05T15:35:00Z",
+       "score": "0-3 (6:11,8:11,12:14,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choy Chun Kit / Kwan Man Ho",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Florent Lambiet / Eric Jouti",
+         "nat": "BEL/BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T15:35:00Z",
+       "score": "3-1 (11:5,3:11,11:7,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Jules Rolland / Bastien Rembert",
+         "nat": "FRA",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-06T14:45:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Truls Moregard / Anton Källberg",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Choy Chun Kit / Kwan Man Ho",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2023-10-06T14:10:00Z",
+       "score": "3-0 (11:6,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Truls Moregard / Anton Källberg",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2023-10-07T14:35:00Z",
+       "score": "2-3 (11:8,11:9,12:14,8:11,5:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Truls Moregard / Christina Kallberg",
+         "nat": "SWE",
+         "seed": 1
+        },
+        {
+         "name": "Ibrahim Gunduz / Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 7
+        }
+       ],
+       "when": "2023-10-04T08:00:00Z",
+       "score": "2-3 (11:9,11:13,9:11,11:5,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcos Madrid / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 5
+        },
+        {
+         "name": "Elias Ranefur / Filippa Bergand",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-04T08:00:00Z",
+       "score": "3-1 (11:6,11:7,7:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anton Limonov / Solomiya Brateyko",
+         "nat": "UKR",
+         "seed": 4
+        },
+        {
+         "name": "Rachel Moret / Park Gyeongtae",
+         "nat": "SUI/KOR"
+        }
+       ],
+       "when": "2023-10-04T08:00:00Z",
+       "score": "0-3 (11:13,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner / Eric Jouti",
+         "nat": "GER/BRA",
+         "seed": 8
+        },
+        {
+         "name": "Pauline Chasselin / Florian Bourrassaud",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-10-04T08:35:00Z",
+       "score": "3-1 (5:11,12:10,11:9,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Angel Naranjo / Brianna Burgos",
+         "nat": "PUR"
+        },
+        {
+         "name": "Maciej Kubik / Katarzyna Wegrzyn",
+         "nat": "POL"
+        }
+       ],
+       "when": "2023-10-04T08:00:00Z",
+       "score": "1-3 (7:11,7:11,13:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Linda Bergstrom",
+         "nat": "SWE"
+        },
+        {
+         "name": "Tatiana Kukulkova / Samuel Walker",
+         "nat": "SVK/ENG",
+         "seed": 3
+        }
+       ],
+       "when": "2023-10-04T08:35:00Z",
+       "score": "3-2 (6:11,11:9,11:7,13:15,11:2)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Maria Perdomo / Santiago Montes",
+         "nat": "COL"
+        }
+       ],
+       "when": "2023-10-04T08:00:00Z",
+       "score": "3-0 (14:12,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jordan Wykes / Vivien Scholz",
+         "nat": "JEY/LUX"
+        },
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-04T08:00:00Z",
+       "score": "0-3 (3:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz / Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 7
+        },
+        {
+         "name": "Marcos Madrid / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 5
+        }
+       ],
+       "when": "2023-10-05T08:00:00Z",
+       "score": "3-0 (11:1,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rachel Moret / Park Gyeongtae",
+         "nat": "SUI/KOR"
+        },
+        {
+         "name": "Franziska Schreiner / Eric Jouti",
+         "nat": "GER/BRA",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-05T08:00:00Z",
+       "score": "1-3 (13:15,11:4,3:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kubik / Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Mattias Falck / Linda Bergstrom",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-05T08:00:00Z",
+       "score": "2-3 (8:11,6:11,12:10,11:6,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-05T08:00:00Z",
+       "score": "2-3 (14:12,11:9,7:11,11:13,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz / Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 7
+        },
+        {
+         "name": "Franziska Schreiner / Eric Jouti",
+         "nat": "GER/BRA",
+         "seed": 8
+        }
+       ],
+       "when": "2023-10-06T08:00:00Z",
+       "score": "2-3 (5:11,11:9,11:4,9:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Linda Bergstrom",
+         "nat": "SWE"
+        },
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 2
+        }
+       ],
+       "when": "2023-10-06T08:35:00Z",
+       "score": "3-1 (8:11,11:4,11:7,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner / Eric Jouti",
+         "nat": "GER/BRA",
+         "seed": 8
+        },
+        {
+         "name": "Mattias Falck / Linda Bergstrom",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-10-06T17:40:00Z",
+       "score": "2-3 (4:11,4:11,11:9,11:9,10:12)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

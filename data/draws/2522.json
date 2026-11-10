@@ -1,0 +1,2746 @@
+{
+ "event": "WTT Feeder Düsseldorf II",
+ "wtt_event_id": "2522",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2522&selectedTab=Draws",
+ "updated": "2026-11-10T15:09:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mia Griesel",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Jele Stortz",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2022-01-18T09:45:00Z",
+       "score": "4-2 (14:12,11:7,9:11,12:10,6:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarina Strazar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Clemence Chevallier",
+         "nat": "FRA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Polina Trifonova",
+         "nat": "BUL"
+        },
+        {
+         "name": "Charlotte Lutz",
+         "nat": "FRA",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-18T09:45:00Z",
+       "score": "4-3 (11:5,11:13,11:13,11:5,11:8,9:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eireen Elena Kalaitzidou",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2022-01-18T09:45:00Z",
+       "score": "0-4 (10:12,3:11,6:11,3:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        },
+        {
+         "name": "Leonie Hartbrich",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T09:45:00Z",
+       "score": "4-2 (9:11,11:8,11:2,11:6,8:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Malamatenia Papadimitriou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vivien Scholz",
+         "nat": "LUX"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX",
+         "seed": 5
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mercedes Nagyvaradi",
+         "nat": "HUN"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chantal Mantz",
+         "nat": "GER"
+        },
+        {
+         "name": "Elisavet Terpou",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2022-01-18T10:30:00Z",
+       "score": "4-0 (11:4,11:8,12:10,11:9,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karoline Mischek",
+         "nat": "AUT"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rebecca Muskantor",
+         "nat": "SWE"
+        },
+        {
+         "name": "Bernadett Balint",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T10:30:00Z",
+       "score": "1-4 (11:6,9:11,10:12,10:12,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        },
+        {
+         "name": "Matilda Hansson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-01-18T10:30:00Z",
+       "score": "4-0 (11:7,12:10,11:7,12:10,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Melanie Diaz",
+         "nat": "PUR",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yousra Helmy",
+         "nat": "EGY",
+         "seed": 8
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Karolina Mynarova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T10:30:00Z",
+       "score": "0-4 (7:11,7:11,7:11,9:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA",
+         "seed": 3
+        },
+        {
+         "name": "Nikoleta Puchovanova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2022-01-18T11:15:00Z",
+       "score": "4-3 (11:9,8:11,9:11,4:11,11:7,11:4,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aikaterini Toliou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Jeanne Robbes",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T11:15:00Z",
+       "score": "4-2 (11:4,9:11,11:8,5:11,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dasa Sinkarova",
+         "nat": "SVK",
+         "seed": 6
+        },
+        {
+         "name": "Leili Mostafavi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T11:15:00Z",
+       "score": "3-4 (5:11,3:11,13:11,7:11,11:8,11:9,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Mia Griesel",
+         "nat": "GER",
+         "seed": 7
+        }
+       ],
+       "when": "2022-01-18T15:40:00Z",
+       "score": "4-1 (11:5,7:11,12:10,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarina Strazar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-18T15:40:00Z",
+       "score": "0-4 (3:11,10:12,6:11,12:14,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Clemence Chevallier",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T15:40:00Z",
+       "score": "4-2 (11:4,11:4,11:5,9:11,6:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Polina Trifonova",
+         "nat": "BUL"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-18T15:40:00Z",
+       "score": "4-2 (11:5,12:10,6:11,5:11,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        },
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2022-01-18T16:25:00Z",
+       "score": "4-2 (13:11,12:14,11:13,11:5,11:1,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2022-01-18T15:40:00Z",
+       "score": "4-1 (11:7,11:3,11:6,8:11,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        },
+        {
+         "name": "Malamatenia Papadimitriou",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2022-01-18T16:25:00Z",
+       "score": "4-0 (11:6,11:6,11:5,11:3,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vivien Scholz",
+         "nat": "LUX"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX",
+         "seed": 5
+        }
+       ],
+       "when": "2022-01-18T15:40:00Z",
+       "score": "0-4 (0:11,0:11,0:11,0:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Mercedes Nagyvaradi",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T16:25:00Z",
+       "score": "4-2 (11:9,10:12,11:5,11:5,11:13,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chantal Mantz",
+         "nat": "GER"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL"
+        }
+       ],
+       "when": "2022-01-18T16:25:00Z",
+       "score": "4-3 (5:11,11:9,4:11,11:9,11:13,11:3,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Karoline Mischek",
+         "nat": "AUT"
+        },
+        {
+         "name": "Bernadett Balint",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T16:25:00Z",
+       "score": "1-4 (6:11,10:12,10:12,11:8,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        },
+        {
+         "name": "Melanie Diaz",
+         "nat": "PUR",
+         "seed": 4
+        }
+       ],
+       "when": "2022-01-18T16:25:00Z",
+       "score": "4-2 (11:5,7:11,13:11,11:8,9:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yousra Helmy",
+         "nat": "EGY",
+         "seed": 8
+        },
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T17:10:00Z",
+       "score": "0-4 (9:11,2:11,8:11,3:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA",
+         "seed": 3
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2022-01-18T17:10:00Z",
+       "score": "3-4 (11:7,11:9,5:11,11:13,7:11,11:8,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aikaterini Toliou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2022-01-18T17:10:00Z",
+       "score": "4-2 (11:7,11:9,11:9,8:11,9:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leili Mostafavi",
+         "nat": "FRA"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-01-18T17:10:00Z",
+       "score": "3-4 (11:9,11:6,8:11,4:11,11:7,9:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY",
+         "seed": 1
+        },
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-19T11:00:00Z",
+       "score": "2-4 (11:9,8:11,8:11,9:11,11:6,13:15,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Polina Trifonova",
+         "nat": "BUL"
+        }
+       ],
+       "when": "2022-01-19T11:00:00Z",
+       "score": "4-2 (11:7,7:11,12:10,11:9,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Filippa Bergand",
+         "nat": "SWE"
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2022-01-19T11:00:00Z",
+       "score": "3-4 (11:9,5:11,5:11,5:11,11:6,11:6,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX",
+         "seed": 5
+        }
+       ],
+       "when": "2022-01-19T11:00:00Z",
+       "score": "4-0 (11:8,11:9,11:7,14:12,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Chantal Mantz",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-19T11:45:00Z",
+       "score": "4-3 (11:4,9:11,7:11,8:11,11:7,12:10,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bernadett Balint",
+         "nat": "HUN"
+        },
+        {
+         "name": "Oceane Guisnel",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T11:45:00Z",
+       "score": "4-1 (11:6,6:11,11:8,15:13,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2022-01-19T11:45:00Z",
+       "score": "3-4 (6:11,12:10,7:11,8:11,11:8,11:8,12:14)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aikaterini Toliou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-01-19T11:45:00Z",
+       "score": "0-4 (5:11,7:11,5:11,7:11,0:0,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2022-01-19T16:45:00Z",
+       "score": "1-4 (3:11,7:11,11:9,11:13,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        },
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2022-01-19T16:45:00Z",
+       "score": "4-1 (7:11,11:4,11:7,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Bernadett Balint",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-19T16:45:00Z",
+       "score": "4-3 (10:12,11:6,11:13,11:4,11:9,10:12,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-01-19T16:45:00Z",
+       "score": "1-4 (7:11,9:11,9:11,11:4,12:14,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2022-01-20T09:00:00Z",
+       "score": "1-4 (5:11,7:11,5:11,11:3,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-01-20T09:40:00Z",
+       "score": "4-1 (7:11,11:7,11:9,12:10,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        },
+        {
+         "name": "Amelie Solja",
+         "nat": "AUT",
+         "seed": 7
+        }
+       ],
+       "when": "2022-01-20T16:50:00Z",
+       "score": "4-3 (11:13,7:11,11:7,8:11,11:6,11:5,11:8)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen",
+         "nat": "AUT"
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-18T11:15:00Z",
+       "score": "4-0 (11:0,11:0,11:0,11:0,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Taehyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Miguel Vilchez",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2022-01-18T11:15:00Z",
+       "score": "4-1 (11:7,11:8,11:6,6:11,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tamas Lakatos",
+         "nat": "HUN"
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2022-01-18T12:00:00Z",
+       "score": "4-2 (9:11,8:11,11:5,11:3,13:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "Martin Allegro",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2022-01-18T12:00:00Z",
+       "score": "4-2 (9:11,11:8,8:11,11:8,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Brian Afanador",
+         "nat": "PUR"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA"
+        },
+        {
+         "name": "Maksim Grebnev",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2022-01-18T12:00:00Z",
+       "score": "1-4 (8:11,9:11,13:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "David Serdaroglu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2022-01-18T12:00:00Z",
+       "score": "4-3 (11:7,2:11,11:7,11:5,9:11,10:12,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "SEN"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        },
+        {
+         "name": "Tomas Polansky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2022-01-18T12:00:00Z",
+       "score": "4-2 (8:11,12:10,11:7,11:8,7:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniele Pinto",
+         "nat": "ITA"
+        },
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T12:00:00Z",
+       "score": "0-4 (1:11,3:11,1:11,0:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Dang Qiu",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        },
+        {
+         "name": "Amin Ahmadian",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2022-01-18T12:45:00Z",
+       "score": "4-2 (11:7,11:9,13:15,11:7,9:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Hachard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Cristian Pletea",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-01-18T12:45:00Z",
+       "score": "4-0 (11:8,11:9,11:9,14:12,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Bence Majoros",
+         "nat": "HUN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Gonzalez",
+         "nat": "PUR"
+        },
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T12:45:00Z",
+       "score": "0-4 (4:11,5:11,7:11,5:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Csaba Andras",
+         "nat": "HUN"
+        },
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-01-18T12:45:00Z",
+       "score": "2-4 (11:13,11:9,9:11,7:11,14:12,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Ruwen Filus",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR",
+         "seed": 8
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Iulian Chirita",
+         "nat": "ROU"
+        },
+        {
+         "name": "Tobias Hippler",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-18T13:30:00Z",
+       "score": "1-4 (10:12,11:7,7:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adam Szudi",
+         "nat": "HUN"
+        },
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-18T13:30:00Z",
+       "score": "4-0 (11:1,11:0,11:0,11:0,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alberto Mino",
+         "nat": "ECU"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Robinot",
+         "nat": "FRA"
+        },
+        {
+         "name": "Hunor Szocs",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-01-18T13:30:00Z",
+       "score": "4-1 (11:9,11:6,7:11,12:10,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        },
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2022-01-18T13:30:00Z",
+       "score": "4-1 (12:10,11:6,7:11,11:4,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Omar Assar",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Alexander Chen",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2022-01-18T17:10:00Z",
+       "score": "4-2 (13:11,11:7,7:11,10:12,11:7,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Taehyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2022-01-18T17:10:00Z",
+       "score": "4-0 (12:10,11:8,11:7,11:7,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        },
+        {
+         "name": "Tamas Lakatos",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T17:55:00Z",
+       "score": "4-0 (11:0,11:0,11:0,11:0,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-18T17:55:00Z",
+       "score": "3-4 (11:8,11:7,11:7,2:11,5:11,8:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Brian Afanador",
+         "nat": "PUR"
+        },
+        {
+         "name": "Maksim Grebnev",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2022-01-18T17:55:00Z",
+       "score": "4-0 (11:0,11:0,11:0,11:0,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "David Serdaroglu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX"
+        }
+       ],
+       "when": "2022-01-18T17:55:00Z",
+       "score": "4-2 (11:9,3:11,11:6,11:6,6:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "SEN"
+        },
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2022-01-18T17:55:00Z",
+       "score": "4-0 (11:9,11:6,11:7,11:6,0:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Dang Qiu",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2022-01-18T17:55:00Z",
+       "score": "4-1 (11:8,11:7,14:12,10:12,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T18:40:00Z",
+       "score": "4-1 (9:11,12:10,11:9,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Hachard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bence Majoros",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T18:40:00Z",
+       "score": "4-1 (11:8,11:8,11:9,4:11,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T18:40:00Z",
+       "score": "1-4 (8:11,5:11,8:11,11:8,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        },
+        {
+         "name": "Ruwen Filus",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "when": "2022-01-18T18:40:00Z",
+       "score": "4-1 (11:7,1:11,11:5,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marcelo Aguirre",
+         "nat": "PAR",
+         "seed": 8
+        },
+        {
+         "name": "Tobias Hippler",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-18T19:25:00Z",
+       "score": "3-4 (3:11,12:14,11:7,11:7,8:11,12:10,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adam Szudi",
+         "nat": "HUN"
+        },
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2022-01-18T19:25:00Z",
+       "score": "2-4 (3:11,11:9,10:12,11:9,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alberto Mino",
+         "nat": "ECU"
+        },
+        {
+         "name": "Alexandre Robinot",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T19:25:00Z",
+       "score": "1-4 (6:11,5:11,4:11,11:9,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        },
+        {
+         "name": "Omar Assar",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-18T19:25:00Z",
+       "score": "1-4 (3:11,11:4,10:12,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Kim Taehyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2022-01-19T12:30:00Z",
+       "score": "4-1 (11:8,12:14,11:2,11:8,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-19T12:30:00Z",
+       "score": "2-4 (8:11,12:10,7:11,11:8,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Brian Afanador",
+         "nat": "PUR"
+        },
+        {
+         "name": "David Serdaroglu",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2022-01-19T12:30:00Z",
+       "score": "1-4 (11:7,3:11,16:18,14:16,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "SEN"
+        },
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T12:30:00Z",
+       "score": "1-4 (8:11,14:16,7:11,11:8,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Antoine Hachard",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T13:15:00Z",
+       "score": "4-3 (11:7,10:12,11:9,11:6,9:11,5:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-01-19T13:15:00Z",
+       "score": "4-1 (10:12,11:4,11:8,12:10,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tobias Hippler",
+         "nat": "GER"
+        },
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2022-01-19T13:15:00Z",
+       "score": "1-4 (9:11,12:10,7:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Robinot",
+         "nat": "FRA"
+        },
+        {
+         "name": "Omar Assar",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-19T13:15:00Z",
+       "score": "2-4 (8:11,11:8,12:10,16:18,0:11,0:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-19T17:30:00Z",
+       "score": "4-2 (6:11,11:7,11:7,6:11,11:3,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "David Serdaroglu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T17:30:00Z",
+       "score": "0-4 (10:12,2:11,7:11,0:11,0:0,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Félix Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T17:30:00Z",
+       "score": "4-3 (16:14,7:11,5:11,11:3,9:11,11:5,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        },
+        {
+         "name": "Omar Assar",
+         "nat": "EGY",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-19T17:30:00Z",
+       "score": "4-0 (13:11,11:8,11:8,12:10,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-20T10:20:00Z",
+       "score": "4-2 (7:11,11:2,16:14,10:12,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2022-01-20T11:00:00Z",
+       "score": "4-2 (15:13,8:11,5:11,11:9,11:8,11:4,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2022-01-20T17:30:00Z",
+       "score": "4-0 (11:5,11:6,11:9,11:8,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Melanie Diaz",
+         "nat": "SRB/PUR",
+         "seed": 5
+        },
+        {
+         "name": "Charlotte Lutz / Isa Cok",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "when": "2022-01-18T08:00:00Z",
+       "score": "2-3 (6:11,14:12,10:12,11:9,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Lachenmayer / Mia Griesel",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Oceane Guisnel / Leili Mostafavi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T08:00:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 4
+        },
+        {
+         "name": "Vivien Scholz / Polina Trifonova",
+         "nat": "LUX/BUL"
+        }
+       ],
+       "when": "2022-01-18T08:00:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / Nicole Arlia",
+         "nat": "ITA",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "when": "2022-01-18T08:00:00Z",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amelie Solja / Jeanne Robbes",
+         "nat": "AUT/FRA",
+         "seed": 1
+        },
+        {
+         "name": "Mercedes Nagyvaradi / Bernadett Balint",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-01-18T08:00:00Z",
+       "score": "0-3 (7:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dasa Sinkarova / Nikoleta Puchovanova",
+         "nat": "SVK",
+         "seed": 8
+        },
+        {
+         "name": "Christina Kallberg / Filippa Bergand",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2022-01-18T08:00:00Z",
+       "score": "1-3 (3:11,11:9,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rebecca Muskantor / Matilda Hansson",
+         "nat": "SWE",
+         "seed": 2
+        },
+        {
+         "name": "Katarina Strazar / Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2022-01-18T08:35:00Z",
+       "score": "3-2 (5:11,11:8,9:11,11:4,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor / Sofia-Xuan Zhang",
+         "nat": "POL/ESP",
+         "seed": 7
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-18T08:35:00Z",
+       "score": "0-3 (7:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Charlotte Lutz / Isa Cok",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Oceane Guisnel / Leili Mostafavi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T09:50:00Z",
+       "score": "3-0 (11:4,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 4
+        },
+        {
+         "name": "Gaia Monfardini / Nicole Arlia",
+         "nat": "ITA",
+         "seed": 3
+        }
+       ],
+       "when": "2022-01-19T09:50:00Z",
+       "score": "3-1 (11:6,11:7,2:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mercedes Nagyvaradi / Bernadett Balint",
+         "nat": "HUN"
+        },
+        {
+         "name": "Christina Kallberg / Filippa Bergand",
+         "nat": "SWE",
+         "seed": 3
+        }
+       ],
+       "when": "2022-01-19T09:50:00Z",
+       "score": "3-2 (8:11,12:10,10:12,11:7,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rebecca Muskantor / Matilda Hansson",
+         "nat": "SWE",
+         "seed": 2
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-19T09:50:00Z",
+       "score": "2-3 (11:6,10:12,6:11,11:9,3:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Charlotte Lutz / Isa Cok",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Debora Vivarelli / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 4
+        }
+       ],
+       "when": "2022-01-19T15:00:00Z",
+       "score": "2-3 (9:11,8:11,12:10,12:10,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mercedes Nagyvaradi / Bernadett Balint",
+         "nat": "HUN"
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-19T15:00:00Z",
+       "score": "0-3 (9:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 4
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-20T15:30:00Z",
+       "score": "0-3 (7:11,4:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles / Ovidiu Ionescu",
+         "nat": "ESP/ROU",
+         "seed": 1
+        },
+        {
+         "name": "Maciej Kubik / Samuel Kulczycki",
+         "nat": "POL"
+        }
+       ],
+       "when": "2022-01-18T08:35:00Z",
+       "score": "3-0 (11:9,11:7,16:14,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Csaba Andras / Tamas Lakatos",
+         "nat": "HUN",
+         "seed": 8
+        },
+        {
+         "name": "Alexander Chen / David Serdaroglu",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2022-01-18T08:35:00Z",
+       "score": "3-1 (12:10,3:11,12:10,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Skachkov / Maksim Grebnev",
+         "nat": "RUS",
+         "seed": 4
+        },
+        {
+         "name": "Alberto Mino / Elias Ranefur",
+         "nat": "ECU/SWE"
+        }
+       ],
+       "when": "2022-01-18T08:35:00Z",
+       "score": "3-0 (14:12,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alin Spelbus / Hunor Szocs",
+         "nat": "ROU"
+        },
+        {
+         "name": "Benno Oehme / Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-18T08:35:00Z",
+       "score": "0-3 (5:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun / Alexis Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Cedric Tschanz / Pedro Osiro",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2022-01-18T09:10:00Z",
+       "score": "3-1 (11:6,11:5,8:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Léo de Nodrest / Alexandre Robinot",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Martin Allegro / Florent Lambiet",
+         "nat": "BEL",
+         "seed": 3
+        }
+       ],
+       "when": "2022-01-18T09:10:00Z",
+       "score": "3-2 (4:11,11:7,7:11,11:8,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Gonzalez / Brian Afanador",
+         "nat": "PUR",
+         "seed": 5
+        },
+        {
+         "name": "Vincent Picard / Bastien Rembert",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-18T09:10:00Z",
+       "score": "1-3 (6:11,7:11,11:5,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adrien Rassenfosse / Louis Laffineur",
+         "nat": "BEL"
+        },
+        {
+         "name": "Kilian Ort / Tobias Hippler",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-18T09:10:00Z",
+       "score": "0-3 (9:11,3:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles / Ovidiu Ionescu",
+         "nat": "ESP/ROU",
+         "seed": 1
+        },
+        {
+         "name": "Csaba Andras / Tamas Lakatos",
+         "nat": "HUN",
+         "seed": 8
+        }
+       ],
+       "when": "2022-01-19T10:25:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Skachkov / Maksim Grebnev",
+         "nat": "RUS",
+         "seed": 4
+        },
+        {
+         "name": "Benno Oehme / Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-01-19T10:25:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun / Alexis Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Léo de Nodrest / Alexandre Robinot",
+         "nat": "FRA",
+         "seed": 7
+        }
+       ],
+       "when": "2022-01-19T10:25:00Z",
+       "score": "3-2 (11:13,11:2,9:11,11:4,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard / Bastien Rembert",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Kilian Ort / Tobias Hippler",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-19T10:25:00Z",
+       "score": "1-3 (10:12,9:11,12:10,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles / Ovidiu Ionescu",
+         "nat": "ESP/ROU",
+         "seed": 1
+        },
+        {
+         "name": "Kirill Skachkov / Maksim Grebnev",
+         "nat": "RUS",
+         "seed": 4
+        }
+       ],
+       "when": "2022-01-19T15:35:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun / Alexis Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kilian Ort / Tobias Hippler",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-19T15:35:00Z",
+       "score": "3-1 (5:11,11:9,11:7,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles / Ovidiu Ionescu",
+         "nat": "ESP/ROU",
+         "seed": 1
+        },
+        {
+         "name": "Félix Lebrun / Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-20T16:10:00Z",
+       "score": "1-3 (7:11,6:11,12:10,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Félix Lebrun / Leili Mostafavi",
+         "nat": "FRA",
+         "seed": 8
+        },
+        {
+         "name": "Charlotte Lutz / Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-18T14:45:00Z",
+       "score": "1-3 (9:11,11:8,9:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan / Cedric Meissner",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Adam Klajber",
+         "nat": "SVK",
+         "seed": 6
+        },
+        {
+         "name": "Nicole Arlia / Carlo Rossi",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2022-01-18T14:45:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen / Karoline Mischek",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Maksim Grebnev / Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2022-01-18T14:45:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Mahmoud Helmy / Yousra Helmy",
+         "nat": "EGY",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Luka Mladenovic / Vivien Scholz",
+         "nat": "LUX",
+         "seed": 5
+        },
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2022-01-18T14:45:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Daniel Gonzalez / Melanie Diaz",
+         "nat": "PUR",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 1
+        },
+        {
+         "name": "Charlotte Lutz / Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-01-19T09:00:00Z",
+       "score": "3-2 (12:10,7:11,7:11,12:10,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan / Cedric Meissner",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Tatiana Kukulkova / Adam Klajber",
+         "nat": "SVK",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-19T09:00:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen / Karoline Mischek",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Mahmoud Helmy / Yousra Helmy",
+         "nat": "EGY",
+         "seed": 4
+        }
+       ],
+       "when": "2022-01-19T09:00:00Z",
+       "score": "3-1 (11:9,8:11,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA"
+        },
+        {
+         "name": "Daniel Gonzalez / Melanie Diaz",
+         "nat": "PUR",
+         "seed": 2
+        }
+       ],
+       "when": "2022-01-19T09:00:00Z",
+       "score": "3-0 (11:9,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 1
+        },
+        {
+         "name": "Tatiana Kukulkova / Adam Klajber",
+         "nat": "SVK",
+         "seed": 6
+        }
+       ],
+       "when": "2022-01-19T16:10:00Z",
+       "score": "3-2 (10:12,14:12,8:11,11:7,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Chen / Karoline Mischek",
+         "nat": "AUT",
+         "seed": 7
+        },
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2022-01-19T16:10:00Z",
+       "score": "2-3 (11:9,11:8,5:11,8:11,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 1
+        },
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2022-01-20T11:40:00Z",
+       "score": "3-2 (11:8,8:11,11:5,6:11,11:5)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1844 @@
+{
+ "event": "WTT Contender Muscat",
+ "wtt_event_id": "2997",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2997&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 4.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T10:10:00Z",
+       "score": "3-1 (11:8,11:3,6:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kim Seoyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-30T17:25:00Z",
+       "score": "1-3 (8:11,11:13,11:2,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "He Zhuojia",
+         "nat": "CHN"
+        },
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-10-30T10:45:00Z",
+       "score": "3-0 (11:9,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoon Hyobin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2024-10-30T10:45:00Z",
+       "score": "2-3 (11:6,12:10,8:11,9:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-10-30T13:05:00Z",
+       "score": "3-0 (11:6,11:4,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T14:35:00Z",
+       "score": "2-3 (4:11,11:9,11:5,9:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zhu Sibing",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T13:05:00Z",
+       "score": "3-0 (11:7,11:9,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-10-30T12:30:00Z",
+       "score": "0-3 (7:11,11:13,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabeta Samara",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T10:10:00Z",
+       "score": "3-0 (12:10,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yake",
+         "nat": "CHN"
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T14:00:00Z",
+       "score": "1-3 (11:9,7:11,3:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yashaswini Ghorpade",
+         "nat": "IND"
+        },
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T16:55:00Z",
+       "score": "2-3 (5:11,11:7,6:11,11:8,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-30T14:35:00Z",
+       "score": "1-3 (7:11,11:7,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-30T16:20:00Z",
+       "score": "3-2 (7:11,11:4,5:11,11:9,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Lee Hoi Man Karen",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-10-30T12:30:00Z",
+       "score": "3-0 (15:13,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Sutirtha Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T16:20:00Z",
+       "score": "3-1 (13:11,11:5,9:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-30T14:00:00Z",
+       "score": "1-3 (5:11,11:8,6:11,3:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Kim Seoyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-31T15:10:00Z",
+       "score": "3-0 (11:7,12:10,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "He Zhuojia",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2024-10-31T10:10:00Z",
+       "score": "3-1 (11:6,6:11,11:7,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-31T11:20:00Z",
+       "score": "3-1 (13:11,6:11,14:12,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN"
+        },
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2024-10-31T11:20:00Z",
+       "score": "3-0 (11:8,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabeta Samara",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-31T15:45:00Z",
+       "score": "0-3 (8:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-31T10:10:00Z",
+       "score": "0-3 (5:11,2:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-10-31T16:20:00Z",
+       "score": "3-2 (11:9,8:11,13:11,4:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-31T16:55:00Z",
+       "score": "1-3 (3:11,11:5,7:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "He Zhuojia",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-01T09:00:00Z",
+       "score": "3-1 (11:8,11:8,9:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-01T09:00:00Z",
+       "score": "1-3 (11:6,7:11,3:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-11-01T10:10:00Z",
+       "score": "1-3 (7:11,11:8,4:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-11-01T10:10:00Z",
+       "score": "2-3 (8:11,14:12,11:7,7:11,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-01T15:45:00Z",
+       "score": "0-3 (8:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-11-01T14:35:00Z",
+       "score": "2-3 (11:9,9:11,11:8,9:11,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-11-02T11:30:00Z",
+       "score": "4-2 (12:10,8:11,12:10,11:7,5:11,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T10:45:00Z",
+       "score": "3-2 (10:12,3:11,11:8,11:1,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin",
+         "nat": "HKG"
+        },
+        {
+         "name": "Koen Pang",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2024-10-30T10:10:00Z",
+       "score": "3-2 (7:11,11:9,11:8,6:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-10-30T10:10:00Z",
+       "score": "3-1 (11:13,11:2,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 8
+        }
+       ],
+       "when": "2024-10-30T10:45:00Z",
+       "score": "3-2 (10:12,11:9,11:6,5:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2024-10-30T11:20:00Z",
+       "score": "3-2 (4:11,11:9,12:10,10:12,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Siu Hang",
+         "nat": "HKG"
+        },
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-10-30T11:20:00Z",
+       "score": "0-3 (3:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Izaac Quek",
+         "nat": "SGP"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T11:55:00Z",
+       "score": "2-3 (10:12,11:7,7:11,11:4,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-10-30T11:55:00Z",
+       "score": "1-3 (12:10,10:12,5:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Xue Fei",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T14:00:00Z",
+       "score": "1-3 (8:11,11:5,6:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN"
+        },
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T14:00:00Z",
+       "score": "1-3 (9:11,11:9,8:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T14:35:00Z",
+       "score": "3-1 (8:11,11:9,11:8,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2024-10-30T14:35:00Z",
+       "score": "3-0 (11:8,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Benyamin Faraji",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2024-10-30T15:10:00Z",
+       "score": "3-0 (11:7,11:5,15:13,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG"
+        },
+        {
+         "name": "Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-30T15:10:00Z",
+       "score": "2-3 (9:11,11:6,12:10,4:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Navid Shams",
+         "nat": "IRI"
+        },
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-10-30T15:45:00Z",
+       "score": "3-2 (7:11,11:5,7:11,11:7,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manush Utpalbhai Shah",
+         "nat": "IND"
+        },
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-30T15:45:00Z",
+       "score": "0-3 (7:11,2:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chan Baldwin",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-10-31T10:45:00Z",
+       "score": "3-1 (6:11,11:3,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-31T09:35:00Z",
+       "score": "3-0 (11:5,11:6,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-10-31T09:35:00Z",
+       "score": "3-1 (8:11,11:9,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-10-31T10:45:00Z",
+       "score": "2-3 (13:11,9:11,11:7,9:11,16:18)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xue Fei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-31T14:35:00Z",
+       "score": "3-2 (11:9,10:12,11:5,10:12,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-31T15:45:00Z",
+       "score": "3-0 (11:6,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Park Gyuhyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-31T16:20:00Z",
+       "score": "3-2 (11:8,10:12,11:6,6:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Navid Shams",
+         "nat": "IRI"
+        },
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-31T17:20:00Z",
+       "score": "0-3 (6:11,4:11,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-01T09:35:00Z",
+       "score": "3-0 (11:8,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-11-01T09:35:00Z",
+       "score": "2-3 (11:9,6:11,8:11,11:7,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xue Fei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-01T10:45:00Z",
+       "score": "0-3 (8:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-11-01T10:45:00Z",
+       "score": "1-3 (3:11,11:9,4:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-11-01T16:20:00Z",
+       "score": "3-2 (6:11,11:6,5:11,11:7,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-11-01T15:10:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-02T12:15:00Z",
+       "score": "4-1 (11:6,9:11,11:1,11:2,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Lee Hoi Man Karen / Kong Tsz Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-10-30T15:45:00Z",
+       "score": "0-3 (9:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "He Zhuojia / Chen Yi",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Kim Seoyun / Yoon Hyobin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-30T15:10:00Z",
+       "score": "0-3 (7:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong / Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shi Xunyao / Qian Tianyi",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2024-10-30T11:20:00Z",
+       "score": "2-3 (15:13,11:9,9:11,2:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Priyadarshini Das / Ms. Naina",
+         "nat": "IND"
+        },
+        {
+         "name": "Mao Takamori / Satsuki Odo",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2024-10-30T15:10:00Z",
+       "score": "0-3 (8:11,17:19,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Swastika Ghosh / Poymantee Baisya",
+         "nat": "IND"
+        },
+        {
+         "name": "Barbora Balazova / Cheng Hsien-Tzu",
+         "nat": "SVK/TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2024-10-30T11:55:00Z",
+       "score": "1-3 (11:8,4:11,9:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Li Yake / Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T11:20:00Z",
+       "score": "3-2 (12:10,6:11,9:11,11:7,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Lee Hoi Man Karen / Kong Tsz Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-10-31T11:20:00Z",
+       "score": "3-0 (12:10,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seoyun / Yoon Hyobin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shi Xunyao / Qian Tianyi",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2024-10-31T11:55:00Z",
+       "score": "3-1 (11:5,12:14,11:9,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mao Takamori / Satsuki Odo",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Barbora Balazova / Cheng Hsien-Tzu",
+         "nat": "SVK/TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2024-10-31T10:10:00Z",
+       "score": "2-3 (4:11,10:12,11:8,11:6,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-31T14:35:00Z",
+       "score": "3-0 (11:2,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Kim Seoyun / Yoon Hyobin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-11-01T11:20:00Z",
+       "score": "0-3 (9:11,8:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Cheng Hsien-Tzu",
+         "nat": "SVK/TPE",
+         "seed": 4
+        },
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-11-01T11:20:00Z",
+       "score": "0-3 (9:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Seoyun / Yoon Hyobin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-11-02T10:00:00Z",
+       "score": "1-3 (9:11,7:11,12:10,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Akash Pal / Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-10-30T16:20:00Z",
+       "score": "3-0 (11:5,11:9,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Benyamin Faraji / Amirmahdi Keshavarzi",
+         "nat": "IRI"
+        },
+        {
+         "name": "Muhannad Al Balushi / Ghassan AL Ghassani",
+         "nat": "OMA"
+        }
+       ],
+       "when": "2024-10-30T12:30:00Z",
+       "score": "3-0 (11:1,14:12,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Kwan Man Ho / Choy Chun Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-10-30T13:05:00Z",
+       "score": "3-0 (11:7,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhe Yu Clarence Chew / Josh Shao Han Chua",
+         "nat": "SGP",
+         "seed": 7
+        },
+        {
+         "name": "Wen Ruibo / Chen Yuanyu",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T13:05:00Z",
+       "score": "3-1 (11:9,4:11,11:5,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Siu Hang / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Zhou Qihao / Xue Fei",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T12:30:00Z",
+       "score": "2-3 (11:9,11:6,4:11,6:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bader Al Jassasi / Nasser Saif Nas AL Balushi",
+         "nat": "OMA"
+        },
+        {
+         "name": "Manush Utpalbhai Shah / Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-30T16:55:00Z",
+       "score": "0-3 (5:11,2:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gyuhyeon / Oh Junsung",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Jang Seongil / Woo Hyeonggyu",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-30T16:55:00Z",
+       "score": "3-0 (11:8,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 5
+        },
+        {
+         "name": "Koen Pang / Izaac Quek",
+         "nat": "SGP",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-30T16:20:00Z",
+       "score": "3-1 (11:5,12:10,4:11,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Benyamin Faraji / Amirmahdi Keshavarzi",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2024-10-31T10:45:00Z",
+       "score": "3-1 (11:3,11:9,6:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Zhe Yu Clarence Chew / Josh Shao Han Chua",
+         "nat": "SGP",
+         "seed": 7
+        }
+       ],
+       "when": "2024-10-31T11:55:00Z",
+       "score": "3-2 (12:14,11:7,3:11,11:6,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao / Xue Fei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Manush Utpalbhai Shah / Manav Vikash Thakkar",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-31T11:55:00Z",
+       "score": "3-0 (11:8,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gyuhyeon / Oh Junsung",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Chan Baldwin / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 5
+        }
+       ],
+       "when": "2024-10-31T15:10:00Z",
+       "score": "3-0 (11:4,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Ho Kwan Kit / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-11-01T11:55:00Z",
+       "score": "3-2 (11:4,7:11,5:11,11:6,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao / Xue Fei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Park Gyuhyeon / Oh Junsung",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2024-11-01T11:55:00Z",
+       "score": "3-0 (11:7,11:8,11:2,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Zhou Qihao / Xue Fei",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-11-02T10:45:00Z",
+       "score": "3-1 (11:5,11:9,6:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate / Adina Diaconu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Oh Junsung / Kim Seoyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-30T09:00:00Z",
+       "score": "2-3 (11:5,6:11,14:12,4:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Zong Geman / Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-10-30T09:00:00Z",
+       "score": "3-0 (11:9,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Shi Xunyao / Yuan Licen",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2024-10-30T09:00:00Z",
+       "score": "1-3 (7:11,11:7,4:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee / Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Swastika Ghosh / Josh Shao Han Chua",
+         "nat": "IND/SGP"
+        }
+       ],
+       "when": "2024-10-30T09:35:00Z",
+       "score": "3-0 (11:7,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gyuhyeon / Yoon Hyobin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Diya Parag Chitale / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-30T09:35:00Z",
+       "score": "0-3 (5:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Poymantee Baisya / Akash Pal",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2024-10-30T09:35:00Z",
+       "score": "3-2 (11:8,9:11,11:6,6:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Oh Junsung / Kim Seoyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-10-31T09:00:00Z",
+       "score": "3-0 (11:4,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Shi Xunyao / Yuan Licen",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2024-10-31T09:00:00Z",
+       "score": "1-3 (7:11,5:11,11:8,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee / Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Diya Parag Chitale / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2024-10-31T09:00:00Z",
+       "score": "0-3 (7:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain / Yashaswini Ghorpade",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-31T09:35:00Z",
+       "score": "0-3 (5:11,8:11,11:13,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Shi Xunyao / Yuan Licen",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2024-10-31T14:00:00Z",
+       "score": "3-2 (8:11,11:2,10:12,11:7,16:14)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale / Manush Utpalbhai Shah",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-10-31T14:00:00Z",
+       "score": "1-3 (12:10,8:11,10:12,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Doo Hoi Kem / Wong Chun Ting",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-11-01T14:00:00Z",
+       "score": "3-0 (11:8,11:2,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

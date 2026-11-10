@@ -1,0 +1,2765 @@
+{
+ "event": "WTT Feeder Vientiane",
+ "wtt_event_id": "3131",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3131&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 7.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tianer Yu",
+         "nat": "ENG"
+        },
+        {
+         "name": "Thi Nga Nguyen",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2025-08-13T03:00:00Z",
+       "score": "1-3 (2:11,6:11,11:4,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Panita Kittiphan",
+         "nat": "LAO"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Jinnipa Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Peng Yu-han",
+         "nat": "TPE"
+        },
+        {
+         "name": "Li Sian Chang",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T03:00:00Z",
+       "score": "3-0 (12:10,11:3,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Thipphavanh Xaiphetvong",
+         "nat": "LAO"
+        },
+        {
+         "name": "Ying Ho",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T03:00:00Z",
+       "score": "0-3 (9:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kheith Cruz",
+         "nat": "PHI",
+         "seed": 8
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jing Shuen Lim",
+         "nat": "MAS"
+        },
+        {
+         "name": "Marina Donner",
+         "nat": "FIN"
+        }
+       ],
+       "when": "2025-08-13T03:00:00Z",
+       "score": "3-0 (11:4,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kulapassr Vijitviriyagul",
+         "nat": "THA"
+        },
+        {
+         "name": "Zhao Yun Tan",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-13T03:30:00Z",
+       "score": "0-3 (9:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pacharaphorn Chanvanitborikan",
+         "nat": "THA"
+        },
+        {
+         "name": "Choutiphone Sisomboun",
+         "nat": "LAO"
+        }
+       ],
+       "when": "2025-08-13T03:30:00Z",
+       "score": "3-1 (9:11,11:5,12:10,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bounleut Keomany",
+         "nat": "LAO"
+        },
+        {
+         "name": "Khanh Nguyen",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2025-08-13T03:30:00Z",
+       "score": "0-3 (5:11,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ming Ying Loy",
+         "nat": "SGP",
+         "seed": 6
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Hoi Man",
+         "nat": "HKG"
+        },
+        {
+         "name": "Phetsamay Kiyavong",
+         "nat": "LAO"
+        }
+       ],
+       "when": "2025-08-13T03:30:00Z",
+       "score": "3-0 (11:9,11:3,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Chia-I",
+         "nat": "TPE"
+        },
+        {
+         "name": "Angelou Joyce Laude",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-13T04:00:00Z",
+       "score": "3-0 (11:5,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sanaya Buddhadasa",
+         "nat": "AUS"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Janelle Chiang",
+         "nat": "SGP"
+        },
+        {
+         "name": "Malamatenia Papadimitriou",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2025-08-13T04:00:00Z",
+       "score": "3-0 (11:9,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nguyen Le",
+         "nat": "AUS"
+        },
+        {
+         "name": "Im Li Ying",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T04:00:00Z",
+       "score": "1-3 (7:11,5:11,11:7,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 5
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        },
+        {
+         "name": "Chanthida Nomichith",
+         "nat": "LAO"
+        }
+       ],
+       "when": "2025-08-13T04:00:00Z",
+       "score": "3-0 (11:5,11:2,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seojin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Ruohan Liu",
+         "nat": "LAO"
+        }
+       ],
+       "when": "2025-08-13T04:30:00Z",
+       "score": "3-1 (11:4,10:12,11:7,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Riana Bhoota",
+         "nat": "IND"
+        },
+        {
+         "name": "Anannya Basak",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T04:30:00Z",
+       "score": "1-3 (10:12,11:6,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Thi Nga Nguyen",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2025-08-13T10:00:00Z",
+       "score": "3-0 (11:6,14:12,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Panita Kittiphan",
+         "nat": "LAO"
+        },
+        {
+         "name": "Jinnipa Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "when": "2025-08-13T10:00:00Z",
+       "score": "0-3 (1:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        },
+        {
+         "name": "Peng Yu-han",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-08-13T11:45:00Z",
+       "score": "3-0 (11:4,11:9,17:15,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ying Ho",
+         "nat": "MAS"
+        },
+        {
+         "name": "Kheith Cruz",
+         "nat": "PHI",
+         "seed": 8
+        }
+       ],
+       "when": "2025-08-13T10:35:00Z",
+       "score": "0-3 (10:12,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Jing Shuen Lim",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T10:35:00Z",
+       "score": "3-0 (11:3,11:8,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhao Yun Tan",
+         "nat": "SGP"
+        },
+        {
+         "name": "Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T11:45:00Z",
+       "score": "3-0 (11:5,11:3,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        },
+        {
+         "name": "Pacharaphorn Chanvanitborikan",
+         "nat": "THA"
+        }
+       ],
+       "when": "2025-08-13T11:10:00Z",
+       "score": "3-2 (11:4,8:11,11:7,5:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Khanh Nguyen",
+         "nat": "VIE"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-13T10:00:00Z",
+       "score": "0-3 (11:13,7:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ming Ying Loy",
+         "nat": "SGP",
+         "seed": 6
+        },
+        {
+         "name": "Lee Hoi Man",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-13T11:45:00Z",
+       "score": "2-3 (7:11,11:4,7:11,11:6,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Chia-I",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sanaya Buddhadasa",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2025-08-13T10:35:00Z",
+       "score": "3-0 (11:1,11:2,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Janelle Chiang",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-13T11:10:00Z",
+       "score": "3-0 (11:9,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Im Li Ying",
+         "nat": "MAS"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-13T10:35:00Z",
+       "score": "0-3 (2:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 5
+        },
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T11:10:00Z",
+       "score": "2-3 (9:11,9:11,13:11,12:10,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seojin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-13T10:00:00Z",
+       "score": "3-2 (11:7,7:11,11:9,2:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        }
+       ],
+       "when": "2025-08-13T11:10:00Z",
+       "score": "3-2 (13:11,7:11,11:1,9:11,11:2)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anannya Basak",
+         "nat": "IND"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-13T11:45:00Z",
+       "score": "0-3 (3:11,4:11,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Jinnipa Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "when": "2025-08-14T05:10:00Z",
+       "score": "3-0 (11:5,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kheith Cruz",
+         "nat": "PHI",
+         "seed": 8
+        }
+       ],
+       "when": "2025-08-14T05:45:00Z",
+       "score": "3-2 (9:11,9:11,11:5,11:3,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Zhao Yun Tan",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-14T05:10:00Z",
+       "score": "3-1 (13:11,11:2,6:11,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        },
+        {
+         "name": "Misuzu Takeya",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-14T05:10:00Z",
+       "score": "3-1 (9:11,11:8,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Hoi Man",
+         "nat": "HKG"
+        },
+        {
+         "name": "Chen Chia-I",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-08-14T05:45:00Z",
+       "score": "0-3 (9:11,3:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-14T05:10:00Z",
+       "score": "0-3 (5:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        },
+        {
+         "name": "Lee Seojin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-08-14T05:45:00Z",
+       "score": "3-2 (11:8,8:11,11:7,12:14,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T05:45:00Z",
+       "score": "1-3 (9:11,8:11,11:9,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-08-14T10:40:00Z",
+       "score": "1-3 (9:11,11:4,4:11,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-14T11:15:00Z",
+       "score": "3-1 (11:4,4:11,11:7,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Chia-I",
+         "nat": "TPE"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-14T11:15:00Z",
+       "score": "3-2 (11:6,13:15,6:11,11:9,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T10:40:00Z",
+       "score": "2-3 (6:11,6:11,11:5,11:9,4:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2025-08-15T03:00:00Z",
+       "score": "1-3 (11:4,10:12,4:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Chia-I",
+         "nat": "TPE"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-15T03:35:00Z",
+       "score": "0-3 (7:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-15T10:10:00Z",
+       "score": "3-1 (10:12,11:5,11:9,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adeepa Keerthiratne",
+         "nat": "AUS"
+        },
+        {
+         "name": "Jin Zhen Im",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T05:00:00Z",
+       "score": "0-3 (6:11,7:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xing Yao Loy",
+         "nat": "SGP"
+        },
+        {
+         "name": "John Russel Misal",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-13T05:00:00Z",
+       "score": "3-1 (7:11,11:4,12:10,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kwon Hyuk",
+         "nat": "KOR"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choy Chun Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-08-13T05:00:00Z",
+       "score": "1-3 (11:9,7:11,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Jeongmun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Josh Chua",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-13T05:00:00Z",
+       "score": "1-3 (11:6,7:11,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arnav Karnavar",
+         "nat": "IND"
+        },
+        {
+         "name": "Thitaphat Preechayan",
+         "nat": "THA"
+        }
+       ],
+       "when": "2025-08-13T05:30:00Z",
+       "score": "2-3 (8:11,11:7,11:9,8:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong",
+         "nat": "MAS"
+        },
+        {
+         "name": "Javen Choong",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T05:30:00Z",
+       "score": "3-1 (8:11,11:9,11:8,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Salem Alsuwailem",
+         "nat": "KSA"
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2025-08-13T05:30:00Z",
+       "score": "0-3 (11:13,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ali Altaher",
+         "nat": "KSA"
+        },
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2025-08-13T05:30:00Z",
+       "score": "0-3 (4:11,8:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ze Yi Yang",
+         "nat": "SGP"
+        },
+        {
+         "name": "Jann Mari Nayre",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-13T06:00:00Z",
+       "score": "0-3 (6:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aoto Asazu",
+         "nat": "JPN"
+        },
+        {
+         "name": "Arjav Gupta",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T06:00:00Z",
+       "score": "3-2 (11:8,11:7,11:13,4:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pau Yik Man",
+         "nat": "HKG"
+        },
+        {
+         "name": "Anh Hoang Dinh",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2025-08-13T06:00:00Z",
+       "score": "3-2 (9:11,10:12,11:4,11:8,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wann Sing Danny Ng",
+         "nat": "MAS"
+        },
+        {
+         "name": "Dhairya Parmar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T06:00:00Z",
+       "score": "3-1 (11:4,8:11,11:5,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Khalid Alshareif",
+         "nat": "KSA"
+        },
+        {
+         "name": "Muhammad Junindra",
+         "nat": "INA"
+        }
+       ],
+       "when": "2025-08-13T06:30:00Z",
+       "score": "1-3 (6:11,11:7,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nicholas Tan",
+         "nat": "SGP"
+        },
+        {
+         "name": "Li Hon Ming",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-13T06:30:00Z",
+       "score": "3-0 (11:6,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ellsworth Le",
+         "nat": "SGP"
+        },
+        {
+         "name": "Dinh Duc Le",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2025-08-13T06:30:00Z",
+       "score": "3-1 (11:9,11:0,4:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anane Vongsa",
+         "nat": "LAO"
+        },
+        {
+         "name": "Phongsavanh Sengmany",
+         "nat": "LAO"
+        }
+       ],
+       "when": "2025-08-13T06:30:00Z",
+       "score": "3-0 (11:6,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Jin Zhen Im",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T12:20:00Z",
+       "score": "3-0 (11:5,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xing Yao Loy",
+         "nat": "SGP"
+        },
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T13:30:00Z",
+       "score": "0-3 (3:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kwon Hyuk",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-08-13T14:05:00Z",
+       "score": "1-3 (7:11,7:11,11:5,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Chua",
+         "nat": "SGP"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-13T12:20:00Z",
+       "score": "1-3 (1:11,11:5,6:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Thitaphat Preechayan",
+         "nat": "THA"
+        }
+       ],
+       "when": "2025-08-13T13:30:00Z",
+       "score": "3-0 (11:8,11:3,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong",
+         "nat": "MAS"
+        },
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2025-08-13T12:55:00Z",
+       "score": "1-3 (8:11,11:5,13:15,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2025-08-13T12:20:00Z",
+       "score": "2-3 (11:5,11:9,7:11,7:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-13T12:55:00Z",
+       "score": "0-3 (7:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Jann Mari Nayre",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-13T13:30:00Z",
+       "score": "0-3 (3:11,7:11,13:15,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aoto Asazu",
+         "nat": "JPN"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-13T12:20:00Z",
+       "score": "2-3 (11:9,9:11,11:3,11:13,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        },
+        {
+         "name": "Pau Yik Man",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-13T13:30:00Z",
+       "score": "3-1 (12:10,11:4,6:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wann Sing Danny Ng",
+         "nat": "MAS"
+        },
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-13T12:55:00Z",
+       "score": "0-3 (9:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Muhammad Junindra",
+         "nat": "INA"
+        }
+       ],
+       "when": "2025-08-13T14:05:00Z",
+       "score": "3-1 (10:12,12:10,11:6,16:14,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nicholas Tan",
+         "nat": "SGP"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T14:05:00Z",
+       "score": "1-3 (4:11,10:12,12:10,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mudit Dani",
+         "nat": "IND"
+        },
+        {
+         "name": "Ellsworth Le",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-13T12:55:00Z",
+       "score": "1-3 (11:4,5:11,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anane Vongsa",
+         "nat": "LAO"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-13T14:05:00Z",
+       "score": "0-3 (5:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-14T06:55:00Z",
+       "score": "3-1 (8:11,11:7,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-14T06:55:00Z",
+       "score": "0-3 (2:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2025-08-14T06:55:00Z",
+       "score": "1-3 (6:11,10:12,11:6,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-14T06:20:00Z",
+       "score": "0-3 (6:11,4:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jann Mari Nayre",
+         "nat": "PHI"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-14T06:20:00Z",
+       "score": "2-3 (5:11,11:5,11:7,4:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        },
+        {
+         "name": "Lin Yen-Chun",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-14T06:20:00Z",
+       "score": "3-2 (8:11,11:8,7:11,11:9,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Payas Jain",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-14T06:20:00Z",
+       "score": "0-3 (12:14,10:12,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ellsworth Le",
+         "nat": "SGP"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T06:55:00Z",
+       "score": "1-3 (11:3,2:11,7:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-14T12:25:00Z",
+       "score": "3-2 (11:13,11:7,9:11,11:4,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-14T11:50:00Z",
+       "score": "1-3 (12:14,11:6,9:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        },
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-14T11:50:00Z",
+       "score": "3-2 (9:11,7:11,11:8,11:7,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal",
+         "nat": "IND"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T12:25:00Z",
+       "score": "2-3 (9:11,4:11,11:4,12:10,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-15T04:10:00Z",
+       "score": "3-2 (8:11,12:14,11:9,13:11,11:2)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-15T04:45:00Z",
+       "score": "0-3 (3:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-15T10:45:00Z",
+       "score": "0-3 (4:11,6:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam / Lee Hoi Man",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Anannya Basak / Poymantee Baisya",
+         "nat": "IND"
+        }
+       ],
+       "when": "2025-08-13T08:00:00Z",
+       "score": "3-0 (11:6,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Peng Yu-han / Chen Chia-I",
+         "nat": "TPE"
+        },
+        {
+         "name": "Janelle Chiang / Zhao Yun Tan",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-13T08:00:00Z",
+       "score": "3-2 (10:12,11:3,9:11,11:3,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Sanaya Buddhadasa / Nguyen Le",
+         "nat": "AUS",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-13T08:00:00Z",
+       "score": "3-0 (11:2,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Phatsaraphon Wonglakhon / Pacharaphorn Chanvanitborikan",
+         "nat": "THA"
+        },
+        {
+         "name": "Kheith Cruz / Angelou Joyce Laude",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-13T08:00:00Z",
+       "score": "1-3 (11:13,5:11,11:7,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Sian Chang / Im Li Ying",
+         "nat": "MAS",
+         "seed": 8
+        },
+        {
+         "name": "Marina Donner / Malamatenia Papadimitriou",
+         "nat": "FIN/GRE"
+        }
+       ],
+       "when": "2025-08-13T08:30:00Z",
+       "score": "2-3 (11:5,6:11,11:8,8:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun / Lee Seojin",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Ming Ying Loy / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 3
+        }
+       ],
+       "when": "2025-08-13T08:30:00Z",
+       "score": "3-1 (11:8,13:15,13:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ying Ho / Jing Shuen Lim",
+         "nat": "MAS"
+        },
+        {
+         "name": "Kulapassr Vijitviriyagul / Jinnipa Sawettabut",
+         "nat": "THA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-08-13T08:30:00Z",
+       "score": "3-2 (11:7,8:11,11:6,6:11,11:2)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bounleut Keomany / Chanthida Nomichith",
+         "nat": "LAO"
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-13T08:30:00Z",
+       "score": "0-3 (1:11,1:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kong Tsz Lam / Lee Hoi Man",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Peng Yu-han / Chen Chia-I",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2025-08-14T04:00:00Z",
+       "score": "0-3 (9:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Kheith Cruz / Angelou Joyce Laude",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-14T04:00:00Z",
+       "score": "3-1 (14:12,11:1,4:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marina Donner / Malamatenia Papadimitriou",
+         "nat": "FIN/GRE"
+        },
+        {
+         "name": "Lee Daeun / Lee Seojin",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-14T04:00:00Z",
+       "score": "2-3 (7:11,11:4,11:9,4:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ying Ho / Jing Shuen Lim",
+         "nat": "MAS"
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T04:00:00Z",
+       "score": "0-3 (7:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Peng Yu-han / Chen Chia-I",
+         "nat": "TPE"
+        },
+        {
+         "name": "Wu Ying Syuan / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-14T09:30:00Z",
+       "score": "0-3 (11:13,14:16,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun / Lee Seojin",
+         "nat": "KOR",
+         "seed": 7
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T09:30:00Z",
+       "score": "0-3 (5:11,2:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wu Ying Syuan / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-15T09:00:00Z",
+       "score": "1-3 (8:11,7:11,11:8,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Payas Jain",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Kim Daewoo / Ho Jeongmun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-08-13T09:00:00Z",
+       "score": "2-3 (11:9,8:11,11:13,11:6,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nicholas Tan / Ze Yi Yang",
+         "nat": "SGP"
+        },
+        {
+         "name": "Kwan Man Ho / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-13T09:00:00Z",
+       "score": "1-3 (9:11,11:6,10:12,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Pau Yik Man / Choy Chun Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2025-08-13T09:00:00Z",
+       "score": "3-2 (14:12,10:12,11:5,6:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Walker / Cedric Meissner",
+         "nat": "ENG/GER",
+         "seed": 8
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2025-08-13T09:00:00Z",
+       "score": "0-3 (3:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong / Javen Choong",
+         "nat": "MAS",
+         "seed": 5
+        },
+        {
+         "name": "Lin Yen-Chun / Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-13T09:30:00Z",
+       "score": "2-3 (10:12,6:11,13:11,11:8,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Eljey Tormis / Jann Mari Nayre",
+         "nat": "PHI"
+        },
+        {
+         "name": "Josh Chua / Mudit Dani",
+         "nat": "SGP/IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-08-13T09:30:00Z",
+       "score": "3-2 (11:4,9:11,11:8,7:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Khalid Alshareif / Salem Alsuwailem",
+         "nat": "KSA"
+        },
+        {
+         "name": "Wann Sing Danny Ng / Tey Hong Yu",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2025-08-13T09:30:00Z",
+       "score": "1-3 (11:7,8:11,8:11,1:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Richard Gonzales / John Russel Misal",
+         "nat": "PHI"
+        },
+        {
+         "name": "Yiu Kwan To / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-13T09:30:00Z",
+       "score": "1-3 (9:11,11:9,6:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo / Ho Jeongmun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kwan Man Ho / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-14T04:35:00Z",
+       "score": "1-3 (12:14,3:11,11:9,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2025-08-14T04:35:00Z",
+       "score": "3-2 (8:11,11:9,11:5,8:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun / Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Eljey Tormis / Jann Mari Nayre",
+         "nat": "PHI"
+        }
+       ],
+       "when": "2025-08-14T04:35:00Z",
+       "score": "3-2 (10:12,11:9,10:12,11:5,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wann Sing Danny Ng / Tey Hong Yu",
+         "nat": "MAS"
+        },
+        {
+         "name": "Yiu Kwan To / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T04:35:00Z",
+       "score": "1-3 (10:12,14:12,10:12,3:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kwan Man Ho / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 7
+        },
+        {
+         "name": "Anirban Ghosh / Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-14T10:05:00Z",
+       "score": "3-1 (11:9,11:6,2:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun / Hung Jing-Kai",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Yiu Kwan To / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-14T10:05:00Z",
+       "score": "0-3 (9:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kwan Man Ho / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 7
+        },
+        {
+         "name": "Yiu Kwan To / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-15T09:35:00Z",
+       "score": "1-3 (9:11,11:8,7:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ankur Bhattacharjee / Poymantee Baisya",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Kim Daewoo / Choi Haeeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-08-13T02:00:00Z",
+       "score": "0-3 (8:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xaysana Xaysavath / Chanthida Nomichith",
+         "nat": "LAO"
+        },
+        {
+         "name": "Ellsworth Le / Lin Qian Ser",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-13T02:00:00Z",
+       "score": "0-3 (1:11,2:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Hung Jing-Kai / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ],
+       "when": "2025-08-13T02:00:00Z",
+       "score": "1-3 (8:11,9:11,11:6,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anane Vongsa / Ruohan Liu",
+         "nat": "LAO"
+        },
+        {
+         "name": "Nicholas Tan / Marina Donner",
+         "nat": "SGP/FIN"
+        }
+       ],
+       "when": "2025-08-13T02:00:00Z",
+       "score": "1-3 (12:10,11:13,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Aoto Asazu / Misuzu Takeya",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-08-13T02:30:00Z",
+       "score": "3-2 (11:9,15:13,5:11,8:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 7
+        },
+        {
+         "name": "Thitaphat Preechayan / Kulapassr Vijitviriyagul",
+         "nat": "THA",
+         "seed": 4
+        }
+       ],
+       "when": "2025-08-13T02:30:00Z",
+       "score": "3-0 (11:3,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Kong Tsz Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Javen Choong / Karen Lyne",
+         "nat": "MAS",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-13T02:30:00Z",
+       "score": "1-3 (5:11,11:8,10:12,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Chua / Zhao Yun Tan",
+         "nat": "SGP"
+        },
+        {
+         "name": "Kwon Hyuk / Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-08-13T02:30:00Z",
+       "score": "3-0 (11:7,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo / Choi Haeeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Ellsworth Le / Lin Qian Ser",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-14T03:00:00Z",
+       "score": "3-0 (11:7,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hung Jing-Kai / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Nicholas Tan / Marina Donner",
+         "nat": "SGP/FIN"
+        }
+       ],
+       "when": "2025-08-14T03:00:00Z",
+       "score": "3-0 (11:7,11:1,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Qi Shen Wong / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 7
+        }
+       ],
+       "when": "2025-08-14T03:00:00Z",
+       "score": "3-2 (6:11,8:11,11:9,13:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Javen Choong / Karen Lyne",
+         "nat": "MAS",
+         "seed": 6
+        },
+        {
+         "name": "Josh Chua / Zhao Yun Tan",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2025-08-14T03:00:00Z",
+       "score": "3-1 (8:11,12:10,11:5,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo / Choi Haeeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hung Jing-Kai / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ],
+       "when": "2025-08-14T13:20:00Z",
+       "score": "1-3 (11:7,7:11,9:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yen-Chun / Wu Jia-En",
+         "nat": "TPE",
+         "seed": 8
+        },
+        {
+         "name": "Javen Choong / Karen Lyne",
+         "nat": "MAS",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-14T13:20:00Z",
+       "score": "2-3 (7:11,11:9,10:12,12:10,4:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hung Jing-Kai / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Javen Choong / Karen Lyne",
+         "nat": "MAS",
+         "seed": 6
+        }
+       ],
+       "when": "2025-08-15T05:20:00Z",
+       "score": "3-0 (11:8,12:10,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

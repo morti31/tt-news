@@ -1,0 +1,1844 @@
+{
+ "event": "WTT Contender Taiyuan",
+ "wtt_event_id": "3237",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3237&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 8.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-09T04:50:00Z",
+       "score": "3-0 (13:11,12:10,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Su Tsz Tung",
+         "nat": "HKG"
+        },
+        {
+         "name": "Jiamuwa Wu",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2026-04-09T04:15:00Z",
+       "score": "3-0 (11:5,11:3,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Huize",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lam Yee Lok",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-09T05:25:00Z",
+       "score": "3-0 (11:8,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shuohan Men",
+         "nat": "NED"
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-09T04:15:00Z",
+       "score": "0-3 (3:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Kim Eunseo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-04-09T11:55:00Z",
+       "score": "3-0 (11:7,11:2,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Feng Yixuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yao Ruixuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T11:20:00Z",
+       "score": "1-3 (11:7,5:11,9:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-04-09T04:15:00Z",
+       "score": "3-0 (11:5,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manika Batra",
+         "nat": "IND"
+        },
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-04-09T03:40:00Z",
+       "score": "3-2 (11:8,10:12,14:12,9:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Mao Takamori",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T04:50:00Z",
+       "score": "3-0 (11:4,14:12,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        },
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T10:10:00Z",
+       "score": "0-3 (0:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T06:00:00Z",
+       "score": "1-3 (8:11,3:11,11:7,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Ziyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-04-09T10:45:00Z",
+       "score": "3-0 (14:12,11:8,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian",
+         "nat": "SGP",
+         "seed": 8
+        },
+        {
+         "name": "Jie Li",
+         "nat": "NED"
+        }
+       ],
+       "when": "2026-04-09T11:20:00Z",
+       "score": "0-3 (8:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Qian Ser",
+         "nat": "SGP"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T10:10:00Z",
+       "score": "1-3 (11:9,5:11,7:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Hoi Man",
+         "nat": "HKG"
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T04:50:00Z",
+       "score": "1-3 (8:11,11:8,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xia Lian Ni",
+         "nat": "LUX"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-09T09:35:00Z",
+       "score": "0-3 (8:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Su Tsz Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-10T10:10:00Z",
+       "score": "3-1 (11:5,11:4,8:11,11:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Huize",
+         "nat": "CHN"
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-10T04:15:00Z",
+       "score": "2-3 (11:9,4:11,9:11,11:7,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Yao Ruixuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-10T03:40:00Z",
+       "score": "3-0 (11:3,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Manika Batra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-04-10T10:10:00Z",
+       "score": "3-0 (11:9,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-10T09:00:00Z",
+       "score": "3-0 (11:7,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Zhu Ziyu",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-10T09:35:00Z",
+       "score": "1-3 (8:11,10:12,11:9,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jie Li",
+         "nat": "NED"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-10T03:40:00Z",
+       "score": "2-3 (8:11,10:12,11:4,11:3,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-10T09:00:00Z",
+       "score": "1-3 (12:10,7:11,4:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-11T03:00:00Z",
+       "score": "3-2 (12:10,11:8,11:13,10:12,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-11T04:45:00Z",
+       "score": "3-0 (11:6,11:1,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Zhu Ziyu",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-11T03:00:00Z",
+       "score": "3-0 (11:3,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-11T03:35:00Z",
+       "score": "1-3 (7:11,12:10,9:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-11T10:10:00Z",
+       "score": "3-0 (11:3,11:3,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-11T09:00:00Z",
+       "score": "3-0 (11:5,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2026-04-12T09:10:00Z",
+       "score": "4-1 (11:5,11:9,3:11,13:11,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2026-04-09T10:10:00Z",
+       "score": "0-3 (6:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Hwan Bae",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2026-04-09T06:00:00Z",
+       "score": "3-0 (11:7,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T04:15:00Z",
+       "score": "2-3 (12:10,9:11,9:11,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2026-04-09T09:35:00Z",
+       "score": "0-3 (10:12,7:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Lam Siu Hang",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-09T03:40:00Z",
+       "score": "3-2 (10:12,11:6,11:8,9:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sun Yang",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-09T11:55:00Z",
+       "score": "3-0 (11:8,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin",
+         "nat": "HKG"
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T03:40:00Z",
+       "score": "1-3 (8:11,11:5,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Izaac Quek",
+         "nat": "SGP"
+        },
+        {
+         "name": "Nicholas Lum",
+         "nat": "AUS",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-09T11:55:00Z",
+       "score": "3-0 (11:4,11:9,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-09T05:25:00Z",
+       "score": "3-0 (11:5,11:1,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong",
+         "nat": "MAS"
+        },
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T10:45:00Z",
+       "score": "0-3 (4:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Satoshi Aida",
+         "nat": "JPN"
+        },
+        {
+         "name": "Li Tianyang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T06:00:00Z",
+       "score": "2-3 (11:9,11:8,9:11,6:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG"
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-09T11:20:00Z",
+       "score": "2-3 (6:11,14:12,6:11,11:8,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-09T05:25:00Z",
+       "score": "3-1 (11:7,11:7,8:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hechen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kazuhiro Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T09:35:00Z",
+       "score": "3-2 (11:6,0:11,9:11,11:6,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Koen Pang",
+         "nat": "SGP"
+        },
+        {
+         "name": "Jinbao Ma",
+         "nat": "USA"
+        }
+       ],
+       "when": "2026-04-09T04:15:00Z",
+       "score": "1-3 (7:11,8:11,11:8,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josh Chua",
+         "nat": "SGP"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-09T10:45:00Z",
+       "score": "0-3 (8:11,7:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2026-04-10T10:10:00Z",
+       "score": "1-3 (11:7,1:11,9:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2026-04-10T04:15:00Z",
+       "score": "2-3 (11:7,3:11,4:11,12:10,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Sun Yang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-10T04:15:00Z",
+       "score": "3-0 (12:10,11:5,17:15,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN"
+        },
+        {
+         "name": "Izaac Quek",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2026-04-10T04:50:00Z",
+       "score": "3-1 (7:11,13:11,11:1,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-10T09:35:00Z",
+       "score": "1-3 (10:12,11:6,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Tianyang",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-10T09:00:00Z",
+       "score": "3-0 (11:7,11:9,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Li Hechen",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-10T03:40:00Z",
+       "score": "3-0 (11:8,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jinbao Ma",
+         "nat": "USA"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-10T09:35:00Z",
+       "score": "0-3 (9:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 5
+        }
+       ],
+       "when": "2026-04-11T03:35:00Z",
+       "score": "2-3 (11:7,4:11,14:12,8:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-11T03:35:00Z",
+       "score": "2-3 (10:12,11:2,8:11,11:9,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN"
+        },
+        {
+         "name": "Li Tianyang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-11T04:10:00Z",
+       "score": "0-3 (7:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hiroto Shinozuka",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-11T03:00:00Z",
+       "score": "1-3 (11:4,6:11,2:11,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO",
+         "seed": 5
+        },
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-11T09:35:00Z",
+       "score": "1-3 (11:3,7:11,9:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Tianyang",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-11T10:45:00Z",
+       "score": "2-3 (8:11,11:6,12:14,11:8,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura",
+         "nat": "JPN"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-12T09:55:00Z",
+       "score": "2-4 (11:7,8:11,11:6,6:11,4:11,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Su Tsz Tung / Wong Hoi Tung",
+         "nat": "HKG"
+        },
+        {
+         "name": "Jiamuwa Wu / Kim Eunseo",
+         "nat": "AUS/KOR"
+        }
+       ],
+       "when": "2026-04-09T05:25:00Z",
+       "score": "3-0 (11:6,11:7,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao / Han Feier",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Lee Hoi Man / Kong Tsz Lam",
+         "nat": "HKG",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-09T06:35:00Z",
+       "score": "3-1 (11:7,11:9,3:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Sian Chang / Im Li Ying",
+         "nat": "MAS"
+        },
+        {
+         "name": "Miyuu Kihara / Miu Hirano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T06:35:00Z",
+       "score": "0-3 (4:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 5
+        },
+        {
+         "name": "Zeng Jian / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 6
+        }
+       ],
+       "when": "2026-04-09T04:50:00Z",
+       "score": "1-3 (12:10,6:11,7:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jie Li / Shuohan Men",
+         "nat": "NED"
+        },
+        {
+         "name": "Doo Hoi Kem / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-09T09:00:00Z",
+       "score": "2-3 (11:9,8:11,11:8,9:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Saki Shibata / Mao Takamori",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Yao Ruixuan / Jiang Yiyi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T09:00:00Z",
+       "score": "3-2 (8:11,7:11,11:9,11:2,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Qin Yuxuan / Zong Geman",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Su Tsz Tung / Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-04-10T06:35:00Z",
+       "score": "2-3 (11:6,11:6,9:11,2:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao / Han Feier",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Miyuu Kihara / Miu Hirano",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-10T05:25:00Z",
+       "score": "3-1 (4:11,11:9,11:2,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Jian / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 6
+        },
+        {
+         "name": "Doo Hoi Kem / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-10T06:00:00Z",
+       "score": "2-3 (16:14,5:11,4:11,11:9,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Saki Shibata / Mao Takamori",
+         "nat": "JPN",
+         "seed": 8
+        },
+        {
+         "name": "Qin Yuxuan / Zong Geman",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-10T05:25:00Z",
+       "score": "3-1 (7:11,11:7,11:8,11:2,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Su Tsz Tung / Wong Hoi Tung",
+         "nat": "HKG"
+        },
+        {
+         "name": "Shi Xunyao / Han Feier",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-04-11T05:20:00Z",
+       "score": "1-3 (9:11,4:11,11:8,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Saki Shibata / Mao Takamori",
+         "nat": "JPN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-04-11T05:20:00Z",
+       "score": "3-1 (11:7,11:8,7:11,13:11,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao / Han Feier",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Doo Hoi Kem / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-12T08:00:00Z",
+       "score": "3-1 (11:6,11:4,6:11,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Sun Yang / Li Tianyang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T09:00:00Z",
+       "score": "3-0 (11:6,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai / Satoshi Aida",
+         "nat": "JPN"
+        },
+        {
+         "name": "Nicholas Lum / Hwan Bae",
+         "nat": "AUS",
+         "seed": 5
+        }
+       ],
+       "when": "2026-04-09T03:40:00Z",
+       "score": "3-2 (11:6,9:11,11:6,9:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Izaac Quek / Koen Pang",
+         "nat": "SGP",
+         "seed": 3
+        },
+        {
+         "name": "Chen Yuanyu / Xiang Peng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-09T06:35:00Z",
+       "score": "2-3 (11:8,3:11,9:11,11:7,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong / Javen Choong",
+         "nat": "MAS",
+         "seed": 7
+        },
+        {
+         "name": "Romain Ruiz / Josh Chua",
+         "nat": "FRA/SGP"
+        }
+       ],
+       "when": "2026-04-09T04:50:00Z",
+       "score": "3-1 (12:10,12:14,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nawin Mekamporn / Puripong Saelee",
+         "nat": "THA"
+        },
+        {
+         "name": "Ho Kwan Kit / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2026-04-09T03:40:00Z",
+       "score": "0-3 (12:14,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Jinbao Ma",
+         "nat": "GER/USA"
+        },
+        {
+         "name": "Li Hechen / Wen Ruibo",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-04-09T06:00:00Z",
+       "score": "2-3 (9:11,12:10,11:8,4:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Lam Siu Hang",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Maharu Yoshimura / Kazuhiro Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T05:25:00Z",
+       "score": "2-3 (9:11,6:11,11:8,11:7,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Woo Hyeonggyu / Choi Jiwook",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wong Chun Ting / Chan Baldwin",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-09T06:35:00Z",
+       "score": "1-3 (9:11,12:10,6:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Yuhi Sakai / Satoshi Aida",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-10T06:00:00Z",
+       "score": "3-1 (9:11,11:3,11:7,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu / Xiang Peng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qi Shen Wong / Javen Choong",
+         "nat": "MAS",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-10T05:25:00Z",
+       "score": "3-1 (9:11,12:10,11:4,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit / Li Hon Ming",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Li Hechen / Wen Ruibo",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-04-10T06:00:00Z",
+       "score": "0-3 (6:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maharu Yoshimura / Kazuhiro Yoshimura",
+         "nat": "JPN"
+        },
+        {
+         "name": "Wong Chun Ting / Chan Baldwin",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-10T06:35:00Z",
+       "score": "3-0 (11:8,13:11,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chen Yuanyu / Xiang Peng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-04-11T05:55:00Z",
+       "score": "3-1 (11:6,11:8,6:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hechen / Wen Ruibo",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Maharu Yoshimura / Kazuhiro Yoshimura",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-11T05:20:00Z",
+       "score": "3-1 (11:9,11:4,8:11,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Huang Youzheng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Li Hechen / Wen Ruibo",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2026-04-12T08:35:00Z",
+       "score": "2-3 (10:12,12:10,7:11,11:8,8:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Luka Mladenovic / Xia Lian Ni",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2026-04-09T03:05:00Z",
+       "score": "3-1 (9:11,11:8,11:7,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hechen / Yao Ruixuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Cedric Meissner / Lee Hoi Man",
+         "nat": "GER/HKG"
+        }
+       ],
+       "when": "2026-04-09T03:05:00Z",
+       "score": "2-3 (11:6,12:10,9:11,9:11,15:17)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Koen Pang / Zeng Jian",
+         "nat": "SGP",
+         "seed": 4
+        },
+        {
+         "name": "Izaac Quek / Lin Qian Ser",
+         "nat": "SGP",
+         "seed": 7
+        }
+       ],
+       "when": "2026-04-09T02:30:00Z",
+       "score": "3-0 (11:8,13:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qi Shen Wong / Ai Xin Tee",
+         "nat": "MAS"
+        },
+        {
+         "name": "Javen Choong / Karen Lyne",
+         "nat": "MAS",
+         "seed": 8
+        }
+       ],
+       "when": "2026-04-09T03:05:00Z",
+       "score": "3-1 (11:7,5:11,11:7,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Yuhi Sakai / Mao Takamori",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-04-09T02:30:00Z",
+       "score": "0-3 (9:11,8:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Jiwook / Kim Eunseo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Satoshi Aida / Hitomi Sato",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-09T02:30:00Z",
+       "score": "0-3 (9:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 5
+        },
+        {
+         "name": "Nicholas Lum / Lam Yee Lok",
+         "nat": "AUS/HKG"
+        }
+       ],
+       "when": "2026-04-09T02:30:00Z",
+       "score": "3-0 (11:7,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Zong Geman",
+         "nat": "CHN"
+        },
+        {
+         "name": "Huang Youzheng / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-09T02:30:00Z",
+       "score": "0-3 (6:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Cedric Meissner / Lee Hoi Man",
+         "nat": "GER/HKG"
+        }
+       ],
+       "when": "2026-04-10T03:05:00Z",
+       "score": "3-1 (11:4,11:5,9:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Koen Pang / Zeng Jian",
+         "nat": "SGP",
+         "seed": 4
+        },
+        {
+         "name": "Qi Shen Wong / Ai Xin Tee",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-04-10T02:30:00Z",
+       "score": "3-1 (11:9,11:8,8:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai / Mao Takamori",
+         "nat": "JPN"
+        },
+        {
+         "name": "Satoshi Aida / Hitomi Sato",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-04-10T02:30:00Z",
+       "score": "3-1 (13:11,7:11,15:13,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 5
+        },
+        {
+         "name": "Huang Youzheng / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-10T02:30:00Z",
+       "score": "2-3 (5:11,11:8,11:6,9:11,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Koen Pang / Zeng Jian",
+         "nat": "SGP",
+         "seed": 4
+        }
+       ],
+       "when": "2026-04-10T10:45:00Z",
+       "score": "3-1 (11:9,11:7,8:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuhi Sakai / Mao Takamori",
+         "nat": "JPN"
+        },
+        {
+         "name": "Huang Youzheng / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-10T10:45:00Z",
+       "score": "1-3 (4:11,3:11,11:7,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Huang Youzheng / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-04-11T11:20:00Z",
+       "score": "1-3 (7:11,9:11,11:6,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

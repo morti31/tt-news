@@ -1,0 +1,1839 @@
+{
+ "event": "WTT Feeder Bangkok",
+ "wtt_event_id": "3371",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3371&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 7.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Kulapassr Vijitviriyagul",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T10:40:00Z",
+       "score": "3-0 (11:8,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chiko Fujita",
+         "nat": "JPN"
+        },
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-09-16T10:40:00Z",
+       "score": "3-2 (7:11,5:11,11:9,11:3,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jinnipa Sawettabut",
+         "nat": "THA"
+        },
+        {
+         "name": "Kim Eunseo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-16T11:15:00Z",
+       "score": "0-3 (10:12,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Xianchang",
+         "nat": "CHN"
+        },
+        {
+         "name": "Jiamuwa Wu",
+         "nat": "AUS",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-16T04:10:00Z",
+       "score": "3-0 (11:7,13:11,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Tianer Yu",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2026-09-16T04:45:00Z",
+       "score": "3-2 (4:11,11:9,11:5,8:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wei Jingming",
+         "nat": "CHN"
+        },
+        {
+         "name": "Li Sian Chang",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-09-16T04:10:00Z",
+       "score": "3-0 (14:12,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Ding Yiyang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-16T10:40:00Z",
+       "score": "3-1 (7:11,11:1,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhao Wangqi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-16T04:45:00Z",
+       "score": "0-3 (7:11,8:11,1:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Lee Haelin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-16T04:10:00Z",
+       "score": "1-3 (14:12,7:11,10:12,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Min-Hsin",
+         "nat": "TPE"
+        },
+        {
+         "name": "Li Yihui",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-16T04:45:00Z",
+       "score": "2-3 (10:12,14:12,11:3,6:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Seoyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-09-16T11:15:00Z",
+       "score": "0-3 (7:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Heo Yerim",
+         "nat": "KOR"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-16T10:40:00Z",
+       "score": "3-0 (12:10,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nithya Mani",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Im Li Ying",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-09-16T04:45:00Z",
+       "score": "3-2 (7:11,11:8,12:10,8:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wiranchana Sreechak",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T04:10:00Z",
+       "score": "3-0 (11:7,11:5,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Junlin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-09-16T11:15:00Z",
+       "score": "3-1 (11:5,11:2,10:12,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chisa Cachamit",
+         "nat": "THA"
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-16T11:15:00Z",
+       "score": "2-3 (3:11,10:12,11:7,11:4,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Chiko Fujita",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-09-17T04:45:00Z",
+       "score": "1-3 (9:11,5:11,14:12,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Eunseo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Chen Xianchang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T04:10:00Z",
+       "score": "0-3 (2:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 4
+        },
+        {
+         "name": "Wei Jingming",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T04:45:00Z",
+       "score": "0-3 (5:11,6:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-17T04:45:00Z",
+       "score": "0-3 (9:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Haelin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Li Yihui",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T04:10:00Z",
+       "score": "0-3 (10:12,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        },
+        {
+         "name": "Heo Yerim",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-17T04:45:00Z",
+       "score": "3-1 (11:6,6:11,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nithya Mani",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-17T04:10:00Z",
+       "score": "0-3 (6:11,3:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Junlin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-17T04:10:00Z",
+       "score": "1-3 (12:14,3:11,11:3,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chiko Fujita",
+         "nat": "JPN"
+        },
+        {
+         "name": "Chen Xianchang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T10:40:00Z",
+       "score": "3-1 (11:8,10:12,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wei Jingming",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-17T11:15:00Z",
+       "score": "0-3 (10:12,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yihui",
+         "nat": "CHN"
+        },
+        {
+         "name": "Karen Lyne",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2026-09-17T11:15:00Z",
+       "score": "3-1 (9:11,11:6,11:4,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Jieni Shao",
+         "nat": "POR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-17T10:40:00Z",
+       "score": "3-1 (12:10,11:6,8:11,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chiko Fujita",
+         "nat": "JPN"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-09-18T03:00:00Z",
+       "score": "3-1 (11:7,11:4,6:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yihui",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-18T03:35:00Z",
+       "score": "3-1 (11:5,11:8,6:11,11:3,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chiko Fujita",
+         "nat": "JPN"
+        },
+        {
+         "name": "Li Yihui",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-18T10:40:00Z",
+       "score": "2-3 (4:11,11:6,11:6,7:11,9:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG",
+         "seed": 1
+        },
+        {
+         "name": "Gorkem Ocal",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-09-16T05:20:00Z",
+       "score": "3-1 (9:11,11:7,12:10,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Chang Jui-Yang",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-16T05:20:00Z",
+       "score": "0-3 (8:11,1:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Hojun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-09-16T05:20:00Z",
+       "score": "3-1 (11:9,11:9,3:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hayate Suzuki",
+         "nat": "JPN"
+        },
+        {
+         "name": "Amirreza Abbasi",
+         "nat": "MLT",
+         "seed": 8
+        }
+       ],
+       "when": "2026-09-16T12:25:00Z",
+       "score": "3-2 (12:10,1:11,11:8,6:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Edward Ly",
+         "nat": "CAN",
+         "seed": 3
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2026-09-16T05:55:00Z",
+       "score": "3-2 (9:11,15:13,9:11,11:7,11:1)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "Hinata Mochida",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-09-16T05:55:00Z",
+       "score": "3-2 (6:11,14:12,15:17,11:8,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chia-Chuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Nawachet Prasongpol",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T05:55:00Z",
+       "score": "3-1 (11:6,2:11,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anh Hoang Dinh",
+         "nat": "VIE"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-16T05:55:00Z",
+       "score": "0-3 (9:11,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2026-09-16T11:50:00Z",
+       "score": "3-1 (11:13,11:6,11:4,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Phakpoom Sanguansin",
+         "nat": "THA"
+        },
+        {
+         "name": "Yashansh Malik",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-09-16T11:50:00Z",
+       "score": "3-2 (9:11,8:11,11:8,11:8,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kang Dongsoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Lin Chin-Ting",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-16T11:50:00Z",
+       "score": "2-3 (10:12,6:11,11:7,11:2,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Thitaphat Preechayan",
+         "nat": "THA"
+        },
+        {
+         "name": "Hung Che-Yen",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-16T11:50:00Z",
+       "score": "3-1 (11:7,11:9,8:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Sun Yang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-16T12:25:00Z",
+       "score": "3-0 (11:8,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zokhid Kenjaev",
+         "nat": "UZB"
+        },
+        {
+         "name": "Nawin Mekamporn",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T05:20:00Z",
+       "score": "3-1 (7:11,11:6,11:7,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pattaratorn Passara",
+         "nat": "THA"
+        },
+        {
+         "name": "Remi Chambet-Weil",
+         "nat": "NED"
+        }
+       ],
+       "when": "2026-09-16T12:25:00Z",
+       "score": "3-0 (11:8,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lim Yunoh",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yang Wang",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-16T12:25:00Z",
+       "score": "3-1 (9:11,16:14,11:5,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG",
+         "seed": 1
+        },
+        {
+         "name": "Chang Jui-Yang",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-17T05:55:00Z",
+       "score": "3-1 (11:9,5:11,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Hojun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hayate Suzuki",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-09-17T05:55:00Z",
+       "score": "2-3 (11:9,11:4,1:11,3:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Edward Ly",
+         "nat": "CAN",
+         "seed": 3
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-09-17T05:20:00Z",
+       "score": "0-3 (9:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chia-Chuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Akash Pal",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-17T05:20:00Z",
+       "score": "3-1 (7:11,11:7,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Phakpoom Sanguansin",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-17T05:20:00Z",
+       "score": "3-0 (11:7,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Chin-Ting",
+         "nat": "TPE"
+        },
+        {
+         "name": "Thitaphat Preechayan",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-17T05:20:00Z",
+       "score": "3-1 (6:11,11:6,11:1,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Zokhid Kenjaev",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2026-09-17T05:55:00Z",
+       "score": "3-1 (11:3,9:11,11:8,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pattaratorn Passara",
+         "nat": "THA"
+        },
+        {
+         "name": "Lim Yunoh",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-17T05:55:00Z",
+       "score": "1-3 (3:11,6:11,15:13,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG",
+         "seed": 1
+        },
+        {
+         "name": "Hayate Suzuki",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-09-17T11:50:00Z",
+       "score": "3-1 (11:5,13:11,9:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "Chuang Chia-Chuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-17T12:25:00Z",
+       "score": "3-0 (11:8,11:1,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Lin Chin-Ting",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-17T12:25:00Z",
+       "score": "2-3 (10:12,11:4,12:10,8:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Lim Yunoh",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-17T11:50:00Z",
+       "score": "3-2 (11:5,20:18,7:11,12:14,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG",
+         "seed": 1
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-09-18T04:10:00Z",
+       "score": "1-3 (13:11,9:11,12:14,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Chin-Ting",
+         "nat": "TPE"
+        },
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-18T04:45:00Z",
+       "score": "0-3 (7:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-18T11:15:00Z",
+       "score": "1-3 (11:13,7:11,11:8,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun / Lee Daeun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Jinnipa Sawettabut / Yanisa Ponchai",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T07:05:00Z",
+       "score": "3-0 (11:2,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Sian Chang / Im Li Ying",
+         "nat": "MAS"
+        },
+        {
+         "name": "Chiko Fujita / Adelina Khasanova",
+         "nat": "JPN/UZB"
+        }
+       ],
+       "when": "2026-09-16T07:05:00Z",
+       "score": "2-3 (11:5,12:10,8:11,13:15,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Hoi Tung / Mo Zhang",
+         "nat": "HKG/CAN",
+         "seed": 4
+        },
+        {
+         "name": "Choi Seoyeon / Lee Haelin",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-16T06:30:00Z",
+       "score": "0-3 (10:12,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chisa Cachamit / Wiranchana Sreechak",
+         "nat": "THA"
+        },
+        {
+         "name": "Xu Huiyao / Xiang Junlin",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-16T06:30:00Z",
+       "score": "0-3 (11:13,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mathavee Tantiput / Thunyatorn Meekaew",
+         "nat": "THA"
+        },
+        {
+         "name": "Tsai Yun-En / Huang Ching-Chia",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-16T06:30:00Z",
+       "score": "0-3 (12:14,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kulapassr Vijitviriyagul / Phatsaraphon Wonglakhon",
+         "nat": "THA",
+         "seed": 7
+        },
+        {
+         "name": "Heo Yerim / Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-16T07:30:00Z",
+       "score": "1-3 (11:8,8:11,9:11,13:15,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jieni Shao / Fu Yu",
+         "nat": "POR",
+         "seed": 8
+        },
+        {
+         "name": "Lim Jisoo / Lee Yeonhui",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-16T06:30:00Z",
+       "score": "1-3 (9:11,11:9,7:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Xianchang / Li Yihui",
+         "nat": "CHN"
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-16T07:05:00Z",
+       "score": "1-3 (11:5,10:12,4:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun / Lee Daeun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Chiko Fujita / Adelina Khasanova",
+         "nat": "JPN/UZB"
+        }
+       ],
+       "when": "2026-09-17T03:00:00Z",
+       "score": "3-2 (6:11,11:5,8:11,11:8,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Seoyeon / Lee Haelin",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Xu Huiyao / Xiang Junlin",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T03:00:00Z",
+       "score": "3-1 (11:8,9:11,11:7,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tsai Yun-En / Huang Ching-Chia",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Heo Yerim / Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-09-17T03:00:00Z",
+       "score": "2-3 (13:11,6:11,11:8,5:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lim Jisoo / Lee Yeonhui",
+         "nat": "KOR"
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-17T03:00:00Z",
+       "score": "0-3 (4:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun / Lee Daeun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Choi Seoyeon / Lee Haelin",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-17T09:30:00Z",
+       "score": "3-0 (11:2,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Heo Yerim / Lee Zion",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-17T09:30:00Z",
+       "score": "2-3 (11:3,11:2,9:11,3:11,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun / Lee Daeun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Karen Lyne / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-18T09:30:00Z",
+       "score": "3-0 (13:11,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 1
+        },
+        {
+         "name": "Nawachet Prasongpol / Sarayut Tancharoen",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T09:30:00Z",
+       "score": "3-1 (12:10,7:11,11:4,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pau Yik Man / Choy Chun Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "Do Manh Luong / NGUYEN Thai Bao",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2026-09-16T09:30:00Z",
+       "score": "2-3 (7:11,12:10,10:12,11:3,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Chambet-Weil / Gorkem Ocal",
+         "nat": "NED/TUR",
+         "seed": 3
+        },
+        {
+         "name": "Thitaphat Preechayan / Phakpoom Sanguansin",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T09:30:00Z",
+       "score": "3-1 (14:12,11:8,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zokhidjon Sadriddinov / Shahbozbek Gulomiddinov",
+         "nat": "UZB",
+         "seed": 8
+        },
+        {
+         "name": "Fei Junhang / Zhai Jiale",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-16T10:05:00Z",
+       "score": "0-3 (3:11,4:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Yashansh Malik",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Ibrahima Diaw / Mehdi Bouloussa",
+         "nat": "DEN/ALG"
+        }
+       ],
+       "when": "2026-09-16T09:30:00Z",
+       "score": "2-3 (9:11,11:2,11:7,10:12,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shokhrukh Iskandarov / Zokhid Kenjaev",
+         "nat": "UZB",
+         "seed": 7
+        },
+        {
+         "name": "Li Hon Ming / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-16T10:05:00Z",
+       "score": "2-3 (11:5,11:5,3:11,7:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Jixuan / Kang Youde",
+         "nat": "CHN"
+        },
+        {
+         "name": "Hayate Suzuki / Hinata Mochida",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-16T10:05:00Z",
+       "score": "3-1 (11:5,11:6,5:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lim Yunoh / Oh Seunghwan",
+         "nat": "KOR"
+        },
+        {
+         "name": "Amirreza Abbasi / Cedric Meissner",
+         "nat": "MLT/GER",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-16T10:05:00Z",
+       "score": "1-3 (6:11,11:7,9:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 1
+        },
+        {
+         "name": "Do Manh Luong / NGUYEN Thai Bao",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2026-09-17T03:35:00Z",
+       "score": "3-0 (11:4,11:9,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Chambet-Weil / Gorkem Ocal",
+         "nat": "NED/TUR",
+         "seed": 3
+        },
+        {
+         "name": "Fei Junhang / Zhai Jiale",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T03:35:00Z",
+       "score": "1-3 (3:11,11:8,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahima Diaw / Mehdi Bouloussa",
+         "nat": "DEN/ALG"
+        },
+        {
+         "name": "Li Hon Ming / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-17T03:35:00Z",
+       "score": "1-3 (11:8,5:11,10:12,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Jixuan / Kang Youde",
+         "nat": "CHN"
+        },
+        {
+         "name": "Amirreza Abbasi / Cedric Meissner",
+         "nat": "MLT/GER",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-17T03:35:00Z",
+       "score": "1-3 (8:11,8:11,11:6,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 1
+        },
+        {
+         "name": "Fei Junhang / Zhai Jiale",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-17T10:05:00Z",
+       "score": "3-1 (4:11,11:4,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hon Ming / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Amirreza Abbasi / Cedric Meissner",
+         "nat": "MLT/GER",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-17T10:05:00Z",
+       "score": "1-3 (11:5,6:11,7:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA",
+         "seed": 1
+        },
+        {
+         "name": "Amirreza Abbasi / Cedric Meissner",
+         "nat": "MLT/GER",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-18T10:05:00Z",
+       "score": "2-3 (11:4,6:11,11:9,11:13,5:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Edward Ly / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Chuang Chia-Chuan / Tsai Yun-En",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-09-16T03:35:00Z",
+       "score": "3-0 (11:5,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nawin Mekamporn / Jinnipa Sawettabut",
+         "nat": "THA"
+        },
+        {
+         "name": "Choi Hojun / Choi Seoyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-16T03:35:00Z",
+       "score": "3-1 (7:11,11:9,12:10,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Nithya Mani",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Jung Daeyoung / Kim Eunseo",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-09-16T03:00:00Z",
+       "score": "3-1 (10:12,11:3,11:5,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Yuto Abe / Chiko Fujita",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-09-16T03:00:00Z",
+       "score": "3-0 (11:6,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rui Zhe Yap / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 7
+        },
+        {
+         "name": "Anh Hoang Dinh / Khanh Nguyen",
+         "nat": "VIE"
+        }
+       ],
+       "when": "2026-09-16T03:35:00Z",
+       "score": "3-1 (11:9,6:11,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cui Zijun / Zhao Wangqi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Remi Chambet-Weil / Karen Lyne",
+         "nat": "NED/MAS",
+         "seed": 4
+        }
+       ],
+       "when": "2026-09-16T03:00:00Z",
+       "score": "3-1 (11:4,10:12,11:8,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Thitaphat Preechayan / Kulapassr Vijitviriyagul",
+         "nat": "THA",
+         "seed": 5
+        },
+        {
+         "name": "Oh Seunghwan / Lee Yeonhui",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-09-16T03:35:00Z",
+       "score": "3-0 (12:10,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Phakpoom Sanguansin / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        },
+        {
+         "name": "Lin Chin-Ting / Chen Min-Hsin",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-09-16T03:00:00Z",
+       "score": "3-2 (11:6,8:11,11:9,7:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Edward Ly / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Nawin Mekamporn / Jinnipa Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T13:35:00Z",
+       "score": "3-0 (11:7,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Akash Pal / Nithya Mani",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Ho Kwan Kit / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-16T13:20:00Z",
+       "score": "2-3 (11:9,8:11,2:11,11:8,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rui Zhe Yap / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 7
+        },
+        {
+         "name": "Cui Zijun / Zhao Wangqi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-09-16T13:00:00Z",
+       "score": "3-2 (7:11,4:11,11:9,11:8,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Thitaphat Preechayan / Kulapassr Vijitviriyagul",
+         "nat": "THA",
+         "seed": 5
+        },
+        {
+         "name": "Phakpoom Sanguansin / Phatsaraphon Wonglakhon",
+         "nat": "THA"
+        }
+       ],
+       "when": "2026-09-16T13:35:00Z",
+       "score": "3-1 (11:5,11:7,9:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Edward Ly / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Ho Kwan Kit / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 6
+        }
+       ],
+       "when": "2026-09-17T06:30:00Z",
+       "score": "3-1 (11:2,10:12,11:7,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rui Zhe Yap / Ai Xin Tee",
+         "nat": "MAS",
+         "seed": 7
+        },
+        {
+         "name": "Thitaphat Preechayan / Kulapassr Vijitviriyagul",
+         "nat": "THA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-17T06:30:00Z",
+       "score": "2-3 (11:4,11:9,7:11,12:14,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Edward Ly / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Thitaphat Preechayan / Kulapassr Vijitviriyagul",
+         "nat": "THA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-09-18T05:20:00Z",
+       "score": "3-0 (11:6,11:7,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

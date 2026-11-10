@@ -1,0 +1,1045 @@
+{
+ "event": "WTT Champions European Summer Series",
+ "wtt_event_id": "2593",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2593&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 2.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON"
+        }
+       ],
+       "when": "2022-07-18T08:00:00Z",
+       "score": "3-2 (8:11,9:11,11:3,11:7,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2022-07-18T19:50:00Z",
+       "score": "3-0 (11:7,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kasumi Ishikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Suthasini Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "when": "2022-07-19T13:30:00Z",
+       "score": "3-0 (11:6,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Suh Hyowon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-19T12:10:00Z",
+       "score": "1-3 (5:11,13:15,14:12,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Adriana Diaz",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2022-07-19T19:50:00Z",
+       "score": "3-1 (8:11,11:9,11:5,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sofia Polcanova",
+         "nat": "AUT"
+        },
+        {
+         "name": "Georgina Pota",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-07-18T17:10:00Z",
+       "score": "3-0 (11:2,12:10,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER"
+        },
+        {
+         "name": "Jia Nan Yuan",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-07-18T12:10:00Z",
+       "score": "3-0 (11:7,11:8,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2022-07-19T17:10:00Z",
+       "score": "0-3 (6:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Ying",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2022-07-18T09:20:00Z",
+       "score": "1-3 (7:11,11:8,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hana Goda",
+         "nat": "EGY"
+        },
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-07-18T13:30:00Z",
+       "score": "0-3 (7:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng I-Ching",
+         "nat": "TPE"
+        },
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2022-07-19T09:20:00Z",
+       "score": "0-3 (11:13,8:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR"
+        },
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2022-07-19T10:40:00Z",
+       "score": "0-3 (7:11,4:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Elizabeta Samara",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-07-18T10:40:00Z",
+       "score": "3-0 (11:6,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA"
+        },
+        {
+         "name": "Petrissa Solja",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-07-18T18:30:00Z",
+       "score": "3-2 (10:12,11:5,4:11,11:5,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hana Matelova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        }
+       ],
+       "when": "2022-07-19T18:30:00Z",
+       "score": "0-3 (4:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nina Mittelham",
+         "nat": "GER"
+        },
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-19T08:00:00Z",
+       "score": "0-3 (8:11,10:12,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2022-07-20T08:00:00Z",
+       "score": "3-1 (16:14,11:9,7:11,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kasumi Ishikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-20T09:20:00Z",
+       "score": "1-3 (11:4,6:11,5:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Sofia Polcanova",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2022-07-20T17:50:00Z",
+       "score": "3-1 (11:6,11:4,9:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona Shan",
+         "nat": "GER"
+        },
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2022-07-20T10:40:00Z",
+       "score": "0-3 (8:11,7:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        },
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2022-07-20T19:10:00Z",
+       "score": "3-1 (11:6,4:11,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Xingtong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2022-07-20T13:30:00Z",
+       "score": "1-3 (9:11,3:11,11:9,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA"
+        }
+       ],
+       "when": "2022-07-20T12:10:00Z",
+       "score": "3-1 (11:6,6:11,11:9,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fu Yu",
+         "nat": "POR"
+        },
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-20T16:30:00Z",
+       "score": "0-3 (4:11,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-21T11:30:00Z",
+       "score": "3-2 (7:11,11:4,11:8,8:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2022-07-21T12:50:00Z",
+       "score": "3-0 (11:7,12:10,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        },
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2022-07-21T17:50:00Z",
+       "score": "2-3 (11:6,8:11,8:11,11:8,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-21T16:30:00Z",
+       "score": "1-3 (7:11,4:11,12:10,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Meng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2022-07-22T16:00:00Z",
+       "score": "3-4 (11:4,11:7,5:11,9:11,11:9,7:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Sun Yingsha",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-22T17:30:00Z",
+       "score": "4-3 (10:12,11:8,11:8,7:11,11:2,13:15,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wang Manyu",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Wang Yidi",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2022-07-23T11:00:00Z",
+       "score": "4-2 (11:9,11:4,9:11,11:7,7:11,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ma Long",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2022-07-18T08:40:00Z",
+       "score": "3-0 (11:4,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liam Pitchford",
+         "nat": "ENG"
+        },
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-07-19T19:10:00Z",
+       "score": "1-3 (10:12,6:11,15:13,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2022-07-18T14:10:00Z",
+       "score": "2-3 (8:11,13:11,11:7,7:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO"
+        },
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 7
+        }
+       ],
+       "when": "2022-07-18T16:30:00Z",
+       "score": "0-3 (5:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 3
+        },
+        {
+         "name": "Omar Assar",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2022-07-18T19:10:00Z",
+       "score": "3-1 (9:11,11:4,11:9,11:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2022-07-18T11:30:00Z",
+       "score": "3-2 (7:11,13:11,11:8,12:14,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dang Qiu",
+         "nat": "GER"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-07-18T17:50:00Z",
+       "score": "3-1 (11:6,11:5,11:13,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Chun Ting",
+         "nat": "HKG"
+        },
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-18T12:50:00Z",
+       "score": "1-3 (2:11,11:8,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 5
+        },
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2022-07-19T10:00:00Z",
+       "score": "2-3 (11:4,11:7,7:11,6:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kanak Jha",
+         "nat": "USA"
+        },
+        {
+         "name": "Timo Boll",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-07-19T17:50:00Z",
+       "score": "2-3 (11:3,11:7,3:11,9:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA"
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2022-07-18T10:00:00Z",
+       "score": "1-3 (11:8,7:11,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR"
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2022-07-19T14:10:00Z",
+       "score": "3-2 (7:11,13:11,7:11,13:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 8
+        },
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2022-07-19T11:30:00Z",
+       "score": "2-3 (7:11,11:6,5:11,11:8,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Bence Majoros",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2022-07-19T16:30:00Z",
+       "score": "3-1 (5:11,12:10,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Chuqin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2022-07-19T08:40:00Z",
+       "score": "2-3 (13:11,7:11,11:13,11:5,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Sangsu",
+         "nat": "KOR"
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-19T12:50:00Z",
+       "score": "0-3 (6:11,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ma Long",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-07-20T18:30:00Z",
+       "score": "2-3 (7:11,11:7,6:11,11:4,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 7
+        }
+       ],
+       "when": "2022-07-20T14:10:00Z",
+       "score": "1-3 (5:11,11:9,9:11,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 3
+        },
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2022-07-20T19:50:00Z",
+       "score": "0-3 (10:12,10:12,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dang Qiu",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-20T10:00:00Z",
+       "score": "0-3 (8:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Timo Boll",
+         "nat": "GER"
+        }
+       ],
+       "when": "2022-07-20T17:10:00Z",
+       "score": "3-0 (11:8,11:6,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN"
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR"
+        }
+       ],
+       "when": "2022-07-20T08:40:00Z",
+       "score": "3-1 (7:11,11:6,13:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexis Lebrun",
+         "nat": "FRA"
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2022-07-20T11:30:00Z",
+       "score": "2-3 (11:6,7:11,12:10,9:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-20T12:50:00Z",
+       "score": "0-3 (10:12,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        },
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO",
+         "seed": 7
+        }
+       ],
+       "when": "2022-07-21T17:10:00Z",
+       "score": "3-0 (14:12,11:6,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-21T18:30:00Z",
+       "score": "1-3 (11:7,6:11,9:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2022-07-21T13:30:00Z",
+       "score": "3-0 (11:3,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE"
+        },
+        {
+         "name": "Liang Jingkun",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2022-07-21T12:10:00Z",
+       "score": "3-2 (11:7,11:6,12:14,1:11,13:11)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 6
+        }
+       ],
+       "when": "2022-07-22T18:15:00Z",
+       "score": "3-4 (3:11,11:6,8:11,11:6,5:11,11:8,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2022-07-22T16:45:00Z",
+       "score": "4-0 (11:0,11:6,11:6,11:7,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 6
+        },
+        {
+         "name": "Lin Gaoyuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2022-07-23T12:00:00Z",
+       "score": "4-3 (3:11,7:11,12:14,11:6,11:6,13:11,11:9)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,2787 @@
+{
+ "event": "WTT Feeder Olomouc",
+ "wtt_event_id": "2884",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2884&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 2.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        },
+        {
+         "name": "Jana Vasendova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T09:15:00Z",
+       "score": "3-0 (11:5,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tijana Jokic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Adriana Illasova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T09:50:00Z",
+       "score": "3-0 (11:8,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Karoline Mischek",
+         "nat": "AUT"
+        },
+        {
+         "name": "Ema Cincurova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T09:50:00Z",
+       "score": "3-0 (11:6,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shuohan Men",
+         "nat": "NED"
+        },
+        {
+         "name": "Dominika Wiltschkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T09:15:00Z",
+       "score": "3-0 (11:9,15:13,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Malamatenia Papadimitriou",
+         "nat": "GRE"
+        },
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2024-08-22T07:30:00Z",
+       "score": "0-3 (9:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Haruna Ojio",
+         "nat": "JPN"
+        },
+        {
+         "name": "Anna Klempererova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T09:15:00Z",
+       "score": "3-0 (11:7,11:2,11:1,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ayano I",
+         "nat": "JPN"
+        },
+        {
+         "name": "Karin Grofova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T09:50:00Z",
+       "score": "3-2 (11:9,9:11,11:13,11:4,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hanka Kodetova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Klara Hrabicova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T07:30:00Z",
+       "score": "3-1 (13:11,11:7,7:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI",
+         "seed": 7
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-08-22T07:30:00Z",
+       "score": "3-1 (11:9,13:15,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Magdalena Sikorska",
+         "nat": "POL"
+        },
+        {
+         "name": "Markhabo Magdieva",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2024-08-22T07:30:00Z",
+       "score": "3-2 (11:6,9:11,11:6,4:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Sibing",
+         "nat": "CHN"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zauresh Akasheva",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Nikoleta Puchovanova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T09:50:00Z",
+       "score": "3-0 (11:9,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sophia Klee",
+         "nat": "GER"
+        },
+        {
+         "name": "Andrea Pavlovic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-08-22T08:40:00Z",
+       "score": "3-1 (8:11,11:4,11:1,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Edahiro",
+         "nat": "JPN"
+        },
+        {
+         "name": "Dora Cosic",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-08-22T07:30:00Z",
+       "score": "3-0 (15:13,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anastasia Sterner",
+         "nat": "AUT"
+        },
+        {
+         "name": "Asel Erkebaeva",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2024-08-22T08:40:00Z",
+       "score": "3-1 (6:11,11:6,11:6,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Xu Yi",
+         "nat": "CHN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Veronika Polakova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-08-22T09:15:00Z",
+       "score": "1-3 (13:11,10:12,9:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sally Moyland",
+         "nat": "USA"
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-22T09:15:00Z",
+       "score": "0-3 (3:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Hana Matelova",
+         "nat": "CZE",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yeh Yi-Tian",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-08-23T10:55:00Z",
+       "score": "3-0 (11:5,11:3,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tijana Jokic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T10:55:00Z",
+       "score": "1-3 (11:8,9:11,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        },
+        {
+         "name": "Karoline Mischek",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2024-08-23T09:10:00Z",
+       "score": "3-0 (11:7,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shuohan Men",
+         "nat": "NED"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-23T08:35:00Z",
+       "score": "0-3 (12:14,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2024-08-23T09:10:00Z",
+       "score": "3-0 (11:3,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Haruna Ojio",
+         "nat": "JPN"
+        },
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-23T09:10:00Z",
+       "score": "0-3 (4:11,5:11,13:15,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ayano I",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-23T11:30:00Z",
+       "score": "3-0 (12:10,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hanka Kodetova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "when": "2024-08-23T10:55:00Z",
+       "score": "1-3 (4:11,7:11,11:7,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI",
+         "seed": 7
+        },
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-08-23T08:35:00Z",
+       "score": "1-3 (11:9,5:11,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Magdalena Sikorska",
+         "nat": "POL"
+        },
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T08:35:00Z",
+       "score": "0-3 (5:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Sibing",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zauresh Akasheva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-08-23T11:30:00Z",
+       "score": "3-0 (12:10,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sophia Klee",
+         "nat": "GER"
+        },
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-23T11:30:00Z",
+       "score": "1-3 (7:11,6:11,11:8,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Hitomi Edahiro",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-23T09:10:00Z",
+       "score": "3-1 (2:11,11:2,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anastasia Sterner",
+         "nat": "AUT"
+        },
+        {
+         "name": "Xu Yi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T11:30:00Z",
+       "score": "0-3 (6:11,11:13,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-08-23T08:35:00Z",
+       "score": "2-3 (11:9,7:11,8:11,11:9,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        },
+        {
+         "name": "Hana Matelova",
+         "nat": "CZE",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-23T10:55:00Z",
+       "score": "3-0 (14:12,12:10,11:3,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T16:20:00Z",
+       "score": "3-0 (11:5,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lea Rakovac",
+         "nat": "CRO"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-23T16:20:00Z",
+       "score": "0-3 (9:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hitomi Sato",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-23T16:20:00Z",
+       "score": "0-3 (9:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 5
+        }
+       ],
+       "when": "2024-08-23T16:20:00Z",
+       "score": "3-1 (6:11,11:8,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T16:55:00Z",
+       "score": "0-3 (1:11,4:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Sibing",
+         "nat": "CHN"
+        },
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-23T16:55:00Z",
+       "score": "3-0 (11:5,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Xu Yi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T16:55:00Z",
+       "score": "3-2 (6:11,4:11,11:9,11:9,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mateja Jeger",
+         "nat": "CRO"
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T16:55:00Z",
+       "score": "0-3 (3:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-24T14:35:00Z",
+       "score": "3-0 (11:6,11:5,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-24T14:00:00Z",
+       "score": "0-3 (10:12,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zhu Sibing",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-24T10:35:00Z",
+       "score": "1-3 (8:11,11:7,5:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-24T10:00:00Z",
+       "score": "3-2 (5:11,12:10,11:7,6:11,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-25T08:00:00Z",
+       "score": "3-0 (11:7,11:5,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Sibing",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN",
+         "seed": 8
+        }
+       ],
+       "when": "2024-08-25T08:35:00Z",
+       "score": "0-3 (11:13,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN",
+         "seed": 8
+        }
+       ],
+       "when": "2024-08-25T15:10:00Z",
+       "score": "3-1 (11:6,11:9,6:11,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tom Schweiger",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomas Martinko",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T14:00:00Z",
+       "score": "3-0 (11:5,11:9,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Palusek",
+         "nat": "SVK"
+        },
+        {
+         "name": "Simon Belik",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T15:45:00Z",
+       "score": "3-1 (11:8,11:8,6:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Valuch",
+         "nat": "SVK"
+        },
+        {
+         "name": "Dimitrije Levajac",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-08-22T14:35:00Z",
+       "score": "3-0 (11:8,15:13,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leonardo Iizuka",
+         "nat": "BRA"
+        },
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-22T14:00:00Z",
+       "score": "0-3 (8:11,7:11,15:17,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tseng Tzu-Yu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Tomas Koldas",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T15:10:00Z",
+       "score": "3-2 (11:9,7:11,4:11,11:5,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Julian Rzihauschek",
+         "nat": "AUT"
+        },
+        {
+         "name": "Samuel Arpas",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T14:35:00Z",
+       "score": "0-3 (5:11,8:11,15:17,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE",
+         "seed": 7
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kubik",
+         "nat": "POL",
+         "seed": 3
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Andre Pierre Kases",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2024-08-22T14:00:00Z",
+       "score": "3-0 (11:5,11:2,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Filip Radovic",
+         "nat": "MNE"
+        },
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-08-22T14:00:00Z",
+       "score": "2-3 (11:8,8:11,11:1,8:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vit Kadlec",
+         "nat": "CZE"
+        },
+        {
+         "name": "Alan Kurmangaliyev",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-08-22T14:35:00Z",
+       "score": "0-3 (6:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andre Bertelsmeier",
+         "nat": "GER"
+        },
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2024-08-22T14:35:00Z",
+       "score": "0-3 (7:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shokhrukh Iskandarov",
+         "nat": "UZB"
+        },
+        {
+         "name": "Bence Bognar",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-08-22T15:10:00Z",
+       "score": "3-0 (11:6,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ondrej Kveton",
+         "nat": "CZE"
+        },
+        {
+         "name": "Jan Valenta",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T14:00:00Z",
+       "score": "1-3 (9:11,11:13,11:9,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kazuki Hamada",
+         "nat": "JPN"
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-22T15:10:00Z",
+       "score": "1-3 (11:8,10:12,8:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 5
+        },
+        {
+         "name": "Martin Sip",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T15:10:00Z",
+       "score": "3-0 (11:2,11:7,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kenji Matsudaira",
+         "nat": "JPN"
+        },
+        {
+         "name": "Stepan Brhel",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T15:10:00Z",
+       "score": "3-1 (11:7,7:11,11:1,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aidos Kenzhigulov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Matyas Lebeda",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T15:45:00Z",
+       "score": "3-0 (11:5,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2024-08-22T15:45:00Z",
+       "score": "2-3 (6:11,11:5,11:9,3:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yingbin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Andrew Baggaley",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2024-08-22T15:45:00Z",
+       "score": "3-0 (11:0,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka",
+         "nat": "SVK"
+        },
+        {
+         "name": "Adam Stalzer",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T17:30:00Z",
+       "score": "3-1 (11:5,6:11,11:9,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pero Tepic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Jakub Kaucky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T14:35:00Z",
+       "score": "1-3 (6:11,11:8,7:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xue Fei",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Hsu Hsien-Chia",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-08-22T16:55:00Z",
+       "score": "2-3 (11:6,3:11,4:11,11:3,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Adam Klajber",
+         "nat": "SVK"
+        },
+        {
+         "name": "Sanzhar Zhubanov",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-08-22T16:55:00Z",
+       "score": "1-3 (11:13,9:11,11:6,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        },
+        {
+         "name": "Daniel Kostal",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T15:45:00Z",
+       "score": "3-0 (11:6,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nemanja Dilas",
+         "nat": "SRB"
+        },
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-22T17:30:00Z",
+       "score": "0-3 (9:11,11:13,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Pavel Sirucek",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T17:30:00Z",
+       "score": "1-3 (11:13,6:11,11:3,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Radim Moravek",
+         "nat": "CZE"
+        },
+        {
+         "name": "Ioannis Sgouropoulos",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2024-08-22T17:30:00Z",
+       "score": "0-3 (9:11,13:15,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hu Dongshen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Albert Vilardell",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2024-08-22T17:30:00Z",
+       "score": "2-3 (11:13,11:9,11:8,7:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Tom Schweiger",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-08-23T10:20:00Z",
+       "score": "3-0 (11:3,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Palusek",
+         "nat": "SVK"
+        },
+        {
+         "name": "Alexander Valuch",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-23T09:45:00Z",
+       "score": "0-3 (14:16,9:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Tseng Tzu-Yu",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-08-23T10:20:00Z",
+       "score": "3-0 (11:4,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Arpas",
+         "nat": "SVK"
+        },
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE",
+         "seed": 7
+        }
+       ],
+       "when": "2024-08-23T09:45:00Z",
+       "score": "2-3 (11:3,10:12,11:7,12:14,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maciej Kubik",
+         "nat": "POL",
+         "seed": 3
+        },
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T09:45:00Z",
+       "score": "1-3 (11:7,10:12,12:14,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER"
+        },
+        {
+         "name": "Alan Kurmangaliyev",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-08-23T14:35:00Z",
+       "score": "3-1 (11:7,11:9,7:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        },
+        {
+         "name": "Shokhrukh Iskandarov",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2024-08-23T09:45:00Z",
+       "score": "3-1 (11:1,11:6,7:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jan Valenta",
+         "nat": "CZE"
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-23T14:35:00Z",
+       "score": "0-3 (8:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 5
+        },
+        {
+         "name": "Kenji Matsudaira",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-23T14:00:00Z",
+       "score": "1-3 (8:11,8:11,11:7,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aidos Kenzhigulov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2024-08-23T14:00:00Z",
+       "score": "1-3 (11:7,9:11,8:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yingbin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Jakub Zelinka",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-23T14:00:00Z",
+       "score": "3-1 (7:11,11:5,11:8,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Kaucky",
+         "nat": "CZE"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-23T14:35:00Z",
+       "score": "1-3 (6:11,8:11,11:6,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hsu Hsien-Chia",
+         "nat": "TPE"
+        },
+        {
+         "name": "Sanzhar Zhubanov",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-08-23T10:20:00Z",
+       "score": "3-0 (11:6,13:11,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rares Sipos",
+         "nat": "ROU"
+        },
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T10:20:00Z",
+       "score": "1-3 (11:8,8:11,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Pavel Sirucek",
+         "nat": "CZE"
+        },
+        {
+         "name": "Ioannis Sgouropoulos",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2024-08-23T14:35:00Z",
+       "score": "0-3 (7:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Albert Vilardell",
+         "nat": "ESP"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-23T14:00:00Z",
+       "score": "1-3 (12:10,7:11,8:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Alexander Valuch",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-23T17:30:00Z",
+       "score": "3-1 (11:6,8:11,11:4,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE",
+         "seed": 7
+        }
+       ],
+       "when": "2024-08-23T17:30:00Z",
+       "score": "1-3 (11:7,7:11,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-08-23T17:30:00Z",
+       "score": "3-0 (11:3,13:11,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-23T17:30:00Z",
+       "score": "0-3 (8:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kenji Matsudaira",
+         "nat": "JPN"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2024-08-23T18:05:00Z",
+       "score": "1-3 (1:11,9:11,16:14,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yingbin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-23T18:05:00Z",
+       "score": "1-3 (11:9,6:11,8:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hsu Hsien-Chia",
+         "nat": "TPE"
+        },
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T18:05:00Z",
+       "score": "2-3 (11:9,8:11,16:14,8:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ioannis Sgouropoulos",
+         "nat": "GRE"
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-23T18:05:00Z",
+       "score": "3-1 (7:11,11:7,11:9,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE",
+         "seed": 7
+        }
+       ],
+       "when": "2024-08-24T11:45:00Z",
+       "score": "3-0 (11:3,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-24T11:10:00Z",
+       "score": "0-3 (8:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-24T15:10:00Z",
+       "score": "3-2 (2:11,11:8,5:11,11:5,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ioannis Sgouropoulos",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2024-08-24T15:45:00Z",
+       "score": "3-1 (11:5,12:10,7:11,11:4,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-25T09:10:00Z",
+       "score": "3-0 (11:5,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        },
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-25T09:45:00Z",
+       "score": "2-3 (11:8,14:12,8:11,8:11,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-25T15:45:00Z",
+       "score": "3-0 (11:4,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto / Hitomi Sato",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Karoline Mischek / Anastasia Sterner",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2024-08-22T16:20:00Z",
+       "score": "3-0 (11:1,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Markhabo Magdieva / Asel Erkebaeva",
+         "nat": "UZB"
+        },
+        {
+         "name": "Andrea Todorovic / Tijana Jokic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-08-22T16:20:00Z",
+       "score": "2-3 (11:8,11:9,3:11,6:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Shuohan Men / Karin Grofova",
+         "nat": "NED/CZE"
+        }
+       ],
+       "when": "2024-08-22T16:20:00Z",
+       "score": "3-1 (9:11,11:6,11:5,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner / Sophia Klee",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Xu Yi / Fan Shuhan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-22T16:20:00Z",
+       "score": "2-3 (11:7,7:11,3:11,11:8,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Isa Cok / Ana Tofant",
+         "nat": "FRA/SLO",
+         "seed": 8
+        }
+       ],
+       "when": "2024-08-22T16:20:00Z",
+       "score": "3-1 (11:6,10:12,12:10,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ema Cincurova / Dominika Wiltschkova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Zauresh Akasheva / Sarvinoz Mirkadirova",
+         "nat": "KAZ",
+         "seed": 3
+        }
+       ],
+       "when": "2024-08-22T16:55:00Z",
+       "score": "0-3 (2:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hanka Kodetova / Veronika Polakova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Nikoleta Puchovanova / Adriana Illasova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T16:55:00Z",
+       "score": "3-2 (9:11,11:5,11:7,17:19,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lea Rakovac / Mateja Jeger",
+         "nat": "CRO",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-22T16:55:00Z",
+       "score": "3-0 (11:8,11:6,11:2,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto / Hitomi Sato",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Andrea Todorovic / Tijana Jokic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-08-23T15:10:00Z",
+       "score": "3-0 (11:1,11:7,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Xu Yi / Fan Shuhan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-23T15:10:00Z",
+       "score": "3-1 (11:5,11:8,4:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Zauresh Akasheva / Sarvinoz Mirkadirova",
+         "nat": "KAZ",
+         "seed": 3
+        }
+       ],
+       "when": "2024-08-23T15:10:00Z",
+       "score": "3-0 (11:5,11:3,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hanka Kodetova / Veronika Polakova",
+         "nat": "CZE"
+        },
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-23T15:10:00Z",
+       "score": "0-3 (4:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto / Hitomi Sato",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Han Feier / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-24T08:50:00Z",
+       "score": "3-0 (11:7,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zong Geman / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-24T08:50:00Z",
+       "score": "2-3 (6:11,9:11,11:9,12:10,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Honoka Hashimoto / Hitomi Sato",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yang Yiyun / Zhu Sibing",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-08-25T14:00:00Z",
+       "score": "3-0 (11:7,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Huang Youzheng / Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-08-22T10:25:00Z",
+       "score": "3-2 (14:16,11:4,11:6,4:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adam Stalzer / Vit Kadlec",
+         "nat": "CZE"
+        },
+        {
+         "name": "Martin Sip / Stepan Brhel",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T10:25:00Z",
+       "score": "1-3 (7:11,12:10,10:12,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 4
+        },
+        {
+         "name": "Tomas Martinko / Simon Belik",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T10:25:00Z",
+       "score": "3-1 (12:10,8:11,11:3,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kenji Matsudaira / Kazuki Hamada",
+         "nat": "JPN"
+        },
+        {
+         "name": "Albert Vilardell / Rafael De Las Heras",
+         "nat": "ESP",
+         "seed": 8
+        }
+       ],
+       "when": "2024-08-22T10:25:00Z",
+       "score": "3-0 (12:10,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hsu Hsien-Chia / Tseng Tzu-Yu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Tomas Koldas / Jakub Kaucky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T11:00:00Z",
+       "score": "3-0 (11:9,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Palusek / Samuel Arpas",
+         "nat": "SVK",
+         "seed": 5
+        },
+        {
+         "name": "Zeng Beixun / Xue Fei",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-08-22T11:00:00Z",
+       "score": "1-3 (9:11,13:11,5:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aidos Kenzhigulov / Sanzhar Zhubanov",
+         "nat": "KAZ",
+         "seed": 7
+        },
+        {
+         "name": "Alexander Valuch / Adam Klajber",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T11:00:00Z",
+       "score": "3-0 (11:7,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nemanja Dilas / Dimitrije Levajac",
+         "nat": "SRB"
+        },
+        {
+         "name": "Wen Ruibo / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-22T11:00:00Z",
+       "score": "1-3 (5:11,7:11,11:3,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Martin Sip / Stepan Brhel",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-23T15:45:00Z",
+       "score": "3-0 (11:3,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 4
+        },
+        {
+         "name": "Kenji Matsudaira / Kazuki Hamada",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-23T15:45:00Z",
+       "score": "1-3 (8:11,5:11,11:9,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hsu Hsien-Chia / Tseng Tzu-Yu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Zeng Beixun / Xue Fei",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-08-23T15:45:00Z",
+       "score": "1-3 (11:4,4:11,8:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aidos Kenzhigulov / Sanzhar Zhubanov",
+         "nat": "KAZ",
+         "seed": 7
+        },
+        {
+         "name": "Wen Ruibo / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-23T15:45:00Z",
+       "score": "0-3 (2:11,8:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Kenji Matsudaira / Kazuki Hamada",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-08-24T09:25:00Z",
+       "score": "3-0 (11:3,11:5,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Beixun / Xue Fei",
+         "nat": "CHN",
+         "seed": 3
+        },
+        {
+         "name": "Wen Ruibo / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-24T09:25:00Z",
+       "score": "3-0 (11:7,11:6,14:12,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Zeng Beixun / Xue Fei",
+         "nat": "CHN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-08-25T14:35:00Z",
+       "score": "3-2 (11:9,11:7,8:11,5:11,11:2)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Jakub Kaucky / Jana Vasendova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T08:05:00Z",
+       "score": "3-0 (11:3,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Zelinka / Nikoleta Puchovanova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Anna Klempererova / Ondrej Kveton",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T08:05:00Z",
+       "score": "3-0 (11:6,11:5,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aidos Kenzhigulov / Sarvinoz Mirkadirova",
+         "nat": "KAZ",
+         "seed": 3
+        },
+        {
+         "name": "Han Feier / Xiang Peng",
+         "nat": "CHN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-08-22T08:40:00Z",
+       "score": "1-3 (6:11,12:10,8:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner / Tom Schweiger",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Andrew Baggaley / Magdalena Sikorska",
+         "nat": "ENG/POL"
+        }
+       ],
+       "when": "2024-08-22T08:40:00Z",
+       "score": "3-0 (11:7,13:11,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tseng Tzu-Yu / Yeh Yi-Tian",
+         "nat": "TPE"
+        },
+        {
+         "name": "Ema Cincurova / Samuel Palusek",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-22T08:05:00Z",
+       "score": "3-0 (11:7,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Markhabo Magdieva / Shokhrukh Iskandarov",
+         "nat": "UZB",
+         "seed": 6
+        },
+        {
+         "name": "Alan Kurmangaliyev / Zauresh Akasheva",
+         "nat": "KAZ",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-22T08:40:00Z",
+       "score": "0-3 (3:11,3:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Zong Geman",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Jan Valenta / Karin Grofova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2024-08-22T08:05:00Z",
+       "score": "3-1 (11:6,8:11,11:3,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adriana Illasova / Samuel Arpas",
+         "nat": "SVK"
+        },
+        {
+         "name": "Xue Fei / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-22T08:05:00Z",
+       "score": "1-3 (11:5,9:11,8:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Jakub Zelinka / Nikoleta Puchovanova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2024-08-23T08:00:00Z",
+       "score": "3-0 (11:9,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier / Xiang Peng",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Franziska Schreiner / Tom Schweiger",
+         "nat": "GER",
+         "seed": 7
+        }
+       ],
+       "when": "2024-08-23T08:00:00Z",
+       "score": "3-0 (11:7,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tseng Tzu-Yu / Yeh Yi-Tian",
+         "nat": "TPE"
+        },
+        {
+         "name": "Alan Kurmangaliyev / Zauresh Akasheva",
+         "nat": "KAZ",
+         "seed": 4
+        }
+       ],
+       "when": "2024-08-23T08:00:00Z",
+       "score": "3-1 (5:11,11:7,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Zong Geman",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Xue Fei / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-23T08:00:00Z",
+       "score": "1-3 (11:9,6:11,8:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Han Feier / Xiang Peng",
+         "nat": "CHN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-08-24T08:00:00Z",
+       "score": "3-1 (11:9,5:11,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tseng Tzu-Yu / Yeh Yi-Tian",
+         "nat": "TPE"
+        },
+        {
+         "name": "Xue Fei / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-24T08:00:00Z",
+       "score": "0-3 (8:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Xue Fei / Wang Xiaotong",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-08-24T16:30:00Z",
+       "score": "3-2 (12:10,7:11,7:11,11:6,11:6)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1864 @@
+{
+ "event": "WTT Contender Doha",
+ "wtt_event_id": "2410",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2410&selectedTab=Draws",
+ "updated": "2026-11-10T15:09:00Z",
+ "utc_offset": 3.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Britt Eerland",
+         "nat": "NED"
+        }
+       ],
+       "when": "2021-03-03T08:49:00Z",
+       "score": "3-2 (8:11,11:8,11:9,10:12,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jia Nan Yuan",
+         "nat": "FRA"
+        },
+        {
+         "name": "Nina Mittelham",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-03-03T07:14:00Z",
+       "score": "2-3 (11:5,9:11,13:15,11:4,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu",
+         "nat": "TPE"
+        },
+        {
+         "name": "Yang Haeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2021-03-03T07:52:00Z",
+       "score": "1-3 (8:11,11:7,4:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dina Meshref",
+         "nat": "EGY"
+        },
+        {
+         "name": "Suh Hyowon",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-03T08:07:00Z",
+       "score": "1-3 (10:12,11:8,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Xiaoxin YANG ^",
+         "nat": "MON"
+        }
+       ],
+       "when": "2021-03-03T09:42:00Z",
+       "score": "3-0 (11:6,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mengyu Yu",
+         "nat": "SGP",
+         "seed": 1
+        },
+        {
+         "name": "Jian Zeng ^",
+         "nat": "SGP"
+        }
+       ],
+       "when": "2021-03-03T09:25:00Z",
+       "score": "3-0 (14:12,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        },
+        {
+         "name": "Ganna Gaponova",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2021-03-03T12:10:00Z",
+       "score": "0-3 (5:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Suthasini Sawettabut",
+         "nat": "THA"
+        },
+        {
+         "name": "Tianwei Feng",
+         "nat": "SGP",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-03T11:15:00Z",
+       "score": "3-2 (8:11,11:8,5:11,11:7,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adriana Diaz",
+         "nat": "PUR",
+         "seed": 7
+        },
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2021-03-03T12:02:00Z",
+       "score": "2-3 (5:11,11:9,7:11,11:7,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona SHAN ^",
+         "nat": "GER"
+        },
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN"
+        }
+       ],
+       "when": "2021-03-03T11:49:00Z",
+       "score": "3-1 (6:11,11:9,11:6,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabeta Samara",
+         "nat": "ROU"
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-03T07:16:00Z",
+       "score": "2-3 (11:8,8:11,10:12,11:5,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lily Zhang",
+         "nat": "USA"
+        },
+        {
+         "name": "Kasumi Ishikawa",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-03T11:06:00Z",
+       "score": "2-3 (8:11,11:8,11:8,8:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Cheng Hsien-Tzu",
+         "nat": "TPE",
+         "seed": 4
+        }
+       ],
+       "when": "2021-03-03T08:39:00Z",
+       "score": "3-1 (11:3,5:11,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Polina Mikhailova",
+         "nat": "RUS"
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-03-03T12:12:00Z",
+       "score": "1-3 (8:11,12:10,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-03T11:15:00Z",
+       "score": "0-3 (7:11,11:13,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU"
+        },
+        {
+         "name": "Cheng I-Ching",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-03T07:05:00Z",
+       "score": "3-1 (12:10,7:11,11:8,11:3,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Nina Mittelham",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-03-04T07:44:00Z",
+       "score": "3-0 (11:7,11:4,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Haeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Suh Hyowon",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-04T07:17:00Z",
+       "score": "3-0 (11:4,11:5,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Mengyu Yu",
+         "nat": "SGP",
+         "seed": 1
+        }
+       ],
+       "when": "2021-03-04T08:19:00Z",
+       "score": "2-3 (4:11,11:6,6:11,11:7,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ganna Gaponova",
+         "nat": "UKR"
+        },
+        {
+         "name": "Suthasini Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "when": "2021-03-04T07:48:00Z",
+       "score": "1-3 (9:11,11:8,11:13,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR"
+        },
+        {
+         "name": "Xiaona SHAN ^",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-03-04T08:36:00Z",
+       "score": "0-3 (7:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kasumi Ishikawa",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-04T09:18:00Z",
+       "score": "3-2 (12:10,9:11,11:7,6:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-03-04T08:52:00Z",
+       "score": "3-1 (11:8,10:12,11:4,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        },
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2021-03-04T07:06:00Z",
+       "score": "3-1 (8:11,11:8,11:1,11:9,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yang Haeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2021-03-05T11:07:00Z",
+       "score": "3-0 (11:8,12:10,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mengyu Yu",
+         "nat": "SGP",
+         "seed": 1
+        },
+        {
+         "name": "Suthasini Sawettabut",
+         "nat": "THA"
+        }
+       ],
+       "when": "2021-03-05T11:12:00Z",
+       "score": "3-0 (12:10,11:6,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiaona SHAN ^",
+         "nat": "GER"
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-05T12:37:00Z",
+       "score": "2-3 (8:11,11:5,11:8,8:11,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-05T11:14:00Z",
+       "score": "2-3 (8:11,13:11,11:8,9:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Mengyu Yu",
+         "nat": "SGP",
+         "seed": 1
+        }
+       ],
+       "when": "2021-03-05T15:06:00Z",
+       "score": "4-1 (11:13,11:7,11:9,11:5,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN"
+        },
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-05T16:03:00Z",
+       "score": "4-0 (11:6,11:6,11:6,17:15,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mima Ito",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Hina Hayata",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-06T11:07:00Z",
+       "score": "4-2 (11:9,11:8,6:11,9:11,11:9,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Chuang Chih-Yuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2021-03-03T09:47:00Z",
+       "score": "3-0 (11:9,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Sangsu",
+         "nat": "KOR"
+        },
+        {
+         "name": "Robert Gardos",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-03-03T13:27:00Z",
+       "score": "3-1 (11:6,5:11,13:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN"
+        },
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2021-03-03T08:33:00Z",
+       "score": "2-3 (8:11,10:12,14:12,11:5,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Liam Pitchford",
+         "nat": "ENG",
+         "seed": 6
+        }
+       ],
+       "when": "2021-03-03T12:55:00Z",
+       "score": "3-1 (11:4,11:8,5:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2021-03-03T12:46:00Z",
+       "score": "3-1 (11:8,4:11,11:9,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darko Jorgic",
+         "nat": "SLO"
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-03-03T12:32:00Z",
+       "score": "1-3 (9:11,6:11,12:10,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Emmanuel Lebesson",
+         "nat": "FRA"
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-03-03T08:43:00Z",
+       "score": "3-1 (11:9,11:13,14:12,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Noshad Alamiyan",
+         "nat": "IRI"
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-03T13:02:00Z",
+       "score": "1-3 (7:11,5:11,11:8,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR",
+         "seed": 8
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-03-03T13:48:00Z",
+       "score": "3-0 (11:7,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "João Geraldo",
+         "nat": "POR"
+        },
+        {
+         "name": "Yang Wang",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2021-03-03T12:35:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        },
+        {
+         "name": "Pavel Sirucek",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2021-03-03T13:12:00Z",
+       "score": "3-2 (17:15,9:11,11:6,8:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER"
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-03T07:47:00Z",
+       "score": "2-3 (11:9,10:12,17:15,9:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Jonathan Groth",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2021-03-03T09:21:00Z",
+       "score": "3-0 (11:8,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO"
+        },
+        {
+         "name": "Daniel Habesohn",
+         "nat": "AUT",
+         "seed": 4
+        }
+       ],
+       "when": "2021-03-03T08:08:00Z",
+       "score": "3-1 (11:4,11:6,10:12,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Masataka Morizono",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2021-03-03T07:17:00Z",
+       "score": "0-3 (8:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Gustavo Tsuboi",
+         "nat": "BRA"
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-03T11:15:00Z",
+       "score": "1-3 (10:12,11:8,10:12,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Lee Sangsu",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2021-03-04T11:07:00Z",
+       "score": "3-1 (11:9,10:12,11:4,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR"
+        },
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-03-04T11:52:00Z",
+       "score": "3-2 (11:6,13:11,9:11,4:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-03-04T12:37:00Z",
+       "score": "3-0 (11:6,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Emmanuel Lebesson",
+         "nat": "FRA"
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-04T12:28:00Z",
+       "score": "1-3 (11:9,9:11,13:15,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR",
+         "seed": 8
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-03-04T12:41:00Z",
+       "score": "3-2 (10:12,12:10,12:10,4:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-04T11:50:00Z",
+       "score": "0-3 (6:11,4:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Tomislav Pucar",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2021-03-04T11:11:00Z",
+       "score": "3-2 (11:9,5:11,11:9,2:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-04T13:18:00Z",
+       "score": "1-3 (11:9,7:11,5:11,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2021-03-05T11:47:00Z",
+       "score": "3-1 (13:15,11:7,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-05T13:27:00Z",
+       "score": "2-3 (4:11,14:12,4:11,13:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR",
+         "seed": 8
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-05T12:10:00Z",
+       "score": "1-3 (8:11,9:11,17:15,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-05T12:57:00Z",
+       "score": "3-2 (6:11,8:11,11:7,11:5,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tomokazu Harimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-05T17:35:00Z",
+       "score": "2-4 (11:8,11:6,9:11,4:11,3:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA",
+         "seed": 7
+        }
+       ],
+       "when": "2021-03-05T16:48:00Z",
+       "score": "4-1 (11:7,8:11,11:3,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-06T12:21:00Z",
+       "score": "4-1 (11:7,14:12,12:10,6:11,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kasumi Ishikawa / Miu Hirano",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yana Noskova / Olga Vorobeva",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-03-03T15:06:00Z",
+       "score": "3-1 (11:9,7:11,11:8,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jia Nan Yuan / Stephanie Loeuillette",
+         "nat": "FRA"
+        },
+        {
+         "name": "Xiaona SHAN ^ / Nina Mittelham",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-03-03T15:14:00Z",
+       "score": "3-1 (11:9,11:6,6:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara / Hina Hayata",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2021-03-03T15:15:00Z",
+       "score": "3-1 (6:11,11:9,12:10,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Suthasini Sawettabut / Orawan Paranang",
+         "nat": "THA",
+         "seed": 7
+        },
+        {
+         "name": "Maha Faramarzi / Aia Mohamed",
+         "nat": "QAT"
+        }
+       ],
+       "when": "2021-03-03T15:15:00Z",
+       "score": "3-0 (11:5,11:2,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Hana Matelova",
+         "nat": "SVK/CZE",
+         "seed": 5
+        },
+        {
+         "name": "Adriana Diaz / Melanie Diaz",
+         "nat": "PUR",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-03T15:43:00Z",
+       "score": "3-0 (11:7,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion / Choi Hyojoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Cheng Hsien-Tzu / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-03T15:55:00Z",
+       "score": "1-3 (11:9,7:11,8:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ye Lin / Mengyu Yu",
+         "nat": "SGP",
+         "seed": 6
+        },
+        {
+         "name": "Maha Ali / Maryam Ali",
+         "nat": "QAT"
+        }
+       ],
+       "when": "2021-03-03T15:50:00Z",
+       "score": "3-0 (11:2,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabeta Samara / Daniela Monteiro Dodean",
+         "nat": "ROU"
+        },
+        {
+         "name": "Jeon Jihee / Yang Haeun",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-03T15:50:00Z",
+       "score": "1-3 (8:11,4:11,11:7,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kasumi Ishikawa / Miu Hirano",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Jia Nan Yuan / Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-03-04T11:49:00Z",
+       "score": "3-2 (11:4,11:3,10:12,10:12,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara / Hina Hayata",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Suthasini Sawettabut / Orawan Paranang",
+         "nat": "THA",
+         "seed": 7
+        }
+       ],
+       "when": "2021-03-04T12:02:00Z",
+       "score": "3-1 (11:4,11:7,3:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Hana Matelova",
+         "nat": "SVK/CZE",
+         "seed": 5
+        },
+        {
+         "name": "Cheng Hsien-Tzu / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-04T11:14:00Z",
+       "score": "2-3 (13:15,11:8,8:11,11:6,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ye Lin / Mengyu Yu",
+         "nat": "SGP",
+         "seed": 6
+        },
+        {
+         "name": "Jeon Jihee / Yang Haeun",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-04T11:12:00Z",
+       "score": "0-3 (8:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kasumi Ishikawa / Miu Hirano",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Miyuu Kihara / Hina Hayata",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2021-03-05T13:42:00Z",
+       "score": "3-1 (14:12,5:11,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cheng Hsien-Tzu / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Jeon Jihee / Yang Haeun",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-05T12:37:00Z",
+       "score": "3-2 (5:11,11:4,8:11,11:7,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kasumi Ishikawa / Miu Hirano",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Cheng Hsien-Tzu / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-06T07:07:00Z",
+       "score": "3-0 (11:6,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Adam Szudi / Nandor Ecseki",
+         "nat": "HUN",
+         "seed": 6
+        }
+       ],
+       "when": "2021-03-03T16:18:00Z",
+       "score": "3-0 (11:3,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gustavo Tsuboi / Vitor Ishiy",
+         "nat": "BRA"
+        },
+        {
+         "name": "Ovidiu Ionescu / Alvaro Robles",
+         "nat": "ROU/ESP",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-03T17:08:00Z",
+       "score": "2-3 (11:9,11:9,4:11,3:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan / Chen Chien-An",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Tiago Apolonia / Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2021-03-03T16:36:00Z",
+       "score": "3-0 (11:9,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Aleksandar Karakasevic",
+         "nat": "SVK/SRB"
+        },
+        {
+         "name": "Mattias Falck / Kristian Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-03-03T16:06:00Z",
+       "score": "3-2 (11:9,11:6,8:11,7:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liam Pitchford / Paul Drinkhall",
+         "nat": "ENG"
+        },
+        {
+         "name": "Nima Alamian / Noshad Alamiyan",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2021-03-03T16:35:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Allegro / Florent Lambiet",
+         "nat": "BEL",
+         "seed": 7
+        },
+        {
+         "name": "Robert Gardos / Daniel Habesohn",
+         "nat": "AUT",
+         "seed": 4
+        }
+       ],
+       "when": "2021-03-03T17:05:00Z",
+       "score": "3-2 (7:11,11:6,11:9,3:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Sharath Kamal Achanta",
+         "nat": "IND"
+        },
+        {
+         "name": "Horacio Cifuentes / Gaston Alto",
+         "nat": "ARG",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-03T17:06:00Z",
+       "score": "0-3 (12:14,7:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mohammed Abdulwahhab / Ahmed Alawlaqi",
+         "nat": "QAT"
+        },
+        {
+         "name": "Benedikt Duda / Dang Qiu",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-03T16:48:00Z",
+       "score": "0-3 (6:11,8:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Ovidiu Ionescu / Alvaro Robles",
+         "nat": "ROU/ESP",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-04T07:15:00Z",
+       "score": "3-2 (15:17,12:10,8:11,11:3,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chuang Chih-Yuan / Chen Chien-An",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Lubomir Pistej / Aleksandar Karakasevic",
+         "nat": "SVK/SRB"
+        }
+       ],
+       "when": "2021-03-04T07:15:00Z",
+       "score": "3-0 (11:4,11:9,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nima Alamian / Noshad Alamiyan",
+         "nat": "IRI"
+        },
+        {
+         "name": "Martin Allegro / Florent Lambiet",
+         "nat": "BEL",
+         "seed": 7
+        }
+       ],
+       "when": "2021-03-04T08:06:00Z",
+       "score": "3-2 (11:8,10:12,12:10,6:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Horacio Cifuentes / Gaston Alto",
+         "nat": "ARG",
+         "seed": 8
+        },
+        {
+         "name": "Benedikt Duda / Dang Qiu",
+         "nat": "GER",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-04T07:41:00Z",
+       "score": "3-2 (11:5,9:11,11:4,4:11,16:14)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Chuang Chih-Yuan / Chen Chien-An",
+         "nat": "TPE",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-05T13:37:00Z",
+       "score": "3-1 (11:9,11:6,9:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nima Alamian / Noshad Alamiyan",
+         "nat": "IRI"
+        },
+        {
+         "name": "Horacio Cifuentes / Gaston Alto",
+         "nat": "ARG",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-05T12:37:00Z",
+       "score": "2-3 (8:11,12:10,10:12,11:7,13:15)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Horacio Cifuentes / Gaston Alto",
+         "nat": "ARG",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-06T07:48:00Z",
+       "score": "3-2 (11:3,9:11,11:7,9:11,13:11)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cheng I-Ching / Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Polina Mikhailova / Alexander Shibaev",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-03-04T15:08:00Z",
+       "score": "3-0 (11:2,11:7,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Omar Assar / Dina Meshref",
+         "nat": "EGY"
+        },
+        {
+         "name": "Szandra Pergel / Adam Szudi",
+         "nat": "HUN",
+         "seed": 5
+        }
+       ],
+       "when": "2021-03-04T15:36:00Z",
+       "score": "3-2 (11:7,11:9,7:11,9:11,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bernadette Szőcs / Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        },
+        {
+         "name": "Jordy Piccolin / Jamila Laurenti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2021-03-04T15:15:00Z",
+       "score": "3-0 (11:8,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eugene Wang ^ / Mo Zhang",
+         "nat": "CAN"
+        },
+        {
+         "name": "Aleksandar Karakasevic / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 7
+        }
+       ],
+       "when": "2021-03-04T15:51:00Z",
+       "score": "1-3 (11:6,7:11,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Alvaro Robles / Maria Xiao",
+         "nat": "ESP",
+         "seed": 8
+        }
+       ],
+       "when": "2021-03-04T15:15:00Z",
+       "score": "1-3 (4:11,8:11,11:7,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko / Mariia Tailakova",
+         "nat": "RUS"
+        },
+        {
+         "name": "Jeon Jihee / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-04T16:20:00Z",
+       "score": "2-3 (12:10,11:9,11:13,7:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sutirtha Mukherjee / Sathiyan Gnanasekaran",
+         "nat": "IND"
+        },
+        {
+         "name": "Emmanuel Lebesson / Jia Nan Yuan",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2021-03-04T15:15:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Horacio Cifuentes / Camila Arguelles",
+         "nat": "ARG",
+         "seed": 8
+        },
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-04T17:00:00Z",
+       "score": "1-3 (7:11,11:6,5:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cheng I-Ching / Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Omar Assar / Dina Meshref",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2021-03-05T07:07:00Z",
+       "score": "3-0 (11:7,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bernadette Szőcs / Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        },
+        {
+         "name": "Aleksandar Karakasevic / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 7
+        }
+       ],
+       "when": "2021-03-05T07:14:00Z",
+       "score": "3-1 (8:11,11:4,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Alvaro Robles / Maria Xiao",
+         "nat": "ESP",
+         "seed": 8
+        },
+        {
+         "name": "Jeon Jihee / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2021-03-05T07:14:00Z",
+       "score": "0-3 (3:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Emmanuel Lebesson / Jia Nan Yuan",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2021-03-05T07:15:00Z",
+       "score": "3-0 (11:8,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cheng I-Ching / Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Bernadette Szőcs / Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2021-03-05T13:54:00Z",
+       "score": "3-0 (11:7,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeon Jihee / Lee Sangsu",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Emmanuel Lebesson / Jia Nan Yuan",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2021-03-05T17:00:00Z",
+       "score": "2-3 (11:7,12:14,11:6,7:11,2:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cheng I-Ching / Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Emmanuel Lebesson / Jia Nan Yuan",
+         "nat": "FRA",
+         "seed": 6
+        }
+       ],
+       "when": "2021-03-06T08:54:00Z",
+       "score": "3-2 (11:7,11:13,11:6,16:18,11:4)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1841 @@
+{
+ "event": "WTT Contender Budapest",
+ "wtt_event_id": "2487",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2487&selectedTab=Draws",
+ "updated": "2026-11-10T15:09:00Z",
+ "utc_offset": 2.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 1
+        },
+        {
+         "name": "Bernadett Balint",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T12:40:00Z",
+       "score": "3-0 (11:5,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Reeth Tennison",
+         "nat": "IND"
+        },
+        {
+         "name": "Szandra Pergel",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T12:40:00Z",
+       "score": "2-3 (12:10,11:6,6:11,8:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        },
+        {
+         "name": "Olga Vorobeva",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-17T12:00:00Z",
+       "score": "0-3 (6:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA",
+         "seed": 8
+        }
+       ],
+       "when": "2021-08-17T12:40:00Z",
+       "score": "3-1 (11:6,7:11,13:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Georgina Pota",
+         "nat": "HUN",
+         "seed": 3
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2021-08-17T13:20:00Z",
+       "score": "3-0 (11:3,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leonie Hartbrich",
+         "nat": "HUN"
+        },
+        {
+         "name": "Yousra Helmy",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2021-08-17T12:00:00Z",
+       "score": "3-0 (11:5,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-17T13:20:00Z",
+       "score": "1-3 (11:9,9:11,5:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Archana Girish Kamath",
+         "nat": "IND"
+        },
+        {
+         "name": "Yana Noskova",
+         "nat": "RUS",
+         "seed": 5
+        }
+       ],
+       "when": "2021-08-17T12:00:00Z",
+       "score": "3-2 (11:8,11:9,6:11,5:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Sabine Winter",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-08-17T14:00:00Z",
+       "score": "3-2 (8:11,11:7,11:6,13:15,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Paulina Vega",
+         "nat": "CHI"
+        }
+       ],
+       "when": "2021-08-17T13:20:00Z",
+       "score": "3-2 (6:11,11:9,3:11,12:10,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Linda Bergstrom",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-08-17T12:40:00Z",
+       "score": "3-2 (11:8,6:11,14:12,2:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-17T13:20:00Z",
+       "score": "1-3 (4:11,11:9,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dora Madarasz",
+         "nat": "HUN",
+         "seed": 7
+        },
+        {
+         "name": "Mercedes Nagyvaradi",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T14:00:00Z",
+       "score": "1-3 (11:9,6:11,9:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Daria Trigolos",
+         "nat": "BLR"
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-17T14:00:00Z",
+       "score": "1-3 (11:8,9:11,11:13,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Leila Imre",
+         "nat": "HUN"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2021-08-17T14:00:00Z",
+       "score": "1-3 (11:3,8:11,10:12,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        },
+        {
+         "name": "Polina Mikhailova",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-17T12:00:00Z",
+       "score": "0-3 (11:13,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 1
+        },
+        {
+         "name": "Szandra Pergel",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-18T13:20:00Z",
+       "score": "3-1 (11:6,10:12,11:4,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva",
+         "nat": "RUS"
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2021-08-18T12:40:00Z",
+       "score": "3-0 (11:8,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Georgina Pota",
+         "nat": "HUN",
+         "seed": 3
+        },
+        {
+         "name": "Leonie Hartbrich",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-18T12:00:00Z",
+       "score": "3-1 (9:11,11:7,11:5,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mariia Tailakova",
+         "nat": "RUS"
+        },
+        {
+         "name": "Archana Girish Kamath",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-08-18T17:00:00Z",
+       "score": "3-0 (11:4,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2021-08-18T16:20:00Z",
+       "score": "3-2 (12:10,11:13,11:5,4:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-18T14:00:00Z",
+       "score": "3-0 (11:9,11:8,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mercedes Nagyvaradi",
+         "nat": "HUN"
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-18T15:40:00Z",
+       "score": "1-3 (6:11,12:10,10:12,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        },
+        {
+         "name": "Polina Mikhailova",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-18T15:00:00Z",
+       "score": "0-3 (3:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 1
+        },
+        {
+         "name": "Olga Vorobeva",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-19T12:40:00Z",
+       "score": "3-0 (11:6,11:3,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Georgina Pota",
+         "nat": "HUN",
+         "seed": 3
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-19T12:00:00Z",
+       "score": "1-3 (11:9,6:11,10:12,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-08-19T12:40:00Z",
+       "score": "3-2 (7:11,11:1,8:11,13:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        },
+        {
+         "name": "Polina Mikhailova",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-19T12:00:00Z",
+       "score": "3-0 (11:6,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 1
+        },
+        {
+         "name": "Mariia Tailakova",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-19T16:00:00Z",
+       "score": "4-1 (11:2,11:6,9:11,11:8,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-19T16:40:00Z",
+       "score": "0-4 (10:12,9:11,10:12,8:11,0:0,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 1
+        },
+        {
+         "name": "Elizabet Abraamian",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-20T13:00:00Z",
+       "score": "4-0 (11:9,12:10,11:6,11:1,0:0,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Liam Pitchford",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Adam Szudi",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T15:00:00Z",
+       "score": "3-2 (9:11,11:2,10:12,11:3,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aleksandr Khanin",
+         "nat": "BLR"
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2021-08-17T15:00:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sadi Ismailov",
+         "nat": "RUS"
+        },
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-08-17T15:00:00Z",
+       "score": "1-3 (11:8,5:11,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Benedek Olah",
+         "nat": "FIN"
+        },
+        {
+         "name": "Benedikt Duda",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2021-08-17T17:00:00Z",
+       "score": "3-2 (11:6,10:12,5:11,13:11,11:3)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ruwen Filus",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Tomas Polansky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2021-08-17T15:40:00Z",
+       "score": "2-3 (11:4,11:4,9:11,7:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nandor Ecseki",
+         "nat": "HUN"
+        },
+        {
+         "name": "Alexander Chen",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-08-17T15:40:00Z",
+       "score": "3-1 (12:14,11:9,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pavel Platonov",
+         "nat": "BLR"
+        },
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-08-17T15:40:00Z",
+       "score": "0-3 (10:12,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Patrik Juhasz",
+         "nat": "HUN"
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-17T15:40:00Z",
+       "score": "0-3 (7:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dang Qiu",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "David Serdaroglu",
+         "nat": "AUT"
+        }
+       ],
+       "when": "2021-08-17T16:20:00Z",
+       "score": "3-0 (11:8,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Csaba Andras",
+         "nat": "HUN"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-08-17T16:20:00Z",
+       "score": "2-3 (11:6,11:7,11:13,7:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2021-08-17T16:20:00Z",
+       "score": "1-3 (11:3,4:11,5:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-17T16:20:00Z",
+       "score": "1-3 (12:14,5:11,11:7,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bence Majoros",
+         "nat": "HUN",
+         "seed": 8
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-08-17T17:00:00Z",
+       "score": "0-3 (10:12,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladimir Sidorenko",
+         "nat": "RUS"
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-08-17T17:00:00Z",
+       "score": "0-3 (6:11,3:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Robinot",
+         "nat": "FRA"
+        },
+        {
+         "name": "Alexander Shibaev",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-17T15:00:00Z",
+       "score": "3-0 (11:6,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-17T17:00:00Z",
+       "score": "2-3 (11:9,9:11,11:9,4:11,8:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Liam Pitchford",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Aleksandr Khanin",
+         "nat": "BLR"
+        }
+       ],
+       "when": "2021-08-18T14:00:00Z",
+       "score": "3-1 (11:9,11:7,9:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "Benedek Olah",
+         "nat": "FIN"
+        }
+       ],
+       "when": "2021-08-18T16:20:00Z",
+       "score": "3-1 (8:11,11:6,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tomas Polansky",
+         "nat": "CZE"
+        },
+        {
+         "name": "Nandor Ecseki",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-18T17:00:00Z",
+       "score": "3-1 (11:5,5:11,11:5,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-18T12:00:00Z",
+       "score": "2-3 (12:10,11:13,11:8,6:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dang Qiu",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-08-18T15:00:00Z",
+       "score": "3-1 (5:11,13:11,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-18T13:20:00Z",
+       "score": "3-1 (10:12,11:7,12:10,19:17,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-08-18T12:40:00Z",
+       "score": "1-3 (9:11,11:9,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexandre Robinot",
+         "nat": "FRA"
+        },
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-18T15:40:00Z",
+       "score": "1-3 (6:11,4:11,11:8,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Liam Pitchford",
+         "nat": "ENG",
+         "seed": 1
+        },
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-08-19T13:20:00Z",
+       "score": "0-3 (8:11,14:16,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomas Polansky",
+         "nat": "CZE"
+        },
+        {
+         "name": "Kirill Skachkov",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-19T13:20:00Z",
+       "score": "3-2 (11:6,13:11,4:11,2:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dang Qiu",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2021-08-19T14:00:00Z",
+       "score": "3-0 (11:7,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        },
+        {
+         "name": "Quadri Aruna",
+         "nat": "NGR",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-19T14:00:00Z",
+       "score": "3-2 (11:9,11:6,2:11,3:11,11:2)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "Tomas Polansky",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2021-08-19T17:20:00Z",
+       "score": "4-3 (5:11,7:11,12:10,9:11,11:7,11:9,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dang Qiu",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-08-19T18:00:00Z",
+       "score": "3-4 (8:11,12:10,9:11,6:11,11:4,12:10,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "Truls Moregard",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2021-08-20T13:50:00Z",
+       "score": "3-4 (11:3,9:11,10:12,11:9,7:11,11:9,9:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva / Yana Noskova",
+         "nat": "RUS",
+         "seed": 1
+        },
+        {
+         "name": "Leonie Hartbrich / Leila Imre",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T08:00:00Z",
+       "score": "3-0 (11:5,12:10,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Todorovic / Daria Trigolos",
+         "nat": "SRB/BLR"
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 8
+        }
+       ],
+       "when": "2021-08-17T08:00:00Z",
+       "score": "0-3 (4:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sabine Winter / Paulina Vega",
+         "nat": "GER/CHI",
+         "seed": 3
+        },
+        {
+         "name": "Elizabet Abraamian / Mariia Tailakova",
+         "nat": "RUS",
+         "seed": 7
+        }
+       ],
+       "when": "2021-08-17T08:00:00Z",
+       "score": "0-3 (6:11,11:13,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Selena Selvakumar / Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Christina Kallberg / Linda Bergstrom",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-17T08:00:00Z",
+       "score": "1-3 (8:11,12:10,5:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mercedes Nagyvaradi / Bernadett Balint",
+         "nat": "HUN"
+        },
+        {
+         "name": "Andrea Pavlovic / Denise Payet",
+         "nat": "CRO/ENG"
+        }
+       ],
+       "when": "2021-08-17T08:40:00Z",
+       "score": "2-3 (8:11,11:8,8:11,12:10,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zdena Blaskova / Katerina Tomanovska",
+         "nat": "CZE"
+        },
+        {
+         "name": "Tatiana Kukulkova / Ema Labosova",
+         "nat": "SVK",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-17T08:40:00Z",
+       "score": "0-3 (6:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tijana Jokic / Dragana Vignjevic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Helga Dari / Anna Fejos",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T08:40:00Z",
+       "score": "3-1 (5:11,11:5,12:10,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sabina Surjan / Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 5
+        },
+        {
+         "name": "Dora Madarasz / Szandra Pergel",
+         "nat": "HUN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-17T08:40:00Z",
+       "score": "0-3 (9:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva / Yana Noskova",
+         "nat": "RUS",
+         "seed": 1
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 8
+        }
+       ],
+       "when": "2021-08-18T08:40:00Z",
+       "score": "3-1 (7:11,11:5,11:7,16:14,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabet Abraamian / Mariia Tailakova",
+         "nat": "RUS",
+         "seed": 7
+        },
+        {
+         "name": "Christina Kallberg / Linda Bergstrom",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-18T08:40:00Z",
+       "score": "2-3 (11:5,8:11,11:7,6:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Pavlovic / Denise Payet",
+         "nat": "CRO/ENG"
+        },
+        {
+         "name": "Tatiana Kukulkova / Ema Labosova",
+         "nat": "SVK",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-18T10:00:00Z",
+       "score": "0-3 (9:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tijana Jokic / Dragana Vignjevic",
+         "nat": "SRB"
+        },
+        {
+         "name": "Dora Madarasz / Szandra Pergel",
+         "nat": "HUN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-18T09:20:00Z",
+       "score": "0-3 (3:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva / Yana Noskova",
+         "nat": "RUS",
+         "seed": 1
+        },
+        {
+         "name": "Christina Kallberg / Linda Bergstrom",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-19T08:00:00Z",
+       "score": "3-0 (11:9,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Ema Labosova",
+         "nat": "SVK",
+         "seed": 4
+        },
+        {
+         "name": "Dora Madarasz / Szandra Pergel",
+         "nat": "HUN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-19T08:40:00Z",
+       "score": "1-3 (9:11,4:11,11:8,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Olga Vorobeva / Yana Noskova",
+         "nat": "RUS",
+         "seed": 1
+        },
+        {
+         "name": "Dora Madarasz / Szandra Pergel",
+         "nat": "HUN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-20T12:20:00Z",
+       "score": "0-3 (7:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nandor Ecseki / Adam Szudi",
+         "nat": "HUN",
+         "seed": 1
+        },
+        {
+         "name": "Akos Kishegyi / Oliver Both",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T09:20:00Z",
+       "score": "3-0 (11:5,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried / Alexandre Robinot",
+         "nat": "FRA"
+        },
+        {
+         "name": "Jakub Zelinka / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-17T09:20:00Z",
+       "score": "3-1 (11:9,9:11,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aleksandr Khanin / Pavel Platonov",
+         "nat": "BLR",
+         "seed": 4
+        },
+        {
+         "name": "Jiri Martinko / Tomas Polansky",
+         "nat": "CZE",
+         "seed": 5
+        }
+       ],
+       "when": "2021-08-17T09:20:00Z",
+       "score": "3-1 (12:10,4:11,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tobias Hippler / Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "David Serdaroglu / Alexander Chen",
+         "nat": "AUT",
+         "seed": 7
+        }
+       ],
+       "when": "2021-08-17T09:20:00Z",
+       "score": "3-0 (11:3,11:3,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Guman / Samuel Novota",
+         "nat": "SVK"
+        },
+        {
+         "name": "Erik Huzsvar / David Szantosi",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T10:00:00Z",
+       "score": "2-3 (11:8,9:11,13:15,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manush Utpalbhai Shah / Jeet Chandra",
+         "nat": "IND"
+        },
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2021-08-17T10:00:00Z",
+       "score": "1-3 (11:5,7:11,7:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tomas Martinko / Simon Belik",
+         "nat": "CZE"
+        },
+        {
+         "name": "Snehit Suravajjula / Sanil Shetty",
+         "nat": "IND"
+        }
+       ],
+       "when": "2021-08-17T10:00:00Z",
+       "score": "1-3 (11:5,5:11,2:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Patrik Juhasz / Csaba Andras",
+         "nat": "HUN",
+         "seed": 8
+        },
+        {
+         "name": "Kirill Skachkov / Vladimir Sidorenko",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-17T10:00:00Z",
+       "score": "1-3 (13:11,8:11,10:12,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nandor Ecseki / Adam Szudi",
+         "nat": "HUN",
+         "seed": 1
+        },
+        {
+         "name": "Joe Seyfried / Alexandre Robinot",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2021-08-18T10:00:00Z",
+       "score": "3-0 (11:7,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aleksandr Khanin / Pavel Platonov",
+         "nat": "BLR",
+         "seed": 4
+        },
+        {
+         "name": "Tobias Hippler / Kilian Ort",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-08-18T09:20:00Z",
+       "score": "1-3 (6:11,12:10,3:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Erik Huzsvar / David Szantosi",
+         "nat": "HUN"
+        },
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2021-08-18T17:00:00Z",
+       "score": "1-3 (8:11,11:9,8:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula / Sanil Shetty",
+         "nat": "IND"
+        },
+        {
+         "name": "Kirill Skachkov / Vladimir Sidorenko",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-18T16:20:00Z",
+       "score": "1-3 (11:9,3:11,7:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nandor Ecseki / Adam Szudi",
+         "nat": "HUN",
+         "seed": 1
+        },
+        {
+         "name": "Tobias Hippler / Kilian Ort",
+         "nat": "GER"
+        }
+       ],
+       "when": "2021-08-19T08:40:00Z",
+       "score": "1-3 (8:11,6:11,11:9,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar / Harmeet Desai",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Kirill Skachkov / Vladimir Sidorenko",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-19T08:00:00Z",
+       "score": "1-3 (9:11,11:6,9:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Tobias Hippler / Kilian Ort",
+         "nat": "GER"
+        },
+        {
+         "name": "Kirill Skachkov / Vladimir Sidorenko",
+         "nat": "RUS",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-20T11:40:00Z",
+       "score": "3-1 (11:3,11:7,6:11,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Patrik Juhasz / Bernadett Balint",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T18:30:00Z",
+       "score": "3-1 (8:11,11:5,11:9,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Manav Vikash Thakkar / Archana Girish Kamath",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2021-08-17T18:30:00Z",
+       "score": "3-0 (11:3,11:6,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aleksandr Khanin / Daria Trigolos",
+         "nat": "BLR",
+         "seed": 4
+        },
+        {
+         "name": "Jiri Martinko / Zdena Blaskova",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2021-08-17T18:30:00Z",
+       "score": "3-1 (11:5,13:11,4:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tomas Polansky / Katerina Tomanovska",
+         "nat": "CZE"
+        },
+        {
+         "name": "Jakub Zelinka / Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2021-08-17T18:30:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tijana Jokic / Dimitrije Levajac",
+         "nat": "SRB"
+        },
+        {
+         "name": "Leila Imre / Csaba Andras",
+         "nat": "HUN"
+        }
+       ],
+       "when": "2021-08-17T19:10:00Z",
+       "score": "2-3 (12:10,11:6,11:13,2:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Skachkov / Olga Vorobeva",
+         "nat": "RUS"
+        },
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 3
+        }
+       ],
+       "when": "2021-08-17T19:10:00Z",
+       "score": "3-2 (5:11,5:11,11:6,11:5,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tobias Hippler / Sabine Winter",
+         "nat": "GER"
+        },
+        {
+         "name": "Alexander Shibaev / Polina Mikhailova",
+         "nat": "RUS",
+         "seed": 6
+        }
+       ],
+       "when": "2021-08-17T19:10:00Z",
+       "score": "2-3 (11:9,8:11,7:11,11:8,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nandor Ecseki / Dora Madarasz",
+         "nat": "HUN",
+         "seed": 8
+        },
+        {
+         "name": "Adam Szudi / Szandra Pergel",
+         "nat": "HUN",
+         "seed": 2
+        }
+       ],
+       "when": "2021-08-17T19:10:00Z",
+       "score": "3-0 (11:5,11:3,15:13,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2021-08-18T08:00:00Z",
+       "score": "2-3 (4:11,11:3,11:6,6:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aleksandr Khanin / Daria Trigolos",
+         "nat": "BLR",
+         "seed": 4
+        },
+        {
+         "name": "Jakub Zelinka / Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2021-08-18T15:40:00Z",
+       "score": "3-0 (11:6,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leila Imre / Csaba Andras",
+         "nat": "HUN"
+        },
+        {
+         "name": "Kirill Skachkov / Olga Vorobeva",
+         "nat": "RUS"
+        }
+       ],
+       "when": "2021-08-18T15:00:00Z",
+       "score": "1-3 (6:11,4:11,11:6,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alexander Shibaev / Polina Mikhailova",
+         "nat": "RUS",
+         "seed": 6
+        },
+        {
+         "name": "Nandor Ecseki / Dora Madarasz",
+         "nat": "HUN",
+         "seed": 8
+        }
+       ],
+       "when": "2021-08-18T08:00:00Z",
+       "score": "2-3 (11:8,7:11,4:11,11:8,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Aleksandr Khanin / Daria Trigolos",
+         "nat": "BLR",
+         "seed": 4
+        }
+       ],
+       "when": "2021-08-19T09:20:00Z",
+       "score": "3-0 (11:6,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kirill Skachkov / Olga Vorobeva",
+         "nat": "RUS"
+        },
+        {
+         "name": "Nandor Ecseki / Dora Madarasz",
+         "nat": "HUN",
+         "seed": 8
+        }
+       ],
+       "when": "2021-08-18T18:10:00Z",
+       "score": "0-3 (5:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Nandor Ecseki / Dora Madarasz",
+         "nat": "HUN",
+         "seed": 8
+        }
+       ],
+       "when": "2021-08-20T11:00:00Z",
+       "score": "3-1 (11:9,9:11,12:10,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1848 @@
+{
+ "event": "WTT Contender Tunis",
+ "wtt_event_id": "2691",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2691&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-06-22T10:10:00Z",
+       "score": "3-1 (9:11,11:7,11:2,11:1,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Huang Yi-Hua",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-06-22T10:10:00Z",
+       "score": "2-3 (11:6,4:11,11:5,2:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        },
+        {
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T10:45:00Z",
+       "score": "3-0 (11:8,11:3,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sabine Winter",
+         "nat": "GER"
+        },
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-06-22T11:00:00Z",
+       "score": "2-3 (10:12,2:11,11:6,11:6,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Sarah Hanffou",
+         "nat": "CMR"
+        }
+       ],
+       "when": "2023-06-22T17:00:00Z",
+       "score": "3-0 (11:7,11:7,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Pauline Chasselin",
+         "nat": "FRA"
+        },
+        {
+         "name": "Liu Hsing-Yin",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-06-22T14:45:00Z",
+       "score": "3-0 (11:9,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-22T14:10:00Z",
+       "score": "3-2 (2:11,11:8,13:11,11:13,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion",
+         "nat": "KOR"
+        },
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-22T18:45:00Z",
+       "score": "1-3 (11:9,9:11,12:14,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manika Batra",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-06-22T15:20:00Z",
+       "score": "2-3 (13:11,8:11,3:11,11:9,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        },
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T15:20:00Z",
+       "score": "0-3 (10:12,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yake",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yoon Hyobin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-22T14:10:00Z",
+       "score": "3-1 (11:6,8:11,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER"
+        },
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-06-22T17:00:00Z",
+       "score": "0-3 (9:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-06-22T18:45:00Z",
+       "score": "3-1 (11:8,11:6,9:11,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA"
+        },
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2023-06-22T14:45:00Z",
+       "score": "2-3 (8:11,11:8,8:11,11:9,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-06-22T19:20:00Z",
+       "score": "3-0 (12:10,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-22T19:20:00Z",
+       "score": "0-3 (2:11,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Huang Yi-Hua",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-06-23T10:10:00Z",
+       "score": "3-0 (11:9,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ayhika Mukherjee",
+         "nat": "IND"
+        },
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-06-23T10:50:00Z",
+       "score": "0-3 (5:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Pauline Chasselin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-06-23T12:00:00Z",
+       "score": "3-0 (16:14,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Jeon Jihee",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-23T18:20:00Z",
+       "score": "3-0 (13:11,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE"
+        },
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-23T12:40:00Z",
+       "score": "0-3 (8:11,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yake",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-06-23T14:40:00Z",
+       "score": "2-3 (12:10,6:11,15:13,7:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2023-06-23T17:40:00Z",
+       "score": "1-3 (11:6,10:12,9:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-23T19:00:00Z",
+       "score": "0-3 (7:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2023-06-24T10:20:00Z",
+       "score": "2-3 (11:4,11:5,8:11,7:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-24T09:00:00Z",
+       "score": "3-1 (8:11,11:6,11:6,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Yiyun",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-06-24T09:00:00Z",
+       "score": "0-3 (8:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        },
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-24T10:20:00Z",
+       "score": "3-1 (11:9,9:11,11:9,13:11,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-06-24T18:20:00Z",
+       "score": "2-3 (11:8,13:11,7:11,7:11,11:13)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Bruna Takahashi",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2023-06-24T17:00:00Z",
+       "score": "3-0 (11:4,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Shin Yubin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2023-06-25T13:00:00Z",
+       "score": "4-2 (11:8,11:5,11:9,7:11,7:11,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 1
+        },
+        {
+         "name": "Ibrahima Diaw",
+         "nat": "SEN"
+        }
+       ],
+       "when": "2023-06-22T10:10:00Z",
+       "score": "3-1 (5:11,11:9,11:5,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE"
+        },
+        {
+         "name": "Cho Seungmin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-22T13:00:00Z",
+       "score": "3-2 (7:11,11:9,6:11,11:4,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        },
+        {
+         "name": "Takuya Jin",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-06-22T17:00:00Z",
+       "score": "3-1 (11:9,11:8,7:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA"
+        },
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-22T10:45:00Z",
+       "score": "3-1 (11:8,9:11,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-06-22T13:35:00Z",
+       "score": "2-3 (9:11,11:7,11:7,7:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Yanning",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kang Dongsoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-22T10:10:00Z",
+       "score": "3-0 (11:7,11:3,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T13:35:00Z",
+       "score": "3-0 (12:10,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satoshi Aida",
+         "nat": "JPN"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2023-06-22T10:45:00Z",
+       "score": "1-3 (9:11,11:8,8:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2023-06-22T15:20:00Z",
+       "score": "3-1 (11:6,11:6,7:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sharath Kamal Achanta",
+         "nat": "IND"
+        },
+        {
+         "name": "Huang Yan-Cheng",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-06-22T15:30:00Z",
+       "score": "0-3 (7:11,11:13,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-06-22T18:10:00Z",
+       "score": "0-3 (3:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-06-22T17:00:00Z",
+       "score": "3-1 (11:9,14:12,2:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-06-22T17:35:00Z",
+       "score": "2-3 (11:6,8:11,11:7,1:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Florent Lambiet",
+         "nat": "BEL"
+        },
+        {
+         "name": "Liu Dingshuo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T17:35:00Z",
+       "score": "1-3 (9:11,5:11,11:7,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sun Wen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-06-22T18:10:00Z",
+       "score": "3-2 (6:11,7:11,11:6,11:5,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Daeseong",
+         "nat": "KOR"
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-22T13:00:00Z",
+       "score": "1-3 (8:11,11:9,4:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Hugo Calderano",
+         "nat": "BRA",
+         "seed": 1
+        },
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2023-06-23T17:00:00Z",
+       "score": "0-3 (8:11,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        },
+        {
+         "name": "Simon Gauzy",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-06-23T13:20:00Z",
+       "score": "3-2 (12:10,11:8,9:11,2:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND"
+        },
+        {
+         "name": "Liang Yanning",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-23T10:50:00Z",
+       "score": "0-3 (5:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2023-06-23T10:10:00Z",
+       "score": "1-3 (5:11,11:5,10:12,14:16,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Huang Yan-Cheng",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2023-06-23T14:00:00Z",
+       "score": "3-1 (11:6,10:12,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "An Jaehyun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-23T15:20:00Z",
+       "score": "3-2 (11:6,11:2,5:11,8:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Liu Dingshuo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-23T19:00:00Z",
+       "score": "3-2 (6:11,11:7,9:11,12:10,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sun Wen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lin Yun-Ju",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-23T18:20:00Z",
+       "score": "3-2 (11:9,11:9,6:11,7:11,11:6)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE"
+        },
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR"
+        }
+       ],
+       "when": "2023-06-24T11:00:00Z",
+       "score": "3-1 (6:11,13:11,11:7,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Yanning",
+         "nat": "CHN"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2023-06-24T09:40:00Z",
+       "score": "2-3 (11:5,9:11,9:11,11:9,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2023-06-24T09:40:00Z",
+       "score": "3-2 (8:11,12:10,3:11,11:9,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Can Akkuzu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Sun Wen",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-24T11:00:00Z",
+       "score": "0-3 (9:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Mattias Falck",
+         "nat": "SWE"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2023-06-24T19:00:00Z",
+       "score": "1-3 (6:11,11:7,4:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Sun Wen",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-24T17:40:00Z",
+       "score": "3-1 (11:5,6:11,11:7,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE",
+         "seed": 6
+        },
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER",
+         "seed": 5
+        }
+       ],
+       "when": "2023-06-25T13:45:00Z",
+       "score": "4-1 (17:15,11:7,14:12,10:12,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shin Yubin / Jeon Jihee",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Yuan Wan / Chantal Mantz",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "when": "2023-06-22T13:00:00Z",
+       "score": "3-2 (11:4,6:11,11:9,3:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "He Zhuojia / Fan Siqi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Liu Weishan / Guo Yuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T13:00:00Z",
+       "score": "1-3 (6:11,8:11,11:8,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu / Huang Yi-Hua",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Zhu Chengzhu / Li Ching Wan",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-06-22T13:35:00Z",
+       "score": "3-1 (12:14,11:8,13:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amy Wang / Rachel Sung",
+         "nat": "USA",
+         "seed": 5
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-22T18:10:00Z",
+       "score": "1-3 (5:11,8:11,12:10,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna / Kim Nayeong",
+         "nat": "KOR"
+        },
+        {
+         "name": "Oceane Guisnel / Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-06-22T17:35:00Z",
+       "score": "3-2 (11:8,11:5,3:11,9:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun / Lee Eunhye",
+         "nat": "KOR"
+        },
+        {
+         "name": "Miu Hirano / Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-06-22T17:35:00Z",
+       "score": "0-3 (8:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale / Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Wang Xiaotong / Li Yake",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T18:10:00Z",
+       "score": "0-3 (7:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz / Audrey Zarif",
+         "nat": "FRA",
+         "seed": 8
+        },
+        {
+         "name": "Miyuu Kihara / Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-22T13:35:00Z",
+       "score": "0-3 (10:12,9:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shin Yubin / Jeon Jihee",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Liu Weishan / Guo Yuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-23T13:20:00Z",
+       "score": "3-0 (11:8,11:6,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Szu-Yu / Huang Yi-Hua",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-23T14:00:00Z",
+       "score": "2-3 (12:10,8:11,11:8,5:11,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ryu Hanna / Kim Nayeong",
+         "nat": "KOR"
+        },
+        {
+         "name": "Miu Hirano / Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-06-23T15:20:00Z",
+       "score": "1-3 (11:7,10:12,3:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Xiaotong / Li Yake",
+         "nat": "CHN"
+        },
+        {
+         "name": "Miyuu Kihara / Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-23T17:00:00Z",
+       "score": "1-3 (7:11,11:7,12:14,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shin Yubin / Jeon Jihee",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-24T13:00:00Z",
+       "score": "2-3 (11:7,9:11,9:11,11:7,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miu Hirano / Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Miyuu Kihara / Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-24T14:10:00Z",
+       "score": "1-3 (7:11,12:10,8:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sutirtha Mukherjee / Ayhika Mukherjee",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Miyuu Kihara / Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-25T14:30:00Z",
+       "score": "3-1 (11:5,11:6,5:11,13:11,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "An Jaehyun / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Sun Wen / Xu Haidong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T19:20:00Z",
+       "score": "3-1 (11:5,11:7,8:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mizuki Oikawa / Sora Matsushima",
+         "nat": "JPN"
+        },
+        {
+         "name": "Florent Lambiet / Martin Allegro",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-06-22T14:10:00Z",
+       "score": "2-3 (11:4,14:12,5:11,9:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Anton Källberg",
+         "nat": "SWE",
+         "seed": 3
+        },
+        {
+         "name": "Harmeet Desai / Sharath Kamal Achanta",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-22T18:45:00Z",
+       "score": "3-1 (11:9,2:11,11:7,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Ganghyeon / Jang Woojin",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Tamas Lakatos / Amir Hossein Hodaei",
+         "nat": "HUN/IRI"
+        }
+       ],
+       "when": "2023-06-22T14:45:00Z",
+       "score": "3-0 (11:9,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng / Cao Wei",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Vitor Ishiy / Eric Jouti",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2023-06-22T14:10:00Z",
+       "score": "3-0 (11:6,13:11,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar / Manush Utpalbhai Shah",
+         "nat": "IND"
+        },
+        {
+         "name": "Yuan Licen / Lin Shidong",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2023-06-22T14:45:00Z",
+       "score": "3-2 (14:12,12:14,10:12,11:6,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yan-Cheng / Liao Cheng-Ting",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Ali Alkhadrawi / Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2023-06-22T18:45:00Z",
+       "score": "3-2 (4:11,11:5,8:11,11:2,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Takuya Jin / Satoshi Aida",
+         "nat": "JPN"
+        },
+        {
+         "name": "Cho Daeseong / Cho Seungmin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-22T19:20:00Z",
+       "score": "2-3 (11:7,8:11,11:9,9:11,2:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "An Jaehyun / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Florent Lambiet / Martin Allegro",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-06-23T12:00:00Z",
+       "score": "3-0 (11:3,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mattias Falck / Anton Källberg",
+         "nat": "SWE",
+         "seed": 3
+        },
+        {
+         "name": "Park Ganghyeon / Jang Woojin",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2023-06-23T12:40:00Z",
+       "score": "0-3 (5:11,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng / Cao Wei",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Manav Vikash Thakkar / Manush Utpalbhai Shah",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-06-23T14:40:00Z",
+       "score": "2-3 (9:11,7:11,11:3,11:7,2:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yan-Cheng / Liao Cheng-Ting",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Cho Daeseong / Cho Seungmin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-23T17:40:00Z",
+       "score": "2-3 (6:11,11:8,5:11,11:7,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "An Jaehyun / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Park Ganghyeon / Jang Woojin",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2023-06-24T13:35:00Z",
+       "score": "0-3 (6:11,3:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar / Manush Utpalbhai Shah",
+         "nat": "IND"
+        },
+        {
+         "name": "Cho Daeseong / Cho Seungmin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-24T14:45:00Z",
+       "score": "0-3 (3:11,12:14,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Park Ganghyeon / Jang Woojin",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Cho Daeseong / Cho Seungmin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-25T15:15:00Z",
+       "score": "3-2 (11:9,8:11,5:11,12:10,11:5)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Jishan Liang / Amy Wang",
+         "nat": "USA",
+         "seed": 7
+        }
+       ],
+       "when": "2023-06-22T09:00:00Z",
+       "score": "3-0 (11:4,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok / Edward Ly",
+         "nat": "FRA/CAN"
+        },
+        {
+         "name": "Jeon Jihee / Jang Woojin",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2023-06-22T09:00:00Z",
+       "score": "1-3 (5:11,11:9,6:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vitor Ishiy / Bruna Takahashi",
+         "nat": "BRA",
+         "seed": 4
+        },
+        {
+         "name": "Rachel Sung / Nandan Naresh",
+         "nat": "USA"
+        }
+       ],
+       "when": "2023-06-22T09:35:00Z",
+       "score": "3-2 (8:11,11:9,19:17,8:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan / Liu Yebo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Xue Fei / Fan Siqi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-22T09:00:00Z",
+       "score": "3-2 (12:10,13:11,7:11,6:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Yuan Wan",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Wassim Essid / Maram Zoghlami",
+         "nat": "TUN"
+        }
+       ],
+       "when": "2023-06-22T09:35:00Z",
+       "score": "3-0 (11:7,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Malissa Nasri / Abdelbasset Chaichi",
+         "nat": "ALG"
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2023-06-22T09:35:00Z",
+       "score": "0-3 (3:11,3:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lynda Loghraibi / Sami Kherouf",
+         "nat": "ALG"
+        },
+        {
+         "name": "Lee Zion / Cho Seungmin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2023-06-22T09:00:00Z",
+       "score": "0-3 (6:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Dingshuo / He Zhuojia",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shin Yubin / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-22T09:35:00Z",
+       "score": "2-3 (11:5,7:11,7:11,11:8,11:13)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Jeon Jihee / Jang Woojin",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2023-06-23T09:00:00Z",
+       "score": "3-2 (5:11,11:7,13:11,15:17,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vitor Ishiy / Bruna Takahashi",
+         "nat": "BRA",
+         "seed": 4
+        },
+        {
+         "name": "Liu Weishan / Liu Yebo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-23T09:00:00Z",
+       "score": "0-3 (6:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Yuan Wan",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 3
+        }
+       ],
+       "when": "2023-06-23T09:35:00Z",
+       "score": "0-3 (8:11,3:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Zion / Cho Seungmin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shin Yubin / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-23T09:35:00Z",
+       "score": "1-3 (6:11,11:7,12:14,3:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Liu Weishan / Liu Yebo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-06-23T19:40:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sathiyan Gnanasekaran / Manika Batra",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Shin Yubin / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-23T19:40:00Z",
+       "score": "0-3 (7:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Yun-Ju / Chen Szu-Yu",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Shin Yubin / Lim Jonghoon",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-06-24T19:45:00Z",
+       "score": "3-0 (11:6,13:11,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

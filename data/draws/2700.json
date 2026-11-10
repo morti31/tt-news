@@ -1,0 +1,2767 @@
+{
+ "event": "WTT Feeder Amman",
+ "wtt_event_id": "2700",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2700&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 3.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sewar Abuyaman",
+         "nat": "JOR"
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-01T08:00:00Z",
+       "score": "0-3 (3:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Pauline Chasselin",
+         "nat": "FRA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T08:00:00Z",
+       "score": "3-0 (11:5,12:10,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        },
+        {
+         "name": "Batool Khader",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T08:00:00Z",
+       "score": "3-0 (11:7,11:3,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Mira Alhaj Hashem",
+         "nat": "JOR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Taimmaa Abo-Yaman",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T08:00:00Z",
+       "score": "3-0 (11:6,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 7
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER"
+        },
+        {
+         "name": "Margo Degraef",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-02-01T08:30:00Z",
+       "score": "3-0 (12:10,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nadeen El-Dawlatly",
+         "nat": "EGY"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Rinad El-Hasani",
+         "nat": "JOR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Charlotte Carey",
+         "nat": "WAL"
+        },
+        {
+         "name": "Bara Al-Wedian",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T08:30:00Z",
+       "score": "3-0 (11:5,11:9,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yousra Helmy",
+         "nat": "EGY",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Farida Badawy",
+         "nat": "EGY"
+        },
+        {
+         "name": "Marina Donner",
+         "nat": "FIN"
+        }
+       ],
+       "when": "2023-02-01T08:30:00Z",
+       "score": "2-3 (12:10,11:13,8:11,11:4,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zeina Sadaqa",
+         "nat": "JOR"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Lee Hoi Man Karen",
+         "nat": "HKG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Leili Mostafavi",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-01T08:30:00Z",
+       "score": "3-2 (11:6,11:4,5:11,7:11,12:10)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Swastika Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-02T08:00:00Z",
+       "score": "3-0 (11:8,11:6,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Pauline Chasselin",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-02T08:30:00Z",
+       "score": "3-0 (11:8,11:8,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2023-02-02T08:00:00Z",
+       "score": "2-3 (5:11,9:11,11:9,11:9,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE",
+         "seed": 6
+        }
+       ],
+       "when": "2023-02-02T09:00:00Z",
+       "score": "3-0 (11:6,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2023-02-02T07:30:00Z",
+       "score": "3-1 (11:8,9:11,11:5,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-02T07:30:00Z",
+       "score": "3-0 (11:5,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Mira Alhaj Hashem",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-02T08:00:00Z",
+       "score": "3-0 (11:1,11:5,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2023-02-02T08:00:00Z",
+       "score": "1-3 (8:11,7:11,14:12,2:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 7
+        },
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2023-02-02T08:30:00Z",
+       "score": "1-3 (7:11,7:11,11:6,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nadeen El-Dawlatly",
+         "nat": "EGY"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2023-02-02T08:30:00Z",
+       "score": "2-3 (9:11,12:10,12:10,6:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Rinad El-Hasani",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-02T07:30:00Z",
+       "score": "3-0 (11:2,11:7,11:2,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Charlotte Carey",
+         "nat": "WAL"
+        },
+        {
+         "name": "Yousra Helmy",
+         "nat": "EGY",
+         "seed": 3
+        }
+       ],
+       "when": "2023-02-02T09:00:00Z",
+       "score": "3-0 (11:8,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Marina Donner",
+         "nat": "FIN"
+        }
+       ],
+       "when": "2023-02-02T09:00:00Z",
+       "score": "3-0 (11:6,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zeina Sadaqa",
+         "nat": "JOR"
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-02T09:00:00Z",
+       "score": "0-3 (1:11,3:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lee Hoi Man Karen",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T08:30:00Z",
+       "score": "3-1 (11:8,11:3,8:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-02T07:30:00Z",
+       "score": "1-3 (12:10,8:11,4:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Zhang Xiangyu",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T15:00:00Z",
+       "score": "3-0 (11:3,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ema Labosova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T15:30:00Z",
+       "score": "0-3 (9:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Ho Ching",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T15:00:00Z",
+       "score": "1-3 (9:11,12:10,3:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Diya Parag Chitale",
+         "nat": "IND"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2023-02-02T15:00:00Z",
+       "score": "1-3 (11:9,6:11,7:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER"
+        },
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        }
+       ],
+       "when": "2023-02-02T15:30:00Z",
+       "score": "3-2 (6:11,11:8,11:7,4:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Charlotte Carey",
+         "nat": "WAL"
+        }
+       ],
+       "when": "2023-02-02T15:30:00Z",
+       "score": "3-2 (11:8,5:11,11:4,11:13,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-02T15:30:00Z",
+       "score": "3-2 (11:13,7:11,11:3,11:7,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Barbora Balazova",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-02T15:00:00Z",
+       "score": "3-1 (11:5,11:6,9:11,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Qin Yuxuan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T08:50:00Z",
+       "score": "3-1 (11:8,5:11,11:1,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2023-02-03T09:20:00Z",
+       "score": "2-3 (11:4,6:11,7:11,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Franziska Schreiner",
+         "nat": "GER"
+        },
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-03T13:00:00Z",
+       "score": "0-3 (6:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T13:30:00Z",
+       "score": "3-2 (2:11,9:11,11:7,11:6,11:9)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2023-02-04T07:00:00Z",
+       "score": "3-0 (11:7,11:4,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-02-04T07:30:00Z",
+       "score": "3-2 (6:11,12:14,11:9,11:7,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-04T14:00:00Z",
+       "score": "3-0 (11:5,11:6,11:3,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amin Ahmadian",
+         "nat": "IRI"
+        },
+        {
+         "name": "Li Hon Ming",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-01T09:00:00Z",
+       "score": "2-3 (11:2,11:8,9:11,5:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Issa Al-Shamm'a",
+         "nat": "JOR"
+        },
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-01T09:00:00Z",
+       "score": "0-3 (2:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niu Guankai",
+         "nat": "CHN"
+        },
+        {
+         "name": "Liu Yebo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T09:00:00Z",
+       "score": "3-1 (7:11,11:7,11:5,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yingbin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-01T09:00:00Z",
+       "score": "0-3 (11:13,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Pau Yik Man",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-01T09:30:00Z",
+       "score": "3-1 (8:11,11:8,11:8,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jordy Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T09:30:00Z",
+       "score": "1-3 (10:12,14:12,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yamen Aljaafreh",
+         "nat": "JOR"
+        },
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG",
+         "seed": 6
+        }
+       ],
+       "when": "2023-02-01T09:30:00Z",
+       "score": "0-3 (5:11,3:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Daniele Pinto",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-01T09:30:00Z",
+       "score": "3-1 (9:11,11:8,11:4,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        },
+        {
+         "name": "Hasan Alhourani",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T10:00:00Z",
+       "score": "3-1 (7:11,11:2,11:7,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kareem Shaltouni",
+         "nat": "JOR"
+        },
+        {
+         "name": "Abdelbasset Chaichi",
+         "nat": "ALG"
+        }
+       ],
+       "when": "2023-02-01T10:00:00Z",
+       "score": "0-3 (3:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hamadeh Kaswal",
+         "nat": "JOR"
+        },
+        {
+         "name": "Liang Guodong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T10:00:00Z",
+       "score": "0-3 (3:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Amalraj Anthony",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-01T10:00:00Z",
+       "score": "3-2 (11:9,7:11,12:14,11:8,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jishan Liang",
+         "nat": "USA"
+        },
+        {
+         "name": "Wang Chen Ce",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T14:00:00Z",
+       "score": "1-3 (11:7,8:11,6:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Leonardo Mutti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T14:00:00Z",
+       "score": "1-3 (11:9,9:11,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Azzam Alim",
+         "nat": "KSA"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-02-01T14:00:00Z",
+       "score": "0-3 (3:11,8:11,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Antonino Amato",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-01T14:00:00Z",
+       "score": "3-0 (11:5,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rakan Al-Zoubi",
+         "nat": "JOR"
+        },
+        {
+         "name": "Raed Aldmaisy",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T14:30:00Z",
+       "score": "0-3 (8:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        },
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-01T14:30:00Z",
+       "score": "1-3 (11:2,9:11,9:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Puppo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX"
+        }
+       ],
+       "when": "2023-02-01T14:30:00Z",
+       "score": "1-3 (9:11,11:6,7:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sai Linwei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T14:30:00Z",
+       "score": "0-3 (7:11,2:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Laurens Devos",
+         "nat": "BEL"
+        },
+        {
+         "name": "Zeyad Aldmaisy",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T15:00:00Z",
+       "score": "3-0 (11:8,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yan Sheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-01T15:00:00Z",
+       "score": "1-3 (10:12,11:5,8:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mohammad Salameh",
+         "nat": "JOR"
+        },
+        {
+         "name": "Lam Siu Hang",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2023-02-01T15:00:00Z",
+       "score": "0-3 (3:11,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR",
+         "seed": 8
+        },
+        {
+         "name": "Cao Wei",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T15:00:00Z",
+       "score": "0-3 (10:12,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        },
+        {
+         "name": "Mohammed Alsharif",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2023-02-01T15:30:00Z",
+       "score": "3-0 (11:6,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sanil Shetty",
+         "nat": "IND"
+        },
+        {
+         "name": "Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2023-02-01T15:30:00Z",
+       "score": "3-1 (12:14,11:3,11:8,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choy Chun Kit",
+         "nat": "HKG"
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-01T15:30:00Z",
+       "score": "0-3 (7:11,9:11,11:13,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        },
+        {
+         "name": "Khaled Khader",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-01T15:30:00Z",
+       "score": "3-0 (11:5,11:8,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Tingyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-01T16:00:00Z",
+       "score": "1-3 (9:11,11:6,9:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zaid Abo Yaman",
+         "nat": "JOR"
+        },
+        {
+         "name": "Tommaso Giovannetti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-01T16:00:00Z",
+       "score": "3-1 (3:11,11:6,11:7,14:12,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bastien Rembert",
+         "nat": "FRA"
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-01T16:00:00Z",
+       "score": "0-3 (8:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Li Hon Ming",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T09:30:00Z",
+       "score": "3-0 (11:6,11:5,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Niu Guankai",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T09:30:00Z",
+       "score": "1-3 (11:9,3:11,7:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Ali Alkhadrawi",
+         "nat": "KSA"
+        }
+       ],
+       "when": "2023-02-02T09:30:00Z",
+       "score": "3-1 (11:5,11:6,8:11,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG",
+         "seed": 6
+        }
+       ],
+       "when": "2023-02-02T09:30:00Z",
+       "score": "3-1 (11:8,11:6,6:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Kwan Man Ho",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T10:00:00Z",
+       "score": "3-0 (12:10,11:4,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdelbasset Chaichi",
+         "nat": "ALG"
+        },
+        {
+         "name": "Liang Guodong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T10:00:00Z",
+       "score": "0-3 (7:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Wang Chen Ce",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T10:00:00Z",
+       "score": "1-3 (11:3,9:11,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Beixun",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-02-02T10:00:00Z",
+       "score": "0-3 (11:13,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Raed Aldmaisy",
+         "nat": "JOR"
+        }
+       ],
+       "when": "2023-02-02T10:30:00Z",
+       "score": "3-0 (11:8,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeet Chandra",
+         "nat": "IND"
+        },
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX"
+        }
+       ],
+       "when": "2023-02-02T10:30:00Z",
+       "score": "2-3 (4:11,11:6,11:9,7:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Laurens Devos",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-02-02T10:30:00Z",
+       "score": "3-0 (11:5,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Lam Siu Hang",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2023-02-02T10:30:00Z",
+       "score": "2-3 (11:4,10:12,6:11,11:9,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cao Wei",
+         "nat": "CHN"
+        },
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-02T11:00:00Z",
+       "score": "3-0 (11:7,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sanil Shetty",
+         "nat": "IND"
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T11:00:00Z",
+       "score": "1-3 (11:7,5:11,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-02T11:00:00Z",
+       "score": "3-2 (5:11,11:7,6:11,11:5,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zaid Abo Yaman",
+         "nat": "JOR"
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-02T11:00:00Z",
+       "score": "1-3 (8:11,11:9,8:11,6:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Niu Guankai",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T16:00:00Z",
+       "score": "3-0 (11:3,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T16:00:00Z",
+       "score": "1-3 (11:4,12:14,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Liang Guodong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T16:00:00Z",
+       "score": "3-0 (11:9,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wang Chen Ce",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-02-02T16:00:00Z",
+       "score": "1-3 (11:13,11:9,4:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX"
+        }
+       ],
+       "when": "2023-02-02T16:30:00Z",
+       "score": "3-1 (11:9,4:11,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lam Siu Hang",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2023-02-02T16:30:00Z",
+       "score": "3-1 (11:1,9:11,11:7,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cao Wei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ho Kwan Kit",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T16:30:00Z",
+       "score": "3-1 (11:13,11:1,11:6,15:13,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-02T16:30:00Z",
+       "score": "3-0 (12:10,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T09:50:00Z",
+       "score": "3-1 (13:11,11:6,10:12,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kilian Ort",
+         "nat": "GER",
+         "seed": 3
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-02-03T10:20:00Z",
+       "score": "2-3 (5:11,11:8,7:11,11:9,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T14:00:00Z",
+       "score": "2-3 (8:11,12:10,11:13,11:6,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Cao Wei",
+         "nat": "CHN"
+        },
+        {
+         "name": "Amir Hossein Hodaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2023-02-03T14:30:00Z",
+       "score": "3-0 (11:5,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 7
+        }
+       ],
+       "when": "2023-02-04T08:00:00Z",
+       "score": "3-0 (11:6,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Haidong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Cao Wei",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-04T08:30:00Z",
+       "score": "0-3 (8:11,8:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Cao Wei",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-04T14:30:00Z",
+       "score": "2-3 (12:10,8:11,11:1,1:11,9:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kuai Man / Zong Geman",
+         "nat": "CHN"
+        },
+        {
+         "name": "Franziska Schreiner / Diya Parag Chitale",
+         "nat": "GER/IND"
+        }
+       ],
+       "when": "2023-02-01T13:00:00Z",
+       "score": "3-0 (11:7,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette / Pauline Chasselin",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Zhang Xiangyu / Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T13:00:00Z",
+       "score": "1-3 (4:11,4:11,11:4,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Farida Badawy / Nadeen El-Dawlatly",
+         "nat": "EGY"
+        },
+        {
+         "name": "Marina Donner / Yousra Helmy",
+         "nat": "FIN/EGY"
+        }
+       ],
+       "when": "2023-02-01T13:00:00Z",
+       "score": "3-1 (11:8,8:11,11:6,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leili Mostafavi / Audrey Zarif",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Rachel Moret / Natalia Bajor",
+         "nat": "SUI/POL",
+         "seed": 5
+        }
+       ],
+       "when": "2023-02-01T13:00:00Z",
+       "score": "3-1 (13:11,6:11,11:6,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Charlotte Carey / Tin-Tin Ho",
+         "nat": "WAL/ENG",
+         "seed": 8
+        },
+        {
+         "name": "Tatiana Kukulkova / Ema Labosova",
+         "nat": "SVK",
+         "seed": 3
+        }
+       ],
+       "when": "2023-02-01T13:30:00Z",
+       "score": "3-0 (11:5,11:5,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Lee Hoi Man Karen",
+         "nat": "HKG"
+        },
+        {
+         "name": "Debora Vivarelli / Margo Degraef",
+         "nat": "ITA/BEL",
+         "seed": 7
+        }
+       ],
+       "when": "2023-02-01T13:30:00Z",
+       "score": "1-3 (11:3,10:12,10:12,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Qin Yuxuan / Han Feier",
+         "nat": "CHN"
+        },
+        {
+         "name": "Camille Lutz / Barbora Balazova",
+         "nat": "FRA/SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-01T13:30:00Z",
+       "score": "3-0 (11:6,11:7,11:9,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Kuai Man / Zong Geman",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T14:00:00Z",
+       "score": "3-0 (11:6,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhang Xiangyu / Fan Shuhan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Farida Badawy / Nadeen El-Dawlatly",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2023-02-02T14:00:00Z",
+       "score": "3-0 (11:7,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leili Mostafavi / Audrey Zarif",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Charlotte Carey / Tin-Tin Ho",
+         "nat": "WAL/ENG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-02-02T14:00:00Z",
+       "score": "0-3 (10:12,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Margo Degraef",
+         "nat": "ITA/BEL",
+         "seed": 7
+        },
+        {
+         "name": "Qin Yuxuan / Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-02T14:00:00Z",
+       "score": "0-3 (4:11,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Zhang Xiangyu / Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T07:50:00Z",
+       "score": "3-1 (11:7,11:7,5:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Charlotte Carey / Tin-Tin Ho",
+         "nat": "WAL/ENG",
+         "seed": 8
+        },
+        {
+         "name": "Qin Yuxuan / Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T07:50:00Z",
+       "score": "0-3 (8:11,2:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Doo Hoi Kem / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Qin Yuxuan / Han Feier",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-04T13:00:00Z",
+       "score": "2-3 (15:13,9:11,11:6,11:13,7:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Amir Hossein Hodaei / Amin Ahmadian",
+         "nat": "IRI",
+         "seed": 6
+        },
+        {
+         "name": "Choy Chun Kit / Pau Yik Man",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-01T12:00:00Z",
+       "score": "0-3 (0:11,0:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jishan Liang / Lubomir Pistej",
+         "nat": "USA/SVK",
+         "seed": 4
+        },
+        {
+         "name": "Andrea Puppo / Daniele Pinto",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-01T12:00:00Z",
+       "score": "3-0 (11:3,11:4,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jeet Chandra / Snehit Suravajjula",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Li Hon Ming / Kwan Man Ho",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-01T12:00:00Z",
+       "score": "2-3 (11:6,4:11,10:12,11:5,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jordy Piccolin / John Oyebode",
+         "nat": "ITA",
+         "seed": 7
+        },
+        {
+         "name": "Leonardo Mutti / Tommaso Giovannetti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2023-02-01T12:00:00Z",
+       "score": "1-3 (11:9,4:11,9:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rakan Al-Zoubi / Issa Al-Shamm'a",
+         "nat": "JOR"
+        },
+        {
+         "name": "Abdulaziz BU Shulaybi / Ali Alkhadrawi",
+         "nat": "KSA",
+         "seed": 3
+        }
+       ],
+       "when": "2023-02-01T12:30:00Z",
+       "score": "0-3 (2:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xu Yingbin / Liu Yebo",
+         "nat": "CHN",
+         "seed": 8
+        },
+        {
+         "name": "Zeng Beixun / Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T12:30:00Z",
+       "score": "2-3 (6:11,11:9,3:11,11:8,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amalraj Anthony / Anirban Ghosh",
+         "nat": "IND"
+        },
+        {
+         "name": "Lam Siu Hang / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-01T12:30:00Z",
+       "score": "0-3 (4:11,8:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Choy Chun Kit / Pau Yik Man",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T14:30:00Z",
+       "score": "3-0 (11:8,14:12,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jishan Liang / Lubomir Pistej",
+         "nat": "USA/SVK",
+         "seed": 4
+        },
+        {
+         "name": "Li Hon Ming / Kwan Man Ho",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T14:30:00Z",
+       "score": "3-1 (11:9,12:10,7:11,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Leonardo Mutti / Tommaso Giovannetti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Abdulaziz BU Shulaybi / Ali Alkhadrawi",
+         "nat": "KSA",
+         "seed": 3
+        }
+       ],
+       "when": "2023-02-02T14:30:00Z",
+       "score": "1-3 (11:9,9:11,7:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zeng Beixun / Huang Youzheng",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lam Siu Hang / Ho Kwan Kit",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-02T14:30:00Z",
+       "score": "3-1 (13:15,14:12,11:7,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Jishan Liang / Lubomir Pistej",
+         "nat": "USA/SVK",
+         "seed": 4
+        }
+       ],
+       "when": "2023-02-03T08:20:00Z",
+       "score": "3-1 (11:9,7:11,11:3,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdulaziz BU Shulaybi / Ali Alkhadrawi",
+         "nat": "KSA",
+         "seed": 3
+        },
+        {
+         "name": "Zeng Beixun / Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-03T08:20:00Z",
+       "score": "1-3 (5:11,11:9,11:13,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Chen Yuanyu / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Zeng Beixun / Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-04T13:30:00Z",
+       "score": "3-2 (12:10,11:7,4:11,7:11,11:5)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Kwan Kit / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 5
+        },
+        {
+         "name": "Snehit Suravajjula / Diya Parag Chitale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-01T07:00:00Z",
+       "score": "1-3 (11:7,7:11,6:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Jishan Liang",
+         "nat": "SVK/USA",
+         "seed": 4
+        },
+        {
+         "name": "Nadeen El-Dawlatly / Ali Alkhadrawi",
+         "nat": "EGY/KSA"
+        }
+       ],
+       "when": "2023-02-01T07:00:00Z",
+       "score": "3-0 (11:6,13:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hon Ming / Ng Wing Lam",
+         "nat": "HKG"
+        },
+        {
+         "name": "Margo Degraef / Laurens Devos",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2023-02-01T07:00:00Z",
+       "score": "3-0 (11:7,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Pauline Chasselin",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Stephanie Loeuillette / Marcos Madrid",
+         "nat": "FRA/MEX"
+        }
+       ],
+       "when": "2023-02-01T07:00:00Z",
+       "score": "3-2 (11:7,7:11,11:7,9:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bastien Rembert / Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Gaia Monfardini / John Oyebode",
+         "nat": "ITA",
+         "seed": 3
+        }
+       ],
+       "when": "2023-02-01T07:30:00Z",
+       "score": "3-2 (11:9,4:11,11:6,9:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Jordy Piccolin",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Han Feier / Xu Yingbin",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2023-02-01T07:30:00Z",
+       "score": "1-3 (9:11,7:11,11:9,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lam Siu Hang / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Barbora Balazova / Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2023-02-01T07:30:00Z",
+       "score": "3-2 (11:9,11:6,7:11,9:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Snehit Suravajjula / Diya Parag Chitale",
+         "nat": "IND"
+        }
+       ],
+       "when": "2023-02-02T07:00:00Z",
+       "score": "3-0 (11:5,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova / Jishan Liang",
+         "nat": "SVK/USA",
+         "seed": 4
+        },
+        {
+         "name": "Li Hon Ming / Ng Wing Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-02T07:00:00Z",
+       "score": "2-3 (11:9,8:11,11:6,3:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Pauline Chasselin",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Bastien Rembert / Camille Lutz",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2023-02-02T07:00:00Z",
+       "score": "3-2 (12:10,9:11,9:11,13:11,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Han Feier / Xu Yingbin",
+         "nat": "CHN"
+        },
+        {
+         "name": "Lam Siu Hang / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-02-02T07:00:00Z",
+       "score": "2-3 (4:11,11:4,10:12,11:6,10:12)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Li Hon Ming / Ng Wing Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2023-02-03T07:00:00Z",
+       "score": "3-0 (11:5,11:3,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr / Pauline Chasselin",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Lam Siu Hang / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-02-03T07:00:00Z",
+       "score": "1-3 (11:9,5:11,9:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong / Kuai Man",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Lam Siu Hang / Doo Hoi Kem",
+         "nat": "HKG",
+         "seed": 8
+        }
+       ],
+       "when": "2023-02-03T15:00:00Z",
+       "score": "3-0 (11:6,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

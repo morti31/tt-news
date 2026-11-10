@@ -1,0 +1,1846 @@
+{
+ "event": "WTT Contender Almaty",
+ "wtt_event_id": "2873",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2873&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": 5.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Anastassiya Lavrova",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T13:35:00Z",
+       "score": "3-0 (11:5,11:5,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-05T09:10:00Z",
+       "score": "3-1 (3:11,11:6,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Zauresh Akasheva",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T13:00:00Z",
+       "score": "3-1 (9:11,11:7,11:6,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Britt Eerland",
+         "nat": "NED"
+        },
+        {
+         "name": "Elizabeta Samara",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2024-09-05T11:30:00Z",
+       "score": "3-1 (11:4,4:11,11:9,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2024-09-05T09:10:00Z",
+       "score": "3-0 (11:7,11:3,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T15:55:00Z",
+       "score": "3-0 (11:8,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ai Xin Tee",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2024-09-05T11:30:00Z",
+       "score": "3-1 (11:7,11:5,9:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yu-Jhun",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 8
+        }
+       ],
+       "when": "2024-09-05T12:05:00Z",
+       "score": "1-3 (8:11,6:11,14:12,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Li Yake",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-05T13:00:00Z",
+       "score": "3-1 (11:5,11:6,8:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG"
+        },
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-09-05T09:45:00Z",
+       "score": "3-2 (8:11,13:11,12:10,9:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Adina Diaconu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Anne Uesawa",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-05T15:20:00Z",
+       "score": "0-3 (8:11,8:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-09-05T15:20:00Z",
+       "score": "3-0 (11:5,12:10,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yi-Hua",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-05T12:05:00Z",
+       "score": "0-3 (6:11,6:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR"
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-05T09:45:00Z",
+       "score": "3-2 (11:9,8:11,11:7,3:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "He Zhuojia",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-09-05T13:35:00Z",
+       "score": "3-0 (11:2,11:8,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-05T15:55:00Z",
+       "score": "0-3 (8:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miwa Harimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-06T09:10:00Z",
+       "score": "2-3 (11:4,9:11,11:3,4:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Britt Eerland",
+         "nat": "NED"
+        }
+       ],
+       "when": "2024-09-06T10:20:00Z",
+       "score": "0-3 (3:11,10:12,12:14,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 4
+        },
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-06T09:10:00Z",
+       "score": "1-3 (8:11,13:11,9:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kuai Man",
+         "nat": "CHN",
+         "seed": 8
+        }
+       ],
+       "when": "2024-09-06T10:20:00Z",
+       "score": "3-0 (11:9,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2024-09-06T14:10:00Z",
+       "score": "3-0 (11:9,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anne Uesawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-06T14:45:00Z",
+       "score": "0-3 (10:12,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kim Nayeong",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-06T15:20:00Z",
+       "score": "3-2 (12:14,7:11,11:3,11:5,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "He Zhuojia",
+         "nat": "CHN"
+        },
+        {
+         "name": "Qian Tianyi",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-06T15:55:00Z",
+       "score": "3-2 (9:11,11:9,5:11,11:6,11:4)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Britt Eerland",
+         "nat": "NED"
+        }
+       ],
+       "when": "2024-09-07T09:10:00Z",
+       "score": "3-1 (11:8,9:11,11:5,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-07T09:10:00Z",
+       "score": "0-3 (4:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Sakura Yokoi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-07T08:00:00Z",
+       "score": "3-0 (11:9,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        },
+        {
+         "name": "He Zhuojia",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-07T08:00:00Z",
+       "score": "3-2 (11:8,11:7,7:11,11:13,11:3)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        },
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-07T14:45:00Z",
+       "score": "1-3 (3:11,3:11,11:9,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 5
+        },
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-07T13:35:00Z",
+       "score": "1-3 (11:9,9:11,6:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Shi Xunyao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Chen Yi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-08T10:20:00Z",
+       "score": "4-1 (11:6,11:5,11:7,7:11,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Aidos Kenzhigulov",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T09:45:00Z",
+       "score": "3-1 (11:4,11:8,10:12,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Iskender Kharki",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-05T14:10:00Z",
+       "score": "1-3 (11:7,9:11,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-09-05T09:10:00Z",
+       "score": "3-1 (5:11,11:7,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chang Yu-An",
+         "nat": "TPE"
+        },
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2024-09-05T09:10:00Z",
+       "score": "2-3 (5:11,11:7,12:10,5:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-05T10:55:00Z",
+       "score": "3-0 (11:6,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Alan Kurmangaliyev",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T10:55:00Z",
+       "score": "3-1 (8:11,11:6,11:3,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Yanning",
+         "nat": "CHN"
+        },
+        {
+         "name": "Xu Yingbin",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-05T10:20:00Z",
+       "score": "3-0 (11:5,11:9,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-05T13:00:00Z",
+       "score": "0-3 (3:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-09-05T14:10:00Z",
+       "score": "3-1 (11:9,11:9,8:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Iulian Chirita",
+         "nat": "ROU"
+        },
+        {
+         "name": "Andrej Gacina",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2024-09-05T13:00:00Z",
+       "score": "3-0 (11:8,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Huang Yan-Cheng",
+         "nat": "TPE"
+        },
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-05T09:45:00Z",
+       "score": "1-3 (12:14,3:11,11:5,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 3
+        }
+       ],
+       "when": "2024-09-05T14:45:00Z",
+       "score": "3-0 (12:10,12:10,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Li Yan Jun",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-09-05T13:35:00Z",
+       "score": "3-2 (11:7,6:11,11:5,7:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin",
+         "nat": "HKG"
+        },
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-05T14:45:00Z",
+       "score": "1-3 (6:11,11:8,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE"
+        },
+        {
+         "name": "Kim Gaon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-05T13:35:00Z",
+       "score": "3-0 (11:7,11:3,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Licen",
+         "nat": "CHN"
+        },
+        {
+         "name": "Kao Cheng-Jui",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-05T10:20:00Z",
+       "score": "2-3 (7:11,11:13,12:10,11:8,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-06T09:45:00Z",
+       "score": "3-0 (11:3,11:4,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        },
+        {
+         "name": "Feng Yi-hsin",
+         "nat": "TPE",
+         "seed": 6
+        }
+       ],
+       "when": "2024-09-06T08:35:00Z",
+       "score": "3-2 (11:9,13:11,7:11,6:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiang Peng",
+         "nat": "CHN",
+         "seed": 4
+        },
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-06T08:35:00Z",
+       "score": "2-3 (12:10,3:11,2:11,12:10,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liang Yanning",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-06T09:45:00Z",
+       "score": "2-3 (11:9,6:11,6:11,11:7,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Iulian Chirita",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-06T14:45:00Z",
+       "score": "3-1 (9:11,11:9,11:5,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-09-06T15:55:00Z",
+       "score": "3-0 (11:9,11:6,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2024-09-06T15:20:00Z",
+       "score": "3-2 (2:11,11:7,11:9,9:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE"
+        },
+        {
+         "name": "Kao Cheng-Jui",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-06T13:35:00Z",
+       "score": "1-3 (8:11,10:12,11:4,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-07T08:35:00Z",
+       "score": "3-0 (11:6,11:2,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-07T09:45:00Z",
+       "score": "3-1 (11:9,15:13,4:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-07T09:45:00Z",
+       "score": "3-0 (11:7,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Kao Cheng-Jui",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-07T08:35:00Z",
+       "score": "3-2 (11:6,6:11,6:11,14:12,13:11)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-07T14:10:00Z",
+       "score": "3-1 (11:6,5:11,11:6,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Yukiya Uda",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2024-09-07T13:00:00Z",
+       "score": "3-1 (11:8,6:11,11:8,11:3,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2024-09-08T11:00:00Z",
+       "score": "4-3 (11:5,9:11,6:11,6:11,11:8,14:12,11:9)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki / Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Park Gahyeon / Kim Seongjin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-05T14:45:00Z",
+       "score": "3-0 (11:4,11:9,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ji Eunchae / Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Zauresh Akasheva / Sarvinoz Mirkadirova",
+         "nat": "KAZ",
+         "seed": 8
+        }
+       ],
+       "when": "2024-09-05T10:20:00Z",
+       "score": "3-2 (10:12,12:10,11:4,7:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Franziska Schreiner / Sophia Klee",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-09-05T10:20:00Z",
+       "score": "3-1 (11:1,11:5,9:11,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Fan Siqi / Li Yake",
+         "nat": "CHN"
+        },
+        {
+         "name": "Zhanerke Koshkumbayeva / Anastassiya Lavrova",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T10:55:00Z",
+       "score": "3-0 (11:5,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan / He Zhuojia",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Elena Zaharia / Ioana Singeorzan",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-05T10:55:00Z",
+       "score": "3-0 (14:12,11:6,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Qian Tianyi / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Chen Yi / Kuai Man",
+         "nat": "CHN",
+         "seed": 4
+        }
+       ],
+       "when": "2024-09-05T14:10:00Z",
+       "score": "3-1 (11:9,9:11,12:10,16:14,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ozge Yilmaz / Ece Harac",
+         "nat": "TUR",
+         "seed": 7
+        },
+        {
+         "name": "Angelina Romanovskaya / Anel Bakhyt",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T14:10:00Z",
+       "score": "3-0 (11:3,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ai Xin Tee / Karen Lyne",
+         "nat": "MAS"
+        },
+        {
+         "name": "Ng Wing Lam / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-05T14:45:00Z",
+       "score": "2-3 (11:7,9:11,11:9,4:11,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki / Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Ji Eunchae / Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-06T10:55:00Z",
+       "score": "3-0 (11:6,11:1,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Fan Siqi / Li Yake",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-06T09:10:00Z",
+       "score": "3-2 (11:5,10:12,11:9,9:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan / He Zhuojia",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Qian Tianyi / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ],
+       "when": "2024-09-06T13:35:00Z",
+       "score": "3-0 (11:8,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ozge Yilmaz / Ece Harac",
+         "nat": "TUR",
+         "seed": 7
+        },
+        {
+         "name": "Ng Wing Lam / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-06T10:20:00Z",
+       "score": "0-3 (7:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki / Miyuu Kihara",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-09-07T10:20:00Z",
+       "score": "0-3 (10:12,8:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Liu Weishan / He Zhuojia",
+         "nat": "CHN",
+         "seed": 5
+        },
+        {
+         "name": "Ng Wing Lam / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-07T10:20:00Z",
+       "score": "3-1 (11:4,9:11,11:6,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Satsuki Odo / Sakura Yokoi",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Liu Weishan / He Zhuojia",
+         "nat": "CHN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-08T09:00:00Z",
+       "score": "2-3 (7:11,8:11,11:9,11:6,3:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Denis Zholudev / Dastan Kenzhigulov",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T15:55:00Z",
+       "score": "3-0 (11:7,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Zhou Qihao",
+         "nat": "CHN"
+        },
+        {
+         "name": "Sanil Shetty / Payas Jain",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-09-05T15:20:00Z",
+       "score": "3-1 (9:11,11:6,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Javen Choong / Wann Sing Danny Ng",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2024-09-05T11:30:00Z",
+       "score": "3-1 (11:8,9:11,11:7,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Irisbek Artukmetov / Iskender Kharki",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Kim Gaon / Oh Junsung",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-05T12:05:00Z",
+       "score": "0-3 (7:11,1:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Alan Kurmangaliyev / Aidos Kenzhigulov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Tseng Tzu-Yu / Kao Cheng-Jui",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2024-09-05T15:55:00Z",
+       "score": "0-3 (4:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Zakharov / Bakdaulet Akimali",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Chan Baldwin / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 4
+        }
+       ],
+       "when": "2024-09-05T12:05:00Z",
+       "score": "3-2 (12:10,4:11,11:9,5:11,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yan Jun / Chang Yu-An",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Andrei Istrate / Iulian Chirita",
+         "nat": "ROU",
+         "seed": 8
+        }
+       ],
+       "when": "2024-09-05T11:30:00Z",
+       "score": "3-0 (11:8,11:6,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu / Eduard Ionescu",
+         "nat": "ROU",
+         "seed": 7
+        },
+        {
+         "name": "Lin Shidong / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-05T15:20:00Z",
+       "score": "2-3 (11:8,11:7,6:11,7:11,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Wen Ruibo / Zhou Qihao",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2024-09-06T10:55:00Z",
+       "score": "3-2 (6:11,11:9,4:11,11:7,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Kim Gaon / Oh Junsung",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-06T10:55:00Z",
+       "score": "3-2 (11:6,11:6,6:11,6:11,14:12)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tseng Tzu-Yu / Kao Cheng-Jui",
+         "nat": "TPE"
+        },
+        {
+         "name": "Vladislav Zakharov / Bakdaulet Akimali",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-06T09:45:00Z",
+       "score": "3-0 (11:5,11:9,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Yan Jun / Chang Yu-An",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Lin Shidong / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-06T14:10:00Z",
+       "score": "0-3 (8:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuan Licen / Xiang Peng",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 3
+        }
+       ],
+       "when": "2024-09-07T10:55:00Z",
+       "score": "2-3 (11:8,11:5,8:11,11:13,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tseng Tzu-Yu / Kao Cheng-Jui",
+         "nat": "TPE"
+        },
+        {
+         "name": "Lin Shidong / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-07T10:55:00Z",
+       "score": "0-3 (5:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Florian Bourrassaud / Esteban Dorr",
+         "nat": "FRA",
+         "seed": 3
+        },
+        {
+         "name": "Lin Shidong / Xu Yingbin",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-08T09:40:00Z",
+       "score": "0-3 (8:11,11:13,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Aidos Kenzhigulov / Sarvinoz Mirkadirova",
+         "nat": "KAZ",
+         "seed": 7
+        }
+       ],
+       "when": "2024-09-05T08:00:00Z",
+       "score": "3-0 (11:4,11:1,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate / Adina Diaconu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Markhabo Magdieva / Shokhrukh Iskandarov",
+         "nat": "UZB"
+        }
+       ],
+       "when": "2024-09-05T08:35:00Z",
+       "score": "3-0 (11:5,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki / Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Alan Kurmangaliyev / Zauresh Akasheva",
+         "nat": "KAZ",
+         "seed": 8
+        }
+       ],
+       "when": "2024-09-05T08:35:00Z",
+       "score": "3-0 (12:10,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seongjin / Oh Junsung",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yuan Licen / Shi Xunyao",
+         "nat": "CHN",
+         "seed": 5
+        }
+       ],
+       "when": "2024-09-05T08:00:00Z",
+       "score": "3-2 (9:11,12:10,11:9,7:11,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Ying Ho / Jay Shern Fong",
+         "nat": "MAS"
+        }
+       ],
+       "when": "2024-09-05T08:00:00Z",
+       "score": "3-0 (11:5,11:6,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anel Bakhyt / Sanzhar Zhubanov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Elizabeta Samara / Eduard Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2024-09-05T08:00:00Z",
+       "score": "0-3 (11:13,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Zakharov / Anastassiya Lavrova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Angelina Romanovskaya / Iskender Kharki",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2024-09-05T08:35:00Z",
+       "score": "0-3 (8:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ho Jeongmun / Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-05T08:35:00Z",
+       "score": "1-3 (11:2,9:11,11:13,11:13,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Andrei Istrate / Adina Diaconu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2024-09-06T08:00:00Z",
+       "score": "3-1 (11:3,9:11,11:4,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miyu Nagasaki / Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 3
+        },
+        {
+         "name": "Kim Seongjin / Oh Junsung",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2024-09-06T08:00:00Z",
+       "score": "3-0 (16:14,11:8,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Chan Baldwin / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Elizabeta Samara / Eduard Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2024-09-06T08:00:00Z",
+       "score": "2-3 (10:12,11:6,7:11,14:12,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Angelina Romanovskaya / Iskender Kharki",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-06T08:35:00Z",
+       "score": "0-3 (6:11,6:11,2:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Miyu Nagasaki / Yuta Tanaka",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-09-06T13:00:00Z",
+       "score": "3-0 (11:9,11:5,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elizabeta Samara / Eduard Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        },
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 2
+        }
+       ],
+       "when": "2024-09-06T13:00:00Z",
+       "score": "3-2 (11:7,11:6,9:11,8:11,23:21)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kuai Man / Lin Shidong",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Elizabeta Samara / Eduard Ionescu",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2024-09-07T15:20:00Z",
+       "score": "3-0 (11:8,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

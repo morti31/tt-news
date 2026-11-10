@@ -1,0 +1,1807 @@
+{
+ "event": "WTT Feeder Cappadocia",
+ "wtt_event_id": "3266",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3266&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 3.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 1
+        },
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        }
+       ],
+       "when": "2026-02-04T07:35:00Z",
+       "score": "1-3 (11:13,6:11,11:6,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha",
+         "nat": "IND"
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-04T14:40:00Z",
+       "score": "1-3 (10:12,11:8,9:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuka Kaneyoshi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Ioana Singeorzan",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-02-04T14:40:00Z",
+       "score": "3-0 (11:6,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-02-04T07:35:00Z",
+       "score": "0-3 (11:13,13:15,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Betul Nur Kahraman",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-04T08:10:00Z",
+       "score": "3-0 (11:3,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yui Sakuma",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sayali Wani",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-02-04T08:10:00Z",
+       "score": "3-2 (11:6,11:5,6:11,9:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Merve Demir",
+         "nat": "TUR",
+         "seed": 6
+        },
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2026-02-04T08:10:00Z",
+       "score": "0-3 (5:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Josephina Neumann",
+         "nat": "GER"
+        },
+        {
+         "name": "Elena Zaharia",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-04T07:35:00Z",
+       "score": "1-3 (3:11,11:5,8:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Syndrela Das",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-02-04T14:05:00Z",
+       "score": "3-0 (11:9,11:4,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        },
+        {
+         "name": "Anastasiya Dymytrenko",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2026-02-04T14:05:00Z",
+       "score": "3-2 (11:5,4:11,17:15,7:11,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhanerke Koshkumbayeva",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Veronika Matiunina",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2026-02-04T14:05:00Z",
+       "score": "0-3 (5:11,5:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Valeriia Kotsiur",
+         "nat": "AIN"
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-02-04T14:05:00Z",
+       "score": "3-1 (12:10,13:11,7:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Maria Panfilova",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-04T14:40:00Z",
+       "score": "3-2 (9:11,11:8,10:12,11:8,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arina Slautina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-02-04T14:40:00Z",
+       "score": "0-3 (5:11,9:11,14:16,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        },
+        {
+         "name": "Hardee Patel",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-02-04T08:10:00Z",
+       "score": "3-0 (11:3,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        },
+        {
+         "name": "Yoo Yerin",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-04T07:35:00Z",
+       "score": "3-0 (11:4,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        },
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T09:10:00Z",
+       "score": "0-3 (13:15,5:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuka Kaneyoshi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Ece Harac",
+         "nat": "TUR",
+         "seed": 8
+        }
+       ],
+       "when": "2026-02-05T09:45:00Z",
+       "score": "3-0 (11:3,11:2,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Yui Sakuma",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-02-05T09:45:00Z",
+       "score": "1-3 (16:14,4:11,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        },
+        {
+         "name": "Elena Zaharia",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-05T09:45:00Z",
+       "score": "2-3 (8:11,11:5,10:12,11:3,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T09:10:00Z",
+       "score": "0-3 (6:11,5:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Veronika Matiunina",
+         "nat": "UKR"
+        },
+        {
+         "name": "Valeriia Kotsiur",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T09:10:00Z",
+       "score": "3-1 (11:9,11:8,8:11,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        }
+       ],
+       "when": "2026-02-05T09:45:00Z",
+       "score": "0-3 (3:11,6:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        },
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND"
+        }
+       ],
+       "when": "2026-02-05T09:10:00Z",
+       "score": "3-0 (11:3,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Vlada Voronina",
+         "nat": "AIN"
+        },
+        {
+         "name": "Yuka Kaneyoshi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-02-05T14:40:00Z",
+       "score": "1-3 (11:8,5:11,6:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yui Sakuma",
+         "nat": "JPN"
+        },
+        {
+         "name": "Elena Zaharia",
+         "nat": "ROU",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-05T15:15:00Z",
+       "score": "3-0 (11:8,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        },
+        {
+         "name": "Veronika Matiunina",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2026-02-05T14:40:00Z",
+       "score": "3-0 (11:8,11:5,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wong Hoi Tung",
+         "nat": "HKG"
+        },
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-02-05T15:15:00Z",
+       "score": "0-3 (6:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yuka Kaneyoshi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Yui Sakuma",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-02-06T08:10:00Z",
+       "score": "2-3 (11:4,4:11,11:7,9:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Valeriia Shcherbatykh",
+         "nat": "AIN"
+        },
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-02-06T08:45:00Z",
+       "score": "0-3 (4:11,7:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yui Sakuma",
+         "nat": "JPN"
+        },
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-02-06T14:40:00Z",
+       "score": "0-3 (5:11,4:11,10:12,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 1
+        },
+        {
+         "name": "Clement Laine",
+         "nat": "POR"
+        }
+       ],
+       "when": "2026-02-04T15:15:00Z",
+       "score": "1-3 (11:8,8:11,14:16,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Zakharov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Kenan Kahraman",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-04T15:15:00Z",
+       "score": "0-3 (3:11,5:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maksim Grebnev",
+         "nat": "AIN"
+        },
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-04T08:45:00Z",
+       "score": "1-3 (8:11,6:11,11:9,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi",
+         "nat": "ITA"
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-04T08:45:00Z",
+       "score": "2-3 (11:8,5:11,11:8,3:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA",
+         "seed": 3
+        },
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-04T09:20:00Z",
+       "score": "2-3 (11:6,4:11,11:9,9:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Froseth",
+         "nat": "NOR"
+        },
+        {
+         "name": "Martin Andersen",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2026-02-04T08:45:00Z",
+       "score": "3-1 (10:12,11:8,11:4,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-04T09:20:00Z",
+       "score": "2-3 (11:13,13:11,12:10,6:11,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate",
+         "nat": "ROU"
+        },
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 5
+        }
+       ],
+       "when": "2026-02-04T15:50:00Z",
+       "score": "1-3 (10:12,13:11,11:13,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Andrea Puppo",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-02-04T15:15:00Z",
+       "score": "3-2 (11:9,12:10,8:11,3:11,16:14)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Dmitrii Vinogradov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Bakdaulet Akimali",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2026-02-04T15:50:00Z",
+       "score": "3-1 (4:11,11:4,11:6,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhenlong Liu",
+         "nat": "AUT"
+        },
+        {
+         "name": "Amirmahdi Keshavarzi",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2026-02-04T09:20:00Z",
+       "score": "0-3 (5:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Irisbek Artukmetov",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-02-04T08:45:00Z",
+       "score": "1-3 (5:11,11:8,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR",
+         "seed": 6
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-02-04T15:15:00Z",
+       "score": "2-3 (7:11,11:6,13:11,3:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Dominykas Samuolis",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2026-02-04T15:50:00Z",
+       "score": "3-2 (11:5,5:11,5:11,11:5,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        },
+        {
+         "name": "Vladislav Makarov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-04T15:50:00Z",
+       "score": "3-0 (11:7,11:7,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gorkem Ocal",
+         "nat": "TUR"
+        },
+        {
+         "name": "Martin Allegro",
+         "nat": "BEL",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-04T09:20:00Z",
+       "score": "3-1 (11:8,6:11,11:9,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Clement Laine",
+         "nat": "POR"
+        },
+        {
+         "name": "Kenan Kahraman",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-05T10:20:00Z",
+       "score": "3-1 (9:11,11:5,11:9,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-05T10:55:00Z",
+       "score": "3-2 (11:5,11:6,9:11,6:11,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Martin Froseth",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2026-02-05T10:55:00Z",
+       "score": "3-0 (11:3,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        },
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU",
+         "seed": 5
+        }
+       ],
+       "when": "2026-02-05T10:20:00Z",
+       "score": "3-1 (7:11,11:8,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Dmitrii Vinogradov",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T10:55:00Z",
+       "score": "1-3 (11:7,5:11,11:13,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Amirmahdi Keshavarzi",
+         "nat": "IRI"
+        },
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-02-05T10:20:00Z",
+       "score": "1-3 (11:7,2:11,5:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-02-05T10:20:00Z",
+       "score": "0-3 (6:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Walker",
+         "nat": "ENG"
+        },
+        {
+         "name": "Gorkem Ocal",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-05T10:55:00Z",
+       "score": "2-3 (10:12,11:6,12:14,11:8,9:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Clement Laine",
+         "nat": "POR"
+        },
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-05T15:50:00Z",
+       "score": "1-3 (4:11,11:8,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T16:25:00Z",
+       "score": "0-3 (7:11,10:12,17:19,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dmitrii Vinogradov",
+         "nat": "AIN"
+        },
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE",
+         "seed": 4
+        }
+       ],
+       "when": "2026-02-05T16:25:00Z",
+       "score": "1-3 (11:2,8:11,3:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Gorkem Ocal",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-02-05T15:50:00Z",
+       "score": "3-0 (11:5,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-06T07:00:00Z",
+       "score": "1-3 (11:4,2:11,14:16,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-02-06T07:35:00Z",
+       "score": "2-3 (5:11,10:12,12:10,11:5,12:14)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko",
+         "nat": "AIN"
+        },
+        {
+         "name": "Darius Movileanu",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-02-06T15:15:00Z",
+       "score": "3-2 (5:11,11:6,11:7,11:13,11:7)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini / Josephina Neumann",
+         "nat": "ITA/GER",
+         "seed": 8
+        },
+        {
+         "name": "Katarzyna Wegrzyn / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2026-02-04T09:55:00Z",
+       "score": "3-2 (11:6,5:11,11:9,5:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha / Sayali Wani",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Maria Panfilova / Arina Slautina",
+         "nat": "AIN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Valeriia Kotsiur / Valeriia Shcherbatykh",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-04T09:55:00Z",
+       "score": "3-1 (5:11,12:10,11:7,12:10,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Park Gahyeon / Yoo Yerin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Veronika Matiunina / Anastasiya Dymytrenko",
+         "nat": "UKR"
+        },
+        {
+         "name": "Elena Zaharia / Ioana Singeorzan",
+         "nat": "ROU",
+         "seed": 6
+        }
+       ],
+       "when": "2026-02-04T09:55:00Z",
+       "score": "1-3 (13:11,5:11,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Ece Harac / Ozge Yilmaz",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Gaia Monfardini / Josephina Neumann",
+         "nat": "ITA/GER",
+         "seed": 8
+        }
+       ],
+       "when": "2026-02-05T08:00:00Z",
+       "score": "3-0 (11:8,12:10,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Taneesha Kotecha / Sayali Wani",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Maria Panfilova / Arina Slautina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T08:00:00Z",
+       "score": "0-3 (6:11,3:11,3:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Park Gahyeon / Yoo Yerin",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-02-05T08:00:00Z",
+       "score": "3-1 (11:5,7:11,11:5,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elena Zaharia / Ioana Singeorzan",
+         "nat": "ROU",
+         "seed": 6
+        },
+        {
+         "name": "Ece Harac / Ozge Yilmaz",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-05T08:00:00Z",
+       "score": "3-2 (11:7,7:11,12:10,7:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Maria Panfilova / Arina Slautina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T13:30:00Z",
+       "score": "3-0 (11:6,11:5,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 7
+        },
+        {
+         "name": "Elena Zaharia / Ioana Singeorzan",
+         "nat": "ROU",
+         "seed": 6
+        }
+       ],
+       "when": "2026-02-05T13:30:00Z",
+       "score": "3-1 (11:8,11:3,6:11,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ng Wing Lam / Wong Hoi Tung",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Syndrela Das / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-06T13:30:00Z",
+       "score": "1-3 (11:3,9:11,9:11,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Martin Allegro / Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Makarov / Nikita Artemenko",
+         "nat": "AIN"
+        },
+        {
+         "name": "Mohammed Taher / Zhiar Mohammed",
+         "nat": "IRQ"
+        }
+       ],
+       "when": "2026-02-04T13:30:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hon Ming / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Vladislav Zakharov / Martin Froseth",
+         "nat": "KAZ/NOR",
+         "seed": 7
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Gorkem Ocal / Kenan Kahraman",
+         "nat": "TUR",
+         "seed": 5
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Darius Movileanu / Andrei Istrate",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Dominykas Samuolis / Martin Andersen",
+         "nat": "DEN",
+         "seed": 6
+        },
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-02-04T13:30:00Z",
+       "score": "0-3 (4:11,9:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Ibrahim Gunduz / Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Martin Allegro / Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 1
+        },
+        {
+         "name": "Vladislav Makarov / Nikita Artemenko",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T08:35:00Z",
+       "score": "3-2 (11:9,11:7,5:11,11:13,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hon Ming / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Vladislav Zakharov / Martin Froseth",
+         "nat": "KAZ/NOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-02-05T08:35:00Z",
+       "score": "3-2 (12:14,9:11,11:5,11:5,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gorkem Ocal / Kenan Kahraman",
+         "nat": "TUR",
+         "seed": 5
+        },
+        {
+         "name": "Darius Movileanu / Andrei Istrate",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2026-02-05T08:35:00Z",
+       "score": "2-3 (11:9,2:11,8:11,11:7,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Ibrahim Gunduz / Abdullah Yigenler",
+         "nat": "TUR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-05T08:35:00Z",
+       "score": "3-2 (8:11,11:9,6:11,11:3,11:6)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Martin Allegro / Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 1
+        },
+        {
+         "name": "Li Hon Ming / Yiu Kwan To",
+         "nat": "HKG",
+         "seed": 3
+        }
+       ],
+       "when": "2026-02-05T14:05:00Z",
+       "score": "3-0 (14:12,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Darius Movileanu / Andrei Istrate",
+         "nat": "ROU",
+         "seed": 4
+        },
+        {
+         "name": "Evgeny Tikhonov / Dmitrii Vinogradov",
+         "nat": "AIN",
+         "seed": 8
+        }
+       ],
+       "when": "2026-02-05T14:05:00Z",
+       "score": "3-2 (4:11,11:5,8:11,11:9,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Martin Allegro / Adrien Rassenfosse",
+         "nat": "BEL",
+         "seed": 1
+        },
+        {
+         "name": "Darius Movileanu / Andrei Istrate",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2026-02-06T14:05:00Z",
+       "score": "3-1 (11:8,4:11,11:8,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Evgeny Tikhonov / Maria Panfilova",
+         "nat": "AIN",
+         "seed": 7
+        },
+        {
+         "name": "Dmitrii Vinogradov / Arina Slautina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-04T07:00:00Z",
+       "score": "2-3 (11:8,11:9,8:11,10:12,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Dominykas Samuolis / Mille Stoffregen",
+         "nat": "DEN"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andrei Istrate / Ioana Singeorzan",
+         "nat": "ROU"
+        },
+        {
+         "name": "Clement Laine / Gaia Monfardini",
+         "nat": "POR/ITA",
+         "seed": 6
+        }
+       ],
+       "when": "2026-02-04T07:00:00Z",
+       "score": "2-3 (11:7,11:9,6:11,10:12,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Li Hon Ming / Tin-Tin Ho",
+         "nat": "HKG/ENG",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Makarov / Vlada Voronina",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Vladislav Zakharov / Zhanerke Koshkumbayeva",
+         "nat": "KAZ",
+         "seed": 5
+        }
+       ],
+       "when": "2026-02-04T07:00:00Z",
+       "score": "3-0 (11:7,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Darius Movileanu / Elena Zaharia",
+         "nat": "ROU",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Dmitrii Vinogradov / Arina Slautina",
+         "nat": "AIN"
+        }
+       ],
+       "when": "2026-02-05T07:00:00Z",
+       "score": "3-0 (11:3,12:10,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 3
+        },
+        {
+         "name": "Dominykas Samuolis / Mille Stoffregen",
+         "nat": "DEN"
+        }
+       ],
+       "when": "2026-02-05T07:00:00Z",
+       "score": "3-1 (11:7,7:11,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Clement Laine / Gaia Monfardini",
+         "nat": "POR/ITA",
+         "seed": 6
+        },
+        {
+         "name": "Li Hon Ming / Tin-Tin Ho",
+         "nat": "HKG/ENG",
+         "seed": 4
+        }
+       ],
+       "when": "2026-02-05T07:00:00Z",
+       "score": "3-2 (6:11,11:8,5:11,11:7,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vladislav Makarov / Vlada Voronina",
+         "nat": "AIN",
+         "seed": 8
+        },
+        {
+         "name": "Darius Movileanu / Elena Zaharia",
+         "nat": "ROU",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-05T07:00:00Z",
+       "score": "0-3 (7:11,11:13,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Yiu Kwan To / Ng Wing Lam",
+         "nat": "HKG",
+         "seed": 1
+        },
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 3
+        }
+       ],
+       "when": "2026-02-05T17:00:00Z",
+       "score": "2-3 (11:8,11:8,9:11,6:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Clement Laine / Gaia Monfardini",
+         "nat": "POR/ITA",
+         "seed": 6
+        },
+        {
+         "name": "Darius Movileanu / Elena Zaharia",
+         "nat": "ROU",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-05T17:00:00Z",
+       "score": "2-3 (11:9,9:11,11:13,11:9,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 3
+        },
+        {
+         "name": "Darius Movileanu / Elena Zaharia",
+         "nat": "ROU",
+         "seed": 2
+        }
+       ],
+       "when": "2026-02-06T09:20:00Z",
+       "score": "1-3 (11:9,8:11,6:11,5:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

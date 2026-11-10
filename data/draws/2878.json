@@ -1,0 +1,1835 @@
+{
+ "event": "WTT Feeder Corpus Christi",
+ "wtt_event_id": "2878",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=2878&selectedTab=Draws",
+ "updated": "2026-11-10T15:10:00Z",
+ "utc_offset": -6.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Arantxa Cossio Aceves",
+         "nat": "MEX"
+        }
+       ],
+       "when": "2024-01-16T19:20:00Z",
+       "score": "3-1 (7:11,11:8,11:3,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yadira Silva",
+         "nat": "MEX"
+        },
+        {
+         "name": "Ivy Liao",
+         "nat": "CAN"
+        }
+       ],
+       "when": "2024-01-16T19:55:00Z",
+       "score": "2-3 (3:11,11:6,11:6,1:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Brianna Burgos",
+         "nat": "PUR"
+        },
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-01-16T19:20:00Z",
+       "score": "1-3 (11:9,2:11,7:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yao Tang",
+         "nat": "USA"
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2024-01-16T18:45:00Z",
+       "score": "0-3 (2:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR",
+         "seed": 4
+        },
+        {
+         "name": "Amber Liu",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T18:10:00Z",
+       "score": "3-0 (11:2,11:4,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiffany Ke",
+         "nat": "USA"
+        },
+        {
+         "name": "Jiangshan Guo",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T19:20:00Z",
+       "score": "0-3 (6:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhen Deng",
+         "nat": "USA"
+        },
+        {
+         "name": "Wantong Liu",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T18:45:00Z",
+       "score": "3-2 (8:11,10:12,11:7,11:8,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tessy Gonderinger",
+         "nat": "LUX"
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-16T18:10:00Z",
+       "score": "0-3 (4:11,4:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Jiaqi Lin",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T19:20:00Z",
+       "score": "3-0 (15:13,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yishiuan Lin",
+         "nat": "USA"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2024-01-16T18:45:00Z",
+       "score": "1-3 (11:7,4:11,6:11,13:15,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Solomiya Brateyko",
+         "nat": "UKR"
+        },
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-16T18:45:00Z",
+       "score": "2-3 (8:11,11:5,6:11,13:11,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Melanie Diaz",
+         "nat": "PUR"
+        },
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-16T18:10:00Z",
+       "score": "1-3 (6:11,11:8,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Esther Oribamise",
+         "nat": "NGR"
+        }
+       ],
+       "when": "2024-01-16T19:55:00Z",
+       "score": "3-0 (11:2,11:4,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mandy Yu",
+         "nat": "USA"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2024-01-16T18:10:00Z",
+       "score": "0-3 (6:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shary Munoz",
+         "nat": "DOM"
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-16T19:55:00Z",
+       "score": "0-3 (6:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhiying Zeng",
+         "nat": "CHI"
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-16T19:55:00Z",
+       "score": "0-3 (7:11,6:11,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Ivy Liao",
+         "nat": "CAN"
+        }
+       ],
+       "when": "2024-01-17T17:10:00Z",
+       "score": "3-0 (11:6,11:7,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Stephanie Loeuillette",
+         "nat": "FRA"
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2024-01-17T17:45:00Z",
+       "score": "1-3 (8:11,8:11,11:8,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Margaryta Pesotska",
+         "nat": "UKR",
+         "seed": 4
+        },
+        {
+         "name": "Jiangshan Guo",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T17:45:00Z",
+       "score": "2-3 (11:9,5:11,11:3,8:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhen Deng",
+         "nat": "USA"
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-17T17:45:00Z",
+       "score": "2-3 (6:11,11:8,10:12,13:11,3:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX"
+        }
+       ],
+       "when": "2024-01-17T17:10:00Z",
+       "score": "3-2 (4:11,11:7,11:9,10:12,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli",
+         "nat": "ITA"
+        },
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-17T17:45:00Z",
+       "score": "0-3 (4:11,9:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2024-01-17T17:10:00Z",
+       "score": "3-1 (9:11,14:12,12:10,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T17:10:00Z",
+       "score": "1-3 (11:6,7:11,5:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Amy Wang",
+         "nat": "USA",
+         "seed": 1
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 5
+        }
+       ],
+       "when": "2024-01-18T00:20:00Z",
+       "score": "2-3 (9:11,11:9,1:11,11:6,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jiangshan Guo",
+         "nat": "USA"
+        },
+        {
+         "name": "Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-17T23:45:00Z",
+       "score": "3-2 (7:11,11:5,2:11,11:7,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-17T23:45:00Z",
+       "score": "2-3 (11:7,8:11,5:11,11:6,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Yuan Wan",
+         "nat": "GER",
+         "seed": 6
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-18T00:20:00Z",
+       "score": "2-3 (7:11,11:7,10:12,12:10,10:12)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Jiangshan Guo",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-18T16:00:00Z",
+       "score": "3-2 (9:11,11:5,11:6,10:12,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mo Zhang",
+         "nat": "CAN",
+         "seed": 3
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-18T16:30:00Z",
+       "score": "2-3 (11:7,9:11,11:6,4:11,4:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-19T00:00:00Z",
+       "score": "3-0 (11:6,18:16,11:5,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS",
+         "seed": 1
+        },
+        {
+         "name": "Carlo Rossi",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-17T00:10:00Z",
+       "score": "2-3 (5:11,11:8,11:9,9:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-17T01:20:00Z",
+       "score": "3-0 (11:7,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Horacio Cifuentes",
+         "nat": "ARG"
+        },
+        {
+         "name": "Santiago Lorenzo",
+         "nat": "ARG"
+        }
+       ],
+       "when": "2024-01-17T01:55:00Z",
+       "score": "3-2 (9:11,7:11,11:7,11:2,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        },
+        {
+         "name": "Marcos Madrid",
+         "nat": "MEX",
+         "seed": 6
+        }
+       ],
+       "when": "2024-01-17T00:45:00Z",
+       "score": "3-2 (4:11,7:11,11:2,11:4,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 4
+        },
+        {
+         "name": "Tyrese Knight",
+         "nat": "BAR"
+        }
+       ],
+       "when": "2024-01-17T00:45:00Z",
+       "score": "3-0 (11:5,11:2,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Daniel Gonzalez",
+         "nat": "PUR"
+        },
+        {
+         "name": "Jinbao Ma",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T00:45:00Z",
+       "score": "0-3 (7:11,6:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jishan Liang",
+         "nat": "USA"
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2024-01-17T01:20:00Z",
+       "score": "1-3 (13:11,12:14,12:14,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        },
+        {
+         "name": "Brian Afanador",
+         "nat": "PUR",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-17T01:20:00Z",
+       "score": "3-0 (11:4,14:12,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Mishel Levinski",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T01:55:00Z",
+       "score": "3-0 (11:5,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Deni Kozul",
+         "nat": "SLO"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2024-01-17T00:10:00Z",
+       "score": "1-3 (12:10,8:11,5:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER"
+        },
+        {
+         "name": "Angel Naranjo",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2024-01-17T01:55:00Z",
+       "score": "3-0 (11:7,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-17T01:20:00Z",
+       "score": "3-0 (11:5,11:1,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Vitor Ishiy",
+         "nat": "BRA"
+        }
+       ],
+       "when": "2024-01-17T00:10:00Z",
+       "score": "3-2 (11:8,8:11,12:10,8:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikhil Kumar",
+         "nat": "USA"
+        },
+        {
+         "name": "Sid Naresh",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T00:10:00Z",
+       "score": "3-1 (11:9,11:6,8:11,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiangjing Zhang",
+         "nat": "USA"
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-01-17T00:45:00Z",
+       "score": "3-1 (9:11,11:7,11:9,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kai Zhang",
+         "nat": "USA"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T01:55:00Z",
+       "score": "1-3 (3:11,9:11,14:12,4:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi",
+         "nat": "ITA"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-17T18:55:00Z",
+       "score": "0-3 (4:11,4:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Horacio Cifuentes",
+         "nat": "ARG"
+        },
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-01-17T18:20:00Z",
+       "score": "0-3 (5:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK",
+         "seed": 4
+        },
+        {
+         "name": "Jinbao Ma",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T18:20:00Z",
+       "score": "0-3 (5:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-17T18:20:00Z",
+       "score": "3-0 (11:9,14:12,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2024-01-17T18:20:00Z",
+       "score": "3-0 (11:8,11:7,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER"
+        },
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2024-01-17T18:55:00Z",
+       "score": "3-0 (11:9,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Nikhil Kumar",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T18:55:00Z",
+       "score": "3-1 (9:11,11:9,11:4,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Xiangjing Zhang",
+         "nat": "USA"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T18:55:00Z",
+       "score": "0-3 (10:12,6:11,6:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        },
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        }
+       ],
+       "when": "2024-01-18T00:55:00Z",
+       "score": "1-3 (6:11,8:11,11:7,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jinbao Ma",
+         "nat": "USA"
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2024-01-18T01:30:00Z",
+       "score": "2-3 (10:12,6:11,11:9,13:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER"
+        }
+       ],
+       "when": "2024-01-18T00:55:00Z",
+       "score": "3-2 (4:11,11:6,15:13,9:11,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-18T01:30:00Z",
+       "score": "1-3 (10:12,11:6,7:11,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Manav Vikash Thakkar",
+         "nat": "IND"
+        },
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        }
+       ],
+       "when": "2024-01-18T17:30:00Z",
+       "score": "1-3 (11:8,8:11,11:13,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER",
+         "seed": 5
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-18T17:00:00Z",
+       "score": "1-3 (9:11,11:8,5:11,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-19T00:30:00Z",
+       "score": "2-3 (11:5,11:13,8:11,11:5,8:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ivy Liao / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yishiuan Lin / Amber Liu",
+         "nat": "USA",
+         "seed": 8
+        },
+        {
+         "name": "Wantong Liu / Jiangshan Guo",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T23:00:00Z",
+       "score": "2-3 (6:11,11:9,4:11,17:15,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Clio Barcenas / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esther Oribamise / Ajoke Ojomu",
+         "nat": "NGR",
+         "seed": 6
+        },
+        {
+         "name": "Yao Tang / Tiffany Ke",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T23:00:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Mandy Yu / Carmen Yu",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T23:35:00Z",
+       "score": "3-0 (11:0,11:0,11:0,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Camila Arguelles / Sibel Altinkaya",
+         "nat": "ARG/TUR",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Fabiola Diaz / Melanie Diaz",
+         "nat": "PUR",
+         "seed": 7
+        },
+        {
+         "name": "Zhen Deng / Jiaqi Lin",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T23:35:00Z",
+       "score": "0-3 (4:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Amy Wang / Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ivy Liao / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Wantong Liu / Jiangshan Guo",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T16:00:00Z",
+       "score": "3-2 (9:11,11:6,6:11,11:8,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Clio Barcenas / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 3
+        },
+        {
+         "name": "Esther Oribamise / Ajoke Ojomu",
+         "nat": "NGR",
+         "seed": 6
+        }
+       ],
+       "when": "2024-01-17T16:00:00Z",
+       "score": "3-1 (9:11,11:9,11:7,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Debora Vivarelli / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Camila Arguelles / Sibel Altinkaya",
+         "nat": "ARG/TUR",
+         "seed": 4
+        }
+       ],
+       "when": "2024-01-17T16:00:00Z",
+       "score": "1-3 (10:12,9:11,11:9,1:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhen Deng / Jiaqi Lin",
+         "nat": "USA"
+        },
+        {
+         "name": "Amy Wang / Lily Zhang",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T16:00:00Z",
+       "score": "3-1 (8:11,11:3,11:9,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Ivy Liao / Mo Zhang",
+         "nat": "CAN",
+         "seed": 1
+        },
+        {
+         "name": "Clio Barcenas / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-17T22:35:00Z",
+       "score": "1-3 (7:11,11:9,8:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Camila Arguelles / Sibel Altinkaya",
+         "nat": "ARG/TUR",
+         "seed": 4
+        },
+        {
+         "name": "Zhen Deng / Jiaqi Lin",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T22:35:00Z",
+       "score": "1-3 (9:11,11:7,8:11,10:12,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Clio Barcenas / Arantxa Cossio Aceves",
+         "nat": "MEX",
+         "seed": 3
+        },
+        {
+         "name": "Zhen Deng / Jiaqi Lin",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-18T23:00:00Z",
+       "score": "2-3 (11:6,7:11,14:12,8:11,5:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen / Nandan Naresh",
+         "nat": "AUS/USA",
+         "seed": 5
+        },
+        {
+         "name": "Xiangjing Zhang / Mishel Levinski",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T21:05:00Z",
+       "score": "3-2 (11:6,7:11,5:11,13:11,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rogelio Castro / Marcos Madrid",
+         "nat": "MEX",
+         "seed": 4
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Sid Naresh / Kai Zhang",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T20:30:00Z",
+       "score": "2-3 (14:12,8:11,11:13,11:7,6:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Deni Kozul / Peter Hribar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Ludovic Gombos / Senura Silva",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T20:30:00Z",
+       "score": "3-0 (11:7,11:4,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Ricardo Walther",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Daniel Gonzalez / Angel Naranjo",
+         "nat": "PUR",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-16T21:05:00Z",
+       "score": "3-1 (10:12,11:6,11:5,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nikhil Kumar / Edward Ly",
+         "nat": "USA/CAN"
+        },
+        {
+         "name": "Hwan Bae / Aditya Godhwani",
+         "nat": "AUS/USA",
+         "seed": 8
+        }
+       ],
+       "when": "2024-01-16T20:30:00Z",
+       "score": "3-1 (11:6,12:10,10:12,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Jishan Liang / Jinbao Ma",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Aditya Sareen / Nandan Naresh",
+         "nat": "AUS/USA",
+         "seed": 5
+        }
+       ],
+       "when": "2024-01-17T16:35:00Z",
+       "score": "3-2 (11:13,11:13,11:3,11:8,11:8)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rogelio Castro / Marcos Madrid",
+         "nat": "MEX",
+         "seed": 4
+        },
+        {
+         "name": "Sid Naresh / Kai Zhang",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T16:35:00Z",
+       "score": "1-3 (11:7,6:11,8:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Deni Kozul / Peter Hribar",
+         "nat": "SLO"
+        },
+        {
+         "name": "Cedric Meissner / Ricardo Walther",
+         "nat": "GER",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-17T16:35:00Z",
+       "score": "2-3 (7:11,11:7,11:9,15:17,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nikhil Kumar / Edward Ly",
+         "nat": "USA/CAN"
+        },
+        {
+         "name": "Jishan Liang / Jinbao Ma",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T16:35:00Z",
+       "score": "0-3 (8:11,9:11,8:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Sid Naresh / Kai Zhang",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-17T23:10:00Z",
+       "score": "3-0 (11:9,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Ricardo Walther",
+         "nat": "GER",
+         "seed": 7
+        },
+        {
+         "name": "Jishan Liang / Jinbao Ma",
+         "nat": "USA",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T23:10:00Z",
+       "score": "3-1 (11:5,5:11,11:4,12:10,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Gustavo Gomez / Nicolas Burgos",
+         "nat": "CHI",
+         "seed": 1
+        },
+        {
+         "name": "Cedric Meissner / Ricardo Walther",
+         "nat": "GER",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-18T23:30:00Z",
+       "score": "3-2 (7:11,13:11,12:10,10:12,11:9)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Yuan Wan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Ivy Liao / Edward Ly",
+         "nat": "CAN"
+        }
+       ],
+       "when": "2024-01-16T17:35:00Z",
+       "score": "3-2 (11:2,4:11,9:11,11:6,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jiangshan Guo / Di Yu",
+         "nat": "USA"
+        },
+        {
+         "name": "Brianna Burgos / Angel Naranjo",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2024-01-16T17:35:00Z",
+       "score": "0-3 (8:11,10:12,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jishan Liang / Lily Zhang",
+         "nat": "USA",
+         "seed": 4
+        },
+        {
+         "name": "Zhen Deng / Kai Zhang",
+         "nat": "USA"
+        }
+       ],
+       "when": "2024-01-16T17:35:00Z",
+       "score": "3-0 (11:5,11:7,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Giulia Takahashi / Nandan Naresh",
+         "nat": "BRA/USA",
+         "seed": 8
+        }
+       ],
+       "when": "2024-01-16T17:00:00Z",
+       "score": "3-2 (11:9,8:11,11:4,9:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yao Tang / Mishel Levinski",
+         "nat": "USA"
+        },
+        {
+         "name": "Nikhil Kumar / Amy Wang",
+         "nat": "USA",
+         "seed": 6
+        }
+       ],
+       "when": "2024-01-16T17:00:00Z",
+       "score": "0-3 (4:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Clio Barcenas / Juan Jesus Gomez",
+         "nat": "MEX"
+        },
+        {
+         "name": "Yadira Silva / Marcos Madrid",
+         "nat": "MEX",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-16T17:00:00Z",
+       "score": "0-3 (6:11,11:13,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Arantxa Cossio Aceves / Rogelio Castro",
+         "nat": "MEX",
+         "seed": 7
+        },
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        }
+       ],
+       "when": "2024-01-16T17:35:00Z",
+       "score": "3-1 (11:9,11:4,10:12,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sid Naresh / Jiaqi Lin",
+         "nat": "USA"
+        },
+        {
+         "name": "Lubomir Pistej / Solomiya Brateyko",
+         "nat": "SVK/UKR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-16T17:00:00Z",
+       "score": "1-3 (3:11,5:11,11:9,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Yuan Wan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Brianna Burgos / Angel Naranjo",
+         "nat": "PUR"
+        }
+       ],
+       "when": "2024-01-17T02:30:00Z",
+       "score": "3-1 (9:11,11:4,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jishan Liang / Lily Zhang",
+         "nat": "USA",
+         "seed": 4
+        },
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-17T02:30:00Z",
+       "score": "1-3 (9:11,11:2,13:15,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nikhil Kumar / Amy Wang",
+         "nat": "USA",
+         "seed": 6
+        },
+        {
+         "name": "Yadira Silva / Marcos Madrid",
+         "nat": "MEX",
+         "seed": 3
+        }
+       ],
+       "when": "2024-01-17T02:30:00Z",
+       "score": "3-0 (11:5,11:6,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Arantxa Cossio Aceves / Rogelio Castro",
+         "nat": "MEX",
+         "seed": 7
+        },
+        {
+         "name": "Lubomir Pistej / Solomiya Brateyko",
+         "nat": "SVK/UKR",
+         "seed": 2
+        }
+       ],
+       "when": "2024-01-17T02:30:00Z",
+       "score": "3-0 (11:4,14:12,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner / Yuan Wan",
+         "nat": "GER",
+         "seed": 1
+        },
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2024-01-17T22:00:00Z",
+       "score": "1-3 (6:11,11:6,6:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nikhil Kumar / Amy Wang",
+         "nat": "USA",
+         "seed": 6
+        },
+        {
+         "name": "Arantxa Cossio Aceves / Rogelio Castro",
+         "nat": "MEX",
+         "seed": 7
+        }
+       ],
+       "when": "2024-01-17T22:00:00Z",
+       "score": "3-1 (11:9,6:11,11:6,11:6,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA"
+        },
+        {
+         "name": "Nikhil Kumar / Amy Wang",
+         "nat": "USA",
+         "seed": 6
+        }
+       ],
+       "when": "2024-01-18T18:00:00Z",
+       "score": "3-0 (11:9,11:9,11:7,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

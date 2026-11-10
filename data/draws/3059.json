@@ -1,0 +1,2755 @@
+{
+ "event": "WTT Feeder Parma",
+ "wtt_event_id": "3059",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3059&selectedTab=Draws",
+ "updated": "2026-11-10T15:11:00Z",
+ "utc_offset": 1.0,
+ "events": {
+  "women": {
+   "name": "Women's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        },
+        {
+         "name": "Shuohan Men",
+         "nat": "NED"
+        }
+       ],
+       "when": "2025-12-01T09:00:00Z",
+       "score": "3-0 (11:9,11:6,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        },
+        {
+         "name": "Anastasiya Dymytrenko",
+         "nat": "UKR"
+        }
+       ],
+       "when": "2025-12-01T09:00:00Z",
+       "score": "2-3 (11:4,7:11,11:4,4:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jana Riera",
+         "nat": "ESP"
+        },
+        {
+         "name": "Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-01T09:00:00Z",
+       "score": "0-3 (2:11,6:11,2:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        },
+        {
+         "name": "Tijana Jokic",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2025-12-01T10:00:00Z",
+       "score": "3-1 (11:7,7:11,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T09:30:00Z",
+       "score": "1-3 (11:2,10:12,9:11,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Krittwika Roy",
+         "nat": "IND"
+        },
+        {
+         "name": "Choi Seoyeon",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T10:00:00Z",
+       "score": "1-3 (6:11,8:11,11:6,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shima Safaei",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2025-12-01T09:30:00Z",
+       "score": "3-0 (11:9,11:8,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zhen Deng",
+         "nat": "USA"
+        },
+        {
+         "name": "Julia Leal",
+         "nat": "POR"
+        }
+       ],
+       "when": "2025-12-01T09:30:00Z",
+       "score": "3-2 (11:2,4:11,9:11,11:9,11:1)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 8
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP",
+         "seed": 5
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Aminat Fashola",
+         "nat": "NGR"
+        },
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T10:00:00Z",
+       "score": "0-3 (3:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Ana Tofant",
+         "nat": "SLO"
+        }
+       ],
+       "when": "2025-12-01T09:30:00Z",
+       "score": "3-1 (15:13,13:15,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Elvira Rad",
+         "nat": "ESP"
+        },
+        {
+         "name": "Manon Loth",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T09:00:00Z",
+       "score": "3-0 (11:8,11:8,11:9,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lilou Massart",
+         "nat": "BEL"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T10:00:00Z",
+       "score": "0-3 (9:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miriam Carnovale",
+         "nat": "ITA"
+        },
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T10:30:00Z",
+       "score": "0-3 (8:11,10:12,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-01T10:30:00Z",
+       "score": "1-3 (5:11,11:9,3:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        },
+        {
+         "name": "",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Francesca Seu",
+         "nat": "ITA"
+        },
+        {
+         "name": "Maria Picu",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T10:30:00Z",
+       "score": "3-1 (11:7,8:11,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        },
+        {
+         "name": "Lee Seojin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T10:30:00Z",
+       "score": "3-0 (11:7,12:10,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "",
+         "nat": "BYE"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Isa Cok",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-12-01T16:35:00Z",
+       "score": "3-0 (11:8,11:7,15:13,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anastasiya Dymytrenko",
+         "nat": "UKR"
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2025-12-01T16:00:00Z",
+       "score": "0-3 (7:11,6:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Reina Aso",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-01T16:00:00Z",
+       "score": "3-1 (11:8,11:8,4:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-01T17:10:00Z",
+       "score": "3-2 (14:16,15:13,3:11,11:4,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T16:00:00Z",
+       "score": "2-3 (11:6,9:11,2:11,11:5,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Seoyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-12-01T16:35:00Z",
+       "score": "1-3 (9:11,11:9,6:11,3:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T16:35:00Z",
+       "score": "2-3 (11:9,8:11,11:3,8:11,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Zhen Deng",
+         "nat": "USA"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-01T16:35:00Z",
+       "score": "0-3 (7:11,7:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP",
+         "seed": 5
+        },
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T17:10:00Z",
+       "score": "1-3 (9:11,5:11,11:9,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T17:10:00Z",
+       "score": "0-3 (8:11,7:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Ece Harac",
+         "nat": "TUR"
+        },
+        {
+         "name": "Elvira Rad",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-12-01T16:00:00Z",
+       "score": "2-3 (8:11,11:8,9:11,11:7,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sibel Altinkaya",
+         "nat": "TUR",
+         "seed": 4
+        }
+       ],
+       "when": "2025-12-01T17:10:00Z",
+       "score": "3-0 (11:8,12:10,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Nicole Arlia",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T17:45:00Z",
+       "score": "3-1 (11:9,11:4,8:11,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T17:45:00Z",
+       "score": "2-3 (11:5,8:11,6:11,11:5,7:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Francesca Seu",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T17:45:00Z",
+       "score": "3-0 (11:9,11:5,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        },
+        {
+         "name": "Natalia Bajor",
+         "nat": "POL",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-01T17:45:00Z",
+       "score": "3-0 (11:5,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Sabina Surjan",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2025-12-02T11:10:00Z",
+       "score": "3-0 (11:9,11:7,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        }
+       ],
+       "when": "2025-12-02T11:10:00Z",
+       "score": "2-3 (9:11,11:8,10:12,11:8,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-12-02T11:10:00Z",
+       "score": "3-1 (11:5,11:8,8:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Izabela Lupulesku",
+         "nat": "SRB",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-02T11:10:00Z",
+       "score": "3-0 (11:7,11:9,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yoo Siwoo",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T11:45:00Z",
+       "score": "0-3 (5:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elvira Rad",
+         "nat": "ESP"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T11:45:00Z",
+       "score": "1-3 (11:8,9:11,5:11,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T11:45:00Z",
+       "score": "2-3 (11:9,11:4,5:11,4:11,9:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        },
+        {
+         "name": "Tin-Tin Ho",
+         "nat": "ENG"
+        }
+       ],
+       "when": "2025-12-02T11:45:00Z",
+       "score": "3-1 (11:7,4:11,11:7,11:7,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Zuzanna Wielgos",
+         "nat": "POL"
+        }
+       ],
+       "when": "2025-12-02T16:40:00Z",
+       "score": "3-0 (11:6,11:7,11:7,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T17:15:00Z",
+       "score": "0-3 (7:11,5:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T17:15:00Z",
+       "score": "3-1 (4:11,11:2,12:10,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-12-02T16:40:00Z",
+       "score": "3-1 (11:9,15:13,10:12,16:14,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Choi Haeeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-03T09:00:00Z",
+       "score": "3-1 (13:15,11:4,11:6,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR"
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-03T09:35:00Z",
+       "score": "1-3 (3:11,6:11,11:8,9:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-03T16:10:00Z",
+       "score": "2-3 (9:11,9:11,11:6,11:6,4:11)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "Men's singles",
+   "rounds": [
+    {
+     "round": "Last 64",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Seungmin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mateusz Zalewski",
+         "nat": "POL"
+        },
+        {
+         "name": "Amirreza Abbasi",
+         "nat": "MLT"
+        }
+       ],
+       "when": "2025-12-01T13:00:00Z",
+       "score": "1-3 (11:7,7:11,6:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano",
+         "nat": "JPN"
+        },
+        {
+         "name": "John Oyebode",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T11:00:00Z",
+       "score": "3-0 (11:6,11:4,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T11:00:00Z",
+       "score": "1-3 (11:5,6:11,6:11,12:14,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Csaba Andras",
+         "nat": "HUN"
+        },
+        {
+         "name": "Tommaso Giovannetti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T11:00:00Z",
+       "score": "0-3 (6:11,7:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Doyen",
+         "nat": "POR"
+        },
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2025-12-01T11:30:00Z",
+       "score": "2-3 (7:11,11:8,11:6,10:12,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Andreas Levenko",
+         "nat": "AUT"
+        },
+        {
+         "name": "Diego Lillo",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-12-01T11:30:00Z",
+       "score": "0-3 (5:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        },
+        {
+         "name": "Nima Alamian",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2025-12-01T12:30:00Z",
+       "score": "3-1 (11:8,11:6,11:13,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miguel Pantoja",
+         "nat": "ESP"
+        },
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        }
+       ],
+       "when": "2025-12-01T11:30:00Z",
+       "score": "2-3 (7:11,7:11,11:5,11:8,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Allegro",
+         "nat": "BEL",
+         "seed": 7
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Abdullah Yigenler",
+         "nat": "TUR"
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-12-01T11:00:00Z",
+       "score": "1-3 (11:7,7:11,7:11,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kim Daewoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-01T12:00:00Z",
+       "score": "3-1 (11:7,7:11,11:8,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        },
+        {
+         "name": "Nandan Naresh",
+         "nat": "USA"
+        }
+       ],
+       "when": "2025-12-01T12:00:00Z",
+       "score": "3-2 (8:11,11:5,11:6,9:11,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Jo Yokotani",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2025-12-01T12:00:00Z",
+       "score": "3-2 (9:11,11:9,11:8,7:11,11:7)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR",
+         "seed": 5
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Carlo Rossi",
+         "nat": "ITA"
+        },
+        {
+         "name": "Marek Badowski",
+         "nat": "POL"
+        }
+       ],
+       "when": "2025-12-01T12:00:00Z",
+       "score": "0-3 (8:11,4:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kanta Tokuda",
+         "nat": "JPN"
+        },
+        {
+         "name": "Federico Vallino",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T12:30:00Z",
+       "score": "3-1 (11:9,7:11,11:9,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Remi Betelu",
+         "nat": "FRA"
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-12-01T11:30:00Z",
+       "score": "2-3 (10:12,12:10,11:8,10:12,4:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joao Monteiro",
+         "nat": "POR"
+        },
+        {
+         "name": "Andrea Puppo",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T12:30:00Z",
+       "score": "2-3 (11:6,12:10,11:13,8:11,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Bye",
+         "nat": "BYE"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Seungmin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Amirreza Abbasi",
+         "nat": "MLT"
+        }
+       ],
+       "when": "2025-12-01T18:55:00Z",
+       "score": "3-1 (10:12,11:7,11:7,13:11,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG"
+        }
+       ],
+       "when": "2025-12-01T19:30:00Z",
+       "score": "1-3 (11:3,12:14,6:11,10:12,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T18:20:00Z",
+       "score": "3-0 (11:5,11:8,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tommaso Giovannetti",
+         "nat": "ITA"
+        },
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER",
+         "seed": 6
+        }
+       ],
+       "when": "2025-12-01T18:20:00Z",
+       "score": "3-2 (7:11,9:11,15:13,12:10,11:4)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Filip Zeljko",
+         "nat": "CRO"
+        }
+       ],
+       "when": "2025-12-01T18:55:00Z",
+       "score": "3-1 (11:4,11:6,6:11,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Diego Lillo",
+         "nat": "ESP"
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-12-01T20:05:00Z",
+       "score": "1-3 (12:14,8:11,11:5,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Elias Ranefur",
+         "nat": "SWE"
+        },
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-12-01T18:20:00Z",
+       "score": "0-3 (11:13,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Borgar Haug",
+         "nat": "NOR"
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-01T18:55:00Z",
+       "score": "1-3 (7:11,8:11,11:4,16:18,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Allegro",
+         "nat": "BEL",
+         "seed": 7
+        },
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        }
+       ],
+       "when": "2025-12-01T19:30:00Z",
+       "score": "1-3 (10:12,11:5,4:11,6:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2025-12-01T18:20:00Z",
+       "score": "1-3 (12:10,7:11,6:11,4:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Mihai Bobocica",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T19:30:00Z",
+       "score": "3-1 (11:9,11:9,8:11,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Kay Stumper",
+         "nat": "GER",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-01T19:30:00Z",
+       "score": "3-1 (11:8,6:11,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Tiago Apolonia",
+         "nat": "POR",
+         "seed": 5
+        },
+        {
+         "name": "Marek Badowski",
+         "nat": "POL"
+        }
+       ],
+       "when": "2025-12-01T20:05:00Z",
+       "score": "2-3 (8:11,11:7,8:11,11:6,13:15)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kanta Tokuda",
+         "nat": "JPN"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T20:05:00Z",
+       "score": "0-3 (7:11,8:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-12-01T20:05:00Z",
+       "score": "3-2 (11:6,11:9,4:11,4:11,15:13)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Andrea Puppo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-01T18:55:00Z",
+       "score": "1-3 (4:11,6:11,11:6,8:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Seungmin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Mehdi Bouloussa",
+         "nat": "ALG"
+        }
+       ],
+       "when": "2025-12-02T12:55:00Z",
+       "score": "3-1 (7:11,11:4,11:6,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Tommaso Giovannetti",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-02T12:20:00Z",
+       "score": "3-0 (11:8,11:3,13:11,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jules Rolland",
+         "nat": "FRA",
+         "seed": 4
+        },
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-12-02T12:55:00Z",
+       "score": "1-3 (6:11,11:8,10:12,11:13,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-02T12:55:00Z",
+       "score": "2-3 (6:11,11:9,11:9,4:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        },
+        {
+         "name": "Cedric Nuytinck",
+         "nat": "BEL"
+        }
+       ],
+       "when": "2025-12-02T12:20:00Z",
+       "score": "3-1 (13:11,8:11,11:9,11:7,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
+       ],
+       "when": "2025-12-02T13:30:00Z",
+       "score": "3-0 (11:8,11:8,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marek Badowski",
+         "nat": "POL"
+        },
+        {
+         "name": "Niagol Stoyanov",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-02T12:20:00Z",
+       "score": "3-1 (8:11,11:3,11:3,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Snehit Suravajjula",
+         "nat": "IND"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-02T12:20:00Z",
+       "score": "2-3 (11:5,11:13,8:11,11:8,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Seungmin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        }
+       ],
+       "when": "2025-12-02T17:50:00Z",
+       "score": "3-0 (11:8,11:7,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-02T17:50:00Z",
+       "score": "0-3 (7:11,3:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej",
+         "nat": "SVK"
+        },
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-12-02T18:25:00Z",
+       "score": "0-3 (7:11,4:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Marek Badowski",
+         "nat": "POL"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-02T18:25:00Z",
+       "score": "1-3 (7:11,5:11,11:7,7:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Cho Seungmin",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-03T10:10:00Z",
+       "score": "0-3 (8:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Harmeet Desai",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-03T10:45:00Z",
+       "score": "3-1 (10:12,11:9,11:9,11:8,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 8
+        },
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2025-12-03T16:45:00Z",
+       "score": "1-3 (9:11,11:8,8:11,11:13,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "Women's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Izabela Lupulesku / Sabina Surjan",
+         "nat": "SRB",
+         "seed": 1
+        },
+        {
+         "name": "Natalia Bajor / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2025-12-01T14:00:00Z",
+       "score": "1-3 (11:3,8:11,6:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Choi Seoyeon / Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shuohan Men / Zhen Deng",
+         "nat": "NED/USA"
+        }
+       ],
+       "when": "2025-12-01T14:00:00Z",
+       "score": "3-1 (11:7,13:15,11:6,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nicole Arlia / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 4
+        },
+        {
+         "name": "Ainhoa Cristobal / Eugenia Sastre",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-12-01T14:00:00Z",
+       "score": "3-2 (11:6,10:12,9:11,11:5,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Park Gahyeon / Lee Seungeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Choi Haeeun / Yoo Siwoo",
+         "nat": "KOR",
+         "seed": 6
+        }
+       ],
+       "when": "2025-12-01T14:00:00Z",
+       "score": "3-2 (9:11,11:9,11:6,7:11,13:11)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Miriam Carnovale / Sofia Minurri",
+         "nat": "ITA"
+        },
+        {
+         "name": "Kaho Akae / Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-01T14:30:00Z",
+       "score": "0-3 (8:11,5:11,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Manon Loth / Maria Picu",
+         "nat": "ITA"
+        },
+        {
+         "name": "Tatiana Kukulkova / Rachel Moret",
+         "nat": "SVK/SUI",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-01T14:30:00Z",
+       "score": "0-3 (3:11,6:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn / Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Isa Cok / Ana Tofant",
+         "nat": "FRA/SLO",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-01T14:30:00Z",
+       "score": "3-1 (11:4,9:11,11:9,11:5,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lilou Massart / Anastasiya Dymytrenko",
+         "nat": "BEL/UKR"
+        },
+        {
+         "name": "Kim Seongjin / Lee Daeun",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-01T14:30:00Z",
+       "score": "1-3 (3:11,6:11,11:5,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Natalia Bajor / Zuzanna Wielgos",
+         "nat": "POL",
+         "seed": 5
+        },
+        {
+         "name": "Choi Seoyeon / Lee Daeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T10:00:00Z",
+       "score": "2-3 (5:11,9:11,11:3,12:10,10:12)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Nicole Arlia / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 4
+        },
+        {
+         "name": "Park Gahyeon / Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T10:00:00Z",
+       "score": "2-3 (5:11,11:13,11:4,11:7,5:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kaho Akae / Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Tatiana Kukulkova / Rachel Moret",
+         "nat": "SVK/SUI",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-02T10:00:00Z",
+       "score": "3-1 (12:14,11:5,11:7,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Anna Wegrzyn / Katarzyna Wegrzyn",
+         "nat": "POL"
+        },
+        {
+         "name": "Kim Seongjin / Lee Daeun",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-02T10:00:00Z",
+       "score": "2-3 (11:9,7:11,9:11,11:5,7:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Choi Seoyeon / Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Park Gahyeon / Lee Seungeun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T15:30:00Z",
+       "score": "3-1 (11:9,13:11,11:13,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kaho Akae / Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Kim Seongjin / Lee Daeun",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-02T15:30:00Z",
+       "score": "3-1 (14:12,10:12,11:8,11:3,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Choi Seoyeon / Lee Daeun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kaho Akae / Rin Mende",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-03T15:00:00Z",
+       "score": "1-3 (5:11,5:11,11:9,2:11,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "Men's doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Irvin Bertrand / Jules Rolland",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Tommaso Giovannetti / Federico Vallino",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T15:30:00Z",
+       "score": "3-0 (11:3,11:2,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Marcos Freitas / Tiago Apolonia",
+         "nat": "POR",
+         "seed": 6
+        },
+        {
+         "name": "Iskender Kharki / Sagantay Kurmambayev",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2025-12-01T15:00:00Z",
+       "score": "3-0 (11:8,11:2,11:3,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras / Diego Lillo",
+         "nat": "ESP",
+         "seed": 4
+        },
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-12-01T15:00:00Z",
+       "score": "3-1 (11:6,10:12,12:10,11:3,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daewoo / Jang Seongil",
+         "nat": "KOR",
+         "seed": 8
+        },
+        {
+         "name": "Giacomo Allegranza / Daniele Pinto",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2025-12-01T15:00:00Z",
+       "score": "3-1 (11:4,10:12,11:5,11:6,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard / Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Miguel Pantoja / Albert Vilardell",
+         "nat": "ESP"
+        }
+       ],
+       "when": "2025-12-01T15:30:00Z",
+       "score": "3-0 (11:5,11:9,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Matteo Mutti / Andrea Puppo",
+         "nat": "ITA"
+        },
+        {
+         "name": "Nandan Naresh / Snehit Suravajjula",
+         "nat": "USA/IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-01T15:30:00Z",
+       "score": "0-3 (7:11,10:12,6:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Salem Alsuwailem / Abdulaziz BU Shulaybi",
+         "nat": "KSA"
+        },
+        {
+         "name": "Shunsuke Okano / Jo Yokotani",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-01T15:30:00Z",
+       "score": "0-3 (6:11,1:11,5:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Jakub Kaucky / Tomas Martinko",
+         "nat": "CZE"
+        },
+        {
+         "name": "Lubomir Pistej / Cho Seungmin",
+         "nat": "SVK/KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-01T15:00:00Z",
+       "score": "0-3 (4:11,8:11,5:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Irvin Bertrand / Jules Rolland",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "Marcos Freitas / Tiago Apolonia",
+         "nat": "POR",
+         "seed": 6
+        }
+       ],
+       "when": "2025-12-02T10:35:00Z",
+       "score": "1-3 (9:11,10:12,11:9,5:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Rafael De Las Heras / Diego Lillo",
+         "nat": "ESP",
+         "seed": 4
+        },
+        {
+         "name": "Kim Daewoo / Jang Seongil",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-02T10:35:00Z",
+       "score": "1-3 (11:9,9:11,4:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Vincent Picard / Joe Seyfried",
+         "nat": "FRA"
+        },
+        {
+         "name": "Nandan Naresh / Snehit Suravajjula",
+         "nat": "USA/IND",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-02T10:35:00Z",
+       "score": "1-3 (9:11,11:13,11:9,8:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Shunsuke Okano / Jo Yokotani",
+         "nat": "JPN",
+         "seed": 7
+        },
+        {
+         "name": "Lubomir Pistej / Cho Seungmin",
+         "nat": "SVK/KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-02T10:35:00Z",
+       "score": "3-2 (7:11,11:4,11:3,4:11,11:8)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Marcos Freitas / Tiago Apolonia",
+         "nat": "POR",
+         "seed": 6
+        },
+        {
+         "name": "Kim Daewoo / Jang Seongil",
+         "nat": "KOR",
+         "seed": 8
+        }
+       ],
+       "when": "2025-12-02T16:05:00Z",
+       "score": "3-1 (9:11,11:7,11:7,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Nandan Naresh / Snehit Suravajjula",
+         "nat": "USA/IND",
+         "seed": 3
+        },
+        {
+         "name": "Shunsuke Okano / Jo Yokotani",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-02T16:05:00Z",
+       "score": "1-3 (6:11,9:11,11:8,3:11,0:0)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Marcos Freitas / Tiago Apolonia",
+         "nat": "POR",
+         "seed": 6
+        },
+        {
+         "name": "Shunsuke Okano / Jo Yokotani",
+         "nat": "JPN",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-03T15:35:00Z",
+       "score": "0-3 (10:12,9:11,3:11,0:0,0:0)",
+       "winner": 1
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "Mixed doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Dimitrije Levajac / Izabela Lupulesku",
+         "nat": "SRB"
+        }
+       ],
+       "when": "2025-12-01T08:00:00Z",
+       "score": "3-2 (10:12,11:9,9:11,11:6,11:5)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Jang Seongil / Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Kim Daewoo / Choi Haeeun",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2025-12-01T08:00:00Z",
+       "score": "3-0 (11:4,11:5,12:10,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Martin Friis / Nomin Baasan",
+         "nat": "SWE",
+         "seed": 4
+        },
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        }
+       ],
+       "when": "2025-12-01T08:00:00Z",
+       "score": "0-3 (2:11,11:13,8:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Federico Vallino / Miriam Carnovale",
+         "nat": "ITA"
+        },
+        {
+         "name": "Joao Monteiro / Julia Leal",
+         "nat": "POR"
+        }
+       ],
+       "when": "2025-12-01T08:30:00Z",
+       "score": "1-3 (11:8,7:11,3:11,9:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Tommaso Giovannetti / Nicole Arlia",
+         "nat": "ITA"
+        },
+        {
+         "name": "Mateusz Zalewski / Zuzanna Wielgos",
+         "nat": "POL"
+        }
+       ],
+       "when": "2025-12-01T08:30:00Z",
+       "score": "0-3 (9:11,5:11,4:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Cho Seungmin / Yoo Siwoo",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-01T08:00:00Z",
+       "score": "1-3 (9:11,13:11,7:11,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Iskender Kharki / Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Nandan Naresh / Lilou Massart",
+         "nat": "USA/BEL",
+         "seed": 6
+        }
+       ],
+       "when": "2025-12-01T08:30:00Z",
+       "score": "3-2 (11:9,11:6,14:16,7:11,11:9)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Zaid Abo Yaman / Taimmaa Abo-Yaman",
+         "nat": "JOR"
+        },
+        {
+         "name": "Harmeet Desai / Krittwika Roy",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-01T08:30:00Z",
+       "score": "2-3 (11:8,8:11,16:14,7:11,5:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Lubomir Pistej / Tatiana Kukulkova",
+         "nat": "SVK",
+         "seed": 1
+        },
+        {
+         "name": "Jang Seongil / Yang Ha Eun",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2025-12-02T09:00:00Z",
+       "score": "0-3 (9:11,6:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 5
+        },
+        {
+         "name": "Joao Monteiro / Julia Leal",
+         "nat": "POR"
+        }
+       ],
+       "when": "2025-12-02T09:00:00Z",
+       "score": "1-3 (8:11,4:11,12:10,7:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Mateusz Zalewski / Zuzanna Wielgos",
+         "nat": "POL"
+        },
+        {
+         "name": "Cho Seungmin / Yoo Siwoo",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-02T09:00:00Z",
+       "score": "2-3 (11:8,6:11,11:7,5:11,8:11)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Iskender Kharki / Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Harmeet Desai / Krittwika Roy",
+         "nat": "IND",
+         "seed": 2
+        }
+       ],
+       "when": "2025-12-02T09:00:00Z",
+       "score": "3-2 (11:9,11:2,11:13,5:11,11:4)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jang Seongil / Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Joao Monteiro / Julia Leal",
+         "nat": "POR"
+        }
+       ],
+       "when": "2025-12-02T19:20:00Z",
+       "score": "3-2 (11:1,5:11,10:12,17:15,11:6)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Cho Seungmin / Yoo Siwoo",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Iskender Kharki / Sarvinoz Mirkadirova",
+         "nat": "KAZ"
+        }
+       ],
+       "when": "2025-12-02T19:20:00Z",
+       "score": "3-0 (12:10,12:10,11:8,0:0,0:0)",
+       "winner": 0
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jang Seongil / Yang Ha Eun",
+         "nat": "KOR"
+        },
+        {
+         "name": "Cho Seungmin / Yoo Siwoo",
+         "nat": "KOR",
+         "seed": 3
+        }
+       ],
+       "when": "2025-12-03T11:20:00Z",
+       "score": "3-2 (8:11,4:11,11:5,12:10,11:7)",
+       "winner": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
