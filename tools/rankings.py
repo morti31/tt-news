@@ -1,11 +1,11 @@
 """Converts the official ITTF world ranking (as published by WTT) into data/rankings.json.
 
 The data file is https://wtt-web-frontdoor-withoutcache-cqakg0andqf5hchn.a01.azurefd.net/ranking/SEN_SINGLES.json
-(top 100 per event). Save it to a local file and run:
+(top 100 per event); tools/wtt_sync.py fetches the top 200 from WTT's ranking service instead when it can. Save it to a local file and run:
 
     python3 tools/rankings.py <saved SEN_SINGLES.json>
 
-It writes data/rankings.json (top 100 men and women) and refreshes the top 10 in data/news.json,
+It writes data/rankings.json (the top 100 or 200 men and women) and refreshes the top 10 in data/news.json,
 so the sidebar and the rankings page always come from the same list.
 """
 import json, os, sys, datetime as dt

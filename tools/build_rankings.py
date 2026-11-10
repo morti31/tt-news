@@ -1,4 +1,4 @@
-"""The rankings page: the official ITTF top 100, men and women side by side at equal weight.
+"""The rankings page: the official ITTF top 200, men and women side by side at equal weight.
 
 Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). Output: the page body.
 """
@@ -43,7 +43,7 @@ def body(R, items, links=None):
             for p in R[key])
         return (f'<section class="panel rk-list" data-g="{key}"><h2 class="panel-title">{title}</h2>'
                 f'<table class="rk-table"><thead><tr><th scope="col">Rank</th><th scope="col"><span class="sr-only">Movement</span></th>'
-                f'<th scope="col">Player</th><th scope="col">Points</th></tr></thead><tbody>{rows}</tbody></table></section>')
+                f'<th scope="col">Player</th><th scope="col">Points</th></tr></thead><tbody data-page="50">{rows}</tbody></table></section>')
 
     def leader(key, title):
         p = R[key][0]
@@ -59,16 +59,16 @@ def body(R, items, links=None):
         return listing(ups, "No climbers this week")
 
     def home(key):
-        return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")], "None in the top 100")
+        return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")], "None in the top {len(R[key])}")
 
     label = R["label"]
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official {e(label)}: the top 100 men and women, with ranking points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+<p class="lede">The official {e(label)}: the top {len(R["men"])} men and women, with ranking points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
 <div class="rk-two rk-leaders">{leader("men", "Men's world No. 1")}{leader("women", "Women's world No. 1")}</div>
 <div class="rk-two">
   <section class="panel"><h2 class="panel-title">Biggest climbers</h2><div class="rk-two rk-inner"><div><h3>Men</h3>{climbers("men")}</div><div><h3>Women</h3>{climbers("women")}</div></div></section>
-  <section class="panel"><h2 class="panel-title">Home nations in the top 100</h2><div class="rk-two rk-inner"><div><h3>Men</h3>{home("men")}</div><div><h3>Women</h3>{home("women")}</div></div></section>
+  <section class="panel"><h2 class="panel-title">Home nations in the top {len(R["men"])}</h2><div class="rk-two rk-inner"><div><h3>Men</h3>{home("men")}</div><div><h3>Women</h3>{home("women")}</div></div></section>
 </div>
 <div class="rk-tools">
   <label class="rk-search"><span class="sr-only">Find a player or country</span><input id="rk-q" type="search" placeholder="Find a player or country, e.g. ENG" autocomplete="off"></label>
@@ -83,6 +83,7 @@ def body(R, items, links=None):
   q.addEventListener("input", () => {{
     const v = q.value.trim().toLowerCase();
     document.querySelectorAll(".rk-table tbody tr").forEach((tr) => {{ tr.hidden = !!v && !tr.dataset.q.includes(v); }});
+    document.querySelectorAll(".rk-list").forEach((s) => s.classList.toggle("pg-all", !!v));   // a search shows every match, not one page
   }});
   const t = document.querySelector(".rk-toggle");
   t.addEventListener("click", (ev) => {{
@@ -92,4 +93,4 @@ def body(R, items, links=None):
   }});
   document.querySelector('.rk-list[data-g="women"]').classList.add("rk-off");
 }})();
-</script>"""
+</script>""" + components.PAGER

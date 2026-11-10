@@ -176,7 +176,7 @@ The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.
 - `notes`: a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
 - `sources` (every page a fact came from) and `checked` (date)
 
-Every player in the world top 100 has a profile. Players outside the top 10 started as stubs (`"stub": true`): name, association, date of birth and playing hand from WTT, with results from the match database. The monthly check fills in up to 30 stubs a month, highest-ranked first (birthplace, height, grip, style, clubs, equipment, honours, sources), then removes `"stub"`. Don't take grip or style from WTT's player data: it is unreliable (it lists Dang Qiu as penhold).
+Every player in the world top 200 has a profile (the rankings page and the players index show 50 a page). New ranked players get a stub from `python3 tools/stubs.py`. Players outside the top 10 started as stubs (`"stub": true`): name, association, date of birth and playing hand from WTT, with results from the match database. The monthly check fills in up to 30 stubs a month, highest-ranked first (birthplace, height, grip, style, clubs, equipment, honours, sources), then removes `"stub"`. Don't take grip or style from WTT's player data: it is unreliable (it lists Dang Qiu as penhold).
 
 A profile is permanent: once a player has a file, never delete it, even if they drop out of the top 10 or the top 100, retire or change association. Their results, records and news keep updating from the match database and the tags, the monthly check keeps their bio file current, and the page shows "Outside the world top 100" when they have no ranking.
 

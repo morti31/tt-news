@@ -1377,3 +1377,12 @@ html.mp-open { overflow: hidden; }
   .l3-card .pic { grid-row: span 2; align-self: start; }
   .l3-card h4 { font-size: 16px; }
 }
+
+/* Pagination (components.PAGER) */
+.pg-off { display: none !important; }
+.pg-all .pg-off:not([hidden]) { display: revert !important; }
+.pg-all + .pager, .pg-all .pager { display: none; }
+.pager { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 4px; }
+.pager button { font: 700 13px var(--head-font); padding: 8px 12px; min-height: 40px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer; }
+.pager button[aria-current="page"] { background: var(--ink); color: var(--card); border-color: var(--ink); }
+.pager button:disabled { opacity: .35; cursor: default; }

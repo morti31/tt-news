@@ -329,3 +329,20 @@ def subnav(group, cur):
     """The second row of links under a top-level section (Events, Players, Guide)."""
     links = "".join(f'<a href="{u}"{' aria-current="page"' if u == cur else ""}>{t}</a>' for u, t in SUBNAVS[group])
     return f'<nav class="subnav" aria-label="{group.title()}">{links}</nav>'
+
+
+# Pagination for long lists: any element with data-page="N" shows N children at a time, with numbered pages under it.
+# Without JavaScript every row shows. A list whose container has the class "pg-all" (a search in progress) shows
+# every row that is not hidden, and its page buttons step aside.
+PAGER = """<script>(function(){document.querySelectorAll('[data-page]').forEach(function(list){
+var n=+list.dataset.page,items=[].slice.call(list.children),pages=Math.ceil(items.length/n),cur=0;if(pages<2)return;
+var nav=document.createElement('nav');nav.className='pager';nav.setAttribute('aria-label','Pages');
+var host=list.closest('table')||list;host.after(nav);
+function label(i){var a=i*n+1,b=Math.min(items.length,(i+1)*n);return a+'-'+b;}
+function go(i,scroll){cur=Math.max(0,Math.min(pages-1,i));items.forEach(function(el,k){el.classList.toggle('pg-off',Math.floor(k/n)!==cur);});
+nav.innerHTML='<button type="button" data-p="'+(cur-1)+'"'+(cur?'':' disabled')+' aria-label="Previous page">&lsaquo;</button>'+
+items.slice(0,pages).map(function(_,i){return '<button type="button" data-p="'+i+'" aria-current="'+(i===cur?'page':'false')+'">'+label(i)+'</button>';}).join('')+
+'<button type="button" data-p="'+(cur+1)+'"'+(cur<pages-1?'':' disabled')+' aria-label="Next page">&rsaquo;</button>';
+if(scroll)(list.closest('section')||host).scrollIntoView({block:'start'});}
+nav.addEventListener('click',function(ev){var b=ev.target.closest('button');if(b&&!b.disabled)go(+b.dataset.p,true);});
+list.pagerGo=go;go(0,false);});})();</script>"""

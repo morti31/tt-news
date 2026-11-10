@@ -9,6 +9,10 @@ on:
         description: "Optional: an event id range to load, e.g. '2700 3420', or 'refill' for events with results but no matches saved"
         required: false
         default: ""
+      players:
+        description: "Also refresh WTT's record for every ranked player (yes to run)"
+        required: false
+        default: ""
 permissions:
   contents: write
 concurrency:
@@ -23,8 +27,10 @@ jobs:
       - name: Sync matches and players
         env:
           BACKFILL: ${{ inputs.backfill }}
+          PLAYERS: ${{ inputs.players }}
         run: |
-          if [ "$BACKFILL" = "refill" ]; then python3 tools/match_sync.py --refill-empty; elif [ -n "$BACKFILL" ]; then python3 tools/match_sync.py --backfill $BACKFILL --senior; else python3 tools/match_sync.py; fi
+          P=""; [ "$PLAYERS" = "yes" ] && P="--players"
+          if [ "$BACKFILL" = "refill" ]; then python3 tools/match_sync.py --refill-empty $P; elif [ -n "$BACKFILL" ]; then python3 tools/match_sync.py --backfill $BACKFILL --senior $P; else python3 tools/match_sync.py $P; fi
       - name: Commit changes
         run: |
           git config user.name "Tom Mortimer"

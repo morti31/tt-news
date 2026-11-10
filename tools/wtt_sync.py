@@ -16,6 +16,7 @@ import fetch_draw, rankings
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CMS = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/liveeventsapi/api/cms"
 RANKS = "https://wtt-web-frontdoor-withoutcache-cqakg0andqf5hchn.a01.azurefd.net/ranking/SEN_SINGLES.json"
+RANKS200 = "https://wttcmsapigateway-new.azure-api.net/ttu/Rankings/GetRankingIndividuals?CategoryCode=SEN"
 HEADERS = {"Origin": "https://www.worldtabletennis.com", "Referer": "https://www.worldtabletennis.com/", "User-Agent": "Mozilla/5.0 (Eleven)"}
 FAMILY_FIRST = fetch_draw.FAMILY_FIRST
 
@@ -273,7 +274,14 @@ def main():
             f.write("\n")
     # Rankings: WTT publishes on Mondays; checking every run is cheap and only writes on change
     try:
-        raw = get(RANKS)
+        raw = None
+        try:   # the top 200 for each list, in two pages of 100, from the service behind WTT's rankings page
+            raw = [r for ev in ("MS", "WS") for a, b in ((1, 100), (101, 200)) for r in (get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={b}").get("Result") or [])]
+            if len({r.get("CurrentRank") for r in raw}) < 150:
+                raw = None
+        except Exception as err:
+            print(f"top 200 unavailable ({err}), using the top 100")
+        raw = raw or get(RANKS)
         tmp = os.path.join(ROOT, ".rankings-tmp.json")
         json.dump(raw, open(tmp, "w"))
         before = open(os.path.join(ROOT, "data", "rankings.json"), encoding="utf-8").read() if os.path.exists(os.path.join(ROOT, "data", "rankings.json")) else ""
