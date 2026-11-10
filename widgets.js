@@ -62,10 +62,14 @@ window.ElevenStream = function (el) {
     const leaguePage = (e) => { if (hubs[e.id] || !/club|league/i.test(`${e.series} ${e.type}`)) return null; const m = LEAGUE_PAGE.find(([rx]) => rx.test(e.name)); return m ? `/clubs/${m[1]}.html` : null; };
     const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) => {
       const lp = leaguePage(e);
+      // A long name is split so the card keeps the strip's width: "ETTU Champions League Women, Stage 2 Round 1"
+      // shows as "Champions League Women" with the stage on the line below
+      const [head, ...rest] = e.name.split(", ");
+      const title = head.replace(/^ETTU /, ""), stage = rest.join(", ");
       return `<a class="score-card live-card" href="${esc(lp || (hubs[e.id] ? hubs[e.id].url : news.live_results_url || "https://www.worldtabletennis.com/"))}"${hubs[e.id] || lp ? "" : ' target="_blank" rel="noopener"'}>
         <span class="ev"><span class="live-dot"></span>On now</span>
-        <span class="row won"><span>${esc(e.name)}</span></span>
-        <span class="row"><span>${lp ? "Fixtures and results" : hubs[e.id] ? "Draw, results and schedule" : "Live scores on WTT"}</span></span></a>`;
+        <span class="row won"><span>${esc(title)}</span></span>
+        <span class="row"><span>${esc(stage || (lp ? "Fixtures and results" : hubs[e.id] ? "Draw, results and schedule" : "Live scores on WTT"))}</span></span></a>`;
     });
     (news.results || []).forEach((r) => r.matches.forEach((m) => {
       const sc = /^(\d+)-(\d+)$/.exec(m.score || "");
