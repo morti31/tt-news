@@ -3293,7 +3293,9 @@
    "region": "Oceania",
    "draw": "2615",
    "wtt_id": "2615",
-   "utc_offset": 10
+   "utc_offset": 10,
+   "venue": "Eastland Shopping Centre, Ringwood",
+   "coords": "37.81° S  145.23° E"
   },
   {
    "id": "wtt-champions-macao-2022",
@@ -4433,10 +4435,12 @@
    "year": "2024",
    "start": "2024-12-01",
    "end": "2024-12-08",
-   "events": "Mixed team",
+   "events": "Mixed teams",
    "draw": "2979",
    "wtt_id": "2979",
-   "utc_offset": 8
+   "utc_offset": 8,
+   "venue": "Sichuan Gymnasium",
+   "coords": "30.66° N  104.07° E"
   },
   {
    "id": "wtt-contender-muscat-2024",
@@ -5061,10 +5065,12 @@
    "year": "2025",
    "start": "2025-11-30",
    "end": "2025-12-07",
-   "events": "Mixed team",
+   "events": "Mixed teams",
    "draw": "3263",
    "wtt_id": "3263",
-   "utc_offset": 8
+   "utc_offset": 8,
+   "venue": "Sichuan Gymnasium",
+   "coords": "30.66° N  104.07° E"
   },
   {
    "id": "wtt-feeder-cappadocia-2026",
@@ -5541,6 +5547,750 @@
    "draw": "2789",
    "wtt_id": "2789",
    "utc_offset": -4
+  },
+  {
+   "id": "olympic-games-2020",
+   "name": "Olympic Games",
+   "group": "Majors",
+   "tier": "world",
+   "series": "Olympic Games",
+   "city": "Tokyo",
+   "country": "Japan",
+   "year": "2020",
+   "start": "2021-07-24",
+   "end": "2021-08-06",
+   "events": "Singles, mixed doubles and teams",
+   "draw": "2345",
+   "wtt_id": "2345",
+   "utc_offset": 9,
+   "venue": "Tokyo Metropolitan Gymnasium",
+   "coords": "35.68° N  139.71° E"
+  },
+  {
+   "id": "european-championships-2020",
+   "name": "European Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "European Championships",
+   "city": "Warsaw",
+   "country": "Poland",
+   "year": "2020",
+   "venue": "Arena COS Torwar",
+   "start": "2021-06-22",
+   "end": "2021-06-27",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "52.23° N  21.01° E",
+   "region": "Europe",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Timo Boll",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Dimitrij Ovtcharov",
+      "nat": "GER"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Petrissa Solja",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Shan Xiaona",
+      "nat": "GER"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Lev Katsman / Maksim Grebnev",
+      "nat": "RUS"
+     },
+     "runner_up": {
+      "name": "Jakub Dyjas / Cédric Nuytinck",
+      "nat": "POL"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Petrissa Solja / Shan Xiaona",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Nina Mittelham / Sabine Winter",
+      "nat": "GER"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Dang Qiu / Nina Mittelham",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Ľubomír Pištej / Barbora Balážová",
+      "nat": "SVK"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Germany won four of the five titles at the European Championships in Warsaw, which were due to be played in September 2020 and were put back to June 2021 by the pandemic. Both singles finals were all-German: Timo Boll beat Dimitrij Ovtcharov for the men's title and Petrissa Solja beat Shan Xiaona for the women's.",
+    "Solja and Shan then won the women's doubles together, beating their teammates Nina Mittelham and Sabine Winter, and Mittelham won the mixed doubles with Dang Qiu. The one title Germany did not win was the men's doubles, which went to Russia's Lev Katsman and Maksim Grebnev."
+   ]
+  },
+  {
+   "id": "european-team-championships-2021",
+   "name": "European Team Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "European Team Championships",
+   "city": "Cluj-Napoca",
+   "country": "Romania",
+   "year": "2021",
+   "start": "2021-09-28",
+   "end": "2021-10-03",
+   "events": "Men's and women's teams",
+   "coords": "46.77° N  23.60° E",
+   "region": "Europe",
+   "champions": [
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "Germany",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Russia",
+      "nat": "RUS"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "Germany",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Romania",
+      "nat": "ROU"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Germany won both titles at the European Team Championships in Cluj-Napoca. The men beat Russia in their final and the women beat the hosts, Romania.",
+    "It completed a year in which Germany also won four of the five titles at the individual European Championships in Warsaw."
+   ]
+  },
+  {
+   "id": "asian-championships-2021",
+   "name": "Asian Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "Asian Championships",
+   "city": "Doha",
+   "country": "Qatar",
+   "year": "2021",
+   "start": "2021-09-28",
+   "end": "2021-10-05",
+   "events": "Teams, singles and doubles",
+   "coords": "25.29° N  51.53° E",
+   "region": "Asia",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Lee Sangsu",
+      "nat": "KOR"
+     },
+     "runner_up": {
+      "name": "Chuang Chih-Yuan",
+      "nat": "TPE"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Hina Hayata",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "Shin Yubin",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Yukiya Uda / Shunsuke Togami",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "Jang Woojin / Lim Jonghoon",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Jeon Jihee / Shin Yubin",
+      "nat": "KOR"
+     },
+     "runner_up": {
+      "name": "Doo Hoi Kem / Lee Ho Ching",
+      "nat": "HKG"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Shunsuke Togami / Hina Hayata",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "Jang Woojin / Jeon Jihee",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "South Korea",
+      "nat": "KOR"
+     },
+     "runner_up": {
+      "name": "Chinese Taipei",
+      "nat": "TPE"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "Japan",
+      "nat": "JPN"
+     },
+     "runner_up": {
+      "name": "South Korea",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "China did not send a team to the Asian Championships in Doha, and Japan and South Korea shared the titles. Japan won four: Hina Hayata took the women's singles, the mixed doubles with Shunsuke Togami and the women's team title, and Togami and Yukiya Uda won the men's doubles.",
+    "South Korea won the other three. Lee Sangsu beat Chinese Taipei's Chuang Chih-Yuan in the men's singles final, Jeon Jihee and Shin Yubin won the women's doubles, and the men beat Chinese Taipei in the team final. Shin, who also reached the women's singles final, finished with a medal in three events."
+   ]
+  },
+  {
+   "id": "european-championships-2022",
+   "name": "European Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "European Championships",
+   "city": "Munich",
+   "country": "Germany",
+   "year": "2022",
+   "venue": "Rudi-Sedlmayer-Halle",
+   "start": "2022-08-13",
+   "end": "2022-08-21",
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "48.14° N  11.58° E",
+   "region": "Europe",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Dang Qiu",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Darko Jorgic",
+      "nat": "SLO"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Sofia Polcanova",
+      "nat": "AUT"
+     },
+     "runner_up": {
+      "name": "Nina Mittelham",
+      "nat": "GER"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Mattias Falck / Kristian Karlsson",
+      "nat": "SWE"
+     },
+     "runner_up": {
+      "name": "Robert Gardos / Daniel Habesohn",
+      "nat": "AUT"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Sofia Polcanova / Bernadette Szőcs",
+      "nat": "AUT"
+     },
+     "runner_up": {
+      "name": "Andreea Dragoman / Elizabeta Samara",
+      "nat": "ROU"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Emmanuel Lebesson / Jia Nan Yuan",
+      "nat": "FRA"
+     },
+     "runner_up": {
+      "name": "Ovidiu Ionescu / Bernadette Szőcs",
+      "nat": "ROU"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Dang Qiu won the men's singles at home in Munich, beating Slovenia's Darko Jorgic in the final, and Austria's Sofia Polcanova won two titles. Polcanova beat Germany's Nina Mittelham in the women's singles final and won the women's doubles with Romania's Bernadette Szőcs.",
+    "Sweden's Mattias Falck and Kristian Karlsson won the men's doubles against Austria's Robert Gardos and Daniel Habesohn. Szőcs also reached the mixed doubles final with Ovidiu Ionescu, where they lost to France's Emmanuel Lebesson and Jia Nan Yuan."
+   ]
+  },
+  {
+   "id": "european-games-2023",
+   "name": "European Games",
+   "group": "Majors",
+   "tier": "continental",
+   "region": "Europe",
+   "series": "European Games",
+   "city": "Kraków",
+   "country": "Poland",
+   "year": "2023",
+   "venue": "Hutnik Arena",
+   "start": "2023-06-23",
+   "end": "2023-07-01",
+   "events": "Singles, mixed doubles and teams",
+   "coords": "50.06° N  19.94° E",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Félix Lebrun",
+      "nat": "FRA"
+     },
+     "runner_up": {
+      "name": "Marcos Freitas",
+      "nat": "POR"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Bernadette Szőcs",
+      "nat": "ROU"
+     },
+     "runner_up": {
+      "name": "Yang Xiaoxin",
+      "nat": "MON"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Dang Qiu / Nina Mittelham",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Nándor Ecseki / Dóra Madarász",
+      "nat": "HUN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "Germany",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Sweden",
+      "nat": "SWE"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "Romania",
+      "nat": "ROU"
+     },
+     "runner_up": {
+      "name": "Germany",
+      "nat": "GER"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Félix Lebrun won the men's singles at the European Games in Kraków, beating Portugal's Marcos Freitas in the final. Bernadette Szőcs won two gold medals for Romania: the women's singles, against Monaco's Yang Xiaoxin, and the women's team event, where Romania beat Germany in the final.",
+    "Germany won the other two titles. Dang Qiu and Nina Mittelham took the mixed doubles against Hungary's Nándor Ecseki and Dóra Madarász, and the men's team of Timo Boll, Patrick Franziska, Dimitrij Ovtcharov and Dang beat Sweden for gold."
+   ]
+  },
+  {
+   "id": "european-team-championships-2023",
+   "name": "European Team Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "European Team Championships",
+   "city": "Malmö",
+   "country": "Sweden",
+   "year": "2023",
+   "venue": "Malmö Arena",
+   "start": "2023-09-10",
+   "end": "2023-09-17",
+   "events": "Men's and women's teams",
+   "coords": "55.60° N  13.00° E",
+   "region": "Europe",
+   "champions": [
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "Sweden",
+      "nat": "SWE"
+     },
+     "runner_up": {
+      "name": "Germany",
+      "nat": "GER"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "Germany",
+      "nat": "GER"
+     },
+     "runner_up": {
+      "name": "Romania",
+      "nat": "ROU"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Sweden won the men's title at home in Malmö, beating Germany in the final with a squad of Mattias Falck, Anton Källberg, Kristian Karlsson, Truls Moregard and Jon Persson. Germany's women beat Romania in their final.",
+    "Both winners earned a place in the team events at the Paris 2024 Olympic Games. Germany's men were runners-up with a squad of Timo Boll, Benedikt Duda, Cedric Meissner, Kay Stumper and Ricardo Walther, and Romania's women lost to Germany in the final for the second championships in a row."
+   ]
+  },
+  {
+   "id": "asian-championships-2023",
+   "name": "Asian Championships",
+   "group": "Continental",
+   "tier": "continental",
+   "series": "Asian Championships",
+   "city": "Pyeongchang",
+   "country": "South Korea",
+   "year": "2023",
+   "venue": "Yongpyong Dome",
+   "start": "2023-09-03",
+   "end": "2023-09-10",
+   "events": "Teams, singles and doubles",
+   "coords": "37.37° N  128.39° E",
+   "region": "Asia",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Ma Long",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Fan Zhendong",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Wang Manyu",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Sun Yingsha",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Fan Zhendong / Lin Gaoyuan",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Ma Long / Wang Chuqin",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Chen Meng / Wang Manyu",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Sun Yingsha / Wang Yidi",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Lin Gaoyuan / Wang Yidi",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Liang Jingkun / Qian Tianyi",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Chinese Taipei",
+      "nat": "TPE"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "South Korea",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "China won all seven titles at the Asian Championships in Pyeongchang, and all five individual finals were between Chinese players. Ma Long beat Fan Zhendong in the men's singles final and Wang Manyu beat Sun Yingsha in the women's.",
+    "Wang Manyu also won the women's doubles with Chen Meng. Fan and Lin Gaoyuan beat Ma and Wang Chuqin in the men's doubles final, and Lin won the mixed doubles with Wang Yidi. China's men beat Chinese Taipei in the team final and the women beat the hosts, South Korea."
+   ]
+  },
+  {
+   "id": "asian-games-2022",
+   "name": "Asian Games",
+   "group": "Majors",
+   "tier": "continental",
+   "region": "Asia",
+   "series": "Asian Games",
+   "city": "Hangzhou",
+   "country": "China",
+   "year": "2022",
+   "venue": "Gongshu Canal Sports Park Gymnasium",
+   "start": "2023-09-22",
+   "end": "2023-10-02",
+   "events": "Teams, singles and doubles",
+   "coords": "30.27° N  120.15° E",
+   "champions": [
+    {
+     "event": "Men's singles",
+     "champion": {
+      "name": "Wang Chuqin",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Fan Zhendong",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's singles",
+     "champion": {
+      "name": "Sun Yingsha",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Hina Hayata",
+      "nat": "JPN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's doubles",
+     "champion": {
+      "name": "Fan Zhendong / Wang Chuqin",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Jang Woojin / Lim Jonghoon",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's doubles",
+     "champion": {
+      "name": "Jeon Jihee / Shin Yubin",
+      "nat": "KOR"
+     },
+     "runner_up": {
+      "name": "Cha Su Yong / Pak Su Gyong",
+      "nat": "PRK"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Mixed doubles",
+     "champion": {
+      "name": "Wang Chuqin / Sun Yingsha",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Lin Gaoyuan / Wang Yidi",
+      "nat": "CHN"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Men's team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "South Korea",
+      "nat": "KOR"
+     },
+     "score": "",
+     "games": ""
+    },
+    {
+     "event": "Women's team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {
+      "name": "Japan",
+      "nat": "JPN"
+     },
+     "score": "",
+     "games": ""
+    }
+   ],
+   "story": [
+    "Wang Chuqin won four gold medals at the Asian Games in Hangzhou, which were held a year late, in 2023. He beat Fan Zhendong in the men's singles final, won the men's doubles with Fan and the mixed doubles with Sun Yingsha, and was part of the China team that beat South Korea. Sun won the women's singles against Japan's Hina Hayata and the women's team title.",
+    "China won six of the seven events. The exception was the women's doubles, in which South Korea's Jeon Jihee and Shin Yubin beat North Korea's Cha Su Yong and Pak Su Gyong in the final."
+   ]
+  },
+  {
+   "id": "mixed-team-world-cup-2023",
+   "name": "Mixed Team World Cup",
+   "group": "Majors",
+   "tier": "world",
+   "series": "Mixed Team World Cup",
+   "city": "Chengdu",
+   "country": "China",
+   "year": "2023",
+   "venue": "Sichuan Gymnasium",
+   "start": "2023-12-04",
+   "end": "2023-12-10",
+   "events": "Mixed teams",
+   "coords": "30.66° N  104.07° E",
+   "champions": [
+    {
+     "event": "Mixed team",
+     "champion": {
+      "name": "China",
+      "nat": "CHN"
+     },
+     "runner_up": {},
+     "score": "",
+     "games": "",
+     "note": "Won the final stage, which was played as a round robin. South Korea were second and Japan third"
+    }
+   ],
+   "story": [
+    "China won the first Mixed Team World Cup, in Chengdu. There was no final: the title was decided by a round-robin second stage, which China won, with South Korea taking silver and Japan bronze.",
+    "The event used a new format in which men and women play in the same team. A tie is made up of a mixed doubles, a women's singles, a men's singles and women's and men's doubles, each played over three games, and the first team to win eight games takes the tie."
+   ]
   }
  ]
 }
