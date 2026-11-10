@@ -75,9 +75,17 @@ def player(c):
 
 
 def fetch(eid, code):
-    req = urllib.request.Request(API.format(eid=eid, code=code), headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.load(r)
+    # WTT's API answers only requests that look like its own website's (Origin and Referer), and only from some networks
+    # (GitHub's runners, not most cloud hosts). An event with no such draw gets an empty 204 reply.
+    req = urllib.request.Request(API.format(eid=eid, code=code), headers={
+        "Origin": "https://www.worldtabletennis.com", "Referer": "https://www.worldtabletennis.com/",
+        "User-Agent": "Mozilla/5.0 (Eleven)", "Accept-Encoding": "gzip"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        body = r.read()
+    if body[:2] == b"\x1f\x8b":
+        import gzip
+        body = gzip.decompress(body)
+    return json.loads(body.decode("utf-8-sig"))
 
 
 def convert(j, offset):
