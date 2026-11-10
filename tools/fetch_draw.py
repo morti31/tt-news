@@ -93,7 +93,9 @@ def convert(j, offset):
     def is_team(m):
         return any((p.get("Competitor") or {}).get("Type") == "T" and len((((p.get("Competitor") or {}).get("Composition") or {}).get("Athlete")) or []) > 2
                    for p in m["CompetitorPlace"])
-    for rd in reversed(j["Competition"]["Bracket"][0]["BracketItems"]):
+    brackets = j["Competition"]["Bracket"]
+    main = next((b for b in brackets if b.get("Code") == "MAIN"), brackets[0])   # the other is qualifying ("PREL")
+    for rd in reversed(main["BracketItems"]):
         matches = []
         items = rd["BracketItem"]
         if any(is_team(m) for m in items):   # team events also list the ties' individual matches: keep the ties only
@@ -126,6 +128,11 @@ API_NAMES = {"women": "Women's Singles", "men": "Men's Singles", "wdoubles": "Wo
              "mixed": "Mixed Doubles", "wteam": "Women's Teams", "mteam": "Men's Teams", "xteam": "Mixed Teams"}
 
 
+def _same(name):
+    """WTT's 2021 records say "Men Singles", later ones "Men's Singles"."""
+    return " ".join(w.replace("'s", "").replace("’s", "").rstrip("s") for w in (name or "").lower().split())
+
+
 def fetch_all(eid, offset):
     """Every draw WTT has for an event. WTT answers an unknown draw code with another draw, so each reply's event name is checked."""
     events = {}
@@ -136,7 +143,7 @@ def fetch_all(eid, offset):
             continue
         comp = j.get("Competition") or {}
         name = ((comp.get("ExtendedInfos") or {}).get("SportDescription") or {}).get("EventName")
-        if not comp.get("Bracket") or name != API_NAMES[k]:
+        if not comp.get("Bracket") or _same(name) != _same(API_NAMES[k]):
             continue
         events[k] = {"name": label, "rounds": convert(j, offset)}
     if not {"women", "men"} & set(events) and not any("team" in k for k in events):
