@@ -83,13 +83,12 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 
 ## Up next
 
-1. [Both] Where does the prize money go? (analysis, original data: share of WTT prize money to the top 10, top 50 and the rest; men's and women's pay at the same events)
-2. [Expert] After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
-3. [Both] The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
-4. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
-5. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
-6. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
-7. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
+1. [Expert] After the money: what Hungary's sport funding overhaul means for table tennis (feature: TAO's end, the Hungarian federation's state funding, using Tom's published Kálnoki-Kiss interview)
+2. [Both] The state of the English club game (feature, data: Table Tennis England membership and league entries, venue losses)
+3. [Expert] Why the world's best still play in Germany (feature: Bundesliga and Champions League economics, compared with China's Super League and India's UTT)
+4. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
+5. [New] Boosting: table tennis's open secret (feature: banned rubber treatments, racket control, enforcement)
+6. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
 
 ## Done
 
@@ -101,6 +100,7 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-11-03: Why no two table tennis tables play alike (`table-tennis-tables-speed-bounce-suppliers`) [New]
 - 2026-11-05: How much do the top players play? Eleven counted every WTT match since June (`wtt-calendar-player-workload-injuries`) [Expert]
 - 2026-11-07: The Lebrun effect: has one family changed French table tennis? (`lebrun-effect-french-table-tennis-licences`) [New]
+- 2026-11-10: Where table tennis prize money goes, from Bergmann's Wembley to WTT (`table-tennis-prize-money-where-it-goes`) [Both]
 
 
 Series: when a feature runs in parts, name them "<Series>, part one: ..." and "<Series>, part two: ...", link each part to the other in the first paragraph, and publish the parts on consecutive days.
