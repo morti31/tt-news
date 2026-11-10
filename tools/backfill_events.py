@@ -59,6 +59,9 @@ CITIES = {
 # Events whose names don't follow the "WTT <level> <city> <year>" pattern:
 # id -> (name, group, tier, series, city, country, time zone)
 SPECIAL = {
+    "2345": ("Olympic Games", "Majors", "world", "Olympic Games", "Tokyo", "Japan", "Asia/Tokyo"),
+    "2787": ("African Championships", "Continental", "continental", "African Championships", "Tunis", "Tunisia", "Africa/Tunis"),
+    "2789": ("Pan American Championships", "Continental", "continental", "Pan American Championships", "Havana", "Cuba", "America/Havana"),
     "2346": ("World Championships", "Majors", "world", "World Championships", "Houston", "United States", "America/Chicago"),
     "2535": ("World Team Championships", "Majors", "world", "World Team Championships", "Chengdu", "China", "Asia/Shanghai"),
     "2660": ("World Championships", "Majors", "world", "World Championships", "Durban", "South Africa", "Africa/Johannesburg"),
@@ -74,9 +77,15 @@ SPECIAL = {
     "2609": ("African Championships", "Continental", "continental", "African Championships", "Algiers", "Algeria", "Africa/Algiers"),
     "2615": ("Oceania Championships", "Continental", "continental", "Oceania Championships", "Melbourne", "Australia", "Australia/Melbourne"),
 }
+# Dates WTT's records get wrong (they hold only part of the event): id -> (start, end)
+DATES = {"2345": ("2021-07-24", "2021-08-06"), "2473": ("2021-09-01", "2021-09-07"), "2615": ("2022-09-05", "2022-09-10")}
+# What was played, where the draws WTT holds do not show all of it: id -> text
+PLAYED = {"2473": "Teams, singles and doubles", "2615": "Teams, singles and doubles"}
 REGION = {"Pan American Championships": "Americas", "African Championships": "Africa", "Oceania Championships": "Oceania"}
 # Ids to try that the match database holds no matches for
-EXTRA = ["2535", "2776", "2860", "2979", "3263"]
+EXTRA = ["2345", "2535", "2776", "2787", "2789", "2860", "2979", "3263"]
+# The year an event is known by, where it is not the year it was played (the Tokyo 2020 Games were held in 2021)
+YEAR = {"2345": "2020"}
 KINDS = [("singles", ("men", "women")), ("doubles", ("mdoubles", "wdoubles")), ("mixed doubles", ("mixed",)), ("teams", ("mteam", "wteam", "xteam"))]
 
 
@@ -92,7 +101,8 @@ def describe(wid, name):
     """What an event is, from its WTT id and name: None for events this script does not make pages for."""
     if wid in SPECIAL:
         nm, group, tier, series, city, country, tz = SPECIAL[wid]
-        return {"name": nm, "group": group, "tier": tier, "series": series, "city": city, "country": country, "tz": tz}
+        return {"name": nm, "group": group, "tier": tier, "series": series, "city": city, "country": country, "tz": tz,
+                **({"name_year": YEAR[wid]} if wid in YEAR else {})}
     if SKIP.search(name):
         return None
     base = re.sub(r"\s+(presented|powered)\s+by.*$", "", name.strip(), flags=re.I)
@@ -155,7 +165,6 @@ def span(daycount):
 
 
 def cmd_draws(ids):
-    import fetch_draw
     known, days = database()
     todo = [(w, d) for w, d in candidates() if not ids or w in ids]
     for w in ids:
@@ -186,6 +195,42 @@ def cmd_draws(ids):
             print(line, flush=True)
 
 
+import fetch_draw
+
+
+def tidy(draw):
+    """Repairs to WTT's older records. Returns True if the draw changed.
+    - a result with no winner marked, or (a dozen continental team ties) the wrong one: the winner is the side with more games
+    - a third-place match listed as a round: left out, so the final is the last round
+    - a draw that is not a knockout (a round robin filed as a "final"), or whose final has no players: left out"""
+    changed = False
+    for key in list(draw["events"]):
+        rounds = draw["events"][key].get("rounds") or []
+        kept = [r for r in rounds if r["round"] != "34--"]
+        if len(kept) != len(rounds):
+            draw["events"][key]["rounds"] = rounds = kept
+            changed = True
+        for r in rounds:
+            for m in r["matches"]:
+                sc = re.match(r"(\d+)-(\d+)", m.get("score") or "")
+                if sc and sc.group(1) != sc.group(2) and all(m.get("players") or [None]):
+                    by_score = 0 if int(sc.group(1)) > int(sc.group(2)) else 1
+                    if m.get("winner") != by_score:      # the next round's entrants confirm the score, not the flag
+                        m["winner"] = by_score
+                        changed = True
+                for p in m.get("players") or []:
+                    if p and p["name"] in fetch_draw.TEAMS:   # a team WTT left as its country code
+                        p["name"] = fetch_draw.TEAMS[p["name"]]
+                        changed = True
+        fin = rounds[-1] if rounds else None
+        ok = fin and fin["round"] == "Final" and len(fin["matches"]) == 1 and all(fin["matches"][0].get("players") or [None]) \
+            and not any("Unknown" in p["name"] for p in fin["matches"][0]["players"])
+        if not ok:
+            del draw["events"][key]
+            changed = True
+    return changed
+
+
 def cmd_hubs():
     known, days = database()
     path = os.path.join(ROOT, "data", "events.json")
@@ -198,6 +243,11 @@ def cmd_hubs():
         if wid in have or not os.path.exists(dpath):
             continue
         draw = json.load(open(dpath, encoding="utf-8"))
+        if tidy(draw):
+            json.dump(draw, open(dpath, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if not draw["events"]:
+            print(f"{wid}: {d['name']}: no knockout draw in WTT's records, left out")
+            continue
         offset = draw.get("utc_offset")
         count = collections.Counter(days.get(wid, {}))
         for ev in draw["events"].values():
@@ -210,6 +260,15 @@ def cmd_hubs():
         if not first:
             print(f"{wid}: {d['name']}: no dates, left out")
             continue
+        # A draw holds the knockout rounds only. Where the match database has nothing either (team events with a
+        # group stage), WTT's own dates for the event are the better guide.
+        info = known.get(wid) or {}
+        if not days.get(wid) and (info.get("start") or "") > "2000" and (info.get("end") or "") > "2000":
+            a, b = dt.date.fromisoformat(info["start"]), dt.date.fromisoformat(info["end"])
+            if 0 <= (b - a).days <= 16 and a <= first and b >= last:
+                first, last = a, b
+        if wid in DATES:
+            first, last = (dt.date.fromisoformat(x) for x in DATES[wid])
         year = d.get("name_year") or str(first.year)
         hid = f'{slug(d["name"])}-{year}'
         if hid in ids:                      # two events of the same name in a year (Muscat 2022): the later one carries its month
@@ -220,9 +279,12 @@ def cmd_hubs():
             text = "Mixed team" if set(draw["events"]) == {"xteam"} else "Men's and women's teams"
         elif kinds == ["singles"]:
             text = "Men's and women's singles"
+        elif "teams" in kinds:
+            text = "Teams, singles and doubles"
         else:
             text = (", ".join(kinds[:-1]) + " and " + kinds[-1]) if len(kinds) > 1 else (kinds[0] if kinds else "")
             text = text[:1].upper() + text[1:]
+        text = PLAYED.get(wid, text)
         hub = {"id": hid, "name": d["name"], "group": d["group"], "tier": d["tier"], "series": d["series"],
                **({"level": d["series"]} if d["series"] in ("WTT Feeder", "WTT Contender", "WTT Invitational") else {}),
                "city": d["city"], "country": d["country"], "year": year, "start": first.isoformat(), "end": last.isoformat(), "events": text,
@@ -239,7 +301,6 @@ def cmd_hubs():
 
 
 if __name__ == "__main__":
-    sys.path.insert(0, os.path.dirname(__file__))
     cmd = sys.argv[1] if len(sys.argv) > 1 else "list"
     if cmd == "draws":
         cmd_draws(set(sys.argv[2:]))

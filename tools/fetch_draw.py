@@ -49,7 +49,7 @@ TEAMS = {"CHN": "China", "JPN": "Japan", "KOR": "South Korea", "TPE": "Chinese T
          "ARM": "Armenia", "BLR": "Belarus", "AIN": "Neutral athletes", "FIJ": "Fiji", "VAN": "Vanuatu", "TAH": "Tahiti", "GUA": "Guatemala",
          "VEN": "Venezuela", "PAR": "Paraguay", "URU": "Uruguay", "CRC": "Costa Rica", "PAN": "Panama", "BAN": "Bangladesh", "NEP": "Nepal",
          "PAK": "Pakistan", "JOR": "Jordan", "IRQ": "Iraq", "SYR": "Syria", "LBN": "Lebanon", "UAE": "United Arab Emirates", "BRN": "Bahrain",
-         "KUW": "Kuwait", "OMA": "Oman", "YEM": "Yemen", "KGZ": "Kyrgyzstan", "TJK": "Tajikistan", "TKM": "Turkmenistan"}
+         "KUW": "Kuwait", "OMA": "Oman", "CIV": "Ivory Coast", "MRI": "Mauritius", "ANG": "Angola", "BAR": "Barbados", "YEM": "Yemen", "KGZ": "Kyrgyzstan", "TJK": "Tajikistan", "TKM": "Turkmenistan"}
 
 
 def one(a, org):
