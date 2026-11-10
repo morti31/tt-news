@@ -1,7 +1,199 @@
 {
-  "updated": "2026-11-10T12:15:00Z",
+  "updated": "2026-11-10T23:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ettu-champions-league-women-2026-27-stage-2-round-1",
+      "category": "Clubs",
+      "date": "2026-11-10",
+      "published": "2026-11-10T23:40:00Z",
+      "league": "champions-league",
+      "headline": "Etival beat holders Tarnobrzeg by one game as ETTU Champions League Women Stage 2 opens",
+      "summary": "The defending champions lost 8-7 on games at home to Etival on the opening night of Stage 2, while Cartagena and Saint-Quentin both won 11-4.",
+      "matches": [
+        {
+          "label": "Stage 2, round 1",
+          "event": "ETTU Champions League Women",
+          "sides": [
+            {
+              "name": "KTS Enea Siarkopol Tarnobrzeg",
+              "nat": "POL"
+            },
+            {
+              "name": "Etival ASRTT",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            7,
+            8
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "He Zhuojia",
+                  "nat": "CHN"
+                },
+                {
+                  "name": "Yangzi Liu",
+                  "nat": "AUS"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Han Ying",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Christina Källberg",
+                  "nat": "SWE"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  10,
+                  12
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Fu Yu",
+                  "nat": "POR"
+                },
+                {
+                  "name": "Jieni Shao",
+                  "nat": "POR"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "He Zhuojia",
+                  "nat": "CHN"
+                },
+                {
+                  "name": "Christina Källberg",
+                  "nat": "SWE"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Han Ying",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Yangzi Liu",
+                  "nat": "AUS"
+                }
+              ],
+              "score": [
+                2,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Etival stun defending champions as Cartagena and Saint-Quentin make strong starts",
+          "url": "https://www.ettu.org/etival-stun-defending-champions-as-cartagena-and-saint-quentin-make-strong-starts/"
+        },
+        {
+          "name": "ETTU: Europe's elite eight set for Champions League Women",
+          "url": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
+        }
+      ],
+      "top": true
+    },
     {
       "id": "hina-hayata-frankfurt-reflection-2026",
       "category": "International",
@@ -274,8 +466,7 @@
           "name": "Sohu (Chinese): CTTA announces 2026 Mixed Team World Cup squad",
           "url": "https://m.sohu.com/a/1099436789_255783"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "liang-jingkun-withdraws-wtt-contender-istanbul-2026",
