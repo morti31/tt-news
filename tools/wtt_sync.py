@@ -149,6 +149,7 @@ def auto_hubs(doc, sched, today):
         by_city.setdefault(slug(ev["city"]), (ev["city"], ev["country"], ev.get("utc_offset")))
     sch = {slug(e["name"]) + "-" + e["start"][:4]: e for e in sched.get("events", []) if e.get("start")}
     changed = False
+    sched_changed = doc.setdefault("_sched_changed", [])
     for wid, info in sorted(known.items(), key=lambda kv: int(kv[0])):
         name = (info.get("name") or "").strip()
         m = WTT_NAME.match(name)
@@ -188,6 +189,14 @@ def auto_hubs(doc, sched, today):
                "start": first, "end": last, "events": kinds, "live": True, "wtt_id": wid, "draw": wid, "auto": True}
         if sch_ev:
             hub["schedule_id"] = sch_ev["id"]
+        elif not mine:
+            # Events the calendar doesn't list (most Feeders) still need a schedule entry: the homepage, the scores strip and the
+            # calendar read events from data/schedule.json. Prestige: 1 for a Feeder, 1.5 for a Contender (see TIER_PRESTIGE).
+            sched["events"].append({"id": hub["id"], "name": base, "start": first, "end": last, "city": city, "country": hub["country"], "series": "WTT",
+                                    "type": series, "prestige": 1 if m.group(1).lower() == "feeder" else 1.5 if tier == "contender" else 2})
+            sched["events"].sort(key=lambda e: e["start"])
+            hub["schedule_id"] = hub["id"]
+            sched_changed.append(hub["id"])
         if offset is not None:
             hub["utc_offset"] = offset
         if mine:
@@ -212,6 +221,12 @@ def main():
     sched0 = json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8"))
     try:
         if auto_hubs(ev_doc, sched0, today):
+            if ev_doc.pop("_sched_changed", None):
+                sched0["updated"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:00Z")
+                with open(os.path.join(ROOT, "data", "schedule.json"), "w", encoding="utf-8") as f:
+                    json.dump(sched0, f, ensure_ascii=False, indent=2)
+                    f.write("\n")
+            ev_doc.pop("_sched_changed", None)
             with open(ev_path, "w", encoding="utf-8") as f:
                 json.dump(ev_doc, f, ensure_ascii=False, indent=1)
     except Exception as err:

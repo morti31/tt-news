@@ -70,9 +70,10 @@
   const liveEvent = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && !done(hubs[e.id]))
     .sort((a, b) => (b.prestige || 0) - (a.prestige || 0))[0];
   const onHub = liveEvent && hubs[liveEvent.id];
-  // Events without the top players (Feeder, Contender, Star Contender: schedule prestige under 3) sit just above Analysis
-  // instead of at the top of the page, and rise to the top at the quarter-finals. Champions level and up lead from day one.
-  const MAJOR = 3;
+  // Events without the top players (Feeder and Contender: schedule prestige under 2) sit just above Analysis instead of at
+  // the top of the page, and rise to the top at the quarter-finals. Star Contender (most have a world top-10 player
+  // entered) and everything above lead from day one.
+  const MAJOR = 2;
   const topNext = $("onnow").nextElementSibling;   // where the panel sits when it leads the page
   let lowPanel = false;
   function placeOnNow() {
