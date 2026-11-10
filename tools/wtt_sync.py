@@ -167,6 +167,11 @@ def auto_hubs(doc, sched, today):
         if not first:
             continue
         a, b = dt.date.fromisoformat(first), dt.date.fromisoformat(last)
+        # WTT publishes the order of play a few days at a time, so the last day seen is not the last day of the event:
+        # an event runs at least 4 days (Feeder) or 6 (the rest), and never shrinks below what a page already says
+        b = max(b, a + dt.timedelta(days=3 if m.group(1).lower() == "feeder" else 5), dt.date.fromisoformat(mine["end"]) if mine else b)
+        a = min(a, dt.date.fromisoformat(mine["start"]) if mine else a)
+        first, last = a.isoformat(), b.isoformat()
         if mine is None and not (a - dt.timedelta(days=3) <= today <= b + dt.timedelta(days=1)):
             continue
         base = re.sub(r"\s+(Presented|Powered) [Bb]y.*$", "", name)
