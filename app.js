@@ -264,7 +264,7 @@
     const list = cat === "All" ? stories : stories.filter((s) => s.category === cat);
     const lead = (cat === "All" && list.find((s) => s.top)) || list[0];
     const rest = list.filter((s) => s !== lead);
-    $("lead").innerHTML = lead ? `<article class="big">${art(lead, "big")}<div class="big-text">${kicker(lead)}
+    $("lead").innerHTML = lead ? `<article class="big">${art(lead, "big") || fallbackPic(lead, true)}<div class="big-text">${kicker(lead)}
       <h1><a class="stretch" href="${esc(url(lead))}">${esc(lead.headline)}</a></h1><p>${esc(lead.summary)}</p>
       <span class="meta">${when(lead)} · By ${esc(who(lead))}</span>${tagRow(lead, 3)}</div></article>`
       : '<p class="empty">Nothing in this section yet. New stories arrive with each update.</p>';
@@ -288,7 +288,8 @@
   // the league's poster for club stories and a topic poster for the rest (img/posters/league-*, topic-*).
   const LEAGUE_POSTER = [[/Champions League/i, "champions-league"], [/Bundesliga|TTBL/i, "bundesliga"], [/Super League|CTTSL/i, "super-league"],
     [/T\.? ?League/i, "t-league"], [/Pro A\b/i, "pro-a"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
-  function fallbackPic(s) {
+  // The lead story always has a picture: with no video, poster, photo or illustration it takes this poster too.
+  function fallbackPic(s, eager) {
     const text = `${s.headline} ${s.summary || ""}`;
     let src;
     if (s.event && hubs[s.event] && hubs[s.event].poster) src = hubs[s.event].poster;
@@ -297,7 +298,7 @@
     else if (s.category === "England") src = "/img/posters/topic-england.jpg";
     else if (s.category === "Equipment") src = "/img/posters/topic-equipment.jpg";
     else src = "/img/posters/topic-news.jpg";
-    return `<div class="pic poster"><img src="${esc(src)}" alt="" loading="lazy"></div>`;
+    return `<div class="pic poster"><img src="${esc(src)}" alt=""${eager ? "" : ' loading="lazy"'}></div>`;
   }
   function latestColumns(list) {
     const group = (s) => (s.category === "Clubs" ? "clubs" : s.event ? "events" : "other");
