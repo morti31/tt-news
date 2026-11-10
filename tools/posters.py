@@ -5,6 +5,8 @@ prestige-tier colours used on the schedule, and abstract table tennis geometry. 
 appears as plain text, which is fine; organisers' logos, marks and livery are never used.
 
 Usage: python3 tools/posters.py [event id ...]   (renders img/posters/<event id>.jpg for events in data/events.json)
+       python3 tools/posters.py --need           exit 0 if some event has no poster yet (used by the WTT sync workflow)
+       python3 tools/posters.py --missing        render only the events that have no poster yet
 """
 import datetime as dt
 import html, json, os
@@ -410,6 +412,12 @@ def svg(ev, style):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{e(lbl)}">\n{body}\n</svg>\n'
 
 
+def missing():
+    data = json.load(open(os.path.join(ROOT, "data", "events.json"), encoding="utf-8"))
+    out = os.path.join(ROOT, "img", "posters")
+    return [ev["id"] for ev in data["events"] if not (os.path.exists(os.path.join(out, ev["id"] + ".jpg")) and os.path.exists(os.path.join(out, ev["id"] + "-sq.jpg")))]
+
+
 def main(only=None):
     """Render every hub event's posters: img/posters/<id>.jpg (16:9) and <id>-sq.jpg (square, for phones and small slots).
     Needs Playwright, so run it locally or in an update run, not at deploy."""
@@ -441,4 +449,11 @@ def main(only=None):
 
 if __name__ == "__main__":
     import sys
-    main(sys.argv[1:] or None)
+    if sys.argv[1:] == ["--need"]:
+        sys.exit(0 if missing() else 1)
+    if sys.argv[1:] == ["--missing"]:
+        todo = missing()
+        if todo:
+            main(todo)
+    else:
+        main(sys.argv[1:] or None)

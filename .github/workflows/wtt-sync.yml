@@ -19,11 +19,17 @@ jobs:
           python3 -m pip install -q brotli 2>/dev/null || true
           python3 tools/wtt_sync.py
           python3 tools/build_calendar.py
+      - name: Posters for new event pages
+        run: |
+          # Every event page gets Eleven's poster; only start the browser when one is missing
+          if python3 tools/posters.py --need; then
+            python3 -m pip install -q playwright && python3 -m playwright install --with-deps chromium && python3 tools/posters.py --missing || echo "Posters could not be rendered this run"
+          fi
       - name: Commit changes
         run: |
           git config user.name "Tom Mortimer"
           git config user.email "tommorti@gmail.com"
-          git add data/schedule.json data/events.json data/draws data/rankings.json data/news.json calendar.ics
+          git add data/schedule.json data/events.json data/draws data/rankings.json data/news.json calendar.ics img/posters
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           # calendar.ics alone changes on every run (timestamp); only commit when data changed
           if git diff --cached --quiet -- data; then echo "Only the calendar timestamp changed"; exit 0; fi
