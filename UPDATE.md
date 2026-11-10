@@ -144,7 +144,7 @@ Past years are complete back to 2021 (finished 10 November 2026): every WTT Seri
 - Events not in WTT's system (European and Asian championships, the Asian Games, the European Games, the Mixed Team World Cup 2023) are kept by hand with `champions`, as "Past events and full draws" describes. Scores were left out where they could not be confirmed.
 - Tokyo 2020 (WTT id 2345) is held in an older Olympic format; its draw file was converted by hand and starts at the last 32.
 - Every page from Star Contender level up has a "How it was won" (two short paragraphs for 2021 to 2023). Feeder and Contender pages have none.
-- The Oceania Championships 2023 has no page yet: its dates were not confirmed, and its men's singles champion was 15 (see "Age level" in step 2).
+- The Oceania Championships 2023 page is kept by hand from Table Tennis Australia's report (winners and runners-up, no scores).
 - New events get their pages from `tools/wtt_sync.py` as they start (see "Automatic event pages for WTT events"). New hubs are appended to the end of `events` in data/events.json so existing posters keep their look.
 - The events index shows one year at a time (tabs); `/events/#y2024` opens a year.
 
