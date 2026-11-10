@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T13:03:00Z",
+  "updated": "2026-11-10T19:40:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -879,26 +879,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3257-ttewsinglesrnd1002600",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Wei Jingming v Ozge Yilmaz, women's singles, qualifying round 1",
-      "start": "2026-11-10T16:30:00Z",
-      "end": "2026-11-10T17:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWSINGLES-----------RND1002600--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttemsinglesrnd1002200",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Lim Yunoh v Mudit Dani, men's singles, qualifying round 1",
-      "start": "2026-11-10T16:30:00Z",
-      "end": "2026-11-10T17:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------RND1002200--",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3257-ttewsinglesrnd1002300",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Yousra Helmy v Lucia Cordero, women's singles, qualifying round 1",
@@ -919,22 +899,32 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3257-ttewsinglesrnd1002600",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Wei Jingming v Ozge Yilmaz, women's singles, qualifying round 1",
+      "start": "2026-11-10T16:30:00Z",
+      "end": "2026-11-10T17:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND1002600--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd1002200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Lim Yunoh v Mudit Dani, men's singles, qualifying round 1",
+      "start": "2026-11-10T16:30:00Z",
+      "end": "2026-11-10T17:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND1002200--",
+      "detail": "Table 2"
+    },
+    {
       "id": "cl-women-2026-27-s2-hodonin-cartagena",
       "event_id": "ettu-cl-women-s2r1-2026",
       "name": "ETTU Champions League Women: SKST Plus Hodonín v UCAM Cartagena, Stage 2",
       "start": "2026-11-10T17:00:00Z",
       "end": "2026-11-10T20:00:00Z",
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
-    },
-    {
-      "id": "wtt-3257-ttemsinglesrnd1003000",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Shahbozbek Gulomiddinov v Tugay Yilmaz, men's singles, qualifying round 1",
-      "start": "2026-11-10T17:05:00Z",
-      "end": "2026-11-10T17:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------RND1003000--",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttemsinglesrnd1002900",
@@ -957,6 +947,16 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3257-ttemsinglesrnd1003000",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Shahbozbek Gulomiddinov v Tugay Yilmaz, men's singles, qualifying round 1",
+      "start": "2026-11-10T17:05:00Z",
+      "end": "2026-11-10T17:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND1003000--",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3257-ttewsinglesrnd1003100",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Mariia Tailakova v Elise Pujol, women's singles, qualifying round 1",
@@ -975,14 +975,14 @@
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
     },
     {
-      "id": "wtt-3257-ttewsinglesrnd1001900",
+      "id": "wtt-3257-ttemsinglesrnd1002600",
       "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Tiffany Ke v Feng Yixuan, women's singles, qualifying round 1",
+      "name": "WTT Contender Istanbul: Ao Hualei v Amin Ahmadian, men's singles, qualifying round 1",
       "start": "2026-11-10T17:40:00Z",
       "end": "2026-11-10T18:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWSINGLES-----------RND1001900--",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------RND1002600--",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3257-ttewsinglesrnd1002200",
@@ -995,6 +995,16 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3257-ttewsinglesrnd1001900",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Tiffany Ke v Feng Yixuan, women's singles, qualifying round 1",
+      "start": "2026-11-10T17:40:00Z",
+      "end": "2026-11-10T18:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND1001900--",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3257-ttemsinglesrnd1002300",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Khasanboy Teshaboev v Quan Kaiyuan, men's singles, qualifying round 1",
@@ -1003,26 +1013,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
       "code": "TTEMSINGLES-----------RND1002300--",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3257-ttemsinglesrnd1002600",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Ao Hualei v Amin Ahmadian, men's singles, qualifying round 1",
-      "start": "2026-11-10T17:40:00Z",
-      "end": "2026-11-10T18:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------RND1002600--",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3257-ttemsinglesrnd1002100",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Benyamin Faraji v Kazuki Yoshiyama, men's singles, qualifying round 1",
-      "start": "2026-11-10T18:15:00Z",
-      "end": "2026-11-10T18:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------RND1002100--",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttewsinglesrnd1002700",
@@ -1045,6 +1035,16 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3257-ttemsinglesrnd1002100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Benyamin Faraji v Kazuki Yoshiyama, men's singles, qualifying round 1",
+      "start": "2026-11-10T18:15:00Z",
+      "end": "2026-11-10T18:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND1002100--",
+      "detail": "Table 1"
+    },
+    {
       "id": "cl-women-2026-27-s2-saint-quentin-linz",
       "event_id": "ettu-cl-women-s2r1-2026",
       "name": "ETTU Champions League Women: Saint-Quentin TT v Linz AG Froschberg, Stage 2",
@@ -1059,25 +1059,8 @@
       "start": "2026-11-11T10:00:00Z",
       "end": "2026-11-11T10:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------RND1000400--"
-    },
-    {
-      "id": "wtt-3257-ttexdoublesrnd1000300",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Petyo/YOVKOVA Maria Krastev v Bo/POLCANOVA Sofia Fang, mixed doubles, qualifying round 1",
-      "start": "2026-11-11T10:00:00Z",
-      "end": "2026-11-11T10:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------RND1000300--"
-    },
-    {
-      "id": "wtt-3257-ttexdoublesrnd1000200",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Yuan Licen/ZONG Geman v Andre/WAN Yuan Bertelsmeier, mixed doubles, qualifying round 1",
-      "start": "2026-11-11T10:00:00Z",
-      "end": "2026-11-11T10:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------RND1000200--"
+      "code": "TTEXDOUBLES-----------RND1000400--",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttexdoublesrnd1000100",
@@ -1086,7 +1069,348 @@
       "start": "2026-11-11T10:00:00Z",
       "end": "2026-11-11T10:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------RND1000100--"
+      "code": "TTEXDOUBLES-----------RND1000100--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttexdoublesrnd1000200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Yuan Licen/ZONG Geman v Andre/WAN Yuan Bertelsmeier, mixed doubles, qualifying round 1",
+      "start": "2026-11-11T10:00:00Z",
+      "end": "2026-11-11T10:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEXDOUBLES-----------RND1000200--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttexdoublesrnd1000300",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Petyo/YOVKOVA Maria Krastev v Bo/POLCANOVA Sofia Fang, mixed doubles, qualifying round 1",
+      "start": "2026-11-11T10:00:00Z",
+      "end": "2026-11-11T10:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEXDOUBLES-----------RND1000300--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Quadri Aruna v Mael Van Dessel, men's singles, qualifying round 2",
+      "start": "2026-11-11T10:35:00Z",
+      "end": "2026-11-11T11:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000100--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Fan Shuhan v Ioana Singeorzan, women's singles, qualifying round 2",
+      "start": "2026-11-11T10:35:00Z",
+      "end": "2026-11-11T11:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000100--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001300",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Connor Green v Ao Hualei, men's singles, qualifying round 2",
+      "start": "2026-11-11T10:35:00Z",
+      "end": "2026-11-11T11:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001300--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000700",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Maria Panfilova v Nomin Baasan, women's singles, qualifying round 2",
+      "start": "2026-11-11T10:35:00Z",
+      "end": "2026-11-11T11:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000700--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001600",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Navid Shams v Jo Yokotani, men's singles, qualifying round 2",
+      "start": "2026-11-11T11:10:00Z",
+      "end": "2026-11-11T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001600--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000900",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Kang Dongsoo v Priyanuj Bhattacharyya, men's singles, qualifying round 2",
+      "start": "2026-11-11T11:10:00Z",
+      "end": "2026-11-11T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000900--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001500",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Jessica Reyes Lai v Tianer Yu, women's singles, qualifying round 2",
+      "start": "2026-11-11T11:10:00Z",
+      "end": "2026-11-11T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001500--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000400",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Elina Rahimi v Filippa Bergand, women's singles, qualifying round 2",
+      "start": "2026-11-11T11:10:00Z",
+      "end": "2026-11-11T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000400--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000500",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Veronika Matiunina v Clea De Stoppeleire, women's singles, qualifying round 2",
+      "start": "2026-11-11T11:45:00Z",
+      "end": "2026-11-11T12:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000500--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Quan Kaiyuan v Aditya Sareen, men's singles, qualifying round 2",
+      "start": "2026-11-11T11:45:00Z",
+      "end": "2026-11-11T12:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001200--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Iskender Kharki v Borgar Haug, men's singles, qualifying round 2",
+      "start": "2026-11-11T11:45:00Z",
+      "end": "2026-11-11T12:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000200--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000600",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Mahshid Ashtari v Isa Cok, women's singles, qualifying round 2",
+      "start": "2026-11-11T11:45:00Z",
+      "end": "2026-11-11T12:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000600--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Benyamin Faraji v Lim Yunoh, men's singles, qualifying round 2",
+      "start": "2026-11-11T12:20:00Z",
+      "end": "2026-11-11T12:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001100--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000300",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Leonardo Iizuka v Danilo Faso, men's singles, qualifying round 2",
+      "start": "2026-11-11T12:20:00Z",
+      "end": "2026-11-11T12:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000300--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Yousra Helmy v Audrey Zarif, women's singles, qualifying round 2",
+      "start": "2026-11-11T12:20:00Z",
+      "end": "2026-11-11T12:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001200--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000800",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Sofia-Xuan Zhang v Laura Watanabe, women's singles, qualifying round 2",
+      "start": "2026-11-11T12:20:00Z",
+      "end": "2026-11-11T12:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000800--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001400",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Maria Yovkova v Yuan Wan, women's singles, qualifying round 2",
+      "start": "2026-11-11T12:55:00Z",
+      "end": "2026-11-11T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001400--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000900",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Giulia Takahashi v Sibel Altinkaya, women's singles, qualifying round 2",
+      "start": "2026-11-11T12:55:00Z",
+      "end": "2026-11-11T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000900--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001000",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Gorkem Ocal v Angel Naranjo, men's singles, qualifying round 2",
+      "start": "2026-11-11T12:55:00Z",
+      "end": "2026-11-11T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001000--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000500",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Yuan Licen v Dmitrii Vinogradov, men's singles, qualifying round 2",
+      "start": "2026-11-11T12:55:00Z",
+      "end": "2026-11-11T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000500--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000400",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Ibrahim Gunduz v Luka Mladenovic, men's singles, qualifying round 2",
+      "start": "2026-11-11T13:30:00Z",
+      "end": "2026-11-11T14:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000400--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000600",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Yoan Velichkov v Amir Hossein Hodaei, men's singles, qualifying round 2",
+      "start": "2026-11-11T13:30:00Z",
+      "end": "2026-11-11T14:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000600--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Debora Vivarelli v Maftuna Gulimova, women's singles, qualifying round 2",
+      "start": "2026-11-11T13:30:00Z",
+      "end": "2026-11-11T14:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001100--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001600",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Mariia Tailakova v Wang Xiaotong, women's singles, qualifying round 2",
+      "start": "2026-11-11T13:30:00Z",
+      "end": "2026-11-11T14:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001600--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001500",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Diego Lillo v Tugay Yilmaz, men's singles, qualifying round 2",
+      "start": "2026-11-11T14:05:00Z",
+      "end": "2026-11-11T14:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001500--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001000",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Feng Yixuan v Cocona Muramatsu, women's singles, qualifying round 2",
+      "start": "2026-11-11T14:05:00Z",
+      "end": "2026-11-11T14:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001000--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001300",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Jiamuwa Wu v Wei Jingming, women's singles, qualifying round 2",
+      "start": "2026-11-11T14:05:00Z",
+      "end": "2026-11-11T14:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001300--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2001400",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Petyo Krastev v Ricardo Walther, men's singles, qualifying round 2",
+      "start": "2026-11-11T14:05:00Z",
+      "end": "2026-11-11T14:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2001400--",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000700",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Matteo Mutti v Miguel Pantoja, men's singles, qualifying round 2",
+      "start": "2026-11-11T14:40:00Z",
+      "end": "2026-11-11T15:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000700--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesrnd2000800",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Maksim Grebnev v Alberto Mino, men's singles, qualifying round 2",
+      "start": "2026-11-11T14:40:00Z",
+      "end": "2026-11-11T15:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------RND2000800--",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000300",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Swastika Ghosh v Valeriia Kotsiur, women's singles, qualifying round 2",
+      "start": "2026-11-11T14:40:00Z",
+      "end": "2026-11-11T15:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000300--",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2000200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Zlata Terekhova v Arina Slautina, women's singles, qualifying round 2",
+      "start": "2026-11-11T14:40:00Z",
+      "end": "2026-11-11T15:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2000200--",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3257-ttewdoublesrnd1000100",
@@ -1095,7 +1419,8 @@
       "start": "2026-11-11T16:00:00Z",
       "end": "2026-11-11T16:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWDOUBLES-----------RND1000100--"
+      "code": "TTEWDOUBLES-----------RND1000100--",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttewdoublesrnd1000200",
@@ -1104,7 +1429,8 @@
       "start": "2026-11-11T16:00:00Z",
       "end": "2026-11-11T16:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWDOUBLES-----------RND1000200--"
+      "code": "TTEWDOUBLES-----------RND1000200--",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3257-ttewdoublesrnd1000300",
@@ -1113,7 +1439,8 @@
       "start": "2026-11-11T16:00:00Z",
       "end": "2026-11-11T16:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWDOUBLES-----------RND1000300--"
+      "code": "TTEWDOUBLES-----------RND1000300--",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3257-ttewdoublesrnd1000400",
@@ -1122,7 +1449,8 @@
       "start": "2026-11-11T16:00:00Z",
       "end": "2026-11-11T16:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWDOUBLES-----------RND1000400--"
+      "code": "TTEWDOUBLES-----------RND1000400--",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3257-ttemdoublesrnd1000300",
@@ -1131,7 +1459,8 @@
       "start": "2026-11-11T16:35:00Z",
       "end": "2026-11-11T17:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMDOUBLES-----------RND1000300--"
+      "code": "TTEMDOUBLES-----------RND1000300--",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttemdoublesrnd1000400",
@@ -1140,7 +1469,8 @@
       "start": "2026-11-11T16:35:00Z",
       "end": "2026-11-11T17:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMDOUBLES-----------RND1000400--"
+      "code": "TTEMDOUBLES-----------RND1000400--",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3257-ttemdoublesrnd1000200",
@@ -1149,7 +1479,8 @@
       "start": "2026-11-11T16:35:00Z",
       "end": "2026-11-11T17:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMDOUBLES-----------RND1000200--"
+      "code": "TTEMDOUBLES-----------RND1000200--",
+      "detail": "Table 3"
     },
     {
       "id": "cl-women-2026-27-s2-berlin-metz",
