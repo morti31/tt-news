@@ -300,10 +300,36 @@ def hub(stories, now):
 </main>'''
 
 
+def strip_data(now):
+    """data/club-strip.json: the club results of the last few days and the fixtures of the next few, for the scores strip
+    at the top of every page. The browser picks what is current (widgets.js), so the file only needs a margin either side."""
+    out = []
+    for lg in LEAGUES:
+        for cid, tag, title in lg["comps"]:
+            try:
+                d = json.load(open(os.path.join(ROOT, "data", "clubs", f"{cid}.json"), encoding="utf-8"))
+            except Exception:
+                continue
+            for m in d.get("matches") or []:
+                if not (m.get("when") and m.get("home") and m.get("away")):
+                    continue
+                t = dt.datetime.fromisoformat(m["when"].replace("Z", "+00:00"))
+                if not (now - dt.timedelta(days=4) <= t <= now + dt.timedelta(days=4)):
+                    continue
+                if m.get("status") == "finished" and not m.get("score"):
+                    continue
+                out.append({"lg": lg["slug"], "league": lg["name"], "comp": tag, "title": title, "home": m["home"], "away": m["away"],
+                            "score": m.get("score") if m.get("status") == "finished" else None, "when": m["when"], "day": bool(m.get("date_only")),
+                            "round": m.get("round") or ""})
+    out.sort(key=lambda x: x["when"])
+    json.dump(out, open(os.path.join(ROOT, "data", "club-strip.json"), "w", encoding="utf-8"), ensure_ascii=False)
+
+
 def build(page, site, stories):
     """Write /clubs/index.html and a page per league; return sitemap entries."""
     now = dt.datetime.now(dt.timezone.utc)
     os.makedirs(os.path.join(ROOT, "clubs"), exist_ok=True)
+    strip_data(now)
     today = dt.date.today().isoformat()
     urls = [(f"{site}/clubs/", today)]
     open(os.path.join(ROOT, "clubs", "index.html"), "w", encoding="utf-8").write(page(

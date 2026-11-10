@@ -110,6 +110,8 @@ Your job on finals day: publish the finals review as the `top` story, written as
 
 ## Club leagues
 
+Results and fixtures in these files also feed the scores strip at the top of every page (`data/club-strip.json`, built from `data/clubs/*.json`): results of the last two days and fixtures of the next two, every league, linked to the league page. So the hand-kept files (`cl-men`, `cl-women`, `cttsl-*`, `proa-*`, `utt`) matter for the strip: add each Champions League and other league result and the next fixtures with a `when` time (UTC) in every run, and never leave a played fixture as `scheduled`.
+
 The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.py`) reads `data/clubs/<competition>.json`.
 
 - Automatic (`"auto": true`): `ttbl`, `dttbl-women`, `tleague-men`, `tleague-women`, `mltt`. `.github/workflows/club-sync.yml` refreshes them every hour from the leagues' own sites (`tools/club_sync.py`). Don't edit these by hand. If one stops updating (its `updated` time is more than a day old during the season), check the workflow log and fix the parser. Each new season: add the women's Bundesliga group id to `DTTBL_GROUP` in `tools/club_sync.py` (shown on the DTTB click-TT league page) and check new club names in `TTBL_NAMES`, `DTTBL_NAMES` and `TL_TEAMS`.

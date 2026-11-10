@@ -56,11 +56,17 @@ window.ElevenStream = function (el) {
   // Scores strip, led by anything on now with a link to live scores
   if ($("ticker")) {
     const over = (id) => !!(hubs[id] && hubs[id].champions && hubs[id].champions.length);   // every final played
-    const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) =>
-      `<a class="score-card live-card" href="${esc(hubs[e.id] ? hubs[e.id].url : news.live_results_url || "https://www.worldtabletennis.com/")}"${hubs[e.id] ? "" : ' target="_blank" rel="noopener"'}>
+    // Club competitions on now link to their league page on Eleven; WTT events without a page link to WTT
+    const LEAGUE_PAGE = [[/Champions League/i, "champions-league"], [/Super League/i, "super-league"], [/T\.? ?League/i, "t-league"], [/TTBL|Bundesliga/i, "bundesliga"],
+      [/Pro A\b/i, "pro-a"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
+    const leaguePage = (e) => { if (hubs[e.id] || !/club|league/i.test(`${e.series} ${e.type}`)) return null; const m = LEAGUE_PAGE.find(([rx]) => rx.test(e.name)); return m ? `/clubs/${m[1]}.html` : null; };
+    const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) => {
+      const lp = leaguePage(e);
+      return `<a class="score-card live-card" href="${esc(lp || (hubs[e.id] ? hubs[e.id].url : news.live_results_url || "https://www.worldtabletennis.com/"))}"${hubs[e.id] || lp ? "" : ' target="_blank" rel="noopener"'}>
         <span class="ev"><span class="live-dot"></span>On now</span>
         <span class="row won"><span>${esc(e.name)}</span></span>
-        <span class="row"><span>${hubs[e.id] ? "Draw, results and schedule" : "Live scores on WTT"}</span></span></a>`);
+        <span class="row"><span>${lp ? "Fixtures and results" : hubs[e.id] ? "Draw, results and schedule" : "Live scores on WTT"}</span></span></a>`;
+    });
     (news.results || []).forEach((r) => r.matches.forEach((m) => {
       const sc = /^(\d+)-(\d+)$/.exec(m.score || "");
       if (!sc || !m.loser) return;
@@ -69,6 +75,29 @@ window.ElevenStream = function (el) {
         <span class="row won"><span>${withFlag(m.winner)}</span><b>${sc[1]}</b></span>
         <span class="row"><span>${withFlag(m.loser)}</span><b>${sc[2]}</b></span></a>`);
     }));
+    // Club leagues: results of the last two days and the next fixtures (data/club-strip.json, built from data/clubs).
+    // Cards sit after the WTT cards; each links to the league's page.
+    const clubCards = [];
+    try {
+      const rows = await fetch("/data/club-strip.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : []));
+      const nowMs = Date.now();
+      const stamp = (r) => new Date(r.when).getTime();
+      const when = (r) => r.day ? fmt(r.when.slice(0, 10), { weekday: "short", day: "numeric", month: "short" })
+        : new Date(r.when).toLocaleString("en-GB", { weekday: "short", hour: "2-digit", minute: "2-digit" });
+      const label = (r) => `${r.league}${r.comp && r.comp !== "Mixed" ? " " + r.comp.toLowerCase() : ""}`;
+      const done = rows.filter((r) => r.score && stamp(r) <= nowMs + 36e5 && stamp(r) >= nowMs - 2 * 864e5).sort((a, b) => stamp(b) - stamp(a)).slice(0, 8);
+      const next = rows.filter((r) => !r.score && (r.day ? r.when.slice(0, 10) >= today : stamp(r) >= nowMs - 3 * 36e5) && stamp(r) <= nowMs + 2 * 864e5).sort((a, b) => stamp(a) - stamp(b)).slice(0, 6);
+      next.forEach((r) => clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">Next · ${esc(when(r))}</span><span class="where">${esc(label(r))}</span>
+        <span class="row"><span>${esc(r.home)}</span></span><span class="row"><span>${esc(r.away)}</span></span></a>`));
+      done.forEach((r) => {
+        const hw = r.score[0] > r.score[1];
+        clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">${esc(label(r))}</span><span class="where">${esc(r.round)}</span>
+        <span class="row${hw ? " won" : ""}"><span>${esc(r.home)}</span><b>${r.score[0]}</b></span><span class="row${hw ? "" : " won"}"><span>${esc(r.away)}</span><b>${r.score[1]}</b></span></a>`);
+      });
+    } catch (e) {}
+    // Club cards come straight after the "On now" cards, ahead of older stored results
+    const firstOld = cards.findIndex((c) => !c.includes("live-card"));
+    cards.splice(firstOld < 0 ? cards.length : firstOld, 0, ...clubCards);
     $("ticker").innerHTML = cards.join("");
     if (!cards.length) $("ticker").closest(".ticker").hidden = true;
 
@@ -104,8 +133,8 @@ window.ElevenStream = function (el) {
     // Home page with an event on: the "On now" panel carries the live scores, so the strip waits for them
     // rather than showing "On now" link cards that are swapped out a moment later
     if (liveHubs.length && ["/", "/index.html"].includes(location.pathname) && liveHubs.some((h) => !(h.champions || []).length && h.start <= today && h.end >= today)) {
-      $("ticker").innerHTML = "";
-      $("ticker").closest(".ticker").hidden = true;
+      $("ticker").innerHTML = clubCards.join("");   // the "On now" panel carries the WTT scores; club results stay in the strip
+      $("ticker").closest(".ticker").hidden = !clubCards.length;
     }
     if (liveHubs.length) {
       // "Women's singles, round of 32" -> "Women's singles R32", so the label fits the card
