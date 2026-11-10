@@ -1,7 +1,250 @@
 {
-  "updated": "2026-11-10T00:20:00Z",
+  "updated": "2026-11-10T04:19:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ttbl-matchday-7-grenzau-dusseldorf-kanak-jha-pitchford-2026",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "bundesliga",
+      "lang": "German",
+      "date": "2026-11-09",
+      "published": "2026-11-10T04:19:00Z",
+      "headline": "Tischtennis Bundesliga: Kanak Jha comes from two games down as Düsseldorf stay perfect at Grenzau",
+      "summary": "Borussia Düsseldorf won 3-2 at TTC Zugbrücke Grenzau on Monday to make it seven wins from seven in the Tischtennis Bundesliga, despite a straight-games win for Liam Pitchford over Anton Källberg.",
+      "score": "3-2",
+      "matches": [
+        {
+          "label": "Tischtennis Bundesliga, matchday 7",
+          "event": "Tischtennis Bundesliga, Höhr-Grenzhausen",
+          "sides": [
+            {
+              "name": "TTC Zugbrücke Grenzau"
+            },
+            {
+              "name": "Borussia Düsseldorf"
+            }
+          ],
+          "score": [
+            2,
+            3
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Feng Yi-hsin",
+                  "nat": "TPE"
+                },
+                {
+                  "name": "Li Yongyin",
+                  "nat": "CHN"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  6
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Samuel Walker",
+                  "nat": "ENG"
+                },
+                {
+                  "name": "Kanak Jha",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  3,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Liam Pitchford",
+                  "nat": "ENG"
+                },
+                {
+                  "name": "Anton Källberg",
+                  "nat": "SWE"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  14,
+                  12
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Feng Yi-hsin",
+                  "nat": "TPE"
+                },
+                {
+                  "name": "Kanak Jha",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                2,
+                3
+              ],
+              "games": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  18,
+                  16
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Maciej Kubik / Martin Allegro"
+                },
+                {
+                  "name": "Anton Källberg / Li Yongyin"
+                }
+              ],
+              "score": [
+                1,
+                3
+              ],
+              "games": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Borussia Düsseldorf kept their perfect start in the Tischtennis Bundesliga with a 3-2 win at TTC Zugbrücke Grenzau on Monday night, the day after Grenzau's Liam Pitchford won WTT Feeder Vila Nova de Gaia in Portugal.",
+        "Kanak Jha won both his singles for Düsseldorf. He beat Samuel Walker 11-3, 11-8, 11-6 and then came from two games down against Feng Yi-hsin, after losing the second game 18-16, to win 9-11, 16-18, 11-6, 11-6, 11-6. Anton Källberg and Li Yongyin added the doubles, 7-11, 11-7, 11-8, 11-6 against Maciej Kubik and Martin Allegro.",
+        "Pitchford, who is coming back from hip surgery, beat Källberg 11-8, 11-9, 14-12, and Feng beat Li 11-7, 12-10, 11-6 in front of 600 spectators in Höhr-Grenzhausen.",
+        "Düsseldorf lead TTF Ochsenhausen by two points and host ASC Grünwettersbach on Sunday 15 November. Grenzau, seventh, play at 1. FC Saarbrücken the same day."
+      ],
+      "sources": [
+        {
+          "name": "TTBL (German): TTC Zugbrücke Grenzau v Borussia Düsseldorf, match report and scores",
+          "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/7/453d00cc-dc8b-4578-9826-14fba86045f0"
+        },
+        {
+          "name": "Borussia Düsseldorf (German): Close, but successful: Borussia win in Grenzau",
+          "url": "https://www.borussia-duesseldorf.com/profis/news/ttbl-knapp-aber-erfolgreich-borussia-siegt-in-grenzau"
+        },
+        {
+          "name": "Rhein-Zeitung (German): Leaders Düsseldorf snatch win from Grenzau",
+          "url": "https://www.rhein-zeitung.de/sport/regionalsport/tischtennis/spitzenreiter-duesseldorf-entreisst-ttc-grenzau-den-sieg_arid-4168993.html"
+        }
+      ]
+    },
+    {
+      "id": "world-rankings-2026-week-46-harimoto-no-2",
+      "category": "International",
+      "date": "2026-11-10",
+      "published": "2026-11-10T04:17:00Z",
+      "headline": "Tomokazu Harimoto climbs to world No 2 behind Sora Matsushima as Satsuki Odo breaks into the women's top 10",
+      "summary": "Japan hold first and second in the men's world ranking after Tomokazu Harimoto's Frankfurt title, while Wang Manyu stays No 1 and Satsuki Odo reaches the women's top 10.",
+      "sources": [
+        {
+          "name": "ITTF world ranking, week 46 (WTT)",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
+    },
+    {
+      "id": "mixed-team-world-cup-2026-china-squad",
+      "category": "International",
+      "lang": "Chinese",
+      "event": "mixed-team-world-cup-2026",
+      "date": "2026-11-10",
+      "published": "2026-11-10T04:15:00Z",
+      "headline": "Mixed Team World Cup: Wang Chuqin and Sun Yingsha lead China squad as Chen Yi and Zhou Qihao earn places",
+      "summary": "China have picked Wang Chuqin, Lin Shidong, Huang Youzheng, Zhou Qihao, Wang Manyu, Sun Yingsha, Kuai Man and Chen Yi to defend the Mixed Team World Cup in Chengdu.",
+      "sources": [
+        {
+          "name": "Sohu (Chinese): CTTA announces 2026 Mixed Team World Cup squad",
+          "url": "https://m.sohu.com/a/1099436789_255783"
+        }
+      ],
+      "top": true
+    },
     {
       "id": "liang-jingkun-withdraws-wtt-contender-istanbul-2026",
       "category": "International",
@@ -15,7 +258,8 @@
         "Liang Jingkun has withdrawn from WTT Contender Istanbul, which starts on Tuesday. WTT's updated entry list, published on Monday, removed him from the men's singles and the men's doubles, where he was due to partner Yuan Licen. No reason was given.",
         "Chen Junsong takes Liang's place in the men's singles main draw. Liang's only tournament since his return from months out was [WTT Champions Frankfurt](/news/wtt-champions-frankfurt-2026-day-three-review-results-highlights.html), where he came in as a late replacement and lost 3-2 to Hugo Calderano in the first round after 52 minutes.",
         "Chinese reports said fans linked the decision to preparations for the Mixed Team World Cup in Chengdu, which starts on 29 November, but no explanation has come from Liang, the Chinese team or WTT.",
-        "China's entry in Istanbul is made up of younger players. Wang Chuqin, Lin Shidong, Sun Yingsha and Wang Manyu were among those who did not enter. Istanbul, which hosts the European Games next summer, is worth 400 ranking points to the singles winners, and the event runs until Sunday."
+        "China's entry in Istanbul is made up of younger players. Wang Chuqin, Lin Shidong, Sun Yingsha and Wang Manyu were among those who did not enter. Istanbul, which hosts the European Games next summer, is worth 400 ranking points to the singles winners, and the event runs until Sunday.",
+        "Liang was not named in China's eight-player squad for the Mixed Team World Cup, which the Chinese Table Tennis Association [announced on Tuesday](/news/mixed-team-world-cup-2026-china-squad-wang-chuqin-sun-yingsha-chen-yi-zhou-qihao.html)."
       ],
       "sources": [
         {
@@ -34,7 +278,8 @@
           "name": "Sohu (Chinese): WTT Contender Istanbul schedule and Chinese entries",
           "url": "https://m.sohu.com/a/1099335745_122428438"
         }
-      ]
+      ],
+      "modified": "2026-11-10T04:19:00Z"
     },
     {
       "id": "tom-jarvis-wtt-contender-istanbul-2026-england",
@@ -64,7 +309,6 @@
       "published": "2026-11-09T20:40:00Z",
       "lang": "Chinese",
       "event": "wtt-champions-frankfurt-2026",
-      "top": true,
       "headline": "Wang Chuqin says his slump has let him take a hard look at himself after WTT Champions Frankfurt exit",
       "summary": "Wang Chuqin broke his silence on Weibo after his last-16 defeat by Wen Ruibo in Frankfurt, saying the low point had shown him where he must improve.",
       "sources": [
@@ -4874,7 +5118,7 @@
         "prev": 6
       },
       {
-        "name": "Truls Moregardh",
+        "name": "Truls Moregard",
         "nat": "SWE",
         "points": 5630,
         "prev": 5

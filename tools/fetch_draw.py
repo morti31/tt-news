@@ -22,7 +22,8 @@ FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
 # WTT data drops accents and uses its own forms for some names
 FIXES = {"Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo",
          "Bernadette Szocs": "Bernadette Szőcs", "Ying Han": "Han Ying", "Peng Yu-Han": "Peng Yu-han",
-         "Jian Zeng": "Zeng Jian", "Feng Yi-Hsin": "Feng Yi-hsin", "Bo Fang": "Fang Bo", "Leo De Nodrest": "Léo de Nodrest"}
+         "Jian Zeng": "Zeng Jian", "Feng Yi-Hsin": "Feng Yi-hsin", "Bo Fang": "Fang Bo", "Leo De Nodrest": "Léo de Nodrest",
+         "Truls Moregardh": "Truls Moregard"}
 
 
 def cap(s):
