@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-10T02:18:00Z",
+ "updated": "2026-11-10T23:35:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -87,6 +87,17 @@
      },
      {
       "pos": 7,
+      "team": "Post SV Mühlhausen",
+      "p": 7,
+      "w": 3,
+      "l": 4,
+      "for": 13,
+      "against": 16,
+      "diff": -3,
+      "pts": 6
+     },
+     {
+      "pos": 8,
       "team": "TTC Grenzau",
       "p": 7,
       "w": 3,
@@ -97,25 +108,14 @@
       "pts": 6
      },
      {
-      "pos": 8,
-      "team": "TTC Fulda-Maberzell",
-      "p": 6,
-      "w": 2,
-      "l": 4,
-      "for": 14,
-      "against": 14,
-      "diff": 0,
-      "pts": 4
-     },
-     {
       "pos": 9,
-      "team": "Post SV Mühlhausen",
-      "p": 6,
+      "team": "TTC Fulda-Maberzell",
+      "p": 7,
       "w": 2,
-      "l": 4,
-      "for": 10,
-      "against": 16,
-      "diff": -6,
+      "l": 5,
+      "for": 14,
+      "against": 17,
+      "diff": -3,
       "pts": 4
      },
      {
@@ -641,8 +641,11 @@
    "when": "2026-11-10T18:00:00Z",
    "home": "Post SV Mühlhausen",
    "away": "TTC Fulda-Maberzell",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
    "round": "Matchday 7",
    "venue": "Mühlhausen"
   },
