@@ -159,7 +159,7 @@ window.ElevenStream = function (el) {
             const fx = F ? await F.get(hub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
             const res = (d.results || []).slice(0, 10).map((m) => mcard(m, hub));
             // On the homepage the "on now" panel already shows all but the older results
-            if (onHome) { extra = extra.concat(res.slice(2)); continue; }
+            if (onHome) { if (!document.body.classList.contains("onnow-low")) extra = extra.concat(res.slice(2)); continue; }
             extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), fx.next.map((x) => F.card(x, hub, { prefix: "Next · ", where: true })), res.slice(0, 2),
               ...fx.knock.map((k) => k.items.map((x) => F.card(x, hub, { where: true }))), res.slice(2));
           } catch (e) {}

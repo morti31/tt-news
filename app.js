@@ -70,11 +70,26 @@
   const liveEvent = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && !done(hubs[e.id]))
     .sort((a, b) => (b.prestige || 0) - (a.prestige || 0))[0];
   const onHub = liveEvent && hubs[liveEvent.id];
+  // Events without the top players (Feeder, Contender, Star Contender: schedule prestige under 3) sit just above Analysis
+  // instead of at the top of the page, and rise to the top at the quarter-finals. Champions level and up lead from day one.
+  const MAJOR = 3;
+  const topNext = $("onnow").nextElementSibling;   // where the panel sits when it leads the page
+  let lowPanel = false;
+  function placeOnNow() {
+    const el = $("onnow"), anchor = $("feat-row") && $("feat-row").closest("main");
+    if (lowPanel && anchor) anchor.parentNode.insertBefore(el, anchor);
+    else if (topNext) topNext.parentNode.insertBefore(el, topNext);
+    document.body.classList.toggle("onnow-low", lowPanel && !$("onnow").hidden);
+  }
+  function moveUp() { if (!lowPanel) return; lowPanel = false; placeOnNow(); }
   function renderOnNow() {
     if (!onHub) return;
     const el = $("onnow");
     const s = day(onHub.start), n = Math.round((day(onHub.end) - s) / 864e5) + 1;
     const dnum = Math.round((day(today) - s) / 864e5) + 1;
+    // Quarter-finals fall on the third day from the end of a six-day event, the second from the end of a shorter one
+    lowPanel = (liveEvent.prestige || 0) < MAJOR && dnum < (n <= 5 ? n - 1 : n - 2);
+    placeOnNow();
     const days = Array.from({ length: n }, (_, i) => {
       const d = new Date(s.getTime() + i * 864e5), iso = d.toISOString().slice(0, 10);
       const cls = [iso === today ? "now" : "", i === n - 1 ? "fin" : ""].join(" ");
@@ -139,6 +154,8 @@
         // quarter-finals) every semi-final and final, filled in as players go through
         const fx = window.ElevenFixtures ? await window.ElevenFixtures.get(onHub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
         const live = d.live || [], done = (d.results || []).slice(0, 2);
+        // The first quarter-final (played or on the way) lifts a lower-profile event to the top of the page
+        if (lowPanel && (fx.knock.length || [...live, ...(d.results || [])].some((m) => /quarter|semi|final/i.test(m.label || "")))) moveUp();
         if (!live.length && !done.length && !fx.next.length) return;
         const grp = (lab, cards, cls = "") => cards.length ? `<div class="lv-grp ${cls}"><span class="lab">${lab}</span><div class="lv-strip${cls ? "" : " one"}">${cards.join("")}</div></div>` : "";
         const F = window.ElevenFixtures;
@@ -320,6 +337,7 @@
     if ($("champs")) $("champs").hidden = !home || !finished;
     // the "on now" section carries the live scores, so the scores strip steps aside on the homepage
     document.body.classList.toggle("has-onnow", home && !!onHub);
+    document.body.classList.toggle("onnow-low", home && !!onHub && lowPanel);
     $("watch").hidden = !home || !$("watch").innerHTML;
     $("feat-row").hidden = !home || !$("feat-row").innerHTML;
     $("ev-row").hidden = !home || !$("ev-row").innerHTML;
