@@ -87,8 +87,12 @@ window.ElevenStream = function (el) {
       const label = (r) => `${r.league}${r.comp && r.comp !== "Mixed" ? " " + r.comp.toLowerCase() : ""}`;
       const done = rows.filter((r) => r.score && stamp(r) <= nowMs + 36e5 && stamp(r) >= nowMs - 2 * 864e5).sort((a, b) => stamp(b) - stamp(a)).slice(0, 8);
       const next = rows.filter((r) => !r.score && (r.day ? r.when.slice(0, 10) >= today : stamp(r) >= nowMs - 3 * 36e5) && stamp(r) <= nowMs + 2 * 864e5).sort((a, b) => stamp(a) - stamp(b)).slice(0, 6);
-      next.forEach((r) => clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">Next · ${esc(when(r))}</span><span class="where">${esc(label(r))}</span>
-        <span class="row"><span>${esc(r.home)}</span></span><span class="row"><span>${esc(r.away)}</span></span></a>`));
+      // League "On now" cards (Fixtures and results) appear only on days that league has a match; no separate "Next" fixture cards
+      const playing = new Set(rows.filter((r) => r.when.slice(0, 10) === today).map((r) => r.lg));
+      for (let k = cards.length - 1; k >= 0; k--) {
+        const m = /class="score-card live-card" href="\/clubs\/([^".]+)\.html"/.exec(cards[k]);
+        if (m && !playing.has(m[1])) cards.splice(k, 1);
+      }
       done.forEach((r) => {
         const hw = r.score[0] > r.score[1];
         clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">${esc(label(r))}</span><span class="where">${esc(r.round)}</span>
