@@ -1,7 +1,7 @@
 {
- "week": 45,
- "date": "2026-11-02",
- "label": "ITTF world ranking, week 45, 2 November 2026",
+ "week": 46,
+ "date": "2026-11-09",
+ "label": "ITTF world ranking, week 46, 9 November 2026",
  "url": "https://www.worldtabletennis.com/rankings",
  "men": [
   {
@@ -9,11 +9,19 @@
    "prev": 1,
    "name": "Sora Matsushima",
    "nat": "JPN",
-   "points": 8230,
+   "points": 7598,
    "ittf_id": "135996"
   },
   {
    "rank": 2,
+   "prev": 3,
+   "name": "Tomokazu Harimoto",
+   "nat": "JPN",
+   "points": 6963,
+   "ittf_id": "123980"
+  },
+  {
+   "rank": 3,
    "prev": 2,
    "name": "Félix Lebrun",
    "nat": "FRA",
@@ -21,36 +29,28 @@
    "ittf_id": "135977"
   },
   {
-   "rank": 3,
-   "prev": 3,
-   "name": "Tomokazu Harimoto",
-   "nat": "JPN",
-   "points": 6413,
-   "ittf_id": "123980"
-  },
-  {
    "rank": 4,
-   "prev": 5,
+   "prev": 4,
    "name": "Wang Chuqin",
    "nat": "CHN",
-   "points": 6157,
+   "points": 6297,
    "ittf_id": "121558"
   },
   {
    "rank": 5,
-   "prev": 4,
-   "name": "Truls Moregard",
-   "nat": "SWE",
-   "points": 5630,
-   "ittf_id": "122044"
-  },
-  {
-   "rank": 6,
    "prev": 6,
    "name": "Lin Yun-Ju",
    "nat": "TPE",
-   "points": 5595,
+   "points": 5870,
    "ittf_id": "121582"
+  },
+  {
+   "rank": 6,
+   "prev": 5,
+   "name": "Truls Moregardh",
+   "nat": "SWE",
+   "points": 5630,
+   "ittf_id": "122044"
   },
   {
    "rank": 7,
@@ -62,7 +62,7 @@
   },
   {
    "rank": 8,
-   "prev": 10,
+   "prev": 8,
    "name": "Jang Woojin",
    "nat": "KOR",
    "points": 4236,
@@ -70,7 +70,7 @@
   },
   {
    "rank": 9,
-   "prev": 8,
+   "prev": 9,
    "name": "Alexis Lebrun",
    "nat": "FRA",
    "points": 3750,
@@ -78,7 +78,7 @@
   },
   {
    "rank": 10,
-   "prev": 9,
+   "prev": 10,
    "name": "Lin Shidong",
    "nat": "CHN",
    "points": 3686,
@@ -86,15 +86,15 @@
   },
   {
    "rank": 11,
-   "prev": 11,
-   "name": "Dang Qiu",
+   "prev": 15,
+   "name": "Patrick Franziska",
    "nat": "GER",
-   "points": 3043,
-   "ittf_id": "114715"
+   "points": 3260,
+   "ittf_id": "102832"
   },
   {
    "rank": 12,
-   "prev": 13,
+   "prev": 12,
    "name": "Zhou Qihao",
    "nat": "CHN",
    "points": 3030,
@@ -102,58 +102,58 @@
   },
   {
    "rank": 13,
-   "prev": 12,
+   "prev": 14,
+   "name": "Wen Ruibo",
+   "nat": "CHN",
+   "points": 2900,
+   "ittf_id": "203067"
+  },
+  {
+   "rank": 14,
+   "prev": 13,
    "name": "Darko Jorgic",
    "nat": "SLO",
    "points": 2895,
    "ittf_id": "118927"
   },
   {
-   "rank": 14,
-   "prev": 14,
-   "name": "Wen Ruibo",
-   "nat": "CHN",
-   "points": 2775,
-   "ittf_id": "203067"
-  },
-  {
    "rank": 15,
-   "prev": 18,
-   "name": "Patrick Franziska",
-   "nat": "GER",
-   "points": 2700,
-   "ittf_id": "102832"
-  },
-  {
-   "rank": 16,
-   "prev": 15,
+   "prev": 16,
    "name": "Shunsuke Togami",
    "nat": "JPN",
-   "points": 2538,
+   "points": 2848,
    "ittf_id": "133694"
   },
   {
-   "rank": 17,
-   "prev": 16,
-   "name": "Anders Lind",
-   "nat": "DEN",
-   "points": 2497,
-   "ittf_id": "115029"
+   "rank": 16,
+   "prev": 11,
+   "name": "Dang Qiu",
+   "nat": "GER",
+   "points": 2643,
+   "ittf_id": "114715"
   },
   {
-   "rank": 18,
-   "prev": 19,
+   "rank": 17,
+   "prev": 18,
    "name": "Vladimir Sidorenko",
    "nat": "RUS",
    "points": 2290,
    "ittf_id": "124576"
   },
   {
-   "rank": 19,
+   "rank": 18,
    "prev": 17,
+   "name": "Anders Lind",
+   "nat": "DEN",
+   "points": 2267,
+   "ittf_id": "115029"
+  },
+  {
+   "rank": 19,
+   "prev": 19,
    "name": "Oh Junsung",
    "nat": "KOR",
-   "points": 2157,
+   "points": 2197,
    "ittf_id": "135367"
   },
   {
@@ -169,7 +169,7 @@
    "prev": 21,
    "name": "Dimitrij Ovtcharov",
    "nat": "GER",
-   "points": 1930,
+   "points": 1895,
    "ittf_id": "107028"
   },
   {
@@ -198,23 +198,23 @@
   },
   {
    "rank": 25,
-   "prev": 25,
-   "name": "Anton Källberg",
-   "nat": "SWE",
-   "points": 1698,
-   "ittf_id": "116853"
-  },
-  {
-   "rank": 26,
    "prev": 26,
    "name": "Tomislav Pucar",
    "nat": "CRO",
-   "points": 1634,
+   "points": 1654,
    "ittf_id": "116532"
   },
   {
+   "rank": 26,
+   "prev": 25,
+   "name": "Anton Källberg",
+   "nat": "SWE",
+   "points": 1623,
+   "ittf_id": "116853"
+  },
+  {
    "rank": 27,
-   "prev": 29,
+   "prev": 27,
    "name": "Elias Ranefur",
    "nat": "SWE",
    "points": 1587,
@@ -222,7 +222,7 @@
   },
   {
    "rank": 28,
-   "prev": 27,
+   "prev": 28,
    "name": "Omar Assar",
    "nat": "EGY",
    "points": 1534,
@@ -230,7 +230,7 @@
   },
   {
    "rank": 29,
-   "prev": 28,
+   "prev": 29,
    "name": "Chen Yuanyu",
    "nat": "CHN",
    "points": 1500,
@@ -238,16 +238,16 @@
   },
   {
    "rank": 30,
-   "prev": 39,
+   "prev": 30,
    "name": "Liang Jingkun",
    "nat": "CHN",
-   "points": 1436,
+   "points": 1446,
    "ittf_id": "119588"
   },
   {
    "rank": 31,
    "prev": 31,
-   "name": "Feng Yi-Hsin",
+   "name": "Feng Yi-hsin",
    "nat": "TPE",
    "points": 1395,
    "ittf_id": "122727"
@@ -262,67 +262,67 @@
   },
   {
    "rank": 33,
-   "prev": 30,
-   "name": "Simon Gauzy",
-   "nat": "FRA",
-   "points": 1360,
-   "ittf_id": "112062"
-  },
-  {
-   "rank": 34,
-   "prev": 33,
+   "prev": 34,
    "name": "Yukiya Uda",
    "nat": "JPN",
    "points": 1355,
    "ittf_id": "122777"
   },
   {
+   "rank": 34,
+   "prev": 38,
+   "name": "Lim Jonghoon",
+   "nat": "KOR",
+   "points": 1330,
+   "ittf_id": "117357"
+  },
+  {
    "rank": 35,
-   "prev": 34,
+   "prev": 33,
+   "name": "Simon Gauzy",
+   "nat": "FRA",
+   "points": 1285,
+   "ittf_id": "112062"
+  },
+  {
+   "rank": 36,
+   "prev": 35,
    "name": "Xiang Peng",
    "nat": "CHN",
    "points": 1275,
    "ittf_id": "135888"
   },
   {
-   "rank": 36,
-   "prev": 38,
+   "rank": 37,
+   "prev": 36,
    "name": "An Jaehyun",
    "nat": "KOR",
    "points": 1263,
    "ittf_id": "121514"
   },
   {
-   "rank": 37,
-   "prev": 35,
-   "name": "João Geraldo",
-   "nat": "POR",
-   "points": 1262,
-   "ittf_id": "115396"
-  },
-  {
    "rank": 38,
-   "prev": 36,
-   "name": "Lim Jonghoon",
-   "nat": "KOR",
-   "points": 1220,
-   "ittf_id": "117357"
+   "prev": 40,
+   "name": "Wim Verdonschot",
+   "nat": "GER",
+   "points": 1245,
+   "ittf_id": "201466"
   },
   {
    "rank": 39,
-   "prev": 37,
+   "prev": 39,
    "name": "Benedikt Duda",
    "nat": "GER",
-   "points": 1167,
+   "points": 1207,
    "ittf_id": "116620"
   },
   {
    "rank": 40,
-   "prev": 40,
-   "name": "Wim Verdonschot",
-   "nat": "GER",
-   "points": 985,
-   "ittf_id": "201466"
+   "prev": 37,
+   "name": "João Geraldo",
+   "nat": "POR",
+   "points": 1187,
+   "ittf_id": "115396"
   },
   {
    "rank": 41,
@@ -342,47 +342,47 @@
   },
   {
    "rank": 43,
-   "prev": 49,
-   "name": "Manav Thakkar",
-   "nat": "IND",
-   "points": 831,
-   "ittf_id": "123682"
-  },
-  {
-   "rank": 44,
-   "prev": 43,
+   "prev": 44,
    "name": "Park Ganghyeon",
    "nat": "KOR",
    "points": 820,
    "ittf_id": "116820"
   },
   {
-   "rank": 45,
-   "prev": 44,
+   "rank": 44,
+   "prev": 45,
    "name": "Manush Shah",
    "nat": "IND",
    "points": 801,
    "ittf_id": "131879"
   },
   {
-   "rank": 46,
-   "prev": 45,
+   "rank": 45,
+   "prev": 46,
    "name": "Maharu Yoshimura",
    "nat": "JPN",
    "points": 790,
    "ittf_id": "117113"
   },
   {
-   "rank": 47,
-   "prev": 46,
+   "rank": 46,
+   "prev": 47,
    "name": "Finn Luu",
    "nat": "AUS",
    "points": 783,
    "ittf_id": "131798"
   },
   {
+   "rank": 47,
+   "prev": 43,
+   "name": "Manav Thakkar",
+   "nat": "IND",
+   "points": 771,
+   "ittf_id": "123682"
+  },
+  {
    "rank": 48,
-   "prev": 47,
+   "prev": 48,
    "name": "Kristian Karlsson",
    "nat": "SWE",
    "points": 740,
@@ -390,7 +390,7 @@
   },
   {
    "rank": 49,
-   "prev": 48,
+   "prev": 49,
    "name": "Lubomir Jancarik",
    "nat": "CZE",
    "points": 740,
@@ -398,19 +398,19 @@
   },
   {
    "rank": 50,
-   "prev": 50,
-   "name": "Tom Jarvis",
-   "nat": "ENG",
-   "points": 733,
-   "ittf_id": "121684"
-  },
-  {
-   "rank": 51,
    "prev": 51,
    "name": "Jonathan Groth",
    "nat": "DEN",
-   "points": 718,
+   "points": 708,
    "ittf_id": "112409"
+  },
+  {
+   "rank": 51,
+   "prev": 50,
+   "name": "Tom Jarvis",
+   "nat": "ENG",
+   "points": 708,
+   "ittf_id": "121684"
   },
   {
    "rank": 52,
@@ -486,14 +486,6 @@
   },
   {
    "rank": 61,
-   "prev": 61,
-   "name": "Alvaro Robles",
-   "nat": "ESP",
-   "points": 630,
-   "ittf_id": "111050"
-  },
-  {
-   "rank": 62,
    "prev": 62,
    "name": "Adrien Rassenfosse",
    "nat": "BEL",
@@ -501,7 +493,7 @@
    "ittf_id": "123659"
   },
   {
-   "rank": 63,
+   "rank": 62,
    "prev": 63,
    "name": "Ryoichi Yoshiyama",
    "nat": "JPN",
@@ -509,20 +501,28 @@
    "ittf_id": "136757"
   },
   {
+   "rank": 63,
+   "prev": 65,
+   "name": "Léo de Nodrest",
+   "nat": "FRA",
+   "points": 580,
+   "ittf_id": "123305"
+  },
+  {
    "rank": 64,
-   "prev": 64,
-   "name": "Ryuusei Kawakami",
-   "nat": "JPN",
-   "points": 575,
-   "ittf_id": "145264"
+   "prev": 61,
+   "name": "Alvaro Robles",
+   "nat": "ESP",
+   "points": 570,
+   "ittf_id": "111050"
   },
   {
    "rank": 65,
-   "prev": 65,
-   "name": "Leo De Nodrest",
-   "nat": "FRA",
-   "points": 565,
-   "ittf_id": "123305"
+   "prev": 64,
+   "name": "Ryuusei Kawakami",
+   "nat": "JPN",
+   "points": 560,
+   "ittf_id": "145264"
   },
   {
    "rank": 66,
@@ -534,6 +534,14 @@
   },
   {
    "rank": 67,
+   "prev": 71,
+   "name": "Deni Kozul",
+   "nat": "SLO",
+   "points": 541,
+   "ittf_id": "118851"
+  },
+  {
+   "rank": 68,
    "prev": 67,
    "name": "Darius Movileanu",
    "nat": "ROU",
@@ -541,7 +549,7 @@
    "ittf_id": "134693"
   },
   {
-   "rank": 68,
+   "rank": 69,
    "prev": 68,
    "name": "Evgeny Tikhonov",
    "nat": "RUS",
@@ -549,7 +557,7 @@
    "ittf_id": "133251"
   },
   {
-   "rank": 69,
+   "rank": 70,
    "prev": 69,
    "name": "Mehdi Bouloussa",
    "nat": "ALG",
@@ -557,28 +565,20 @@
    "ittf_id": "113679"
   },
   {
-   "rank": 70,
-   "prev": 70,
-   "name": "Marcos Freitas",
-   "nat": "POR",
-   "points": 482,
-   "ittf_id": "102841"
-  },
-  {
    "rank": 71,
-   "prev": 71,
-   "name": "Deni Kozul",
-   "nat": "SLO",
-   "points": 481,
-   "ittf_id": "118851"
-  },
-  {
-   "rank": 72,
    "prev": 72,
    "name": "Park Gyuhyeon",
    "nat": "KOR",
    "points": 478,
    "ittf_id": "133813"
+  },
+  {
+   "rank": 72,
+   "prev": 70,
+   "name": "Marcos Freitas",
+   "nat": "POR",
+   "points": 477,
+   "ittf_id": "102841"
   },
   {
    "rank": 73,
@@ -622,7 +622,7 @@
   },
   {
    "rank": 78,
-   "prev": 85,
+   "prev": 78,
    "name": "Sathiyan Gnanasekaran",
    "nat": "IND",
    "points": 443,
@@ -630,7 +630,7 @@
   },
   {
    "rank": 79,
-   "prev": 78,
+   "prev": 79,
    "name": "Eduard Ionescu",
    "nat": "ROU",
    "points": 438,
@@ -638,7 +638,7 @@
   },
   {
    "rank": 80,
-   "prev": 79,
+   "prev": 80,
    "name": "Vladislav Ursu",
    "nat": "MDA",
    "points": 437,
@@ -646,7 +646,7 @@
   },
   {
    "rank": 81,
-   "prev": 80,
+   "prev": 81,
    "name": "Iulian Chirita",
    "nat": "ROU",
    "points": 435,
@@ -654,7 +654,7 @@
   },
   {
    "rank": 82,
-   "prev": 81,
+   "prev": 82,
    "name": "Lubomir Pistej",
    "nat": "SVK",
    "points": 434,
@@ -673,16 +673,16 @@
    "prev": 84,
    "name": "Quek Izaac",
    "nat": "SGP",
-   "points": 402,
+   "points": 397,
    "ittf_id": "133713"
   },
   {
    "rank": 85,
-   "prev": 82,
-   "name": "Hwan Bae",
-   "nat": "AUS",
-   "points": 395,
-   "ittf_id": "134803"
+   "prev": 89,
+   "name": "John Oyebode",
+   "nat": "ITA",
+   "points": 384,
+   "ittf_id": "122051"
   },
   {
    "rank": 86,
@@ -694,11 +694,11 @@
   },
   {
    "rank": 87,
-   "prev": 87,
-   "name": "Tiago Apolonia",
-   "nat": "POR",
-   "points": 377,
-   "ittf_id": "100621"
+   "prev": 85,
+   "name": "Hwan Bae",
+   "nat": "AUS",
+   "points": 380,
+   "ittf_id": "134803"
   },
   {
    "rank": 88,
@@ -710,19 +710,19 @@
   },
   {
    "rank": 89,
-   "prev": 89,
-   "name": "John Oyebode",
-   "nat": "ITA",
-   "points": 376,
-   "ittf_id": "122051"
-  },
-  {
-   "rank": 90,
    "prev": 90,
    "name": "Chen Junsong",
    "nat": "CHN",
    "points": 375,
    "ittf_id": "204288"
+  },
+  {
+   "rank": 90,
+   "prev": 87,
+   "name": "Tiago Apolonia",
+   "nat": "POR",
+   "points": 372,
+   "ittf_id": "100621"
   },
   {
    "rank": 91,
@@ -742,7 +742,7 @@
   },
   {
    "rank": 93,
-   "prev": 94,
+   "prev": 93,
    "name": "Jules Rolland",
    "nat": "FRA",
    "points": 349,
@@ -750,7 +750,7 @@
   },
   {
    "rank": 94,
-   "prev": 95,
+   "prev": 94,
    "name": "Chang Yu-An",
    "nat": "TPE",
    "points": 346,
@@ -758,51 +758,51 @@
   },
   {
    "rank": 95,
-   "prev": 93,
+   "prev": 95,
    "name": "Lilian Bardet",
    "nat": "FRA",
-   "points": 345,
+   "points": 335,
    "ittf_id": "122002"
   },
   {
    "rank": 96,
-   "prev": 96,
-   "name": "Kwon Hyuk",
-   "nat": "KOR",
-   "points": 338,
-   "ittf_id": "135073"
-  },
-  {
-   "rank": 97,
-   "prev": 110,
+   "prev": 97,
    "name": "Snehit Suravajjula",
    "nat": "IND",
    "points": 332,
    "ittf_id": "123680"
   },
   {
+   "rank": 97,
+   "prev": 96,
+   "name": "Kwon Hyuk",
+   "nat": "KOR",
+   "points": 327,
+   "ittf_id": "135073"
+  },
+  {
    "rank": 98,
-   "prev": 97,
+   "prev": 98,
    "name": "Mattias Karlsson",
    "nat": "SWE",
-   "points": 330,
+   "points": 324,
    "ittf_id": "112074"
   },
   {
    "rank": 99,
-   "prev": 98,
-   "name": "Quadri Aruna",
-   "nat": "NGR",
+   "prev": 100,
+   "name": "Alexis Kouraichi",
+   "nat": "FRA",
    "points": 323,
-   "ittf_id": "112092"
+   "ittf_id": "136116"
   },
   {
    "rank": 100,
    "prev": 99,
-   "name": "Alexis Kouraichi",
-   "nat": "FRA",
-   "points": 321,
-   "ittf_id": "136116"
+   "name": "Quadri Aruna",
+   "nat": "NGR",
+   "points": 323,
+   "ittf_id": "112092"
   }
  ],
  "women": [
@@ -827,12 +827,12 @@
    "prev": 3,
    "name": "Miwa Harimoto",
    "nat": "JPN",
-   "points": 7009,
+   "points": 6889,
    "ittf_id": "136711"
   },
   {
    "rank": 4,
-   "prev": 5,
+   "prev": 4,
    "name": "Kuai Man",
    "nat": "CHN",
    "points": 6030,
@@ -840,7 +840,7 @@
   },
   {
    "rank": 5,
-   "prev": 4,
+   "prev": 5,
    "name": "Wang Yidi",
    "nat": "CHN",
    "points": 5260,
@@ -864,7 +864,7 @@
   },
   {
    "rank": 8,
-   "prev": 9,
+   "prev": 8,
    "name": "Chen Yi",
    "nat": "CHN",
    "points": 4335,
@@ -872,7 +872,7 @@
   },
   {
    "rank": 9,
-   "prev": 8,
+   "prev": 9,
    "name": "Hitomi Sato",
    "nat": "JPN",
    "points": 4220,
@@ -881,34 +881,34 @@
   {
    "rank": 10,
    "prev": 11,
+   "name": "Satsuki Odo",
+   "nat": "JPN",
+   "points": 3710,
+   "ittf_id": "133405"
+  },
+  {
+   "rank": 11,
+   "prev": 13,
+   "name": "Sabine Winter",
+   "nat": "GER",
+   "points": 3565,
+   "ittf_id": "111066"
+  },
+  {
+   "rank": 12,
+   "prev": 10,
    "name": "Zhu Yuling",
    "nat": "MAC",
    "points": 3500,
    "ittf_id": "117332"
   },
   {
-   "rank": 11,
-   "prev": 13,
-   "name": "Satsuki Odo",
-   "nat": "JPN",
-   "points": 3390,
-   "ittf_id": "133405"
-  },
-  {
-   "rank": 12,
+   "rank": 13,
    "prev": 12,
    "name": "Shin Yubin",
    "nat": "KOR",
-   "points": 3350,
+   "points": 3270,
    "ittf_id": "123977"
-  },
-  {
-   "rank": 13,
-   "prev": 10,
-   "name": "Sabine Winter",
-   "nat": "GER",
-   "points": 3255,
-   "ittf_id": "111066"
   },
   {
    "rank": 14,
@@ -931,7 +931,7 @@
    "prev": 16,
    "name": "Han Ying",
    "nat": "GER",
-   "points": 2385,
+   "points": 2350,
    "ittf_id": "118762"
   },
   {
@@ -939,7 +939,7 @@
    "prev": 17,
    "name": "Joo Cheonhui",
    "nat": "KOR",
-   "points": 2100,
+   "points": 2125,
    "ittf_id": "200413"
   },
   {
@@ -963,32 +963,32 @@
    "prev": 20,
    "name": "Adriana Diaz",
    "nat": "PUR",
-   "points": 1907,
+   "points": 1872,
    "ittf_id": "115009"
   },
   {
    "rank": 21,
    "prev": 23,
-   "name": "Bernadette Szőcs",
-   "nat": "ROU",
-   "points": 1705,
-   "ittf_id": "111012"
+   "name": "Hana Goda",
+   "nat": "EGY",
+   "points": 1820,
+   "ittf_id": "131335"
   },
   {
    "rank": 22,
    "prev": 21,
-   "name": "Sakura Yokoi",
-   "nat": "JPN",
-   "points": 1700,
-   "ittf_id": "135935"
+   "name": "Bernadette Szőcs",
+   "nat": "ROU",
+   "points": 1745,
+   "ittf_id": "111012"
   },
   {
    "rank": 23,
    "prev": 22,
-   "name": "Hana Goda",
-   "nat": "EGY",
-   "points": 1695,
-   "ittf_id": "131335"
+   "name": "Sakura Yokoi",
+   "nat": "JPN",
+   "points": 1700,
+   "ittf_id": "135935"
   },
   {
    "rank": 24,
@@ -1000,14 +1000,6 @@
   },
   {
    "rank": 25,
-   "prev": 25,
-   "name": "Mima Ito",
-   "nat": "JPN",
-   "points": 1560,
-   "ittf_id": "117821"
-  },
-  {
-   "rank": 26,
    "prev": 26,
    "name": "Miu Hirano",
    "nat": "JPN",
@@ -1015,7 +1007,7 @@
    "ittf_id": "117820"
   },
   {
-   "rank": 27,
+   "rank": 26,
    "prev": 27,
    "name": "Elizabet Abraamian",
    "nat": "RUS",
@@ -1023,31 +1015,31 @@
    "ittf_id": "131231"
   },
   {
-   "rank": 28,
+   "rank": 27,
    "prev": 28,
    "name": "Nina Mittelham",
    "nat": "GER",
-   "points": 1334,
+   "points": 1384,
    "ittf_id": "114726"
   },
   {
-   "rank": 29,
-   "prev": 35,
+   "rank": 28,
+   "prev": 29,
    "name": "Annett Kaufmann",
    "nat": "GER",
-   "points": 1243,
+   "points": 1293,
    "ittf_id": "135493"
   },
   {
-   "rank": 30,
-   "prev": 29,
+   "rank": 29,
+   "prev": 30,
    "name": "Dina Meshref",
    "nat": "EGY",
    "points": 1234,
    "ittf_id": "111656"
   },
   {
-   "rank": 31,
+   "rank": 30,
    "prev": 31,
    "name": "Lily Zhang",
    "nat": "USA",
@@ -1055,24 +1047,32 @@
    "ittf_id": "112221"
   },
   {
+   "rank": 31,
+   "prev": 33,
+   "name": "Bruna Takahashi",
+   "nat": "BRA",
+   "points": 1221,
+   "ittf_id": "121623"
+  },
+  {
    "rank": 32,
-   "prev": 30,
+   "prev": 25,
+   "name": "Mima Ito",
+   "nat": "JPN",
+   "points": 1210,
+   "ittf_id": "117821"
+  },
+  {
+   "rank": 33,
+   "prev": 32,
    "name": "Kim Nayeong",
    "nat": "KOR",
    "points": 1198,
    "ittf_id": "133814"
   },
   {
-   "rank": 33,
-   "prev": 32,
-   "name": "Bruna Takahashi",
-   "nat": "BRA",
-   "points": 1171,
-   "ittf_id": "121623"
-  },
-  {
    "rank": 34,
-   "prev": 33,
+   "prev": 34,
    "name": "Cheng I-Ching",
    "nat": "TPE",
    "points": 1140,
@@ -1080,7 +1080,7 @@
   },
   {
    "rank": 35,
-   "prev": 34,
+   "prev": 35,
    "name": "Jia Nan Yuan",
    "nat": "FRA",
    "points": 1132,
@@ -1096,30 +1096,14 @@
   },
   {
    "rank": 37,
-   "prev": 37,
-   "name": "Prithika Pavade",
-   "nat": "FRA",
-   "points": 1013,
-   "ittf_id": "131100"
-  },
-  {
-   "rank": 38,
-   "prev": 41,
-   "name": "Elizabeta Samara",
-   "nat": "ROU",
-   "points": 1010,
-   "ittf_id": "108226"
-  },
-  {
-   "rank": 39,
-   "prev": 38,
+   "prev": 39,
    "name": "Kaho Akae",
    "nat": "JPN",
    "points": 1000,
    "ittf_id": "136309"
   },
   {
-   "rank": 40,
+   "rank": 38,
    "prev": 40,
    "name": "Anna Hursey",
    "nat": "WAL",
@@ -1127,40 +1111,56 @@
    "ittf_id": "131480"
   },
   {
+   "rank": 39,
+   "prev": 37,
+   "name": "Prithika Pavade",
+   "nat": "FRA",
+   "points": 963,
+   "ittf_id": "131100"
+  },
+  {
+   "rank": 40,
+   "prev": 44,
+   "name": "Margaryta Pesotska",
+   "nat": "UKR",
+   "points": 954,
+   "ittf_id": "107321"
+  },
+  {
    "rank": 41,
    "prev": 42,
+   "name": "Natalia Bajor",
+   "nat": "POL",
+   "points": 953,
+   "ittf_id": "115454"
+  },
+  {
+   "rank": 42,
+   "prev": 41,
    "name": "Yangzi Liu",
    "nat": "AUS",
    "points": 935,
    "ittf_id": "137627"
   },
   {
-   "rank": 42,
-   "prev": 43,
-   "name": "Natalia Bajor",
-   "nat": "POL",
-   "points": 903,
-   "ittf_id": "115454"
+   "rank": 43,
+   "prev": 38,
+   "name": "Elizabeta Samara",
+   "nat": "ROU",
+   "points": 855,
+   "ittf_id": "108226"
   },
   {
-   "rank": 43,
-   "prev": 45,
+   "rank": 44,
+   "prev": 43,
    "name": "Mo Zhang",
    "nat": "CAN",
    "points": 840,
    "ittf_id": "110560"
   },
   {
-   "rank": 44,
-   "prev": 46,
-   "name": "Margaryta Pesotska",
-   "nat": "UKR",
-   "points": 834,
-   "ittf_id": "107321"
-  },
-  {
    "rank": 45,
-   "prev": 39,
+   "prev": 45,
    "name": "Doo Hoi Kem",
    "nat": "HKG",
    "points": 832,
@@ -1168,7 +1168,7 @@
   },
   {
    "rank": 46,
-   "prev": 47,
+   "prev": 46,
    "name": "Zhu Sibing",
    "nat": "CHN",
    "points": 824,
@@ -1176,7 +1176,7 @@
   },
   {
    "rank": 47,
-   "prev": 48,
+   "prev": 47,
    "name": "Huang Yu-Jie",
    "nat": "TPE",
    "points": 820,
@@ -1184,7 +1184,7 @@
   },
   {
    "rank": 48,
-   "prev": 49,
+   "prev": 48,
    "name": "He Zhuojia",
    "nat": "CHN",
    "points": 799,
@@ -1192,7 +1192,7 @@
   },
   {
    "rank": 49,
-   "prev": 50,
+   "prev": 49,
    "name": "Yeh Yi-Tian",
    "nat": "TPE",
    "points": 799,
@@ -1200,55 +1200,55 @@
   },
   {
    "rank": 50,
-   "prev": 44,
+   "prev": 50,
    "name": "Sofia Polcanova",
    "nat": "AUT",
-   "points": 798,
+   "points": 738,
    "ittf_id": "107477"
   },
   {
    "rank": 51,
-   "prev": 51,
-   "name": "Lee Eunhye",
-   "nat": "KOR",
-   "points": 735,
-   "ittf_id": "122052"
-  },
-  {
-   "rank": 52,
-   "prev": 53,
+   "prev": 52,
    "name": "Orawan Paranang",
    "nat": "THA",
    "points": 712,
    "ittf_id": "120972"
   },
   {
-   "rank": 53,
-   "prev": 54,
+   "rank": 52,
+   "prev": 53,
    "name": "Chien Tung-Chuan",
    "nat": "TPE",
    "points": 705,
    "ittf_id": "124165"
   },
   {
-   "rank": 54,
-   "prev": 55,
+   "rank": 53,
+   "prev": 54,
    "name": "Amy Wang",
    "nat": "USA",
    "points": 690,
    "ittf_id": "119022"
   },
   {
-   "rank": 55,
-   "prev": 56,
+   "rank": 54,
+   "prev": 55,
    "name": "Li Yu-Jhun",
    "nat": "TPE",
    "points": 670,
    "ittf_id": "124162"
   },
   {
+   "rank": 55,
+   "prev": 51,
+   "name": "Lee Eunhye",
+   "nat": "KOR",
+   "points": 665,
+   "ittf_id": "122052"
+  },
+  {
    "rank": 56,
-   "prev": 52,
+   "prev": 56,
    "name": "Zeng Jian",
    "nat": "SGP",
    "points": 654,
@@ -1264,30 +1264,22 @@
   },
   {
    "rank": 58,
-   "prev": 59,
+   "prev": 58,
    "name": "Maria Xiao",
    "nat": "ESP",
-   "points": 605,
+   "points": 615,
    "ittf_id": "111072"
   },
   {
    "rank": 59,
    "prev": 60,
-   "name": "Misuzu Takeya",
-   "nat": "JPN",
-   "points": 590,
-   "ittf_id": "144862"
-  },
-  {
-   "rank": 60,
-   "prev": 64,
    "name": "Yang Ha Eun",
    "nat": "KOR",
    "points": 579,
    "ittf_id": "112368"
   },
   {
-   "rank": 61,
+   "rank": 60,
    "prev": 61,
    "name": "Andreea Dragoman",
    "nat": "ROU",
@@ -1295,7 +1287,7 @@
    "ittf_id": "122428"
   },
   {
-   "rank": 62,
+   "rank": 61,
    "prev": 62,
    "name": "Manika Batra",
    "nat": "IND",
@@ -1303,16 +1295,24 @@
    "ittf_id": "115920"
   },
   {
-   "rank": 63,
-   "prev": 58,
+   "rank": 62,
+   "prev": 63,
    "name": "Sachi Aoki",
    "nat": "JPN",
    "points": 565,
    "ittf_id": "144861"
   },
   {
+   "rank": 63,
+   "prev": 67,
+   "name": "Yoo Yerin",
+   "nat": "KOR",
+   "points": 555,
+   "ittf_id": "137193"
+  },
+  {
    "rank": 64,
-   "prev": 63,
+   "prev": 64,
    "name": "Constantina Psihogios",
    "nat": "AUS",
    "points": 545,
@@ -1336,23 +1336,23 @@
   },
   {
    "rank": 67,
-   "prev": 81,
-   "name": "Yoo Yerin",
-   "nat": "KOR",
+   "prev": 59,
+   "name": "Misuzu Takeya",
+   "nat": "JPN",
    "points": 525,
-   "ittf_id": "137193"
+   "ittf_id": "144862"
   },
   {
    "rank": 68,
-   "prev": 67,
-   "name": "Minhyung Jee",
-   "nat": "AUS",
-   "points": 515,
-   "ittf_id": "104092"
+   "prev": 83,
+   "name": "Fu Yu",
+   "nat": "POR",
+   "points": 511,
+   "ittf_id": "102863"
   },
   {
    "rank": 69,
-   "prev": 68,
+   "prev": 69,
    "name": "Elena Zaharia",
    "nat": "ROU",
    "points": 510,
@@ -1360,115 +1360,115 @@
   },
   {
    "rank": 70,
-   "prev": 69,
+   "prev": 68,
+   "name": "Minhyung Jee",
+   "nat": "AUS",
+   "points": 505,
+   "ittf_id": "104092"
+  },
+  {
+   "rank": 71,
+   "prev": 76,
+   "name": "Kim Seongjin",
+   "nat": "KOR",
+   "points": 505,
+   "ittf_id": "135370"
+  },
+  {
+   "rank": 72,
+   "prev": 70,
    "name": "Saki Shibata",
    "nat": "JPN",
    "points": 496,
    "ittf_id": "123848"
   },
   {
-   "rank": 71,
-   "prev": 70,
+   "rank": 73,
+   "prev": 71,
    "name": "Xiaona Shan",
    "nat": "GER",
    "points": 485,
    "ittf_id": "111849"
   },
   {
-   "rank": 72,
-   "prev": 71,
+   "rank": 74,
+   "prev": 72,
    "name": "Sally Moyland",
    "nat": "USA",
    "points": 477,
    "ittf_id": "134489"
   },
   {
-   "rank": 73,
-   "prev": 72,
+   "rank": 75,
+   "prev": 73,
    "name": "Diya Chitale",
    "nat": "IND",
    "points": 471,
    "ittf_id": "131395"
   },
   {
-   "rank": 74,
-   "prev": 73,
+   "rank": 76,
+   "prev": 74,
    "name": "Zong Geman",
    "nat": "CHN",
    "points": 470,
    "ittf_id": "200907"
   },
   {
-   "rank": 75,
-   "prev": 74,
+   "rank": 77,
+   "prev": 75,
    "name": "Ser Lin Qian",
    "nat": "SGP",
    "points": 469,
    "ittf_id": "132144"
   },
   {
-   "rank": 76,
-   "prev": 75,
-   "name": "Kim Seongjin",
-   "nat": "KOR",
-   "points": 460,
-   "ittf_id": "135370"
-  },
-  {
-   "rank": 77,
-   "prev": 76,
+   "rank": 78,
+   "prev": 77,
    "name": "Yashaswini Ghorpade",
    "nat": "IND",
    "points": 456,
    "ittf_id": "137850"
   },
   {
-   "rank": 78,
-   "prev": 77,
+   "rank": 79,
+   "prev": 81,
+   "name": "Jieni Shao",
+   "nat": "POR",
+   "points": 446,
+   "ittf_id": "121401"
+  },
+  {
+   "rank": 80,
+   "prev": 78,
    "name": "Xiaoxin Yang",
    "nat": "MON",
    "points": 445,
    "ittf_id": "112868"
   },
   {
-   "rank": 79,
-   "prev": 78,
+   "rank": 81,
+   "prev": 79,
    "name": "Linda Bergstrom",
    "nat": "SWE",
    "points": 433,
    "ittf_id": "114905"
   },
   {
-   "rank": 80,
-   "prev": 79,
+   "rank": 82,
+   "prev": 80,
    "name": "Giorgia Piccolin",
    "nat": "ITA",
-   "points": 432,
+   "points": 427,
    "ittf_id": "115413"
   },
   {
-   "rank": 81,
-   "prev": 80,
-   "name": "Jieni Shao",
-   "nat": "POR",
-   "points": 426,
-   "ittf_id": "121401"
-  },
-  {
-   "rank": 82,
+   "rank": 83,
    "prev": 82,
    "name": "Fan Shuhan",
    "nat": "CHN",
    "points": 408,
    "ittf_id": "136403"
-  },
-  {
-   "rank": 83,
-   "prev": 83,
-   "name": "Fu Yu",
-   "nat": "POR",
-   "points": 405,
-   "ittf_id": "102863"
   },
   {
    "rank": 84,
@@ -1523,24 +1523,24 @@
    "prev": 90,
    "name": "Gaia Monfardini",
    "nat": "ITA",
-   "points": 377,
+   "points": 372,
    "ittf_id": "120294"
   },
   {
    "rank": 91,
-   "prev": 91,
-   "name": "Hana Arapovic",
-   "nat": "CRO",
-   "points": 365,
-   "ittf_id": "132756"
-  },
-  {
-   "rank": 92,
    "prev": 92,
    "name": "Katarzyna Wegrzyn",
    "nat": "POL",
    "points": 361,
    "ittf_id": "121041"
+  },
+  {
+   "rank": 92,
+   "prev": 91,
+   "name": "Hana Arapovic",
+   "nat": "CRO",
+   "points": 360,
+   "ittf_id": "132756"
   },
   {
    "rank": 93,
@@ -1568,19 +1568,19 @@
   },
   {
    "rank": 96,
-   "prev": 96,
-   "name": "Lea Rakovac",
-   "nat": "CRO",
-   "points": 335,
-   "ittf_id": "113944"
-  },
-  {
-   "rank": 97,
    "prev": 97,
    "name": "Ng Wing Lam",
    "nat": "HKG",
    "points": 330,
    "ittf_id": "132318"
+  },
+  {
+   "rank": 97,
+   "prev": 96,
+   "name": "Lea Rakovac",
+   "nat": "CRO",
+   "points": 325,
+   "ittf_id": "113944"
   },
   {
    "rank": 98,
