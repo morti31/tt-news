@@ -132,7 +132,7 @@ window.ElevenStream = function (el) {
     }
     // Home page with an event on: the "On now" panel carries the live scores, so the strip waits for them
     // rather than showing "On now" link cards that are swapped out a moment later
-    if (liveHubs.length && ["/", "/index.html"].includes(location.pathname) && liveHubs.some((h) => !(h.champions || []).length && h.start <= today && h.end >= today)) {
+    if (liveHubs.length && ["/", "/index.html"].includes(location.pathname) && liveHubs.some((h) => !(h.champions || []).length && h.start <= today && h.end >= today) && window.__panelHigh !== false) {
       $("ticker").innerHTML = clubCards.join("");   // the "On now" panel carries the WTT scores; club results stay in the strip
       $("ticker").closest(".ticker").hidden = !clubCards.length;
     }
@@ -150,7 +150,7 @@ window.ElevenStream = function (el) {
         if (document.hidden) return;
         // Per event: live matches, the next two fixtures, the last two results, then (from the
         // quarter-finals) every semi-final and final, then older results
-        const onHome = !!$("onnow") && document.body.classList.contains("has-onnow");
+        const onHome = !!$("onnow") && document.body.classList.contains("has-onnow") && !document.body.classList.contains("onnow-low");   // panel low down: the strip at the top works as on every other page
         let extra = [];
         for (const hub of liveHubs) {
           try {
@@ -159,7 +159,7 @@ window.ElevenStream = function (el) {
             const fx = F ? await F.get(hub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
             const res = (d.results || []).slice(0, 10).map((m) => mcard(m, hub));
             // On the homepage the "on now" panel already shows all but the older results
-            if (onHome) { if (!document.body.classList.contains("onnow-low")) extra = extra.concat(res.slice(2)); continue; }
+            if (onHome) { extra = extra.concat(res.slice(2)); continue; }
             extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), fx.next.map((x) => F.card(x, hub, { prefix: "Next · ", where: true })), res.slice(0, 2),
               ...fx.knock.map((k) => k.items.map((x) => F.card(x, hub, { where: true }))), res.slice(2));
           } catch (e) {}
@@ -178,6 +178,7 @@ window.ElevenStream = function (el) {
       };
       refresh();
       setInterval(refresh, 20000);
+      document.addEventListener("onnow-placed", refresh);
     }
   }
 

@@ -81,6 +81,8 @@
     if (lowPanel && anchor) anchor.parentNode.insertBefore(el, anchor);
     else if (topNext) topNext.parentNode.insertBefore(el, topNext);
     document.body.classList.toggle("onnow-low", lowPanel && !$("onnow").hidden);
+    window.__panelHigh = !lowPanel;
+    document.dispatchEvent(new Event("onnow-placed"));   // the top strip switches between "panel carries the scores" and the usual cards
   }
   function moveUp() { if (!lowPanel) return; lowPanel = false; placeOnNow(); }
   function renderOnNow() {
