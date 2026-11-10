@@ -138,7 +138,15 @@ The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.
 
 ## Event pages for past years
 
-A nightly scheduled task builds the event pages for one past year at a time (2025, then 2024, 2023, 2022, 2021), following "Past events and full draws" above: the qualifying events of that year (WTT Champions, Star Contender, Grand Smash, WTT Finals, World Cup, World Championships, Olympics, continental championships, Asian Games and European Games), with draws from WTT where the event is in its system and champions otherwise. Older pages carry a shorter "How it was won": two short paragraphs (finals and the main storyline), not four. New hubs are appended to the end of `events` in data/events.json so existing posters keep their look.
+Past years are complete back to 2021 (finished 10 November 2026): every WTT Series event (Feeder, Contender, Star Contender, Champions, Grand Smash, Finals), the World Championships, World Team Championships, Mixed Team World Cup, the Tokyo 2020 and Paris 2024 Olympic Games, the continental championships, the Asian Games and the European Games.
+
+- Events in WTT's results system were made by `tools/backfill_events.py` (read its docstring). Its `draws` step runs in the "Backfill draws" workflow, because WTT only answers GitHub's runners; that pushes the draw files to the `backfill` branch for checking. Its `hubs` step then adds a page for every draw file without one, and repairs known faults in WTT's older records. Run it again only to add an event that was missed.
+- Events not in WTT's system (European and Asian championships, the Asian Games, the European Games, the Mixed Team World Cup 2023) are kept by hand with `champions`, as "Past events and full draws" describes. Scores were left out where they could not be confirmed.
+- Tokyo 2020 (WTT id 2345) is held in an older Olympic format; its draw file was converted by hand and starts at the last 32.
+- Every page from Star Contender level up has a "How it was won" (two short paragraphs for 2021 to 2023). Feeder and Contender pages have none.
+- The Oceania Championships 2023 has no page yet: its dates were not confirmed, and its men's singles champion was 15 (see "Age level" in step 2).
+- New events get their pages from `tools/wtt_sync.py` as they start (see "Automatic event pages for WTT events"). New hubs are appended to the end of `events` in data/events.json so existing posters keep their look.
+- The events index shows one year at a time (tabs); `/events/#y2024` opens a year.
 
 ## Tags
 

@@ -296,7 +296,9 @@ def index_page(data, today):
         years.setdefault(d.year, {}).setdefault(d.month, []).append(ev)
     year_nav = ""
     if len(years) > 1:
-        year_nav = '<nav class="hub-jump ev-years" aria-label="Years">' + "".join(f'<a href="#y{y}">{y}</a>' for y in years) + "</nav>"
+        # One year shows at a time (the script below); without JavaScript every year shows and these are jump links
+        year_nav = ('<nav class="hub-jump ev-years" aria-label="Years">' + "".join(f'<a href="#y{y}">{y}</a>' for y in years) + "</nav>"
+                    '<p class="hub-empty ev-none" hidden>No events of this kind that year.</p>')
     for y, months in years.items():
         body = "".join(f'<div class="ev-month"><h3 class="ev-month-h">{dt.date(y, m, 1):%B}</h3><ul class="ev-cards">{"".join(card(ev) for ev in evs)}</ul></div>'
                        for m, evs in months.items())
@@ -316,16 +318,36 @@ def index_page(data, today):
 <p class="small">The full calendar, including club competitions, is on the <a href="/schedule.html">schedule</a>.</p>
 </main>
 <script>
-let G = "", S = "";
+let G = "", S = "", Y = "";
 const levels = document.querySelector(".ev-levels");
+const years = [...document.querySelectorAll(".ev-year")], tabs = [...document.querySelectorAll(".ev-years a")];
+// The year in the address (/events/#y2024) if there is one, else the year already showing, else the newest
+function pickYear() {{ const h = location.hash.slice(1); Y = years.some((s) => s.id === h) ? h : (Y || (years[0] ? years[0].id : "")); }}
 function apply() {{
   levels.hidden = G !== "WTT Series";
   document.querySelectorAll(".ev-filter button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === G)));
   levels.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.s === S)));
   document.querySelectorAll(".ev-card").forEach((c) => {{ c.hidden = (!!G && c.dataset.g !== G) || (!!S && c.dataset.s !== S); }});
   document.querySelectorAll(".ev-cards").forEach((l) => {{ const box = l.closest(".ev-month") || l.closest("section"); box.hidden = ![...l.children].some((c) => !c.hidden); }});
-  document.querySelectorAll(".ev-year").forEach((sec) => {{ sec.hidden = ![...sec.querySelectorAll(".ev-month")].some((m) => !m.hidden); }});
+  let any = true;
+  years.forEach((sec) => {{
+    const has = [...sec.querySelectorAll(".ev-month")].some((m) => !m.hidden);
+    sec.hidden = !has || (tabs.length > 0 && sec.id !== Y);
+    if (sec.id === Y) any = has;
+    const tab = tabs.find((a) => a.getAttribute("href") === "#" + sec.id);
+    if (tab) {{ tab.setAttribute("aria-selected", String(sec.id === Y)); tab.classList.toggle("none", !has); }}
+  }});
+  const none = document.querySelector(".ev-none");
+  if (none) none.hidden = any;
 }}
+tabs.forEach((a) => a.addEventListener("click", (ev) => {{
+  ev.preventDefault();
+  Y = a.getAttribute("href").slice(1);
+  history.replaceState(null, "", "#" + Y);
+  apply();
+}}));
+window.addEventListener("hashchange", () => {{ pickYear(); apply(); }});
+pickYear(); apply();
 document.querySelector(".ev-filter").addEventListener("click", (ev) => {{
   const b = ev.target.closest("button"); if (!b) return;
   G = b.dataset.g; S = ""; apply();

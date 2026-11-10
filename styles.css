@@ -1351,3 +1351,6 @@ html.mp-open { overflow: hidden; }
 /* "On now" cards: a touch wider than a score card, and a name that still doesn't fit ends in "…" */
 .score-card.live-card { width: 240px; }
 .score-card.live-card .row span:first-child { display: block; }
+/* Events index: the years are tabs, one year showing at a time */
+.ev-years a[aria-selected="true"] { background: var(--ink); color: var(--bg, #fff); }
+.ev-years a.none { opacity: .4; }
