@@ -1410,3 +1410,6 @@ html.mp-open { overflow: hidden; }
 .events-row li.now { background: color-mix(in srgb, var(--live) 9%, var(--card)); padding: 10px; margin: -10px 0; outline: 1px solid color-mix(in srgb, var(--live) 30%, transparent); }
 .events-row li.now .name { font-weight: 800; }
 @media (max-width: 760px) { .events-row li.now { margin: 4px 0; } }
+.events li.linked { position: relative; }
+.events li.linked:hover .name a { text-decoration: underline; }
+.events .when.stage { color: var(--ink); font-weight: 600; }

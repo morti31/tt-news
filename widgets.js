@@ -235,11 +235,23 @@ window.ElevenStream = function (el) {
   if ($("events")) {
     const n = Number($("events").dataset.count || 7);
     const upcoming = events.filter((e) => e.end >= today).sort((a, b) => a.start.localeCompare(b.start)).slice(0, n);
+    // Every event with a page of its own links to it: an event page, else its club league's page
+    const LEAGUES = [[/Champions League/i, "champions-league"], [/Super League/i, "super-league"], [/T\.? ?League/i, "t-league"], [/TTBL|Bundesliga/i, "bundesliga"],
+      [/Pro A\b/i, "pro-a"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
+    const pageOf = (e) => {
+      if (hubs[e.id]) return hubs[e.id].url;
+      const m = /club|league/i.test(`${e.series} ${e.type} ${e.name}`) && LEAGUES.find(([rx]) => rx.test(e.name));
+      return m ? `/clubs/${m[1]}.html` : null;
+    };
     $("events").innerHTML = upcoming.map((e) => {
       const now = e.start <= today;
-      const when = now ? `<b class="on-now"><span class="live-dot"></span>On now</b> until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
-      return `<li class="${now ? "now" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
-        <div><span class="name">${hubs[e.id] ? `<a href="${esc(hubs[e.id].url)}">${esc(e.name)}</a>` : esc(e.name)}</span><span class="when">${when}</span></div></li>`;
+      // "ETTU Champions League Women, Stage 2 Round 1": the competition as the name, the stage on the line below
+      const [head, ...rest] = e.name.split(", ");
+      const title = head.replace(/^ETTU /, ""), stage = rest.join(", ");
+      const dates = now ? `<b class="on-now"><span class="live-dot"></span>On now</b> until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
+      const href = pageOf(e);
+      return `<li class="${now ? "now" : ""}${href ? " linked" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
+        <div><span class="name">${href ? `<a class="stretch" href="${esc(href)}">${esc(title)}</a>` : esc(title)}</span>${stage ? `<span class="when stage">${esc(stage)}</span>` : ""}<span class="when">${dates}</span></div></li>`;
     }).join("");
   }
 
