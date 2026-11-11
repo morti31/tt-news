@@ -1,4 +1,4 @@
-"""The rankings page: the official ITTF top 200, men and women side by side at equal weight.
+"""The rankings page: the official ITTF top 400, women and men on tabs.
 
 Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). Output: the page body.
 """
@@ -41,7 +41,7 @@ def body(R, items, links=None):
             f'<tr data-q="{e((p["name"] + " " + p["nat"]).lower())}"><td class="rk-pos">{p["rank"]}</td><td class="rk-mv">{move(p)}</td>'
             f'<td><span class="rk-player">{who(p)}</span></td><td class="rk-pts">{p["points"]:,}<span class="rk-bar" style="width:{100 * p["points"] / top:.1f}%"></span></td></tr>'
             for p in R[key])
-        return (f'<section class="panel rk-list" data-g="{key}"><h2 class="panel-title">{title}</h2>'
+        return (f'<section class="panel rk-list" data-g="{key}"><h3 class="panel-title">{title}</h3>'
                 f'<table class="rk-table"><thead><tr><th scope="col">Rank</th><th scope="col"><span class="sr-only">Movement</span></th>'
                 f'<th scope="col">Player</th><th scope="col">Points</th></tr></thead><tbody data-page="50">{rows}</tbody></table></section>')
 
@@ -59,22 +59,27 @@ def body(R, items, links=None):
         return listing(ups, "No climbers this week")
 
     def home(key):
-        return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")], "None in the top {len(R[key])}")
+        return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")], f"None in the top {len(R[key])}")
 
     label = R["label"]
+    n = len(R["men"])
+
+    def panel(key, word, title):
+        return (f'<section class="pl-panel rk-panel" id="{key}" role="tabpanel" aria-labelledby="t-{key}"><h2 class="sr-only">{word}</h2>'
+                f'<div class="rk-three">{leader(key, f"{word} world No. 1")}'
+                f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{climbers(key)}</section>'
+                f'<section class="panel"><h3 class="panel-title">Home nations</h3>{home(key)}</section></div>'
+                f'{table(key, title)}</section>')
+
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official {e(label)}: the top {len(R["men"])} men and women, with ranking points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
-<div class="rk-two rk-leaders">{leader("men", "Men's world No. 1")}{leader("women", "Women's world No. 1")}</div>
-<div class="rk-two">
-  <section class="panel"><h2 class="panel-title">Biggest climbers</h2><div class="rk-two rk-inner"><div><h3>Men</h3>{climbers("men")}</div><div><h3>Women</h3>{climbers("women")}</div></div></section>
-  <section class="panel"><h2 class="panel-title">Home nations in the top {len(R["men"])}</h2><div class="rk-two rk-inner"><div><h3>Men</h3>{home("men")}</div><div><h3>Women</h3>{home("women")}</div></div></section>
-</div>
-<div class="rk-tools">
+<p class="lede">The official {e(label)}: the top {n} men and women, with ranking points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+<div class="rk-bar-top">
+  <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" id="t-women" aria-controls="women" aria-selected="true">Women</button><button role="tab" id="t-men" aria-controls="men" aria-selected="false">Men</button></div>
   <label class="rk-search"><span class="sr-only">Find a player or country</span><input id="rk-q" type="search" placeholder="Find a player or country, e.g. ENG" autocomplete="off"></label>
-  <div class="toggle rk-toggle" role="group" aria-label="Show"><button data-g="men" aria-pressed="true">Men</button><button data-g="women" aria-pressed="false">Women</button></div>
 </div>
-<div class="rk-two rk-tables">{table("men", "Men's singles")}{table("women", "Women's singles")}</div>
+{panel("women", "Women's", "Women's singles")}
+{panel("men", "Men's", "Men's singles")}
 <p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a>. Player and country names link to every Eleven story about them.</p>
 </main>
 <script>
@@ -85,12 +90,9 @@ def body(R, items, links=None):
     document.querySelectorAll(".rk-table tbody tr").forEach((tr) => {{ tr.hidden = !!v && !tr.dataset.q.includes(v); }});
     document.querySelectorAll(".rk-list").forEach((s) => s.classList.toggle("pg-all", !!v));   // a search shows every match, not one page
   }});
-  const t = document.querySelector(".rk-toggle");
-  t.addEventListener("click", (ev) => {{
-    const b = ev.target.closest("button"); if (!b) return;
-    t.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    document.querySelectorAll(".rk-list").forEach((s) => s.classList.toggle("rk-off", s.dataset.g !== b.dataset.g));
-  }});
-  document.querySelector('.rk-list[data-g="women"]').classList.add("rk-off");
+  const tabs = document.querySelectorAll(".rk .pl-tabs button");
+  function show(id) {{ tabs.forEach((t) => {{ const on = t.getAttribute("aria-controls") === id; t.setAttribute("aria-selected", on); document.getElementById(t.getAttribute("aria-controls")).hidden = !on; }}); }}
+  tabs.forEach((t) => t.addEventListener("click", () => {{ const id = t.getAttribute("aria-controls"); show(id); history.replaceState(null, "", "#" + id); }}));
+  show(location.hash === "#men" ? "men" : "women");
 }})();
 </script>""" + components.PAGER

@@ -1414,3 +1414,14 @@ html.mp-open { overflow: hidden; }
 .events li.linked:hover .name a { text-decoration: underline; }
 .events .when.stage { color: var(--ink); font-weight: 600; }
 .body-note { color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin-top: 28px; }
+
+/* Rankings: women and men on tabs, summary row then the full table */
+.rk-bar-top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 20px; margin: 4px 0 18px; border-bottom: 1px solid var(--rule); }
+.rk-bar-top .pl-tabs { margin: 0; border-bottom: 0; }
+.rk-bar-top .rk-search { flex: 0 1 340px; min-width: 220px; padding-bottom: 8px; }
+.rk-three { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+.rk-three > * { min-width: 0; margin: 0; }
+@media (max-width: 900px) { .rk-three { grid-template-columns: 1fr 1fr; } .rk-three .rk-leader { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .rk-three { grid-template-columns: minmax(0, 1fr); } }
+.rk-panel .rk-list { margin-top: 0; }
+.rk-panel[hidden] { display: none; }
