@@ -100,8 +100,8 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-11-03: Why no two table tennis tables play alike (`table-tennis-tables-speed-bounce-suppliers`) [New]
 - 2026-11-05: How much do the top players play? Eleven counted every WTT match since June (`wtt-calendar-player-workload-injuries`) [Expert]
 - 2026-11-07: The Lebrun effect: has one family changed French table tennis? (`lebrun-effect-french-table-tennis-licences`) [New]
-- 2026-11-10: Where table tennis prize money goes, from Bergmann's Wembley to WTT (`table-tennis-prize-money-where-it-goes`) [Both]
-- 2026-11-11: Boosting: how table tennis's open secret outlived the speed glue ban (`table-tennis-boosting-speed-glue-racket-control`) [New]
+- 2026-11-09: Where table tennis prize money goes, from Bergmann's Wembley to WTT (`table-tennis-prize-money-where-it-goes`) [Both]
+- 2026-11-10: Boosting: how table tennis's open secret outlived the speed glue ban (`table-tennis-boosting-speed-glue-racket-control`) [New]
 - 2026-11-11: English table tennis still runs on leagues built in the 1930s, and it shows (`english-table-tennis-leagues-clubs-membership`) [Both]
 
 
