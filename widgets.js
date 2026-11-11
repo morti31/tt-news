@@ -237,7 +237,7 @@ window.ElevenStream = function (el) {
     const upcoming = events.filter((e) => e.end >= today).sort((a, b) => a.start.localeCompare(b.start)).slice(0, n);
     $("events").innerHTML = upcoming.map((e) => {
       const now = e.start <= today;
-      const when = now ? `On now, until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
+      const when = now ? `<b class="on-now"><span class="live-dot"></span>On now</b> until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
       return `<li class="${now ? "now" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
         <div><span class="name">${hubs[e.id] ? `<a href="${esc(hubs[e.id].url)}">${esc(e.name)}</a>` : esc(e.name)}</span><span class="when">${when}</span></div></li>`;
     }).join("");

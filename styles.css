@@ -1403,3 +1403,10 @@ html.mp-open { overflow: hidden; }
   .layout > .coming-row { grid-row: 2; align-self: start; }
   .layout:has(> .coming-row) { align-items: start; }
 }
+
+/* On now stands out in Coming up: a tinted card, a live dot and a red label */
+.events .on-now { color: var(--live); font-weight: 800; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; margin-right: 4px; }
+.events .on-now .live-dot { margin-right: 5px; }
+.events-row li.now { background: color-mix(in srgb, var(--live) 9%, var(--card)); padding: 10px; margin: -10px 0; outline: 1px solid color-mix(in srgb, var(--live) 30%, transparent); }
+.events-row li.now .name { font-weight: 800; }
+@media (max-width: 760px) { .events-row li.now { margin: 4px 0; } }
