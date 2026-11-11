@@ -2,7 +2,7 @@
  "event": "WTT Contender Istanbul",
  "wtt_event_id": "3257",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Draws",
- "updated": "2026-11-11T16:06:00Z",
+ "updated": "2026-11-11T22:41:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -18,10 +18,11 @@
          "seed": 1
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Sofia-Xuan Zhang",
+         "nat": "ESP"
         }
-       ]
+       ],
+       "when": "2026-11-12T09:20:00Z"
       },
       {
        "players": [
@@ -33,19 +34,21 @@
          "name": "Anna Hursey",
          "nat": "WAL"
         }
-       ]
+       ],
+       "when": "2026-11-12T15:15:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Veronika Matiunina",
+         "nat": "UKR"
         },
         {
          "name": "Jia Nan Yuan",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-12T09:55:00Z"
       },
       {
        "players": [
@@ -58,7 +61,8 @@
          "nat": "BRA",
          "seed": 8
         }
-       ]
+       ],
+       "when": "2026-11-12T15:15:00Z"
       },
       {
        "players": [
@@ -68,22 +72,24 @@
          "seed": 3
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Wei Jingming",
+         "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:10:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Fan Shuhan",
+         "nat": "CHN"
         },
         {
          "name": "Zong Geman",
          "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-12T15:50:00Z"
       },
       {
        "players": [
@@ -95,7 +101,8 @@
          "name": "Prithika Pavade",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:45:00Z"
       },
       {
        "players": [
@@ -108,7 +115,8 @@
          "nat": "JPN",
          "seed": 7
         }
-       ]
+       ],
+       "when": "2026-11-12T09:55:00Z"
       },
       {
        "players": [
@@ -121,7 +129,8 @@
          "name": "Sally Moyland",
          "nat": "USA"
         }
-       ]
+       ],
+       "when": "2026-11-12T16:25:00Z"
       },
       {
        "players": [
@@ -133,19 +142,21 @@
          "name": "Andreea Dragoman",
          "nat": "ROU"
         }
-       ]
+       ],
+       "when": "2026-11-12T09:20:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Audrey Zarif",
+         "nat": "FRA"
         },
         {
          "name": "Ece Harac",
          "nat": "TUR"
         }
-       ]
+       ],
+       "when": "2026-11-12T14:40:00Z"
       },
       {
        "players": [
@@ -158,7 +169,8 @@
          "nat": "JPN",
          "seed": 4
         }
-       ]
+       ],
+       "when": "2026-11-12T08:10:00Z"
       },
       {
        "players": [
@@ -171,7 +183,8 @@
          "name": "Elizabeta Samara",
          "nat": "ROU"
         }
-       ]
+       ],
+       "when": "2026-11-12T15:50:00Z"
       },
       {
        "players": [
@@ -180,35 +193,38 @@
          "nat": "THA"
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:45:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Cocona Muramatsu",
+         "nat": "JPN"
         },
         {
          "name": "Sofia Polcanova",
          "nat": "AUT"
         }
-       ]
+       ],
+       "when": "2026-11-12T16:25:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Elina Rahimi",
+         "nat": "IRI"
         },
         {
          "name": "Joo Cheonhui",
          "nat": "KOR",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-12T15:15:00Z"
       }
      ]
     },
@@ -341,19 +357,21 @@
          "name": "Huang Youzheng",
          "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:45:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Ricardo Walther",
+         "nat": "GER"
         },
         {
          "name": "Guilherme Teodoro",
          "nat": "BRA"
         }
-       ]
+       ],
+       "when": "2026-11-12T15:50:00Z"
       },
       {
        "players": [
@@ -362,23 +380,25 @@
          "nat": "GER"
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Borgar Haug",
+         "nat": "NOR"
         }
-       ]
+       ],
+       "when": "2026-11-12T15:50:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Ibrahim Gunduz",
+         "nat": "TUR"
         },
         {
          "name": "Manav Thakkar",
          "nat": "IND",
          "seed": 6
         }
-       ]
+       ],
+       "when": "2026-11-12T15:15:00Z"
       },
       {
        "players": [
@@ -391,7 +411,8 @@
          "name": "Chen Junsong",
          "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:10:00Z"
       },
       {
        "players": [
@@ -403,7 +424,8 @@
          "name": "Mehdi Bouloussa",
          "nat": "ALG"
         }
-       ]
+       ],
+       "when": "2026-11-12T09:55:00Z"
       },
       {
        "players": [
@@ -415,7 +437,8 @@
          "name": "Adrien Rassenfosse",
          "nat": "BEL"
         }
-       ]
+       ],
+       "when": "2026-11-12T09:55:00Z"
       },
       {
        "players": [
@@ -428,7 +451,8 @@
          "nat": "CZE",
          "seed": 7
         }
-       ]
+       ],
+       "when": "2026-11-12T09:20:00Z"
       },
       {
        "players": [
@@ -441,7 +465,8 @@
          "name": "Nikita Artemenko",
          "nat": "RUS"
         }
-       ]
+       ],
+       "when": "2026-11-12T09:20:00Z"
       },
       {
        "players": [
@@ -450,35 +475,38 @@
          "nat": "JPN"
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Kang Dongsoo",
+         "nat": "KOR"
         }
-       ]
+       ],
+       "when": "2026-11-12T14:40:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Aditya Sareen",
+         "nat": "AUS"
         },
         {
          "name": "Evgeny Tikhonov",
          "nat": "RUS"
         }
-       ]
+       ],
+       "when": "2026-11-12T16:25:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Leonardo Iizuka",
+         "nat": "BRA"
         },
         {
          "name": "Elias Ranefur",
          "nat": "SWE",
          "seed": 3
         }
-       ]
+       ],
+       "when": "2026-11-12T14:40:00Z"
       },
       {
        "players": [
@@ -488,22 +516,24 @@
          "seed": 5
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Jo Yokotani",
+         "nat": "JPN"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:10:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Maksim Grebnev",
+         "nat": "RUS"
         },
         {
          "name": "Abdullah Yigenler",
          "nat": "TUR"
         }
-       ]
+       ],
+       "when": "2026-11-12T16:25:00Z"
       },
       {
        "players": [
@@ -515,20 +545,22 @@
          "name": "Ryoichi Yoshiyama",
          "nat": "JPN"
         }
-       ]
+       ],
+       "when": "2026-11-12T08:45:00Z"
       },
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Yuan Licen",
+         "nat": "CHN"
         },
         {
          "name": "Thibault Poret",
          "nat": "FRA",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-12T14:40:00Z"
       }
      ]
     },
@@ -661,7 +693,8 @@
          "name": "Ece Harac / Sibel Altinkaya",
          "nat": "TUR"
         }
-       ]
+       ],
+       "when": "2026-11-12T10:30:00Z"
       },
       {
        "players": [
@@ -674,7 +707,8 @@
          "nat": "RUS",
          "seed": 8
         }
-       ]
+       ],
+       "when": "2026-11-12T11:05:00Z"
       },
       {
        "players": [
@@ -687,7 +721,8 @@
          "name": "Vlada Voronina / Maria Panfilova",
          "nat": "RUS"
         }
-       ]
+       ],
+       "when": "2026-11-12T14:05:00Z"
       },
       {
        "players": [
@@ -700,7 +735,8 @@
          "name": "Valentina Rios / Lucia Cordero",
          "nat": "CHI/GUA"
         }
-       ]
+       ],
+       "when": "2026-11-12T11:05:00Z"
       },
       {
        "players": [
@@ -713,7 +749,8 @@
          "nat": "GER/THA",
          "seed": 7
         }
-       ]
+       ],
+       "when": "2026-11-12T14:05:00Z"
       },
       {
        "players": [
@@ -727,7 +764,8 @@
          "nat": "JPN",
          "seed": 3
         }
-       ]
+       ],
+       "when": "2026-11-12T14:05:00Z"
       },
       {
        "players": [
@@ -739,7 +777,8 @@
          "name": "Jia Nan Yuan / Prithika Pavade",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-12T13:30:00Z"
       },
       {
        "players": [
@@ -752,7 +791,8 @@
          "nat": "ROU",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-12T10:30:00Z"
       }
      ]
     },
@@ -832,7 +872,8 @@
          "name": "Borgar Haug / Nandan Naresh",
          "nat": "NOR/USA"
         }
-       ]
+       ],
+       "when": "2026-11-12T13:30:00Z"
       },
       {
        "players": [
@@ -844,7 +885,8 @@
          "name": "Anders Lind / Martin Buch",
          "nat": "DEN"
         }
-       ]
+       ],
+       "when": "2026-11-12T14:05:00Z"
       },
       {
        "players": [
@@ -857,7 +899,8 @@
          "name": "Petyo Krastev / Yoan Velichkov",
          "nat": "BUL"
         }
-       ]
+       ],
+       "when": "2026-11-12T13:30:00Z"
       },
       {
        "players": [
@@ -870,7 +913,8 @@
          "name": "Danilo Faso / Gorkem Ocal",
          "nat": "ITA/TUR"
         }
-       ]
+       ],
+       "when": "2026-11-12T11:05:00Z"
       },
       {
        "players": [
@@ -883,7 +927,8 @@
          "name": "Luka Mladenovic / Mael Van Dessel",
          "nat": "LUX"
         }
-       ]
+       ],
+       "when": "2026-11-12T11:05:00Z"
       },
       {
        "players": [
@@ -896,7 +941,8 @@
          "nat": "RUS",
          "seed": 4
         }
-       ]
+       ],
+       "when": "2026-11-12T13:30:00Z"
       },
       {
        "players": [
@@ -909,7 +955,8 @@
          "nat": "ESP",
          "seed": 7
         }
-       ]
+       ],
+       "when": "2026-11-12T10:30:00Z"
       },
       {
        "players": [
@@ -923,7 +970,8 @@
          "nat": "BRA",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-12T10:30:00Z"
       }
      ]
     },
@@ -1005,7 +1053,7 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-12T10:00:00Z"
+       "when": "2026-11-12T07:00:00Z"
       },
       {
        "players": [
@@ -1018,7 +1066,7 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-12T10:35:00Z"
+       "when": "2026-11-12T07:35:00Z"
       },
       {
        "players": [
@@ -1032,7 +1080,7 @@
          "nat": "AUS"
         }
        ],
-       "when": "2026-11-12T10:35:00Z"
+       "when": "2026-11-12T07:35:00Z"
       },
       {
        "players": [
@@ -1047,7 +1095,7 @@
          "seed": 6
         }
        ],
-       "when": "2026-11-12T10:00:00Z"
+       "when": "2026-11-12T07:00:00Z"
       },
       {
        "players": [
@@ -1061,7 +1109,7 @@
          "nat": "KAZ"
         }
        ],
-       "when": "2026-11-12T10:35:00Z"
+       "when": "2026-11-12T07:35:00Z"
       },
       {
        "players": [
@@ -1075,7 +1123,7 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-12T10:35:00Z"
+       "when": "2026-11-12T07:35:00Z"
       },
       {
        "players": [
@@ -1088,7 +1136,7 @@
          "nat": "RUS"
         }
        ],
-       "when": "2026-11-12T10:00:00Z"
+       "when": "2026-11-12T07:00:00Z"
       },
       {
        "players": [
@@ -1102,7 +1150,7 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-12T10:00:00Z"
+       "when": "2026-11-12T07:00:00Z"
       }
      ]
     },
