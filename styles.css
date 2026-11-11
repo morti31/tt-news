@@ -1413,3 +1413,4 @@ html.mp-open { overflow: hidden; }
 .events li.linked { position: relative; }
 .events li.linked:hover .name a { text-decoration: underline; }
 .events .when.stage { color: var(--ink); font-weight: 600; }
+.body-note { color: var(--muted); border-top: 1px solid var(--rule); padding-top: 14px; margin-top: 28px; }

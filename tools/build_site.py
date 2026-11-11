@@ -378,9 +378,11 @@ def short_when(iso):
 
 
 def block(p):
-    """One body item: "## Heading", a list ("- item" lines), or a paragraph."""
+    """One body item: "## Heading", a list ("- item" lines), "*a note in italics*", or a paragraph."""
     if p.startswith("## "):
         return f'<h2 class="body-h" id="{re.sub(r"[^a-z0-9]+", "-", p[3:].lower()).strip("-")}">{e(p[3:])}</h2>'
+    if len(p) > 2 and p[0] == "*" and p[-1] == "*" and not p.startswith("**"):   # *a note in italics*, e.g. a closing line
+        return f'<p class="body-note"><em>{linkify(p[1:-1])}</em></p>'
     if p.startswith("- "):
         items = [x[2:] for x in p.split("\n") if x.startswith("- ")]
         return '<ul class="body-list">' + "".join(f"<li>{linkify(x)}</li>" for x in items) + "</ul>"
