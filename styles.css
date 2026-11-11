@@ -1425,3 +1425,4 @@ html.mp-open { overflow: hidden; }
 @media (max-width: 560px) { .rk-three { grid-template-columns: minmax(0, 1fr); } }
 .rk-panel .rk-list { margin-top: 0; }
 .rk-panel[hidden] { display: none; }
+.pl-tiles[hidden] { display: none; }

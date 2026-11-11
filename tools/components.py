@@ -335,13 +335,16 @@ def subnav(group, cur):
 # Without JavaScript every row shows. A list whose container has the class "pg-all" (a search in progress) shows
 # every row that is not hidden, and its page buttons step aside.
 PAGER = """<script>(function(){document.querySelectorAll('[data-page]').forEach(function(list){
-var n=+list.dataset.page,items=[].slice.call(list.children),pages=Math.ceil(items.length/n),cur=0;if(pages<2)return;
+// data-skip: items shown above the list on the first page (the players page's top-10 cards), so page one holds n-skip rows and the labels count them
+var n=+list.dataset.page,skip=+(list.dataset.skip||0),items=[].slice.call(list.children),lead=skip?list.previousElementSibling:null;
+function pg(k){return k<n-skip?0:1+Math.floor((k-(n-skip))/n);}
+var pages=items.length?pg(items.length-1)+1:0,cur=0;if(pages<2)return;
 var nav=document.createElement('nav');nav.className='pager';nav.setAttribute('aria-label','Pages');
 var host=list.closest('table')||list;host.after(nav);
-function label(i){var a=i*n+1,b=Math.min(items.length,(i+1)*n);return a+'-'+b;}
-function go(i,scroll){cur=Math.max(0,Math.min(pages-1,i));items.forEach(function(el,k){el.classList.toggle('pg-off',Math.floor(k/n)!==cur);});
-nav.innerHTML='<button type="button" data-p="'+(cur-1)+'"'+(cur?'':' disabled')+' aria-label="Previous page">&lsaquo;</button>'+
-items.slice(0,pages).map(function(_,i){return '<button type="button" data-p="'+i+'" aria-current="'+(i===cur?'page':'false')+'">'+label(i)+'</button>';}).join('')+
+function label(i){var a=i*n+1,b=Math.min(items.length+skip,(i+1)*n);return a+'-'+b;}
+function go(i,scroll){cur=Math.max(0,Math.min(pages-1,i));items.forEach(function(el,k){el.classList.toggle('pg-off',pg(k)!==cur);});if(lead)lead.hidden=cur>0;
+var btn=[];for(var j=0;j<pages;j++)btn.push('<button type="button" data-p="'+j+'" aria-current="'+(j===cur?'page':'false')+'">'+label(j)+'</button>');
+nav.innerHTML='<button type="button" data-p="'+(cur-1)+'"'+(cur?'':' disabled')+' aria-label="Previous page">&lsaquo;</button>'+btn.join('')+
 '<button type="button" data-p="'+(cur+1)+'"'+(cur<pages-1?'':' disabled')+' aria-label="Next page">&rsaquo;</button>';
 if(scroll)(list.closest('section')||host).scrollIntoView({block:'start'});}
 nav.addEventListener('click',function(ev){var b=ev.target.closest('button');if(b&&!b.disabled)go(+b.dataset.p,true);});

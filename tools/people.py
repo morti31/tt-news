@@ -14,6 +14,8 @@ The rules (agreed 9 November 2026):
   4. A player who does not qualify appears as plain text everywhere: no link, no tag chip, no tag page.
   5. Pages stay once made (nothing here removes an adult because their ranking dropped), except when the age
      rule makes them ineligible.
+  6. Overrides 1 to 3 (agreed 11 November 2026): every player in the world rankings shown on the site (the top 400)
+     gets a page, whatever their age.
 
 Output: Roster.pages {tag slug: player dict}, Roster.blocked {tag slugs that must not link}, Roster.urls.
 """
@@ -77,8 +79,9 @@ class Roster:
         wtt = json.load(open(os.path.join(ROOT, "data", "players", "wtt.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "data", "players", "wtt.json")) else {}
         hist = json.load(open(os.path.join(ROOT, "data", "ranking-history.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "data", "ranking-history.json")) else {"weeks": {}}
         ever100 = {row[0] for gs in hist.get("weeks", {}).values() for g in gs.values() for row in g if row[1] <= 100}
-        ranked = {}
+        ranked, listed = {}, set()
         for g in ("men", "women"):
+            listed.update(p["ittf_id"] for p in (rankings or {}).get(g, []) if p.get("ittf_id"))   # anyone in the world rankings on the site gets a page, whatever their age
             for p in (rankings or {}).get(g, []):
                 if p.get("ittf_id") and p["rank"] <= 100:   # the senior test is the world top 100, however long the list on the site
                     ranked[p["ittf_id"]] = (p, "M" if g == "men" else "W")
@@ -143,7 +146,7 @@ class Roster:
             best = next((x.get("best_rank") for x in (wtt.get(pid) or {}).get("stats", []) if x.get("SubeventCode") in ("MS", "WS")), None) if pid else None
             senior = bool(pid) and (pid in ranked or pid in ever100 or (best is not None and str(best).isdigit() and int(best) <= 100) or senior_draw(pid))
             youth = slug in youth_story or (bool(pid) and youth_matches(pid))
-            ok, why = decide(a, senior, key(c["name"]) in squad, bool(bio), youth)
+            ok, why = (True, "in the world rankings on the site") if pid in listed else decide(a, senior, key(c["name"]) in squad, bool(bio), youth)
             if a is None and pid:
                 self.need_dob.add(pid)
             self.why[slug] = why

@@ -600,9 +600,9 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                         f'<span class="sr-only">{e(p["name"])}</span></a></li>' for p in top)
         lis = "".join(f'<li><span class="rk-pos">{(ranks.get(p["ittf_id"]) or {}).get("rank", "")}</span>{components.flag(p.get("nat"))}'
                       f'<a href="/players/{p["slug"]}.html">{e(p["name"])}</a><span class="rk-nat">{e(p.get("nat") or "")}</span></li>' for p in rest)
-        return f'<ul class="pl-tiles">{cards}</ul>' + (f'<ul class="pl-all" data-page="50">{lis}</ul>' if lis else "")
+        return f'<ul class="pl-tiles">{cards}</ul>' + (f'<ul class="pl-all" data-page="50" data-skip="{len(top)}">{lis}</ul>' if lis else "")
     idx = f'''<main class="wrap pl-page">{components.subnav("players", "/players/")}<section class="sched-head"><div><h1>Players</h1>
-<p class="lede">Every player in the world top 100: results, season-by-season records, titles, head to heads and the latest news.</p></div></section>
+<p class="lede">Every player in the world top 400: results, season-by-season records, titles, head to heads and the latest news.</p></div></section>
 <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" id="t-women" aria-controls="women" aria-selected="true">Women</button><button role="tab" id="t-men" aria-controls="men" aria-selected="false">Men</button></div>
 <section class="hub-sec pl-panel" id="women" role="tabpanel" aria-labelledby="t-women"><h2 class="sr-only">Women</h2>{group("W")}</section>
 <section class="hub-sec pl-panel" id="men" role="tabpanel" aria-labelledby="t-men"><h2 class="sr-only">Men</h2>{group("M")}</section>

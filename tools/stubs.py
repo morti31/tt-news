@@ -5,8 +5,8 @@
 For each player in data/rankings.json (the top 400 men and women) with no file in data/players, writes
 data/players/<slug>.json with what WTT's records give: name, association, gender, date of birth and playing hand
 (from data/players/wtt.json, filled by tools/match_sync.py). The file is marked "stub": true; the monthly profile
-check fills stubs in, highest-ranked first. Never removes a profile. Under-16s get no file (tools/people.py would
-not give them a page anyway).
+check fills stubs in, highest-ranked first. Never removes a profile. Every ranked player gets a file, whatever their age
+(tools/people.py gives everyone in the rankings a page).
 """
 import datetime as dt, glob, json, os, sys
 
@@ -34,8 +34,6 @@ def main():
                 continue
             w = wtt.get(pid) or {}
             born = people.wtt_born(w.get("dob"))
-            if born and people.age_on(born) < 16:
-                continue
             slug = people.slugify(p["name"])
             if slug in slugs:
                 slug = f"{slug}-{p['nat'].lower()}"
