@@ -727,9 +727,9 @@ def main():
         items += [(s.get("published", s["date"]), f"/news/{s['id']}.html", " ".join([s["headline"], s["summary"], *(s.get("body") or [])]))
                   for s in NEWS.get("stories", []) if s["id"] not in with_article]
         items.sort(key=lambda x: x[0], reverse=True)
-        desc = f'The official ITTF world table tennis rankings, {R["label"].split(", ", 1)[1]}: the top 100 men and women with points and movement.'
+        desc = f'The official ITTF world table tennis rankings, {R["label"].split(", ", 1)[1]}: the top 400 men and women with points and movement.'
         open(os.path.join(ROOT, "rankings.html"), "w", encoding="utf-8").write(
-            page("World rankings: top 100 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links()).replace('<main class="wrap rk">', '<main class="wrap rk">' + components.subnav("players", "/rankings.html"), 1)))
+            page("World rankings: top 400 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links()).replace('<main class="wrap rk">', '<main class="wrap rk">' + components.subnav("players", "/rankings.html"), 1)))
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
     open(os.path.join(ROOT, "privacy.html"), "w", encoding="utf-8").write(privacy_page())
 

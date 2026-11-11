@@ -18,6 +18,10 @@ def body(R, items, links=None):
     """items: (published, url, text) for every story and article, newest first, to link players to news."""
 
     links = links or {"p": {}, "c": {}}
+    import unicodedata
+    def norm(n):
+        return "".join(ch for ch in unicodedata.normalize("NFKD", n) if ch.isalnum()).lower()
+    loose = {norm(k): v for k, v in links["p"].items()}   # profile names can differ from WTT's spelling in case or accents
 
     def move(p):
         if p["prev"] is None:
@@ -30,7 +34,7 @@ def body(R, items, links=None):
         return '<span class="mv same" aria-label="no change">–</span>'
 
     def who(p):
-        u, cu = links["p"].get(p["name"]), links["c"].get(p["nat"])
+        u, cu = links["p"].get(p["name"]) or loose.get(norm(p["name"])), links["c"].get(p["nat"])
         n = f'<a href="{u}">{e(p["name"])}</a>' if u else e(p["name"])
         nat = f'<a href="{cu}">{e(p["nat"])}</a>' if cu else e(p["nat"])
         return f'{components.flag(p["nat"])}<span class="rk-name">{n}</span><span class="rk-nat">{nat}</span>'
