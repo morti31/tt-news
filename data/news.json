@@ -1,7 +1,107 @@
 {
-  "updated": "2026-11-11T08:45:00Z",
+  "updated": "2026-11-11T12:15:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-contender-istanbul-2026-qualifying-day-two-connor-green-tianer-yu",
+      "category": "England",
+      "kind": "Update",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-11",
+      "published": "2026-11-11T12:15:00Z",
+      "headline": "WTT Contender Istanbul: Connor Green and Tianer Yu go out in qualifying as Aditya Sareen beats Quan Kaiyuan",
+      "summary": "England's two qualifiers lost in the second round of qualifying in Istanbul on Wednesday, leaving Tom Jarvis as the country's only singles player in the event.",
+      "matches": [
+        {
+          "label": "Men's singles, qualifying round 2",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Ao Hualei",
+              "nat": "CHN"
+            },
+            {
+              "name": "Connor Green",
+              "nat": "ENG"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, qualifying round 2",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Jessica Reyes Lai",
+              "nat": "USA"
+            },
+            {
+              "name": "Tianer Yu",
+              "nat": "ENG"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Connor Green and Tianer Yu went out in the second round of qualifying at WTT Contender Istanbul on Wednesday morning, so Tom Jarvis, the eighth seed in the men's singles, is England's only singles player left. Green, the world No 118, lost 11-7, 11-8, 8-11, 11-7 to China's Ao Hualei in 36 minutes. Ao, who [needed a 16-14 decider](/news/wtt-contender-istanbul-2026-qualifying-day-one-ao-hualei-tianer-yu.html) to get past Iran's Amin Ahmadian on Tuesday, plays Germany's Ricardo Walther for a main-draw place.",
+        "Yu, who won her first qualifying match on Tuesday, lost 11-8, 4-11, 11-6, 11-8 to Jessica Reyes Lai of the US, the world No 164. Reyes Lai meets China's Wang Xiaotong, ranked 94th, in the last qualifying round.",
+        "Quan Kaiyuan was the first of China's qualifiers to go out, beaten 11-7, 11-7, 11-7 by Australia's Aditya Sareen. Nigeria's Quadri Aruna, the world No 100, beat Luxembourg's Mael Van Dessel 11-5 in the fifth game and now plays Norway's Borgar Haug. France's Isa Cok needed 53 minutes, the longest match of the morning, to beat Iran's Mahshid Ashtari, taking the decider 15-13.",
+        "The final qualifying round starts at about 2.10pm UK time with the women's matches, followed by the men's from about 3.20pm, and settles the last places in the main draws. Wales's Anna Hursey goes straight into the women's main draw."
+      ],
+      "sources": [
+        {
+          "name": "WTT: WTT Contender Istanbul 2026 results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257"
+        },
+        {
+          "name": "Table Tennis England: Jarvis seeded as trio head to WTT Contender Istanbul",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/jarvis-seeded-as-trio-head-to-wtt-contender-istanbul/"
+        }
+      ]
+    },
     {
       "id": "mixed-team-world-cup-2026-sweden-squad",
       "category": "International",
