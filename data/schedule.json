@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T00:37:00Z",
+  "updated": "2026-11-11T07:43:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
   "events": [
     {
@@ -1053,16 +1053,6 @@
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
     },
     {
-      "id": "wtt-3257-ttexdoublesrnd1000400",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Lim Yunoh/JOO Cheonhui v Ibrahim/ALTINKAYA Sibel Gunduz, mixed doubles, qualifying round 1",
-      "start": "2026-11-11T10:00:00Z",
-      "end": "2026-11-11T10:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------RND1000400--",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3257-ttexdoublesrnd1000100",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Thibault/PAVADE Prithika Poret v Leonardo/WATANABE Laura Iizuka, mixed doubles, qualifying round 1",
@@ -1081,6 +1071,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
       "code": "TTEXDOUBLES-----------RND1000200--",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttexdoublesrnd1000400",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Lim Yunoh/JOO Cheonhui v Ibrahim/ALTINKAYA Sibel Gunduz, mixed doubles, qualifying round 1",
+      "start": "2026-11-11T10:00:00Z",
+      "end": "2026-11-11T10:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEXDOUBLES-----------RND1000400--",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttexdoublesrnd1000300",
@@ -1253,16 +1253,6 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3257-ttewsinglesrnd2001400",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Maria Yovkova v Yuan Wan, women's singles, qualifying round 2",
-      "start": "2026-11-11T12:55:00Z",
-      "end": "2026-11-11T13:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWSINGLES-----------RND2001400--",
-      "detail": "Table 4"
-    },
-    {
       "id": "wtt-3257-ttewsinglesrnd2000900",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Giulia Takahashi v Sibel Altinkaya, women's singles, qualifying round 2",
@@ -1291,6 +1281,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
       "code": "TTEMSINGLES-----------RND2000500--",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3257-ttewsinglesrnd2001400",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Maria Yovkova v Yuan Wan, women's singles, qualifying round 2",
+      "start": "2026-11-11T12:55:00Z",
+      "end": "2026-11-11T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------RND2001400--",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3257-ttemsinglesrnd2000400",
