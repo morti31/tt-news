@@ -80,7 +80,7 @@ class Roster:
         ranked = {}
         for g in ("men", "women"):
             for p in (rankings or {}).get(g, []):
-                if p.get("ittf_id"):
+                if p.get("ittf_id") and p["rank"] <= 100:   # the senior test is the world top 100, however long the list on the site
                     ranked[p["ittf_id"]] = (p, "M" if g == "men" else "W")
         squad = set()
         for f in glob.glob(os.path.join(ROOT, "data", "clubs", "squads", "*.json")):

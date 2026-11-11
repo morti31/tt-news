@@ -275,12 +275,12 @@ def main():
     # Rankings: WTT publishes on Mondays; checking every run is cheap and only writes on change
     try:
         raw = None
-        try:   # the top 200 for each list, in two pages of 100, from the service behind WTT's rankings page
-            raw = [r for ev in ("MS", "WS") for a, b in ((1, 100), (101, 200)) for r in (get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={b}").get("Result") or [])]
-            if len({r.get("CurrentRank") for r in raw}) < 150:
+        try:   # the top 400 for each list, in pages of 100, from the service behind WTT's rankings page
+            raw = [r for ev in ("MS", "WS") for a, b in ((1, 100), (101, 200), (201, 300), (301, 400)) for r in (get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={b}").get("Result") or [])]
+            if len({r.get("CurrentRank") for r in raw}) < 300:
                 raw = None
         except Exception as err:
-            print(f"top 200 unavailable ({err}), using the top 100")
+            print(f"top 400 unavailable ({err}), using the top 100")
         raw = raw or get(RANKS)
         tmp = os.path.join(ROOT, ".rankings-tmp.json")
         json.dump(raw, open(tmp, "w"))

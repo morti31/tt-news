@@ -216,7 +216,7 @@ window.ElevenStream = function (el) {
           ${p.points ? `<span class="bar"><i style="width:${Math.round(p.points / max * 100)}%"></i></span>` : ""}</li>`;
       }).join("");
     };
-    if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="/rankings">Full top 200</a>`;
+    if ($("rank-week")) $("rank-week").innerHTML = `${esc(news.rankings.week)}. <a href="/rankings">Full top 400</a>`;
     $("rank-toggle")?.addEventListener("click", (e) => {
       const b = e.target.closest("button");
       if (!b) return;
