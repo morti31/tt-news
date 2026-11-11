@@ -247,7 +247,7 @@ window.ElevenStream = function (el) {
       const now = e.start <= today;
       // "ETTU Champions League Women, Stage 2 Round 1": the competition as the name, the stage on the line below
       const [head, ...rest] = e.name.split(", ");
-      const title = head.replace(/^ETTU /, ""), stage = rest.join(", ");
+      const title = head.replace(/^ETTU /, ""), stage = rest.join(", ").replace(/^./, (c) => c.toUpperCase());
       const dates = now ? `<b class="on-now"><span class="live-dot"></span>On now</b> until ${fmt(e.end)}` : e.start === e.end ? fmt(e.start) : `${fmt(e.start)} to ${fmt(e.end)}`;
       const href = pageOf(e);
       return `<li class="${now ? "now" : ""}${href ? " linked" : ""}"><div class="cal"><b>${day(e.start).getDate()}</b><span>${fmt(e.start, { month: "short" })}</span></div>
