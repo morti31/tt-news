@@ -659,7 +659,7 @@ def bulletin(ev, uid):
     c = ev.get("colours", ("#2f5fd0", "#0c1a45"))[0]
     defs, noise = grain(uid, .08)
     title = ev["name"].upper()
-    size = fit(title, 1100, 300, -0.005)
+    size = fit(title, 960, 300, -0.005)
     b = [f'<defs>{defs}<radialGradient id="{uid}-b" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#ffd23f"/><stop offset="1" stop-color="#ff5a1f"/></radialGradient></defs>',
          f'<rect width="{W}" height="{H}" fill="{ink}"/>',
          f'<rect x="0" y="{H - 200}" width="{W}" height="200" fill="{c}"/>',
@@ -731,7 +731,7 @@ def extras():
         out.append({"id": f'league-{lg["slug"]}', "name": lg["name"], "series": "Club table tennis", "city": lg["name"], "country": lg["country"],
                     "tier": "club", "year": "", "events": "", "look": "landmark", "landmark": LEAGUE_LANDMARK.get(lg["slug"], "brussels-atomium.jpg"),
                     "colours": (main, deep), "kicker": f'Club table tennis · {lg["country"]}',
-                    "cols": (("Competitions", comps[:34]), ("Country", lg["country"]), ("On Eleven", "Tables and results"))})
+                    "cols": (("Competitions", "Men and women" if len(lg["comps"]) > 1 else lg["comps"][0][1]), ("Country", lg["country"]), ("On Eleven", "Tables and results"))})
     out.append({"id": "topic-rankings", "name": "Rankings", "series": "ITTF world ranking", "city": "Rankings", "tier": "champions", "year": "", "events": "", "look": "ladder"})
     out.append({"id": "topic-england", "name": "England", "series": "Table tennis in England", "city": "England", "tier": "world", "year": "", "events": "",
                 "look": "landmark", "landmark": "london-big-ben.jpg", "colours": ("#d4213d", "#2e0610"), "kicker": "News from home",
