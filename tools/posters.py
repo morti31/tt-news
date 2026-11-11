@@ -157,7 +157,9 @@ def _variant(ev):
 
 
 def credit(ev):
-    """HTML credit line for the photo used on an event's poster."""
+    """HTML credit line for the photo used on an event's poster (posters with no photo say so)."""
+    if look(ev) in ("arena", "court", "ticket", "atlas"):
+        return "Poster by Eleven."
     name, url, _ = PHOTOS[_variant(ev)[4]]
     return (f'Poster by Eleven. Photo: <a href="{url}" rel="noopener">{e(name)}</a>, '
             f'<a href="https://unsplash.com/license" rel="noopener">Unsplash Licence</a>')
@@ -303,7 +305,7 @@ def tile(ev, uid):
     b.append(f'<rect x="0" y="{PH}" width="{TW}" height="10" fill="{a1}"/>')
     b.append(t(ev["year"], R, PH - 40, 150, "#fff", 300, "end", -0.03))
     b.append(label(ev["series"], L, PH + 72, ink, 24, opacity=1))
-    base = PH + 92 + size * 0.73
+    base = PH + 112 + size * 0.73
     b.append(t(title, L - size * 0.02, base, size, ink, 800, track=-0.005, stretch=75))
     b.append(f'<rect x="{L}" y="{base + 36:.0f}" width="{R - L}" height="2" fill="{ink}"/>')
     b.append(t(date_range(ev), L, base + 96, 38, ink, 600))
@@ -316,7 +318,7 @@ def tile(ev, uid):
 
 def arena(ev, uid):
     """B, Arena: a night key visual, a lit bowl seen from the upper tier, centred monumental type."""
-    c, deep = TIERS[ev["tier"]]
+    c, deep = colours(ev)
     defs, noise = grain(uid, .09)
     title = ev["city"].upper()
     size = fit(title, 1180, 260, 0.01)
@@ -356,7 +358,7 @@ def arena(ev, uid):
 
 def court(ev, uid):
     """C, Court: the table in hard perspective under arena light, a ball in flight, type set left."""
-    c, deep = TIERS[ev["tier"]]
+    c, deep = colours(ev)
     defs, noise = grain(uid, .08)
     title = ev["city"].upper()
     size = fit(title, 640, 230)
@@ -405,14 +407,314 @@ def court(ev, uid):
     return b
 
 
-STYLES = {"grid": grid, "arena": arena, "court": court, "tile": tile}
+
+
+# ---------------------------------------------------------------------------------------------------------------
+# One look per kind of event (agreed 11 November 2026). Every look keeps Eleven's branding: the wordmark, Bricolage
+# Grotesque, the small two-colour bar, upper-case spaced labels and a fine grain. What changes is the composition.
+#   World events (Worlds, Olympics, World Cup)    grid       paper and a duotone arena photo (the original)
+#   Grand Smash                                   arena      night bowl, monumental centred type
+#   WTT Champions, WTT Finals                     court      the table in perspective, type set left
+#   Star Contender                                split      a tall photo strip beside a solid colour field
+#   Contender and Feeder                          ticket     typographic, paper stock, a ticket with a stub
+#   Continental championships and Games           atlas      the region's colour with a graticule and a located dot
+#   Club leagues                                  landmark   the country's landmark, full bleed, in the league's colour
+#   World rankings                                ladder     the ranking as bars
+#   News topics                                   bulletin   ink, a bold word, the ball
+# ---------------------------------------------------------------------------------------------------------------
+
+LANDMARKS = {   # Unsplash Licence; credit: (photographer, page)
+    "berlin-brandenburg-gate.jpg": ("Maximilian Brol", "https://unsplash.com/photos/brandenburg-gate-in-berlin-A9dp22dRULI", "Brandenburg Gate, Berlin"),
+    "tokyo-tower.jpg": ("ZHENYU LUO", "https://unsplash.com/photos/tokyo-tower-glows-brightly-among-city-buildings-xpburpKFWUs", "Tokyo Tower"),
+    "paris-eiffel-tower.jpg": ("Chris Karidis", "https://unsplash.com/photos/eiffel-tower-paris-france-nnzkZNYWHaU", "Eiffel Tower, Paris"),
+    "beijing-temple-of-heaven.jpg": ("Charles Gao", "https://unsplash.com/photos/brown-and-gray-roof-house-xagzUq7d4q4", "Temple of Heaven, Beijing"),
+    "new-york-statue-of-liberty.jpg": ("Brandon Mowinkel", "https://unsplash.com/photos/UGi_Ng56FRI", "Statue of Liberty, New York"),
+    "mumbai-gateway-of-india.jpg": ("Daniel Dara", "https://unsplash.com/photos/a-large-stone-building-with-gateway-of-india-in-the-background-Ub8Z0UsaWIw", "Gateway of India, Mumbai"),
+    "brussels-atomium.jpg": ("Cosmin Serban", "https://unsplash.com/photos/atomium-brussels-belgium-JAEog_jEAo0", "Atomium, Brussels"),
+    "london-big-ben.jpg": ("Tom Athawes", "https://unsplash.com/photos/big-ben-in-london-Wb6smx3Z9uI", "Elizabeth Tower, London"),
+}
+LEAGUE_LANDMARK = {"bundesliga": "berlin-brandenburg-gate.jpg", "t-league": "tokyo-tower.jpg", "pro-a": "paris-eiffel-tower.jpg",
+                   "super-league": "beijing-temple-of-heaven.jpg", "mltt": "new-york-statue-of-liberty.jpg", "utt": "mumbai-gateway-of-india.jpg",
+                   "champions-league": "brussels-atomium.jpg"}
+# Palettes for kinds of event that share a tier: (main, deep)
+SERIES_COLOURS = {"WTT Finals": ("#c99a2e", "#1b1405"), "WTT Feeder": ("#e2582b", "#2a0f05"), "WTT Invitational": ("#3a66e0", "#0c1a45")}
+
+
+def look(ev):
+    """Which composition an event (or a league or topic poster) gets."""
+    if ev.get("look"):
+        return ev["look"]
+    s, tier = ev.get("series", ""), ev.get("tier")
+    if tier == "smash":
+        return "arena"
+    if tier == "champions":
+        return "court"
+    if tier == "star":
+        return "split"
+    if tier == "contender":
+        return "ticket"
+    if tier == "continental":
+        return "atlas"
+    return "grid"
+
+
+def colours(ev):
+    if ev.get("series") in SERIES_COLOURS:
+        return SERIES_COLOURS[ev["series"]]
+    return palette(ev)
+
+
+def landmark_href(name):
+    import base64
+    path = os.path.join(ROOT, "img", "posters", "photos", "landmarks", name)
+    return "data:image/jpeg;base64," + base64.b64encode(open(path, "rb").read()).decode()
+
+
+def _duo(uid, c, deep, key="duo", lift=.62):
+    d, m = _rgb(deep), _rgb(c)
+    hi = [min(1, x * .45 + lift) for x in m]
+    tv = "".join(f'<feFunc{ch} type="table" tableValues="{d[i] * .7:.3f} {d[i]:.3f} {m[i]:.3f} {hi[i]:.3f}"/>' for i, ch in enumerate("RGB"))
+    return f'<filter id="{uid}-{key}" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/><feComponentTransfer>{tv}</feComponentTransfer></filter>'
+
+
+def _bars(x, y, a, b, w=40, h=8):
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{a}"/><rect x="{x + w}" y="{y}" width="{w}" height="{h}" fill="{b}"/>'
+
+
+def split(ev, uid):
+    """Star Contender: a tall duotone photo strip on the left, a solid field of the tier colour on the right."""
+    c, deep, a1, a2, photo, layout = _variant(ev)
+    c, deep = colours(ev)
+    defs, noise = grain(uid, .06)
+    P = 620                                   # photo strip width
+    L, R = P + 90, W - 90
+    title = ev["city"].upper()
+    size = fit(title, R - L, 230, -0.005)
+    b = [f'<defs>{defs}{_duo(uid, c, deep)}<clipPath id="{uid}-strip"><rect x="0" y="0" width="{P}" height="{H}"/></clipPath>'
+         f'<linearGradient id="{uid}-fl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a1}"/><stop offset="1" stop-color="{a2}"/></linearGradient></defs>',
+         f'<rect width="{W}" height="{H}" fill="{deep}"/>',
+         f'<g clip-path="url(#{uid}-strip)"><image href="{photo_href(photo)}" x="-200" y="0" width="{P + 400}" height="{H}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-duo)"/></g>',
+         f'<rect x="{P}" y="0" width="14" height="{H}" fill="url(#{uid}-fl)"/>',
+         f'<circle cx="{P - 170}" cy="{H * .5:.0f}" r="80" fill="url(#{uid}-fl)"/><circle cx="{P - 170}" cy="{H * .5:.0f}" r="106" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="2"/>',
+         wordmark(R, 96, "#fff", 26),
+         _bars(L, 82, a1, "#fff", 36, 7),
+         label(ev["series"], L, 140, "#fff", 18, opacity=.9)]
+    base = 190 + size * .73
+    b.append(t(title, L - size * .02, base, size, "#fff", 800, track=-0.005, stretch=75))
+    b.append(t(ev["year"], L, base + 120, 120, "none", 700, track=-0.02, extra='stroke="#fff" stroke-width="2.5"'))
+    y = 700
+    b.append(f'<rect x="{L}" y="{y}" width="{R - L}" height="1" fill="#fff" fill-opacity=".3"/>')
+    for i, (k, v) in enumerate((("Dates", date_range(ev)), ("Venue", place(ev)), ("Events", ev["events"]))):
+        x = L + i * (R - L) / 3
+        b.append(label(k, x, y + 44, "#fff", 13, opacity=.55))
+        for j, ln in enumerate(_wrap(v, 18)[:2]):
+            b.append(t(ln, x, y + 78 + j * 28, 22, "#fff", 600))
+    b.append(noise)
+    return b
+
+
+def ticket(ev, uid):
+    """Contender and Feeder: no photo. Paper stock and a ticket: the city, the days as a row of numbers, a stub."""
+    c, deep = colours(ev)
+    ink, paper = "#121417", "#f3f1ec"
+    defs, noise = grain(uid, .05, dark=True)
+    X0, Y0, X1, Y1 = 80, 80, W - 80, H - 80
+    S = X1 - 330                               # where the stub begins
+    title = ev["city"].upper()
+    size = fit(title, S - X0 - 120, 210, -0.005)
+    b = [f'<defs>{defs}</defs>', f'<rect width="{W}" height="{H}" fill="{c}"/>',
+         # the ticket, with notches where the stub tears off
+         f'<path d="M{X0} {Y0} H{S - 26} A26 26 0 0 0 {S + 26} {Y0} H{X1} V{Y1} H{S + 26} A26 26 0 0 0 {S - 26} {Y1} H{X0} Z" fill="{paper}"/>',
+         f'<line x1="{S}" y1="{Y0 + 40}" x2="{S}" y2="{Y1 - 40}" stroke="{ink}" stroke-opacity=".35" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>']
+    L = X0 + 64
+    b.append(_bars(L, Y0 + 58, c, ink, 36, 7))
+    b.append(label(ev["series"], L, Y0 + 112, ink, 18, opacity=1))
+    base = Y0 + 140 + size * .73
+    b.append(t(title, L - size * .02, base, size, ink, 800, track=-0.005, stretch=75))
+    b.append(t(f'{ev["country"]}', L, base + 56, 26, ink, 500, opacity=.7))
+    ds = days(ev)
+    if ds:
+        top, cw = Y1 - 230, (S - 60 - L) / max(len(ds), 5)
+        b.append(f'<rect x="{L}" y="{top}" width="{S - 60 - L}" height="1" fill="{ink}" fill-opacity=".3"/>')
+        for i, d in enumerate(ds):
+            x = L + i * cw
+            last = i == len(ds) - 1
+            b.append(label(f"{d:%a}", x, top + 40, ink, 13, opacity=.9 if last else .5))
+            b.append(t(f"{d.day:02d}", x - 2, top + 122, min(78, cw * .7), c if last else ink, 700 if last else 300, track=-0.03))
+    # the stub: year, month, Eleven
+    sx = S + 60
+    b.append(label("Admit one", sx, Y0 + 90, ink, 13, opacity=.55))
+    b.append(t(ev["year"], sx - 4, Y0 + 220, 112, ink, 800, track=-0.03, stretch=75))
+    if ds:
+        b.append(t(f"{ds[0]:%B}".upper(), sx, Y0 + 270, 26, ink, 700, track=0.12))
+    b.append(f'<circle cx="{sx + 92}" cy="{Y1 - 210}" r="80" fill="none" stroke="{c}" stroke-width="4"/>')
+    b.append(f'<circle cx="{sx + 92}" cy="{Y1 - 210}" r="64" fill="{c}"/>')
+    word = ev["series"].replace("WTT ", "").upper()
+    b.append(t(word, sx + 92, Y1 - 204, min(20, 100 / (len(word) * .62)), "#fff", 800, "middle", 0.06))
+    b.append(wordmark(X1 - 52, Y1 - 52, ink, 26))
+    b.append(noise)
+    return b
+
+
+def _coords(ev):
+    import re as _re
+    m = _re.findall(r"([\d.]+)° ([NSEW])", ev.get("coords") or "")
+    if len(m) < 2:
+        return None
+    lat = float(m[0][0]) * (1 if m[0][1] == "N" else -1)
+    lon = float(m[1][0]) * (1 if m[1][1] == "E" else -1)
+    return lat, lon
+
+
+def atlas(ev, uid):
+    """Continental championships and Games: the region's colour, a graticule, and a dot where the event is played."""
+    c, deep = colours(ev)
+    defs, noise = grain(uid, .07)
+    title = ev["city"].upper()
+    size = fit(title, 860, 230, -0.005)
+    b = [f'<defs>{defs}<radialGradient id="{uid}-g" cx="72%" cy="40%" r="70%"><stop offset="0" stop-color="{c}"/><stop offset="1" stop-color="{deep}"/></radialGradient></defs>',
+         f'<rect width="{W}" height="{H}" fill="url(#{uid}-g)"/>']
+    # graticule on the right two thirds: an equirectangular slice of the world
+    gx0, gx1, gy0, gy1 = 640, W, 0, H
+    for lon in range(-180, 181, 15):
+        x = gx0 + (lon + 180) / 360 * (gx1 - gx0)
+        b.append(f'<line x1="{x:.0f}" y1="{gy0}" x2="{x:.0f}" y2="{gy1}" stroke="#fff" stroke-opacity="{.22 if lon % 45 == 0 else .08}" stroke-width="1"/>')
+    for lat in range(-75, 76, 15):
+        y = gy0 + (90 - lat) / 180 * (gy1 - gy0)
+        b.append(f'<line x1="{gx0}" y1="{y:.0f}" x2="{gx1}" y2="{y:.0f}" stroke="#fff" stroke-opacity="{.22 if lat == 0 else .08}" stroke-width="1"/>')
+    p = _coords(ev)
+    if p:
+        x = gx0 + (p[1] + 180) / 360 * (gx1 - gx0)
+        y = gy0 + (90 - p[0]) / 180 * (gy1 - gy0)
+        b.append(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="70" fill="#fff" fill-opacity=".08"/><circle cx="{x:.0f}" cy="{y:.0f}" r="36" fill="none" stroke="#fff" stroke-width="2"/>'
+                 f'<circle cx="{x:.0f}" cy="{y:.0f}" r="12" fill="#ff5a1f"/>')
+        b.append(label(ev["coords"], x + 56, y + 6, "#fff", 13, opacity=.8))
+    L = 96
+    b.append(wordmark(L, 96, "#fff", 26, "start"))
+    b.append(_bars(L, 150, "#ff5a1f", "#fff", 36, 7))
+    b.append(label(ev.get("region") or ev["series"], L, 205, "#fff", 18, opacity=.9))
+    base = 240 + size * .73
+    b.append(t(title, L - size * .02, base, size, "#fff", 800, track=-0.005, stretch=75))
+    b.append(t(ev["series"], L, base + 70, 34, "#fff", 600))
+    b.append(t(ev["year"], L, base + 200, 120, "#fff", 200, track=-0.03, opacity=.95))
+    y = H - 110
+    b.append(f'<rect x="{L}" y="{y - 46}" width="520" height="1" fill="#fff" fill-opacity=".3"/>')
+    b.append(label(f'{date_range(ev)}  ·  {place(ev)}', L, y, "#fff", 15, opacity=.85))
+    b.append(noise)
+    return b
+
+
+def landmark(ev, uid):
+    """Club leagues (and England): the country's landmark, full bleed, toned in the league's colour."""
+    c, deep = ev.get("colours") or TIERS["club"]
+    a1 = ev.get("accent", "#ffb81c")
+    photo = ev["landmark"]
+    defs, noise = grain(uid, .07)
+    title = ev["name"].upper()
+    size = fit(title, 1240, 210, -0.005)
+    b = [f'<defs>{defs}{_duo(uid, c, deep, lift=.7)}'
+         f'<linearGradient id="{uid}-sh" x1="0" y1="0" x2="0" y2="1"><stop offset=".25" stop-color="{deep}" stop-opacity="0"/><stop offset="1" stop-color="{deep}" stop-opacity=".95"/></linearGradient>'
+         f'<linearGradient id="{uid}-sl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{deep}" stop-opacity=".75"/><stop offset=".6" stop-color="{deep}" stop-opacity="0"/></linearGradient></defs>',
+         f'<image href="{landmark_href(photo)}" x="0" y="0" width="{W}" height="{H}" preserveAspectRatio="{ev.get("align", "xMidYMid")} slice" filter="url(#{uid}-duo)"/>',
+         f'<rect width="{W}" height="{H}" fill="url(#{uid}-sh)"/>', f'<rect width="{W}" height="{H}" fill="url(#{uid}-sl)"/>']
+    L = 96
+    b.append(wordmark(L, 96, "#fff", 26, "start"))
+    b.append(label(ev.get("kicker", "Club table tennis"), W - 96, 92, "#fff", 15, "end", .85))
+    base = H - 230
+    b.append(_bars(L, base - size * .73 - 70, a1, "#fff", 40, 8))
+    b.append(t(title, L - size * .02, base, size, "#fff", 800, track=-0.005, stretch=75))
+    b.append(f'<rect x="{L}" y="{base + 46}" width="{W - 2 * L}" height="1" fill="#fff" fill-opacity=".35"/>')
+    for i, (k, v) in enumerate(ev["cols"]):
+        x = L + i * (W - 2 * L) / 3
+        b.append(label(k, x, base + 92, "#fff", 13, opacity=.6))
+        b.append(t(v, x, base + 128, 24, "#fff", 600))
+    b.append(noise)
+    return b
+
+
+def ladder(ev, uid):
+    """World rankings: the ranking drawn as bars, the longest first, on paper stock."""
+    ink, paper, c = "#121417", "#f3f1ec", "#2f5fd0"
+    defs, noise = grain(uid, .05, dark=True)
+    b = [f'<defs>{defs}</defs>', f'<rect width="{W}" height="{H}" fill="{paper}"/>']
+    L, R = 96, W - 96
+    b.append(_bars(L, 82, "#ff5a1f", c, 40, 8))
+    b.append(label("ITTF world ranking", L, 140, ink, 18, opacity=1))
+    b.append(t("RANKINGS", L - 6, 340, 250, ink, 800, track=-0.005, stretch=75))
+    b.append(t("Updated every week", L, 410, 34, ink, 300))
+    widths = (1, .91, .87, .8, .74, .68, .63, .57, .52, .48)
+    top, gap = 470, 36
+    for i, wv in enumerate(widths):
+        y = top + i * gap
+        b.append(t(str(i + 1), L, y + 22, 20, ink, 700 if i == 0 else 400, opacity=1 if i == 0 else .6))
+        b.append(f'<rect x="{L + 52}" y="{y + 6}" width="{(R - L - 52) * wv:.0f}" height="18" fill="{"#ff5a1f" if i == 0 else c}" fill-opacity="{1 if i < 3 else .55}"/>')
+    b.append(wordmark(R, 96, ink, 26))
+    b.append(noise)
+    return b
+
+
+def bulletin(ev, uid):
+    """News topics: ink ground, one bold word, the ball, a strap line."""
+    ink, paper = "#121417", "#f3f1ec"
+    c = ev.get("colours", ("#2f5fd0", "#0c1a45"))[0]
+    defs, noise = grain(uid, .08)
+    title = ev["name"].upper()
+    size = fit(title, 1100, 300, -0.005)
+    b = [f'<defs>{defs}<radialGradient id="{uid}-b" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#ffd23f"/><stop offset="1" stop-color="#ff5a1f"/></radialGradient></defs>',
+         f'<rect width="{W}" height="{H}" fill="{ink}"/>',
+         f'<rect x="0" y="{H - 200}" width="{W}" height="200" fill="{c}"/>',
+         f'<circle cx="{W - 250}" cy="300" r="140" fill="url(#{uid}-b)"/><circle cx="{W - 250}" cy="300" r="172" fill="none" stroke="{paper}" stroke-opacity=".5" stroke-width="2"/>']
+    L = 96
+    b.append(wordmark(L, 96, paper, 26, "start"))
+    b.append(label(ev["series"], L, 220, paper, 18, opacity=.8))
+    b.append(t(title, L - size * .02, 250 + size * .73, size, paper, 800, track=-0.005, stretch=75))
+    b.append(t(ev["strap"], L, H - 82, 52, "#fff", 300, track=-0.02))
+    b.append(noise)
+    return b
+
+
+def tile_for(ev, uid):
+    """Square version: the photo looks keep the photo panel; ticket and atlas use a colour panel with their motif."""
+    lk = look(ev)
+    if lk not in ("ticket", "atlas"):
+        return tile(ev, uid)
+    c, deep = colours(ev)
+    ink, paper, L, R = "#121417", "#f3f1ec", 64, TW - 64
+    PH = 470
+    defs, _ = grain(uid, .05, dark=True)
+    title = ev["city"].upper()
+    size = fit(title, R - L, 230, -0.005)
+    b = [f'<defs>{defs}</defs>', f'<rect width="{TW}" height="{TH}" fill="{paper}"/>', f'<rect width="{TW}" height="{PH}" fill="{c if lk == "ticket" else deep}"/>']
+    if lk == "atlas":
+        for k in range(0, TW + 1, 62):
+            b.append(f'<line x1="{k}" y1="0" x2="{k}" y2="{PH}" stroke="#fff" stroke-opacity=".12"/>')
+        for k in range(0, PH + 1, 62):
+            b.append(f'<line x1="0" y1="{k}" x2="{TW}" y2="{k}" stroke="#fff" stroke-opacity=".12"/>')
+        b.append(f'<circle cx="{TW * .62:.0f}" cy="{PH * .45:.0f}" r="34" fill="none" stroke="#fff" stroke-width="2"/><circle cx="{TW * .62:.0f}" cy="{PH * .45:.0f}" r="12" fill="#ff5a1f"/>')
+    else:
+        b.append(f'<path d="M{L} {PH - 60} H{R}" stroke="{paper}" stroke-opacity=".6" stroke-width="3" stroke-dasharray="3 16" stroke-linecap="round"/>')
+        b.append(t(ev["series"].replace("WTT ", "").upper(), L, 150, 70, paper, 800, track=0.02, stretch=75))
+    b.append(t(ev["year"], R, PH - 40 if lk == "atlas" else PH - 110, 150, "#fff", 300, "end", -0.03))
+    b.append(label(ev["series"], L, PH + 72, ink, 24, opacity=1))
+    base = PH + 112 + size * 0.73
+    b.append(t(title, L - size * 0.02, base, size, ink, 800, track=-0.005, stretch=75))
+    b.append(f'<rect x="{L}" y="{base + 36:.0f}" width="{R - L}" height="2" fill="{ink}"/>')
+    b.append(t(date_range(ev), L, base + 96, 38, ink, 600))
+    b.append(label(place(ev), L, base + 142, ink, 20, opacity=.6))
+    b.append(wordmark(R, base + 144, ink, 28))
+    b.append(_)
+    return b
+
+
+STYLES = {"grid": grid, "arena": arena, "court": court, "tile": tile, "split": split, "ticket": ticket, "atlas": atlas,
+          "landmark": landmark, "ladder": ladder, "bulletin": bulletin, "tile_for": tile_for}
 
 
 def svg(ev, style):
     uid = f'{ev["id"]}-{style}'
     body = "\n".join(STYLES[style](ev, uid))
     lbl = f'{ev["series"]} {ev["city"]} {ev["year"]} poster by Eleven'
-    w, h = (TW, TH) if style == "tile" else (W, H)
+    w, h = (TW, TH) if style in ("tile", "tile_for") else (W, H)
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{e(lbl)}">\n{body}\n</svg>\n'
 
 
@@ -424,16 +726,29 @@ def extras():
     out = []
     for lg in build_clubs.LEAGUES:
         comps = ", ".join(dict.fromkeys(c[2] for c in lg["comps"]))
-        out.append({"id": f'league-{lg["slug"]}', "name": lg["name"], "series": "Club table tennis", "city": lg["name"], "country": lg["country"], "tier": "club",
-                    "year": "", "events": "", "strap": lg["country"],
-                    "cols": (("Competitions", comps), ("Country", lg["country"]), ("On Eleven", "Tables, fixtures and results"))})
-    for slug, title, series, tier, strap, cols in (
-            ("rankings", "Rankings", "ITTF world ranking", "champions", "Published every week", (("Lists", "Men and women"), ("Source", "ITTF"), ("On Eleven", "The full top 200"))),
-            ("england", "England", "Table tennis in England", "world", "News from home", (("Covers", "Players, leagues and clubs"), ("Body", "Table Tennis England"), ("On Eleven", "Results and reports"))),
-            ("equipment", "Equipment", "Blades, rubbers and balls", "contender", "Kit and sponsors", (("Covers", "Deals and launches"), ("Rules", "ITTF approvals"), ("On Eleven", "News and guides"))),
-            ("news", "News", "World table tennis", "champions", "Around the world", (("Covers", "Players and federations"), ("From", "Asia, Europe and beyond"), ("On Eleven", "Checked at source")))):
-        out.append({"id": f"topic-{slug}", "name": title, "series": series, "city": title, "country": "", "tier": tier, "year": "", "events": "", "strap": strap, "cols": cols})
+        main = lg.get("colour") or "#23895c"
+        deep = "#" + "".join(f"{int(int(main[k:k + 2], 16) * .22):02x}" for k in (1, 3, 5))
+        out.append({"id": f'league-{lg["slug"]}', "name": lg["name"], "series": "Club table tennis", "city": lg["name"], "country": lg["country"],
+                    "tier": "club", "year": "", "events": "", "look": "landmark", "landmark": LEAGUE_LANDMARK.get(lg["slug"], "brussels-atomium.jpg"),
+                    "colours": (main, deep), "kicker": f'Club table tennis · {lg["country"]}',
+                    "cols": (("Competitions", comps[:34]), ("Country", lg["country"]), ("On Eleven", "Tables and results"))})
+    out.append({"id": "topic-rankings", "name": "Rankings", "series": "ITTF world ranking", "city": "Rankings", "tier": "champions", "year": "", "events": "", "look": "ladder"})
+    out.append({"id": "topic-england", "name": "England", "series": "Table tennis in England", "city": "England", "tier": "world", "year": "", "events": "",
+                "look": "landmark", "landmark": "london-big-ben.jpg", "colours": ("#d4213d", "#2e0610"), "kicker": "News from home",
+                "cols": (("Covers", "Players, leagues and clubs"), ("Governing body", "Table Tennis England"), ("On Eleven", "Results and reports"))})
+    out.append({"id": "topic-equipment", "name": "Equipment", "series": "Blades, rubbers and balls", "city": "Equipment", "tier": "contender", "year": "", "events": "",
+                "look": "bulletin", "colours": ("#6b7586", "#1a1e26"), "strap": "Kit, sponsors and the rules behind them"})
+    out.append({"id": "topic-news", "name": "News", "series": "World table tennis", "city": "News", "tier": "champions", "year": "", "events": "",
+                "look": "bulletin", "colours": ("#2f5fd0", "#0c1a45"), "strap": "Around the world, checked at source"})
     return out
+
+
+def extra_credit(ev):
+    """Credit line for an extra poster's landmark photo, if it has one."""
+    if ev.get("landmark"):
+        name, url, what = LANDMARKS[ev["landmark"]]
+        return f"{what}. Photo: {name}, Unsplash Licence ({url})"
+    return ""
 
 
 def render_extras():
@@ -449,7 +764,7 @@ def render_extras():
         browser = p.chromium.launch()
         pg = browser.new_page(viewport={"width": W, "height": H})
         for ev in evs:
-            pg.set_content(f"<html><head><style>{css} svg{{width:{W}px;height:{H}px}}</style></head><body>{svg(ev, 'grid')}</body></html>")
+            pg.set_content(f"<html><head><style>{css} svg{{width:{W}px;height:{H}px}}</style></head><body>{svg(ev, ev.get('look', 'grid'))}</body></html>")
             pg.evaluate("document.fonts.ready.then(() => document.fonts.size)")
             pg.wait_for_timeout(300)
             pg.screenshot(path=os.path.join(out, f'{ev["id"]}.jpg'), type="jpeg", quality=84)
@@ -482,7 +797,7 @@ def main(only=None):
         for ev in data["events"]:
             if only and ev["id"] not in only:
                 continue
-            for style, suffix, (w, h) in ((ev.get("style", data.get("style", "grid")), "", (W, H)), ("tile", "-sq", (TW, TH))):
+            for style, suffix, (w, h) in ((ev.get("style") or look(ev), "", (W, H)), ("tile_for", "-sq", (TW, TH))):
                 pg.set_viewport_size({"width": w, "height": h})
                 pg.set_content(f"<html><head><style>{css} svg{{width:{w}px;height:{h}px}}</style></head><body>{svg(ev, style)}</body></html>")
                 pg.evaluate("document.fonts.ready.then(() => document.fonts.size)")
