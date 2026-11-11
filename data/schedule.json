@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-11T22:41:00Z",
-  "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars, checked 23 October 2026 (2026 events) and 6 October 2026 (2027 events). Organisers may amend dates.",
+  "updated": "2026-11-11T22:50:00Z",
+  "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
       "id": "wtt-champions-montpellier-2026",
@@ -59,17 +59,6 @@
       "prestige": 3
     },
     {
-      "id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul",
-      "start": "2026-11-10",
-      "end": "2026-11-15",
-      "city": "Istanbul",
-      "country": "Türkiye",
-      "series": "WTT",
-      "type": "WTT Contender",
-      "prestige": 1.5
-    },
-    {
       "id": "ettu-cl-women-s2r1-2026",
       "name": "ETTU Champions League Women, Stage 2 Round 1",
       "start": "2026-11-10",
@@ -79,6 +68,17 @@
       "series": "Clubs",
       "type": "European club",
       "prestige": 3.5
+    },
+    {
+      "id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul",
+      "start": "2026-11-10",
+      "end": "2026-11-15",
+      "city": "Istanbul",
+      "country": "Türkiye",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
     },
     {
       "id": "ettu-cl-men-r16-1-2026",
@@ -123,6 +123,17 @@
       "series": "WTT",
       "type": "WTT Star Contender",
       "prestige": 2
+    },
+    {
+      "id": "world-para-championships-2026",
+      "name": "World Para Championships",
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "city": "Pattaya",
+      "country": "Thailand",
+      "series": "Majors",
+      "type": "Para world championships",
+      "prestige": 2.5
     },
     {
       "id": "mixed-team-world-cup-2026",
@@ -257,6 +268,17 @@
       "prestige": 3.5
     },
     {
+      "id": "wtt-champions-2027",
+      "name": "WTT Champions",
+      "start": "2027-01-19",
+      "end": "2027-01-24",
+      "city": "Host to be announced",
+      "country": "",
+      "series": "WTT",
+      "type": "WTT Champions",
+      "prestige": 3
+    },
+    {
       "id": "europe-top16-2027",
       "name": "Europe Top 16 Cup",
       "start": "2027-01-28",
@@ -268,6 +290,28 @@
       "prestige": 2.5
     },
     {
+      "id": "wtt-contender-france-2027",
+      "name": "WTT Contender France",
+      "start": "2027-02-02",
+      "end": "2027-02-07",
+      "city": "France",
+      "country": "France",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
+      "id": "wtt-contender-india-2027",
+      "name": "WTT Contender India",
+      "start": "2027-02-09",
+      "end": "2027-02-14",
+      "city": "India",
+      "country": "India",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
       "id": "singapore-smash-2027",
       "name": "Singapore Smash",
       "start": "2027-02-18",
@@ -277,6 +321,17 @@
       "series": "Majors",
       "type": "Grand Smash",
       "prestige": 4
+    },
+    {
+      "id": "wtt-contender-taiyuan-2027",
+      "name": "WTT Contender Taiyuan",
+      "start": "2027-03-02",
+      "end": "2027-03-07",
+      "city": "Taiyuan",
+      "country": "China",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
     },
     {
       "id": "ettu-cl-men-qf-2-2027",
@@ -356,6 +411,28 @@
       "prestige": 5
     },
     {
+      "id": "wtt-contender-skopje-2027",
+      "name": "WTT Contender Skopje",
+      "start": "2027-06-01",
+      "end": "2027-06-06",
+      "city": "Skopje",
+      "country": "North Macedonia",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
+      "id": "wtt-star-contender-ljubljana-2027",
+      "name": "WTT Star Contender Ljubljana",
+      "start": "2027-06-08",
+      "end": "2027-06-13",
+      "city": "Ljubljana",
+      "country": "Slovenia",
+      "series": "WTT",
+      "type": "WTT Star Contender",
+      "prestige": 2
+    },
+    {
       "id": "european-games-2027",
       "name": "European Games",
       "start": "2027-06-16",
@@ -378,6 +455,28 @@
       "prestige": 4
     },
     {
+      "id": "wtt-star-contender-s-o-jos-dos-campos-2027",
+      "name": "WTT Star Contender São José dos Campos",
+      "start": "2027-07-06",
+      "end": "2027-07-11",
+      "city": "São José dos Campos",
+      "country": "Brazil",
+      "series": "WTT",
+      "type": "WTT Star Contender",
+      "prestige": 2
+    },
+    {
+      "id": "wtt-contender-lagos-2027",
+      "name": "WTT Contender Lagos",
+      "start": "2027-07-20",
+      "end": "2027-07-25",
+      "city": "Lagos",
+      "country": "Nigeria",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
       "id": "europe-smash-2027",
       "name": "Europe Smash",
       "start": "2027-08-05",
@@ -387,6 +486,17 @@
       "series": "Majors",
       "type": "Grand Smash",
       "prestige": 4
+    },
+    {
+      "id": "wtt-contender-zagreb-2027",
+      "name": "WTT Contender Zagreb",
+      "start": "2027-08-17",
+      "end": "2027-08-22",
+      "city": "Zagreb",
+      "country": "Croatia",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
     },
     {
       "id": "wtt-champions-astana-2027",
@@ -400,6 +510,17 @@
       "prestige": 3
     },
     {
+      "id": "wtt-contender-panagyurishte-2027",
+      "name": "WTT Contender Panagyurishte",
+      "start": "2027-08-30",
+      "end": "2027-09-04",
+      "city": "Panagyurishte",
+      "country": "Bulgaria",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
+    },
+    {
       "id": "wtt-champions-japan-2027",
       "name": "WTT Champions Japan",
       "start": "2027-08-31",
@@ -409,6 +530,17 @@
       "series": "WTT",
       "type": "WTT Champions",
       "prestige": 3
+    },
+    {
+      "id": "wtt-contender-almaty-2027",
+      "name": "WTT Contender Almaty",
+      "start": "2027-09-07",
+      "end": "2027-09-12",
+      "city": "Almaty",
+      "country": "Kazakhstan",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
     },
     {
       "id": "wtt-champions-asia-2027",
@@ -444,6 +576,17 @@
       "prestige": 4
     },
     {
+      "id": "wtt-star-contender-2027",
+      "name": "WTT Star Contender",
+      "start": "2027-10-26",
+      "end": "2027-10-31",
+      "city": "Host to be announced",
+      "country": "",
+      "series": "WTT",
+      "type": "WTT Star Contender",
+      "prestige": 2
+    },
+    {
       "id": "wtt-champions-france-2027",
       "name": "WTT Champions France",
       "start": "2027-11-02",
@@ -453,6 +596,28 @@
       "series": "WTT",
       "type": "WTT Champions",
       "prestige": 3
+    },
+    {
+      "id": "wtt-star-contender-germany-2027",
+      "name": "WTT Star Contender Germany",
+      "start": "2027-11-09",
+      "end": "2027-11-14",
+      "city": "Germany",
+      "country": "Germany",
+      "series": "WTT",
+      "type": "WTT Star Contender",
+      "prestige": 2
+    },
+    {
+      "id": "wtt-contender-istanbul-2027",
+      "name": "WTT Contender Istanbul",
+      "start": "2027-11-16",
+      "end": "2027-11-21",
+      "city": "Istanbul",
+      "country": "Turkey",
+      "series": "WTT",
+      "type": "WTT Contender",
+      "prestige": 1.5
     },
     {
       "id": "mixed-team-world-cup-2027",
@@ -475,28 +640,6 @@
       "series": "WTT",
       "type": "Season finals",
       "prestige": 3.5
-    },
-    {
-      "id": "world-para-championships-2026",
-      "name": "World Para Championships",
-      "start": "2026-11-13",
-      "end": "2026-11-19",
-      "city": "Pattaya",
-      "country": "Thailand",
-      "series": "Majors",
-      "type": "Para world championships",
-      "prestige": 2.5
-    },
-    {
-      "id": "wtt-star-contender-germany-2027",
-      "name": "WTT Star Contender Germany",
-      "start": "2027-11-09",
-      "end": "2027-11-14",
-      "city": "Germany",
-      "country": "Germany",
-      "series": "WTT",
-      "type": "WTT Star Contender",
-      "prestige": 2
     }
   ],
   "tbc": [
@@ -519,6 +662,16 @@
       "name": "Ultimate Table Tennis Season 8 (India)",
       "year": 2027,
       "series": "Clubs"
+    },
+    {
+      "name": "WTT Feeder events from mid-November 2026 (dates being added)",
+      "year": 2026,
+      "series": "WTT"
+    },
+    {
+      "name": "WTT Feeder series (dates being added)",
+      "year": 2027,
+      "series": "WTT"
     }
   ],
   "fixtures": [
