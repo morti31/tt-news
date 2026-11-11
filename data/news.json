@@ -1,7 +1,311 @@
 {
-  "updated": "2026-11-11T12:15:00Z",
+  "updated": "2026-11-11T20:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-contender-istanbul-2026-qualifying-day-three-main-draw",
+      "category": "International",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-11",
+      "published": "2026-11-11T20:25:00Z",
+      "headline": "Quadri Aruna misses WTT Contender Istanbul main draw as Aditya Sareen and Wei Jingming come through qualifying",
+      "summary": "Nigeria's Quadri Aruna lost 3-0 to Norway's Borgar Haug in the final round of qualifying in Istanbul, as Australia's Aditya Sareen won a 14-12 decider to reach the main draw.",
+      "matches": [
+        {
+          "label": "Men's singles, qualifying round 3",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Borgar Haug",
+              "nat": "NOR"
+            },
+            {
+              "name": "Quadri Aruna",
+              "nat": "NGR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, qualifying round 3",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Wei Jingming",
+              "nat": "CHN"
+            },
+            {
+              "name": "Yuan Wan",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              5
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WTT: WTT Contender Istanbul 2026 results and draws",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257"
+        }
+      ]
+    },
+    {
+      "id": "ettu-champions-league-women-2026-27-stage-2-berlin-metz",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "champions-league",
+      "date": "2026-11-11",
+      "published": "2026-11-11T20:30:00Z",
+      "headline": "ETTU Champions League Women: Metz win the last seven games to beat TTC Berlin eastside 9-6",
+      "summary": "Metz came from 6-2 down on games to win 9-6 at TTC Berlin eastside, with Hana Goda and Charlotte Lutz winning the last two matches without dropping a game.",
+      "matches": [
+        {
+          "label": "Stage 2, round 1",
+          "event": "ETTU Champions League Women",
+          "sides": [
+            {
+              "name": "TTC Berlin eastside",
+              "nat": "GER"
+            },
+            {
+              "name": "Metz TT",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            6,
+            9
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Josephina Neumann",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Charlotte Lutz",
+                  "nat": "FRA"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  1,
+                  11
+                ],
+                [
+                  16,
+                  14
+                ],
+                [
+                  8,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Shan Xiaona",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Hana Goda",
+                  "nat": "EGY"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Sabina Surjan",
+                  "nat": "SRB"
+                },
+                {
+                  "name": "Izabela Lupulesku",
+                  "nat": "SRB"
+                }
+              ],
+              "score": [
+                2,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  14,
+                  12
+                ],
+                [
+                  10,
+                  12
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Josephina Neumann",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Hana Goda",
+                  "nat": "EGY"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Shan Xiaona",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Charlotte Lutz",
+                  "nat": "FRA"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  13,
+                  15
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Metz won the last seven games of the night to beat TTC Berlin eastside, the six-time champions, 9-6 on games in Berlin on Wednesday in the last match of the first round of the ETTU Champions League Women's Stage 2.",
+        "Berlin led 6-2 midway through the third match. Shan Xiaona had beaten Hana Goda 11-6, 11-9, 11-7, and Sabina Surjan won her first two games against Izabela Lupulesku, but Lupulesku took the third 12-10 and Metz did not lose another game. Goda beat Josephina Neumann 11-7, 11-6, 11-3 and Charlotte Lutz beat Shan 11-6, 11-7, 15-13. Lutz had also won the opening match against Neumann 2-1, after losing a 16-14 second game.",
+        "\"I played well, and so did my teammate. We were trailing 6-2, but as a team, we knew we could come back and win the match,\" Lutz said.",
+        "Metz host Saint-Quentin on Saturday in round two, and Berlin play at Linz AG Froschberg on Sunday. [Etival beat the holders Tarnobrzeg 8-7](/news/ettu-champions-league-women-2026-27-stage-2-round-1-etival-beat-tarnobrzeg.html) on Tuesday."
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Metz fight back to defeat ttc berlin eastside in Champions League Women",
+          "url": "https://www.ettu.org/metz-fight-back-to-defeat-ttc-berlin-eastside-in-champions-league-women/"
+        }
+      ]
+    },
+    {
+      "id": "world-para-championships-2026-draw-gb-bayley-twomey",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-11",
+      "published": "2026-11-11T20:35:00Z",
+      "headline": "World Para Championships: Will Bayley has a bye to the class 7 quarter-finals as the draws are made in Pattaya",
+      "summary": "The defending class 7 champion will play China's Yan Shuo or the Netherlands' Yannick Paredis in his first match, with every event in Thailand played as a straight knockout.",
+      "body": [
+        "Will Bayley, the men's class 7 world champion and world No 1, has a bye to the quarter-finals of the World Para Championships, which start in Pattaya, Thailand, on Friday. He will play either China's Yan Shuo, a two-time Paralympic champion, or the Netherlands' Yannick Paredis, the European champion. All the events are straight knockouts.",
+        "Bly Twomey, the women's class 7 European champion, plays Costa Rica's Kristel Morales Madriz in the last 16. Wales's Rob Davies, the class 1 European champion, has a bye to the quarter-finals, where he meets Japan's Riito Shikai or South Korea's Kim Hakjin. Jack Hunter-Spivey faces Serbia's Mitar Palikuca, a Paris 2024 bronze medallist, in the class 4-5 last 32, and Billy Shilton plays Poland's Piotr Grudzien, the world No 4, in the class 8 last 16. Fliss Pickard opens in women's class 6 against France's Morgen Caillaud, and Grace Williams starts against Mingyu Zu of the US, the world No 2, in class 8.",
+        "The doubles come first. Shilton and Pickard both defend world titles with new partners: Shilton and Martin Perry play Ian Seidenfeld and Samuel Altshuler of the US in the men's class 14 quarter-finals, and Pickard and Twomey meet China's Wang Rui and Jiang Shan in the women's class 14 last 16. Bayley and Twomey, the European mixed class 14 champions, have a bye and play Ukraine's Maksym Nikolenko and Maryna Lytovchenko first.",
+        "The 12-strong [British squad was named last month](/news/gb-squad-world-para-table-tennis-championships-2026-pattaya-bayley-twomey.html). The championships run until 19 November."
+      ],
+      "sources": [
+        {
+          "name": "Table Tennis England: ITTF World Para Championships 2026: draws revealed",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/ittf-world-para-championships-2026-draws-revealed/"
+        }
+      ]
+    },
     {
       "id": "wtt-contender-istanbul-2026-qualifying-day-two-connor-green-tianer-yu",
       "category": "England",

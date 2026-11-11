@@ -1,9 +1,9 @@
 {
  "id": "cl-women",
  "auto": false,
- "updated": "2026-11-10T23:25:00Z",
+ "updated": "2026-11-11T20:30:00Z",
  "season": "2026-27",
- "status": "Stage 2 (single group of eight): round 1 under way, Berlin v Metz on 11 November",
+ "status": "Stage 2 (single group of eight): round 1 complete; round 2 on 14 and 15 November",
  "source": {
   "name": "ETTU",
   "url": "https://www.ettu.org/european-champions-league-women/"
@@ -40,34 +40,24 @@
       "diff": 7
      },
      {
+      "team": "Metz TT",
+      "p": 1,
+      "w": 1,
+      "l": 0,
+      "for": 9,
+      "against": 6,
+      "pos": 3,
+      "diff": 3
+     },
+     {
       "team": "Etival ASRTT",
       "p": 1,
       "w": 1,
       "l": 0,
       "for": 8,
       "against": 7,
-      "pos": 3,
-      "diff": 1
-     },
-     {
-      "team": "Metz TT",
-      "p": 0,
-      "w": 0,
-      "l": 0,
-      "for": 0,
-      "against": 0,
       "pos": 4,
-      "diff": 0
-     },
-     {
-      "team": "TTC Berlin eastside",
-      "p": 0,
-      "w": 0,
-      "l": 0,
-      "for": 0,
-      "against": 0,
-      "pos": 5,
-      "diff": 0
+      "diff": 1
      },
      {
       "team": "KTS Enea Siarkopol Tarnobrzeg",
@@ -76,8 +66,18 @@
       "l": 1,
       "for": 7,
       "against": 8,
-      "pos": 6,
+      "pos": 5,
       "diff": -1
+     },
+     {
+      "team": "TTC Berlin eastside",
+      "p": 1,
+      "w": 0,
+      "l": 1,
+      "for": 6,
+      "against": 9,
+      "pos": 6,
+      "diff": -3
      },
      {
       "team": "Linz AG Froschberg",
@@ -396,8 +396,11 @@
    "when": "2026-11-11T17:00:00Z",
    "home": "TTC Berlin eastside",
    "away": "Metz TT",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    6,
+    9
+   ],
+   "status": "finished",
    "round": "Stage 2, round 1"
   },
   {
@@ -453,6 +456,10 @@
   {
    "name": "ETTU: Etival stun defending champions as Cartagena and Saint-Quentin make strong starts",
    "url": "https://www.ettu.org/etival-stun-defending-champions-as-cartagena-and-saint-quentin-make-strong-starts/"
+  },
+  {
+   "name": "ETTU: Metz fight back to defeat ttc berlin eastside",
+   "url": "https://www.ettu.org/metz-fight-back-to-defeat-ttc-berlin-eastside-in-champions-league-women/"
   }
  ]
 }
