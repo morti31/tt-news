@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-10T23:28:00Z",
+ "updated": "2026-11-11T00:20:00Z",
  "season": "2026-27",
- "status": "Regular season, after matchday 5 (10 November); the other three matchday 5 scores are still to be added from FFTT",
+ "status": "Regular season, after matchday 5 (10 November); the Hennebont v Roanne and Bruille v Nîmes/Montpellier scores are still to be added from FFTT",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -350,6 +350,19 @@
    "round": "Matchday 5"
   },
   {
+   "when": "2026-11-10T18:30:00Z",
+   "date_only": true,
+   "home": "SPO Rouen",
+   "away": "TFTT Thorigné-Fouillard",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 5",
+   "venue": "Kindarena, Rouen"
+  },
+  {
    "when": "2026-11-24T18:30:00Z",
    "home": "SPO Rouen",
    "away": "Alliance Nîmes/Montpellier",
@@ -388,6 +401,10 @@
   {
    "name": "Le Courrier de l'Ouest via maville: Saint-Denis 3-1 La Romagne",
    "url": "https://cholet.maville.com/sport/detail_-tennis-de-table-pro-a-la-romagne-en-demi-teinte-s-incline-encore_fil-7564579_actu.Htm"
+  },
+  {
+   "name": "SPO Rouen: SPO Rouen 3-1 Thorigné-Fouillard",
+   "url": "https://sporouen-tennisdetable.fr/"
   }
  ]
 }
