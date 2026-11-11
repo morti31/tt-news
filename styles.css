@@ -1390,3 +1390,16 @@ html.mp-open { overflow: hidden; }
 .l3-card .tags { flex-wrap: nowrap; overflow: hidden; gap: 6px; }
 .l3-card .tags li { min-width: 0; flex: 0 1 auto; }
 .l3-card .tags a { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 12px; padding: 4px 9px; }
+
+/* Homepage: Coming up runs across under Latest, four events side by side */
+.layout > .coming-row { grid-column: 1; margin-top: 8px; }
+.events-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 14px; }
+.events-row li { grid-template-columns: 46px 1fr; padding: 0; }
+.events-row li + li { border-top: 0; }
+.events-row .name { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+@media (max-width: 760px) { .events-row { grid-template-columns: minmax(0, 1fr); gap: 0; } .events-row li { padding: 10px 0; } .events-row li + li { border-top: 1px solid var(--rule); } }
+@media (min-width: 901px) {
+  .layout:has(> .coming-row) > aside { grid-column: 2; grid-row: 1 / span 2; }
+  .layout > .coming-row { grid-row: 2; align-self: start; }
+  .layout:has(> .coming-row) { align-items: start; }
+}
