@@ -195,16 +195,20 @@ const CHANNEL = "https://www.youtube.com/@WTTGlobal";
 const YT_HEADERS = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36", "Accept-Language": "en-GB,en;q=0.9" };
 
 async function page(url, ctx, ttl) {
+  // YouTube sometimes answers with a consent or error page that lists no videos. That answer is never cached:
+  // caching it is what left the home page with no stream and old highlights for up to half an hour.
   const cache = caches.default, key = new Request(url);
   const hit = await cache.match(key);
   if (hit) return hit.text();
-  const r = await fetch(url, { headers: YT_HEADERS, redirect: "follow" });
-  const text = r.ok ? await r.text() : "";
-  ctx.waitUntil(cache.put(key, new Response(text, { headers: { "Cache-Control": `max-age=${ttl}` } })));
+  let text = "";
+  for (const u of [url, url + (url.includes("?") ? "&" : "?") + "hl=en&gl=GB"]) {
+    const r = await fetch(u, { headers: { ...YT_HEADERS, Cookie: "CONSENT=YES+1; SOCS=CAI" }, redirect: "follow" }).catch(() => null);
+    text = r && r.ok ? await r.text() : "";
+    if (text.includes('"lockupViewModel":{')) break;
+  }
+  if (text.includes('"lockupViewModel":{')) ctx.waitUntil(cache.put(key, new Response(text, { headers: { "Cache-Control": `max-age=${ttl}` } })));
   return text;
 }
-
-const unescapeJson = (s) => { try { return JSON.parse(`"${s}"`); } catch (e) { return s; } };
 
 function streamList(html) {
   // Each video on the channel's Live tab: on air now, scheduled, or finished (watch back)

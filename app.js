@@ -182,8 +182,9 @@
   async function renderWatch() {
     const started = Object.values(hubs).filter((h) => h.start && h.start <= today && h.stream_q && !h.minor)
       .sort((a, b) => b.start.localeCompare(a.start));
-    const target = onHub || started[0];
-    if (target) {
+    // The event on now first, then the latest big events, so a gap in WTT's feed never brings back a weeks-old event
+    const tries = [onHub, ...started].filter((h, i, a) => h && a.indexOf(h) === i).slice(0, 3);
+    for (const target of tries) {
       try {
         const q = target.stream_q || `${target.city} ${target.year}`;
         const d = await fetch(`/api/highlights?q=${encodeURIComponent(q)}`).then((r) => r.json());
@@ -198,9 +199,10 @@
           }
           return drawWatch(pick, target);
         }
-      } catch (e) { /* fall back below */ }
+      } catch (e) { /* try the next event */ }
     }
-    const all = (data.highlights || []).filter((v) => v.id);
+    const fresh = plusDays(today, -14);
+    const all = (data.highlights || []).filter((v) => v.id && ((onHub && hubs[v.event] === onHub) || v.date >= fresh));
     if (all.length < 2) return;
     const byDate = [...all].sort((a, b) => b.date.localeCompare(a.date));
     const ev = ((onHub && byDate.find((v) => hubs[v.event] === onHub)) || byDate[0]).event;
