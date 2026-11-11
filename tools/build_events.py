@@ -30,9 +30,15 @@ def credit(ev):
     return posters.credit(ev)
 
 
+def _v(p):
+    """/<p>?v=<content hash>: a re-rendered poster gets a new address, so browsers and the CDN never show an old one."""
+    import hashlib
+    return f"/{p}?v={hashlib.md5(open(os.path.join(ROOT, p), 'rb').read()).hexdigest()[:8]}"
+
+
 def tile(ev):
     p = f"img/posters/{ev['id']}-sq.jpg"
-    return "/" + p if os.path.exists(os.path.join(ROOT, p)) else None
+    return _v(p) if os.path.exists(os.path.join(ROOT, p)) else None
 
 
 def picture(ev, alt, link=None):
@@ -45,7 +51,7 @@ def picture(ev, alt, link=None):
 
 def poster(ev):
     p = f"img/posters/{ev['id']}.jpg"
-    return "/" + p if os.path.exists(os.path.join(ROOT, p)) else None
+    return _v(p) if os.path.exists(os.path.join(ROOT, p)) else None
 
 
 def dates(ev):

@@ -300,6 +300,7 @@
     else if (s.category === "England") src = "/img/posters/topic-england.jpg";
     else if (s.category === "Equipment") src = "/img/posters/topic-equipment.jpg";
     else src = "/img/posters/topic-news.jpg";
+    if (!src.includes("?")) src += "?v=20261111";   // league and topic posters: bump when they are re-rendered
     return `<div class="pic poster"><img src="${esc(src)}" alt=""${eager ? "" : ' loading="lazy"'}></div>`;
   }
   function latestColumns(list) {
