@@ -41,7 +41,9 @@
   };
 
   const tagRow = (s, n) => {
-    const t = (data.tags[s.id] || []).slice(0, n);
+    // Never two editions of one event ("WTT Champions Frankfurt 2026" and "... 2025"): the first one stands
+    const base = (name) => name.replace(/\s+(19|20)\d\d$/, "").toLowerCase(), had = new Set();
+    const t = (data.tags[s.id] || []).filter(([name]) => !had.has(base(name)) && had.add(base(name))).slice(0, n);
     return t.length ? `<ul class="tags" aria-label="Tags">${t.map(([name, href, type]) => `<li><a class="tg tg-${esc(type)}" href="${esc(href)}">${esc(name)}</a></li>`).join("")}</ul>` : "";
   };
 
@@ -266,7 +268,7 @@
     const rest = list.filter((s) => s !== lead);
     $("lead").innerHTML = lead ? `<article class="big">${art(lead, "big") || fallbackPic(lead, true)}<div class="big-text">${kicker(lead)}
       <h1><a class="stretch" href="${esc(url(lead))}">${esc(lead.headline)}</a></h1><p>${esc(lead.summary)}</p>
-      <span class="meta">${when(lead)} · By ${esc(who(lead))}</span>${tagRow(lead, 3)}</div></article>`
+      <span class="meta">${when(lead)} · By ${esc(who(lead))}</span>${tagRow(lead, 2)}</div></article>`
       : '<p class="empty">Nothing in this section yet. New stories arrive with each update.</p>';
     // Top stories: the weighted order worked out at build time (prestige, freshness, results, video, events on now)
     const rank = (s) => { const k = data.top.indexOf(s.id); return k < 0 ? 999 : k; };
@@ -311,7 +313,7 @@
       const pic = art(first, "small") || fallbackPic(first);
       return `<section class="l3-col" aria-label="${esc(title)}"><h3 class="l3-h"><a href="${href}">${esc(title)}</a></h3>
         <article class="l3-card">${pic}<span class="l3-meta">${when(first)}${first.kind === "Update" ? " · Quick update" : ""}</span>
-        <h4><a class="stretch" href="${esc(url(first))}">${esc(first.headline)}</a></h4></article>
+        <h4><a class="stretch" href="${esc(url(first))}">${esc(first.headline)}</a></h4>${tagRow(first, 2)}</article>
         <ul class="l3-list">${rest.map((s) => `<li><a href="${esc(url(s))}"><span class="l3-meta">${when(s)}</span><span class="l3-t">${esc(s.headline)}</span></a></li>`).join("")}</ul></section>`;
     }).join("")}</div>`;
   }

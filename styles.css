@@ -1386,3 +1386,7 @@ html.mp-open { overflow: hidden; }
 .pager button { font: 700 13px var(--head-font); padding: 8px 12px; min-height: 40px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer; }
 .pager button[aria-current="page"] { background: var(--ink); color: var(--card); border-color: var(--ink); }
 .pager button:disabled { opacity: .35; cursor: default; }
+.l3-card .tags { margin-top: 4px; position: relative; z-index: 1; }
+.l3-card .tags { flex-wrap: nowrap; overflow: hidden; gap: 6px; }
+.l3-card .tags li { min-width: 0; flex: 0 1 auto; }
+.l3-card .tags a { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 12px; padding: 4px 9px; }

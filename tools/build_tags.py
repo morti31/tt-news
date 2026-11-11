@@ -2,7 +2,7 @@
 
 Called from build_site.py after the stories are loaded. See tags.py for how a story gets its tags.
 """
-import html, json, os, datetime as dt
+import html, json, os, re, datetime as dt
 import components
 from tags import TYPES, MAX_TAGS
 
@@ -24,7 +24,13 @@ def url(tg, slug):
 
 def chips(tg, slugs, n=MAX_TAGS, skip=None):
     """The small row of tag links under a story. n is 2 or 3."""
-    out = [s for s in slugs if s != skip and s not in BLOCKED][:n]
+    out, seen = [], set()
+    for s in slugs:   # never two editions of one event ("WTT Champions Frankfurt 2026" and "... 2025")
+        k = re.sub(r"\s+(19|20)\d\d$", "", tg.tags[s]["name"]).lower()
+        if s != skip and s not in BLOCKED and k not in seen:
+            seen.add(k)
+            out.append(s)
+    out = out[:n]
     if not out:
         return ""
     lis = "".join(f'<li><a class="tg tg-{tg.tags[s]["type"]}" href="{url(tg, s)}">{e(tg.tags[s]["name"])}</a></li>' for s in out)
