@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-11T00:20:00Z",
+ "updated": "2026-11-11T12:30:00Z",
  "season": "2026-27",
- "status": "Regular season, after matchday 5 (10 November); the Hennebont v Roanne and Bruille v Nîmes/Montpellier scores are still to be added from FFTT",
+ "status": "Regular season, after matchday 5 (10 November)",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -363,6 +363,30 @@
    "venue": "Kindarena, Rouen"
   },
   {
+   "when": "2026-11-10T18:30:00Z",
+   "date_only": true,
+   "home": "GV Hennebont",
+   "away": "Loire Nord TT (Roanne)",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 5"
+  },
+  {
+   "when": "2026-11-10T18:30:00Z",
+   "date_only": true,
+   "home": "Bruille",
+   "away": "Alliance Nîmes/Montpellier",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 5"
+  },
+  {
    "when": "2026-11-24T18:30:00Z",
    "home": "SPO Rouen",
    "away": "Alliance Nîmes/Montpellier",
@@ -405,6 +429,10 @@
   {
    "name": "SPO Rouen: SPO Rouen 3-1 Thorigné-Fouillard",
    "url": "https://sporouen-tennisdetable.fr/"
+  },
+  {
+   "name": "11EDGE: Pro A men, matchday 5 results",
+   "url": "https://11edge.io/"
   }
  ]
 }
