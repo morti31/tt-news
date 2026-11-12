@@ -1429,3 +1429,5 @@ html.mp-open { overflow: hidden; }
 .score-card .done-at { display: block; margin-top: 5px; padding-top: 4px; border-top: 1px solid rgba(127,133,146,.25); font-size: 11px; color: #7d8592; white-space: nowrap; }
 .lv-card .done-at { margin: 6px 0 0; font-size: 12px; color: var(--muted, #667184); }
 .pre-list { margin: 0; padding-left: 18px; } .pre-list li { margin: 6px 0; }
+.level i.half { background: linear-gradient(90deg, var(--ball) 50%, var(--rule) 50%); }
+.level.tier-5 i.half { background: linear-gradient(90deg, var(--tier-5) 50%, var(--rule) 50%); }

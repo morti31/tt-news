@@ -6,7 +6,8 @@ The look grows more sophisticated with the stars:
   3 stars    Star Contender: duotone photo strip beside a deep colour field, silver hairlines and silver stars
   4 stars    WTT Champions, WTT Finals, continental championships and Games: near-black, a photo across most
              of the poster, a fine gold and silver frame, silver type headline and gold stars
-  5 stars    Grand Smash, World Cup, World Championships, Olympics: "lacquer" (five_lacquer): near-black, an ink-wash
+  4.5 stars  Grand Smash: the same layout as 5 stars in "vermilion": all red, black stars, brush circle and seal
+  5 stars    World Cup, World Championships, Olympics: "lacquer" (five_lacquer): near-black, an ink-wash
              photo in a fine frame, a red brush circle, five red stars over a red type headline, a red seal with the
              year; the World Championships and the Olympics also carry a laurel emblem (Eleven's own drawing; no
              organiser marks, no Olympic rings). Always these colours.
@@ -32,7 +33,7 @@ SILVER = ("#6d7480", "#b9c0cb", "#f4f6f9", "#9aa2ae", "#e3e7ee")
 
 
 def stars(ev):
-    """Whole stars, 1 to 5. Matches the schedule (tools/build_site.py STARS)."""
+    """Stars, 1 to 5 (Grand Smashes 4.5). Matches the schedule (schedule.js STARS)."""
     s, tier = ev.get("series", ""), ev.get("tier")
     if s == "WTT Feeder":
         return 1
@@ -42,7 +43,9 @@ def stars(ev):
         return 3
     if tier in ("champions", "continental"):
         return 4
-    if tier in ("smash", "world"):
+    if tier == "smash":
+        return 4.5
+    if tier == "world":
         return 5
     return 2
 
@@ -72,7 +75,7 @@ def foil(uid, key, cols, vertical=False):
 
 def star_row(x, y, n, size, fill, gap=1.35, anchor="start", total=None, empty=None):
     """n filled stars (of `total`, the rest drawn as outlines if `empty` is a colour)."""
-    total = total or n
+    total = total or math.ceil(n)
     w = size * gap * (total - 1) + size
     x0 = x - w if anchor == "end" else x - w / 2 if anchor == "middle" else x
     out = []
@@ -80,8 +83,13 @@ def star_row(x, y, n, size, fill, gap=1.35, anchor="start", total=None, empty=No
         cx, cy, r = x0 + size / 2 + k * size * gap, y - size / 2, size / 2
         pts = " ".join(f"{cx + (r if j % 2 == 0 else r * .42) * math.sin(math.pi * j / 5):.1f},{cy - (r if j % 2 == 0 else r * .42) * math.cos(math.pi * j / 5):.1f}"
                        for j in range(10))
-        if k < n:
+        if k + 1 <= n:
             out.append(f'<polygon points="{pts}" fill="{fill}"/>')
+        elif k < n:   # a half star: the left half filled, the outline (or a faint copy) behind it
+            cid = f"half{cx:.0f}x{cy:.0f}y{size:.0f}"
+            back = f'<polygon points="{pts}" fill="none" stroke="{empty}" stroke-width="1.5"/>' if empty else f'<polygon points="{pts}" fill="{fill}" fill-opacity=".28"/>'
+            out.append(f'{back}<clipPath id="{cid}"><rect x="{cx - r - 1:.1f}" y="{cy - r - 1:.1f}" width="{r + 1:.1f}" height="{2 * r + 2:.1f}"/></clipPath>'
+                       f'<polygon points="{pts}" fill="{fill}" clip-path="url(#{cid})"/>')
         elif empty:
             out.append(f'<polygon points="{pts}" fill="none" stroke="{empty}" stroke-width="1.5"/>')
     return "".join(out)
