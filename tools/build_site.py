@@ -985,6 +985,37 @@ def clean_urls():
                 open(f, "w", encoding="utf-8").write(c)
 
 
+def prerender_home():
+    """The homepage is drawn by app.js, so without this its HTML holds no stories: search engines' first pass, link
+    previews and readers on slow connections would see an empty page. Writes the lead story, Top stories and the
+    newest headlines into index.html; app.js replaces them with the full layout as soon as it runs."""
+    path = os.path.join(ROOT, "index.html")
+    news = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))
+    arts = json.load(open(os.path.join(ROOT, "data", "article-index.json"), encoding="utf-8"))
+    top = json.load(open(os.path.join(ROOT, "data", "top-stories.json"), encoding="utf-8"))
+    feats = {f["slug"]: f for f in json.load(open(os.path.join(ROOT, "data", "features.json"), encoding="utf-8"))}
+    url = lambda s: (arts.get(s["id"]) or {}).get("url") or f"/news/{s['id']}"
+    stamp = lambda s: (arts.get(s["id"]) or {}).get("published") or s.get("published") or s.get("date") or ""
+    stories = sorted(news.get("stories", []), key=stamp, reverse=True)
+    if not stories:
+        return
+    lead = next((s for s in stories if s.get("top")), stories[0])
+    rest = [s for s in stories if s is not lead]
+    by_id = {s["id"]: (s["headline"], url(s)) for s in rest}
+    by_id.update({k: (f["title"], f["url"]) for k, f in feats.items()})
+    tops = [by_id[k] for k in top if k in by_id][:5]
+    lead_html = (f'<!--pre--><article class="big"><div class="big-text"><h1><a class="stretch" href="{e(url(lead))}">{e(lead["headline"])}</a></h1>'
+                 f'<p>{e(lead.get("summary") or "")}</p></div></article><!--/pre-->')
+    tops_html = "<!--pre-->" + "".join(f'<li><a href="{e(u)}">{e(h)}</a></li>' for h, u in tops) + "<!--/pre-->"
+    latest_html = ('<!--pre--><ul class="pre-list">' + "".join(f'<li><a href="{e(url(s))}">{e(s["headline"])}</a></li>' for s in rest[:10])
+                   + "</ul><!--/pre-->")
+    t = open(path, encoding="utf-8").read()
+    for open_tag, close_tag, inner in (('<div id="lead">', "</div>", lead_html), ('<ol id="second">', "</ol>", tops_html),
+                                       ('<div id="stories" class="promos">', "</div>", latest_html)):
+        t = re.sub(re.escape(open_tag) + r"(?:<!--pre-->.*?<!--/pre-->)?" + re.escape(close_tag), lambda m: open_tag + inner + close_tag, t, count=1, flags=re.S)
+    open(path, "w", encoding="utf-8").write(t)
+
+
 def version_assets():
     """Browsers keep styles.css and the scripts for a long time, so a fix could stay invisible to returning readers.
     Every page names each file with a short hash of its contents (/widgets.js?v=ab12cd34): a changed file gets a new address."""
@@ -1009,4 +1040,5 @@ if __name__ == "__main__":
     import runpy
     runpy.run_path(os.path.join(ROOT, "tools", "build_calendar.py"), run_name="__main__")
     clean_urls()
+    prerender_home()
     version_assets()

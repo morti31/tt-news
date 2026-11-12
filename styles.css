@@ -1428,3 +1428,4 @@ html.mp-open { overflow: hidden; }
 .pl-tiles[hidden] { display: none; }
 .score-card .done-at { display: block; margin-top: 5px; padding-top: 4px; border-top: 1px solid rgba(127,133,146,.25); font-size: 11px; color: #7d8592; white-space: nowrap; }
 .lv-card .done-at { margin: 6px 0 0; font-size: 12px; color: var(--muted, #667184); }
+.pre-list { margin: 0; padding-left: 18px; } .pre-list li { margin: 6px 0; }
