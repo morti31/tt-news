@@ -729,7 +729,7 @@ _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import poster_tiers   # noqa: E402
 poster_tiers.bind(_sys.modules[__name__])
 
-STYLES = {"five_ink": poster_tiers.five_ink, "square_ink": poster_tiers.square_ink, "three": poster_tiers.three, "four": poster_tiers.four, "five": poster_tiers.five, "grid": grid, "arena": arena, "court": court, "tile": tile, "split": split, "ticket": ticket, "atlas": atlas,
+STYLES = {"five_lacquer": poster_tiers.five_lacquer, "square_lacquer": poster_tiers.square_lacquer, "five_vermilion": poster_tiers.five_vermilion, "square_vermilion": poster_tiers.square_vermilion, "five_ink": poster_tiers.five_ink, "square_ink": poster_tiers.square_ink, "three": poster_tiers.three, "four": poster_tiers.four, "five": poster_tiers.five, "grid": grid, "arena": arena, "court": court, "tile": tile, "split": split, "ticket": ticket, "atlas": atlas,
           "landmark": landmark, "ladder": ladder, "bulletin": bulletin, "tile_for": tile_for}
 
 
@@ -737,7 +737,7 @@ def svg(ev, style):
     uid = f'{ev["id"]}-{style}'
     body = "\n".join(STYLES[style](ev, uid))
     lbl = f'{ev["series"]} {ev["city"]} {ev["year"]} poster by Eleven'
-    w, h = (TW, TH) if style in ("tile", "tile_for", "square_ink") else (W, H)
+    w, h = (TW, TH) if style in ("tile", "tile_for", "square_ink", "square_lacquer", "square_vermilion") else (W, H)
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="{e(lbl)}">\n{body}\n</svg>\n'
 
 
