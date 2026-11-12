@@ -1,7 +1,60 @@
 {
-  "updated": "2026-11-12T12:25:00Z",
+  "updated": "2026-11-12T16:20:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "southeast-asian-championships-2026-singapore-women-team-title-malaysia",
+      "category": "International",
+      "kind": "Update",
+      "lang": "Chinese",
+      "date": "2026-11-12",
+      "published": "2026-11-12T16:15:00Z",
+      "headline": "Singapore beat hosts Malaysia to keep the Southeast Asian Championships women's team title",
+      "summary": "Zeng Jian won both her singles as Singapore beat Malaysia 3-1 in the women's team final of the Southeast Asian Championships in Kuala Lumpur on Thursday.",
+      "tags": [
+        "Singapore"
+      ],
+      "matches": [
+        {
+          "label": "Women's team, final",
+          "event": "Southeast Asian Championships",
+          "sides": [
+            {
+              "name": "Singapore",
+              "nat": "SGP"
+            },
+            {
+              "name": "Malaysia",
+              "nat": "MAS"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ]
+        }
+      ],
+      "body": [
+        "Singapore kept the women's team title at the Southeast Asian Championships in Kuala Lumpur on Thursday, beating the hosts, Malaysia, 3-1 in the final. They won it two years ago, ending a run without the title that went back to 2014.",
+        "Malaysia went ahead when Tee Ai Xin came from a game down to beat Ser Lin Qian 9-11, 11-7, 11-8, 11-9. Zeng Jian levelled by beating Karen Lyne, Malaysia's highest-ranked woman, 11-5, 9-11, 11-3, 11-7, and Loy Ming Ying recovered from losing the first game to win the third rubber 6-11, 11-8, 11-5, 8-11, 11-6. Zeng then beat Tee 11-4, 11-7, 10-12, 11-9 to settle it.",
+        "Singapore's men took bronze with Indonesia after losing 3-1 to Vietnam in the semi-finals, without their two leading players, Izaac Quek and Koen Pang. Vietnam went on to [beat Malaysia in the men's final](/news/southeast-asian-championships-2026-vietnam-men-team-title-malaysia.html) for their first title since 2016.",
+        "The championships run until Saturday, with the doubles and singles still to be decided."
+      ],
+      "sources": [
+        {
+          "name": "Lianhe Zaobao (Chinese): Singapore retain Southeast Asian Championships women's team title",
+          "url": "https://www.zaobao.com.sg/news/sports/story20261112-9988407"
+        },
+        {
+          "name": "Singapore Table Tennis Association: Singapore women retain SEA Championships title with gold medal victory",
+          "url": "https://www.stta.org.sg/singapore-women-retain-sea-championships-title-with-gold-medal-victory/"
+        },
+        {
+          "name": "Singapore Table Tennis Association: Singapore ends 10 years of hurt by reclaiming women's team title (2024)",
+          "url": "https://www.stta.org.sg/singapore-ends-10-years-of-hurt-by-reclaiming-womens-team-title-at-sea-championships/"
+        }
+      ]
+    },
     {
       "id": "southeast-asian-championships-2026-vietnam-men-team-title-malaysia",
       "category": "International",

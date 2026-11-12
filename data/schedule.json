@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T12:36:00Z",
+  "updated": "2026-11-12T16:20:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -92,6 +92,39 @@
       "prestige": 3.5
     },
     {
+      "id": "world-para-championships-2026",
+      "name": "World Para Championships",
+      "start": "2026-11-13",
+      "end": "2026-11-19",
+      "city": "Pattaya",
+      "country": "Thailand",
+      "series": "Majors",
+      "type": "Para world championships",
+      "prestige": 2.5
+    },
+    {
+      "id": "ettu-europe-cup-men-s1-2026",
+      "name": "ETTU Europe Cup Men, Stage 1",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "city": "Varaždin",
+      "country": "Croatia",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 2
+    },
+    {
+      "id": "ettu-europe-cup-women-s1-2026",
+      "name": "ETTU Europe Cup Women, Stage 1",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "city": "Novi Sad",
+      "country": "Serbia",
+      "series": "Clubs",
+      "type": "European club",
+      "prestige": 2
+    },
+    {
       "id": "ettu-cl-women-s2r2-2026",
       "name": "ETTU Champions League Women, Stage 2 Round 2",
       "start": "2026-11-14",
@@ -123,17 +156,6 @@
       "series": "WTT",
       "type": "WTT Star Contender",
       "prestige": 2
-    },
-    {
-      "id": "world-para-championships-2026",
-      "name": "World Para Championships",
-      "start": "2026-11-23",
-      "end": "2026-11-29",
-      "city": "Pattaya",
-      "country": "Thailand",
-      "series": "Majors",
-      "type": "Para world championships",
-      "prestige": 2.5
     },
     {
       "id": "mixed-team-world-cup-2026",
