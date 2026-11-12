@@ -440,10 +440,18 @@ LEAGUE_LANDMARK = {"bundesliga": "berlin-brandenburg-gate.jpg", "t-league": "tok
 SERIES_COLOURS = {"WTT Finals": ("#c99a2e", "#1b1405"), "WTT Feeder": ("#e2582b", "#2a0f05"), "WTT Invitational": ("#3a66e0", "#0c1a45")}
 
 
+def tiered(ev):
+    """2026 onwards: the star-rated posters (tools/poster_tiers.py). Earlier events keep their original posters."""
+    y = str(ev.get("year") or "")
+    return y.isdigit() and int(y) >= 2026 and ev.get("tier") != "club"
+
+
 def look(ev):
     """Which composition an event (or a league or topic poster) gets."""
     if ev.get("look"):
         return ev["look"]
+    if tiered(ev):
+        return {3: "three", 4: "four", 5: "five"}.get(poster_tiers.stars(ev), "ticket")
     s, tier = ev.get("series", ""), ev.get("tier")
     if tier == "smash":
         return "arena"
@@ -528,8 +536,14 @@ def ticket(ev, uid):
          f'<line x1="{S}" y1="{Y0 + 40}" x2="{S}" y2="{Y1 - 40}" stroke="{ink}" stroke-opacity=".35" stroke-width="2" stroke-dasharray="2 12" stroke-linecap="round"/>']
     L = X0 + 64
     b.append(_bars(L, Y0 + 58, c, ink, 36, 7))
-    b.append(label(ev["series"], L, Y0 + 112, ink, 18, opacity=1))
-    base = Y0 + 140 + size * .73
+    if tiered(ev):
+        b += poster_tiers.ticket_marks(ev, uid, X0, Y0, S, ink)
+        b.append(t(poster_tiers.type_name(ev).upper(), L, Y0 + 124, 40, ink, 700, track=0.04, stretch=85))
+        size = min(size, 190)
+        base = Y0 + 160 + size * .73
+    else:
+        b.append(label(ev["series"], L, Y0 + 112, ink, 18, opacity=1))
+        base = Y0 + 140 + size * .73
     b.append(t(title, L - size * .02, base, size, ink, 800, track=-0.005, stretch=75))
     b.append(t(f'{ev["country"]}', L, base + 56, 26, ink, 500, opacity=.7))
     ds = days(ev)
@@ -676,6 +690,8 @@ def bulletin(ev, uid):
 def tile_for(ev, uid):
     """Square version: the photo looks keep the photo panel; ticket and atlas use a colour panel with their motif."""
     lk = look(ev)
+    if lk in ("three", "four", "five"):
+        return poster_tiers.square(ev, uid)
     if lk not in ("ticket", "atlas"):
         return tile(ev, uid)
     c, deep = colours(ev)
@@ -694,6 +710,8 @@ def tile_for(ev, uid):
     else:
         b.append(f'<path d="M{L} {PH - 60} H{R}" stroke="{paper}" stroke-opacity=".6" stroke-width="3" stroke-dasharray="3 16" stroke-linecap="round"/>')
         b.append(t(ev["series"].replace("WTT ", "").upper(), L, 150, 70, paper, 800, track=0.02, stretch=75))
+        if tiered(ev):
+            b.append(poster_tiers.star_row(R, 150, poster_tiers.stars(ev), 30, paper, anchor="end", total=5, empty=paper + "55"))
     b.append(t(ev["year"], R, PH - 40 if lk == "atlas" else PH - 110, 150, "#fff", 300, "end", -0.03))
     b.append(label(ev["series"], L, PH + 72, ink, 24, opacity=1))
     base = PH + 112 + size * 0.73
@@ -706,7 +724,12 @@ def tile_for(ev, uid):
     return b
 
 
-STYLES = {"grid": grid, "arena": arena, "court": court, "tile": tile, "split": split, "ticket": ticket, "atlas": atlas,
+import sys as _sys   # noqa: E402
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import poster_tiers   # noqa: E402
+poster_tiers.bind(_sys.modules[__name__])
+
+STYLES = {"three": poster_tiers.three, "four": poster_tiers.four, "five": poster_tiers.five, "grid": grid, "arena": arena, "court": court, "tile": tile, "split": split, "ticket": ticket, "atlas": atlas,
           "landmark": landmark, "ladder": ladder, "bulletin": bulletin, "tile_for": tile_for}
 
 
