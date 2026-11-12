@@ -100,7 +100,7 @@ window.ElevenStream = function (el) {
       done.forEach((r) => {
         const hw = r.score[0] > r.score[1];
         clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">${esc(label(r))}</span><span class="where">${esc(r.round)}</span>
-        <span class="row${hw ? " won" : ""}"><span>${esc(r.home)}</span><b>${r.score[0]}</b></span><span class="row${hw ? "" : " won"}"><span>${esc(r.away)}</span><b>${r.score[1]}</b></span></a>`);
+        <span class="row${hw ? " won" : ""}"><span>${esc(r.home)}</span><b>${r.score[0]}</b></span><span class="row${hw ? "" : " won"}"><span>${esc(r.away)}</span><b>${r.score[1]}</b></span><span class="done-at">${esc(new Date(r.when).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", ...(r.day ? { timeZone: "UTC" } : {}) }))}</span></a>`);
       });
     } catch (e) {}
     // Club cards come straight after the "On now" cards, ahead of older stored results
