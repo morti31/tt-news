@@ -31,6 +31,10 @@
   const fixtures = data.fixtures || [];
   const timeFmt = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
   const place = (e) => [e.venue, e.city !== e.country ? e.city : "", e.country].filter(Boolean).join(", ");
+  // Whole stars, the same as on the event posters (tools/poster_tiers.py); other events go by their prestige
+  const STARS = { "WTT Feeder": 1, "WTT Contender": 2, "WTT Star Contender": 3, "WTT Champions": 4, "Season finals": 4, "Continental games": 4,
+    "Continental championships": 4, "European teams": 4, "Grand Smash": 5, "World Cup": 5, "Mixed team world event": 5, "World Championships": 5, "Olympic Games": 5 };
+  const starsOf = (e) => STARS[e.type] || Math.min(5, Math.max(1, Math.round(e.prestige || 1)));
   const tier = (p) => [1, 2, 3, 4, 5].filter((n) => p >= n - 0.25).length || 1;
   const dots = (p) => [1, 2, 3, 4, 5].map((n) => `<i class="${n <= tier(p) ? "on" : ""}"></i>`).join("");
 
@@ -50,7 +54,7 @@
             <div class="sched-body">
               <div class="sched-top"><h3>${esc(e.name)}</h3>${now ? '<span class="on-now">On now</span>' : ""}</div>
               <p class="sched-meta">${when}${place(e) ? `, ${esc(place(e))}` : ""}</p>
-              <p class="sched-meta"><span class="series">${esc(e.type)}</span><span class="level tier-${tier(e.prestige)}" title="Prestige ${e.prestige} out of 5">${dots(e.prestige)}</span></p>
+              <p class="sched-meta"><span class="series">${esc(e.type)}</span><span class="level tier-${starsOf(e)}" title="${starsOf(e)} out of 5 stars">${dots(starsOf(e))}</span></p>
               ${fx.length ? `<details class="sessions"><summary>${fx.length} session times</summary><ul>${fx.map((f) =>
                 `<li><span>${timeFmt.format(new Date(f.start))}</span><span>${esc(f.name.split(": ").pop())}</span></li>`).join("")}</ul></details>` : ""}
             </div>

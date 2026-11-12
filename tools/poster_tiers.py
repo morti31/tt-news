@@ -6,9 +6,12 @@ The look grows more sophisticated with the stars:
   3 stars    Star Contender: duotone photo strip beside a deep colour field, silver hairlines and silver stars
   4 stars    WTT Champions, WTT Finals, continental championships and Games: near-black, a photo across most
              of the poster, a fine gold and silver frame, silver type headline and gold stars
-  5 stars    Grand Smash, World Cup, World Championships, Olympics: black and gold, full-bleed photo,
-             gold foil type, an inset gold frame with corner marks; the World Championships and the Olympics
-             also carry a laurel emblem (Eleven's own drawing; no organiser marks, no Olympic rings)
+  5 stars    Grand Smash, World Cup, World Championships, Olympics: "lacquer" (five_lacquer): near-black, an ink-wash
+             photo in a fine frame, a red brush circle, five red stars over a red type headline, a red seal with the
+             year; the World Championships and the Olympics also carry a laurel emblem (Eleven's own drawing; no
+             organiser marks, no Olympic rings). Always these colours.
+Colours (posters.colours): Feeders always grey, the WTT Finals always gold; Contenders, Star Contenders, Champions and
+continental events take turns through posters.ROTATION so no two neighbours in a series match.
 
 Used by tools/posters.py for events dated 2026 or later; older posters are left as they were.
 """
@@ -142,7 +145,7 @@ def three(ev, uid):
     head = type_name(ev).upper()
     city = ev["city"].upper()
     hs = fit(head, R - L, 64, 0.06)   # kept below the 4-star headline: the type grows with the stars
-    cs = fit(city, R - L, 190, -0.005)
+    cs = fit(city, R - L - 230, 190, -0.005)   # room for the year on the right
     b = [f'<defs>{defs}{P._duo(uid, c, deep)}{foil(uid, "sv", SILVER)}<clipPath id="{uid}-s"><rect width="{S}" height="{H}"/></clipPath></defs>',
          f'<rect width="{W}" height="{H}" fill="{deep}"/>',
          f'<g clip-path="url(#{uid}-s)"><image href="{P.photo_href(photo)}" x="-220" y="0" width="{S + 440}" height="{H}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-duo)"/></g>',
@@ -173,7 +176,7 @@ def four(ev, uid):
     hs = fit(head, 840, 92, 0.08)
     cs = fit(city, 980, 230, -0.005)
     head_fill = f"url(#{uid}-{'gd' if gold_first else 'sv'})"
-    b = [f'<defs>{defs}{_mono(uid, base, P.palette(ev)[0] if not gold_first else "#9c7a2c")}{foil(uid, "gd", GOLD)}{foil(uid, "sv", SILVER)}'
+    b = [f'<defs>{defs}{_mono(uid, base, c if not gold_first else "#9c7a2c")}{foil(uid, "gd", GOLD)}{foil(uid, "sv", SILVER)}'
          f'<linearGradient id="{uid}-fade" x1="0" y1="0" x2="1" y2="0"><stop offset=".22" stop-color="{base}"/><stop offset=".72" stop-color="{base}" stop-opacity=".25"/><stop offset="1" stop-color="{base}" stop-opacity=".05"/></linearGradient>'
          f'<linearGradient id="{uid}-tint" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="{c}" stop-opacity=".0"/><stop offset="1" stop-color="{c}" stop-opacity=".35"/></linearGradient></defs>',
          f'<rect width="{W}" height="{H}" fill="{base}"/>',

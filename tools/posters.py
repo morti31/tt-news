@@ -451,7 +451,7 @@ def look(ev):
     if ev.get("look"):
         return ev["look"]
     if tiered(ev):
-        return {3: "three", 4: "four", 5: "five"}.get(poster_tiers.stars(ev), "ticket")
+        return {3: "three", 4: "four", 5: "five_lacquer"}.get(poster_tiers.stars(ev), "ticket")
     s, tier = ev.get("series", ""), ev.get("tier")
     if tier == "smash":
         return "arena"
@@ -466,7 +466,37 @@ def look(ev):
     return "grid"
 
 
+# 2026 onwards: Feeders are always grey, the Finals always gold, 5-star events always the lacquer look; Contenders,
+# Star Contenders, Champions and continental events take turns through these, so a series never repeats back to back
+ROTATION = [("#3a66e0", "#0c1a45"), ("#2aa198", "#073532"), ("#7a3cf0", "#1c0b46"), ("#d4213d", "#5c0716"),
+            ("#d98a00", "#3a2200"), ("#c2337a", "#3d0a24"), ("#e2582b", "#2a0f05"), ("#4f7a2a", "#16210b")]
+FEEDER_GREY = ("#6b7586", "#1a1e26")
+_ROT = {}
+
+
+def rotation_colour(ev):
+    if not _ROT:
+        evs = json.load(open(os.path.join(ROOT, "data", "events.json"), encoding="utf-8"))["events"]
+        groups = {}
+        for x in sorted((x for x in evs if tiered(x)), key=lambda x: (x.get("start") or "", x["id"])):
+            k = x.get("tier") if x.get("tier") in ("contender", "star", "champions", "continental") else None
+            if k:
+                groups.setdefault(k, []).append(x["id"])
+        for k, ids in groups.items():
+            off = {"contender": 0, "star": 3, "champions": 5, "continental": 6}[k]
+            for i, xid in enumerate(ids):
+                _ROT[xid] = ROTATION[(i * 3 + off) % len(ROTATION)]   # step 3: neighbours differ strongly
+    return _ROT.get(ev["id"], ROTATION[sum(map(ord, ev["id"])) % len(ROTATION)])
+
+
 def colours(ev):
+    if tiered(ev) and ev.get("tier") != "club" and not ev.get("colours"):
+        if ev.get("series") == "WTT Feeder":
+            return FEEDER_GREY
+        if ev.get("series") in SERIES_COLOURS:
+            return SERIES_COLOURS[ev["series"]]
+        if ev.get("tier") in ("contender", "star", "champions", "continental"):
+            return rotation_colour(ev)
     if ev.get("series") in SERIES_COLOURS:
         return SERIES_COLOURS[ev["series"]]
     return palette(ev)
@@ -690,6 +720,8 @@ def bulletin(ev, uid):
 def tile_for(ev, uid):
     """Square version: the photo looks keep the photo panel; ticket and atlas use a colour panel with their motif."""
     lk = look(ev)
+    if lk == "five_lacquer":
+        return poster_tiers.square_lacquer(ev, uid)
     if lk in ("three", "four", "five"):
         return poster_tiers.square(ev, uid)
     if lk not in ("ticket", "atlas"):
