@@ -1,7 +1,149 @@
 {
-  "updated": "2026-11-11T20:40:00Z",
+  "updated": "2026-11-12T00:25:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ttbl-2026-27-werder-bremen-beat-dortmund-gerassimenko-mattias-karlsson",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "bundesliga",
+      "lang": "German",
+      "date": "2026-11-12",
+      "published": "2026-11-12T00:20:00Z",
+      "score": "3-0",
+      "headline": "Tischtennis Bundesliga: Werder Bremen beat Borussia Dortmund 3-0 as Mattias Karlsson returns from a finger injury",
+      "summary": "Werder Bremen ended a two-match losing run by beating a Borussia Dortmund side without Kristian Karlsson and Anders Lind 3-0, moving up to fourth in the Tischtennis Bundesliga.",
+      "matches": [
+        {
+          "label": "Tischtennis Bundesliga",
+          "event": "Tischtennis Bundesliga, Bremen",
+          "sides": [
+            {
+              "name": "Werder Bremen"
+            },
+            {
+              "name": "Borussia Dortmund"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Kirill Gerassimenko",
+                  "nat": "KAZ"
+                },
+                {
+                  "name": "Cedric Nuytinck",
+                  "nat": "BEL"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  3
+                ],
+                [
+                  14,
+                  12
+                ],
+                [
+                  11,
+                  1
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Mattias Karlsson",
+                  "nat": "SWE"
+                },
+                {
+                  "name": "Wim Verdonschot",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  1,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Irvin Bertrand",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Joao Geraldo",
+                  "nat": "POR"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Werder Bremen beat Borussia Dortmund 3-0 on Wednesday night to close the seventh round of the Tischtennis Bundesliga, ending a run of two defeats and moving above Dortmund into fourth place with 8-6 points. Dortmund, who played without Kristian Karlsson and Anders Lind, have now lost three in a row and drop to sixth.",
+        "Kirill Gerassimenko set the tone by beating Cedric Nuytinck 11-3, 14-12, 11-1, saving four game points in the second. \"We had problems with the serve returns, they were much better there. That changes the match completely,\" Nuytinck told Dyn.",
+        "Mattias Karlsson, who missed the European Championships after hurting a finger while making his bed, lost the second game 11-1 but otherwise controlled his match against Wim Verdonschot to win 3-1. Irvin Bertrand completed the win with an 11-7, 11-8, 11-2 victory over Joao Geraldo. \"It was important for the team to win again after the last defeats,\" Bertrand said.",
+        "Nuytinck said Kristian Karlsson had been in pain for a few months and that Dortmund did not yet know how long he would be out."
+      ],
+      "sources": [
+        {
+          "name": "TTBL (German): Bremen make an impressive return",
+          "url": "http://ttbl.de/news/post/6af4cbda3917dd00012cae50"
+        },
+        {
+          "name": "TTBL: table",
+          "url": "https://www.ttbl.de/bundesliga/table"
+        }
+      ]
+    },
     {
       "id": "wtt-contender-istanbul-2026-qualifying-day-three-main-draw",
       "category": "International",
@@ -89,7 +231,8 @@
           "name": "WTT: WTT Contender Istanbul 2026 results and draws",
           "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257"
         }
-      ]
+      ],
+      "top": true
     },
     {
       "id": "ettu-champions-league-women-2026-27-stage-2-berlin-metz",
@@ -611,8 +754,7 @@
           "name": "ETTU: Europe's elite eight set for Champions League Women",
           "url": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "ttbl-2026-27-muhlhausen-beat-fulda-ovtcharov-ionescu",

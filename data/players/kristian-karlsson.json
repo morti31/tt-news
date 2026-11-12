@@ -5,11 +5,21 @@
  "gender": "M",
  "born": "1991-08-06",
  "hand": "Left",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "Borussia Dortmund",
+   "league": "Tischtennis Bundesliga",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=104379"
+  "https://www.worldtabletennis.com/playerDescription?playerId=104379",
+  "http://ttbl.de/news/post/6af4cbda3917dd00012cae50"
  ],
  "checked": "2026-11-06",
- "stub": true
+ "stub": true,
+ "notes": [
+  "Missed Borussia Dortmund's Tischtennis Bundesliga match at Werder Bremen on 11 November 2026; his teammate Cedric Nuytinck said he had been in pain for a few months and that his return date was not known."
+ ]
 }

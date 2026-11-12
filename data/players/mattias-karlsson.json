@@ -5,11 +5,21 @@
  "gender": "M",
  "born": "1991-09-07",
  "hand": "Right",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "Werder Bremen",
+   "league": "Tischtennis Bundesliga",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=112074"
+  "https://www.worldtabletennis.com/playerDescription?playerId=112074",
+  "http://ttbl.de/news/post/6af4cbda3917dd00012cae50"
  ],
  "checked": "2026-11-06",
- "stub": true
+ "stub": true,
+ "notes": [
+  "Missed the 2026 European Championships with a finger injury and returned for Werder Bremen in the Tischtennis Bundesliga on 11 November 2026, beating Wim Verdonschot."
+ ]
 }
