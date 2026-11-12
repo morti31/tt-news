@@ -24,7 +24,7 @@
     };
     const meta = live ? `<span class="lv-dot"></span>Live${m.game ? `, game ${m.game}` : ""}` : "Final";
     return `<article class="lv-card${live ? " is-live" : ""}"${event && m.code ? ` data-match="${esc(event)}|${esc(m.code)}" tabindex="0" role="button" aria-label="${esc(m.sides.map((x) => x.name).join(" v "))}: point by point"` : ""}><p class="lv-meta"><span>${meta}</span><span>${esc(m.label)}${m.table ? ` · ${esc(m.table)}` : ""}</span></p>
-      <table class="lv-table"><caption class="sr-only">${esc(m.sides.map((s) => s.name).join(" v "))}</caption><tbody>${row(0)}${row(1)}</tbody></table></article>`;
+      <table class="lv-table"><caption class="sr-only">${esc(m.sides.map((s) => s.name).join(" v "))}</caption><tbody>${row(0)}${row(1)}</tbody></table>${!live && m.end ? `<p class="done-at">${esc(new Date(m.end).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" }))}, ${esc(new Date(m.end).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }))}</p>` : ""}</article>`;
   }
 
   // The match centre's rows (data-key = the two players' names): live scores and fresh results go straight in

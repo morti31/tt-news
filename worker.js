@@ -57,6 +57,15 @@ async function rankMap(env, origin, ctx) {
   }
 }
 
+// Finish time of a played match: WTT gives the start and the length ("00:40:02")
+function finish(t) {
+  const d = /^(\d+):(\d\d):(\d\d)$/.exec((t && t.duration) || "");
+  const st = utc(t && t.startDateUTC);
+  if (!d || !st) return {};
+  const secs = +d[1] * 3600 + +d[2] * 60 + +d[3];
+  return secs > 0 ? { end: new Date(Date.parse(st) + secs * 1000).toISOString() } : {};
+}
+
 function match(card, ranks = {}, venue = false) {
   if (!card || !card.competitiors) return null;
   const comps = card.competitiors;
@@ -81,6 +90,7 @@ function match(card, ranks = {}, venue = false) {
     games,
     server: server >= 0 ? server : null,
     start: utc(card.matchDateTime && card.matchDateTime.startDateUTC),
+    ...(live ? {} : finish(card.matchDateTime)),
   };
 }
 
