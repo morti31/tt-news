@@ -2,7 +2,7 @@
  "event": "WTT Contender Istanbul",
  "wtt_event_id": "3257",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Draws",
- "updated": "2026-11-11T22:41:00Z",
+ "updated": "2026-11-12T12:36:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -22,7 +22,9 @@
          "nat": "ESP"
         }
        ],
-       "when": "2026-11-12T09:20:00Z"
+       "when": "2026-11-12T09:20:00Z",
+       "score": "3-0 (11:5,11:2,11:6,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -48,7 +50,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-12T09:55:00Z"
+       "when": "2026-11-12T09:55:00Z",
+       "score": "3-2 (12:10,10:12,11:6,8:11,11:8)",
+       "winner": 0
       },
       {
        "players": [
@@ -76,7 +80,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-12T08:10:00Z"
+       "when": "2026-11-12T08:10:00Z",
+       "score": "3-0 (11:6,11:6,11:8,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -102,7 +108,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-12T08:45:00Z"
+       "when": "2026-11-12T08:45:00Z",
+       "score": "3-2 (11:13,11:8,5:11,11:9,11:7)",
+       "winner": 0
       },
       {
        "players": [
@@ -116,7 +124,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-12T09:55:00Z"
+       "when": "2026-11-12T09:55:00Z",
+       "score": "1-3 (6:11,11:4,7:11,10:12,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -143,7 +153,9 @@
          "nat": "ROU"
         }
        ],
-       "when": "2026-11-12T09:20:00Z"
+       "when": "2026-11-12T09:20:00Z",
+       "score": "3-0 (11:4,11:5,11:8,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -170,7 +182,9 @@
          "seed": 4
         }
        ],
-       "when": "2026-11-12T08:10:00Z"
+       "when": "2026-11-12T08:10:00Z",
+       "score": "3-0 (11:9,11:9,11:5,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -197,7 +211,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-12T08:45:00Z"
+       "when": "2026-11-12T08:45:00Z",
+       "score": "2-3 (13:11,11:13,7:11,11:9,9:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -233,44 +249,71 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
         null
        ]
       },
       {
        "players": [
-        null,
+        {
+         "name": "Veronika Matiunina",
+         "nat": "UKR"
+        },
         null
        ]
       },
       {
        "players": [
-        null,
+        {
+         "name": "Miyu Nagasaki",
+         "nat": "JPN",
+         "seed": 3
+        },
         null
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Hana Arapovic",
+         "nat": "CRO"
+        },
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 7
+        }
        ]
       },
       {
        "players": [
         null,
-        null
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        }
        ]
       },
       {
        "players": [
         null,
-        null
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN"
+        }
        ]
       },
       {
        "players": [
         null,
-        null
+        {
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
+        }
        ]
       },
       {
@@ -349,16 +392,15 @@
       {
        "players": [
         {
-         "name": "Anders Lind",
-         "nat": "DEN",
-         "seed": 1
+         "name": "Andre Bertelsmeier",
+         "nat": "GER"
         },
         {
          "name": "Huang Youzheng",
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-12T08:45:00Z"
+       "when": "2026-11-12T17:00:00Z"
       },
       {
        "players": [
@@ -376,8 +418,8 @@
       {
        "players": [
         {
-         "name": "Andre Bertelsmeier",
-         "nat": "GER"
+         "name": "Tugay Yilmaz",
+         "nat": "TUR"
         },
         {
          "name": "Borgar Haug",
@@ -412,7 +454,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-12T08:10:00Z"
+       "when": "2026-11-12T08:10:00Z",
+       "score": "1-3 (11:6,8:11,5:11,9:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -425,7 +469,9 @@
          "nat": "ALG"
         }
        ],
-       "when": "2026-11-12T09:55:00Z"
+       "when": "2026-11-12T09:55:00Z",
+       "score": "3-0 (11:6,11:8,11:5,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -438,7 +484,9 @@
          "nat": "BEL"
         }
        ],
-       "when": "2026-11-12T09:55:00Z"
+       "when": "2026-11-12T09:55:00Z",
+       "score": "2-3 (4:11,11:7,11:4,13:15,9:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -452,7 +500,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-12T09:20:00Z"
+       "when": "2026-11-12T09:20:00Z",
+       "score": "2-3 (11:9,4:11,11:3,8:11,3:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -466,7 +516,9 @@
          "nat": "RUS"
         }
        ],
-       "when": "2026-11-12T09:20:00Z"
+       "when": "2026-11-12T09:20:00Z",
+       "score": "2-3 (10:12,11:9,11:7,10:12,8:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -520,7 +572,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-12T08:10:00Z"
+       "when": "2026-11-12T08:10:00Z",
+       "score": "3-1 (8:11,11:8,11:9,11:7,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -546,7 +600,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-12T08:45:00Z"
+       "when": "2026-11-12T08:45:00Z",
+       "score": "0-3 (7:11,6:11,8:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -581,7 +637,35 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Chen Junsong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Fang Bo",
+         "nat": "KAZ"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Adrien Rassenfosse",
+         "nat": "BEL"
+        },
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE",
+         "seed": 7
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Nikita Artemenko",
+         "nat": "RUS"
+        },
         null
        ]
       },
@@ -593,25 +677,20 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Li Tianyang",
+         "nat": "CHN",
+         "seed": 5
+        },
         null
        ]
       },
       {
        "players": [
-        null,
-        null
-       ]
-      },
-      {
-       "players": [
-        null,
-        null
-       ]
-      },
-      {
-       "players": [
-        null,
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        },
         null
        ]
       }
@@ -694,7 +773,9 @@
          "nat": "TUR"
         }
        ],
-       "when": "2026-11-12T10:30:00Z"
+       "when": "2026-11-12T10:30:00Z",
+       "score": "3-2 (13:15,7:11,11:9,11:8,11:4)",
+       "winner": 0
       },
       {
        "players": [
@@ -708,7 +789,9 @@
          "seed": 8
         }
        ],
-       "when": "2026-11-12T11:05:00Z"
+       "when": "2026-11-12T11:05:00Z",
+       "score": "2-3 (10:12,11:9,8:11,14:12,8:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -736,7 +819,9 @@
          "nat": "CHI/GUA"
         }
        ],
-       "when": "2026-11-12T11:05:00Z"
+       "when": "2026-11-12T11:05:00Z",
+       "score": "3-1 (12:10,7:11,11:8,11:6,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -792,7 +877,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-12T10:30:00Z"
+       "when": "2026-11-12T10:30:00Z",
+       "score": "0-3 (6:11,8:11,6:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -801,8 +888,26 @@
      "matches": [
       {
        "players": [
+        {
+         "name": "Kim Nayeong / Joo Cheonhui",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "Mariia Tailakova / Ekaterina Zironova",
+         "nat": "RUS",
+         "seed": 8
+        }
+       ]
+      },
+      {
+       "players": [
         null,
-        null
+        {
+         "name": "Qin Yuxuan / Zong Geman",
+         "nat": "CHN",
+         "seed": 6
+        }
        ]
       },
       {
@@ -814,13 +919,11 @@
       {
        "players": [
         null,
-        null
-       ]
-      },
-      {
-       "players": [
-        null,
-        null
+        {
+         "name": "Elizabeta Samara / Bernadette Szőcs",
+         "nat": "ROU",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -882,8 +985,9 @@
          "nat": "ESP"
         },
         {
-         "name": "Anders Lind / Martin Buch",
-         "nat": "DEN"
+         "name": "Iskender Kharki / Fang Bo",
+         "nat": "KAZ",
+         "seed": 3
         }
        ],
        "when": "2026-11-12T14:05:00Z"
@@ -928,7 +1032,9 @@
          "nat": "LUX"
         }
        ],
-       "when": "2026-11-12T11:05:00Z"
+       "when": "2026-11-12T11:05:00Z",
+       "score": "2-3 (11:8,11:2,8:11,8:11,3:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -956,7 +1062,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-12T10:30:00Z"
+       "when": "2026-11-12T10:30:00Z",
+       "score": "3-0 (11:4,11:6,13:11,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -971,7 +1079,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-12T10:30:00Z"
+       "when": "2026-11-12T10:30:00Z",
+       "score": "2-3 (11:7,11:13,8:11,11:6,2:11)",
+       "winner": 1
       }
      ]
     },
@@ -992,14 +1102,24 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Luka Mladenovic / Mael Van Dessel",
+         "nat": "LUX"
+        },
         null
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Kang Dongsoo / Lim Yunoh",
+         "nat": "KOR"
+        },
+        {
+         "name": "Leonardo Iizuka / Guilherme Teodoro",
+         "nat": "BRA",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -1053,7 +1173,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-12T07:00:00Z"
+       "when": "2026-11-12T07:00:00Z",
+       "score": "0-3 (4:11,6:11,12:14,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -1066,7 +1188,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-12T07:35:00Z"
+       "when": "2026-11-12T07:35:00Z",
+       "score": "3-1 (11:9,11:6,3:11,11:7,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1080,7 +1204,9 @@
          "nat": "AUS"
         }
        ],
-       "when": "2026-11-12T07:35:00Z"
+       "when": "2026-11-12T07:35:00Z",
+       "score": "3-0 (11:7,11:9,11:9,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1095,7 +1221,9 @@
          "seed": 6
         }
        ],
-       "when": "2026-11-12T07:00:00Z"
+       "when": "2026-11-12T07:00:00Z",
+       "score": "0-3 (8:11,2:11,3:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -1109,7 +1237,9 @@
          "nat": "KAZ"
         }
        ],
-       "when": "2026-11-12T07:35:00Z"
+       "when": "2026-11-12T07:35:00Z",
+       "score": "3-1 (11:7,7:11,11:9,11:6,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1123,7 +1253,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-12T07:35:00Z"
+       "when": "2026-11-12T07:35:00Z",
+       "score": "0-3 (8:11,5:11,8:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -1136,7 +1268,9 @@
          "nat": "RUS"
         }
        ],
-       "when": "2026-11-12T07:00:00Z"
+       "when": "2026-11-12T07:00:00Z",
+       "score": "1-3 (7:11,4:11,11:9,8:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -1150,7 +1284,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-12T07:00:00Z"
+       "when": "2026-11-12T07:00:00Z",
+       "score": "3-2 (11:2,7:11,12:10,7:11,11:6)",
+       "winner": 0
       }
      ]
     },
@@ -1159,26 +1295,55 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Huang Youzheng / Qin Yuxuan",
+         "nat": "CHN",
+         "seed": 7
+        },
+        {
+         "name": "Nikita Artemenko / Mariia Tailakova",
+         "nat": "RUS"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Evgeny Tikhonov / Maria Panfilova",
+         "nat": "RUS",
+         "seed": 4
+        },
+        {
+         "name": "Abdullah Yigenler / Ece Harac",
+         "nat": "TUR",
+         "seed": 6
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Guilherme Teodoro / Giulia Takahashi",
+         "nat": "BRA",
+         "seed": 5
+        },
+        {
+         "name": "Connor Green / Anna Hursey",
+         "nat": "ENG/WAL",
+         "seed": 3
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Maksim Grebnev / Vlada Voronina",
+         "nat": "RUS"
+        },
+        {
+         "name": "Lim Yunoh / Joo Cheonhui",
+         "nat": "KOR"
+        }
        ]
       }
      ]
