@@ -342,7 +342,7 @@ def five_ink(ev, uid, scheme="paper"):
     head = type_name(ev).upper()
     city = ev["city"].upper()
     L, PX0, PX1 = 150, 930, W - 90
-    hs = fit(head, 680, 40, 0.62)
+    hs = fit(head, (PX0 - L - 120) * .85, 84, 0.12)
     cs = fit(city, PX0 - L - 40, 200, -0.005)
     b = [f'<defs>{defs}{_mono(uid, PD, PL, contrast=.8)}<clipPath id="{uid}-p"><rect x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}"/></clipPath></defs>',
          f'<rect width="{W}" height="{H}" fill="{BG}"/>',
@@ -357,9 +357,11 @@ def five_ink(ev, uid, scheme="paper"):
     if emb:
         b.append(laurel(L + 52, 170, 52, AC))
         top = 270
-    b.append(t(head, L, top + 20, hs, AC, 600, track=0.34))
-    b.append(f'<rect x="{L}" y="{top + 50}" width="64" height="2" fill="{FG}"/>')
-    y2 = top + 90 + cs * .73
+    b.append(star_row(L, top, stars(ev), 40, AC, gap=1.3))
+    yh = top + 30 + hs * .73
+    b.append(t(head, L, yh, hs, AC, 700, track=0.06, stretch=85))
+    b.append(f'<rect x="{L}" y="{yh + 26:.0f}" width="64" height="2" fill="{FG}"/>')
+    y2 = yh + 56 + cs * .73
     b.append(t(city, L - cs * .02, y2, cs, FG, 800, track=-0.005, stretch=75))
     yb = H - 210
     b.append(f'<rect x="{L}" y="{yb}" width="{PX0 - L - 60}" height="1" fill="{FG}" fill-opacity=".5"/>')
@@ -382,7 +384,7 @@ def square_ink(ev, uid, scheme="paper"):
     city = ev["city"].upper()
     L, R = 80, TW - 80
     PH = 430
-    hs, cs = fit(head, R - L, 34, 0.62), fit(city, R - L, 190, -0.005)
+    hs, cs = fit(head, R - L, 64, 0.12), fit(city, R - L, 180, -0.005)
     b = [f'<defs>{defs}{_mono(uid, PD, PL, contrast=.8)}<clipPath id="{uid}-p"><rect x="{L}" y="80" width="{R - L}" height="{PH}"/></clipPath></defs>',
          f'<rect width="{TW}" height="{TH}" fill="{BG}"/>',
          f'<g clip-path="url(#{uid}-p)"><image href="{P.photo_href(photo)}" x="{L}" y="80" width="{R - L}" height="{PH}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-mono)"/></g>',
@@ -390,8 +392,9 @@ def square_ink(ev, uid, scheme="paper"):
          _enso(R - 90, 170, 80, 20, AC)]
     if emblem_kind(ev):
         b.append(laurel(L + 70, 80 + PH / 2, 52, "#f3ede1"))
-    y = 80 + PH + 80
-    b.append(t(head, L, y, hs, AC, 600, track=0.34))
+    b.append(star_row(L, 80 + PH + 64, stars(ev), 32, AC, gap=1.3))
+    y = 80 + PH + 84 + hs * .73
+    b.append(t(head, L, y, hs, AC, 700, track=0.06, stretch=85))
     y2 = y + 30 + cs * .73
     b.append(t(city, L - cs * .02, y2, cs, FG, 800, track=-0.005, stretch=75))
     b.append(t(P.date_range(ev), L, y2 + 64, 30, FG, 500))
