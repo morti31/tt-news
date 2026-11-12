@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T03:47:00Z",
+  "updated": "2026-11-12T12:40:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -83,8 +83,8 @@
     {
       "id": "ettu-cl-men-r16-1-2026",
       "name": "ETTU Champions League Men, last 16 first leg",
-      "start": "2026-11-13",
-      "end": "2026-11-15",
+      "start": "2026-11-12",
+      "end": "2026-11-14",
       "city": "Europe",
       "country": "",
       "series": "Clubs",
@@ -675,38 +675,6 @@
     }
   ],
   "fixtures": [
-    {
-      "id": "frankfurt-2026-11-03-s1",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: day 1, session 1",
-      "start": "2026-11-03T11:00:00Z",
-      "end": "2026-11-03T15:00:00Z",
-      "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
-    },
-    {
-      "id": "frankfurt-2026-11-03-s2",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: day 1, session 2",
-      "start": "2026-11-03T17:30:00Z",
-      "end": "2026-11-03T21:30:00Z",
-      "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
-    },
-    {
-      "id": "frankfurt-2026-11-04-s1",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: day 2, session 1",
-      "start": "2026-11-04T11:00:00Z",
-      "end": "2026-11-04T15:00:00Z",
-      "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
-    },
-    {
-      "id": "frankfurt-2026-11-04-s2",
-      "event_id": "wtt-champions-frankfurt-2026",
-      "name": "WTT Champions Frankfurt: day 2, session 2",
-      "start": "2026-11-04T17:30:00Z",
-      "end": "2026-11-04T21:30:00Z",
-      "source": "https://www.tischtennis.de/news/wtt-champions-frankfurt-der-zeitplan-2.html"
-    },
     {
       "id": "frankfurt-2026-11-05-s1",
       "event_id": "wtt-champions-frankfurt-2026",
@@ -2044,6 +2012,70 @@
       "start": "2026-11-15T15:00:00Z",
       "end": "2026-11-15T18:00:00Z",
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
+    },
+    {
+      "id": "cl-men-r16-1-1-fc-saarbr-cken-lille-m-tropole-tt",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: 1. FC Saarbrücken v Lille Métropole TT, last 16 first leg",
+      "start": "2026-11-13T18:30:00Z",
+      "end": "2026-11-13T21:30:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-ks-dojlidy-bia-ystok-ks-orlicz-suchedni-w",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: KS Dojlidy Białystok v KS Orlicz Suchedniów, last 16 first leg",
+      "start": "2026-11-13T16:00:00Z",
+      "end": "2026-11-13T19:00:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-ks-dekorglass-dzia-dowo-sf-skk-el-ni-o-praha",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: KS Dekorglass Działdowo v SF SKK El Niño Praha, last 16 first leg",
+      "start": "2026-11-13T17:00:00Z",
+      "end": "2026-11-13T20:00:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-roskilde-btk-61-alliance-n-mes-montpellier",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: Roskilde BTK 61 v Alliance Nîmes/Montpellier, last 16 first leg",
+      "start": "2026-11-13T18:00:00Z",
+      "end": "2026-11-13T21:00:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-ks-bogoria-grodzisk-mazowiecki-asd-tt-santa-tecla-",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: KS Bogoria Grodzisk Mazowiecki v ASD TT Santa Tecla Nulvi, last 16 first leg",
+      "start": "2026-11-14T16:00:00Z",
+      "end": "2026-11-14T19:00:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-ttc-sokah-hoboken-real-club-cajasur-priego",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: TTC Sokah Hoboken v Real Club Cajasur Priego, last 16 first leg",
+      "start": "2026-11-13T18:30:00Z",
+      "end": "2026-11-13T21:30:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-gv-hennebont-hb-ostrov",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: GV Hennebont v HB Ostrov, last 16 first leg",
+      "start": "2026-11-13T17:00:00Z",
+      "end": "2026-11-13T20:00:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+    },
+    {
+      "id": "cl-men-r16-1-as-pontoise-cergy-borussia-d-sseldorf",
+      "event_id": "ettu-cl-men-r16-1-2026",
+      "name": "ETTU Champions League Men: AS Pontoise-Cergy v Borussia Düsseldorf, last 16 first leg",
+      "start": "2026-11-12T18:30:00Z",
+      "end": "2026-11-12T21:30:00Z",
+      "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
     }
   ]
 }

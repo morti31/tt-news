@@ -1,9 +1,9 @@
 {
  "id": "cl-men",
  "auto": false,
- "updated": "2026-11-08T22:50:00Z",
+ "updated": "2026-11-12T12:40:00Z",
  "season": "2026-27",
- "status": "Stage 2 draw made",
+ "status": "Stage 2 first legs, 12 to 14 November",
  "source": {
   "name": "ETTU",
   "url": "https://www.ettu.org/european-champions-league-men-2026/"
@@ -530,68 +530,68 @@
    "date_only": true
   },
   {
-   "when": null,
+   "when": "2026-11-13T18:30:00Z",
    "home": "1. FC Saarbrücken",
    "away": "Lille Métropole TT",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
-   "home": "KS Orlicz Suchedniów",
-   "away": "KS Dojlidy Białystok",
+   "when": "2026-11-13T16:00:00Z",
+   "home": "KS Dojlidy Białystok",
+   "away": "KS Orlicz Suchedniów",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
+   "when": "2026-11-13T17:00:00Z",
    "home": "KS Dekorglass Działdowo",
    "away": "SF SKK El Niño Praha",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
-   "home": "Alliance Nîmes/Montpellier",
-   "away": "Roskilde BTK 61",
+   "when": "2026-11-13T18:00:00Z",
+   "home": "Roskilde BTK 61",
+   "away": "Alliance Nîmes/Montpellier",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
+   "when": "2026-11-14T16:00:00Z",
    "home": "KS Bogoria Grodzisk Mazowiecki",
    "away": "ASD TT Santa Tecla Nulvi",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
-   "home": "Real Club Cajasur Priego",
-   "away": "TTC Sokah Hoboken",
+   "when": "2026-11-13T18:30:00Z",
+   "home": "TTC Sokah Hoboken",
+   "away": "Real Club Cajasur Priego",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
+   "when": "2026-11-13T17:00:00Z",
    "home": "GV Hennebont",
    "away": "HB Ostrov",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   },
   {
-   "when": null,
-   "home": "Borussia Düsseldorf",
-   "away": "AS Pontoise-Cergy",
+   "when": "2026-11-12T18:30:00Z",
+   "home": "AS Pontoise-Cergy",
+   "away": "Borussia Düsseldorf",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2"
+   "round": "Stage 2, first leg"
   }
  ],
  "sources": [
@@ -606,6 +606,10 @@
   {
    "name": "ETTU: Stage 1 final day",
    "url": "https://www.ettu.org/round-of-16-places-on-the-line-on-final-day-in-lille/"
+  },
+  {
+   "name": "ETTU: European giants enter the race as HYLO Champions League Men round of 16 begins",
+   "url": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
   }
  ]
 }
