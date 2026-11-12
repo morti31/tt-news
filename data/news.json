@@ -1,7 +1,39 @@
 {
-  "updated": "2026-11-12T16:20:00Z",
+  "updated": "2026-11-12T20:19:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-contender-istanbul-2026-day-four-hursey-hashimoto-yokotani-faults",
+      "category": "International",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-12",
+      "published": "2026-11-12T20:15:00Z",
+      "headline": "Anna Hursey to meet top seed Hashimoto at WTT Contender Istanbul as Yokotani questions fault calls",
+      "summary": "Wales's Anna Hursey beat Yeh Yi-Tian 3-1 to reach the women's last 16 in Istanbul, where she plays Japan's Honoka Hashimoto on Friday morning.",
+      "draw": "3257",
+      "top": true
+    },
+    {
+      "id": "bly-twomey-sunday-times-young-sportswoman-of-the-year-shortlist-2026",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-12",
+      "published": "2026-11-12T20:18:00Z",
+      "headline": "Bly Twomey shortlisted for The Sunday Times Young Sportswoman of the Year",
+      "summary": "The 16-year-old Paralympic bronze medallist is one of six names on the shortlist, which is open to a public vote until 7 December.",
+      "body": [
+        "Bly Twomey, the women's class 7 European champion, has been shortlisted for The Sunday Times Young Sportswoman of the Year award.",
+        "The 16-year-old won two bronze medals at the Paris 2024 Paralympics and last year took the European class 7 singles title and the mixed class 14 doubles with Will Bayley. This year she won gold at the ITTF World Para Future in Nakhon Ratchasima in July.",
+        "She is up against the footballer Lexi Potter, the snowboarder Mia Brookes, the cricketer Tilly Corteen-Coleman, the athlete Renee Regis and the darts player Beau Greaves. Voting closes at midday on 7 December and the winners are announced in February.",
+        "Twomey is in Pattaya for the [World Para Championships](/news/world-para-championships-2026-draw-gb-bayley-twomey.html), which start on Friday, where she plays Costa Rica's Kristel Morales Madriz in the class 7 last 16."
+      ],
+      "sources": [
+        {
+          "name": "Table Tennis England: Twomey nominated for The Sunday Times Young Sportswoman of the Year",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/twomey-nominated-for-the-sunday-times-young-sportswoman-of-the-year/"
+        }
+      ]
+    },
     {
       "id": "southeast-asian-championships-2026-singapore-women-team-title-malaysia",
       "category": "International",
@@ -515,8 +547,7 @@
           "name": "WTT: WTT Contender Istanbul 2026 results and draws",
           "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "ettu-champions-league-women-2026-27-stage-2-berlin-metz",
