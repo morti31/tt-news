@@ -141,7 +141,7 @@ def three(ev, uid):
     L, R = S + 96, W - 96
     head = type_name(ev).upper()
     city = ev["city"].upper()
-    hs = fit(head, R - L, 120, 0.0)
+    hs = fit(head, R - L, 64, 0.06)   # kept below the 4-star headline: the type grows with the stars
     cs = fit(city, R - L, 190, -0.005)
     b = [f'<defs>{defs}{P._duo(uid, c, deep)}{foil(uid, "sv", SILVER)}<clipPath id="{uid}-s"><rect width="{S}" height="{H}"/></clipPath></defs>',
          f'<rect width="{W}" height="{H}" fill="{deep}"/>',
@@ -151,7 +151,7 @@ def three(ev, uid):
          star_row(L, 98, 3, 30, f"url(#{uid}-sv)", total=5, empty="#ffffff55"),
          label(f'{ev.get("name", "")} {ev.get("year", "")}'.strip(), L, 160, "#fff", 16, opacity=.7)]
     y = 196 + hs * .73
-    b.append(t(head, L - hs * .02, y, hs, f"url(#{uid}-sv)", 700, track=0.0, stretch=75))
+    b.append(t(head, L, y, hs, f"url(#{uid}-sv)", 600, track=0.06, stretch=85))
     y2 = y + 34 + cs * .73
     b.append(t(city, L - cs * .02, y2, cs, "#fff", 800, track=-0.005, stretch=75))
     b.append(t(ev["year"], R, y2, 64, "#fff", 300, "end", -0.02, opacity=.85))
@@ -284,9 +284,9 @@ def square(ev, uid):
             b.append(f'<rect x="30" y="30" width="{TW - 60}" height="{TH - 60}" fill="none" stroke="url(#{uid}-gd)" stroke-width="2"/>')
         b.append(star_row(L, 120, n, 30, f"url(#{uid}-{'gd' if four_ else 'sv'})", total=5, empty="#ffffff45"))
         b.append(wordmark(R, 118, "#fff", 26))
-        hs, cs = fit(head, (R - L) * .86, 84, 0.08), fit(city, R - L, 200, -0.005)
+        hs, cs = fit(head, (R - L) * .86, 84 if four_ else 58, 0.08), fit(city, R - L, 200, -0.005)
         y = 520 + hs * .73
-        b.append(t(head, L, y, hs, head_fill, 600 if four_ else 700, track=0.04 if four_ else 0, stretch=85 if four_ else 75))
+        b.append(t(head, L, y, hs, head_fill, 600, track=0.06, stretch=85))
         y2 = y + 30 + cs * .73
         b.append(t(city, L - cs * .02, y2, cs, "#fff", 800, track=-0.005, stretch=75))
         b.append(f'<rect x="{L}" y="{y2 + 40:.0f}" width="{R - L}" height="1" fill="url(#{uid}-sv)"/>')
@@ -299,3 +299,94 @@ def square(ev, uid):
 def ticket_marks(ev, uid, X0, Y0, S, ink):
     """1-2 stars: the ticket keeps its look and gains its stars, top right of the main ticket."""
     return [star_row(S - 60, Y0 + 66, stars(ev), 26, ink, anchor="end", total=5, empty=ink + "40")]
+
+
+# ---------------------------------------------------------------- 5 stars, alternative: ink, paper and cinnabar
+INK, PAPER, CINNABAR, STONE = "#1c1b19", "#efe9dd", "#c23a2b", "#8c8577"
+
+
+def _enso(cx, cy, r, w, colour):
+    """An open brush circle (the ball): a thick arc with a gap, tapering at both ends."""
+    out = []
+    steps = 60
+    for k in range(steps):
+        a0 = math.radians(-60 + k * 330 / steps)
+        a1 = math.radians(-60 + (k + 1) * 330 / steps)
+        frac = k / steps
+        sw = w * (0.35 + 0.65 * math.sin(math.pi * min(1, frac * 1.15)))
+        out.append(f'<path d="M{cx + r * math.cos(a0):.1f} {cy + r * math.sin(a0):.1f} A{r} {r} 0 0 1 {cx + r * math.cos(a1):.1f} {cy + r * math.sin(a1):.1f}" '
+                   f'stroke="{colour}" stroke-width="{sw:.1f}" fill="none" stroke-linecap="round"/>')
+    return "".join(out)
+
+
+def _seal(x, y, s, n, year):
+    """A square cinnabar seal: the stars over the year, in paper colour."""
+    out = [f'<rect x="{x}" y="{y}" width="{s}" height="{s}" fill="{CINNABAR}"/>',
+           f'<rect x="{x + 7}" y="{y + 7}" width="{s - 14}" height="{s - 14}" fill="none" stroke="{PAPER}" stroke-opacity=".7" stroke-width="1.5"/>',
+           star_row(x + s / 2, y + s * .36, n, s * .13, PAPER, gap=1.25, anchor="middle")]
+    out.append(t(str(year), x + s / 2, y + s * .78, s * .27, PAPER, 700, "middle", 0.02, stretch=85))
+    return "".join(out)
+
+
+def five_ink(ev, uid):
+    photo = _photo(ev)
+    defs, noise = grain(uid, .06, dark=True)
+    head = type_name(ev).upper()
+    city = ev["city"].upper()
+    L, PX0, PX1 = 150, 930, W - 90
+    hs = fit(head, 680, 40, 0.62)
+    cs = fit(city, PX0 - L - 40, 200, -0.005)
+    b = [f'<defs>{defs}{_mono(uid, "#2a2825", "#e6dfd1", contrast=.8)}<clipPath id="{uid}-p"><rect x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}"/></clipPath></defs>',
+         f'<rect width="{W}" height="{H}" fill="{PAPER}"/>',
+         f'<g clip-path="url(#{uid}-p)"><image href="{P.photo_href(photo)}" x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-mono)"/></g>',
+         f'<rect x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}" fill="none" stroke="{INK}" stroke-width="1"/>',
+         _enso(PX0 + 10, 560, 150, 30, CINNABAR),
+         f'<line x1="96" y1="90" x2="96" y2="{H - 90}" stroke="{CINNABAR}" stroke-width="3"/>',
+         # the full name, running down the margin
+         f'<g transform="translate(70 90) rotate(90)">{t((ev.get("name", "") + " " + str(ev.get("year", ""))).upper(), 0, 0, 15, STONE, 600, track=0.42)}</g>']
+    emb = emblem_kind(ev)
+    top = 150
+    if emb:
+        b.append(laurel(L + 52, 170, 52, CINNABAR))
+        top = 270
+    b.append(t(head, L, top + 20, hs, CINNABAR, 600, track=0.34))
+    b.append(f'<rect x="{L}" y="{top + 50}" width="64" height="2" fill="{INK}"/>')
+    y2 = top + 90 + cs * .73
+    b.append(t(city, L - cs * .02, y2, cs, INK, 800, track=-0.005, stretch=75))
+    yb = H - 210
+    b.append(f'<rect x="{L}" y="{yb}" width="{PX0 - L - 60}" height="1" fill="{INK}" fill-opacity=".5"/>')
+    b.append(label("Dates", L, yb + 42, STONE, 13, opacity=1))
+    b.append(t(P.date_range(ev), L, yb + 76, 24, INK, 500))
+    b.append(label("Venue", L + 330, yb + 42, STONE, 13, opacity=1))
+    for j, ln in enumerate(P._wrap(P.place(ev), 22)[:2]):
+        b.append(t(ln, L + 330, yb + 76 + j * 28, 24, INK, 500))
+    b.append(_seal(PX1 - 150, H - 240, 120, stars(ev), ev.get("year", "")))
+    b.append(wordmark(PX1 - 18, 70, INK, 24))
+    b.append(noise)
+    return b
+
+
+def square_ink(ev, uid):
+    photo = _photo(ev)
+    defs, noise = grain(uid, .06, dark=True)
+    head = type_name(ev).upper()
+    city = ev["city"].upper()
+    L, R = 80, TW - 80
+    PH = 430
+    hs, cs = fit(head, R - L, 34, 0.62), fit(city, R - L, 190, -0.005)
+    b = [f'<defs>{defs}{_mono(uid, "#2a2825", "#e6dfd1", contrast=.8)}<clipPath id="{uid}-p"><rect x="{L}" y="80" width="{R - L}" height="{PH}"/></clipPath></defs>',
+         f'<rect width="{TW}" height="{TH}" fill="{PAPER}"/>',
+         f'<g clip-path="url(#{uid}-p)"><image href="{P.photo_href(photo)}" x="{L}" y="80" width="{R - L}" height="{PH}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-mono)"/></g>',
+         f'<rect x="{L}" y="80" width="{R - L}" height="{PH}" fill="none" stroke="{INK}" stroke-width="1"/>',
+         _enso(R - 90, 170, 80, 20, CINNABAR)]
+    if emblem_kind(ev):
+        b.append(laurel(L + 70, 80 + PH / 2, 52, PAPER))
+    y = 80 + PH + 80
+    b.append(t(head, L, y, hs, CINNABAR, 600, track=0.34))
+    y2 = y + 30 + cs * .73
+    b.append(t(city, L - cs * .02, y2, cs, INK, 800, track=-0.005, stretch=75))
+    b.append(t(P.date_range(ev), L, y2 + 64, 30, INK, 500))
+    b.append(label(P.place(ev), L, y2 + 104, STONE, 17, opacity=1))
+    b.append(_seal(R - 116, TH - 196, 116, stars(ev), ev.get("year", "")))
+    b.append(noise)
+    return b
