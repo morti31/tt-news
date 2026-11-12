@@ -1,7 +1,7 @@
 // Fixtures for the live score sections (homepage "On now" panel and the scores strip):
 //   next   the next two matches on the order of play that haven't started
-//   knock  from the quarter-finals on, the semi-finals and finals for women and men, filled in as
-//          players go through ("Winner of Calderano v Moregard" until the quarter-final is played)
+//   knock  the men's and women's singles semi-finals and final, once that draw's quarter-finals have all been played, filled in as
+//          players go through ("Winner of Calderano v Moregard" until the semi-final is played)
 // Built from data/schedule.json (WTT order of play, synced every 30 minutes), data/draws/<id>.json
 // (the draw) and the /api/live reply the page has already fetched, so results show at once.
 (function () {
@@ -72,16 +72,17 @@
     const next = fx.filter((f) => !started.has(f.id.slice(`wtt-${hub.wtt}-`.length)) && new Date(f.start).getTime() > soon)
       .sort((a, b) => a.start.localeCompare(b.start)).slice(0, 2).map((f) => parseFixture(f, hub, people));
 
-    // Knockout block: from the quarter-finals (all eight quarter-finalists known in either draw) until both finals are played
+    // Knockout block: the semi-finals and final of the men's or women's singles, once that draw's quarter-finals have all been
+    // played (doubles and mixed never count), until both finals are played
     const knock = [];
-    let show = false, allDone = true;
+    let allDone = true;
     for (const [g, ev] of Object.entries((draw && draw.events) || {})) {
+      if (g !== "women" && g !== "men") continue;
       const rounds = ev.rounds || [], idx = (n) => rounds.findIndex((r) => r.round.toLowerCase().startsWith(n));
       const qf = rounds[idx("quarter")], sf = rounds[idx("semi")], fin = rounds[idx("final")];
       if (!qf || !sf || !fin) continue;
-      if (qf.matches.every((m) => m.players && m.players[0] && m.players[1])) show = true;
-      const prefix = g === "women" ? "ttewsingles" : g === "men" ? "ttemsingles" : null;
-      if (!prefix) continue;
+      if (!qf.matches.length || !qf.matches.every((m) => winnerOf(m, done) !== null)) continue;
+      const prefix = g === "women" ? "ttewsingles" : "ttemsingles";
       const card = (round, label, i, sidesFrom) => {
         const sides = [0, 1].map((s) => (round.matches[i] && round.matches[i].players && round.matches[i].players[s]) ? { ...round.matches[i].players[s] } : slot(sidesFrom, 2 * i + s, done, sidesFrom === qf ? "quarter-final" : "semi-final"));
         sides.forEach((s) => s.name && Object.assign(s, people[s.name.toLowerCase()] || {}, s));
@@ -94,7 +95,7 @@
       };
       knock.push({ name: ev.name, items: [card(sf, "Semi-final", 0, qf), card(sf, "Semi-final", 1, qf), card(fin, "Final", 0, sf)] });
     }
-    return { next, knock: show && !allDone ? knock : [] };
+    return { next, knock: knock.length && !allDone ? knock : [] };
   }
 
   const when = (iso) => {
