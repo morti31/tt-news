@@ -985,6 +985,23 @@ def clean_urls():
                 open(f, "w", encoding="utf-8").write(c)
 
 
+def version_assets():
+    """Browsers keep styles.css and the scripts for a long time, so a fix could stay invisible to returning readers.
+    Every page names each file with a short hash of its contents (/widgets.js?v=ab12cd34): a changed file gets a new address."""
+    import hashlib
+    names = ("styles.css", "widgets.js", "live.js", "app.js", "fixtures.js", "matchpop.js", "schedule.js", "localtime.js")
+    ver = {n: hashlib.md5(open(os.path.join(ROOT, n), "rb").read()).hexdigest()[:8] for n in names if os.path.exists(os.path.join(ROOT, n))}
+    rx = re.compile(r'((?:src|href)=")(/?)(' + "|".join(re.escape(n) for n in ver) + r')(?:\?v=\w+)?(")')
+    files = glob.glob(os.path.join(ROOT, "*.html"))
+    for d in ("news", "events", "features", "guide", "tag", "players", "clubs", "p0", "pt"):
+        files += glob.glob(os.path.join(ROOT, d, "**", "*.html"), recursive=True)
+    for f in files:
+        t = open(f, encoding="utf-8").read()
+        c = rx.sub(lambda m: f"{m.group(1)}{m.group(2)}{m.group(3)}?v={ver[m.group(3)]}{m.group(4)}", t)
+        if c != t:
+            open(f, "w", encoding="utf-8").write(c)
+
+
 if __name__ == "__main__":
     main()
     check_schedule()
@@ -992,3 +1009,4 @@ if __name__ == "__main__":
     import runpy
     runpy.run_path(os.path.join(ROOT, "tools", "build_calendar.py"), run_name="__main__")
     clean_urls()
+    version_assets()
