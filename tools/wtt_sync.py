@@ -212,6 +212,25 @@ def auto_hubs(doc, sched, today):
                 changed = True
                 print(f"{mine['id']}: dates now {first} to {last}")
             continue
+        # A page made ahead from the calendar (no WTT id yet, same series, starting within four days) becomes this event's page:
+        # it keeps its id and poster file, and takes WTT's id, dates and, if it only named a country or region, the real city
+        ahead = next((ev for ev in doc["events"] if not ev.get("wtt_id") and ev.get("series") == series and ev.get("year") == year.group(1)
+                      and abs((dt.date.fromisoformat(ev["start"]) - a).days) <= 4), None)
+        if ahead:
+            if ahead["city"] in (ahead.get("country"), "Europe", "Asia", "United States", "USA") and city and city != ahead["city"]:
+                ahead.update({"city": city, "name": base, "country": hub["country"]})
+                for suffix in ("", "-sq"):   # the poster names the city: drawn again on this run
+                    try:
+                        os.remove(os.path.join(ROOT, "img", "posters", f"{ahead['id']}{suffix}.jpg"))
+                    except OSError:
+                        pass
+            ahead.update({"start": first, "end": last, "events": kinds or ahead.get("events", ""), "live": True, "wtt_id": wid, "draw": wid, "auto": True})
+            if offset is not None:
+                ahead["utc_offset"] = offset
+            have.add(wid)
+            changed = True
+            print(f"{ahead['id']}: linked to WTT id {wid}")
+            continue
         doc["events"].append(hub)
         have.add(wid)
         changed = True

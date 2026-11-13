@@ -54,7 +54,7 @@ def type_name(ev):
     """The headline: what kind of competition this is."""
     s = ev.get("series", "")
     names = {"WTT Grand Smash": "Grand Smash", "WTT Champions": "WTT Champions", "WTT Star Contender": "Star Contender",
-             "WTT Contender": "WTT Contender", "WTT Feeder": "WTT Feeder", "WTT Finals": "WTT Finals", "ITTF World Cup": "World Cup"}
+             "WTT Contender": "WTT Contender", "WTT Feeder": "WTT Feeder", "WTT Finals": "WTT Finals", "ITTF World Cup": "World Cup", "ITTF Doubles World Cup": "Doubles World Cup"}
     return names.get(s, s)
 
 

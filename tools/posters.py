@@ -56,7 +56,13 @@ def grain(uid, opacity=.07, dark=False):
 
 
 def place(ev):
-    return ev.get("venue") or f'{ev["city"]}, {ev["country"]}'
+    if ev.get("venue"):
+        return ev["venue"]
+    if ev["country"] in ("", "To be announced") or ev["city"] in ("Europe", "Asia"):
+        return "Host city to be announced"
+    if ev["city"] == ev["country"]:
+        return f'{ev["city"]}, city to be announced'
+    return f'{ev["city"]}, {ev["country"]}'
 
 
 def days(ev):
