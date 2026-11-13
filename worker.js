@@ -270,9 +270,21 @@ async function highlights(ctx, q) {
 const json = (data, status = 200, maxAge = 8) =>
   new Response(JSON.stringify(data), { status, headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": `public, max-age=${maxAge}` } });
 
+// data/switches.json: "wtt": false turns off live scores and point by point from World Table Tennis at once
+let SWITCHES = null, SWITCHES_AT = 0;
+async function switches(env, origin) {
+  if (SWITCHES && Date.now() - SWITCHES_AT < 60000) return SWITCHES;
+  try { SWITCHES = await (await env.ASSETS.fetch(new Request(origin + "/data/switches.json"))).json(); } catch (e) { SWITCHES = SWITCHES || {}; }
+  SWITCHES_AT = Date.now();
+  return SWITCHES;
+}
+
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    if ((url.pathname === "/api/live" || url.pathname === "/api/match") && (await switches(env, url.origin)).wtt === false) {
+      return json({ error: "Live scores are unavailable", disabled: true }, 503, 60);
+    }
     // The old workers.dev address and www both go to the main domain (the API stays reachable for tooling)
     if ((url.hostname.endsWith(".workers.dev") && !url.pathname.startsWith("/api/")) || url.hostname === "www.eleventabletennis.com") {
       return Response.redirect("https://eleventabletennis.com" + url.pathname + url.search, 301);

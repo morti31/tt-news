@@ -237,7 +237,8 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         slugs_for.setdefault(u, set()).add(tslug)
     wtt = load(os.path.join(ROOT, "data", "players", "wtt.json"), {})
     hist = load(os.path.join(ROOT, "data", "ranking-history.json"), {"weeks": {}})
-    bdown = load(os.path.join(ROOT, "data", "ranking-breakdown.json"), {})   # events behind each player's ranking points (WTT)
+    import switches
+    bdown = load(os.path.join(ROOT, "data", "ranking-breakdown.json"), {}) if switches.on("wtt") else {}   # events behind each player's ranking points (WTT)
     db = database()
     hub_by_wtt = {str(h.get("wtt_id") or h.get("draw")): h for h in hubs.values() if h.get("wtt_id") or h.get("draw")}
     ranks = {}

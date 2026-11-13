@@ -40,6 +40,10 @@ def breakdown(key, pid, code, wk):
 
 
 def main():
+    import switches
+    if not switches.on("wtt"):
+        print("WTT data is switched off (data/switches.json)")
+        return
     rk = json.load(open(os.path.join(ROOT, "data", "rankings.json"), encoding="utf-8"))
     y, m, _ = rk["date"].split("-")
     wk = {"y": int(y), "m": int(m), "w": int(rk["week"])}

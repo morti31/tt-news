@@ -277,6 +277,10 @@ def ranking_history():
 
 
 def main():
+    import switches
+    if not switches.on("wtt"):
+        print("WTT data is switched off (data/switches.json)")
+        return
     events = load(os.path.join(MDIR, "events.json"), {})
     players = load(os.path.join(MDIR, "players.json"), {})
     years = {}
@@ -293,7 +297,7 @@ def main():
         known = [int(k) for k, v in events.items() if v.get("n")]
         top = max(known) if known else 3250
         todo = [k for k, v in events.items() if not v.get("done") and not v.get("skip")]
-        todo += [str(x) for x in range(top - 30, top + 80) if str(x) not in events]
+        todo += [str(x) for x in range(top - 30, top + 300) if str(x) not in events]   # continental events get high ids early
         # Feeders carry ranking points: pick up any an older backfill skipped by name
         for k, v in events.items():
             if v.get("skip") and not v.get("n") and "feeder" in (v.get("name") or "").lower():

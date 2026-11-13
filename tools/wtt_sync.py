@@ -239,6 +239,10 @@ def auto_hubs(doc, sched, today):
 
 
 def main():
+    import switches
+    if not switches.on("wtt"):
+        print("WTT data is switched off (data/switches.json)")
+        return
     today = dt.date.today()
     ev_path = os.path.join(ROOT, "data", "events.json")
     ev_doc = json.load(open(ev_path, encoding="utf-8"))

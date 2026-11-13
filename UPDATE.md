@@ -203,3 +203,7 @@ A story is never only a story. Before committing, apply what it changes everywhe
 - WTT and ITTF events (feeders included) come from WTT's results via `tools/match_sync.py`. Club leagues come straight from the leagues' own sites via `tools/league_sync.py` (`.github/workflows/league-sync.yml`, every six hours) into `data/leagues/<league>/<season>.json`: so far the Tischtennis Bundesliga (ttbl.de) and the Nojima T.League (tleague.jp). Use these files as the primary source for club results and quote the league's own match page.
 - 11EDGE (11edge.io) is a reference only. Its terms forbid scraping and its robots.txt blocks AI crawlers, so never fetch it in a run. If Tom pastes one of its pages, it can be used to cross-check a fact and credited as "11EDGE".
 - Never publish betting odds, implied probabilities, tips or anything about gambling, and never use odds sites as sources.
+
+## Switching off WTT data
+
+`data/switches.json` holds `"wtt": true`. If World Table Tennis ever asks Eleven to stop using its data, set it to `false` and push: the WTT, match and ranking-breakdown syncs stop, live scores and point by point stop within a minute, and player profiles drop the ranking breakdown at the next build. Results, draws and rankings already saved stay on the site until removed by hand. Never change this switch without Tom asking.
