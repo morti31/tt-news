@@ -1,0 +1,14 @@
+name: TTU probe
+on:
+  workflow_dispatch:
+    inputs:
+      player:
+        required: true
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/ttu_probe.py ${{ inputs.player }}
