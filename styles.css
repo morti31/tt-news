@@ -1509,3 +1509,6 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .ev-stars i.half { opacity: 1; background: linear-gradient(90deg, #c9a03a 50%, #c9ced6 50%); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ev-major .ev-stars i.half, .ev-feat.is-major .ev-stars i.half { background: linear-gradient(90deg, #c9a03a 50%, #4a4640 50%); -webkit-background-clip: text; background-clip: text; }
 .ev-major .ev-stars i.off, .ev-feat.is-major .ev-stars i.off { color: #4a4640; }
+/* The house byline's badge: Eleven's orange ball on ink */
+.avatar-ball { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--ink); flex: none; }
+.avatar-ball > span { display: block; border-radius: 50%; background: var(--ball); }

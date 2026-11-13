@@ -141,7 +141,81 @@ def rows(ev, schedule):
         out.append({"when": m["when"], "table": "", "code": None, "event": d["event"], "round": d["round"],
                     "players": [{**people.get(p["name"].lower(), {}), **p} for p in m["players"]], "key": k,
                     "sets": sets, "games": games, "winner": m.get("winner")})
+    out += _team_ties(ev, wtt, {r["key"] for r in out if r["key"]} | set(drawn))
     return sorted(out, key=lambda r: r["when"]), sessions
+
+
+TEAM_KINDS = {"WT": "Women's team", "MT": "Men's team", "XT": "Mixed team"}
+KINDS = {"WS": "Women's singles", "MS": "Men's singles", "WD": "Women's doubles", "MD": "Men's doubles", "XD": "Mixed doubles"}
+FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
+
+
+def _db_name(raw, nat):
+    """'LEBRUN Felix' -> 'Felix Lebrun'; Chinese, Korean and similar names keep the family name first."""
+    words = (raw or "").split()
+    fam = " ".join(w.capitalize() for w in words if w.isupper() and len(w) > 1)
+    giv = " ".join(w for w in words if not (w.isupper() and len(w) > 1))
+    return (f"{fam} {giv}" if nat in FAMILY_FIRST else f"{giv} {fam}").strip()
+
+
+def _team_ties(ev, wtt, have):
+    """The matches the draw doesn't hold, from the match database (data/matches/<year>.json): qualifying and group
+    stages, and team ties in the group stage, so a finished event shows every day's matches, not just the main draw."""
+    if not wtt or not ev.get("start"):
+        return []
+    path = os.path.join(ROOT, "data", "matches", f'{ev["start"][:4]}.json')
+    pl_path = os.path.join(ROOT, "data", "matches", "players.json")
+    if not (os.path.exists(path) and os.path.exists(pl_path)):
+        return []
+    db = json.load(open(path, encoding="utf-8"))
+    db = db if isinstance(db, list) else db.get("matches", [])
+    names = json.load(open(pl_path, encoding="utf-8"))
+    cpath = os.path.join(ROOT, "data", "countries.json")   # IOC code -> country name
+    countries = json.load(open(cpath, encoding="utf-8")) if os.path.exists(cpath) else {}
+    mine = [m for m in db if str(m.get("e")) == str(wtt) and m.get("d")]
+    team_event = any(m.get("k") in TEAM_KINDS for m in mine)
+    out = []
+    for m in mine:
+        r = str(m.get("r", ""))
+        stage = "group stage" if r.startswith("GP") else "qualifying" if r.startswith("RND") else None
+        if not stage:
+            continue   # main-draw matches come from the draw and the order of play
+        if team_event and m.get("k") not in TEAM_KINDS:
+            continue   # the rubbers inside a team tie
+        if not team_event and m.get("k") not in KINDS:
+            continue
+        sides = []
+        for ids in m.get("p") or []:
+            if m.get("k") in TEAM_KINDS:
+                raw, nat = names.get(ids[0]) or ["", ""] if ids else ["", ""]
+                sides.append({"name": countries.get(nat) or re.sub(r"\s+\d+$", "", raw), "nat": nat})
+            else:
+                ppl = [names.get(x) or ["", ""] for x in ids]
+                sides.append({"name": " / ".join(_db_name(a, b) for a, b in ppl), "nat": ppl[0][1] if ppl else ""})
+        if len(sides) != 2 or not all(x["name"] for x in sides):
+            continue
+        k = key_of([x["name"] for x in sides])
+        if k in have:
+            continue
+        if m.get("k") in TEAM_KINDS:
+            last = (m.get("g") or "").split(",")[-1]
+            try:
+                sets = [int(x) for x in last.split("-")]
+            except ValueError:
+                sets = None
+            games = []
+        else:
+            sets = m.get("s") if isinstance(m.get("s"), list) and len(m["s"]) == 2 else None
+            games = [[int(a), int(b)] for a, b in re.findall(r"(\d+)-(\d+)", m.get("g") or "")]
+        when = m["d"]
+        if when.endswith("L"):   # venue time: to UTC with the event's offset
+            t = dt.datetime.fromisoformat(when[:-1]) - dt.timedelta(hours=ev.get("utc_offset") or 0)
+            when = t.strftime("%Y-%m-%dT%H:%M:%SZ")
+        elif not when.endswith("Z") and "+" not in when[10:]:
+            when += "Z"
+        out.append({"when": when, "table": "", "code": None, "event": (TEAM_KINDS | KINDS)[m["k"]], "round": stage,
+                    "players": sides, "key": k + "|" + m["d"], "sets": sets, "games": games, "winner": m.get("w")})
+    return out
 
 
 def _player(p, won):

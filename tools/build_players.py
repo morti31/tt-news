@@ -293,7 +293,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         mv = ""
         if rk and rk.get("prev"):
             d = rk["prev"] - rk["rank"]
-            mv = f' <span class="mv {"up" if d > 0 else "down" if d < 0 else "same"}">{"▲" + str(d) if d > 0 else "▼" + str(-d) if d < 0 else "–"}</span>'
+            mv = f' <span class="mv {"up" if d > 0 else "down"}">{"▲" + str(d) if d > 0 else "▼" + str(-d)}</span>' if d else ""   # no change: nothing
         facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else "Outside the top 100"),
                  ("Career high", career_high), ("Age", f'{age(born)} (born {long_date(born)})' if born else None),
                  ("Birthplace", p.get("birthplace")), ("Height", f'{p["height_cm"]} cm' if p.get("height_cm") else None),
@@ -405,6 +405,9 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                 continue
             nm = clean_event((db.events.get(m["e"]) or {}).get("name") or "")
             cat = category(nm)
+            # A rubber won in a team final is not a title: team medals come from the researched honours
+            if cat == "World Team Championships" or re.search(r"\bteam", nm, re.I):
+                continue
             yr = int((m.get("d") or "0000")[:4])
             disc = KINDS.get(m["k"], "").split(" ", 1)[1] if " " in KINDS.get(m["k"], "") else ""
             if cat in ("Grand Smash",):
@@ -587,7 +590,12 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         thin = p.get("generated") and not ms and len(news) < 2
         title = f'{p["name"]}: profile, results, rankings and titles | Eleven'
         desc = f'{p["name"]} ({p.get("nat")}): world ranking, recent results, season-by-season record, titles, head to heads and news.'
-        open(os.path.join(ROOT, "players", p["slug"] + ".html"), "w", encoding="utf-8").write(page(title, desc, f"{site}/players/{p['slug']}.html", body, robots="noindex,follow" if thin else None))
+        person = {"@context": "https://schema.org", "@type": "ProfilePage", "url": f"{site}/players/{p['slug']}.html",
+                  "mainEntity": {k: v for k, v in {"@type": "Person", "name": p["name"], "birthDate": born or None,
+                                                   "nationality": p.get("nat") or None, "jobTitle": "Table tennis player",
+                                                   "url": f"{site}/players/{p['slug']}.html"}.items() if v}}
+        ld_head = f'<script type="application/ld+json">{json.dumps(person, ensure_ascii=False)}</script>'
+        open(os.path.join(ROOT, "players", p["slug"] + ".html"), "w", encoding="utf-8").write(page(title, desc, f"{site}/players/{p['slug']}.html", body, ld_head, robots="noindex,follow" if thin else None))
         if not thin:
             out_urls.append((f"{site}/players/{p['slug']}.html", dt.date.today().isoformat()))
 

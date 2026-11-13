@@ -75,6 +75,47 @@ def pub_time(a):
     return f"{t.day} {t:%B %Y}, {t:%H:%M}"
 
 
+
+LEAGUE_POSTER = [(r"Champions League", "champions-league"), (r"Bundesliga|TTBL", "bundesliga"), (r"Super League|CTTSL", "super-league"),
+                 (r"T\.? ?League", "t-league"), (r"Pro A\b", "pro-a"), (r"MLTT|Major League", "mltt"), (r"\bUTT\b|Ultimate Table Tennis", "utt")]
+
+
+def fallback_poster(a):
+    """The picture a story with no photo, video or event poster shares with: its league's poster or a topic poster, as on the
+    homepage (app.js fallbackPic), so every article has an image for Google and for link previews."""
+    import re as _re
+    text = f'{a.get("title", "")} {a.get("standfirst", "")}'
+    if a.get("category") == "Clubs":
+        m = next((slug for rx, slug in LEAGUE_POSTER if _re.search(rx, text, _re.I)), "champions-league")
+        p = f"img/posters/league-{m}.jpg"
+    elif _re.search(r"world (No|ranking)|rankings?\b", a.get("title", ""), _re.I):
+        p = "img/posters/topic-rankings.jpg"
+    elif a.get("category") == "England":
+        p = "img/posters/topic-england.jpg"
+    elif a.get("category") == "Equipment":
+        p = "img/posters/topic-equipment.jpg"
+    else:
+        p = "img/posters/topic-news.jpg"
+    return f"{SITE}/{p}" if os.path.exists(os.path.join(ROOT, p)) else None
+
+
+def event_ld(ev, poster):
+    """SportsEvent structured data for a tournament page."""
+    if not ev.get("start"):
+        return ""
+    known = ev.get("country") not in (None, "", "To be announced")
+    ld = {"@context": "https://schema.org", "@type": "SportsEvent", "name": f'{ev["name"]} {ev["year"]}', "sport": "Table tennis",
+          "startDate": ev["start"], "endDate": ev.get("end") or ev["start"], "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "url": f'{SITE}/events/{ev["id"]}.html',
+          "description": f'{ev.get("series") or ev["name"]}: {ev.get("events") or "table tennis"}.'}
+    if known:
+        ld["location"] = {"@type": "Place", "name": ev.get("venue") or ev["city"],
+                          "address": {"@type": "PostalAddress", "addressLocality": ev["city"], "addressCountry": ev["country"]}}
+    if poster:
+        ld["image"] = [SITE + poster]
+    return f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+
+
 def initials(name):
     return "".join(w[0] for w in name.split())[:2]
 
@@ -82,6 +123,9 @@ def initials(name):
 def avatar(au, size):
     if au.get("photo"):
         return f'<img class="avatar" src="{e(au["photo"])}" alt="" width="{size}" height="{size}">'
+    if au.get("name") == "Eleven Team":   # the house byline: Eleven's ball, not initials
+        return (f'<span class="avatar avatar-ball" style="width:{size}px;height:{size}px" aria-hidden="true">'
+                f'<span style="width:{size*0.32:.0f}px;height:{size*0.32:.0f}px"></span></span>')
     return (f'<span class="avatar" style="width:{size}px;height:{size}px;font-size:{size*0.4:.0f}px;background:{e(au.get("colour", "var(--ink)"))};color:#fff" '
             f'aria-hidden="true">{e(au.get("initials") or initials(au["name"]))}</span>')
 
@@ -528,6 +572,8 @@ def article_page(a, others, brief=False):
         images.append(SITE + feature_cover(a))
     if ev0 and build_events.poster(ev0):
         images += [SITE + build_events.poster(ev0)] + ([SITE + build_events.tile(ev0)] if build_events.tile(ev0) else [])
+    if not images and fallback_poster(a):
+        images.append(fallback_poster(a))
     if images:
         ld["image"] = images
     head = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
@@ -623,6 +669,9 @@ def article_page(a, others, brief=False):
     og = img.get("url") if img.get("type") == "photo" else (SITE + build_events.poster(ev) if ev and build_events.poster(ev) else None)
     if feature_cover(a):
         og = SITE + feature_cover(a)
+    if not og and vids:
+        og = f"https://i.ytimg.com/vi/{vids[0]['id']}/maxresdefault.jpg"
+    og = og or fallback_poster(a)
     # SEO: a search title and description can differ from the headline and standfirst
     desc = a.get("description") or a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
     # Short stories, and articles under MIN_WORDS, stay readable and shareable but are kept out of Google's index as thin pages
@@ -828,7 +877,7 @@ def build_hubs(arts):
         poster = build_events.poster(ev)
         open(os.path.join(ROOT, "events", ev["id"] + ".html"), "w", encoding="utf-8").write(
             page(f'{ev["name"]} {ev["year"]}: results, draw and schedule | Eleven', desc, f'{SITE}/events/{ev["id"]}.html', body,
-                 og_image=SITE + poster if poster else None))
+                 event_ld(ev, poster), og_image=SITE + poster if poster else None))
         if ev.get("start"):
             open(os.path.join(ROOT, "events", ev["id"] + ".ics"), "w", encoding="utf-8", newline="").write(build_events.calendar(ev, schedule, SITE, stamp))
     open(os.path.join(ROOT, "events", "index.html"), "w", encoding="utf-8").write(
