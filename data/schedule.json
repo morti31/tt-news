@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T01:27:00Z",
+  "updated": "2026-11-13T08:43:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1726,22 +1726,22 @@
       "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
     },
     {
-      "id": "wtt-3257-ttexdoublessfnl000100",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Mixed Doubles, Semifinal, Match 1",
-      "start": "2026-11-13T17:00:00Z",
-      "end": "2026-11-13T17:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------SFNL000100--"
-    },
-    {
       "id": "wtt-3257-ttexdoublessfnl000200",
       "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Mixed Doubles, Semifinal, Match 2",
+      "name": "WTT Contender Istanbul: Connor/HURSEY Anna Green v Lim Yunoh/JOO Cheonhui, mixed doubles, semifinal",
       "start": "2026-11-13T17:00:00Z",
       "end": "2026-11-13T17:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
       "code": "TTEXDOUBLES-----------SFNL000200--"
+    },
+    {
+      "id": "wtt-3257-ttexdoublessfnl000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Huang Youzheng/QIN Yuxuan v Evgeny/PANFILOVA Maria Tikhonov, mixed doubles, semifinal",
+      "start": "2026-11-13T17:00:00Z",
+      "end": "2026-11-13T17:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEXDOUBLES-----------SFNL000100--"
     },
     {
       "id": "cl-men-r16-1-roskilde-btk-61-alliance-n-mes-montpellier",
