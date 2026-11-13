@@ -1431,3 +1431,7 @@ html.mp-open { overflow: hidden; }
 .pre-list { margin: 0; padding-left: 18px; } .pre-list li { margin: 6px 0; }
 .level i.half { background: linear-gradient(90deg, var(--ball) 50%, var(--rule) 50%); }
 .level.tier-5 i.half { background: linear-gradient(90deg, var(--tier-5) 50%, var(--rule) 50%); }
+/* Doubles in fixture cards: each pair's two players on their own lines, pairs spaced apart */
+.score-card .row.pair > span:first-child { display: flex; flex-direction: column; align-items: flex-start; white-space: normal; }
+.score-card .row.pair .pl { display: flex; align-items: center; white-space: nowrap; }
+.score-card .row.pair + .row.pair { margin-top: 6px; }

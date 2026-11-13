@@ -17,6 +17,7 @@
   const same = (a, b) => a && b && a.toLowerCase() === b.toLowerCase();
 
   const store = {};
+  let lastPeople = {};
   async function base(hub) {
     const hit = store[hub.wtt];
     if (hit && Date.now() - hit.t < 5 * 6e4) return hit.v;
@@ -66,6 +67,7 @@
 
   async function get(hub, liveData) {
     const { fx, draw, people } = await base(hub);
+    lastPeople = people;
     const live = (liveData && liveData.live) || [], done = (liveData && liveData.results) || [];
     const started = new Set(live.concat(done).map((m) => key(m.code)));
     const soon = Date.now() - 3 * 36e5;   // a fixture three hours past its time without a result is dropped
@@ -109,6 +111,7 @@
 
   // A fixture card in the same style as the score cards: names on the left, the start time on the right
   function card(it, hub, opts = {}) {
+    const people = lastPeople;
     const m = it.match;
     if (m) {   // already under way or played: a normal score card that opens point by point
       const live = m.status === "live", won = live ? -1 : (m.score[0] > m.score[1] ? 0 : 1);
@@ -116,6 +119,7 @@
       return `<a class="score-card${live ? " is-live" : ""}" href="${esc(hub.url)}#live" data-match="${esc(hub.wtt)}|${esc(m.code)}"><span class="ev">${live ? '<span class="live-dot"></span>Live · ' : "Result · "}${esc(opts.short ? it.short : it.label)}</span>${opts.where ? `<span class="where">${esc(hub.name)}</span>` : ""}${side(0)}${side(1)}</a>`;
     }
     const row = (s) => s.tbd ? `<span class="row tbd"><span>${esc(s.tbd)}</span></span>`
+      : / \/ /.test(s.name || "") ? `<span class="row pair"><span>${s.name.split(" / ").map((n) => { const p = (people || {})[n.toLowerCase()] || {}; return `<span class="pl">${flag(p.nat)}${esc(n)}</span>`; }).join("")}</span></span>`
       : `<span class="row"><span>${flag(s.nat)}${esc(s.name)}${wr(s)}</span></span>`;
     return `<a class="score-card fx-card" href="${esc(hub.url)}#schedule"><span class="ev">${esc((opts.prefix || "") + (opts.short && it.short ? it.short : it.label))}</span>${opts.where ? `<span class="where">${esc(hub.name)}</span>` : ""}
       <span class="fx-when${it.when ? "" : " tbc"}">${esc(when(it.when))}${it.table ? ` · ${esc(it.table)}` : ""}</span>${row(it.sides[0] || { tbd: "To be decided" })}${row(it.sides[1] || { tbd: "To be decided" })}</a>`;

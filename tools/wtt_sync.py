@@ -59,12 +59,17 @@ def person(comp):
     if not comp:
         return None
     d = comp.get("Description") or {}
-    org = comp.get("Organization", "")
-    words = (d.get("TeamName") or "").split()
-    fam = " ".join(fetch_draw.cap(w) for w in words if w.isupper())
-    giv = " ".join(w for w in words if not w.isupper())
-    name = f"{fam} {giv}" if org in FAMILY_FIRST else f"{giv} {fam}"
-    return fetch_draw.FIXES.get(name.strip(), name.strip())
+    orgs = str(comp.get("Organization", "")).split("/")
+    out = []
+    # Doubles pairs come as one team: "FANG Bo/POLCANOVA Sofia" -> "Fang Bo / Sofia Polcanova"
+    for i, part in enumerate((d.get("TeamName") or "").split("/")):
+        words = part.split()
+        org = orgs[i] if i < len(orgs) else orgs[0]
+        fam = " ".join(fetch_draw.cap(w) for w in words if w.isupper())
+        giv = " ".join(w for w in words if not w.isupper())
+        name = (f"{fam} {giv}" if org in FAMILY_FIRST else f"{giv} {fam}").strip()
+        out.append(fetch_draw.FIXES.get(name, name))
+    return " / ".join(n for n in out if n)
 
 
 def utc_offset(wtt_id, fallback):
