@@ -54,7 +54,10 @@ def main():
         for (pid, code), res in zip(jobs, ex.map(lambda j: breakdown(key, j[0], j[1], wk), jobs)):
             if res is None:
                 continue
-            out[pid] = {"week": rk["label"], "events": res}
+            out[pid] = {"week": rk["label"], "events": [{"event_id": str(x.get("EventId")), "event": x.get("EventName"), "result": x.get("ResultPosition"),
+                                                        "points": x.get("RankingPoints"), "counted": bool(x.get("isbestofx")),
+                                                        "order": x.get("bestofxorder"), "year": x.get("RankingYear"), "week": x.get("RankingWeek"),
+                                                        "expires": x.get("ExpiryDate")} for x in res]}
             ok += 1
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(f"ranking breakdown: {ok} of {len(jobs)} players")
