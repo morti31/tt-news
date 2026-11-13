@@ -7,7 +7,8 @@ from ranking_breakdown import fetch, SITE
 
 def keys():
     page = fetch(SITE + "/playerDescription?playerId=1")
-    js = fetch(f"{SITE}/{re.search(r'src=\"(main\\.[0-9a-f]+\\.js)\"', page).group(1)}")
+    main = re.search(r'src="(main\.[0-9a-f]+\.js)"', page).group(1)
+    js = fetch(f"{SITE}/{main}")
     return re.search(r'ittfapikey:"([^"]+)"', js).group(1)
 
 
