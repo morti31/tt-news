@@ -21,7 +21,7 @@ LIVE = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/li
 CMS = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/primary/api/cms"
 HEADERS = {"Origin": "https://www.worldtabletennis.com", "Referer": "https://www.worldtabletennis.com/", "User-Agent": "Mozilla/5.0 (Eleven table tennis news)"}
 FIRST_YEAR = 2021   # WTT's first season
-SKIP_NAMES = re.compile(r"Youth|U1[0-9]|U2[01]|Junior|Cadet|Para |Veteran|Masters|Hopes|Development", re.I)
+SKIP_NAMES = re.compile(r"^\s*(TEST|SIM)\b|Youth|U1[0-9]|U2[01]|Junior|Cadet|Para |Veteran|Masters|Hopes|Development", re.I)
 MDIR = os.path.join(ROOT, "data", "matches")
 
 
@@ -223,6 +223,9 @@ def sync_event(eid, events, years, players, senior_only=False):
     ev = events.setdefault(eid, {})
     if not ev.get("name"):
         ev["name"] = event_name(eid) or ""
+    if re.match(r"\s*(TEST|SIM)\b", ev["name"], re.I):   # WTT's test and simulation copies of real events
+        ev.update({"skip": True, "n": 0, "done": True})
+        return 0
     if not rs:
         ev.update({"n": 0, "done": False})
         return 0

@@ -3498,12 +3498,14 @@
  "2490": {
   "name": "TEST EVENT",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2491": {
   "name": "TEST EVENT",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2492": {
   "name": "TEST EVENT",
@@ -3511,7 +3513,8 @@
   "end": "2021-08-10",
   "n": 0,
   "synced": "2026-11-06T17:24:24Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "2493": {
   "name": "WTT YOUTH CONTENDER VARAŽDIN 2021",
@@ -4265,22 +4268,26 @@
  "2621": {
   "name": "TEST 11",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2622": {
   "name": "TEST 11",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2623": {
   "name": "TEST 12",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2624": {
   "name": "TEST 111",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2625": {
   "name": "2022 Pan American Championships U15",
@@ -5883,7 +5890,8 @@
  "2874": {
   "name": "Test - WTT Champions Macao 2026 Presented by Galaxy Entertainment Group",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2875": {
   "name": "WTT Star Contender Lanzhou 2024",
@@ -6046,7 +6054,8 @@
  "2897": {
   "name": "TEST TEAMS 2024",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2898": {
   "name": "WTT Youth Contender Benghazi 2024",
@@ -6277,7 +6286,8 @@
  "2933": {
   "name": "SIM - ITTF World Team Table Tennis Championships Finals Busan 2024 Presented by BNK Busan Bank",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2934": {
   "name": "WTT Contender Mendoza 2024",
@@ -6410,7 +6420,8 @@
  "2956": {
   "name": "TEST event 08042024",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "2957": {
   "name": "Regional Olympics Qualification / West Asia",
@@ -6658,9 +6669,10 @@
   "name": "TEST - China Smash 2024 Presented by Zhonghui Life Insurance",
   "start": "2024-09-04",
   "end": "2024-09-04",
-  "n": 10,
+  "n": 0,
   "synced": "2026-11-06T14:49:52Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "3001": {
   "name": "WTT Youth Contender San Francisco 2025 Presented by Ethos",
@@ -7814,7 +7826,8 @@
  "3169": {
   "name": "TEST - ITTF WTTC 2025",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "3170": {
   "name": "2025 Europe Top-16 Cup",
@@ -9106,7 +9119,8 @@
  "3362": {
   "name": "TEST ITTF World Youth Championships 2025",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "3363": {
   "name": "WTT Feeder Asunción 2026",
@@ -9837,7 +9851,8 @@
   "end": "2026-05-01",
   "n": 0,
   "synced": "2026-11-13T23:46:03Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "3487": {
   "name": "Central American and Caribbean Special Event Qualifier",
@@ -9891,14 +9906,16 @@
   "name": "SIM - Singapore Smash 2026 Presented by Resorts World Sentosa",
   "start": "2026-02-16",
   "end": "2026-02-17",
-  "n": 223,
+  "n": 0,
   "synced": "2026-11-13T23:46:14Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "3497": {
   "name": "SIM - Singapore Youth Smash 2026 Presented by Resorts World Sentosa",
   "skip": true,
-  "n": 0
+  "n": 0,
+  "done": true
  },
  "3498": {
   "name": "ITTF-ATTU Central Asia Youth Championships Almaty 2026",
@@ -9928,7 +9945,8 @@
  "3503": {
   "name": "TEST WTT Youth Contender Tashkent 2026 - 3320",
   "skip": true,
-  "n": 0
+  "n": 0,
+  "done": true
  },
  "3504": {
   "name": "ITTF-ATTU Asian Youth Championships Bangkok 2026",
@@ -9944,9 +9962,10 @@
   "name": "TEST - United States Smash 2026",
   "start": "2026-06-24",
   "end": "2026-06-25",
-  "n": 272,
+  "n": 0,
   "synced": "2026-11-13T23:46:28Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "3507": {
   "name": "ITTF-Americas South American Team Championships Santiago 2026",
@@ -9966,20 +9985,23 @@
  "3510": {
   "name": "TEST - WTT Champions Yokohama 2026",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "3511": {
   "name": "TEST - Europe Smash - Sweden 2026",
   "start": "2026-08-07",
   "end": "2026-08-07",
-  "n": 6,
+  "n": 0,
   "synced": "2026-11-13T23:47:03Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "3512": {
   "name": "TEST - Europe Youth Smash - Sweden 2026",
   "skip": true,
-  "n": 0
+  "n": 0,
+  "done": true
  },
  "3513": {
   "name": "ITTF-Africa Central Regional Team Championships Kinshasa 2026",
@@ -10005,9 +10027,10 @@
   "name": "TEST - WTT Champions Frankfurt 2026",
   "start": "2026-11-13",
   "end": "2026-11-13",
-  "n": 4,
+  "n": 0,
   "synced": "2026-11-13T23:47:06Z",
-  "done": false
+  "done": true,
+  "skip": true
  },
  "3518": {
   "name": "WTT Champions Asia 2027",
@@ -10073,14 +10096,16 @@
   "name": "TEST - China Smash 2026 Presented by Beijing Shijingshan Culture & Tourism Group",
   "start": "2026-09-28",
   "end": "2026-09-29",
-  "n": 280,
+  "n": 0,
   "synced": "2026-11-13T23:47:21Z",
-  "done": true
+  "done": true,
+  "skip": true
  },
  "3531": {
   "name": "TEST - China Youth Smash 2026 Presented by Beijing Shijingshan Culture & Tourism Group",
   "skip": true,
-  "n": 0
+  "n": 0,
+  "done": true
  },
  "3532": {
   "name": "WTT Contender Lille 2027",
@@ -10375,7 +10400,8 @@
  "3590": {
   "name": "TEST WTT Champions Montpellier 2026",
   "n": 0,
-  "done": false
+  "done": true,
+  "skip": true
  },
  "3591": {
   "name": "WTT Youth Contender Doha II 2027",
