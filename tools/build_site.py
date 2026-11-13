@@ -50,7 +50,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Tournaments</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Calendar</a><a href="/contact.html#advertise">Advertise</a><a href="/privacy.html">Privacy</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Tournaments</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Calendar</a><a href="/contact.html#advertise">Advertise</a><a href="/corrections.html">Corrections</a><a href="/privacy.html">Privacy</a></nav>
 <p>Table tennis news, results and fixtures from around the world.</p></div></footer>"""
 
 
@@ -592,6 +592,7 @@ def article_page(a, others, brief=False):
   {components.social(a.get("social"))}
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
+  {correction_note(a)}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
   {build_tags.topics(TG, TAGFULL.get(a.get("story_id") or a["slug"], []))}
   {f'<section class="more-news"><div class="sec-head"><h2>More news</h2><a href="/news/">All news</a></div><div class="promos" id="more-news">{more_html}</div></section>' if more_html else ""}
@@ -747,7 +748,7 @@ def main():
             continue
         brief = {"slug": s["id"], "title": s["headline"], "standfirst": s["summary"] if s.get("body") else "", "category": s["category"], "date": s["date"],
                  "body": s.get("body") or [s["summary"]], "sources": s.get("sources", [])}
-        for k in ("lang", "image", "published", "matches", "videos", "draw", "social", "event", "kind", "day"):
+        for k in ("lang", "image", "published", "modified", "corrections", "matches", "videos", "draw", "social", "event", "kind", "day"):
             if s.get(k):
                 brief[k] = s[k]
         open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))
@@ -781,9 +782,12 @@ def main():
             page("World rankings: top 400 men and women | Eleven", desc, f"{SITE}/rankings.html", build_rankings.body(R, items, tag_links()).replace('<main class="wrap rk">', '<main class="wrap rk">' + components.subnav("players", "/rankings.html"), 1)))
     open(os.path.join(ROOT, "contact.html"), "w", encoding="utf-8").write(contact_page())
     open(os.path.join(ROOT, "privacy.html"), "w", encoding="utf-8").write(privacy_page())
+    corr = [(f"/news/{a['slug']}.html", a["title"], a.get("corrections") or []) for a in arts]
+    corr += [(f"/news/{x['id']}.html", x["headline"], x.get("corrections") or []) for x in NEWS.get("stories", []) if x["id"] not in {a.get("story_id") for a in arts}]
+    open(os.path.join(ROOT, "corrections.html"), "w", encoding="utf-8").write(corrections_page(corr))
 
     today = dt.date.today().isoformat()
-    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/privacy.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
+    urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/privacy.html", today), (f"{SITE}/corrections.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/page-{n}.html", today) for n in range(2, max(1, -(-len(arts) // NEWS_PER_PAGE)) + 1)]
     urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts if words_of(a) >= MIN_WORDS]
     urls += [(f"{SITE}/features/", today)]
@@ -886,6 +890,45 @@ def build_hubs(arts):
     return [ev["id"] for ev in EVENTS["events"]]
 
 
+def long_day(iso):
+    d = dt.date.fromisoformat(iso[:10])
+    return f"{d.day} {d:%B %Y}"
+
+
+def correction_note(a):
+    """'Correction': what was changed, and when, on a story corrected after it went live (see /corrections.html)."""
+    cs = [c for c in a.get("corrections") or [] if c.get("text") and c.get("date")]
+    if not cs:
+        return ""
+    items = "".join(f'<p><time datetime="{e(c["date"])}">{long_day(c["date"])}</time>: {e(c["text"])}</p>' for c in cs)
+    return (f'<section class="article-correction" id="correction"><h2>{"Correction" if len(cs) == 1 else "Corrections"}</h2>{items}'
+            f'<p class="small">How Eleven handles mistakes: <a href="/corrections.html">corrections policy</a>.</p></section>')
+
+
+def corrections_page(items):
+    """The corrections policy, with every correction made to a story listed under it, newest first."""
+    rows = sorted(((c["date"], url, title, c["text"]) for url, title, cs in items for c in cs if c.get("date") and c.get("text")), reverse=True)
+    log = "".join(f'<li><time datetime="{e(d)}">{long_day(d)}</time> <a href="{e(u)}">{e(t)}</a><span>{e(x)}</span></li>' for d, u, t, x in rows)
+    body = f"""<main class="wrap info-wrap">
+<section class="sched-head"><div><h1>Corrections</h1>
+<p class="lede">How Eleven puts mistakes right, and every correction we have made.</p></div></section>
+<div class="info-grid"><div class="info-body">
+<h2>Our approach</h2>
+<p>Eleven checks every name, score, date and quote against its source before a story is published. When something still turns out to be wrong, we correct it as quickly as we can and say so.</p>
+<h2>How we correct</h2>
+<p><strong>Factual errors</strong>, such as a wrong score, result, name, date, ranking or quote, or a quote credited to the wrong person, are corrected in the story. A note at the foot of the story says what was wrong and when it was fixed, and the correction is listed below.</p>
+<p><strong>Small slips</strong>, such as spelling, typing or style mistakes that do not change the meaning, are fixed without a note.</p>
+<p><strong>Updates</strong> are different from corrections. When a story develops, for example a result comes in or a player withdraws, we update the story and change its date, without a correction note.</p>
+<p>We do not delete stories to hide mistakes. A story is only taken down for legal reasons, and if that happens we say so here.</p>
+<h2>Tell us</h2>
+<p>If you spot a mistake, tell us through the <a href="/contact.html">contact page</a>, with a link to the story and, if you can, a source. We check every report and reply when a correction is made.</p>
+<h2>Corrections made</h2>
+{f'<ul class="corr-log">{log}</ul>' if log else '<p>No corrections yet.</p>'}
+</div></div>
+</main>"""
+    return page("Corrections | Eleven", "How Eleven corrects mistakes, and a list of every correction made to a story.", f"{SITE}/corrections.html", body)
+
+
 def about_page():
     body = f"""<main class="wrap info-wrap">
 <section class="sched-head"><div><h1>About Eleven</h1>
@@ -900,7 +943,7 @@ def about_page():
 <h2>Who writes Eleven</h2>
 <p>Everything on Eleven is written and edited by the Eleven Team, and credited that way. Stories are checked against their sources before they are published.</p>
 <h2>Corrections</h2>
-<p>If we get something wrong, we want to know. Tell us through the <a href="/contact.html">contact page</a> and we will check it and correct the story. Significant corrections are noted on the story.</p>
+<p>If we get something wrong, we want to know. Tell us through the <a href="/contact.html">contact page</a> and we will check it and correct the story. Factual corrections are noted at the foot of the story and listed on our <a href="/corrections.html">corrections page</a>, which also explains how we handle them.</p>
 <h2>Photos and illustrations</h2>
 <p>Photos are used under Creative Commons and other free licences, with the photographer and licence credited on each image. Illustrations are drawn for Eleven.</p>
 </div>
@@ -1022,7 +1065,7 @@ def clean_url(text):
 
 
 def clean_urls():
-    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "privacy.html", "calendar.ics")]
+    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "privacy.html", "corrections.html", "calendar.ics")]
     for d in ("news", "events", "features", "guide", "tag", "players"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
     files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json", "tags.json")]
