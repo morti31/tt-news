@@ -1,7 +1,161 @@
 {
-  "updated": "2026-11-12T20:19:00Z",
+  "updated": "2026-11-13T00:25:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ettu-champions-league-men-2026-27-last-16-pontoise-dusseldorf",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "champions-league",
+      "date": "2026-11-12",
+      "published": "2026-11-13T00:25:00Z",
+      "headline": "ETTU Champions League Men: Dang Qiu wins twice as Borussia Düsseldorf beat Pontoise-Cergy without Fan Zhendong",
+      "summary": "Borussia Düsseldorf won 3-1 at AS Pontoise-Cergy in the first leg of their last-16 tie, with Dang Qiu winning both his matches and Fan Zhendong left out.",
+      "matches": [
+        {
+          "label": "Last 16, first leg",
+          "event": "ETTU Champions League Men",
+          "sides": [
+            {
+              "name": "AS Pontoise-Cergy",
+              "nat": "FRA"
+            },
+            {
+              "name": "Borussia Düsseldorf",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            1,
+            3
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Jules Cavaille",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Kanak Jha",
+                  "nat": "USA"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  2,
+                  11
+                ],
+                [
+                  11,
+                  13
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Flavio Mourier",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Dang Qiu",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                1,
+                3
+              ],
+              "games": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Mihai Bobocica",
+                  "nat": "ITA"
+                },
+                {
+                  "name": "Anton Källberg",
+                  "nat": "SWE"
+                }
+              ],
+              "score": [
+                3,
+                2
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Jules Cavaille",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Dang Qiu",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  2,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Borussia Düsseldorf, the second seeds, won 3-1 at AS Pontoise-Cergy on Thursday in the first leg of their ETTU Champions League Men last-16 tie, without Fan Zhendong, the Olympic champion who joined them this season.",
+        "Kanak Jha gave the German champions the lead by beating Jules Cavaille 11-8, 11-2, 13-11, and Dang Qiu came from 1-1 to beat Flavio Mourier 11-9, 9-11, 11-4, 11-7. Italy's Mihai Bobocica kept Pontoise in the tie by beating Anton Källberg in five games, but Qiu settled it in the fourth match, losing only 11 points against Cavaille.",
+        "\"It was a tough match, but we managed to secure a 3-1 victory, which puts us in a good position ahead of the return leg,\" said Danny Heister, Düsseldorf's coach.",
+        "The second leg is at the ARAG CenterCourt in Düsseldorf on 18 December, with a quarter-final place for the winners. The rest of the first legs are on Friday and Saturday, including 1. FC Saarbrücken against Lille Métropole and GV Hennebont against HB Ostrov."
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Borussia Düsseldorf take command with away victory in Pontoise",
+          "url": "https://www.ettu.org/borussia-dusseldorf-take-command-with-away-victory-in-pontoise/"
+        }
+      ]
+    },
     {
       "id": "wtt-contender-istanbul-2026-day-four-hursey-hashimoto-yokotani-faults",
       "category": "International",

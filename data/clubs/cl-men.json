@@ -1,7 +1,7 @@
 {
  "id": "cl-men",
  "auto": false,
- "updated": "2026-11-12T12:40:00Z",
+ "updated": "2026-11-13T00:20:00Z",
  "season": "2026-27",
  "status": "Stage 2 first legs, 12 to 14 November",
  "source": {
@@ -589,9 +589,22 @@
    "when": "2026-11-12T18:30:00Z",
    "home": "AS Pontoise-Cergy",
    "away": "Borussia Düsseldorf",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
+   "round": "Stage 2, first leg"
+  },
+  {
+   "when": "2026-12-18T18:00:00Z",
+   "date_only": true,
+   "home": "Borussia Düsseldorf",
+   "away": "AS Pontoise-Cergy",
    "score": null,
    "status": "scheduled",
-   "round": "Stage 2, first leg"
+   "round": "Stage 2, second leg",
+   "venue": "ARAG CenterCourt, Düsseldorf"
   }
  ],
  "sources": [
@@ -610,6 +623,10 @@
   {
    "name": "ETTU: European giants enter the race as HYLO Champions League Men round of 16 begins",
    "url": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
+  },
+  {
+   "name": "ETTU: Borussia Düsseldorf take command with away victory in Pontoise",
+   "url": "https://www.ettu.org/borussia-dusseldorf-take-command-with-away-victory-in-pontoise/"
   }
  ]
 }
