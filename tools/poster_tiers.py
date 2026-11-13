@@ -334,7 +334,25 @@ SCHEMES = {   # bg, ink (big type), accent (type line, brush circle, rule), seal
     "paper": (PAPER, INK, CINNABAR, CINNABAR, PAPER, STONE, "#2a2825", "#e6dfd1", INK),
     "lacquer": ("#141211", "#f3ede1", "#e0402c", "#e0402c", "#f3ede1", "#9a9184", "#0d0c0b", "#b9b0a2", "#f3ede1"),
     "vermilion": ("#b8261b", "#fbf4e8", "#141211", "#141211", "#fbf4e8", "#f3c9b8", "#3a0b07", "#f0b8a6", "#fbf4e8"),
+    # the 5-star look with every red turned to gold
+    "gilt": ("#141211", "#f3ede1", "#c9a03a", "#c9a03a", "#141211", "#9a9184", "#0d0c0b", "#b9b0a2", "#f3ede1"),
+    # Grand Smashes in their host's flag colours
+    "smash_china": ("#b8261b", "#fbf4e8", "#e2b64a", "#e2b64a", "#8a1a12", "#f3c9b8", "#3a0b07", "#f0b8a6", "#fbf4e8"),
+    "smash_europe": ("#123a8c", "#f4f1e8", "#d9b04a", "#d9b04a", "#0c2a66", "#b9c7e6", "#071a40", "#a9bbe0", "#f4f1e8"),
+    "smash_usa": ("#1b2a5c", "#ffffff", "#c8202f", "#c8202f", "#ffffff", "#b9c2dc", "#0c1430", "#b4bdd6", "#ffffff"),
+    "smash_singapore": ("#d0202c", "#ffffff", "#ffffff", "#ffffff", "#d0202c", "#f6c4c6", "#4a0a0e", "#f3b3b6", "#ffffff"),
+    "smash_singapore_low": ("#ffffff", "#d0202c", "#d0202c", "#d0202c", "#ffffff", "#c46a70", "#4a0a0e", "#f3b3b6", "#d0202c"),
 }
+
+SMASH_SCHEME = {"china": "smash_china", "united states": "smash_usa", "usa": "smash_usa", "singapore": "smash_singapore"}
+
+
+def smash_scheme(ev):
+    """China red and gold, Singapore red and white, United States red, white and blue; Europe Smash (wherever it is held) blue and gold."""
+    key = (ev.get("country") or "").lower()
+    if "europe" in (ev.get("id", "") + ev.get("name", "")).lower():
+        return "smash_europe"
+    return SMASH_SCHEME.get(key, "smash_europe")
 
 
 def _seal(x, y, s, n, year, fill=CINNABAR, ink=PAPER):
@@ -423,9 +441,26 @@ def square_lacquer(ev, uid):
     return square_ink(ev, uid, "lacquer")
 
 
+def _flag_halves(fn, ev, uid, w, h):
+    """Singapore's flag: the poster drawn twice, red over white, the top half of one over the bottom half of the other."""
+    top, low = fn(ev, uid, "smash_singapore"), fn(ev, uid + "-lo", "smash_singapore_low")
+    return [f'<defs><clipPath id="{uid}-top"><rect width="{w}" height="{h / 2}"/></clipPath><clipPath id="{uid}-low"><rect y="{h / 2}" width="{w}" height="{h / 2}"/></clipPath></defs>',
+            f'<g clip-path="url(#{uid}-top)">{"".join(top)}</g>', f'<g clip-path="url(#{uid}-low)">{"".join(low)}</g>']
+
+
 def five_vermilion(ev, uid):
-    return five_ink(ev, uid, "vermilion")
+    sc = smash_scheme(ev)
+    return _flag_halves(five_ink, ev, uid, W, H) if sc == "smash_singapore" else five_ink(ev, uid, sc)
 
 
 def square_vermilion(ev, uid):
-    return square_ink(ev, uid, "vermilion")
+    sc = smash_scheme(ev)
+    return _flag_halves(square_ink, ev, uid, TW, TH) if sc == "smash_singapore" else square_ink(ev, uid, sc)
+
+
+def five_gilt(ev, uid):
+    return five_ink(ev, uid, "gilt")
+
+
+def square_gilt(ev, uid):
+    return square_ink(ev, uid, "gilt")
