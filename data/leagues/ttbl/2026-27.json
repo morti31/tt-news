@@ -1,7 +1,7 @@
 {
  "league": "ttbl",
  "season": "2026-27",
- "updated": "2026-11-13T06:35:34Z",
+ "updated": "2026-11-13T19:37:47Z",
  "ties": [
   {
    "id": "0c9590e2-c913-4572-b526-0ef82d28443d",
@@ -3773,15 +3773,69 @@
    "d": "2026-11-13T17:00:00Z",
    "g": "M",
    "rd": "Matchday 8",
-   "home": "55803118-289f-416c-92cc-61c1b5cfcd3f",
-   "away": "966eb2c4-9970-41a8-93e9-b235eb5b2a14",
+   "home": "BV Borussia 09 Dortmund",
+   "away": "TTF Liebherr Ochsenhausen",
    "s": [
-    0,
+    3,
     0
    ],
-   "st": "due",
+   "st": "done",
    "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/246d701c-415b-45aa-b06c-09307d118748",
-   "r": []
+   "r": [
+    {
+     "k": "S",
+     "p": [
+      [
+       "c827a6b0-6ce3-48a4-aedf-b6f2828669cb"
+      ],
+      [
+       "591bd4e3-1ea4-439c-ab08-c9fe04aed00c"
+      ]
+     ],
+     "s": [
+      3,
+      2
+     ],
+     "g": "11-5,12-14,11-8,11-13,11-5",
+     "w": 0
+    },
+    {
+     "k": "S",
+     "p": [
+      [
+       "77eae380-ae01-4391-9023-9a083cc444d6"
+      ],
+      [
+       "84a1718d-d662-4aa1-91d9-94ab0410a88d"
+      ]
+     ],
+     "s": [
+      3,
+      2
+     ],
+     "g": "11-5,9-11,11-3,7-11,12-10",
+     "w": 0
+    },
+    {
+     "k": "S",
+     "p": [
+      [
+       "27a42deb-0efc-42da-a30f-d7fce139c6dd"
+      ],
+      [
+       "54373d1a-263c-4a06-941d-fff23f86d5e7"
+      ]
+     ],
+     "s": [
+      3,
+      1
+     ],
+     "g": "12-10,6-11,11-7,11-9",
+     "w": 0
+    }
+   ],
+   "venue": "Dortmund",
+   "crowd": 392
   },
   {
    "id": "3efa0b33-7ba0-40b0-aaae-9d11fa429855",
@@ -3791,8 +3845,8 @@
    "home": "5f1971dd-48d5-4810-9fdf-d817005ec9b0",
    "away": "a5251614-e7fb-4ef0-8645-8d6005d9c6e1",
    "s": [
-    0,
-    0
+    1,
+    1
    ],
    "st": "due",
    "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/3efa0b33-7ba0-40b0-aaae-9d11fa429855",
@@ -3807,7 +3861,7 @@
    "away": "0f6444ae-5f99-4ab3-bd1d-22fd80721530",
    "s": [
     0,
-    0
+    2
    ],
    "st": "due",
    "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/008c09e9-a01d-46ee-a2d5-1ff881fd62aa",
@@ -4009,21 +4063,6 @@
    "r": []
   },
   {
-   "id": "4a7ad1bc-cebe-4aed-9f4d-d83f58f5dca8",
-   "d": "2026-12-14T18:30:00Z",
-   "g": "M",
-   "rd": "Matchday 10",
-   "home": "53d1dd63-865b-4d7e-aa62-49ea1c2d361b",
-   "away": "3146fcf3-b731-4639-9b3a-d24f010ad613",
-   "s": [
-    0,
-    0
-   ],
-   "st": "due",
-   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/10/4a7ad1bc-cebe-4aed-9f4d-d83f58f5dca8",
-   "r": []
-  },
-  {
    "id": "8a5b9896-42e1-48a9-952a-a1bd6a131970",
    "d": "2026-12-15T18:00:00Z",
    "g": "M",
@@ -4036,6 +4075,21 @@
    ],
    "st": "due",
    "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/10/8a5b9896-42e1-48a9-952a-a1bd6a131970",
+   "r": []
+  },
+  {
+   "id": "4a7ad1bc-cebe-4aed-9f4d-d83f58f5dca8",
+   "d": "2026-12-16T18:30:00Z",
+   "g": "M",
+   "rd": "Matchday 10",
+   "home": "53d1dd63-865b-4d7e-aa62-49ea1c2d361b",
+   "away": "3146fcf3-b731-4639-9b3a-d24f010ad613",
+   "s": [
+    0,
+    0
+   ],
+   "st": "due",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/10/4a7ad1bc-cebe-4aed-9f4d-d83f58f5dca8",
    "r": []
   },
   {
