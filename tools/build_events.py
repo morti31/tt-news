@@ -280,80 +280,135 @@ TIERS = {"world": "#d4213d", "smash": "#f37021", "champions": "#3a66e0", "contin
 
 
 def index_page(data, today):
-    sections = []
+    """Upcoming and Past tabs. Upcoming: on now, the next three tournaments as posters, then every later event as a slim row by
+    month (majors as large black rows, 4-star events a little larger than the rest). Past: the same rows, a year at a time."""
+    import poster_tiers
     groups = data.get("groups", ["WTT Series", "Majors", "Continental"])
 
-    def card(ev):
-        label = ev["series"] if ev["group"] == "WTT Series" and ev.get("series") else ev["group"]
-        return f'''<li class="ev-card" data-g="{e(ev["group"])}" data-s="{e(ev.get("series", ""))}"><a href="/events/{ev["id"]}.html">
-{f'<img src="{poster(ev)}" alt="" loading="lazy" width="1600" height="900">' if poster(ev) else ""}
-<span class="ev-group" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">{e(label)}</span>
-<h3>{e(ev["name"])} {e(ev["year"])}</h3><p>{e(dates(ev))}, {e(ev["city"])}</p></a></li>'''
+    def short(ev):
+        if not ev.get("start"):
+            return ev.get("dates_text", "")
+        a, b = dt.date.fromisoformat(ev["start"]), dt.date.fromisoformat(ev["end"])
+        return f"{a.day} {a:%b}" if a == b else f"{a.day} {a:%b} to {b.day} {b:%b}"
 
-    for key, title in (("now", "On now"), ("next", "Coming up")):
-        evs = sorted((ev for ev in data["events"] if status(ev, today) == key), key=lambda ev: ev.get("start") or ev.get("end"))
-        if evs:
-            sections.append(f'<section class="hub-sec"><h2 class="section-title">{title}</h2><ul class="ev-cards">{"".join(card(ev) for ev in evs)}</ul></section>')
-    # Finished events: a section per year, a heading per month, newest first
-    past = sorted((ev for ev in data["events"] if status(ev, today) == "past"), key=lambda ev: ev.get("start") or ev.get("end"), reverse=True)
+    def stars(ev):
+        n = poster_tiers.stars(ev)
+        full = int(n)
+        return (f'<span class="ev-stars" aria-label="{n:g} stars">' + "★" * full + ("<i>★</i>" if n > full else "")
+                + f'<i class="off">{"★" * (5 - full - (1 if n > full else 0))}</i></span>')
+
+    def attrs(ev):
+        return f'data-g="{e(ev["group"])}" data-s="{e(ev.get("series", ""))}"'
+
+    def label(ev):
+        return ev["series"] if ev.get("series") else ev["group"]
+
+    def row(ev):
+        n = poster_tiers.stars(ev)
+        size = "major" if ev["group"] == "Majors" else "big" if n >= 4 else "small"
+        img = poster(ev)
+        return f"""<li class="evl-row ev-{size} ev-item" {attrs(ev)}><a href="/events/{ev["id"]}.html">
+{f'<img src="{img}" alt="" loading="lazy" width="1600" height="900">' if img else '<span class="ev-noimg"></span>'}
+<span class="ev-txt"><span class="ev-kicker">{'<b class="ev-major">Major</b>' if size == "major" else ""}{e(label(ev))}</span>
+<span class="ev-name">{e(ev["name"])}</span><span class="ev-city">{e(ev["city"])}</span></span>
+<span class="ev-when">{stars(ev)}<span class="ev-dates">{e(short(ev))}</span></span></a></li>"""
+
+    def months(evs, newest_first=False):
+        out, cur = [], None
+        for ev in evs:
+            d = dt.date.fromisoformat(ev.get("start") or ev.get("end"))
+            key = (d.year, d.month)
+            if key != cur:
+                if cur:
+                    out.append("</ul></div>")
+                cur = key
+                out.append(f'<div class="ev-month"><h3 class="ev-month-h">{d:%B %Y}</h3><ul class="ev-rows">')
+            out.append(row(ev))
+        if cur:
+            out.append("</ul></div>")
+        return "".join(out)
+
+    by_start = lambda ev: ev.get("start") or ev.get("end")
+    now = sorted((ev for ev in data["events"] if status(ev, today) == "now"), key=by_start)
+    nxt = sorted((ev for ev in data["events"] if status(ev, today) == "next"), key=by_start)
+    past = sorted((ev for ev in data["events"] if status(ev, today) == "past"), key=by_start, reverse=True)
+
+    on = "".join(f"""<li class="ev-now ev-item" {attrs(ev)}><a href="/events/{ev["id"]}.html">
+{f'<img src="{poster(ev)}" alt="" width="1600" height="900">' if poster(ev) else ""}
+<span class="ev-txt"><span class="ev-live"><span class="live-dot"></span>On now</span><span class="ev-name">{e(ev["name"])}</span>
+<span class="ev-city">{e(short(ev))} · Draw, results and schedule</span></span></a></li>""" for ev in now)
+    feat = "".join(f"""<li class="ev-feat ev-item{' is-major' if ev['group'] == 'Majors' else ''}" {attrs(ev)}><a href="/events/{ev["id"]}.html">
+{f'<img src="{poster(ev)}" alt="" width="1600" height="900">' if poster(ev) else ""}
+<span class="ev-txt">{stars(ev)}<span class="ev-name">{e(ev["name"])}</span><span class="ev-city">{e(short(ev))} · {e(ev["city"])}</span></span></a></li>""" for ev in nxt[:3])
+
+    upcoming = ""
+    if on:
+        upcoming += f'<section class="hub-sec ev-sec"><h2 class="section-title">On now</h2><ul class="ev-nows">{on}</ul></section>'
+    if feat:
+        upcoming += f'<section class="hub-sec ev-sec"><h2 class="section-title">Next up</h2><ul class="ev-feats">{feat}</ul></section>'
+    if nxt[3:]:
+        upcoming += f'<section class="hub-sec ev-sec"><h2 class="section-title">Later</h2>{months(nxt[3:])}</section>'
+
     years = {}
     for ev in past:
-        d = dt.date.fromisoformat(ev.get("start") or ev.get("end"))
-        years.setdefault(d.year, {}).setdefault(d.month, []).append(ev)
-    year_nav = ""
-    if len(years) > 1:
-        # One year shows at a time (the script below); without JavaScript every year shows and these are jump links
-        year_nav = ('<nav class="hub-jump ev-years" aria-label="Years">' + "".join(f'<a href="#y{y}">{y}</a>' for y in years) + "</nav>"
-                    '<p class="hub-empty ev-none" hidden>No events of this kind that year.</p>')
-    for y, months in years.items():
-        body = "".join(f'<div class="ev-month"><h3 class="ev-month-h">{dt.date(y, m, 1):%B}</h3><ul class="ev-cards">{"".join(card(ev) for ev in evs)}</ul></div>'
-                       for m, evs in months.items())
-        n = sum(len(v) for v in months.values())
-        sections.append(f'<section class="hub-sec ev-year" id="y{y}"><h2 class="section-title">{y} <span class="ev-count">{n} event{"s" if n != 1 else ""}</span></h2>{body}</section>')
+        years.setdefault(dt.date.fromisoformat(by_start(ev)).year, []).append(ev)
+    year_nav = ('<nav class="hub-jump ev-years" aria-label="Years">' + "".join(f'<a href="#y{y}">{y}</a>' for y in years) + "</nav>") if len(years) > 1 else ""
+    past_html = year_nav + "".join(f'<section class="hub-sec ev-year ev-sec" id="y{y}"><h2 class="section-title">{y} <span class="ev-count">{len(evs)} event{"s" if len(evs) != 1 else ""}</span></h2>{months(evs)}</section>'
+                                   for y, evs in years.items())
+
     filt = "".join(f'<button data-g="{e(g)}" aria-pressed="false">{e(g)}</button>' for g in groups)
     order = ["WTT Grand Smash", "WTT Finals", "WTT Champions", "WTT Star Contender", "WTT Contender", "WTT Feeder"]
     present = {ev.get("series") for ev in data["events"] if ev["group"] == "WTT Series"}
     levels = "".join(f'<button data-s="{e(x)}" aria-pressed="false">{e(x.replace("WTT ", "", 1))}</button>' for x in order if x in present)
     return f"""<main class="wrap">
-<section class="sched-head"><div><h1>Events</h1><p class="lede">The major tournaments: draws, results, schedules and news in one place.</p></div></section>
+<section class="sched-head"><div><h1>Events</h1><p class="lede">Draws, results, schedules and news for every tournament.</p></div></section>
+<div class="ev-tabs" role="tablist"><a href="#upcoming" role="tab" data-tab="upcoming" aria-selected="true">Upcoming</a><a href="#past" role="tab" data-tab="past" aria-selected="false">Past events</a></div>
 <div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
 <div class="toggle sched-filter ev-levels" role="group" aria-label="Filter WTT events by level" hidden><button data-s="" aria-pressed="true">All WTT</button>{levels}</div>
-{"".join(sections[:len(sections) - len(years)])}
-{year_nav}
-{"".join(sections[len(sections) - len(years):])}
+<div class="ev-panel" id="upcoming">{upcoming}</div>
+<div class="ev-panel" id="past" hidden>{past_html}<p class="hub-empty ev-none" hidden>No events of this kind that year.</p></div>
+<p class="hub-empty ev-none-up" hidden>No upcoming events of this kind yet.</p>
 <p class="small">The full calendar, including club competitions, is on the <a href="/schedule.html">schedule</a>.</p>
 </main>
 <script>
-let G = "", S = "", Y = "";
+let G = "", S = "", Y = "", T = "upcoming";
 const levels = document.querySelector(".ev-levels");
-const years = [...document.querySelectorAll(".ev-year")], tabs = [...document.querySelectorAll(".ev-years a")];
-// The year in the address (/events/#y2024) if there is one, else the year already showing, else the newest
-function pickYear() {{ const h = location.hash.slice(1); Y = years.some((s) => s.id === h) ? h : (Y || (years[0] ? years[0].id : "")); }}
+const years = [...document.querySelectorAll(".ev-year")], ytabs = [...document.querySelectorAll(".ev-years a")];
+function fromHash() {{
+  const h = location.hash.slice(1);
+  if (h === "past" || years.some((s) => s.id === h)) T = "past"; else if (h === "upcoming" || !h) T = "upcoming";
+  if (years.some((s) => s.id === h)) Y = h;
+  if (!Y && years[0]) Y = years[0].id;
+}}
 function apply() {{
+  document.querySelectorAll(".ev-tabs a").forEach((a) => a.setAttribute("aria-selected", String(a.dataset.tab === T)));
+  document.getElementById("upcoming").hidden = T !== "upcoming";
+  document.getElementById("past").hidden = T !== "past";
   levels.hidden = G !== "WTT Series";
   document.querySelectorAll(".ev-filter button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === G)));
   levels.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.s === S)));
-  document.querySelectorAll(".ev-card").forEach((c) => {{ c.hidden = (!!G && c.dataset.g !== G) || (!!S && c.dataset.s !== S); }});
-  document.querySelectorAll(".ev-cards").forEach((l) => {{ const box = l.closest(".ev-month") || l.closest("section"); box.hidden = ![...l.children].some((c) => !c.hidden); }});
+  document.querySelectorAll(".ev-item").forEach((c) => {{ c.hidden = (!!G && c.dataset.g !== G) || (!!S && c.dataset.s !== S); }});
+  document.querySelectorAll(".ev-month").forEach((m) => {{ m.hidden = ![...m.querySelectorAll(".ev-item")].some((c) => !c.hidden); }});
+  document.querySelectorAll("#upcoming .ev-sec").forEach((s) => {{ s.hidden = ![...s.querySelectorAll(".ev-item")].some((c) => !c.hidden); }});
+  document.querySelector(".ev-none-up").hidden = T !== "upcoming" || [...document.querySelectorAll("#upcoming .ev-item")].some((c) => !c.hidden);
   let any = true;
   years.forEach((sec) => {{
     const has = [...sec.querySelectorAll(".ev-month")].some((m) => !m.hidden);
-    sec.hidden = !has || (tabs.length > 0 && sec.id !== Y);
+    sec.hidden = !has || (ytabs.length > 0 && sec.id !== Y);
     if (sec.id === Y) any = has;
-    const tab = tabs.find((a) => a.getAttribute("href") === "#" + sec.id);
+    const tab = ytabs.find((a) => a.getAttribute("href") === "#" + sec.id);
     if (tab) {{ tab.setAttribute("aria-selected", String(sec.id === Y)); tab.classList.toggle("none", !has); }}
   }});
-  const none = document.querySelector(".ev-none");
-  if (none) none.hidden = any;
+  document.querySelector(".ev-none").hidden = any;
 }}
-tabs.forEach((a) => a.addEventListener("click", (ev) => {{
-  ev.preventDefault();
-  Y = a.getAttribute("href").slice(1);
-  history.replaceState(null, "", "#" + Y);
-  apply();
+document.querySelectorAll(".ev-tabs a").forEach((a) => a.addEventListener("click", (ev) => {{
+  ev.preventDefault(); T = a.dataset.tab; history.replaceState(null, "", "#" + T); apply();
 }}));
-window.addEventListener("hashchange", () => {{ pickYear(); apply(); }});
-pickYear(); apply();
+ytabs.forEach((a) => a.addEventListener("click", (ev) => {{
+  ev.preventDefault(); Y = a.getAttribute("href").slice(1); history.replaceState(null, "", "#" + Y); apply();
+}}));
+window.addEventListener("hashchange", () => {{ fromHash(); apply(); }});
+fromHash(); apply();
 document.querySelector(".ev-filter").addEventListener("click", (ev) => {{
   const b = ev.target.closest("button"); if (!b) return;
   G = b.dataset.g; S = ""; apply();
