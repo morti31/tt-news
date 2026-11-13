@@ -78,6 +78,11 @@ def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+BD_RESULT = {"W": "Winner", "F": "Runner-up", "SF": "Semi-final", "QF": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64",
+             "R128": "Last 128", "GL": "Group stage", "G2L": "Group stage", "G3L": "Group stage", "GR3": "Group stage", "QR1": "Qualifying",
+             "QR2": "Qualifying", "QR3": "Qualifying", "QR4": "Qualifying", "QER": "Qualifying", "ZPP": "Participation"}
+
+
 def load(path, default):
     return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else default
 
@@ -232,6 +237,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         slugs_for.setdefault(u, set()).add(tslug)
     wtt = load(os.path.join(ROOT, "data", "players", "wtt.json"), {})
     hist = load(os.path.join(ROOT, "data", "ranking-history.json"), {"weeks": {}})
+    bdown = load(os.path.join(ROOT, "data", "ranking-breakdown.json"), {})   # events behind each player's ranking points (WTT)
     db = database()
     hub_by_wtt = {str(h.get("wtt_id") or h.get("draw")): h for h in hubs.values() if h.get("wtt_id") or h.get("draw")}
     ranks = {}
@@ -535,6 +541,30 @@ def build(page, site, tag_items, hubs, R, roster, tg):
             path = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in zip(xs, ys))
             rank_sec = (f'<section class="hub-sec" id="ranking-chart"><h2 class="section-title">World ranking</h2><svg class="pl-rk" viewBox="0 0 {W_} {H_}" role="img" aria-label="World ranking by week">'
                         f'<path d="{path}" fill="none" stroke="currentColor" stroke-width="2"/></svg><p class="small">Weekly world ranking since {long_date(pts[0][0])}. Higher is better.</p></section>')
+
+        # ---- where the ranking points come from (WTT's breakdown): the counted results first, biggest first
+        bd = bdown.get(pid) or {}
+        evs = [x for x in bd.get("events", []) if x.get("event")]
+        if evs and rk:
+            evs.sort(key=lambda x: (not x["counted"], -(x.get("points") or 0)))
+            def bd_row(x):
+                nm = re.sub(r"\s+(Presented|Powered) [Bb]y.*$", "", x["event"]).replace("ITTF World Team Table Tennis Championships Finals", "World Team Championships")
+                raw = x.get("result") or ""
+                res = BD_RESULT.get(re.sub(r"-\d+%$", "", raw), raw) + (" (team)" if raw.endswith("%") else "")
+                exp = ""
+                try:
+                    exp = long_date(dt.datetime.strptime(x["expires"][:10], "%m/%d/%Y").date().isoformat())
+                except Exception:
+                    pass
+                return (f'<tr class="{"" if x["counted"] else "pl-dim"}"><td>{e(nm)}</td><td>{e(res)}</td><td><b>{x.get("points") or 0}</b></td>'
+                        f'<td>{"Counts" if x["counted"] else "Not counted"}</td><td class="pl-date">{e(exp)}</td></tr>')
+            total = sum(x.get("points") or 0 for x in evs if x["counted"])
+            rank_sec += (f'<section class="hub-sec" id="ranking-points"><h2 class="section-title">Where the ranking points come from</h2>'
+                         f'<p class="small">{total:,} points from {sum(1 for x in evs if x["counted"])} counted results ({e(bd.get("week", ""))}). '
+                         f'A player\'s best results over 12 months count; each drops off a year after the event.</p>'
+                         f'<div class="table-scroll"><table class="pl-table"><thead><tr><th scope="col">Event</th><th scope="col">Result</th><th scope="col">Points</th>'
+                         f'<th scope="col"></th><th scope="col">Drops off</th></tr></thead><tbody>{"".join(bd_row(x) for x in evs)}</tbody></table></div>'
+                         f'<p class="small">From World Table Tennis\'s ranking records.</p></section>')
 
         # ---- clubs, equipment
         clubs = p.get("clubs") or []

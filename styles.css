@@ -1521,3 +1521,4 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .corr-log li { padding: 12px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 2px; }
 .corr-log time { font-size: 13px; color: var(--muted); }
 .corr-log span { color: var(--muted); }
+.pl-table tr.pl-dim td { color: var(--muted); }
