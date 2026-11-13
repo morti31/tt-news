@@ -220,6 +220,8 @@ async function page(url, ctx, ttl) {
   return text;
 }
 
+const unescapeJson = (s) => { try { return JSON.parse(`"${s}"`); } catch (e) { return s; } };
+
 function streamList(html) {
   // Each video on the channel's Live tab: on air now, scheduled, or finished (watch back)
   return html.split('"lockupViewModel":{').slice(1).map((chunk) => {
