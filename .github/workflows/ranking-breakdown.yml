@@ -1,0 +1,31 @@
+name: Ranking breakdown
+# Which events each ranked player's world ranking points come from (WTT's ranking service), after each Monday's ranking.
+on:
+  schedule:
+    - cron: "41 9 * * 2"
+  workflow_dispatch:
+    inputs:
+      players:
+        description: "ITTF ids to fetch (blank for the whole top 400)"
+        required: false
+permissions:
+  contents: write
+concurrency:
+  group: ranking-breakdown
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the breakdowns
+        run: python3 tools/ranking_breakdown.py ${{ inputs.players }}
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/ranking-breakdown.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "Ranking breakdown $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 10; done
+          exit 1
