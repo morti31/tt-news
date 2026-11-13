@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-11T22:52:00Z",
+ "updated": "2026-11-13T17:55:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -806,15 +806,6 @@
    "venue": "Dortmund"
   },
   {
-   "when": "2026-12-14T18:30:00Z",
-   "home": "TTC Bergneustadt",
-   "away": "1. FC Saarbrücken",
-   "score": null,
-   "status": "scheduled",
-   "round": "Matchday 10",
-   "venue": "Bergneustadt"
-  },
-  {
    "when": "2026-12-15T18:00:00Z",
    "home": "TTF Ochsenhausen",
    "away": "Post SV Mühlhausen",
@@ -822,6 +813,15 @@
    "status": "scheduled",
    "round": "Matchday 10",
    "venue": "Ochsenhausen"
+  },
+  {
+   "when": "2026-12-16T18:30:00Z",
+   "home": "TTC Bergneustadt",
+   "away": "1. FC Saarbrücken",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 10",
+   "venue": "Bergneustadt"
   },
   {
    "when": "2026-12-18T17:30:00Z",
