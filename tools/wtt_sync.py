@@ -190,7 +190,7 @@ def auto_hubs(doc, sched, today):
         sch_ev = sch.get(slug(base) + "-" + year.group(1))
         tier, series = SERIES[m.group(1).lower()]
         offset = (known_city or (None, None, None))[2]
-        hub = {"id": slug(base) + "-" + year.group(1), "name": base, "group": "WTT Series", "tier": tier, "series": series, "level": series,
+        hub = {"id": slug(base) + "-" + year.group(1), "name": base, "group": "Majors" if tier == "smash" else "WTT Series", "tier": tier, "series": series, "level": series,
                "city": city, "country": (sch_ev or {}).get("country") or (known_city or (city, COUNTRY_OF.get(city_key) or city))[1] or city, "year": year.group(1),
                "start": first, "end": last, "events": kinds, "live": True, "wtt_id": wid, "draw": wid, "auto": True}
         if sch_ev:
