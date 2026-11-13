@@ -31,7 +31,7 @@
   const fixtures = data.fixtures || [];
   const timeFmt = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
   const place = (e) => [e.venue, e.city !== e.country ? e.city : "", e.country].filter(Boolean).join(", ");
-  // Whole stars, the same as on the event posters (tools/poster_tiers.py); other events go by their prestige
+  // Stars as on the event posters (tools/poster_tiers.py), Grand Smashes 4.5; other events go by their prestige
   const STARS = { "WTT Feeder": 1, "WTT Contender": 2, "WTT Star Contender": 3, "WTT Champions": 4, "Season finals": 4, "Continental games": 4,
     "Continental championships": 4, "European teams": 4, "Grand Smash": 4.5, "World Cup": 5, "Mixed team world event": 5, "World Championships": 5, "Olympic Games": 5 };
   const starsOf = (e) => STARS[e.type] || Math.min(5, Math.max(1, Math.round(e.prestige || 1)));

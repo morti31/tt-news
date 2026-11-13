@@ -294,7 +294,7 @@ def index_page(data, today):
     def stars(ev):
         n = poster_tiers.stars(ev)
         full = int(n)
-        return (f'<span class="ev-stars" aria-label="{n:g} stars">' + "★" * full + ("<i>★</i>" if n > full else "")
+        return (f'<span class="ev-stars" aria-label="{n:g} stars">' + "★" * full + ('<i class="half">★</i>' if n > full else "")
                 + f'<i class="off">{"★" * (5 - full - (1 if n > full else 0))}</i></span>')
 
     def attrs(ev):

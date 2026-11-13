@@ -1500,3 +1500,12 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
   .ev-big .ev-dates, .evl-row .ev-dates { font-size: 14px; }
   .ev-major .ev-stars { font-size: 17px; }
 }
+/* Half stars and half dots (Grand Smashes, 4.5): the left half filled in the rating's colour */
+.level.tier-1 i.half { background: linear-gradient(90deg, var(--tier-1) 50%, var(--rule) 50%); }
+.level.tier-2 i.half { background: linear-gradient(90deg, var(--tier-2) 50%, var(--rule) 50%); }
+.level.tier-3 i.half { background: linear-gradient(90deg, var(--tier-3) 50%, var(--rule) 50%); }
+.level.tier-4 i.half { background: linear-gradient(90deg, var(--tier-4) 50%, var(--rule) 50%); }
+.level.tier-5 i.half { background: linear-gradient(90deg, var(--tier-5) 50%, var(--rule) 50%); }
+.ev-stars i.half { opacity: 1; background: linear-gradient(90deg, #c9a03a 50%, #c9ced6 50%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ev-major .ev-stars i.half, .ev-feat.is-major .ev-stars i.half { background: linear-gradient(90deg, #c9a03a 50%, #4a4640 50%); -webkit-background-clip: text; background-clip: text; }
+.ev-major .ev-stars i.off, .ev-feat.is-major .ev-stars i.off { color: #4a4640; }
