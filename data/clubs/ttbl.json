@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-13T17:55:00Z",
+ "updated": "2026-11-13T23:44:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -33,12 +33,12 @@
      {
       "pos": 2,
       "team": "TTF Ochsenhausen",
-      "p": 7,
+      "p": 8,
       "w": 6,
-      "l": 1,
+      "l": 2,
       "for": 19,
-      "against": 9,
-      "diff": 10,
+      "against": 12,
+      "diff": 7,
       "pts": 12
      },
      {
@@ -65,10 +65,10 @@
      },
      {
       "pos": 5,
-      "team": "TTC Bad Homburg",
-      "p": 7,
+      "team": "Borussia Dortmund",
+      "p": 8,
       "w": 4,
-      "l": 3,
+      "l": 4,
       "for": 15,
       "against": 15,
       "diff": 0,
@@ -76,25 +76,25 @@
      },
      {
       "pos": 6,
-      "team": "Borussia Dortmund",
-      "p": 7,
-      "w": 3,
+      "team": "Post SV Mühlhausen",
+      "p": 8,
+      "w": 4,
       "l": 4,
-      "for": 12,
-      "against": 15,
-      "diff": -3,
-      "pts": 6
+      "for": 16,
+      "against": 17,
+      "diff": -1,
+      "pts": 8
      },
      {
       "pos": 7,
-      "team": "Post SV Mühlhausen",
-      "p": 7,
-      "w": 3,
+      "team": "TTC Bad Homburg",
+      "p": 8,
+      "w": 4,
       "l": 4,
-      "for": 13,
-      "against": 16,
-      "diff": -3,
-      "pts": 6
+      "for": 16,
+      "against": 18,
+      "diff": -2,
+      "pts": 8
      },
      {
       "pos": 8,
@@ -109,17 +109,6 @@
      },
      {
       "pos": 9,
-      "team": "TTC Fulda-Maberzell",
-      "p": 7,
-      "w": 2,
-      "l": 5,
-      "for": 14,
-      "against": 17,
-      "diff": -3,
-      "pts": 4
-     },
-     {
-      "pos": 10,
       "team": "TTC Bergneustadt",
       "p": 7,
       "w": 2,
@@ -130,7 +119,7 @@
       "pts": 4
      },
      {
-      "pos": 11,
+      "pos": 10,
       "team": "ASC Grünwettersbach",
       "p": 7,
       "w": 2,
@@ -141,15 +130,26 @@
       "pts": 4
      },
      {
+      "pos": 11,
+      "team": "TTC Fulda-Maberzell",
+      "p": 8,
+      "w": 2,
+      "l": 6,
+      "for": 16,
+      "against": 20,
+      "diff": -4,
+      "pts": 4
+     },
+     {
       "pos": 12,
       "team": "TSV Bad Königshofen",
-      "p": 7,
-      "w": 1,
+      "p": 8,
+      "w": 2,
       "l": 6,
-      "for": 10,
-      "against": 19,
-      "diff": -9,
-      "pts": 2
+      "for": 13,
+      "against": 21,
+      "diff": -8,
+      "pts": 4
      }
     ]
    }
@@ -665,8 +665,11 @@
    "when": "2026-11-13T17:00:00Z",
    "home": "Borussia Dortmund",
    "away": "TTF Ochsenhausen",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
    "round": "Matchday 8",
    "venue": "Dortmund"
   },
@@ -674,8 +677,11 @@
    "when": "2026-11-13T17:30:00Z",
    "home": "TTC Fulda-Maberzell",
    "away": "TSV Bad Königshofen",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
    "round": "Matchday 8",
    "venue": "Fulda"
   },
@@ -683,8 +689,11 @@
    "when": "2026-11-13T18:00:00Z",
    "home": "TTC Bad Homburg",
    "away": "Post SV Mühlhausen",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished",
    "round": "Matchday 8",
    "venue": "Bad Homburg"
   },

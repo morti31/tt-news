@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-05T15:32:00Z",
+ "updated": "2026-11-13T23:44:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -397,8 +397,11 @@
    "when": "2026-11-13T21:00:00Z",
    "home": "Florida Crocs",
    "away": "Portland Paddlers",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    15,
+    6
+   ],
+   "status": "live",
    "venue": "Charlotte"
   },
   {
