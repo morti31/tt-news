@@ -2,7 +2,7 @@
  "event": "WTT Contender Istanbul",
  "wtt_event_id": "3257",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Draws",
- "updated": "2026-11-13T08:43:00Z",
+ "updated": "2026-11-13T10:44:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -275,7 +275,9 @@
          "nat": "WAL"
         }
        ],
-       "when": "2026-11-13T09:20:00Z"
+       "when": "2026-11-13T09:20:00Z",
+       "score": "3-1 (11:4,9:11,11:5,11:3,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -331,7 +333,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-13T08:45:00Z"
+       "when": "2026-11-13T08:45:00Z",
+       "score": "1-3 (8:11,11:5,5:11,3:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -358,7 +362,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-13T08:10:00Z"
+       "when": "2026-11-13T08:10:00Z",
+       "score": "3-2 (9:11,6:11,11:9,11:5,13:11)",
+       "winner": 0
       },
       {
        "players": [
@@ -381,7 +387,11 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
         null
        ]
       },
@@ -393,13 +403,20 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
         null
        ]
       },
       {
        "players": [
-        null,
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU",
+         "seed": 5
+        },
         null
        ]
       }
@@ -704,7 +721,9 @@
          "nat": "GER"
         }
        ],
-       "when": "2026-11-13T09:20:00Z"
+       "when": "2026-11-13T09:20:00Z",
+       "score": "0-3 (9:11,10:12,4:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -745,7 +764,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-13T08:45:00Z"
+       "when": "2026-11-13T08:45:00Z",
+       "score": "1-3 (11:7,9:11,10:12,8:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -800,7 +821,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-13T08:10:00Z"
+       "when": "2026-11-13T08:10:00Z",
+       "score": "3-1 (12:10,11:9,12:14,11:9,0:0)",
+       "winner": 0
       }
      ]
     },
@@ -809,8 +832,21 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Ricardo Walther",
+         "nat": "GER"
+        },
         null
+       ]
+      },
+      {
+       "players": [
+        null,
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE",
+         "seed": 7
+        }
        ]
       },
       {
@@ -822,13 +858,10 @@
       {
        "players": [
         null,
-        null
-       ]
-      },
-      {
-       "players": [
-        null,
-        null
+        {
+         "name": "Ryoichi Yoshiyama",
+         "nat": "JPN"
+        }
        ]
       }
      ]
