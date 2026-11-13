@@ -44,13 +44,13 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Events</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Clubs</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Tournaments</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Clubs</a></li>
 <li><a href="/features/">Analysis</a></li><li><a href="/guide/">Guide</a></li>
 </ul></nav></div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Schedule</a><a href="/contact.html#advertise">Advertise</a><a href="/privacy.html">Privacy</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Tournaments</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Calendar</a><a href="/contact.html#advertise">Advertise</a><a href="/privacy.html">Privacy</a></nav>
 <p>Table tennis news, results and fixtures from around the world.</p></div></footer>"""
 
 
@@ -483,7 +483,7 @@ def article_page(a, others, brief=False):
     tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(kind)}'
     tag += "</span>"
     ev = event_of(a)
-    crumb = (f'<a href="/events/">Events</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
+    crumb = (f'<a href="/events/">Tournaments</a> / <a href="/events/{ev["id"]}.html">{e(ev["name"])} {e(ev["year"])}</a>' if ev
              else f'<a href="/#{e(a["category"])}">{e(LABEL.get(a["category"], a["category"]))}</a>')
     ps = autolink([block(p) for p in a["body"]], a)
     for ch in sorted(a.get("charts") or [], key=lambda c: -c.get("after", 0)):
@@ -832,7 +832,7 @@ def build_hubs(arts):
         if ev.get("start"):
             open(os.path.join(ROOT, "events", ev["id"] + ".ics"), "w", encoding="utf-8", newline="").write(build_events.calendar(ev, schedule, SITE, stamp))
     open(os.path.join(ROOT, "events", "index.html"), "w", encoding="utf-8").write(
-        page("Events | Eleven", "Major table tennis tournaments: draws, results, schedules and news.", f"{SITE}/events/", build_events.index_page(EVENTS, today).replace('<main class="wrap">', '<main class="wrap">' + components.subnav("events", "/events/"), 1)))
+        page("Tournaments | Eleven", "Table tennis tournaments: draws, results, schedules and news, plus the full calendar.", f"{SITE}/events/", build_events.index_page(EVENTS, today)))
     json.dump(build_events.event_index(EVENTS), open(os.path.join(ROOT, "data", "event-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return [ev["id"] for ev in EVENTS["events"]]
 

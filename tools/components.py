@@ -320,9 +320,17 @@ document.addEventListener("click", function (ev) {
 </script>"""
 
 
-SUBNAVS = {"events": [("/events/", "Events"), ("/schedule.html", "Schedule and calendar")],
+SUBNAVS = {"events": [("/events/", "Tournaments"), ("/schedule.html", "Schedule and calendar")],
            "players": [("/rankings.html", "World rankings"), ("/players/", "Player profiles")],
            "guide": [("/guide/", "Guides"), ("/#Equipment", "Equipment news")]}
+
+
+def tour_tabs(cur):
+    """The Tournaments section's tabs: Upcoming and Past (the events index, switched by its script) and Full calendar (the schedule)."""
+    tabs = (("upcoming", "/events/#upcoming", "Upcoming"), ("past", "/events/#past", "Past events"), ("calendar", "/schedule.html", "Full calendar"))
+    return ('<nav class="ev-tabs" aria-label="Tournaments">' + "".join(
+        f'<a href="{u}"{f' data-tab="{k}"' if k != "calendar" else ""} aria-selected="{str(k == cur).lower()}"{' aria-current="page"' if k == cur else ""}>{t}</a>'
+        for k, u, t in tabs) + "</nav>")
 
 
 def subnav(group, cur):
