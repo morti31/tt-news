@@ -1481,7 +1481,7 @@ html.mp-open { overflow: hidden; }
 .ev-major .ev-dates { font-size: 17px; }
 b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2px 7px; border-radius: 4px; margin-right: 8px; letter-spacing: .12em; }
 @media (max-width: 700px) {
-  .ev-tabs a { flex: 1; text-align: center; }
+  .ev-tabs a { flex: 1; text-align: center; padding: 10px 6px; font-size: 15px; }
   .ev-now a { grid-template-columns: 1fr; gap: 12px; }
   .ev-now .ev-name { font-size: 22px; }
   .ev-feats { grid-template-columns: 1fr; }

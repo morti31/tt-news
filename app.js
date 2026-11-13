@@ -307,7 +307,7 @@
   }
   function latestColumns(list) {
     const group = (s) => (s.category === "Clubs" ? "clubs" : s.event ? "events" : "other");
-    const cols = [["events", "Events", "/events/"], ["clubs", "Clubs", "/clubs/"], ["other", "Other news", "/news/"]];
+    const cols = [["events", "Tournaments", "/events/"], ["clubs", "Clubs", "/clubs/"], ["other", "Other news", "/news/"]];
     return `<div class="l3">${cols.map(([k, title, href]) => {
       const items = list.filter((s) => group(s) === k).slice(0, 4);
       if (!items.length) return "";

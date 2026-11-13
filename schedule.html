@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Schedule: Eleven</title>
+<title>Full calendar: Eleven</title>
 <meta name="description" content="Every major table tennis tournament and club competition, with session times. Subscribe in Google Calendar, Apple Calendar or Outlook and it stays up to date.">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/img/icons/favicon.svg" type="image/svg+xml">
@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Figtree:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
-<link rel="stylesheet" href="styles.css?v=3d1066f7">
+<link rel="stylesheet" href="styles.css?v=18c238d7">
 <meta name="google-adsense-account" content="ca-pub-7633315595642330">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7633315595642330" crossorigin="anonymous"></script>
 </head>
@@ -25,7 +25,7 @@
     <nav aria-label="Sections">
       <ul class="sections">
         <li><a href="/">Home</a></li>
-        <li><a href="/events/" aria-current="page">Events</a></li>
+        <li><a href="/events/" aria-current="page">Tournaments</a></li>
         <li><a href="/rankings.html">Players</a></li>
         <li><a href="/clubs/">Clubs</a></li>
         <li><a href="/features/">Analysis</a></li>
@@ -41,10 +41,9 @@
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
 
 <main class="wrap">
-<nav class="subnav" aria-label="Events"><a href="/events/">Events</a><a href="/schedule" aria-current="page">Schedule and calendar</a></nav>
   <section class="sched-head">
     <div>
-      <h1>Schedule</h1>
+      <h1>Tournaments</h1>
       <p class="lede">Every major tournament and club competition, with session times once they're published. Add it to your calendar and new dates and times appear on their own.</p>
     </div>
     <div class="subscribe panel" aria-labelledby="sub-h">
@@ -61,6 +60,7 @@
       </div>
     </div>
   </section>
+<nav class="ev-tabs" aria-label="Tournaments"><a href="/events/#upcoming" data-tab="upcoming" aria-selected="false">Upcoming</a><a href="/events/#past" data-tab="past" aria-selected="false">Past events</a><a href="/schedule.html" aria-selected="true" aria-current="page">Full calendar</a></nav>
 
   <div class="toggle sched-filter" id="filter" role="group" aria-label="Filter">
     <button data-s="All" aria-pressed="true">Everything</button>
@@ -91,13 +91,13 @@
 <footer class="footer">
   <div class="wrap">
     <p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-    <nav class="foot-links" aria-label="Footer"><a href="/about">About</a><a href="/contact">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Events</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule">Schedule</a><a href="/contact#advertise">Advertise</a><a href="/privacy">Privacy</a></nav>
+    <nav class="foot-links" aria-label="Footer"><a href="/about">About</a><a href="/contact">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Tournaments</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule">Schedule</a><a href="/contact#advertise">Advertise</a><a href="/privacy">Privacy</a></nav>
     <p>Times are shown in your own time zone.</p>
   </div>
 </footer>
 
 <script src="schedule.js?v=24b8f0c3"></script>
-<script src="fixtures.js?v=375552db"></script>
+<script src="fixtures.js?v=f95745cb"></script>
 <script src="widgets.js?v=14e401f0"></script>
 <script src="matchpop.js?v=60ddc3e6" defer></script>
 </body>

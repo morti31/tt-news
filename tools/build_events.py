@@ -251,7 +251,7 @@ def hub(ev, items, schedule, today, news):
     top_html = empty + "".join(top)
     below_html = "".join(x for x in order if x not in top)
     body = f"""<main class="wrap hub">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/events/">Events</a> / {e(ev["group"])}</nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/events/">Tournaments</a> / {e(ev["group"])}</nav>
 <div class="hub-top{" has-poster" if hero else ""}">{hero}
 <header class="hub-head" style="--tier:{TIERS.get(ev["tier"], "#17202b")}">
   <div><p class="hub-kicker">{pill}<span>{e(ev["group"])}</span></p>
@@ -361,8 +361,8 @@ def index_page(data, today):
     present = {ev.get("series") for ev in data["events"] if ev["group"] == "WTT Series"}
     levels = "".join(f'<button data-s="{e(x)}" aria-pressed="false">{e(x.replace("WTT ", "", 1))}</button>' for x in order if x in present)
     return f"""<main class="wrap">
-<section class="sched-head"><div><h1>Events</h1><p class="lede">Draws, results, schedules and news for every tournament.</p></div></section>
-<div class="ev-tabs" role="tablist"><a href="#upcoming" role="tab" data-tab="upcoming" aria-selected="true">Upcoming</a><a href="#past" role="tab" data-tab="past" aria-selected="false">Past events</a></div>
+<section class="sched-head"><div><h1>Tournaments</h1><p class="lede">Draws, results, schedules and news for every tournament.</p></div></section>
+{components.tour_tabs("upcoming")}
 <div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
 <div class="toggle sched-filter ev-levels" role="group" aria-label="Filter WTT events by level" hidden><button data-s="" aria-pressed="true">All WTT</button>{levels}</div>
 <div class="ev-panel" id="upcoming">{upcoming}</div>
@@ -381,7 +381,7 @@ function fromHash() {{
   if (!Y && years[0]) Y = years[0].id;
 }}
 function apply() {{
-  document.querySelectorAll(".ev-tabs a").forEach((a) => a.setAttribute("aria-selected", String(a.dataset.tab === T)));
+  document.querySelectorAll(".ev-tabs a[data-tab]").forEach((a) => a.setAttribute("aria-selected", String(a.dataset.tab === T)));
   document.getElementById("upcoming").hidden = T !== "upcoming";
   document.getElementById("past").hidden = T !== "past";
   levels.hidden = G !== "WTT Series";
@@ -401,7 +401,7 @@ function apply() {{
   }});
   document.querySelector(".ev-none").hidden = any;
 }}
-document.querySelectorAll(".ev-tabs a").forEach((a) => a.addEventListener("click", (ev) => {{
+document.querySelectorAll(".ev-tabs a[data-tab]").forEach((a) => a.addEventListener("click", (ev) => {{
   ev.preventDefault(); T = a.dataset.tab; history.replaceState(null, "", "#" + T); apply();
 }}));
 ytabs.forEach((a) => a.addEventListener("click", (ev) => {{
