@@ -1,7 +1,126 @@
 {
-  "updated": "2026-11-13T12:40:00Z",
+  "updated": "2026-11-13T16:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "world-para-championships-2026-day-one-bayley-twomey",
+      "category": "England",
+      "date": "2026-11-13",
+      "published": "2026-11-13T16:45:00Z",
+      "headline": "Will Bayley and Bly Twomey save match points to reach World Para Championships mixed quarter-finals",
+      "summary": "Britain's European mixed class 14 champions beat Ukraine 13-11 in the decider in Pattaya after Bly Twomey needed a medical timeout, while Billy Shilton's doubles title defence ended.",
+      "matches": [
+        {
+          "label": "Mixed doubles class 14, last 16",
+          "event": "World Para Championships",
+          "sides": [
+            {
+              "name": "Will Bayley / Bly Twomey",
+              "nat": "GBR"
+            },
+            {
+              "name": "Maksym Nikolenko / Maryna Lytovchenko",
+              "nat": "UKR"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              11
+            ]
+          ]
+        },
+        {
+          "label": "Women's doubles class 14, last 16",
+          "event": "World Para Championships",
+          "sides": [
+            {
+              "name": "Wang Rui / Jiang Shan",
+              "nat": "CHN"
+            },
+            {
+              "name": "Fliss Pickard / Bly Twomey",
+              "nat": "GBR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Men's doubles class 14, quarter-final",
+          "event": "World Para Championships",
+          "sides": [
+            {
+              "name": "Ian Seidenfeld / Samuel Altshuler",
+              "nat": "USA"
+            },
+            {
+              "name": "Billy Shilton / Martin Perry",
+              "nat": "GBR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        }
+      ],
+      "top": true
+    },
     {
       "id": "wtt-contender-istanbul-2026-day-five-green-hursey-mixed-semi-finals",
       "category": "England",
@@ -10,8 +129,7 @@
       "published": "2026-11-13T12:40:00Z",
       "headline": "Connor Green and Anna Hursey reach WTT Contender Istanbul mixed semi-finals as Poret and Nagasaki fall",
       "summary": "Connor Green and Anna Hursey beat Brazil's Guilherme Teodoro and Giulia Takahashi from two games down, on a morning when the seeds Thibault Poret, Miyu Nagasaki and Qin Yuxuan all lost.",
-      "draw": "3257",
-      "top": true
+      "draw": "3257"
     },
     {
       "id": "ettu-champions-league-men-2026-27-last-16-pontoise-dusseldorf",
