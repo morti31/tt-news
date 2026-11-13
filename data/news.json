@@ -1,7 +1,184 @@
 {
-  "updated": "2026-11-13T16:45:00Z",
+  "updated": "2026-11-13T18:55:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "wtt-contender-istanbul-2026-day-five-green-hursey-mixed-final",
+      "category": "England",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-13",
+      "published": "2026-11-13T18:55:00Z",
+      "headline": "Connor Green and Anna Hursey reach WTT Contender Istanbul mixed doubles final",
+      "summary": "England's Connor Green and Wales's Anna Hursey beat South Korea's Lim Yunoh and Joo Cheonhui 11-5 in the fifth game and will play Russia's Evgeny Tikhonov and Maria Panfilova for the title.",
+      "draw": "3257",
+      "score": "3-2",
+      "matches": [
+        {
+          "label": "Mixed doubles, semi-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Connor Green / Anna Hursey",
+              "nat": "ENG/WAL"
+            },
+            {
+              "name": "Lim Yunoh / Joo Cheonhui",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Mixed doubles, semi-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Evgeny Tikhonov / Maria Panfilova",
+              "nat": "RUS"
+            },
+            {
+              "name": "Huang Youzheng / Qin Yuxuan",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, last 16",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Joo Cheonhui",
+              "nat": "KOR"
+            },
+            {
+              "name": "Sofia Polcanova",
+              "nat": "AUT"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              13,
+              11
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, last 16",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Kang Dongsoo",
+              "nat": "KOR"
+            },
+            {
+              "name": "Nikita Artemenko",
+              "nat": "RUS"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "kLmhEI7CR94",
+          "title": "Nikita Artemenko v Kang Dongsoo, men's singles last 16",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "H_JpX1LJMyI",
+          "title": "Li Tianyang v Abdullah Yigenler, men's singles last 16",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
     {
       "id": "world-para-championships-2026-day-one-bayley-twomey",
       "category": "England",
