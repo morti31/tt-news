@@ -451,7 +451,7 @@ def look(ev):
     if ev.get("look"):
         return ev["look"]
     if tiered(ev):
-        return {3: "three", 4: "four", 4.5: "five_vermilion", 5: "five_lacquer"}.get(poster_tiers.stars(ev), "ticket")
+        return {3: "three", 4: "four", 4.5: "five_vermilion", 5: "five_mirror"}.get(poster_tiers.stars(ev), "ticket")
     s, tier = ev.get("series", ""), ev.get("tier")
     if tier == "smash":
         return "arena"
@@ -722,6 +722,8 @@ def tile_for(ev, uid):
     lk = look(ev)
     if lk == "five_lacquer":
         return poster_tiers.square_lacquer(ev, uid)
+    if lk == "five_mirror":
+        return poster_tiers.square_mirror(ev, uid)
     if lk == "five_vermilion":
         return poster_tiers.square_vermilion(ev, uid)
     if lk in ("three", "four", "five"):

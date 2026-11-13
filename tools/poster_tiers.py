@@ -119,8 +119,22 @@ def laurel(cx, cy, r, fill):
     return "".join(out)
 
 
+FLOODLIGHTS = "hall-lights.jpg"   # kept for 5-star events: every one uses it, and no Grand Smash does
+SMASH_PHOTOS = {"smash_china": "dome-seats.jpg", "smash_europe": "seats-rows.jpg", "smash_usa": "stadium-seats.jpg", "smash_singapore": "seats-blue.jpg"}
+
+
 def _photo(ev):
-    return P._variant(ev)[4]
+    n = stars(ev)
+    if n == 5:
+        return FLOODLIGHTS
+    photo = P._variant(ev)[4]
+    if n == 4.5:
+        # each Smash keeps its own photo, never the floodlights
+        photo = SMASH_PHOTOS.get(smash_scheme(ev), photo)
+        if photo == FLOODLIGHTS:
+            others = [k for k in P.PHOTOS if k != FLOODLIGHTS]
+            photo = others[sum(map(ord, ev.get("id", ""))) % len(others)]
+    return photo
 
 
 def _mono(uid, dark, light, key="mono", contrast=1.0):
