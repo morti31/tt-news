@@ -464,3 +464,75 @@ def five_gilt(ev, uid):
 
 def square_gilt(ev, uid):
     return square_ink(ev, uid, "gilt")
+
+
+def five_mirror(ev, uid, scheme="gilt"):
+    """5 stars: the Smash layout turned round so the two never look alike: photo on the left, type on the right,
+    the seal on the photo's top corner and the margin rule on the right."""
+    BG, FG, AC, SEAL, SINK, LAB, PD, PL, FR = SCHEMES[scheme]
+    photo = _photo(ev)
+    defs, noise = grain(uid, .06, dark=False)
+    head = type_name(ev).upper()
+    city = ev["city"].upper()
+    PX0, PX1 = 90, 760
+    L, R = PX1 + 90, W - 150
+    hs = fit(head, (R - L) * .9, 72, 0.12)
+    cs = fit(city, R - L, 190, -0.005)
+    b = [f'<defs>{defs}{_mono(uid, PD, PL, contrast=.8)}<clipPath id="{uid}-p"><rect x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}"/></clipPath></defs>',
+         f'<rect width="{W}" height="{H}" fill="{BG}"/>',
+         f'<g clip-path="url(#{uid}-p)"><image href="{P.photo_href(photo)}" x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-mono)"/></g>',
+         f'<rect x="{PX0}" y="90" width="{PX1 - PX0}" height="{H - 180}" fill="none" stroke="{FR}" stroke-width="1"/>',
+         _enso(PX0 + 170, H - 230, 115, 24, AC),
+         f'<line x1="{W - 96}" y1="90" x2="{W - 96}" y2="{H - 90}" stroke="{AC}" stroke-width="3"/>',
+         f'<g transform="translate({W - 70} 90) rotate(90)">{t((ev.get("name", "") + " " + str(ev.get("year", ""))).upper(), 0, 0, 15, LAB, 600, track=0.42)}</g>',
+         _seal(PX0 + 40, 130, 120, stars(ev), ev.get("year", ""), SEAL, SINK)]
+    top = 170
+    if emblem_kind(ev):
+        b.append(laurel(L + 52, 170, 52, AC))
+        top = 290
+    b.append(star_row(L, top, stars(ev), 40, AC, gap=1.3))
+    yh = top + 30 + hs * .73
+    b.append(t(head, L, yh, hs, AC, 700, track=0.06, stretch=85))
+    b.append(f'<rect x="{L}" y="{yh + 26:.0f}" width="64" height="2" fill="{FG}"/>')
+    y2 = yh + 56 + cs * .73
+    b.append(t(city, L - cs * .02, y2, cs, FG, 800, track=-0.005, stretch=75))
+    yb = H - 210
+    b.append(f'<rect x="{L}" y="{yb}" width="{R - L}" height="1" fill="{FG}" fill-opacity=".5"/>')
+    b.append(label("Dates", L, yb + 42, LAB, 13, opacity=1))
+    b.append(t(P.date_range(ev), L, yb + 76, 24, FG, 500))
+    b.append(label("Venue", L + 330, yb + 42, LAB, 13, opacity=1))
+    for j, ln in enumerate(P._wrap(P.place(ev), 20)[:2]):
+        b.append(t(ln, L + 330, yb + 76 + j * 28, 24, FG, 500))
+    b.append(wordmark(R, 70, FG, 24))
+    b.append(noise)
+    return b
+
+
+def square_mirror(ev, uid, scheme="gilt"):
+    """Square 5 stars: type above, photo below (the Smash square has the photo on top)."""
+    BG, FG, AC, SEAL, SINK, LAB, PD, PL, FR = SCHEMES[scheme]
+    photo = _photo(ev)
+    defs, noise = grain(uid, .06, dark=False)
+    head = type_name(ev).upper()
+    city = ev["city"].upper()
+    L, R = 80, TW - 80
+    hs, cs = fit(head, R - 220 - L, 60, 0.12), fit(city, R - L, 170, -0.005)
+    b = [f'<rect width="{TW}" height="{TH}" fill="{BG}"/>']
+    b.append(star_row(L, 120, stars(ev), 32, AC, gap=1.3))
+    y = 140 + hs * .73
+    b.append(t(head, L, y, hs, AC, 700, track=0.06, stretch=85))
+    y2 = y + 30 + cs * .73
+    b.append(t(city, L - cs * .02, y2, cs, FG, 800, track=-0.005, stretch=75))
+    b.append(t(P.date_range(ev), L, y2 + 56, 28, FG, 500))
+    b.append(label(P.place(ev), L, y2 + 92, LAB, 16, opacity=1))
+    PY = y2 + 130
+    PH = TH - 80 - PY
+    b[0:0] = [f'<defs>{defs}{_mono(uid, PD, PL, contrast=.8)}<clipPath id="{uid}-p"><rect x="{L}" y="{PY:.0f}" width="{R - L}" height="{PH:.0f}"/></clipPath></defs>']
+    b += [f'<g clip-path="url(#{uid}-p)"><image href="{P.photo_href(photo)}" x="{L}" y="{PY:.0f}" width="{R - L}" height="{PH:.0f}" preserveAspectRatio="xMidYMid slice" filter="url(#{uid}-mono)"/></g>',
+          f'<rect x="{L}" y="{PY:.0f}" width="{R - L}" height="{PH:.0f}" fill="none" stroke="{FR}" stroke-width="1"/>',
+          _enso(L + 90, PY + PH - 70, 70, 18, AC)]
+    if emblem_kind(ev):
+        b.append(laurel(R - 70, PY + PH / 2, 46, "#f3ede1"))
+    b.append(_seal(R - 116, 70, 116, stars(ev), ev.get("year", ""), SEAL, SINK))
+    b.append(noise)
+    return b
