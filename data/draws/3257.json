@@ -2,7 +2,7 @@
  "event": "WTT Contender Istanbul",
  "wtt_event_id": "3257",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Draws",
- "updated": "2026-11-13T17:09:00Z",
+ "updated": "2026-11-13T22:50:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -323,7 +323,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-13T15:50:00Z"
+       "when": "2026-11-13T15:50:00Z",
+       "score": "2-3 (11:8,5:11,11:5,7:11,5:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -414,7 +416,11 @@
          "name": "Zong Geman",
          "nat": "CHN"
         },
-        null
+        {
+         "name": "Miu Hirano",
+         "nat": "JPN",
+         "seed": 7
+        }
        ],
        "when": "2026-11-14T08:45:00Z"
       },
@@ -778,7 +784,9 @@
          "nat": "KAZ"
         }
        ],
-       "when": "2026-11-13T16:25:00Z"
+       "when": "2026-11-13T16:25:00Z",
+       "score": "0-3 (9:11,3:11,9:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -879,7 +887,10 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Fang Bo",
+         "nat": "KAZ"
+        },
         {
          "name": "Lubomir Jancarik",
          "nat": "CZE",
@@ -1676,7 +1687,9 @@
          "seed": 4
         }
        ],
-       "when": "2026-11-13T17:00:00Z"
+       "when": "2026-11-13T17:00:00Z",
+       "score": "2-3 (3:11,11:7,8:11,11:9,9:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -1690,7 +1703,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-13T17:00:00Z"
+       "when": "2026-11-13T17:45:00Z",
+       "score": "3-2 (7:11,13:11,11:3,15:17,11:5)",
+       "winner": 0
       }
      ]
     },
@@ -1699,9 +1714,18 @@
      "matches": [
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Evgeny Tikhonov / Maria Panfilova",
+         "nat": "RUS",
+         "seed": 4
+        },
+        {
+         "name": "Connor Green / Anna Hursey",
+         "nat": "ENG/WAL",
+         "seed": 3
+        }
+       ],
+       "when": "2026-11-14T15:50:00Z"
       }
      ]
     }
