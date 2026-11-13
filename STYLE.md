@@ -7,7 +7,7 @@ Eleven writes like the Guardian's sport desk: clear, confident, plainly told, wi
 - **Don't attribute what happened.** Results, scores, who plays whom, times, line-ups, records and confirmed withdrawals are facts: state them. Write "Lebrun won 14 of the next 17 points", never "Lebrun won 14 of the next 17 points, according to tennis2table". Keep the source in `sources`, not in the sentence.
 - **Do attribute** quotes, opinions, claims that only one outlet has, things not yet confirmed, reasons for an injury or withdrawal that the player or federation hasn't given, and conflicting reports. "Chinese media reported" belongs only where the fact itself is in doubt.
 - When a fact is in doubt, say once that it is, then move on. Don't attribute every following sentence.
-- Quotes: "said" for news, in the past tense. Name where translated quotes come from the first time ("she told Sina Sports"). Reported speech needs attribution once per paragraph, no more.
+- Quotes: "said" for news, in the past tense. Name where translated quotes come from the first time ("she told Sina Sports"). Give foreign-language quotes in English only, marked "(translated from French)" or similar; never print the original words as well. Reported speech needs attribution once per paragraph, no more.
 - Never write "Eleven understands", "Eleven has learned" or similar unless we have our own sourcing.
 
 ## News stories
