@@ -5,10 +5,20 @@
  "gender": "M",
  "born": "1998-07-30",
  "hand": "Right",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "1. FC Saarbrücken",
+   "league": "Tischtennis Bundesliga"
+  },
+  {
+   "club": "KS Orlicz Suchedniów",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=118927"
+  "https://www.worldtabletennis.com/playerDescription?playerId=118927",
+  "https://www.ettu.org/roskilde-and-lille-rock-hylo-ettu-champions-league-with-stunning-upsets/"
  ],
  "checked": "2026-11-06",
  "stub": true

@@ -1,7 +1,384 @@
 {
-  "updated": "2026-11-13T18:55:00Z",
+  "updated": "2026-11-14T00:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ettu-europe-cup-2026-27-stage-1-day-one-starr-croatia-novi-sad",
+      "category": "Clubs",
+      "kind": "Update",
+      "date": "2026-11-13",
+      "published": "2026-11-14T00:35:00Z",
+      "headline": "ETTU Europe Cup: STARR Croatia come from behind and Novi Sad win 8-1 as Stage 1 opens",
+      "summary": "Hosts STK STARR Croatia beat TJ Geolog Roznava 3-2 in Varaždin and TTC Novi Sad beat Girbau Vic 8-1 on the opening day of the men's and women's Europe Cup.",
+      "body": [
+        "The hosts won on the opening day of both ETTU Europe Cup first stages on Friday: STK STARR Croatia beat Slovakia's TJ Geolog Roznava 3-2 in the men's event in Varaždin, and TTC Novi Sad beat Spain's Girbau Vic TT 8-1 in the women's event at the SPENS Arena in Novi Sad. Sixteen clubs in four groups play in each, from 13 to 15 November.",
+        "STARR Croatia trailed 2-1 before Qiu Liang beat Andrii Grebeniuk in straight games, and Zeng Jia then beat Ingemar Peter 11-8, 11-5, 10-12, 11-6 to complete the comeback. CTT Les Borges Vall beat KS Olesno 3-2, with Francesc Carrera winning both his matches, and SPG Felbermayr Wels, SKST Havirov, Energa Manekin Torun, CTT Olot, SKST Chodov and Alicante TM all won 3-0.",
+        "In Novi Sad, Kasumi Kimura won the opening match against Honoka Kawakita. ASD Quattro Mori Cagliari beat Museo de la Almendra Francisco Morales 8-6 and CSM Constanta beat SH-ITB Budaörsi 8-5 in the closest ties, while STK Dr. Časl Zagreb, Politechnika Rzeszów and CD Indiana Games all won 8-0.",
+        "Both stages continue on Saturday and finish on Sunday."
+      ],
+      "matches": [
+        {
+          "label": "Men's Stage 1",
+          "event": "ETTU Europe Cup Men",
+          "sides": [
+            {
+              "name": "STK STARR Croatia",
+              "nat": "CRO"
+            },
+            {
+              "name": "TJ Geolog Roznava",
+              "nat": "SVK"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ]
+        },
+        {
+          "label": "Women's Stage 1",
+          "event": "ETTU Europe Cup Women",
+          "sides": [
+            {
+              "name": "TTC Novi Sad",
+              "nat": "SRB"
+            },
+            {
+              "name": "Girbau Vic TT",
+              "nat": "ESP"
+            }
+          ],
+          "score": [
+            8,
+            1
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ETTU: STARR Croatia fight back as Europe Cup Men opens in Varaždin",
+          "url": "https://www.ettu.org/starr-croatia-fight-back-as-europe-cup-men-opens-in-varazdin/"
+        },
+        {
+          "name": "ETTU: Quattro Mori and CSM Constanta win tight battles as hosts Novi Sad shine in Europe Cup Women opener",
+          "url": "https://www.ettu.org/quattro-mori-and-csm-constanta-win-tight-battles-as-hosts-novi-sad-shine-in-europe-cup-women-opener/"
+        }
+      ]
+    },
+    {
+      "id": "ettu-champions-league-men-2026-27-last-16-first-legs",
+      "category": "Clubs",
+      "league": "champions-league",
+      "date": "2026-11-13",
+      "published": "2026-11-14T00:30:00Z",
+      "top": true,
+      "headline": "Roskilde beat Nîmes/Montpellier and Lille beat holders Saarbrücken in ETTU Champions League Men",
+      "summary": "Last season's finalists both lost their last-16 first legs on Friday, Nîmes/Montpellier 3-0 in Roskilde without the Lebrun brothers and Saarbrücken 3-2 to Lille.",
+      "matches": [
+        {
+          "label": "Last 16, first leg",
+          "event": "ETTU Champions League Men",
+          "sides": [
+            {
+              "name": "Roskilde BTK 61",
+              "nat": "DEN"
+            },
+            {
+              "name": "Alliance Nîmes/Montpellier",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Jens Lundqvist",
+                  "nat": "SWE"
+                },
+                {
+                  "name": "Rémi Betelu",
+                  "nat": "FRA"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Anders Eriksson",
+                  "nat": "SWE"
+                },
+                {
+                  "name": "Grégoire Jean",
+                  "nat": "FRA"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  3,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Tobias Rasmussen",
+                  "nat": "DEN"
+                },
+                {
+                  "name": "Felipe Doti Arado",
+                  "nat": "BRA"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Last 16, first leg",
+          "event": "ETTU Champions League Men",
+          "sides": [
+            {
+              "name": "Lille Métropole TT",
+              "nat": "FRA"
+            },
+            {
+              "name": "1. FC Saarbrücken",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Romain Brard",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Alvaro Robles",
+                  "nat": "ESP"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Amir Hossein Hodaei",
+                  "nat": "IRI"
+                },
+                {
+                  "name": "Patrick Franziska",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ],
+                [
+                  5,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Fabio Rakotoarimanana",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Albert Vilardell",
+                  "nat": "ESP"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Romain Brard",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Patrick Franziska",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  8,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Amir Hossein Hodaei",
+                  "nat": "IRI"
+                },
+                {
+                  "name": "Alvaro Robles",
+                  "nat": "ESP"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Roskilde and Lille rock HYLO ETTU Champions League with stunning upsets",
+          "url": "https://www.ettu.org/roskilde-and-lille-rock-hylo-ettu-champions-league-with-stunning-upsets/"
+        },
+        {
+          "name": "ETTU: Borussia Düsseldorf take command with away victory in Pontoise",
+          "url": "https://www.ettu.org/borussia-dusseldorf-take-command-with-away-victory-in-pontoise/"
+        }
+      ]
+    },
     {
       "id": "wtt-contender-istanbul-2026-day-five-green-hursey-mixed-final",
       "category": "England",
@@ -295,8 +672,7 @@
             ]
           ]
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "wtt-contender-istanbul-2026-day-five-green-hursey-mixed-semi-finals",
