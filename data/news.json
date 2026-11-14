@@ -1,7 +1,270 @@
 {
-  "updated": "2026-11-14T00:40:00Z",
+  "updated": "2026-11-14T08:35:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "southeast-asian-championships-2026-malaysia-mixed-women-doubles-javen-choong-karen-lyne",
+      "category": "International",
+      "kind": "Update",
+      "date": "2026-11-13",
+      "published": "2026-11-14T08:30:00Z",
+      "headline": "Malaysia win mixed and women's doubles titles at the Southeast Asian Championships",
+      "summary": "Javen Choong and Karen Lyne beat Singapore's Koen Pang and Ser Lin Qian in the mixed doubles final in Kuala Lumpur, and Lyne then won the women's doubles with Tee Ai Xin.",
+      "tags": [
+        "Malaysia"
+      ],
+      "matches": [
+        {
+          "label": "Mixed doubles, final",
+          "event": "Southeast Asian Championships",
+          "sides": [
+            {
+              "name": "Javen Choong / Karen Lyne",
+              "nat": "MAS"
+            },
+            {
+              "name": "Koen Pang / Ser Lin Qian",
+              "nat": "SGP"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              15,
+              13
+            ]
+          ]
+        },
+        {
+          "label": "Women's doubles, final",
+          "event": "Southeast Asian Championships",
+          "sides": [
+            {
+              "name": "Karen Lyne / Tee Ai Xin",
+              "nat": "MAS"
+            },
+            {
+              "name": "Almaira Nebuchadnezzar / Siti Aminah",
+              "nat": "INA"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "The hosts Malaysia won two titles at the Southeast Asian Championships in Kuala Lumpur, after losing both team finals earlier in the week. Javen Choong and Karen Lyne beat Singapore's Koen Pang and Ser Lin Qian 11-9, 8-11, 11-4, 15-13 in the mixed doubles final for Malaysia's first gold of the championships, and Lyne then won the women's doubles with Tee Ai Xin, beating Indonesia's Almaira Nebuchadnezzar and Siti Aminah 12-10, 11-8, 8-11, 11-1.",
+        "Choong and Lyne beat another Singaporean pair, Loy Ming Ying and Loy Xing Yao, 14-12 in the fifth game of their semi-final, and Lyne and Tee beat Vietnam's Hoang Tra My and Tran Mai Ngoc in four games. Choong had earlier lost a men's doubles semi-final 3-2 to Singapore's Koen Pang and Josh Chua.",
+        "\"Winning this gold boosts my confidence. Before the tournament, I was still not very confident and felt nervous,\" Choong, Malaysia's No 1 men's singles player, told The Star. He said he and Lyne became nervous and their hands were tight as they tried to close out the fourth game.",
+        "Vietnam won the [men's team title](/news/southeast-asian-championships-2026-vietnam-men-team-title-malaysia.html) and Singapore kept the [women's team title](/news/southeast-asian-championships-2026-singapore-women-team-title-malaysia.html), both against Malaysia in the final. The singles finish the championships on Saturday."
+      ],
+      "sources": [
+        {
+          "name": "The Star: Paddlers on the double",
+          "url": "https://www.thestar.com.my/sport/others/2026/11/14/paddlers-on-the-double"
+        }
+      ]
+    },
+    {
+      "id": "wtt-contender-istanbul-2026-doubles-semi-finals-hashimoto-nagasaki-kihara-hirano",
+      "category": "International",
+      "kind": "Update",
+      "event": "wtt-contender-istanbul-2026",
+      "draw": "3257",
+      "date": "2026-11-14",
+      "published": "2026-11-14T08:25:00Z",
+      "headline": "WTT Contender Istanbul: Hashimoto and Nagasaki set up all-Japanese women's doubles final as Artemenko and Grebnev reach men's final",
+      "summary": "Honoka Hashimoto and Miyu Nagasaki beat the top seeds Kim Nayeong and Joo Cheonhui to meet Miyuu Kihara and Miu Hirano in the women's doubles final, while Nikita Artemenko and Maksim Grebnev play Luxembourg's Luka Mladenovic and Mael Van Dessel for the men's title.",
+      "matches": [
+        {
+          "label": "Women's doubles, semi-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Honoka Hashimoto / Miyu Nagasaki",
+              "nat": "JPN"
+            },
+            {
+              "name": "Kim Nayeong / Joo Cheonhui",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        },
+        {
+          "label": "Men's doubles, semi-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Nikita Artemenko / Maksim Grebnev",
+              "nat": "RUS"
+            },
+            {
+              "name": "Petyo Krastev / Yoan Velichkov",
+              "nat": "BUL"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Women's doubles, semi-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Miyuu Kihara / Miu Hirano",
+              "nat": "JPN"
+            },
+            {
+              "name": "Jia Nan Yuan / Prithika Pavade",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Men's doubles, semi-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Luka Mladenovic / Mael Van Dessel",
+              "nat": "LUX"
+            },
+            {
+              "name": "Kang Dongsoo / Lim Yunoh",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "The women's doubles title at WTT Contender Istanbul will stay in Japan after both semi-finals went the Japanese way on Saturday morning. Honoka Hashimoto and Miyu Nagasaki, the fourth seeds, beat the top seeds, South Korea's Kim Nayeong and Joo Cheonhui, 11-6, 11-9, 4-11, 11-3, and the third seeds Miyuu Kihara and Miu Hirano beat France's Jia Nan Yuan and Prithika Pavade 11-4, 12-14, 11-9, 11-7.",
+        "The men's final is between the top seeds, Russia's Nikita Artemenko and Maksim Grebnev, and Luxembourg's Luka Mladenovic and Mael Van Dessel. Artemenko and Grebnev needed 22 minutes to beat Bulgaria's Petyo Krastev and 19-year-old Yoan Velichkov 11-8, 11-9, 11-4, and Mladenovic and Van Dessel, seeded 14th, beat South Korea's Kang Dongsoo and Lim Yunoh 13-11, 11-6, 11-7, also in straight games.",
+        "Hashimoto, the top seed in the women's singles, and Hirano still have singles quarter-finals to play on Saturday: Hashimoto against Brazil's Bruna Takahashi and Hirano against China's Zong Geman. Joo, the second seed, meets Romania's Bernadette Szőcs. The singles semi-finals start at about 1.30pm UK time.",
+        "England's Connor Green and Wales's Anna Hursey [play Evgeny Tikhonov and Maria Panfilova in the mixed doubles final](/news/wtt-contender-istanbul-2026-connor-green-anna-hursey-mixed-doubles-final.html) at about 3.50pm UK time on Saturday. The remaining finals are on Sunday. Times are approximate."
+      ],
+      "sources": [
+        {
+          "name": "World Table Tennis: WTT Contender Istanbul 2026 results",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257"
+        },
+        {
+          "name": "World Table Tennis: WTT Contender Istanbul 2026 order of play",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Schedule"
+        }
+      ]
+    },
     {
       "id": "ettu-europe-cup-2026-27-stage-1-day-one-starr-croatia-novi-sad",
       "category": "Clubs",
@@ -545,6 +808,16 @@
       ],
       "videos": [
         {
+          "id": "tXeLUP27o2U",
+          "title": "Connor Green and Anna Hursey v Lim Yunoh and Joo Cheonhui, mixed doubles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "8MGL-Tpi_38",
+          "title": "Huang Youzheng and Qin Yuxuan v Evgeny Tikhonov and Maria Panfilova, mixed doubles semi-final",
+          "channel": "World Table Tennis"
+        },
+        {
           "id": "kLmhEI7CR94",
           "title": "Nikita Artemenko v Kang Dongsoo, men's singles last 16",
           "channel": "World Table Tennis"
@@ -553,8 +826,14 @@
           "id": "H_JpX1LJMyI",
           "title": "Li Tianyang v Abdullah Yigenler, men's singles last 16",
           "channel": "World Table Tennis"
+        },
+        {
+          "id": "I33pldwi5d4",
+          "title": "Sofia Polcanova v Joo Cheonhui, women's singles last 16",
+          "channel": "World Table Tennis"
         }
-      ]
+      ],
+      "modified": "2026-11-14T08:35:00Z"
     },
     {
       "id": "world-para-championships-2026-day-one-bayley-twomey",
