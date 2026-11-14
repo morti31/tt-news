@@ -36,6 +36,34 @@ def main():
                 r = call(k, what, CategoryCode="SEN", SubEventCode=ev, StartRank=1, EndRank=3)
                 print(what, ev, json.dumps(r, ensure_ascii=False)[:1500])
         return
+    from rankings import name as nice
+    out = {}
+    pub = week = None
+    for ev in ("WD", "MD", "XD"):
+        rows = []
+        for a, b in ((1, 100), (101, 200)):
+            rows += call(k, "GetRankingPairs", CategoryCode="SEN", SubEventCode=ev, StartRank=a, EndRank=b)
+        lst, seen = [], set()
+        for r in rows:
+            if r.get("PairId") in seen or not str(r.get("CurrentRank") or "").isdigit():
+                continue
+            seen.add(r.get("PairId"))
+            pub, week = r.get("PublishDate") or pub, r.get("RankingWeek") or week
+            prev = int(r["PreviousRank"]) if str(r.get("PreviousRank") or "").isdigit() else None
+            players = [{"name": nice(r.get(f"PlayerName{s_}") or ""), "nat": r.get(f"CountryCode{s_}") or "", "ittf_id": r.get(f"IttfId{s_}")}
+                       for s_ in ("1", "1d") if r.get(f"PlayerName{s_}")]
+            lst.append({"rank": int(r["CurrentRank"]), "prev": prev, "points": int(float(r.get("Points") or 0)), "pair_id": r.get("PairId"), "players": players})
+        lst.sort(key=lambda x: x["rank"])
+        out[{"WD": "women", "MD": "men", "XD": "mixed"}[ev]] = lst
+    if not all(len(out[x]) >= 50 for x in ("women", "men", "mixed")):
+        print("doubles rankings: too few pairs returned, keeping the old file", {k: len(v) for k, v in out.items()})
+        return
+    import datetime as dt
+    d = dt.datetime.strptime(pub.split()[0], "%m/%d/%Y").date()
+    doc = {"week": int(week), "date": d.isoformat(), "label": f"ITTF doubles world ranking, week {week}, {d.day} {d:%B %Y}",
+           "url": "https://www.worldtabletennis.com/rankings", **out}
+    json.dump(doc, open(os.path.join(ROOT, "data", "doubles-rankings.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("doubles rankings:", doc["label"], {k: len(v) for k, v in out.items()})
 
 
 if __name__ == "__main__":
