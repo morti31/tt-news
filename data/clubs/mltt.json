@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-14T06:47:00Z",
+ "updated": "2026-11-14T23:14:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -419,8 +419,11 @@
    "when": "2026-11-14T21:00:00Z",
    "home": "Florida Crocs",
    "away": "Princeton Revolution",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    5,
+    16
+   ],
+   "status": "live",
    "venue": "Charlotte"
   },
   {
