@@ -2,7 +2,7 @@
  "event": "WTT Contender Istanbul",
  "wtt_event_id": "3257",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Draws",
- "updated": "2026-11-14T17:01:00Z",
+ "updated": "2026-11-14T21:25:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -1821,7 +1821,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-14T15:50:00Z"
+       "when": "2026-11-14T15:50:00Z",
+       "score": "0-3 (7:11,10:12,9:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     }
