@@ -301,7 +301,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         if rk and rk.get("prev"):
             d = rk["prev"] - rk["rank"]
             mv = f' <span class="mv {"up" if d > 0 else "down"}">{"▲" + str(d) if d > 0 else "▼" + str(-d)}</span>' if d else ""   # no change: nothing
-        facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else "Outside the top 100"),
+        facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else "Outside the top 400"),
                  ("Career high", career_high), ("Age", f'{age(born)} (born {long_date(born)})' if born else None),
                  ("Birthplace", p.get("birthplace")), ("Height", f'{p["height_cm"]} cm' if p.get("height_cm") else None),
                  ("Plays", ", ".join(x for x in (f"{hand}-handed" if hand else None, grip) if x) or None),
@@ -312,7 +312,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         head = f'''<header class="pl-head">{player_card(p, rk["rank"] if rk else None)}
 <div class="pl-id"><p class="small-label">{f"{gl} · " if gl else ""}{components.flag(p.get("nat"))} {e(p.get("nat") or "")}</p>
 <h1>{e(p["name"])}</h1>
-<p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else "Outside the world top 100"}</p></div>
+<p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else "Outside the world top 400"}</p></div>
 <dl class="pl-facts">{dl}</dl></header>'''
 
         # ---- season by season (singles, with team-event singles counted separately)
