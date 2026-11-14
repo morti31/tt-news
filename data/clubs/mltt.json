@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-13T23:44:00Z",
+ "updated": "2026-11-14T06:47:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -20,33 +20,33 @@
     "rows": [
      {
       "team": "Carolina Gold Rush",
-      "p": 3,
-      "w": 3,
+      "p": 4,
+      "w": 4,
       "l": 0,
-      "for": 50,
-      "against": 13,
+      "for": 66,
+      "against": 18,
       "pos": 1,
-      "diff": 37
+      "diff": 48
      },
      {
       "team": "Florida Crocs",
-      "p": 3,
-      "w": 3,
+      "p": 4,
+      "w": 4,
       "l": 0,
-      "for": 38,
-      "against": 25,
+      "for": 53,
+      "against": 31,
       "pos": 2,
-      "diff": 13
+      "diff": 22
      },
      {
       "team": "Princeton Revolution",
-      "p": 3,
+      "p": 4,
       "w": 2,
-      "l": 1,
-      "for": 37,
-      "against": 26,
+      "l": 2,
+      "for": 42,
+      "against": 42,
       "pos": 3,
-      "diff": 11
+      "diff": 0
      },
      {
       "team": "Atlanta Blazers",
@@ -115,13 +115,13 @@
      },
      {
       "team": "Portland Paddlers",
-      "p": 3,
+      "p": 4,
       "w": 1,
-      "l": 2,
-      "for": 28,
-      "against": 35,
+      "l": 3,
+      "for": 34,
+      "against": 50,
       "pos": 5,
-      "diff": -7
+      "diff": -16
      }
     ]
    }
@@ -401,15 +401,18 @@
     15,
     6
    ],
-   "status": "live",
+   "status": "finished",
    "venue": "Charlotte"
   },
   {
    "when": "2026-11-14T00:30:00Z",
    "home": "Princeton Revolution",
    "away": "Carolina Gold Rush",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    5,
+    16
+   ],
+   "status": "finished",
    "venue": "Charlotte"
   },
   {

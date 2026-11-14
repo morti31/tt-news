@@ -1,7 +1,7 @@
 {
  "id": "tleague-men",
  "auto": true,
- "updated": "2026-11-08T15:25:00Z",
+ "updated": "2026-11-14T06:47:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -475,8 +475,11 @@
    "when": "2026-11-14T04:00:00Z",
    "home": "Okayama Rivets",
    "away": "Kinoshita Meister Tokyo",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    1,
+    3
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-15T04:00:00Z",
