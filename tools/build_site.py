@@ -512,7 +512,7 @@ def words_of(a):
 
 
 NEWS_PER_PAGE = 20   # stories per page on /news/
-MIN_WORDS = 400   # below this a page is kept out of search engines and sitemaps (see UPDATE.md)
+MIN_WORDS = 400   # the length of a full article (UPDATE.md); shorter quick updates are indexed too, since 14 Nov 2026
 
 
 def article_page(a, others, brief=False):
@@ -522,7 +522,7 @@ def article_page(a, others, brief=False):
     kind = LABEL.get(a.get("kind") or a["category"], a.get("kind") or a["category"])
     if a.get("day") and kind in ("Preview", "Review"):   # daily tournament coverage: "Day 2 preview"
         kind = f"Day {a['day']} {kind.lower()}"
-    if kind == "Update":   # rare short story, kept out of Google (see UPDATE.md)
+    if kind == "Update":   # short story, indexed like the rest (see UPDATE.md)
         kind = "Quick update"
     tag = f'<span class="tag" style="color:var(--{e(a["category"])}, var(--ink))">{e(kind)}'
     tag += "</span>"
@@ -675,9 +675,8 @@ def article_page(a, others, brief=False):
     og = og or fallback_poster(a)
     # SEO: a search title and description can differ from the headline and standfirst
     desc = a.get("description") or a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
-    # Short stories, and articles under MIN_WORDS, stay readable and shareable but are kept out of Google's index as thin pages
-    return page(f"{a.get('seo_title') or a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
-                robots="noindex, follow" if brief or words_of(a) < MIN_WORDS else None)
+    # Every story is indexed, quick updates included (Tom's decision, 14 Nov 2026)
+    return page(f"{a.get('seo_title') or a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article")
 
 
 def main():
@@ -742,7 +741,7 @@ def main():
                                             **({"video": a["videos"][0]["id"]} if a.get("videos") else {})} for a in arts}
 
     # Short stories without a full article get a short page of their own
-    briefs = 0
+    briefs, brief_urls = 0, []
     for s in NEWS.get("stories", []):
         if s["id"] in index:
             continue
@@ -755,6 +754,7 @@ def main():
         index[s["id"]] = {"slug": s["id"], "url": f"/news/{s['id']}.html", "brief": True,
                           **({"video": s["videos"][0]["id"]} if s.get("videos") else {})}
         briefs += 1
+        brief_urls.append(brief)
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hubs = build_hubs(arts)
     feats = [a for a in arts if a.get("category") == "Features"]
@@ -789,16 +789,17 @@ def main():
     today = dt.date.today().isoformat()
     urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/privacy.html", today), (f"{SITE}/corrections.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
     urls += [(f"{SITE}/news/page-{n}.html", today) for n in range(2, max(1, -(-len(arts) // NEWS_PER_PAGE)) + 1)]
-    urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts if words_of(a) >= MIN_WORDS]
+    urls += [(f"{SITE}/news/{a['slug']}.html", a.get("modified", a["date"])[:10]) for a in arts]
+    urls += [(f"{SITE}/news/{b['slug']}.html", b.get("modified", b["date"])[:10]) for b in brief_urls]
     urls += [(f"{SITE}/features/", today)]
     urls += [(f"{SITE}/events/", today)] + [(f"{SITE}/events/{h}.html", today) for h in hubs]
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
     open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n")
-    # Google News sitemap: full articles from the last two days
+    # Google News sitemap: every story from the last two days, quick updates included
     cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=2)
-    recent = [a for a in arts if words_of(a) >= MIN_WORDS and dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00Z").replace("Z", "+00:00")) >= cutoff]
+    recent = [a for a in arts + brief_urls if dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00Z").replace("Z", "+00:00")) >= cutoff]
     ns = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">']
     for a in recent:
