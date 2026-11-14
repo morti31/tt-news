@@ -85,6 +85,8 @@ class Roster:
             for p in (rankings or {}).get(g, []):
                 if p.get("ittf_id") and p["rank"] <= 100:   # the senior test is the world top 100, however long the list on the site
                     ranked[p["ittf_id"]] = (p, "M" if g == "men" else "W")
+        import doubles   # everyone in the doubles world rankings on the site gets a page too
+        listed.update(doubles.players(singles=rankings).keys())
         squad = set()
         for f in glob.glob(os.path.join(ROOT, "data", "clubs", "squads", "*.json")):
             for t in json.load(open(f, encoding="utf-8")).get("teams", []):

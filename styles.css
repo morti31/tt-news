@@ -1541,3 +1541,13 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .pcard-big .pc-n2 { font-size: min(30px, calc((100cqi - 24px) / (var(--l, 8) * .6))); }
 .pcard-small .pc-n2 { font-size: min(15px, calc((100cqi - 18px) / (var(--l, 8) * .6))); }
 @media (max-width: 520px) { .pcard-small .pc-n2 { font-size: min(13.5px, calc((100cqi - 18px) / (var(--l, 8) * .6))); } }
+/* Doubles rankings: the two players of a pair on their own lines; the singles/doubles switch */
+.rk-pair { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.rk-pp { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.rk-pp .rk-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-leader-pair { flex-direction: column; align-items: flex-start; font-size: clamp(18px, 2.2vw, 22px); }
+.rk-three-d { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 900px) { .rk-three-d { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .rk-three-d .rk-leader { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .rk-three-d { grid-template-columns: minmax(0, 1fr); } }
+.rk-kind { margin: 0 0 16px; max-width: 260px; }
+.rk-three-d .rk-leader { align-self: start; }

@@ -83,6 +83,18 @@ BD_RESULT = {"W": "Winner", "F": "Runner-up", "SF": "Semi-final", "QF": "Quarter
              "QR2": "Qualifying", "QR3": "Qualifying", "QR4": "Qualifying", "QER": "Qualifying", "ZPP": "Participation"}
 
 
+DBL = {}
+
+
+def best_dbl(pairs):
+    """'Men's doubles world No. 7' for a player ranked only in doubles: their best pair ranking."""
+    if not pairs:
+        return None
+    import doubles
+    key_, pr = min(pairs, key=lambda t: t[1]["rank"])
+    return f'{dict(doubles.EVENTS)[key_]} world No. {pr["rank"]}'
+
+
 def load(path, default):
     return json.load(open(path, encoding="utf-8")) if os.path.exists(path) else default
 
@@ -239,6 +251,9 @@ def build(page, site, tag_items, hubs, R, roster, tg):
     hist = load(os.path.join(ROOT, "data", "ranking-history.json"), {"weeks": {}})
     import switches
     bdown = load(os.path.join(ROOT, "data", "ranking-breakdown.json"), {}) if switches.on("wtt") else {}   # events behind each player's ranking points (WTT)
+    global DBL
+    import doubles
+    DBL = doubles.players(singles=R)   # each player's doubles world rankings
     db = database()
     hub_by_wtt = {str(h.get("wtt_id") or h.get("draw")): h for h in hubs.values() if h.get("wtt_id") or h.get("draw")}
     ranks = {}
@@ -301,7 +316,13 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         if rk and rk.get("prev"):
             d = rk["prev"] - rk["rank"]
             mv = f' <span class="mv {"up" if d > 0 else "down"}">{"▲" + str(d) if d > 0 else "▼" + str(-d)}</span>' if d else ""   # no change: nothing
-        facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else "Outside the top 400"),
+        import doubles as doubles_mod
+        dbl = (DBL.get(pid) or {}).get("pairs", [])
+        dbl_txt = "; ".join(f'No. {pr["rank"]} in {dict(doubles_mod.EVENTS)[key_].lower()} with '
+                            + " / ".join(x["name"] for x in pr["players"] if x.get("ittf_id") != pid)
+                            for key_, pr in sorted(dbl, key=lambda t: t[1]["rank"])) or None
+        facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else ("Outside the top 400 in singles" if dbl else "Outside the top 400")),
+                 ("Doubles ranking", dbl_txt),
                  ("Career high", career_high), ("Age", f'{age(born)} (born {long_date(born)})' if born else None),
                  ("Birthplace", p.get("birthplace")), ("Height", f'{p["height_cm"]} cm' if p.get("height_cm") else None),
                  ("Plays", ", ".join(x for x in (f"{hand}-handed" if hand else None, grip) if x) or None),
@@ -312,7 +333,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         head = f'''<header class="pl-head">{player_card(p, rk["rank"] if rk else None)}
 <div class="pl-id"><p class="small-label">{f"{gl} · " if gl else ""}{components.flag(p.get("nat"))} {e(p.get("nat") or "")}</p>
 <h1>{e(p["name"])}</h1>
-<p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else "Outside the world top 400"}</p></div>
+<p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else (best_dbl(dbl) or "Outside the world top 400")}</p></div>
 <dl class="pl-facts">{dl}</dl></header>'''
 
         # ---- season by season (singles, with team-event singles counted separately)

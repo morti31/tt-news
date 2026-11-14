@@ -309,7 +309,18 @@ def main():
                 raw = None
         except Exception as err:
             print(f"top 400 unavailable ({err}), using the top 100")
-        raw = raw or get(RANKS)
+        if not raw:
+            # Only the top 100 is available: never replace a longer list for the same week with it
+            raw = get(RANKS)
+            rows = raw if isinstance(raw, list) else [x for v in raw.values() if isinstance(v, list) for x in v]
+            new_week = next((int(r["RankingWeek"]) for r in rows if str(r.get("RankingWeek") or "").isdigit()), None)
+            try:
+                cur = json.load(open(os.path.join(ROOT, "data", "rankings.json"), encoding="utf-8"))
+            except (OSError, ValueError):
+                cur = {}
+            if cur.get("week") == new_week and len(cur.get("men", [])) > 100:
+                print("rankings: only the top 100 available this run, keeping the top 400 already saved")
+                return
         tmp = os.path.join(ROOT, ".rankings-tmp.json")
         json.dump(raw, open(tmp, "w"))
         before = open(os.path.join(ROOT, "data", "rankings.json"), encoding="utf-8").read() if os.path.exists(os.path.join(ROOT, "data", "rankings.json")) else ""

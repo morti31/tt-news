@@ -5,6 +5,7 @@ Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). O
 import html, json, os
 import components
 import ranking_moves
+import doubles as doubles_data
 
 e = html.escape
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -90,25 +91,62 @@ def body(R, items, links=None):
 
     label = R["label"]
     n = len(R["men"])
+    D = doubles_data.load()
+
+    def pair_who(pr):
+        return '<span class="rk-pair">' + "".join(f'<span class="rk-pp">{who(p)}</span>' for p in pr["players"]) + "</span>"
+
+    def dtable(key, title):
+        top = D[key][0]["points"] or 1
+        rows = "".join(
+            f'<tr data-q="{e(" ".join(p["name"] + " " + p["nat"] for p in pr["players"]).lower())}"><td class="rk-pos">{pr["rank"]}</td><td class="rk-mv">{move(pr)}</td>'
+            f'<td>{pair_who(pr)}</td><td class="rk-pts">{pr["points"]:,}<span class="rk-bar" style="width:{100 * pr["points"] / top:.1f}%"></span></td></tr>'
+            for pr in D[key])
+        return (f'<section class="panel rk-list" data-g="{key}"><h3 class="panel-title">{title}</h3>'
+                f'<table class="rk-table"><thead><tr><th scope="col">Rank</th><th scope="col"><span class="sr-only">Movement</span></th>'
+                f'<th scope="col">Pair</th><th scope="col">Points</th></tr></thead><tbody data-page="50">{rows}</tbody></table></section>')
+
+    def dlisting(pairs, empty):
+        li = "".join(f'<li><span class="rk-now">{pr["rank"]}</span><span class="rk-mid">{pair_who(pr)}</span>{move(pr)}</li>' for pr in pairs)
+        return f'<ul class="rk-movers">{li or f"<li>{empty}</li>"}</ul>'
+
+    def dpanel(key, word, title):
+        if not D.get(key):
+            return ""
+        lead = D[key][0]
+        ups = sorted((x for x in D[key] if x["prev"] and x["prev"] > x["rank"]), key=lambda x: (x["rank"] - x["prev"], x["rank"]))[:3]
+        home_ = [x for x in D[key] if any(p["nat"] in ("ENG", "SCO", "WAL") for p in x["players"])]
+        leader_html = (f'<div class="rk-leader"><p class="small-label">{word} world No. 1</p><p class="rk-leader-name rk-leader-pair">{pair_who(lead)}</p>'
+                       f'<p class="rk-leader-pts"><b>{lead["points"]:,}</b> points</p></div>')
+        return (f'<section class="pl-panel rk-panel" id="{key}-d" role="tabpanel" hidden><h2 class="sr-only">{title}</h2>'
+                f'<div class="rk-three rk-three-d">{leader_html}'
+                f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{dlisting(ups, "No climbers this week")}</section>'
+                f'<section class="panel"><h3 class="panel-title">Home nations</h3>{dlisting(home_, "No pairs in the top 200")}</section></div>'
+                f'{dtable(key, title)}</section>')
 
     def panel(key, word, title):
-        return (f'<section class="pl-panel rk-panel" id="{key}" role="tabpanel" aria-labelledby="t-{key}"><h2 class="sr-only">{word}</h2>'
+        return (f'<section class="pl-panel rk-panel" id="{key}" role="tabpanel"><h2 class="sr-only">{word}</h2>'
                 f'<div class="rk-three">{leader(key, f"{word} world No. 1")}'
                 f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{climbers(key)}</section>'
                 f'<section class="panel"><h3 class="panel-title">Points dropping off soon</h3>{defending(key)}</section>'
                 f'<section class="panel"><h3 class="panel-title">Home nations</h3>{home(key)}</section></div>'
                 f'{table(key, title)}</section>')
 
+    dlabel = D.get("label", "")
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official {e(label)}: the top {n} men and women, with ranking points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+<p class="lede">The official ITTF world rankings: the top {n} men and women in singles and the top 200 pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
 <div class="rk-bar-top">
-  <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" id="t-women" aria-controls="women" aria-selected="true">Women</button><button role="tab" id="t-men" aria-controls="men" aria-selected="false">Men</button></div>
+  <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" data-g="women" aria-selected="true">Women</button><button role="tab" data-g="men" aria-selected="false">Men</button>{'<button role="tab" data-g="mixed" aria-selected="false">Mixed doubles</button>' if D.get("mixed") else ""}</div>
   <label class="rk-search"><span class="sr-only">Find a player or country</span><input id="rk-q" type="search" placeholder="Find a player or country, e.g. ENG" autocomplete="off"></label>
 </div>
+{'<div class="toggle sched-filter rk-kind" role="group" aria-label="Singles or doubles"><button data-k="s" aria-pressed="true">Singles</button><button data-k="d" aria-pressed="false">Doubles</button></div>' if D.get("men") else ""}
 {panel("women", "Women's", "Women's singles")}
 {panel("men", "Men's", "Men's singles")}
-<p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a>. Player and country names link to every Eleven story about them.</p>
+{dpanel("women", "Women's doubles", "Women's doubles")}
+{dpanel("men", "Men's doubles", "Men's doubles")}
+{dpanel("mixed", "Mixed doubles", "Mixed doubles")}
+<p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a> ({e(label)}{f"; doubles: {e(dlabel.split(', ', 1)[-1])}" if dlabel else ""}). Player and country names link to every Eleven story about them.</p>
 </main>
 <script>
 (function () {{
@@ -118,9 +156,23 @@ def body(R, items, links=None):
     document.querySelectorAll(".rk-table tbody tr").forEach((tr) => {{ tr.hidden = !!v && !tr.dataset.q.includes(v); }});
     document.querySelectorAll(".rk-list").forEach((s) => s.classList.toggle("pg-all", !!v));   // a search shows every match, not one page
   }});
-  const tabs = document.querySelectorAll(".rk .pl-tabs button");
-  function show(id) {{ tabs.forEach((t) => {{ const on = t.getAttribute("aria-controls") === id; t.setAttribute("aria-selected", on); document.getElementById(t.getAttribute("aria-controls")).hidden = !on; }}); }}
-  tabs.forEach((t) => t.addEventListener("click", () => {{ const id = t.getAttribute("aria-controls"); show(id); history.replaceState(null, "", "#" + id); }}));
-  show(location.hash === "#men" ? "men" : "women");
+  const tabs = [...document.querySelectorAll(".rk .pl-tabs button")], kinds = [...document.querySelectorAll(".rk-kind button")];
+  const kindBar = document.querySelector(".rk-kind");
+  let G = "women", K = "s";
+  function show() {{
+    if (G === "mixed") K = "d";
+    tabs.forEach((t) => t.setAttribute("aria-selected", String(t.dataset.g === G)));
+    kinds.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === K)));
+    if (kindBar) kindBar.hidden = G === "mixed";
+    const id = K === "d" ? G + "-d" : G;
+    document.querySelectorAll(".rk-panel").forEach((p) => {{ p.hidden = p.id !== id; }});
+    history.replaceState(null, "", "#" + (G === "mixed" ? "mixed" : G + (K === "d" ? "-doubles" : "")));
+  }}
+  tabs.forEach((t) => t.addEventListener("click", () => {{ G = t.dataset.g; if (G !== "mixed" && K === "d" && !document.getElementById(G + "-d")) K = "s"; show(); }}));
+  kinds.forEach((b) => b.addEventListener("click", () => {{ K = b.dataset.k; show(); }}));
+  const h = location.hash.slice(1);
+  if (h === "mixed") G = "mixed"; else if (h.startsWith("men")) G = "men";
+  if (h.endsWith("-doubles")) K = "d";
+  show();
 }})();
 </script>""" + components.PAGER

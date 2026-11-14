@@ -211,3 +211,7 @@ A story is never only a story. Before committing, apply what it changes everywhe
 ## Weekly rankings brief
 
 Every Tuesday morning `data/ranking-brief.json` is rewritten from WTT's ranking records: the biggest movers in the top 100 (three places or more) with the events that moved them (`why`, points gained or lost), and the points the top 20 men and women must defend in the next four weeks (`defending`). The first news run after it changes reads it. When the week has a real story (a new No. 1 or top-10 change, a big climb from a title, a leading player about to lose a big result), write a "World rankings" news article built from it, checking every figure against `data/rankings.json` and the player's breakdown; otherwise use it for context in other stories. Never invent a reason for a move that the brief does not give.
+
+## Doubles rankings
+
+`data/doubles-rankings.json` holds the ITTF doubles world rankings (top 200 pairs in men's, women's and mixed doubles), refreshed every Tuesday by the Doubles rankings workflow (`tools/doubles_rankings.py`). The rankings page shows them under Women, Men (Singles/Doubles switch) and Mixed doubles. Everyone in them gets a profile like the singles top 400 (`tools/doubles.py`, `tools/people.py`); `tools/stubs.py` writes stub profiles for new names, and the monthly profile check fills them in like any other stub. Profiles show each player's doubles rankings and partners.
