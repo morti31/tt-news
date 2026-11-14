@@ -1,7 +1,197 @@
 {
-  "updated": "2026-11-14T08:35:00Z",
+  "updated": "2026-11-14T12:55:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "southeast-asian-championships-2026-singles-nguyen-anh-tu-jinnipa-sawettabut",
+      "category": "International",
+      "kind": "Update",
+      "lang": "Vietnamese",
+      "date": "2026-11-14",
+      "published": "2026-11-14T12:55:00Z",
+      "headline": "Nguyen Anh Tu and Jinnipa Sawettabut win the Southeast Asian Championships singles titles",
+      "summary": "Vietnam's Nguyen Anh Tu beat Singapore's Nicholas Tan in seven games for the men's singles title in Kuala Lumpur, and Thailand's Jinnipa Sawettabut beat Malaysia's Tee Ai Xin in the women's final.",
+      "body": [
+        "Vietnam's Nguyen Anh Tu won the men's singles at the Southeast Asian Championships in Kuala Lumpur on Saturday, beating Singapore's Nicholas Tan 10-12, 11-6, 6-11, 11-8, 8-11, 11-6, 11-7. Thailand's Jinnipa Sawettabut won the women's singles, beating Malaysia's Tee Ai Xin in the final.",
+        "Tan led three times in the match, but Nguyen won the last two games, losing 13 points between them. Nguyen lost the men's singles final at the 2024 championships, and this was his second gold of the week after he helped Vietnam [beat the hosts in the men's team final](/news/southeast-asian-championships-2026-vietnam-men-team-title-malaysia.html). He also took silver in the men's doubles with Doan Ba Tuan Anh, losing 3-2 to Singapore's Koen Pang and Josh Chua.",
+        "Tee, who [won the women's doubles with Karen Lyne](/news/southeast-asian-championships-2026-malaysia-mixed-women-doubles-javen-choong-karen-lyne.html) on Friday, could not add the singles. Vietnam's Mai Hoang My Trang took a bronze medal after losing her semi-final 4-0 to a Malaysian player.",
+        "The seven titles were shared between four countries. Malaysia won the mixed and women's doubles, Singapore the women's team and men's doubles, Vietnam the men's team and men's singles, and Thailand the women's singles."
+      ],
+      "sources": [
+        {
+          "name": "SGGP: Nguyen Anh Tu wins the men's singles gold (Vietnamese)",
+          "url": "https://thethao.sggp.org.vn/nguyen-anh-tu-xuat-sac-gianh-hcv-don-nam-giai-bong-ban-dong-nam-a-post881786.html"
+        },
+        {
+          "name": "SGGP: Vietnam win five medals at the Southeast Asian Championships (Vietnamese)",
+          "url": "https://thethao.sggp.org.vn/bong-ban-viet-nam-gianh-5-huy-chuong-giu-hang-3-giai-dong-nam-a-post881795.html"
+        },
+        {
+          "name": "Thanh Nien: Nguyen Anh Tu wins two Southeast Asian golds (Vietnamese)",
+          "url": "https://thanhnien.vn/nguyen-anh-tu-gianh-cu-dup-hcv-dong-nam-a-viet-nam-doat-tong-cong-5-huy-chuong-khu-vuc-185261114165750186.htm"
+        },
+        {
+          "name": "New Straits Times: Ai Xin suffers heartbreaking loss to Thai in table tennis final",
+          "url": "https://www.nst.com.my/sports/others/2026/11/1577658/ai-xin-suffers-heartbreaking-loss-thai-table-tennis-final"
+        }
+      ]
+    },
+    {
+      "id": "wtt-contender-istanbul-2026-quarter-finals-hirano-yoshiyama",
+      "category": "International",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-14",
+      "published": "2026-11-14T12:50:00Z",
+      "headline": "Miu Hirano and Ryoichi Yoshiyama knock out China's last singles players at WTT Contender Istanbul",
+      "summary": "Hirano won a deciding game against 20-year-old Zong Geman and Yoshiyama came from two down against Li Tianyang, so China have nobody in any of the five finals in Istanbul.",
+      "draw": "3257",
+      "matches": [
+        {
+          "label": "Women's singles, quarter-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Miu Hirano",
+              "nat": "JPN"
+            },
+            {
+              "name": "Zong Geman",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, quarter-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Ryoichi Yoshiyama",
+              "nat": "JPN"
+            },
+            {
+              "name": "Li Tianyang",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              12,
+              14
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, quarter-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Joo Cheonhui",
+              "nat": "KOR"
+            },
+            {
+              "name": "Bernadette Szőcs",
+              "nat": "ROU"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Men's singles, quarter-final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Kang Dongsoo",
+              "nat": "KOR"
+            },
+            {
+              "name": "Elias Ranefur",
+              "nat": "SWE"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              14,
+              12
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              13,
+              11
+            ]
+          ]
+        }
+      ]
+    },
     {
       "id": "southeast-asian-championships-2026-malaysia-mixed-women-doubles-javen-choong-karen-lyne",
       "category": "International",
