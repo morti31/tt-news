@@ -1,7 +1,7 @@
 {
  "id": "dttbl-women",
  "auto": true,
- "updated": "2026-11-08T20:39:00Z",
+ "updated": "2026-11-14T19:22:00Z",
  "season": "2026-27",
  "source": {
   "name": "DTTB click-TT",
@@ -46,6 +46,18 @@
      },
      {
       "pos": 3,
+      "team": "TTC Berlin Eastside",
+      "p": 5,
+      "w": 3,
+      "d": 0,
+      "l": 2,
+      "for": 23,
+      "against": 16,
+      "diff": 7,
+      "pts": 6
+     },
+     {
+      "pos": 4,
       "team": "TSV Dachau",
       "p": 3,
       "w": 2,
@@ -54,18 +66,6 @@
       "for": 13,
       "against": 10,
       "diff": 3,
-      "pts": 4
-     },
-     {
-      "pos": 4,
-      "team": "TTC Berlin Eastside",
-      "p": 4,
-      "w": 2,
-      "d": 0,
-      "l": 2,
-      "for": 17,
-      "against": 15,
-      "diff": 2,
       "pts": 4
      },
      {
@@ -94,18 +94,6 @@
      },
      {
       "pos": 7,
-      "team": "TTG Bingen/Münster-Sarmsheim",
-      "p": 2,
-      "w": 0,
-      "d": 0,
-      "l": 2,
-      "for": 3,
-      "against": 12,
-      "diff": -9,
-      "pts": 0
-     },
-     {
-      "pos": 8,
       "team": "ESV Weil",
       "p": 3,
       "w": 0,
@@ -114,6 +102,18 @@
       "for": 5,
       "against": 18,
       "diff": -13,
+      "pts": 0
+     },
+     {
+      "pos": 8,
+      "team": "TTG Bingen/Münster-Sarmsheim",
+      "p": 3,
+      "w": 0,
+      "d": 0,
+      "l": 3,
+      "for": 4,
+      "against": 18,
+      "diff": -14,
       "pts": 0
      }
     ]
@@ -256,8 +256,11 @@
    "when": "2026-11-14T13:00:00Z",
    "home": "TTG Bingen/Münster-Sarmsheim",
    "away": "TTC Berlin Eastside",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    1,
+    6
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-15T13:00:00Z",
