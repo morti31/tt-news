@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T03:08:00Z",
+  "updated": "2026-11-14T10:53:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -862,46 +862,6 @@
       "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
     },
     {
-      "id": "wtt-3257-ttexdoublesqfnl000100",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Huang Youzheng / Qin Yuxuan v Nikita Artemenko / Mariia Tailakova, mixed doubles, quarterfinal",
-      "start": "2026-11-13T07:00:00Z",
-      "end": "2026-11-13T07:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------QFNL000100--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttexdoublesqfnl000200",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Evgeny Tikhonov / Maria Panfilova v Abdullah Yigenler / Ece Harac, mixed doubles, quarterfinal",
-      "start": "2026-11-13T07:00:00Z",
-      "end": "2026-11-13T07:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------QFNL000200--",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3257-ttexdoublesqfnl000400",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Maksim Grebnev / Vlada Voronina v Lim Yunoh / Joo Cheonhui, mixed doubles, quarterfinal",
-      "start": "2026-11-13T07:35:00Z",
-      "end": "2026-11-13T08:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------QFNL000400--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttexdoublesqfnl000300",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Guilherme Teodoro / Giulia Takahashi v Connor Green / Anna Hursey, mixed doubles, quarterfinal",
-      "start": "2026-11-13T07:35:00Z",
-      "end": "2026-11-13T08:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------QFNL000300--",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3257-ttemsingles8fnl000800",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Ryoichi Yoshiyama v Thibault Poret, men's singles, last 16",
@@ -1250,16 +1210,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3257-ttemsinglesqfnl000200",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Fang Bo v Lubomir Jancarik, men's singles, quarterfinal",
-      "start": "2026-11-14T08:10:00Z",
-      "end": "2026-11-14T08:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------QFNL000200--",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3257-ttemsinglesqfnl000100",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Ricardo Walther v Borgar Haug, men's singles, quarterfinal",
@@ -1268,6 +1218,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
       "code": "TTEMSINGLES-----------QFNL000100--",
       "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3257-ttemsinglesqfnl000200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Fang Bo v Lubomir Jancarik, men's singles, quarterfinal",
+      "start": "2026-11-14T08:10:00Z",
+      "end": "2026-11-14T08:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------QFNL000200--",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3257-ttewsinglesqfnl000200",
@@ -1330,6 +1290,46 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3257-ttewsinglessfnl000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Honoka Hashimoto v Miu Hirano, women's singles, semifinal",
+      "start": "2026-11-14T13:30:00Z",
+      "end": "2026-11-14T14:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------SFNL000100--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglessfnl000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Ricardo Walther v Fang Bo, men's singles, semifinal",
+      "start": "2026-11-14T14:05:00Z",
+      "end": "2026-11-14T14:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------SFNL000100--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttewsinglessfnl000200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Kaho Akae v Joo Cheonhui, women's singles, semifinal",
+      "start": "2026-11-14T14:40:00Z",
+      "end": "2026-11-14T15:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWSINGLES-----------SFNL000200--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemsinglessfnl000200",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Kang Dongsoo v Ryoichi Yoshiyama, men's singles, semifinal",
+      "start": "2026-11-14T15:15:00Z",
+      "end": "2026-11-14T15:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMSINGLES-----------SFNL000200--",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3257-ttexdoublesfnl000100",
       "event_id": "wtt-contender-istanbul-2026",
       "name": "WTT Contender Istanbul: Evgeny Tikhonov / Maria Panfilova v Connor Green / Anna Hursey, mixed doubles, final",
@@ -1370,6 +1370,26 @@
       "start": "2026-11-14T18:30:00Z",
       "end": "2026-11-14T21:30:00Z",
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
+    },
+    {
+      "id": "wtt-3257-ttewdoublesfnl000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Honoka Hashimoto / Miyu Nagasaki v Miyuu Kihara / Miu Hirano, women's doubles, final",
+      "start": "2026-11-15T11:00:00Z",
+      "end": "2026-11-15T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEWDOUBLES-----------FNL-000100--",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3257-ttemdoublesfnl000100",
+      "event_id": "wtt-contender-istanbul-2026",
+      "name": "WTT Contender Istanbul: Nikita Artemenko / Maksim Grebnev v Luka Mladenovic / Mael Van Dessel, men's doubles, final",
+      "start": "2026-11-15T11:45:00Z",
+      "end": "2026-11-15T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
+      "code": "TTEMDOUBLES-----------FNL-000100--",
+      "detail": "Table 1"
     },
     {
       "id": "cl-women-2026-27-s2-linz-berlin",
