@@ -1,7 +1,7 @@
 {
  "id": "tleague-women",
  "auto": true,
- "updated": "2026-11-08T15:25:00Z",
+ "updated": "2026-11-14T14:21:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -33,13 +33,13 @@
      {
       "pos": 2,
       "team": "Nippon Paint Mallets",
-      "pts": 30,
-      "p": 13,
-      "w": 9,
+      "pts": 34,
+      "p": 14,
+      "w": 10,
       "l": 4,
-      "for": 34,
+      "for": 38,
       "against": 21,
-      "diff": 13
+      "diff": 17
      },
      {
       "pos": 3,
@@ -78,12 +78,12 @@
       "pos": 6,
       "team": "Kyushu Karina",
       "pts": 9,
-      "p": 12,
+      "p": 13,
       "w": 2,
-      "l": 10,
+      "l": 11,
       "for": 19,
-      "against": 34,
-      "diff": -15
+      "against": 38,
+      "diff": -19
      }
     ]
    }
@@ -475,8 +475,11 @@
    "when": "2026-11-14T05:00:00Z",
    "home": "Nippon Paint Mallets",
    "away": "Kyushu Karina",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-12-10T10:00:00Z",
