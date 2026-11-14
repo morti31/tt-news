@@ -346,14 +346,19 @@ PAGER = """<script>(function(){document.querySelectorAll('[data-page]').forEach(
 // data-skip: items shown above the list on the first page (the players page's top-10 cards), so page one holds n-skip rows and the labels count them
 var n=+list.dataset.page,skip=+(list.dataset.skip||0),items=[].slice.call(list.children),lead=skip?list.previousElementSibling:null;
 function pg(k){return k<n-skip?0:1+Math.floor((k-(n-skip))/n);}
-var pages=items.length?pg(items.length-1)+1:0,cur=0;if(pages<2)return;
+var pages=items.length?pg(items.length-1)+1:0,cur=0,total=items.length+skip;if(pages<2)return;
+function label(i){return (i*n+1)+'\u2013'+Math.min(total,(i+1)*n);}
+// One compact row: previous, a menu of ranges, next. Fits a phone on one line whatever the list length.
 var nav=document.createElement('nav');nav.className='pager';nav.setAttribute('aria-label','Pages');
+var opts='';for(var j=0;j<pages;j++)opts+='<option value="'+j+'">'+label(j)+'</option>';
+nav.innerHTML='<button type="button" class="pg-step" data-d="-1" aria-label="Previous page">&lsaquo;<span class="pg-word"> Previous</span></button>'+
+'<label class="pg-pick"><span class="sr-only">Show</span><select>'+opts+'</select><span class="pg-of">of '+total+'</span></label>'+
+'<button type="button" class="pg-step" data-d="1" aria-label="Next page"><span class="pg-word">Next </span>&rsaquo;</button>';
 var host=list.closest('table')||list;host.after(nav);
-function label(i){var a=i*n+1,b=Math.min(items.length+skip,(i+1)*n);return a+'-'+b;}
+var sel=nav.querySelector('select'),prev=nav.querySelector('[data-d="-1"]'),next=nav.querySelector('[data-d="1"]');
 function go(i,scroll){cur=Math.max(0,Math.min(pages-1,i));items.forEach(function(el,k){el.classList.toggle('pg-off',pg(k)!==cur);});if(lead)lead.hidden=cur>0;
-var btn=[];for(var j=0;j<pages;j++)btn.push('<button type="button" data-p="'+j+'" aria-current="'+(j===cur?'page':'false')+'">'+label(j)+'</button>');
-nav.innerHTML='<button type="button" data-p="'+(cur-1)+'"'+(cur?'':' disabled')+' aria-label="Previous page">&lsaquo;</button>'+btn.join('')+
-'<button type="button" data-p="'+(cur+1)+'"'+(cur<pages-1?'':' disabled')+' aria-label="Next page">&rsaquo;</button>';
+sel.value=cur;prev.disabled=!cur;next.disabled=cur>=pages-1;
 if(scroll)(list.closest('section')||host).scrollIntoView({block:'start'});}
-nav.addEventListener('click',function(ev){var b=ev.target.closest('button');if(b&&!b.disabled)go(+b.dataset.p,true);});
+nav.addEventListener('click',function(ev){var b=ev.target.closest('.pg-step');if(b&&!b.disabled)go(cur+(+b.dataset.d),true);});
+sel.addEventListener('change',function(){go(+sel.value,true);});
 list.pagerGo=go;go(0,false);});})();</script>"""

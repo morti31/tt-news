@@ -118,14 +118,14 @@ def body(R, items, links=None):
         home_ = [x for x in D[key] if any(p["nat"] in ("ENG", "SCO", "WAL") for p in x["players"])]
         leader_html = (f'<div class="rk-leader"><p class="small-label">{word} world No. 1</p><p class="rk-leader-name rk-leader-pair">{pair_who(lead)}</p>'
                        f'<p class="rk-leader-pts"><b>{lead["points"]:,}</b> points</p></div>')
-        return (f'<section class="pl-panel rk-panel" id="{key}-d" role="tabpanel" hidden><h2 class="sr-only">{title}</h2>'
+        return (f'<section class="pl-panel rk-panel" id="p-{key}-d" role="tabpanel" hidden><h2 class="sr-only">{title}</h2>'
                 f'<div class="rk-three rk-three-d">{leader_html}'
                 f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{dlisting(ups, "No climbers this week")}</section>'
                 f'<section class="panel"><h3 class="panel-title">Home nations</h3>{dlisting(home_, "No pairs in the top 200")}</section></div>'
                 f'{dtable(key, title)}</section>')
 
     def panel(key, word, title):
-        return (f'<section class="pl-panel rk-panel" id="{key}" role="tabpanel"><h2 class="sr-only">{word}</h2>'
+        return (f'<section class="pl-panel rk-panel" id="p-{key}" role="tabpanel"><h2 class="sr-only">{word}</h2>'
                 f'<div class="rk-three">{leader(key, f"{word} world No. 1")}'
                 f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{climbers(key)}</section>'
                 f'<section class="panel"><h3 class="panel-title">Points dropping off soon</h3>{defending(key)}</section>'
@@ -164,11 +164,11 @@ def body(R, items, links=None):
     tabs.forEach((t) => t.setAttribute("aria-selected", String(t.dataset.g === G)));
     kinds.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === K)));
     if (kindBar) kindBar.hidden = G === "mixed";
-    const id = K === "d" ? G + "-d" : G;
+    const id = "p-" + (K === "d" ? G + "-d" : G);   // panel ids differ from the address hash, so loading the page never jumps past the tabs
     document.querySelectorAll(".rk-panel").forEach((p) => {{ p.hidden = p.id !== id; }});
     history.replaceState(null, "", "#" + (G === "mixed" ? "mixed" : G + (K === "d" ? "-doubles" : "")));
   }}
-  tabs.forEach((t) => t.addEventListener("click", () => {{ G = t.dataset.g; if (G !== "mixed" && K === "d" && !document.getElementById(G + "-d")) K = "s"; show(); }}));
+  tabs.forEach((t) => t.addEventListener("click", () => {{ G = t.dataset.g; if (G !== "mixed" && K === "d" && !document.getElementById("p-" + G + "-d")) K = "s"; show(); }}));
   kinds.forEach((b) => b.addEventListener("click", () => {{ K = b.dataset.k; show(); }}));
   const h = location.hash.slice(1);
   if (h === "mixed") G = "mixed"; else if (h.startsWith("men")) G = "men";

@@ -1382,10 +1382,13 @@ html.mp-open { overflow: hidden; }
 .pg-off { display: none !important; }
 .pg-all .pg-off:not([hidden]) { display: revert !important; }
 .pg-all + .pager, .pg-all .pager { display: none; }
-.pager { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 4px; }
-.pager button { font: 700 13px var(--head-font); padding: 8px 12px; min-height: 40px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer; }
-.pager button[aria-current="page"] { background: var(--ink); color: var(--card); border-color: var(--ink); }
-.pager button:disabled { opacity: .35; cursor: default; }
+.pager { display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 8px; margin: 14px 0 4px; }
+.pg-pick select { width: auto; }
+@media (max-width: 520px) { .pager .pg-step { padding: 0 12px; } .pg-word { display: none; } }
+.pager .pg-step { font: 700 14px var(--head-font); padding: 0 14px; min-height: 44px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer; white-space: nowrap; }
+.pager .pg-step:disabled { opacity: .35; cursor: default; }
+.pg-pick { display: flex; align-items: center; gap: 8px; font: 600 14px var(--head-font); color: var(--muted); }
+.pg-pick select { font: 700 15px var(--head-font); color: var(--ink); background: var(--card); border: 1px solid var(--ink); min-height: 44px; padding: 0 30px 0 12px; cursor: pointer; }
 .l3-card .tags { margin-top: 4px; position: relative; z-index: 1; }
 .l3-card .tags { flex-wrap: nowrap; overflow: hidden; gap: 6px; }
 .l3-card .tags li { min-width: 0; flex: 0 1 auto; }
