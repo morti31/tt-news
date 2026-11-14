@@ -4,6 +4,7 @@ Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). O
 """
 import html, json, os
 import components
+import ranking_moves
 
 e = html.escape
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -54,13 +55,35 @@ def body(R, items, links=None):
         return (f'<div class="rk-leader"><p class="small-label">{title}</p><p class="rk-leader-name">{who(p)}</p>'
                 f'<p class="rk-leader-pts"><b>{p["points"]:,}</b> points</p></div>')
 
-    def listing(players, empty):
-        li = "".join(f'<li><span class="rk-now">{p["rank"]}</span><span class="rk-who">{who(p)}</span>{move(p)}</li>' for p in players)
-        return f'<ul class="rk-movers">{li or f"<li>{empty}</li>"}</ul>'
+    def listing(players, empty, why=None, right=None):
+        def li(p):
+            sub = why(p) if why else ""
+            body = f'<span class="rk-who">{who(p)}</span>' + (f'<span class="rk-why">{sub}</span>' if sub else "")
+            return f'<li><span class="rk-now">{p["rank"]}</span><span class="rk-mid">{body}</span>{right(p) if right else move(p)}</li>'
+        items = "".join(li(p) for p in players)
+        return f'<ul class="rk-movers">{items or f"<li>{empty}</li>"}</ul>'
+
+    def gained(p):
+        ch = [c for c in ranking_moves.changes(p.get("ittf_id")) if c[0] > 0][:1]
+        return e(f"{ch[0][0]:+,} · {ranking_moves.compact(ch[0][1])}") if ch else ""
 
     def climbers(key):
         ups = sorted((p for p in R[key] if p["prev"] and p["prev"] > p["rank"]), key=lambda p: (p["rank"] - p["prev"], p["rank"]))[:3]
-        return listing(ups, "No climbers this week")
+        return listing(ups, "No climbers this week", why=gained)
+
+    def defending(key):
+        """The top 100 players with the most points dropping off in the next four weeks."""
+        rows = []
+        for p in R[key][:100]:
+            d = ranking_moves.dropping(p.get("ittf_id"))
+            if d:
+                rows.append((sum(x[1] for x in d), p, d))
+        rows.sort(key=lambda t: -t[0])
+        rows = rows[:4]
+        info = {id(p): d for _, p, d in rows}
+        return listing([p for _, p, _ in rows], "Nothing dropping off in the next four weeks",
+                       why=lambda p: e(f"{ranking_moves.day(info[id(p)][0][0])} · {ranking_moves.compact(info[id(p)][0][2])}"),
+                       right=lambda p: f'<span class="mv down rk-drop">−{sum(x[1] for x in info[id(p)]):,}</span>')
 
     def home(key):
         return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")], f"None in the top {len(R[key])}")
@@ -72,6 +95,7 @@ def body(R, items, links=None):
         return (f'<section class="pl-panel rk-panel" id="{key}" role="tabpanel" aria-labelledby="t-{key}"><h2 class="sr-only">{word}</h2>'
                 f'<div class="rk-three">{leader(key, f"{word} world No. 1")}'
                 f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{climbers(key)}</section>'
+                f'<section class="panel"><h3 class="panel-title">Points dropping off soon</h3>{defending(key)}</section>'
                 f'<section class="panel"><h3 class="panel-title">Home nations</h3>{home(key)}</section></div>'
                 f'{table(key, title)}</section>')
 

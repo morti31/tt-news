@@ -211,7 +211,7 @@ def player_card(p, rank=None, size="big"):
     rk = f'<span class="pc-rank">No. {rank}</span>' if rank else ""
     g = e(p.get("gender") or "M").lower()
     return (f'<div class="pcard pcard-{size} pc-{g}" aria-hidden="true">{bg}'
-            f'<span class="pc-name"><span class="pc-n2">{e(p["name"])}</span></span>'
+            f'<span class="pc-name"><span class="pc-n2" style="--l:{max(len(w) for w in (p["name"] or "x").split())}">{e(p["name"])}</span></span>'
             f'<span class="pc-foot">{components.flag(p.get("nat"))}<span class="pc-nat">{e(p.get("nat") or "")}</span>{rk}</span></div>')
 
 
@@ -546,25 +546,35 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         # ---- where the ranking points come from (WTT's breakdown): the counted results first, biggest first
         bd = bdown.get(pid) or {}
         evs = [x for x in bd.get("events", []) if x.get("event")]
+        import ranking_moves
         if evs and rk:
             evs.sort(key=lambda x: (not x["counted"], -(x.get("points") or 0)))
             def bd_row(x):
-                nm = re.sub(r"\s+(Presented|Powered) [Bb]y.*$", "", x["event"]).replace("ITTF World Team Table Tennis Championships Finals", "World Team Championships")
+                nm = ranking_moves.short(x["event"])
                 raw = x.get("result") or ""
                 res = BD_RESULT.get(re.sub(r"-\d+%$", "", raw), raw) + (" (team)" if raw.endswith("%") else "")
                 exp = ""
                 try:
-                    exp = long_date(dt.datetime.strptime(x["expires"][:10], "%m/%d/%Y").date().isoformat())
+                    exp = short_date(dt.datetime.strptime(x["expires"][:10], "%m/%d/%Y").date().isoformat())
                 except Exception:
                     pass
-                return (f'<tr class="{"" if x["counted"] else "pl-dim"}"><td>{e(nm)}</td><td>{e(res)}</td><td><b>{x.get("points") or 0}</b></td>'
-                        f'<td>{"Counts" if x["counted"] else "Not counted"}</td><td class="pl-date">{e(exp)}</td></tr>')
+                return (f'<tr class="{"" if x["counted"] else "pl-dim"}"><td>{e(nm)}<span class="pl-sub">{e(res)}{"" if x["counted"] else " · not counted"}</span></td>'
+                        f'<td><b>{x.get("points") or 0:,}</b></td><td class="pl-date">{e(exp)}</td></tr>')
             total = sum(x.get("points") or 0 for x in evs if x["counted"])
+            notes = []
+            ch = ranking_moves.changes(pid)[:2]
+            if ch:
+                notes.append("<b>This week</b> " + "; ".join(e(f"{a:+,} {b}") for a, b in ch))
+            dr = ranking_moves.dropping(pid)
+            if dr:
+                notes.append("<b>Dropping off soon</b> " + "; ".join(e(f"{pts:,} on {ranking_moves.day(d)} ({ev})") for d, pts, ev in dr))
+            notes_html = "".join(f'<li>{n}</li>' for n in notes)
             rank_sec += (f'<section class="hub-sec" id="ranking-points"><h2 class="section-title">Where the ranking points come from</h2>'
                          f'<p class="small">{total:,} points from {sum(1 for x in evs if x["counted"])} counted results ({e(bd.get("week", ""))}). '
-                         f'A player\'s best results over 12 months count; each drops off a year after the event.</p>'
-                         f'<div class="table-scroll"><table class="pl-table"><thead><tr><th scope="col">Event</th><th scope="col">Result</th><th scope="col">Points</th>'
-                         f'<th scope="col"></th><th scope="col">Drops off</th></tr></thead><tbody>{"".join(bd_row(x) for x in evs)}</tbody></table></div>'
+                         f'A player\'s best results over 12 months count, and each drops off a year after the event. Greyed results don\'t count.</p>'
+                         + (f'<ul class="pl-rknotes">{notes_html}</ul>' if notes else "") +
+                         f'<div class="table-scroll"><table class="pl-table"><thead><tr><th scope="col">Event</th><th scope="col">Points</th>'
+                         f'<th scope="col">Drops off</th></tr></thead><tbody>{"".join(bd_row(x) for x in evs)}</tbody></table></div>'
                          f'<p class="small">From World Table Tennis\'s ranking records.</p></section>')
 
         # ---- clubs, equipment

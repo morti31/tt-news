@@ -10,6 +10,7 @@ import json, os, re, sys, time, urllib.request, concurrent.futures as cf
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = "https://www.worldtabletennis.com"
 API = "https://wttcmsapigateway-new.azure-api.net/internalttu/Rankings/GetRankingPointsBreakdown_FullList"
+SKIP = re.compile(r"^\s*(TEST|SIM)\b|Youth|U1[0-9]|U2[01]|Junior|Cadet|Para |Veteran|Masters|Hopes|Development", re.I)   # as tools/match_sync.py
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
 
@@ -53,6 +54,9 @@ def main():
         jobs = [j for j in jobs if j[0] in sys.argv[1:]]
     path = os.path.join(ROOT, "data", "ranking-breakdown.json")
     out = json.load(open(path, encoding="utf-8")) if os.path.exists(path) else {}
+    if len(sys.argv) == 1 and out and any(v.get("week") != rk["label"] for v in out.values()):
+        # a new ranking week: keep last week's breakdowns, so the site can say why each player moved
+        json.dump(out, open(os.path.join(ROOT, "data", "ranking-breakdown-prev.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     ok = 0
     with cf.ThreadPoolExecutor(6) as ex:
         for (pid, code), res in zip(jobs, ex.map(lambda j: breakdown(key, j[0], j[1], wk), jobs)):
@@ -65,6 +69,22 @@ def main():
             ok += 1
     json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     print(f"ranking breakdown: {ok} of {len(jobs)} players")
+
+    # Events that earned ranking points but have no matches in Eleven's database: the match sync tries them each run
+    known = json.load(open(os.path.join(ROOT, "data", "matches", "events.json"), encoding="utf-8"))
+    miss = {}
+    for v in out.values():
+        for x in v.get("events", []):
+            k = x.get("event_id")
+            if k and not (known.get(k) or {}).get("n") and not (known.get(k) or {}).get("skip") and not SKIP.search(x.get("event") or ""):
+                miss[k] = x.get("event")
+    json.dump(dict(sorted(miss.items())), open(os.path.join(ROOT, "data", "ranking-missing.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+    # The weekly brief for the news runs (UPDATE.md, "Weekly rankings brief")
+    sys.path.insert(0, os.path.dirname(__file__))
+    import importlib, ranking_moves
+    importlib.reload(ranking_moves)
+    json.dump(ranking_moves.brief(), open(os.path.join(ROOT, "data", "ranking-brief.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":

@@ -207,3 +207,7 @@ A story is never only a story. Before committing, apply what it changes everywhe
 ## Switching off WTT data
 
 `data/switches.json` holds `"wtt": true`. If World Table Tennis ever asks Eleven to stop using its data, set it to `false` and push: the WTT, match and ranking-breakdown syncs stop, live scores and point by point stop within a minute, and player profiles drop the ranking breakdown at the next build. Results, draws and rankings already saved stay on the site until removed by hand. Never change this switch without Tom asking.
+
+## Weekly rankings brief
+
+Every Tuesday morning `data/ranking-brief.json` is rewritten from WTT's ranking records: the biggest movers in the top 100 (three places or more) with the events that moved them (`why`, points gained or lost), and the points the top 20 men and women must defend in the next four weeks (`defending`). The first news run after it changes reads it. When the week has a real story (a new No. 1 or top-10 change, a big climb from a title, a leading player about to lose a big result), write a "World rankings" news article built from it, checking every figure against `data/rankings.json` and the player's breakdown; otherwise use it for context in other stories. Never invent a reason for a move that the brief does not give.

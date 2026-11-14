@@ -301,6 +301,8 @@ def main():
         top = max(known) if known else 3250
         todo = [k for k, v in events.items() if not v.get("done") and not v.get("skip")]
         todo += [str(x) for x in range(top - 30, top + 300) if str(x) not in events]   # continental events get high ids early
+        # events that earned ranking points but have no matches here yet (tools/ranking_breakdown.py)
+        todo += list(load(os.path.join(ROOT, "data", "ranking-missing.json"), {}))
         # Feeders carry ranking points: pick up any an older backfill skipped by name
         for k, v in events.items():
             if v.get("skip") and not v.get("n") and "feeder" in (v.get("name") or "").lower():

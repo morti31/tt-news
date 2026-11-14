@@ -1522,3 +1522,22 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .corr-log time { font-size: 13px; color: var(--muted); }
 .corr-log span { color: var(--muted); }
 .pl-table tr.pl-dim td { color: var(--muted); }
+/* Rankings: four panels (No. 1, climbers, points dropping off, home nations), the reason under each name */
+.rk-three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.rk-three .rk-leader { grid-column: auto; }
+@media (min-width: 1100px) { .rk-three { grid-template-columns: 1.1fr 1fr 1fr 1fr; } }
+@media (max-width: 560px) { .rk-three { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
+.rk-movers .rk-mid { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.rk-movers .rk-mid .rk-who { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.rk-movers .rk-mid .rk-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rk-why { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rk-drop { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pl-rknotes { list-style: none; margin: 10px 0 14px; padding: 0; display: grid; gap: 6px; }
+.pl-rknotes li { background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--ball); border-radius: 8px; padding: 8px 12px; font-size: 14px; }
+.pl-rknotes b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+/* Player cards: names break only between words, and shrink so the longest word always fits the card */
+.pcard { container-type: inline-size; }
+.pc-n2 { overflow-wrap: normal; word-break: keep-all; hyphens: none; }
+.pcard-big .pc-n2 { font-size: min(30px, calc((100cqi - 24px) / (var(--l, 8) * .6))); }
+.pcard-small .pc-n2 { font-size: min(15px, calc((100cqi - 18px) / (var(--l, 8) * .6))); }
+@media (max-width: 520px) { .pcard-small .pc-n2 { font-size: min(13.5px, calc((100cqi - 18px) / (var(--l, 8) * .6))); } }
