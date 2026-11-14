@@ -2,7 +2,7 @@
  "event": "WTT Contender Istanbul",
  "wtt_event_id": "3257",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257&selectedTab=Draws",
- "updated": "2026-11-14T10:53:00Z",
+ "updated": "2026-11-14T17:01:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -478,7 +478,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-14T13:30:00Z"
+       "when": "2026-11-14T13:30:00Z",
+       "score": "3-1 (11:8,11:4,9:11,15:13,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -492,7 +494,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-14T14:40:00Z"
+       "when": "2026-11-14T14:40:00Z",
+       "score": "0-3 (6:11,14:16,10:12,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -501,9 +505,18 @@
      "matches": [
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Joo Cheonhui",
+         "nat": "KOR",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-15T13:15:00Z"
       }
      ]
     }
@@ -976,7 +989,9 @@
          "nat": "KAZ"
         }
        ],
-       "when": "2026-11-14T14:05:00Z"
+       "when": "2026-11-14T14:05:00Z",
+       "score": "2-3 (11:6,11:8,6:11,5:11,1:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -989,7 +1004,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-14T15:15:00Z"
+       "when": "2026-11-14T15:15:00Z",
+       "score": "3-2 (12:10,14:16,11:4,9:11,11:8)",
+       "winner": 0
       }
      ]
     },
@@ -998,9 +1015,16 @@
      "matches": [
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Fang Bo",
+         "nat": "KAZ"
+        },
+        {
+         "name": "Kang Dongsoo",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-11-15T12:30:00Z"
       }
      ]
     }
