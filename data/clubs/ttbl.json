@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-15T17:53:00Z",
+ "updated": "2026-11-15T23:00:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -32,6 +32,17 @@
      },
      {
       "pos": 2,
+      "team": "1. FC Saarbrücken",
+      "p": 8,
+      "w": 6,
+      "l": 2,
+      "for": 19,
+      "against": 11,
+      "diff": 8,
+      "pts": 12
+     },
+     {
+      "pos": 3,
       "team": "TTF Ochsenhausen",
       "p": 8,
       "w": 6,
@@ -42,26 +53,15 @@
       "pts": 12
      },
      {
-      "pos": 3,
-      "team": "1. FC Saarbrücken",
-      "p": 7,
-      "w": 5,
-      "l": 2,
-      "for": 16,
-      "against": 10,
-      "diff": 6,
-      "pts": 10
-     },
-     {
       "pos": 4,
       "team": "Werder Bremen",
-      "p": 7,
-      "w": 4,
+      "p": 8,
+      "w": 5,
       "l": 3,
-      "for": 15,
-      "against": 14,
-      "diff": 1,
-      "pts": 8
+      "for": 18,
+      "against": 16,
+      "diff": 2,
+      "pts": 10
      },
      {
       "pos": 5,
@@ -99,27 +99,16 @@
      {
       "pos": 8,
       "team": "TTC Grenzau",
-      "p": 7,
+      "p": 8,
       "w": 3,
-      "l": 4,
-      "for": 14,
-      "against": 18,
-      "diff": -4,
+      "l": 5,
+      "for": 15,
+      "against": 21,
+      "diff": -6,
       "pts": 6
      },
      {
       "pos": 9,
-      "team": "TTC Bergneustadt",
-      "p": 7,
-      "w": 2,
-      "l": 5,
-      "for": 14,
-      "against": 18,
-      "diff": -4,
-      "pts": 4
-     },
-     {
-      "pos": 10,
       "team": "TTC Fulda-Maberzell",
       "p": 8,
       "w": 2,
@@ -127,6 +116,17 @@
       "for": 16,
       "against": 20,
       "diff": -4,
+      "pts": 4
+     },
+     {
+      "pos": 10,
+      "team": "TTC Bergneustadt",
+      "p": 8,
+      "w": 2,
+      "l": 6,
+      "for": 16,
+      "against": 21,
+      "diff": -5,
       "pts": 4
      },
      {
@@ -713,8 +713,11 @@
    "when": "2026-11-15T14:30:00Z",
    "home": "TTC Bergneustadt",
    "away": "Werder Bremen",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
    "round": "Matchday 8",
    "venue": "Bergneustadt"
   },
@@ -722,8 +725,11 @@
    "when": "2026-11-15T16:00:00Z",
    "home": "1. FC Saarbrücken",
    "away": "TTC Grenzau",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
    "round": "Matchday 8",
    "venue": "Saarbrücken"
   },
