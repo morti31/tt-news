@@ -74,3 +74,7 @@ Link to the earlier Eleven story that set the storyline up.
 
 **Player names.** Write every player's name exactly as their profile has it (the `name` in data/players/<slug>.json), in the same order and with the same accents, never the other way round from another source ("Fang Bo", never "Bo Fang"). The rules live in one place: `data/names.json` (associations that put the family name first, and fixed spellings) and `tools/names.py`, which every sync, the build and the live-score worker use; a profile name automatically wins over the same name reversed. The build prints a "name warning" for any story that reverses a profiled name: fix it before committing. If WTT spells someone differently from their profile, add a line to `fixes` in data/names.json rather than changing it in one place.
 
+
+## Story times
+
+Everywhere except the story's own byline, publication times read like BBC Sport: "Just now", "5 mins ago", "1 hr ago", "23 hrs ago", "1 day ago", up to "6 days ago", then a date ("8 Nov"). `localtime.js` does this in the reader's browser for every `<time datetime="...T...">` outside `.article-byline` (the full UK date and time is in the tooltip), so new list or card markup only needs a `<time datetime=ISO>` with the full date and time as its text. Fixture times (`data-lt`) and "Updated" lines are left alone.

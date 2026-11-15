@@ -28,8 +28,9 @@
     const p = stamp(s);
     if (!p) return fmt(s.date);
     const t = new Date(p);
-    return t.toISOString().slice(0, 10) === today ? t.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
+    const txt = t.toISOString().slice(0, 10) === today ? t.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
       : t.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+    return `<time datetime="${esc(p)}">${txt}</time>`;
   };
   const who = () => "Eleven Team";
   const url = (s) => (arts[s.id] && arts[s.id].url) || `/news/${s.id}`;
