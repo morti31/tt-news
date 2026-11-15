@@ -279,6 +279,17 @@ async function switches(env, origin) {
   return SWITCHES;
 }
 
+// Old /tag/<slug> links for players and events that now have their own page. Cloudflare allows only 2,000 rules in
+// _redirects, so build_site.py writes these to data/tag-redirects.json and the worker answers them.
+let TAG_MOVES = null;
+async function tagMove(env, url) {
+  if (!TAG_MOVES) {
+    try { TAG_MOVES = await (await env.ASSETS.fetch(new Request(url.origin + "/data/tag-redirects.json"))).json(); } catch (e) { return null; }
+  }
+  const slug = url.pathname.slice(5).replace(/\.html$/, "").replace(/\/$/, "");
+  return TAG_MOVES[slug] || null;
+}
+
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
@@ -321,6 +332,10 @@ export default {
       } catch (err) {
         return json({ videos: [], detail: String(err.message || err) }, 200, 60);
       }
+    }
+    if (url.pathname.startsWith("/tag/")) {
+      const to = await tagMove(env, url);
+      if (to) return Response.redirect(url.origin + to, 301);
     }
     return env.ASSETS.fetch(req);
   },
