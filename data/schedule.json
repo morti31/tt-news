@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T18:08:00Z",
+  "updated": "2026-11-15T21:00:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -786,56 +786,6 @@
       "source": "https://www.ettu.org/european-giants-enter-the-race-as-hylo-champions-league-men-round-of-16-begins/"
     },
     {
-      "id": "wtt-3257-ttewsinglessfnl000100",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Honoka Hashimoto v Miu Hirano, women's singles, semifinal",
-      "start": "2026-11-14T13:30:00Z",
-      "end": "2026-11-14T14:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWSINGLES-----------SFNL000100--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttemsinglessfnl000100",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Ricardo Walther v Fang Bo, men's singles, semifinal",
-      "start": "2026-11-14T14:05:00Z",
-      "end": "2026-11-14T14:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------SFNL000100--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttewsinglessfnl000200",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Kaho Akae v Joo Cheonhui, women's singles, semifinal",
-      "start": "2026-11-14T14:40:00Z",
-      "end": "2026-11-14T15:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWSINGLES-----------SFNL000200--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttemsinglessfnl000200",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Kang Dongsoo v Ryoichi Yoshiyama, men's singles, semifinal",
-      "start": "2026-11-14T15:15:00Z",
-      "end": "2026-11-14T15:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------SFNL000200--",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3257-ttexdoublesfnl000100",
-      "event_id": "wtt-contender-istanbul-2026",
-      "name": "WTT Contender Istanbul: Evgeny Tikhonov / Maria Panfilova v Connor Green / Anna Hursey, mixed doubles, final",
-      "start": "2026-11-14T15:50:00Z",
-      "end": "2026-11-14T16:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEXDOUBLES-----------FNL-000100--",
-      "detail": "Table 1"
-    },
-    {
       "id": "cl-men-r16-1-ks-bogoria-grodzisk-mazowiecki-asd-tt-santa-tecla-",
       "event_id": "ettu-cl-men-r16-1-2026",
       "name": "ETTU Champions League Men: KS Bogoria Grodzisk Mazowiecki v ASD TT Santa Tecla Nulvi, last 16 first leg",
@@ -874,7 +824,7 @@
       "start": "2026-11-15T11:00:00Z",
       "end": "2026-11-15T11:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWDOUBLES-----------FNL-000100--",
+      "code": "TTEWDOUBLES-----------FNL-000100----------",
       "detail": "Table 1"
     },
     {
@@ -884,7 +834,7 @@
       "start": "2026-11-15T11:45:00Z",
       "end": "2026-11-15T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMDOUBLES-----------FNL-000100--",
+      "code": "TTEMDOUBLES-----------FNL-000100----------",
       "detail": "Table 1"
     },
     {
@@ -894,7 +844,7 @@
       "start": "2026-11-15T12:30:00Z",
       "end": "2026-11-15T13:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEMSINGLES-----------FNL-000100--",
+      "code": "TTEMSINGLES-----------FNL-000100----------",
       "detail": "Table 1"
     },
     {
@@ -904,7 +854,7 @@
       "start": "2026-11-15T13:15:00Z",
       "end": "2026-11-15T14:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
-      "code": "TTEWSINGLES-----------FNL-000100--",
+      "code": "TTEWSINGLES-----------FNL-000100----------",
       "detail": "Table 1"
     },
     {
@@ -922,7 +872,7 @@
       "start": "2026-11-16T07:00:00Z",
       "end": "2026-11-16T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1000700--",
+      "code": "TTEMSINGLES-----------RND1000700----------",
       "detail": "Table 1"
     },
     {
@@ -932,7 +882,7 @@
       "start": "2026-11-16T07:00:00Z",
       "end": "2026-11-16T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1000600--",
+      "code": "TTEMSINGLES-----------RND1000600----------",
       "detail": "Table 2"
     },
     {
@@ -942,7 +892,7 @@
       "start": "2026-11-16T07:00:00Z",
       "end": "2026-11-16T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000100--",
+      "code": "TTEWSINGLES-----------RND1000100----------",
       "detail": "Table 3"
     },
     {
@@ -952,7 +902,7 @@
       "start": "2026-11-16T07:00:00Z",
       "end": "2026-11-16T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1000200--",
+      "code": "TTEMSINGLES-----------RND1000200----------",
       "detail": "Table 4"
     },
     {
@@ -962,7 +912,7 @@
       "start": "2026-11-16T07:35:00Z",
       "end": "2026-11-16T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001400--",
+      "code": "TTEMSINGLES-----------RND1001400----------",
       "detail": "Table 1"
     },
     {
@@ -972,7 +922,7 @@
       "start": "2026-11-16T07:35:00Z",
       "end": "2026-11-16T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000200--",
+      "code": "TTEWSINGLES-----------RND1000200----------",
       "detail": "Table 2"
     },
     {
@@ -982,7 +932,7 @@
       "start": "2026-11-16T07:35:00Z",
       "end": "2026-11-16T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001100--",
+      "code": "TTEMSINGLES-----------RND1001100----------",
       "detail": "Table 3"
     },
     {
@@ -992,7 +942,7 @@
       "start": "2026-11-16T07:35:00Z",
       "end": "2026-11-16T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001000--",
+      "code": "TTEMSINGLES-----------RND1001000----------",
       "detail": "Table 4"
     },
     {
@@ -1002,7 +952,7 @@
       "start": "2026-11-16T08:10:00Z",
       "end": "2026-11-16T08:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000300--",
+      "code": "TTEWSINGLES-----------RND1000300----------",
       "detail": "Table 1"
     },
     {
@@ -1012,7 +962,7 @@
       "start": "2026-11-16T08:10:00Z",
       "end": "2026-11-16T08:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001500--",
+      "code": "TTEMSINGLES-----------RND1001500----------",
       "detail": "Table 2"
     },
     {
@@ -1022,7 +972,7 @@
       "start": "2026-11-16T08:10:00Z",
       "end": "2026-11-16T08:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000800--",
+      "code": "TTEWSINGLES-----------RND1000800----------",
       "detail": "Table 3"
     },
     {
@@ -1032,7 +982,7 @@
       "start": "2026-11-16T13:00:00Z",
       "end": "2026-11-16T13:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1002700--",
+      "code": "TTEMSINGLES-----------RND1002700----------",
       "detail": "Table 1"
     },
     {
@@ -1042,7 +992,7 @@
       "start": "2026-11-16T13:00:00Z",
       "end": "2026-11-16T13:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000400--",
+      "code": "TTEWSINGLES-----------RND1000400----------",
       "detail": "Table 2"
     },
     {
@@ -1052,7 +1002,7 @@
       "start": "2026-11-16T13:00:00Z",
       "end": "2026-11-16T13:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1002600--",
+      "code": "TTEMSINGLES-----------RND1002600----------",
       "detail": "Table 3"
     },
     {
@@ -1062,7 +1012,7 @@
       "start": "2026-11-16T13:35:00Z",
       "end": "2026-11-16T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000500--",
+      "code": "TTEWSINGLES-----------RND1000500----------",
       "detail": "Table 1"
     },
     {
@@ -1072,7 +1022,7 @@
       "start": "2026-11-16T13:35:00Z",
       "end": "2026-11-16T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001800--",
+      "code": "TTEMSINGLES-----------RND1001800----------",
       "detail": "Table 2"
     },
     {
@@ -1082,7 +1032,7 @@
       "start": "2026-11-16T13:35:00Z",
       "end": "2026-11-16T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001900--",
+      "code": "TTEMSINGLES-----------RND1001900----------",
       "detail": "Table 3"
     },
     {
@@ -1092,7 +1042,7 @@
       "start": "2026-11-16T14:10:00Z",
       "end": "2026-11-16T14:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1003000--",
+      "code": "TTEMSINGLES-----------RND1003000----------",
       "detail": "Table 1"
     },
     {
@@ -1102,7 +1052,7 @@
       "start": "2026-11-16T14:10:00Z",
       "end": "2026-11-16T14:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000600--",
+      "code": "TTEWSINGLES-----------RND1000600----------",
       "detail": "Table 2"
     },
     {
@@ -1112,7 +1062,7 @@
       "start": "2026-11-16T14:10:00Z",
       "end": "2026-11-16T14:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1003100--",
+      "code": "TTEMSINGLES-----------RND1003100----------",
       "detail": "Table 3"
     },
     {
@@ -1122,7 +1072,7 @@
       "start": "2026-11-16T14:45:00Z",
       "end": "2026-11-16T15:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000700--",
+      "code": "TTEWSINGLES-----------RND1000700----------",
       "detail": "Table 1"
     },
     {
@@ -1132,7 +1082,7 @@
       "start": "2026-11-16T14:45:00Z",
       "end": "2026-11-16T15:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1002200--",
+      "code": "TTEMSINGLES-----------RND1002200----------",
       "detail": "Table 2"
     },
     {
@@ -1142,7 +1092,7 @@
       "start": "2026-11-16T14:45:00Z",
       "end": "2026-11-16T15:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1002300--",
+      "code": "TTEMSINGLES-----------RND1002300----------",
       "detail": "Table 3"
     },
     {
@@ -1152,7 +1102,7 @@
       "start": "2026-11-17T07:00:00Z",
       "end": "2026-11-17T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWDOUBLES-----------RND1000300--",
+      "code": "TTEWDOUBLES-----------RND1000300----------",
       "detail": "Table 1"
     },
     {
@@ -1162,7 +1112,7 @@
       "start": "2026-11-17T07:35:00Z",
       "end": "2026-11-17T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMDOUBLES-----------RND1000400--",
+      "code": "TTEMDOUBLES-----------RND1000400----------",
       "detail": "Table 1"
     },
     {
@@ -1172,7 +1122,7 @@
       "start": "2026-11-17T07:35:00Z",
       "end": "2026-11-17T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMDOUBLES-----------RND1000100--",
+      "code": "TTEMDOUBLES-----------RND1000100----------",
       "detail": "Table 2"
     },
     {
@@ -1182,7 +1132,7 @@
       "start": "2026-11-17T07:35:00Z",
       "end": "2026-11-17T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMDOUBLES-----------RND1000200--",
+      "code": "TTEMDOUBLES-----------RND1000200----------",
       "detail": "Table 3"
     },
     {
@@ -1192,7 +1142,7 @@
       "start": "2026-11-17T07:35:00Z",
       "end": "2026-11-17T08:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMDOUBLES-----------RND1000300--",
+      "code": "TTEMDOUBLES-----------RND1000300----------",
       "detail": "Table 4"
     }
   ]
