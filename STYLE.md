@@ -37,6 +37,36 @@ Every report and preview should look for the story behind the scoreline, using w
 
 Link to the earlier Eleven story that set the storyline up.
 
+## Shocks and upsets
+
+Every news run reads `data/upsets.json` first (rebuilt on every build by `tools/upsets.py` from the WTT results and the Bundesliga and T.League rubbers of the past four days). It ranks singles results by how unlikely they were, from the world ranking gap, and lists the extra angles (the winner's age, the round, a deciding game, no game dropped). The level decides how the result is written.
+
+**Shock** (a top-10 player beaten by someone outside the top 100, a top-3 player beaten by someone outside the top 50, or a winner ranked 25 times lower). This is the story, whatever else happened that day:
+- It gets its own story, never a line in a team or day report. If a quick update has already gone out without it, upgrade it.
+- The headline names the winner, the gap and the victim, in that order of surprise, and says it was a shock: "16-year-old Yuta Ito, ranked 368th, stuns world No 1 Sora Matsushima". No competition prefix with a colon ("T.League:"); put the competition in the standfirst.
+- Verbs with force: stuns, shocks, knocks out, topples, ends (a run). Use "shock" or "stunning" once, in the headline or intro, not both.
+- The intro is the gap: age, ranking, who they beat, how. The second paragraph gives the score and the moment it turned. The third tells the reader how big it is: the last time the loser lost to someone ranked that low, their record this season, what the winner had done before (a youth title, a first senior event).
+- The team result, the other rubbers and the table go lower down.
+- Mark it `"top": true` in news.json so it leads the home page, and add the winner to `data/tag-registry.json` if they are new.
+
+**Upset** (a top-50 player beaten by someone ranked five or more times lower, or a top-10 player beaten by someone outside the top 30): lead the story with it, put it in the headline ("Szudi stuns Togami as Dortmund..."), and say plainly that it was an upset.
+
+**Notable** (a top-100 player beaten by someone ranked three or more times lower): mention it high up in the report, with both rankings, as a surprise. It does not need its own headline.
+
+Never call a result a shock when the numbers mislead: check whether the loser was injured, returning, resting players or playing a dead rubber, and whether the winner's ranking is low only because they are new to senior events, returning from a break or out of the rankings by choice (Fan Zhendong). Say so in the story, and drop the shock framing if it no longer holds.
+
+### Writing the news: patterns
+
+These apply to every news story, and most of all when something unexpected happened.
+- **Lead with what nobody expected.** Ask what a fan would text a friend. A favourite winning is rarely the news; how they won, who nearly beat them or what it means is.
+- **Numbers that do the work go in the headline:** the ranking ("ranked 368th"), the age ("16-year-old"), the score when it is dramatic ("from 3-0 down"), the streak ("ends 21-match run").
+- **Strong, specific verbs.** Beats, stuns, edges, survives, saves match points, crushes, ends, sets up. Avoid "claims victory", "secures win", "is victorious".
+- **One story, one angle.** If a match day has two big stories, write two stories rather than one headline that tries to hold both.
+- **Context makes the scale clear:** a first ever, the last time it happened, a record, a ranking change. Check the match database and earlier Eleven stories for it.
+- **Reaction.** For a shock or an upset, look hard for what the winner and the loser said (club and league sites, Japanese, German and Chinese outlets) and quote it high up.
+- **Follow it.** A shock creates the next story: the winner's next match, the loser's response, the ranking change. Set it up in the closing paragraph and come back to it.
+- **Titles by outsiders** (a WTT champion ranked outside the top 100, a first-time winner, a qualifier or wild card going all the way) follow the same rules as a shock: say how far down the rankings they started, and lead with it.
+
 ## Features
 
 - **Register**: Guardian long read and New Yorker: intelligent, precise, sophisticated, with a point of view. Every feature carries substantial historical context, woven through it (see FEATURES.md), and is pitched at newer fans, at both new and established fans, or at expert fans, a third each (see FEATURES.md).

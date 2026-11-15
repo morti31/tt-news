@@ -3,6 +3,7 @@
 Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). Output: the page body.
 """
 import html, json, os
+import explainers
 import components
 import ranking_moves
 import doubles as doubles_data
@@ -136,6 +137,7 @@ def body(R, items, links=None):
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
 <p class="lede">The official ITTF world rankings: every ranked player in singles ({len(R["men"]):,} men and {len(R["women"]):,} women) and the top {max(len(D.get(x, [])) for x in ("women", "men", "mixed")) or 200} pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+{explainers.block(explainers.pick(["rankings"]), "top").replace('class="xp ', 'data-xk="s" class="xp ', 1)}{explainers.block(explainers.pick(["rankings-doubles", "rankings"]), "top").replace('class="xp ', 'data-xk="d" hidden class="xp ', 1).replace('id="xp-top-h"', 'id="xp-top-hd"').replace('"xp-top-h"', '"xp-top-hd"') if D.get("men") else ""}
 <div class="rk-bar-top">
   <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" data-g="women" aria-selected="true">Women</button><button role="tab" data-g="men" aria-selected="false">Men</button>{'<button role="tab" data-g="mixed" aria-selected="false">Mixed doubles</button>' if D.get("mixed") else ""}</div>
   <label class="rk-search"><span class="sr-only">Find a player or country</span><input id="rk-q" type="search" placeholder="Find a player or country, e.g. ENG" autocomplete="off"></label>
@@ -146,6 +148,7 @@ def body(R, items, links=None):
 {dpanel("women", "Women's doubles", "Women's doubles")}
 {dpanel("men", "Men's doubles", "Men's doubles")}
 {dpanel("mixed", "Mixed doubles", "Mixed doubles")}
+{explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["rankings"]))}
 <p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a> ({e(label)}{f"; doubles: {e(dlabel.split(', ', 1)[-1])}" if dlabel else ""}). Player and country names link to every Eleven story about them.</p>
 </main>
 <script>
@@ -164,6 +167,7 @@ def body(R, items, links=None):
     tabs.forEach((t) => t.setAttribute("aria-selected", String(t.dataset.g === G)));
     kinds.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.k === K)));
     if (kindBar) kindBar.hidden = G === "mixed";
+    document.querySelectorAll("[data-xk]").forEach((x) => {{ x.hidden = x.dataset.xk !== K; }});
     const id = "p-" + (K === "d" ? G + "-d" : G);   // panel ids differ from the address hash, so loading the page never jumps past the tabs
     document.querySelectorAll(".rk-panel").forEach((p) => {{ p.hidden = p.id !== id; }});
     history.replaceState(null, "", "#" + (G === "mixed" ? "mixed" : G + (K === "d" ? "-doubles" : "")));

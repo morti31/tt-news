@@ -113,3 +113,7 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 
 
 Series: when a feature runs in parts, name them "<Series>, part one: ..." and "<Series>, part two: ...", link each part to the other in the first paragraph, and publish the parts on consecutive days.
+
+## Where analysis pieces appear
+
+Every Analysis piece is also shown, by `tools/explainers.py`, as "Analysis" or "Related analysis" cards (cover, title, standfirst) on the pages it relates to: news stories that share its tags, player profiles, event pages and league pages it is tagged with or whose name its title or standfirst uses, and the Rankings, Tournaments and Clubs pages when its title or standfirst uses their words (rankings, prize money, workload, league, club). So name the main players, events and leagues in the title or standfirst and in `tags`, and every piece needs a cover image.

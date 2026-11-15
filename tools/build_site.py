@@ -12,6 +12,7 @@ import components
 import build_events
 import build_rankings
 import build_guides
+import explainers
 import build_clubs
 import build_tags
 import build_players
@@ -593,6 +594,7 @@ def article_page(a, others, brief=False):
   {components.social(a.get("social"))}
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
+  {explainers.analysis_block(explainers.analysis(next((it["all"] for it in TAG_ITEMS if it["url"] == f"/news/{a['slug']}.html"), []), exclude=f"/news/{a['slug']}.html"), "Related analysis")}
   {correction_note(a)}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
   {build_tags.topics(TG, TAGFULL.get(a.get("story_id") or a["slug"], []))}
@@ -686,6 +688,7 @@ def main():
     STORIES = story_list(arts)
     global TG, TAGMAP, TAG_ITEMS, TAGFULL, PROFILES, ROSTER
     TG, TAGMAP, TAG_ITEMS, TAGFULL = make_tags(arts)
+    explainers.set_items(TAG_ITEMS, {f"/news/{a['slug']}.html": feature_cover(a) for a in arts if a.get("category") == "Features" and feature_cover(a)})
     # Who gets a player page (tools/people.py): decided once, before any page links to anyone
     ROSTER = people.Roster(TG, TAG_ITEMS, build_rankings.load(), build_players.database())
     build_tags.ENTITY.update(ROSTER.urls)
@@ -814,7 +817,17 @@ def main():
                   f"<news:publication_date>{e(a.get('published', a['date'] + 'T09:00:00Z'))}</news:publication_date><news:title>{e(a['title'])}</news:title></news:news></url>")
     ns.append("</urlset>")
     open(os.path.join(ROOT, "news-sitemap.xml"), "w", encoding="utf-8").write("\n".join(ns) + "\n")
+    try:   # shocks and upsets for the news runs (STYLE.md, "Shocks and upsets")
+        import upsets
+        upsets.main()
+    except Exception as ex:
+        print("upsets: skipped,", ex)
     urls += build_guides.build(page, SITE, AUTHORS, avatar, linkify)
+    # The schedule page is hand-written: its "Explained" block is filled in between markers
+    sp = os.path.join(ROOT, "schedule.html")
+    st = open(sp, encoding="utf-8").read()
+    st = re.sub(r"<!--xp-->.*?<!--/xp-->", lambda m: "<!--xp-->" + explainers.block(explainers.pick(["events"]), "top") + "<!--/xp-->", st, flags=re.S)
+    open(sp, "w", encoding="utf-8").write(st)
     # Club pages: stories with their summary and league, for the league news lists
     extra = {s["id"]: s for s in NEWS.get("stories", [])}
     club_stories = [{**i, "summary": extra.get(i["id"], {}).get("summary", ""), "league": extra.get(i["id"], {}).get("league")} for i in story_list(arts)]

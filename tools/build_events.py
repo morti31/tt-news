@@ -5,6 +5,7 @@ Called from build_site.py. Input: data/events.json (hub events and poster detail
 Output: events/<id>.html, events/<id>.ics, events/index.html, data/event-index.json.
 """
 import json, os, datetime as dt, html
+import explainers
 import components
 import match_centre
 import posters
@@ -270,6 +271,7 @@ def hub(ev, items, schedule, today, news):
     <a class="panel-link" href="/events/">All events</a></section>
 </aside></div>
 {f'<div class="hub-full">{below_html}</div>' if below_html else ""}
+{explainers.related(explainers.for_event(ev), tags=[ev["id"]], words=[ev["name"]])}
 </main>
 {components.SCRIPT if (vids or ev.get("draw") or mc) else ""}
 {'<script src="/live.js" defer></script>' if (live_sec or (mc and ev.get("wtt_id"))) else ""}"""
@@ -362,12 +364,14 @@ def index_page(data, today):
     levels = "".join(f'<button data-s="{e(x)}" aria-pressed="false">{e(x.replace("WTT ", "", 1))}</button>' for x in order if x in present)
     return f"""<main class="wrap">
 <section class="sched-head"><div><h1>Tournaments</h1><p class="lede">Draws, results, schedules and news for every tournament.</p></div></section>
+{explainers.block(explainers.pick(["events"]), "top")}
 {components.tour_tabs("upcoming")}
 <div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
 <div class="toggle sched-filter ev-levels" role="group" aria-label="Filter WTT events by level" hidden><button data-s="" aria-pressed="true">All WTT</button>{levels}</div>
 <div class="ev-panel" id="upcoming">{upcoming}</div>
 <div class="ev-panel" id="past" hidden>{past_html}<p class="hub-empty ev-none" hidden>No events of this kind that year.</p></div>
 <p class="hub-empty ev-none-up" hidden>No upcoming events of this kind yet.</p>
+{explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["events"]))}
 <p class="small">The full calendar, including club competitions, is on the <a href="/schedule.html">schedule</a>.</p>
 </main>
 <script>

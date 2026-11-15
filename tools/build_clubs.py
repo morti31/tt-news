@@ -9,6 +9,7 @@ News: a story belongs to a league if it has "league": "<slug>" in data/news.json
 category and its headline or summary names the league (see LEAGUES[...]["match"]).
 """
 import json, os, re, html, datetime as dt
+import explainers
 from zoneinfo import ZoneInfo
 
 e = html.escape
@@ -244,6 +245,7 @@ def league_page(lg, stories, now):
 <section class="hub-sec" id="tables"><h2 class="section-title">{"Table" if mixed else "Tables"}</h2><div class="cl-tables{" one" if mixed else ""}">{tables}</div></section>
 {f'<section class="hub-sec" id="squads"><h2 class="section-title">Squads</h2>{squads}</section>' if squads else ""}
 {f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2>{news_list(mine, 12)}</section>' if mine else ""}
+{explainers.related(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league", "league:" + lg["slug"]]), tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []))}
 <section class="hub-sec" id="about"><h2 class="section-title">About the league</h2><p class="cl-about">{e(lg["about"])}</p>
 <p class="small">Tables, fixtures and results from {srcs}{f', updated {uk(upd).day} {uk(upd):%B} at {uk(upd):%H:%M} UK time' if upd else ""}.</p></section>
 </main>'''
@@ -292,11 +294,13 @@ def hub(stories, now):
     return f'''<main class="wrap cl-page">
 <section class="sched-head"><div><h1>Clubs</h1><p class="lede">Tables, results, fixtures and news from the leagues where the world's best play: Germany, China, Japan, France, Europe, the United States and India.</p></div></section>
 <nav class="cl-chips" aria-label="Leagues">{chips}</nav>
+{explainers.block(explainers.pick(["clubs"]), "top")}
 <div class="cl-hub-top">
 <section class="hub-sec" id="results"><h2 class="section-title">Latest results</h2>{block(allres) or '<p class="cl-none">No club results in the last 10 days.</p>'}</section>
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Coming up</h2>{block(allfix) or '<p class="cl-none">No club fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span></p></section></div>
 <section class="hub-sec" id="leagues"><h2 class="section-title">Leagues</h2><ul class="cl-cards">{"".join(cards)}</ul></section>
+{explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["clubs"]))}
 {f'<section class="hub-sec" id="news"><h2 class="section-title">Club news</h2>{news_list(clubs_news, 12)}</section>' if clubs_news else ""}
 </main>'''
 

@@ -31,3 +31,7 @@ Follow STYLE.md (Guardian style) for spelling, numbers, names and tone.
 - `seo_title` under 60 characters, main phrase first.
 - `description` 140 to 155 characters, says what the reader learns.
 - `summary` one or two sentences for the shelf card and standfirst, different from the description.
+
+## Where a guide appears
+
+Guides also appear in the "Explained" block on the pages they help with (rankings, player profiles, tournaments, event pages, club and league pages), chosen by the rules in `tools/explainers.py`. When a new guide suits a page those rules don't cover, add `"pages"` to its file, e.g. `"pages": ["rankings", "player", "events", "event:WTT Series", "event:Majors", "clubs", "league", "league:bundesliga"]`. Keep at most three guides per page: the rules list the best first.

@@ -1559,3 +1559,53 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 @media (max-width: 560px) { .rk-three-d { grid-template-columns: minmax(0, 1fr); } }
 .rk-kind { margin: 0 0 16px; max-width: 260px; }
 .rk-three-d .rk-leader { align-self: start; }
+
+/* "Explained": one to three Guide pieces matched to the page (tools/explainers.py) */
+.xp { margin: 28px 0; }
+.xp-top { margin: 4px 0 24px; }
+.xp-tile { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 12px; color: var(--xp-c); background: var(--xp-t); }
+.xp-tile svg { width: 34px; height: 34px; }
+.xp-start, .xp-words { --xp-c: var(--ball); --xp-t: color-mix(in srgb, var(--ball) 14%, transparent); }
+.xp-pro, .xp-styles { --xp-c: var(--International); --xp-t: var(--International-tint); }
+.xp-clubs { --xp-c: var(--Clubs); --xp-t: var(--Clubs-tint); }
+.xp-kit { --xp-c: var(--England); --xp-t: var(--England-tint); }
+.xp-h { display: block; font: 700 17px/1.3 "Inter Tight", sans-serif; color: var(--ink); }
+.xp-s { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-size: 14.5px; line-height: 1.45; color: var(--muted); }
+.xp-m { font-size: 13px; color: var(--muted); }
+.xp a { text-decoration: none; color: inherit; }
+.xp a:hover .xp-h { text-decoration: underline; }
+.xp-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
+.xp-cards > li > a { display: flex; flex-direction: column; gap: 8px; height: 100%; box-sizing: border-box; padding: 16px; border: 1px solid var(--rule); border-radius: 10px; background: var(--card); transition: border-color .15s; }
+.xp-cards > li > a:hover { border-color: var(--muted); }
+.xp-cards .xp-tile { margin-bottom: 4px; }
+.xp-cards .xp-m { margin-top: auto; }
+.xp-one > a { display: flex; gap: 18px; align-items: center; padding: 18px 20px; border-radius: 12px; border: 1px solid var(--rule); border-left: 4px solid var(--ball); background: var(--card); }
+.xp-one .xp-tile { width: 72px; height: 72px; }
+.xp-one .xp-tile svg { width: 44px; height: 44px; }
+.xp-txt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.xp-k { font: 800 12px/1 "Inter Tight", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--ball); }
+.xp-one .xp-h { font-size: 19px; }
+.xp-go { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-top: 4px; font-weight: 600; color: var(--ink); font-size: 14.5px; }
+.xp-one a:hover .xp-go { text-decoration: underline; }
+@media (max-width: 720px) {
+  .xp-cards { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; margin: 0 -16px; padding: 0 16px 6px; scrollbar-width: none; }
+  .xp-cards::-webkit-scrollbar { display: none; }
+  .xp-cards > li { flex: 0 0 78%; scroll-snap-align: start; }
+  .xp-one > a { align-items: flex-start; padding: 16px; gap: 14px; }
+  .xp-one .xp-tile { width: 52px; height: 52px; }
+  .xp-one .xp-tile svg { width: 32px; height: 32px; }
+}
+/* Related analysis cards (tools/explainers.py analysis_block) */
+.xa-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.xa-cards > li > a { display: flex; flex-direction: column; gap: 6px; height: 100%; text-decoration: none; color: inherit; }
+.xa-pic { display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; background: var(--rule); margin-bottom: 6px; }
+.xa-pic img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.xa-cards a:hover .xa-pic img { transform: scale(1.03); }
+.xa-k { font: 800 12px/1 "Inter Tight", sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--ball); }
+.xa .xp-h { font-size: 18px; }
+.article .xa { margin: 32px 0 8px; }
+@media (max-width: 720px) {
+  .xa-cards { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; margin: 0 -16px; padding: 0 16px 6px; scrollbar-width: none; }
+  .xa-cards::-webkit-scrollbar { display: none; }
+  .xa-cards > li { flex: 0 0 82%; scroll-snap-align: start; }
+}
