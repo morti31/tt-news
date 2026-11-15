@@ -60,16 +60,34 @@ window.ElevenStream = function (el) {
     const LEAGUE_PAGE = [[/Champions League/i, "champions-league"], [/Super League/i, "super-league"], [/T\.? ?League/i, "t-league"], [/TTBL|Bundesliga/i, "bundesliga"],
       [/Pro A\b/i, "pro-a"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
     const leaguePage = (e) => { if (hubs[e.id] || !/club|league/i.test(`${e.series} ${e.type}`)) return null; const m = LEAGUE_PAGE.find(([rx]) => rx.test(e.name)); return m ? `/clubs/${m[1]}.html` : null; };
-    const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) => {
+    // Where an "On now" card goes, best first: Eleven's event page, Eleven's league page, Eleven's latest story on the
+    // event, then (WTT events only) WTT's live scores, else Eleven's schedule. Never WTT for events WTT doesn't run.
+    const core = (n) => n.split(", ")[0].replace(/^ETTU /, "").replace(/\s+(Men|Women|Mixed)$/i, "").toLowerCase();
+    const storyFor = (e) => {
+      const key = core(e.name), from = e.start + "T00:00:00Z";
+      return (news.stories || []).filter((s) => (s.published || s.date || "") >= from.slice(0, 10) && `${s.headline} ${s.summary || ""}`.toLowerCase().includes(key))
+        .sort((a, b) => (b.published || b.date).localeCompare(a.published || a.date))[0];
+    };
+    const target = (e) => {
+      if (hubs[e.id]) return { url: hubs[e.id].url, sub: "Draw, results and schedule" };
       const lp = leaguePage(e);
+      if (lp) return { url: lp, sub: "Fixtures and results" };
+      const st = storyFor(e);
+      if (st) return { url: `/news/${st.id}.html`, sub: "Latest report" };
+      if (e.series === "WTT") return { url: news.live_results_url || "https://www.worldtabletennis.com/", sub: "Live scores on WTT", ext: true };
+      return { url: "/schedule.html", sub: [e.city, e.country].filter(Boolean).join(", ") || "On the schedule" };
+    };
+    const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) => {
+      const t = target(e);
       // A long name is split so the card keeps the strip's width: "ETTU Champions League Women, Stage 2 Round 1"
       // shows as "Champions League Women" with the stage on the line below
       const [head, ...rest] = e.name.split(", ");
       const title = head.replace(/^ETTU /, ""), stage = rest.join(", ");
-      return `<a class="score-card live-card" href="${esc(lp || (hubs[e.id] ? hubs[e.id].url : news.live_results_url || "https://www.worldtabletennis.com/"))}"${hubs[e.id] || lp ? "" : ' target="_blank" rel="noopener"'}>
+      const sub = t.sub === "Latest report" || !stage ? t.sub : stage;
+      return `<a class="score-card live-card" href="${esc(t.url)}"${t.ext ? ' target="_blank" rel="noopener"' : ""}>
         <span class="ev"><span class="live-dot"></span>On now</span>
         <span class="row won"><span>${esc(title)}</span></span>
-        <span class="row"><span>${esc(stage || (lp ? "Fixtures and results" : hubs[e.id] ? "Draw, results and schedule" : "Live scores on WTT"))}</span></span></a>`;
+        <span class="row"><span>${esc(sub)}</span></span></a>`;
     });
     (news.results || []).forEach((r) => r.matches.forEach((m) => {
       const sc = /^(\d+)-(\d+)$/.exec(m.score || "");

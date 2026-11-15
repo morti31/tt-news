@@ -78,3 +78,7 @@ Link to the earlier Eleven story that set the storyline up.
 ## Story times
 
 Everywhere except the story's own byline, publication times read like BBC Sport: "Just now", "5 mins ago", "1 hr ago", "23 hrs ago", "1 day ago", up to "6 days ago", then a date ("8 Nov"). `localtime.js` does this in the reader's browser for every `<time datetime="...T...">` outside `.article-byline` (the full UK date and time is in the tooltip), so new list or card markup only needs a `<time datetime=ISO>` with the full date and time as its text. Fixture times (`data-lt`) and "Updated" lines are left alone.
+
+## "On now" cards
+
+The scores strip's "On now" cards link, best first, to Eleven's event page, Eleven's league page, Eleven's latest story about the event (any story since the event began whose headline or summary names it), WTT's live scores (WTT events only), and otherwise Eleven's schedule. So a story on an event without its own page is what readers reach from the strip: name the competition in the headline or summary ("Europe Cup", "World Para Championships").
