@@ -39,7 +39,7 @@ Link to the earlier Eleven story that set the storyline up.
 
 ## Shocks and upsets
 
-Every news run reads `data/upsets.json` first (rebuilt on every build by `tools/upsets.py` from the WTT results and the Bundesliga and T.League rubbers of the past four days). It ranks singles results by how unlikely they were, from the world ranking gap, and lists the extra angles (the winner's age, the round, a deciding game, no game dropped). The level decides how the result is written.
+Every news run reads `data/upsets.json` first (rebuilt on every build by `tools/upsets.py` from the WTT results and the Bundesliga and T.League rubbers of the past four days). It ranks singles results by how unlikely they were, from the world ranking gap, and lists the extra angles (the winner's age, the round and the match labels below). It also labels every recent match and league tie by how it was won (see "Match labels"). The level decides how the result is written.
 
 **Shock** (a top-10 player beaten by someone outside the top 100, a top-3 player beaten by someone outside the top 50, or a winner ranked 25 times lower). This is the story, whatever else happened that day:
 - It gets its own story, never a line in a team or day report. If a quick update has already gone out without it, upgrade it.
@@ -54,6 +54,44 @@ Every news run reads `data/upsets.json` first (rebuilt on every build by `tools/
 **Notable** (a top-100 player beaten by someone ranked three or more times lower): mention it high up in the report, with both rankings, as a surprise. It does not need its own headline.
 
 Never call a result a shock when the numbers mislead: check whether the loser was injured, returning, resting players or playing a dead rubber, and whether the winner's ranking is low only because they are new to senior events, returning from a break or out of the rankings by choice (Fan Zhendong). Say so in the story, and drop the shock framing if it no longer holds.
+
+### Match labels: how the match was won
+
+`data/upsets.json` also labels every recent singles match involving a top-300 player or played in the Bundesliga or T.League (`matches`), and every finished league tie (`ties`), from the score, the game-by-game points, the match length and the match database. Each label has a trigger and the words that go with it. Use the label in the headline or intro when it is the most striking thing about the match, with its number. These are BBC and Guardian register: forceful, never tabloid (no "batters", "annihilates", "hammers" as a verb).
+
+| Label | Trigger | Words |
+|---|---|---|
+| sweep | No game dropped (3-0, 4-0) | sweeps, wins in straight games, without dropping a game |
+| hammering | A sweep with every game won by six points or more | crushes, routs, demolishes, thrashes; give the points dropped ("dropped eight points") |
+| routine | The favourite wins with no deuce game and no decider | eases past, cruises, breezes through; never in a headline unless nothing else happened, never for a final |
+| ground out | 60 minutes or more (best of five) or 75 or more (best of seven), or three deuce games in a match that was not a sweep | grinds out, outlasts, battles past; give the time ("after 71 minutes") |
+| comeback | The winner was two games down or more (0-2, 1-3, 0-3) | comes from two games down, fights back, recovers from 3-1 down. "Reverse sweep" only for exactly 0-2 to 3-2 |
+| collapse | The same match from the loser's side | lets slip a 2-0 lead, throws away a 3-1 lead; use it when the loser is the bigger name |
+| edged | The match went to a deciding game | edges, squeezes past, a five-game thriller, a seven-game epic; "in a deciding game won 12-10" |
+| saved match points | Only when point-by-point data or a source says so; the scores alone cannot prove it | saves match points, wins from match point down, saves three match points |
+| 11-0 game | A game won 11-0 | "won a game 11-0", rare at this level and worth a line |
+| sudden death | A T.League game settled at 10-10 on its single deciding point (it has no deuce) | on the sudden-death point; never "deuce" in the T.League |
+
+### Match labels: what the result means
+
+| Label | Trigger | Words |
+|---|---|---|
+| scare | A favourite taken to a decider by someone ranked three or more times lower | survives a scare, is pushed to the limit, is taken the distance |
+| streak | A winning run reaches 10, 15, 20..., or a run of 10 or more ends | a 20th straight win, extends unbeaten run, ends X's 21-match winning run |
+| revenge | Beats someone who beat them in the past 12 months | gains revenge for last month's defeat in Chongqing |
+| first | First win over a current top-10 player in Eleven's records (from 2021), or a first title or final (check) | maiden title, breakthrough win, first win over a top-10 player |
+| perfect week | Wins the title without dropping a game in the event | wins the title without dropping a game all week |
+| champion out | The defending champion or top seed loses (check the draw and last year's event page; not labelled automatically) | defending champion crashes out, top seed falls |
+
+### Match labels: team ties
+
+| Label | Trigger | Words |
+|---|---|---|
+| team whitewash | Tie won without losing a rubber | whitewash, wins 3-0 without dropping a rubber |
+| final rubber | Tie decided in the last rubber | decided in the final rubber, came down to the last match |
+| team turnaround | Team won from two rubbers down | fight back from 2-0 down |
+
+**Guardrails.** One label per headline, carried by its strongest number ("from two games down", "in 71 minutes", "dropped eight points"). Never "hammering" or "crushes" when any game went to deuce. Never "routine" for a final. Vary the verbs within a day's coverage, so no two headlines on the same day share one. A label never outranks a shock or upset: lead with the gap, then the manner ("16-year-old ranked 368th stuns world No 1 on the sudden-death point").
 
 ### Writing the news: patterns
 
