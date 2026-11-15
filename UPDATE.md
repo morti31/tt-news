@@ -180,7 +180,7 @@ The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.
 - `clubs`: `[{"club", "league"?, "from"?, "to"?, "current"?: true}]`, oldest first; mark every club the player plays for now with `"current": true` (players often have a club in more than one league, e.g. the T.League and the China Super League)
 - `equipment`: `{"blade", "forehand", "backhand", "sponsor", "confirmed": "YYYY-MM-DD", "source": url}`
 - `honours`: medals at the Olympics, World Championships, World Cup, WTT Finals and continental championships and multi-sport games, `{"year", "event": "<Competition>, <discipline>", "result": "Gold|Silver|Bronze"}`
-- `notes`: a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
+- `notes`: a list of strings (always a list, even for one note), each a sentence or two of current context shown at the top of the profile (an injury, a comeback, a change of association), each one dated in its words
 - `sources` (every page a fact came from) and `checked` (date)
 
 Every player in the world top 400 has a profile (the rankings page and the players index show 50 a page). New ranked players get a stub from `python3 tools/stubs.py`. Players outside the top 10 started as stubs (`"stub": true`): name, association, date of birth and playing hand from WTT, with results from the match database. The monthly check fills in up to 30 stubs a month, highest-ranked first (birthplace, height, grip, style, clubs, equipment, honours, sources), then removes `"stub"`. Don't take grip or style from WTT's player data: it is unreliable (it lists Dang Qiu as penhold).

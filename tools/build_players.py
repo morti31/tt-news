@@ -624,7 +624,10 @@ def build(page, site, tag_items, hubs, R, roster, tg):
             news_over = (f'<section class="hub-sec"><h2 class="section-title">Latest news</h2><ul class="pl-news">{lis}</ul>'
                          f'{entity.tab_link("news", f"All {len(news)} stories") if len(news) > 4 else ""}</section>')
 
-        notes = "".join(f"<p>{e(n)}</p>" for n in p.get("notes") or [])
+        note_list = p.get("notes") or []
+        if isinstance(note_list, str):   # a bio file with one note as plain text, not a list
+            note_list = [note_list]
+        notes = "".join(f"<p>{e(n)}</p>" for n in note_list)
         def host(u):
             return re.sub(r"^https?://(www[.])?", "", u).split("/")[0]
         srcs = ", ".join(f'<a href="{e(u)}" rel="noopener">{e(host(u))}</a>' for u in p.get("sources") or [])
