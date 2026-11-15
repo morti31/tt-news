@@ -278,6 +278,17 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         h = hub_by_wtt.get(eid)
         return f'<a href="/events/{h["id"]}.html">{e(nm)}</a>' if h else e(nm)
 
+    # Club squads this season (data/clubs/squads): player -> the teams they are registered with, and each competition's matches
+    import build_clubs, people
+    squad_of, comp_matches = {}, {}
+    for lg in build_clubs.LEAGUES:
+        for cid, tag, title in lg["comps"]:
+            sq, comp = build_clubs.load_squads(cid) or {}, build_clubs.load(cid) or {}
+            comp_matches[cid] = comp.get("matches") or []
+            for t in sq.get("teams", []):
+                for pl in t.get("players", []):
+                    squad_of.setdefault(people.key(pl["name"]), []).append((lg, tag, t["team"], cid, pl.get("nat")))
+
     for pid, p in profiles.items():
         ms = sorted(db.by_player.get(pid, []), key=lambda m: m.get("d") or "", reverse=True)
 
@@ -311,6 +322,14 @@ def build(page, site, tag_items, hubs, R, roster, tg):
             career_high = f"No. {r_best} ({dt.date.fromisoformat(first):%B %Y}, since records began)"
         now = [c for c in p.get("clubs") or [] if c.get("current")]
         club_txt = "; ".join(c["club"] + (f' ({c["league"]})' if c.get("league") else "") for c in now) or None
+        teams_ = [t for t in squad_of.get(people.key(p["name"]), []) if not t[4] or not p.get("nat") or t[4] == p["nat"]]
+        if not club_txt and teams_:   # no researched club: the squads the player is registered with this season
+            seen_t = []
+            for lg_, tag_, team_, cid_, _ in teams_:
+                if team_ not in [x[0] for x in seen_t]:
+                    seen_t.append((team_, lg_["name"]))
+            club_txt = "; ".join(f"{t} ({l})" for t, l in seen_t[:3])
+            now = seen_t
 
         # ---- header
         mv = ""
@@ -322,7 +341,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         dbl_txt = "; ".join(f'No. {pr["rank"]} in {dict(doubles_mod.EVENTS)[key_].lower()} with '
                             + " / ".join(x["name"] for x in pr["players"] if x.get("ittf_id") != pid)
                             for key_, pr in sorted(dbl, key=lambda t: t[1]["rank"])) or None
-        facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else ("Outside the top 400 in singles" if dbl else "Outside the top 400")),
+        facts = [("World ranking", f'No. {rk["rank"]}, {rk["points"]:,} points' if rk else ("Unranked in singles" if dbl else "Not in the world rankings")),
                  ("Doubles ranking", dbl_txt),
                  ("Career high", career_high), ("Age", f'{age(born)} (born {long_date(born)})' if born else None),
                  ("Birthplace", p.get("birthplace")), ("Height", f'{p["height_cm"]} cm' if p.get("height_cm") else None),
@@ -334,7 +353,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         head = f'''<header class="pl-head">{player_card(p, rk["rank"] if rk else None)}
 <div class="pl-id"><p class="small-label">{f"{gl} · " if gl else ""}{components.flag(p.get("nat"))} {e(p.get("nat") or "")}</p>
 <h1>{e(p["name"])}</h1>
-<p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else (best_dbl(dbl) or "Outside the world top 400")}</p></div>
+<p class="pl-rank">{f'World No. {rk["rank"]}{mv}' if rk else (best_dbl(dbl) or "Not in the world rankings")}</p></div>
 <dl class="pl-facts">{dl}</dl></header>'''
 
         # ---- season by season (singles, with team-event singles counted separately)
@@ -413,6 +432,49 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                         f'<p class="small">{e(rec_txt)}, all seasons on record.</p><div class="table-scroll"><table class="pl-table pl-matches"><thead><tr>'
                         f'<th scope="col">Date</th><th scope="col">League</th><th scope="col">Opponent</th><th scope="col">Result</th></tr></thead><tbody>{"".join(crow(c) for c in club[:20])}</tbody></table></div>'
                         f'<p class="small">Official results from the leagues: the Tischtennis Bundesliga and the T.League.</p></section>')
+
+        # ---- the player's clubs this season: team results and fixtures from the Clubs pages' data (who played is not recorded there)
+        team_sec = ""
+        if teams_:
+            now_iso = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M")
+            since_iso = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=120)).strftime("%Y-%m-%dT%H:%M")
+            res, fix, seen_m = [], [], set()
+            for lg_, tag_, team_, cid_, _ in teams_:
+                for m in comp_matches.get(cid_, []):
+                    if team_ not in (m.get("home"), m.get("away")) or not m.get("when") or (cid_, m["when"], m["home"]) in seen_m:
+                        continue
+                    seen_m.add((cid_, m["when"], m["home"]))
+                    row = (m["when"], lg_, tag_, team_, m)
+                    if m.get("score") is not None and m.get("status") != "live":
+                        if m["when"] >= since_iso:
+                            res.append(row)
+                    elif m["when"] >= now_iso[:10]:
+                        fix.append(row)
+            res.sort(key=lambda r: r[0], reverse=True)
+            fix.sort(key=lambda r: r[0])
+
+            def trow(r):
+                when, lg_, tag_, team_, m = r
+                home = m["home"] == team_
+                sc = m.get("score")
+                if sc is not None:
+                    mine, theirs = (sc[0], sc[1]) if home else (sc[1], sc[0])
+                    out_ = "W" if mine > theirs else ("L" if mine < theirs else "D")
+                    res_td = f'<td class="pl-res"><b>{out_}</b> {mine}-{theirs}</td>'
+                    cls_ = "pl-w" if out_ == "W" else "pl-l"
+                else:
+                    res_td, cls_ = f'<td class="pl-res"><span class="pl-sub">{e(build_clubs.uk(when).strftime("%H:%M")) if not m.get("date_only") else ""}</span></td>', ""
+                opp = m["away"] if home else m["home"]
+                return (f'<tr class="{cls_}"><td class="pl-date">{e(short_date(when))}</td>'
+                        f'<td><a href="/clubs/{lg_["slug"]}.html">{e(lg_["name"])}</a><span class="pl-sub">{e(", ".join(x for x in (tag_ if tag_ != "Mixed" else None, m.get("round")) if x))}</span></td>'
+                        f'<td>{e(team_)} <span class="pl-sub">{"v" if home else "at"} {e(opp)}</span></td>{res_td}</tr>')
+            rows_ = [trow(r) for r in fix[:3][::-1]] + [trow(r) for r in res[:8]]
+            if rows_:
+                team_sec = (f'<section class="hub-sec" id="club-team"><h2 class="section-title">Club fixtures and results</h2>'
+                            f'<div class="table-scroll"><table class="pl-table pl-matches"><thead><tr><th scope="col">Date</th><th scope="col">Competition</th>'
+                            f'<th scope="col">Match</th><th scope="col">Result</th></tr></thead><tbody>{"".join(rows_)}</tbody></table></div>'
+                            f'<p class="small">Team results for the clubs {e(p["name"])} is registered with this season, from the leagues and the ETTU. '
+                            f'They show how the team did, whether or not {e(p["name"])} played.</p></section>')
 
         # ---- honours: championship medals (researched) and titles (from the database), the Grand Smashes on their own
         medal = {"Gold": "g", "Silver": "s", "Bronze": "b", "Winner": "g", "Runner-up": "s", "Semi-final": "b"}
@@ -701,7 +763,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         rank_tab = rank_sec if (rank_sec or rk) else ""
         if rk and not rank_sec:
             rank_tab = f'<p>World No. {rk["rank"]} with {rk["points"]:,} points.</p>'
-        club_tab = club_list + league_sec
+        club_tab = club_list + team_sec + league_sec
         tabs = [("overview", "Overview", overview or f'<p>{e(p["name"])} has no results on record yet.</p>'), ("news", "News", news_tab),
                 ("results", "Results", results_tab), ("honours", "Honours", titles_sec), ("clubs", "Club", club_tab)]
         body = entity.page([("/", "Home"), ("/players/", "Players"), (None, p["name"])], head, tabs,
@@ -730,7 +792,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                       f'<a href="/players/{p["slug"]}.html">{e(p["name"])}</a><span class="rk-nat">{e(p.get("nat") or "")}</span></li>' for p in rest)
         return f'<ul class="pl-tiles">{cards}</ul>' + (f'<ul class="pl-all" data-page="50" data-skip="{len(top)}">{lis}</ul>' if lis else "")
     idx = f'''<main class="wrap pl-page">{components.subnav("players", "/players/")}<section class="sched-head"><div><h1>Players</h1>
-<p class="lede">Every player in the world top 400: results, season-by-season records, titles, head to heads and the latest news.</p></div></section>
+<p class="lede">Every player in the world rankings: results, season-by-season records, titles, head to heads and the latest news.</p></div></section>
 <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" id="t-women" aria-controls="women" aria-selected="true">Women</button><button role="tab" id="t-men" aria-controls="men" aria-selected="false">Men</button></div>
 <section class="hub-sec pl-panel" id="women" role="tabpanel" aria-labelledby="t-women"><h2 class="sr-only">Women</h2>{group("W")}</section>
 <section class="hub-sec pl-panel" id="men" role="tabpanel" aria-labelledby="t-men"><h2 class="sr-only">Men</h2>{group("M")}</section>

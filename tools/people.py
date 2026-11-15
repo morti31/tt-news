@@ -14,7 +14,7 @@ The rules (agreed 9 November 2026):
   4. A player who does not qualify appears as plain text everywhere: no link, no tag chip, no tag page.
   5. Pages stay once made (nothing here removes an adult because their ranking dropped), except when the age
      rule makes them ineligible.
-  6. Overrides 1 to 3 (agreed 11 November 2026): every player in the world rankings shown on the site (the top 400)
+  6. Overrides 1 to 3 (agreed 11 November 2026): every player in the world rankings shown on the site (every ranked player in singles, the top 400 pairs in doubles)
      gets a page, whatever their age.
 
 Output: Roster.pages {tag slug: player dict}, Roster.blocked {tag slugs that must not link}, Roster.urls.

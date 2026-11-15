@@ -2,7 +2,7 @@
 
     python3 tools/stubs.py
 
-For each player in data/rankings.json (the top 400 men and women) and the doubles rankings (top 400 pairs) with no file in data/players, writes
+For each player in data/rankings.json (every ranked man and woman) and the doubles rankings (top 400 pairs) with no file in data/players, writes
 data/players/<slug>.json with what WTT's records give: name, association, gender, date of birth and playing hand
 (from data/players/wtt.json, filled by tools/match_sync.py). The file is marked "stub": true; the monthly profile
 check fills stubs in, highest-ranked first. Never removes a profile. Every ranked player gets a file, whatever their age

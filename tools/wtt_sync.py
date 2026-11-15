@@ -303,12 +303,30 @@ def main():
     # Rankings: WTT publishes on Mondays; checking every run is cheap and only writes on change
     try:
         raw = None
-        try:   # the top 400 for each list, in pages of 100, from the service behind WTT's rankings page
-            raw = [r for ev in ("MS", "WS") for a, b in ((1, 100), (101, 200), (201, 300), (301, 400)) for r in (get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={b}").get("Result") or [])]
-            if len({r.get("CurrentRank") for r in raw}) < 300:
-                raw = None
+        try:   # every ranked player in each list (about 1,100 men and 950 women), in pages of 100, from the service behind WTT's rankings page
+            raw = []
+            for ev in ("MS", "WS"):
+                got = 0
+                for a in range(1, 3000, 100):
+                    page = get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={a + 99}").get("Result") or []
+                    raw += page
+                    got += len(page)
+                    if len(page) < 100:
+                        break
+                if got < 300:
+                    raise ValueError(f"only {got} rows for {ev}")
+            # A shorter reply never replaces a longer list for the same week (a page that failed part-way)
+            try:
+                cur = json.load(open(os.path.join(ROOT, "data", "rankings.json"), encoding="utf-8"))
+            except (OSError, ValueError):
+                cur = {}
+            wk_ = next((int(r["RankingWeek"]) for r in raw if str(r.get("RankingWeek") or "").isdigit()), None)
+            if cur.get("week") == wk_ and len(raw) < len(cur.get("men", [])) + len(cur.get("women", [])) - 5:
+                print("rankings: fewer players than already saved for this week, keeping the saved list")
+                return
         except Exception as err:
-            print(f"top 400 unavailable ({err}), using the top 100")
+            raw = None
+            print(f"full rankings unavailable ({err}), using the top 100")
         if not raw:
             # Only the top 100 is available: never replace a longer list for the same week with it
             raw = get(RANKS)
@@ -319,7 +337,7 @@ def main():
             except (OSError, ValueError):
                 cur = {}
             if cur.get("week") == new_week and len(cur.get("men", [])) > 100:
-                print("rankings: only the top 100 available this run, keeping the top 400 already saved")
+                print("rankings: only the top 100 available this run, keeping the longer list already saved")
                 return
         tmp = os.path.join(ROOT, ".rankings-tmp.json")
         json.dump(raw, open(tmp, "w"))

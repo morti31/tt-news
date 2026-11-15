@@ -1,4 +1,4 @@
-"""The rankings page: the official ITTF top 400, women and men on tabs.
+"""The rankings page: the official ITTF singles rankings in full and the doubles top 400, women and men on tabs.
 
 Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). Output: the page body.
 """
@@ -87,7 +87,7 @@ def body(R, items, links=None):
                        right=lambda p: f'<span class="mv down rk-drop">−{sum(x[1] for x in info[id(p)]):,}</span>')
 
     def home(key):
-        return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")], f"None in the top {len(R[key])}")
+        return listing([p for p in R[key] if p["nat"] in ("ENG", "SCO", "WAL")][:8], "None in the rankings")   # the highest eight
 
     label = R["label"]
     n = len(R["men"])
@@ -135,7 +135,7 @@ def body(R, items, links=None):
     dlabel = D.get("label", "")
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official ITTF world rankings: the top {n} men and women in singles and the top {max(len(D.get(x, [])) for x in ("women", "men", "mixed")) or 200} pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+<p class="lede">The official ITTF world rankings: every ranked player in singles ({len(R["men"]):,} men and {len(R["women"]):,} women) and the top {max(len(D.get(x, [])) for x in ("women", "men", "mixed")) or 200} pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
 <div class="rk-bar-top">
   <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" data-g="women" aria-selected="true">Women</button><button role="tab" data-g="men" aria-selected="false">Men</button>{'<button role="tab" data-g="mixed" aria-selected="false">Mixed doubles</button>' if D.get("mixed") else ""}</div>
   <label class="rk-search"><span class="sr-only">Find a player or country</span><input id="rk-q" type="search" placeholder="Find a player or country, e.g. ENG" autocomplete="off"></label>
