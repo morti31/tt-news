@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-13T23:44:00Z",
+ "updated": "2026-11-15T17:53:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -22,13 +22,13 @@
      {
       "pos": 1,
       "team": "Borussia Düsseldorf",
-      "p": 7,
-      "w": 7,
+      "p": 8,
+      "w": 8,
       "l": 0,
-      "for": 21,
+      "for": 24,
       "against": 5,
-      "diff": 16,
-      "pts": 14
+      "diff": 19,
+      "pts": 16
      },
      {
       "pos": 2,
@@ -120,17 +120,6 @@
      },
      {
       "pos": 10,
-      "team": "ASC Grünwettersbach",
-      "p": 7,
-      "w": 2,
-      "l": 5,
-      "for": 12,
-      "against": 19,
-      "diff": -7,
-      "pts": 4
-     },
-     {
-      "pos": 11,
       "team": "TTC Fulda-Maberzell",
       "p": 8,
       "w": 2,
@@ -141,7 +130,7 @@
       "pts": 4
      },
      {
-      "pos": 12,
+      "pos": 11,
       "team": "TSV Bad Königshofen",
       "p": 8,
       "w": 2,
@@ -149,6 +138,17 @@
       "for": 13,
       "against": 21,
       "diff": -8,
+      "pts": 4
+     },
+     {
+      "pos": 12,
+      "team": "ASC Grünwettersbach",
+      "p": 8,
+      "w": 2,
+      "l": 6,
+      "for": 12,
+      "against": 22,
+      "diff": -10,
       "pts": 4
      }
     ]
@@ -701,8 +701,11 @@
    "when": "2026-11-15T13:00:00Z",
    "home": "Borussia Düsseldorf",
    "away": "ASC Grünwettersbach",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
    "round": "Matchday 8",
    "venue": "Düsseldorf"
   },
