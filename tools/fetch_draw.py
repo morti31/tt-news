@@ -18,12 +18,8 @@ ALL_SUBEVENTS = {"women": ("Women's singles", "TTEWSINGLES"), "men": ("Men's sin
                  "mixed": ("Mixed doubles", "TTEXDOUBLES"), "wteam": ("Women's team", "TTEWTEAM"), "mteam": ("Men's team", "TTEMTEAM"),
                  "xteam": ("Mixed team", "TTEXTEAM")}
 ROUNDS = {"R128": "Last 128", "R64-": "Last 64", "R32-": "Last 32", "8FNL": "Last 16", "QFNL": "Quarter-finals", "SFNL": "Semi-finals", "FNL-": "Final"}
-FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
-# WTT data drops accents and uses its own forms for some names
-FIXES = {"Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo",
-         "Bernadette Szocs": "Bernadette Szőcs", "Ying Han": "Han Ying", "Peng Yu-Han": "Peng Yu-han",
-         "Jian Zeng": "Zeng Jian", "Feng Yi-Hsin": "Feng Yi-hsin", "Bo Fang": "Fang Bo", "Leo De Nodrest": "Léo de Nodrest",
-         "Truls Moregardh": "Truls Moregard"}
+import names   # how Eleven writes player names: data/names.json
+FAMILY_FIRST, FIXES = names.FAMILY_FIRST, names.FIXES
 
 
 def cap(s):
@@ -55,7 +51,7 @@ TEAMS = {"CHN": "China", "JPN": "Japan", "KOR": "South Korea", "TPE": "Chinese T
 def one(a, org):
     fam, giv = cap(a["FamilyName"]), a["GivenName"]
     name = f"{fam} {giv}" if org in FAMILY_FIRST else f"{giv} {fam}"
-    return FIXES.get(name.strip(), name.strip())
+    return names.fix(name)
 
 
 def player(c):

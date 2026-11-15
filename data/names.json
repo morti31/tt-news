@@ -1,0 +1,24 @@
+{
+ "note": "How Eleven spells players whose names WTT writes differently. fixes: WTT's spelling (given name first, or family name first for the associations in family_first) -> Eleven's. A player's profile name in data/players also wins automatically over the same name in reverse order (tools/names.py). Add a line here for any other mismatch.",
+ "family_first": [
+  "CHN",
+  "TPE",
+  "KOR",
+  "HKG",
+  "MAC",
+  "PRK"
+ ],
+ "fixes": {
+  "Anton Kallberg": "Anton Källberg",
+  "Bernadette Szocs": "Bernadette Szőcs",
+  "Bo Fang": "Fang Bo",
+  "Felix Lebrun": "Félix Lebrun",
+  "Feng Yi-Hsin": "Feng Yi-hsin",
+  "Jian Zeng": "Zeng Jian",
+  "Joao Geraldo": "João Geraldo",
+  "Leo De Nodrest": "Léo de Nodrest",
+  "Peng Yu-Han": "Peng Yu-han",
+  "Truls Moregardh": "Truls Moregard",
+  "Ying Han": "Han Ying"
+ }
+}

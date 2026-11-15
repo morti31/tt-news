@@ -11,7 +11,7 @@ Nothing is written if WTT can't be reached.
 import json, os, re, sys, urllib.request, datetime as dt
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import fetch_draw, rankings
+import fetch_draw, rankings, names
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CMS = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.net/liveeventsapi/api/cms"
@@ -68,7 +68,7 @@ def person(comp):
         fam = " ".join(fetch_draw.cap(w) for w in words if w.isupper())
         giv = " ".join(w for w in words if not w.isupper())
         name = (f"{fam} {giv}" if org in FAMILY_FIRST else f"{giv} {fam}").strip()
-        out.append(fetch_draw.FIXES.get(name, name))
+        out.append(names.fix(name))
     return " / ".join(n for n in out if n)
 
 

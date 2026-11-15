@@ -694,6 +694,12 @@ def main():
     PROFILES.update(ROSTER.by_name())
     json.dump(PROFILES, open(os.path.join(ROOT, "data", "profiles.json"), "w", encoding="utf-8"), ensure_ascii=False)   # squads, match popup, rankings widget
     write_redirects()
+    import names   # one spelling per player everywhere: the worker's copy, and a warning for any story that reverses a name
+    names.write_live()
+    for w in names.check([(f"data/articles/{x}", open(os.path.join(ROOT, "data", "articles", x), encoding="utf-8").read())
+                          for x in os.listdir(os.path.join(ROOT, "data", "articles")) if x.endswith(".json")]
+                         + [("data/news.json", open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8").read())]):
+        print("name warning:", w)
     json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v if x not in build_tags.BLOCKED] for k, v in TAGMAP.items() if v},
               open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)
     global TOP

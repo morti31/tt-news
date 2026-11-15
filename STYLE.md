@@ -71,3 +71,6 @@ Link to the earlier Eleven story that set the storyline up.
 - **Names**: full name first, surname after. Keep accents (Félix, Szőcs, Källberg). Chinese, Japanese and Korean names in the order the player uses on the WTT entry list.
 - **Second references**: surname only, with no Mr or Ms. For siblings use first names (Félix, Alexis).
 - No em dashes. No clichés or hype words: "stunning", "game-changer", "testament to", "sent shockwaves", "showdown", "clash" (as a noun for a match), "landscape", "delve". No "not X but Y" constructions. No exclamation marks.
+
+**Player names.** Write every player's name exactly as their profile has it (the `name` in data/players/<slug>.json), in the same order and with the same accents, never the other way round from another source ("Fang Bo", never "Bo Fang"). The rules live in one place: `data/names.json` (associations that put the family name first, and fixed spellings) and `tools/names.py`, which every sync, the build and the live-score worker use; a profile name automatically wins over the same name reversed. The build prints a "name warning" for any story that reverses a profiled name: fix it before committing. If WTT spells someone differently from their profile, add a line to `fixes` in data/names.json rather than changing it in one place.
+

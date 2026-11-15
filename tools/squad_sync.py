@@ -15,6 +15,7 @@ Usage: python3 tools/squad_sync.py [competition ...]
 import json, os, re, sys, html, datetime as dt
 sys.path.insert(0, os.path.dirname(__file__))
 import club_sync as cs
+import names
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUT = os.path.join(ROOT, "data", "clubs", "squads")
@@ -62,7 +63,7 @@ def ttbl():
                 continue
             n3 = ISO.get(sp.get("nationality") or "", sp.get("nationality"))
             first, last = sp["firstName"].strip(), sp["lastName"].strip()
-            p = {"name": f"{last} {first}" if n3 in FAMILY_FIRST - {"JPN"} else f"{first} {last}".strip()}
+            p = {"name": names.fix(f"{last} {first}" if n3 in FAMILY_FIRST - {"JPN"} else f"{first} {last}".strip())}
             if n3:
                 p["nat"] = n3
             if sp.get("role") and sp["role"] != "Player":

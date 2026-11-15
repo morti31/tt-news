@@ -18,13 +18,23 @@ const cap = (s) => s.toLowerCase().replace(/(^|[ -])(\p{L})/gu, (m, a, b) => a +
 // WTT match cards give "FAMILY Given"; the site writes given name first except for
 // Chinese, Korean and similar names, which keep the family name first
 const FAMILY_FIRST = new Set(["CHN", "TPE", "KOR", "HKG", "MAC", "PRK"]);
+// The same spellings as the rest of the site: data/names-live.json, written by every build from data/names.json and the
+// player profiles (tools/names.py). Loaded once per worker; FIXES above is the fallback until it arrives.
+let NAMES = null;
+async function loadNames(env, origin) {
+  if (NAMES) return;
+  try {
+    const d = await (await env.ASSETS.fetch(new Request(origin + "/data/names-live.json"))).json();
+    NAMES = { fixes: d.fixes || {}, family: new Set(d.family_first || []) };
+  } catch (e) { NAMES = { fixes: {}, family: FAMILY_FIRST }; }
+}
 function playerName(raw, org) {
   const words = String(raw || "").trim().split(/\s+/);
   const isFamily = (w) => w === w.toUpperCase() && /\p{L}/u.test(w);
   const family = words.filter(isFamily).map(cap).join(" ");
   const given = words.filter((w) => !isFamily(w)).join(" ");
-  const full = (FAMILY_FIRST.has(org) ? `${family} ${given}` : `${given} ${family}`).trim();
-  return FIXES[full] || full;
+  const full = (((NAMES && NAMES.family) || FAMILY_FIRST).has(org) ? `${family} ${given}` : `${given} ${family}`).trim();
+  return (NAMES && NAMES.fixes[full]) || FIXES[full] || full;
 }
 
 function label(desc) {
@@ -347,6 +357,7 @@ async function tagMove(env, url) {
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    if (url.pathname.startsWith("/api/")) await loadNames(env, url.origin);
     if ((url.pathname === "/api/live" || url.pathname === "/api/match") && (await switches(env, url.origin)).wtt === false) {
       return json({ error: "Live scores are unavailable", disabled: true }, 503, 60);
     }

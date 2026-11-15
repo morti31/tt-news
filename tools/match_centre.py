@@ -147,7 +147,8 @@ def rows(ev, schedule):
 
 TEAM_KINDS = {"WT": "Women's team", "MT": "Men's team", "XT": "Mixed team"}
 KINDS = {"WS": "Women's singles", "MS": "Men's singles", "WD": "Women's doubles", "MD": "Men's doubles", "XD": "Mixed doubles"}
-FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
+import names
+FAMILY_FIRST = names.FAMILY_FIRST
 
 
 def _db_name(raw, nat):
@@ -155,7 +156,7 @@ def _db_name(raw, nat):
     words = (raw or "").split()
     fam = " ".join(w.capitalize() for w in words if w.isupper() and len(w) > 1)
     giv = " ".join(w for w in words if not (w.isupper() and len(w) > 1))
-    return (f"{fam} {giv}" if nat in FAMILY_FIRST else f"{giv} {fam}").strip()
+    return names.fix(f"{fam} {giv}" if nat in FAMILY_FIRST else f"{giv} {fam}")
 
 
 def _team_ties(ev, wtt, have):

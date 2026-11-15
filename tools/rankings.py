@@ -22,7 +22,8 @@ def name(raw):
     given = " ".join(w for w in words if w not in caps)
     full = f"{family} {given}" if words and words[0] in caps else f"{given} {family}"
     full = full.strip()
-    return FIXES.get(full, full)
+    import names
+    return names.fix(full)
 
 
 def convert(rows):

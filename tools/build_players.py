@@ -14,10 +14,8 @@ import entity
 
 e = html.escape
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-FAMILY_FIRST = {"CHN", "TPE", "KOR", "HKG", "MAC", "PRK"}
-FIXES = {"Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo", "Bernadette Szocs": "Bernadette Szőcs",
-         "Ying Han": "Han Ying", "Peng Yu-Han": "Peng Yu-han", "Jian Zeng": "Zeng Jian", "Feng Yi-Hsin": "Feng Yi-hsin", "Bo Fang": "Fang Bo",
-         "Leo De Nodrest": "Léo de Nodrest", "Truls Moregardh": "Truls Moregard"}
+import names   # how Eleven writes player names: data/names.json
+FAMILY_FIRST, FIXES = names.FAMILY_FIRST, names.FIXES
 ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "8FNL": "Last 16", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64",
           "R128": "Last 128", "BRNZ": "Bronze match"}
 KINDS = {"MS": "Men's singles", "WS": "Women's singles", "MD": "Men's doubles", "WD": "Women's doubles", "XD": "Mixed doubles",
@@ -106,9 +104,7 @@ def wtt_name(raw, org):
     fam = " ".join(w[:1] + w[1:].lower() if w.isupper() else w for w in words if w.isupper() or w.replace("-", "").isupper())
     giv = " ".join(w for w in words if not (w.isupper() or w.replace("-", "").isupper()))
     fam = "-".join(p[:1].upper() + p[1:] for p in fam.split("-"))
-    name = f"{fam} {giv}" if org in FAMILY_FIRST else f"{giv} {fam}"
-    name = name.strip()
-    return FIXES.get(name, name)
+    return names.fix(f"{fam} {giv}" if org in FAMILY_FIRST else f"{giv} {fam}")
 
 
 def clean_event(n):
