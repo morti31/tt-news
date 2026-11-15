@@ -27,6 +27,7 @@ LEVELS = [("WTT Finals", r"WTT Finals|Cup Finals"), ("World Championships", r"Wo
           ("WTT Star Contender", r"Star Contender"), ("WTT Contender", r"WTT Contender"), ("WTT Feeder", r"Feeder")]
 
 
+COUNTRIES = json.load(open(os.path.join(ROOT, "data", "countries.json"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "data", "countries.json")) else {}
 CATEGORIES = ["Olympic Games", "World Championships", "World Team Championships", "World Cup", "WTT Finals", "Grand Smash",
               "Continental and multi-sport", "WTT tour", "Other"]
 TIMELINE_ROWS = ["Olympic Games", "World Championships", "World Team Championships", "World Cup", "WTT Finals", "Singapore Smash", "Saudi Smash", "China Smash",
@@ -638,7 +639,61 @@ def build(page, site, tag_items, hubs, R, roster, tg):
             big = [c for c in CATEGORIES[:6] if c in groups]
             hon_over = (f'<section class="hub-sec"><h2 class="section-title">Honours</h2><p>{n_titles} {"title or gold medal" if n_titles == 1 else "titles and gold medals"} on record'
                         f'{", including " + ", ".join(big[:3]) if big else ""}.</p>{entity.tab_link("honours", "All honours")}</section>')
-        overview = (f'<section class="hub-sec pl-notes">{notes}</section>' if notes else "") + latest_sec + news_over + hon_over
+        # ---- a short written summary from what the data shows, so every profile opens with prose (no researched facts needed)
+        today_ = dt.date.today()
+        country = COUNTRIES.get(p.get("nat") or "", p.get("nat") or "")
+        if country.startswith(("United ", "Netherlands", "Czech Republic", "Philippines", "Dominican Republic", "Democratic Republic", "Republic of", "Maldives", "Bahamas", "Cook Islands", "Central African", "Faroe", "Cayman", "Seychelles", "Comoros", "Gambia", "Solomon", "Marshall", "British Virgin", "US Virgin")):
+            country = "the " + country
+        a_ = age(born) if born else None
+        desc = " ".join(x for x in (f"{a_}-year-old" if a_ else None, f"{hand.lower()}-handed" if hand else None) if x)
+        art = "an" if desc[:1] in ("8",) or desc.startswith(("11-", "18-")) else "a"
+        s1 = f'{e(p["name"])} is {art} {desc + " " if desc else ""}player from {e(country)}'
+        rk_bits = []
+        if rk:
+            rk_bits.append(f'No. {rk["rank"]} in the world in singles')
+        for key_, pr in sorted(dbl, key=lambda t: t[1]["rank"])[:2]:
+            partner_ = " / ".join(who(x["ittf_id"]) if x.get("ittf_id") in urls else e(x["name"]) for x in pr["players"] if x.get("ittf_id") != pid)
+            rk_bits.append(f'No. {pr["rank"]} in {dict(doubles_mod.EVENTS)[key_].lower()} with {partner_}')
+        if rk_bits:
+            s1 += ", ranked " + (" and ".join(rk_bits) if len(rk_bits) < 3 else ", ".join(rk_bits[:-1]) + " and " + rk_bits[-1])
+        sents = [s1 + "."]
+        if hist_ranks and len(hist_ranks) >= 8 and (not rk or r_best < rk["rank"]):
+            sents.append(f"The highest singles ranking on Eleven's records is No. {r_best}, in {dt.date.fromisoformat(first):%B %Y}.")
+        yr_ = str(today_.year)
+        s_y = [m for m in singles if (m.get("d") or "")[:4] == yr_]
+        d_y = [m for m in doubles if (m.get("d") or "")[:4] == yr_]
+        rec = []
+        if s_y:
+            sw_ = sum(won(m) for m in s_y)
+            rec.append(f'{sw_} {"win" if sw_ == 1 else "wins"} from {len(s_y)} singles {"match" if len(s_y) == 1 else "matches"}')
+        if d_y:
+            dw_ = sum(won(m) for m in d_y)
+            rec.append(f'{dw_} from {len(d_y)} in doubles' if s_y else f'{dw_} {"win" if dw_ == 1 else "wins"} from {len(d_y)} doubles {"match" if len(d_y) == 1 else "matches"}')
+        if rec:
+            sents.append(f"The {yr_} record at international events is {' and '.join(rec)}.")
+        deep = {"FNL": 5, "SFNL": 4, "BRNZ": 4, "QFNL": 3, "8FNL": 2, "R16": 2}
+        cut = (today_ - dt.timedelta(days=365)).isoformat()
+        runs = []
+        for m in ms:
+            if (m.get("d") or "") < cut or m["k"][1] not in "SD" or m.get("q") or m["r"] not in deep or m.get("wo"):
+                continue
+            nm_ = clean_event((db.events.get(m["e"]) or {}).get("name") or "")
+            lv = next((i for i, (lab, rx) in enumerate(LEVELS) if re.search(rx, nm_)), len(LEVELS))
+            runs.append((deep[m["r"]] + (1 if m["r"] == "FNL" and won(m) else 0), -lv, m.get("d") or "", m))
+        if runs:
+            score, _, _, m = max(runs, key=lambda t: t[:3])
+            kind_ = KINDS.get(m["k"], "").lower()
+            partner_ = [x for x in m["p"][side_of(m)] if x != pid]
+            with_txt = f' with {" / ".join(who(x) for x in partner_)}' if partner_ else ""
+            reach = {6: f"winning the {kind_}", 5: f"reaching the {kind_} final", 4: f"reaching the {kind_} semi-finals",
+                     3: f"reaching the {kind_} quarter-finals", 2: f"reaching the last 16 of the {kind_}"}[score]
+            sents.append(f"The best result of the past 12 months was {reach} at the {ev_link(m['e'])}{with_txt}.")
+        # Only for unranked players: a ranked player with no recent match here has played events WTT's results don't carry
+        if ms and not rk and not dbl and (ms[0].get("d") or "")[:10] < (today_ - dt.timedelta(days=180)).isoformat():
+            last_ = dt.date.fromisoformat(ms[0]["d"][:10])
+            sents.append(f"The last match on record was at the {ev_link(ms[0]['e'])} in {last_:%B %Y}.")
+        summary_sec = f'<section class="hub-sec pl-summary"><p>{" ".join(sents)}</p></section>'
+        overview = summary_sec + (f'<section class="hub-sec pl-notes">{notes}</section>' if notes else "") + latest_sec + news_over + hon_over
         results_tab = recent_sec + season + h2h_sec + rank_sec
         rank_tab = rank_sec if (rank_sec or rk) else ""
         if rk and not rank_sec:

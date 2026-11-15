@@ -1252,6 +1252,7 @@ html.mp-open { overflow: hidden; }
 .pl-eq { font-size: 13px; }
 .pl-rk { width: 100%; height: auto; color: #f37021; }
 .pl-notes p { font-size: 16px; margin: 0 0 8px; }
+.pl-summary p { font-size: 17px; line-height: 1.55; max-width: 68ch; margin: 0; }
 .pl-src { margin-top: 24px; }
 .pl-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 12px; }
 .pcard-small .pc-n2 { font-size: 15px; }

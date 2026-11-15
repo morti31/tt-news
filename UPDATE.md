@@ -183,6 +183,8 @@ The top 10 men and women have profiles at /players/<slug> (`data/players/<slug>.
 
 Every player in the world top 400 has a profile (the rankings page and the players index show 50 a page). New ranked players get a stub from `python3 tools/stubs.py`. Players outside the top 10 started as stubs (`"stub": true`): name, association, date of birth and playing hand from WTT, with results from the match database. The monthly check fills in up to 30 stubs a month, highest-ranked first (birthplace, height, grip, style, clubs, equipment, honours, sources), then removes `"stub"`. Don't take grip or style from WTT's player data: it is unreliable (it lists Dang Qiu as penhold).
 
+Every profile opens with a short summary paragraph written by the build from the data (association, age, rankings and partners, this year's record, best result of the past 12 months). It needs no upkeep and never states anything the data does not hold.
+
 A profile is permanent: once a player has a file, never delete it, even if they drop out of the top 10 or the top 100, retire or change association. Their results, records and news keep updating from the match database and the tags, the monthly check keeps their bio file current, and the page shows "Outside the world top 100" when they have no ranking.
 
 To add a player (when someone enters the top 10, or later the top 20 and beyond): create the file with `name` exactly as in data/rankings.json, `ittf_id`, `nat`, `gender` (M or W), then research the rest from Wikipedia, the player's federation, club and sponsor pages, citing each. Profile pages, links from the rankings, tag pages and articles appear on the next build.
