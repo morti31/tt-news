@@ -121,7 +121,7 @@ def body(R, items, links=None):
         return (f'<section class="pl-panel rk-panel" id="p-{key}-d" role="tabpanel" hidden><h2 class="sr-only">{title}</h2>'
                 f'<div class="rk-three rk-three-d">{leader_html}'
                 f'<section class="panel"><h3 class="panel-title">Biggest climbers</h3>{dlisting(ups, "No climbers this week")}</section>'
-                f'<section class="panel"><h3 class="panel-title">Home nations</h3>{dlisting(home_, "No pairs in the top 200")}</section></div>'
+                f'<section class="panel"><h3 class="panel-title">Home nations</h3>{dlisting(home_, f"No pairs in the top {len(D[key])}")}</section></div>'
                 f'{dtable(key, title)}</section>')
 
     def panel(key, word, title):
@@ -135,7 +135,7 @@ def body(R, items, links=None):
     dlabel = D.get("label", "")
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official ITTF world rankings: the top {n} men and women in singles and the top 200 pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+<p class="lede">The official ITTF world rankings: the top {n} men and women in singles and the top {max(len(D.get(x, [])) for x in ("women", "men", "mixed")) or 200} pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
 <div class="rk-bar-top">
   <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" data-g="women" aria-selected="true">Women</button><button role="tab" data-g="men" aria-selected="false">Men</button>{'<button role="tab" data-g="mixed" aria-selected="false">Mixed doubles</button>' if D.get("mixed") else ""}</div>
   <label class="rk-search"><span class="sr-only">Find a player or country</span><input id="rk-q" type="search" placeholder="Find a player or country, e.g. ENG" autocomplete="off"></label>

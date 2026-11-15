@@ -55,7 +55,7 @@ def main():
     pub = week = None
     for ev in ("WD", "MD", "XD"):
         rows = []
-        for a, b in ((1, 100), (101, 200)):
+        for a, b in ((1, 100), (101, 200), (201, 300), (301, 400)):   # the official lists run to about 550-950 pairs; Eleven shows the top 400
             rows += call(k, "GetRankingPairs", CategoryCode="SEN", SubEventCode=ev, StartRank=a, EndRank=b)
         lst, seen = [], set()
         for r in rows:
@@ -69,6 +69,13 @@ def main():
             lst.append({"rank": int(r["CurrentRank"]), "prev": prev, "points": int(float(r.get("Points") or 0)), "pair_id": r.get("PairId"), "players": players})
         lst.sort(key=lambda x: x["rank"])
         out[{"WD": "women", "MD": "men", "XD": "mixed"}[ev]] = lst
+    try:   # a short reply never replaces a longer list for the same week
+        cur = json.load(open(os.path.join(ROOT, "data", "doubles-rankings.json"), encoding="utf-8"))
+        if str(cur.get("week")) == str(week) and any(len(out[x]) < len(cur.get(x, [])) for x in out):
+            print("doubles rankings: fewer pairs than already saved for this week, keeping the old file")
+            return
+    except Exception:
+        pass
     if not all(len(out[x]) >= 50 for x in ("women", "men", "mixed")):
         print("doubles rankings: too few pairs returned, keeping the old file", {k: len(v) for k, v in out.items()})
         return

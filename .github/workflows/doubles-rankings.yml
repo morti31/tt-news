@@ -1,5 +1,5 @@
 name: Doubles rankings
-# The ITTF doubles world rankings (top 200 pairs in men's, women's and mixed doubles), after each Monday's ranking.
+# The ITTF doubles world rankings (top 400 pairs in men's, women's and mixed doubles), after each Monday's ranking.
 on:
   schedule:
     - cron: "33 9 * * 2"
