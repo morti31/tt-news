@@ -27,6 +27,7 @@ def name(raw):
 
 def convert(rows):
     out = {"men": [], "women": []}
+    seen = {"men": set(), "women": set()}
     week = pub = None
     for r in rows:
         key = {"MS": "men", "WS": "women"}.get(r.get("SubEventCode"))
@@ -34,9 +35,12 @@ def convert(rows):
             continue
         week = r.get("RankingWeek") or week
         pub = r.get("PublishDate") or pub
-        prev = int(r["PreviousRank"]) if (r.get("PreviousRank") or "").isdigit() else None
-        out[key].append({"rank": int(r["CurrentRank"]), "prev": prev, "name": name(r["PlayerName"]), "nat": r["CountryCode"],
-                         "points": int(r["RankingPointsYTD"] or 0), "ittf_id": r.get("IttfId")})
+        if not str(r.get("CurrentRank") or "").isdigit() or r.get("IttfId") in seen[key]:
+            continue
+        seen[key].add(r.get("IttfId"))
+        prev = int(r["PreviousRank"]) if str(r.get("PreviousRank") or "").isdigit() else None
+        out[key].append({"rank": int(r["CurrentRank"]), "prev": prev, "name": name(r["PlayerName"]), "nat": r.get("CountryCode") or "",
+                         "points": int(float(r.get("RankingPointsYTD") or r.get("Points") or 0)), "ittf_id": r.get("IttfId")})
     for k in out:
         out[k].sort(key=lambda p: p["rank"])
     d = dt.datetime.strptime(pub.split()[0], "%m/%d/%Y").date()

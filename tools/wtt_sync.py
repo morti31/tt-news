@@ -305,10 +305,17 @@ def main():
         raw = None
         try:   # every ranked player in each list (about 1,100 men and 950 women), in pages of 100, from the service behind WTT's rankings page
             raw = []
+            import doubles_rankings   # the same keyed ranking service the doubles lists come from; the open one stops short
+            try:
+                rk_key = doubles_rankings.key()
+            except Exception:
+                rk_key = None
             for ev in ("MS", "WS"):
                 got = 0
                 for a in range(1, 3000, 100):
-                    page = get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={a + 99}").get("Result") or []
+                    page = doubles_rankings.call(rk_key, "GetRankingIndividuals", CategoryCode="SEN", SubEventCode=ev, StartRank=a, EndRank=a + 99) if rk_key else []
+                    if not page and a <= 301:
+                        page = get(f"{RANKS200}&SubEventCode={ev}&StartRank={a}&EndRank={a + 99}").get("Result") or []
                     raw += page
                     got += len(page)
                     if len(page) < 100:
