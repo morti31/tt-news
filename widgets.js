@@ -102,6 +102,11 @@ window.ElevenStream = function (el) {
         clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">${esc(label(r))}</span><span class="where">${esc(r.round)}</span>
         <span class="row${hw ? " won" : ""}"><span>${esc(r.home)}</span><b>${r.score[0]}</b></span><span class="row${hw ? "" : " won"}"><span>${esc(r.away)}</span><b>${r.score[1]}</b></span><span class="done-at">${esc(new Date(r.when).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", ...(r.day ? { timeZone: "UTC" } : {}) }))}</span></a>`);
       });
+      // Bundesliga ties about to start or in play: a card that clublive.js fills with the live score (hidden until there is one)
+      rows.filter((r) => r.lg === "bundesliga" && !r.score && !r.day && stamp(r) - 6e5 <= nowMs && nowMs <= stamp(r) + 5 * 36e5).forEach((r) => {
+        clubCards.unshift(`<a class="score-card" hidden data-cl="${esc(r.when)}" data-home="${esc(r.home)}" href="/clubs/bundesliga.html"><span class="ev">Bundesliga</span><span class="where">${esc(r.round)}</span>
+        <span class="row"><span>${esc(r.home)}</span><b>0</b></span><span class="row"><span>${esc(r.away)}</span><b>0</b></span></a>`);
+      });
     } catch (e) {}
     // Club cards come straight after the "On now" cards, ahead of older stored results
     const firstOld = cards.findIndex((c) => !c.includes("live-card"));

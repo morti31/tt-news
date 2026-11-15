@@ -279,6 +279,55 @@ async function switches(env, origin) {
   return SWITCHES;
 }
 
+// ---- Club leagues, live. GET /api/club-live -> { updated, ties: [tie] } for the Bundesliga's current matchday, from the
+// league's own site (ttbl.de page data), cached for 20 seconds. A tie is { lg, when (UTC ISO), home, away, score: [a, b],
+// st: "due" | "live" | "done", rubbers: [{ home, away, s: [games], g: "11-7,5-3", st }] }; rubbers only while live.
+const TTBL = "https://www.ttbl.de";
+const UA_CLUB = { "User-Agent": "Mozilla/5.0 (Eleven table tennis news; live club scores)", "Accept-Language": "en-GB,en;q=0.8" };
+const nextData = (page) => {
+  const m = /<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/.exec(page || "");
+  return m ? JSON.parse(m[1]).props.pageProps : null;
+};
+const ttblPerson = (p) => (p ? `${(p.firstName || "").trim()} ${(p.lastName || "").trim()}`.trim() : "");
+async function clubLive(ctx) {
+  const cache = caches.default, key = new Request("https://eleven.internal/club-live/ttbl");
+  const hit = await cache.match(key);
+  if (hit) return hit.json();
+  const pp = nextData(await (await fetch(`${TTBL}/bundesliga/gameschedule/current/current/all`, { headers: UA_CLUB })).text());
+  if (!pp) throw new Error("no page data from ttbl.de");
+  const names = {};
+  [...(pp.tableTeams || []), ...(pp.teams || [])].forEach((t) => { if (t.seasonTeam) names[t.id] = t.seasonTeam.name; });
+  const team = (m, side) => ((m[side + "Team"] || {}).seasonTeam || {}).name || names[m[side + "TeamId"]] || "";
+  const season = pp.selectedSeason ? `${pp.selectedSeason.startYear}-${pp.selectedSeason.endYear}` : "current";
+  const gd = (pp.selectedGameday || {}).index || "current";
+  const ties = await Promise.all((pp.matches || []).map(async (m) => {
+    const st = m.matchState === "Finished" ? "done" : m.matchState === "Inactive" ? "due" : "live";
+    const tie = { lg: "bundesliga", when: m.timeStamp ? new Date(m.timeStamp * 1000).toISOString().slice(0, 19) + "Z" : null,
+      home: team(m, "home"), away: team(m, "away"), score: [m.homeGames || 0, m.awayGames || 0], st, rubbers: [] };
+    if (st !== "live") return tie;
+    try {
+      const sm = (nextData(await (await fetch(`${TTBL}/bundesliga/gameday/${season}/${gd}/${m.id}`, { headers: UA_CLUB })).text()) || {}).selectedMatch || {};
+      if (sm.homeGames != null) tie.score = [sm.homeGames || 0, sm.awayGames || 0];
+      tie.rubbers = (sm.games || []).filter((g) => g.gameState && g.gameState !== "Inactive").map((g) => {
+        const dbl = !g.homePlayer && g.homeDouble;
+        const side = (one, two) => (dbl ? [ttblPerson(two && two.leaguePlayerOne), ttblPerson(two && two.leaguePlayerTwo)].filter(Boolean).join(" / ") : ttblPerson(one));
+        const games = [];
+        for (let n = 1; n <= 5; n++) {
+          const a = g[`set${n}HomeScore`], b = g[`set${n}AwayScore`];
+          if (a == null || b == null) break;
+          games.push(`${a}-${b}`);
+        }
+        return { home: side(g.homePlayer, g.homeDouble), away: side(g.awayPlayer, g.awayDouble), s: [g.homeSets || 0, g.awaySets || 0],
+          g: games.join(","), st: g.gameState === "Finished" ? "done" : "live" };
+      });
+    } catch (e) {}
+    return tie;
+  }));
+  const out = { updated: new Date().toISOString(), ties };
+  ctx.waitUntil(cache.put(key, new Response(JSON.stringify(out), { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=20" } })));
+  return out;
+}
+
 // Old /tag/<slug> links for players and events that now have their own page. Cloudflare allows only 2,000 rules in
 // _redirects, so build_site.py writes these to data/tag-redirects.json and the worker answers them.
 let TAG_MOVES = null;
@@ -331,6 +380,13 @@ export default {
         return json(await highlights(ctx, url.searchParams.get("q")), 200, 600);
       } catch (err) {
         return json({ videos: [], detail: String(err.message || err) }, 200, 60);
+      }
+    }
+    if (url.pathname === "/api/club-live") {
+      try {
+        return json(await clubLive(ctx), 200, 15);
+      } catch (err) {
+        return json({ ties: [], detail: String(err.message || err) }, 200, 15);
       }
     }
     if (url.pathname.startsWith("/tag/")) {

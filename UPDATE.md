@@ -168,6 +168,8 @@ Every story gets up to three tags (tournament, players, club or league, country)
 - A tag page with one story is kept out of Google (noindex) until it has two.
 - Rules of thumb: a tournament tag needs the name in the headline or standfirst; a player needs the name in the headline or standfirst, or three mentions in the body; countries and clubs are the lowest priority.
 
+**Live club scores.** Bundesliga ties in play show live on the Clubs pages and in the scores strip: `clublive.js` asks the worker's `/api/club-live` every 20 seconds while a tie on the page is in its playing window, and the worker reads the league's own match-day data from ttbl.de (cached 20 seconds). It needs no upkeep: fixtures come from `data/clubs/ttbl.json` as before, and the final score is replaced by the club sync's own result afterwards. Other leagues can be added to `clubLive` in `worker.js` with the same reply shape.
+
 ## Player profiles
 
 **Who gets a page** is decided by `tools/people.py` on every build, never by hand. Under 16: never. 16 or 17: only if they already play senior events (senior world top 100 now or before, or a main-draw match at WTT Contender level or higher). No date of birth: only with that senior record, and not at all if they have any youth-event record (they wait until `data/players/wanted.json` gets their date of birth from WTT via the match sync). Adults: the senior record, a club squad place, or a written bio. Youth events never count. Anyone else is plain text: no link, no tag chip, no page. Players with a page but no bio file get a page built from results and news; writing a bio file for them upgrades it. Player tags link to the profile's News tab, and old `/tag/<player>` links redirect there (`_redirects`, generated section).

@@ -146,7 +146,8 @@ def match_row(m, tag=None, league=None, with_day=False):
     side = lambda i, name: f'<span class="cl-t{" won" if win == i else ""}">{e(name)}</span>'
     mid = (f'<b class="cl-sc{" live" if live else ""}">{sc[0]}<i>-</i>{sc[1]}</b>' if played else '<b class="cl-sc v">v</b>')
     meta = " · ".join(x for x in (tag, league, m.get("round") if m.get("when") else None, m.get("venue")) if x)
-    return (f'<li class="cl-m{" done" if played else ""}{" is-live" if live else ""}">{when_html(m, with_day)}'
+    live_at = f' data-when="{e(m["when"])}" data-home="{e(m["home"])}"' if m.get("when") and m.get("status") != "finished" and not m.get("date_only") else ""   # clublive.js fills in live scores
+    return (f'<li class="cl-m{" done" if played else ""}{" is-live" if live else ""}"{live_at}>{when_html(m, with_day)}'
             f'<span class="cl-pair">{side(0, m["home"])}{mid}{side(1, m["away"])}</span>'
             f'{f"<span class=cl-meta>{e(meta)}</span>" if meta else ""}</li>')
 
