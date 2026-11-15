@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-15T02:53:00Z",
+ "updated": "2026-11-15T11:17:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -20,13 +20,13 @@
     "rows": [
      {
       "team": "Carolina Gold Rush",
-      "p": 4,
+      "p": 5,
       "w": 4,
-      "l": 0,
-      "for": 66,
-      "against": 18,
+      "l": 1,
+      "for": 75,
+      "against": 30,
       "pos": 1,
-      "diff": 48
+      "diff": 45
      },
      {
       "team": "Florida Crocs",
@@ -115,13 +115,13 @@
      },
      {
       "team": "Portland Paddlers",
-      "p": 4,
-      "w": 1,
+      "p": 5,
+      "w": 2,
       "l": 3,
-      "for": 34,
-      "against": 50,
+      "for": 46,
+      "against": 59,
       "pos": 5,
-      "diff": -16
+      "diff": -13
      }
     ]
    }
@@ -434,7 +434,7 @@
     12,
     9
    ],
-   "status": "live",
+   "status": "finished",
    "venue": "Charlotte"
   },
   {

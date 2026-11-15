@@ -1,7 +1,7 @@
 {
  "id": "tleague-men",
  "auto": true,
- "updated": "2026-11-14T14:21:00Z",
+ "updated": "2026-11-15T11:17:00Z",
  "season": "2026-27",
  "source": {
   "name": "T.League",
@@ -23,23 +23,23 @@
       "pos": 1,
       "team": "Kanazawa Port",
       "pts": 30,
-      "p": 12,
+      "p": 13,
       "w": 9,
-      "l": 3,
-      "for": 33,
-      "against": 17,
-      "diff": 16
+      "l": 4,
+      "for": 34,
+      "against": 20,
+      "diff": 14
      },
      {
       "pos": 2,
       "team": "Ryukyu Asteeda",
-      "pts": 26,
-      "p": 13,
-      "w": 8,
+      "pts": 30,
+      "p": 14,
+      "w": 9,
       "l": 5,
-      "for": 30,
+      "for": 34,
       "against": 23,
-      "diff": 7
+      "diff": 11
      },
      {
       "pos": 3,
@@ -55,13 +55,13 @@
      {
       "pos": 4,
       "team": "Okayama Rivets",
-      "pts": 20,
-      "p": 14,
-      "w": 6,
+      "pts": 23,
+      "p": 15,
+      "w": 7,
       "l": 8,
-      "for": 26,
-      "against": 32,
-      "diff": -6
+      "for": 29,
+      "against": 33,
+      "diff": -4
      },
      {
       "pos": 5,
@@ -78,12 +78,12 @@
       "pos": 6,
       "team": "Shizuoka Jade",
       "pts": 11,
-      "p": 13,
+      "p": 14,
       "w": 3,
-      "l": 10,
+      "l": 11,
       "for": 19,
-      "against": 36,
-      "diff": -17
+      "against": 40,
+      "diff": -21
      }
     ]
    }
@@ -485,15 +485,21 @@
    "when": "2026-11-15T04:00:00Z",
    "home": "Okayama Rivets",
    "away": "Kanazawa Port",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-11-15T05:00:00Z",
    "home": "Ryukyu Asteeda",
    "away": "Shizuoka Jade",
-   "score": null,
-   "status": "scheduled"
+   "score": [
+    4,
+    0
+   ],
+   "status": "finished"
   },
   {
    "when": "2026-12-12T03:00:00Z",
