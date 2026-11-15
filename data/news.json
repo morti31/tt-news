@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T00:40:00Z",
+  "updated": "2026-11-15T18:25:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
     {
@@ -8,7 +8,6 @@
       "league": "champions-league",
       "date": "2026-11-14",
       "published": "2026-11-15T00:40:00Z",
-      "top": true,
       "headline": "Tarnobrzeg win 13-2 in Cartagena as Metz and Etival stay unbeaten in ETTU Champions League Women",
       "summary": "The top seeds lost only two of 15 games in Spain, four days after their home defeat by Etival, as both French leaders won again on Saturday night.",
       "matches": [
@@ -893,6 +892,11 @@
       ],
       "videos": [
         {
+          "id": "SD4tJrp1g5A",
+          "title": "Tikhonov and Panfilova v Green and Hursey, mixed doubles final",
+          "channel": "World Table Tennis"
+        },
+        {
           "id": "irGjSnSrio4",
           "title": "Honoka Hashimoto v Miu Hirano, women's singles semi-final",
           "channel": "World Table Tennis"
@@ -902,7 +906,8 @@
           "title": "Connor Green and Anna Hursey v Lim Yunoh and Joo Cheonhui, mixed doubles semi-final",
           "channel": "World Table Tennis"
         }
-      ]
+      ],
+      "modified": "2026-11-15T18:05:00Z"
     },
     {
       "id": "world-para-championships-2026-doubles-bronze-bayley-twomey-ryan-matthews",
@@ -8717,6 +8722,678 @@
           "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015994"
         }
       ]
+    },
+    {
+      "id": "wtt-contender-istanbul-2026-finals-fang-bo-hashimoto",
+      "category": "International",
+      "event": "wtt-contender-istanbul-2026",
+      "date": "2026-11-15",
+      "published": "2026-11-15T18:05:00Z",
+      "top": true,
+      "headline": "Fang Bo wins first title for 13 years and Honoka Hashimoto takes WTT Contender Istanbul crown",
+      "summary": "Kazakhstan's Fang Bo, a wild card ranked 160th, beat Kang Dongsoo 4-1 seven months into his comeback, and the top seed Honoka Hashimoto beat Joo Cheonhui by the same score.",
+      "draw": "3257",
+      "matches": [
+        {
+          "label": "Men's singles, final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Fang Bo",
+              "nat": "KAZ"
+            },
+            {
+              "name": "Kang Dongsoo",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Honoka Hashimoto",
+              "nat": "JPN"
+            },
+            {
+              "name": "Joo Cheonhui",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        },
+        {
+          "label": "Men's doubles, final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Nikita Artemenko / Maksim Grebnev",
+              "nat": "RUS"
+            },
+            {
+              "name": "Luka Mladenovic / Mael Van Dessel",
+              "nat": "LUX"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's doubles, final",
+          "event": "WTT Contender Istanbul",
+          "sides": [
+            {
+              "name": "Miyuu Kihara / Miu Hirano",
+              "nat": "JPN"
+            },
+            {
+              "name": "Honoka Hashimoto / Miyu Nagasaki",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "videos": [
+        {
+          "id": "ED7PYw3voDU",
+          "title": "Fang Bo v Kang Dongsoo, men's singles final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "vxZJ-3HV-Ec",
+          "title": "Honoka Hashimoto v Joo Cheonhui, women's singles final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "nHXK2AVe5v4",
+          "title": "Artemenko and Grebnev v Mladenovic and Van Dessel, men's doubles final",
+          "channel": "World Table Tennis"
+        },
+        {
+          "id": "-S3dBuO5Yyk",
+          "title": "Hashimoto and Nagasaki v Kihara and Hirano, women's doubles final",
+          "channel": "World Table Tennis"
+        }
+      ]
+    },
+    {
+      "id": "ettu-champions-league-women-2026-27-stage-2-linz-berlin",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "champions-league",
+      "date": "2026-11-15",
+      "published": "2026-11-15T18:10:00Z",
+      "headline": "ETTU Champions League Women: Linz AG Froschberg beat TTC Berlin eastside 12-3 for their first Stage 2 win",
+      "summary": "Linz AG Froschberg beat TTC Berlin eastside 12-3 at home on Sunday, with Yurika Namba and Emiko Taguchi winning four matches between them, leaving the German champions without a point after two rounds.",
+      "matches": [
+        {
+          "label": "Stage 2, round 2",
+          "event": "ETTU Champions League Women",
+          "sides": [
+            {
+              "name": "Linz AG Froschberg",
+              "nat": "AUT"
+            },
+            {
+              "name": "TTC Berlin eastside",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            12,
+            3
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Emiko Taguchi",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Xiaona Shan",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                2,
+                1
+              ],
+              "games": [
+                [
+                  14,
+                  12
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  5,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Yurika Namba",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Josephina Neumann",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  6
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Sara Tokič",
+                  "nat": "SLO"
+                },
+                {
+                  "name": "Mia Griesel",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Emiko Taguchi",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Josephina Neumann",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  0
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Yurika Namba",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Xiaona Shan",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  14,
+                  12
+                ],
+                [
+                  11,
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Linz AG Froschberg beat TTC Berlin eastside 12-3 in Austria on Sunday, their first win in Stage 2 of the ETTU Champions League Women after losing 11-4 at Saint-Quentin in the opening round. Berlin, who lost their first match 9-6 at home to Metz, are still without a win.",
+        "Japan's Yurika Namba won all six of her games, beating Josephina Neumann 11-4, 12-10, 11-6 and then Xiaona Shan 12-10, 14-12, 11-3. Emiko Taguchi took five of six, beating Shan 14-12, 11-4, 5-11 and Neumann 11-7, 11-3, 11-0. Berlin's only match win came from Mia Griesel, who beat Sara Tokič 12-10, 13-11, 8-11.",
+        "The result completes the second round. Metz and Etival lead the eight-club group with two wins each, Linz move up to fifth on games, behind Saint-Quentin, who beat them, and Berlin drop to seventh. Each club plays the other seven once, with rounds three and four on 15-16 and 19-20 December. [Saturday's ties](/news/ettu-champions-league-women-2026-27-stage-2-round-2-tarnobrzeg-metz-etival.html) are in our round-up."
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Linz AG Froschberg overpower ttc berlin eastside",
+          "url": "https://www.ettu.org/linz-ag-froschberg-overpower-ttc-berlin-eastside/"
+        }
+      ]
+    },
+    {
+      "id": "ttbl-2026-27-borussia-dusseldorf-grunwettersbach-fan-zhendong-eight-wins",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "bundesliga",
+      "date": "2026-11-15",
+      "published": "2026-11-15T18:15:00Z",
+      "headline": "Tischtennis Bundesliga: Fan Zhendong drops eight points as Borussia Düsseldorf beat Grünwettersbach 3-0 for an eighth straight win",
+      "summary": "Borussia Düsseldorf won 3-0 without losing a game against a weakened ASC Grünwettersbach on Sunday, keeping their 100% record after eight matches before next week's trip to Saarbrücken.",
+      "matches": [
+        {
+          "label": "Matchday 8",
+          "event": "Tischtennis Bundesliga",
+          "sides": [
+            {
+              "name": "Borussia Düsseldorf",
+              "nat": "GER"
+            },
+            {
+              "name": "ASC Grünwettersbach",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Fan Zhendong",
+                  "nat": "CHN"
+                },
+                {
+                  "name": "Adrian Gossow"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  11,
+                  3
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Anton Källberg",
+                  "nat": "SWE"
+                },
+                {
+                  "name": "Tobias Hippler",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Kanak Jha",
+                  "nat": "USA"
+                },
+                {
+                  "name": "Damian Floro"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Borussia Düsseldorf beat ASC Grünwettersbach 3-0 in the Tischtennis Bundesliga on Sunday without dropping a game, their eighth win in eight league matches this season. They lead the table with 16 points out of 16.",
+        "Fan Zhendong lost only eight points against Adrian Gossow, an 18-year-old who normally plays for Grünwettersbach's second team in the third division, winning 11-2, 11-3, 11-3. Anton Källberg beat Tobias Hippler 11-5, 11-8, 11-5, and Kanak Jha finished it against another 18-year-old, Damian Floro, 11-4, 12-10, 11-8, in front of a sell-out crowd of 1,100 at the ARAG CenterCourt.",
+        "Danny Heister, Düsseldorf's head coach, said that despite three matches in the Bundesliga and the Champions League in a week and a trip to France, \"we got through all the matches well\" (translated from German). That week included a [Champions League win at Pontoise-Cergy](/news/ettu-champions-league-men-2026-27-last-16-pontoise-dusseldorf.html), where Fan did not play.",
+        "Düsseldorf play 1. FC Saarbrücken, in Trier, on Sunday 22 November at 2.30pm UK time."
+      ],
+      "sources": [
+        {
+          "name": "Borussia Düsseldorf: 3:0 Blitzsieg gegen Grünwettersbach (German)",
+          "url": "https://www.borussia-duesseldorf.com/profis/news/ttbl-30-blitz"
+        },
+        {
+          "name": "Sina Sports: Düsseldorf report on Fan Zhendong's win (Chinese)",
+          "url": "https://sports.sina.cn/others/2026-11-16/detail-iniyvzvq6044581.d.html?vt=4"
+        }
+      ]
+    },
+    {
+      "id": "tleague-2026-27-yuta-ito-beats-sora-matsushima-kinoshita-okayama",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "t-league",
+      "date": "2026-11-15",
+      "published": "2026-11-15T18:20:00Z",
+      "headline": "T.League: 16-year-old Yuta Ito beats world No 1 Sora Matsushima as Kinoshita Meister Tokyo win at Okayama",
+      "summary": "Yuta Ito, 16 and ranked 368th, beat the world No 1 Sora Matsushima in a deciding game and then won the doubles against Tomokazu Harimoto and Hao Shuai as Kinoshita Meister Tokyo beat Okayama Rivets 3-1.",
+      "matches": [
+        {
+          "label": "League",
+          "event": "Nojima T.League",
+          "sides": [
+            {
+              "name": "Okayama Rivets",
+              "nat": "JPN"
+            },
+            {
+              "name": "Kinoshita Meister Tokyo",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            1,
+            3
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Sora Matsushima",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Yuta Ito",
+                  "nat": "JPN"
+                }
+              ],
+              "score": [
+                2,
+                3
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Tomokazu Harimoto / Hao Shuai"
+                },
+                {
+                  "name": "Yuta Ito / Yan An"
+                }
+              ],
+              "score": [
+                0,
+                2
+              ],
+              "games": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  10,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Satoshi Aida",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Soma Ono",
+                  "nat": "JPN"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  10,
+                  11
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  10,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Tomokazu Harimoto",
+                  "nat": "JPN"
+                },
+                {
+                  "name": "Ryuusei Kawakami",
+                  "nat": "JPN"
+                }
+              ],
+              "score": [
+                3,
+                2
+              ],
+              "games": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  10,
+                  11
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "body": [
+        "Yuta Ito, a 16-year-old ranked 368th in the world, beat the world No 1 Sora Matsushima in the T.League on Saturday, helping Kinoshita Meister Tokyo to a 3-1 win at Okayama Rivets.",
+        "Ito won the opening singles 11-7, 6-11, 9-11, 11-5 and then took the deciding game on the sudden-death point at 10-10, which the T.League plays instead of deuce. He then won the doubles with Yan An against Okayama's pairing of Tomokazu Harimoto, the world No 2, and the former Chinese world champion Hao Shuai, 11-6, 11-10. Soma Ono beat Satoshi Aida 11-10, 11-10, 11-10 to seal the win before Harimoto beat Ryuusei Kawakami in five games.",
+        "Okayama recovered on Sunday, beating Kanazawa Port, the league leaders, 3-1 at the same venue, a shopping centre in Okayama. Matsushima beat Hiromu Kobayashi in five games and Harimoto beat Taisei Matsushita 3-1. Kanazawa stay top on 30 points, level with Ryukyu Asteeda; Kinoshita are third and Okayama fourth.",
+        "The men's league resumes on 12 December, when Kinoshita play Shizuoka Jade and Okayama visit T.T Saitama."
+      ],
+      "sources": [
+        {
+          "name": "T.League: Okayama Rivets v Kinoshita Meister Tokyo, 14 November (Japanese)",
+          "url": "https://tleague.jp/schedule/detail.php?id=1354"
+        },
+        {
+          "name": "T.League: Okayama Rivets v Kanazawa Port, 15 November (Japanese)",
+          "url": "https://tleague.jp/schedule/detail.php?id=1356"
+        },
+        {
+          "name": "ITTF world ranking, week 46 (WTT)",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
     }
   ],
   "results": [
@@ -8725,6 +9402,30 @@
       "ended": "2026-11-15",
       "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
       "matches": [
+        {
+          "round": "Men's singles final",
+          "winner": "Fang Bo (KAZ)",
+          "loser": "Kang Dongsoo (KOR)",
+          "score": "4-1"
+        },
+        {
+          "round": "Women's singles final",
+          "winner": "Honoka Hashimoto (JPN)",
+          "loser": "Joo Cheonhui (KOR)",
+          "score": "4-1"
+        },
+        {
+          "round": "Men's doubles final",
+          "winner": "Nikita Artemenko / Maksim Grebnev (RUS)",
+          "loser": "Luka Mladenovic / Mael Van Dessel (LUX)",
+          "score": "3-1"
+        },
+        {
+          "round": "Women's doubles final",
+          "winner": "Miyuu Kihara / Miu Hirano (JPN)",
+          "loser": "Honoka Hashimoto / Miyu Nagasaki (JPN)",
+          "score": "3-0"
+        },
         {
           "round": "Mixed doubles final",
           "winner": "Connor Green / Anna Hursey (ENG/WAL)",
