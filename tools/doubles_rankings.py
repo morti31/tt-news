@@ -36,6 +36,20 @@ def main():
                 r = call(k, what, CategoryCode="SEN", SubEventCode=ev, StartRank=1, EndRank=3)
                 print(what, ev, json.dumps(r, ensure_ascii=False)[:1500])
         return
+    if "--depth" in sys.argv:   # how far each official list goes: writes data/ranking-depth.json
+        depth = {}
+        for what, evs in (("GetRankingIndividuals", ("MS", "WS")), ("GetRankingPairs", ("MD", "WD", "XD"))):
+            for ev in evs:
+                last = 0
+                for a in (1, 201, 401, 601, 801, 1001, 1501, 2001, 3001):
+                    r = call(k, what, CategoryCode="SEN", SubEventCode=ev, StartRank=a, EndRank=a + 99)
+                    ranks = [int(x["CurrentRank"]) for x in r if str(x.get("CurrentRank") or "").isdigit()]
+                    depth.setdefault(ev, {})[str(a)] = [len(r), max(ranks) if ranks else None]
+                    if not ranks:
+                        break
+        json.dump(depth, open(os.path.join(ROOT, "data", "ranking-depth.json"), "w"), indent=1)
+        print(depth)
+        return
     from rankings import name as nice
     out = {}
     pub = week = None
