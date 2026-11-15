@@ -1,7 +1,543 @@
 {
-  "updated": "2026-11-14T20:45:00Z",
+  "updated": "2026-11-15T00:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ettu-champions-league-women-2026-27-stage-2-round-2",
+      "category": "Clubs",
+      "league": "champions-league",
+      "date": "2026-11-14",
+      "published": "2026-11-15T00:40:00Z",
+      "top": true,
+      "headline": "Tarnobrzeg win 13-2 in Cartagena as Metz and Etival stay unbeaten in ETTU Champions League Women",
+      "summary": "The top seeds lost only two of 15 games in Spain, four days after their home defeat by Etival, as both French leaders won again on Saturday night.",
+      "matches": [
+        {
+          "label": "Stage 2, round 2",
+          "event": "ETTU Champions League Women",
+          "sides": [
+            {
+              "name": "UCAM Cartagena",
+              "nat": "ESP"
+            },
+            {
+              "name": "KTS Enea Siarkopol Tarnobrzeg",
+              "nat": "POL"
+            }
+          ],
+          "score": [
+            2,
+            13
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Maria Xiao",
+                  "nat": "ESP"
+                },
+                {
+                  "name": "Han Ying",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  3,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Tin-Tin Ho",
+                  "nat": "ENG"
+                },
+                {
+                  "name": "He Zhuojia",
+                  "nat": "CHN"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  3,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Daniela Ortega",
+                  "nat": "CHI"
+                },
+                {
+                  "name": "Xiaoxin Yang",
+                  "nat": "MON"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  5,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Maria Xiao",
+                  "nat": "ESP"
+                },
+                {
+                  "name": "He Zhuojia",
+                  "nat": "CHN"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  11,
+                  9
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Tin-Tin Ho",
+                  "nat": "ENG"
+                },
+                {
+                  "name": "Han Ying",
+                  "nat": "GER"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  4,
+                  11
+                ],
+                [
+                  4,
+                  11
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Stage 2, round 2",
+          "event": "ETTU Champions League Women",
+          "sides": [
+            {
+              "name": "Metz TT",
+              "nat": "FRA"
+            },
+            {
+              "name": "Saint-Quentin TT",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            10,
+            5
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Hana Goda",
+                  "nat": "EGY"
+                },
+                {
+                  "name": "Mo Zhang",
+                  "nat": "CAN"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  13,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Charlotte Lutz",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Camille Lutz",
+                  "nat": "FRA"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  12,
+                  14
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Lea Rakovac",
+                  "nat": "CRO"
+                },
+                {
+                  "name": "Polina Mikhailova",
+                  "nat": "RUS"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ],
+              "games": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  12,
+                  14
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Hana Goda",
+                  "nat": "EGY"
+                },
+                {
+                  "name": "Camille Lutz",
+                  "nat": "FRA"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Charlotte Lutz",
+                  "nat": "FRA"
+                },
+                {
+                  "name": "Mo Zhang",
+                  "nat": "CAN"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Stage 2, round 2",
+          "event": "ETTU Champions League Women",
+          "sides": [
+            {
+              "name": "Etival ASRTT",
+              "nat": "FRA"
+            },
+            {
+              "name": "SKST Plus Hodonín",
+              "nat": "CZE"
+            }
+          ],
+          "score": [
+            11,
+            4
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Yangzi Liu",
+                  "nat": "AUS"
+                },
+                {
+                  "name": "Karin Grofova",
+                  "nat": "CZE"
+                }
+              ],
+              "score": [
+                2,
+                1
+              ],
+              "games": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  8,
+                  11
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Christina Källberg",
+                  "nat": "SWE"
+                },
+                {
+                  "name": "Marketa Sevcikova",
+                  "nat": "CZE"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  0
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Jieni Shao",
+                  "nat": "POR"
+                },
+                {
+                  "name": "Zhang Binyue",
+                  "nat": "CHN"
+                }
+              ],
+              "score": [
+                1,
+                2
+              ],
+              "games": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Yangzi Liu",
+                  "nat": "AUS"
+                },
+                {
+                  "name": "Marketa Sevcikova",
+                  "nat": "CZE"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  0
+                ],
+                [
+                  11,
+                  0
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Christina Källberg",
+                  "nat": "SWE"
+                },
+                {
+                  "name": "Karin Grofova",
+                  "nat": "CZE"
+                }
+              ],
+              "score": [
+                2,
+                1
+              ],
+              "games": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  13,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Tarnobrzeg dominate in Cartagena as Metz and Etival secure Champions League wins",
+          "url": "https://www.ettu.org/tarnobrzeg-dominate-in-cartagena-as-metz-and-etival-secure-champions-league-wins/"
+        },
+        {
+          "name": "Le Républicain Lorrain: Metz TT beat Saint-Quentin (French)",
+          "url": "https://www.republicain-lorrain.fr/sport/2026/11/14/ligue-des-champions-metz-tt-s-impose-face-a-saint-quentin-le-match-en-images"
+        },
+        {
+          "name": "ITTF world ranking, week 46 (WTT)",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ]
+    },
     {
       "id": "ettu-champions-league-men-2026-27-last-16-santa-tecla-bogoria",
       "category": "Clubs",
@@ -1052,7 +1588,6 @@
       "league": "champions-league",
       "date": "2026-11-13",
       "published": "2026-11-14T00:30:00Z",
-      "top": true,
       "headline": "Roskilde beat Nîmes/Montpellier and Lille beat holders Saarbrücken in ETTU Champions League Men",
       "summary": "Last season's finalists both lost their last-16 first legs on Friday, Nîmes/Montpellier 3-0 in Roskilde without the Lebrun brothers and Saarbrücken 3-2 to Lille.",
       "matches": [

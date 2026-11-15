@@ -1,9 +1,9 @@
 {
  "id": "cl-women",
  "auto": false,
- "updated": "2026-11-11T20:30:00Z",
+ "updated": "2026-11-15T00:40:00Z",
  "season": "2026-27",
- "status": "Stage 2 (single group of eight): round 1 complete; round 2 on 14 and 15 November",
+ "status": "Stage 2 (single group of eight): round 2 under way, Linz v Berlin on 15 November; rounds 3 and 4 on 15-16 and 19-20 December",
  "source": {
   "name": "ETTU",
   "url": "https://www.ettu.org/european-champions-league-women/"
@@ -20,54 +20,54 @@
     "name": "Stage 2 (single group)",
     "rows": [
      {
-      "team": "UCAM Cartagena T.M",
-      "p": 1,
-      "w": 1,
-      "l": 0,
-      "for": 11,
-      "against": 4,
-      "pos": 1,
-      "diff": 7
-     },
-     {
-      "team": "Saint-Quentin TT",
-      "p": 1,
-      "w": 1,
-      "l": 0,
-      "for": 11,
-      "against": 4,
-      "pos": 2,
-      "diff": 7
-     },
-     {
       "team": "Metz TT",
-      "p": 1,
-      "w": 1,
+      "p": 2,
+      "w": 2,
       "l": 0,
-      "for": 9,
-      "against": 6,
-      "pos": 3,
-      "diff": 3
+      "for": 19,
+      "against": 11,
+      "pos": 1,
+      "diff": 8
      },
      {
       "team": "Etival ASRTT",
-      "p": 1,
-      "w": 1,
+      "p": 2,
+      "w": 2,
       "l": 0,
-      "for": 8,
-      "against": 7,
-      "pos": 4,
-      "diff": 1
+      "for": 19,
+      "against": 11,
+      "pos": 1,
+      "diff": 8
      },
      {
       "team": "KTS Enea Siarkopol Tarnobrzeg",
-      "p": 1,
-      "w": 0,
+      "p": 2,
+      "w": 1,
       "l": 1,
-      "for": 7,
-      "against": 8,
+      "for": 20,
+      "against": 10,
+      "pos": 3,
+      "diff": 10
+     },
+     {
+      "team": "Saint-Quentin TT",
+      "p": 2,
+      "w": 1,
+      "l": 1,
+      "for": 16,
+      "against": 14,
+      "pos": 4,
+      "diff": 2
+     },
+     {
+      "team": "UCAM Cartagena T.M",
+      "p": 2,
+      "w": 1,
+      "l": 1,
+      "for": 13,
+      "against": 17,
       "pos": 5,
-      "diff": -1
+      "diff": -4
      },
      {
       "team": "TTC Berlin eastside",
@@ -91,13 +91,13 @@
      },
      {
       "team": "SKST Plus Hodonín",
-      "p": 1,
+      "p": 2,
       "w": 0,
-      "l": 1,
-      "for": 4,
-      "against": 11,
+      "l": 2,
+      "for": 8,
+      "against": 22,
       "pos": 8,
-      "diff": -7
+      "diff": -14
      }
     ]
    },
@@ -407,24 +407,33 @@
    "when": "2026-11-14T18:00:00Z",
    "home": "UCAM Cartagena T.M",
    "away": "KTS Enea Siarkopol Tarnobrzeg",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    2,
+    13
+   ],
+   "status": "finished",
    "round": "Stage 2, round 2"
   },
   {
    "when": "2026-11-14T18:00:00Z",
    "home": "Etival ASRTT",
    "away": "SKST Plus Hodonín",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    11,
+    4
+   ],
+   "status": "finished",
    "round": "Stage 2, round 2"
   },
   {
    "when": "2026-11-14T18:30:00Z",
    "home": "Metz TT",
    "away": "Saint-Quentin TT",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    10,
+    5
+   ],
+   "status": "finished",
    "round": "Stage 2, round 2"
   },
   {
@@ -460,6 +469,10 @@
   {
    "name": "ETTU: Metz fight back to defeat ttc berlin eastside",
    "url": "https://www.ettu.org/metz-fight-back-to-defeat-ttc-berlin-eastside-in-champions-league-women/"
+  },
+  {
+   "name": "ETTU: Tarnobrzeg dominate in Cartagena as Metz and Etival secure Champions League wins",
+   "url": "https://www.ettu.org/tarnobrzeg-dominate-in-cartagena-as-metz-and-etival-secure-champions-league-wins/"
   }
  ]
 }
