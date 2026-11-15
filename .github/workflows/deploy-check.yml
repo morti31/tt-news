@@ -2,6 +2,8 @@ name: Deploy check
 # Cloudflare builds and deploys the site on every push. If that build fails the site silently stops updating, so this
 # looks at the newest finished build every half hour: on a failure it opens an issue (GitHub emails the owner) and
 # fails this run (a second email); once a build passes again it closes the issue.
+# It also checks live scores for any WTT event on now: the latest finished match on the order of play must load from
+# /api/match (the scores popup and the live fallback), and an event page's end date must not run past the calendar's.
 on:
   schedule:
     - cron: "13,43 * * * *"
@@ -36,3 +38,45 @@ jobs:
           if [ "$state" = "success" ] && [ -n "$open" ]; then
             gh issue close "$open" -R "$R" --comment "Cloudflare's build of commit $at passed. Deploys are working again."
           fi
+      - uses: actions/checkout@v4
+      - name: Live scores and event dates
+        run: |
+          python3 - <<'PY'
+          import json, sys, urllib.request, datetime as dt
+          bad = []
+          ev = {e["id"]: e for e in json.load(open("data/events.json"))["events"]}
+          sch = json.load(open("data/schedule.json"))
+          cal = {e["id"]: e for e in sch["events"]}
+          today = dt.date.today().isoformat()
+          for e in ev.values():
+              c = cal.get(e.get("schedule_id") or e["id"])
+              if e.get("auto") and c and c.get("end") and e["end"] > c["end"] and e["end"] >= today:
+                  bad.append(f'{e["id"]} ends {e["end"]} but the calendar says {c["end"]}')
+          now = dt.datetime.now(dt.timezone.utc)
+          for e in ev.values():
+              if not e.get("wtt_id") or not (e["start"] <= today <= e["end"]):
+                  continue
+              done = [f for f in sch.get("fixtures", []) if f["id"].startswith(f'wtt-{e["wtt_id"]}-') and f.get("code")
+                      and dt.datetime.fromisoformat(f["start"].replace("Z", "+00:00")) < now - dt.timedelta(hours=2)]
+              if not done:
+                  continue
+              f = max(done, key=lambda f: f["start"])
+              url = f'https://eleventabletennis.com/api/match?event={e["wtt_id"]}&code={f["code"]}'
+              try:
+                  d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Eleven deploy check"}), timeout=30))
+                  if not d.get("sides"):
+                      bad.append(f"{url} returned no match")
+              except Exception as err:
+                  bad.append(f"{url} failed: {err}")
+          for b in bad:
+              print("::error::" + b)
+          if bad:
+              open("problems.txt", "w").write("\n".join(bad))
+          sys.exit(1 if bad else 0)
+          PY
+      - name: Report live-score problems
+        if: failure()
+        run: |
+          [ -f problems.txt ] || exit 0
+          open=$(gh issue list -R "$R" --state open --search "Live scores check failed in:title" --json number -q '.[0].number')
+          [ -n "$open" ] || gh issue create -R "$R" --title "Live scores check failed" --body "$(cat problems.txt)"

@@ -10,7 +10,7 @@ const WTT = "https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azurefd.n
 const HEADERS = { Origin: "https://www.worldtabletennis.com", Referer: "https://www.worldtabletennis.com/", Accept: "application/json" };
 
 // Same spellings as the rest of the site (tools/fetch_draw.py)
-const FIXES = { "Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo",
+const FIXES = { "Bo Fang": "Fang Bo", "Jian Zeng": "Zeng Jian", "Felix Lebrun": "Félix Lebrun", "Anton Kallberg": "Anton Källberg", "Joao Geraldo": "João Geraldo",
   "Bernadette Szocs": "Bernadette Szőcs", "Ying Han": "Han Ying", "Peng Yu-Han": "Peng Yu-han" };
 
 const cap = (s) => s.toLowerCase().replace(/(^|[ -])(\p{L})/gu, (m, a, b) => a + b.toUpperCase());
@@ -114,6 +114,10 @@ async function oneTable(eventId, env, origin) {
   } catch (e) { return false; }
 }
 
+// WTT's order of play shortens match codes to 34 characters ("TTEMSINGLES-----------FNL-000100--"); its match cards
+// answer only to the full 42 ("...FNL-000100----------"). Every code sent to WTT goes through here.
+const fullCode = (c) => (c ? String(c).toUpperCase().padEnd(42, "-") : c);
+
 async function live(eventId, ctx, env, origin, all = false) {
   const [now, done, ranks] = await Promise.all([
     cached(`${WTT}/GetLiveResult?EventId=${eventId}&include_match_card=true`, ctx, 8),
@@ -134,7 +138,7 @@ async function live(eventId, ctx, env, origin, all = false) {
       && !seen.has(f.id.slice(`wtt-${eventId}-`.length))).sort((a, b) => b.start.localeCompare(a.start)).slice(0, 12);
     const found = await Promise.all(missing.map(async (f) => {
       const k = f.id.slice(`wtt-${eventId}-`.length).toUpperCase();
-      const code = f.code || (k.length >= 12 && /^\d{6}$/.test(k.slice(-6)) ? `${k.slice(0, 11).padEnd(22, "-")}${k.slice(11, -6)}-${k.slice(-6)}`.padEnd(42, "-") : null);
+      const code = fullCode(f.code) || (k.length >= 12 && /^\d{6}$/.test(k.slice(-6)) ? `${k.slice(0, 11).padEnd(22, "-")}${k.slice(11, -6)}-${k.slice(-6)}`.padEnd(42, "-") : null);
       if (!code) return null;
       try {
         const card = await cached(`${WTT}/GetMatchCardDetails/${eventId}/${encodeURIComponent(code)}?no_cache=true&require_full_msg=true&require_play_by_play_full=true`, ctx, 20);
@@ -157,6 +161,7 @@ async function live(eventId, ctx, env, origin, all = false) {
 //                                                                     the leader then has game or match point
 //   { k: "to", by: 0|1, h, a }                                        a time-out
 async function matchDetail(eventId, code, ctx, env, origin) {
+  code = fullCode(code);
   const url = `${WTT}/GetMatchCardDetails/${eventId}/${encodeURIComponent(code)}?no_cache=true&require_full_msg=true&require_play_by_play_full=true`;
   const [card, ranks] = await Promise.all([cached(url, ctx, 5), rankMap(env, origin, ctx)]);
   const m = match(card, ranks, await oneTable(eventId, env, origin));
