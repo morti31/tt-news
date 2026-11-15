@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-14T23:14:00Z",
+ "updated": "2026-11-15T02:53:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -30,23 +30,23 @@
      },
      {
       "team": "Florida Crocs",
-      "p": 4,
+      "p": 5,
       "w": 4,
-      "l": 0,
-      "for": 53,
-      "against": 31,
+      "l": 1,
+      "for": 58,
+      "against": 47,
       "pos": 2,
-      "diff": 22
+      "diff": 11
      },
      {
       "team": "Princeton Revolution",
-      "p": 4,
-      "w": 2,
+      "p": 5,
+      "w": 3,
       "l": 2,
-      "for": 42,
-      "against": 42,
+      "for": 58,
+      "against": 47,
       "pos": 3,
-      "diff": 0
+      "diff": 11
      },
      {
       "team": "Atlanta Blazers",
@@ -423,15 +423,18 @@
     5,
     16
    ],
-   "status": "live",
+   "status": "finished",
    "venue": "Charlotte"
   },
   {
    "when": "2026-11-15T00:30:00Z",
    "home": "Portland Paddlers",
    "away": "Carolina Gold Rush",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    12,
+    9
+   ],
+   "status": "live",
    "venue": "Charlotte"
   },
   {
