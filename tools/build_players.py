@@ -661,7 +661,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         clubs = p.get("clubs") or []
         club_list = ""
         if clubs:
-            lis = "".join(f'<li><b>{e(c["club"])}</b>{" · " + e(c["league"]) if c.get("league") else ""}<span class="pl-sub">{e(" to ".join(x for x in (c.get("from"), c.get("to")) if x) or ("Current" if c.get("current") else ""))}</span></li>' for c in reversed(clubs))
+            lis = "".join(f'<li><b>{e(c["club"])}</b>{" · " + e(c["league"]) if c.get("league") else ""}<span class="pl-sub">{e(" to ".join(x for x in (str(c.get("from") or ""), str(c.get("to") or "")) if x) or ("Current" if c.get("current") else ""))}</span></li>' for c in reversed(clubs))
             club_list = f'<section class="hub-sec" id="club-history"><h2 class="section-title">Clubs</h2><ul class="pl-list">{lis}</ul></section>'
         eq = p.get("equipment") or {}
         eq_rows = [(k, eq.get(x)) for k, x in (("Blade", "blade"), ("Forehand", "forehand"), ("Backhand", "backhand"), ("Sponsor", "sponsor")) if eq.get(x)]
