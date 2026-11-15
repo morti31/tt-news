@@ -1,0 +1,38 @@
+name: Deploy check
+# Cloudflare builds and deploys the site on every push. If that build fails the site silently stops updating, so this
+# looks at the newest finished build every half hour: on a failure it opens an issue (GitHub emails the owner) and
+# fails this run (a second email); once a build passes again it closes the issue.
+on:
+  schedule:
+    - cron: "13,43 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  checks: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      R: ${{ github.repository }}
+    steps:
+      - name: Newest finished Cloudflare build
+        run: |
+          state=""
+          for sha in $(gh api "repos/$R/commits?sha=main&per_page=8" -q '.[].sha'); do
+            row=$(gh api "repos/$R/commits/$sha/check-runs" -q '[.check_runs[]|select(.name|test("Workers Builds"))|select(.status=="completed")][0]|.conclusion+" "+(.details_url//"")')
+            if [ -n "$row" ]; then state="${row%% *}"; url="${row#* }"; at="$sha"; break; fi
+          done
+          echo "newest finished build: ${state:-none} at ${at:-?}"
+          open=$(gh issue list -R "$R" --state open --search "Site deploys are failing in:title" --json number -q '.[0].number')
+          if [ "$state" = "failure" ]; then
+            if [ -z "$open" ]; then
+              gh issue create -R "$R" --title "Site deploys are failing" --body "Cloudflare's build of commit $at failed, so the live site has stopped updating. The error is at the bottom of the build log: $url"
+            fi
+            echo "::error::Cloudflare build failed at $at: $url"
+            exit 1
+          fi
+          if [ "$state" = "success" ] && [ -n "$open" ]; then
+            gh issue close "$open" -R "$R" --comment "Cloudflare's build of commit $at passed. Deploys are working again."
+          fi
