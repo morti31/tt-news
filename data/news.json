@@ -1,7 +1,106 @@
 {
-  "updated": "2026-11-16T04:40:00Z",
+  "updated": "2026-11-16T08:20:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "world-para-championships-2026-singles-hunter-spivey-pickard-out",
+      "category": "England",
+      "kind": "Update",
+      "date": "2026-11-15",
+      "published": "2026-11-16T08:20:00Z",
+      "headline": "Jack Hunter-Spivey and Fliss Pickard lose their opening singles at the World Para Championships in Pattaya",
+      "summary": "Both Britons went out 3-1 on Sunday, Hunter-Spivey to Serbia's Mitar Palikuca in the class 4-5 last 32 and Pickard to France's Morgen Caillaud in the women's class 6 last 16.",
+      "matches": [
+        {
+          "label": "Men's singles class 4-5, last 32",
+          "event": "World Para Championships",
+          "sides": [
+            {
+              "name": "Mitar Palikuca",
+              "nat": "SRB"
+            },
+            {
+              "name": "Jack Hunter-Spivey",
+              "nat": "GBR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles class 6, last 16",
+          "event": "World Para Championships",
+          "sides": [
+            {
+              "name": "Morgen Caillaud",
+              "nat": "FRA"
+            },
+            {
+              "name": "Fliss Pickard",
+              "nat": "GBR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Britain's singles campaign at the World Para Championships in Pattaya began badly on Sunday, with Jack Hunter-Spivey and Fliss Pickard both beaten 3-1 in their first matches. All the events in Thailand are straight knockouts, so both are out of the singles.",
+        "Hunter-Spivey won the first game 11-6 against Serbia's Mitar Palikuca, the world No 6 and a Paris 2024 bronze medallist, and led 3-1 in the second before Palikuca took the next three games 11-5, 11-5, 11-6 in the men's class 4-5 last 32. \"It has been a tough year - I fought like I always do and that is all I can do,\" Hunter-Spivey said.",
+        "Pickard lost the first two games 11-8 to France's Morgen Caillaud, 23, in the women's class 6 last 16, took the third 11-8 and recovered from 6-1 to 6-4 in the fourth before losing it 11-7. She said she had changed her equipment six weeks before the championships. \"She played very well and she has improved a lot over the last few months,\" Pickard said.",
+        "Six more British players were due to start their singles on Monday, among them Will Bayley, the class 7 world champion and world No 1, who plays China's Yan Shuo or the Netherlands' Yannick Paredis in the quarter-finals. Bayley and Bly Twomey [won mixed doubles bronze](/news/world-para-championships-2026-doubles-bronze-bayley-twomey-ryan-matthews.html) on Saturday. The championships end on Thursday 19 November."
+      ],
+      "sources": [
+        {
+          "name": "British Para Table Tennis: Tough start to singles events for British team in Thailand",
+          "url": "https://www.britishparatabletennis.com/blogs/news/tough-start-to-singles-events-for-british-team-in-thailand"
+        },
+        {
+          "name": "Table Tennis England: ITTF World Para Championships 2026: draws revealed",
+          "url": "https://www.tabletennisengland.co.uk/news/2026/ittf-world-para-championships-2026-draws-revealed/"
+        }
+      ]
+    },
     {
       "id": "wtt-star-contender-muscat-2026-fang-bo-qualifying-yigenler",
       "category": "International",
