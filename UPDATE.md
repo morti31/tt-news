@@ -227,6 +227,10 @@ Every Tuesday morning `data/ranking-brief.json` is rewritten from WTT's ranking 
 
 Under Major events, the homepage's "Club competitions" row shows each covered league's next round (dates and the pick of the round: the fixture between the best-placed teams) and, under Recent, its last results, from `data/club-row.json` (written by `tools/build_clubs.py` on every build from `data/clubs/*.json` and the Clubs events in `data/schedule.json`). Club events with no league file (Europe Cup, cup Final4s, finals weekends) come from the schedule, so add them there.
 
+## Youth results
+
+`tools/youth_sync.py` (run after every match sync) keeps WTT Youth and junior results for the under-17, under-19 and under-21 categories since 2025 in `data/matches/youth`, apart from the senior database: news, records and upsets don't use them. Player profiles on Eleven and The Chop list them under "Youth events". Under-15 and younger categories are never stored (the age rule).
+
 ## The archive is permanent
 
 Eleven is a news site: every story it publishes stays published, forever. Never remove a story from `data/news.json`, including when it is upgraded to a full article (the article's `story_id` points at the card, and the card stays) or superseded by a later story (link the two instead). `data/story-ledger.json` keeps every story ever published, and the build puts back any that go missing (`tools/ledger.py`). The only exceptions are recorded in its `"retired"` list with the reason: thin early stories merged into a fuller article with a redirect, and the under-15 stories Tom asked to remove. Only Tom can retire a story.

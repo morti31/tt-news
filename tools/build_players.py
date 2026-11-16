@@ -228,6 +228,24 @@ def player_card(p, rank=None, size="big"):
 _DB = None
 
 
+_YOUTH = None
+
+
+def youth_matches():
+    """{ittf id: [youth match, newest first]} from data/matches/youth (tools/youth_sync.py)."""
+    global _YOUTH
+    if _YOUTH is None:
+        _YOUTH = {}
+        for f in sorted(glob.glob(os.path.join(ROOT, "data", "matches", "youth", "[0-9]*.json"))):
+            for m in json.load(open(f, encoding="utf-8")):
+                for side in m.get("p") or []:
+                    for pid_ in side:
+                        _YOUTH.setdefault(pid_, []).append(m)
+        for v in _YOUTH.values():
+            v.sort(key=lambda m: m.get("d") or "", reverse=True)
+    return _YOUTH
+
+
 def database():
     global _DB
     if _DB is None:
@@ -391,6 +409,8 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                 games = ", ".join(f"{a}-{b}" if sd == 0 else f"{b}-{a}" for a, b in gs if a and b)
             when = (m.get("d") or "")[:10]
             what = KINDS.get(m["k"], m["k"]) + (", " + round_name(m["r"]) if m.get("r") else "")
+            if m.get("a"):
+                what = f'{m["a"]} {what}'
             with_ = f' <span class="pl-with">with {" / ".join(who(x) for x in partner)}</span>' if partner else ""
             return (f'<tr class="{"pl-w" if res == "W" else "pl-l"}"><td class="pl-date">{e(short_date(when)) if when else ""}</td>'
                     f'<td>{ev_link(m["e"])}<span class="pl-sub">{e(what)}</span></td>'
@@ -402,6 +422,11 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         recent_sec = (f'<section class="hub-sec" id="recent"><h2 class="section-title">Recent matches</h2>{mtable(recent)}'
                       f'<p class="small">Official results from World Table Tennis. Times are UK dates.</p></section>') if recent else ""
         latest_sec = (f'<section class="hub-sec"><h2 class="section-title">Latest results</h2>{mtable(ms[:5])}{entity.tab_link("results", "All results")}</section>') if ms else ""
+        # ---- youth events (tools/youth_sync.py: U17 and older), kept apart from the senior record
+        yms = youth_matches().get(pid, [])[:15]
+        youth_sec = (f'<section class="hub-sec" id="youth"><h2 class="section-title">Youth events</h2>{mtable(yms)}'
+                     f'<p class="small">Under-17, under-19 and under-21 matches at WTT Youth and junior events since 2025, from World Table Tennis. '
+                     f'Youth events can carry world ranking points; they are not counted in the senior records above.</p></section>') if yms else ""
 
         # ---- club matches, from the leagues' own results
         club = db.club_by_player.get(pid, [])
@@ -756,7 +781,7 @@ def build(page, site, tag_items, hubs, R, roster, tg):
             sents.append(f"The last match on record was at the {ev_link(ms[0]['e'])} in {last_:%B %Y}.")
         summary_sec = f'<section class="hub-sec pl-summary"><p>{" ".join(sents)}</p></section>'
         overview = summary_sec + (f'<section class="hub-sec pl-notes">{notes}</section>' if notes else "") + latest_sec + news_over + hon_over
-        results_tab = recent_sec + season + h2h_sec + rank_sec
+        results_tab = recent_sec + youth_sec + season + h2h_sec + rank_sec
         rank_tab = rank_sec if (rank_sec or rk) else ""
         if rk and not rank_sec:
             rank_tab = f'<p>World No. {rk["rank"]} with {rk["points"]:,} points.</p>'

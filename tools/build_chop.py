@@ -277,6 +277,54 @@ def build():
         da, db = dt.date.fromisoformat(a), dt.date.fromisoformat(b)
         return f"{da.day} {da:%b}" + ("" if a == b else f" to {db.day} {db:%b}") + f" {db.year}"
 
+    WTTREC = load("data/players/wtt.json", {})
+
+    def age_of(p):
+        b = p.get("born")
+        if not b:
+            bio = load(f"data/players/{slug(p['name'])}.json", {})
+            b = bio.get("born") if isinstance(bio, dict) else None
+        if not b:
+            m_ = re.match(r"(\d\d)/(\d\d)/(\d{4})", (WTTREC.get(p.get("ittf_id") or "", {}) or {}).get("dob") or "")
+            b = f"{m_[3]}-{m_[1]}-{m_[2]}" if m_ else None
+        if not b:
+            return None
+        bd = dt.date.fromisoformat(b[:10])
+        return now.date().year - bd.year - ((now.date().month, now.date().day) < (bd.month, bd.day))
+
+    # Youth results (tools/youth_sync.py: U17 and older) and where the ranking points come from (tools/ranking_breakdown.py)
+    YEV = load("data/matches/youth/events.json", {})
+    youth = {i: [] for i in ids}
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "matches", "youth", "[0-9]*.json"))):
+        for m in load(os.path.relpath(f, ROOT), []):
+            if m.get("k") not in ("MS", "WS") or m.get("w") not in (0, 1):
+                continue
+            for side in (0, 1):
+                pid = m["p"][side][0]
+                if pid in youth:
+                    youth[pid].append((m, side))
+    for v in youth.values():
+        v.sort(key=lambda t: t[0].get("d") or "", reverse=True)
+    BRK = load("data/ranking-breakdown.json", {})
+
+    def youth_row(m, side):
+        won = m["w"] == side
+        o = m["p"][1 - side][0]
+        sc = m.get("s") or [0, 0]
+        evn = re.sub(r"\s+Presented by.*$", "", (YEV.get(m["e"]) or {}).get("name", "") or ev_name(m["e"]))
+        return (f'<li class="{"w" if won else "l"}"><span class="ch-res">{"W" if won else "L"} {sc[side]}-{sc[1 - side]}</span>'
+                f'<span class="ch-opp">{e(nm(o))}</span><span class="ch-ev">{e(evn)}, {e(m.get("a", ""))} · {day(m["d"])}</span></li>')
+
+    def points_html(p):
+        b = BRK.get(p.get("ittf_id") or "")
+        evs = [x for x in (b or {}).get("events", []) if x.get("counted")]
+        if not evs:
+            return ""
+        rows = "".join(f'<li><span class="ch-yr">{e(str(x.get("points")))}</span><span>{e(re.sub(r"\s+Presented by.*$", "", x.get("event") or ""))}'
+                       f'{f" <small>{e(str(x.get(chr(114)+chr(101)+chr(115)+chr(117)+chr(108)+chr(116))))}</small>" if x.get("result") else ""}</span></li>' for x in evs)
+        return (f'<section class="ch-sec"><h2>Where the ranking points come from</h2><ul class="ch-hon">{rows}</ul>'
+                f'<p class="ch-small">The events that count towards the world ranking, from WTT\'s ranking breakdown ({e(b.get("week", ""))}).</p></section>')
+
     def likely_html(lk, compact=False):
         if not lk:
             return ""
@@ -463,12 +511,15 @@ def build():
 <p class="ch-lede">{e(p.get("note", ""))}</p></div>
 <dl class="ch-facts"><div><dt>World ranking</dt><dd>{f'No {r["rank"]}{move(r)}' if r else "Unranked"}</dd></div>
 <div><dt>Points</dt><dd>{f'{r["points"]:,}' if r else "-"}</dd></div><div><dt>{today[:4]} record</dt><dd>{rec[0]}-{rec[1]}</dd></div>
-<div><dt>Last 10</dt><dd class="ch-frm">{chip(wl) or "-"}</dd></div></dl></section>
-<div class="ch-grid"><section class="ch-sec"><h2>Recent results</h2><ul class="ch-results">{"".join(res_row(m, s) for m, s in last) or "<li>No results on record.</li>"}</ul></section>
+<div><dt>Last 10</dt><dd class="ch-frm">{chip(wl) or "-"}</dd></div>
+<div><dt>Age</dt><dd>{age_of(p) or "-"}</dd></div><div><dt>Club</dt><dd class="ch-fclub">{e(", ".join(c for c, _ in cl) or "-")}</dd></div></dl></section>
+<div class="ch-grid"><section class="ch-sec"><h2>Recent results</h2><ul class="ch-results">{"".join(res_row(m, s) for m, s in last) or "<li>No senior or club results on record.</li>"}</ul>
+{f'<h3>Youth events</h3><ul class="ch-results">{"".join(youth_row(m, s) for m, s in youth.get(p.get("ittf_id"), [])[:8])}</ul>' if youth.get(p.get("ittf_id")) else ""}</section>
 <section class="ch-sec"><h2>Next matches</h2>{likely_html(likely(p))}<ul class="ch-next">{nxt_html or "<li>No match scheduled in Eleven's tournament draws or club fixtures yet.</li>"}</ul>
 {f'<p class="ch-small"><a href="{ELEVEN}{es}">Full profile on Eleven</a>: titles, head to heads and ranking history.</p>' if es else ""}</section></div>
 <div class="ch-grid"><section class="ch-sec"><h2>Honours and titles</h2>{f'<ul class="ch-hon">{hon_html}</ul>' if hon_html else "<p class='ch-small'>No major medals or senior titles on record yet.</p>"}</section>
 <section class="ch-sec"><h2>Club</h2>{f'<ul class="ch-clubs">{cl_html}</ul>' if cl_html else "<p class='ch-small'>No club in the leagues Eleven follows.</p>"}</section></div>
+{points_html(p)}
 {f'<section class="ch-sec"><h2>How the sources describe the style</h2><ul class="ch-quotes">{wd_html}</ul>{prov}</section>' if wd_html else ""}
 <section class="ch-sec"><h2>Reading</h2>{f'<ul class="ch-links">{"".join(link_li(l, False) for l in mine)}</ul>' if mine else "<p>No stories linked yet.</p>"}</section>"""
         open(os.path.join(OUT, "defender", slug(p["name"]) + ".html"), "w", encoding="utf-8").write(page(
