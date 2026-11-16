@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T16:50:00Z",
+  "updated": "2026-11-16T18:26:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -986,16 +986,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3256-ttewsinglesrnd1000400",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Wei Jingming v Adina Diaconu, women's singles, qualifying round 1",
-      "start": "2026-11-16T13:00:00Z",
-      "end": "2026-11-16T13:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000400----------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3256-ttemsinglesrnd1002600",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Ibrahim Gunduz v Sun Yang, men's singles, qualifying round 1",
@@ -1004,6 +994,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND1002600----------",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttewsinglesrnd1000400",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Wei Jingming v Adina Diaconu, women's singles, qualifying round 1",
+      "start": "2026-11-16T13:00:00Z",
+      "end": "2026-11-16T13:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWSINGLES-----------RND1000400----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttewsinglesrnd1000500",
@@ -1016,16 +1016,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3256-ttemsinglesrnd1001800",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Ibrahima Diaw v Temirlan Jiyenbayev, men's singles, qualifying round 1",
-      "start": "2026-11-16T13:35:00Z",
-      "end": "2026-11-16T14:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1001800----------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3256-ttemsinglesrnd1001900",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Ahmed Al Riyami v Lee Seungsoo, men's singles, qualifying round 1",
@@ -1034,6 +1024,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND1001900----------",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesrnd1001800",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Ibrahima Diaw v Temirlan Jiyenbayev, men's singles, qualifying round 1",
+      "start": "2026-11-16T13:35:00Z",
+      "end": "2026-11-16T14:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND1001800----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd1003000",
@@ -1076,16 +1076,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3256-ttemsinglesrnd1002200",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Bilal Al Rashdi v Maksim Grebnev, men's singles, qualifying round 1",
-      "start": "2026-11-16T14:45:00Z",
-      "end": "2026-11-16T15:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND1002200----------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3256-ttemsinglesrnd1002300",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Abdullah Yigenler v Fang Bo, men's singles, qualifying round 1",
@@ -1094,6 +1084,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND1002300----------",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesrnd1002200",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Bilal Al Rashdi v Maksim Grebnev, men's singles, qualifying round 1",
+      "start": "2026-11-16T14:45:00Z",
+      "end": "2026-11-16T15:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND1002200----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttewdoublesrnd1000300",
@@ -1146,9 +1146,19 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3256-ttemsinglesrnd2001200",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Fang Bo v Eduard Ionescu, men's singles, qualifying round 2",
+      "start": "2026-11-17T08:10:00Z",
+      "end": "2026-11-17T08:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND2001200----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3256-ttemsinglesrnd2001500",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 15",
+      "name": "WTT Star Contender Muscat: Filip Zeljko v Iskender Kharki, men's singles, qualifying round 2",
       "start": "2026-11-17T08:10:00Z",
       "end": "2026-11-17T08:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
@@ -1158,22 +1168,12 @@
     {
       "id": "wtt-3256-ttemsinglesrnd2001000",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 10",
+      "name": "WTT Star Contender Muscat: Lee Seungsoo v Yuan Licen, men's singles, qualifying round 2",
       "start": "2026-11-17T08:10:00Z",
       "end": "2026-11-17T08:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND2001000----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesrnd2001200",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 12",
-      "start": "2026-11-17T08:10:00Z",
-      "end": "2026-11-17T08:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND2001200----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd2000400",
@@ -1186,6 +1186,26 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3256-ttemsinglesrnd2001400",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Niagol Stoyanov v Esteban Dorr, men's singles, qualifying round 2",
+      "start": "2026-11-17T08:45:00Z",
+      "end": "2026-11-17T09:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND2001400----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesrnd2001300",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Ivor Ban v Sun Yang, men's singles, qualifying round 2",
+      "start": "2026-11-17T08:45:00Z",
+      "end": "2026-11-17T09:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND2001300----------",
+      "detail": "Table 2"
+    },
+    {
       "id": "wtt-3256-ttemsinglesrnd2000300",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Kay Stumper v Ma Yeongmin, men's singles, qualifying round 2",
@@ -1194,16 +1214,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND2000300----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesrnd2001300",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 13",
-      "start": "2026-11-17T08:45:00Z",
-      "end": "2026-11-17T09:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND2001300----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd2000800",
@@ -1216,14 +1226,14 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3256-ttemsinglesrnd2001400",
+      "id": "wtt-3256-ttemsinglesrnd2000900",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 14",
-      "start": "2026-11-17T08:45:00Z",
-      "end": "2026-11-17T09:20:00Z",
+      "name": "WTT Star Contender Muscat: Lilian Bardet v Ibrahima Diaw, men's singles, qualifying round 2",
+      "start": "2026-11-17T09:20:00Z",
+      "end": "2026-11-17T09:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND2001400----------",
-      "detail": "Table 4"
+      "code": "TTEMSINGLES-----------RND2000900----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd2000600",
@@ -1234,16 +1244,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND2000600----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesrnd2000900",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 9",
-      "start": "2026-11-17T09:20:00Z",
-      "end": "2026-11-17T09:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND2000900----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd2000700",
@@ -1266,6 +1266,26 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3256-ttemsinglesrnd2001100",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Aditya Sareen v Maksim Grebnev, men's singles, qualifying round 2",
+      "start": "2026-11-17T09:55:00Z",
+      "end": "2026-11-17T10:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND2001100----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesrnd2001600",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Lim Yunoh v Yuta Tanaka, men's singles, qualifying round 2",
+      "start": "2026-11-17T09:55:00Z",
+      "end": "2026-11-17T10:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND2001600----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3256-ttemsinglesrnd2000200",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Zhou Jinquan v Kang Dongsoo, men's singles, qualifying round 2",
@@ -1284,26 +1304,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND2000100----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesrnd2001100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 11",
-      "start": "2026-11-17T09:55:00Z",
-      "end": "2026-11-17T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND2001100----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesrnd2001600",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 2, Match 16",
-      "start": "2026-11-17T09:55:00Z",
-      "end": "2026-11-17T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND2001600----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3256-ttexdoublesrnd1000100",
@@ -1382,15 +1382,6 @@
       "code": "TTEMSINGLES-----------RND3000400----------"
     },
     {
-      "id": "wtt-3256-ttemsinglesrnd3000500",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 3, Match 5",
-      "start": "2026-11-17T13:35:00Z",
-      "end": "2026-11-17T14:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------RND3000500----------"
-    },
-    {
       "id": "wtt-3256-ttemsinglesrnd3000600",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 3, Match 6",
@@ -1398,6 +1389,15 @@
       "end": "2026-11-17T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND3000600----------"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesrnd3000500",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Men's Singles, Qualifying Round 3, Match 5",
+      "start": "2026-11-17T13:35:00Z",
+      "end": "2026-11-17T14:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------RND3000500----------"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd3000700",
