@@ -4,7 +4,8 @@ Kept apart from the senior match database (tools/match_sync.py), so news, record
 results on profiles are unchanged. Profiles on Eleven and The Chop show them in their own "Youth events" list,
 which explains ranking points earned at youth events (WTT Youth Contenders award world ranking points).
 
-Eleven's age rule (UPDATE.md): no coverage of under-15 level, so U15, U13 and U11 categories are never stored.
+Eleven's age rule (UPDATE.md): no coverage of under-15 level on Eleven, so its profiles skip U15 results ("a": "U15").
+Tom approved U15 results for The Chop's defenders (16 Nov 2026). U13 and U11 are never stored.
 
 Writes data/matches/youth/<year>.json (matches in match_sync's format, plus "a": the age category, e.g. "U19")
 and data/matches/youth/events.json (event id -> name, dates, n, done).
@@ -20,7 +21,7 @@ import match_sync as ms
 ROOT = ms.ROOT
 YDIR = os.path.join(ROOT, "data", "matches", "youth")
 FROM_YEAR = "2025"
-KEEP = {"U17", "U19", "U21"}           # 15+ categories only
+KEEP = {"U15", "U17", "U19", "U21"}    # U15 approved by Tom (16 Nov 2026) for The Chop only; Eleven's own profiles show U17 and older
 YOUTH = re.compile(r"Youth|Junior", re.I)
 NOT = re.compile(r"Para |Veteran|Masters|Hopes|Development|^\s*(TEST|SIM)\b", re.I)
 

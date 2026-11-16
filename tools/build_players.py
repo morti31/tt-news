@@ -238,6 +238,8 @@ def youth_matches():
         _YOUTH = {}
         for f in sorted(glob.glob(os.path.join(ROOT, "data", "matches", "youth", "[0-9]*.json"))):
             for m in json.load(open(f, encoding="utf-8")):
+                if m.get("a") == "U15":   # Eleven's age rule: no under-15 coverage (The Chop shows them for approved players)
+                    continue
                 for side in m.get("p") or []:
                     for pid_ in side:
                         _YOUTH.setdefault(pid_, []).append(m)
