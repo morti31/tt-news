@@ -1,7 +1,306 @@
 {
-  "updated": "2026-11-15T20:05:00Z",
+  "updated": "2026-11-16T00:40:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "ettu-europe-cup-2026-27-stage-1-final-day-chodov-cagliari-qualifiers",
+      "category": "Clubs",
+      "kind": "Update",
+      "date": "2026-11-15",
+      "published": "2026-11-16T00:38:00Z",
+      "headline": "ETTU Europe Cup: SKST Chodov come from 2-0 down and Quattro Mori Cagliari stay unbeaten as Stage 1 ends",
+      "summary": "Eight men's clubs reached the Europe Cup last 16 in Varaždin and eight women's clubs reached the quarter-finals in Novi Sad, with four unbeaten in each.",
+      "body": [
+        "The first stage of the ETTU Europe Cup finished on Sunday with eight men's clubs through to the last 16 from Varaždin and eight women's clubs through to the quarter-finals from Novi Sad. SPG Felbermayr Wels, SKST Havirov, CTT Olot and SKST Chodov won their men's groups without losing a tie, and CTT Les Borges Vall, the hosts STK STARR Croatia, Energa Manekin Torun and STK Vyhne also went through.",
+        "Chodov finished their perfect run by coming from 2-0 down to beat Alicante TM 3-2. Alberto Lillo and Shoma Nishihara both won in five games for Alicante, before Jakub Zelinka and Antonin Gavlas levelled the tie and Jiri Martinko beat Nishihara 3-2. Havirov did not lose an individual match all weekend, beating STARR Croatia 3-0 on the last day.",
+        "In the women's event, ASD Quattro Mori Cagliari, STK Dr. Časl Zagreb, CD Indiana Games and the hosts TTC Novi Sad all finished unbeaten, and Museo de la Almendra Francisco Morales, Son Cladera TTC Mallorca, CSM Constanta and MIRÓ Ganxets also reached the last eight. Cagliari needed Pauline Chasselin and Tania Plaian to win key matches to beat Politechnika Rzeszów 8-6, after Zuzanna Wielgos won twice for the Polish club.",
+        "Kotomi Omoda won both her matches as Zagreb beat Mallorca 8-5 in the tie between the top two in Group B, and Novi Sad beat TTV Tulln 8-0. [The first day's results are here](/news/ettu-europe-cup-2026-27-stage-1-day-one-starr-croatia-novi-sad.html)."
+      ],
+      "matches": [
+        {
+          "label": "Men's Stage 1",
+          "event": "ETTU Europe Cup Men",
+          "sides": [
+            {
+              "name": "SKST Chodov",
+              "nat": "CZE"
+            },
+            {
+              "name": "Alicante TM",
+              "nat": "ESP"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ]
+        },
+        {
+          "label": "Women's Stage 1",
+          "event": "ETTU Europe Cup Women",
+          "sides": [
+            {
+              "name": "ASD Quattro Mori Cagliari",
+              "nat": "ITA"
+            },
+            {
+              "name": "Politechnika Rzeszów",
+              "nat": "POL"
+            }
+          ],
+          "score": [
+            8,
+            6
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ETTU: Eight teams book Europe Cup Men round of 16 spots after Varaždin battles",
+          "url": "https://www.ettu.org/eight-teams-book-europe-cup-men-round-of-16-spots-after-varazdin-battles/"
+        },
+        {
+          "name": "ETTU: Four clubs complete unbeaten runs as Europe Cup Women quarterfinal line-up takes shape",
+          "url": "https://www.ettu.org/four-clubs-complete-unbeaten-runs-as-europe-cup-women-quarterfinal-line-up-takes-shape/"
+        }
+      ]
+    },
+    {
+      "id": "kttp-pro-league-finals-2026-park-ganghyeon-lee-daeun-champions",
+      "category": "International",
+      "lang": "Korean",
+      "date": "2026-11-15",
+      "published": "2026-11-16T00:34:00Z",
+      "headline": "Park Ganghyeon and Lee Daeun win the KTTP Pro Table Tennis League Finals in Gwangmyeong",
+      "summary": "Park Ganghyeon beat his clubmate Park Gyuhyeon 3-0 and Lee Daeun beat Yoon Hyobin 3-0 to win South Korea's professional league singles titles.",
+      "matches": [
+        {
+          "label": "Men's singles final",
+          "event": "KTTP Pro Table Tennis League Finals",
+          "sides": [
+            {
+              "name": "Park Ganghyeon",
+              "nat": "KOR"
+            },
+            {
+              "name": "Park Gyuhyeon",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles final",
+          "event": "KTTP Pro Table Tennis League Finals",
+          "sides": [
+            {
+              "name": "Lee Daeun",
+              "nat": "KOR"
+            },
+            {
+              "name": "Yoon Hyobin",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              14,
+              12
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "SPOTV News (Korean): Park Ganghyeon and Lee Daeun win the Pro Table Tennis League Finals",
+          "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019978"
+        }
+      ]
+    },
+    {
+      "id": "ttbl-2026-27-matchday-8-szudi-upsets-togami-saarbrucken-second",
+      "category": "Clubs",
+      "league": "bundesliga",
+      "date": "2026-11-15",
+      "published": "2026-11-16T00:30:00Z",
+      "headline": "Adam Szudi, ranked 215th, upsets world No 15 Shunsuke Togami as Dortmund whitewash Ochsenhausen",
+      "summary": "The Hungarian took the decider 12-10 against a player ranked 200 places above him, and Ochsenhausen's defeat let Saarbrücken move second in the Tischtennis Bundesliga.",
+      "matches": [
+        {
+          "label": "Matchday 8",
+          "event": "Tischtennis Bundesliga",
+          "sides": [
+            {
+              "name": "Borussia Dortmund",
+              "nat": "GER"
+            },
+            {
+              "name": "TTF Ochsenhausen",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Wim Verdonschot",
+                  "nat": "GER"
+                },
+                {
+                  "name": "Tiago Abiodun",
+                  "nat": "POR"
+                }
+              ],
+              "score": [
+                3,
+                2
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  12,
+                  14
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Adam Szudi",
+                  "nat": "HUN"
+                },
+                {
+                  "name": "Shunsuke Togami",
+                  "nat": "JPN"
+                }
+              ],
+              "score": [
+                3,
+                2
+              ],
+              "games": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  3
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  12,
+                  10
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "João Geraldo",
+                  "nat": "POR"
+                },
+                {
+                  "name": "Iulian Chirita",
+                  "nat": "ROU"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ],
+              "games": [
+                [
+                  12,
+                  10
+                ],
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  7
+                ],
+                [
+                  11,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "tags": [
+        "Shunsuke Togami",
+        "Adam Szudi"
+      ],
+      "sources": [
+        {
+          "name": "Tischtennis Bundesliga: Dortmund v Ochsenhausen, match page (German)",
+          "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/246d701c-415b-45aa-b06c-09307d118748"
+        },
+        {
+          "name": "Tischtennis Bundesliga: Fulda-Maberzell v Bad Königshofen, match page (German)",
+          "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/3efa0b33-7ba0-40b0-aaae-9d11fa429855"
+        }
+      ]
+    },
     {
       "id": "ettu-champions-league-women-2026-27-stage-2-round-2",
       "category": "Clubs",
