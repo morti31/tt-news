@@ -135,22 +135,50 @@ HUB_WORDS = {   # pages that are about a subject rather than one player, event o
 }
 
 
-def set_items(items, covers):
-    """items: build_site's tagged stories (with "all" tag slugs); covers: Analysis article url -> cover image."""
+def set_items(items, feats):
+    """items: build_site's tagged stories (with "all" tag slugs); feats: Analysis article url -> {"cover", "related"}.
+
+    Where an Analysis piece appears, strongest first:
+      1. its "related" field (in data/articles/<slug>.json), written with the piece:
+         {"players": [profile names], "events": [words of an event's name or series, e.g. "WTT Champions",
+          "World Championships"], "leagues": [league slugs], "pages": ["rankings", "events", "clubs", "players"]}
+         "players" puts it on those profiles, "events" on every event page whose name or series contains the words,
+         "leagues" on those league pages, "pages" on those index pages (and "players" there means every profile).
+      2. tags it shares with the page's subject (the automatic tagging of every article)
+      3. the page subject's name in its title or standfirst
+    """
     global _A
-    _A = sorted(({**it, "cover": covers[it["url"]]} for it in items if it["url"] in covers),
-                key=lambda it: it.get("published") or "", reverse=True)
+    _A = sorted(({**it, "cover": feats[it["url"]]["cover"], "related": feats[it["url"]].get("related") or {}}
+                 for it in items if it["url"] in feats), key=lambda it: it.get("published") or "", reverse=True)
 
 
-def analysis(tags=(), words=(), exclude=None, n=2):
+def _rel_score(it, keys):
+    r, s = it.get("related") or {}, 0
+    for k in keys:
+        kind, _, val = k.partition(":")
+        v = val.lower()
+        if kind == "page" and val in (r.get("pages") or []):
+            s += 4
+        elif kind == "player" and any(v == p.lower() for p in r.get("players") or []):
+            s += 6
+        elif kind == "player" and "players" in (r.get("pages") or []):
+            s += 1
+        elif kind == "event" and any(w.lower() in v for w in r.get("events") or []):
+            s += 5
+        elif kind == "league" and val in (r.get("leagues") or []):
+            s += 6
+    return s
+
+
+def analysis(tags=(), words=(), exclude=None, n=2, keys=()):
     tags, words = set(tags), [w.lower() for w in words if w]
     scored = []
     for i, it in enumerate(_A):
         if exclude and it["url"].rstrip(".html") == exclude.rstrip(".html"):
             continue
         txt = f'{it["title"]} {it.get("summary", "")}'.lower()
-        s = 3 * len(tags & set(it.get("all") or [])) + sum(1 for w in words if w in txt)
-        if s:
+        s = _rel_score(it, keys) + 3 * len(tags & set(it.get("all") or [])) + sum(1 for w in words if w in txt)
+        if s >= 2 or (s and not keys):   # with page keys, a lone weak match (one shared word, "every profile") is not enough
             scored.append((-s, i, it))
     return [it for _, _, it in sorted(scored, key=lambda t: t[:2])[:n]]
 

@@ -150,5 +150,17 @@
       "name": "Wikipedia: World Table Tennis (ITTF)",
       "url": "https://en.wikipedia.org/wiki/World_Table_Tennis_(ITTF)"
     }
-  ]
+  ],
+  "related": {
+    "pages": [
+      "events"
+    ],
+    "events": [
+      "WTT",
+      "World Championships"
+    ],
+    "leagues": [
+      "utt"
+    ]
+  }
 }

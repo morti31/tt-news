@@ -200,5 +200,23 @@
       "name": "Wikipedia: Wang Chuqin",
       "url": "https://en.wikipedia.org/wiki/Wang_Chuqin"
     }
-  ]
+  ],
+  "related": {
+    "pages": [
+      "events",
+      "players"
+    ],
+    "events": [
+      "WTT Champions",
+      "WTT Star Contender",
+      "WTT Grand Smash",
+      "WTT Finals"
+    ],
+    "players": [
+      "Félix Lebrun",
+      "Alexis Lebrun",
+      "Wang Chuqin",
+      "Truls Moregard"
+    ]
+  }
 }

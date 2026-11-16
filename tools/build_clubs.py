@@ -239,7 +239,7 @@ def league_page(lg, stories, now):
 <header class="hub-head cl-head"><div><span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span>
 <h1>{e(lg["name"])} {e(season)}</h1><p class="cl-status">{e(status_of(lg))}</p></div></header>
 <nav class="hub-jump" aria-label="On this page">{jump}</nav>
-{explainers.combined(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league", "league:" + lg["slug"]], n=2), explainers.analysis(tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []), n=1), "top")}
+{explainers.combined(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league", "league:" + lg["slug"]], n=2), explainers.analysis(tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []), keys=["league:" + lg["slug"]], n=1), "top")}
 <div class="cl-hub-top"><section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{grouped(res, mixed) or '<p class="cl-none">No results yet this season.</p>'}{more}</section>
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Fixtures</h2>{grouped(fix, mixed) or '<p class="cl-none">No fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span> Times can change, so check with the clubs before travelling.</p></section></div>
@@ -294,13 +294,12 @@ def hub(stories, now):
     return f'''<main class="wrap cl-page">
 <section class="sched-head"><div><h1>Clubs</h1><p class="lede">Tables, results, fixtures and news from the leagues where the world's best play: Germany, China, Japan, France, Europe, the United States and India.</p></div></section>
 <nav class="cl-chips" aria-label="Leagues">{chips}</nav>
-{explainers.block(explainers.pick(["clubs"]), "top")}
+{explainers.combined(explainers.pick(["clubs"]), explainers.analysis(words=explainers.HUB_WORDS["clubs"], keys=["page:clubs"], n=2), "top")}
 <div class="cl-hub-top">
 <section class="hub-sec" id="results"><h2 class="section-title">Latest results</h2>{block(allres) or '<p class="cl-none">No club results in the last 10 days.</p>'}</section>
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Coming up</h2>{block(allfix) or '<p class="cl-none">No club fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span></p></section></div>
 <section class="hub-sec" id="leagues"><h2 class="section-title">Leagues</h2><ul class="cl-cards">{"".join(cards)}</ul></section>
-{explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["clubs"]))}
 {f'<section class="hub-sec" id="news"><h2 class="section-title">Club news</h2>{news_list(clubs_news, 12)}</section>' if clubs_news else ""}
 </main>'''
 

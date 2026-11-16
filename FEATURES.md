@@ -116,4 +116,16 @@ Series: when a feature runs in parts, name them "<Series>, part one: ..." and "<
 
 ## Where analysis pieces appear
 
-Every Analysis piece is also shown, by `tools/explainers.py`, as "Analysis" or "Related analysis" cards (cover, title, standfirst) on the pages it relates to: news stories that share its tags, player profiles, event pages and league pages it is tagged with or whose name its title or standfirst uses, and the Rankings, Tournaments and Clubs pages when its title or standfirst uses their words (rankings, prize money, workload, league, club). So name the main players, events and leagues in the title or standfirst and in `tags`, and every piece needs a cover image.
+Every Analysis piece also appears in the "Go deeper" sections (picture card beside the matching guides) on the pages it relates to, chosen by `tools/explainers.py` in this order:
+
+1. **Its `related` field**, which every new piece must have, in `data/articles/<slug>.json`:
+   `"related": {"players": ["Félix Lebrun", "Alexis Lebrun"], "events": ["WTT Champions", "World Championships"], "leagues": ["bundesliga"], "pages": ["rankings", "events", "clubs", "players"]}`
+   - `players`: profile names exactly as on the site; the piece shows on those profiles.
+   - `events`: words of an event's name or series; the piece shows on every event page that matches, now and in future years ("WTT Champions" covers every Champions event).
+   - `leagues`: league page slugs (bundesliga, super-league, t-league, pro-a, champions-league, mltt, utt).
+   - `pages`: index pages (rankings, events for Tournaments, clubs); "players" adds it, at low priority, to every profile.
+   List the players, events and leagues the piece is really about, not every name it mentions.
+2. Tags it shares with the page's subject.
+3. The subject's name in its title or standfirst.
+
+Every piece needs a cover image. News stories show the Analysis piece that shares the most tags with them.

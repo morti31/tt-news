@@ -21,6 +21,8 @@ import tags as tagmod
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 SITE = os.environ.get("SITE_URL", "https://eleventabletennis.com")
+import ledger
+ledger.check()   # put back any published story that has gone missing: the archive is permanent
 NEWS = json.load(open(os.path.join(ROOT, "data", "news.json"), encoding="utf-8"))
 # One byline for everything: no individual writers are named anywhere on the site
 TEAM = {"name": "Eleven Team", "bio": "", "photo": "", "colour": "#17202b", "initials": "ET"}
@@ -688,7 +690,8 @@ def main():
     STORIES = story_list(arts)
     global TG, TAGMAP, TAG_ITEMS, TAGFULL, PROFILES, ROSTER
     TG, TAGMAP, TAG_ITEMS, TAGFULL = make_tags(arts)
-    explainers.set_items(TAG_ITEMS, {f"/news/{a['slug']}.html": feature_cover(a) for a in arts if a.get("category") == "Features" and feature_cover(a)})
+    explainers.set_items(TAG_ITEMS, {f"/news/{a['slug']}.html": {"cover": feature_cover(a), "related": a.get("related")}
+                                     for a in arts if a.get("category") == "Features" and feature_cover(a)})
     # Who gets a player page (tools/people.py): decided once, before any page links to anyone
     ROSTER = people.Roster(TG, TAG_ITEMS, build_rankings.load(), build_players.database())
     build_tags.ENTITY.update(ROSTER.urls)

@@ -765,7 +765,8 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                 ("results", "Results", results_tab), ("honours", "Honours", titles_sec), ("clubs", "Club", club_tab)]
         body = entity.page([("/", "Home"), ("/players/", "Players"), (None, p["name"])], head, tabs,
                            aside=f'{eq_sec}<div class="ad ad-side" data-ad="sidebar"></div>', cls="pl-page")
-        xp_ = explainers.related(explainers.pick(["player"] + (["player-kit"] if p.get("equipment") else [])), tags=[p["slug"]], words=[p["name"]])
+        xp_ = explainers.combined(explainers.pick(["player"] + (["player-kit"] if p.get("equipment") else [])),
+                                  explainers.analysis(tags=[p["slug"]], words=[p["name"]], keys=["player:" + p["name"], "page:players"], n=2))
         body = body.replace("</main>", f'{xp_}<p class="small pl-src">{src_line}</p></main>', 1) + components.SCRIPT
         thin = p.get("generated") and not ms and len(news) < 2
         title = f'{p["name"]}: profile, results, rankings and titles | Eleven'

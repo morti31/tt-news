@@ -148,7 +148,7 @@ def body(R, items, links=None):
 {dpanel("women", "Women's doubles", "Women's doubles")}
 {dpanel("men", "Men's doubles", "Men's doubles")}
 {dpanel("mixed", "Mixed doubles", "Mixed doubles")}
-{explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["rankings"]))}
+{explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["rankings"], keys=["page:rankings"]))}
 <p class="small">Source: <a href="{e(R["url"])}" rel="noopener">ITTF world ranking on World Table Tennis</a> ({e(label)}{f"; doubles: {e(dlabel.split(', ', 1)[-1])}" if dlabel else ""}). Player and country names link to every Eleven story about them.</p>
 </main>
 <script>
