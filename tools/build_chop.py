@@ -70,6 +70,10 @@ def def_dialog():
             f'quotes the exact words. Where no source describes the game in detail, the type is our provisional call. The definitions are ours, based on:</p>'
             f'<ul class="ch-def-src">{src}</ul><a class="ch-more" href="/about.html#glossary">Glossary</a>'
             f'<script type="application/json" id="ch-def-data">{json.dumps(data)}</script></dialog>')
+WTT_STREAMS = "https://www.youtube.com/@WTTGlobal/streams"   # WTT's own channel, as on Eleven's event pages
+LEAGUE_LIVE = {"ttbl": ("Scores on ttbl.de", "https://www.ttbl.de/"), "tleague-men": ("Scores on tleague.jp", "https://tleague.jp/"),
+               "tleague-women": ("Scores on tleague.jp", "https://tleague.jp/"), "mltt": ("Scores on mltt.com", "https://www.mltt.com/"),
+               "utt": ("Scores on the UTT site", "https://www.ultimatetabletennis.in/")}
 ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
 
 
@@ -213,6 +217,7 @@ def build():
 
     # Next matches: tournament draws with a time and no score, then club fixtures through the squads
     nxt = {p["name"]: [] for p in players}
+    WTT2EV = {str(x.get("wtt_id")): x["id"] for x in load("data/events.json", {}).get("events", []) if x.get("wtt_id")}
     pk = {key(p["name"]): p["name"] for p in players}
     for f in glob.glob(os.path.join(ROOT, "data", "draws", "*.json")):
         d = load(os.path.relpath(f, ROOT), {})
@@ -224,12 +229,13 @@ def build():
                     if m.get("score") or not w or w < now.isoformat()[:19]:
                         continue
                     pl = m.get("players") or []
+                    eid = WTT2EV.get(os.path.basename(f)[:-5])
                     for i, x in enumerate(pl):
                         n = pk.get(key(x.get("name")))
                         if n and len(pl) == 2:
                             o = pl[1 - i]
                             nxt[n].append({"when": w, "what": f'{title or "Tournament"}, {ev.get("name", "")}, {rd.get("round", "")}',
-                                           "v": o.get("name", "TBC"), "nat": o.get("nat", "")})
+                                           "v": o.get("name", "TBC"), "nat": o.get("nat", ""), "eid": eid})
     for sq in glob.glob(os.path.join(ROOT, "data", "clubs", "squads", "*.json")):
         cid = os.path.basename(sq)[:-5]
         s = load(os.path.relpath(sq, ROOT), {})
@@ -247,7 +253,7 @@ def build():
                         mn = key(m.get(side) or "")
                         if mn and (mn == tn or set(mn.split()) <= set(tn.split()) or set(tn.split()) <= set(mn.split())) and m.get(other):
                             nxt[n].append({"when": m["when"], "what": f'{s.get("source", {}).get("name") or cid}: {m["home"]} v {m["away"]}',
-                                           "v": "", "nat": "", "club": True, "day": m.get("date_only")})
+                                           "v": "", "nat": "", "club": True, "day": m.get("date_only"), "cid": cid})
     for k_, v in nxt.items():
         u = {}
         for x in v:
@@ -268,7 +274,8 @@ def build():
     def likely(p):
         nx = [x for x in nxt.get(p["name"], []) if not x.get("club")]
         if nx:
-            return {"kind": "draw", "event": nx[0]["what"].split(",")[0], "when": nx[0]["when"], "why": "in the draw"}
+            return {"kind": "draw", "event": nx[0]["what"].split(",")[0], "when": nx[0]["when"], "why": "in the draw", "eid": nx[0].get("eid"),
+                    "url": f'{ELEVEN}/events/{nx[0]["eid"]}.html' if nx[0].get("eid") else None}
         r = rank_of(p)
         played = {}
         for m, s_ in ms.get(p.get("ittf_id"), []):
@@ -281,7 +288,7 @@ def build():
             sr = x.get("series")
             if sr in played and (not r or r["rank"] <= ENTRY.get(sr, 9999)) and x["start"] <= (now + dt.timedelta(days=150)).date().isoformat():
                 n = len(played[sr])
-                return {"kind": "likely", "event": f'{x["name"]} {x["year"]}', "url": f"{ELEVEN}/events/{x['id']}.html", "start": x["start"], "end": x["end"],
+                return {"kind": "likely", "event": f'{x["name"]} {x["year"]}', "url": f"{ELEVEN}/events/{x['id']}.html", "eid": x["id"], "start": x["start"], "end": x["end"],
                         "city": x.get("city", ""), "why": f"has played {n} {sr} event{'s' if n > 1 else ''} in the past year"}
         cl = [x for x in nxt.get(p["name"], []) if x.get("club")]
         if cl:
@@ -291,6 +298,17 @@ def build():
     def span(a, b):
         da, db = dt.date.fromisoformat(a), dt.date.fromisoformat(b)
         return f"{da.day} {da:%b}" + ("" if a == b else f" to {db.day} {db:%b}") + f" {db.year}"
+
+    def watch(x=None, eid=None):
+        """Where to follow a match live: Eleven's live scores and WTT's streams for tournaments, the league's own site for club matches."""
+        eid = eid or (x or {}).get("eid")
+        if eid:
+            ls = [("Live scores", f"{ELEVEN}/events/{eid}.html#live"), ("Stream", WTT_STREAMS)]
+        elif x and x.get("cid") in LEAGUE_LIVE:
+            ls = [LEAGUE_LIVE[x["cid"]]]
+        else:
+            return ""
+        return '<span class="ch-watch">' + "".join(f'<a href="{e(u)}" rel="noopener"{"" if u.startswith(ELEVEN) else " target=_blank"}>{e(t)}</a>' for t, u in ls) + "</span>"
 
     WTTREC = load("data/players/wtt.json", {})
 
@@ -345,10 +363,10 @@ def build():
             return ""
         if lk["kind"] == "likely":
             body = (f'<a href="{e(lk["url"])}"><b>{e(lk["event"])}</b></a>, {e(lk["city"])}, {span(lk["start"], lk["end"])}'
-                    f'<span class="ch-why">Likely: {e(lk["why"])}. Entry lists aren\'t published until the draw.</span>')
+                    f'<span class="ch-why">Likely: {e(lk["why"])}. Entry lists aren\'t published until the draw.</span>{watch(eid=lk.get("eid"))}')
             lab = "Likely next tournament"
         elif lk["kind"] == "draw":
-            body = f'<b>{e(lk["event"])}</b><span class="ch-why">In the draw.</span>'
+            body = f'<b>{e(lk["event"])}</b><span class="ch-why">In the draw.</span>{watch(eid=lk.get("eid"))}'
             lab = "Next tournament"
         else:
             body = f'<b>{e(lk["event"])}</b>, {day(lk["when"])}<span class="ch-why">No tournament in view; next club match.</span>'
@@ -520,7 +538,7 @@ def build():
         prov = "" if p.get("subtype_confirmed") else '<p class="ch-small">The sources confirm a defensive style; which of the three types fits best is our provisional call until a source describes the game in more detail.</p>'
         cl_html = "".join(f'<li><b>{e(c)}</b>{f" <span>{e(lg)}</span>" if lg else ""}</li>' for c, lg in cl)
         nxt_html = "".join(f'<li><time datetime="{e(x["when"])}">{day(x["when"]) if x.get("day") else dt.datetime.fromisoformat(x["when"].replace("Z", "+00:00")).strftime("%a %-d %b, %H:%M")} UK</time>'
-                           f'<span>{e(x["what"])}{f" v <b>{e(x["v"])}</b>" if x.get("v") else ""}</span></li>' for x in nx)
+                           f'<span>{e(x["what"])}{f" v <b>{e(x["v"])}</b>" if x.get("v") else ""}{watch(x)}</span></li>' for x in nx)
         body = f"""<p class="ch-crumbs"><a href="{BASE}/defenders.html">The defenders</a> / {e(p["name"])}</p>
 <section class="ch-phead"><div><p class="ch-kick">{tag(p.get("style"))}</p><h1>{flag(r.get("nat") if r else "")}{e(p["name"])}</h1>
 <p class="ch-lede">{e(p.get("note", ""))}</p></div>
@@ -560,7 +578,7 @@ def build():
         ppl = "".join(f'<li><a href="{plink(p)}">{e(p["name"])}</a> {tag(p.get("style"))}<span class="ch-why">{e(lk["why"])}</span></li>' for p, lk in who)
         head = f'<a href="{e(lk0["url"])}">{e(evn)}</a>' if lk0.get("url") else e(evn)
         ev_cards.append(f'<li class="ch-evcard"><span class="ch-kick">{"In the draw" if lk0["kind"] == "draw" else "Likely"}</span><h3>{head}</h3>'
-                        f'<p class="ch-evwhen">{e(when_)}{", " + e(lk0.get("city", "")) if lk0.get("city") else ""}</p><ul>{ppl}</ul></li>')
+                        f'<p class="ch-evwhen">{e(when_)}{", " + e(lk0.get("city", "")) if lk0.get("city") else ""}</p>{watch(eid=lk0.get("eid"))}<ul>{ppl}</ul></li>')
     days_, cur = [], None
     for w, p, x in cal:
         d0 = w[:10]
@@ -571,9 +589,9 @@ def build():
         t = "" if x.get("day") else dt.datetime.fromisoformat(w.replace("Z", "+00:00")).strftime("%H:%M")
         comp, _, tie = x["what"].partition(": ")
         days_[-1][1].append(f'<li class="ch-fx"><span class="ch-fx-t">{e(t) or "TBC"}</span><span class="ch-fx-who"><a href="{plink(p)}">{e(p["name"])}</a> {tag(p.get("style"))}</span>'
-                            f'<span class="ch-fx-what"><b>{e(comp)}</b> {e(tie)}{f" v {e(x["v"])}" if x.get("v") else ""}</span></li>')
+                            f'<span class="ch-fx-what"><b>{e(comp)}</b> {e(tie)}{f" v {e(x["v"])}" if x.get("v") else ""}{watch(x)}</span></li>')
     fx = "".join(f'<section class="ch-day"><h3>{e(h)}</h3><ul>{"".join(it)}</ul></section>' for h, it in days_)
-    cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">Where the defenders are likely to play next, and every fixture we know of. Times are UK time.</p></section>
+    cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">Where the defenders are likely to play next, and every fixture we know of, with links to live scores and streams where they exist. Times are UK time.</p></section>
 <section class="ch-sec"><h2>Likely next tournaments</h2><p class="ch-small">Entry lists are only published with the draw, so these are our best guesses: the next event of a kind each player has entered in the past year and can get into on their ranking. Players move to "In the draw" when it's published.</p>
 <ul class="ch-evcards">{"".join(ev_cards) or "<li>No tournaments in view.</li>"}</ul></section>
 <section class="ch-sec"><h2>Fixtures</h2>{fx or "<p>Nothing scheduled yet.</p>"}</section>"""
@@ -631,12 +649,12 @@ def build():
     hbody = f"""<section class="ch-hero"><h1>The game from the back of the court</h1>
 <p class="ch-lede">Choppers and defenders: who they are, how they are playing and the best writing about them. {len(wrows)} women and {len(mrows)} men in the world top 1,000 play this way.</p></section>
 <div class="ch-home">
-<section class="ch-sec ch-main"><h2>Latest reading</h2><ul class="ch-links">{"".join(link_li(l) for l in capped(allinks, 12))}</ul><a class="ch-more" href="{BASE}/reading.html">All reading</a></section>
+<section class="ch-sec ch-main"><h2>Latest reading</h2><ul class="ch-links">{"".join(link_li(l) for l in capped(allinks, 6))}</ul><a class="ch-more" href="{BASE}/reading.html">All reading</a></section>
 <aside class="ch-side">
 <section class="ch-sec"><h2>Top defenders</h2><h3>Women</h3><ol class="ch-mini">{mini(top_w)}</ol><h3>Men</h3><ol class="ch-mini">{mini(top_m)}</ol><a class="ch-more" href="{BASE}/defenders.html">All the defenders</a></section>
 <section class="ch-sec"><h2>Best recent wins</h2><ul class="ch-results">{"".join(f'<li class="w"><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {res_row(m, s)[len("<li class=\"w\">"):-5]}</li>' for _, _, p, m, s in best[:5]) or "<li>No wins by defenders in the last 10 days.</li>"}</ul></section>
 <section class="ch-sec"><h2>Coming up</h2><ul class="ch-evcards ch-evcards-side">{"".join(ev_cards[:3])}</ul>
-<h3>This week</h3><ul class="ch-cal">{"".join(f'<li><time>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a><span>{e(x["what"])}</span></li>' for w, p, x in week[:6]) or "<li>No defenders scheduled this week.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html">Full calendar</a></section>
+<h3>This week</h3><ul class="ch-cal">{"".join(f'<li><time>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a><span>{e(x["what"])}{watch(x)}</span></li>' for w, p, x in week[:6]) or "<li>No defenders scheduled this week.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html">Full calendar</a></section>
 </aside></div>"""
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them, by Eleven.", "/", hbody, "home"))
