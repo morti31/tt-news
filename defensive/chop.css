@@ -124,3 +124,47 @@ td.ch-frm { white-space: nowrap; }
 .ch-quotes { list-style: none; margin: 0; padding: 0; }
 .ch-quotes li { padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
 .ch-quotes q { font-style: italic; } .ch-quotes a { color: var(--chop); font-weight: 600; font-size: 13px; margin-left: 6px; }
+/* Clickable style tags and their definition popup */
+button.ch-style { border: 0; cursor: pointer; font-family: inherit; }
+button.ch-style:hover { filter: brightness(.95); text-decoration: underline; }
+.ch-dialog { max-width: 460px; width: calc(100% - 32px); border: 0; border-radius: 14px; padding: 22px 24px; background: var(--card); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+.ch-dialog::backdrop { background: rgba(10, 20, 18, .45); }
+.ch-dialog h2 { font-size: 26px; margin: 4px 0 8px; }
+.ch-def-about { font-size: 17px; margin: 0 0 12px; }
+.ch-def-src { margin: 0 0 10px; padding-left: 18px; font-size: 14px; }
+.ch-x { position: absolute; top: 10px; right: 12px; border: 0; background: none; font-size: 26px; line-height: 1; cursor: pointer; color: var(--muted); }
+.ch-dialog { position: fixed; }
+/* Info popover */
+.ch-info { display: inline-block; position: relative; vertical-align: middle; }
+.ch-info summary { list-style: none; display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 50%; border: 1.5px solid var(--muted); color: var(--muted); font: 700 11px/1 var(--ui); font-style: italic; cursor: pointer; text-transform: none; letter-spacing: 0; }
+.ch-info summary::-webkit-details-marker { display: none; }
+.ch-info[open] summary { background: var(--chop); border-color: var(--chop); color: #fff; }
+.ch-info > div { position: absolute; z-index: 20; top: 24px; right: -10px; width: min(320px, 80vw); background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; box-shadow: 0 10px 30px rgba(0,0,0,.15); font: 400 14px/1.45 "Figtree", sans-serif; color: var(--ink); text-transform: none; letter-spacing: 0; white-space: normal; text-align: left; }
+.ch-none { display: inline-flex; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
+.ch-none .ch-info > div { right: auto; left: -150px; }
+/* Likely next and calendar */
+.ch-likely { background: var(--chop-tint); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; display: flex; flex-direction: column; gap: 3px; }
+.ch-likely .ch-kick { margin: 0; font-size: 11px; }
+.ch-likely a { color: inherit; }
+.ch-why { display: block; font-size: 13px; color: var(--muted); }
+.ch-evcards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.ch-evcard { background: var(--card); border: 1px solid var(--rule); border-top: 4px solid var(--chop); border-radius: 10px; padding: 14px 16px; }
+.ch-evcard .ch-kick { margin: 0 0 4px; font-size: 11px; }
+.ch-evcard h3 { margin: 0; font-size: 19px; } .ch-evcard h3 a { text-decoration: none; } .ch-evcard h3 a:hover { text-decoration: underline; }
+.ch-evwhen { margin: 4px 0 10px; font: 600 13px var(--ui); color: var(--muted); }
+.ch-evcard ul { list-style: none; margin: 0; padding: 0; }
+.ch-evcard li { padding: 7px 0; border-top: 1px solid var(--rule); }
+.ch-evcard li a { font-weight: 700; text-decoration: none; margin-right: 6px; }
+.ch-evcards-side { grid-template-columns: minmax(0, 1fr); margin-bottom: 12px; }
+.ch-day { margin-bottom: 18px; }
+.ch-day h3 { font: 700 15px var(--ui); margin: 0 0 4px; padding: 8px 0; border-bottom: 2px solid var(--ink); }
+.ch-day ul { list-style: none; margin: 0; padding: 0; }
+.ch-fx { display: grid; grid-template-columns: 60px minmax(0, 1.1fr) minmax(0, 1.6fr); gap: 12px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.ch-fx-t { font: 700 14px var(--ui); color: var(--chop); }
+.ch-fx-who a { font-weight: 700; text-decoration: none; margin-right: 6px; }
+.ch-fx-what { font-size: 14px; color: var(--muted); } .ch-fx-what b { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) { .ch-fx { grid-template-columns: 52px minmax(0, 1fr); } .ch-fx-what { grid-column: 2; } }
+.ch-table td a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; text-decoration-thickness: 2px; }
+.ch-table td a:hover { text-decoration-color: var(--chop); color: var(--chop); }
+.ch-unr { margin-top: 28px; } .ch-unr h3 { font-size: 20px; margin: 0 0 4px; }
+.ch-club { font-size: 14px; color: var(--muted); }

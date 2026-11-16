@@ -15,3 +15,21 @@
     document.querySelectorAll(".ch-links > li").forEach((li) => { li.hidden = b.dataset.k !== "all" && li.dataset.k !== b.dataset.k; });
   });
 })();
+// Style tags open a short definition with its sources
+(function () {
+  const dlg = document.getElementById("ch-def");
+  if (!dlg) return;
+  let data = {};
+  try { data = JSON.parse(document.getElementById("ch-def-data").textContent); } catch (e) {}
+  document.addEventListener("click", (ev) => {
+    const b = ev.target.closest("button.ch-style");
+    if (!b) return;
+    const d = data[b.dataset.style];
+    if (!d) return;
+    dlg.className = "ch-dialog ch-dialog-" + b.dataset.style;
+    dlg.querySelector("#ch-def-h").textContent = d.label;
+    dlg.querySelector(".ch-def-about").textContent = d.about;
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+  });
+  dlg.addEventListener("click", (ev) => { if (ev.target === dlg) dlg.close(); });   // click outside closes
+})();

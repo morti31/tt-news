@@ -550,5 +550,109 @@
    }
   ],
   "subtype_confirmed": false
+ },
+ {
+  "name": "Ruwen Filus",
+  "ittf_id": "102761",
+  "gender": "M",
+  "style": "modern",
+  "note": "Germany's modern defender, a former world top-20 player who plays his club table tennis for TTC Fulda-Maberzell in the Bundesliga.",
+  "status": "approved",
+  "unranked": true,
+  "sources": [
+   "https://www.martinspin.ch/male/ruwen-filus-ger-in-lp",
+   "https://tabletennis-reference.com/player/search/flag_cut"
+  ],
+  "wording": [
+   {
+    "text": "modern defender with lp on bh and often twiddling",
+    "source": "Martin Spin player profile",
+    "url": "https://www.martinspin.ch/male/ruwen-filus-ger-in-lp"
+   },
+   {
+    "text": "Style: Cut type",
+    "source": "Tabletennis Reference",
+    "url": "https://tabletennis-reference.com/player/search/flag_cut"
+   }
+  ],
+  "subtype_confirmed": true
+ },
+ {
+  "name": "Haruna Ojio",
+  "ittf_id": "135179",
+  "gender": "W",
+  "style": "chopper",
+  "note": "Japanese chopper, once No 41 in the world, who plays for Top Otome Pingpongs Nagoya in the T.League.",
+  "status": "approved",
+  "unranked": true,
+  "sources": [
+   "https://tleague.jp/player/detail.php?player=30057&year=2026",
+   "https://tabletennis-reference.com/player/search/flag_cut"
+  ],
+  "wording": [
+   {
+    "text": "戦型：右シェークカット型 (right-handed shakehand chopper)",
+    "source": "T.League player profile",
+    "url": "https://tleague.jp/player/detail.php?player=30057&year=2026"
+   },
+   {
+    "text": "Style: Cut type",
+    "source": "Tabletennis Reference",
+    "url": "https://tabletennis-reference.com/player/search/flag_cut"
+   }
+  ],
+  "subtype_confirmed": false
+ },
+ {
+  "name": "Ringo Kobayashi",
+  "ittf_id": "",
+  "gender": "W",
+  "style": "chopper",
+  "note": "Japanese chopper from Aoyama Gakuin University who plays for Kyoto Kaguya Rise in the T.League and Miró Ganxets in the Champions League.",
+  "status": "approved",
+  "unranked": true,
+  "sources": [
+   "https://tleague.jp/player/detail.php?player=30149&year=2026",
+   "https://tabletennis-reference.com/player/search/flag_cut"
+  ],
+  "wording": [
+   {
+    "text": "戦型：右シェークカット型 (right-handed shakehand chopper)",
+    "source": "T.League player profile",
+    "url": "https://tleague.jp/player/detail.php?player=30149&year=2026"
+   },
+   {
+    "text": "Style: Cut type",
+    "source": "Tabletennis Reference",
+    "url": "https://tabletennis-reference.com/player/search/flag_cut"
+   }
+  ],
+  "subtype_confirmed": false
+ },
+ {
+  "name": "Saya Yamamuro",
+  "ittf_id": "",
+  "gender": "W",
+  "style": "chopper",
+  "note": "Japanese chopper who plays for Kyushu Karina in the T.League.",
+  "status": "approved",
+  "unranked": true,
+  "sources": [
+   "https://tleague.jp/player/detail.php?player=30126&year=2026",
+   "https://tabletennis-reference.com/player/search/flag_cut"
+  ],
+  "wording": [
+   {
+    "text": "戦型：右シェークカット型 (right-handed shakehand chopper)",
+    "source": "T.League player profile",
+    "url": "https://tleague.jp/player/detail.php?player=30126&year=2026"
+   },
+   {
+    "text": "Style: Cut type",
+    "source": "Tabletennis Reference",
+    "url": "https://tabletennis-reference.com/player/search/flag_cut"
+   }
+  ],
+  "subtype_confirmed": false
  }
 ]

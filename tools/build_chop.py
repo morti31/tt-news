@@ -30,12 +30,31 @@ STYLE_ABOUT = {"chopper": "defends from well back with heavy backspin and variat
                "allround": "defends closer to the table with blocks, pushes and long pimples, and disrupts rather than chops"}
 
 
+STYLE_SOURCES = [
+    ("Martin Spin's ranking of defensive and special styles, which describes how each player plays", "https://www.martinspin.ch/world-ranking"),
+    ("Butterfly's coaching guide, Player archetypes: defensive styles", "https://butterflyonline.com/player-archetypes-defensive-styles"),
+]
+
+
 def tag(style, link=True):
+    """A style tag. Clicking it opens a short definition with its sources (chop.js, the #ch-def dialog)."""
     lab = STYLE.get(style)
     if not lab:
         return ""
-    t = f'<span class="ch-style ch-style-{e(style)}">{e(lab)}</span>'
-    return f'<a class="ch-style-a" href="{BASE}/defenders.html#styles" title="{e(STYLE_ABOUT[style])}">{t}</a>' if link else t
+    return (f'<button type="button" class="ch-style ch-style-{e(style)}" data-style="{e(style)}" aria-haspopup="dialog" '
+            f'title="What is a {e(lab.lower())}?">{e(lab)}</button>')
+
+
+def def_dialog():
+    data = {k: {"label": STYLE[k], "about": STYLE_ABOUT[k][0].upper() + STYLE_ABOUT[k][1:] + "."} for k in STYLE}
+    src = "".join(f'<li><a href="{e(u)}" rel="noopener" target="_blank">{e(t)}</a></li>' for t, u in STYLE_SOURCES)
+    return (f'<dialog id="ch-def" class="ch-dialog" aria-labelledby="ch-def-h"><form method="dialog"><button class="ch-x" aria-label="Close">×</button></form>'
+            f'<p class="ch-kick">Defensive style</p><h2 id="ch-def-h"></h2><p class="ch-def-about"></p>'
+            f'<p class="ch-small">How we decide: The Chop puts every defender in one of three styles. A player is only included when a source we can open '
+            f'describes them as a defender; long pimples alone don\'t count. The type follows how the sources describe their game, and each player\'s page '
+            f'quotes the exact words. Where no source describes the game in detail, the type is our provisional call. The definitions are ours, based on:</p>'
+            f'<ul class="ch-def-src">{src}</ul><a class="ch-more" href="/defenders.html#styles">All three styles</a>'
+            f'<script type="application/json" id="ch-def-data">{json.dumps(data)}</script></dialog>')
 ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
 
 
@@ -84,6 +103,7 @@ def page(title, desc, path, body, active=""):
 <main class="ch-wrap">{body}</main>
 <footer class="ch-foot"><div class="ch-wrap"><p><b>The Chop</b> follows the defenders of table tennis: the choppers, the blockers and the players who win from the back of the court. It writes no news of its own; every story here links to the publication that wrote it.</p>
 <p>Rankings, results and fixtures from <a href="{ELEVEN}/">Eleven</a>, which takes them from World Table Tennis and the leagues. <a href="{ELEVEN}/contact.html">Contact</a></p></div></footer>
+{def_dialog()}
 <script src="{BASE}/chop.js?v={VER}" defer></script>
 </body></html>"""
 
@@ -115,6 +135,25 @@ def build():
                 pid = m["p"][side][0]
                 if pid in ms:
                     ms[pid].append((m, side))
+    # Club league singles (T.League, Bundesliga) count too: many defenders play more for their club than on the WTT tour
+    import names as names_mod
+    byname = {key(p["name"]): p["ittf_id"] for p in players if p.get("ittf_id")}
+    rk_name = {key(r["name"]): r for r in rk.values()}
+    for lg, label, nat in (("tleague", "T.League", "JPN"), ("ttbl", "Bundesliga", "")):
+        LP = load(f"data/leagues/{lg}/players.json", {})
+        for f in sorted(glob.glob(os.path.join(ROOT, "data", "leagues", lg, "20*.json")))[-2:]:
+            for t in load(os.path.relpath(f, ROOT), {}).get("ties", []):
+                if t.get("st") != "done":
+                    continue
+                for r in t.get("r", []):
+                    if r.get("k") != "S" or r.get("w") not in (0, 1) or not r.get("s") or max(r["s"]) < 2:
+                        continue
+                    nm2 = [names_mod.from_wtt((LP.get(x[0]) or {}).get("name", ""), nat) for x in r["p"]]
+                    for side in (0, 1):
+                        pid = byname.get(key(nm2[side]))
+                        if pid and pid in ms:
+                            ms[pid].append(({"d": t["d"], "p": [["c0"], ["c1"]], "w": r["w"], "s": r["s"], "lbl": f'{label}: {t["home"]} v {t["away"]}',
+                                             "on": nm2[1 - side]}, side))
     for v in ms.values():
         v.sort(key=lambda t: t[0].get("d") or "", reverse=True)
 
@@ -139,7 +178,10 @@ def build():
             for x in t.get("players", []):
                 n = {key(q["name"]): q["name"] for q in players}.get(key(x.get("name")))
                 if n:
-                    clubs[n].append((t["team"], (s_.get("source") or {}).get("name", "")))
+                    cid_ = os.path.basename(sq)[:-5]
+                    lgname = next((v for k, v in (("cl-", "Champions League"), ("tleague", "T.League"), ("ttbl", "Bundesliga"), ("dttbl", "Bundesliga"),
+                                                  ("proa", "Pro A"), ("cttsl", "China Super League"), ("mltt", "Major League Table Tennis"), ("utt", "UTT")) if cid_.startswith(k)), "")
+                    clubs[n].append((t["team"], lgname))
 
     import names as names_mod
 
@@ -197,6 +239,59 @@ def build():
             u.setdefault((x["when"], x["what"]), x)
         nxt[k_] = sorted(u.values(), key=lambda x: x["when"])
 
+    # Likely next tournament: the draw they're in, else the next event of a kind they have played in the past year
+    # (and can get into on ranking), else their club's next match. Labelled "likely" everywhere: entries aren't published.
+    EV = load("data/events.json", {}).get("events", [])
+    upcoming = sorted((x for x in EV if x.get("end", "") >= today and x.get("group") in ("WTT Series", "Majors", "Continental")), key=lambda x: x["start"])
+    SERIES = [("WTT Feeder", r"\bFeeder\b"), ("WTT Star Contender", r"Star Contender"), ("WTT Contender", r"\bContender\b"),
+              ("WTT Champions", r"\bChampions\b"), ("WTT Grand Smash", r"\bSmash\b"), ("WTT Finals", r"\bWTT Finals\b")]
+    ENTRY = {"WTT Finals": 16, "WTT Champions": 32, "WTT Grand Smash": 120}   # rough ranking needed to get in
+
+    def series_of(name):
+        return next((sname for sname, rx in SERIES if re.search(rx, name or "")), None)
+
+    def likely(p):
+        nx = [x for x in nxt.get(p["name"], []) if not x.get("club")]
+        if nx:
+            return {"kind": "draw", "event": nx[0]["what"].split(",")[0], "when": nx[0]["when"], "why": "in the draw"}
+        r = rank_of(p)
+        played = {}
+        for m, s_ in ms.get(p.get("ittf_id"), []):
+            if m.get("lbl") or (m.get("d") or "") < (now - dt.timedelta(days=365)).isoformat()[:10]:
+                continue
+            sr = series_of(ev_name(m["e"]))
+            if sr:
+                played.setdefault(sr, set()).add(m["e"])
+        for x in upcoming:
+            sr = x.get("series")
+            if sr in played and (not r or r["rank"] <= ENTRY.get(sr, 9999)) and x["start"] <= (now + dt.timedelta(days=150)).date().isoformat():
+                n = len(played[sr])
+                return {"kind": "likely", "event": f'{x["name"]} {x["year"]}', "url": f"{ELEVEN}/events/{x['id']}.html", "start": x["start"], "end": x["end"],
+                        "city": x.get("city", ""), "why": f"has played {n} {sr} event{'s' if n > 1 else ''} in the past year"}
+        cl = [x for x in nxt.get(p["name"], []) if x.get("club")]
+        if cl:
+            return {"kind": "club", "event": cl[0]["what"].split(":")[0], "when": cl[0]["when"], "why": "next club match"}
+        return None
+
+    def span(a, b):
+        da, db = dt.date.fromisoformat(a), dt.date.fromisoformat(b)
+        return f"{da.day} {da:%b}" + ("" if a == b else f" to {db.day} {db:%b}") + f" {db.year}"
+
+    def likely_html(lk, compact=False):
+        if not lk:
+            return ""
+        if lk["kind"] == "likely":
+            body = (f'<a href="{e(lk["url"])}"><b>{e(lk["event"])}</b></a>, {e(lk["city"])}, {span(lk["start"], lk["end"])}'
+                    f'<span class="ch-why">Likely: {e(lk["why"])}. Entry lists aren\'t published until the draw.</span>')
+            lab = "Likely next tournament"
+        elif lk["kind"] == "draw":
+            body = f'<b>{e(lk["event"])}</b><span class="ch-why">In the draw.</span>'
+            lab = "Next tournament"
+        else:
+            body = f'<b>{e(lk["event"])}</b>, {day(lk["when"])}<span class="ch-why">No tournament in view; next club match.</span>'
+            lab = "Next up"
+        return f'<div class="ch-likely"><span class="ch-kick">{lab}</span>{body}</div>'
+
     def form(p):
         rows = ms.get(p.get("ittf_id"), [])
         last = rows[:10]
@@ -209,10 +304,12 @@ def build():
         won = m["w"] == side
         o = m["p"][1 - side][0]
         sc = m.get("s") or [0, 0]
-        orr = rk.get(o)
+        oname = m.get("on") or nm(o)
+        orr = rk.get(o) if not m.get("on") else rk_name.get(key(oname))
+        where = m.get("lbl") or ev_name(m["e"])
         return (f'<li class="{"w" if won else "l"}"><span class="ch-res">{"W" if won else "L"} {sc[side]}-{sc[1 - side]}</span>'
-                f'<span class="ch-opp">{e(nm(o))}{f" <small>No {orr["rank"]}</small>" if orr else ""}</span>'
-                f'<span class="ch-ev">{e(ev_name(m["e"]))}{", " + ROUNDS[m["r"]] if m.get("r") in ROUNDS else ""} · {day(m["d"])}</span></li>')
+                f'<span class="ch-opp">{e(oname)}{f" <small>No {orr["rank"]}</small>" if orr else ""}</span>'
+                f'<span class="ch-ev">{e(where)}{", " + ROUNDS[m["r"]] if m.get("r") in ROUNDS else ""} · {day(m["d"])}</span></li>')
 
     def chip(wl):
         return "".join(f'<i class="{"w" if c == "W" else "l"}" title="{"Won" if c == "W" else "Lost"}">{c}</i>' for c in reversed(wl))
@@ -290,14 +387,40 @@ def build():
         for i, p in enumerate(rows, 1):
             r = rank_of(p)
             _, wl, rec = form(p)
+            empty = not wl
             out.append(f'<tr><td class="ch-n">{i}</td><td class="ch-wr">{r["rank"]}{move(r)}</td>'
                        f'<td><a href="{plink(p)}">{flag(r.get("nat"))}{e(p["name"])}</a><span class="ch-sty">{tag(p.get("style"))}</span></td>'
-                       f'<td class="ch-pts">{r.get("points", 0):,}</td><td class="ch-frm">{chip(wl[:5])}</td><td class="ch-rec">{rec[0]}-{rec[1]}</td></tr>')
-        return rows, ("<table class=\"ch-table\"><thead><tr><th>#</th><th>World</th><th>Player</th><th>Points</th><th>Form</th>"
-                      f"<th title=\"Singles won and lost in {today[:4]}\">{today[:4]}</th></tr></thead><tbody>{''.join(out)}</tbody></table>")
+                       f'<td class="ch-pts">{r.get("points", 0):,}</td>'
+                       + (f'<td class="ch-frm" colspan="2"><span class="ch-none">No results on record {INFO}</span></td></tr>' if empty else
+                          f'<td class="ch-frm">{chip(wl[:5])}</td><td class="ch-rec">{rec[0]}-{rec[1]}</td></tr>'))
+        return rows, ("<table class=\"ch-table\"><thead><tr><th>#</th><th>World</th><th>Player</th><th>Points</th>"
+                      f"<th>Form {INFO}</th><th title=\"Singles won and lost in {today[:4]}\">{today[:4]}</th></tr></thead><tbody>{''.join(out)}</tbody></table>")
 
+    INFO = ('<details class="ch-info"><summary aria-label="Why some players have no results">i</summary><div>'
+            '<b>Where form comes from.</b> Form (the last five results) and the year\'s record cover senior WTT and ITTF events and the '
+            'T.League and Bundesliga, the results Eleven keeps. A player can still be ranked, and climbing, with nothing here: young players '
+            'such as Sora Okada and Hisa Uriu can earn senior ranking points at youth events (WTT Youth Contenders and Youth Star Contenders), '
+            'which Eleven doesn\'t cover, and others play mostly in national leagues and championships we don\'t yet have. '
+            'Their results appear here as soon as they play an event we follow.</div></details>')
     wrows, wtab = table("W")
     mrows, mtab = table("M")
+
+    def unranked(g):
+        """Defenders outside the world rankings who still play in the leagues Eleven follows."""
+        rows = sorted((p for p in players if p.get("gender") == g and not rank_of(p)), key=lambda p: p["name"].split()[-1])
+        if not rows:
+            return ""
+        out = []
+        for p in rows:
+            _, wl, rec = form(p)
+            cl = ", ".join(f"{c} ({lg})" if lg else c for c, lg in clubs.get(p["name"], []))
+            out.append(f'<tr><td><a href="{plink(p)}">{e(p["name"])}</a><span class="ch-sty">{tag(p.get("style"))}</span></td><td class="ch-club">{e(cl) or "-"}</td>'
+                       + (f'<td class="ch-frm">{chip(wl[:5])}</td><td class="ch-rec">{rec[0]}-{rec[1]}</td>' if wl else f'<td class="ch-frm" colspan="2"><span class="ch-none">No results on record {INFO}</span></td>') + '</tr>')
+        return (f'<section class="ch-sec ch-unr"><h3>Not in the world rankings, still playing in the top leagues</h3>'
+                f'<p class="ch-small">Defenders who don\'t play enough WTT events to hold a world ranking but play in the leagues Eleven follows.</p>'
+                f'<table class="ch-table"><thead><tr><th>Player</th><th>Club</th><th>Form</th><th>{today[:4]}</th></tr></thead><tbody>{"".join(out)}</tbody></table></section>')
+    wtab += unranked("W")
+    mtab += unranked("M")
     dd = []
     did = {p["ittf_id"] for p in players}
     for g, lab in (("women", "Women's doubles"), ("men", "Men's doubles"), ("mixed", "Mixed doubles")):
@@ -308,7 +431,7 @@ def build():
                 for pl in x["players"]) + f'</td><td class="ch-pts">{x.get("points", 0):,}</td></tr>' for x in prs)
             dd.append(f'<section class="ch-sec"><h3>{lab}</h3><table class="ch-table"><thead><tr><th>World</th><th>Pair</th><th>Points</th></tr></thead><tbody>{li}</tbody></table></section>')
     rbody = f"""<section class="ch-head"><h1>The defenders</h1>
-<p class="ch-lede">Every defensive player in the world top 1,000, ranked by their place in the ITTF world rankings ({e(R.get("label", ""))}), with their last five results and this year's record.</p></section>
+<p class="ch-lede">Every defensive player in the world top 1,000, ranked by their place in the ITTF world rankings ({e(R.get("label", ""))}), with their last five results and this year's record. Select a player's name for their full profile, or a style tag to see what it means.</p></section>
 <div class="ch-tabs" role="tablist"><button role="tab" aria-selected="true" data-t="W">Women ({len(wrows)})</button><button role="tab" aria-selected="false" data-t="M">Men ({len(mrows)})</button><button role="tab" aria-selected="false" data-t="D">Doubles</button></div>
 <div class="ch-panel" data-p="W">{wtab}</div><div class="ch-panel" data-p="M" hidden>{mtab}</div>
 <div class="ch-panel" data-p="D" hidden><p class="ch-small">Pairs in the doubles world rankings with at least one defender, the defender in bold.</p>{"".join(dd) or "<p>No ranked pairs.</p>"}</div>
@@ -342,7 +465,7 @@ def build():
 <div><dt>Points</dt><dd>{f'{r["points"]:,}' if r else "-"}</dd></div><div><dt>{today[:4]} record</dt><dd>{rec[0]}-{rec[1]}</dd></div>
 <div><dt>Last 10</dt><dd class="ch-frm">{chip(wl) or "-"}</dd></div></dl></section>
 <div class="ch-grid"><section class="ch-sec"><h2>Recent results</h2><ul class="ch-results">{"".join(res_row(m, s) for m, s in last) or "<li>No results on record.</li>"}</ul></section>
-<section class="ch-sec"><h2>Next matches</h2><ul class="ch-next">{nxt_html or "<li>No match scheduled in Eleven's tournament draws or club fixtures yet.</li>"}</ul>
+<section class="ch-sec"><h2>Next matches</h2>{likely_html(likely(p))}<ul class="ch-next">{nxt_html or "<li>No match scheduled in Eleven's tournament draws or club fixtures yet.</li>"}</ul>
 {f'<p class="ch-small"><a href="{ELEVEN}{es}">Full profile on Eleven</a>: titles, head to heads and ranking history.</p>' if es else ""}</section></div>
 <div class="ch-grid"><section class="ch-sec"><h2>Honours and titles</h2>{f'<ul class="ch-hon">{hon_html}</ul>' if hon_html else "<p class='ch-small'>No major medals or senior titles on record yet.</p>"}</section>
 <section class="ch-sec"><h2>Club</h2>{f'<ul class="ch-clubs">{cl_html}</ul>' if cl_html else "<p class='ch-small'>No club in the leagues Eleven follows.</p>"}</section></div>
@@ -353,24 +476,43 @@ def build():
             f'{p["name"]}, {STYLE.get(p.get("style"), "defender").lower()}: world ranking, recent results, next matches and stories.',
             f'/defender/{slug(p["name"])}.html', body))
 
-    # ---- Calendar
+    # ---- Calendar: likely next tournaments (grouped by event), then fixtures by day
     cal = []
     for p in players:
         for x in nxt.get(p["name"], []):
             cal.append((x["when"], p, x))
     cal.sort(key=lambda t: t[0])
-    seen_c, rows = set(), []
+    by_ev = {}
+    for p in players:
+        lk = likely(p)
+        if lk and lk["kind"] in ("likely", "draw"):
+            by_ev.setdefault((lk.get("start") or lk.get("when", "")[:10], lk["event"]), []).append((p, lk))
+    ev_cards = []
+    for (st, evn), who in sorted(by_ev.items()):
+        lk0 = who[0][1]
+        when_ = span(lk0["start"], lk0["end"]) if lk0.get("start") else day(lk0["when"])
+        ppl = "".join(f'<li><a href="{plink(p)}">{e(p["name"])}</a> {tag(p.get("style"))}<span class="ch-why">{e(lk["why"])}</span></li>' for p, lk in who)
+        head = f'<a href="{e(lk0["url"])}">{e(evn)}</a>' if lk0.get("url") else e(evn)
+        ev_cards.append(f'<li class="ch-evcard"><span class="ch-kick">{"In the draw" if lk0["kind"] == "draw" else "Likely"}</span><h3>{head}</h3>'
+                        f'<p class="ch-evwhen">{e(when_)}{", " + e(lk0.get("city", "")) if lk0.get("city") else ""}</p><ul>{ppl}</ul></li>')
+    days_, cur = [], None
     for w, p, x in cal:
-        k = (w, p["name"])
-        if k in seen_c:
-            continue
-        seen_c.add(k)
-        rows.append(f'<li><time datetime="{e(w)}" data-ch-when>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {tag(p.get("style"), False)}'
-                    f'<span>{e(x["what"])}{f" v {e(x["v"])}" if x.get("v") else ""}</span></li>')
-    cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">The next matches for the defenders, from the tournament draws and the club leagues Eleven follows. Times are UK time.</p></section>
-<ul class="ch-cal">{"".join(rows) or "<li>Nothing scheduled yet.</li>"}</ul>"""
+        d0 = w[:10]
+        if d0 != cur:
+            cur = d0
+            dd = dt.date.fromisoformat(d0)
+            days_.append([f"{dd:%A} {dd.day} {dd:%B %Y}", []])
+        t = "" if x.get("day") else dt.datetime.fromisoformat(w.replace("Z", "+00:00")).strftime("%H:%M")
+        comp, _, tie = x["what"].partition(": ")
+        days_[-1][1].append(f'<li class="ch-fx"><span class="ch-fx-t">{e(t) or "TBC"}</span><span class="ch-fx-who"><a href="{plink(p)}">{e(p["name"])}</a> {tag(p.get("style"))}</span>'
+                            f'<span class="ch-fx-what"><b>{e(comp)}</b> {e(tie)}{f" v {e(x["v"])}" if x.get("v") else ""}</span></li>')
+    fx = "".join(f'<section class="ch-day"><h3>{e(h)}</h3><ul>{"".join(it)}</ul></section>' for h, it in days_)
+    cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">Where the defenders are likely to play next, and every fixture we know of. Times are UK time.</p></section>
+<section class="ch-sec"><h2>Likely next tournaments</h2><p class="ch-small">Entry lists are only published with the draw, so these are our best guesses: the next event of a kind each player has entered in the past year and can get into on their ranking. Players move to "In the draw" when it's published.</p>
+<ul class="ch-evcards">{"".join(ev_cards) or "<li>No tournaments in view.</li>"}</ul></section>
+<section class="ch-sec"><h2>Fixtures</h2>{fx or "<p>Nothing scheduled yet.</p>"}</section>"""
     open(os.path.join(OUT, "calendar.html"), "w", encoding="utf-8").write(page(
-        "When the defenders play next | The Chop", "Upcoming matches for table tennis's choppers and defenders, in tournaments and club leagues.", "/calendar.html", cbody, "calendar"))
+        "When the defenders play next | The Chop", "Where table tennis's choppers and defenders are likely to play next, and their upcoming fixtures.", "/calendar.html", cbody, "calendar"))
 
     # ---- Reading
     kinds = [("all", "All")] + [(k, k.capitalize()) for k in ("news", "analysis", "history", "video") if any(l.get("kind") == k for l in allinks)]
@@ -419,7 +561,8 @@ def build():
 <aside class="ch-side">
 <section class="ch-sec"><h2>Top defenders</h2><h3>Women</h3><ol class="ch-mini">{mini(top_w)}</ol><h3>Men</h3><ol class="ch-mini">{mini(top_m)}</ol><a class="ch-more" href="{BASE}/defenders.html">All the defenders</a></section>
 <section class="ch-sec"><h2>Best recent wins</h2><ul class="ch-results">{"".join(f'<li class="w"><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {res_row(m, s)[len("<li class=\"w\">"):-5]}</li>' for _, _, p, m, s in best[:5]) or "<li>No wins by defenders in the last 10 days.</li>"}</ul></section>
-<section class="ch-sec"><h2>This week</h2><ul class="ch-cal">{"".join(f'<li><time>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a><span>{e(x["what"])}</span></li>' for w, p, x in week[:6]) or "<li>No defenders scheduled this week.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html">Full calendar</a></section>
+<section class="ch-sec"><h2>Coming up</h2><ul class="ch-evcards ch-evcards-side">{"".join(ev_cards[:3])}</ul>
+<h3>This week</h3><ul class="ch-cal">{"".join(f'<li><time>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a><span>{e(x["what"])}</span></li>' for w, p, x in week[:6]) or "<li>No defenders scheduled this week.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html">Full calendar</a></section>
 </aside></div>"""
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them, by Eleven.", "/", hbody, "home"))
