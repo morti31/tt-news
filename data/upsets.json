@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T13:18Z",
+ "updated": "2026-11-16T15:58Z",
  "days": 4,
  "upsets": [
   {
@@ -609,39 +609,6 @@
    "level": null
   },
   {
-   "when": "2026-11-12T14:40:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Elias Ranefur",
-    "rank": 26,
-    "age": 30
-   },
-   "loser": {
-    "name": "Leonardo Iizuka",
-    "rank": 146,
-    "age": 20
-   },
-   "score": "3-2",
-   "games": "12-10,10-12,6-11,11-8,15-13",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 15-13"
-    },
-    {
-     "label": "ground out",
-     "detail": "52 minutes, 3 deuce games"
-    },
-    {
-     "label": "scare",
-     "detail": "No 26 pushed to a decider by No 146"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-13T15:50:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
@@ -941,35 +908,6 @@
    "level": null
   },
   {
-   "when": "2026-11-12T15:15:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Manav Thakkar",
-    "rank": 47,
-    "age": 26
-   },
-   "loser": {
-    "name": "Ibrahim Gunduz",
-    "rank": 176,
-    "age": 29
-   },
-   "score": "3-2",
-   "games": "11-5,7-11,7-11,11-4,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 47 pushed to a decider by No 176"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-13T09:55:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
@@ -1115,31 +1053,6 @@
    "level": null
   },
   {
-   "when": "2026-11-12T15:50:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Ricardo Walther",
-    "rank": 88,
-    "age": 34
-   },
-   "loser": {
-    "name": "Guilherme Teodoro",
-    "rank": 56,
-    "age": 24
-   },
-   "score": "3-2",
-   "games": "4-11,12-10,11-8,9-11,11-4",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-13T18:00:00Z",
    "competition": "Bundesliga: TTC OE Clarity-Tel.Syst.Bad Homburg v Post SV Mühlhausen",
    "round": "",
@@ -1156,31 +1069,6 @@
    "score": "3-2",
    "games": "6-11,11-8,6-11,11-6,11-8",
    "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/008c09e9-a01d-46ee-a2d5-1ff881fd62aa",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T15:50:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Zong Geman",
-    "rank": 60,
-    "age": 20
-   },
-   "loser": {
-    "name": "Fan Shuhan",
-    "rank": 82,
-    "age": 22
-   },
-   "score": "3-2",
-   "games": "8-11,11-6,12-10,7-11,11-7",
-   "url": "",
    "labels": [
     {
      "label": "edged",
@@ -1397,60 +1285,6 @@
     {
      "label": "edged",
      "detail": "five-game thriller, decider 14-12"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T14:40:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Ece Harac",
-    "rank": 119,
-    "age": 24
-   },
-   "loser": {
-    "name": "Audrey Zarif",
-    "rank": 108,
-    "age": 28
-   },
-   "score": "3-0",
-   "games": "11-9,11-4,11-5",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "revenge",
-     "detail": "revenge for defeat at Singapore Smash 2026 Presented by Resorts World Sentosa (2026-02)"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T15:50:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Borgar Haug",
-    "rank": 109,
-    "age": 23
-   },
-   "loser": {
-    "name": "Tugay Yilmaz",
-    "rank": 405,
-    "age": 25
-   },
-   "score": "3-0",
-   "games": "11-9,15-13,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
     }
    ],
    "level": null
