@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T04:40:00Z",
+  "updated": "2026-11-16T07:56:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -866,6 +866,16 @@
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
     },
     {
+      "id": "wtt-3256-ttewsinglesrnd1000100",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Filippa Bergand v Xu Yi, women's singles, qualifying round 1",
+      "start": "2026-11-16T07:00:00Z",
+      "end": "2026-11-16T07:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWSINGLES-----------RND1000100----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3256-ttemsinglesrnd1000700",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Denis Ivonin v Fanbo Meng, men's singles, qualifying round 1",
@@ -884,16 +894,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------RND1000600----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3256-ttewsinglesrnd1000100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Filippa Bergand v Xu Yi, women's singles, qualifying round 1",
-      "start": "2026-11-16T07:00:00Z",
-      "end": "2026-11-16T07:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------RND1000100----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3256-ttemsinglesrnd1000200",
