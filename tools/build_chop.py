@@ -328,6 +328,8 @@ def build():
         hon_html = "".join(f'<li><span class="ch-yr">{e(y)}</span><span><b>{e(r)}</b> {e(ev)}</span></li>' for y, ev, r in sorted(hon, reverse=True))
         hon_html += "".join(f'<li><span class="ch-yr">{e(y)}</span><span><b>Winner</b> {e(ev)}, {e(k_)}</span></li>' for y, ev, k_ in tl[:12])
         cl = clubs.get(p["name"], []) or [(c.get("club"), c.get("league", "")) for c in bio.get("clubs") or [] if c.get("current")]
+        wd_html = "".join(f'<li><q>{e(w["text"])}</q> <a href="{e(w["url"])}" rel="noopener" target="_blank">{e(w["source"])}</a></li>' for w in p.get("wording") or [])
+        prov = "" if p.get("subtype_confirmed") else '<p class="ch-small">The sources confirm a defensive style; which of the three types fits best is our provisional call until a source describes the game in more detail.</p>'
         cl_html = "".join(f'<li><b>{e(c)}</b>{f" <span>{e(lg)}</span>" if lg else ""}</li>' for c, lg in cl)
         nxt_html = "".join(f'<li><time datetime="{e(x["when"])}">{day(x["when"]) if x.get("day") else dt.datetime.fromisoformat(x["when"].replace("Z", "+00:00")).strftime("%a %-d %b, %H:%M")} UK</time>'
                            f'<span>{e(x["what"])}{f" v <b>{e(x["v"])}</b>" if x.get("v") else ""}</span></li>' for x in nx)
@@ -342,6 +344,7 @@ def build():
 {f'<p class="ch-small"><a href="{ELEVEN}{es}">Full profile on Eleven</a>: titles, head to heads and ranking history.</p>' if es else ""}</section></div>
 <div class="ch-grid"><section class="ch-sec"><h2>Honours and titles</h2>{f'<ul class="ch-hon">{hon_html}</ul>' if hon_html else "<p class='ch-small'>No major medals or senior titles on record yet.</p>"}</section>
 <section class="ch-sec"><h2>Club</h2>{f'<ul class="ch-clubs">{cl_html}</ul>' if cl_html else "<p class='ch-small'>No club in the leagues Eleven follows.</p>"}</section></div>
+{f'<section class="ch-sec"><h2>How the sources describe the style</h2><ul class="ch-quotes">{wd_html}</ul>{prov}</section>' if wd_html else ""}
 <section class="ch-sec"><h2>Reading</h2>{f'<ul class="ch-links">{"".join(link_li(l, False) for l in mine)}</ul>' if mine else "<p>No stories linked yet.</p>"}</section>"""
         open(os.path.join(OUT, "players", slug(p["name"]) + ".html"), "w", encoding="utf-8").write(page(
             f'{p["name"]}: {STYLE.get(p.get("style"), "defender").lower()}, rankings and form | The Chop',
