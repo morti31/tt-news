@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:19Z",
+ "updated": "2026-11-16T12:25Z",
  "days": 4,
  "upsets": [
   {
@@ -8,7 +8,7 @@
    "round": "",
    "winner": {
     "name": "Yuta Ito",
-    "rank": 368,
+    "rank": 290,
     "age": 16
    },
    "loser": {
@@ -38,7 +38,7 @@
    "round": "",
    "winner": {
     "name": "Adam Szudi",
-    "rank": 215,
+    "rank": 213,
     "age": 30
    },
    "loser": {
@@ -66,7 +66,7 @@
    "round": "",
    "winner": {
     "name": "Filip Zeljko",
-    "rank": 127,
+    "rank": 129,
     "age": 29
    },
    "loser": {
@@ -94,7 +94,7 @@
    "round": "",
    "winner": {
     "name": "Zong Geman",
-    "rank": 76,
+    "rank": 60,
     "age": 20
    },
    "loser": {
@@ -108,145 +108,6 @@
    "labels": [],
    "level": "notable",
    "angles": []
-  },
-  {
-   "when": "2026-11-13T08:45:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Saki Shibata",
-    "rank": 72,
-    "age": 29
-   },
-   "loser": {
-    "name": "Qin Yuxuan",
-    "rank": 24,
-    "age": 20
-   },
-   "score": "3-1",
-   "games": "11-8,5-11,11-5,11-3",
-   "url": "",
-   "labels": [],
-   "level": "notable",
-   "angles": []
-  },
-  {
-   "when": "2026-11-14T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Kang Dongsoo",
-    "rank": 120,
-    "age": 32
-   },
-   "loser": {
-    "name": "Elias Ranefur",
-    "rank": 27,
-    "age": 30
-   },
-   "score": "3-0",
-   "games": "14-12,12-10,13-11",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0, 3 of the games went to deuce"
-    }
-   ],
-   "level": "notable",
-   "angles": [
-    "3-0, 3 of the games went to deuce"
-   ]
-  },
-  {
-   "when": "2026-11-12T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Veronika Matiunina",
-    "rank": 117,
-    "age": 20
-   },
-   "loser": {
-    "name": "Jia Nan Yuan",
-    "rank": 35,
-    "age": 41
-   },
-   "score": "3-2",
-   "games": "12-10,10-12,11-6,8-11,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": "notable",
-   "angles": [
-    "21-year age gap",
-    "five-game thriller"
-   ]
-  },
-  {
-   "when": "2026-11-13T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Borgar Haug",
-    "rank": 151,
-    "age": 23
-   },
-   "loser": {
-    "name": "Manav Thakkar",
-    "rank": 47,
-    "age": 26
-   },
-   "score": "3-2",
-   "games": "13-15,10-12,11-8,11-8,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "comeback",
-     "detail": "reverse sweep: 0-2 to 3-2"
-    },
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": "notable",
-   "angles": [
-    "reverse sweep: 0-2 to 3-2",
-    "five-game thriller"
-   ]
-  },
-  {
-   "when": "2026-11-14T08:10:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Fang Bo",
-    "rank": 160,
-    "age": 34
-   },
-   "loser": {
-    "name": "Lubomir Jancarik",
-    "rank": 49,
-    "age": 39
-   },
-   "score": "3-0",
-   "games": "11-4,11-4,11-9",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": "notable",
-   "angles": [
-    "3-0"
-   ]
   }
  ],
  "matches": [
@@ -256,7 +117,7 @@
    "round": "",
    "winner": {
     "name": "Yuta Ito",
-    "rank": 368,
+    "rank": 290,
     "age": 16
    },
    "loser": {
@@ -281,7 +142,7 @@
    "round": "",
    "winner": {
     "name": "Adam Szudi",
-    "rank": 215,
+    "rank": 213,
     "age": 30
    },
    "loser": {
@@ -306,7 +167,7 @@
    "round": "",
    "winner": {
     "name": "Filip Zeljko",
-    "rank": 127,
+    "rank": 129,
     "age": 29
    },
    "loser": {
@@ -331,7 +192,7 @@
    "round": "",
    "winner": {
     "name": "Zong Geman",
-    "rank": 76,
+    "rank": 60,
     "age": 20
    },
    "loser": {
@@ -346,130 +207,6 @@
    "level": "notable"
   },
   {
-   "when": "2026-11-13T08:45:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Saki Shibata",
-    "rank": 72,
-    "age": 29
-   },
-   "loser": {
-    "name": "Qin Yuxuan",
-    "rank": 24,
-    "age": 20
-   },
-   "score": "3-1",
-   "games": "11-8,5-11,11-5,11-3",
-   "url": "",
-   "labels": [],
-   "level": "notable"
-  },
-  {
-   "when": "2026-11-14T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Kang Dongsoo",
-    "rank": 120,
-    "age": 32
-   },
-   "loser": {
-    "name": "Elias Ranefur",
-    "rank": 27,
-    "age": 30
-   },
-   "score": "3-0",
-   "games": "14-12,12-10,13-11",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0, 3 of the games went to deuce"
-    }
-   ],
-   "level": "notable"
-  },
-  {
-   "when": "2026-11-12T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Veronika Matiunina",
-    "rank": 117,
-    "age": 20
-   },
-   "loser": {
-    "name": "Jia Nan Yuan",
-    "rank": 35,
-    "age": 41
-   },
-   "score": "3-2",
-   "games": "12-10,10-12,11-6,8-11,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": "notable"
-  },
-  {
-   "when": "2026-11-13T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Borgar Haug",
-    "rank": 151,
-    "age": 23
-   },
-   "loser": {
-    "name": "Manav Thakkar",
-    "rank": 47,
-    "age": 26
-   },
-   "score": "3-2",
-   "games": "13-15,10-12,11-8,11-8,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "comeback",
-     "detail": "reverse sweep: 0-2 to 3-2"
-    },
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": "notable"
-  },
-  {
-   "when": "2026-11-14T08:10:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Fang Bo",
-    "rank": 160,
-    "age": 34
-   },
-   "loser": {
-    "name": "Lubomir Jancarik",
-    "rank": 49,
-    "age": 39
-   },
-   "score": "3-0",
-   "games": "11-4,11-4,11-9",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": "notable"
-  },
-  {
    "when": "2026-11-15T04:09:00Z",
    "competition": "T.League: Okayama Rivets v Kanazawa Port",
    "round": "",
@@ -480,7 +217,7 @@
    },
    "loser": {
     "name": "Hiromu Kobayashi",
-    "rank": 253,
+    "rank": 250,
     "age": 24
    },
    "score": "3-2",
@@ -493,7 +230,7 @@
     },
     {
      "label": "scare",
-     "detail": "No 1 pushed to a decider by No 253"
+     "detail": "No 1 pushed to a decider by No 250"
     }
    ],
    "level": null
@@ -509,7 +246,7 @@
    },
    "loser": {
     "name": "Ryuusei Kawakami",
-    "rank": 65,
+    "rank": 63,
     "age": 17
    },
    "score": "3-2",
@@ -526,7 +263,7 @@
     },
     {
      "label": "scare",
-     "detail": "No 2 pushed to a decider by No 65"
+     "detail": "No 2 pushed to a decider by No 63"
     }
    ],
    "level": null
@@ -571,41 +308,12 @@
    },
    "loser": {
     "name": "Sara Ono",
-    "rank": 478,
+    "rank": 474,
     "age": null
    },
    "score": "3-0",
    "games": "11-5,11-5,11-8",
    "url": "https://tleague.jp/schedule/detail.php?id=1355",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T09:20:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Honoka Hashimoto",
-    "rank": 14,
-    "age": 28
-   },
-   "loser": {
-    "name": "Sofia-Xuan Zhang",
-    "rank": 166,
-    "age": 27
-   },
-   "score": "3-0",
-   "games": "11-5,11-2,11-6",
-   "url": "",
    "labels": [
     {
      "label": "sweep",
@@ -629,7 +337,7 @@
    },
    "loser": {
     "name": "Bruna Takahashi",
-    "rank": 31,
+    "rank": 29,
     "age": 26
    },
    "score": "3-0",
@@ -712,7 +420,7 @@
    },
    "loser": {
     "name": "Kaho Akae",
-    "rank": 37,
+    "rank": 36,
     "age": 22
    },
    "score": "3-0",
@@ -737,7 +445,7 @@
    },
    "loser": {
     "name": "Wang Xiaotong",
-    "rank": 94,
+    "rank": 88,
     "age": 26
    },
    "score": "3-2",
@@ -754,7 +462,7 @@
     },
     {
      "label": "scare",
-     "detail": "No 22 pushed to a decider by No 94"
+     "detail": "No 22 pushed to a decider by No 88"
     }
    ],
    "level": null
@@ -770,7 +478,7 @@
    },
    "loser": {
     "name": "Kokomi Ishida",
-    "rank": 316,
+    "rank": 255,
     "age": 14
    },
    "score": "3-0",
@@ -793,12 +501,91 @@
    "level": null
   },
   {
+   "when": "2026-11-13T15:50:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "",
+   "winner": {
+    "name": "Miu Hirano",
+    "rank": 24,
+    "age": 26
+   },
+   "loser": {
+    "name": "Hana Arapovic",
+    "rank": 89,
+    "age": 22
+   },
+   "score": "3-2",
+   "games": "8-11,11-5,5-11,11-7,11-5",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    },
+    {
+     "label": "scare",
+     "detail": "No 24 pushed to a decider by No 89"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-14T08:45:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "quarter-final",
+   "winner": {
+    "name": "Miu Hirano",
+    "rank": 24,
+    "age": 26
+   },
+   "loser": {
+    "name": "Zong Geman",
+    "rank": 60,
+    "age": 20
+   },
+   "score": "3-2",
+   "games": "6-11,11-3,11-8,7-11,11-8",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-15T13:00:00Z",
+   "competition": "Bundesliga: Borussia Düsseldorf v ASC Grünwettersbach",
+   "round": "",
+   "winner": {
+    "name": "Kanak Jha",
+    "rank": 24,
+    "age": 26
+   },
+   "loser": {
+    "name": "Damian Floro",
+    "rank": 330,
+    "age": 18
+   },
+   "score": "3-0",
+   "games": "11-4,12-10,11-8",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/0d58c8df-208b-45dc-a510-2367e3022461",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-12T16:25:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
     "name": "Qin Yuxuan",
-    "rank": 24,
+    "rank": 25,
     "age": 20
    },
    "loser": {
@@ -822,26 +609,34 @@
    "level": null
   },
   {
-   "when": "2026-11-15T13:00:00Z",
-   "competition": "Bundesliga: Borussia Düsseldorf v ASC Grünwettersbach",
+   "when": "2026-11-12T14:40:00Z",
+   "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
-    "name": "Kanak Jha",
-    "rank": 24,
-    "age": 26
+    "name": "Elias Ranefur",
+    "rank": 26,
+    "age": 30
    },
    "loser": {
-    "name": "Damian Floro",
-    "rank": 349,
-    "age": 18
+    "name": "Leonardo Iizuka",
+    "rank": 146,
+    "age": 20
    },
-   "score": "3-0",
-   "games": "11-4,12-10,11-8",
-   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/0d58c8df-208b-45dc-a510-2367e3022461",
+   "score": "3-2",
+   "games": "12-10,10-12,6-11,11-8,15-13",
+   "url": "",
    "labels": [
     {
-     "label": "sweep",
-     "detail": "3-0"
+     "label": "edged",
+     "detail": "five-game thriller, decider 15-13"
+    },
+    {
+     "label": "ground out",
+     "detail": "52 minutes, 3 deuce games"
+    },
+    {
+     "label": "scare",
+     "detail": "No 26 pushed to a decider by No 146"
     }
    ],
    "level": null
@@ -851,17 +646,17 @@
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
-    "name": "Miu Hirano",
-    "rank": 25,
-    "age": 26
+    "name": "Elias Ranefur",
+    "rank": 26,
+    "age": 30
    },
    "loser": {
-    "name": "Hana Arapovic",
-    "rank": 92,
-    "age": 22
+    "name": "Aditya Sareen",
+    "rank": 110,
+    "age": 18
    },
    "score": "3-2",
-   "games": "8-11,11-5,5-11,11-7,11-5",
+   "games": "11-9,11-2,13-15,7-11,11-7",
    "url": "",
    "labels": [
     {
@@ -870,36 +665,32 @@
     },
     {
      "label": "scare",
-     "detail": "No 25 pushed to a decider by No 92"
+     "detail": "No 26 pushed to a decider by No 110"
     }
    ],
    "level": null
   },
   {
-   "when": "2026-11-14T08:45:00Z",
+   "when": "2026-11-14T09:55:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "quarter-final",
    "winner": {
-    "name": "Miu Hirano",
-    "rank": 25,
-    "age": 26
+    "name": "Kang Dongsoo",
+    "rank": 68,
+    "age": 32
    },
    "loser": {
-    "name": "Zong Geman",
-    "rank": 76,
-    "age": 20
+    "name": "Elias Ranefur",
+    "rank": 26,
+    "age": 30
    },
-   "score": "3-2",
-   "games": "6-11,11-3,11-8,7-11,11-8",
+   "score": "3-0",
+   "games": "14-12,12-10,13-11",
    "url": "",
    "labels": [
     {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 25 pushed to a decider by No 76"
+     "label": "sweep",
+     "detail": "3-0, 3 of the games went to deuce"
     }
    ],
    "level": null
@@ -910,12 +701,12 @@
    "round": "",
    "winner": {
     "name": "Anton Källberg",
-    "rank": 26,
+    "rank": 27,
     "age": 29
    },
    "loser": {
     "name": "Tobias Hippler",
-    "rank": 500,
+    "rank": 494,
     "age": null
    },
    "score": "3-0",
@@ -934,79 +725,17 @@
    "level": null
   },
   {
-   "when": "2026-11-12T14:40:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Elias Ranefur",
-    "rank": 27,
-    "age": 30
-   },
-   "loser": {
-    "name": "Leonardo Iizuka",
-    "rank": 148,
-    "age": 20
-   },
-   "score": "3-2",
-   "games": "12-10,10-12,6-11,11-8,15-13",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 15-13"
-    },
-    {
-     "label": "ground out",
-     "detail": "52 minutes, 3 deuce games"
-    },
-    {
-     "label": "scare",
-     "detail": "No 27 pushed to a decider by No 148"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-13T15:50:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Elias Ranefur",
-    "rank": 27,
-    "age": 30
-   },
-   "loser": {
-    "name": "Aditya Sareen",
-    "rank": 115,
-    "age": 18
-   },
-   "score": "3-2",
-   "games": "11-9,11-2,13-15,7-11,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 27 pushed to a decider by No 115"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-13T16:25:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
     "name": "Bruna Takahashi",
-    "rank": 31,
+    "rank": 29,
     "age": 26
    },
    "loser": {
     "name": "Veronika Matiunina",
-    "rank": 117,
+    "rank": 107,
     "age": 20
    },
    "score": "3-0",
@@ -1030,7 +759,7 @@
    "round": "",
    "winner": {
     "name": "Kaho Akae",
-    "rank": 37,
+    "rank": 36,
     "age": 22
    },
    "loser": {
@@ -1055,12 +784,12 @@
    "round": "quarter-final",
    "winner": {
     "name": "Kaho Akae",
-    "rank": 37,
+    "rank": 36,
     "age": 22
    },
    "loser": {
     "name": "Saki Shibata",
-    "rank": 72,
+    "rank": 58,
     "age": 29
    },
    "score": "3-0",
@@ -1080,12 +809,12 @@
    "round": "",
    "winner": {
     "name": "Wim Verdonschot",
-    "rank": 38,
+    "rank": 40,
     "age": 21
    },
    "loser": {
     "name": "Tiago Abiodun",
-    "rank": 190,
+    "rank": 188,
     "age": 18
    },
    "score": "3-2",
@@ -1098,32 +827,7 @@
     },
     {
      "label": "scare",
-     "detail": "No 38 pushed to a decider by No 190"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T08:45:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Hana Arapovic",
-    "rank": 92,
-    "age": 22
-   },
-   "loser": {
-    "name": "Prithika Pavade",
-    "rank": 39,
-    "age": 22
-   },
-   "score": "3-2",
-   "games": "11-13,11-8,5-11,11-9,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
+     "detail": "No 40 pushed to a decider by No 188"
     }
    ],
    "level": null
@@ -1134,12 +838,12 @@
    "round": "",
    "winner": {
     "name": "Li Tianyang",
-    "rank": 42,
+    "rank": 41,
     "age": 19
    },
    "loser": {
     "name": "Abdullah Yigenler",
-    "rank": 177,
+    "rank": 162,
     "age": 27
    },
    "score": "3-2",
@@ -1152,7 +856,7 @@
     },
     {
      "label": "scare",
-     "detail": "No 42 pushed to a decider by No 177"
+     "detail": "No 41 pushed to a decider by No 162"
     }
    ],
    "level": null
@@ -1163,16 +867,124 @@
    "round": "quarter-final",
    "winner": {
     "name": "Ryoichi Yoshiyama",
-    "rank": 62,
+    "rank": 49,
     "age": 22
    },
    "loser": {
     "name": "Li Tianyang",
-    "rank": 42,
+    "rank": 41,
     "age": 19
    },
    "score": "3-2",
    "games": "12-14,8-11,11-9,11-7,11-6",
+   "url": "",
+   "labels": [
+    {
+     "label": "comeback",
+     "detail": "reverse sweep: 0-2 to 3-2"
+    },
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-13T08:45:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "",
+   "winner": {
+    "name": "Lubomir Jancarik",
+    "rank": 43,
+    "age": 39
+   },
+   "loser": {
+    "name": "Adrien Rassenfosse",
+    "rank": 61,
+    "age": 23
+   },
+   "score": "3-1",
+   "games": "7-11,11-9,12-10,11-8",
+   "url": "",
+   "labels": [
+    {
+     "label": "revenge",
+     "detail": "revenge for defeat at China Smash 2026 Presented by Beijing Shijingshan Culture & Tourism Group (2026-10)"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-14T08:10:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "quarter-final",
+   "winner": {
+    "name": "Fang Bo",
+    "rank": 66,
+    "age": 34
+   },
+   "loser": {
+    "name": "Lubomir Jancarik",
+    "rank": 43,
+    "age": 39
+   },
+   "score": "3-0",
+   "games": "11-4,11-4,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-12T15:15:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "",
+   "winner": {
+    "name": "Manav Thakkar",
+    "rank": 47,
+    "age": 26
+   },
+   "loser": {
+    "name": "Ibrahim Gunduz",
+    "rank": 176,
+    "age": 29
+   },
+   "score": "3-2",
+   "games": "11-5,7-11,7-11,11-4,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    },
+    {
+     "label": "scare",
+     "detail": "No 47 pushed to a decider by No 176"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-13T09:55:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "",
+   "winner": {
+    "name": "Borgar Haug",
+    "rank": 109,
+    "age": 23
+   },
+   "loser": {
+    "name": "Manav Thakkar",
+    "rank": 47,
+    "age": 26
+   },
+   "score": "3-2",
+   "games": "13-15,10-12,11-8,11-8,11-7",
    "url": "",
    "labels": [
     {
@@ -1192,7 +1004,7 @@
    "round": "",
    "winner": {
     "name": "Maharu Yoshimura",
-    "rank": 45,
+    "rank": 48,
     "age": 33
    },
    "loser": {
@@ -1218,86 +1030,32 @@
     },
     {
      "label": "scare",
-     "detail": "No 45 pushed to a decider by No unranked"
+     "detail": "No 48 pushed to a decider by No unranked"
     }
    ],
    "level": null
   },
   {
-   "when": "2026-11-12T15:15:00Z",
+   "when": "2026-11-14T15:15:00Z",
    "competition": "WTT Contender Istanbul 2026",
-   "round": "",
+   "round": "semi-final",
    "winner": {
-    "name": "Manav Thakkar",
-    "rank": 47,
-    "age": 26
+    "name": "Kang Dongsoo",
+    "rank": 68,
+    "age": 32
    },
    "loser": {
-    "name": "Ibrahim Gunduz",
-    "rank": 179,
-    "age": 29
-   },
-   "score": "3-2",
-   "games": "11-5,7-11,7-11,11-4,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 47 pushed to a decider by No 179"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T09:20:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Lubomir Jancarik",
+    "name": "Ryoichi Yoshiyama",
     "rank": 49,
-    "age": 39
-   },
-   "loser": {
-    "name": "Eduard Ionescu",
-    "rank": 79,
     "age": 22
    },
    "score": "3-2",
-   "games": "9-11,11-4,3-11,11-8,11-3",
+   "games": "12-10,14-16,11-4,9-11,11-8",
    "url": "",
    "labels": [
     {
      "label": "edged",
      "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-13T08:45:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Lubomir Jancarik",
-    "rank": 49,
-    "age": 39
-   },
-   "loser": {
-    "name": "Adrien Rassenfosse",
-    "rank": 61,
-    "age": 23
-   },
-   "score": "3-1",
-   "games": "7-11,11-9,12-10,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "revenge",
-     "detail": "revenge for defeat at China Smash 2026 Presented by Beijing Shijingshan Culture & Tourism Group (2026-10)"
     }
    ],
    "level": null
@@ -1313,7 +1071,7 @@
    },
    "loser": {
     "name": "Cocona Muramatsu",
-    "rank": 134,
+    "rank": 133,
     "age": 14
    },
    "score": "3-2",
@@ -1324,56 +1082,6 @@
      "label": "comeback",
      "detail": "reverse sweep: 0-2 to 3-2"
     },
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T08:45:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Wang Xiaotong",
-    "rank": 94,
-    "age": 26
-   },
-   "loser": {
-    "name": "Orawan Paranang",
-    "rank": 51,
-    "age": 29
-   },
-   "score": "3-2",
-   "games": "11-13,13-11,11-7,9-11,11-9",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 11-9"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T09:20:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Nikita Artemenko",
-    "rank": 76,
-    "age": 27
-   },
-   "loser": {
-    "name": "Tom Jarvis",
-    "rank": 51,
-    "age": 26
-   },
-   "score": "3-2",
-   "games": "12-10,9-11,7-11,12-10,11-8",
-   "url": "",
-   "labels": [
     {
      "label": "edged",
      "detail": "five-game thriller"
@@ -1412,7 +1120,7 @@
    "round": "",
    "winner": {
     "name": "Ricardo Walther",
-    "rank": 143,
+    "rank": 88,
     "age": 34
    },
    "loser": {
@@ -1457,51 +1165,26 @@
    "level": null
   },
   {
-   "when": "2026-11-12T08:45:00Z",
+   "when": "2026-11-12T15:50:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
-    "name": "Ryoichi Yoshiyama",
-    "rank": 62,
+    "name": "Zong Geman",
+    "rank": 60,
+    "age": 20
+   },
+   "loser": {
+    "name": "Fan Shuhan",
+    "rank": 82,
     "age": 22
    },
-   "loser": {
-    "name": "Joe Seyfried",
-    "rank": 58,
-    "age": 28
-   },
-   "score": "3-0",
-   "games": "11-7,11-6,11-8",
+   "score": "3-2",
+   "games": "8-11,11-6,12-10,7-11,11-7",
    "url": "",
    "labels": [
     {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T09:20:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Saki Shibata",
-    "rank": 72,
-    "age": 29
-   },
-   "loser": {
-    "name": "Andreea Dragoman",
-    "rank": 60,
-    "age": 26
-   },
-   "score": "3-0",
-   "games": "11-4,11-5,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
+     "label": "edged",
+     "detail": "five-game thriller"
     }
    ],
    "level": null
@@ -1512,7 +1195,7 @@
    "round": "",
    "winner": {
     "name": "Ricardo Walther",
-    "rank": 143,
+    "rank": 88,
     "age": 34
    },
    "loser": {
@@ -1532,67 +1215,17 @@
    "level": null
   },
   {
-   "when": "2026-11-12T09:55:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Adrien Rassenfosse",
-    "rank": 61,
-    "age": 23
-   },
-   "loser": {
-    "name": "Cedric Meissner",
-    "rank": 141,
-    "age": 26
-   },
-   "score": "3-2",
-   "games": "11-4,7-11,4-11,15-13,11-9",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 11-9"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-14T15:15:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "semi-final",
-   "winner": {
-    "name": "Kang Dongsoo",
-    "rank": 120,
-    "age": 32
-   },
-   "loser": {
-    "name": "Ryoichi Yoshiyama",
-    "rank": 62,
-    "age": 22
-   },
-   "score": "3-2",
-   "games": "12-10,14-16,11-4,9-11,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-15T16:00:00Z",
    "competition": "Bundesliga: 1. FC Saarbrücken-TT v TTC Zugbrücke Grenzau",
    "round": "",
    "winner": {
     "name": "Alvaro Robles",
-    "rank": 64,
+    "rank": 65,
     "age": 35
    },
    "loser": {
     "name": "Martin Allegro",
-    "rank": 149,
+    "rank": 151,
     "age": 30
    },
    "score": "3-2",
@@ -1607,72 +1240,51 @@
    "level": null
   },
   {
-   "when": "2026-11-12T16:25:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Aditya Sareen",
-    "rank": 115,
-    "age": 18
-   },
-   "loser": {
-    "name": "Evgeny Tikhonov",
-    "rank": 69,
-    "age": 21
-   },
-   "score": "3-2",
-   "games": "11-4,11-9,5-11,7-11,11-9",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 11-9"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-12T09:55:00Z",
+   "when": "2026-11-13T16:25:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
     "name": "Fang Bo",
-    "rank": 160,
+    "rank": 66,
     "age": 34
    },
    "loser": {
-    "name": "Mehdi Bouloussa",
-    "rank": 70,
-    "age": 31
+    "name": "Chen Junsong",
+    "rank": 86,
+    "age": 21
    },
    "score": "3-0",
-   "games": "11-6,11-8,11-5",
+   "games": "11-9,11-3,11-9",
    "url": "",
    "labels": [
     {
      "label": "sweep",
      "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
     }
    ],
    "level": null
   },
   {
-   "when": "2026-11-13T18:00:00Z",
-   "competition": "Bundesliga: TTC OE Clarity-Tel.Syst.Bad Homburg v Post SV Mühlhausen",
-   "round": "",
+   "when": "2026-11-14T14:05:00Z",
+   "competition": "WTT Contender Istanbul 2026",
+   "round": "semi-final",
    "winner": {
-    "name": "Juan Perez",
-    "rank": 165,
-    "age": 24
+    "name": "Fang Bo",
+    "rank": 66,
+    "age": 34
    },
    "loser": {
-    "name": "Marcos Freitas",
-    "rank": 72,
-    "age": 38
+    "name": "Ricardo Walther",
+    "rank": 88,
+    "age": 34
    },
    "score": "3-2",
-   "games": "7-11,9-11,11-7,11-5,11-4",
-   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/008c09e9-a01d-46ee-a2d5-1ff881fd62aa",
+   "games": "6-11,8-11,11-6,11-5,11-1",
+   "url": "",
    "labels": [
     {
      "label": "comeback",
@@ -1686,37 +1298,12 @@
    "level": null
   },
   {
-   "when": "2026-11-12T15:50:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "",
-   "winner": {
-    "name": "Zong Geman",
-    "rank": 76,
-    "age": 20
-   },
-   "loser": {
-    "name": "Fan Shuhan",
-    "rank": 83,
-    "age": 22
-   },
-   "score": "3-2",
-   "games": "8-11,11-6,12-10,7-11,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-13T15:15:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
     "name": "Kang Dongsoo",
-    "rank": 120,
+    "rank": 68,
     "age": 32
    },
    "loser": {
@@ -1736,26 +1323,55 @@
    "level": null
   },
   {
-   "when": "2026-11-13T16:25:00Z",
+   "when": "2026-11-12T16:25:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
-    "name": "Fang Bo",
-    "rank": 160,
-    "age": 34
+    "name": "Aditya Sareen",
+    "rank": 110,
+    "age": 18
    },
    "loser": {
-    "name": "Chen Junsong",
-    "rank": 89,
+    "name": "Evgeny Tikhonov",
+    "rank": 71,
     "age": 21
    },
-   "score": "3-0",
-   "games": "11-9,11-3,11-9",
+   "score": "3-2",
+   "games": "11-4,11-9,5-11,7-11,11-9",
    "url": "",
    "labels": [
     {
-     "label": "sweep",
-     "detail": "3-0"
+     "label": "edged",
+     "detail": "five-game thriller, decider 11-9"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-13T18:00:00Z",
+   "competition": "Bundesliga: TTC OE Clarity-Tel.Syst.Bad Homburg v Post SV Mühlhausen",
+   "round": "",
+   "winner": {
+    "name": "Juan Perez",
+    "rank": 164,
+    "age": 24
+   },
+   "loser": {
+    "name": "Marcos Freitas",
+    "rank": 74,
+    "age": 38
+   },
+   "score": "3-2",
+   "games": "7-11,9-11,11-7,11-5,11-4",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/008c09e9-a01d-46ee-a2d5-1ff881fd62aa",
+   "labels": [
+    {
+     "label": "comeback",
+     "detail": "reverse sweep: 0-2 to 3-2"
+    },
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
     }
    ],
    "level": null
@@ -1766,12 +1382,12 @@
    "round": "",
    "winner": {
     "name": "Kay Stumper",
-    "rank": 107,
+    "rank": 112,
     "age": 24
    },
    "loser": {
     "name": "Ivor Ban",
-    "rank": 91,
+    "rank": 94,
     "age": 23
    },
    "score": "3-2",
@@ -1796,7 +1412,7 @@
    },
    "loser": {
     "name": "Audrey Zarif",
-    "rank": 111,
+    "rank": 108,
     "age": 28
    },
    "score": "3-0",
@@ -1815,46 +1431,17 @@
    "level": null
   },
   {
-   "when": "2026-11-14T14:05:00Z",
-   "competition": "WTT Contender Istanbul 2026",
-   "round": "semi-final",
-   "winner": {
-    "name": "Fang Bo",
-    "rank": 160,
-    "age": 34
-   },
-   "loser": {
-    "name": "Ricardo Walther",
-    "rank": 143,
-    "age": 34
-   },
-   "score": "3-2",
-   "games": "6-11,8-11,11-6,11-5,11-1",
-   "url": "",
-   "labels": [
-    {
-     "label": "comeback",
-     "detail": "reverse sweep: 0-2 to 3-2"
-    },
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-12T15:50:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
    "winner": {
     "name": "Borgar Haug",
-    "rank": 151,
+    "rank": 109,
     "age": 23
    },
    "loser": {
     "name": "Tugay Yilmaz",
-    "rank": 496,
+    "rank": 405,
     "age": 25
    },
    "score": "3-0",
@@ -1874,12 +1461,12 @@
    "round": "",
    "winner": {
     "name": "Abdullah Yigenler",
-    "rank": 177,
+    "rank": 162,
     "age": 27
    },
    "loser": {
     "name": "Maksim Grebnev",
-    "rank": 275,
+    "rank": 240,
     "age": 24
    },
    "score": "3-1",
@@ -1903,12 +1490,12 @@
    "round": "",
    "winner": {
     "name": "Soma Ono",
-    "rank": 358,
+    "rank": 337,
     "age": 15
    },
    "loser": {
     "name": "Satoshi Aida",
-    "rank": 192,
+    "rank": 190,
     "age": 33
    },
    "score": "3-0",
