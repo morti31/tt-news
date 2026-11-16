@@ -250,9 +250,13 @@ function streamList(html) {
 
 async function stream(ctx, q) {
   // q: words that identify the event in WTT's stream titles, e.g. "Montpellier"
+  const all = streamList(await page(`${CHANNEL}/streams`, ctx, 60));
   const words = String(q || "").toLowerCase().split(/[\s,]+/).filter(Boolean);
-  const match = (v) => !words.length || words.every((w) => v.title.toLowerCase().includes(w));
-  const list = streamList(await page(`${CHANNEL}/streams`, ctx, 60)).filter(match);
+  const has = (ws) => (v) => !ws.length || ws.every((w) => v.title.toLowerCase().includes(w));
+  // WTT's stream titles name some events with the year ("Montpellier 2026") and others without ("WTT Star Contender Muscat"),
+  // so match with the year first and without it if nothing matches
+  let list = all.filter(has(words));
+  if (!list.length) list = all.filter(has(words.filter((w) => !/^\d{4}$/.test(w))));
   const live = list.filter((v) => v.live);
   if (live.length) return { status: "live", ...live[0], channel: "World Table Tennis", more: live.slice(1, 4) };
   const done = list.find((v) => !v.upcoming && !v.live);  // newest finished stream first, as the tab lists them
