@@ -101,7 +101,7 @@ def day(iso):
 
 def page(title, desc, path, body, active=""):
     nav = "".join(f'<a href="{BASE}{href}"{" aria-current=\"page\"" if k == active else ""}>{lab}</a>'
-                  for k, href, lab in (("home", "/", "Home"), ("rankings", "/defenders.html", "Defenders"),
+                  for k, href, lab in (("home", "/", "Home"), ("videos", "/videos.html", "Videos"), ("rankings", "/defenders.html", "Defenders"),
                                        ("calendar", "/calendar.html", "Calendar"), ("reading", "/reading.html", "Reading"),
                                        ("legends", "/legends.html", "Legends"), ("glossary", "/glossary.html", "Glossary")))
     return f"""<!doctype html>
@@ -373,12 +373,21 @@ def build():
         return f'<div class="ch-likely"><span class="ch-kick">{lab}</span>{body}</div>'
 
     def form(p):
+        """Last results and this year's record. Senior and club results first; youth events are merged into the form chips
+        (marked "y", outlined) and counted apart in the record. Returns (last senior rows, form string, senior record, youth record)."""
         rows = ms.get(p.get("ittf_id"), [])
-        last = rows[:10]
-        wl = "".join("W" if m["w"] == side else "L" for m, side in last)
-        yr = [(m, s) for m, s in rows if (m.get("d") or "")[:4] == today[:4]]
-        won = sum(1 for m, s in yr if m["w"] == s)
-        return last, wl, (won, len(yr) - won)
+        yrows = youth.get(p.get("ittf_id"), [])
+        both = sorted([(m, s_, False) for m, s_ in rows] + [(m, s_, True) for m, s_ in yrows], key=lambda t: t[0].get("d") or "", reverse=True)
+        wl = "".join(("W" if m["w"] == s_ else "L") + ("y" if y else "") for m, s_, y in both[:10])
+        rec = lambda rs: (sum(1 for m, s_ in rs if (m.get("d") or "")[:4] == today[:4] and m["w"] == s_),
+                          sum(1 for m, s_ in rs if (m.get("d") or "")[:4] == today[:4] and m["w"] != s_))
+        return rows[:10], wl, rec(rows), rec(yrows)
+
+    def recs(rec, yrec):
+        out = f"{rec[0]}-{rec[1]}" if sum(rec) or not sum(yrec) else ""
+        if sum(yrec):
+            out += f'<small class="ch-yrec" title="Youth events">{"+ " if out else ""}{yrec[0]}-{yrec[1]} youth</small>'
+        return out
 
     def res_row(m, side):
         won = m["w"] == side
@@ -391,8 +400,11 @@ def build():
                 f'<span class="ch-opp">{e(oname)}{f" <small>No {orr["rank"]}</small>" if orr else ""}</span>'
                 f'<span class="ch-ev">{e(where)}{", " + ROUNDS[m["r"]] if m.get("r") in ROUNDS else ""} · {day(m["d"])}</span></li>')
 
-    def chip(wl):
-        return "".join(f'<i class="{"w" if c == "W" else "l"}" title="{"Won" if c == "W" else "Lost"}">{c}</i>' for c in reversed(wl))
+    def chip(wl, n=None):
+        """Form chips, oldest first. wl is "W"/"L", each followed by "y" for a youth event (an outlined chip)."""
+        res = re.findall(r"[WL]y?", wl)[:n]
+        return "".join(f'<i class="{"w" if c[0] == "W" else "l"}{" y" if len(c) > 1 else ""}" title="{"Won" if c[0] == "W" else "Lost"}{", youth event" if len(c) > 1 else ""}">{c[0]}</i>'
+                       for c in reversed(res))
 
     def rank_of(p):
         return rk.get(p.get("ittf_id") or "")
@@ -466,22 +478,23 @@ def build():
         out = []
         for i, p in enumerate(rows, 1):
             r = rank_of(p)
-            _, wl, rec = form(p)
+            _, wl, rec, yrec = form(p)
             empty = not wl
             out.append(f'<tr><td class="ch-n">{i}</td><td class="ch-wr">{r["rank"]}{move(r)}</td>'
                        f'<td><a href="{plink(p)}">{flag(r.get("nat"))}{e(p["name"])}</a><span class="ch-sty">{tag(p.get("style"))}</span></td>'
                        f'<td class="ch-pts">{r.get("points", 0):,}</td>'
                        + (f'<td class="ch-frm" colspan="2"><span class="ch-none">No results on record {INFO}</span></td></tr>' if empty else
-                          f'<td class="ch-frm">{chip(wl[:5])}</td><td class="ch-rec">{rec[0]}-{rec[1]}</td></tr>'))
+                          f'<td class="ch-frm">{chip(wl, 5)}</td><td class="ch-rec">{recs(rec, yrec)}</td></tr>'))
         return rows, ("<table class=\"ch-table\"><thead><tr><th>#</th><th>World</th><th>Player</th><th>Points</th>"
-                      f"<th>Form {INFO}</th><th title=\"Singles won and lost in {today[:4]}\">{today[:4]}</th></tr></thead><tbody>{''.join(out)}</tbody></table>")
+                      f"<th>Form {INFO}</th><th title=\"Singles won and lost in {today[:4]}\">{today[:4]}</th></tr></thead><tbody>{''.join(out)}</tbody></table>"
+                      '<p class="ch-small ch-key"><i class="ch-ychip">W</i> Outlined chips are youth events, counted apart in the record.</p>')
 
     INFO = ('<details class="ch-info"><summary aria-label="Why some players have no results">i</summary><div>'
             '<b>Where form comes from.</b> Form (the last five results) and the year\'s record cover senior WTT and ITTF events and the '
-            'T.League and Bundesliga, the results Eleven keeps. A player can still be ranked, and climbing, with nothing here: young players '
-            'can earn senior ranking points at youth events (WTT Youth Contenders and Youth Star Contenders), listed separately on their profiles '
-            'from under-17 level up; under-15 events aren\'t covered. Others play mostly in national leagues and championships we don\'t yet have. '
-            'Their results appear here as soon as they play an event we follow.</div></details>')
+            'T.League and Bundesliga, the results Eleven keeps, plus WTT youth events from under-15 level up. Youth results are shown as '
+            '<i class="ch-ychip">W</i> outlined chips and counted separately in the record, because young players can earn senior ranking points '
+            'at youth events. A player can still be ranked with nothing here if they play mostly in national leagues and championships we '
+            'don\'t yet have. Their results appear as soon as they play an event we follow.</div></details>')
     wrows, wtab = table("W")
     mrows, mtab = table("M")
 
@@ -492,10 +505,10 @@ def build():
             return ""
         out = []
         for p in rows:
-            _, wl, rec = form(p)
+            _, wl, rec, yrec = form(p)
             cl = ", ".join(f"{c} ({lg})" if lg else c for c, lg in clubs.get(p["name"], []))
             out.append(f'<tr><td><a href="{plink(p)}">{e(p["name"])}</a><span class="ch-sty">{tag(p.get("style"))}</span></td><td class="ch-club">{e(cl) or "-"}</td>'
-                       + (f'<td class="ch-frm">{chip(wl[:5])}</td><td class="ch-rec">{rec[0]}-{rec[1]}</td>' if wl else f'<td class="ch-frm" colspan="2"><span class="ch-none">No results on record {INFO}</span></td>') + '</tr>')
+                       + (f'<td class="ch-frm">{chip(wl, 5)}</td><td class="ch-rec">{recs(rec, yrec)}</td>' if wl else f'<td class="ch-frm" colspan="2"><span class="ch-none">No results on record {INFO}</span></td>') + '</tr>')
         return (f'<section class="ch-sec ch-unr"><h3>Not in the world rankings, still playing in the top leagues</h3>'
                 f'<p class="ch-small">Defenders who don\'t play enough WTT events to hold a world ranking but play in the leagues Eleven follows.</p>'
                 f'<table class="ch-table"><thead><tr><th>Player</th><th>Club</th><th>Form</th><th>{today[:4]}</th></tr></thead><tbody>{"".join(out)}</tbody></table></section>')
@@ -523,7 +536,7 @@ def build():
     # ---- Player pages
     for p in players:
         r = rank_of(p)
-        last, wl, rec = form(p)
+        last, wl, rec, yrec = form(p)
         nx = nxt.get(p["name"], [])[:5]
         mine = capped([l for l in allinks if p["name"] in (l.get("players") or [])], 12)
         es = next((v for k, v in prof.items() if k == p["name"]), None)
@@ -542,7 +555,7 @@ def build():
 <section class="ch-phead"><div><p class="ch-kick">{tag(p.get("style"))}</p><h1>{flag(r.get("nat") if r else "")}{e(p["name"])}</h1>
 <p class="ch-lede">{e(p.get("note", ""))}</p></div>
 <dl class="ch-facts"><div><dt>World ranking</dt><dd>{f'No {r["rank"]}{move(r)}' if r else "Unranked"}</dd></div>
-<div><dt>Points</dt><dd>{f'{r["points"]:,}' if r else "-"}</dd></div><div><dt>{today[:4]} record</dt><dd>{rec[0]}-{rec[1]}</dd></div>
+<div><dt>Points</dt><dd>{f'{r["points"]:,}' if r else "-"}</dd></div><div><dt>{today[:4]} record</dt><dd>{recs(rec, yrec)}</dd></div>
 <div><dt>Last 10</dt><dd class="ch-frm">{chip(wl) or "-"}</dd></div>
 <div><dt>Age</dt><dd>{age_of(p) or "-"}</dd></div><div><dt>Club</dt><dd class="ch-fclub">{e(", ".join(c for c, _ in cl) or "-")}</dd></div></dl></section>
 <div class="ch-grid"><section class="ch-sec"><h2>Recent results</h2><ul class="ch-results">{"".join(res_row(m, s) for m, s in last) or "<li>No senior or club results on record.</li>"}</ul>
@@ -620,6 +633,28 @@ def build():
     open(os.path.join(OUT, "legends.html"), "w", encoding="utf-8").write(page(
         "Legends of defensive table tennis | The Chop", "The great choppers and defenders in table tennis history, from Richard Bergmann to Joo Se-hyuk.", "/legends.html", lbody, "legends"))
 
+    # ---- Videos: data/chop/videos.json (tools/chop_videos.py), newest first, 20 a page; click to play (youtube-nocookie)
+    VIDS = load("data/chop/videos.json", [])
+    vfeat = load("data/chop/video-sources.json", {}).get("players", [])
+    pbn = {p["name"]: p for p in players}
+    PER = 20
+    pages_ = [VIDS[i:i + PER] for i in range(0, len(VIDS), PER)] or [[]]
+    vurl = lambda n: "/videos.html" if n == 1 else f"/videos-{n}.html"
+    vurls = []
+    for n, chunk in enumerate(pages_, 1):
+        cards = "".join(
+            f'<li class="ch-vid"><button type="button" class="ch-yt" data-yt="{e(v["id"])}" aria-label="Play: {e(v["title"])}">'
+            f'<img src="https://i.ytimg.com/vi/{e(v["id"])}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="ch-play" aria-hidden="true"></span></button>'
+            f'<p class="ch-vid-t">{e(v["title"])}</p><p class="ch-vid-m"><time datetime="{e(v["date"])}">{day(v["date"])}</time> · {e(v.get("channel", "YouTube"))}'
+            + "".join(f' · <a href="{plink(pbn[x])}">{e(x)}</a>' for x in v.get("players", []) if x in pbn) + '</p></li>' for v in chunk)
+        nav_ = "".join(f'<a href="{BASE}{vurl(k)}"{" aria-current=\"page\"" if k == n else ""}>{k}</a>' for k in range(1, len(pages_) + 1)) if len(pages_) > 1 else ""
+        names_ = ", ".join(vfeat[:-1]) + (" and " + vfeat[-1] if len(vfeat) > 1 else "".join(vfeat))
+        vbody = f"""<section class="ch-head"><h1>Videos</h1><p class="ch-lede">Every video of {e(names_)} on World Table Tennis's YouTube channel, newest first. Updated through the day.</p></section>
+<ul class="ch-vids">{cards or "<li>No videos yet.</li>"}</ul>{f'<nav class="ch-pager" aria-label="Pages">{nav_}</nav>' if nav_ else ""}"""
+        open(os.path.join(OUT, vurl(n).lstrip("/")), "w", encoding="utf-8").write(page(
+            f'Videos{f" (page {n})" if n > 1 else ""} | The Chop', f"Videos of {names_}, newest first.", vurl(n), vbody, "videos"))
+        vurls.append(vurl(n))
+
     # ---- Glossary
     abody = f"""<section class="ch-head"><h1>Glossary</h1><p class="ch-lede">The terms used for defensive table tennis, and how The Chop works.</p></section>
 <section class="ch-sec" id="glossary"><h2>Terms</h2><dl class="ch-styles">{"".join(f"<div><dt>{e(t)}</dt><dd>{e(d)}</dd></div>" for t, d in GLOSSARY)}</dl></section>
@@ -658,7 +693,7 @@ def build():
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them.", "/", hbody, "home"))
 
-    urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html", "/glossary.html"] + [f'/defender/{slug(p["name"])}.html' for p in players]
+    urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html", "/glossary.html"] + vurls + [f'/defender/{slug(p["name"])}.html' for p in players]
     open(os.path.join(OUT, "chop-sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "</urlset>")
