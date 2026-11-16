@@ -70,7 +70,7 @@ Never call a result a shock when the numbers mislead: check whether the loser wa
 | edged | The match went to a deciding game | edges, squeezes past, a five-game thriller, a seven-game epic; "in a deciding game won 12-10" |
 | saved match points | Only when point-by-point data or a source says so; the scores alone cannot prove it | saves match points, wins from match point down, saves three match points |
 | 11-0 game | A game won 11-0 | "won a game 11-0", rare at this level and worth a line |
-| sudden death | A T.League game settled at 10-10 on its single deciding point (it has no deuce) | on the sudden-death point; never "deuce" in the T.League |
+| sudden death | A T.League game settled 11-10 on its single deciding point. The T.League has no deuce in most games, but deciding games can go to deuce (Ito beat Matsushima 12-10 in a decider), so check the score before saying "sudden death" | on the sudden-death point |
 
 ### Match labels: what the result means
 

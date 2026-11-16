@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T00:29Z",
+ "updated": "2026-11-16T00:38Z",
  "days": 4,
  "upsets": [
   {
@@ -17,24 +17,19 @@
     "age": 19
    },
    "score": "3-2",
-   "games": "11-7,6-11,9-11,11-5,11-10",
+   "games": "11-7,6-11,9-11,11-5,12-10",
    "url": "https://tleague.jp/schedule/detail.php?id=1354",
    "labels": [
     {
      "label": "edged",
-     "detail": "five-game thriller, decider 11-10"
-    },
-    {
-     "label": "sudden death",
-     "detail": "a game settled on the T.League's sudden-death point at 10-10"
+     "detail": "five-game thriller, decider 12-10"
     }
    ],
    "level": "shock",
    "angles": [
     "beat the world No 1",
     "winner is 16",
-    "five-game thriller, decider 11-10",
-    "a game settled on the T.League's sudden-death point at 10-10"
+    "five-game thriller, decider 12-10"
    ]
   },
   {
@@ -291,16 +286,12 @@
     "age": 19
    },
    "score": "3-2",
-   "games": "11-7,6-11,9-11,11-5,11-10",
+   "games": "11-7,6-11,9-11,11-5,12-10",
    "url": "https://tleague.jp/schedule/detail.php?id=1354",
    "labels": [
     {
      "label": "edged",
-     "detail": "five-game thriller, decider 11-10"
-    },
-    {
-     "label": "sudden death",
-     "detail": "a game settled on the T.League's sudden-death point at 10-10"
+     "detail": "five-game thriller, decider 12-10"
     }
    ],
    "level": "shock"
@@ -611,6 +602,35 @@
    "level": null
   },
   {
+   "when": "2026-11-14T05:11:00Z",
+   "competition": "T.League: Nippon Paint Mallets v Kyushu Karina",
+   "round": "",
+   "winner": {
+    "name": "Satsuki Odo",
+    "rank": 10,
+    "age": 22
+   },
+   "loser": {
+    "name": "Sara Ono",
+    "rank": 478,
+    "age": null
+   },
+   "score": "3-0",
+   "games": "11-5,11-5,11-8",
+   "url": "https://tleague.jp/schedule/detail.php?id=1355",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-12T09:20:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
@@ -830,6 +850,39 @@
     {
      "label": "scare",
      "detail": "No 22 pushed to a decider by No 94"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-14T05:11:00Z",
+   "competition": "T.League: Nippon Paint Mallets v Kyushu Karina",
+   "round": "",
+   "winner": {
+    "name": "Sakura Yokoi",
+    "rank": 23,
+    "age": 22
+   },
+   "loser": {
+    "name": "Kokomi Ishida",
+    "rank": 316,
+    "age": 14
+   },
+   "score": "3-0",
+   "games": "11-10,11-6,11-8",
+   "url": "https://tleague.jp/schedule/detail.php?id=1355",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "sudden death",
+     "detail": "a game settled on the T.League's sudden-death point at 10-10"
+    },
+    {
+     "label": "routine",
+     "detail": ""
     }
    ],
    "level": null
@@ -1229,6 +1282,43 @@
    "level": null
   },
   {
+   "when": "2026-11-15T05:10:00Z",
+   "competition": "T.League: Ryukyu Asteeda v Shizuoka Jade",
+   "round": "",
+   "winner": {
+    "name": "Maharu Yoshimura",
+    "rank": 45,
+    "age": 33
+   },
+   "loser": {
+    "name": "Akihiro Ito",
+    "rank": null,
+    "age": null
+   },
+   "score": "3-2",
+   "games": "10-11,10-11,11-8,11-10,11-9",
+   "url": "https://tleague.jp/schedule/detail.php?id=1357",
+   "labels": [
+    {
+     "label": "comeback",
+     "detail": "reverse sweep: 0-2 to 3-2"
+    },
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 11-9"
+    },
+    {
+     "label": "sudden death",
+     "detail": "a game settled on the T.League's sudden-death point at 10-10"
+    },
+    {
+     "label": "scare",
+     "detail": "No 45 pushed to a decider by No unranked"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-12T15:15:00Z",
    "competition": "WTT Contender Istanbul 2026",
    "round": "",
@@ -1578,6 +1668,31 @@
    "score": "3-2",
    "games": "12-10,14-16,11-4,9-11,11-8",
    "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-15T16:00:00Z",
+   "competition": "Bundesliga: 1. FC Saarbrücken-TT v TTC Zugbrücke Grenzau",
+   "round": "",
+   "winner": {
+    "name": "Alvaro Robles",
+    "rank": 64,
+    "age": 35
+   },
+   "loser": {
+    "name": "Martin Allegro",
+    "rank": 149,
+    "age": 30
+   },
+   "score": "3-2",
+   "games": "11-8,11-5,8-11,6-11,11-7",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/8/cee5a5c9-0567-4ffc-8969-68c781a190c2",
    "labels": [
     {
      "label": "edged",
@@ -1940,19 +2055,23 @@
    "competition": "T.League: Ryukyu Asteeda v Shizuoka Jade",
    "round": "",
    "winner": {
-    "name": "Sho Suzuki",
-    "rank": null,
-    "age": null
-   },
-   "loser": {
     "name": "Yuya Oshima",
     "rank": null,
     "age": null
    },
-   "score": "2-2",
-   "games": "11-9,7-11,11-6,10-11,8-8",
+   "loser": {
+    "name": "Sho Suzuki",
+    "rank": null,
+    "age": null
+   },
+   "score": "3-2",
+   "games": "9-11,11-7,6-11,11-10,11-9",
    "url": "https://tleague.jp/schedule/detail.php?id=1357",
    "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 11-9"
+    },
     {
      "label": "sudden death",
      "detail": "a game settled on the T.League's sudden-death point at 10-10"
@@ -1987,6 +2106,34 @@
   }
  ],
  "ties": [
+  {
+   "when": "2026-11-14T05:11:00Z",
+   "competition": "T.League",
+   "winner": "Nippon Paint Mallets",
+   "loser": "Kyushu Karina",
+   "score": "4-0",
+   "url": "https://tleague.jp/schedule/detail.php?id=1355",
+   "labels": [
+    {
+     "label": "team whitewash",
+     "detail": "4-0"
+    }
+   ]
+  },
+  {
+   "when": "2026-11-15T05:10:00Z",
+   "competition": "T.League",
+   "winner": "Ryukyu Asteeda",
+   "loser": "Shizuoka Jade",
+   "score": "4-0",
+   "url": "https://tleague.jp/schedule/detail.php?id=1357",
+   "labels": [
+    {
+     "label": "team whitewash",
+     "detail": "4-0"
+    }
+   ]
+  },
   {
    "when": "2026-11-13T17:00:00Z",
    "competition": "Bundesliga",
