@@ -23,7 +23,18 @@ OUT = os.path.join(ROOT, "defensive")
 BASE = "/defensive"          # becomes "" once the subdomain serves the folder at its root
 SITE = "https://eleventabletennis.com/defensive"
 ELEVEN = "https://eleventabletennis.com"
-STYLE = {"chopper": "Chopper", "defender": "Defensive all-rounder", "pimples": "Long-pimple defender"}
+STYLE = {"chopper": "Classical chopper", "modern": "Modern defender", "allround": "Defensive all-rounder"}
+STYLE_ABOUT = {"chopper": "defends from well back with heavy backspin and variation, attacking now and then",
+               "modern": "chops, but counter-attacks and plays topspin as a regular part of the game",
+               "allround": "defends closer to the table with blocks, pushes and long pimples, and disrupts rather than chops"}
+
+
+def tag(style, link=True):
+    lab = STYLE.get(style)
+    if not lab:
+        return ""
+    t = f'<span class="ch-style ch-style-{e(style)}">{e(lab)}</span>'
+    return f'<a class="ch-style-a" href="{BASE}/rankings.html#styles" title="{e(STYLE_ABOUT[style])}">{t}</a>' if link else t
 ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
 
 
@@ -52,7 +63,8 @@ def day(iso):
 def page(title, desc, path, body, active=""):
     nav = "".join(f'<a href="{BASE}{href}"{" aria-current=\"page\"" if k == active else ""}>{lab}</a>'
                   for k, href, lab in (("home", "/", "Home"), ("rankings", "/rankings.html", "Defenders"),
-                                       ("calendar", "/calendar.html", "Calendar"), ("reading", "/reading.html", "Reading")))
+                                       ("calendar", "/calendar.html", "Calendar"), ("reading", "/reading.html", "Reading"),
+                                       ("legends", "/legends.html", "Legends")))
     return f"""<!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">
@@ -104,6 +116,29 @@ def build():
                     ms[pid].append((m, side))
     for v in ms.values():
         v.sort(key=lambda t: t[0].get("d") or "", reverse=True)
+
+    # Titles: finals won at senior events, singles and doubles, from every season in the match database
+    KIND = {"MS": "men's singles", "WS": "women's singles", "MD": "men's doubles", "WD": "women's doubles", "XD": "mixed doubles"}
+    titles = {i: [] for i in ids}
+    for f in sorted(glob.glob(os.path.join(ROOT, "data", "matches", "[0-9]*.json"))):
+        for m in load(os.path.relpath(f, ROOT), []):
+            if m.get("r") != "FNL" or m.get("w") not in (0, 1) or m.get("k") not in KIND:
+                continue
+            evn = (E.get(m["e"]) or {}).get("name", "")
+            if re.search(r"youth|junior|cadet|U1\d|U2\d|hopes", evn, re.I):
+                continue
+            for pid in m["p"][m["w"]]:
+                if pid in titles:
+                    titles[pid].append(((m.get("d") or "")[:4], re.sub(r"\s+Presented by.*$", "", evn), KIND[m["k"]]))
+    # Clubs: every squad Eleven keeps that lists the player
+    clubs = {p["name"]: [] for p in players}
+    for sq in glob.glob(os.path.join(ROOT, "data", "clubs", "squads", "*.json")):
+        s_ = load(os.path.relpath(sq, ROOT), {})
+        for t in s_.get("teams", []):
+            for x in t.get("players", []):
+                n = {key(q["name"]): q["name"] for q in players}.get(key(x.get("name")))
+                if n:
+                    clubs[n].append((t["team"], (s_.get("source") or {}).get("name", "")))
 
     import names as names_mod
 
@@ -218,7 +253,24 @@ def build():
                 who = [p["name"] for p in players if p["name"] in txt]
                 eleven.append({"url": url, "title": a["title"], "source": "Eleven", "date": (a.get("published") or a.get("date", ""))[:10],
                                "summary": a.get("standfirst", ""), "players": who, "kind": "analysis" if a.get("category") == "Features" else "news", "eleven": True})
+    # Eleven is at most a quarter of what The Chop shows: its newest pieces up to a third of the outside links
+    eleven.sort(key=lambda l: l.get("date") or "", reverse=True)
+    eleven = eleven[:len(links) // 3]
     allinks = sorted(links + eleven, key=lambda l: l.get("date") or "", reverse=True)
+
+    def capped(rows, n):
+        """The first n rows with Eleven's pieces spread out: at most one in every four places (2nd, 6th, 10th...)."""
+        ext = [l for l in rows if not l.get("eleven")]
+        el = [l for l in rows if l.get("eleven")]
+        out = []
+        while len(out) < n and (ext or el):
+            if len(out) % 4 == 1 and el:
+                out.append(el.pop(0))
+            elif ext:
+                out.append(ext.pop(0))
+            else:
+                break
+        return out
 
     def link_li(l, show_players=True):
         who = [p for p in players if p["name"] in (l.get("players") or [])]
@@ -237,7 +289,7 @@ def build():
             r = rank_of(p)
             _, wl, rec = form(p)
             out.append(f'<tr><td class="ch-n">{i}</td><td class="ch-wr">{r["rank"]}{move(r)}</td>'
-                       f'<td><a href="{plink(p)}">{flag(r.get("nat"))}{e(p["name"])}</a><span class="ch-sty">{e(STYLE.get(p.get("style"), ""))}</span></td>'
+                       f'<td><a href="{plink(p)}">{flag(r.get("nat"))}{e(p["name"])}</a><span class="ch-sty">{tag(p.get("style"))}</span></td>'
                        f'<td class="ch-pts">{r.get("points", 0):,}</td><td class="ch-frm">{chip(wl[:5])}</td><td class="ch-rec">{rec[0]}-{rec[1]}</td></tr>')
         return rows, ("<table class=\"ch-table\"><thead><tr><th>#</th><th>World</th><th>Player</th><th>Points</th><th>Form</th>"
                       f"<th title=\"Singles won and lost in {today[:4]}\">{today[:4]}</th></tr></thead><tbody>{''.join(out)}</tbody></table>")
@@ -258,7 +310,8 @@ def build():
 <div class="ch-tabs" role="tablist"><button role="tab" aria-selected="true" data-t="W">Women ({len(wrows)})</button><button role="tab" aria-selected="false" data-t="M">Men ({len(mrows)})</button><button role="tab" aria-selected="false" data-t="D">Doubles</button></div>
 <div class="ch-panel" data-p="W">{wtab}</div><div class="ch-panel" data-p="M" hidden>{mtab}</div>
 <div class="ch-panel" data-p="D" hidden><p class="ch-small">Pairs in the doubles world rankings with at least one defender, the defender in bold.</p>{"".join(dd) or "<p>No ranked pairs.</p>"}</div>
-<p class="ch-small">Styles: <b>Chopper</b>, a defender built on backspin from behind the table; <b>Defensive all-rounder</b>, who mixes chopping with blocking and attacking; <b>Long-pimple defender</b>, who defends close to the table with long pimples. Rankings from the <a href="{ELEVEN}/rankings.html">ITTF world rankings on Eleven</a>.</p>"""
+<section class="ch-sec" id="styles"><h2>The styles</h2><dl class="ch-styles">{"".join(f"<div><dt>{tag(k, False)}</dt><dd>{e(v[0].upper() + v[1:])}.</dd></div>" for k, v in STYLE_ABOUT.items())}</dl>
+<p class="ch-small">Long pimples alone don't make a defender: players who attack with long pimples or anti-spin are not included. Rankings from the <a href="{ELEVEN}/rankings.html">ITTF world rankings on Eleven</a>.</p></section>"""
     open(os.path.join(OUT, "rankings.html"), "w", encoding="utf-8").write(page(
         "Defensive table tennis players: rankings and form | The Chop", "Every chopper and defender in the table tennis world top 1,000: rankings, form and records.", "/rankings.html", rbody, "rankings"))
 
@@ -267,12 +320,19 @@ def build():
         r = rank_of(p)
         last, wl, rec = form(p)
         nx = nxt.get(p["name"], [])[:5]
-        mine = [l for l in allinks if p["name"] in (l.get("players") or [])][:12]
+        mine = capped([l for l in allinks if p["name"] in (l.get("players") or [])], 12)
         es = next((v for k, v in prof.items() if k == p["name"]), None)
+        bio = load(f"data/players/{slug(p['name'])}.json", {}) if es else {}
+        hon = [(str(h.get("year", "")), f'{h.get("event", "")}', h.get("result", "")) for h in bio.get("honours") or []]
+        tl = sorted(set(titles.get(p.get("ittf_id"), [])), key=lambda t: (t[0], "singles" in t[2]), reverse=True)
+        hon_html = "".join(f'<li><span class="ch-yr">{e(y)}</span><span><b>{e(r)}</b> {e(ev)}</span></li>' for y, ev, r in sorted(hon, reverse=True))
+        hon_html += "".join(f'<li><span class="ch-yr">{e(y)}</span><span><b>Winner</b> {e(ev)}, {e(k_)}</span></li>' for y, ev, k_ in tl[:12])
+        cl = clubs.get(p["name"], []) or [(c.get("club"), c.get("league", "")) for c in bio.get("clubs") or [] if c.get("current")]
+        cl_html = "".join(f'<li><b>{e(c)}</b>{f" <span>{e(lg)}</span>" if lg else ""}</li>' for c, lg in cl)
         nxt_html = "".join(f'<li><time datetime="{e(x["when"])}">{day(x["when"]) if x.get("day") else dt.datetime.fromisoformat(x["when"].replace("Z", "+00:00")).strftime("%a %-d %b, %H:%M")} UK</time>'
                            f'<span>{e(x["what"])}{f" v <b>{e(x["v"])}</b>" if x.get("v") else ""}</span></li>' for x in nx)
         body = f"""<p class="ch-crumbs"><a href="{BASE}/rankings.html">The defenders</a> / {e(p["name"])}</p>
-<section class="ch-phead"><div><p class="ch-kick">{e(STYLE.get(p.get("style"), "Defender"))}</p><h1>{flag(r.get("nat") if r else "")}{e(p["name"])}</h1>
+<section class="ch-phead"><div><p class="ch-kick">{tag(p.get("style"))}</p><h1>{flag(r.get("nat") if r else "")}{e(p["name"])}</h1>
 <p class="ch-lede">{e(p.get("note", ""))}</p></div>
 <dl class="ch-facts"><div><dt>World ranking</dt><dd>{f'No {r["rank"]}{move(r)}' if r else "Unranked"}</dd></div>
 <div><dt>Points</dt><dd>{f'{r["points"]:,}' if r else "-"}</dd></div><div><dt>{today[:4]} record</dt><dd>{rec[0]}-{rec[1]}</dd></div>
@@ -280,6 +340,8 @@ def build():
 <div class="ch-grid"><section class="ch-sec"><h2>Recent results</h2><ul class="ch-results">{"".join(res_row(m, s) for m, s in last) or "<li>No results on record.</li>"}</ul></section>
 <section class="ch-sec"><h2>Next matches</h2><ul class="ch-next">{nxt_html or "<li>No match scheduled in Eleven's tournament draws or club fixtures yet.</li>"}</ul>
 {f'<p class="ch-small"><a href="{ELEVEN}{es}">Full profile on Eleven</a>: titles, head to heads and ranking history.</p>' if es else ""}</section></div>
+<div class="ch-grid"><section class="ch-sec"><h2>Honours and titles</h2>{f'<ul class="ch-hon">{hon_html}</ul>' if hon_html else "<p class='ch-small'>No major medals or senior titles on record yet.</p>"}</section>
+<section class="ch-sec"><h2>Club</h2>{f'<ul class="ch-clubs">{cl_html}</ul>' if cl_html else "<p class='ch-small'>No club in the leagues Eleven follows.</p>"}</section></div>
 <section class="ch-sec"><h2>Reading</h2>{f'<ul class="ch-links">{"".join(link_li(l, False) for l in mine)}</ul>' if mine else "<p>No stories linked yet.</p>"}</section>"""
         open(os.path.join(OUT, "players", slug(p["name"]) + ".html"), "w", encoding="utf-8").write(page(
             f'{p["name"]}: {STYLE.get(p.get("style"), "defender").lower()}, rankings and form | The Chop',
@@ -298,7 +360,7 @@ def build():
         if k in seen_c:
             continue
         seen_c.add(k)
-        rows.append(f'<li><time datetime="{e(w)}" data-ch-when>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a>'
+        rows.append(f'<li><time datetime="{e(w)}" data-ch-when>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {tag(p.get("style"), False)}'
                     f'<span>{e(x["what"])}{f" v {e(x["v"])}" if x.get("v") else ""}</span></li>')
     cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">The next matches for the defenders, from the tournament draws and the club leagues Eleven follows. Times are UK time.</p></section>
 <ul class="ch-cal">{"".join(rows) or "<li>Nothing scheduled yet.</li>"}</ul>"""
@@ -312,6 +374,21 @@ def build():
 <ul class="ch-links">{"".join(link_li(l).replace('<li class="ch-link">', f'<li class="ch-link" data-k="{e(l.get("kind", "news"))}">', 1) for l in allinks)}</ul>"""
     open(os.path.join(OUT, "reading.html"), "w", encoding="utf-8").write(page(
         "Reading: choppers and defensive table tennis | The Chop", "News, analysis and history of defensive table tennis and its choppers, from around the web.", "/reading.html", rbody, "reading"))
+
+    # ---- Legends: the great defenders of the past, from data/chop/legends.json
+    legends = load("data/chop/legends.json", [])
+    import components
+    lg_html = "".join(
+        f'<li class="ch-legend"><div class="ch-legend-h"><h2>{components.flag(l.get("nat"))}{e(l["name"])}</h2>{tag(l.get("style"))}</div>'
+        f'<p class="ch-era">{e(l.get("era", ""))}</p><p>{e(l["summary"])}</p>'
+        + "".join(f'<a class="ch-more" href="{e(u)}" rel="noopener" target="_blank">Source</a> ' for u in l.get("sources", [])[:1])
+        + (lambda mine: f'<ul class="ch-links">{"".join(link_li(x, False) for x in mine)}</ul>' if mine else "")(
+            [x for x in allinks if x.get("kind") == "history" and l["name"].split()[-1] in x["title"] + x.get("summary", "")][:3])
+        + "</li>" for l in legends)
+    lbody = f"""<section class="ch-head"><h1>Legends</h1><p class="ch-lede">The great defenders of the past, from Richard Bergmann's world titles in the 1930s to the choppers who kept the style alive in the modern game.</p></section>
+<ul class="ch-legends">{lg_html}</ul>"""
+    open(os.path.join(OUT, "legends.html"), "w", encoding="utf-8").write(page(
+        "Legends of defensive table tennis | The Chop", "The great choppers and defenders in table tennis history, from Richard Bergmann to Joo Se-hyuk.", "/legends.html", lbody, "legends"))
 
     # ---- Home
     week = [(w, p, x) for w, p, x in cal if w <= (now + dt.timedelta(days=7)).isoformat()]
@@ -329,11 +406,11 @@ def build():
     best.sort(key=lambda t: t[0])
     top_w = wrows[:5]
     top_m = mrows[:5]
-    mini = lambda rows: "".join(f'<li><span class="ch-wr">{rank_of(p)["rank"]}</span><a href="{plink(p)}">{e(p["name"])}</a>{move(rank_of(p))}</li>' for p in rows)
+    mini = lambda rows: "".join(f'<li><span class="ch-wr">{rank_of(p)["rank"]}</span><a href="{plink(p)}">{e(p["name"])}</a>{tag(p.get("style"), False)}</li>' for p in rows)
     hbody = f"""<section class="ch-hero"><h1>The game from the back of the court</h1>
 <p class="ch-lede">Choppers and defenders: who they are, how they are playing and the best writing about them. {len(wrows)} women and {len(mrows)} men in the world top 1,000 play this way.</p></section>
 <div class="ch-home">
-<section class="ch-sec ch-main"><h2>Latest reading</h2><ul class="ch-links">{"".join(link_li(l) for l in allinks[:10])}</ul><a class="ch-more" href="{BASE}/reading.html">All reading</a></section>
+<section class="ch-sec ch-main"><h2>Latest reading</h2><ul class="ch-links">{"".join(link_li(l) for l in capped(allinks, 12))}</ul><a class="ch-more" href="{BASE}/reading.html">All reading</a></section>
 <aside class="ch-side">
 <section class="ch-sec"><h2>Top defenders</h2><h3>Women</h3><ol class="ch-mini">{mini(top_w)}</ol><h3>Men</h3><ol class="ch-mini">{mini(top_m)}</ol><a class="ch-more" href="{BASE}/rankings.html">All the defenders</a></section>
 <section class="ch-sec"><h2>Best recent wins</h2><ul class="ch-results">{"".join(f'<li class="w"><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {res_row(m, s)[len("<li class=\"w\">"):-5]}</li>' for _, _, p, m, s in best[:5]) or "<li>No wins by defenders in the last 10 days.</li>"}</ul></section>
@@ -342,7 +419,7 @@ def build():
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them, by Eleven.", "/", hbody, "home"))
 
-    urls = ["/", "/rankings.html", "/calendar.html", "/reading.html"] + [f'/players/{slug(p["name"])}.html' for p in players]
+    urls = ["/", "/rankings.html", "/calendar.html", "/reading.html", "/legends.html"] + [f'/players/{slug(p["name"])}.html' for p in players]
     open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "</urlset>")
