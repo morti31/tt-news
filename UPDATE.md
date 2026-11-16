@@ -230,3 +230,17 @@ Under Major events, the homepage's "Club competitions" row shows each covered le
 ## The archive is permanent
 
 Eleven is a news site: every story it publishes stays published, forever. Never remove a story from `data/news.json`, including when it is upgraded to a full article (the article's `story_id` points at the card, and the card stays) or superseded by a later story (link the two instead). `data/story-ledger.json` keeps every story ever published, and the build puts back any that go missing (`tools/ledger.py`). The only exceptions are recorded in its `"retired"` list with the reason: thin early stories merged into a fuller article with a redirect, and the under-15 stories Tom asked to remove. Only Tom can retire a story.
+
+## The Chop (defensive.eleventabletennis.com)
+
+The Chop, by Eleven, is a separate site about defensive table tennis: choppers, defensive all-rounders and long-pimple defenders. It is built by `tools/build_chop.py` on every build into `/defensive/` and is served at eleventabletennis.com/defensive/ until the subdomain is set up. It never publishes stories of its own.
+
+- **The defenders** are in `data/chop/players.json`. Only Tom approves who is on it: a new name goes in with `"status": "draft"` and is listed in the run's closing message for him; it becomes `"approved"` only when he says so. Style: `chopper`, `defender` (defensive all-rounder) or `pimples` (long-pimple defender). Check style against two sources (tabletennis-reference.com's player style, a federation or club profile, match video descriptions); never WTT's own style field.
+- **Rankings, form and fixtures** build themselves from Eleven's data. Nothing to do.
+- **Reading** (`data/chop/links.json`): in every news run, look in the digest for lines labelled `chop-` and for any story naming a defender on the list, and add the good ones: stories about defenders or defensive play (news, analysis, history, video), from any language, each with `url`, `title` (translated into English with "(in Japanese)" etc. when not in English), `source`, `date` (only when the page shows it), `kind`, `players` (names exactly as on the list) and a one-sentence `summary` in our own words, never copied. Eleven's own pieces about defenders are found and added by the build, marked "Eleven"; don't add them by hand. Skip betting sites, forums and anything behind a paywall.
+- **Never** write news for The Chop. If a defender story is big, it is an Eleven story, and The Chop links to it.
+
+### Setting up the subdomain (for Tom, in Cloudflare)
+
+1. Workers & Pages > the `tt-news` Worker > Settings > Domains & Routes > Add > Custom domain: `defensive.eleventabletennis.com`. Cloudflare creates the DNS record and certificate.
+2. Tell Claude when it's done: the worker then needs a few lines to send requests for that hostname to the `/defensive/` folder, and `BASE`/`SITE` in `tools/build_chop.py` change to the root of the subdomain, with redirects from the old /defensive/ addresses.

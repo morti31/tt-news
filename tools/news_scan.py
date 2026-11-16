@@ -46,6 +46,13 @@ GN = [
     ("fr", "tennis de table Lebrun when:3d", "hl=fr&gl=FR&ceid=FR:fr"),
     ("es", "tenis de mesa when:2d", "hl=es&gl=ES&ceid=ES:es"),
     ("pt", "tênis de mesa Calderano when:3d", "hl=pt-BR&gl=BR&ceid=BR:pt-419"),
+    # The Chop (defensive.eleventabletennis.com): choppers and defenders, a week back (see UPDATE.md, "The Chop")
+    ("chop-en", "table tennis chopper OR \"defensive player\" OR \"defensive style\" when:7d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("chop-en", "\"Hitomi Sato\" OR \"Honoka Hashimoto\" OR \"Han Ying\" table tennis when:7d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("chop-ja", "カットマン 卓球 when:7d", "hl=ja&gl=JP&ceid=JP:ja"),
+    ("chop-zh", "削球 乒乓球 when:7d", "hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
+    ("chop-de", "Abwehrspieler OR Abwehrspielerin Tischtennis when:7d", "hl=de&gl=DE&ceid=DE:de"),
+    ("chop-ko", "수비형 탁구 when:7d", "hl=ko&gl=KR&ceid=KR:ko"),
     # site-limited searches for outlets without a usable feed
     ("de", "site:tischtennis.de when:3d", "hl=de&gl=DE&ceid=DE:de"),
     ("de", "site:mytischtennis.de when:3d", "hl=de&gl=DE&ceid=DE:de"),
