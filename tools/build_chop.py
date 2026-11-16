@@ -645,7 +645,7 @@ def build():
         cards = "".join(
             f'<li class="ch-vid"><button type="button" class="ch-yt" data-yt="{e(v["id"])}" aria-label="Play: {e(v["title"])}">'
             f'<img src="https://i.ytimg.com/vi/{e(v["id"])}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="ch-play" aria-hidden="true"></span></button>'
-            f'<p class="ch-vid-t">{e(v["title"])}</p><p class="ch-vid-m"><time datetime="{e(v["date"])}">{day(v["date"])}</time> · {e(v.get("channel", "YouTube"))}'
+            f'<p class="ch-vid-t">{e(v["title"])}</p><p class="ch-vid-m"><time datetime="{e(v["date"][:7] if v.get("approx") else v["date"])}">{dt.date.fromisoformat(v["date"][:10]).strftime("%b %Y") if v.get("approx") else day(v["date"])}</time> · {e(v.get("channel", "YouTube"))}'
             + "".join(f' · <a href="{plink(pbn[x])}">{e(x)}</a>' for x in v.get("players", []) if x in pbn) + '</p></li>' for v in chunk)
         nav_ = "".join(f'<a href="{BASE}{vurl(k)}"{" aria-current=\"page\"" if k == n else ""}>{k}</a>' for k in range(1, len(pages_) + 1)) if len(pages_) > 1 else ""
         names_ = ", ".join(vfeat[:-1]) + (" and " + vfeat[-1] if len(vfeat) > 1 else "".join(vfeat))

@@ -6,7 +6,7 @@ Each run reads every channel's feed (the latest 15 uploads, with exact dates) an
 (older videos too); a video found by search gets its publish date from its watch page once.
 Runs from .github/workflows/chop-videos.yml; Cloudflare's build turns the archive into /defensive/videos.html.
 """
-import json, os, re, time, html, urllib.request, urllib.parse
+import json, os, re, time, datetime as dt, html, urllib.request, urllib.parse
 import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -49,8 +49,22 @@ def search(handle, q):
             title = json.loads(f'"{m[2]}"')
         except Exception:
             title = m[2]
-        out.append({"id": m[1], "title": title})
+        chunk = t[m.start():m.start() + 20000].split('"videoRenderer":{', 2)[1] if t.count('"videoRenderer":{', m.start()) else ""
+        rel = re.search(r'"publishedTimeText":\{"simpleText":"([^"]*)"', chunk)
+        out.append({"id": m[1], "title": title, "ago": rel[1] if rel else ""})
     return out
+
+
+UNIT = {"second": 1 / 86400, "minute": 1 / 1440, "hour": 1 / 24, "day": 1, "week": 7, "wk": 7, "month": 30.4, "mo": 30.4, "year": 365.25, "yr": 365.25}
+
+
+def from_ago(ago):
+    """'3 days ago', '8 mo ago', 'Streamed 1 year ago' -> an approximate date (YouTube search shows no exact one)."""
+    m = re.search(r"(\d+)\s*(second|minute|hour|day|week|wk|month|mo|year|yr)", ago or "")
+    if not m:
+        return None
+    d = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=int(m[1]) * UNIT[m[2]])
+    return d.strftime("%Y-%m-%dT%H:%M:%S")
 
 
 def published(vid):
@@ -66,6 +80,7 @@ def main():
     have = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else []
     by_id = {v["id"]: v for v in have}
     added = 0
+    tries = 12   # watch pages for exact dates: a few a run, YouTube answers 429 to more
     for ch in cfg["channels"]:
         found = {}
         try:
@@ -85,19 +100,33 @@ def main():
             if not ps:
                 continue
             if vid in by_id:
-                by_id[vid]["players"] = sorted(set(by_id[vid].get("players", [])) | set(ps))
+                x = by_id[vid]
+                x["players"] = sorted(set(x.get("players", [])) | set(ps))
+                if x.get("approx") and v.get("date"):     # the feed has the exact date
+                    x["date"] = v["date"]; x.pop("approx", None)
                 continue
-            d = v.get("date")
+            d, approx = v.get("date"), False
             if not d:
-                try:
-                    d = published(vid)
-                except Exception as err:
-                    print("date", vid, err)
-                time.sleep(1)
+                d, approx = from_ago(v.get("ago")), True
             if not d:
                 continue
             by_id[vid] = {"id": vid, "title": html.unescape(v["title"]), "channel": ch["name"], "date": d, "players": ps}
+            if approx:
+                by_id[vid]["approx"] = True
             added += 1
+    # Exact dates for search finds, a few a run
+    for x in by_id.values():
+        if x.get("approx") and tries > 0:
+            tries -= 1
+            try:
+                d = published(x["id"])
+            except Exception as err:
+                print("date", x["id"], err)
+                tries = 0
+                continue
+            if d:
+                x["date"] = d; x.pop("approx", None)
+            time.sleep(4)
     allv = sorted(by_id.values(), key=lambda v: v["date"], reverse=True)
     json.dump(allv, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     open(OUT, "a").write("\n")
