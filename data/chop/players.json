@@ -9,40 +9,77 @@
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut",
    "https://butterflyonline.com/united-states-smash-hitomi-sato-with-big-upset-in-la/"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Two-sided defense with FH counter loops",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "第一位闯进WTT大满贯赛决赛的削球手 (the first chopper to reach a WTT Grand Smash final)",
+    "source": "Xinhua, 13 October 2026",
+    "url": "https://www.xinhuanet.com/20261013/b7439d8d90d84de9a6c59d3c936b6f87/c.html"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Honoka Hashimoto",
   "ittf_id": "133000",
   "gender": "W",
-  "style": "modern",
+  "style": "chopper",
   "note": "Japanese chopper who won both her matches against China in the 2026 Asian Championships team final.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Defender with some surprising FH attacks",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Han Ying",
   "ittf_id": "118762",
   "gender": "W",
-  "style": "chopper",
+  "style": "modern",
   "note": "Germany's Shenyang-born chopper, an Olympic team silver medallist in 2016 and still in the top 20 in her forties.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Modern defense",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Linda Bergstrom",
   "ittf_id": "114905",
   "gender": "W",
-  "style": "chopper",
+  "style": "modern",
   "note": "Sweden's chopper, a regular in the European top tier.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Attacking with FH and chopping with BH",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Li Jie",
@@ -53,7 +90,15 @@
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Two-sided defender with chops who attacks two-sided when the situation allows.",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Asel Erkebaeva",
@@ -64,40 +109,66 @@
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [],
+  "subtype_confirmed": false
  },
  {
   "name": "Wang Yang",
   "ittf_id": "112735",
   "gender": "M",
-  "style": "chopper",
+  "style": "modern",
   "note": "Slovakia's chopper, one of very few defenders in the men's top 100.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Consequently chops with the BH and attacks with the FH",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Kang Dongsoo",
   "ittf_id": "120845",
   "gender": "M",
-  "style": "chopper",
+  "style": "modern",
   "note": "South Korean chopper who reached the WTT Contender Istanbul final in November 2026.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Modern defense (Joo Sae-hyuk style)",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Panagiotis Gionis",
   "ittf_id": "103107",
   "gender": "M",
-  "style": "chopper",
+  "style": "modern",
   "note": "Greece's veteran chopper, a European fixture for two decades.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "BH chopping, FH lifting and looping",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Satoshi Aida",
@@ -108,7 +179,9 @@
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [],
+  "subtype_confirmed": false
  },
  {
   "name": "Sora Okada",
@@ -119,18 +192,28 @@
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [],
+  "subtype_confirmed": false
  },
  {
   "name": "Yuto Muramatsu",
   "ittf_id": "115439",
   "gender": "M",
-  "style": "chopper",
+  "style": "modern",
   "note": "Japanese chopper.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Consequently chops with the BH and attacks with the FH",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Hisa Uriu",
@@ -141,7 +224,9 @@
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
-  ]
+  ],
+  "wording": [],
+  "subtype_confirmed": false
  },
  {
   "name": "Tomas Polansky",
@@ -154,7 +239,9 @@
    "https://tabletennis-reference.com/player/search/flag_cut",
    "https://tabletennis-reference.com/player/detail/285",
    "https://www.ettu.org/?p=25449"
-  ]
+  ],
+  "wording": [],
+  "subtype_confirmed": false
  },
  {
   "name": "Li Tianyang",
@@ -165,7 +252,25 @@
   "status": "draft",
   "sources": [
    "https://www.news.cn/sports/20261026/68f0a3e7bb874e00b6f36587b732deef/c.html"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Modern defense",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "現代の男子卓球には希少なカットマン ... 従来のカットマンとは異なる、\"超\"攻撃型 (a chopper, rare in the modern men's game ... unlike the traditional chopper, 'ultra' attacking)",
+    "source": "TV Tokyo, 11 November 2026, analysis by Yuto Muramatsu",
+    "url": "https://www.tv-tokyo.co.jp/tabletennis/news/2026/11/042911.html"
+   },
+   {
+    "text": "进攻型削球 (attacking chopping)",
+    "source": "Xinhua, 26 October 2026",
+    "url": "https://www.news.cn/sports/20261026/68f0a3e7bb874e00b6f36587b732deef/c.html"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Zhu Sibing",
@@ -177,7 +282,20 @@
   "sources": [
    "https://www.news.cn/sports/20261026/68f0a3e7bb874e00b6f36587b732deef/c.html",
    "https://sanweisport.com/en/wtt-china-grand-smash-sun-yingsha-dominates3-0-sweep-over-defensive-teammate-to-reach-womens-singles-round-of-16/"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Defender",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "中国选手朱思冰 ... 削球手 (Chinese chopper Zhu Sibing)",
+    "source": "Xinhua, 13 October 2026",
+    "url": "https://www.xinhuanet.com/20261013/b7439d8d90d84de9a6c59d3c936b6f87/c.html"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Yang Yiyun",
@@ -188,7 +306,20 @@
   "status": "draft",
   "sources": [
    "https://sanweisport.com/en/wtt-contender-miwa-harimoto-breaks-through-chinese-defense-with-a-dominant-3-0-victory-joins-her-brother-in-the-round-of-16/"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "Two-sided defender with some FH attacks",
+    "source": "Martin Spin, defensive and special styles ranking, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "one of the few chopper-style defenders in the Chinese national team",
+    "source": "Sanwei Sport, 27 June 2025",
+    "url": "https://sanweisport.com/en/wtt-contender-miwa-harimoto-breaks-through-chinese-defense-with-a-dominant-3-0-victory-joins-her-brother-in-the-round-of-16/"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Tan Zhao Yun",
@@ -199,6 +330,176 @@
   "status": "draft",
   "sources": [
    "https://news.smu.edu.sg/sites/news.smu.edu.sg/files/smu/news_room/20251015_ST_pA14_Tan%20stars%20as%20S%E2%80%99pore%20women%20win%20Asian%20team%20bronze.pdf"
-  ]
+  ],
+  "wording": [
+   {
+    "text": "the chopper stunned world No. 44 Manika Batra 3-1",
+    "source": "The Straits Times, October 2025",
+    "url": "https://computing.smu.edu.sg/news/2025/oct/25/tan-stars-spore-women-win-asian-team-bronze"
+   }
+  ],
+  "subtype_confirmed": false
+ },
+ {
+  "name": "Sun Yang",
+  "ittf_id": "203029",
+  "gender": "M",
+  "style": "modern",
+  "note": "Chinese chopper who chops with the backhand and attacks with the forehand, a world youth team champion in 2024.",
+  "status": "draft",
+  "sources": [
+   "https://www.martinspin.ch/world-ranking",
+   "https://ttsensei.com/proplayers/sun-yang"
+  ],
+  "wording": [
+   {
+    "text": "Consequently chops with the BH and attacks with the FH",
+    "source": "Martin Spin, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "a right-handed shakehand chopper",
+    "source": "TTSensei",
+    "url": "https://ttsensei.com/proplayers/sun-yang"
+   }
+  ],
+  "subtype_confirmed": true
+ },
+ {
+  "name": "Alexia Nodin",
+  "ittf_id": "201083",
+  "gender": "W",
+  "style": "chopper",
+  "note": "France's young defender, a European Under-21 medallist, who describes herself as a defender with long pimples.",
+  "status": "draft",
+  "sources": [
+   "https://www.fftt.com/alexia-nodin/",
+   "https://www.ettu.org/nodin-stuns-defending-champion-hursey-womens-singles-medal-winers-are-confirmed/",
+   "https://www.laura-tt.fr/wp-content/uploads/2023/04/Alexia-Nodin.pdf",
+   "https://www.martinspin.ch/world-ranking"
+  ],
+  "wording": [
+   {
+    "text": "Style de jeu : Défensive",
+    "source": "French Table Tennis Federation",
+    "url": "https://www.fftt.com/alexia-nodin/"
+   },
+   {
+    "text": "NODIN's defensive style caused problems for HURSEY",
+    "source": "ETTU",
+    "url": "https://www.ettu.org/nodin-stuns-defending-champion-hursey-womens-singles-medal-winers-are-confirmed/"
+   },
+   {
+    "text": "Je suis défenseuse avec un picot long. Je n'attaque pas beaucoup (I am a defender with long pimples. I don't attack much)",
+    "source": "Interview, Laura TT",
+    "url": "https://www.laura-tt.fr/wp-content/uploads/2023/04/Alexia-Nodin.pdf"
+   },
+   {
+    "text": "Two-sided defender with chops who attacks with IN on FH when the situation allows",
+    "source": "Martin Spin, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": true
+ },
+ {
+  "name": "Aikaterini Toliou",
+  "ittf_id": "115850",
+  "gender": "W",
+  "style": "modern",
+  "note": "Greek defender with inverted rubber on the forehand and long pimples on the backhand.",
+  "status": "draft",
+  "sources": [
+   "https://www.martinspin.ch/world-ranking",
+   "https://tabletennis.reviews/players/aikaterini-toliou"
+  ],
+  "wording": [
+   {
+    "text": "Right-handed modern defender using inverted rubber on the forehand and long pips on the backhand",
+    "source": "Martin Spin, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "Style: Classical Defender",
+    "source": "TT Reviews",
+    "url": "https://tabletennis.reviews/players/aikaterini-toliou"
+   }
+  ],
+  "subtype_confirmed": false
+ },
+ {
+  "name": "Yuka Kaneyoshi",
+  "ittf_id": "210921",
+  "gender": "W",
+  "style": "modern",
+  "note": "Japanese university student and chopper who broke into the world top 100 in 2026.",
+  "status": "draft",
+  "sources": [
+   "https://www.martinspin.ch/world-ranking",
+   "https://spread-sports.jp/archives/381204"
+  ],
+  "wording": [
+   {
+    "text": "Modern defence",
+    "source": "Martin Spin, 10 November 2026",
+    "url": "https://www.martinspin.ch/world-ranking"
+   },
+   {
+    "text": "今後の活躍が期待されるカットマン (a chopper to watch)",
+    "source": "SPREAD, 24 March 2026",
+    "url": "https://spread-sports.jp/archives/381204"
+   }
+  ],
+  "subtype_confirmed": true
+ },
+ {
+  "name": "Zhiying Zeng",
+  "ittf_id": "205401",
+  "gender": "W",
+  "style": "allround",
+  "note": "Chile's Chinese-born veteran, who made her Olympic debut at 58 in Paris and confuses attackers by turning her bat.",
+  "status": "draft",
+  "sources": [
+   "https://www.theguardian.com/sport/article/2024/jul/10/i-play-with-happiness-the-table-tennis-star-making-her-olympic-debut-at-58",
+   "https://ttsensei.com/proplayers/zeng-zhiying"
+  ],
+  "wording": [
+   {
+    "text": "Zeng's game is defensive; she responds to attacks with different 'effects'",
+    "source": "The Guardian, 10 July 2024",
+    "url": "https://www.theguardian.com/sport/article/2024/jul/10/i-play-with-happiness-the-table-tennis-star-making-her-olympic-debut-at-58"
+   },
+   {
+    "text": "Zeng is a defensive player",
+    "source": "TTSensei",
+    "url": "https://ttsensei.com/proplayers/zeng-zhiying"
+   }
+  ],
+  "subtype_confirmed": false
+ },
+ {
+  "name": "Ivana Malobabic",
+  "ittf_id": "105779",
+  "gender": "W",
+  "style": "allround",
+  "note": "Croatian defender with long pimples on the backhand who attacks when the ball sits up.",
+  "status": "draft",
+  "sources": [
+   "https://www.martinspin.ch/female/ivana-malobabic-cro-in-lp",
+   "https://www.martinspin.ch/world-ranking"
+  ],
+  "wording": [
+   {
+    "text": "classic defense with attacks on higher balls",
+    "source": "Martin Spin player profile",
+    "url": "https://www.martinspin.ch/female/ivana-malobabic-cro-in-lp"
+   },
+   {
+    "text": "FH attacking with disruptive long pips playing on BH",
+    "source": "Martin Spin, 10 November 2026 ranking (a different description on the same site)",
+    "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": false
  }
 ]

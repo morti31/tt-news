@@ -121,3 +121,6 @@ td.ch-frm { white-space: nowrap; }
 .ch-legend h2 { font-size: 24px; margin: 0; } .ch-legend h2 .fi { margin-right: 8px; border-radius: 2px; }
 .ch-era { font: 600 13px var(--ui); color: var(--muted); margin: 6px 0 0; }
 .ch-legend .ch-links { margin-top: 8px; } .ch-legend .ch-link { padding: 10px 0; } .ch-legend .ch-link-t { font-size: 16px; }
+.ch-quotes { list-style: none; margin: 0; padding: 0; }
+.ch-quotes li { padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+.ch-quotes q { font-style: italic; } .ch-quotes a { color: var(--chop); font-weight: 600; font-size: 13px; margin-left: 6px; }
