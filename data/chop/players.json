@@ -105,12 +105,18 @@
   "ittf_id": "146301",
   "gender": "W",
   "style": "chopper",
-  "note": "Uzbek chopper.",
+  "note": "Uzbek chopper. Only one source so far describes her style.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
   ],
-  "wording": [],
+  "wording": [
+   {
+    "text": "Style: Cut type",
+    "source": "Tabletennis Reference",
+    "url": "https://tabletennis-reference.com/player/search/flag_cut"
+   }
+  ],
   "subtype_confirmed": false
  },
  {
@@ -174,14 +180,25 @@
   "name": "Satoshi Aida",
   "ittf_id": "132632",
   "gender": "M",
-  "style": "chopper",
-  "note": "Japanese chopper who plays in the T.League.",
+  "style": "modern",
+  "note": "Japanese chopper with inverted rubber on both sides, known for attacking far more than most defenders.",
   "status": "draft",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
   ],
-  "wording": [],
-  "subtype_confirmed": false
+  "wording": [
+   {
+    "text": "戦型：右シェークカット型 ... カットマンらしくない速攻戦術で戦う唯一無二のプレースタイル (right-handed shakehand chopper ... a one-of-a-kind style built on fast attacks unlike a typical chopper)",
+    "source": "T.League player profile",
+    "url": "https://tleague.jp/player/detail.php?player=10076&year=2021"
+   },
+   {
+    "text": "裏裏カットマンという異色のプレースタイル (an unusual chopper with inverted rubber on both sides)",
+    "source": "Rallys",
+    "url": "https://rallys.online/forplayers/player/aida-satoshi/"
+   }
+  ],
+  "subtype_confirmed": true
  },
  {
   "name": "Sora Okada",
@@ -189,12 +206,19 @@
   "gender": "M",
   "style": "chopper",
   "note": "Japanese chopper.",
-  "status": "draft",
+  "status": "held",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
   ],
-  "wording": [],
-  "subtype_confirmed": false
+  "wording": [
+   {
+    "text": "戦型 右シェーク守備型 (right-handed shakehand defender)",
+    "source": "VICTAS",
+    "url": "https://www.victas.com/advisory/content55.html"
+   }
+  ],
+  "subtype_confirmed": false,
+  "held": "under 16 (born 2012 / 2011): Eleven's age rule; needs Tom's decision"
  },
  {
   "name": "Yuto Muramatsu",
@@ -221,27 +245,24 @@
   "gender": "W",
   "style": "chopper",
   "note": "Japanese chopper.",
-  "status": "draft",
+  "status": "held",
   "sources": [
    "https://tabletennis-reference.com/player/search/flag_cut"
   ],
-  "wording": [],
-  "subtype_confirmed": false
- },
- {
-  "name": "Tomas Polansky",
-  "ittf_id": "116798",
-  "gender": "M",
-  "style": "chopper",
-  "note": "Czech chopper.",
-  "status": "draft",
-  "sources": [
-   "https://tabletennis-reference.com/player/search/flag_cut",
-   "https://tabletennis-reference.com/player/detail/285",
-   "https://www.ettu.org/?p=25449"
+  "wording": [
+   {
+    "text": "戦型：右シェークカット型 (right-handed shakehand chopper)",
+    "source": "T.League player profile",
+    "url": "https://tleague.jp/player/detail.php?player=30166&year=2025"
+   },
+   {
+    "text": "日本を担う次世代のカットマン (a next-generation chopper for Japan)",
+    "source": "VICTAS",
+    "url": "https://www.victas.com/news/article21.html"
+   }
   ],
-  "wording": [],
-  "subtype_confirmed": false
+  "subtype_confirmed": false,
+  "held": "under 16 (born 2012 / 2011): Eleven's age rule; needs Tom's decision"
  },
  {
   "name": "Li Tianyang",
@@ -333,9 +354,14 @@
   ],
   "wording": [
    {
-    "text": "the chopper stunned world No. 44 Manika Batra 3-1",
-    "source": "The Straits Times, October 2025",
-    "url": "https://computing.smu.edu.sg/news/2025/oct/25/tan-stars-spore-women-win-asian-team-bronze"
+    "text": "The world No. 166 chopper defeated higher-ranked players, showcasing her defensive mastery",
+    "source": "The Straits Times",
+    "url": "https://www.straitstimes.com/sport/tan-zhao-yun-shines-as-spore-women-win-bronze-at-asian-table-tennis-team-cships"
+   },
+   {
+    "text": "Then I switched to defensive, because my attacking was too slow. I decided to try defensive style of play.",
+    "source": "Rhine-Ruhr 2025 Games, interview",
+    "url": "https://rhineruhr2025.com/news/table-tennis-the-rise-of-subtle-style-and-the-cerebral-art-of-defending/3lIhAFFfVig9vtHOgKBsdr"
    }
   ],
   "subtype_confirmed": false
@@ -498,6 +524,31 @@
     "text": "FH attacking with disruptive long pips playing on BH",
     "source": "Martin Spin, 10 November 2026 ranking (a different description on the same site)",
     "url": "https://www.martinspin.ch/world-ranking"
+   }
+  ],
+  "subtype_confirmed": false
+ },
+ {
+  "name": "Zhu Ziyu",
+  "ittf_id": "202747",
+  "gender": "W",
+  "style": "chopper",
+  "note": "Young Chinese chopper, born in 2006, who reached the quarter-finals of WTT Contender Taiyuan in 2026.",
+  "status": "draft",
+  "sources": [
+   "https://sports.sina.cn/2026-05-09/detail-inhxhuvc6800287.d.html",
+   "https://ttsensei.com/proplayers/zhu-ziyu"
+  ],
+  "wording": [
+   {
+    "text": "国乒削球小将朱梓予 (China's young chopper Zhu Ziyu)",
+    "source": "Sina Sports, 9 May 2026",
+    "url": "https://sports.sina.cn/2026-05-09/detail-inhxhuvc6800287.d.html"
+   },
+   {
+    "text": "known as 'the chopper' for her defensive playing style",
+    "source": "TTSensei",
+    "url": "https://ttsensei.com/proplayers/zhu-ziyu"
    }
   ],
   "subtype_confirmed": false
