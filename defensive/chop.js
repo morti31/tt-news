@@ -33,3 +33,16 @@
   });
   dlg.addEventListener("click", (ev) => { if (ev.target === dlg) dlg.close(); });   // click outside closes
 })();
+
+// Videos: a thumbnail until clicked, then the YouTube player (no-cookie domain)
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest(".ch-yt");
+  if (!b) return;
+  const f = document.createElement("iframe");
+  f.src = "https://www.youtube-nocookie.com/embed/" + b.dataset.yt + "?autoplay=1&rel=0";
+  f.title = b.getAttribute("aria-label") || "Video";
+  f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+  f.allowFullscreen = true;
+  f.className = "ch-ytf";
+  b.replaceWith(f);
+});

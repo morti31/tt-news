@@ -178,3 +178,23 @@ button.ch-style:hover { filter: brightness(.95); text-decoration: underline; }
 
 /* Home on mobile: rankings and what's coming up before the reading */
 @media (max-width: 820px) { .ch-home .ch-side { order: -1; } }
+
+/* Youth results in form chips: outlined */
+.ch-frm i.y { background: transparent; border: 2px solid; box-sizing: border-box; }
+.ch-frm i.w.y { color: var(--win); border-color: var(--win); } .ch-frm i.l.y { color: var(--loss); border-color: var(--loss); }
+.ch-ychip { display: inline-grid; place-items: center; width: 18px; height: 18px; border: 2px solid var(--win); color: var(--win); border-radius: 4px; font: 700 10px var(--ui); font-style: normal; box-sizing: border-box; vertical-align: -3px; }
+.ch-yrec { display: block; font-size: 11px; color: var(--muted, #666); white-space: nowrap; }
+.ch-key { margin-top: 8px; }
+
+/* Videos */
+.ch-vids { list-style: none; padding: 0; margin: 0 0 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px 24px; }
+.ch-yt, .ch-ytf { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; border-radius: 8px; overflow: hidden; background: #000; cursor: pointer; }
+.ch-yt img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ch-play { position: absolute; inset: 50% auto auto 50%; width: 60px; height: 42px; margin: -21px 0 0 -30px; border-radius: 10px; background: rgba(13, 92, 79, .92); }
+.ch-play::after { content: ""; position: absolute; left: 25px; top: 13px; border-style: solid; border-width: 8px 0 8px 13px; border-color: transparent transparent transparent #fff; }
+.ch-yt:hover .ch-play { background: var(--chop); }
+.ch-vid-t { font-weight: 600; margin: 10px 0 4px; line-height: 1.35; }
+.ch-vid-m { font-size: 13px; color: var(--muted, #666); margin: 0; }
+.ch-pager { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 32px; }
+.ch-pager a { min-width: 36px; text-align: center; padding: 6px 10px; border: 1px solid var(--rule, #ddd); border-radius: 6px; text-decoration: none; }
+.ch-pager a[aria-current] { background: var(--chop); color: #fff; border-color: var(--chop); }
