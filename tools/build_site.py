@@ -594,7 +594,7 @@ def article_page(a, others, brief=False):
   {components.social(a.get("social"))}
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
-  {explainers.analysis_block(explainers.analysis(next((it["all"] for it in TAG_ITEMS if it["url"] == f"/news/{a['slug']}.html"), []), exclude=f"/news/{a['slug']}.html"), "Related analysis")}
+  {explainers.combined(explainers.for_story(a, ev), explainers.analysis(next((it["all"] for it in TAG_ITEMS if it["url"] == f"/news/{a['slug']}.html"), []), exclude=f"/news/{a['slug']}.html", n=1))}
   {correction_note(a)}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
   {build_tags.topics(TG, TAGFULL.get(a.get("story_id") or a["slug"], []))}

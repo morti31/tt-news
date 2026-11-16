@@ -239,13 +239,13 @@ def league_page(lg, stories, now):
 <header class="hub-head cl-head"><div><span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span>
 <h1>{e(lg["name"])} {e(season)}</h1><p class="cl-status">{e(status_of(lg))}</p></div></header>
 <nav class="hub-jump" aria-label="On this page">{jump}</nav>
+{explainers.combined(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league", "league:" + lg["slug"]], n=2), explainers.analysis(tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []), n=1), "top")}
 <div class="cl-hub-top"><section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{grouped(res, mixed) or '<p class="cl-none">No results yet this season.</p>'}{more}</section>
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Fixtures</h2>{grouped(fix, mixed) or '<p class="cl-none">No fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span> Times can change, so check with the clubs before travelling.</p></section></div>
 <section class="hub-sec" id="tables"><h2 class="section-title">{"Table" if mixed else "Tables"}</h2><div class="cl-tables{" one" if mixed else ""}">{tables}</div></section>
 {f'<section class="hub-sec" id="squads"><h2 class="section-title">Squads</h2>{squads}</section>' if squads else ""}
 {f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2>{news_list(mine, 12)}</section>' if mine else ""}
-{explainers.related(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league", "league:" + lg["slug"]]), tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []))}
 <section class="hub-sec" id="about"><h2 class="section-title">About the league</h2><p class="cl-about">{e(lg["about"])}</p>
 <p class="small">Tables, fixtures and results from {srcs}{f', updated {uk(upd).day} {uk(upd):%B} at {uk(upd):%H:%M} UK time' if upd else ""}.</p></section>
 </main>'''
@@ -330,11 +330,83 @@ def strip_data(now):
     json.dump(out, open(os.path.join(ROOT, "data", "club-strip.json"), "w", encoding="utf-8"), ensure_ascii=False)
 
 
+def home_row(now):
+    """data/club-row.json: the homepage's "Club competitions" row, beside Major events. For each league Eleven covers,
+    its next round (with the pick of the fixtures: the one between the best-placed teams) and its last finished
+    round (with the result between the best-placed teams), plus club events on the schedule the league data does not
+    hold (Europe Cup, cup Final4s, finals weekends)."""
+    def words(n):
+        return {w for w in re.findall(r"[a-zà-ÿ]{4,}", (n or "").lower())} - {"borussia", "club", "team"}
+
+    up, past = [], []
+    for lg in LEAGUES:
+        for cid, comp, title in lg["comps"]:
+            d = load(cid)
+            if not d:
+                continue
+            pos = {}
+            for g in ((d.get("table") or {}).get("groups") or []):
+                for r in g.get("rows") or []:
+                    pos[r["team"]] = r.get("pos") or 99
+
+            def rank(team):
+                w = words(team)
+                return min((p for t, p in pos.items() if w & words(t)), default=99)
+
+            ms = [m for m in d.get("matches") or [] if m.get("when") and m.get("home")]
+            groups = {}
+            for m in ms:
+                groups.setdefault(m.get("round") or m["when"][:10], []).append(m)
+            name = lg["name"] + ("" if comp == "Mixed" else f" {comp.lower()}")
+            base = {"lg": lg["slug"], "league": name, "colour": lg["colour"], "flag": lg["flag"], "url": f"/clubs/{lg['slug']}.html"}
+            nxt = [(min(x["when"] for x in g), rd, g) for rd, g in groups.items()
+                   if all(x.get("status") != "finished" for x in g) and max(x["when"] for x in g) >= (now - dt.timedelta(hours=12)).isoformat()]
+            if nxt:
+                start, rd, g = min(nxt, key=lambda t: t[0])
+                g = [x for x in g if x.get("away")]
+                lab = next((x.get("label") for x in groups[rd] if x.get("label")), "")
+                top = min(g, key=lambda x: rank(x["home"]) + rank(x["away"])) if g else None
+                up.append({**base, "round": lab or ("" if re.match(r"\d{4}-", rd) else rd), "start": start[:10], "end": max(x["when"] for x in groups[rd])[:10],
+                           "pick": f'{top["home"]} v {top["away"]}' if top else "", "n": len(g)})
+            done = [(max(x["when"] for x in g), rd, g) for rd, g in groups.items() if g and all(x.get("status") == "finished" for x in g)
+                    and max(x["when"] for x in g) <= now.isoformat()]
+            if done:
+                end, rd, g = max(done, key=lambda t: t[0])
+                g = [x for x in g if x.get("score") and x.get("away")]
+                top = min(g, key=lambda x: rank(x["home"]) + rank(x["away"])) if g else None
+                if end >= (now - dt.timedelta(days=21)).isoformat():
+                    past.append({**base, "round": "" if re.match(r"\d{4}-", rd) else rd, "start": min(x["when"] for x in groups[rd])[:10], "end": end[:10],
+                                 "pick": f'{top["home"]} {top["score"][0]}-{top["score"][1]} {top["away"]}' if top else ""})
+    # Club events on the schedule that no league file holds (Europe Cup, cup Final4s)
+    try:
+        sched = json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8"))["events"]
+    except Exception:
+        sched = []
+    today = now.date().isoformat()
+    for ev in sched:
+        if ev.get("series") != "Clubs" or ev["end"] < today:
+            continue
+        lg = next((l for l in LEAGUES if re.search(l["match"], ev["name"])), None)
+        if lg and lg["slug"] != "champions-league" and any(u["lg"] == lg["slug"] and u["start"] <= ev["end"] and u["end"] >= ev["start"] for u in up):
+            continue
+        if lg and lg["slug"] == "champions-league" and "Europe Cup" not in ev["name"] and any(
+                u["lg"] == "champions-league" and u["start"] <= ev["end"] and u["end"] >= ev["start"] for u in up):
+            continue
+        head, _, rest = ev["name"].partition(", ")
+        up.append({"lg": lg["slug"] if lg else "", "league": head.replace("ETTU ", ""), "colour": lg["colour"] if lg else "#17202b",
+                   "flag": lg["flag"] if lg else "eu", "url": f"/clubs/{lg['slug']}.html" if lg else "/schedule.html",
+                   "round": rest or ev.get("type", ""), "start": ev["start"], "end": ev["end"], "pick": "" if ev.get("city") in (None, "Europe", "Japan") else ev["city"], "n": 0})
+    up.sort(key=lambda u: (u["start"], u["league"]))
+    past.sort(key=lambda u: u["end"], reverse=True)
+    json.dump({"up": up[:8], "past": past[:8]}, open(os.path.join(ROOT, "data", "club-row.json"), "w", encoding="utf-8"), ensure_ascii=False)
+
+
 def build(page, site, stories):
     """Write /clubs/index.html and a page per league; return sitemap entries."""
     now = dt.datetime.now(dt.timezone.utc)
     os.makedirs(os.path.join(ROOT, "clubs"), exist_ok=True)
     strip_data(now)
+    home_row(now)
     today = dt.date.today().isoformat()
     urls = [(f"{site}/clubs/", today)]
     open(os.path.join(ROOT, "clubs", "index.html"), "w", encoding="utf-8").write(page(

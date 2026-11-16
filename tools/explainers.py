@@ -168,3 +168,38 @@ def analysis_block(pieces, title="Analysis"):
 def related(guide_slugs, tags=(), words=(), where="bottom", exclude=None):
     """The "Explained" guides, then up to two Analysis pieces on the same subject."""
     return block(guide_slugs, where) + analysis_block(analysis(tags, words, exclude))
+
+
+def combined(guide_slugs, pieces, where="bottom", title="Go deeper"):
+    """Guides and Analysis in one feature: Analysis pieces as picture cards, guides beside them as a compact list.
+    Falls back to the plain guides block or the plain Analysis cards when one side is empty."""
+    gs = guides()
+    slugs = [s for s in guide_slugs if s in gs]
+    if not pieces:
+        return block(slugs, where)
+    if not slugs:
+        return analysis_block(pieces, title="Analysis")
+    feats = "".join(
+        f'<li><a href="{e(it["url"])}"><span class="xa-pic"><img src="{e(it["cover"])}" alt="" loading="lazy" width="400" height="225"></span>'
+        f'<span class="xa-txt"><span class="xa-k">Analysis</span><span class="xp-h">{e(it["title"])}</span><span class="xp-s">{e(it.get("summary", ""))}</span></span></a></li>'
+        for it in pieces)
+    gl = "".join(
+        f'<li><a href="/guide/{e(gs[s]["slug"])}.html">{tile(gs[s])}<span class="xp-txt"><span class="xp-k">Guide</span>'
+        f'<span class="xp-h">{e(gs[s]["title"])}</span><span class="xp-m">{build_guides.minutes(gs[s])} min read</span></span></a></li>'
+        for s in slugs)
+    return (f'<section class="xp xc xp-{where}" aria-labelledby="xc-{where}-h"><h2 class="section-title" id="xc-{where}-h">{e(title)}</h2>'
+            f'<div class="xc-grid{" xc-two" if len(pieces) > 1 else ""}"><ul class="xa-cards">{feats}</ul><ul class="xc-guides">{gl}</ul></div></section>')
+
+
+def for_story(a, ev=None):
+    """Guides for a news story: its event's, its league's, or its section's."""
+    if ev:
+        return for_event(ev)[:2]
+    cat, lg = a.get("category"), a.get("league")
+    if cat == "Clubs" or lg:
+        return pick(["league:champions-league"] if lg == "champions-league" else ["league", "league:" + (lg or "")], n=2)
+    if cat == "Equipment":
+        return pick(["kit"], ["table-tennis-blades-explained", "table-tennis-rubbers-explained"], n=2)
+    if cat == "England":
+        return pick(["england"], ["table-tennis-england-explained", "find-a-table-tennis-club-england"], n=2)
+    return pick(["news"], ["how-table-tennis-world-rankings-work", "table-tennis-scoring-explained"], n=2)

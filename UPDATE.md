@@ -222,3 +222,7 @@ Every Tuesday morning `data/ranking-brief.json` is rewritten from WTT's ranking 
 ## Doubles rankings
 
 `data/doubles-rankings.json` holds the ITTF doubles world rankings (top 400 pairs in men's, women's and mixed doubles), refreshed every Tuesday by the Doubles rankings workflow (`tools/doubles_rankings.py`). The rankings page shows them under Women, Men (Singles/Doubles switch) and Mixed doubles. Everyone in them gets a profile like the singles top 400 (`tools/doubles.py`, `tools/people.py`); `tools/stubs.py` writes stub profiles for new names, and the monthly profile check fills them in like any other stub. Profiles show each player's doubles rankings and partners.
+
+## Homepage club row
+
+Under Major events, the homepage's "Club competitions" row shows each covered league's next round (dates and the pick of the round: the fixture between the best-placed teams) and, under Recent, its last results, from `data/club-row.json` (written by `tools/build_clubs.py` on every build from `data/clubs/*.json` and the Clubs events in `data/schedule.json`). Club events with no league file (Europe Cup, cup Final4s, finals weekends) come from the schedule, so add them there.

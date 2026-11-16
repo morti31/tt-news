@@ -220,11 +220,19 @@ def tl_tie(mid, players):
         games = re.findall(r'<div class="text-center">(\d+) - (\d+)</div>', blk)
         if len(nums) < 2 or not games:
             continue
-        s = [int(nums[0]), int(nums[1])]
-        rubbers.append({"k": "D" if len(ps[0]) > 1 else "S", "p": ps, "s": s,
-                        "g": ",".join(f"{a}-{b}" for a, b in games), "w": 0 if s[0] > s[1] else 1})
+        gs = [(int(a), int(b)) for a, b in games]
+        # Count games from the points, not the page's running total: a game counts once someone reaches 11
+        # (the T.League has no deuce; 10-10 goes to a single sudden-death point, shown as 11-10)
+        done_g = [(a, b) for a, b in gs if max(a, b) >= 11]
+        s = [sum(a > b for a, b in done_g), sum(b > a for a, b in done_g)]
+        kind = "D" if len(ps[0]) > 1 else "S"
+        need = 1 if len(rubbers) == 4 else (2 if kind == "D" else 3)   # the fifth match (Extra Match) is one game
+        fin = max(s) >= need and len(done_g) == len(gs)
+        rubbers.append({"k": kind, "p": ps, "s": s, "g": ",".join(f"{a}-{b}" for a, b in gs),
+                        "w": (0 if s[0] > s[1] else 1) if fin else None})
     if len(teams) != 2:
         return None
+    rubbers = [r for r in rubbers if r["w"] is not None] if tl_complete(rubbers) else rubbers
     total = [sum(1 for r in rubbers if r["w"] == 0), sum(1 for r in rubbers if r["w"] == 1)]
     d = None
     if day:
@@ -233,12 +241,22 @@ def tl_tie(mid, players):
         d = (local - dt.timedelta(hours=9)).strftime("%Y-%m-%dT%H:%M:%SZ")
     home, away = TL_TEAMS.get(teams[0], (teams[0], "M")), TL_TEAMS.get(teams[1], (teams[1], "M"))
     tie = {"id": str(mid), "d": d, "g": home[1], "rd": "League", "home": home[0], "away": away[0], "s": total,
-           "st": "done" if rubbers else "due", "url": f"{TL}/schedule/detail.php?id={mid}", "r": rubbers}
+           "st": "done" if tl_complete(rubbers) else ("live" if rubbers else "due"), "url": f"{TL}/schedule/detail.php?id={mid}", "r": rubbers}
     if venue and venue.group(1).strip():
         tie["venue"] = html.unescape(venue.group(1)).strip()
     if crowd:
         tie["crowd"] = int(crowd.group(1).replace(",", ""))
     return (season.group(1) if season else None), tie
+
+
+def tl_complete(rubbers):
+    """A T.League tie is over when a team has won three matches and every match on the page is finished.
+    Pages fetched while a tie is being played hold half-finished games (10-10, 9-10), so those ties stay "live"
+    and are fetched again on the next sync."""
+    if not rubbers or any(r.get("w") is None for r in rubbers):
+        return False
+    wins = [sum(1 for r in rubbers if r["w"] == 0), sum(1 for r in rubbers if r["w"] == 1)]
+    return max(wins) >= 3
 
 
 def sync_tleague(backfill=False):
@@ -256,7 +274,10 @@ def sync_tleague(backfill=False):
                 known[t["id"]] = t
     for mid in ids:
         k = known.get(str(mid))
-        if k and k["st"] == "done":
+        # Skip only ties stored complete; anything saved mid-match (or by the old check, which called any tie with
+        # results "done") is fetched again
+        if k and k["st"] == "done" and tl_complete(k.get("r") or []) and all(
+                max(int(x) for x in g.split("-")) >= 11 for r in k.get("r") or [] for g in (r.get("g") or "").split(",") if "-" in g):
             continue
         try:
             got = tl_tie(mid, players)

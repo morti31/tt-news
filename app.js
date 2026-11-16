@@ -240,6 +240,34 @@
     b.replaceWith(f);
   });
 
+  // ---- Club competitions row, under Major events: each covered league's next round and last results (data/club-row.json)
+  async function renderClubs() {
+    let d;
+    try { d = await fetch("/data/club-row.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)); } catch (e) { d = null; }
+    if (!d) return;
+    const one = (rows) => { const seen = new Set(); return rows.filter((r) => { const k = r.lg + r.league; if (seen.has(r.lg) || seen.size >= 4) return false; seen.add(r.lg); return true; }); };
+    const up = one((d.up || []).filter((r) => r.end >= today)), past = one(d.past || []);
+    if (!up.length && !past.length) return;
+    const span = (r) => r.start === r.end ? fmt(r.start, { weekday: "short", day: "numeric", month: "short" }) : `${fmt(r.start)} to ${fmt(r.end)}`;
+    const tile = (r, recent) => `<a class="cl-tile" href="${esc(r.url)}" style="--lg:${esc(r.colour)}">
+        <span class="cl-tile-top">${esc(r.league)}</span>
+        <span class="cl-tile-body"><b>${esc(r.round || (recent ? "Latest results" : "Next round"))}</b>
+        <span class="cl-tile-when">${!recent && r.start <= today ? '<span class="live-dot"></span>On now' : esc(recent ? "Finished " + fmt(r.end) : span(r))}</span>
+        ${r.pick ? `<span class="cl-tile-pick">${recent ? "" : '<span class="small-label">Pick of the round</span>'}${esc(r.pick)}</span>` : ""}</span></a>`;
+    const first = up.length ? "up" : "past";
+    $("club-row").innerHTML = `<div class="sec-head"><h2 id="clrow-h">Club competitions</h2><a href="/clubs/">All leagues</a></div>
+      <div class="ev-tabs" role="tablist" aria-label="Club competitions">
+        <button type="button" role="tab" data-ev="up" aria-selected="${first === "up"}"${up.length ? "" : " disabled"}>Upcoming</button>
+        <button type="button" role="tab" data-ev="past" aria-selected="${first === "past"}"${past.length ? "" : " disabled"}>Recent</button></div>
+      <div class="cl-tiles" data-panel="up"${first === "up" ? "" : " hidden"}>${up.map((r) => tile(r, false)).join("")}</div>
+      <div class="cl-tiles" data-panel="past"${first === "past" ? "" : " hidden"}>${past.map((r) => tile(r, true)).join("")}</div>`;
+    $("club-row").querySelectorAll(".ev-tabs button").forEach((b) => b.addEventListener("click", () => {
+      $("club-row").querySelectorAll(".ev-tabs button").forEach((x) => x.setAttribute("aria-selected", String(x === b)));
+      $("club-row").querySelectorAll("[data-panel]").forEach((p) => { p.hidden = p.dataset.panel !== b.dataset.ev; });
+    }));
+    $("club-row").hidden = curCat !== "All";
+  }
+
   // ---- Events row: upcoming (on now and next) and recent (just finished), as two tabs
   function renderEvents() {
     const uniq = (arr) => { const u = new Set(); return arr.filter((h) => !u.has(h.url) && u.add(h.url)); };
@@ -388,6 +416,7 @@
     $("watch").hidden = !home || !$("watch").innerHTML;
     $("feat-row").hidden = !home || !$("feat-row").innerHTML;
     $("ev-row").hidden = !home || !$("ev-row").innerHTML;
+    $("club-row").hidden = !home || !$("club-row").innerHTML;
     render(cat);
   }
   $("tabs").addEventListener("click", (e) => {
@@ -415,6 +444,7 @@
   renderFeatures();
   renderWatch();
   renderEvents();
+  renderClubs();
   window.addEventListener("hashchange", () => { fromHash(); window.scrollTo(0, 0); });
   fromHash();
 })();
