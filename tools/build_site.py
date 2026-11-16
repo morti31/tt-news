@@ -6,7 +6,7 @@ It uses only the Python standard library.
 Input:  data/articles/*.json  (one file per full article; merged into main once approved)
 Output: news/<slug>.html, news/index.html, data/article-index.json, sitemap.xml, robots.txt, feed.xml
 """
-import json, os, glob, html, sys, datetime as dt
+import json, os, glob, html, sys, re, unicodedata, datetime as dt
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import components
 import build_events
@@ -437,6 +437,33 @@ def block(p):
     return f"<p>{linkify(p)}</p>"
 
 
+CHOP = "https://defensive.eleventabletennis.com"
+CHOP_WORDS = re.compile(r"\b(chop|chops|chopping|chopper|choppers|defender|defenders|defensive)\b", re.I)
+
+
+def chop_players():
+    try:
+        return [p for p in json.load(open(os.path.join(ROOT, "data", "chop", "players.json"), encoding="utf-8")) if p.get("status") == "approved"]
+    except Exception:
+        return []
+
+
+def chop_note(a):
+    """"On The Chop": a link to the defenders' site under a story that names one of its players or is about chopping."""
+    txt = " ".join([a.get("title", ""), a.get("standfirst", "")] + [str(b) for b in a.get("body", [])])
+    named = [p for p in chop_players() if p["name"] in txt]
+    if not named and len(CHOP_WORDS.findall(txt)) < 3:
+        return ""
+    def slug_(n):
+        return re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode().lower()).strip("-")
+    who = "".join(f'<a href="{CHOP}/defender/{slug_(p["name"])}.html">{e(p["name"])}</a>' for p in named[:4])
+    return (f'<aside class="chop-note"><a class="chop-note-mark" href="{CHOP}/" aria-label="The Chop"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#0d5c4f"/>'
+            f'<path d="M6 27 34 13" stroke="#f3efe4" stroke-width="4" stroke-linecap="round"/></svg></a>'
+            f'<div><p class="chop-note-h"><a href="{CHOP}/">The Chop</a>: choppers and defenders</p>'
+            f'<p class="chop-note-s">{"Profiles, form and fixtures: " if who else "Rankings, form, fixtures and the best writing on the defensive game."}</p>'
+            f'{f"<p class=chop-note-l>{who}</p>" if who else ""}</div></aside>')
+
+
 def autolink(blocks, a):
     """Internal links for SEO: the first mention in a story of each event page (by name, name and year, or host
     city) and of the world rankings becomes a link. Text already inside a link, headings and quotes stay as they are."""
@@ -450,6 +477,7 @@ def autolink(blocks, a):
         names = [f'{h["name"]} {h["year"]}', h["name"]] + ([h["city"]] if h.get("city") and cities[h["city"]] == 1 else [])
         targets.append((f'/events/{h["id"]}.html', names))
     targets.append(("/rankings.html", ["world rankings", "world ranking", "world number one", "world No 1"]))
+    targets.append((CHOP + "/", ["choppers", "chopper", "defensive players", "defensive style"]))
     targets += [(u, [n]) for n, u in PROFILES.items()]
     done, out, inlink = set(), [], False
     for b in blocks:
@@ -597,6 +625,7 @@ def article_page(a, others, brief=False):
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
   {explainers.combined(explainers.for_story(a, ev), explainers.analysis(next((it["all"] for it in TAG_ITEMS if it["url"] == f"/news/{a['slug']}.html"), []), exclude=f"/news/{a['slug']}.html", n=1))}
+  {chop_note(a)}
   {correction_note(a)}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
   {build_tags.topics(TG, TAGFULL.get(a.get("story_id") or a["slug"], []))}
