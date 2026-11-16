@@ -6,6 +6,6 @@
   "assets": {
     "directory": ".",
     "binding": "ASSETS",
-    "run_worker_first": ["/api/*", "/tag/*", "/", "/defensive", "/defensive/*", "/defenders*", "/defender/*", "/calendar*", "/reading*", "/legends*", "/chop*"]
+    "run_worker_first": ["/api/*", "/tag/*", "/", "/defensive", "/defensive/*", "/defenders*", "/defender/*", "/calendar*", "/reading*", "/legends*", "/about*", "/chop*"]
   }
 }

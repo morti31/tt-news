@@ -35,6 +35,21 @@ STYLE_SOURCES = [
     ("Butterfly's coaching guide, Player archetypes: defensive styles", "https://butterflyonline.com/player-archetypes-defensive-styles"),
 ]
 
+GLOSSARY = [
+    ("Chop", "A backspin stroke played from well behind the table, usually against topspin. The defender's main shot."),
+    ("Chopper", "A player whose game is built on chopping. The Chop splits defenders into three styles; see below."),
+    ("Push", "A short backspin stroke played over the table, usually against backspin."),
+    ("Float", "A chop with little or no spin, disguised to look heavy so the attacker misjudges it."),
+    ("Inverted rubber", "Smooth rubber with the pimples facing in. Gives the most spin; almost every attacker uses it on both sides."),
+    ("Long pimples", "Rubber with long, thin pimples facing out. Returns much of the opponent's spin, so a topspin can come back as backspin. Many choppers use it on the backhand."),
+    ("Short pimples", "Rubber with short pimples facing out. Less spin, more speed and a flatter ball; some defenders use it to block and hit."),
+    ("Anti-spin", "Slick rubber that takes most of the spin off the ball. Rare at the top level."),
+    ("Twiddling", "Turning the bat mid-rally so the forehand and backhand rubbers swap, to change the spin the opponent receives."),
+    ("Counter-attack", "A defender switching from chopping to topspin, often against a weak loop."),
+    ("Expedite rule", "If a game lasts 10 minutes and fewer than 18 points have been scored, the server must win the point within 13 returns or lose it. Applies for the rest of the match. Long defensive matches trigger it most."),
+    ("World ranking", "The ITTF world ranking, published weekly by World Table Tennis. Points come from a player's best results over the past year, including youth events."),
+]
+
 
 def tag(style, link=True):
     """A style tag. Clicking it opens a short definition with its sources (chop.js, the #ch-def dialog)."""
@@ -53,7 +68,7 @@ def def_dialog():
             f'<p class="ch-small">How we decide: The Chop puts every defender in one of three styles. A player is only included when a source we can open '
             f'describes them as a defender; long pimples alone don\'t count. The type follows how the sources describe their game, and each player\'s page '
             f'quotes the exact words. Where no source describes the game in detail, the type is our provisional call. The definitions are ours, based on:</p>'
-            f'<ul class="ch-def-src">{src}</ul><a class="ch-more" href="/defenders.html#styles">All three styles</a>'
+            f'<ul class="ch-def-src">{src}</ul><a class="ch-more" href="/about.html#glossary">Glossary</a>'
             f'<script type="application/json" id="ch-def-data">{json.dumps(data)}</script></dialog>')
 ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
 
@@ -84,7 +99,7 @@ def page(title, desc, path, body, active=""):
     nav = "".join(f'<a href="{BASE}{href}"{" aria-current=\"page\"" if k == active else ""}>{lab}</a>'
                   for k, href, lab in (("home", "/", "Home"), ("rankings", "/defenders.html", "Defenders"),
                                        ("calendar", "/calendar.html", "Calendar"), ("reading", "/reading.html", "Reading"),
-                                       ("legends", "/legends.html", "Legends")))
+                                       ("legends", "/legends.html", "Legends"), ("about", "/about.html", "About")))
     return f"""<!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">
@@ -102,7 +117,7 @@ def page(title, desc, path, body, active=""):
 <nav class="ch-nav" aria-label="Sections">{nav}</nav></div></header>
 <main class="ch-wrap">{body}</main>
 <footer class="ch-foot"><div class="ch-wrap"><p><b>The Chop</b> follows the defenders of table tennis: the choppers, the blockers and the players who win from the back of the court. It writes no news of its own; every story here links to the publication that wrote it.</p>
-<p>Rankings, results and fixtures from <a href="{ELEVEN}/">Eleven</a>, which takes them from World Table Tennis and the leagues. <a href="{ELEVEN}/contact.html">Contact</a></p></div></footer>
+<p>Rankings, results and fixtures from <a href="{ELEVEN}/">Eleven</a>, which takes them from World Table Tennis and the leagues. <a href="{BASE}/about.html">About and glossary</a> · <a href="{ELEVEN}/contact.html">Contact</a></p></div></footer>
 {def_dialog()}
 <script src="{BASE}/chop.js?v={VER}" defer></script>
 </body></html>"""
@@ -588,6 +603,14 @@ def build():
     open(os.path.join(OUT, "legends.html"), "w", encoding="utf-8").write(page(
         "Legends of defensive table tennis | The Chop", "The great choppers and defenders in table tennis history, from Richard Bergmann to Joo Se-hyuk.", "/legends.html", lbody, "legends"))
 
+    # ---- About and glossary
+    abody = f"""<section class="ch-head"><h1>About The Chop</h1><p class="ch-lede">The Chop follows the defenders of table tennis: who they are, how they are playing and the best writing about them. It is made by <a href="{ELEVEN}/">Eleven</a> and writes no news of its own.</p></section>
+<section class="ch-sec"><h2>How it works</h2><p>Players are listed only when a source we can open describes them as a defender. Rankings, results and fixtures come from Eleven, which takes them from World Table Tennis and the leagues. Reading links go to the publication that wrote each piece; Eleven's own pieces are marked and kept to a quarter at most.</p></section>
+<section class="ch-sec" id="glossary"><h2>Glossary</h2><dl class="ch-styles">{"".join(f"<div><dt>{e(t)}</dt><dd>{e(d)}</dd></div>" for t, d in GLOSSARY)}</dl></section>
+<section class="ch-sec" id="styles"><h2>The three styles</h2><dl class="ch-styles">{"".join(f"<div><dt>{tag(k, False)}</dt><dd>{e(v[0].upper() + v[1:])}.</dd></div>" for k, v in STYLE_ABOUT.items())}</dl></section>"""
+    open(os.path.join(OUT, "about.html"), "w", encoding="utf-8").write(page(
+        "About and glossary | The Chop", "What The Chop is, and the terms used for defensive table tennis: chop, float, long pimples, the expedite rule and more.", "/about.html", abody, "about"))
+
     # ---- Home
     week = [(w, p, x) for w, p, x in cal if w <= (now + dt.timedelta(days=7)).isoformat()]
     recent = []
@@ -618,7 +641,7 @@ def build():
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them, by Eleven.", "/", hbody, "home"))
 
-    urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html"] + [f'/defender/{slug(p["name"])}.html' for p in players]
+    urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html", "/about.html"] + [f'/defender/{slug(p["name"])}.html' for p in players]
     open(os.path.join(OUT, "chop-sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "</urlset>")
