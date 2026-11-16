@@ -837,6 +837,11 @@ def main():
     club_stories.sort(key=lambda i: i["published"], reverse=True)
     urls += build_clubs.build(page, SITE, club_stories)
     urls += build_tags.build(page, SITE, TG, TAG_ITEMS, build_rankings.load(), HUBS)
+    try:   # The Chop, the defensive-players site at /defensive/ (tools/build_chop.py)
+        import build_chop
+        print("The Chop:", build_chop.build())
+    except Exception as ex:
+        print("The Chop: skipped,", ex)
     purls, _ = build_players.build(page, SITE, TAG_ITEMS, HUBS, build_rankings.load(), ROSTER, TG)
     urls += purls
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
