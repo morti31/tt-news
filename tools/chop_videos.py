@@ -89,12 +89,14 @@ def main():
         except Exception as err:
             print("feed", ch["name"], err)
         for p in players:
-            try:
-                for v in search(ch["handle"], p):
-                    found.setdefault(v["id"], v)
-            except Exception as err:
-                print("search", ch["name"], p, err)
-            time.sleep(1)
+            # Full name, then surname alone (YouTube's channel search sometimes returns nothing for the full name)
+            for q in (p, p.split()[-1]):
+                try:
+                    for v in search(ch["handle"], q):
+                        found.setdefault(v["id"], v)
+                except Exception as err:
+                    print("search", ch["name"], q, err)
+                time.sleep(1)
         for vid, v in found.items():
             ps = who(html.unescape(v["title"]), players)
             if not ps:
