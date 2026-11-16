@@ -354,9 +354,29 @@ async function tagMove(env, url) {
   return TAG_MOVES[slug] || null;
 }
 
+// The Chop (tools/build_chop.py) is built into /defensive/ and served at the root of its own subdomain.
+// Every path on that host maps to /defensive/<path>; the old eleventabletennis.com/defensive/ addresses redirect there.
+// wrangler.jsonc sends these paths to the worker first ("/", "/defenders*", "/defender/*", "/calendar*", ...).
+const CHOP = "defensive.eleventabletennis.com";
+async function chop(req, env, url) {
+  const res = await env.ASSETS.fetch(new Request(url.origin + "/defensive" + url.pathname + url.search, req));
+  const loc = res.headers.get("location");
+  if (loc && res.status >= 300 && res.status < 400) {   // the asset server's own redirects (e.g. /x.html to /x) stay on the subdomain
+    const to = new URL(loc, url.origin);
+    if (to.pathname.startsWith("/defensive")) return Response.redirect(url.origin + (to.pathname.slice(10) || "/") + to.search, res.status);
+  }
+  return res;
+}
+function chopMove(url) {
+  const p = url.pathname.slice(10) || "/";   // after "/defensive"
+  return "https://" + CHOP + p.replace(/^\/rankings(\.html)?$/, "/defenders.html").replace(/^\/players\//, "/defender/") + url.search;
+}
+
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    if (url.hostname === CHOP) return chop(req, env, url);
+    if (url.pathname === "/defensive" || url.pathname.startsWith("/defensive/")) return Response.redirect(chopMove(url), 301);
     if (url.pathname.startsWith("/api/")) await loadNames(env, url.origin);
     if ((url.pathname === "/api/live" || url.pathname === "/api/match") && (await switches(env, url.origin)).wtt === false) {
       return json({ error: "Live scores are unavailable", disabled: true }, 503, 60);

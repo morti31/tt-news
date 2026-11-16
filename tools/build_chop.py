@@ -12,16 +12,17 @@ Inputs
   data/rankings.json, data/doubles-rankings.json, data/matches (form), data/draws (next matches in tournaments),
   data/clubs and data/clubs/squads (next club matches), data/news.json and data/articles (Eleven's pieces)
 Output
-  defensive/index.html, defensive/rankings.html, defensive/calendar.html, defensive/reading.html,
-  defensive/players/<slug>.html, defensive/chop.css (copied from tools/chop.css), defensive/sitemap.xml
+  defensive/index.html, defensive/defenders.html, defensive/calendar.html, defensive/reading.html,
+  defensive/defenders.html, defensive/defender/<slug>.html, defensive/chop.css (copied from tools/chop.css), defensive/chop-sitemap.xml
+  Served at defensive.eleventabletennis.com: worker.js maps every path on that host to /defensive/<path>.
 """
 import datetime as dt, glob, html, json, os, re, shutil, unicodedata
 
 e = html.escape
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUT = os.path.join(ROOT, "defensive")
-BASE = "/defensive"          # becomes "" once the subdomain serves the folder at its root
-SITE = "https://eleventabletennis.com/defensive"
+BASE = ""   # the site is served at the root of defensive.eleventabletennis.com (worker.js maps it to /defensive/)
+SITE = "https://defensive.eleventabletennis.com"
 ELEVEN = "https://eleventabletennis.com"
 STYLE = {"chopper": "Classical chopper", "modern": "Modern defender", "allround": "Defensive all-rounder"}
 STYLE_ABOUT = {"chopper": "defends from well back with heavy backspin and variation, attacking now and then",
@@ -34,7 +35,7 @@ def tag(style, link=True):
     if not lab:
         return ""
     t = f'<span class="ch-style ch-style-{e(style)}">{e(lab)}</span>'
-    return f'<a class="ch-style-a" href="{BASE}/rankings.html#styles" title="{e(STYLE_ABOUT[style])}">{t}</a>' if link else t
+    return f'<a class="ch-style-a" href="{BASE}/defenders.html#styles" title="{e(STYLE_ABOUT[style])}">{t}</a>' if link else t
 ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
 
 
@@ -62,13 +63,13 @@ def day(iso):
 
 def page(title, desc, path, body, active=""):
     nav = "".join(f'<a href="{BASE}{href}"{" aria-current=\"page\"" if k == active else ""}>{lab}</a>'
-                  for k, href, lab in (("home", "/", "Home"), ("rankings", "/rankings.html", "Defenders"),
+                  for k, href, lab in (("home", "/", "Home"), ("rankings", "/defenders.html", "Defenders"),
                                        ("calendar", "/calendar.html", "Calendar"), ("reading", "/reading.html", "Reading"),
                                        ("legends", "/legends.html", "Legends")))
     return f"""<!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">
-<link rel="canonical" href="{SITE}{path}">
+<link rel="canonical" href="{SITE}{path}"><link rel="sitemap" type="application/xml" href="/chop-sitemap.xml">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:site_name" content="The Chop">
 <link rel="icon" href="{BASE}/chop.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,9 +231,10 @@ def build():
         return components.flag(nat)
 
     def plink(p):
-        return f'{BASE}/players/{slug(p["name"])}.html'
+        return f'{BASE}/defender/{slug(p["name"])}.html'
 
-    os.makedirs(os.path.join(OUT, "players"), exist_ok=True)
+    shutil.rmtree(OUT, ignore_errors=True)
+    os.makedirs(os.path.join(OUT, "defender"), exist_ok=True)
     shutil.copy(os.path.join(ROOT, "tools", "chop.css"), os.path.join(OUT, "chop.css"))
     shutil.copy(os.path.join(ROOT, "tools", "chop.js"), os.path.join(OUT, "chop.js"))
     shutil.copy(os.path.join(ROOT, "tools", "chop.svg"), os.path.join(OUT, "chop.svg"))
@@ -312,8 +314,8 @@ def build():
 <div class="ch-panel" data-p="D" hidden><p class="ch-small">Pairs in the doubles world rankings with at least one defender, the defender in bold.</p>{"".join(dd) or "<p>No ranked pairs.</p>"}</div>
 <section class="ch-sec" id="styles"><h2>The styles</h2><dl class="ch-styles">{"".join(f"<div><dt>{tag(k, False)}</dt><dd>{e(v[0].upper() + v[1:])}.</dd></div>" for k, v in STYLE_ABOUT.items())}</dl>
 <p class="ch-small">Long pimples alone don't make a defender: players who attack with long pimples or anti-spin are not included. Rankings from the <a href="{ELEVEN}/rankings.html">ITTF world rankings on Eleven</a>.</p></section>"""
-    open(os.path.join(OUT, "rankings.html"), "w", encoding="utf-8").write(page(
-        "Defensive table tennis players: rankings and form | The Chop", "Every chopper and defender in the table tennis world top 1,000: rankings, form and records.", "/rankings.html", rbody, "rankings"))
+    open(os.path.join(OUT, "defenders.html"), "w", encoding="utf-8").write(page(
+        "Defensive table tennis players: rankings and form | The Chop", "Every chopper and defender in the table tennis world top 1,000: rankings, form and records.", "/defenders.html", rbody, "rankings"))
 
     # ---- Player pages
     for p in players:
@@ -333,7 +335,7 @@ def build():
         cl_html = "".join(f'<li><b>{e(c)}</b>{f" <span>{e(lg)}</span>" if lg else ""}</li>' for c, lg in cl)
         nxt_html = "".join(f'<li><time datetime="{e(x["when"])}">{day(x["when"]) if x.get("day") else dt.datetime.fromisoformat(x["when"].replace("Z", "+00:00")).strftime("%a %-d %b, %H:%M")} UK</time>'
                            f'<span>{e(x["what"])}{f" v <b>{e(x["v"])}</b>" if x.get("v") else ""}</span></li>' for x in nx)
-        body = f"""<p class="ch-crumbs"><a href="{BASE}/rankings.html">The defenders</a> / {e(p["name"])}</p>
+        body = f"""<p class="ch-crumbs"><a href="{BASE}/defenders.html">The defenders</a> / {e(p["name"])}</p>
 <section class="ch-phead"><div><p class="ch-kick">{tag(p.get("style"))}</p><h1>{flag(r.get("nat") if r else "")}{e(p["name"])}</h1>
 <p class="ch-lede">{e(p.get("note", ""))}</p></div>
 <dl class="ch-facts"><div><dt>World ranking</dt><dd>{f'No {r["rank"]}{move(r)}' if r else "Unranked"}</dd></div>
@@ -346,10 +348,10 @@ def build():
 <section class="ch-sec"><h2>Club</h2>{f'<ul class="ch-clubs">{cl_html}</ul>' if cl_html else "<p class='ch-small'>No club in the leagues Eleven follows.</p>"}</section></div>
 {f'<section class="ch-sec"><h2>How the sources describe the style</h2><ul class="ch-quotes">{wd_html}</ul>{prov}</section>' if wd_html else ""}
 <section class="ch-sec"><h2>Reading</h2>{f'<ul class="ch-links">{"".join(link_li(l, False) for l in mine)}</ul>' if mine else "<p>No stories linked yet.</p>"}</section>"""
-        open(os.path.join(OUT, "players", slug(p["name"]) + ".html"), "w", encoding="utf-8").write(page(
+        open(os.path.join(OUT, "defender", slug(p["name"]) + ".html"), "w", encoding="utf-8").write(page(
             f'{p["name"]}: {STYLE.get(p.get("style"), "defender").lower()}, rankings and form | The Chop',
             f'{p["name"]}, {STYLE.get(p.get("style"), "defender").lower()}: world ranking, recent results, next matches and stories.',
-            f'/players/{slug(p["name"])}.html', body))
+            f'/defender/{slug(p["name"])}.html', body))
 
     # ---- Calendar
     cal = []
@@ -415,15 +417,15 @@ def build():
 <div class="ch-home">
 <section class="ch-sec ch-main"><h2>Latest reading</h2><ul class="ch-links">{"".join(link_li(l) for l in capped(allinks, 12))}</ul><a class="ch-more" href="{BASE}/reading.html">All reading</a></section>
 <aside class="ch-side">
-<section class="ch-sec"><h2>Top defenders</h2><h3>Women</h3><ol class="ch-mini">{mini(top_w)}</ol><h3>Men</h3><ol class="ch-mini">{mini(top_m)}</ol><a class="ch-more" href="{BASE}/rankings.html">All the defenders</a></section>
+<section class="ch-sec"><h2>Top defenders</h2><h3>Women</h3><ol class="ch-mini">{mini(top_w)}</ol><h3>Men</h3><ol class="ch-mini">{mini(top_m)}</ol><a class="ch-more" href="{BASE}/defenders.html">All the defenders</a></section>
 <section class="ch-sec"><h2>Best recent wins</h2><ul class="ch-results">{"".join(f'<li class="w"><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {res_row(m, s)[len("<li class=\"w\">"):-5]}</li>' for _, _, p, m, s in best[:5]) or "<li>No wins by defenders in the last 10 days.</li>"}</ul></section>
 <section class="ch-sec"><h2>This week</h2><ul class="ch-cal">{"".join(f'<li><time>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a><span>{e(x["what"])}</span></li>' for w, p, x in week[:6]) or "<li>No defenders scheduled this week.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html">Full calendar</a></section>
 </aside></div>"""
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them, by Eleven.", "/", hbody, "home"))
 
-    urls = ["/", "/rankings.html", "/calendar.html", "/reading.html", "/legends.html"] + [f'/players/{slug(p["name"])}.html' for p in players]
-    open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
+    urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html"] + [f'/defender/{slug(p["name"])}.html' for p in players]
+    open(os.path.join(OUT, "chop-sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "</urlset>")
     return len(players), len(allinks)
