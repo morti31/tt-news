@@ -2434,34 +2434,7 @@
   "hand": "Left Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "68",
-    "best_rank_year": "2018",
-    "best_rank_month": "3",
-    "total_matches": "14",
-    "total_wins": "4",
-    "total_losses": "10",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   },
-   {
-    "SubeventCode": "WT",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": null,
-    "best_rank_year": null,
-    "best_rank_month": null,
-    "total_matches": "10",
-    "total_wins": "5",
-    "total_losses": "5",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "111498": {
@@ -3886,9 +3859,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1205",
+    "best_rank": "1202",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "0",
     "total_losses": "3",
@@ -12011,7 +11984,7 @@
     "finals_losses": "0"
    }
   ],
-  "checked": "2026-11-11"
+  "checked": "2026-11-16"
  },
  "123505": {
   "name": "ZHU Chengzhu",
@@ -17493,9 +17466,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1174",
+    "best_rank": "1171",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "0",
     "total_losses": "3",
@@ -18729,34 +18702,7 @@
   "hand": "Right Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "35",
-    "best_rank_year": "2017",
-    "best_rank_month": "6",
-    "total_matches": "8",
-    "total_wins": "3",
-    "total_losses": "5",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   },
-   {
-    "SubeventCode": "WT",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": null,
-    "best_rank_year": null,
-    "best_rank_month": null,
-    "total_matches": "7",
-    "total_wins": "4",
-    "total_losses": "3",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "133953": {
@@ -18814,21 +18760,7 @@
   "hand": null,
   "grip": null,
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "650",
-    "best_rank_year": "2020",
-    "best_rank_month": "1",
-    "total_matches": "3",
-    "total_wins": "0",
-    "total_losses": "3",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "134011": {
@@ -18980,21 +18912,7 @@
   "hand": "Right Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "104",
-    "best_rank_year": "2019",
-    "best_rank_month": "1",
-    "total_matches": "1",
-    "total_wins": "0",
-    "total_losses": "1",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "134124": {
@@ -19004,21 +18922,7 @@
   "hand": "Right Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "29",
-    "best_rank_year": "2020",
-    "best_rank_month": "2",
-    "total_matches": "5",
-    "total_wins": "3",
-    "total_losses": "2",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "134132": {
@@ -19342,21 +19246,7 @@
   "hand": "Left Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "31",
-    "best_rank_year": "2020",
-    "best_rank_month": "12",
-    "total_matches": "7",
-    "total_wins": "1",
-    "total_losses": "6",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "134327": {
@@ -19390,34 +19280,7 @@
   "hand": "Right Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "20",
-    "best_rank_year": "2020",
-    "best_rank_month": "12",
-    "total_matches": "14",
-    "total_wins": "3",
-    "total_losses": "11",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   },
-   {
-    "SubeventCode": "WT",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": null,
-    "best_rank_year": null,
-    "best_rank_month": null,
-    "total_matches": "2",
-    "total_wins": "2",
-    "total_losses": "0",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "134338": {
@@ -20772,21 +20635,7 @@
   "hand": "Right Hand",
   "grip": "Shakehand",
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "WS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "43",
-    "best_rank_year": "2018",
-    "best_rank_month": "8",
-    "total_matches": "30",
-    "total_wins": "18",
-    "total_losses": "12",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "134888": {
@@ -22673,6 +22522,30 @@
   "stats": [],
   "checked": "2026-11-16"
  },
+ "135886": {
+  "name": "QUAN Kaiyuan",
+  "org": "CHN",
+  "dob": "01/29/2001",
+  "hand": "Right Hand",
+  "grip": "Shakehand",
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "1",
+    "best_rank_year": "2019",
+    "best_rank_month": "12",
+    "total_matches": "2",
+    "total_wins": "1",
+    "total_losses": "1",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
  "135888": {
   "name": "XIANG Peng",
   "org": "CHN",
@@ -23394,7 +23267,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "588",
+    "best_rank": "580",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "7",
@@ -23697,7 +23570,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "494",
+    "best_rank": "483",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "44",
@@ -25079,7 +24952,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "724",
+    "best_rank": "723",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "37",
@@ -26535,7 +26408,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "190",
+    "best_rank": "188",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "26",
@@ -26609,7 +26482,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "179",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "98",
     "total_wins": "69",
     "total_losses": "29",
@@ -27414,7 +27287,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "393",
+    "best_rank": "390",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "65",
@@ -27533,7 +27406,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "977",
+    "best_rank": "973",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "30",
@@ -27990,9 +27863,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1226",
+    "best_rank": "1223",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "18",
     "total_wins": "8",
     "total_losses": "10",
@@ -29406,7 +29279,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "104",
+    "best_rank": "103",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "48",
@@ -29504,7 +29377,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "518",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "1",
     "total_losses": "2",
@@ -29755,7 +29628,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "639",
+    "best_rank": "635",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "43",
@@ -29885,9 +29758,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "216",
+    "best_rank": "211",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "76",
     "total_wins": "57",
     "total_losses": "19",
@@ -30033,7 +29906,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "1155",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "14",
     "total_wins": "3",
     "total_losses": "11",
@@ -30081,7 +29954,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "1156",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "3",
     "total_losses": "6",
@@ -30178,15 +30051,15 @@
     "best_rank": "272",
     "best_rank_year": "2025",
     "best_rank_month": "3",
-    "total_matches": "1",
-    "total_wins": "1",
-    "total_losses": "0",
+    "total_matches": "3",
+    "total_wins": "2",
+    "total_losses": "1",
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
    }
   ],
-  "checked": "2026-11-11"
+  "checked": "2026-11-16"
  },
  "145746": {
   "name": "Veronika POLAKOVA",
@@ -30369,9 +30242,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "743",
+    "best_rank": "741",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "20",
     "total_wins": "10",
     "total_losses": "10",
@@ -30393,7 +30266,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "296",
+    "best_rank": "283",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "52",
@@ -30441,9 +30314,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "308",
+    "best_rank": "272",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "46",
     "total_wins": "26",
     "total_losses": "20",
@@ -30789,9 +30662,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "959",
+    "best_rank": "957",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "1",
     "total_wins": "0",
     "total_losses": "1",
@@ -30919,7 +30792,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "685",
+    "best_rank": "681",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "24",
@@ -31100,9 +30973,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1069",
+    "best_rank": "893",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "79",
     "total_wins": "43",
     "total_losses": "36",
@@ -31172,7 +31045,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "888",
+    "best_rank": "875",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "60",
@@ -31196,9 +31069,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "416",
+    "best_rank": "414",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "4",
     "total_losses": "8",
@@ -31544,7 +31417,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "889",
+    "best_rank": "876",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "27",
@@ -31640,7 +31513,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "780",
+    "best_rank": "768",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "75",
@@ -32254,9 +32127,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "567",
+    "best_rank": "566",
     "best_rank_year": "2026",
-    "best_rank_month": "6",
+    "best_rank_month": "11",
     "total_matches": "30",
     "total_wins": "16",
     "total_losses": "14",
@@ -32350,7 +32223,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "347",
+    "best_rank": "330",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "56",
@@ -32411,9 +32284,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1202",
+    "best_rank": "1199",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "78",
     "total_wins": "36",
     "total_losses": "42",
@@ -32506,7 +32379,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "630",
+    "best_rank": "624",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "56",
@@ -32530,7 +32403,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "978",
+    "best_rank": "970",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "14",
@@ -32554,9 +32427,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "591",
+    "best_rank": "563",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "89",
     "total_wins": "65",
     "total_losses": "24",
@@ -32650,7 +32523,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "785",
+    "best_rank": "593",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "68",
@@ -32742,9 +32615,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1161",
+    "best_rank": "1159",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "5",
     "total_wins": "3",
     "total_losses": "2",
@@ -33281,9 +33154,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "412",
+    "best_rank": "411",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "96",
     "total_wins": "59",
     "total_losses": "37",
@@ -33355,7 +33228,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "725",
+    "best_rank": "724",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "44",
@@ -33379,7 +33252,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "184",
+    "best_rank": "180",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "64",
@@ -33560,9 +33433,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "756",
+    "best_rank": "562",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "110",
     "total_wins": "82",
     "total_losses": "28",
@@ -33970,9 +33843,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "554",
+    "best_rank": "551",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "1",
     "total_losses": "2",
@@ -34397,7 +34270,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "351",
+    "best_rank": "346",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "79",
@@ -34431,9 +34304,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "786",
+    "best_rank": "517",
     "best_rank_year": "2026",
-    "best_rank_month": "7",
+    "best_rank_month": "11",
     "total_matches": "36",
     "total_wins": "23",
     "total_losses": "13",
@@ -34789,7 +34662,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "722",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "46",
     "total_wins": "27",
     "total_losses": "19",
@@ -34811,9 +34684,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "349",
+    "best_rank": "347",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "106",
     "total_wins": "75",
     "total_losses": "31",
@@ -35125,9 +34998,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "386",
+    "best_rank": "355",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "27",
     "total_wins": "18",
     "total_losses": "9",
@@ -35447,7 +35320,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "891",
+    "best_rank": "878",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "25",
@@ -35543,7 +35416,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "618",
+    "best_rank": "608",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "41",
@@ -35567,7 +35440,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "578",
+    "best_rank": "571",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "22",
@@ -35769,9 +35642,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1225",
+    "best_rank": "1222",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "33",
     "total_wins": "15",
     "total_losses": "18",
@@ -35865,7 +35738,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "974",
+    "best_rank": "966",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "39",
@@ -35937,9 +35810,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "958",
+    "best_rank": "956",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "4",
     "total_losses": "8",
@@ -35961,7 +35834,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "979",
+    "best_rank": "971",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "5",
@@ -35985,9 +35858,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1224",
+    "best_rank": "1221",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "35",
     "total_wins": "19",
     "total_losses": "16",
@@ -36057,7 +35930,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1044",
+    "best_rank": "1038",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "24",
@@ -36105,9 +35978,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1162",
+    "best_rank": "1160",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "53",
     "total_wins": "33",
     "total_losses": "20",
@@ -36166,7 +36039,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "890",
+    "best_rank": "877",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "54",
@@ -36214,7 +36087,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "975",
+    "best_rank": "967",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "42",
@@ -36275,7 +36148,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "349",
+    "best_rank": "344",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "28",
@@ -36384,9 +36257,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1233",
+    "best_rank": "1229",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "25",
     "total_wins": "12",
     "total_losses": "13",
@@ -36408,7 +36281,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1093",
+    "best_rank": "975",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "54",
@@ -36456,7 +36329,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "772",
+    "best_rank": "728",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "77",
@@ -36480,9 +36353,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1234",
+    "best_rank": "1230",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "29",
     "total_wins": "11",
     "total_losses": "18",
@@ -36613,9 +36486,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "455",
+    "best_rank": "454",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "49",
     "total_wins": "26",
     "total_losses": "23",
@@ -36637,7 +36510,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "510",
+    "best_rank": "506",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "29",
@@ -36709,9 +36582,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1166",
+    "best_rank": "1164",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "29",
     "total_wins": "12",
     "total_losses": "17",
@@ -36733,7 +36606,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "679",
+    "best_rank": "677",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "85",
@@ -36757,9 +36630,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1170",
+    "best_rank": "1168",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "67",
     "total_wins": "47",
     "total_losses": "20",
@@ -36781,7 +36654,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "417",
+    "best_rank": "412",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "74",
@@ -36805,7 +36678,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "610",
+    "best_rank": "607",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "79",
@@ -36829,7 +36702,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "621",
+    "best_rank": "610",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "63",
@@ -36901,7 +36774,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "871",
+    "best_rank": "867",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "39",
@@ -36925,7 +36798,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "602",
+    "best_rank": "601",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "46",
@@ -36949,7 +36822,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "764",
+    "best_rank": "725",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "53",
@@ -37045,7 +36918,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "696",
+    "best_rank": "671",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "100",
@@ -37069,7 +36942,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1262",
+    "best_rank": "1255",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "13",
@@ -37228,7 +37101,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "598",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "2",
     "total_losses": "7",
@@ -37418,7 +37291,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1092",
+    "best_rank": "1087",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "38",
@@ -37922,7 +37795,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "506",
+    "best_rank": "500",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "12",
@@ -37970,7 +37843,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "589",
+    "best_rank": "584",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "80",
@@ -38018,9 +37891,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1235",
+    "best_rank": "1231",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "10",
     "total_wins": "2",
     "total_losses": "8",
@@ -38042,7 +37915,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "604",
+    "best_rank": "603",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "24",
@@ -38066,7 +37939,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "687",
+    "best_rank": "681",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "23",
@@ -38153,7 +38026,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "217",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "92",
     "total_wins": "70",
     "total_losses": "22",
@@ -38277,9 +38150,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "709",
+    "best_rank": "694",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "73",
     "total_wins": "32",
     "total_losses": "41",
@@ -38301,7 +38174,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "515",
+    "best_rank": "512",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "104",
@@ -38325,9 +38198,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1221",
+    "best_rank": "1218",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "65",
     "total_wins": "37",
     "total_losses": "28",
@@ -38421,7 +38294,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "261",
+    "best_rank": "257",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "49",
@@ -38506,6 +38379,30 @@
   ],
   "checked": "2026-11-16"
  },
+ "201446": {
+  "name": "Ruan SCHOLTZ",
+  "org": "RSA",
+  "dob": "03/03/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "698",
+    "best_rank_year": "2023",
+    "best_rank_month": "9",
+    "total_matches": "7",
+    "total_wins": "4",
+    "total_losses": "3",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
  "201453": {
   "name": "LOY Ming Ying",
   "org": "SGP",
@@ -38517,7 +38414,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "121",
+    "best_rank": "120",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "61",
@@ -38588,7 +38485,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "284",
+    "best_rank": "281",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "12",
@@ -38660,9 +38557,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "458",
+    "best_rank": "453",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "28",
     "total_wins": "11",
     "total_losses": "17",
@@ -38899,9 +38796,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1236",
+    "best_rank": "1232",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "16",
     "total_wins": "6",
     "total_losses": "10",
@@ -38923,7 +38820,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1049",
+    "best_rank": "1043",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "12",
@@ -39111,21 +39008,7 @@
   "hand": null,
   "grip": null,
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "MS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1251",
-    "best_rank_year": "2026",
-    "best_rank_month": "11",
-    "total_matches": "22",
-    "total_wins": "9",
-    "total_losses": "13",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "201807": {
@@ -39221,7 +39104,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "594",
+    "best_rank": "588",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "96",
@@ -39426,7 +39309,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1254",
+    "best_rank": "1247",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "11",
@@ -39474,7 +39357,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1248",
+    "best_rank": "1241",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "24",
@@ -39631,9 +39514,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1241",
+    "best_rank": "1237",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "15",
     "total_wins": "8",
     "total_losses": "7",
@@ -39679,9 +39562,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1178",
+    "best_rank": "1175",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "20",
     "total_wins": "5",
     "total_losses": "15",
@@ -39823,9 +39706,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1175",
+    "best_rank": "1172",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "28",
     "total_wins": "15",
     "total_losses": "13",
@@ -39847,9 +39730,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1239",
+    "best_rank": "1235",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "23",
     "total_wins": "13",
     "total_losses": "10",
@@ -39895,7 +39778,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "481",
+    "best_rank": "477",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "6",
@@ -40073,7 +39956,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "403",
+    "best_rank": "399",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "29",
@@ -40097,9 +39980,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1163",
+    "best_rank": "1161",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "4",
     "total_losses": "3",
@@ -40280,7 +40163,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "218",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "36",
     "total_wins": "26",
     "total_losses": "10",
@@ -40302,9 +40185,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1213",
+    "best_rank": "1210",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "3",
     "total_losses": "6",
@@ -40424,9 +40307,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "569",
+    "best_rank": "565",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "3",
     "total_losses": "5",
@@ -40611,7 +40494,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "358",
+    "best_rank": "337",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "84",
@@ -40620,6 +40503,30 @@
     "tournament_wins": "4",
     "finals_wins": "4",
     "finals_losses": "3"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "202452": {
+  "name": "Eva LAM",
+  "org": "FRA",
+  "dob": "02/17/2011",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "601",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "58",
+    "total_wins": "40",
+    "total_losses": "18",
+    "tournament_wins": "1",
+    "finals_wins": "1",
+    "finals_losses": "0"
    }
   ],
   "checked": "2026-11-16"
@@ -40689,7 +40596,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "363",
+    "best_rank": "319",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "60",
@@ -40761,9 +40668,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1240",
+    "best_rank": "1236",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "18",
     "total_wins": "8",
     "total_losses": "10",
@@ -40809,15 +40716,39 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "691",
+    "best_rank": "688",
     "best_rank_year": "2026",
-    "best_rank_month": "1",
+    "best_rank_month": "11",
     "total_matches": "17",
     "total_wins": "10",
     "total_losses": "7",
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "202613": {
+  "name": "Joel ISAKSSON",
+  "org": "SWE",
+  "dob": "08/28/2012",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "1045",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "40",
+    "total_wins": "22",
+    "total_losses": "18",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "2"
    }
   ],
   "checked": "2026-11-16"
@@ -40876,6 +40807,30 @@
     "total_matches": "4",
     "total_wins": "1",
     "total_losses": "3",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "202643": {
+  "name": "Bhavna HEERALAL",
+  "org": "RSA",
+  "dob": "10/15/2007",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "419",
+    "best_rank_year": "2023",
+    "best_rank_month": "7",
+    "total_matches": "4",
+    "total_wins": "2",
+    "total_losses": "2",
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
@@ -41057,7 +41012,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "102",
+    "best_rank": "101",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "102",
@@ -41081,7 +41036,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "973",
+    "best_rank": "965",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "7",
@@ -41201,7 +41156,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "362",
+    "best_rank": "359",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "10",
@@ -41210,6 +41165,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "202792": {
+  "name": "Elena VUKOVAC",
+  "org": "CRO",
+  "dob": "02/20/2009",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "621",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "15",
+    "total_wins": "9",
+    "total_losses": "6",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "2"
    }
   ],
   "checked": "2026-11-16"
@@ -41297,9 +41276,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "961",
+    "best_rank": "959",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "21",
     "total_wins": "5",
     "total_losses": "16",
@@ -41321,9 +41300,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "962",
+    "best_rank": "960",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "25",
     "total_wins": "10",
     "total_losses": "15",
@@ -41369,7 +41348,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "401",
+    "best_rank": "395",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "23",
@@ -41441,7 +41420,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "722",
+    "best_rank": "717",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "17",
@@ -41515,7 +41494,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "952",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "1",
     "total_losses": "11",
@@ -41563,7 +41542,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "744",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "4",
     "total_wins": "1",
     "total_losses": "3",
@@ -42305,7 +42284,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "868",
+    "best_rank": "864",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "9",
@@ -42534,6 +42513,30 @@
   ],
   "checked": "2026-11-16"
  },
+ "203151": {
+  "name": "Lara FRANETA",
+  "org": "MNE",
+  "dob": "08/27/2012",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "976",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "14",
+    "total_wins": "2",
+    "total_losses": "12",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
  "203160": {
   "name": "Rubin MAHARJAN",
   "org": "NEP",
@@ -42579,7 +42582,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "697",
+    "best_rank": "692",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "74",
@@ -42685,9 +42688,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "555",
+    "best_rank": "552",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "21",
     "total_wins": "6",
     "total_losses": "15",
@@ -42709,9 +42712,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1172",
+    "best_rank": "1169",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "1",
     "total_losses": "8",
@@ -42733,9 +42736,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "964",
+    "best_rank": "962",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "4",
     "total_losses": "3",
@@ -42757,9 +42760,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1242",
+    "best_rank": "1238",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "4",
     "total_wins": "2",
     "total_losses": "2",
@@ -42853,7 +42856,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "135",
+    "best_rank": "132",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "54",
@@ -42925,7 +42928,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "414",
+    "best_rank": "407",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "80",
@@ -42933,6 +42936,30 @@
     "total_losses": "12",
     "tournament_wins": "6",
     "finals_wins": "6",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "203430": {
+  "name": "Simon ZSIGMOND",
+  "org": "HUN",
+  "dob": "09/10/2012",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "1261",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "55",
+    "total_wins": "30",
+    "total_losses": "25",
+    "tournament_wins": "0",
+    "finals_wins": "0",
     "finals_losses": "0"
    }
   ],
@@ -42949,9 +42976,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1210",
+    "best_rank": "1207",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "2",
     "total_losses": "7",
@@ -43021,9 +43048,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "373",
+    "best_rank": "363",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "136",
     "total_wins": "111",
     "total_losses": "25",
@@ -43298,7 +43325,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "700",
+    "best_rank": "693",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "12",
@@ -43346,7 +43373,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "804",
+    "best_rank": "796",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "25",
@@ -43452,9 +43479,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "335",
+    "best_rank": "334",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "40",
     "total_wins": "30",
     "total_losses": "10",
@@ -43528,7 +43555,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "606",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "52",
     "total_wins": "41",
     "total_losses": "11",
@@ -43550,7 +43577,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1261",
+    "best_rank": "1254",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "19",
@@ -43559,6 +43586,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "203956": {
+  "name": "Albane ROCHUT",
+  "org": "FRA",
+  "dob": "10/22/2012",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "600",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "74",
+    "total_wins": "53",
+    "total_losses": "21",
+    "tournament_wins": "1",
+    "finals_wins": "1",
+    "finals_losses": "2"
    }
   ],
   "checked": "2026-11-16"
@@ -43583,6 +43634,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "203962": {
+  "name": "Marcos GOMEZ",
+  "org": "ESP",
+  "dob": "03/09/2012",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "1262",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "79",
+    "total_wins": "57",
+    "total_losses": "22",
+    "tournament_wins": "3",
+    "finals_wins": "3",
+    "finals_losses": "1"
    }
   ],
   "checked": "2026-11-16"
@@ -43632,7 +43707,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "198",
+    "best_rank": "195",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "67",
@@ -44156,7 +44231,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "200",
+    "best_rank": "197",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "65",
@@ -44494,9 +44569,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1232",
+    "best_rank": "1228",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "14",
     "total_wins": "7",
     "total_losses": "7",
@@ -44566,9 +44641,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "557",
+    "best_rank": "555",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "5",
     "total_losses": "4",
@@ -44590,9 +44665,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1176",
+    "best_rank": "1173",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "11",
     "total_wins": "0",
     "total_losses": "11",
@@ -44614,9 +44689,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1177",
+    "best_rank": "1174",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "11",
     "total_wins": "0",
     "total_losses": "11",
@@ -44754,9 +44829,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1169",
+    "best_rank": "1167",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "43",
     "total_wins": "28",
     "total_losses": "15",
@@ -45079,9 +45154,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1204",
+    "best_rank": "1201",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "3",
     "total_losses": "4",
@@ -45103,9 +45178,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "203",
+    "best_rank": "202",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "150",
     "total_wins": "132",
     "total_losses": "18",
@@ -45247,9 +45322,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "828",
+    "best_rank": "728",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "51",
     "total_wins": "26",
     "total_losses": "25",
@@ -45271,7 +45346,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "535",
+    "best_rank": "531",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "38",
@@ -45329,7 +45404,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "406",
+    "best_rank": "403",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "62",
@@ -45507,9 +45582,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1182",
+    "best_rank": "1179",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "15",
     "total_wins": "6",
     "total_losses": "9",
@@ -45521,27 +45596,13 @@
   "checked": "2026-11-16"
  },
  "205847": {
-  "name": "Priyanshu KARMAKAR",
-  "org": "IND",
-  "dob": "12/19/2008",
+  "name": null,
+  "org": null,
+  "dob": null,
   "hand": null,
   "grip": null,
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "MS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1252",
-    "best_rank_year": "2026",
-    "best_rank_month": "11",
-    "total_matches": "7",
-    "total_wins": "2",
-    "total_losses": "5",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "205850": {
@@ -45688,9 +45749,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "556",
+    "best_rank": "553",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "1",
     "total_losses": "11",
@@ -46076,7 +46137,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "599",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "20",
     "total_wins": "8",
     "total_losses": "12",
@@ -46100,7 +46161,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "596",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "111",
     "total_wins": "88",
     "total_losses": "23",
@@ -46218,7 +46279,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "533",
+    "best_rank": "505",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "5",
@@ -46590,7 +46651,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "186",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "79",
     "total_wins": "68",
     "total_losses": "11",
@@ -46841,9 +46902,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "894",
+    "best_rank": "881",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "67",
     "total_wins": "41",
     "total_losses": "26",
@@ -46889,7 +46950,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "581",
+    "best_rank": "514",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "79",
@@ -47288,7 +47349,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "951",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "14",
     "total_wins": "3",
     "total_losses": "11",
@@ -47382,7 +47443,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "684",
+    "best_rank": "680",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "8",
@@ -47406,7 +47467,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "850",
+    "best_rank": "845",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "23",
@@ -47454,9 +47515,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1164",
+    "best_rank": "1162",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "34",
     "total_wins": "17",
     "total_losses": "17",
@@ -47478,9 +47539,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1222",
+    "best_rank": "1219",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "4",
     "total_losses": "4",
@@ -47733,7 +47794,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1263",
+    "best_rank": "1256",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "16",
@@ -47842,9 +47903,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1165",
+    "best_rank": "1163",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "3",
     "total_losses": "4",
@@ -47890,9 +47951,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "628",
+    "best_rank": "616",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "33",
     "total_wins": "14",
     "total_losses": "19",
@@ -47914,7 +47975,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "429",
+    "best_rank": "423",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "46",
@@ -48020,7 +48081,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "849",
+    "best_rank": "844",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "18",
@@ -48068,9 +48129,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1215",
+    "best_rank": "1212",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "2",
     "total_wins": "0",
     "total_losses": "2",
@@ -48294,7 +48355,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1091",
+    "best_rank": "1086",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "59",
@@ -48318,7 +48379,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "976",
+    "best_rank": "968",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "5",
@@ -48342,7 +48403,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "725",
+    "best_rank": "720",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "3",
@@ -48444,7 +48505,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "972",
+    "best_rank": "964",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "58",
@@ -48553,6 +48614,30 @@
   ],
   "checked": "2026-11-16"
  },
+ "207884": {
+  "name": "Anya SHANBHAG",
+  "org": "USA",
+  "dob": "06/25/2013",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "847",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "56",
+    "total_wins": "38",
+    "total_losses": "18",
+    "tournament_wins": "3",
+    "finals_wins": "3",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
  "207885": {
   "name": "Abhinav SHIRBHATE",
   "org": "USA",
@@ -48588,9 +48673,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "841",
+    "best_rank": "838",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "48",
     "total_wins": "32",
     "total_losses": "16",
@@ -48602,27 +48687,13 @@
   "checked": "2026-11-16"
  },
  "208294": {
-  "name": "Aaron FARIAS",
-  "org": "IND",
-  "dob": "10/01/2008",
+  "name": null,
+  "org": null,
+  "dob": null,
   "hand": null,
   "grip": null,
   "style": null,
-  "stats": [
-   {
-    "SubeventCode": "MS",
-    "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1253",
-    "best_rank_year": "2026",
-    "best_rank_month": "11",
-    "total_matches": "5",
-    "total_wins": "2",
-    "total_losses": "3",
-    "tournament_wins": "0",
-    "finals_wins": "0",
-    "finals_losses": "0"
-   }
-  ],
+  "stats": [],
   "checked": "2026-11-16"
  },
  "208301": {
@@ -48732,9 +48803,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1197",
+    "best_rank": "1194",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "19",
     "total_wins": "7",
     "total_losses": "12",
@@ -48817,7 +48888,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "507",
+    "best_rank": "502",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "28",
@@ -48889,9 +48960,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "963",
+    "best_rank": "961",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "20",
     "total_wins": "6",
     "total_losses": "14",
@@ -48985,7 +49056,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "625",
+    "best_rank": "620",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "33",
@@ -49201,9 +49272,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "774",
+    "best_rank": "399",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "56",
     "total_wins": "34",
     "total_losses": "22",
@@ -49293,7 +49364,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "967",
+    "best_rank": "963",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "23",
@@ -49391,7 +49462,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "949",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "31",
     "total_wins": "18",
     "total_losses": "13",
@@ -49413,7 +49484,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "892",
+    "best_rank": "879",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "29",
@@ -49509,9 +49580,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "270",
+    "best_rank": "255",
     "best_rank_year": "2026",
-    "best_rank_month": "9",
+    "best_rank_month": "11",
     "total_matches": "110",
     "total_wins": "94",
     "total_losses": "16",
@@ -49557,9 +49628,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1211",
+    "best_rank": "1208",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "4",
     "total_losses": "5",
@@ -49749,9 +49820,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1208",
+    "best_rank": "1205",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "4",
     "total_losses": "4",
@@ -49821,9 +49892,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "475",
+    "best_rank": "474",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "14",
     "total_wins": "10",
     "total_losses": "4",
@@ -49845,9 +49916,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1191",
+    "best_rank": "1188",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "4",
     "total_wins": "0",
     "total_losses": "4",
@@ -49882,9 +49953,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1192",
+    "best_rank": "1189",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "4",
     "total_wins": "0",
     "total_losses": "4",
@@ -49954,9 +50025,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "926",
+    "best_rank": "818",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "80",
     "total_wins": "58",
     "total_losses": "22",
@@ -50262,9 +50333,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1187",
+    "best_rank": "1184",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "10",
     "total_wins": "2",
     "total_losses": "8",
@@ -50368,9 +50439,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "288",
+    "best_rank": "273",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "23",
     "total_wins": "17",
     "total_losses": "6",
@@ -50426,9 +50497,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "482",
+    "best_rank": "481",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "6",
     "total_wins": "3",
     "total_losses": "3",
@@ -50474,7 +50545,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "368",
+    "best_rank": "290",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "67",
@@ -50556,9 +50627,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1238",
+    "best_rank": "1234",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "56",
     "total_wins": "37",
     "total_losses": "19",
@@ -50604,9 +50675,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "610",
+    "best_rank": "606",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "0",
     "total_losses": "7",
@@ -50800,7 +50871,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "767",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "0",
     "total_losses": "12",
@@ -50869,9 +50940,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "782",
+    "best_rank": "667",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "4",
     "total_wins": "3",
     "total_losses": "1",
@@ -50893,9 +50964,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "586",
+    "best_rank": "529",
     "best_rank_year": "2026",
-    "best_rank_month": "7",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "5",
     "total_losses": "3",
@@ -50984,6 +51055,30 @@
     "total_matches": "4",
     "total_wins": "2",
     "total_losses": "2",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "210517": {
+  "name": "Caden BOSMAN",
+  "org": "NAM",
+  "dob": "03/20/2009",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "550",
+    "best_rank_year": "2024",
+    "best_rank_month": "9",
+    "total_matches": "6",
+    "total_wins": "2",
+    "total_losses": "4",
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
@@ -51084,9 +51179,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1188",
+    "best_rank": "1185",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "17",
     "total_wins": "2",
     "total_losses": "15",
@@ -51108,9 +51203,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1189",
+    "best_rank": "1186",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "27",
     "total_wins": "5",
     "total_losses": "22",
@@ -51142,7 +51237,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "905",
+    "best_rank": "895",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "63",
@@ -51261,9 +51356,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "832",
+    "best_rank": "689",
     "best_rank_year": "2026",
-    "best_rank_month": "8",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "5",
     "total_losses": "3",
@@ -51636,7 +51731,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "896",
+    "best_rank": "885",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "4",
@@ -51660,9 +51755,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1223",
+    "best_rank": "1220",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "14",
     "total_wins": "7",
     "total_losses": "7",
@@ -51824,7 +51919,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "575",
+    "best_rank": "569",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "73",
@@ -51848,7 +51943,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "977",
+    "best_rank": "969",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "8",
@@ -51968,9 +52063,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1186",
+    "best_rank": "1183",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "24",
     "total_wins": "10",
     "total_losses": "14",
@@ -51992,7 +52087,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "485",
+    "best_rank": "481",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "18",
@@ -52064,9 +52159,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1206",
+    "best_rank": "1203",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "32",
     "total_wins": "24",
     "total_losses": "8",
@@ -52300,7 +52395,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "723",
+    "best_rank": "718",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "8",
@@ -52348,9 +52443,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1180",
+    "best_rank": "1177",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "0",
     "total_losses": "3",
@@ -52444,7 +52539,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "867",
+    "best_rank": "863",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "15",
@@ -52494,7 +52589,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "950",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "74",
     "total_wins": "51",
     "total_losses": "23",
@@ -52638,7 +52733,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "953",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "6",
     "total_wins": "2",
     "total_losses": "4",
@@ -52684,9 +52779,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1190",
+    "best_rank": "1187",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "5",
     "total_wins": "1",
     "total_losses": "4",
@@ -52732,9 +52827,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1209",
+    "best_rank": "1206",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "11",
     "total_wins": "5",
     "total_losses": "6",
@@ -52782,7 +52877,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "597",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "81",
     "total_wins": "68",
     "total_losses": "13",
@@ -52861,6 +52956,30 @@
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "213507": {
+  "name": "Chloe HUANG",
+  "org": "FRA",
+  "dob": "07/07/2012",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "848",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "31",
+    "total_wins": "16",
+    "total_losses": "15",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "1"
    }
   ],
   "checked": "2026-11-16"
@@ -53356,7 +53475,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "783",
+    "best_rank": "781",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "15",
@@ -53440,7 +53559,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "955",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "0",
     "total_losses": "3",
@@ -53564,9 +53683,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "873",
+    "best_rank": "775",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "20",
     "total_wins": "8",
     "total_losses": "12",
@@ -53636,9 +53755,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1198",
+    "best_rank": "1195",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "6",
     "total_losses": "6",
@@ -53660,9 +53779,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1196",
+    "best_rank": "1193",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "12",
     "total_wins": "5",
     "total_losses": "7",
@@ -53684,12 +53803,36 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "610",
+    "best_rank": "607",
     "best_rank_year": "2026",
-    "best_rank_month": "7",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "3",
     "total_losses": "6",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "221193": {
+  "name": "Khasanboy TESHABOEV",
+  "org": "UZB",
+  "dob": "03/24/2010",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "1046",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "19",
+    "total_wins": "6",
+    "total_losses": "13",
     "tournament_wins": "0",
     "finals_wins": "0",
     "finals_losses": "0"
@@ -53924,7 +54067,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "225",
+    "best_rank": "222",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "5",
@@ -53996,7 +54139,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1089",
+    "best_rank": "1084",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "4",
@@ -54020,7 +54163,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "42",
+    "best_rank": "41",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "23",
@@ -54116,9 +54259,9 @@
    {
     "SubeventCode": "WT",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "453",
+    "best_rank": "450",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "1",
     "total_losses": "6",
@@ -54366,7 +54509,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1250",
+    "best_rank": "1243",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "23",
@@ -54390,9 +54533,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1237",
+    "best_rank": "1233",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "2",
     "total_losses": "6",
@@ -54482,9 +54625,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "644",
+    "best_rank": "604",
     "best_rank_year": "2026",
-    "best_rank_month": "7",
+    "best_rank_month": "11",
     "total_matches": "5",
     "total_wins": "1",
     "total_losses": "4",
@@ -54578,9 +54721,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "474",
+    "best_rank": "473",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "4",
     "total_losses": "4",
@@ -54722,9 +54865,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1179",
+    "best_rank": "1176",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "6",
     "total_wins": "2",
     "total_losses": "4",
@@ -54794,9 +54937,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "960",
+    "best_rank": "958",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "30",
     "total_wins": "12",
     "total_losses": "18",
@@ -54899,6 +55042,30 @@
   ],
   "checked": "2026-11-16"
  },
+ "222181": {
+  "name": "Karen PILLAY",
+  "org": "RSA",
+  "dob": "04/30/2007",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "WS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "661",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "4",
+    "total_wins": "2",
+    "total_losses": "2",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
  "222184": {
   "name": "Joy EMMANUEL",
   "org": "NGR",
@@ -54992,7 +55159,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "446",
+    "best_rank": "436",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "6",
@@ -55016,7 +55183,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "331",
+    "best_rank": "329",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "11",
@@ -55112,7 +55279,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "689",
+    "best_rank": "682",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "27",
@@ -55180,9 +55347,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "965",
+    "best_rank": "963",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "1",
     "total_losses": "2",
@@ -55272,9 +55439,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "245",
+    "best_rank": "222",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "55",
     "total_wins": "44",
     "total_losses": "11",
@@ -55296,9 +55463,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1173",
+    "best_rank": "1170",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "1",
     "total_losses": "2",
@@ -55330,7 +55497,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "245",
+    "best_rank": "239",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "20",
@@ -55450,7 +55617,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1249",
+    "best_rank": "1242",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "8",
@@ -55474,7 +55641,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "784",
+    "best_rank": "782",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "17",
@@ -55690,7 +55857,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "536",
+    "best_rank": "532",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "16",
@@ -55810,9 +55977,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "659",
+    "best_rank": "656",
     "best_rank_year": "2026",
-    "best_rank_month": "2",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "1",
     "total_losses": "2",
@@ -55882,7 +56049,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "869",
+    "best_rank": "865",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "4",
@@ -56156,9 +56323,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1193",
+    "best_rank": "1190",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "2",
     "total_wins": "0",
     "total_losses": "2",
@@ -56193,9 +56360,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1194",
+    "best_rank": "1191",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "10",
     "total_wins": "2",
     "total_losses": "8",
@@ -56361,9 +56528,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1207",
+    "best_rank": "1204",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "75",
     "total_wins": "59",
     "total_losses": "16",
@@ -56409,7 +56576,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1281",
+    "best_rank": "1276",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "6",
@@ -56481,9 +56648,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1212",
+    "best_rank": "1209",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "0",
     "total_losses": "7",
@@ -56577,9 +56744,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1195",
+    "best_rank": "1192",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "11",
     "total_wins": "3",
     "total_losses": "8",
@@ -56649,9 +56816,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1183",
+    "best_rank": "1180",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "7",
     "total_wins": "3",
     "total_losses": "4",
@@ -56697,9 +56864,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "564",
+    "best_rank": "562",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "26",
     "total_wins": "21",
     "total_losses": "5",
@@ -56747,7 +56914,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "954",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "0",
     "total_losses": "3",
@@ -56817,9 +56984,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1199",
+    "best_rank": "1196",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "2",
     "total_wins": "0",
     "total_losses": "2",
@@ -56851,7 +57018,7 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "989",
+    "best_rank": "984",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -56929,7 +57096,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1255",
+    "best_rank": "1248",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -56953,7 +57120,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1046",
+    "best_rank": "1040",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -57073,9 +57240,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1201",
+    "best_rank": "1198",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "6",
     "total_wins": "0",
     "total_losses": "6",
@@ -57607,9 +57774,9 @@
    {
     "SubeventCode": "WS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "472",
+    "best_rank": "471",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "8",
     "total_wins": "6",
     "total_losses": "2",
@@ -57691,7 +57858,7 @@
     "StartDate": "01/01/2026 00:00:00",
     "best_rank": "732",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "9",
     "total_wins": "6",
     "total_losses": "3",
@@ -57809,9 +57976,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1219",
+    "best_rank": "1216",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "0",
     "total_losses": "3",
@@ -57857,9 +58024,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1228",
+    "best_rank": "1225",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "4",
     "total_wins": "2",
     "total_losses": "2",
@@ -57881,7 +58048,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1265",
+    "best_rank": "1258",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "3",
@@ -57905,9 +58072,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1220",
+    "best_rank": "1217",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "2",
     "total_wins": "0",
     "total_losses": "2",
@@ -57929,9 +58096,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1227",
+    "best_rank": "1224",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "6",
     "total_wins": "2",
     "total_losses": "4",
@@ -57953,9 +58120,9 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1229",
+    "best_rank": "1226",
     "best_rank_year": "2026",
-    "best_rank_month": "10",
+    "best_rank_month": "11",
     "total_matches": "3",
     "total_wins": "2",
     "total_losses": "1",
@@ -58025,7 +58192,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1045",
+    "best_rank": "1039",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -58049,7 +58216,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1256",
+    "best_rank": "1249",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -58073,7 +58240,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1047",
+    "best_rank": "1041",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -58097,7 +58264,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "724",
+    "best_rank": "719",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "3",
@@ -58121,7 +58288,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1259",
+    "best_rank": "1252",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -58145,7 +58312,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1258",
+    "best_rank": "1251",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -58169,7 +58336,7 @@
    {
     "SubeventCode": "MS",
     "StartDate": "01/01/2026 00:00:00",
-    "best_rank": "1257",
+    "best_rank": "1250",
     "best_rank_year": "2026",
     "best_rank_month": "11",
     "total_matches": "2",
@@ -58190,6 +58357,54 @@
   "grip": null,
   "style": null,
   "stats": [],
+  "checked": "2026-11-16"
+ },
+ "227999": {
+  "name": "Sphelele SITHOLE",
+  "org": "RSA",
+  "dob": "09/08/2007",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "935",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "3",
+    "total_wins": "1",
+    "total_losses": "2",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
+  "checked": "2026-11-16"
+ },
+ "228000": {
+  "name": "Kgalalelo PHEKONYANE",
+  "org": "RSA",
+  "dob": "02/27/2008",
+  "hand": null,
+  "grip": null,
+  "style": null,
+  "stats": [
+   {
+    "SubeventCode": "MS",
+    "StartDate": "01/01/2026 00:00:00",
+    "best_rank": "934",
+    "best_rank_year": "2026",
+    "best_rank_month": "11",
+    "total_matches": "3",
+    "total_wins": "1",
+    "total_losses": "2",
+    "tournament_wins": "0",
+    "finals_wins": "0",
+    "finals_losses": "0"
+   }
+  ],
   "checked": "2026-11-16"
  },
  "228230": {
