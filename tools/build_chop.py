@@ -270,11 +270,47 @@ def build():
     def series_of(name):
         return next((sname for sname, rx in SERIES if re.search(rx, name or "")), None)
 
+    # Published draws of current and upcoming events. Once an event's draw is out, nobody is "likely" for it any more:
+    # a player is either in it (any round, times or not: a seed with a bye has no match time until the round before
+    # finishes) or not playing it. Being in the draw doesn't need a scheduled match.
+    EVBY = {x["id"]: x for x in EV}
+    drawn, drawn_ev = {}, set()
+    for f in glob.glob(os.path.join(ROOT, "data", "draws", "*.json")):
+        eid = WTT2EV.get(os.path.basename(f)[:-5])
+        x = EVBY.get(eid)
+        if not x or x.get("end", "") < today:
+            continue
+        d = load(os.path.relpath(f, ROOT), {})
+        drawn_ev.add(eid)
+        for ev in (d.get("events") or {}).values():
+            for rd in ev.get("rounds", []):
+                for m in rd.get("matches", []):
+                    pl = m.get("players") or []
+                    for i, q in enumerate(pl):
+                        n = pk.get(key((q or {}).get("name")))
+                        if not n:
+                            continue
+                        st = drawn.setdefault(n, {}).setdefault(eid, {"out": False})
+                        w = m.get("winner")
+                        if w in (0, 1) and w != i and len(pl) == 2 and (pl[1 - i] or {}).get("name"):
+                            st["out"] = True
+    played_ev = {}   # WTT event ids each player has already played at (qualifying included)
+    for i_, rows in ms.items():
+        for m, s_ in rows:
+            played_ev.setdefault(i_, set()).add(str(m.get("e")))
+
     def likely(p):
         nx = [x for x in nxt.get(p["name"], []) if not x.get("club")]
-        if nx:
-            return {"kind": "draw", "event": nx[0]["what"].split(",")[0], "when": nx[0]["when"], "why": "in the draw", "eid": nx[0].get("eid"),
-                    "url": f'{ELEVEN}/events/{nx[0]["eid"]}.html' if nx[0].get("eid") else None}
+        live = [(eid, st) for eid, st in (drawn.get(p["name"]) or {}).items() if not st["out"]]
+        if nx or live:
+            eid = nx[0].get("eid") if nx else min(live, key=lambda t: EVBY[t[0]]["start"])[0]
+            x = EVBY.get(eid) or {}
+            title = f'{x["name"]} {x.get("year", "")}'.strip() if x else nx[0]["what"].split(",")[0]
+            out = {"kind": "draw", "event": title, "when": nx[0]["when"] if nx else x.get("start", ""), "why": "in the draw", "eid": eid,
+                   "url": f'{ELEVEN}/events/{eid}.html' if eid else None}
+            if x:
+                out.update(start=x["start"], end=x["end"], city=x.get("city", ""))
+            return out
         r = rank_of(p)
         played = {}
         for m, s_ in ms.get(p.get("ittf_id"), []):
@@ -285,6 +321,8 @@ def build():
                 played.setdefault(sr, set()).add(m["e"])
         for x in upcoming:
             sr = x.get("series")
+            if x["id"] in drawn_ev or str(x.get("wtt_id")) in played_ev.get(p.get("ittf_id"), set()):
+                continue   # draw out and they're not in it, or already played there (out in qualifying)
             if sr in played and (not r or r["rank"] <= ENTRY.get(sr, 9999)) and x["start"] <= (now + dt.timedelta(days=150)).date().isoformat():
                 n = len(played[sr])
                 return {"kind": "likely", "event": f'{x["name"]} {x["year"]}', "url": f"{ELEVEN}/events/{x['id']}.html", "eid": x["id"], "start": x["start"], "end": x["end"],
@@ -582,9 +620,9 @@ def build():
     for p in players:
         lk = likely(p)
         if lk and lk["kind"] in ("likely", "draw"):
-            by_ev.setdefault((lk.get("start") or lk.get("when", "")[:10], lk["event"]), []).append((p, lk))
+            by_ev.setdefault((lk.get("start") or (lk.get("when") or "")[:10], lk["event"], lk["kind"]), []).append((p, lk))
     ev_cards = []
-    for (st, evn), who in sorted(by_ev.items()):
+    for (st, evn, _k), who in sorted(by_ev.items()):
         lk0 = who[0][1]
         when_ = span(lk0["start"], lk0["end"]) if lk0.get("start") else day(lk0["when"])
         ppl = "".join(f'<li><a href="{plink(p)}">{e(p["name"])}</a> {tag(p.get("style"))}<span class="ch-why">{e(lk["why"])}</span></li>' for p, lk in who)
