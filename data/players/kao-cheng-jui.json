@@ -5,11 +5,21 @@
  "gender": "M",
  "born": "2004-12-25",
  "hand": "Right",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "Kanazawa Port",
+   "league": "T.League",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=132824"
+  "https://www.worldtabletennis.com/playerDescription?playerId=132824",
+  "https://sports.ltn.com.tw/news/breakingnews/5644205"
  ],
- "checked": "2026-11-10",
- "stub": true
+ "checked": "2026-11-17",
+ "stub": true,
+ "notes": [
+  "Pulled out of Taiwan's national ranking trials in late 2025 with a leg injury and missed the 2026 national team; returned at the US Smash in June 2026, was injured again in late September 2026 and missed the China Smash, then won back his national team place at the trials in November 2026."
+ ]
 }
