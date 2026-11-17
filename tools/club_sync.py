@@ -8,6 +8,8 @@ competitions with a feed we can read:
   tleague-men     T.League men                           tleague.jp, table and schedule pages
   tleague-women   T.League women                         tleague.jp
   mltt            Major League Table Tennis (mixed)      web.mltt.com, the API behind its schedule and results
+  bcl-men         British Clubs League, Premier (senior) Table Tennis England's TT Leagues site, its API
+  bcl-women       British Clubs League, Premier (women)  the same
 
 Other competitions (China Super League, UTT, Pro A, ETTU Champions League) have no feed we can read;
 the scheduled update runs keep their files current by hand from official sources (see UPDATE.md).
@@ -287,7 +289,49 @@ def mltt():
             "matches": matches}
 
 
-SOURCES = {"ttbl": ttbl, "dttbl-women": dttbl_women, "tleague-men": lambda: tleague("m"), "tleague-women": lambda: tleague("w"), "mltt": mltt}
+# ---------------------------------------------------------------- British Clubs League (Table Tennis England)
+# Fixtures and tables live on british.ttleagues.com. Its API answers on the old Azure address (the front-door one
+# refuses scripts) with the site's host as the Tenant header. Each season is a new competition: update BCL_DIV
+# with the Premier Division ids (API: competitions/all, then competitions/<id>/divisions).
+TTL_API = "https://ttleagues-api.azurewebsites.net/api/"
+BCL_DIV = {"bcl-men": (4527, 12800, "Senior British Club League 2026-27"), "bcl-women": (4589, 13039, "Womens British Club League 2026/27")}
+
+
+def ttl(path):
+    req = urllib.request.Request(TTL_API + path, headers={"User-Agent": UA, "Tenant": "british.ttleagues.com", "Entry": "1",
+                                                          "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def bcl(k):
+    comp, div, season_name = BCL_DIV[k]
+    rows = [{"pos": r["position"], "team": r["name"].strip(), "p": r["played"], "w": r["won"], "d": r["drawn"], "l": r["lost"],
+             "for": r["setsFor"], "against": r["setsAgainst"], "diff": r["setsFor"] - r["setsAgainst"], "pts": r["points"]}
+            for r in ttl(f"divisions/{div}/standings")]
+    d = ttl(f"divisions/{div}/matches")
+    ms = [m for g in d.get("groups", []) for m in g.get("matches", [])] + d.get("matches", [])
+    matches, seen = [], set()
+    for m in ms:
+        if m["id"] in seen or m.get("bye"):
+            continue
+        seen.add(m["id"])
+        when = m.get("time") or m.get("date")
+        if not when or not m.get("home") or not m.get("away"):
+            continue
+        done = bool(m.get("hasResults") or m.get("approved") or m.get("submitted"))
+        h, a = m["home"].get("score"), m["away"].get("score")
+        matches.append({"when": iso(dt.datetime.fromisoformat(when.replace("Z", "+00:00"))), "home": m["home"]["name"].strip(),
+                        "away": m["away"]["name"].strip(), "score": [h, a] if done and h is not None and a is not None else None,
+                        "status": "finished" if done and h is not None else "scheduled", "round": m.get("week")})
+    yrs = re.search(r"(\d{4})\D(\d{2,4})", season_name)
+    return {"season": f"{yrs[1]}-{yrs[2][-2:]}" if yrs else "", "source": {"name": "Table Tennis England, British Clubs League", "url": f"https://british.ttleagues.com/league/{comp}/division/{div}"},
+            "table": {"columns": ["p", "w", "d", "l", "matches", "pts"], "groups": [{"name": "Premier Division", "rows": rows}],
+                      "note": "Points as published by the league."},
+            "matches": matches}
+
+
+SOURCES = {"bcl-men": lambda: bcl("bcl-men"), "bcl-women": lambda: bcl("bcl-women"), "ttbl": ttbl, "dttbl-women": dttbl_women, "tleague-men": lambda: tleague("m"), "tleague-women": lambda: tleague("w"), "mltt": mltt}
 
 
 def main(which):
