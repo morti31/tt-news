@@ -2,7 +2,7 @@
 --explore prints what the API returns, for setting up."""
 import json, sys, urllib.request, urllib.error
 
-API = "https://ttleagues-f6f7g9gccqd4dyhr.z01.azurefd.net/api/"
+API = "https://ttleagues-api.azurewebsites.net/api/"   # the front-door address answers 403 to scripts
 HEAD = {"Tenant": "british.ttleagues.com", "Entry": "1", "Accept": "application/json",
         "Origin": "https://british.ttleagues.com", "Referer": "https://british.ttleagues.com/",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
