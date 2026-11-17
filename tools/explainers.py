@@ -21,6 +21,7 @@ RULES = {
     "clubs": ["professional-table-tennis-leagues", "team-table-tennis-format"],
     "league": ["professional-table-tennis-leagues", "team-table-tennis-format"],
     "league:champions-league": ["ettu-champions-league-explained"],
+    "league:british-league": ["club-table-tennis-structure-britain", "table-tennis-england-explained"],
 }
 EVENT_SERIES = [   # (words in the event's series or group, guides)
     ("World Team Championships", ["world-table-tennis-championships-explained", "team-table-tennis-format"]),

@@ -281,8 +281,20 @@ def hub(stories, now):
             if m.get("when"):
                 allfix.append((m, tag, lg))
     week = (now - dt.timedelta(days=10)).strftime("%Y-%m-%d")
-    allres = sorted((x for x in allres if (x[0].get("when") or "") >= week), key=lambda x: x[0]["when"], reverse=True)[:10]
-    allfix = sorted(allfix, key=lambda x: x[0]["when"])[:10]
+    def every_league(items, recent, newest_first):
+        """The nearest 10 matches overall, plus each league's nearest matchday (latest results or next fixtures) so a league
+        that plays only every few weeks (the British Clubs League's weekends) is never crowded out by the weekly ones."""
+        items = sorted(items, key=lambda x: x[0]["when"], reverse=newest_first)
+        keep = [x for x in items if recent(x)][:10]
+        for lg in LEAGUES:
+            mine = [x for x in items if x[2] is lg]
+            near = lambda x: abs((uk(x[0]["when"]) - now).days) <= 30   # only a matchday within a month
+            if mine and near(mine[0]) and not any(x[2] is lg for x in keep):
+                day = uk(mine[0][0]["when"]).date()
+                keep += [x for x in mine if uk(x[0]["when"]).date() == day]
+        return sorted(keep, key=lambda x: x[0]["when"], reverse=newest_first)
+    allres = every_league(allres, lambda x: (x[0].get("when") or "") >= week, True)
+    allfix = every_league(allfix, lambda x: True, False)
     lab = lambda x: f'{x[2]["name"]}{"" if len(x[2]["comps"]) == 1 else ", " + x[1].lower()}'
     def block(items):
         out, last = [], None
