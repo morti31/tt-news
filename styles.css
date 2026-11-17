@@ -1673,3 +1673,4 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .later-note .meta { font-weight: 400; margin-left: 6px; }
 @media (prefers-color-scheme: dark) { .later-note { background: #3a1f1c; } }
 .promo.promo-text { grid-template-columns: 1fr; }   /* Related news: plain text, no pictures */
+.cl-rec { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; margin-left: 4px; }

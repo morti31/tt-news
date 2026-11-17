@@ -81,7 +81,7 @@ def squads_html(comps, profiles):
         for t in sorted(sq["teams"], key=lambda t: t["team"]):
             lis = "".join(
                 f'<li>{components.flag(p.get("nat")) if p.get("nat") else ""}'
-                + link(p["name"]) + "</li>"
+                + link(p["name"]) + (f' <span class="cl-rec">{e(p["rec"])}</span>' if p.get("rec") else "") + "</li>"
                 for p in t["players"])
             coach = f'<p class="cl-coach">Coach: {e(t["coach"])}</p>' if t.get("coach") else ""
             cards.append(f'<div class="cl-squad"><h4>{e(t["team"])}</h4><ul>{lis}</ul>{coach}</div>')

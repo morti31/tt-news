@@ -173,8 +173,22 @@ def utt():
     return {"source": {"name": "Ultimate Table Tennis", "url": "https://www.ultimatetabletennis.in/teams"}, "teams": teams}
 
 
+def bcl(k):
+    """British Clubs League: TT Leagues publishes the players each team has used, with their singles record (no registered
+    squads and no ages). Team names follow the league table (club_sync)."""
+    comp, div, _ = cs.BCL_DIV[k]
+    names_ = {r["teamId"]: r["name"].strip() for r in cs.ttl(f"divisions/{div}/standings")}
+    teams = {}
+    for r in sorted(cs.ttl(f"divisions/{div}/averages"), key=lambda r: (-r["played"], -r["won"], r["name"])):
+        t = names_.get(r["teamId"], (r.get("team") or "").strip())
+        teams.setdefault(t, []).append({"name": r["name"].strip(), "rec": f'{r["won"]}-{r["loss"]}'})
+    return {"source": {"name": "Table Tennis England, British Clubs League", "url": f"https://british.ttleagues.com/league/{comp}/division/{div}"},
+            "note": "The players each team has used so far this season, with their singles won and lost.",
+            "teams": [{"team": t, "players": ps} for t, ps in sorted(teams.items())]}
+
+
 SOURCES = {"ttbl": ttbl, "dttbl-women": dttbl_women, "tleague-men": lambda: tleague("m"), "tleague-women": lambda: tleague("w"),
-           "mltt": mltt, "utt": utt}
+           "mltt": mltt, "utt": utt, "bcl-men": lambda: bcl("bcl-men"), "bcl-women": lambda: bcl("bcl-women")}
 
 
 def main(which):
