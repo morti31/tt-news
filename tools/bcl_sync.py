@@ -18,7 +18,7 @@ def explore():
     for p in sys.argv[2:] or ["leagues/2131", "divisions/6041", "divisions/6041/standings", "divisions/6041/matches"]:
         try:
             d = get(p)
-            print("==", p, json.dumps(d)[:3000])
+            print("==", p, json.dumps(d)[:40000])
         except urllib.error.HTTPError as err:
             print("==", p, "ERR", err, err.read()[:300])
         except Exception as err:
