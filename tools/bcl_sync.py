@@ -1,6 +1,6 @@
 """British Clubs League (Table Tennis England), Premier divisions, from TT Leagues (british.ttleagues.com).
 --explore prints what the API returns, for setting up."""
-import json, sys, urllib.request
+import json, sys, urllib.request, urllib.error
 
 API = "https://ttleagues-f6f7g9gccqd4dyhr.z01.azurefd.net/api/"
 HEAD = {"Tenant": "british.ttleagues.com", "Entry": "1", "Accept": "application/json",
@@ -9,7 +9,7 @@ HEAD = {"Tenant": "british.ttleagues.com", "Entry": "1", "Accept": "application/
 
 
 def get(path):
-    req = urllib.request.Request(API + path, headers=HEAD)
+    req = urllib.request.Request(path if path.startswith("http") else API + path, headers=HEAD)
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode("utf-8"))
 
@@ -19,6 +19,8 @@ def explore():
         try:
             d = get(p)
             print("==", p, json.dumps(d)[:3000])
+        except urllib.error.HTTPError as err:
+            print("==", p, "ERR", err, err.read()[:300])
         except Exception as err:
             print("==", p, "ERR", err)
 
