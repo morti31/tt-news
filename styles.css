@@ -1665,3 +1665,10 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .chop-note-s { font-size: 14px; color: #3d4a46; }
 .chop-note-l { font-size: 14px; font-weight: 600; display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; }
 @media (prefers-color-scheme: dark) { .chop-note { background: #173229; } .chop-note-h a, .chop-note-l a { color: #7fd3b8; } .chop-note-s { color: #b8c9c2; } }
+
+/* A story a newer one has overtaken (a win, then a withdrawal): the newer story, flagged at the top */
+.later-note { margin: 12px 0 16px; padding: 10px 14px; border-left: 4px solid #c8372d; background: #fbeeec; font-weight: 600; line-height: 1.4; }
+.later-note .small-label { color: #c8372d; margin-right: 6px; }
+.later-note a { color: inherit; }
+.later-note .meta { font-weight: 400; margin-left: 6px; }
+@media (prefers-color-scheme: dark) { .later-note { background: #3a1f1c; } }

@@ -9,7 +9,8 @@
   try {
     data = await fetch("data/news.json", { cache: "no-store" }).then((r) => r.json());
     const opt = (u) => fetch(u, { cache: "no-store" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
-    const [sch, arts, hubs, top, feats, tagmap] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json"), opt("data/features.json"), opt("data/tags.json")]);
+    const [sch, arts, hubs, top, feats, tagmap, leadInfo] = await Promise.all([opt("data/schedule.json"), opt("data/article-index.json"), opt("data/event-index.json"), opt("data/top-stories.json"), opt("data/features.json"), opt("data/tags.json"), opt("data/lead.json")]);
+    data.lead = (leadInfo && leadInfo.lead) || null;   // the build's choice: "top" story unless a newer one overtakes it
     data.tags = tagmap || {};
     data.features = Array.isArray(feats) ? feats : [];
     data.top = Array.isArray(top) ? top : [];
@@ -295,7 +296,7 @@
   function render(cat) {
     seen = new Set();
     const list = cat === "All" ? stories : stories.filter((s) => s.category === cat);
-    const lead = (cat === "All" && list.find((s) => s.top)) || list[0];
+    const lead = (cat === "All" && (list.find((s) => s.id === data.lead) || list.find((s) => s.top))) || list[0];
     const rest = list.filter((s) => s !== lead);
     $("lead").innerHTML = lead ? `<article class="big">${art(lead, "big") || fallbackPic(lead, true)}<div class="big-text">${kicker(lead)}
       <h1><a class="stretch" href="${esc(url(lead))}">${esc(lead.headline)}</a></h1><p>${esc(lead.summary)}</p>

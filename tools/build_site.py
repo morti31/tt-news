@@ -278,6 +278,70 @@ TIER_PRESTIGE = {"world": 5, "smash": 4, "continental": 3.5, "champions": 3, "st
 CATEGORY_PRESTIGE = {"Features": 3, "International": 2.5, "England": 2, "Clubs": 2, "Equipment": 1.5}
 
 
+# A newer story that reverses an older one: the player withdraws, retires, loses or is ruled out after a story about
+# them going through. The older story can't lead the site or sit high in Top stories while the newer one is further down.
+REVERSAL = re.compile(r"\b(pulls? out|pulled out|withdraws?|withdrew|withdrawn|retires?|retired|ruled out|injur\w*|knocked out|"
+                      r"crash(?:es|ed)? out|bows? out|bowed out|loses|lost|beaten|exits?|eliminated|disqualified|suspended|banned|"
+                      r"misses|will miss|out of)\b", re.I)
+
+
+def supersessions(stories):
+    """{older story id: newer story id} for stories a later one overtakes.
+
+    Automatic: the newer headline names a player and, within a few words, a reversal ("Fang Bo pulls out of ...") with no
+    other player named in between; the older headline is led by the same player ("Fang Bo comes from a game down ...",
+    or after a colon), is about the same event (or neither has one),
+    and is no more than four days older. By hand: "supersedes": ["story-id", ...] on a story in data/news.json."""
+    players = {}
+    for slug_, t in (TG.tags.items() if TG else []):
+        if t.get("type") == "player":
+            players[t["name"]] = slug_
+    names = sorted(players, key=len, reverse=True)
+    ts = lambda i: dt.datetime.fromisoformat(i["published"].replace("Z", "+00:00"))
+    out = {}
+    raw = {x["id"]: x for x in NEWS.get("stories", [])}
+    for new in stories:
+        for old_id in raw.get(new["id"], {}).get("supersedes") or []:
+            out[old_id] = new["id"]
+        h = new["title"]
+        subj = set()
+        for n in names:
+            i0 = h.find(n)
+            if i0 < 0:
+                continue
+            m = REVERSAL.search(h, i0 + len(n), i0 + len(n) + 30)   # the player's own verb, straight after the name
+            if m and not any(o != n and o not in n and h.find(o, i0 + len(n), m.start()) >= 0 for o in names):
+                subj.add(n)
+        if not subj:
+            continue
+        for old in stories:
+            if old is new or old["id"] in out or ts(old) >= ts(new) or (ts(new) - ts(old)).days > 4:
+                continue
+            if (old.get("event") or None) != (new.get("event") or None):
+                continue
+            # the player is the subject of the older headline too: it starts with them, or with them after a colon
+            lead_part = old["title"].rsplit(": ", 1)[-1]
+            if any(old["title"].startswith(n) or lead_part.startswith(n) for n in subj) and not REVERSAL.search(old["title"]):
+                out[old["id"]] = new["id"]
+    return out
+
+
+SUPERSEDED = {}   # older story id -> the newer story that overtakes it (supersessions)
+
+
+def lead_story(stories):
+    """The story at the top of the home page: the one marked "top": true, unless a newer story overtakes it, in which case
+    the newest story in that chain leads; with no story marked, the first of the weighted Top stories."""
+    lead = next((i for i in stories if i.get("top")), None)
+    if not lead:
+        return TOP[0]["id"] if TOP else (stories[0]["id"] if stories else None)
+    lid, seen = lead["id"], set()
+    while lid in SUPERSEDED and lid not in seen:
+        seen.add(lid)
+        lid = SUPERSEDED[lid]
+    return lid
+
+
 def top_stories(stories, now=None):
     """Top stories by weight, not just time.
 
@@ -321,6 +385,8 @@ def top_stories(stories, now=None):
             score *= 0.02 if over else 0.6   # once the tournament is over its previews drop right down
         if over and s.get("kind") == "Review" and i["published"][:10] >= (hub.get("end") or ""):
             score *= 1.5   # the finals report leads
+        if i["id"] in SUPERSEDED:
+            score *= 0.05   # a newer story overtakes it (a withdrawal after a win): it drops right down
         scored.append([score, i])
     out, per_event = [], {}
     pool = sorted(scored, key=lambda x: -x[0])
@@ -547,6 +613,43 @@ NEWS_PER_PAGE = 20   # stories per page on /news/
 MIN_WORDS = 400   # the length of a full article (UPDATE.md); shorter quick updates are indexed too, since 14 Nov 2026
 
 
+REL_WEIGHT = {"player": 4, "club": 3, "tournament": 3, "league": 3, "country": 1}
+
+
+def related(cur, a, pool, n=16):
+    """Related news for a story page, best first: the story that overtakes this one (if any), then stories sharing its
+    players, event, club or league and country (players weigh most), counting less the further apart in time they are
+    (half every three weeks). Topped up with the newest stories if fewer than n are related."""
+    mine = set(TAGFULL.get(cur, []) or TAGFULL.get(a["slug"], []))
+    ev = a.get("event")
+    when = lambda i: dt.datetime.fromisoformat(i["published"].replace("Z", "+00:00"))
+    t0 = dt.datetime.fromisoformat((a.get("published") or a["date"] + "T09:00:00Z").replace("Z", "+00:00"))
+    scored = []
+    for i in pool:
+        theirs = set(TAGFULL.get(i["id"], []) or TAGFULL.get(i["slug"], []))
+        sc = sum(REL_WEIGHT.get(TG.tags[t]["type"], 1) for t in mine & theirs if t in TG.tags)
+        if ev and i.get("event") == ev:
+            sc += 5
+        if SUPERSEDED.get(cur) == i["id"]:
+            sc += 1000
+        if sc:
+            gap = abs((when(i) - t0).total_seconds()) / 86400
+            scored.append((sc * 0.5 ** (gap / 21), i))
+    scored.sort(key=lambda x: -x[0])
+    out = [i for _, i in scored if _ >= 1.5][:n]
+    out += [i for i in pool if i not in out][:max(0, n - len(out))]
+    return out
+
+
+def later_note(cur):
+    """At the top of a story a newer one has overtaken (a win, then a withdrawal): point the reader to the newer story."""
+    new = next((i for i in STORIES if i["id"] == SUPERSEDED.get(cur)), None)
+    if not new:
+        return ""
+    return (f'<p class="later-note"><span class="small-label">Update</span> <a href="{new["url"]}">{e(new["title"])}</a>'
+            f' <span class="meta">{short_when(new["published"])}</span></p>')
+
+
 def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
@@ -573,7 +676,7 @@ def article_page(a, others, brief=False):
     cur = a.get("story_id") or a["slug"]
     pool = [i for i in STORIES if i["id"] != cur and i["slug"] != a["slug"]]
     tops = [i for i in TOP if i["id"] != cur and i["slug"] != a["slug"]][:5]
-    rest = [i for i in pool if i not in tops]
+    rest = related(cur, a, pool)
     tops_html = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a><span class="meta">{short_when(i["published"])}</span></li>' for i in tops)
     ev0 = event_of(a)
     seen = {ev0["id"]} if ev0 else set()   # this story's own poster is already at the top
@@ -615,6 +718,7 @@ def article_page(a, others, brief=False):
   {tag}
   <h1>{e(a['title'])}</h1>
   {f'<p class="standfirst">{e(a["standfirst"])}</p>' if a.get("standfirst") else ""}
+  {later_note(cur)}
   <div class="article-byline"><span class="byline">{avatar(AUTHOR, 36)}<span>By {e(AUTHOR['name'])}</span></span><time datetime="{e(a.get('published', a['date']))}">{pub_time(a)}</time></div>
   {key_matches(a, ev)}
   {components.video_hero(vids[0]) if vids else hero(a)}
@@ -629,7 +733,7 @@ def article_page(a, others, brief=False):
   {correction_note(a)}
   <section class="article-sources"><h2>Sources</h2><ul>{sources}</ul></section>
   {build_tags.topics(TG, TAGFULL.get(a.get("story_id") or a["slug"], []))}
-  {f'<section class="more-news"><div class="sec-head"><h2>More news</h2><a href="/news/">All news</a></div><div class="promos" id="more-news">{more_html}</div></section>' if more_html else ""}
+  {f'<section class="more-news"><div class="sec-head"><h2>Related news</h2><a href="/news/">All news</a></div><div class="promos" id="more-news">{more_html}</div></section>' if more_html else ""}
 </article>
 <aside class="article-side">
   <div class="ad ad-side" data-ad="sidebar"></div>
@@ -644,7 +748,7 @@ def article_page(a, others, brief=False):
   <div class="side-end"><div class="ad ad-side" data-ad="sidebar2"></div></div>
 </aside>
 </main>
-<section class="wrap more-wide" hidden><div class="sec-head"><h2>More news</h2><a href="/news/">All news</a></div><div class="more-grid" id="more-grid"></div></section>
+<section class="wrap more-wide" hidden><div class="sec-head"><h2>Related news</h2><a href="/news/">All news</a></div><div class="more-grid" id="more-grid"></div></section>
 {components.SCRIPT}
 <script>
 // Balance the two columns, BBC style:
@@ -741,8 +845,14 @@ def main():
     feats = [{"id": a["slug"], "slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "category": "Features", "top": False,
               "published": a.get("published", a["date"] + "T09:00:00Z"), "event": None, "video": None, "image": a.get("image"), "author": "team", "feature": True}
              for a in arts if a.get("category") == "Features"]
+    global SUPERSEDED
+    SUPERSEDED = supersessions(STORIES)
+    for o, n in SUPERSEDED.items():
+        print(f"superseded: {o} -> {n}")
     TOP = top_stories(STORIES + feats)
+    lead_id = lead_story(STORIES)
     json.dump([i["id"] for i in TOP], open(os.path.join(ROOT, "data", "top-stories.json"), "w"))
+    json.dump({"lead": lead_id, "superseded": SUPERSEDED}, open(os.path.join(ROOT, "data", "lead.json"), "w"))
     os.makedirs(os.path.join(ROOT, "news"), exist_ok=True)
     for old in glob.glob(os.path.join(ROOT, "news", "*.html")):   # start clean: merged or removed stories leave no stale pages
         os.remove(old)
@@ -1130,7 +1240,7 @@ def clean_urls():
     files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "privacy.html", "corrections.html", "calendar.ics")]
     for d in ("news", "events", "features", "guide", "tag", "players"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
-    files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "features.json", "tags.json")]
+    files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "lead.json", "features.json", "tags.json")]
     for f in files:
         if os.path.exists(f):
             t = open(f, encoding="utf-8").read()
@@ -1153,7 +1263,11 @@ def prerender_home():
     stories = sorted(news.get("stories", []), key=stamp, reverse=True)
     if not stories:
         return
-    lead = next((s for s in stories if s.get("top")), stories[0])
+    try:
+        lead_id = json.load(open(os.path.join(ROOT, "data", "lead.json"), encoding="utf-8")).get("lead")
+    except Exception:
+        lead_id = None
+    lead = next((s for s in stories if s["id"] == lead_id), None) or next((s for s in stories if s.get("top")), stories[0])
     rest = [s for s in stories if s is not lead]
     by_id = {s["id"]: (s["headline"], url(s)) for s in rest}
     by_id.update({k: (f["title"], f["url"]) for k, f in feats.items()})
