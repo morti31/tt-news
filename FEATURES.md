@@ -92,8 +92,7 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 1. [Both] Fan Zhendong: the career, the decline of a dominant era and what comes next (feature: the 2021 Olympic and 2020 World Cup titles, his record of major titles, the shift in Chinese selection and in his recent results from WTT data, how the men's game has changed around him; history of Chinese men's dominance from Rong Guotuan in 1959; verify every title and ranking against the ITTF and WTT records)
 2. [Both] Equal billing? (opinion with data: share of coverage given to men's and women's events at the last three majors)
 3. [Both] Why has table tennis been a niche sport forever? (feature: how the sport was built in the 1920s and 1930s, the Asian centre of gravity, Olympic inclusion in 1988 and why that did not make it mainstream in the West; history from the ITTF's own records and books on the sport's past)
-4. [New] The serve, explained (feature: the open-palm and 16cm toss rules, the 2002 ban on hiding the ball, how umpires judge it, with history)
-5. [New] Penhold or shakehand? (feature: how the two grips developed in China, Japan and Europe, who still uses penhold, with a count of grips in the world top 100)
+4. [New] Penhold or shakehand? (feature: how the two grips developed in China, Japan and Europe, who still uses penhold, with a count of grips in the world top 100)
 
 ## Done
 
@@ -110,6 +109,7 @@ Paths are under `https://wtt-website-api-vm-frontdoor-hhaec5epbhdyfugz.a01.azure
 - 2026-11-11: English table tennis still runs on leagues built in the 1930s, and it shows (`english-table-tennis-leagues-clubs-membership`) [Both]
 - 2026-11-13: Hungary is scrapping TAO, the sport subsidy table tennis was never allowed to share (`hungary-table-tennis-funding-tao-reform`) [Expert]
 - 2026-11-15: Why the world's best table tennis players still play in Germany's Bundesliga (`why-best-table-tennis-players-play-in-germany-bundesliga`) [Expert]
+- 2026-11-17: The serve, explained: why table tennis's first shot has the strictest rule (`table-tennis-serve-rules-explained`) [New]
 
 
 Series: when a feature runs in parts, name them "<Series>, part one: ..." and "<Series>, part two: ...", link each part to the other in the first paragraph, and publish the parts on consecutive days.
