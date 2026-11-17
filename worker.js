@@ -370,7 +370,7 @@ async function chop(req, env, url) {
     if (to.pathname.startsWith("/defensive")) return Response.redirect(url.origin + (to.pathname.slice(10) || "/") + to.search, res.status);
   }
   if (res.status === 404) {   // the asset server's not-found page is Eleven's: show The Chop's own
-    const nf = await env.ASSETS.fetch(new Request(url.origin + "/defensive/404.html"));
+    const nf = await env.ASSETS.fetch(new Request(url.origin + "/defensive/404"));
     if (nf.ok) return new Response(nf.body, { status: 404, headers: nf.headers });
   }
   return res;
