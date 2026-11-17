@@ -10894,7 +10894,6 @@
    "event": "wtt-star-contender-muscat-2026",
    "date": "2026-11-17",
    "published": "2026-11-17T16:40:00Z",
-   "top": true,
    "headline": "Borgar Haug edges Chen Junsong 21-19 in the decider to reach the WTT Star Contender Muscat main draw",
    "summary": "Norway's Borgar Haug, Istanbul runner-up Kang Dongsoo and China's Tang Yiren, Sun Yang and Yuan Licen are among the eight men who came through qualifying in Oman.",
    "score": "3-2"
@@ -10913,6 +10912,17 @@
      "url": "https://jtta.or.jp/tour/38216"
     }
    ]
+  },
+  "wtt-star-contender-muscat-2026-main-draw-dang-qiu-lind": {
+   "id": "wtt-star-contender-muscat-2026-main-draw-dang-qiu-lind",
+   "category": "International",
+   "event": "wtt-star-contender-muscat-2026",
+   "draw": "3256",
+   "date": "2026-11-18",
+   "published": "2026-11-17T20:40:00Z",
+   "top": true,
+   "headline": "Dang Qiu and Anders Lind miss WTT Star Contender Muscat as Satsuki Odo and Darko Jorgic lead the seeds",
+   "summary": "Germany's Dang Qiu and Denmark's Anders Lind are missing from the WTT Star Contender Muscat main draw, which starts on Wednesday with Darko Jorgic and Satsuki Odo as top seeds."
   }
  }
 }
