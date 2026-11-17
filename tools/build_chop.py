@@ -693,6 +693,13 @@ def build():
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them.", "/", hbody, "home"))
 
+    # ---- 404: served by Cloudflare for any missing address on the subdomain (wrangler.jsonc "not_found_handling")
+    nbody = f"""<section class="ch-head"><h1>Sorry, we can't find that page</h1><p class="ch-lede">It may have moved, or the address may have a typo.</p></section>
+<section class="ch-sec"><h2>Try</h2><ul class="ch-links-plain"><li><a href="{BASE}/defenders.html">The defenders</a>: rankings, form and profiles</li>
+<li><a href="{BASE}/calendar.html">Calendar</a>: when the defenders play next</li><li><a href="{BASE}/reading.html">Reading</a>: the best writing about them</li>
+<li><a href="{BASE}/videos.html">Videos</a></li><li><a href="{BASE}/legends.html">Legends</a></li><li><a href="{BASE}/">Home</a></li></ul></section>"""
+    open(os.path.join(OUT, "404.html"), "w", encoding="utf-8").write(page("Page not found | The Chop", "The page you were looking for isn't on The Chop.", "/404.html", nbody))
+
     urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html", "/glossary.html"] + vurls + [f'/defender/{slug(p["name"])}.html' for p in players]
     open(os.path.join(OUT, "chop-sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'

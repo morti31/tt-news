@@ -961,6 +961,7 @@ def main():
     corr = [(f"/news/{a['slug']}.html", a["title"], a.get("corrections") or []) for a in arts]
     corr += [(f"/news/{x['id']}.html", x["headline"], x.get("corrections") or []) for x in NEWS.get("stories", []) if x["id"] not in {a.get("story_id") for a in arts}]
     open(os.path.join(ROOT, "corrections.html"), "w", encoding="utf-8").write(corrections_page(corr))
+    open(os.path.join(ROOT, "404.html"), "w", encoding="utf-8").write(not_found_page())
 
     today = dt.date.today().isoformat()
     urls = [(f"{SITE}/", today), (f"{SITE}/schedule.html", today), (f"{SITE}/rankings.html", today), (f"{SITE}/about.html", today), (f"{SITE}/contact.html", today), (f"{SITE}/privacy.html", today), (f"{SITE}/corrections.html", today), (f"{SITE}/news/", arts[0]["date"] if arts else today)]
@@ -1099,6 +1100,23 @@ def correction_note(a):
     items = "".join(f'<p><time datetime="{e(c["date"])}">{long_day(c["date"])}</time>: {e(c["text"])}</p>' for c in cs)
     return (f'<section class="article-correction" id="correction"><h2>{"Correction" if len(cs) == 1 else "Corrections"}</h2>{items}'
             f'<p class="small">How Eleven handles mistakes: <a href="/corrections.html">corrections policy</a>.</p></section>')
+
+
+def not_found_page():
+    """404.html: Cloudflare serves it for any address with no page (wrangler.jsonc, "not_found_handling")."""
+    latest = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a><span class="meta">{short_when(i["published"])}</span></li>'
+                     for i in sorted(STORIES, key=lambda i: i["published"], reverse=True)[:6])
+    links = "".join(f'<li><a href="{u}"><b>{e(t)}</b><span>{e(d)}</span></a></li>' for u, t, d in (
+        ("/", "Home", "The latest news and scores"), ("/events/", "Tournaments", "Draws, results and schedules"),
+        ("/rankings.html", "Players", "World rankings and profiles"), ("/clubs/", "Club game", "League tables, results and fixtures"),
+        ("/features/", "Analysis", "Longer reads"), ("/guide/", "Guide", "How table tennis works")))
+    body = f"""<main class="wrap nf">
+<section class="nf-head"><p class="small-label">Error 404</p><h1>Sorry, we can't find that page</h1>
+<p class="lede">It may have moved, or the address may have a typo. Every story we've published is still on the site, so try the latest news or one of the sections below.</p></section>
+<div class="nf-grid"><section><h2 class="rule-title">Latest news</h2><ol class="nf-latest">{latest}</ol><a class="panel-link" href="/news/">All news</a></section>
+<section><h2 class="rule-title">Sections</h2><ul class="nf-links">{links}</ul></section></div>
+</main>"""
+    return page("Page not found | Eleven", "The page you were looking for isn't on Eleven.", f"{SITE}/404.html", body, robots="noindex")
 
 
 def corrections_page(items):

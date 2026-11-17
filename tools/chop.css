@@ -198,3 +198,4 @@ button.ch-style:hover { filter: brightness(.95); text-decoration: underline; }
 .ch-pager { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 32px; }
 .ch-pager a { min-width: 36px; text-align: center; padding: 6px 10px; border: 1px solid var(--rule, #ddd); border-radius: 6px; text-decoration: none; }
 .ch-pager a[aria-current] { background: var(--chop); color: #fff; border-color: var(--chop); }
+.ch-links-plain { padding-left: 20px; line-height: 2; }
