@@ -1,0 +1,228 @@
+{
+ "event": "mixed-team-world-cup-2026",
+ "teams_total": 20,
+ "teams": [
+  {
+   "team": "China",
+   "nat": "CHN",
+   "named": "2026-11-10",
+   "source": {
+    "name": "the Chinese Table Tennis Association (via Sohu)",
+    "url": "https://m.sohu.com/a/1099436789_255783"
+   },
+   "story": "/news/mixed-team-world-cup-2026-china-squad-wang-chuqin-sun-yingsha-chen-yi-zhou-qihao.html",
+   "players": [
+    {
+     "name": "Wang Chuqin",
+     "gender": "M"
+    },
+    {
+     "name": "Lin Shidong",
+     "gender": "M"
+    },
+    {
+     "name": "Huang Youzheng",
+     "gender": "M"
+    },
+    {
+     "name": "Zhou Qihao",
+     "gender": "M"
+    },
+    {
+     "name": "Wang Manyu",
+     "gender": "W"
+    },
+    {
+     "name": "Sun Yingsha",
+     "gender": "W"
+    },
+    {
+     "name": "Kuai Man",
+     "gender": "W"
+    },
+    {
+     "name": "Chen Yi",
+     "gender": "W"
+    }
+   ],
+   "note": "Holders, chasing a fourth title in a row."
+  },
+  {
+   "team": "Japan",
+   "nat": "JPN",
+   "named": "2026-10-15",
+   "source": {
+    "name": "the Japan Table Tennis Association",
+    "url": "https://jtta.or.jp/tour/38216"
+   },
+   "story": "/news/mixed-team-world-cup-2026-squads-japan-china-france-sweden-australia-chengdu.html",
+   "players": [
+    {
+     "name": "Sora Matsushima",
+     "gender": "M"
+    },
+    {
+     "name": "Tomokazu Harimoto",
+     "gender": "M"
+    },
+    {
+     "name": "Shunsuke Togami",
+     "gender": "M"
+    },
+    {
+     "name": "Hiroto Shinozuka",
+     "gender": "M"
+    },
+    {
+     "name": "Miwa Harimoto",
+     "gender": "W"
+    },
+    {
+     "name": "Hina Hayata",
+     "gender": "W"
+    },
+    {
+     "name": "Satsuki Odo",
+     "gender": "W"
+    },
+    {
+     "name": "Honoka Hashimoto",
+     "gender": "W"
+    }
+   ],
+   "note": "Runners-up in 2025. Hashimoto is the only newcomer."
+  },
+  {
+   "team": "France",
+   "nat": "FRA",
+   "named": "2026-11-05",
+   "source": {
+    "name": "the French Table Tennis Federation",
+    "url": "https://www.fftt.com/actualites/equipe-de-france/la-selection-pour-la-coupe-du-monde-mixte-2026-est-connue/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-france-squad-lebrun-brothers-guo-zheng.html",
+   "players": [
+    {
+     "name": "Félix Lebrun",
+     "gender": "M"
+    },
+    {
+     "name": "Alexis Lebrun",
+     "gender": "M"
+    },
+    {
+     "name": "Flavien Coton",
+     "gender": "M"
+    },
+    {
+     "name": "Simon Gauzy",
+     "gender": "M"
+    },
+    {
+     "name": "Jia Nan Yuan",
+     "gender": "W"
+    },
+    {
+     "name": "Prithika Pavade",
+     "gender": "W"
+    },
+    {
+     "name": "Charlotte Lutz",
+     "gender": "W"
+    },
+    {
+     "name": "Nina Guo Zheng",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Sweden",
+   "nat": "SWE",
+   "named": "2026-11-10",
+   "source": {
+    "name": "the Swedish Table Tennis Association",
+    "url": "https://sbtf.se/landslag/truppen-till-ittf-mixed-team-world-cup/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-sweden-squad-moregard-wtt-finals.html",
+   "players": [
+    {
+     "name": "Anton Källberg",
+     "gender": "M"
+    },
+    {
+     "name": "Elias Ranefur",
+     "gender": "M"
+    },
+    {
+     "name": "Kristian Karlsson",
+     "gender": "M"
+    },
+    {
+     "name": "Mattias Karlsson",
+     "gender": "M"
+    },
+    {
+     "name": "Christina Kallberg",
+     "gender": "W"
+    },
+    {
+     "name": "Filippa Bergand",
+     "gender": "W"
+    },
+    {
+     "name": "Nomin Baasan",
+     "gender": "W"
+    },
+    {
+     "name": "Alma Roose",
+     "gender": "W"
+    }
+   ],
+   "note": "Without Truls Moregard, rested for the WTT Finals."
+  },
+  {
+   "team": "Australia",
+   "nat": "AUS",
+   "named": "2026-10-01",
+   "source": {
+    "name": "Table Tennis Australia",
+    "url": "https://www.tabletennis.org.au/news/tta-announces-team-selection-for-2026-ittf-mixed-team-world-cup-"
+   },
+   "story": "/news/mixed-team-world-cup-2026-squads-japan-china-france-sweden-australia-chengdu.html",
+   "players": [
+    {
+     "name": "Finn Luu",
+     "gender": "M"
+    },
+    {
+     "name": "Nicholas Lum",
+     "gender": "M"
+    },
+    {
+     "name": "Hwan Bae",
+     "gender": "M"
+    },
+    {
+     "name": "Aditya Sareen",
+     "gender": "M"
+    },
+    {
+     "name": "Yangzi Liu",
+     "gender": "W"
+    },
+    {
+     "name": "Constantina Psihogios",
+     "gender": "W"
+    },
+    {
+     "name": "Jiamuwa Wu",
+     "gender": "W"
+    }
+   ]
+  }
+ ],
+ "awaiting": [
+  "Great Britain"
+ ]
+}

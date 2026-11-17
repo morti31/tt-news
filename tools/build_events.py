@@ -167,6 +167,73 @@ def calendar(ev, schedule, site, stamp):
     return "\r\n".join(lines) + "\r\n"
 
 
+def is_team_event(ev):
+    """Team tournaments: the World Team Championships, the Mixed Team World Cup, team World Cups and the like."""
+    return "team" in f'{ev.get("name", "")} {ev.get("events", "")}'.lower()
+
+
+def squads_sec(ev, st):
+    """Squad lists for a team tournament, from data/squads/<event id>.json (UPDATE.md, "Team tournament squads"):
+    one card per team with its players (world ranking and profile link added at build time), the source and the date it
+    was named, then the teams still to name theirs. A team event with no file yet says squads are still to come."""
+    path = os.path.join(ROOT, "data", "squads", f'{ev["id"]}.json')
+    try:
+        sq = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        sq = None
+    if not sq:
+        if not is_team_event(ev) or st == "past":
+            return ""
+        return ('<section class="hub-sec" id="squads"><h2 class="section-title">Squads</h2>'
+                '<p class="hub-empty">Squads will appear here as the teams name them.</p></section>')
+    try:
+        profiles = json.load(open(os.path.join(ROOT, "data", "profiles.json"), encoding="utf-8"))
+    except Exception:
+        profiles = {}
+    try:
+        R = json.load(open(os.path.join(ROOT, "data", "rankings.json"), encoding="utf-8"))
+        ranks = {g: {r["name"]: r["rank"] for r in R.get(g, [])} for g in ("men", "women")}
+        week = R.get("week")
+    except Exception:
+        ranks, week = {"men": {}, "women": {}}, None
+    def person(p, g):
+        rk = ranks["men" if g == "M" else "women"].get(p["name"])
+        nm = f'<a href="{e(profiles[p["name"]])}">{e(p["name"])}</a>' if p["name"] in profiles else e(p["name"])
+        rk_html = f'<span class="sq-rk">World No {rk}</span>' if rk else ""
+        note = f'<span class="sq-note">{e(p["note"])}</span>' if p.get("note") else ""
+        return f"<li>{nm}{rk_html}{note}</li>"
+    def when(d):
+        try:
+            x = dt.date.fromisoformat(d)
+            return f"{x.day} {x:%B}"
+        except Exception:
+            return ""
+    cards = []
+    for t in sq.get("teams", []):
+        cols = ""
+        for g, lab in (("W", "Women"), ("M", "Men")):
+            ps = [p for p in t.get("players", []) if p.get("gender") == g]
+            if ps:
+                cols += f'<div><h4>{lab}</h4><ul>{"".join(person(p, g) for p in ps)}</ul></div>'
+        src = t.get("source") or {}
+        named = f'Named {when(t["named"])}' if t.get("named") else "Named"
+        foot = f'{named} by <a href="{e(src.get("url", "#"))}" rel="noopener">{e(src.get("name", ""))}</a>' if src else named
+        extra = f'<p class="sq-team-note">{e(t["note"])}</p>' if t.get("note") else ""
+        story = f' · <a href="{e(t["story"])}">Squad story</a>' if t.get("story") else ""
+        cards.append(f'<li class="sq-team"><h3>{components.flag(t.get("nat"))}{e(t["team"])}</h3>{extra}<div class="sq-cols">{cols}</div>'
+                     f'<p class="sq-src">{foot}{story}</p></li>')
+    wait = sq.get("awaiting") or []
+    total = sq.get("teams_total")
+    others = (total or 0) - len(sq.get("teams", [])) - len(wait)
+    names = wait + ([f"{others} other team{'s' if others != 1 else ''}"] if others > 0 else [])
+    joined = ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1] if names else ""
+    wait_html = f'<p class="sq-wait"><b>Still to name their squads:</b> {e(joined)}.</p>' if joined else ""
+    lede = (f'<p class="small">{len(sq.get("teams", []))} of {total} teams have named their players. ' if total else '<p class="small">') + \
+        (f"World rankings from week {e(str(week))}." if week else "") + "</p>"
+    return (f'<section class="hub-sec" id="squads"><h2 class="section-title">Squads</h2>{lede}'
+            f'<ul class="sq-grid">{"".join(cards)}</ul>{wait_html}</section>')
+
+
 def hub(ev, items, schedule, today, news):
     """items: list of (story_or_article dict, url, published, author name), newest first."""
     st = status(ev, today)
@@ -239,15 +306,18 @@ def hub(ev, items, schedule, today, news):
 <p>{e(it.get("standfirst") or it.get("summary", ""))}</p><time>{e(byline)}</time></a></li>''' for it, url, pub, byline in items)
     news_sec = f'<section class="hub-sec" id="news"><h2 class="section-title">News</h2><ul class="archive hub-news">{stories}</ul></section>' if items else ""
     fixtures = "" if mc else _fixtures(ev, schedule)
-    empty = "" if (mc or results or draw or fixtures or items or champ_sec or story_sec) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
-    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("champions", "Champions", champ_sec), ("story", "How it was won", story_sec), ("live", "Live", "" if mc else live_sec), ("matches", "Matches", mc), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
+    squads = squads_sec(ev, st)
+    empty = "" if (mc or results or draw or fixtures or items or champ_sec or story_sec or squads) else '<p class="hub-empty">The draw, schedule and news will appear here as the event approaches.</p>'
+    jump = "".join(f'<a href="#{k}">{v}</a>' for k, v, sec in (("champions", "Champions", champ_sec), ("story", "How it was won", story_sec), ("live", "Live", "" if mc else live_sec), ("matches", "Matches", mc), ("squads", "Squads", squads), ("results", "Results", results), ("draw", "Draw", draw), ("schedule", "Schedule", fixtures),
                                                                 ("watch", "Watch", watch), ("news", "News", news_sec)) if sec)
     facts = "".join(f"<dt>{k}</dt><dd>{e(v)}</dd>" for k, v in (("Dates", dates(ev)), ("Venue", place), ("Events", ev.get("events", "")),
                                                                    ("Level", ev.get("level") or TIER_NAMES.get(ev["tier"], ""))) if v)
     # The sidebar sits beside the first sections only (live scores and results, or whatever comes first);
     # the long sections (draw, schedule, highlights, news) run full width below it, so there is no
     # empty column on the right.
-    order = [x for x in (champ_sec, story_sec, live_sec, mc, results, draw, fixtures, watch, news_sec) if x]
+    # Squads sit high before play starts (the reader's first question) and after the matches once it has
+    order = [x for x in ((champ_sec, story_sec, live_sec, mc, results, squads, draw, fixtures, watch, news_sec) if st != "next" else
+                         (squads, champ_sec, story_sec, live_sec, mc, results, draw, fixtures, watch, news_sec)) if x]
     top = [x for x in (champ_sec, story_sec, live_sec, mc, results) if x] or order[:1]
     top_html = empty + "".join(top)
     below_html = "".join(x for x in order if x not in top)

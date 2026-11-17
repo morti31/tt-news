@@ -260,3 +260,9 @@ defensive.eleventabletennis.com is a custom domain on the tt-news Worker (set up
 ## British Clubs League
 
 `/clubs/british-league.html` pairs the Premier Divisions of Table Tennis England's British Clubs League: senior (`bcl-men`) and women's (`bcl-women`). `tools/club_sync.py` reads them hourly from TT Leagues' API (`ttleagues-api.azurewebsites.net/api/`, header `Tenant: british.ttleagues.com`; the site's newer front-door address refuses scripts). Matches are labelled by weekend gathering. The Club game hub's Latest results and Coming up always include each league's nearest matchday within a month, so the British weekends aren't crowded out by weekly leagues. Squads (`tools/squad_sync.py`) are the players each team has used, with singles records. Each season is a new competition: update `BCL_DIV` with the new competition and Premier Division ids (API `competitions/all`, then `competitions/<id>/divisions`).
+
+## Team tournament squads
+
+Every team tournament page (World Team Championships, Mixed Team World Cup, European Team Championships and any event with "Team" in its name or events) has a Squads section. It reads `data/squads/<event id>.json`:
+`{"event", "teams_total", "teams": [{"team", "nat", "named": "YYYY-MM-DD", "source": {"name", "url"}, "story"?: "/news/<slug>.html", "note"?, "players": [{"name", "gender": "M"|"W", "note"?}]}], "awaiting": ["Great Britain", ...]}`.
+Write each player's name exactly as Eleven's profile or the rankings has it; the build adds the world ranking and profile link. Add a team as soon as its federation names the squad (official federation page first), and update the file if a player withdraws (add a `note`). Before play starts the section sits at the top of the event page; afterwards it follows the matches. A team event with no file shows "Squads will appear here as the teams name them".
