@@ -1,0 +1,622 @@
+{
+ "id": "bcl-men",
+ "auto": true,
+ "updated": "2026-11-17T14:09:00Z",
+ "season": "2026-27",
+ "source": {
+  "name": "Table Tennis England, British Clubs League",
+  "url": "https://british.ttleagues.com/league/4527/division/12800"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "d",
+   "l",
+   "matches",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": "Premier Division",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "BATTS 1",
+      "p": 4,
+      "w": 4,
+      "d": 0,
+      "l": 0,
+      "for": 25,
+      "against": 3,
+      "diff": 22,
+      "pts": 12
+     },
+     {
+      "pos": 2,
+      "team": "Ormesby TTC 1",
+      "p": 4,
+      "w": 4,
+      "d": 0,
+      "l": 0,
+      "for": 22,
+      "against": 6,
+      "diff": 16,
+      "pts": 12
+     },
+     {
+      "pos": 3,
+      "team": "DHS Hurricane Kingsway",
+      "p": 4,
+      "w": 3,
+      "d": 0,
+      "l": 1,
+      "for": 17,
+      "against": 11,
+      "diff": 6,
+      "pts": 10
+     },
+     {
+      "pos": 4,
+      "team": "eBaTT 1",
+      "p": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "for": 15,
+      "against": 13,
+      "diff": 2,
+      "pts": 8
+     },
+     {
+      "pos": 5,
+      "team": "Fusion 1",
+      "p": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "for": 13,
+      "against": 15,
+      "diff": -2,
+      "pts": 8
+     },
+     {
+      "pos": 6,
+      "team": "Ormeau 1",
+      "p": 4,
+      "w": 1,
+      "d": 0,
+      "l": 3,
+      "for": 11,
+      "against": 17,
+      "diff": -6,
+      "pts": 6
+     },
+     {
+      "pos": 7,
+      "team": "North Ayrshire TT A",
+      "p": 4,
+      "w": 0,
+      "d": 0,
+      "l": 4,
+      "for": 8,
+      "against": 20,
+      "diff": -12,
+      "pts": 4
+     },
+     {
+      "pos": 8,
+      "team": "Nottingham 1",
+      "p": 4,
+      "w": 0,
+      "d": 0,
+      "l": 4,
+      "for": 1,
+      "against": 27,
+      "diff": -26,
+      "pts": 4
+     }
+    ]
+   }
+  ],
+  "note": "Points as published by the league."
+ },
+ "matches": [
+  {
+   "when": "2026-09-26T09:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Kingsway TTC",
+   "score": [
+    5,
+    2
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T09:30:00Z",
+   "home": "BATTS 1",
+   "away": "Nottingham 1",
+   "score": [
+    7,
+    0
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T09:30:00Z",
+   "home": "Ormeau 1",
+   "away": "eBaTT 1",
+   "score": [
+    3,
+    4
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T09:30:00Z",
+   "home": "Fusion 1",
+   "away": "North Ayrshire TT A",
+   "score": [
+    4,
+    3
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T13:30:00Z",
+   "home": "Nottingham 1",
+   "away": "Ormesby TTC 1",
+   "score": [
+    0,
+    7
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T13:30:00Z",
+   "home": "eBaTT 1",
+   "away": "BATTS 1",
+   "score": [
+    3,
+    4
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T13:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "Ormeau 1",
+   "score": [
+    2,
+    5
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-26T13:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "Fusion 1",
+   "score": [
+    4,
+    3
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T08:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "eBaTT 1",
+   "score": [
+    6,
+    1
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T08:30:00Z",
+   "home": "BATTS 1",
+   "away": "North Ayrshire TT A",
+   "score": [
+    7,
+    0
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T08:30:00Z",
+   "home": "Ormeau 1",
+   "away": "Fusion 1",
+   "score": [
+    1,
+    6
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T08:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "Nottingham 1",
+   "score": [
+    6,
+    1
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T12:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "Ormesby TTC 1",
+   "score": [
+    3,
+    4
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T12:30:00Z",
+   "home": "Fusion 1",
+   "away": "BATTS 1",
+   "score": [
+    0,
+    7
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T12:30:00Z",
+   "home": "Ormeau 1",
+   "away": "Kingsway TTC",
+   "score": [
+    2,
+    5
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-09-27T12:30:00Z",
+   "home": "eBaTT 1",
+   "away": "Nottingham 1",
+   "score": [
+    7,
+    0
+   ],
+   "status": "finished",
+   "round": 2
+  },
+  {
+   "when": "2026-12-05T10:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Fusion 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T10:30:00Z",
+   "home": "BATTS 1",
+   "away": "Ormeau 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T10:30:00Z",
+   "home": "Nottingham 1",
+   "away": "North Ayrshire TT A",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T10:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "eBaTT 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T14:30:00Z",
+   "home": "Ormeau 1",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T14:30:00Z",
+   "home": "BATTS 1",
+   "away": "Kingsway TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T14:30:00Z",
+   "home": "Fusion 1",
+   "away": "Nottingham 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-05T14:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "eBaTT 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T09:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "BATTS 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T09:30:00Z",
+   "home": "Nottingham 1",
+   "away": "Ormeau 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T09:30:00Z",
+   "home": "eBaTT 1",
+   "away": "Fusion 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T09:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "North Ayrshire TT A",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T13:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T13:30:00Z",
+   "home": "Nottingham 1",
+   "away": "BATTS 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T13:30:00Z",
+   "home": "eBaTT 1",
+   "away": "Ormeau 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2026-12-06T13:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "Fusion 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 12
+  },
+  {
+   "when": "2027-02-06T10:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Nottingham 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T10:30:00Z",
+   "home": "BATTS 1",
+   "away": "eBaTT 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T10:30:00Z",
+   "home": "Ormeau 1",
+   "away": "North Ayrshire TT A",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T10:30:00Z",
+   "home": "Fusion 1",
+   "away": "Kingsway TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T14:30:00Z",
+   "home": "eBaTT 1",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T14:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "BATTS 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T14:30:00Z",
+   "home": "Fusion 1",
+   "away": "Ormeau 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-02-06T14:30:00Z",
+   "home": "Nottingham 1",
+   "away": "Kingsway TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 21
+  },
+  {
+   "when": "2027-04-10T09:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "North Ayrshire TT A",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T09:30:00Z",
+   "home": "BATTS 1",
+   "away": "Fusion 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T09:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "Ormeau 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T09:30:00Z",
+   "home": "Nottingham 1",
+   "away": "eBaTT 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T13:30:00Z",
+   "home": "Fusion 1",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T13:30:00Z",
+   "home": "Ormeau 1",
+   "away": "BATTS 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T13:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "Nottingham 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-10T13:30:00Z",
+   "home": "eBaTT 1",
+   "away": "Kingsway TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T08:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Ormeau 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T08:30:00Z",
+   "home": "Kingsway TTC",
+   "away": "BATTS 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T08:30:00Z",
+   "home": "Nottingham 1",
+   "away": "Fusion 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T08:30:00Z",
+   "home": "eBaTT 1",
+   "away": "North Ayrshire TT A",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T12:30:00Z",
+   "home": "BATTS 1",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T12:30:00Z",
+   "home": "Ormeau 1",
+   "away": "Nottingham 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T12:30:00Z",
+   "home": "Fusion 1",
+   "away": "eBaTT 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  },
+  {
+   "when": "2027-04-11T12:30:00Z",
+   "home": "North Ayrshire TT A",
+   "away": "Kingsway TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 30
+  }
+ ]
+}

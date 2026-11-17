@@ -1,0 +1,387 @@
+{
+ "id": "bcl-women",
+ "auto": true,
+ "updated": "2026-11-17T14:09:00Z",
+ "season": "2026-27",
+ "source": {
+  "name": "Table Tennis England, British Clubs League",
+  "url": "https://british.ttleagues.com/league/4589/division/13039"
+ },
+ "table": {
+  "columns": [
+   "p",
+   "w",
+   "d",
+   "l",
+   "matches",
+   "pts"
+  ],
+  "groups": [
+   {
+    "name": "Premier Division",
+    "rows": [
+     {
+      "pos": 1,
+      "team": "Wensum TTC",
+      "p": 5,
+      "w": 4,
+      "d": 1,
+      "l": 0,
+      "for": 27,
+      "against": 3,
+      "diff": 24,
+      "pts": 9
+     },
+     {
+      "pos": 2,
+      "team": "Drumchapel Glasgow 1",
+      "p": 5,
+      "w": 4,
+      "d": 1,
+      "l": 0,
+      "for": 24,
+      "against": 6,
+      "diff": 18,
+      "pts": 9
+     },
+     {
+      "pos": 3,
+      "team": "Ormesby TTC 1",
+      "p": 5,
+      "w": 2,
+      "d": 1,
+      "l": 2,
+      "for": 12,
+      "against": 18,
+      "diff": -6,
+      "pts": 5
+     },
+     {
+      "pos": 4,
+      "team": "Topspin Fusion Women 1",
+      "p": 5,
+      "w": 2,
+      "d": 0,
+      "l": 3,
+      "for": 12,
+      "against": 18,
+      "diff": -6,
+      "pts": 4
+     },
+     {
+      "pos": 5,
+      "team": "Worthing TTC A",
+      "p": 5,
+      "w": 1,
+      "d": 1,
+      "l": 3,
+      "for": 8,
+      "against": 22,
+      "diff": -14,
+      "pts": 3
+     },
+     {
+      "pos": 6,
+      "team": "Halton TT Club",
+      "p": 5,
+      "w": 0,
+      "d": 0,
+      "l": 5,
+      "for": 7,
+      "against": 23,
+      "diff": -16,
+      "pts": 0
+     }
+    ]
+   }
+  ],
+  "note": "Points as published by the league."
+ },
+ "matches": [
+  {
+   "when": "2026-10-31T10:00:00Z",
+   "home": "Drumchapel Glasgow 1",
+   "away": "Halton Table Tennis Club 'A'",
+   "score": [
+    4,
+    2
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T10:00:00Z",
+   "home": "Wensum TTC",
+   "away": "Worthing TTC A",
+   "score": [
+    6,
+    0
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T10:00:00Z",
+   "home": "Topspin Fusion Women 1",
+   "away": "Ormesby TTC 1",
+   "score": [
+    2,
+    4
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T13:30:00Z",
+   "home": "Worthing TTC A",
+   "away": "Drumchapel Glasgow 1",
+   "score": [
+    0,
+    6
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T13:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Wensum TTC",
+   "score": [
+    0,
+    6
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T13:30:00Z",
+   "home": "Halton Table Tennis Club 'A'",
+   "away": "Topspin Fusion Women 1",
+   "score": [
+    2,
+    4
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T16:30:00Z",
+   "home": "Drumchapel Glasgow 1",
+   "away": "Ormesby TTC 1",
+   "score": [
+    6,
+    0
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T16:30:00Z",
+   "home": "Wensum TTC",
+   "away": "Topspin Fusion Women 1",
+   "score": [
+    6,
+    0
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-10-31T16:30:00Z",
+   "home": "Halton Table Tennis Club 'A'",
+   "away": "Worthing TTC A",
+   "score": [
+    2,
+    4
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-11-01T09:30:00Z",
+   "home": "Topspin Fusion Women 1",
+   "away": "Drumchapel Glasgow 1",
+   "score": [
+    1,
+    5
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-11-01T09:30:00Z",
+   "home": "Wensum TTC",
+   "away": "Halton Table Tennis Club 'A'",
+   "score": [
+    6,
+    0
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-11-01T09:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Worthing TTC A",
+   "score": [
+    3,
+    3
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-11-01T12:30:00Z",
+   "home": "Drumchapel Glasgow 1",
+   "away": "Wensum TTC",
+   "score": [
+    3,
+    3
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-11-01T12:30:00Z",
+   "home": "Worthing TTC A",
+   "away": "Topspin Fusion Women 1",
+   "score": [
+    1,
+    5
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2026-11-01T12:30:00Z",
+   "home": "Halton Table Tennis Club 'A'",
+   "away": "Ormesby TTC 1",
+   "score": [
+    1,
+    5
+   ],
+   "status": "finished",
+   "round": 1
+  },
+  {
+   "when": "2027-01-30T10:00:00Z",
+   "home": "Halton Table Tennis Club 'A'",
+   "away": "Wensum TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T10:00:00Z",
+   "home": "Drumchapel Glasgow 1",
+   "away": "Worthing TTC A",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T10:00:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Topspin Fusion Women 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T13:30:00Z",
+   "home": "Worthing TTC A",
+   "away": "Wensum TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T13:30:00Z",
+   "home": "Drumchapel Glasgow 1",
+   "away": "Topspin Fusion Women 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T13:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Halton Table Tennis Club 'A'",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T16:30:00Z",
+   "home": "Topspin Fusion Women 1",
+   "away": "Wensum TTC",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T16:30:00Z",
+   "home": "Ormesby TTC 1",
+   "away": "Drumchapel Glasgow 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-30T16:30:00Z",
+   "home": "Worthing TTC A",
+   "away": "Halton Table Tennis Club 'A'",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-31T09:30:00Z",
+   "home": "Wensum TTC",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-31T09:30:00Z",
+   "home": "Halton Table Tennis Club 'A'",
+   "away": "Drumchapel Glasgow 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-31T09:30:00Z",
+   "home": "Topspin Fusion Women 1",
+   "away": "Worthing TTC A",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-31T12:30:00Z",
+   "home": "Wensum TTC",
+   "away": "Drumchapel Glasgow 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-31T12:30:00Z",
+   "home": "Worthing TTC A",
+   "away": "Ormesby TTC 1",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  },
+  {
+   "when": "2027-01-31T12:30:00Z",
+   "home": "Topspin Fusion Women 1",
+   "away": "Halton Table Tennis Club 'A'",
+   "score": null,
+   "status": "scheduled",
+   "round": 14
+  }
+ ]
+}

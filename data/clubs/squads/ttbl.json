@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-08T21:48:07Z",
+ "updated": "2026-11-17T14:09:40Z",
  "source": {
   "name": "TTBL",
   "url": "https://www.ttbl.de/bundesliga/teams"
@@ -32,32 +32,6 @@
     }
    ],
    "coach": "Danny Heister"
-  },
-  {
-   "team": "TTF Ochsenhausen",
-   "players": [
-    {
-     "name": "Shunsuke Togami",
-     "nat": "JPN"
-    },
-    {
-     "name": "Iulian Chirita",
-     "nat": "ROU"
-    },
-    {
-     "name": "Darius Movileanu",
-     "nat": "ROU"
-    },
-    {
-     "name": "Tiago Abiodun",
-     "nat": "POR"
-    },
-    {
-     "name": "Daniel Berzosa",
-     "nat": "ESP"
-    }
-   ],
-   "coach": "Bogdan Pugna"
   },
   {
    "team": "1. FC Saarbrücken",
@@ -102,42 +76,52 @@
    "coach": "Zhi Wang"
   },
   {
-   "team": "TTC Bad Homburg",
+   "team": "TTF Ochsenhausen",
    "players": [
     {
-     "name": "Csaba Andras",
-     "nat": "HUN"
+     "name": "Shunsuke Togami",
+     "nat": "JPN"
     },
     {
-     "name": "Ivor Ban",
-     "nat": "CRO"
+     "name": "Iulian Chirita",
+     "nat": "ROU"
     },
     {
-     "name": "Juan Perez",
+     "name": "Darius Movileanu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Tiago Abiodun",
+     "nat": "POR"
+    },
+    {
+     "name": "Daniel Berzosa",
      "nat": "ESP"
-    },
-    {
-     "name": "Benno Oehme",
-     "nat": "GER"
-    },
-    {
-     "name": "Finn Luu",
-     "nat": "AUS"
-    },
-    {
-     "name": "Max Lante",
-     "nat": "GER"
-    },
-    {
-     "name": "Pepe Meteling",
-     "nat": "GER"
-    },
-    {
-     "name": "Lukas Vatheuer",
-     "nat": "GER"
     }
    ],
-   "coach": "Slobodan Grujic"
+   "coach": "Bogdan Pugna"
+  },
+  {
+   "team": "Werder Bremen",
+   "players": [
+    {
+     "name": "Kirill Gerassimenko",
+     "nat": "KAZ"
+    },
+    {
+     "name": "Mattias Karlsson",
+     "nat": "SWE"
+    },
+    {
+     "name": "Irvin Bertrand",
+     "nat": "FRA"
+    },
+    {
+     "name": "Marcelo Aguirre",
+     "nat": "ITA"
+    }
+   ],
+   "coach": "Cristian Tamas"
   },
   {
    "team": "Borussia Dortmund",
@@ -174,26 +158,76 @@
    "coach": "Evgeny Fadeev"
   },
   {
-   "team": "Werder Bremen",
+   "team": "Post SV Mühlhausen",
    "players": [
     {
-     "name": "Kirill Gerassimenko",
-     "nat": "KAZ"
+     "name": "Steffen Mengel",
+     "nat": "GER"
     },
     {
-     "name": "Mattias Karlsson",
-     "nat": "SWE"
+     "name": "Marcos Freitas",
+     "nat": "POR"
     },
     {
-     "name": "Irvin Bertrand",
-     "nat": "FRA"
+     "name": "Ovidiu Ionescu",
+     "nat": "ROU"
     },
     {
-     "name": "Marcelo Aguirre",
-     "nat": "ITA"
+     "name": "Kay Stumper",
+     "nat": "GER"
+    },
+    {
+     "name": "Yeh Yi-En",
+     "nat": "TPE"
+    },
+    {
+     "name": "Nico Müller",
+     "nat": "GER"
+    },
+    {
+     "name": "Ivo Quett",
+     "nat": "GER"
     }
    ],
-   "coach": "Cristian Tamas"
+   "coach": "Erik Schreyer"
+  },
+  {
+   "team": "TTC Bad Homburg",
+   "players": [
+    {
+     "name": "Csaba Andras",
+     "nat": "HUN"
+    },
+    {
+     "name": "Ivor Ban",
+     "nat": "CRO"
+    },
+    {
+     "name": "Juan Perez",
+     "nat": "ESP"
+    },
+    {
+     "name": "Benno Oehme",
+     "nat": "GER"
+    },
+    {
+     "name": "Finn Luu",
+     "nat": "AUS"
+    },
+    {
+     "name": "Max Lante",
+     "nat": "GER"
+    },
+    {
+     "name": "Pepe Meteling",
+     "nat": "GER"
+    },
+    {
+     "name": "Lukas Vatheuer",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Slobodan Grujic"
   },
   {
    "team": "TTC Grenzau",
@@ -252,40 +286,6 @@
    "coach": "Qing Yu Meng"
   },
   {
-   "team": "Post SV Mühlhausen",
-   "players": [
-    {
-     "name": "Steffen Mengel",
-     "nat": "GER"
-    },
-    {
-     "name": "Marcos Freitas",
-     "nat": "POR"
-    },
-    {
-     "name": "Ovidiu Ionescu",
-     "nat": "ROU"
-    },
-    {
-     "name": "Kay Stumper",
-     "nat": "GER"
-    },
-    {
-     "name": "Yeh Yi-En",
-     "nat": "TPE"
-    },
-    {
-     "name": "Nico Müller",
-     "nat": "GER"
-    },
-    {
-     "name": "Ivo Quett",
-     "nat": "GER"
-    }
-   ],
-   "coach": "Erik Schreyer"
-  },
-  {
    "team": "TTC Bergneustadt",
    "players": [
     {
@@ -310,6 +310,36 @@
     }
    ],
    "coach": "Frederik Duda"
+  },
+  {
+   "team": "TSV Bad Königshofen",
+   "players": [
+    {
+     "name": "Andre Bertelsmeier",
+     "nat": "GER"
+    },
+    {
+     "name": "Bastian Steger",
+     "nat": "GER"
+    },
+    {
+     "name": "Daniel Habesohn",
+     "nat": "AUT"
+    },
+    {
+     "name": "Liao Cheng-Ting",
+     "nat": "TPE"
+    },
+    {
+     "name": "Filip Zeljko",
+     "nat": "CRO"
+    },
+    {
+     "name": "Volodymyr Nevizhyn",
+     "nat": "UKR"
+    }
+   ],
+   "coach": "Timo Neumann"
   },
   {
    "team": "ASC Grünwettersbach",
@@ -352,36 +382,6 @@
     }
    ],
    "coach": "Kilian Ort"
-  },
-  {
-   "team": "TSV Bad Königshofen",
-   "players": [
-    {
-     "name": "Andre Bertelsmeier",
-     "nat": "GER"
-    },
-    {
-     "name": "Bastian Steger",
-     "nat": "GER"
-    },
-    {
-     "name": "Daniel Habesohn",
-     "nat": "AUT"
-    },
-    {
-     "name": "Liao Cheng-Ting",
-     "nat": "TPE"
-    },
-    {
-     "name": "Filip Zeljko",
-     "nat": "CRO"
-    },
-    {
-     "name": "Volodymyr Nevizhyn",
-     "nat": "UKR"
-    }
-   ],
-   "coach": "Timo Neumann"
   }
  ]
 }
