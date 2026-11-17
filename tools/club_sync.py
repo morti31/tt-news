@@ -306,9 +306,11 @@ def ttl(path):
 
 def bcl(k):
     comp, div, season_name = BCL_DIV[k]
+    st = ttl(f"divisions/{div}/standings")
     rows = [{"pos": r["position"], "team": r["name"].strip(), "p": r["played"], "w": r["won"], "d": r["drawn"], "l": r["lost"],
-             "for": r["setsFor"], "against": r["setsAgainst"], "diff": r["setsFor"] - r["setsAgainst"], "pts": r["points"]}
-            for r in ttl(f"divisions/{div}/standings")]
+             "for": r["setsFor"], "against": r["setsAgainst"], "diff": r["setsFor"] - r["setsAgainst"], "pts": r["points"]} for r in st]
+    names = {r["entrantId"]: r["name"].strip() for r in st}   # fixtures use the entry's own name; the table's is the one shown
+    nm = lambda side: names.get(side.get("id"), side["name"].strip())
     d = ttl(f"divisions/{div}/matches")
     ms = [m for g in d.get("groups", []) for m in g.get("matches", [])] + d.get("matches", [])
     matches, seen = [], set()
@@ -321,9 +323,14 @@ def bcl(k):
             continue
         done = bool(m.get("hasResults") or m.get("approved") or m.get("submitted"))
         h, a = m["home"].get("score"), m["away"].get("score")
-        matches.append({"when": iso(dt.datetime.fromisoformat(when.replace("Z", "+00:00"))), "home": m["home"]["name"].strip(),
-                        "away": m["away"]["name"].strip(), "score": [h, a] if done and h is not None and a is not None else None,
-                        "status": "finished" if done and h is not None else "scheduled", "round": m.get("week")})
+        matches.append({"when": iso(dt.datetime.fromisoformat(when.replace("Z", "+00:00"))), "home": nm(m["home"]),
+                        "away": nm(m["away"]), "score": [h, a] if done and h is not None and a is not None else None,
+                        "status": "finished" if done and h is not None else "scheduled"})
+    # The league meets at weekend gatherings: label each match by its weekend ("Weekend 2")
+    wk = lambda w: (dt.date.fromisoformat(w[:10]) - dt.timedelta(days=(dt.date.fromisoformat(w[:10]).weekday() - 5) % 7)).isoformat()
+    order = sorted({wk(x["when"]) for x in matches})
+    for x in matches:
+        x["round"] = f"Weekend {order.index(wk(x['when'])) + 1}"
     yrs = re.search(r"(\d{4})\D(\d{2,4})", season_name)
     return {"season": f"{yrs[1]}-{yrs[2][-2:]}" if yrs else "", "source": {"name": "Table Tennis England, British Clubs League", "url": f"https://british.ttleagues.com/league/{comp}/division/{div}"},
             "table": {"columns": ["p", "w", "d", "l", "matches", "pts"], "groups": [{"name": "Premier Division", "rows": rows}],

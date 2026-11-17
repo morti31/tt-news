@@ -320,7 +320,7 @@
   // Latest: three columns, Events, Clubs and Other news. Each has a picture card for its newest story and
   // three headlines under it. Every card has a picture: video, event poster, photo or illustration first, then
   // the league's poster for club stories and a topic poster for the rest (img/posters/league-*, topic-*).
-  const LEAGUE_POSTER = [[/Champions League/i, "champions-league"], [/Bundesliga|TTBL/i, "bundesliga"], [/Super League|CTTSL/i, "super-league"],
+  const LEAGUE_POSTER = [[/British (?:Clubs? )?League|\bBCL\b/i, "british-league"], [/Champions League/i, "champions-league"], [/Bundesliga|TTBL/i, "bundesliga"], [/Super League|CTTSL/i, "super-league"],
     [/T\.? ?League/i, "t-league"], [/Pro A\b/i, "pro-a"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
   // The lead story always has a picture: with no video, poster, photo or illustration it takes this poster too.
   function fallbackPic(s, eager) {
@@ -337,7 +337,7 @@
   }
   function latestColumns(list) {
     const group = (s) => (s.category === "Clubs" ? "clubs" : s.event ? "events" : "other");
-    const cols = [["events", "Tournaments", "/events/"], ["clubs", "Clubs", "/clubs/"], ["other", "Other news", "/news/"]];
+    const cols = [["events", "Tournaments", "/events/"], ["clubs", "Club game", "/clubs/"], ["other", "Other news", "/news/"]];
     return `<div class="l3">${cols.map(([k, title, href]) => {
       const items = list.filter((s) => group(s) === k).slice(0, 4);
       if (!items.length) return "";

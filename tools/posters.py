@@ -441,7 +441,7 @@ LANDMARKS = {   # Unsplash Licence; credit: (photographer, page)
 }
 LEAGUE_LANDMARK = {"bundesliga": "berlin-brandenburg-gate.jpg", "t-league": "tokyo-tower.jpg", "pro-a": "paris-eiffel-tower.jpg",
                    "super-league": "beijing-temple-of-heaven.jpg", "mltt": "new-york-statue-of-liberty.jpg", "utt": "mumbai-gateway-of-india.jpg",
-                   "champions-league": "brussels-atomium.jpg"}
+                   "champions-league": "brussels-atomium.jpg", "british-league": "london-big-ben.jpg"}
 # Palettes for kinds of event that share a tier: (main, deep)
 SERIES_COLOURS = {"WTT Finals": ("#c99a2e", "#1b1405"), "WTT Feeder": ("#e2582b", "#2a0f05"), "WTT Invitational": ("#3a66e0", "#0c1a45")}
 

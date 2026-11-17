@@ -47,7 +47,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="
 NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <a class="wordmark" href="/" aria-label="Eleven home">Eleven<span class="ball" aria-hidden="true"></span></a>
 <nav aria-label="Sections"><ul class="sections">
-<li><a href="/">Home</a></li><li><a href="/events/">Tournaments</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Clubs</a></li>
+<li><a href="/">Home</a></li><li><a href="/events/">Tournaments</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Club game</a></li>
 <li><a href="/features/">Analysis</a></li><li><a href="/guide/">Guide</a></li>
 </ul></nav></div></header>"""
 

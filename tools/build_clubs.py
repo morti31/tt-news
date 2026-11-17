@@ -33,6 +33,10 @@ LEAGUES = [
      "comps": [("proa-men", "Men", "Pro A"), ("proa-women", "Women", "Pro A")],
      "match": r"\bPro A\b",
      "about": "France's top division has 10 men's and 12 women's clubs. Each team match is best of five, and the regular season leads into play-offs for the title."},
+    {"slug": "british-league", "name": "British Clubs League", "country": "Britain", "flag": "gb", "colour": "#012169",
+     "comps": [("bcl-men", "Men", "Premier Division"), ("bcl-women", "Women", "Premier Division")],
+     "match": r"British (?:Clubs? )?League|\bBCL\b",
+     "about": "Table Tennis England's British Clubs League is the top level of club team table tennis in Britain, with clubs from England, Scotland and Northern Ireland in this season's Premier Divisions: eight senior teams and six women's teams, who meet at weekend gatherings through the season."},
     {"slug": "champions-league", "name": "Champions League", "country": "Europe", "flag": "eu", "colour": "#0b2f6b",
      "comps": [("cl-men", "Men", "HYLO ETTU Champions League"), ("cl-women", "Women", "ETTU Champions League")],
      "match": r"Champions League|Europe Cup",
@@ -235,7 +239,7 @@ def league_page(lg, stories, now):
     squads = squads_html(comps, profiles)
     jump = "".join(f'<a href="#{k}">{v}</a>' for k, v in (("results", "Results"), ("fixtures", "Fixtures"), ("tables", "Tables"), ("squads", "Squads"), ("news", "News"), ("about", "About")) if (k != "news" or mine) and (k != "squads" or squads))
     body = f'''<main class="wrap cl-page" style="--tier:{lg["colour"]}">
-<p class="crumbs"><a href="/">Home</a> / <a href="/clubs/">Clubs</a> / {e(lg["name"])}</p>
+<p class="crumbs"><a href="/">Home</a> / <a href="/clubs/">Club game</a> / {e(lg["name"])}</p>
 <header class="hub-head cl-head"><div><span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span>
 <h1>{e(lg["name"])} {e(season)}</h1><p class="cl-status">{e(status_of(lg))}</p></div></header>
 <nav class="hub-jump" aria-label="On this page">{jump}</nav>
@@ -292,7 +296,7 @@ def hub(stories, now):
     clubs_news = [s for s in stories if s.get("category") == "Clubs"]
     chips = "".join(f'<a href="/clubs/{lg["slug"]}.html"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span>{e(lg["name"])}</a>' for lg in LEAGUES)
     return f'''<main class="wrap cl-page">
-<section class="sched-head"><div><h1>Clubs</h1><p class="lede">Tables, results, fixtures and news from the leagues where the world's best play: Germany, China, Japan, France, Europe, the United States and India.</p></div></section>
+<section class="sched-head"><div><h1>Club game</h1><p class="lede">Tables, results, fixtures and news from the leagues where the world's best play: Germany, China, Japan, France, Britain, Europe, the United States and India.</p></div></section>
 <nav class="cl-chips" aria-label="Leagues">{chips}</nav>
 {explainers.combined(explainers.pick(["clubs"]), explainers.analysis(words=explainers.HUB_WORDS["clubs"], keys=["page:clubs"], n=2), "top")}
 <div class="cl-hub-top">

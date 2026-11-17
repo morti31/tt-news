@@ -118,7 +118,7 @@ Your job on finals day: publish the finals review as the `top` story, written as
 
 Results and fixtures in these files also feed the scores strip at the top of every page (`data/club-strip.json`, built from `data/clubs/*.json`): results of the last two days and fixtures of the next two, every league, linked to the league page. So the hand-kept files (`cl-men`, `cl-women`, `cttsl-*`, `proa-*`, `utt`) matter for the strip: add each Champions League and other league result and the next fixtures with a `when` time (UTC) in every run, and never leave a played fixture as `scheduled`.
 
-The Clubs section (`/clubs/` and a page per league, built by `tools/build_clubs.py`) reads `data/clubs/<competition>.json`.
+The Club game section (menu label "Club game", still at `/clubs/`; a page per league, built by `tools/build_clubs.py`) reads `data/clubs/<competition>.json`.
 
 - Automatic (`"auto": true`): `ttbl`, `dttbl-women`, `tleague-men`, `tleague-women`, `mltt`. `.github/workflows/club-sync.yml` refreshes them every hour from the leagues' own sites (`tools/club_sync.py`). Don't edit these by hand. If one stops updating (its `updated` time is more than a day old during the season), check the workflow log and fix the parser. Each new season: add the women's Bundesliga group id to `DTTBL_GROUP` in `tools/club_sync.py` (shown on the DTTB click-TT league page) and check new club names in `TTBL_NAMES`, `DTTBL_NAMES` and `TL_TEAMS`.
 - By hand (`"auto": false`): `proa-men`, `proa-women` (FFTT and the clubs' sites), `cttsl-men`, `cttsl-women` (CTTA, Xinhua, Sina, Tencent), `cl-men`, `cl-women` (ETTU), `utt` (Ultimate Table Tennis). In every run where a league in season has played, update its file from the official source or two reliable reports: `status`, `updated`, the table and new results (`score: [home, away]`, `status: "finished"`), and the next fixtures. Use `"when": null` with a `round` when the date isn't known, and `"date_only": true` when only the day is. Never guess a score, date or table position. Same format as the automatic files (see the docstring in `tools/club_sync.py`).
@@ -256,3 +256,7 @@ The Chop, by Eleven, is a separate site about defensive table tennis: choppers, 
 ### The subdomain
 
 defensive.eleventabletennis.com is a custom domain on the tt-news Worker (set up 16 November 2026). `worker.js` maps every path on that host to `/defensive/<path>`, and redirects old eleventabletennis.com/defensive/ addresses there; `wrangler.jsonc` sends The Chop's paths to the worker first (`/`, `/defenders*`, `/defender/*`, `/calendar*`, `/reading*`, `/legends*`, `/chop*`). New Chop pages need names that don't clash with Eleven's own files, and a pattern there.
+
+## British Clubs League
+
+`/clubs/british-league.html` pairs the Premier Divisions of Table Tennis England's British Clubs League: senior (`bcl-men`) and women's (`bcl-women`). `tools/club_sync.py` reads them hourly from TT Leagues' API (`ttleagues-api.azurewebsites.net/api/`, header `Tenant: british.ttleagues.com`; the site's newer front-door address refuses scripts). Matches are labelled by weekend gathering. Each season is a new competition: update `BCL_DIV` with the new competition and Premier Division ids (API `competitions/all`, then `competitions/<id>/divisions`).
