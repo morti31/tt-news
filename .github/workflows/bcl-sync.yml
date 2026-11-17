@@ -1,0 +1,19 @@
+name: BCL sync
+on:
+  workflow_dispatch:
+    inputs:
+      explore:
+        description: "API paths to print (blank: normal sync)"
+        required: false
+permissions:
+  contents: write
+jobs:
+  bcl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Explore
+        if: ${{ inputs.explore != '' }}
+        env:
+          PATHS: ${{ inputs.explore }}
+        run: python3 tools/bcl_sync.py --explore $PATHS
