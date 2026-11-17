@@ -305,7 +305,7 @@
     // Top stories: the weighted order worked out at build time (prestige, freshness, results, video, events on now)
     const rank = (s) => { const k = data.top.indexOf(s.id); return k < 0 ? 999 : k; };
     // Features (not guides) can be Top stories too, on the All view
-    const featTops = cat === "All" ? data.features.map((f) => ({ id: f.slug, headline: f.title, published: f.published, date: (f.published || "").slice(0, 10), category: "Features" })) : [];
+    const featTops = cat === "All" ? data.features.map((f) => ({ id: f.slug, headline: f.top_title || f.title, published: f.published, date: (f.published || "").slice(0, 10), category: "Features" })) : [];
     const tops = [...rest, ...featTops].filter((s) => cat !== "All" || rank(s) < 999).sort((a, b) => rank(a) - rank(b)).slice(0, 5);
     // Latest: strictly newest first, whether or not a story is also in Top stories
     const more = rest;

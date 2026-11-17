@@ -842,7 +842,8 @@ def main():
     json.dump({k: [[TG.tags[x]["name"], build_tags.url(TG, x), TG.tags[x]["type"]] for x in v if x not in build_tags.BLOCKED] for k, v in TAGMAP.items() if v},
               open(os.path.join(ROOT, "data", "tags.json"), "w", encoding="utf-8"), ensure_ascii=False)
     global TOP
-    feats = [{"id": a["slug"], "slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "category": "Features", "top": False,
+    # A feature's "top_title" (the newsy headline, see FEATURES.md) is used only where it shows as a Top story
+    feats = [{"id": a["slug"], "slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a.get("top_title") or a["title"], "category": "Features", "top": False,
               "published": a.get("published", a["date"] + "T09:00:00Z"), "event": None, "video": None, "image": a.get("image"), "author": "team", "feature": True}
              for a in arts if a.get("category") == "Features"]
     global SUPERSEDED
@@ -910,7 +911,7 @@ def main():
     json.dump(index, open(os.path.join(ROOT, "data", "article-index.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     hubs = build_hubs(arts)
     feats = [a for a in arts if a.get("category") == "Features"]
-    fdata = [{"slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "standfirst": a.get("standfirst", ""), "kind": LABEL.get(a.get("kind", "Feature"), a.get("kind", "Feature")),
+    fdata = [{"slug": a["slug"], "url": f"/news/{a['slug']}.html", "title": a["title"], "top_title": a.get("top_title") or a["title"], "standfirst": a.get("standfirst", ""), "kind": LABEL.get(a.get("kind", "Feature"), a.get("kind", "Feature")),
               "published": a.get("published", a["date"]), "cover": feature_cover(a), "author": author_of(a)["name"]} for a in feats]
     json.dump(fdata, open(os.path.join(ROOT, "data", "features.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     os.makedirs(os.path.join(ROOT, "features"), exist_ok=True)
@@ -1270,7 +1271,7 @@ def prerender_home():
     lead = next((s for s in stories if s["id"] == lead_id), None) or next((s for s in stories if s.get("top")), stories[0])
     rest = [s for s in stories if s is not lead]
     by_id = {s["id"]: (s["headline"], url(s)) for s in rest}
-    by_id.update({k: (f["title"], f["url"]) for k, f in feats.items()})
+    by_id.update({k: (f.get("top_title") or f["title"], f["url"]) for k, f in feats.items()})
     tops = [by_id[k] for k in top if k in by_id][:5]
     lead_html = (f'<!--pre--><article class="big"><div class="big-text"><h1><a class="stretch" href="{e(url(lead))}">{e(lead["headline"])}</a></h1>'
                  f'<p>{e(lead.get("summary") or "")}</p></div></article><!--/pre-->')
