@@ -698,7 +698,9 @@ def build():
 <section class="ch-sec"><h2>Try</h2><ul class="ch-links-plain"><li><a href="{BASE}/defenders.html">The defenders</a>: rankings, form and profiles</li>
 <li><a href="{BASE}/calendar.html">Calendar</a>: when the defenders play next</li><li><a href="{BASE}/reading.html">Reading</a>: the best writing about them</li>
 <li><a href="{BASE}/videos.html">Videos</a></li><li><a href="{BASE}/legends.html">Legends</a></li><li><a href="{BASE}/">Home</a></li></ul></section>"""
-    open(os.path.join(OUT, "404.html"), "w", encoding="utf-8").write(page("Page not found | The Chop", "The page you were looking for isn't on The Chop.", "/404.html", nbody))
+    nf_html = page("Page not found | The Chop", "The page you were looking for isn't on The Chop.", "/404.html", nbody)
+    for nf_name in ("404.html", "not-found.html"):   # worker.js serves not-found.html for missing pages on the subdomain
+        open(os.path.join(OUT, nf_name), "w", encoding="utf-8").write(nf_html)
 
     urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html", "/glossary.html"] + vurls + [f'/defender/{slug(p["name"])}.html' for p in players]
     open(os.path.join(OUT, "chop-sitemap.xml"), "w", encoding="utf-8").write(
