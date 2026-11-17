@@ -681,7 +681,7 @@ def article_page(a, others, brief=False):
     ev0 = event_of(a)
     seen = {ev0["id"]} if ev0 else set()   # this story's own poster is already at the top
     more_html = "".join(
-        f'<article class="promo">{story_thumb(i, seen)}<div><span class="kicker" style="color:var(--{e(i["category"])}, var(--ink))">'
+        f'<article class="promo promo-text"><div><span class="kicker" style="color:var(--{e(i["category"])}, var(--ink))">'
         f'{e(HUBS[i["event"]]["name"] if i["event"] in HUBS else LABEL.get(i["category"], i["category"]))}</span>'
         f'<h3><a class="stretch" href="{i["url"]}">{e(i["title"])}</a></h3><span class="meta">{short_when(i["published"])} · By {e(TEAM["name"])}</span>{build_tags.chips(TG, TAGMAP.get(i["id"], []), 2)}</div></article>'
         for i in rest[:16])
