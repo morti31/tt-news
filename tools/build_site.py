@@ -321,9 +321,19 @@ def supersessions(stories):
                 continue
             # the player is the subject of the older headline too: it starts with them, or with them after a colon
             lead_part = old["title"].rsplit(": ", 1)[-1]
+            # singles and doubles are separate: losing a singles title doesn't undo a mixed doubles bronze
+            if doubles(old["title"], names) != doubles(new["title"], names):
+                continue
             if any(old["title"].startswith(n) or lead_part.startswith(n) for n in subj) and not REVERSAL.search(old["title"]):
                 out[old["id"]] = new["id"]
     return out
+
+
+def doubles(headline, names):
+    """True for a doubles story: it says doubles or pair, or leads with two players joined by "and"."""
+    if re.search(r"\bdoubles\b|\bpairs?\b|\bpartner", headline, re.I):
+        return True
+    return any(re.match(re.escape(n) + r" and ", headline) and any(headline.startswith(f"{n} and {o}") for o in names) for n in names)
 
 
 SUPERSEDED = {}   # older story id -> the newer story that overtakes it (supersessions)
@@ -537,15 +547,23 @@ def autolink(blocks, a):
     cities = {}
     for h in HUBS.values():
         cities[h.get("city")] = cities.get(h.get("city"), 0) + 1
-    for h in HUBS.values():
+    try:
+        cdata = json.load(open(os.path.join(ROOT, "data", "countries.json"), encoding="utf-8"))
+        countries = {(v.get("name") if isinstance(v, dict) else v) for v in cdata.values()} | {"Japan", "China", "United States", "Korea", "Europe"}
+    except Exception:
+        countries = {"Japan", "China", "United States", "Korea", "Europe"}
+    own = a.get("event")
+    for h in sorted(HUBS.values(), key=lambda h: (h["id"] != own, h.get("start") or "")):   # the story's own event first
         if not h.get("start"):
             continue
-        names = [f'{h["name"]} {h["year"]}', h["name"]] + ([h["city"]] if h.get("city") and cities[h["city"]] == 1 else [])
+        # the bare name ("Mixed Team World Cup") only for the story's own event; a city only when it isn't a country
+        names = [f'{h["name"]} {h["year"]}'] + ([h["name"]] if h["id"] == own or not own else []) \
+            + ([h["city"]] if h.get("city") and cities[h["city"]] == 1 and h["city"] not in countries else [])
         targets.append((f'/events/{h["id"]}.html', names))
     targets.append(("/rankings.html", ["world rankings", "world ranking", "world number one", "world No 1"]))
     targets.append((CHOP + "/", ["choppers", "chopper", "defensive players", "defensive style"]))
     targets += [(u, [n]) for n, u in PROFILES.items()]
-    done, out, inlink = set(), [], False
+    done, used, out, inlink = set(), set(), [], False
     for b in blocks:
         if not b.startswith(("<p>", "<ul")):
             out.append(b)
@@ -564,8 +582,13 @@ def autolink(blocks, a):
                 if url in done:
                     continue
                 for n in names:
-                    m = re.search(r"(?<![\w-])" + re.escape(html.escape(n)) + r"(?![\w-])", t)
+                    if n in used:
+                        continue
+                    # not "Los Angeles 2028" or "Brisbane Olympics": a host city followed by another year or the Olympics
+                    tail = "" if re.search(r"\d{4}$", n) else r"(?!\s+(?:19|20)\d\d)(?!\s+Olympic)"
+                    m = re.search(r"(?<![\w-])" + re.escape(html.escape(n)) + r"(?![\w-])" + tail, t)
                     if m:
+                        used.add(n)
                         t = t[:m.start()] + f'<a href="{url}">{m.group(0)}</a>' + t[m.end():]
                         done.add(url)
                         break
