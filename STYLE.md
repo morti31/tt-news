@@ -125,6 +125,7 @@ These apply to every news story, and most of all when something unexpected happe
 ## Headlines and standfirsts
 
 - Sentence case, present tense for news ("Harimoto comes from two down to win Asian title"), no full stop. Active verbs. Name the competition in full (WTT Champions Montpellier, not Montpellier), worked into the sentence rather than as a prefix with a colon where possible.
+- Feature and analysis headlines lead with the news when the piece is built on it: "After last week's service-fault row in Istanbul, what makes a table tennis serve legal?" A question is fine for a feature. See FEATURES.md.
 - Standfirst: one sentence that adds to the headline rather than repeating it.
 
 ## House style (Guardian conventions)
