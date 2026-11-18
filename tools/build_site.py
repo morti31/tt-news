@@ -186,10 +186,12 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="/styles.css">
 {extra_head}
+<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','GTM-KHC9R75V');</script>
 <meta name="google-adsense-account" content="ca-pub-7633315595642330">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7633315595642330" crossorigin="anonymous"></script>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHC9R75V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {nav_for(canonical)}
 <section class="ticker" aria-label="Latest scores"><div class="wrap ticker-inner" id="ticker"></div></section>
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
@@ -1180,7 +1182,7 @@ def privacy_page():
 <h2>Advertising and cookies</h2>
 <p>Eleven shows ads served by Google AdSense. Google and its partners use cookies and similar technologies to show ads and measure them. If you are in the UK or the European Economic Area, we ask for your consent first, and ads that are personalised to you appear only if you agree. You can change your choice at any time with the privacy settings link on the site, or by clearing cookies in your browser.</p>
 <p>Without consent, Google may still show ads that are not personalised, using the page you are on rather than your history. You can manage personalised advertising in <a href="https://adssettings.google.com" rel="noopener">your Google ad settings</a> or through <a href="https://www.youronlinechoices.com" rel="noopener">Your Online Choices</a>. Google explains how it uses data from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
-<p>Outside advertising, Eleven sets no cookies of its own.</p>
+<p>Eleven also uses Google Tag Manager to load analytics tags that show us which pages are read. Those tags can set cookies or read similar identifiers on your device. Outside advertising and analytics, Eleven sets no cookies of its own.</p>
 <h2>Our legal basis</h2>
 <p>We handle contact messages because it is in our legitimate interest to answer the people who write to us. We rely on your consent for advertising cookies and similar technologies, and you can withdraw it at any time. Site security and delivery are also legitimate interests.</p>
 <h2>Who receives your data</h2>
