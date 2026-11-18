@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T12:30:00Z",
+  "updated": "2026-11-18T16:30:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -697,30 +697,6 @@
     }
   ],
   "fixtures": [
-    {
-      "id": "cl-women-2026-27-s2-hodonin-cartagena",
-      "event_id": "ettu-cl-women-s2r1-2026",
-      "name": "ETTU Champions League Women: SKST Plus Hodonín v UCAM Cartagena, Stage 2",
-      "start": "2026-11-10T17:00:00Z",
-      "end": "2026-11-10T20:00:00Z",
-      "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
-    },
-    {
-      "id": "cl-women-2026-27-s2-tarnobrzeg-etival",
-      "event_id": "ettu-cl-women-s2r1-2026",
-      "name": "ETTU Champions League Women: KTS Enea Siarkopol Tarnobrzeg v Etival ASRTT, Stage 2",
-      "start": "2026-11-10T17:30:00Z",
-      "end": "2026-11-10T20:30:00Z",
-      "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
-    },
-    {
-      "id": "cl-women-2026-27-s2-saint-quentin-linz",
-      "event_id": "ettu-cl-women-s2r1-2026",
-      "name": "ETTU Champions League Women: Saint-Quentin TT v Linz AG Froschberg, Stage 2",
-      "start": "2026-11-10T18:30:00Z",
-      "end": "2026-11-10T21:30:00Z",
-      "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
-    },
     {
       "id": "cl-women-2026-27-s2-berlin-metz",
       "event_id": "ettu-cl-women-s2r1-2026",
