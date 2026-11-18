@@ -315,6 +315,8 @@ h1, h2, h3, .wordmark, .foot-mark { font-family: "Bricolage Grotesque", system-u
 .ad-empty { font-size: 13px; font-weight: 600; color: var(--muted); text-decoration: none; }
 .ad-empty:hover { color: var(--ink); text-decoration: underline; }
 .ad.filled { background: none; border: 0; }
+/* Empty slots (no code in data/ads.json) take no space, even before the script runs */
+.ad-wrap:has(> .ad:empty), .ad-side:empty { display: none; }
 @media (max-width: 640px) { .ad-leader { min-height: 60px; } }
 footer + * , .footer { margin-top: 0; }
 .ad-wrap + .footer { margin-top: 28px; }

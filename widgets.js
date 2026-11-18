@@ -280,7 +280,7 @@ window.ElevenStream = function (el) {
     }).join("");
   }
 
-  // Advertising slots: fill from data/ads.json, otherwise show a quiet placeholder
+  // Advertising slots: fill from data/ads.json; empty slots are removed
   const slots = document.querySelectorAll("[data-ad]");
   if (slots.length) {
     let ads = {};
@@ -293,7 +293,9 @@ window.ElevenStream = function (el) {
         el.appendChild(range.createContextualFragment(code)); // runs any ad scripts
         el.classList.add("filled");
       } else {
-        el.innerHTML = '<span class="ad-label">Advertisement</span><a class="ad-empty" href="/contact">Advertise with Eleven</a>';
+        // No ad code yet: show nothing (no placeholder, no gap). Paste code into data/ads.json to bring a slot back.
+        const wrap = el.closest(".ad-wrap");
+        (wrap || el).remove();
       }
     });
   }
