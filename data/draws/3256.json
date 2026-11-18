@@ -2,7 +2,7 @@
  "event": "WTT Star Contender Muscat",
  "wtt_event_id": "3256",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256&selectedTab=Draws",
- "updated": "2026-11-18T10:41:00Z",
+ "updated": "2026-11-18T19:23:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -50,7 +50,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-18T14:10:00Z"
+       "when": "2026-11-18T14:10:00Z",
+       "score": "3-2 (11:8,5:11,12:10,7:11,11:5)",
+       "winner": 0
       },
       {
        "players": [
@@ -104,7 +106,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-18T14:45:00Z"
+       "when": "2026-11-18T14:45:00Z",
+       "score": "3-2 (9:11,9:11,11:7,11:9,11:5)",
+       "winner": 0
       },
       {
        "players": [
@@ -145,7 +149,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T15:20:00Z"
+       "when": "2026-11-18T15:20:00Z",
+       "score": "3-1 (8:11,11:4,11:7,11:7,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -158,7 +164,9 @@
          "nat": "MON"
         }
        ],
-       "when": "2026-11-18T09:55:00Z"
+       "when": "2026-11-18T09:55:00Z",
+       "score": "0-3 (6:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -197,7 +205,9 @@
          "nat": "ROU"
         }
        ],
-       "when": "2026-11-18T13:35:00Z"
+       "when": "2026-11-18T13:35:00Z",
+       "score": "0-3 (5:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -210,7 +220,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-18T15:55:00Z"
+       "when": "2026-11-18T15:55:00Z",
+       "score": "0-3 (4:11,3:11,9:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -251,7 +263,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T14:10:00Z"
+       "when": "2026-11-18T14:10:00Z",
+       "score": "1-3 (11:7,6:11,9:11,3:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -264,7 +278,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T09:55:00Z"
+       "when": "2026-11-18T09:55:00Z",
+       "score": "3-2 (11:8,2:11,7:11,11:7,11:6)",
+       "winner": 0
       },
       {
        "players": [
@@ -303,7 +319,9 @@
          "nat": "ITA"
         }
        ],
-       "when": "2026-11-18T14:45:00Z"
+       "when": "2026-11-18T14:45:00Z",
+       "score": "3-0 (11:3,11:9,11:7,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -316,7 +334,9 @@
          "nat": "SVK"
         }
        ],
-       "when": "2026-11-18T15:20:00Z"
+       "when": "2026-11-18T15:20:00Z",
+       "score": "2-3 (11:8,7:11,4:11,12:10,10:12)",
+       "winner": 1
       },
       {
        "players": [
@@ -357,7 +377,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-18T16:30:00Z"
+       "when": "2026-11-18T16:30:00Z",
+       "score": "3-2 (4:11,11:9,5:11,11:9,11:5)",
+       "winner": 0
       },
       {
        "players": [
@@ -370,7 +392,9 @@
          "nat": "AUT"
         }
        ],
-       "when": "2026-11-18T16:30:00Z"
+       "when": "2026-11-18T16:30:00Z",
+       "score": "3-0 (11:8,11:5,13:11,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -424,7 +448,9 @@
          "nat": "IND"
         }
        ],
-       "when": "2026-11-18T15:55:00Z"
+       "when": "2026-11-18T15:55:00Z",
+       "score": "2-3 (7:11,4:11,11:4,11:6,2:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -456,16 +482,21 @@
          "name": "Ece Harac",
          "nat": "TUR"
         }
-       ]
+       ],
+       "when": "2026-11-19T13:35:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA"
+        },
         {
          "name": "Mo Zhang",
          "nat": "CAN"
         }
-       ]
+       ],
+       "when": "2026-11-19T08:10:00Z"
       },
       {
        "players": [
@@ -477,17 +508,22 @@
          "name": "Minhyung Jee",
          "nat": "AUS"
         }
-       ]
+       ],
+       "when": "2026-11-19T09:20:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Elena Zaharia",
+         "nat": "ROU"
+        },
         {
          "name": "Elizabet Abraamian",
          "nat": "RUS",
          "seed": 8
         }
-       ]
+       ],
+       "when": "2026-11-19T14:45:00Z"
       },
       {
        "players": [
@@ -496,17 +532,25 @@
          "nat": "JPN",
          "seed": 4
         },
-        null
-       ]
+        {
+         "name": "Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-19T09:20:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON"
+        },
         {
          "name": "Yangzi Liu",
          "nat": "AUS"
         }
-       ]
+       ],
+       "when": "2026-11-19T08:10:00Z"
       },
       {
        "players": [
@@ -514,18 +558,26 @@
          "name": "Kaho Akae",
          "nat": "JPN"
         },
-        null
-       ]
+        {
+         "name": "Andreea Dragoman",
+         "nat": "ROU"
+        }
+       ],
+       "when": "2026-11-19T13:00:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Saki Shibata",
+         "nat": "JPN"
+        },
         {
          "name": "Qin Yuxuan",
          "nat": "CHN",
          "seed": 7
         }
-       ]
+       ],
+       "when": "2026-11-19T08:45:00Z"
       },
       {
        "players": [
@@ -534,17 +586,25 @@
          "nat": "ROU",
          "seed": 5
         },
-        null
-       ]
+        {
+         "name": "Wei Jingming",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-19T13:35:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Sachi Aoki",
+         "nat": "JPN"
+        },
         {
          "name": "Jia Nan Yuan",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-19T13:00:00Z"
       },
       {
        "players": [
@@ -552,18 +612,26 @@
          "name": "Elizabeta Samara",
          "nat": "ROU"
         },
-        null
-       ]
+        {
+         "name": "Wang Xiaotong",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-19T13:35:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Tatiana Kukulkova",
+         "nat": "SVK"
+        },
         {
          "name": "Joo Cheonhui",
          "nat": "KOR",
          "seed": 3
         }
-       ]
+       ],
+       "when": "2026-11-19T08:45:00Z"
       },
       {
        "players": [
@@ -572,17 +640,25 @@
          "nat": "JPN",
          "seed": 6
         },
-        null
-       ]
+        {
+         "name": "Christina Kallberg",
+         "nat": "SWE"
+        }
+       ],
+       "when": "2026-11-19T09:55:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Maria Xiao",
+         "nat": "ESP"
+        },
         {
          "name": "Cheng I-Ching",
          "nat": "TPE"
         }
-       ]
+       ],
+       "when": "2026-11-19T14:10:00Z"
       },
       {
        "players": [
@@ -594,17 +670,22 @@
          "name": "Kim Seongjin",
          "nat": "KOR"
         }
-       ]
+       ],
+       "when": "2026-11-19T15:55:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND"
+        },
         {
          "name": "Honoka Hashimoto",
          "nat": "JPN",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-19T09:55:00Z"
       }
      ]
     },
@@ -751,7 +832,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T16:30:00Z"
+       "when": "2026-11-18T16:30:00Z",
+       "score": "2-3 (8:11,11:5,11:4,10:12,7:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -764,7 +847,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-18T09:55:00Z"
+       "when": "2026-11-18T09:55:00Z",
+       "score": "1-3 (8:11,10:12,11:5,8:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -803,7 +888,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T16:30:00Z"
+       "when": "2026-11-18T16:30:00Z",
+       "score": "2-3 (6:11,9:11,11:4,11:6,8:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -816,7 +903,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T14:10:00Z"
+       "when": "2026-11-18T14:10:00Z",
+       "score": "3-2 (11:9,11:8,8:11,10:12,11:7)",
+       "winner": 0
       },
       {
        "players": [
@@ -913,7 +1002,9 @@
          "nat": "IRI"
         }
        ],
-       "when": "2026-11-18T14:45:00Z"
+       "when": "2026-11-18T14:45:00Z",
+       "score": "3-1 (11:6,11:6,6:11,11:8,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -984,7 +1075,9 @@
          "nat": "COL"
         }
        ],
-       "when": "2026-11-18T15:55:00Z"
+       "when": "2026-11-18T15:55:00Z",
+       "score": "3-0 (11:9,11:9,11:9,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1038,7 +1131,9 @@
          "nat": "AUS"
         }
        ],
-       "when": "2026-11-18T15:20:00Z"
+       "when": "2026-11-18T15:20:00Z",
+       "score": "3-1 (5:11,11:3,11:3,11:7,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1078,7 +1173,9 @@
          "nat": "ESP"
         }
        ],
-       "when": "2026-11-18T14:10:00Z"
+       "when": "2026-11-18T14:10:00Z",
+       "score": "3-2 (6:11,3:11,11:6,11:9,11:8)",
+       "winner": 0
       },
       {
        "players": [
@@ -1091,7 +1188,9 @@
          "nat": "CRO"
         }
        ],
-       "when": "2026-11-18T15:55:00Z"
+       "when": "2026-11-18T15:55:00Z",
+       "score": "3-2 (11:8,11:9,6:11,10:12,11:4)",
+       "winner": 0
       },
       {
        "players": [
@@ -1130,7 +1229,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-18T14:45:00Z"
+       "when": "2026-11-18T14:45:00Z",
+       "score": "2-3 (11:8,2:11,11:13,11:7,9:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -1143,7 +1244,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-18T15:20:00Z"
+       "when": "2026-11-18T15:20:00Z",
+       "score": "3-1 (11:7,11:8,12:14,11:5,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1171,17 +1274,25 @@
          "nat": "SLO",
          "seed": 1
         },
-        null
-       ]
+        {
+         "name": "Sun Yang",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-19T14:10:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Park Ganghyeon",
+         "nat": "KOR"
+        },
         {
          "name": "An Jaehyun",
          "nat": "KOR"
         }
-       ]
+       ],
+       "when": "2026-11-19T08:10:00Z"
       },
       {
        "players": [
@@ -1189,18 +1300,26 @@
          "name": "Tomislav Pucar",
          "nat": "CRO"
         },
-        null
-       ]
+        {
+         "name": "Huang Youzheng",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-19T14:45:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Andre Bertelsmeier",
+         "nat": "GER"
+        },
         {
          "name": "Flavien Coton",
          "nat": "FRA",
          "seed": 8
         }
-       ]
+       ],
+       "when": "2026-11-19T09:55:00Z"
       },
       {
        "players": [
@@ -1213,7 +1332,8 @@
          "name": "Csaba Andras",
          "nat": "HUN"
         }
-       ]
+       ],
+       "when": "2026-11-19T07:35:00Z"
       },
       {
        "players": [
@@ -1225,7 +1345,8 @@
          "name": "Simon Gauzy",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-19T13:00:00Z"
       },
       {
        "players": [
@@ -1233,8 +1354,12 @@
          "name": "Lim Jonghoon",
          "nat": "KOR"
         },
-        null
-       ]
+        {
+         "name": "Nicholas Lum",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2026-11-19T08:45:00Z"
       },
       {
        "players": [
@@ -1247,7 +1372,8 @@
          "nat": "KOR",
          "seed": 5
         }
-       ]
+       ],
+       "when": "2026-11-19T13:00:00Z"
       },
       {
        "players": [
@@ -1260,16 +1386,21 @@
          "name": "Ryuusei Kawakami",
          "nat": "JPN"
         }
-       ]
+       ],
+       "when": "2026-11-19T08:45:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Maksim Grebnev",
+         "nat": "RUS"
+        },
         {
          "name": "Chen Yuanyu",
          "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-19T09:20:00Z"
       },
       {
        "players": [
@@ -1281,16 +1412,21 @@
          "name": "Yuan Licen",
          "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-19T14:10:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        },
         {
          "name": "Li Tianyang",
          "nat": "CHN"
         }
-       ]
+       ],
+       "when": "2026-11-19T14:10:00Z"
       },
       {
        "players": [
@@ -1299,17 +1435,25 @@
          "nat": "GER",
          "seed": 7
         },
-        null
-       ]
+        {
+         "name": "Lubomir Jancarik",
+         "nat": "CZE"
+        }
+       ],
+       "when": "2026-11-19T15:20:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Kwon Hyuk",
+         "nat": "KOR"
+        },
         {
          "name": "Omar Assar",
          "nat": "EGY"
         }
-       ]
+       ],
+       "when": "2026-11-19T09:20:00Z"
       },
       {
        "players": [
@@ -1317,18 +1461,26 @@
          "name": "Wim Verdonschot",
          "nat": "GER"
         },
-        null
-       ]
+        {
+         "name": "Joe Seyfried",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-11-19T09:55:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Manav Thakkar",
+         "nat": "IND"
+        },
         {
          "name": "Shunsuke Togami",
          "nat": "JPN",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-19T13:35:00Z"
       }
      ]
     },
@@ -1511,7 +1663,9 @@
          "seed": 8
         }
        ],
-       "when": "2026-11-18T13:35:00Z"
+       "when": "2026-11-18T13:35:00Z",
+       "score": "3-2 (11:13,11:7,11:9,5:11,11:3)",
+       "winner": 0
       },
       {
        "players": [
@@ -1593,7 +1747,8 @@
          "nat": "JPN",
          "seed": 5
         }
-       ]
+       ],
+       "when": "2026-11-19T07:00:00Z"
       },
       {
        "players": [
@@ -1602,8 +1757,12 @@
          "nat": "JPN",
          "seed": 4
         },
-        null
-       ]
+        {
+         "name": "Feng Yixuan / Fan Shuhan",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-19T07:00:00Z"
       },
       {
        "players": [
@@ -1616,7 +1775,8 @@
          "nat": "ROU",
          "seed": 3
         }
-       ]
+       ],
+       "when": "2026-11-19T07:35:00Z"
       },
       {
        "players": [
@@ -1629,7 +1789,8 @@
          "nat": "JPN",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-19T07:35:00Z"
       }
      ]
     },
@@ -1681,7 +1842,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-18T13:35:00Z"
+       "when": "2026-11-18T13:35:00Z",
+       "score": "3-1 (11:7,11:4,6:11,11:5,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1759,7 +1922,9 @@
          "seed": 4
         }
        ],
-       "when": "2026-11-18T13:35:00Z"
+       "when": "2026-11-18T13:35:00Z",
+       "score": "2-3 (11:13,11:2,11:9,4:11,5:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -1800,13 +1965,18 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Lim Jonghoon / Oh Junsung",
+         "nat": "KOR",
+         "seed": 1
+        },
         {
          "name": "Joe Seyfried / Vincent Picard",
          "nat": "FRA",
          "seed": 5
         }
-       ]
+       ],
+       "when": "2026-11-19T07:00:00Z"
       },
       {
        "players": [
@@ -1819,7 +1989,8 @@
          "name": "Andrej Gacina / Ivor Ban",
          "nat": "CRO"
         }
-       ]
+       ],
+       "when": "2026-11-19T07:35:00Z"
       },
       {
        "players": [
@@ -1827,8 +1998,13 @@
          "name": "Simon Gauzy / Flavien Coton",
          "nat": "FRA"
         },
-        null
-       ]
+        {
+         "name": "Lev Katsman / Maksim Grebnev",
+         "nat": "RUS",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-19T07:00:00Z"
       },
       {
        "players": [
@@ -1842,7 +2018,8 @@
          "nat": "IND",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-19T08:10:00Z"
       }
      ]
     },
@@ -1894,7 +2071,9 @@
          "nat": "IND"
         }
        ],
-       "when": "2026-11-18T10:30:00Z"
+       "when": "2026-11-18T10:30:00Z",
+       "score": "3-1 (11:9,13:11,9:11,11:8,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1908,7 +2087,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-18T10:30:00Z"
+       "when": "2026-11-18T10:30:00Z",
+       "score": "3-1 (11:6,13:15,11:7,11:5,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1923,7 +2104,9 @@
          "seed": 8
         }
        ],
-       "when": "2026-11-18T10:30:00Z"
+       "when": "2026-11-18T10:30:00Z",
+       "score": "3-0 (11:4,11:6,12:10,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1936,7 +2119,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-18T10:30:00Z"
+       "when": "2026-11-18T10:30:00Z",
+       "score": "3-2 (8:11,8:11,11:8,12:10,11:9)",
+       "winner": 0
       },
       {
        "players": [
@@ -1950,7 +2135,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-18T13:00:00Z"
+       "when": "2026-11-18T13:00:00Z",
+       "score": "3-1 (11:6,8:11,12:10,11:3,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1964,7 +2151,9 @@
          "seed": 4
         }
        ],
-       "when": "2026-11-18T13:00:00Z"
+       "when": "2026-11-18T13:00:00Z",
+       "score": "1-3 (11:5,5:11,7:11,5:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -1978,7 +2167,9 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-18T13:00:00Z"
+       "when": "2026-11-18T13:00:00Z",
+       "score": "3-2 (7:11,11:8,7:11,11:6,11:7)",
+       "winner": 0
       },
       {
        "players": [
@@ -1992,7 +2183,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-18T13:00:00Z"
+       "when": "2026-11-18T13:00:00Z",
+       "score": "0-3 (8:11,4:11,7:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -2001,27 +2194,61 @@
      "matches": [
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Alvaro Robles / Maria Xiao",
+         "nat": "ESP",
+         "seed": 1
+        },
+        {
+         "name": "Esteban Dorr / Jia Nan Yuan",
+         "nat": "FRA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-19T10:30:00Z"
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Eduard Ionescu / Bernadette Szőcs",
+         "nat": "ROU",
+         "seed": 3
+        },
+        {
+         "name": "Jo Yokotani / Cocona Muramatsu",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-11-19T10:30:00Z"
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Yuan Licen / Wang Xiaotong",
+         "nat": "CHN"
+        },
+        {
+         "name": "Nicholas Lum / Yangzi Liu",
+         "nat": "AUS",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-19T10:30:00Z"
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Park Ganghyeon / Joo Cheonhui",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "Shunsuke Togami / Satsuki Odo",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-19T10:30:00Z"
       }
      ]
     },
