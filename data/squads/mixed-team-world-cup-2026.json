@@ -3,6 +3,90 @@
  "teams_total": 20,
  "teams": [
   {
+   "team": "Australia",
+   "nat": "AUS",
+   "named": "2026-10-01",
+   "source": {
+    "name": "Table Tennis Australia",
+    "url": "https://www.tabletennis.org.au/news/tta-announces-team-selection-for-2026-ittf-mixed-team-world-cup-"
+   },
+   "story": "/news/mixed-team-world-cup-2026-squads-japan-china-france-sweden-australia-chengdu.html",
+   "players": [
+    {
+     "name": "Finn Luu",
+     "gender": "M"
+    },
+    {
+     "name": "Nicholas Lum",
+     "gender": "M"
+    },
+    {
+     "name": "Hwan Bae",
+     "gender": "M"
+    },
+    {
+     "name": "Aditya Sareen",
+     "gender": "M"
+    },
+    {
+     "name": "Yangzi Liu",
+     "gender": "W"
+    },
+    {
+     "name": "Constantina Psihogios",
+     "gender": "W"
+    },
+    {
+     "name": "Jiamuwa Wu",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Brazil",
+   "nat": "BRA",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Felipe Arado",
+     "gender": "M"
+    },
+    {
+     "name": "Leonardo Iizuka",
+     "gender": "M"
+    },
+    {
+     "name": "Guilherme Teodoro",
+     "gender": "M"
+    },
+    {
+     "name": "Hamilton Yamane",
+     "gender": "M"
+    },
+    {
+     "name": "Beatriz Kanashiro",
+     "gender": "W"
+    },
+    {
+     "name": "Victoria Strassburger",
+     "gender": "W"
+    },
+    {
+     "name": "Giulia Takahashi",
+     "gender": "W"
+    },
+    {
+     "name": "Laura Watanabe",
+     "gender": "W"
+    }
+   ]
+  },
+  {
    "team": "China",
    "nat": "CHN",
    "named": "2026-11-10",
@@ -46,6 +130,347 @@
     }
    ],
    "note": "Holders, chasing a fourth title in a row."
+  },
+  {
+   "team": "Taiwan",
+   "nat": "TPE",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-lin-yun-ju-cheng-i-ching-withdraw-taiwan-six-players.html",
+   "players": [
+    {
+     "name": "Feng Yi-Hsin",
+     "gender": "M"
+    },
+    {
+     "name": "Hsu Hsien-Chia",
+     "gender": "M"
+    },
+    {
+     "name": "Kuo Guan-Hong",
+     "gender": "M"
+    },
+    {
+     "name": "Cheng I-Ching",
+     "gender": "W"
+    },
+    {
+     "name": "Peng Yu-han",
+     "gender": "W"
+    },
+    {
+     "name": "Wu Ying Syuan",
+     "gender": "W"
+    },
+    {
+     "name": "Yeh Yi-Tian",
+     "gender": "W"
+    }
+   ],
+   "note": "Lin Yun-Ju withdrew on 11 November. The Liberty Times reported that Cheng I-Ching also withdrew, but she is on the ITTF's entry list."
+  },
+  {
+   "team": "Croatia",
+   "nat": "CRO",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Ivor Ban",
+     "gender": "M"
+    },
+    {
+     "name": "Andrej Gacina",
+     "gender": "M"
+    },
+    {
+     "name": "Tomislav Pucar",
+     "gender": "M"
+    },
+    {
+     "name": "Hana Arapovic",
+     "gender": "W"
+    },
+    {
+     "name": "Dora Cosic",
+     "gender": "W"
+    },
+    {
+     "name": "Lea Rakovac",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Egypt",
+   "nat": "EGY",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Omar Assar",
+     "gender": "M"
+    },
+    {
+     "name": "Omar Bedair",
+     "gender": "M"
+    },
+    {
+     "name": "Shady Magdy",
+     "gender": "M"
+    },
+    {
+     "name": "Badr Mostafa",
+     "gender": "M"
+    },
+    {
+     "name": "Habiba Elbasoumy",
+     "gender": "W"
+    },
+    {
+     "name": "Hend Fathy",
+     "gender": "W"
+    },
+    {
+     "name": "Yousra Helmy",
+     "gender": "W"
+    },
+    {
+     "name": "Alaa Yehia",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "France",
+   "nat": "FRA",
+   "named": "2026-11-05",
+   "source": {
+    "name": "the French Table Tennis Federation",
+    "url": "https://www.fftt.com/actualites/equipe-de-france/la-selection-pour-la-coupe-du-monde-mixte-2026-est-connue/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-france-squad-lebrun-brothers-guo-zheng.html",
+   "players": [
+    {
+     "name": "Félix Lebrun",
+     "gender": "M"
+    },
+    {
+     "name": "Alexis Lebrun",
+     "gender": "M"
+    },
+    {
+     "name": "Flavien Coton",
+     "gender": "M"
+    },
+    {
+     "name": "Simon Gauzy",
+     "gender": "M"
+    },
+    {
+     "name": "Jia Nan Yuan",
+     "gender": "W"
+    },
+    {
+     "name": "Prithika Pavade",
+     "gender": "W"
+    },
+    {
+     "name": "Charlotte Lutz",
+     "gender": "W"
+    },
+    {
+     "name": "Nina Guo Zheng",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Germany",
+   "nat": "GER",
+   "named": "2026-11-11",
+   "source": {
+    "name": "the German Table Tennis Association (DTTB)",
+    "url": "https://www.tischtennis.de/news/mixed-team-world-cup-winter-und-franziska-fuehren-team-in-chengdu-an.html"
+   },
+   "story": "/news/mixed-team-world-cup-2026-germany-squad-winter-franziska-ovtcharov.html",
+   "players": [
+    {
+     "name": "Patrick Franziska",
+     "gender": "M"
+    },
+    {
+     "name": "Dang Qiu",
+     "gender": "M"
+    },
+    {
+     "name": "Benedikt Duda",
+     "gender": "M"
+    },
+    {
+     "name": "Ricardo Walther",
+     "gender": "M"
+    },
+    {
+     "name": "Sabine Winter",
+     "gender": "W"
+    },
+    {
+     "name": "Han Ying",
+     "gender": "W"
+    },
+    {
+     "name": "Nina Mittelham",
+     "gender": "W"
+    },
+    {
+     "name": "Annett Kaufmann",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Great Britain",
+   "nat": "GBR",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Connor Green",
+     "gender": "M"
+    },
+    {
+     "name": "Tom Jarvis",
+     "gender": "M"
+    },
+    {
+     "name": "Liam Pitchford",
+     "gender": "M"
+    },
+    {
+     "name": "Samuel Walker",
+     "gender": "M"
+    },
+    {
+     "name": "Tin-Tin Ho",
+     "gender": "W"
+    },
+    {
+     "name": "Tianer Yu",
+     "gender": "W"
+    },
+    {
+     "name": "Charlotte Carey",
+     "gender": "W"
+    },
+    {
+     "name": "Anna Hursey",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Hong Kong",
+   "nat": "HKG",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Chan Baldwin",
+     "gender": "M"
+    },
+    {
+     "name": "Kwan Man Ho",
+     "gender": "M"
+    },
+    {
+     "name": "Lam Siu Hang",
+     "gender": "M"
+    },
+    {
+     "name": "Wong Chun Ting",
+     "gender": "M"
+    },
+    {
+     "name": "Doo Hoi Kem",
+     "gender": "W"
+    },
+    {
+     "name": "Mak Ming Shum",
+     "gender": "W"
+    },
+    {
+     "name": "Ng Wing Lam",
+     "gender": "W"
+    },
+    {
+     "name": "Su Tsz Tung",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "India",
+   "nat": "IND",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Ankur Bhattacharjee",
+     "gender": "M"
+    },
+    {
+     "name": "Payas Jain",
+     "gender": "M"
+    },
+    {
+     "name": "Manush Shah",
+     "gender": "M"
+    },
+    {
+     "name": "Manav Thakkar",
+     "gender": "M"
+    },
+    {
+     "name": "Diya Chitale",
+     "gender": "W"
+    },
+    {
+     "name": "Syndrela Das",
+     "gender": "W"
+    },
+    {
+     "name": "Yashaswini Ghorpade",
+     "gender": "W"
+    },
+    {
+     "name": "Sutirtha Mukherjee",
+     "gender": "W"
+    }
+   ]
   },
   {
    "team": "Japan",
@@ -93,45 +518,257 @@
    "note": "Runners-up in 2025. Hashimoto is the only newcomer."
   },
   {
-   "team": "France",
-   "nat": "FRA",
-   "named": "2026-11-05",
+   "team": "South Korea",
+   "nat": "KOR",
+   "named": "2026-11-19",
    "source": {
-    "name": "the French Table Tennis Federation",
-    "url": "https://www.fftt.com/actualites/equipe-de-france/la-selection-pour-la-coupe-du-monde-mixte-2026-est-connue/"
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
    },
-   "story": "/news/mixed-team-world-cup-2026-france-squad-lebrun-brothers-guo-zheng.html",
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
    "players": [
     {
-     "name": "Félix Lebrun",
+     "name": "Jang Woojin",
      "gender": "M"
     },
     {
-     "name": "Alexis Lebrun",
+     "name": "Lim Jonghoon",
      "gender": "M"
     },
     {
-     "name": "Flavien Coton",
+     "name": "Oh Junsung",
      "gender": "M"
     },
     {
-     "name": "Simon Gauzy",
+     "name": "Park Ganghyeon",
      "gender": "M"
     },
     {
-     "name": "Jia Nan Yuan",
+     "name": "Kim Nayeong",
      "gender": "W"
     },
     {
-     "name": "Prithika Pavade",
+     "name": "Lee Eunhye",
      "gender": "W"
     },
     {
-     "name": "Charlotte Lutz",
+     "name": "Shin Yubin",
      "gender": "W"
     },
     {
-     "name": "Nina Guo Zheng",
+     "name": "Yoo Yerin",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Poland",
+   "nat": "POL",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Maciej Kubik",
+     "gender": "M"
+    },
+    {
+     "name": "Rafal Formela",
+     "gender": "M"
+    },
+    {
+     "name": "Milosz Redzimski",
+     "gender": "M"
+    },
+    {
+     "name": "Mateusz Zalewski",
+     "gender": "M"
+    },
+    {
+     "name": "Natalia Bajor",
+     "gender": "W"
+    },
+    {
+     "name": "Anna Brzyska",
+     "gender": "W"
+    },
+    {
+     "name": "Katarzyna Wegrzyn",
+     "gender": "W"
+    },
+    {
+     "name": "Zuzanna Wielgos",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Romania",
+   "nat": "ROU",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Iulian Chirita",
+     "gender": "M"
+    },
+    {
+     "name": "Eduard Ionescu",
+     "gender": "M"
+    },
+    {
+     "name": "Ovidiu Ionescu",
+     "gender": "M"
+    },
+    {
+     "name": "Darius Movileanu",
+     "gender": "M"
+    },
+    {
+     "name": "Andreea Dragoman",
+     "gender": "W"
+    },
+    {
+     "name": "Elizabeta Samara",
+     "gender": "W"
+    },
+    {
+     "name": "Bernadette Szőcs",
+     "gender": "W"
+    },
+    {
+     "name": "Elena Zaharia",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Russia",
+   "nat": "RUS",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Nikita Artemenko",
+     "gender": "M"
+    },
+    {
+     "name": "Denis Ivonin",
+     "gender": "M"
+    },
+    {
+     "name": "Vladimir Sidorenko",
+     "gender": "M"
+    },
+    {
+     "name": "Evgeny Tikhonov",
+     "gender": "M"
+    },
+    {
+     "name": "Elizabet Abraamian",
+     "gender": "W"
+    },
+    {
+     "name": "Maria Panfilova",
+     "gender": "W"
+    },
+    {
+     "name": "Mariia Tailakova",
+     "gender": "W"
+    },
+    {
+     "name": "Vlada Voronina",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Singapore",
+   "nat": "SGP",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Clarence Chew",
+     "gender": "M"
+    },
+    {
+     "name": "Josh Chua",
+     "gender": "M"
+    },
+    {
+     "name": "Koen Pang",
+     "gender": "M"
+    },
+    {
+     "name": "Izaac Quek",
+     "gender": "M"
+    },
+    {
+     "name": "Chloe Lai",
+     "gender": "W"
+    },
+    {
+     "name": "Loy Ming Ying",
+     "gender": "W"
+    },
+    {
+     "name": "Ser Lin Qian",
+     "gender": "W"
+    },
+    {
+     "name": "Zeng Jian",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Slovakia",
+   "nat": "SVK",
+   "named": "2026-11-19",
+   "source": {
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
+   },
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
+   "players": [
+    {
+     "name": "Lubomir Pistej",
+     "gender": "M"
+    },
+    {
+     "name": "Wang Yang",
+     "gender": "M"
+    },
+    {
+     "name": "Jakub Zelinka",
+     "gender": "M"
+    },
+    {
+     "name": "Tatiana Kukulkova",
+     "gender": "W"
+    },
+    {
+     "name": "Ema Labosova",
+     "gender": "W"
+    },
+    {
+     "name": "Dominika Wiltschkova",
      "gender": "W"
     }
    ]
@@ -182,128 +819,49 @@
    "note": "Without Truls Moregard, rested for the WTT Finals."
   },
   {
-   "team": "Australia",
-   "nat": "AUS",
-   "named": "2026-10-01",
-   "source": {
-    "name": "Table Tennis Australia",
-    "url": "https://www.tabletennis.org.au/news/tta-announces-team-selection-for-2026-ittf-mixed-team-world-cup-"
-   },
-   "story": "/news/mixed-team-world-cup-2026-squads-japan-china-france-sweden-australia-chengdu.html",
-   "players": [
-    {
-     "name": "Finn Luu",
-     "gender": "M"
-    },
-    {
-     "name": "Nicholas Lum",
-     "gender": "M"
-    },
-    {
-     "name": "Hwan Bae",
-     "gender": "M"
-    },
-    {
-     "name": "Aditya Sareen",
-     "gender": "M"
-    },
-    {
-     "name": "Yangzi Liu",
-     "gender": "W"
-    },
-    {
-     "name": "Constantina Psihogios",
-     "gender": "W"
-    },
-    {
-     "name": "Jiamuwa Wu",
-     "gender": "W"
-    }
-   ]
-  },
-  {
-   "team": "Germany",
-   "nat": "GER",
-   "named": "2026-11-11",
-   "source": {
-    "name": "the German Table Tennis Association (DTTB)",
-    "url": "https://www.tischtennis.de/news/mixed-team-world-cup-winter-und-franziska-fuehren-team-in-chengdu-an.html"
-   },
-   "story": "/news/mixed-team-world-cup-2026-germany-squad-winter-franziska-ovtcharov.html",
-   "players": [
-    {
-     "name": "Patrick Franziska",
-     "gender": "M"
-    },
-    {
-     "name": "Dang Qiu",
-     "gender": "M"
-    },
-    {
-     "name": "Benedikt Duda",
-     "gender": "M"
-    },
-    {
-     "name": "Ricardo Walther",
-     "gender": "M"
-    },
-    {
-     "name": "Sabine Winter",
-     "gender": "W"
-    },
-    {
-     "name": "Han Ying",
-     "gender": "W"
-    },
-    {
-     "name": "Nina Mittelham",
-     "gender": "W"
-    },
-    {
-     "name": "Annett Kaufmann",
-     "gender": "W"
-    }
-   ]
-  },
-  {
-   "team": "Taiwan",
-   "nat": "TPE",
+   "team": "United States",
+   "nat": "USA",
    "named": "2026-11-19",
    "source": {
-    "name": "Liberty Times (Chinese)",
-    "url": "https://sports.ltn.com.tw/news/breakingnews/5646123"
+    "name": "the ITTF's entry list",
+    "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
    },
-   "story": "/news/mixed-team-world-cup-2026-lin-yun-ju-cheng-i-ching-withdraw-taiwan-six-players.html",
-   "note": "Lin Yun-Ju and Cheng I-Ching withdrew on 11 and 12 November, after the deadline for changes, so Taiwan play with six.",
+   "story": "/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html",
    "players": [
     {
-     "name": "Feng Yi-Hsin",
+     "name": "Andrew Cao",
      "gender": "M"
     },
     {
-     "name": "Kuo Guan-Hong",
+     "name": "Kanak Jha",
      "gender": "M"
     },
     {
-     "name": "Hsu Hsien-Chia",
+     "name": "Jishan Liang",
      "gender": "M"
     },
     {
-     "name": "Peng Yu-han",
+     "name": "Nandan Naresh",
+     "gender": "M"
+    },
+    {
+     "name": "Sally Moyland",
      "gender": "W"
     },
     {
-     "name": "Yeh Yi-Tian",
+     "name": "Jessica Reyes Lai",
      "gender": "W"
     },
     {
-     "name": "Wu Ying Syuan",
+     "name": "Amy Wang",
+     "gender": "W"
+    },
+    {
+     "name": "Lily Zhang",
      "gender": "W"
     }
    ]
   }
  ],
- "awaiting": [
-  "Great Britain"
- ]
+ "awaiting": []
 }

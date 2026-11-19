@@ -11140,7 +11140,6 @@
    "draw": "3256",
    "date": "2026-11-18",
    "published": "2026-11-18T20:45:00Z",
-   "top": true,
    "headline": "Wei Jingming and Sun Yang knock out Manika Batra and Ankur Bhattacharjee at WTT Star Contender Muscat",
    "summary": "China's teenage qualifiers Wei Jingming, 17, and Sun Yang, 18, both ranked outside the top 200, beat India's Manika Batra and Ankur Bhattacharjee on the opening day of the main draw in Oman."
   },
@@ -11174,18 +11173,22 @@
    "event": "mixed-team-world-cup-2026",
    "date": "2026-11-19",
    "published": "2026-11-19T08:45:00Z",
-   "headline": "Lin Yun-Ju and Cheng I-Ching pull out of the Mixed Team World Cup, leaving Taiwan with six players",
-   "summary": "Taiwan will go to the Mixed Team World Cup in Chengdu with three men and three women after their two leading players withdrew too late to be replaced.",
+   "headline": "Lin Yun-Ju pulls out of the Mixed Team World Cup, leaving Taiwan with three men",
+   "summary": "Taiwan's world No 5 Lin Yun-Ju has withdrawn from the Mixed Team World Cup in Chengdu to save himself for the WTT Finals, and is not on the ITTF's entry list.",
    "body": [
-    "Lin Yun-Ju and Cheng I-Ching, Taiwan's highest-ranked man and woman, have withdrawn from the Mixed Team World Cup in Chengdu, which starts on 29 November. They pulled out after the ITTF's deadline for changing squads on 9 November, so Taiwan cannot replace them and will play with three men and three women.",
-    "Lin, the world No 5, asked the Chinese Taipei Table Tennis Association to withdraw him on 11 November and Cheng, the world No 34, followed a day later, the Liberty Times reported. The paper said Lin was worried he would not have the energy for the WTT Finals in Hong Kong, which start on 8 December, two days after the Mixed Team World Cup ends, and for which he has qualified in men's singles and in mixed doubles with Cheng. The association asked the ITTF whether substitutes could be named and was told they could not.",
-    "That leaves Feng Yi-Hsin (No 31), Kuo Guan-Hong (No 32) and Hsu Hsien-Chia (No 156) in the men's team, with Peng Yu-han (No 37), Yeh Yi-Tian (No 49) and Wu Ying Syuan (No 162) in the women's. Teams must use three men and three women in each tie under this year's format, so Taiwan have no one to rest.",
-    "Last year was the first time Lin and Cheng had played the event, and Taiwan went out in the group stage after defeats by South Korea and Sweden. Their best finish is seventh. Cheng is in the last 32 of the women's singles at [WTT Star Contender Muscat](/events/wtt-star-contender-muscat-2026.html) on Thursday, against Spain's Maria Xiao."
+    "Lin Yun-Ju, the world No 5 and Taiwan's highest-ranked player, has withdrawn from the Mixed Team World Cup in Chengdu, which starts on 29 November. He is not on the ITTF's entry list, published on 19 November, and Taiwan will play with three men, the minimum allowed, and four women.",
+    "Lin asked the Chinese Taipei Table Tennis Association to withdraw him on 11 November, the Liberty Times reported, worried that he would not have the energy for the WTT Finals in Hong Kong, which start on 8 December, two days after the Mixed Team World Cup ends. He has qualified for the Finals in men's singles and in mixed doubles with Cheng I-Ching. The paper said the deadline for changing squads had passed on 9 November, so he cannot be replaced.",
+    "The Liberty Times also reported that Cheng, the world No 34, withdrew a day after Lin, leaving Taiwan with six players. But Cheng is on the ITTF's entry list, and the ITTF's announcement names her and Feng Yi-Hsin as Taiwan's leaders.",
+    "The ITTF's list has Feng Yi-Hsin (No 31), Kuo Guan-Hong (No 32) and Hsu Hsien-Chia (No 156) in the men's team, with Cheng, Peng Yu-han (No 37), Yeh Yi-Tian (No 49) and Wu Ying Syuan (No 162) in the women's. Last year Taiwan went out in the group stage, and their best finish is seventh. Eleven's [guide to the full field](/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html) has every squad."
    ],
    "sources": [
     {
      "name": "Liberty Times (Chinese): Lin Yun-Ju and Cheng I-Ching withdraw from the Mixed Team World Cup, Taiwan left with six players",
      "url": "https://sports.ltn.com.tw/news/breakingnews/5646123"
+    },
+    {
+     "name": "ITTF: Teams confirmed for ITTF Mixed Team World Cup Chengdu 2026",
+     "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
     },
     {
      "name": "Liberty Times (Chinese): Mixed Team World Cup expands to 20 teams, Lin Yun-Ju and Cheng I-Ching to lead Taiwan",
@@ -11194,6 +11197,13 @@
     {
      "name": "ITTF world rankings, week 47 (via WTT)",
      "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ],
+   "modified": "2026-11-19T09:50:00Z",
+   "corrections": [
+    {
+     "date": "2026-11-19",
+     "text": "An earlier version said as fact that Cheng I-Ching had also withdrawn and that Taiwan would play with six players. The ITTF's entry list includes Cheng, and Taiwan have seven players; only the Liberty Times has reported her withdrawal."
     }
    ]
   },
@@ -11225,6 +11235,22 @@
     {
      "name": "ITTF world rankings, week 47 (via WTT)",
      "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ]
+  },
+  "mixed-team-world-cup-2026-entry-list": {
+   "id": "mixed-team-world-cup-2026-entry-list",
+   "category": "International",
+   "date": "2026-11-19",
+   "published": "2026-11-19T09:50:00Z",
+   "event": "mixed-team-world-cup-2026",
+   "top": true,
+   "headline": "Mixed Team World Cup 2026 entry list: Calderano, Moregard and Lin Yun-Ju miss Chengdu as Russia join",
+   "summary": "Three of the world's top seven men are missing from the ITTF's list of 154 players for Chengdu, where Russia, Poland, Slovakia, Singapore and Great Britain join a 20-team field.",
+   "sources": [
+    {
+     "name": "ITTF: Teams confirmed for ITTF Mixed Team World Cup Chengdu 2026",
+     "url": "https://www.ittf.com/2026/11/19/teams-confirmed-for-ittf-mixed-team-world-cup-chengdu-2026/"
     }
    ]
   }
