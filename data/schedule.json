@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:50:00Z",
+  "updated": "2026-11-19T09:29:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1402,14 +1402,14 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3256-ttewdoublesqfnl000200",
+      "id": "wtt-3256-ttewdoublesqfnl000100",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Saki Shibata / Sachi Aoki v Feng Yixuan / Fan Shuhan, women's doubles, quarterfinal",
+      "name": "WTT Star Contender Muscat: Kim Nayeong / Joo Cheonhui v Honoka Hashimoto / Miyu Nagasaki, women's doubles, quarterfinal",
       "start": "2026-11-19T07:00:00Z",
       "end": "2026-11-19T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWDOUBLES-----------QFNL000200----------",
-      "detail": "Table 1"
+      "code": "TTEWDOUBLES-----------QFNL000100----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3256-ttemdoublesqfnl000300",
@@ -1422,14 +1422,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3256-ttewdoublesqfnl000100",
+      "id": "wtt-3256-ttewdoublesqfnl000200",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Kim Nayeong / Joo Cheonhui v Honoka Hashimoto / Miyu Nagasaki, women's doubles, quarterfinal",
+      "name": "WTT Star Contender Muscat: Saki Shibata / Sachi Aoki v Feng Yixuan / Fan Shuhan, women's doubles, quarterfinal",
       "start": "2026-11-19T07:00:00Z",
       "end": "2026-11-19T07:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWDOUBLES-----------QFNL000100----------",
-      "detail": "Table 3"
+      "code": "TTEWDOUBLES-----------QFNL000200----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3256-ttemdoublesqfnl000100",
@@ -1440,16 +1440,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMDOUBLES-----------QFNL000100----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesr32000500",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Vladimir Sidorenko v Csaba Andras, men's singles, last 32",
-      "start": "2026-11-19T07:35:00Z",
-      "end": "2026-11-19T08:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-000500----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3256-ttemdoublesqfnl000200",
@@ -1482,6 +1472,16 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3256-ttemsinglesr32000500",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Vladimir Sidorenko v Csaba Andras, men's singles, last 32",
+      "start": "2026-11-19T07:35:00Z",
+      "end": "2026-11-19T08:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------R32-000500----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3256-ttewsinglesr32000200",
       "event_id": "wtt-star-contender-muscat-2026",
       "name": "WTT Star Contender Muscat: Audrey Zarif v Mo Zhang, women's singles, last 32",
@@ -1490,26 +1490,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEWSINGLES-----------R32-000200----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3256-ttewsinglesr32000600",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Xiaoxin Yang v Yangzi Liu, women's singles, last 32",
-      "start": "2026-11-19T08:10:00Z",
-      "end": "2026-11-19T08:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------R32-000600----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesr32000200",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Park Ganghyeon v An Jaehyun, men's singles, last 32",
-      "start": "2026-11-19T08:10:00Z",
-      "end": "2026-11-19T08:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-000200----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3256-ttemdoublesqfnl000400",
@@ -1522,14 +1502,24 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3256-ttewsinglesr32000800",
+      "id": "wtt-3256-ttemsinglesr32000200",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Saki Shibata v Qin Yuxuan, women's singles, last 32",
-      "start": "2026-11-19T08:45:00Z",
-      "end": "2026-11-19T09:20:00Z",
+      "name": "WTT Star Contender Muscat: Park Ganghyeon v An Jaehyun, men's singles, last 32",
+      "start": "2026-11-19T08:10:00Z",
+      "end": "2026-11-19T08:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------R32-000800----------",
+      "code": "TTEMSINGLES-----------R32-000200----------",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttewsinglesr32000600",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Xiaoxin Yang v Yangzi Liu, women's singles, last 32",
+      "start": "2026-11-19T08:10:00Z",
+      "end": "2026-11-19T08:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWSINGLES-----------R32-000600----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3256-ttewsinglesr32001200",
@@ -1562,23 +1552,13 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3256-ttemsinglesr32001400",
+      "id": "wtt-3256-ttewsinglesr32000800",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Kwon Hyuk v Omar Assar, men's singles, last 32",
-      "start": "2026-11-19T09:20:00Z",
-      "end": "2026-11-19T09:55:00Z",
+      "name": "WTT Star Contender Muscat: Saki Shibata v Qin Yuxuan, women's singles, last 32",
+      "start": "2026-11-19T08:45:00Z",
+      "end": "2026-11-19T09:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-001400----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesr32001000",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Maksim Grebnev v Chen Yuanyu, men's singles, last 32",
-      "start": "2026-11-19T09:20:00Z",
-      "end": "2026-11-19T09:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-001000----------",
+      "code": "TTEWSINGLES-----------R32-000800----------",
       "detail": "Table 3"
     },
     {
@@ -1602,24 +1582,34 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3256-ttewsinglesr32001300",
+      "id": "wtt-3256-ttemsinglesr32001000",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Sakura Yokoi v Christina Kallberg, women's singles, last 32",
-      "start": "2026-11-19T09:55:00Z",
-      "end": "2026-11-19T10:30:00Z",
+      "name": "WTT Star Contender Muscat: Maksim Grebnev v Chen Yuanyu, men's singles, last 32",
+      "start": "2026-11-19T09:20:00Z",
+      "end": "2026-11-19T09:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------R32-001300----------",
+      "code": "TTEMSINGLES-----------R32-001000----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesr32001400",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Kwon Hyuk v Omar Assar, men's singles, last 32",
+      "start": "2026-11-19T09:20:00Z",
+      "end": "2026-11-19T09:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------R32-001400----------",
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3256-ttewsinglesr32001600",
+      "id": "wtt-3256-ttemsinglesr32000400",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Sreeja Akula v Honoka Hashimoto, women's singles, last 32",
+      "name": "WTT Star Contender Muscat: Andre Bertelsmeier v Flavien Coton, men's singles, last 32",
       "start": "2026-11-19T09:55:00Z",
       "end": "2026-11-19T10:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------R32-001600----------",
-      "detail": "Table 3"
+      "code": "TTEMSINGLES-----------R32-000400----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3256-ttemsinglesr32001500",
@@ -1632,14 +1622,24 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3256-ttemsinglesr32000400",
+      "id": "wtt-3256-ttewsinglesr32001600",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Andre Bertelsmeier v Flavien Coton, men's singles, last 32",
+      "name": "WTT Star Contender Muscat: Sreeja Akula v Honoka Hashimoto, women's singles, last 32",
       "start": "2026-11-19T09:55:00Z",
       "end": "2026-11-19T10:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-000400----------",
-      "detail": "Table 1"
+      "code": "TTEWSINGLES-----------R32-001600----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttewsinglesr32001300",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Sakura Yokoi v Christina Kallberg, women's singles, last 32",
+      "start": "2026-11-19T09:55:00Z",
+      "end": "2026-11-19T10:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWSINGLES-----------R32-001300----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3256-ttexdoublesqfnl000100",
@@ -1722,14 +1722,14 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3256-ttemsinglesr32001600",
+      "id": "wtt-3256-ttewsinglesr32000900",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Manav Thakkar v Shunsuke Togami, men's singles, last 32",
+      "name": "WTT Star Contender Muscat: Bernadette Szőcs v Wei Jingming, women's singles, last 32",
       "start": "2026-11-19T13:35:00Z",
       "end": "2026-11-19T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-001600----------",
-      "detail": "Table 3"
+      "code": "TTEWSINGLES-----------R32-000900----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3256-ttewsinglesr32001100",
@@ -1742,14 +1742,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3256-ttewsinglesr32000900",
+      "id": "wtt-3256-ttemsinglesr32001600",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Bernadette Szőcs v Wei Jingming, women's singles, last 32",
+      "name": "WTT Star Contender Muscat: Manav Thakkar v Shunsuke Togami, men's singles, last 32",
       "start": "2026-11-19T13:35:00Z",
       "end": "2026-11-19T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------R32-000900----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------R32-001600----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3256-ttewsinglesr32000100",
@@ -1759,36 +1759,6 @@
       "end": "2026-11-19T14:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEWSINGLES-----------R32-000100----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3256-ttewsinglesr32001400",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Maria Xiao v Cheng I-Ching, women's singles, last 32",
-      "start": "2026-11-19T14:10:00Z",
-      "end": "2026-11-19T14:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------R32-001400----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesr32000100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Darko Jorgic v Sun Yang, men's singles, last 32",
-      "start": "2026-11-19T14:10:00Z",
-      "end": "2026-11-19T14:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-000100----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesr32001200",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Eduard Ionescu v Li Tianyang, men's singles, last 32",
-      "start": "2026-11-19T14:10:00Z",
-      "end": "2026-11-19T14:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-001200----------",
       "detail": "Table 4"
     },
     {
@@ -1802,14 +1772,54 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3256-ttemsinglesr32000300",
+      "id": "wtt-3256-ttemsinglesr32000100",
       "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Tomislav Pucar v Huang Youzheng, men's singles, last 32",
+      "name": "WTT Star Contender Muscat: Darko Jorgic v Sun Yang, men's singles, last 32",
+      "start": "2026-11-19T14:10:00Z",
+      "end": "2026-11-19T14:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------R32-000100----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3256-ttewsinglesr32001400",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Maria Xiao v Cheng I-Ching, women's singles, last 32",
+      "start": "2026-11-19T14:10:00Z",
+      "end": "2026-11-19T14:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWSINGLES-----------R32-001400----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesr32001200",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Eduard Ionescu v Li Tianyang, men's singles, last 32",
+      "start": "2026-11-19T14:10:00Z",
+      "end": "2026-11-19T14:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------R32-001200----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3256-ttemdoublessfnl000100",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Lim Jonghoon / Oh Junsung v Léo de Nodrest / Lilian Bardet, men's doubles, semifinal",
       "start": "2026-11-19T14:45:00Z",
       "end": "2026-11-19T15:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------R32-000300----------",
-      "detail": "Table 4"
+      "code": "TTEMDOUBLES-----------SFNL000100----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3256-ttewdoublessfnl000100",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Kim Nayeong / Joo Cheonhui v Saki Shibata / Sachi Aoki, women's doubles, semifinal",
+      "start": "2026-11-19T14:45:00Z",
+      "end": "2026-11-19T15:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWDOUBLES-----------SFNL000100----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3256-ttewsinglesr32000400",
@@ -1820,6 +1830,36 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEWSINGLES-----------R32-000400----------",
       "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3256-ttemsinglesr32000300",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Tomislav Pucar v Huang Youzheng, men's singles, last 32",
+      "start": "2026-11-19T14:45:00Z",
+      "end": "2026-11-19T15:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMSINGLES-----------R32-000300----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3256-ttemdoublessfnl000200",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Simon Gauzy / Flavien Coton v Manav Thakkar / Manush Shah, men's doubles, semifinal",
+      "start": "2026-11-19T15:20:00Z",
+      "end": "2026-11-19T15:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEMDOUBLES-----------SFNL000200----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3256-ttewdoublessfnl000200",
+      "event_id": "wtt-star-contender-muscat-2026",
+      "name": "WTT Star Contender Muscat: Bernadette Szőcs / Elizabeta Samara v Satsuki Odo / Sakura Yokoi, women's doubles, semifinal",
+      "start": "2026-11-19T15:20:00Z",
+      "end": "2026-11-19T15:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "code": "TTEWDOUBLES-----------SFNL000200----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3256-ttemsinglesr32001300",
