@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T09:55:00Z",
+  "updated": "2026-11-19T12:45:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -291,14 +291,15 @@
     },
     {
       "id": "wtt-champions-2027",
-      "name": "WTT Champions",
+      "name": "WTT Champions Shanghai",
       "start": "2027-01-19",
       "end": "2027-01-24",
-      "city": "Host to be announced",
-      "country": "",
+      "city": "Shanghai",
+      "country": "China",
       "series": "WTT",
       "type": "WTT Champions",
-      "prestige": 3
+      "prestige": 3,
+      "venue": "Shanghai Oriental Sports Center"
     },
     {
       "id": "europe-top16-2027",
