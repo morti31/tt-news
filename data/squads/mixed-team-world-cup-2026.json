@@ -220,6 +220,87 @@
      "gender": "W"
     }
    ]
+  },
+  {
+   "team": "Germany",
+   "nat": "GER",
+   "named": "2026-11-11",
+   "source": {
+    "name": "the German Table Tennis Association (DTTB)",
+    "url": "https://www.tischtennis.de/news/mixed-team-world-cup-winter-und-franziska-fuehren-team-in-chengdu-an.html"
+   },
+   "story": "/news/mixed-team-world-cup-2026-germany-squad-winter-franziska-ovtcharov.html",
+   "players": [
+    {
+     "name": "Patrick Franziska",
+     "gender": "M"
+    },
+    {
+     "name": "Dang Qiu",
+     "gender": "M"
+    },
+    {
+     "name": "Benedikt Duda",
+     "gender": "M"
+    },
+    {
+     "name": "Ricardo Walther",
+     "gender": "M"
+    },
+    {
+     "name": "Sabine Winter",
+     "gender": "W"
+    },
+    {
+     "name": "Han Ying",
+     "gender": "W"
+    },
+    {
+     "name": "Nina Mittelham",
+     "gender": "W"
+    },
+    {
+     "name": "Annett Kaufmann",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Taiwan",
+   "nat": "TPE",
+   "named": "2026-11-19",
+   "source": {
+    "name": "Liberty Times (Chinese)",
+    "url": "https://sports.ltn.com.tw/news/breakingnews/5646123"
+   },
+   "story": "/news/mixed-team-world-cup-2026-lin-yun-ju-cheng-i-ching-withdraw-taiwan-six-players.html",
+   "note": "Lin Yun-Ju and Cheng I-Ching withdrew on 11 and 12 November, after the deadline for changes, so Taiwan play with six.",
+   "players": [
+    {
+     "name": "Feng Yi-Hsin",
+     "gender": "M"
+    },
+    {
+     "name": "Kuo Guan-Hong",
+     "gender": "M"
+    },
+    {
+     "name": "Hsu Hsien-Chia",
+     "gender": "M"
+    },
+    {
+     "name": "Peng Yu-han",
+     "gender": "W"
+    },
+    {
+     "name": "Yeh Yi-Tian",
+     "gender": "W"
+    },
+    {
+     "name": "Wu Ying Syuan",
+     "gender": "W"
+    }
+   ]
   }
  ],
  "awaiting": [
