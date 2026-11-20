@@ -2,7 +2,7 @@
  "event": "WTT Star Contender Muscat",
  "wtt_event_id": "3256",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256&selectedTab=Draws",
- "updated": "2026-11-20T09:10:00Z",
+ "updated": "2026-11-20T18:00:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -869,7 +869,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-20T12:10:00Z"
+       "when": "2026-11-20T12:10:00Z",
+       "score": "3-0 (11:5,11:6,11:6,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -883,7 +885,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-20T13:55:00Z"
+       "when": "2026-11-20T13:55:00Z",
+       "score": "2-3 (11:9,11:7,3:11,2:11,11:13)",
+       "winner": 1
       },
       {
        "players": [
@@ -898,7 +902,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-20T13:20:00Z"
+       "when": "2026-11-20T13:20:00Z",
+       "score": "3-1 (11:8,12:10,7:11,11:7,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -912,7 +918,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-20T11:00:00Z"
+       "when": "2026-11-20T11:00:00Z",
+       "score": "0-3 (7:11,3:11,5:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -921,15 +929,32 @@
      "matches": [
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Satsuki Odo",
+         "nat": "JPN",
+         "seed": 1
+        },
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-11-21T07:00:00Z"
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Bernadette Szőcs",
+         "nat": "ROU",
+         "seed": 5
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-21T08:20:00Z"
       }
      ]
     },
@@ -940,7 +965,8 @@
        "players": [
         null,
         null
-       ]
+       ],
+       "when": "2026-11-21T13:30:00Z"
       }
      ]
     }
@@ -1770,7 +1796,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-20T07:45:00Z"
+       "when": "2026-11-20T07:45:00Z",
+       "score": "3-0 (11:8,11:6,11:8,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1805,7 +1833,9 @@
          "seed": 8
         }
        ],
-       "when": "2026-11-20T11:35:00Z"
+       "when": "2026-11-20T11:35:00Z",
+       "score": "3-2 (11:9,2:11,11:7,9:11,11:8)",
+       "winner": 0
       },
       {
        "players": [
@@ -1820,7 +1850,9 @@
          "seed": 5
         }
        ],
-       "when": "2026-11-20T12:45:00Z"
+       "when": "2026-11-20T12:45:00Z",
+       "score": "0-3 (9:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -1833,18 +1865,26 @@
          "nat": "CHN"
         }
        ],
-       "when": "2026-11-20T14:30:00Z"
+       "when": "2026-11-20T14:30:00Z",
+       "score": "3-2 (3:11,11:8,7:11,11:6,11:5)",
+       "winner": 0
       },
       {
        "players": [
-        null,
+        {
+         "name": "Dimitrij Ovtcharov",
+         "nat": "GER",
+         "seed": 7
+        },
         {
          "name": "Shunsuke Togami",
          "nat": "JPN",
          "seed": 2
         }
        ],
-       "when": "2026-11-20T15:05:00Z"
+       "when": "2026-11-20T15:05:00Z",
+       "score": "0-3 (10:12,9:11,13:15,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -1853,15 +1893,31 @@
      "matches": [
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Park Ganghyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Oh Junsung",
+         "nat": "KOR",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-21T09:00:00Z"
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Chen Yuanyu",
+         "nat": "CHN"
+        },
+        {
+         "name": "Shunsuke Togami",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-21T07:40:00Z"
       }
      ]
     },
@@ -1872,7 +1928,8 @@
        "players": [
         null,
         null
-       ]
+       ],
+       "when": "2026-11-21T14:10:00Z"
       }
      ]
     }
@@ -2139,7 +2196,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-20T16:00:00Z"
+       "when": "2026-11-20T16:00:00Z",
+       "score": "0-3 (7:11,9:11,6:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     }
@@ -2406,7 +2465,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-20T16:50:00Z"
+       "when": "2026-11-20T16:50:00Z",
+       "score": "3-1 (10:12,11:2,11:8,11:8,0:0)",
+       "winner": 0
       }
      ]
     }
@@ -2652,7 +2713,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-20T08:25:00Z"
+       "when": "2026-11-20T08:25:00Z",
+       "score": "1-3 (5:11,11:6,10:12,10:12,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -2666,7 +2729,11 @@
          "nat": "FRA",
          "seed": 5
         },
-        null
+        {
+         "name": "Shunsuke Togami / Satsuki Odo",
+         "nat": "JPN",
+         "seed": 2
+        }
        ],
        "when": "2026-11-21T09:30:00Z"
       }
