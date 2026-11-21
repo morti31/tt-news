@@ -2,7 +2,7 @@
  "event": "WTT Star Contender Muscat",
  "wtt_event_id": "3256",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256&selectedTab=Draws",
- "updated": "2026-11-20T18:00:00Z",
+ "updated": "2026-11-21T15:18:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -939,7 +939,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-21T07:00:00Z"
+       "when": "2026-11-21T07:00:00Z",
+       "score": "1-3 (6:11,11:13,14:12,9:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -954,7 +956,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-21T08:20:00Z"
+       "when": "2026-11-21T08:20:00Z",
+       "score": "1-3 (6:11,4:11,11:9,4:11,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -963,10 +967,19 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Kaho Akae",
+         "nat": "JPN"
+        },
+        {
+         "name": "Honoka Hashimoto",
+         "nat": "JPN",
+         "seed": 2
+        }
        ],
-       "when": "2026-11-21T13:30:00Z"
+       "when": "2026-11-21T13:30:00Z",
+       "score": "2-4 (12:10,6:11,11:4,7:11,6:11,10:12,0:0)",
+       "winner": 1
       }
      ]
     }
@@ -1903,7 +1916,9 @@
          "seed": 5
         }
        ],
-       "when": "2026-11-21T09:00:00Z"
+       "when": "2026-11-21T09:00:00Z",
+       "score": "3-1 (11:7,6:11,11:6,11:9,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1917,7 +1932,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-21T07:40:00Z"
+       "when": "2026-11-21T07:40:00Z",
+       "score": "0-3 (6:11,10:12,3:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -1926,8 +1943,15 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Park Ganghyeon",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shunsuke Togami",
+         "nat": "JPN",
+         "seed": 2
+        }
        ],
        "when": "2026-11-21T14:10:00Z"
       }
@@ -2735,7 +2759,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-21T09:30:00Z"
+       "when": "2026-11-21T09:30:00Z",
+       "score": "1-3 (6:11,5:11,14:12,3:11,0:0)",
+       "winner": 1
       }
      ]
     }
