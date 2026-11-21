@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T15:18:00Z",
+  "updated": "2026-11-21T21:07:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -841,96 +841,6 @@
       "start": "2026-11-15T15:00:00Z",
       "end": "2026-11-15T18:00:00Z",
       "source": "https://www.ettu.org/europes-elite-eight-set-for-champions-league-women-showdown/"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesqfnl000100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Park Ganghyeon v Flavien Coton, men's singles, quarterfinal",
-      "start": "2026-11-20T11:35:00Z",
-      "end": "2026-11-20T12:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------QFNL000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttewsinglesqfnl000100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Satsuki Odo v Kim Nayeong, women's singles, quarterfinal",
-      "start": "2026-11-20T12:10:00Z",
-      "end": "2026-11-20T12:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------QFNL000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesqfnl000200",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Vladimir Sidorenko v Oh Junsung, men's singles, quarterfinal",
-      "start": "2026-11-20T12:45:00Z",
-      "end": "2026-11-20T13:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------QFNL000200----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttewsinglesqfnl000300",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Bernadette Szőcs v Joo Cheonhui, women's singles, quarterfinal",
-      "start": "2026-11-20T13:20:00Z",
-      "end": "2026-11-20T13:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------QFNL000300----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttewsinglesqfnl000200",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Miyu Nagasaki v Kaho Akae, women's singles, quarterfinal",
-      "start": "2026-11-20T13:55:00Z",
-      "end": "2026-11-20T14:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWSINGLES-----------QFNL000200----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesqfnl000300",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Chen Yuanyu v Yuan Licen, men's singles, quarterfinal",
-      "start": "2026-11-20T14:30:00Z",
-      "end": "2026-11-20T15:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------QFNL000300----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemsinglesqfnl000400",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Dimitrij Ovtcharov v Shunsuke Togami, men's singles, quarterfinal",
-      "start": "2026-11-20T15:05:00Z",
-      "end": "2026-11-20T15:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMSINGLES-----------QFNL000400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttewdoublesfnl000100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Kim Nayeong / Joo Cheonhui v Satsuki Odo / Sakura Yokoi, women's doubles, final",
-      "start": "2026-11-20T16:00:00Z",
-      "end": "2026-11-20T16:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEWDOUBLES-----------FNL-000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3256-ttemdoublesfnl000100",
-      "event_id": "wtt-star-contender-muscat-2026",
-      "name": "WTT Star Contender Muscat: Lim Jonghoon / Oh Junsung v Manav Thakkar / Manush Shah, men's doubles, final",
-      "start": "2026-11-20T16:50:00Z",
-      "end": "2026-11-20T17:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
-      "code": "TTEMDOUBLES-----------FNL-000100----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3256-ttewsinglessfnl000100",
