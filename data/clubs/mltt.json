@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-21T02:40:00Z",
+ "updated": "2026-11-21T11:28:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -50,23 +50,23 @@
      },
      {
       "team": "Atlanta Blazers",
-      "p": 9,
-      "w": 2,
+      "p": 10,
+      "w": 3,
       "l": 7,
-      "for": 60,
-      "against": 129,
+      "for": 77,
+      "against": 133,
       "pos": 4,
-      "diff": -69
+      "diff": -56
      },
      {
       "team": "New York Slice",
-      "p": 6,
+      "p": 7,
       "w": 0,
-      "l": 6,
-      "for": 39,
-      "against": 87,
+      "l": 7,
+      "for": 43,
+      "against": 104,
       "pos": 5,
-      "diff": -48
+      "diff": -61
      }
     ]
    },
@@ -84,13 +84,23 @@
       "diff": 13
      },
      {
+      "team": "Portland Paddlers",
+      "p": 7,
+      "w": 4,
+      "l": 3,
+      "for": 75,
+      "against": 72,
+      "pos": 2,
+      "diff": 3
+     },
+     {
       "team": "Bay Area Blasters",
       "p": 3,
       "w": 3,
       "l": 0,
       "for": 48,
       "against": 15,
-      "pos": 2,
+      "pos": 3,
       "diff": 33
      },
      {
@@ -100,28 +110,18 @@
       "l": 3,
       "for": 68,
       "against": 58,
-      "pos": 3,
+      "pos": 4,
       "diff": 10
      },
      {
-      "team": "Portland Paddlers",
-      "p": 6,
-      "w": 3,
-      "l": 3,
-      "for": 60,
-      "against": 66,
-      "pos": 4,
-      "diff": -6
-     },
-     {
       "team": "Los Angeles Spinners",
-      "p": 3,
+      "p": 4,
       "w": 2,
-      "l": 1,
-      "for": 35,
-      "against": 28,
+      "l": 2,
+      "for": 41,
+      "against": 43,
       "pos": 5,
-      "diff": 7
+      "diff": -2
      }
     ]
    }
@@ -467,15 +467,18 @@
     4,
     17
    ],
-   "status": "live",
+   "status": "finished",
    "venue": "Portland"
   },
   {
    "when": "2026-11-21T03:30:00Z",
    "home": "Los Angeles Spinners",
    "away": "Portland Paddlers",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    6,
+    15
+   ],
+   "status": "finished",
    "venue": "Portland"
   },
   {
