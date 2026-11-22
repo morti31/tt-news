@@ -672,8 +672,9 @@ def build():
     cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">Where the defenders are likely to play next, every fixture we know of, with links to live scores and streams where they exist, and their latest results. Times are UK time. <a href="#results">Recent results</a></p></section>
 <section class="ch-sec"><h2>Likely next tournaments</h2><p class="ch-small">Entry lists are only published with the draw, so these are our best guesses: the next event of a kind each player has entered in the past year and can get into on their ranking. Players move to "In the draw" when it's published.</p>
 <ul class="ch-evcards">{"".join(ev_cards) or "<li>No tournaments in view.</li>"}</ul></section>
-<section class="ch-sec"><h2>Fixtures</h2>{fx or "<p>Nothing scheduled yet.</p>"}</section>
-<section class="ch-sec" id="results"><h2>Recent results</h2><p class="ch-small">Every result for the defenders in the last {RECENT_DAYS} days, at WTT and ITTF events and in the club leagues, newest first. Updated automatically as results come in.</p>{rx or "<p>No results in the last two weeks.</p>"}</section>"""
+<section class="ch-sec" id="matches"><div class="ch-tabs" role="tablist" aria-label="Fixtures and results"><button type="button" role="tab" data-t="fixtures" aria-selected="true">Fixtures</button><button type="button" role="tab" data-t="results" aria-selected="false">Recent results</button></div>
+<div class="ch-panel" data-p="fixtures" id="fixtures"><h2 class="sr-only">Fixtures</h2>{fx or "<p>Nothing scheduled yet.</p>"}</div>
+<div class="ch-panel" data-p="results" id="results" hidden><h2 class="sr-only">Recent results</h2><p class="ch-small">Every result for the defenders in the last {RECENT_DAYS} days, at WTT and ITTF events and in the club leagues, newest first. Updated automatically as results come in.</p>{rx or "<p>No results in the last two weeks.</p>"}</div></section>"""
     open(os.path.join(OUT, "calendar.html"), "w", encoding="utf-8").write(page(
         "When the defenders play next | The Chop", "Where table tennis's choppers and defenders are likely to play next, their upcoming fixtures and their latest results.", "/calendar.html", cbody, "calendar"))
 

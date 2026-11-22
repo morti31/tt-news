@@ -208,3 +208,4 @@ button.ch-style:hover { filter: brightness(.95); text-decoration: underline; }
   .ch-recent li > a { grid-column: 1 / -1; grid-row: auto; }
   .ch-recent .ch-ev { grid-column: 2; }
 }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

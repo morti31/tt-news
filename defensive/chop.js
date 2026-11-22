@@ -2,10 +2,14 @@
 (function () {
   document.querySelectorAll(".ch-tabs[role=tablist]").forEach((bar) => {
     const tabs = [...bar.querySelectorAll("[role=tab]")];
-    tabs.forEach((t) => t.addEventListener("click", () => {
+    const show = (t) => {
       tabs.forEach((x) => x.setAttribute("aria-selected", String(x === t)));
       document.querySelectorAll(".ch-panel").forEach((p) => { p.hidden = p.dataset.p !== t.dataset.t; });
-    }));
+    };
+    tabs.forEach((t) => t.addEventListener("click", () => show(t)));
+    // a link to #results (or any tab's name) opens that tab
+    const want = tabs.find((t) => "#" + t.dataset.t === location.hash);
+    if (want) { show(want); bar.scrollIntoView(); }
   });
   const f = document.querySelector(".ch-filter");
   if (f) f.addEventListener("click", (ev) => {
