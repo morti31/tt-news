@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-21T11:28:00Z",
+ "updated": "2026-11-22T00:31:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -485,8 +485,11 @@
    "when": "2026-11-22T00:00:00Z",
    "home": "New York Slice",
    "away": "Los Angeles Spinners",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    2,
+    2
+   ],
+   "status": "live",
    "venue": "Portland"
   },
   {
