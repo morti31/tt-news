@@ -1197,22 +1197,23 @@ def privacy_page():
 <p><strong>Contact form.</strong> If you write to us, we receive your name, email address, the topic and your message. We use them only to reply and to keep a record of the conversation, and we keep them for as long as that is needed. The form is delivered by Web3Forms, which passes the message to our inbox.</p>
 <p><strong>Visit data.</strong> Our host, Cloudflare, processes your IP address and basic request details to deliver the site and keep it secure. We also use Cloudflare Web Analytics to count visits. It does not use cookies and does not follow you across other sites, so it runs whatever you choose in the cookie banner.</p>
 <p><strong>Fonts and icons.</strong> Pages load fonts from Google Fonts and flag icons from the jsDelivr network, so your browser sends its IP address to those providers when a page opens. The Chop plays videos through YouTube's privacy-enhanced player only after you click a video.</p>
+<h2>Our promise on your data</h2>
+<p>We do not sell your data, rent it or share it with anyone for their own use. We collect nothing beyond what is described on this page, and we use it for nothing except running Eleven and The Chop and making them better for readers. There are no accounts, no sign-ups and no profiles built about you.</p>
 <h2>Cookies</h2>
-<p>When you first visit, a banner asks you to accept or reject cookies. Nothing below loads until you accept. If you reject, or ignore the banner, only the essential cookie that remembers your choice is set.</p>
-<p><strong>Analytics.</strong> If you accept, Google Tag Manager loads Google Analytics, which shows us which pages are read. Those tags can set cookies or read similar identifiers on your device.</p>
-<p><strong>Advertising.</strong> If you accept, the Google AdSense code also loads. Eleven is applying to show Google ads, and when ads appear, Google and its partners use cookies and similar technologies to show and measure them. You can manage personalised advertising in <a href="https://adssettings.google.com" rel="noopener">your Google ad settings</a> or through <a href="https://www.youronlinechoices.com" rel="noopener">Your Online Choices</a>. Google explains how it uses data from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+<p>When you first visit, a banner asks you to accept or reject cookies. Nothing that sets cookies loads until you accept. If you reject, or ignore the banner, only the essential cookie that remembers your choice is set, and the site works the same.</p>
+<p><strong>Why we use Google Analytics.</strong> If you accept, Google Tag Manager loads Google Analytics. It tells us which stories, players and tournaments readers want, so we can write more of what helps you and tailor what we publish to your interests. It also shows which countries readers visit from, so we can cover the events, leagues and times that matter where you are. We read the results as totals, not as information about named people.</p>
 <p><strong>Your choice.</strong> We store it in a cookie called eleven_consent for six months, shared between Eleven and The Chop. Change it at any time with the Privacy settings link in the footer of every page. Rejecting after accepting removes the Google cookies we can reach, and you can clear the rest in your browser.</p>
 <h2>Our legal basis</h2>
-<p>We handle contact messages because it is in our legitimate interest to answer the people who write to us. We rely on your consent for analytics and advertising cookies, and you can withdraw it at any time. Site security and delivery are also legitimate interests.</p>
+<p>We handle contact messages because it is in our legitimate interest to answer the people who write to us. We rely on your consent for analytics cookies, and you can withdraw it at any time. Site security and delivery are also legitimate interests.</p>
 <h2>Who receives your data</h2>
-<p>Cloudflare (hosting and visit counts), Web3Forms (the contact form), Google (analytics, ads and fonts, with analytics and ads only if you accept), YouTube (videos on The Chop) and jsDelivr (icons). Some of these providers are based outside the UK. They use recognised safeguards for those transfers. We do not sell personal data.</p>
+<p>Cloudflare (hosting and visit counts), Web3Forms (the contact form), Google (fonts, and analytics only if you accept), YouTube (videos on The Chop) and jsDelivr (icons). Some of these providers are based outside the UK. They use recognised safeguards for those transfers. We do not sell personal data.</p>
 <h2>Your rights</h2>
 <p>Under UK data protection law you can ask to see the data we hold about you, correct it, delete it, restrict or object to its use, and receive a copy. Contact us through the <a href="/contact">contact page</a> and we will reply within a month. If you are unhappy with how we handle your data, you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk" rel="noopener">ico.org.uk</a>.</p>
 <h2>Changes</h2>
 <p>We will update this page if what we collect changes, and change the date at the top.</p>
 </div></div>
 </main>"""
-    return page("Privacy and cookies | Eleven", "How Eleven handles personal data, cookies and advertising.", f"{SITE}/privacy.html", body)
+    return page("Privacy and cookies | Eleven", "How Eleven handles personal data and cookies.", f"{SITE}/privacy.html", body)
 
 
 def contact_page():

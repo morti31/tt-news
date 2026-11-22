@@ -1,6 +1,6 @@
-/* Cookie consent: Google Tag Manager and Google AdSense load only after the visitor accepts. */
+/* Cookie consent: Google Tag Manager loads only after the visitor accepts. */
 (function () {
-  var KEY = "eleven_consent", GTM = "GTM-KHC9R75V", PUB = "ca-pub-7633315595642330";
+  var KEY = "eleven_consent", GTM = "GTM-KHC9R75V";
   var host = location.hostname, shared = /(^|\.)eleventabletennis\.com$/.test(host) ? "; domain=.eleventabletennis.com" : "";
   function get() {
     var m = document.cookie.match(new RegExp("(?:^|; )" + KEY + "=([^;]*)"));
@@ -28,8 +28,6 @@
       var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
       j.async = true; j.src = "https://www.googletagmanager.com/gtm.js?id=" + i; f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", GTM);
-    var a = document.createElement("script"); a.async = true; a.crossOrigin = "anonymous";
-    a.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + PUB; document.head.appendChild(a);
   }
   var css = document.createElement("style");
   css.textContent = "#cc{position:fixed;left:12px;right:12px;bottom:12px;z-index:99999;max-width:560px;margin:0 auto;background:#17202b;color:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 8px 32px rgba(0,0,0,.35);font:15px/1.45 system-ui,sans-serif}#cc p{margin:0 0 12px}#cc a{color:#fff;text-decoration:underline}#cc .b{display:flex;gap:10px}#cc button{flex:1;font:600 15px system-ui,sans-serif;padding:10px 14px;border-radius:8px;border:2px solid #fff;background:#fff;color:#17202b;cursor:pointer}";
@@ -37,7 +35,7 @@
   function banner() {
     var old = document.getElementById("cc"); if (old) old.remove();
     var b = document.createElement("div"); b.id = "cc"; b.setAttribute("role", "dialog"); b.setAttribute("aria-label", "Cookie choices");
-    b.innerHTML = '<p>We use Google Tag Manager to see which pages are read, and Google ads may be shown. These set cookies only if you accept. <a href="https://eleventabletennis.com/privacy.html">Privacy and cookies</a></p><div class="b"><button type="button" data-v="no">Reject</button><button type="button" data-v="yes">Accept</button></div>';
+    b.innerHTML = '<p>We never sell your data. If you accept, Google Analytics shows us which pages are read, so we can improve the site. It sets cookies only if you accept. <a href="https://eleventabletennis.com/privacy.html">Privacy and cookies</a></p><div class="b"><button type="button" data-v="no">Reject</button><button type="button" data-v="yes">Accept</button></div>';
     b.addEventListener("click", function (ev) {
       var v = ev.target.getAttribute && ev.target.getAttribute("data-v"); if (!v) return;
       set(v); b.remove();
