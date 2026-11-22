@@ -675,6 +675,18 @@ def later_note(cur):
             f' <span class="meta">{short_when(new["published"])}</span></p>')
 
 
+def league_table_html(a):
+    """The league table as it stood when a club story was published (a snapshot in "league_table", see tools/league_table.py)."""
+    lt = a.get("league_table")
+    if not lt or not (lt.get("table") or {}).get("groups"):
+        return ""
+    page = lt.get("page")
+    more = f' <a href="{e(page)}">Latest table</a>' if page else ""
+    return (f'<section class="article-table"><h2>{e(lt.get("label") or "League table")}</h2>'
+            f'{f"<p class=small-label>{e(lt["as_of"])}</p>" if lt.get("as_of") else ""}'
+            f'{build_clubs.table_html({"table": lt["table"]}, (lt.get("label") or "League").replace(" table", ""))}<p class="cl-note">{more.strip()}</p></section>')
+
+
 def article_page(a, others, brief=False):
     AUTHOR = author_of(a)
     url = f"{SITE}/news/{a['slug']}.html"
@@ -750,6 +762,7 @@ def article_page(a, others, brief=False):
   <div class="article-body">
 {paras}
   </div>
+  {league_table_html(a)}
   {components.social(a.get("social"))}
   {components.draw(a.get("draw"))}
   {f'<a class="event-link" href="/events/{ev["id"]}.html" style="--tier:{build_events.TIERS.get(ev["tier"], "#17202b")}"><span class="small-label">Event guide</span><b>{e(ev["name"])} {e(ev["year"])}</b><span>Results, draw, schedule and all the news</span></a>' if ev else ""}
@@ -925,7 +938,7 @@ def main():
             continue
         brief = {"slug": s["id"], "title": s["headline"], "standfirst": s["summary"] if s.get("body") else "", "category": s["category"], "date": s["date"],
                  "body": s.get("body") or [s["summary"]], "sources": s.get("sources", [])}
-        for k in ("lang", "image", "published", "modified", "corrections", "matches", "videos", "draw", "social", "event", "kind", "day"):
+        for k in ("lang", "image", "published", "modified", "corrections", "matches", "videos", "draw", "social", "event", "kind", "day", "league_table"):
             if s.get(k):
                 brief[k] = s[k]
         open(os.path.join(ROOT, "news", s["id"] + ".html"), "w", encoding="utf-8").write(article_page(brief, arts, brief=True))

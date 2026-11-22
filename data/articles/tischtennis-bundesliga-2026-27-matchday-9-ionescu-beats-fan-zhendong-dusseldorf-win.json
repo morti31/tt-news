@@ -521,5 +521,160 @@
    "name": "ITTF world ranking, week 47",
    "url": "https://www.worldtabletennis.com/rankings"
   }
- ]
+ ],
+ "league_table": {
+  "comp": "ttbl",
+  "label": "Tischtennis Bundesliga table",
+  "as_of": "As it stood on Sunday evening, 22 November, with Grenzau v Bergneustadt and Monday's two matches still to finish",
+  "page": "/clubs/bundesliga.html",
+  "table": {
+   "columns": [
+    "p",
+    "w",
+    "l",
+    "games",
+    "pts"
+   ],
+   "groups": [
+    {
+     "name": null,
+     "rows": [
+      {
+       "pos": 1,
+       "team": "Borussia Düsseldorf",
+       "p": 9,
+       "w": 9,
+       "l": 0,
+       "for": 27,
+       "against": 6,
+       "diff": 21,
+       "pts": 18
+      },
+      {
+       "pos": 2,
+       "team": "TTF Ochsenhausen",
+       "p": 8,
+       "w": 6,
+       "l": 2,
+       "for": 19,
+       "against": 12,
+       "diff": 7,
+       "pts": 12
+      },
+      {
+       "pos": 3,
+       "team": "1. FC Saarbrücken",
+       "p": 9,
+       "w": 6,
+       "l": 3,
+       "for": 20,
+       "against": 14,
+       "diff": 6,
+       "pts": 12
+      },
+      {
+       "pos": 4,
+       "team": "Werder Bremen",
+       "p": 8,
+       "w": 5,
+       "l": 3,
+       "for": 18,
+       "against": 16,
+       "diff": 2,
+       "pts": 10
+      },
+      {
+       "pos": 5,
+       "team": "TTC Bad Homburg",
+       "p": 9,
+       "w": 5,
+       "l": 4,
+       "for": 19,
+       "against": 20,
+       "diff": -1,
+       "pts": 10
+      },
+      {
+       "pos": 6,
+       "team": "Borussia Dortmund",
+       "p": 8,
+       "w": 4,
+       "l": 4,
+       "for": 15,
+       "against": 15,
+       "diff": 0,
+       "pts": 8
+      },
+      {
+       "pos": 7,
+       "team": "Post SV Mühlhausen",
+       "p": 8,
+       "w": 4,
+       "l": 4,
+       "for": 16,
+       "against": 17,
+       "diff": -1,
+       "pts": 8
+      },
+      {
+       "pos": 8,
+       "team": "TTC Grenzau",
+       "p": 8,
+       "w": 3,
+       "l": 5,
+       "for": 15,
+       "against": 21,
+       "diff": -6,
+       "pts": 6
+      },
+      {
+       "pos": 9,
+       "team": "TTC Fulda-Maberzell",
+       "p": 9,
+       "w": 3,
+       "l": 6,
+       "for": 19,
+       "against": 20,
+       "diff": -1,
+       "pts": 6
+      },
+      {
+       "pos": 10,
+       "team": "TTC Bergneustadt",
+       "p": 8,
+       "w": 2,
+       "l": 6,
+       "for": 16,
+       "against": 21,
+       "diff": -5,
+       "pts": 4
+      },
+      {
+       "pos": 11,
+       "team": "TSV Bad Königshofen",
+       "p": 9,
+       "w": 2,
+       "l": 7,
+       "for": 15,
+       "against": 24,
+       "diff": -9,
+       "pts": 4
+      },
+      {
+       "pos": 12,
+       "team": "ASC Grünwettersbach",
+       "p": 9,
+       "w": 2,
+       "l": 7,
+       "for": 12,
+       "against": 25,
+       "diff": -13,
+       "pts": 4
+      }
+     ]
+    }
+   ],
+   "note": "Two points for a win. Places 1 to 4 go through to the play-offs."
+  }
+ }
 }

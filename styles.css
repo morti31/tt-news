@@ -1704,3 +1704,7 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .nf-links a { display: block; padding: 10px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); }
 .nf-links span { display: block; font-size: 14px; color: var(--muted); }
 .nf-links a:hover b { text-decoration: underline; }
+/* League table under a club story (tools/league_table.py) */
+.article-table { margin: 28px 0; }
+.article-table h2 { font-size: 20px; margin: 0 0 4px; }
+.article-table .small-label { display: block; margin: 0 0 10px; }
