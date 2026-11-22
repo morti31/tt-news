@@ -11244,7 +11244,6 @@
    "date": "2026-11-19",
    "published": "2026-11-19T09:50:00Z",
    "event": "mixed-team-world-cup-2026",
-   "top": true,
    "headline": "Mixed Team World Cup 2026 entry list: Calderano, Moregard and Lin Yun-Ju miss Chengdu as Russia join",
    "summary": "Three of the world's top seven men are missing from the ITTF's list of 154 players for Chengdu, where Russia, Poland, Slovakia, Singapore and Great Britain join a 20-team field.",
    "sources": [
@@ -11444,6 +11443,551 @@
     {
      "name": "MBC News (Korean): Yoon Ji-yu and Kim Hyeon-uk win two golds each",
      "url": "https://imnews.imbc.com/news/2026/sports/article/6867218_36946.html"
+    }
+   ]
+  },
+  "lebrun-brothers-tshow-exhibition-tour-cancelled": {
+   "id": "lebrun-brothers-tshow-exhibition-tour-cancelled",
+   "kind": "Update",
+   "category": "International",
+   "date": "2026-11-21",
+   "published": "2026-11-21T19:15:00Z",
+   "headline": "Félix and Alexis Lebrun's Tshow! exhibition tour in Reims, Amiens and Paris is cancelled",
+   "summary": "The organisers of the Tshow!, a series of exhibitions planned around the Lebrun brothers from 19 to 22 December, have called it off and are refunding tickets.",
+   "body": [
+    "The Tshow!, an end-of-year exhibition tour built around Félix and Alexis Lebrun, has been cancelled by its organisers. It was due to visit Reims and Amiens and finish at the Adidas Arena in Paris between 19 and 22 December, with Brazil's Hugo Calderano among the players booked for the Paris show.",
+    "The organisers said on the Tshow! website that this year's production schedule did not allow them to stage it as they had promised, that ticket holders would be refunded and that no new dates had been confirmed.",
+    "The brothers said on Instagram that the decision was not theirs. \"The cancellation is not our doing. It is not at all because of our sporting calendar,\" they wrote, adding that the dates had long been in their diaries."
+   ],
+   "sources": [
+    {
+     "name": "Media365 via Orange Sports (French): the Lebrun brothers' tour is cancelled",
+     "url": "https://sports.orange.fr/plus-de-sport/article/tennis-de-table-la-tournee-des-freres-lebrun-annulee-exclu-CNT000002tWgBZ.html"
+    },
+    {
+     "name": "Ouest-France (French): Félix and Alexis Lebrun cancel their exhibition tour",
+     "url": "https://www.ouest-france.fr/sport/tennis-de-table/tennis-de-table-felix-et-alexis-lebrun-annulent-leur-petite-tournee-dexhibition-6a8a8e28-e4f4-11f1-afa7-9a0bb82a33d1"
+    }
+   ],
+   "lang": "French"
+  },
+  "wtt-star-contender-muscat-2026-day6-review": {
+   "id": "wtt-star-contender-muscat-2026-day6-review",
+   "kind": "Review",
+   "day": 6,
+   "category": "International",
+   "date": "2026-11-21",
+   "published": "2026-11-21T15:20:00Z",
+   "event": "wtt-star-contender-muscat-2026",
+   "draw": "3256",
+   "headline": "Honoka Hashimoto and Shunsuke Togami win WTT Star Contender Muscat as Japan take four titles",
+   "summary": "Honoka Hashimoto beat Kaho Akae 4-2 for her second title in seven days and Shunsuke Togami beat Park Ganghyeon 4-1, then won the mixed doubles with Satsuki Odo, as Japan took four of the five titles.",
+   "sources": [
+    {
+     "name": "World Table Tennis: WTT Star Contender Muscat results and schedule",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3256"
+    },
+    {
+     "name": "ITTF world ranking, week 47",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ],
+   "matches": [
+    {
+     "label": "Women's singles, final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Honoka Hashimoto",
+       "nat": "JPN"
+      },
+      {
+       "name": "Kaho Akae",
+       "nat": "JPN"
+      }
+     ],
+     "score": [
+      4,
+      2
+     ],
+     "games": [
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       4,
+       11
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       12,
+       10
+      ]
+     ]
+    },
+    {
+     "label": "Men's singles, final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Shunsuke Togami",
+       "nat": "JPN"
+      },
+      {
+       "name": "Park Ganghyeon",
+       "nat": "KOR"
+      }
+     ],
+     "score": [
+      4,
+      1
+     ],
+     "games": [
+      [
+       6,
+       11
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       16,
+       14
+      ]
+     ]
+    },
+    {
+     "label": "Women's singles, semi-final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Honoka Hashimoto",
+       "nat": "JPN"
+      },
+      {
+       "name": "Bernadette Szőcs",
+       "nat": "ROU"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       4
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       4
+      ]
+     ]
+    },
+    {
+     "label": "Men's singles, semi-final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Shunsuke Togami",
+       "nat": "JPN"
+      },
+      {
+       "name": "Chen Yuanyu",
+       "nat": "CHN"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       6
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       11,
+       3
+      ]
+     ]
+    },
+    {
+     "label": "Mixed doubles, final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Shunsuke Togami / Satsuki Odo",
+       "nat": "JPN"
+      },
+      {
+       "name": "Esteban Dorr / Jia Nan Yuan",
+       "nat": "FRA"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       12,
+       14
+      ],
+      [
+       11,
+       3
+      ]
+     ]
+    }
+   ],
+   "videos": [
+    {
+     "id": "yVGitIByOPE",
+     "title": "Kaho Akae vs Honoka Hashimoto, final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "fVTEqeZw0b0",
+     "title": "Park Ganghyeon vs Shunsuke Togami, final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "2iIP7z1--JM",
+     "title": "Bernadette Szőcs vs Honoka Hashimoto, semi-final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "TrnT8VtPL24",
+     "title": "Chen Yuanyu vs Shunsuke Togami, semi-final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "U2BS97CvnNo",
+     "title": "Dorr and Yuan vs Togami and Odo, mixed doubles final",
+     "channel": "World Table Tennis"
+    }
+   ],
+   "top": true
+  },
+  "wtt-star-contender-muscat-2026-day6-preview": {
+   "id": "wtt-star-contender-muscat-2026-day6-preview",
+   "kind": "Preview",
+   "day": 6,
+   "category": "International",
+   "date": "2026-11-21",
+   "published": "2026-11-21T00:35:00Z",
+   "event": "wtt-star-contender-muscat-2026",
+   "draw": "3256",
+   "headline": "WTT Star Contender Muscat finals day preview: Odo v Akae and Hashimoto v Szőcs as Japan chase four titles",
+   "summary": "Satsuki Odo plays Kaho Akae and Honoka Hashimoto plays Bernadette Szőcs in the WTT Star Contender Muscat semi-finals, with Shunsuke Togami v Chen Yuanyu and Park Ganghyeon v Oh Junsung in the men's.",
+   "sources": [
+    {
+     "name": "World Table Tennis: WTT Star Contender Muscat results and schedule",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3256"
+    },
+    {
+     "name": "ITTF world ranking, week 47",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ]
+  },
+  "wtt-star-contender-muscat-2026-day5-review": {
+   "id": "wtt-star-contender-muscat-2026-day5-review",
+   "kind": "Review",
+   "day": 5,
+   "category": "International",
+   "date": "2026-11-20",
+   "published": "2026-11-20T18:05:00Z",
+   "event": "wtt-star-contender-muscat-2026",
+   "draw": "3256",
+   "headline": "Park ends Sun Yang's run at WTT Star Contender Muscat as Odo wins four times and takes doubles title",
+   "summary": "Park Ganghyeon ended the 18-year-old qualifier Sun Yang's run in five games, Kaho Akae came from two games down against Miyu Nagasaki, and Satsuki Odo and Sakura Yokoi won the women's doubles title.",
+   "sources": [
+    {
+     "name": "World Table Tennis: WTT Star Contender Muscat results and schedule",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3256"
+    },
+    {
+     "name": "ITTF world ranking, week 47",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ],
+   "matches": [
+    {
+     "label": "Women's singles, quarter-final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Kaho Akae",
+       "nat": "JPN"
+      },
+      {
+       "name": "Miyu Nagasaki",
+       "nat": "JPN"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "games": [
+      [
+       9,
+       11
+      ],
+      [
+       7,
+       11
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       13,
+       11
+      ]
+     ]
+    },
+    {
+     "label": "Men's singles, last 16",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Park Ganghyeon",
+       "nat": "KOR"
+      },
+      {
+       "name": "Sun Yang",
+       "nat": "CHN"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "games": [
+      [
+       11,
+       6
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       12,
+       14
+      ],
+      [
+       11,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "Women's singles, quarter-final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Honoka Hashimoto",
+       "nat": "JPN"
+      },
+      {
+       "name": "Cheng I-Ching",
+       "nat": "TPE"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       5
+      ]
+     ]
+    },
+    {
+     "label": "Men's singles, quarter-final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Shunsuke Togami",
+       "nat": "JPN"
+      },
+      {
+       "name": "Dimitrij Ovtcharov",
+       "nat": "GER"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       12,
+       10
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       15,
+       13
+      ]
+     ]
+    },
+    {
+     "label": "Women's doubles, final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Satsuki Odo / Sakura Yokoi",
+       "nat": "JPN"
+      },
+      {
+       "name": "Kim Nayeong / Joo Cheonhui",
+       "nat": "KOR"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "Men's doubles, final",
+     "event": "WTT Star Contender Muscat",
+     "sides": [
+      {
+       "name": "Lim Jonghoon / Oh Junsung",
+       "nat": "KOR"
+      },
+      {
+       "name": "Manav Thakkar / Manush Shah",
+       "nat": "IND"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       8
+      ]
+     ]
+    }
+   ],
+   "videos": [
+    {
+     "id": "qUebrtIJpBo",
+     "title": "Cheng I-Ching vs Honoka Hashimoto, quarter-final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "fEAiMqkIcu4",
+     "title": "Dimitrij Ovtcharov vs Shunsuke Togami, quarter-final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "cM8jWyWPC3c",
+     "title": "Miyu Nagasaki vs Kaho Akae, quarter-final",
+     "channel": "World Table Tennis"
+    },
+    {
+     "id": "DK4vDreA6jg",
+     "title": "Park Ganghyeon vs Flavien Coton, quarter-final",
+     "channel": "World Table Tennis"
     }
    ]
   }
