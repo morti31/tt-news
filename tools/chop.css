@@ -199,3 +199,12 @@ button.ch-style:hover { filter: brightness(.95); text-decoration: underline; }
 .ch-pager a { min-width: 36px; text-align: center; padding: 6px 10px; border: 1px solid var(--rule, #ddd); border-radius: 6px; text-decoration: none; }
 .ch-pager a[aria-current] { background: var(--chop); color: #fff; border-color: var(--chop); }
 .ch-links-plain { padding-left: 20px; line-height: 2; }
+/* Calendar: recent results (player, result, opponent and event) */
+.ch-recent li { grid-template-columns: minmax(120px, 190px) 64px minmax(0, 1fr); align-items: baseline; }
+.ch-recent li > a { grid-row: span 2; }
+.ch-recent .ch-ev { grid-column: 3; }
+@media (max-width: 600px) {
+  .ch-recent li { grid-template-columns: 64px minmax(0, 1fr); }
+  .ch-recent li > a { grid-column: 1 / -1; grid-row: auto; }
+  .ch-recent .ch-ev { grid-column: 2; }
+}

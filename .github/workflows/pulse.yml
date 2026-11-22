@@ -1,0 +1,42 @@
+name: Pulse
+# GitHub's own scheduler runs busy cron jobs hours late or skips them (the 30-minute WTT sync was running about
+# every six hours), so results, draws and fixtures reached Eleven and The Chop late. This workflow keeps the
+# syncs on time: it stays awake for five and a half hours, starts each sync on its cadence through
+# workflow_dispatch (allowed with the workflow's own token), then starts the next Pulse before it finishes.
+# The cron below only restarts the chain if it ever breaks; concurrency keeps a single Pulse at a time.
+on:
+  schedule:
+    - cron: "5 */6 * * *"
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: pulse
+  cancel-in-progress: false
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Start the syncs on time
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          run() { gh workflow run "$1" -R "$REPO" --ref main && echo "$(date -u +%H:%M) started $1" || echo "$(date -u +%H:%M) could not start $1"; }
+          # one tick every 10 minutes for 5 hours 30 minutes
+          for t in $(seq 0 10 320); do
+            [ $((t % 30)) -eq 0 ] && run wtt-sync.yml          # draws, results, order of play, rankings
+            [ $((t % 60)) -eq 0 ] && run club-sync.yml         # Bundesliga, T.League, MLTT, British League and squads
+            [ $((t % 60)) -eq 30 ] && run news-scan.yml        # headlines for the news runs
+            [ $((t % 180)) -eq 0 ] && run match-sync.yml       # every match result and youth results (The Chop's form and results)
+            [ $((t % 180)) -eq 90 ] && run chop-videos.yml     # The Chop's videos
+            [ "$t" -eq 0 ] && run league-sync.yml              # league player results
+            sleep 600
+          done
+      - name: Start the next Pulse
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pulse.yml -R "${{ github.repository }}" --ref main

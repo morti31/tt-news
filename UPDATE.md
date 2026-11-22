@@ -269,3 +269,8 @@ Write each player's name exactly as Eleven's profile or the rankings has it; the
 
 ## The Chop: "Likely" versus "In the draw"
 A player counts as in the draw if their name appears anywhere in a published draw (data/draws/) for a current or upcoming event, whether or not their match has a time. Once an event's draw is out, no one is shown as "Likely" for it: they're either in the draw, or the guess moves on to their next likely event. Players who have already played an event (for example lost in qualifying) are skipped for it too. Logic in tools/build_chop.py, likely().
+
+## The Chop: results and the Pulse workflow
+- The Chop is rebuilt from data on every Cloudflare deploy (`tools/build_site.py` calls `tools/build_chop.py`), and every sync commit triggers a deploy, so its rankings, results, fixtures, draws and calendar update themselves. Nothing on The Chop needs a news run, except the club leagues kept by hand (Champions League, Pro A, China Super League), which have no feed a script can read.
+- Recent results: the calendar has a "Recent results" section (`/calendar.html#results`): every defender's result in the last 14 days (WTT and ITTF events from `data/matches`, club matches from `data/clubs` and `data/leagues`), grouped by day. The home page shows the newest six under "Recent results", linking to it.
+- `.github/workflows/pulse.yml` keeps the syncs on time. GitHub's scheduler was running the 30-minute WTT sync about every six hours. Pulse stays awake for five and a half hours, starts the WTT sync every 30 minutes, the club sync every hour, the news scan every hour, the match sync and Chop videos every three hours and the league sync once, then starts the next Pulse. Its own cron (every six hours) only restarts the chain if it breaks.

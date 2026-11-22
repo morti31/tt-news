@@ -74,7 +74,7 @@ WTT_STREAMS = "https://www.youtube.com/@WTTGlobal/streams"   # WTT's own channel
 LEAGUE_LIVE = {"ttbl": ("Scores on ttbl.de", "https://www.ttbl.de/"), "tleague-men": ("Scores on tleague.jp", "https://tleague.jp/"),
                "tleague-women": ("Scores on tleague.jp", "https://tleague.jp/"), "mltt": ("Scores on mltt.com", "https://www.mltt.com/"),
                "utt": ("Scores on the UTT site", "https://www.ultimatetabletennis.in/")}
-ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
+ROUNDS = {"FNL": "Final", "SFNL": "Semi-final", "QFNL": "Quarter-final", "R16": "Last 16", "8FNL": "Last 16", "RND1": "Qualifying round 1", "RND2": "Qualifying round 2", "RND3": "Qualifying round 3", "QER": "Qualifying", "R32": "Last 32", "R64": "Last 64", "R128": "Last 128"}
 
 
 def load(path, default):
@@ -612,7 +612,25 @@ def build():
             f'{p["name"]}, {STYLE.get(p.get("style"), "defender").lower()}: world ranking, recent results, next matches and stories.',
             f'/defender/{slug(p["name"])}.html', body))
 
-    # ---- Calendar: likely next tournaments (grouped by event), then fixtures by day
+    # ---- Recent results of every defender (senior WTT and ITTF events and club matches), newest first.
+    # Built from data/matches (match-sync workflow) and data/clubs and data/leagues (club-sync and league-sync), so it updates itself.
+    RECENT_DAYS = 14
+    allrec = []
+    for p in players:
+        for m, s in ms.get(p.get("ittf_id"), []):
+            if (m.get("d") or "") >= (now - dt.timedelta(days=RECENT_DAYS)).isoformat()[:19] and m.get("w") in (0, 1):
+                allrec.append((m["d"], p, m, s))
+    allrec.sort(key=lambda t: t[0], reverse=True)
+
+    def rec_li(p, m, s, show_day=True):
+        row = res_row(m, s)
+        cls = re.match(r'<li class="(\w)">', row).group(1)
+        inner = row[len(f'<li class="{cls}">'):-len("</li>")]
+        if not show_day:
+            inner = re.sub(r" · [^<]*</span>$", "</span>", inner)
+        return f'<li class="{cls}"><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {inner}</li>'
+
+    # ---- Calendar: likely next tournaments (grouped by event), then fixtures by day, then recent results
     cal = []
     for p in players:
         for x in nxt.get(p["name"], []):
@@ -643,12 +661,21 @@ def build():
         days_[-1][1].append(f'<li class="ch-fx"><span class="ch-fx-t">{e(t) or "TBC"}</span><span class="ch-fx-who"><a href="{plink(p)}">{e(p["name"])}</a> {tag(p.get("style"))}</span>'
                             f'<span class="ch-fx-what"><b>{e(comp)}</b> {e(tie)}{f" v {e(x["v"])}" if x.get("v") else ""}{watch(x)}</span></li>')
     fx = "".join(f'<section class="ch-day"><h3>{e(h)}</h3><ul>{"".join(it)}</ul></section>' for h, it in days_)
-    cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">Where the defenders are likely to play next, and every fixture we know of, with links to live scores and streams where they exist. Times are UK time.</p></section>
+    rdays, cur = [], None
+    for d_, p, m, s in allrec:
+        if d_[:10] != cur:
+            cur = d_[:10]
+            dd = dt.date.fromisoformat(cur)
+            rdays.append([f"{dd:%A} {dd.day} {dd:%B %Y}", []])
+        rdays[-1][1].append(rec_li(p, m, s, show_day=False))
+    rx = "".join(f'<section class="ch-day"><h3>{e(h)}</h3><ul class="ch-results ch-recent">{"".join(it)}</ul></section>' for h, it in rdays)
+    cbody = f"""<section class="ch-head"><h1>Calendar</h1><p class="ch-lede">Where the defenders are likely to play next, every fixture we know of, with links to live scores and streams where they exist, and their latest results. Times are UK time. <a href="#results">Recent results</a></p></section>
 <section class="ch-sec"><h2>Likely next tournaments</h2><p class="ch-small">Entry lists are only published with the draw, so these are our best guesses: the next event of a kind each player has entered in the past year and can get into on their ranking. Players move to "In the draw" when it's published.</p>
 <ul class="ch-evcards">{"".join(ev_cards) or "<li>No tournaments in view.</li>"}</ul></section>
-<section class="ch-sec"><h2>Fixtures</h2>{fx or "<p>Nothing scheduled yet.</p>"}</section>"""
+<section class="ch-sec"><h2>Fixtures</h2>{fx or "<p>Nothing scheduled yet.</p>"}</section>
+<section class="ch-sec" id="results"><h2>Recent results</h2><p class="ch-small">Every result for the defenders in the last {RECENT_DAYS} days, at WTT and ITTF events and in the club leagues, newest first. Updated automatically as results come in.</p>{rx or "<p>No results in the last two weeks.</p>"}</section>"""
     open(os.path.join(OUT, "calendar.html"), "w", encoding="utf-8").write(page(
-        "When the defenders play next | The Chop", "Where table tennis's choppers and defenders are likely to play next, and their upcoming fixtures.", "/calendar.html", cbody, "calendar"))
+        "When the defenders play next | The Chop", "Where table tennis's choppers and defenders are likely to play next, their upcoming fixtures and their latest results.", "/calendar.html", cbody, "calendar"))
 
     # ---- Reading
     kinds = [("all", "All")] + [(k, k.capitalize()) for k in ("news", "analysis", "history", "video") if any(l.get("kind") == k for l in allinks)]
@@ -705,18 +732,6 @@ def build():
 
     # ---- Home
     week = [(w, p, x) for w, p, x in cal if w <= (now + dt.timedelta(days=7)).isoformat()]
-    recent = []
-    for p in players:
-        for m, s in ms.get(p.get("ittf_id"), [])[:3]:
-            if (m.get("d") or "") >= (now - dt.timedelta(days=10)).isoformat()[:19]:
-                recent.append((m["d"], p, m, s))
-    recent.sort(key=lambda t: t[0], reverse=True)
-    best = []
-    for d_, p, m, s in recent:
-        o = rk.get(m["p"][1 - s][0])
-        if m["w"] == s:
-            best.append((o["rank"] if o else 9999, d_, p, m, s))
-    best.sort(key=lambda t: t[0])
     top_w = wrows[:5]
     top_m = mrows[:5]
     mini = lambda rows: "".join(f'<li><span class="ch-wr">{rank_of(p)["rank"]}</span><a href="{plink(p)}">{e(p["name"])}</a>{tag(p.get("style"), False)}</li>' for p in rows)
@@ -726,7 +741,7 @@ def build():
 <section class="ch-sec ch-main"><h2>Latest reading</h2><ul class="ch-links">{"".join(link_li(l) for l in capped(allinks, 6))}</ul><a class="ch-more" href="{BASE}/reading.html">All reading</a></section>
 <aside class="ch-side">
 <section class="ch-sec"><h2>Top defenders</h2><h3>Women</h3><ol class="ch-mini">{mini(top_w)}</ol><h3>Men</h3><ol class="ch-mini">{mini(top_m)}</ol><a class="ch-more" href="{BASE}/defenders.html">All the defenders</a></section>
-<section class="ch-sec"><h2>Best recent wins</h2><ul class="ch-results">{"".join(f'<li class="w"><a href="{plink(p)}"><b>{e(p["name"])}</b></a> {res_row(m, s)[len("<li class=\"w\">"):-5]}</li>' for _, _, p, m, s in best[:5]) or "<li>No wins by defenders in the last 10 days.</li>"}</ul></section>
+<section class="ch-sec"><h2>Recent results</h2><ul class="ch-results">{"".join(rec_li(p, m, s) for _, p, m, s in allrec[:6]) or "<li>No results for the defenders in the last two weeks.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html#results">All recent results in the calendar</a></section>
 <section class="ch-sec"><h2>Coming up</h2><ul class="ch-evcards ch-evcards-side">{"".join(ev_cards[:3])}</ul>
 <h3>This week</h3><ul class="ch-cal">{"".join(f'<li><time>{day(w)}</time><a href="{plink(p)}"><b>{e(p["name"])}</b></a><span>{e(x["what"])}{watch(x)}</span></li>' for w, p, x in week[:6]) or "<li>No defenders scheduled this week.</li>"}</ul><a class="ch-more" href="{BASE}/calendar.html">Full calendar</a></section>
 </aside></div>"""
