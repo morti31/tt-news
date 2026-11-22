@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-17T14:09:40Z",
+ "updated": "2026-11-22T20:03:38Z",
  "source": {
   "name": "TTBL",
   "url": "https://www.ttbl.de/bundesliga/teams"
@@ -32,6 +32,32 @@
     }
    ],
    "coach": "Danny Heister"
+  },
+  {
+   "team": "TTF Ochsenhausen",
+   "players": [
+    {
+     "name": "Shunsuke Togami",
+     "nat": "JPN"
+    },
+    {
+     "name": "Iulian Chirita",
+     "nat": "ROU"
+    },
+    {
+     "name": "Darius Movileanu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Tiago Abiodun",
+     "nat": "POR"
+    },
+    {
+     "name": "Daniel Berzosa",
+     "nat": "ESP"
+    }
+   ],
+   "coach": "Bogdan Pugna"
   },
   {
    "team": "1. FC Saarbrücken",
@@ -76,32 +102,6 @@
    "coach": "Zhi Wang"
   },
   {
-   "team": "TTF Ochsenhausen",
-   "players": [
-    {
-     "name": "Shunsuke Togami",
-     "nat": "JPN"
-    },
-    {
-     "name": "Iulian Chirita",
-     "nat": "ROU"
-    },
-    {
-     "name": "Darius Movileanu",
-     "nat": "ROU"
-    },
-    {
-     "name": "Tiago Abiodun",
-     "nat": "POR"
-    },
-    {
-     "name": "Daniel Berzosa",
-     "nat": "ESP"
-    }
-   ],
-   "coach": "Bogdan Pugna"
-  },
-  {
    "team": "Werder Bremen",
    "players": [
     {
@@ -122,6 +122,44 @@
     }
    ],
    "coach": "Cristian Tamas"
+  },
+  {
+   "team": "TTC Bad Homburg",
+   "players": [
+    {
+     "name": "Csaba Andras",
+     "nat": "HUN"
+    },
+    {
+     "name": "Ivor Ban",
+     "nat": "CRO"
+    },
+    {
+     "name": "Juan Perez",
+     "nat": "ESP"
+    },
+    {
+     "name": "Benno Oehme",
+     "nat": "GER"
+    },
+    {
+     "name": "Finn Luu",
+     "nat": "AUS"
+    },
+    {
+     "name": "Max Lante",
+     "nat": "GER"
+    },
+    {
+     "name": "Pepe Meteling",
+     "nat": "GER"
+    },
+    {
+     "name": "Lukas Vatheuer",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Slobodan Grujic"
   },
   {
    "team": "Borussia Dortmund",
@@ -192,74 +230,6 @@
    "coach": "Erik Schreyer"
   },
   {
-   "team": "TTC Bad Homburg",
-   "players": [
-    {
-     "name": "Csaba Andras",
-     "nat": "HUN"
-    },
-    {
-     "name": "Ivor Ban",
-     "nat": "CRO"
-    },
-    {
-     "name": "Juan Perez",
-     "nat": "ESP"
-    },
-    {
-     "name": "Benno Oehme",
-     "nat": "GER"
-    },
-    {
-     "name": "Finn Luu",
-     "nat": "AUS"
-    },
-    {
-     "name": "Max Lante",
-     "nat": "GER"
-    },
-    {
-     "name": "Pepe Meteling",
-     "nat": "GER"
-    },
-    {
-     "name": "Lukas Vatheuer",
-     "nat": "GER"
-    }
-   ],
-   "coach": "Slobodan Grujic"
-  },
-  {
-   "team": "TTC Grenzau",
-   "players": [
-    {
-     "name": "Liam Pitchford",
-     "nat": "GBR"
-    },
-    {
-     "name": "Feng Yi-hsin",
-     "nat": "TPE"
-    },
-    {
-     "name": "Martin Allegro",
-     "nat": "BEL"
-    },
-    {
-     "name": "Maciej Kubik",
-     "nat": "POL"
-    },
-    {
-     "name": "Samuel Walker",
-     "nat": "GBR"
-    },
-    {
-     "name": "Yanning Liang",
-     "nat": "CHN"
-    }
-   ],
-   "coach": "Zhibin Chen"
-  },
-  {
    "team": "TTC Fulda-Maberzell",
    "players": [
     {
@@ -310,6 +280,36 @@
     }
    ],
    "coach": "Frederik Duda"
+  },
+  {
+   "team": "TTC Grenzau",
+   "players": [
+    {
+     "name": "Liam Pitchford",
+     "nat": "GBR"
+    },
+    {
+     "name": "Feng Yi-hsin",
+     "nat": "TPE"
+    },
+    {
+     "name": "Martin Allegro",
+     "nat": "BEL"
+    },
+    {
+     "name": "Maciej Kubik",
+     "nat": "POL"
+    },
+    {
+     "name": "Samuel Walker",
+     "nat": "GBR"
+    },
+    {
+     "name": "Yanning Liang",
+     "nat": "CHN"
+    }
+   ],
+   "coach": "Zhibin Chen"
   },
   {
    "team": "TSV Bad Königshofen",
@@ -370,10 +370,6 @@
     },
     {
      "name": "Adrian Gossow",
-     "nat": "GER"
-    },
-    {
-     "name": "Florian Bluhm",
      "nat": "GER"
     },
     {

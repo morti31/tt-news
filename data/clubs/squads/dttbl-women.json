@@ -1,7 +1,7 @@
 {
  "id": "dttbl-women",
  "auto": true,
- "updated": "2026-11-17T14:09:51Z",
+ "updated": "2026-11-22T20:03:51Z",
  "source": {
   "name": "DTTB click-TT",
   "url": "https://dttb.click-tt.de/cgi-bin/WebObjects/nuLigaTTDE.woa/wa/groupPage?championship=DTTB+26%2F27&group=518223"
@@ -31,6 +31,29 @@
     },
     {
      "name": "Bao Chau Elisa Nguyen"
+    }
+   ]
+  },
+  {
+   "team": "TSV Dachau",
+   "players": [
+    {
+     "name": "Sabine Winter"
+    },
+    {
+     "name": "Seoyoung Byun"
+    },
+    {
+     "name": "Koharu Itagaki"
+    },
+    {
+     "name": "Dora Cosic"
+    },
+    {
+     "name": "Naomi Pranjkovic"
+    },
+    {
+     "name": "Emine Ernst"
     }
    ]
   },
@@ -66,29 +89,6 @@
     },
     {
      "name": "Tijana Jokic"
-    }
-   ]
-  },
-  {
-   "team": "TSV Dachau",
-   "players": [
-    {
-     "name": "Sabine Winter"
-    },
-    {
-     "name": "Seoyoung Byun"
-    },
-    {
-     "name": "Koharu Itagaki"
-    },
-    {
-     "name": "Dora Cosic"
-    },
-    {
-     "name": "Naomi Pranjkovic"
-    },
-    {
-     "name": "Emine Ernst"
     }
    ]
   },
@@ -163,6 +163,9 @@
      "name": "Iryna Motsyk"
     },
     {
+     "name": "Priyadarshini Das"
+    },
+    {
      "name": "Janine Hanslick"
     },
     {
@@ -170,6 +173,9 @@
     },
     {
      "name": "Anna Walter"
+    },
+    {
+     "name": "Milena Burandt"
     }
    ]
   },
