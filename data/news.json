@@ -330,6 +330,61 @@
       }
      ],
      "note": "Two points for a win, one for a draw."
+    },
+    "round": {
+     "name": "This weekend's matches",
+     "matches": [
+      {
+       "when": "2026-11-21T14:00:00Z",
+       "home": "TSV Dachau",
+       "away": "ESV Weil",
+       "score": [
+        6,
+        4
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-21T16:30:00Z",
+       "home": "TuS Fürstenfeldbruck",
+       "away": "TTC Weinheim",
+       "score": [
+        0,
+        6
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-22T09:30:00Z",
+       "home": "TuS Fürstenfeldbruck",
+       "away": "TG Langenselbold",
+       "score": [
+        5,
+        5
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-22T13:00:00Z",
+       "home": "TSV Dachau",
+       "away": "TTC Weinheim",
+       "score": [
+        5,
+        5
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-22T13:00:00Z",
+       "home": "SV DJK Kolbermoor",
+       "away": "ESV Weil",
+       "score": [
+        5,
+        5
+       ],
+       "status": "finished"
+      }
+     ]
     }
    }
   },

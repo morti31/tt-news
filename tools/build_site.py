@@ -682,7 +682,14 @@ def league_table_html(a):
         return ""
     page = lt.get("page")
     more = f' <a href="{e(page)}">Latest table</a>' if page else ""
-    return (f'<section class="article-table"><h2>{e(lt.get("label") or "League table")}</h2>'
+    rd = lt.get("round") or {}
+    res = ""
+    if rd.get("matches"):
+        rows = "".join(build_clubs.match_row(m, with_day=True) for m in rd["matches"])
+        left = sum(1 for m in rd["matches"] if m.get("score") is None)
+        res = (f'<section class="article-table"><h2>{e(rd["name"])}: {"results so far" if left else "results"}</h2>'
+               f'<ol class="cl-list">{rows}</ol></section>')
+    return res + (f'<section class="article-table"><h2>{e(lt.get("label") or "League table")}</h2>'
             f'{f"<p class=small-label>{e(lt["as_of"])}</p>" if lt.get("as_of") else ""}'
             f'{build_clubs.table_html({"table": lt["table"]}, (lt.get("label") or "League").replace(" table", ""))}<p class="cl-note">{more.strip()}</p></section>')
 

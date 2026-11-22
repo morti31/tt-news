@@ -1,11 +1,11 @@
 """Add the league table, as it stands now, to a club story or article (UPDATE.md, "League tables in league stories").
 
-Usage: python3 tools/league_table.py <story id or article slug> <competition> ["as of" line]
+Usage: python3 tools/league_table.py <story id or article slug> <competition> ["as of" line] [--round "Matchday 9"]
   competition: a file name in data/clubs, e.g. ttbl, dttbl-women, tleague-men, tleague-women, proa-men, proa-women,
                cl-men, cl-women, cttsl-men, cttsl-women, mltt, bcl-men, bcl-women, utt
 Example: python3 tools/league_table.py ttbl-2026-27-matchday-9-ionescu-beats-fan-zhendong ttbl "After Sunday's matches, 22 November"
 
-The table is copied into the story ("league_table") so the page keeps showing it as it stood that day; the build
+The table and every match of the round (results so far, and the matches still to play with their times) are copied into the story ("league_table") so the page keeps showing it as it stood that day; the build
 shows it after the article text with a link to the league page for the latest one. Run it after updating the
 league's file, for every league result story (full article or quick update).
 """
@@ -24,20 +24,47 @@ LABEL = {"ttbl": "Tischtennis Bundesliga table", "dttbl-women": "Women's Bundesl
          "utt": "Ultimate Table Tennis table"}
 
 
-def snapshot(comp, as_of=None):
+def round_of(d, rnd=None):
+    """Every match of one round: the round named, else the round of the most recent result."""
+    ms = d.get("matches") or []
+    if not rnd:
+        done = sorted((m for m in ms if m.get("status") == "finished" and m.get("round")), key=lambda m: m.get("when") or "")
+        rnd = done[-1]["round"] if done else None
+    keep = ("when", "home", "away", "score", "status", "round", "date_only", "tbc")
+    if not rnd:   # leagues without round names: the matches within three days of the latest result
+        done = sorted((m for m in ms if m.get("status") == "finished" and m.get("when")), key=lambda m: m["when"])
+        if not done:
+            return None
+        import datetime as dt
+        last = dt.date.fromisoformat(done[-1]["when"][:10])
+        near = lambda m: m.get("when") and abs((dt.date.fromisoformat(m["when"][:10]) - last).days) <= 3
+        sel = [{k: m[k] for k in keep if m.get(k) is not None} for m in ms if near(m)]
+        return {"name": "This weekend's matches", "matches": sorted(sel, key=lambda m: m["when"])} if sel else None
+    keep = ("when", "home", "away", "score", "status", "round", "date_only", "tbc")
+    sel = [{k: m[k] for k in keep if m.get(k) is not None} for m in ms if m.get("round") == rnd]
+    return {"name": rnd, "matches": sorted(sel, key=lambda m: m.get("when") or "")} if sel else None
+
+
+def snapshot(comp, as_of=None, rnd=None):
     d = json.load(open(os.path.join(ROOT, "data", "clubs", comp + ".json"), encoding="utf-8"))
     tab = d.get("table") or {}
     if not [g for g in tab.get("groups") or [] if g.get("rows")]:
         raise SystemExit(f"{comp} has no table yet")
     return {"comp": comp, "label": LABEL.get(comp, "League table"), "as_of": as_of or f"As it stood on {d.get('updated', '')[:10]}",
-            "page": f"/clubs/{PAGE.get(comp, '')}.html" if PAGE.get(comp) else None, "table": tab}
+            "page": f"/clubs/{PAGE.get(comp, '')}.html" if PAGE.get(comp) else None, "table": tab, "round": round_of(d, rnd)}
 
 
 def main():
     if len(sys.argv) < 3:
         raise SystemExit(__doc__)
-    ident, comp = sys.argv[1], sys.argv[2]
-    lt = snapshot(comp, sys.argv[3] if len(sys.argv) > 3 else None)
+    args = sys.argv[1:]
+    rnd = None
+    if "--round" in args:
+        i = args.index("--round")
+        rnd = args[i + 1]
+        del args[i:i + 2]
+    ident, comp = args[0], args[1]
+    lt = snapshot(comp, args[2] if len(args) > 2 else None, rnd)
     done = False
     for f in glob.glob(os.path.join(ROOT, "data", "articles", "*.json")):
         a = json.load(open(f, encoding="utf-8"))
