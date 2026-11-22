@@ -53,7 +53,7 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
-<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Tournaments</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Calendar</a><a href="/contact.html#advertise">Advertise</a><a href="/corrections.html">Corrections</a><a href="/privacy.html">Privacy</a></nav>
+<nav class="foot-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/#International">International</a><a href="/#England">England</a><a href="/events/">Tournaments</a><a href="/news/">News</a><a href="/guide/">Guide</a><a href="/schedule.html">Calendar</a><a href="/contact.html#advertise">Advertise</a><a href="/corrections.html">Corrections</a><a href="/privacy.html">Privacy</a><a href="/privacy.html" data-consent-open>Privacy settings</a></nav>
 <p>Table tennis news, results and fixtures from around the world.</p></div></footer>"""
 
 
@@ -186,12 +186,10 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="/styles.css">
 {extra_head}
-<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','GTM-KHC9R75V');</script>
 <meta name="google-adsense-account" content="ca-pub-7633315595642330">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7633315595642330" crossorigin="anonymous"></script>
+<script src="/consent.js" defer></script>
 </head>
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHC9R75V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {nav_for(canonical)}
 <section class="ticker" aria-label="Latest scores"><div class="wrap ticker-inner" id="ticker"></div></section>
 <div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="top"></div></div>
@@ -1191,22 +1189,23 @@ def about_page():
 def privacy_page():
     body = """<main class="wrap info-wrap">
 <section class="sched-head"><div><h1>Privacy and cookies</h1>
-<p class="lede">What Eleven collects, who handles it and the choices you have. Last updated 9 November 2026.</p></div></section>
+<p class="lede">What Eleven and The Chop collect, who handles it and the choices you have. Last updated 22 November 2026.</p></div></section>
 <div class="info-grid"><div class="info-body">
 <h2>Who we are</h2>
-<p>Eleven (eleventabletennis.com) is a table tennis news site run by the Eleven Team. We are the controller of the personal data described here. To ask about your data, use the <a href="/contact">contact page</a>.</p>
+<p>Eleven (eleventabletennis.com) is a table tennis news site run by the Eleven Team. It also runs The Chop (defensive.eleventabletennis.com), and this policy covers both. We are the controller of the personal data described here. To ask about your data, use the <a href="/contact">contact page</a>.</p>
 <h2>What we collect</h2>
 <p><strong>Contact form.</strong> If you write to us, we receive your name, email address, the topic and your message. We use them only to reply and to keep a record of the conversation, and we keep them for as long as that is needed. The form is delivered by Web3Forms, which passes the message to our inbox.</p>
-<p><strong>Visit data.</strong> Our host, Cloudflare, processes your IP address and basic request details to deliver the site and keep it secure. We use Cloudflare Web Analytics to count visits. It does not use cookies and does not follow you across other sites.</p>
-<p><strong>Fonts and icons.</strong> Pages load fonts from Google Fonts and flag icons from the jsDelivr network, so your browser sends its IP address to those providers when a page opens.</p>
-<h2>Advertising and cookies</h2>
-<p>Eleven shows ads served by Google AdSense. Google and its partners use cookies and similar technologies to show ads and measure them. If you are in the UK or the European Economic Area, we ask for your consent first, and ads that are personalised to you appear only if you agree. You can change your choice at any time with the privacy settings link on the site, or by clearing cookies in your browser.</p>
-<p>Without consent, Google may still show ads that are not personalised, using the page you are on rather than your history. You can manage personalised advertising in <a href="https://adssettings.google.com" rel="noopener">your Google ad settings</a> or through <a href="https://www.youronlinechoices.com" rel="noopener">Your Online Choices</a>. Google explains how it uses data from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
-<p>Eleven also uses Google Tag Manager to load analytics tags that show us which pages are read. Those tags can set cookies or read similar identifiers on your device. Outside advertising and analytics, Eleven sets no cookies of its own.</p>
+<p><strong>Visit data.</strong> Our host, Cloudflare, processes your IP address and basic request details to deliver the site and keep it secure.</p>
+<p><strong>Fonts and icons.</strong> Pages load fonts from Google Fonts and flag icons from the jsDelivr network, so your browser sends its IP address to those providers when a page opens. The Chop plays videos through YouTube's privacy-enhanced player only after you click a video.</p>
+<h2>Cookies</h2>
+<p>When you first visit, a banner asks you to accept or reject cookies. Nothing below loads until you accept. If you reject, or ignore the banner, only the essential cookie that remembers your choice is set.</p>
+<p><strong>Analytics.</strong> If you accept, Google Tag Manager loads analytics tags that show us which pages are read. Those tags can set cookies or read similar identifiers on your device.</p>
+<p><strong>Advertising.</strong> If you accept, the Google AdSense code also loads. Eleven is applying to show Google ads, and when ads appear, Google and its partners use cookies and similar technologies to show and measure them. You can manage personalised advertising in <a href="https://adssettings.google.com" rel="noopener">your Google ad settings</a> or through <a href="https://www.youronlinechoices.com" rel="noopener">Your Online Choices</a>. Google explains how it uses data from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+<p><strong>Your choice.</strong> We store it in a cookie called eleven_consent for six months, shared between Eleven and The Chop. Change it at any time with the Privacy settings link in the footer of every page. Rejecting after accepting removes the Google cookies we can reach, and you can clear the rest in your browser.</p>
 <h2>Our legal basis</h2>
-<p>We handle contact messages because it is in our legitimate interest to answer the people who write to us. We rely on your consent for advertising cookies and similar technologies, and you can withdraw it at any time. Site security and delivery are also legitimate interests.</p>
+<p>We handle contact messages because it is in our legitimate interest to answer the people who write to us. We rely on your consent for analytics and advertising cookies, and you can withdraw it at any time. Site security and delivery are also legitimate interests.</p>
 <h2>Who receives your data</h2>
-<p>Cloudflare (hosting and analytics), Web3Forms (the contact form), Google (ads and fonts) and jsDelivr (icons). Some of these providers are based outside the UK. They use recognised safeguards for those transfers. We do not sell personal data.</p>
+<p>Cloudflare (hosting), Web3Forms (the contact form), Google (analytics, ads and fonts, with analytics and ads only if you accept), YouTube (videos on The Chop) and jsDelivr (icons). Some of these providers are based outside the UK. They use recognised safeguards for those transfers. We do not sell personal data.</p>
 <h2>Your rights</h2>
 <p>Under UK data protection law you can ask to see the data we hold about you, correct it, delete it, restrict or object to its use, and receive a copy. Contact us through the <a href="/contact">contact page</a> and we will reply within a month. If you are unhappy with how we handle your data, you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk" rel="noopener">ico.org.uk</a>.</p>
 <h2>Changes</h2>

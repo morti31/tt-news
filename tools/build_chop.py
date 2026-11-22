@@ -114,15 +114,14 @@ def page(title, desc, path, body, active=""):
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Figtree:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="{BASE}/chop.css?v={VER}">
-<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','GTM-KHC9R75V');</script>
+<script src="{ELEVEN}/consent.js" defer></script>
 </head><body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHC9R75V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="ch-mast"><div class="ch-wrap ch-mast-in">
 <a class="ch-mark" href="{BASE}/" aria-label="The Chop home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" class="ch-mark-ball"/><path d="M6 27 34 13" class="ch-mark-cut"/></svg><span>The Chop</span></a>
 <nav class="ch-nav" aria-label="Sections">{nav}</nav></div></header>
 <main class="ch-wrap">{body}</main>
 <footer class="ch-foot"><div class="ch-wrap"><p><b>The Chop</b> follows the defenders of table tennis: the choppers, the blockers and the players who win from the back of the court. It writes no news of its own; every story here links to the publication that wrote it.</p>
-<p>Rankings, results and fixtures from <a href="{ELEVEN}/">Eleven</a>, which takes them from World Table Tennis and the leagues. <a href="{BASE}/glossary.html">Glossary</a> · <a href="{ELEVEN}/contact.html">Contact</a></p></div></footer>
+<p>Rankings, results and fixtures from <a href="{ELEVEN}/">Eleven</a>, which takes them from World Table Tennis and the leagues. <a href="{BASE}/glossary.html">Glossary</a> · <a href="{ELEVEN}/contact.html">Contact</a> · <a href="{ELEVEN}/privacy.html">Privacy and cookies</a> · <a href="{ELEVEN}/privacy.html" data-consent-open>Privacy settings</a></p></div></footer>
 {def_dialog()}
 <script src="{BASE}/chop.js?v={VER}" defer></script>
 </body></html>"""
