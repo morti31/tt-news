@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T13:36:00Z",
+  "updated": "2026-11-23T14:06:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1715,6 +1715,26 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3352-ttemdoublesrnd1000700",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Hwang Jinha / Ma Yeongmin v Choi Jiwook / Jang Hanjae, men's doubles, qualifying round 1",
+      "start": "2026-11-23T14:35:00Z",
+      "end": "2026-11-23T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMDOUBLES-----------RND1000700----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttemdoublesrnd1000800",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali / Irisbek Artukmetov v Yoan Velichkov / Ivan Hencl, men's doubles, qualifying round 1",
+      "start": "2026-11-23T14:35:00Z",
+      "end": "2026-11-23T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMDOUBLES-----------RND1000800----------",
+      "detail": "Table 2"
+    },
+    {
       "id": "wtt-3352-ttewdoublesrnd1000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Darya Kisel / Hannah Silcock v Kathe De Meyer / Lotte Nuyttens, women's doubles, qualifying round 1",
@@ -1743,26 +1763,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWDOUBLES-----------RND1000700----------",
       "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemdoublesrnd1000700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Hwang Jinha / Ma Yeongmin v Choi Jiwook / Jang Hanjae, men's doubles, qualifying round 1",
-      "start": "2026-11-23T14:35:00Z",
-      "end": "2026-11-23T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMDOUBLES-----------RND1000700----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemdoublesrnd1000800",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali / Irisbek Artukmetov v Yoan Velichkov / Ivan Hencl, men's doubles, qualifying round 1",
-      "start": "2026-11-23T14:35:00Z",
-      "end": "2026-11-23T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMDOUBLES-----------RND1000800----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3377-ttemteamu19fnl00010000",
