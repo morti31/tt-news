@@ -46,6 +46,7 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
    - Lead story (`"top": true`, exactly one story): choose it on every run with these rules, in order.
      0. The lead story must always show a picture: an official video thumbnail, an event poster, a licensed photo or an illustration. Give it the best one available (video first; for a story without an event, a licensed photo of the main player or an illustration, as step 1 describes). If it has none, the homepage falls back to the league poster for club stories and a topic poster for the rest (`fallbackPic` in app.js), so the lead slot is never left without an image.
      1. While an event with prestige 3 or more in `data/schedule.json` is on, the lead comes from that event: the draw before play starts, then the day's main results, then the finals.
+        The World Youth Championships (Istanbul, 21 to 28 November 2026; hub `world-youth-championships-2026`) carry prestige 3 at Tom's request, so they lead while on: under-19 events only (the age rule below still applies; the sync and live scores skip under-15 matches).
      2. Otherwise, the newest significant story leads, ranked first by the event's prestige tier, then by how recent it is.
      3. No story stays as the lead for more than about 24 hours if anything comparable has happened since.
      4. When the best men's and women's stories are of similar weight, alternate between them so neither side holds the lead slot run after run. Check which side the previous lead covered.

@@ -136,8 +136,10 @@ async function live(eventId, ctx, env, origin, all = false) {
   ]);
   let dbg = null;
   const one = await oneTable(eventId, env, origin);
-  const liveNow = (now || []).map((x) => match(x.match_card, ranks, one)).filter(Boolean);
-  const results = (done || []).map((x) => match(x.match_card, ranks, one)).filter(Boolean);
+  // Eleven's age rule: no under-15, -13 or -11 matches (World Youth Championships and other youth events)
+  const young = (m) => /U1[135](?!\d)/.test(String(m.code || ""));
+  const liveNow = (now || []).map((x) => match(x.match_card, ranks, one)).filter((m) => m && !young(m));
+  const results = (done || []).map((x) => match(x.match_card, ranks, one)).filter((m) => m && !young(m));
   // WTT's result list can lag behind: matches on the order of play that started a while ago and are in neither
   // list are read from their own match card, so every page shows the same score
   try {
@@ -159,7 +161,7 @@ async function live(eventId, ctx, env, origin, all = false) {
         return m;
       } catch (e) { return null; }
     }));
-    for (const m of found.filter(Boolean)) (m.status === "live" ? liveNow : results).push(m);
+    for (const m of found.filter((m) => m && !young(m))) (m.status === "live" ? liveNow : results).push(m);
     results.sort((a, b) => String(b.start || "").localeCompare(String(a.start || "")));
   } catch (e) { dbg = String(e && e.stack || e); }
   return { event: eventId, updated: new Date().toISOString(), live: liveNow, results, ...(dbg ? { dbg } : {}) };

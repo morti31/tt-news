@@ -6979,6 +6979,26 @@
    "auto": true,
    "schedule_id": "wtt-feeder-dusseldorf-ii-2026",
    "utc_offset": 1
+  },
+  {
+   "id": "world-youth-championships-2026",
+   "schedule_id": "world-youth-championships-2026",
+   "name": "World Youth Championships Istanbul",
+   "group": "Majors",
+   "tier": "champions",
+   "series": "World Youth Championships",
+   "city": "Istanbul",
+   "country": "Türkiye",
+   "year": "2026",
+   "start": "2026-11-21",
+   "end": "2026-11-28",
+   "venue": "Ata Sporları Merkezi",
+   "events": "Under-19 teams, singles and doubles",
+   "coords": "41.01° N  28.98° E",
+   "live": true,
+   "wtt_id": "3377",
+   "utc_offset": 3,
+   "stream_q": "World Youth Championships"
   }
  ]
 }

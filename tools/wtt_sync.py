@@ -91,7 +91,7 @@ def fixtures(ev):
     units = [u for block in get(f"{CMS}/GetEventSchedule/{wid}") for u in (block.get("Competition") or {}).get("Unit", [])]
     out, seen = [], set()
     for u in units:
-        if not u.get("StartDate") or u["Code"] in seen:
+        if not u.get("StartDate") or u["Code"] in seen or YOUNG.search(u["Code"]):   # Eleven's age rule: no under-15 or younger matches
             continue
         seen.add(u["Code"])
         start = dt.datetime.fromisoformat(u["StartDate"]) - dt.timedelta(hours=offset)
@@ -108,6 +108,9 @@ def fixtures(ev):
                     "start": start.strftime("%Y-%m-%dT%H:%M:00Z"), "end": end.strftime("%Y-%m-%dT%H:%M:00Z"),
                     "source": f"https://www.worldtabletennis.com/eventInfo?eventId={wid}", "code": u["Code"].ljust(42, "-"), **({"detail": table} if table else {})})
     return sorted(out, key=lambda f: f["start"]), offset
+
+
+YOUNG = re.compile(r"U1[135](?!\d)")   # under-15, -13 and -11 categories in WTT match codes (UPDATE.md, "Age level")
 
 
 WTT_NAME = re.compile(r"^WTT (Star Contender|Contender|Feeder|Champions|Grand Smash|Smash|Finals)\b", re.I)
