@@ -1,0 +1,710 @@
+{
+ "event": "world-youth-championships-2026",
+ "teams_total": 24,
+ "teams": [
+  {
+   "team": "Japan boys",
+   "nat": "JPN",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Yuta Ito",
+     "gender": "M"
+    },
+    {
+     "name": "Kohaku Nakano",
+     "gender": "M"
+    },
+    {
+     "name": "Hayato Iwaida",
+     "gender": "M"
+    },
+    {
+     "name": "Eiki Nakajo",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "China boys",
+   "nat": "CHN",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Wen Ruibo",
+     "gender": "M"
+    },
+    {
+     "name": "Zhou Guanhong",
+     "gender": "M"
+    },
+    {
+     "name": "Li Hechen",
+     "gender": "M"
+    },
+    {
+     "name": "Yu Haiyang",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Chinese Taipei boys",
+   "nat": "TPE",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Yang Haoren",
+     "gender": "M"
+    },
+    {
+     "name": "Lin Jinting",
+     "gender": "M"
+    },
+    {
+     "name": "Hong Zheyan",
+     "gender": "M"
+    },
+    {
+     "name": "Zheng Minxiu",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "India boys",
+   "nat": "IND",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Abhinandh Pradhivadhi",
+     "gender": "M"
+    },
+    {
+     "name": "Priyanuj Bhattacharya",
+     "gender": "M"
+    },
+    {
+     "name": "Kushal Chopra",
+     "gender": "M"
+    },
+    {
+     "name": "Balamurugan Rajasekaran",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Poland boys",
+   "nat": "POL",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Patryk Żyworonek",
+     "gender": "M"
+    },
+    {
+     "name": "Samuel Michna",
+     "gender": "M"
+    },
+    {
+     "name": "Jan Mrugala",
+     "gender": "M"
+    },
+    {
+     "name": "Marcel Błaszczyk",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "France boys",
+   "nat": "FRA",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Antoine Noirot",
+     "gender": "M"
+    },
+    {
+     "name": "Nathan Lam",
+     "gender": "M"
+    },
+    {
+     "name": "Nathan Pilard",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Italy boys",
+   "nat": "ITA",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Danilo Faso",
+     "gender": "M"
+    },
+    {
+     "name": "Francesco Trevisan",
+     "gender": "M"
+    },
+    {
+     "name": "Giulio Campagna",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Brazil boys",
+   "nat": "BRA",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Hamilton Yamane",
+     "gender": "M"
+    },
+    {
+     "name": "Caio Silva",
+     "gender": "M"
+    },
+    {
+     "name": "Felipe Okano",
+     "gender": "M"
+    },
+    {
+     "name": "Davi Fujii",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Iran boys",
+   "nat": "IRI",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Benjamin Faraji",
+     "gender": "M"
+    },
+    {
+     "name": "Mohammad Habibi",
+     "gender": "M"
+    },
+    {
+     "name": "Faraz Shakiba",
+     "gender": "M"
+    },
+    {
+     "name": "Arshia Lorestanian",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Australia boys",
+   "nat": "AUS",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Chu Long Nie",
+     "gender": "M"
+    },
+    {
+     "name": "Aditya Sareen",
+     "gender": "M"
+    },
+    {
+     "name": "Wong Bei",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "South Korea boys",
+   "nat": "KOR",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Kim Daehwan",
+     "gender": "M"
+    },
+    {
+     "name": "Kang Hyeonseong",
+     "gender": "M"
+    },
+    {
+     "name": "Oh Yujin",
+     "gender": "M"
+    },
+    {
+     "name": "Lee Hyeonho",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Türkiye boys",
+   "nat": "TUR",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "M": "Boys"
+   },
+   "players": [
+    {
+     "name": "Taha Eker",
+     "gender": "M"
+    },
+    {
+     "name": "Berk Öztoprak",
+     "gender": "M"
+    },
+    {
+     "name": "Kenan Kahraman",
+     "gender": "M"
+    },
+    {
+     "name": "Muhammet Atakur",
+     "gender": "M"
+    }
+   ]
+  },
+  {
+   "team": "Japan girls",
+   "nat": "JPN",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Aoba Takahashi",
+     "gender": "W"
+    },
+    {
+     "name": "Mao Takamori",
+     "gender": "W"
+    },
+    {
+     "name": "Yuna Oshio",
+     "gender": "W"
+    },
+    {
+     "name": "Misuzu Taketani",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "China girls",
+   "nat": "CHN",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Jiang Yiyi",
+     "gender": "W"
+    },
+    {
+     "name": "Yao Ruixuan",
+     "gender": "W"
+    },
+    {
+     "name": "Gao Yuxin",
+     "gender": "W"
+    },
+    {
+     "name": "Li Yifei",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Chinese Taipei girls",
+   "nat": "TPE",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Chen Qiyun",
+     "gender": "W"
+    },
+    {
+     "name": "Wu Jia'en",
+     "gender": "W"
+    },
+    {
+     "name": "Wu Yingxuan",
+     "gender": "W"
+    },
+    {
+     "name": "Lu Yu'en",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "France girls",
+   "nat": "FRA",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Nina Guo Zheng",
+     "gender": "W"
+    },
+    {
+     "name": "Alexia Nodin",
+     "gender": "W"
+    },
+    {
+     "name": "Léana Hochart",
+     "gender": "W"
+    },
+    {
+     "name": "Jade Yuan",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "United States girls",
+   "nat": "USA",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Sally Moyland",
+     "gender": "W"
+    },
+    {
+     "name": "Satya Aspati",
+     "gender": "W"
+    },
+    {
+     "name": "Lillian Ma",
+     "gender": "W"
+    },
+    {
+     "name": "Hildy Chen",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "India girls",
+   "nat": "IND",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Divyanshi Bhowmick",
+     "gender": "W"
+    },
+    {
+     "name": "Syndrela Das",
+     "gender": "W"
+    },
+    {
+     "name": "Ananya Muralidaran",
+     "gender": "W"
+    },
+    {
+     "name": "Hansini Mathan",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "South Korea girls",
+   "nat": "KOR",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Jeong Ye-in",
+     "gender": "W"
+    },
+    {
+     "name": "Ho Ye-rim",
+     "gender": "W"
+    },
+    {
+     "name": "Park Ye-ryeong",
+     "gender": "W"
+    },
+    {
+     "name": "Kim Min-seo",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Hong Kong girls",
+   "nat": "HKG",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Su Zi Tong",
+     "gender": "W"
+    },
+    {
+     "name": "Mak Min Sam",
+     "gender": "W"
+    },
+    {
+     "name": "Yuen Sum Lok",
+     "gender": "W"
+    },
+    {
+     "name": "Lau Yang Ching",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Romania girls",
+   "nat": "ROU",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Bianca Mei-Roșu",
+     "gender": "W"
+    },
+    {
+     "name": "Alessia Sferlea",
+     "gender": "W"
+    },
+    {
+     "name": "Patricia Stoica",
+     "gender": "W"
+    },
+    {
+     "name": "Andreea Baias",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Egypt girls",
+   "nat": "EGY",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Hana Goda",
+     "gender": "W"
+    },
+    {
+     "name": "Habiba Elbasoumy",
+     "gender": "W"
+    },
+    {
+     "name": "Yara Elbadawy",
+     "gender": "W"
+    },
+    {
+     "name": "Farida Sabet",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Australia girls",
+   "nat": "AUS",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Konstantina Psihogios",
+     "gender": "W"
+    },
+    {
+     "name": "Daisy Xie",
+     "gender": "W"
+    },
+    {
+     "name": "Zhu Lin",
+     "gender": "W"
+    }
+   ]
+  },
+  {
+   "team": "Türkiye girls",
+   "nat": "TUR",
+   "named": "2026-11-22",
+   "source": {
+    "name": "Rallys",
+    "url": "https://rallys.online/"
+   },
+   "labels": {
+    "W": "Girls"
+   },
+   "players": [
+    {
+     "name": "Asude Şimşek",
+     "gender": "W"
+    },
+    {
+     "name": "Nil Başaran",
+     "gender": "W"
+    },
+    {
+     "name": "Aybüke Şimşek",
+     "gender": "W"
+    },
+    {
+     "name": "Büşra Demir",
+     "gender": "W"
+    }
+   ]
+  }
+ ]
+}

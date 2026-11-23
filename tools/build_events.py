@@ -212,6 +212,7 @@ def squads_sec(ev, st):
     for t in sq.get("teams", []):
         cols = ""
         for g, lab in (("W", "Women"), ("M", "Men")):
+            lab = (t.get("labels") or {}).get(g, lab)
             ps = [p for p in t.get("players", []) if p.get("gender") == g]
             if ps:
                 cols += f'<div><h4>{lab}</h4><ul>{"".join(person(p, g) for p in ps)}</ul></div>'
