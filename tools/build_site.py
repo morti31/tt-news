@@ -49,7 +49,9 @@ NAV = """<header class="masthead"><div class="wrap masthead-inner">
 <nav aria-label="Sections"><ul class="sections">
 <li><a href="/">Home</a></li><li><a href="/events/">Tournaments</a></li><li><a href="/rankings.html">Players</a></li><li><a href="/clubs/">Club game</a></li>
 <li><a href="/features/">Analysis</a></li><li><a href="/guide/">Guide</a></li>
-</ul></nav></div></header>"""
+</ul></nav>
+<a class="sx-btn" href="/search.html" data-search-open aria-label="Search Eleven"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span>Search</span></a>
+</div></header>"""
 
 FOOT = """<div class="wrap ad-wrap"><div class="ad ad-leader" data-ad="bottom"></div></div>
 <footer class="footer"><div class="wrap"><p class="foot-mark">Eleven<span class="ball" aria-hidden="true"></span></p>
@@ -167,7 +169,36 @@ def nav_for(canonical):
     return NAV.replace(f'<a href="{cur}">', f'<a href="{cur}" aria-current="page">', 1)
 
 
-def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=None, og_type="website", robots=None):
+def search_kind(canonical):
+    """Which section a page goes under in site search (build_search.py), or None to leave it out:
+    index and list pages, tags, the homepage and the info pages stay out so results point at the real page."""
+    path = "/" + canonical.split("://", 1)[-1].split("/", 1)[-1] if "://" in canonical else canonical
+    rules = ((r"/news/(?!page-\d)[^/]+$", "News"), (r"/guide/[^/]+$", "Guide"), (r"/players/[^/]+$", "Players"),
+             (r"/events/[^/]+\.html$", "Tournaments"), (r"/clubs/(?!index)[^/]+$", "Club game"), (r"/rankings(\.html)?$", "Players"))
+    return next((k for pat, k in rules if re.match(pat, path)), None)
+
+
+def search_mark(body, head, kind, when=None):
+    """Mark a page's main content for the full-text index (Pagefind) and file it under a section."""
+    if '<article class="article"' in body:
+        body = body.replace('<article class="article"', '<article class="article" data-pagefind-body', 1)
+    else:
+        body = re.sub(r"<main\b", "<main data-pagefind-body", body, count=1)
+    head += f'<meta data-pagefind-filter="section[content]" content="{e(kind)}">'
+    if when:
+        try:
+            d = dt.datetime.fromisoformat(when.replace("Z", "+00:00"))
+            head += (f'<meta data-pagefind-meta="date[content]" content="{d.day} {d:%b %Y}">'
+                     f'<meta data-pagefind-sort="date[content]" content="{d:%Y-%m-%d}">')
+        except ValueError:
+            pass
+    return body, head
+
+
+def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=None, og_type="website", robots=None, search=None, search_date=None):
+    kind = search if isinstance(search, str) else (None if search is False else search_kind(canonical))
+    if kind:
+        body, extra_head = search_mark(body, extra_head, kind, search_date)
     og_img = f'<meta property="og:image" content="{e(og_image)}">' if og_image else ""
     return f"""<!doctype html>
 <html lang="en-GB">
@@ -185,6 +216,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 {FONTS}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
 <link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/search.css">
 {extra_head}
 <meta name="google-adsense-account" content="ca-pub-7633315595642330">
 <script src="/consent.js" defer></script>
@@ -200,6 +232,7 @@ def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=N
 <script src="/widgets.js"></script>
 <script src="/clublive.js" defer></script>
 <script src="/matchpop.js" defer></script>
+<script src="/search.js" defer></script>
 </body>
 </html>
 """
@@ -859,7 +892,8 @@ def article_page(a, others, brief=False):
     # SEO: a search title and description can differ from the headline and standfirst
     desc = a.get("description") or a.get("standfirst") or (a["body"][0] if a["body"] else a["title"])
     # Every story is indexed, quick updates included (Tom's decision, 14 Nov 2026)
-    return page(f"{a.get('seo_title') or a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article")
+    return page(f"{a.get('seo_title') or a['title']} | Eleven", desc[:300], url, body, head, og_image=og, og_type="article",
+                search="Analysis" if a.get("category") == "Features" else "News", search_date=a.get("published", a.get("date")))
 
 
 def main():
@@ -1030,6 +1064,8 @@ def main():
         print("The Chop: skipped,", ex)
     purls, _ = build_players.build(page, SITE, TAG_ITEMS, HUBS, build_rankings.load(), ROSTER, TG)
     urls += purls
+    import build_search   # site search: search-index.json and search.html (the full-text index is built by Pagefind after this)
+    build_search.build(page, SITE, arts, EVENTS["events"], build_clubs.LEAGUES)
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
