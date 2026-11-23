@@ -32,6 +32,7 @@ jobs:
             [ $((t % 60)) -eq 30 ] && run news-scan.yml        # headlines for the news runs
             [ $((t % 180)) -eq 0 ] && run match-sync.yml       # every match result and youth results (The Chop's form and results)
             [ $((t % 180)) -eq 90 ] && run chop-videos.yml     # The Chop's videos
+            [ $((t % 30)) -eq 10 ] && run deploy.yml           # build and deploy to Cloudflare
             [ "$t" -eq 0 ] && run league-sync.yml              # league player results
             sleep 600
           done
