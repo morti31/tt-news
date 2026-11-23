@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T18:37:00Z",
+  "updated": "2026-11-23T19:07:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2085,6 +2085,26 @@
       "detail": "Table 5"
     },
     {
+      "id": "wtt-3352-ttemsinglesgp03000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Julian Rzihauschek, men's singles, group 3",
+      "start": "2026-11-23T18:05:00Z",
+      "end": "2026-11-23T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP03000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp01000200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Hanka Kodet v Kim Hayeong, women's singles, group 1",
+      "start": "2026-11-23T18:05:00Z",
+      "end": "2026-11-23T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP01000200----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3352-ttewsinglesgp04000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Lorena Morsch v Sara Radak, women's singles, group 4",
@@ -2125,24 +2145,24 @@
       "detail": "Table 5"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp01000200",
+      "id": "wtt-3352-ttewsinglesgp08000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Hanka Kodet v Kim Hayeong, women's singles, group 1",
-      "start": "2026-11-23T18:05:00Z",
-      "end": "2026-11-23T18:40:00Z",
+      "name": "WTT Feeder Düsseldorf II: Lizaveta Tsimashkova v Ananya Donekal, women's singles, group 8",
+      "start": "2026-11-23T18:40:00Z",
+      "end": "2026-11-23T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP01000200----------",
-      "detail": "Table 3"
+      "code": "TTEWSINGLES-----------GP08000200----------",
+      "detail": "Table 4"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp03000300",
+      "id": "wtt-3352-ttewsinglesgp09000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Julian Rzihauschek, men's singles, group 3",
-      "start": "2026-11-23T18:05:00Z",
-      "end": "2026-11-23T18:40:00Z",
+      "name": "WTT Feeder Düsseldorf II: Kornelija Riliskyte v Elinor Davidov, women's singles, group 9",
+      "start": "2026-11-23T18:40:00Z",
+      "end": "2026-11-23T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP03000300----------",
-      "detail": "Table 1"
+      "code": "TTEWSINGLES-----------GP09000200----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttewsinglesgp05000200",
@@ -2173,26 +2193,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP07000200----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp08000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lizaveta Tsimashkova v Ananya Donekal, women's singles, group 8",
-      "start": "2026-11-23T18:40:00Z",
-      "end": "2026-11-23T19:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP08000200----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp09000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Kornelija Riliskyte v Elinor Davidov, women's singles, group 9",
-      "start": "2026-11-23T18:40:00Z",
-      "end": "2026-11-23T19:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP09000200----------",
-      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttewsinglesgp10000400",
