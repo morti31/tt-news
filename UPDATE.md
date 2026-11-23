@@ -76,6 +76,12 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
    - Check every live or upcoming event in the next 14 days on each run, not just new ones: if a date, venue, session time or match time has moved, update the existing entry in place (same `id`) rather than adding a new one.
 8. Update `PENDING.md` (see step 2). Set `updated` in both JSON files to the current UTC time, check the JSON parses, then commit with a message like `Update 2026-10-27 09:00` and push.
 
+## Search Console (content decisions)
+
+- Tom connected Google Search Console (property `sc-domain:eleventabletennis.com`, read-only) through a local MCP server on his computer. Its tools appear as `mcp__remote-devices__gscServer__*` (load with ToolSearch; start with `list_properties`, then `get_performance_overview`, `get_search_analytics`, `get_search_by_page_query`).
+- When those tools are available in a run, check them before choosing what to write: top queries and pages, queries with impressions but few clicks (a page or story that could answer them better), and topics readers search for that Eleven hasn't covered. Let that shape which stories, guides and features get priority and how headlines and summaries are worded. Search Console data lags one to two days, so ignore the last two days.
+- The tools only work while Tom's computer is on with the Claude desktop app open and the session linked to it. When they aren't there, carry on as normal and say in the closing message that Search Console wasn't available. Never block a run on it.
+
 ## Catching up after missed runs
 
 Runs sometimes don't happen (usage limits, outages). Every run starts by checking for gaps, so the site never looks as if it stopped:
