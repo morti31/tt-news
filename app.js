@@ -71,9 +71,13 @@
   // ---- On now: the big event of the moment, in its own soft colour, with live scores
   // An event whose finals have all been played is over, even on its last day: it leaves "On now"
   const done = (h) => !!(h && h.champions && h.champions.length);
-  const liveEvent = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && !done(hubs[e.id]))
-    .sort((a, b) => (b.prestige || 0) - (a.prestige || 0))[0];
+  const liveEvents = data.events.filter((e) => e.start <= today && e.end >= today && hubs[e.id] && !done(hubs[e.id]))
+    .sort((a, b) => (b.prestige || 0) - (a.prestige || 0));
+  const liveEvent = liveEvents[0];
   const onHub = liveEvent && hubs[liveEvent.id];
+  // A second event on at the same time (a Feeder during a bigger event) gets its own panel, always low down the page
+  const liveEvent2 = liveEvents.find((e) => hubs[e.id] !== onHub);
+  const onHub2 = liveEvent2 && hubs[liveEvent2.id];
   // Events without the top players (Feeder and Contender: schedule prestige under 2) sit just above Analysis instead of at
   // the top of the page, and rise to the top at the quarter-finals. Star Contender (most have a world top-10 player
   // entered) and everything above lead from day one.
@@ -84,6 +88,8 @@
     const el = $("onnow"), anchor = $("feat-row") && $("feat-row").closest("main");
     if (lowPanel && anchor) anchor.parentNode.insertBefore(el, anchor);
     else if (topNext) topNext.parentNode.insertBefore(el, topNext);
+    const el2 = $("onnow2");
+    if (el2 && anchor) anchor.parentNode.insertBefore(el2, anchor);   // the second event always sits low, after the main one
     document.body.classList.toggle("onnow-low", lowPanel && !$("onnow").hidden);
     window.__panelHigh = !lowPanel;
     document.dispatchEvent(new Event("onnow-placed"));   // the top strip switches between "panel carries the scores" and the usual cards
@@ -91,11 +97,19 @@
   function moveUp() { if (!lowPanel) return; lowPanel = false; placeOnNow(); }
   function renderOnNow() {
     if (!onHub) return;
-    const el = $("onnow");
+    if (onHub2) {
+      const el2 = document.createElement("section");
+      el2.id = "onnow2"; el2.className = "onnow onnow-second"; el2.setAttribute("aria-label", "Also on now");
+      $("onnow").after(el2);
+    }
+    panel(onHub, liveEvent, $("onnow"), "onnow-live", true);
+    if (onHub2) panel(onHub2, liveEvent2, $("onnow2"), "onnow2-live", false);
+  }
+  function panel(onHub, liveEvent, el, boxId, primary) {
     const s = day(onHub.start), n = Math.round((day(onHub.end) - s) / 864e5) + 1;
     const dnum = Math.round((day(today) - s) / 864e5) + 1;
     // Quarter-finals fall on the third day from the end of a six-day event, the second from the end of a shorter one
-    lowPanel = (liveEvent.prestige || 0) < MAJOR && dnum < (n <= 5 ? n - 1 : n - 2);
+    if (primary) lowPanel = (liveEvent.prestige || 0) < MAJOR && dnum < (n <= 5 ? n - 1 : n - 2);
     placeOnNow();
     const days = Array.from({ length: n }, (_, i) => {
       const d = new Date(s.getTime() + i * 864e5), iso = d.toISOString().slice(0, 10);
@@ -110,9 +124,9 @@
         <div class="days">${days}</div>
         <a class="onnow-link" href="${esc(onHub.url)}">Draw, results and schedule</a></div>
       <div class="onnow-live"><div class="onnow-stream" data-stream-q="${esc(onHub.stream_q || onHub.city)}" hidden></div>
-        <div id="onnow-live"><span class="lab">Live and latest</span><div class="lv-strip"><p class="lv-wait">Scores appear here when play starts.</p></div></div></div>
+        <div id="${boxId}" class="onnow-box"><span class="lab">Live and latest</span><div class="lv-strip"><p class="lv-wait">Scores appear here when play starts.</p></div></div></div>
     </div>`;
-    if (onHub.wtt) liveScores();
+    if (onHub.wtt) liveScores(onHub, $(boxId), primary);
     const st = el.querySelector(".onnow-stream");
     if (st && window.ElevenStream) window.ElevenStream(st);
   }
@@ -144,8 +158,7 @@
       <div class="champs">${cards}</div>
       <p class="champs-links">${report ? `<a href="${esc(url(report))}">Finals report</a>` : ""}<a href="${esc(h.url)}#draw">Results and draw</a><a href="${esc(h.url)}#watch">Highlights</a>${nextTxt}</p>`;
   }
-  async function liveScores() {
-    const box = $("onnow-live");
+  async function liveScores(onHub, box, primary) {
     const tick = async () => {
       if (document.hidden) return;
       try {
@@ -162,7 +175,7 @@
         const fx = window.ElevenFixtures ? await window.ElevenFixtures.get(onHub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
         const live = d.live || [], done = (d.results || []).slice(0, 2);
         // The first quarter-final (played or on the way) lifts a lower-profile event to the top of the page
-        if (lowPanel && (fx.knock.length || [...live, ...(d.results || [])].some((m) => /quarter|semi|final/i.test(m.label || "")))) moveUp();
+        if (primary && lowPanel && (fx.knock.length || [...live, ...(d.results || [])].some((m) => /quarter|semi|final/i.test(m.label || "")))) moveUp();
         if (!live.length && !done.length && !fx.next.length) return;
         const grp = (lab, cards, cls = "") => cards.length ? `<div class="lv-grp ${cls}"><span class="lab">${lab}</span><div class="lv-strip${cls ? "" : " one"}">${cards.join("")}</div></div>` : "";
         const F = window.ElevenFixtures;
@@ -410,6 +423,7 @@
     curCat = cat;
     const home = cat === "All";
     $("onnow").hidden = !home || !onHub;
+    if ($("onnow2")) $("onnow2").hidden = !home;
     if ($("champs")) $("champs").hidden = !home || !finished;
     // the "on now" section carries the live scores, so the scores strip steps aside on the homepage
     document.body.classList.toggle("has-onnow", home && !!onHub);

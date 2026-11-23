@@ -995,9 +995,9 @@ html.mp-open { overflow: hidden; }
 @media (prefers-color-scheme: dark) { .mp { --p0: #9fb3c8; } }
 
 /* Live score sections: live, next up beside latest results, then semi-finals and finals (fixtures.js) */
-#onnow-live .lv-grp { margin-top: 14px; }
-#onnow-live .lv-grp:first-child { margin-top: 0; }
-#onnow-live .lv-grp .lab { display: flex; align-items: center; gap: 6px; }
+.onnow-box .lv-grp { margin-top: 14px; }
+.onnow-box .lv-grp:first-child { margin-top: 0; }
+.onnow-box .lv-grp .lab { display: flex; align-items: center; gap: 6px; }
 .lv-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; margin-top: 14px; }
 .lv-cols .lv-grp { margin-top: 0 !important; }
 .lv-cols:first-child { margin-top: 0; }
@@ -1011,7 +1011,7 @@ html.mp-open { overflow: hidden; }
 .fx-card .row.tbd span:first-child { color: #9aa1ad; }
 @media (max-width: 760px) { .lv-cols, .lv-ko { grid-template-columns: 1fr; } .lv-cols .lv-grp + .lv-grp { margin-top: 14px !important; } }
 .fx-when.tbc { color: #9aa1ad; font-weight: 600; }
-#onnow-live .lv-wide .lv-strip { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.onnow-box .lv-wide .lv-strip { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 
 /* Event page: compact header (poster beside the title) */
 .hub-top.has-poster { display: grid; grid-template-columns: minmax(0, 440px) minmax(0, 1fr); gap: 0 28px; align-items: end; border-bottom: 3px solid var(--tier, #3a66e0); padding-bottom: 18px; }
@@ -1076,12 +1076,12 @@ html.mp-open { overflow: hidden; }
 
 /* Home page live panel on narrow phones: grid columns may shrink below their content, so long names
    truncate instead of widening the page (which made iOS Safari zoom out and shift) */
-.onnow-inner, .onnow-live, #onnow-live, .lv-grp, .lv-cols > *, .lv-ko > * { min-width: 0; }
+.onnow-inner, .onnow-live, .onnow-box, .lv-grp, .lv-cols > *, .lv-ko > * { min-width: 0; }
 .lv-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .lv-strip.one { grid-template-columns: minmax(0, 1fr); }
 .lv-cols, .lv-ko { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .lv-strip .score-card { min-width: 0; max-width: 100%; box-sizing: border-box; }
-#onnow-live .lv-wide .lv-strip { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+.onnow-box .lv-wide .lv-strip { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
 @media (max-width: 760px) { .lv-cols, .lv-ko { grid-template-columns: minmax(0, 1fr); } .onnow-inner { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 420px) { .lv-strip { grid-template-columns: minmax(0, 1fr); } }
 .onnow { overflow-x: clip; }

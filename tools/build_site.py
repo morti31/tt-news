@@ -436,7 +436,9 @@ def side_extras(a, ev0):
     out = []
     today = dt.date.today().isoformat()
     # Latest results: live from WTT for the event on now, otherwise the most recent event's finals
-    live = next((h for h in HUBS.values() if h.get("wtt_id") and h.get("start") and h["start"] <= today <= h["end"]), None)
+    prest = {e["id"]: e.get("prestige", 0) for e in json.load(open(os.path.join(ROOT, "data", "schedule.json"), encoding="utf-8")).get("events", [])}
+    live = max((h for h in HUBS.values() if h.get("wtt_id") and h.get("start") and h["start"] <= today <= h["end"]),
+               key=lambda h: prest.get(h.get("schedule_id"), 0), default=None)   # the most important event on now
     if live:
         out.append(f'<section class="panel" data-extra data-wtt="{e(live["wtt_id"])}"><h2 class="rule-title">Latest results</h2>'
                    f'<p class="small">{e(live["name"])}</p><ul class="lr"><li>Loading…</li></ul><a class="panel-link" href="/events/{live["id"]}.html#live">Live scores</a></section>')
