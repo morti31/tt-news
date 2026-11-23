@@ -796,8 +796,12 @@ def build(page, site, tag_items, hubs, R, roster, tg):
                                   explainers.analysis(tags=[p["slug"]], words=[p["name"]], keys=["player:" + p["name"], "page:players"], n=2))
         body = body.replace("</main>", f'{xp_}<p class="small pl-src">{src_line}</p></main>', 1) + components.SCRIPT
         thin = p.get("generated") and not ms and len(news) < 2
-        title = f'{p["name"]}: profile, results, rankings and titles | Eleven'
-        desc = f'{p["name"]} ({p.get("nat")}): world ranking, recent results, season-by-season record, titles, head to heads and news.'
+        # Search wording: people search "<name> ranking", "<name> age" and "<name> table tennis" (Search Console, Nov 2026)
+        title = (f'{p["name"]}: world ranking No. {rk["rank"]}, results and profile | Eleven' if rk
+                 else f'{p["name"]}: world ranking, results and profile | Eleven')
+        who = f'{p["name"]} ({p.get("nat")}{f", age {a_}" if a_ else ""})'
+        desc = (f'{who} is world No. {rk["rank"]} in table tennis' if rk else f'{who}: table tennis world ranking')
+        desc += ', with recent results, season-by-season record, titles, head to heads and news.'
         person = {"@context": "https://schema.org", "@type": "ProfilePage", "url": f"{site}/players/{p['slug']}.html",
                   "mainEntity": {k: v for k, v in {"@type": "Person", "name": p["name"], "birthDate": born or None,
                                                    "nationality": p.get("nat") or None, "jobTitle": "Table tennis player",
