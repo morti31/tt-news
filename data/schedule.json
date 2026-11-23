@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T11:05:00Z",
+  "updated": "2026-11-23T11:35:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1174,14 +1174,24 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp13000100",
+      "id": "wtt-3352-ttemsinglesgp14000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Thiago Monteiro v Gavin Yuan, men's singles, group 13",
+      "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali v Abdulla Mamay, men's singles, group 14",
       "start": "2026-11-23T10:30:00Z",
       "end": "2026-11-23T11:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP13000100----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP14000200----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp03000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Ma Yeongjun, men's singles, group 3",
+      "start": "2026-11-23T10:30:00Z",
+      "end": "2026-11-23T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP03000100----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttemsinglesgp13000200",
@@ -1204,26 +1214,6 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp14000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali v Abdulla Mamay, men's singles, group 14",
-      "start": "2026-11-23T10:30:00Z",
-      "end": "2026-11-23T11:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP14000200----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp03000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Ma Yeongjun, men's singles, group 3",
-      "start": "2026-11-23T10:30:00Z",
-      "end": "2026-11-23T11:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP03000100----------",
-      "detail": "Table 5"
-    },
-    {
       "id": "wtt-3352-ttemsinglesgp03000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Milo De Boer v Julian Rzihauschek, men's singles, group 3",
@@ -1231,6 +1221,36 @@
       "end": "2026-11-23T11:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP03000200----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp13000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Thiago Monteiro v Gavin Yuan, men's singles, group 13",
+      "start": "2026-11-23T10:30:00Z",
+      "end": "2026-11-23T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP13000100----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp11000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Choi Nahyun v Darya Kisel, women's singles, group 11",
+      "start": "2026-11-23T11:00:00Z",
+      "end": "2026-11-23T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP11000100----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp11000200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Eugenia Sastre v Yuan Ito, women's singles, group 11",
+      "start": "2026-11-23T11:00:00Z",
+      "end": "2026-11-23T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP11000200----------",
       "detail": "Table 6"
     },
     {
@@ -1272,26 +1292,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP15000100----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp11000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Choi Nahyun v Darya Kisel, women's singles, group 11",
-      "start": "2026-11-23T11:00:00Z",
-      "end": "2026-11-23T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP11000100----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp11000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Eugenia Sastre v Yuan Ito, women's singles, group 11",
-      "start": "2026-11-23T11:00:00Z",
-      "end": "2026-11-23T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP11000200----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttewsinglesgp03000100",
