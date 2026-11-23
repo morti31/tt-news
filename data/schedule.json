@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T20:07:00Z",
+  "updated": "2026-11-23T20:37:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2155,6 +2155,16 @@
       "detail": "Table 5"
     },
     {
+      "id": "wtt-3352-ttewsinglesgp11000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Eugenia Sastre v Darya Kisel, women's singles, group 11",
+      "start": "2026-11-23T19:15:00Z",
+      "end": "2026-11-23T19:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP11000400----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3352-ttewsinglesgp11000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Choi Nahyun v Yuan Ito, women's singles, group 11",
@@ -2183,16 +2193,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP10000400----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp11000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Eugenia Sastre v Darya Kisel, women's singles, group 11",
-      "start": "2026-11-23T19:15:00Z",
-      "end": "2026-11-23T19:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP11000400----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3377-ttemdoublesu198fnl000200",
