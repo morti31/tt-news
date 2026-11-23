@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-22T20:03:38Z",
+ "updated": "2026-11-23T21:07:45Z",
  "source": {
   "name": "TTBL",
   "url": "https://www.ttbl.de/bundesliga/teams"
@@ -32,32 +32,6 @@
     }
    ],
    "coach": "Danny Heister"
-  },
-  {
-   "team": "TTF Ochsenhausen",
-   "players": [
-    {
-     "name": "Shunsuke Togami",
-     "nat": "JPN"
-    },
-    {
-     "name": "Iulian Chirita",
-     "nat": "ROU"
-    },
-    {
-     "name": "Darius Movileanu",
-     "nat": "ROU"
-    },
-    {
-     "name": "Tiago Abiodun",
-     "nat": "POR"
-    },
-    {
-     "name": "Daniel Berzosa",
-     "nat": "ESP"
-    }
-   ],
-   "coach": "Bogdan Pugna"
   },
   {
    "team": "1. FC Saarbrücken",
@@ -122,6 +96,66 @@
     }
    ],
    "coach": "Cristian Tamas"
+  },
+  {
+   "team": "TTF Ochsenhausen",
+   "players": [
+    {
+     "name": "Shunsuke Togami",
+     "nat": "JPN"
+    },
+    {
+     "name": "Iulian Chirita",
+     "nat": "ROU"
+    },
+    {
+     "name": "Darius Movileanu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Tiago Abiodun",
+     "nat": "POR"
+    },
+    {
+     "name": "Daniel Berzosa",
+     "nat": "ESP"
+    }
+   ],
+   "coach": "Bogdan Pugna"
+  },
+  {
+   "team": "Post SV Mühlhausen",
+   "players": [
+    {
+     "name": "Steffen Mengel",
+     "nat": "GER"
+    },
+    {
+     "name": "Marcos Freitas",
+     "nat": "POR"
+    },
+    {
+     "name": "Ovidiu Ionescu",
+     "nat": "ROU"
+    },
+    {
+     "name": "Kay Stumper",
+     "nat": "GER"
+    },
+    {
+     "name": "Yeh Yi-En",
+     "nat": "TPE"
+    },
+    {
+     "name": "Nico Müller",
+     "nat": "GER"
+    },
+    {
+     "name": "Ivo Quett",
+     "nat": "GER"
+    }
+   ],
+   "coach": "Erik Schreyer"
   },
   {
    "team": "TTC Bad Homburg",
@@ -194,40 +228,6 @@
     }
    ],
    "coach": "Evgeny Fadeev"
-  },
-  {
-   "team": "Post SV Mühlhausen",
-   "players": [
-    {
-     "name": "Steffen Mengel",
-     "nat": "GER"
-    },
-    {
-     "name": "Marcos Freitas",
-     "nat": "POR"
-    },
-    {
-     "name": "Ovidiu Ionescu",
-     "nat": "ROU"
-    },
-    {
-     "name": "Kay Stumper",
-     "nat": "GER"
-    },
-    {
-     "name": "Yeh Yi-En",
-     "nat": "TPE"
-    },
-    {
-     "name": "Nico Müller",
-     "nat": "GER"
-    },
-    {
-     "name": "Ivo Quett",
-     "nat": "GER"
-    }
-   ],
-   "coach": "Erik Schreyer"
   },
   {
    "team": "TTC Fulda-Maberzell",

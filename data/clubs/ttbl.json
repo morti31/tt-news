@@ -1,7 +1,7 @@
 {
  "id": "ttbl",
  "auto": true,
- "updated": "2026-11-22T20:03:00Z",
+ "updated": "2026-11-23T21:07:00Z",
  "season": "2026-27",
  "source": {
   "name": "TTBL",
@@ -32,17 +32,6 @@
      },
      {
       "pos": 2,
-      "team": "TTF Ochsenhausen",
-      "p": 8,
-      "w": 6,
-      "l": 2,
-      "for": 19,
-      "against": 12,
-      "diff": 7,
-      "pts": 12
-     },
-     {
-      "pos": 3,
       "team": "1. FC Saarbrücken",
       "p": 9,
       "w": 6,
@@ -53,18 +42,40 @@
       "pts": 12
      },
      {
-      "pos": 4,
+      "pos": 3,
       "team": "Werder Bremen",
-      "p": 8,
-      "w": 5,
+      "p": 9,
+      "w": 6,
       "l": 3,
-      "for": 18,
+      "for": 21,
       "against": 16,
-      "diff": 2,
-      "pts": 10
+      "diff": 5,
+      "pts": 12
+     },
+     {
+      "pos": 4,
+      "team": "TTF Ochsenhausen",
+      "p": 9,
+      "w": 6,
+      "l": 3,
+      "for": 19,
+      "against": 15,
+      "diff": 4,
+      "pts": 12
      },
      {
       "pos": 5,
+      "team": "Post SV Mühlhausen",
+      "p": 9,
+      "w": 5,
+      "l": 4,
+      "for": 19,
+      "against": 19,
+      "diff": 0,
+      "pts": 10
+     },
+     {
+      "pos": 6,
       "team": "TTC Bad Homburg",
       "p": 9,
       "w": 5,
@@ -75,24 +86,13 @@
       "pts": 10
      },
      {
-      "pos": 6,
-      "team": "Borussia Dortmund",
-      "p": 8,
-      "w": 4,
-      "l": 4,
-      "for": 15,
-      "against": 15,
-      "diff": 0,
-      "pts": 8
-     },
-     {
       "pos": 7,
-      "team": "Post SV Mühlhausen",
-      "p": 8,
+      "team": "Borussia Dortmund",
+      "p": 9,
       "w": 4,
-      "l": 4,
-      "for": 16,
-      "against": 17,
+      "l": 5,
+      "for": 17,
+      "against": 18,
       "diff": -1,
       "pts": 8
      },
@@ -785,8 +785,11 @@
    "when": "2026-11-23T17:30:00Z",
    "home": "Post SV Mühlhausen",
    "away": "Borussia Dortmund",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
    "round": "Matchday 9",
    "venue": "Mühlhausen"
   },
@@ -794,8 +797,11 @@
    "when": "2026-11-23T18:00:00Z",
    "home": "TTF Ochsenhausen",
    "away": "Werder Bremen",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
    "round": "Matchday 9",
    "venue": "Ochsenhausen"
   },
