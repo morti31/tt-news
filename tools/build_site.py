@@ -196,7 +196,7 @@ def search_mark(body, head, kind, when=None):
 
 
 def page(title, desc, canonical, body, extra_head="", news_cur=False, og_image=None, og_type="website", robots=None, search=None, search_date=None):
-    kind = search if isinstance(search, str) else (None if search is False else search_kind(canonical))
+    kind = search if isinstance(search, str) else (None if search is False or (robots and "noindex" in robots) else search_kind(canonical))
     if kind:
         body, extra_head = search_mark(body, extra_head, kind, search_date)
     og_img = f'<meta property="og:image" content="{e(og_image)}">' if og_image else ""

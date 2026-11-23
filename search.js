@@ -209,6 +209,7 @@
     try {
       pf = await import("/pagefind/pagefind.js");
       await pf.options({ excerptLength: 26 });
+      await pf.filters();   // loads the filter data, so results carry per-section counts
       all = await pf.search(q);
     } catch (err) {
       count.textContent = "Search isn't available right now. Please try again in a moment.";
