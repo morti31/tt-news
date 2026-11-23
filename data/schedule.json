@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T17:06:00Z",
+  "updated": "2026-11-23T17:37:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1765,16 +1765,6 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3377-ttewteamu19fnl00010000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Chinese Table Tennis Association 13 v Japan Table Tennis Association 18, u19 girls' teams, final",
-      "start": "2026-11-23T15:00:00Z",
-      "end": "2026-11-23T17:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWTEAM-----------U19FNL-00010000--------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3377-ttemteamu19fnl00010000",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Chinese Taipei Table Tennis Association 7 v Chinese Table Tennis Association 6, u19 boys' teams, final",
@@ -1783,6 +1773,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEMTEAM-----------U19FNL-00010000--------",
       "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3377-ttewteamu19fnl00010000",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Chinese Table Tennis Association 13 v Japan Table Tennis Association 18, u19 girls' teams, final",
+      "start": "2026-11-23T15:00:00Z",
+      "end": "2026-11-23T17:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWTEAM-----------U19FNL-00010000--------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3352-ttemsinglesgp01000300",
@@ -1965,14 +1965,14 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp10000300",
+      "id": "wtt-3352-ttemsinglesgp14000400",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara v Noa Dahlstrom, men's singles, group 10",
+      "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali v Christopher Kraemer, men's singles, group 14",
       "start": "2026-11-23T16:55:00Z",
       "end": "2026-11-23T17:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP10000300----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP14000400----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesgp10000400",
@@ -1983,26 +1983,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP10000400----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp14000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Miguel Pantoja v Abdulla Mamay, men's singles, group 14",
-      "start": "2026-11-23T16:55:00Z",
-      "end": "2026-11-23T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP14000300----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp14000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali v Christopher Kraemer, men's singles, group 14",
-      "start": "2026-11-23T16:55:00Z",
-      "end": "2026-11-23T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP14000400----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesgp12000300",
@@ -2023,6 +2003,26 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP12000400----------",
       "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp10000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara v Noa Dahlstrom, men's singles, group 10",
+      "start": "2026-11-23T16:55:00Z",
+      "end": "2026-11-23T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP10000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp14000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Miguel Pantoja v Abdulla Mamay, men's singles, group 14",
+      "start": "2026-11-23T16:55:00Z",
+      "end": "2026-11-23T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP14000300----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttemsinglesgp04000300",
