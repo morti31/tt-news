@@ -231,9 +231,11 @@ def build():
                     pl = m.get("players") or []
                     eid = WTT2EV.get(os.path.basename(f)[:-5])
                     for i, x in enumerate(pl):
+                        if not x:
+                            continue   # an empty slot (a bye or a player still to be decided)
                         n = pk.get(key(x.get("name")))
                         if n and len(pl) == 2:
-                            o = pl[1 - i]
+                            o = pl[1 - i] or {}
                             nxt[n].append({"when": w, "what": f'{title or "Tournament"}, {ev.get("name", "")}, {rd.get("round", "")}',
                                            "v": o.get("name", "TBC"), "nat": o.get("nat", ""), "eid": eid})
     for sq in glob.glob(os.path.join(ROOT, "data", "clubs", "squads", "*.json")):
