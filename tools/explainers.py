@@ -6,6 +6,7 @@ in data/guides/<slug>.json; those are added after the rules below.
 One guide shows as a wide banner; two or three as a row of cards (a sideways scroll on phones).
 """
 import html
+import re
 import build_guides
 
 e = html.escape
@@ -225,10 +226,13 @@ def for_story(a, ev=None):
     if ev:
         return for_event(ev)[:2]
     cat, lg = a.get("category"), a.get("league")
+    text = " ".join(str(a.get(k) or "") for k in ("title", "headline", "summary", "standfirst"))
+    if not lg and re.search(r"\bBritish (Clubs )?League\b", text):
+        lg = "british-league"   # British league stories get the guide to how British club table tennis works
     if cat == "Clubs" or lg:
-        return pick(["league:champions-league"] if lg == "champions-league" else ["league", "league:" + (lg or "")], n=2)
+        return pick(["league:champions-league"] if lg == "champions-league" else ["league:" + (lg or ""), "league"], n=2)
     if cat == "Equipment":
         return pick(["kit"], ["table-tennis-blades-explained", "table-tennis-rubbers-explained"], n=2)
     if cat == "England":
-        return pick(["england"], ["table-tennis-england-explained", "find-a-table-tennis-club-england"], n=2)
+        return pick(["england"], ["table-tennis-england-explained", "club-table-tennis-structure-britain", "find-a-table-tennis-club-england"], n=2)
     return pick(["news"], ["how-table-tennis-world-rankings-work", "table-tennis-scoring-explained"], n=2)

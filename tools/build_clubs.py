@@ -243,7 +243,7 @@ def league_page(lg, stories, now):
 <header class="hub-head cl-head"><div><span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span>
 <h1>{e(lg["name"])} {e(season)}</h1><p class="cl-status">{e(status_of(lg))}</p></div></header>
 <nav class="hub-jump" aria-label="On this page">{jump}</nav>
-{explainers.combined(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league", "league:" + lg["slug"]], n=2), explainers.analysis(tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []), keys=["league:" + lg["slug"]], n=1), "top")}
+{explainers.combined(explainers.pick(["league:champions-league"], n=1) if lg["slug"] == "champions-league" else explainers.pick(["league:" + lg["slug"], "league"], n=2), explainers.analysis(tags=[lg["slug"]], words=[lg["name"]] + lg.get("aliases", []), keys=["league:" + lg["slug"]], n=1), "top")}
 <div class="cl-hub-top"><section class="hub-sec" id="results"><h2 class="section-title">Results</h2>{grouped(res, mixed) or '<p class="cl-none">No results yet this season.</p>'}{more}</section>
 <section class="hub-sec" id="fixtures"><h2 class="section-title">Fixtures</h2>{grouped(fix, mixed) or '<p class="cl-none">No fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span> Times can change, so check with the clubs before travelling.</p></section></div>
