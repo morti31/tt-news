@@ -110,7 +110,7 @@ def fixtures(ev):
     return sorted(out, key=lambda f: f["start"]), offset
 
 
-YOUNG = re.compile(r"U1[135](?!\d)")   # under-15, -13 and -11 categories in WTT match codes (UPDATE.md, "Age level")
+YOUNG = re.compile(r"-U1[135]")   # under-15, -13 and -11 categories in WTT match codes (UPDATE.md, "Age level")
 
 
 WTT_NAME = re.compile(r"^WTT (Star Contender|Contender|Feeder|Champions|Grand Smash|Smash|Finals)\b", re.I)

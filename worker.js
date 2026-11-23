@@ -137,7 +137,7 @@ async function live(eventId, ctx, env, origin, all = false) {
   let dbg = null;
   const one = await oneTable(eventId, env, origin);
   // Eleven's age rule: no under-15, -13 or -11 matches (World Youth Championships and other youth events)
-  const young = (m) => /U1[135](?!\d)/.test(String(m.code || ""));
+  const young = (m) => /-U1[135]/.test(String(m.code || ""));
   const liveNow = (now || []).map((x) => match(x.match_card, ranks, one)).filter((m) => m && !young(m));
   const results = (done || []).map((x) => match(x.match_card, ranks, one)).filter((m) => m && !young(m));
   // WTT's result list can lag behind: matches on the order of play that started a while ago and are in neither
