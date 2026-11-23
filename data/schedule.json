@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T19:37:00Z",
+  "updated": "2026-11-23T20:07:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -882,46 +882,6 @@
       "end": "2026-11-21T14:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------FNL-000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttemteamu19sfnl00010000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Chinese Table Tennis Association 6 v Japan Table Tennis Association 1, u19 boys' teams, semifinal",
-      "start": "2026-11-22T15:30:00Z",
-      "end": "2026-11-22T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMTEAM-----------U19SFNL00010000--------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewteamu19sfnl00010000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Chinese Table Tennis Association 13 v Fédération Française de Tennis de Table 14, u19 girls' teams, semifinal",
-      "start": "2026-11-22T15:30:00Z",
-      "end": "2026-11-22T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWTEAM-----------U19SFNL00010000--------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttemteamu19sfnl00020000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Chinese Taipei Table Tennis Association 7 v Table Tennis Federation of India 9, u19 boys' teams, semifinal",
-      "start": "2026-11-22T15:30:00Z",
-      "end": "2026-11-22T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMTEAM-----------U19SFNL00020000--------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3377-ttewteamu19sfnl00020000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Japan Table Tennis Association 18 v Table Tennis 15 Usa, u19 girls' teams, semifinal",
-      "start": "2026-11-22T15:30:00Z",
-      "end": "2026-11-22T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWTEAM-----------U19SFNL00020000--------",
       "detail": "Table 1"
     },
     {
@@ -2195,16 +2155,6 @@
       "detail": "Table 5"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp10000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Sampada Bhiwandkar v Chengyuan Wang, women's singles, group 10",
-      "start": "2026-11-23T19:15:00Z",
-      "end": "2026-11-23T19:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP10000400----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3352-ttewsinglesgp11000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Choi Nahyun v Yuan Ito, women's singles, group 11",
@@ -2215,16 +2165,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp11000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Eugenia Sastre v Darya Kisel, women's singles, group 11",
-      "start": "2026-11-23T19:15:00Z",
-      "end": "2026-11-23T19:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP11000400----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3352-ttewsinglesgp10000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Agathe Avezou v Maria Girlea, women's singles, group 10",
@@ -2233,6 +2173,26 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP10000300----------",
       "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp10000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Sampada Bhiwandkar v Chengyuan Wang, women's singles, group 10",
+      "start": "2026-11-23T19:15:00Z",
+      "end": "2026-11-23T19:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP10000400----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp11000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Eugenia Sastre v Darya Kisel, women's singles, group 11",
+      "start": "2026-11-23T19:15:00Z",
+      "end": "2026-11-23T19:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP11000400----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3377-ttemdoublesu198fnl000200",
