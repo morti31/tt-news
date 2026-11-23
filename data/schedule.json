@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T16:37:00Z",
+  "updated": "2026-11-23T17:06:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1765,16 +1765,6 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3377-ttemteamu19fnl00010000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Chinese Taipei Table Tennis Association 7 v Chinese Table Tennis Association 6, u19 boys' teams, final",
-      "start": "2026-11-23T15:00:00Z",
-      "end": "2026-11-23T17:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMTEAM-----------U19FNL-00010000--------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3377-ttewteamu19fnl00010000",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Chinese Table Tennis Association 13 v Japan Table Tennis Association 18, u19 girls' teams, final",
@@ -1783,6 +1773,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWTEAM-----------U19FNL-00010000--------",
       "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttemteamu19fnl00010000",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Chinese Taipei Table Tennis Association 7 v Chinese Table Tennis Association 6, u19 boys' teams, final",
+      "start": "2026-11-23T15:00:00Z",
+      "end": "2026-11-23T17:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMTEAM-----------U19FNL-00010000--------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttemsinglesgp01000300",
@@ -1925,14 +1925,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp05000300",
+      "id": "wtt-3352-ttemsinglesgp13000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Martin Buch v Edouard Valenet, men's singles, group 5",
+      "name": "WTT Feeder Düsseldorf II: Thiago Monteiro v Temirlan Jiyenbayev, men's singles, group 13",
       "start": "2026-11-23T16:20:00Z",
       "end": "2026-11-23T16:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP05000300----------",
-      "detail": "Table 3"
+      "code": "TTEMSINGLES-----------GP13000300----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttemsinglesgp05000400",
@@ -1945,14 +1945,14 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp13000300",
+      "id": "wtt-3352-ttemsinglesgp05000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Thiago Monteiro v Temirlan Jiyenbayev, men's singles, group 13",
+      "name": "WTT Feeder Düsseldorf II: Martin Buch v Edouard Valenet, men's singles, group 5",
       "start": "2026-11-23T16:20:00Z",
       "end": "2026-11-23T16:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP13000300----------",
-      "detail": "Table 5"
+      "code": "TTEMSINGLES-----------GP05000300----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttemsinglesgp07000400",
