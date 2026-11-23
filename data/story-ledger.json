@@ -12484,8 +12484,7 @@
      "name": "Tischtennis Bundesliga: Bad Königshofen v Bad Homburg, match page (German)",
      "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f67856a4-876c-4481-8eb9-854142d1eeb2"
     }
-   ],
-   "top": true
+   ]
   },
   "dttbl-women-2026-27-weinheim-dachau-draw-weil-lee-debut": {
    "id": "dttbl-women-2026-27-weinheim-dachau-draw-weil-lee-debut",
@@ -12711,7 +12710,8 @@
      "url": "https://sports.ltn.com.tw/news/breakingnews/5649820"
     }
    ],
-   "modified": "2026-11-23T04:15:00Z"
+   "modified": "2026-11-23T04:15:00Z",
+   "event": "world-youth-championships-2026"
   },
   "fang-bo-china-young-players-fewer-role-models-interview": {
    "id": "fang-bo-china-young-players-fewer-role-models-interview",
@@ -12952,7 +12952,8 @@
      "url": "https://sports.ettoday.net/news/3276750"
     }
    ],
-   "lang": "Chinese"
+   "lang": "Chinese",
+   "event": "world-youth-championships-2026"
   },
   "pro-a-men-2026-27-matchday-7-lebrun-brothers-rouen-kindarena-attendance-record": {
    "id": "pro-a-men-2026-27-matchday-7-lebrun-brothers-rouen-kindarena-attendance-record",
@@ -12983,7 +12984,169 @@
      "url": "https://www.fftt.com/"
     }
    ],
-   "lang": "French"
+   "lang": "French",
+   "league_table": {
+    "comp": "proa-men",
+    "label": "Pro A men's table",
+    "as_of": "After matchday 6, 22 November 2026",
+    "page": "/clubs/pro-a.html",
+    "table": {
+     "columns": [
+      "p",
+      "w",
+      "l",
+      "pts"
+     ],
+     "groups": [
+      {
+       "name": null,
+       "rows": [
+        {
+         "pos": 1,
+         "team": "SPO Rouen",
+         "p": 6,
+         "w": 5,
+         "l": 1,
+         "pts": 21
+        },
+        {
+         "pos": 2,
+         "team": "GV Hennebont",
+         "p": 6,
+         "w": 4,
+         "l": 2,
+         "pts": 20
+        },
+        {
+         "pos": 2,
+         "team": "Loire Nord TT (Roanne)",
+         "p": 6,
+         "w": 5,
+         "l": 1,
+         "pts": 20
+        },
+        {
+         "pos": 4,
+         "team": "Bruille",
+         "p": 6,
+         "w": 4,
+         "l": 2,
+         "pts": 19
+        },
+        {
+         "pos": 5,
+         "team": "TFTT Thorigné-Fouillard",
+         "p": 6,
+         "w": 3,
+         "l": 3,
+         "pts": 15
+        },
+        {
+         "pos": 6,
+         "team": "Alliance Nîmes/Montpellier",
+         "p": 6,
+         "w": 2,
+         "l": 4,
+         "pts": 14
+        },
+        {
+         "pos": 7,
+         "team": "Loups d'Angers",
+         "p": 6,
+         "w": 3,
+         "l": 3,
+         "pts": 12
+        },
+        {
+         "pos": 7,
+         "team": "TT Saint-Denis",
+         "p": 6,
+         "w": 3,
+         "l": 3,
+         "pts": 12
+        },
+        {
+         "pos": 9,
+         "team": "La Romagne",
+         "p": 6,
+         "w": 1,
+         "l": 5,
+         "pts": 8
+        },
+        {
+         "pos": 10,
+         "team": "Chartres",
+         "p": 6,
+         "w": 0,
+         "l": 6,
+         "pts": 5
+        }
+       ]
+      }
+     ],
+     "note": "Pro A awards points for each team match according to the score, so teams with the same record can have different totals."
+    },
+    "round": {
+     "name": "Matchday 7",
+     "matches": [
+      {
+       "when": "2026-11-24T18:00:00Z",
+       "home": "Chartres",
+       "away": "Loire Nord TT (Roanne)",
+       "status": "scheduled",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:00:00Z",
+       "home": "TT Saint-Denis",
+       "away": "Loups d'Angers",
+       "status": "scheduled",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:30:00Z",
+       "home": "SPO Rouen",
+       "away": "Alliance Nîmes/Montpellier",
+       "status": "scheduled",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:30:00Z",
+       "home": "GV Hennebont",
+       "away": "Bruille",
+       "status": "scheduled",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:30:00Z",
+       "home": "La Romagne",
+       "away": "TFTT Thorigné-Fouillard",
+       "status": "scheduled",
+       "round": "Matchday 7"
+      }
+     ]
+    }
+   }
+  },
+  "wtt-finals-hong-kong-2026-fields-confirmed": {
+   "id": "wtt-finals-hong-kong-2026-fields-confirmed",
+   "category": "International",
+   "date": "2026-11-23",
+   "published": "2026-11-23T11:48:00Z",
+   "event": "wtt-finals-hong-kong-2026",
+   "headline": "WTT Finals Hong Kong: Togami, Jorgic, Dang Qiu and Lin Shidong complete the men's field",
+   "summary": "WTT has confirmed all 32 singles players for the WTT Finals Hong Kong, 9 to 13 December, with Sora Matsushima top of the men's race, defending champions Tomokazu Harimoto and Wang Manyu in the field, and Joo Cheonhui and Sabine Winter taking the last women's places.",
+   "top": true,
+   "sources": [
+    {
+     "name": "WTT: The Stage Is Set, WTT Finals Hong Kong 2026 roster locked in",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3255"
+    },
+    {
+     "name": "WTT: WTT Series Finals Race, men's singles (updated 23 November 2026)",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ]
   }
  }
 }
