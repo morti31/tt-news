@@ -1,0 +1,2010 @@
+{
+ "event": "World Youth Championships Istanbul",
+ "wtt_event_id": "3377",
+ "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
+ "updated": "2026-11-23T12:00:00Z",
+ "events": {
+  "mteam": {
+   "name": "U19 Boys' Teams",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Iran",
+         "nat": "IRI"
+        },
+        {
+         "name": "Italy",
+         "nat": "ITA",
+         "seed": 7
+        }
+       ],
+       "when": "2026-11-21T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Australia",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2026-11-21T11:30:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "India",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Turkey",
+         "nat": "TUR"
+        },
+        {
+         "name": "Poland",
+         "nat": "POL",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-21T09:45:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Brazil",
+         "nat": "BRA",
+         "seed": 8
+        },
+        {
+         "name": "South Korea",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-11-21T09:45:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Iran",
+         "nat": "IRI"
+        }
+       ],
+       "when": "2026-11-22T06:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 6
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-11-22T06:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "India",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Turkey",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-11-22T08:00:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Brazil",
+         "nat": "BRA",
+         "seed": 8
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-22T08:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 3
+        }
+       ],
+       "when": "2026-11-22T15:30:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "India",
+         "nat": "IND",
+         "seed": 4
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-22T15:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-23T15:00:00Z"
+      }
+     ]
+    }
+   ]
+  },
+  "wteam": {
+   "name": "U19 Girls' Teams",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Romania",
+         "nat": "ROU"
+        },
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-11-21T09:45:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "India",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "Egypt",
+         "nat": "EGY"
+        }
+       ],
+       "when": "2026-11-21T11:30:00Z",
+       "score": "3-2",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Australia",
+         "nat": "AUS"
+        },
+        {
+         "name": "United States",
+         "nat": "USA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-21T09:45:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Turkey",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-11-21T11:30:00Z",
+       "score": "3-0",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "South Korea",
+         "nat": "KOR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-11-22T06:00:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "India",
+         "nat": "IND",
+         "seed": 6
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-22T06:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Chinese Taipei",
+         "nat": "TPE",
+         "seed": 3
+        },
+        {
+         "name": "United States",
+         "nat": "USA",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-22T08:00:00Z",
+       "score": "1-3",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hong Kong",
+         "nat": "HKG",
+         "seed": 8
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-22T08:00:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "France",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-22T15:30:00Z",
+       "score": "3-1",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "United States",
+         "nat": "USA",
+         "seed": 5
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-22T15:30:00Z",
+       "score": "0-3",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "China",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Japan",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-23T15:00:00Z"
+      }
+     ]
+    }
+   ]
+  },
+  "mixed": {
+   "name": "U19 Mixed Doubles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abhinandh Pradhivadhi / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila / Tracey Hsia",
+         "nat": "DOM/NZL"
+        },
+        {
+         "name": "Lin Chin-Ting / Wu Jia-En",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-11-23T08:00:00Z",
+       "score": "0-3 (10:12,14:16,12:14,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daehwan / Jeong Yein",
+         "nat": "KOR"
+        },
+        {
+         "name": "Francesco Trevisan / Eseniia Shirokova",
+         "nat": "ITA/RUS"
+        }
+       ],
+       "when": "2026-11-23T07:30:00Z",
+       "score": "0-3 (9:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Kohaku Nakano / Aoba Takahashi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Nathan Pilard / Alexia Nodin",
+         "nat": "FRA",
+         "seed": 8
+        }
+       ],
+       "when": "2026-11-23T07:30:00Z",
+       "score": "3-1 (10:12,11:6,11:5,11:2,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Steven Moreno / Sally Moyland",
+         "nat": "PUR/USA",
+         "seed": 7
+        },
+        {
+         "name": "Samuel Michna / Natalia Bogdanowicz",
+         "nat": "POL"
+        }
+       ],
+       "when": "2026-11-23T08:00:00Z",
+       "score": "3-1 (11:8,8:11,11:8,11:9,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Patryk Zyworonek / Koharu Itagaki",
+         "nat": "POL/GER"
+        },
+        {
+         "name": "Enrique Rios / Karolina Holda",
+         "nat": "PUR/POL"
+        }
+       ],
+       "when": "2026-11-23T08:00:00Z",
+       "score": "3-0 (12:10,11:9,11:6,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Jiang Yiyi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Berk Oztoprak / Busra Demir",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-11-23T08:00:00Z",
+       "score": "3-0 (11:1,11:3,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Robert Istrate / Bianca Mei-Rosu",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Arpas / Maria Berzosa",
+         "nat": "SVK/ESP",
+         "seed": 3
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Shunto Iwaida / Mao Takamori",
+         "nat": "JPN"
+        },
+        {
+         "name": "Ivan Kahn / Julia Leal",
+         "nat": "NED/POR"
+        }
+       ],
+       "when": "2026-11-23T09:00:00Z",
+       "score": "3-0 (11:9,11:6,14:12,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Noirault / Leana Hochart",
+         "nat": "FRA"
+        },
+        {
+         "name": "Kenan Kahraman / Aybuke Simsek",
+         "nat": "TUR"
+        }
+       ],
+       "when": "2026-11-23T08:30:00Z",
+       "score": "3-0 (11:9,11:8,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Yassin Gaber / Tania Morice",
+         "nat": "EGY/ALG"
+        },
+        {
+         "name": "Li Ki Ho / Su Tsz Tung",
+         "nat": "HKG",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-23T08:30:00Z",
+       "score": "0-3 (8:11,7:11,7:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Hung Che-Yen / Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 6
+        },
+        {
+         "name": "Lee Hyeonho / Heo Yerim",
+         "nat": "KOR"
+        }
+       ],
+       "when": "2026-11-23T08:30:00Z",
+       "score": "2-3 (7:11,11:9,11:9,9:11,13:15)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen / Constantina Psihogios",
+         "nat": "AUS"
+        },
+        {
+         "name": "Alan Kurmangaliyev / Hana Goda",
+         "nat": "KAZ/EGY"
+        }
+       ],
+       "when": "2026-11-23T08:30:00Z",
+       "score": "3-0 (11:9,11:5,17:15,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Priyanuj Bhattacharyya / Syndrela Das",
+         "nat": "IND"
+        },
+        {
+         "name": "Chulong Nie / Lilian Ma",
+         "nat": "AUS/USA"
+        }
+       ],
+       "when": "2026-11-23T09:00:00Z",
+       "score": "3-0 (12:10,11:2,11:5,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        },
+        {
+         "name": "Li Hechen / Yao Ruixuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abhinandh Pradhivadhi / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Lin Chin-Ting / Wu Jia-En",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-11-23T10:45:00Z",
+       "score": "3-1 (4:11,11:2,11:8,11:4,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Francesco Trevisan / Eseniia Shirokova",
+         "nat": "ITA/RUS"
+        },
+        {
+         "name": "Kohaku Nakano / Aoba Takahashi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-11-23T10:45:00Z",
+       "score": "1-3 (11:3,9:11,9:11,1:11,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Steven Moreno / Sally Moyland",
+         "nat": "PUR/USA",
+         "seed": 7
+        },
+        {
+         "name": "Patryk Zyworonek / Koharu Itagaki",
+         "nat": "POL/GER"
+        }
+       ],
+       "when": "2026-11-23T10:45:00Z",
+       "score": "0-3 (7:11,9:11,10:12,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Jiang Yiyi",
+         "nat": "CHN"
+        },
+        {
+         "name": "Robert Istrate / Bianca Mei-Rosu",
+         "nat": "ROU",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-23T10:45:00Z",
+       "score": "3-0 (11:6,13:11,11:8,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Arpas / Maria Berzosa",
+         "nat": "SVK/ESP",
+         "seed": 3
+        },
+        {
+         "name": "Shunto Iwaida / Mao Takamori",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-11-23T11:15:00Z",
+       "score": "0-3 (3:11,4:11,0:11,0:0,0:0)",
+       "winner": 1
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Noirault / Leana Hochart",
+         "nat": "FRA"
+        },
+        {
+         "name": "Li Ki Ho / Su Tsz Tung",
+         "nat": "HKG",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-23T11:15:00Z",
+       "score": "3-1 (10:12,11:7,11:6,11:8,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Hyeonho / Heo Yerim",
+         "nat": "KOR"
+        },
+        {
+         "name": "Aditya Sareen / Constantina Psihogios",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2026-11-23T11:15:00Z",
+       "score": "3-0 (11:9,11:4,11:4,0:0,0:0)",
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Priyanuj Bhattacharyya / Syndrela Das",
+         "nat": "IND"
+        },
+        {
+         "name": "Li Hechen / Yao Ruixuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-23T11:15:00Z",
+       "score": "2-3 (10:12,11:6,3:11,11:5,6:11)",
+       "winner": 1
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Abhinandh Pradhivadhi / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 1
+        },
+        {
+         "name": "Kohaku Nakano / Aoba Takahashi",
+         "nat": "JPN"
+        }
+       ],
+       "when": "2026-11-24T12:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Patryk Zyworonek / Koharu Itagaki",
+         "nat": "POL/GER"
+        },
+        {
+         "name": "Wen Ruibo / Jiang Yiyi",
+         "nat": "CHN"
+        }
+       ],
+       "when": "2026-11-24T12:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Shunto Iwaida / Mao Takamori",
+         "nat": "JPN"
+        },
+        {
+         "name": "Antoine Noirault / Leana Hochart",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-11-24T12:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Lee Hyeonho / Heo Yerim",
+         "nat": "KOR"
+        },
+        {
+         "name": "Li Hechen / Yao Ruixuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-24T12:30:00Z"
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T17:00:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T17:00:00Z"
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "mdoubles": {
+   "name": "U19 Boys' Doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo / Li Hechen",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Francesco Trevisan / Danilo Faso",
+         "nat": "ITA"
+        }
+       ],
+       "when": "2026-11-24T08:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Shunto Iwaida / Kohaku Nakano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Emanuel Otalvaro / Steven Moreno",
+         "nat": "COL/PUR",
+         "seed": 7
+        }
+       ],
+       "when": "2026-11-24T08:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Li Ki Ho / Wassim Essid",
+         "nat": "HKG/TUN",
+         "seed": 5
+        },
+        {
+         "name": "Enrique Rios / Ramon Vila",
+         "nat": "PUR/DOM"
+        }
+       ],
+       "when": "2026-11-24T08:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Berk Oztoprak / Kenan Kahraman",
+         "nat": "TUR"
+        },
+        {
+         "name": "Nathan Pilard / Antoine Noirault",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-24T08:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Alan Kurmangaliyev / Benyamin Faraji",
+         "nat": "KAZ/IRI",
+         "seed": 3
+        },
+        {
+         "name": "Samuel Michna / Patryk Zyworonek",
+         "nat": "POL"
+        }
+       ],
+       "when": "2026-11-24T09:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Yassin Gaber / Ivan Kahn",
+         "nat": "EGY/NED"
+        },
+        {
+         "name": "Abhinandh Pradhivadhi / Priyanuj Bhattacharyya",
+         "nat": "IND",
+         "seed": 6
+        }
+       ],
+       "when": "2026-11-24T09:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen / Chulong Nie",
+         "nat": "AUS",
+         "seed": 8
+        },
+        {
+         "name": "Hung Che-Yen / Lin Chin-Ting",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-11-24T09:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daehwan / Lee Hyeonho",
+         "nat": "KOR"
+        },
+        {
+         "name": "Robert Istrate / Samuel Arpas",
+         "nat": "ROU/SVK",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-24T09:30:00Z"
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T14:45:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T14:45:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T15:15:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T15:15:00Z"
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "wdoubles": {
+   "name": "U19 Girls' Doubles",
+   "rounds": [
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jeong Yein / Heo Yerim",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "BYE",
+         "nat": "BYE"
+        }
+       ],
+       "winner": 0
+      },
+      {
+       "players": [
+        {
+         "name": "Sally Moyland / Lilian Ma",
+         "nat": "USA"
+        },
+        {
+         "name": "Maria Berzosa / Constantina Psihogios",
+         "nat": "ESP/AUS",
+         "seed": 7
+        }
+       ],
+       "when": "2026-11-24T08:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Su Tsz Tung / Mak Ming Shum",
+         "nat": "HKG",
+         "seed": 6
+        },
+        {
+         "name": "Koharu Itagaki / Julia Leal",
+         "nat": "GER/POR"
+        }
+       ],
+       "when": "2026-11-24T08:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bogdanowicz / Karolina Holda",
+         "nat": "POL"
+        },
+        {
+         "name": "Leana Hochart / Alexia Nodin",
+         "nat": "FRA",
+         "seed": 4
+        }
+       ],
+       "when": "2026-11-24T09:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Syndrela Das / Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 3
+        },
+        {
+         "name": "Wu Ying Syuan / Wu Jia-En",
+         "nat": "TPE"
+        }
+       ],
+       "when": "2026-11-24T08:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Mao Takamori / Aoba Takahashi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Hana Goda / Bianca Mei-Rosu",
+         "nat": "EGY/ROU",
+         "seed": 5
+        }
+       ],
+       "when": "2026-11-24T08:30:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Zlata Terekhova / Eseniia Shirokova",
+         "nat": "RUS",
+         "seed": 8
+        },
+        {
+         "name": "Tracey Hsia / Rochica Sonday",
+         "nat": "NZL/RSA"
+        }
+       ],
+       "when": "2026-11-24T09:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Busra Demir / Aybuke Simsek",
+         "nat": "TUR"
+        },
+        {
+         "name": "Jiang Yiyi / Yao Ruixuan",
+         "nat": "CHN",
+         "seed": 2
+        }
+       ],
+       "when": "2026-11-24T09:30:00Z"
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jeong Yein / Heo Yerim",
+         "nat": "KOR",
+         "seed": 1
+        },
+        null
+       ],
+       "when": "2026-11-24T14:45:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T14:45:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T15:15:00Z"
+      },
+      {
+       "players": [
+        null,
+        null
+       ],
+       "when": "2026-11-24T15:15:00Z"
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "men": {
+   "name": "U19 Boys' Singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Danilo Faso",
+         "nat": "ITA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Ramon Vila",
+         "nat": "DOM"
+        },
+        {
+         "name": "Steven Moreno",
+         "nat": "PUR"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Hung Che-Yen",
+         "nat": "TPE"
+        },
+        {
+         "name": "Patryk Zyworonek",
+         "nat": "POL"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Kenan Kahraman",
+         "nat": "TUR"
+        },
+        {
+         "name": "Benyamin Faraji",
+         "nat": "IRI",
+         "seed": 5
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Abhinandh Pradhivadhi",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Nathan Pilard",
+         "nat": "FRA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Kim Daehwan",
+         "nat": "KOR"
+        },
+        {
+         "name": "Shunto Iwaida",
+         "nat": "JPN"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Ivan Kahn",
+         "nat": "NED"
+        },
+        {
+         "name": "Wassim Essid",
+         "nat": "TUN"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Chulong Nie",
+         "nat": "AUS"
+        },
+        {
+         "name": "Alan Kurmangaliyev",
+         "nat": "KAZ",
+         "seed": 3
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Li Ki Ho",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Berk Oztoprak",
+         "nat": "TUR"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Antoine Noirault",
+         "nat": "FRA"
+        },
+        {
+         "name": "Samuel Arpas",
+         "nat": "SVK"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Samuel Michna",
+         "nat": "POL"
+        },
+        {
+         "name": "Lee Hyeonho",
+         "nat": "KOR"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS"
+        },
+        {
+         "name": "Lin Chin-Ting",
+         "nat": "TPE",
+         "seed": 7
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Li Hechen",
+         "nat": "CHN",
+         "seed": 6
+        },
+        {
+         "name": "Yassin Gaber",
+         "nat": "EGY"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Robert Istrate",
+         "nat": "ROU"
+        },
+        {
+         "name": "Francesco Trevisan",
+         "nat": "ITA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Priyanuj Bhattacharyya",
+         "nat": "IND"
+        },
+        {
+         "name": "Enrique Rios",
+         "nat": "PUR"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Kohaku Nakano",
+         "nat": "JPN"
+        },
+        {
+         "name": "Emanuel Otalvaro",
+         "nat": "COL",
+         "seed": 2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "women": {
+   "name": "U19 Girls' Singles",
+   "rounds": [
+    {
+     "round": "Last 32",
+     "matches": [
+      {
+       "players": [
+        {
+         "name": "Jiang Yiyi",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Lilian Ma",
+         "nat": "USA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Aybuke Simsek",
+         "nat": "TUR"
+        },
+        {
+         "name": "Alexia Nodin",
+         "nat": "FRA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Bianca Mei-Rosu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Tania Morice",
+         "nat": "ALG"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Tracey Hsia",
+         "nat": "NZL"
+        },
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 8
+        },
+        {
+         "name": "Zlata Terekhova",
+         "nat": "RUS"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Natalia Bogdanowicz",
+         "nat": "POL"
+        },
+        {
+         "name": "Koharu Itagaki",
+         "nat": "GER"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Aoba Takahashi",
+         "nat": "JPN"
+        },
+        {
+         "name": "Heo Yerim",
+         "nat": "KOR"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Mak Ming Shum",
+         "nat": "HKG"
+        },
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 3
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Su Tsz Tung",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Julia Leal",
+         "nat": "POR"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Maria Berzosa",
+         "nat": "ESP"
+        },
+        {
+         "name": "Leana Hochart",
+         "nat": "FRA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Jeong Yein",
+         "nat": "KOR"
+        },
+        {
+         "name": "Eseniia Shirokova",
+         "nat": "RUS"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Nina Skerbinz",
+         "nat": "AUT"
+        },
+        {
+         "name": "Yao Ruixuan",
+         "nat": "CHN",
+         "seed": 6
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Sally Moyland",
+         "nat": "USA",
+         "seed": 7
+        },
+        {
+         "name": "Syndrela Das",
+         "nat": "IND"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Busra Demir",
+         "nat": "TUR"
+        },
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Constantina Psihogios",
+         "nat": "AUS"
+        },
+        {
+         "name": "Rochica Sonday",
+         "nat": "RSA"
+        }
+       ]
+      },
+      {
+       "players": [
+        {
+         "name": "Karolina Holda",
+         "nat": "POL"
+        },
+        {
+         "name": "Mao Takamori",
+         "nat": "JPN",
+         "seed": 2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Last 16",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Quarter-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Semi-finals",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      },
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    },
+    {
+     "round": "Final",
+     "matches": [
+      {
+       "players": [
+        null,
+        null
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -144,17 +144,23 @@ def _same(name):
     return " ".join(w.replace("'s", "").replace("’s", "").rstrip("s") for w in (name or "").lower().split())
 
 
-def fetch_all(eid, offset):
+def fetch_all(eid, offset, age=None):
     """Every draw WTT has for an event. WTT answers an unknown draw code with another draw, so each reply's event name is checked."""
     events = {}
     for k, (label, code) in ALL_SUBEVENTS.items():
         try:
-            j = fetch(eid, code.ljust(42, "-"))
+            j = fetch(eid, (code.ljust(19, "-") + age if age else code).ljust(42, "-"))
         except Exception:
             continue
         comp = j.get("Competition") or {}
         name = ((comp.get("ExtendedInfos") or {}).get("SportDescription") or {}).get("EventName")
-        if not comp.get("Bracket") or _same(name) != _same(API_NAMES[k]):
+        if not comp.get("Bracket"):
+            continue
+        if age:
+            if not (name or "").startswith(age + " "):
+                continue
+            label = name
+        elif _same(name) != _same(API_NAMES[k]):
             continue
         events[k] = {"name": label, "rounds": convert(j, offset)}
     if not {"women", "men"} & set(events) and not any("team" in k for k in events):

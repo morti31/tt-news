@@ -96,7 +96,7 @@ def rows(ev, schedule):
     if ev.get("end") and ev["end"] < dt.date.today().isoformat():   # a finished event: today's world ranks would mislead
         people = {k: {x: y for x, y in v.items() if x != "rank"} for k, v in people.items()}
     sid = ev.get("schedule_id")
-    fx = [f for f in schedule.get("fixtures", []) if sid and f.get("event_id") == sid]
+    fx = [f for f in schedule.get("fixtures", []) if sid and f.get("event_id") == sid and not re.search(r"U1[135](?!\d)", f.get("code") or "")]
     sessions = [f for f in fx if not f["id"].startswith("wtt-") and " v " not in f["name"]]
 
     # The draw, by pair of players
