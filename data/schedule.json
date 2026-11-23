@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T17:37:00Z",
+  "updated": "2026-11-23T18:07:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1965,6 +1965,26 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3352-ttemsinglesgp14000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Miguel Pantoja v Abdulla Mamay, men's singles, group 14",
+      "start": "2026-11-23T16:55:00Z",
+      "end": "2026-11-23T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP14000300----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp10000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara v Noa Dahlstrom, men's singles, group 10",
+      "start": "2026-11-23T16:55:00Z",
+      "end": "2026-11-23T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP10000300----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3352-ttemsinglesgp14000400",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali v Christopher Kraemer, men's singles, group 14",
@@ -2005,24 +2025,44 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp10000300",
+      "id": "wtt-3352-ttemsinglesgp11000400",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara v Noa Dahlstrom, men's singles, group 10",
-      "start": "2026-11-23T16:55:00Z",
-      "end": "2026-11-23T17:30:00Z",
+      "name": "WTT Feeder Düsseldorf II: Alex Naumi v Peter Alestedt, men's singles, group 11",
+      "start": "2026-11-23T17:30:00Z",
+      "end": "2026-11-23T18:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP10000300----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP11000400----------",
+      "detail": "Table 4"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp14000300",
+      "id": "wtt-3352-ttemsinglesgp11000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Miguel Pantoja v Abdulla Mamay, men's singles, group 14",
-      "start": "2026-11-23T16:55:00Z",
-      "end": "2026-11-23T17:30:00Z",
+      "name": "WTT Feeder Düsseldorf II: Mael Van Dessel v Ivan Hencl, men's singles, group 11",
+      "start": "2026-11-23T17:30:00Z",
+      "end": "2026-11-23T18:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP14000300----------",
+      "code": "TTEMSINGLES-----------GP11000300----------",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp15000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Martin Friis v Barish Moullet, men's singles, group 15",
+      "start": "2026-11-23T17:30:00Z",
+      "end": "2026-11-23T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP15000400----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp15000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Maciej Kolodziejczyk v Anton Andersson, men's singles, group 15",
+      "start": "2026-11-23T17:30:00Z",
+      "end": "2026-11-23T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP15000300----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttemsinglesgp04000300",
@@ -2045,43 +2085,23 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp11000300",
+      "id": "wtt-3352-ttewsinglesgp03000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Mael Van Dessel v Ivan Hencl, men's singles, group 11",
-      "start": "2026-11-23T17:30:00Z",
-      "end": "2026-11-23T18:05:00Z",
+      "name": "WTT Feeder Düsseldorf II: Eva Brito v Lana Benko, women's singles, group 3",
+      "start": "2026-11-23T18:05:00Z",
+      "end": "2026-11-23T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP11000300----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp11000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Alex Naumi v Peter Alestedt, men's singles, group 11",
-      "start": "2026-11-23T17:30:00Z",
-      "end": "2026-11-23T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP11000400----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp15000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Maciej Kolodziejczyk v Anton Andersson, men's singles, group 15",
-      "start": "2026-11-23T17:30:00Z",
-      "end": "2026-11-23T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP15000300----------",
+      "code": "TTEWSINGLES-----------GP03000200----------",
       "detail": "Table 5"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp15000400",
+      "id": "wtt-3352-ttewsinglesgp02000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Martin Friis v Barish Moullet, men's singles, group 15",
-      "start": "2026-11-23T17:30:00Z",
-      "end": "2026-11-23T18:05:00Z",
+      "name": "WTT Feeder Düsseldorf II: Kim Eunseo v Agnes Svensson, women's singles, group 2",
+      "start": "2026-11-23T18:05:00Z",
+      "end": "2026-11-23T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP15000400----------",
+      "code": "TTEWSINGLES-----------GP02000200----------",
       "detail": "Table 6"
     },
     {
@@ -2123,26 +2143,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP04000200----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp03000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Eva Brito v Lana Benko, women's singles, group 3",
-      "start": "2026-11-23T18:05:00Z",
-      "end": "2026-11-23T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP03000200----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp02000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Kim Eunseo v Agnes Svensson, women's singles, group 2",
-      "start": "2026-11-23T18:05:00Z",
-      "end": "2026-11-23T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP02000200----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttewsinglesgp05000200",
