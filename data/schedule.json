@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T14:36:00Z",
+  "updated": "2026-11-23T15:06:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1655,6 +1655,16 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3352-ttemdoublesrnd1000500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Anav Gupta / Nandan Naresh v Eusebio Vos / Alvaro Fuentes, men's doubles, qualifying round 1",
+      "start": "2026-11-23T14:00:00Z",
+      "end": "2026-11-23T14:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMDOUBLES-----------RND1000500----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3352-ttemdoublesrnd1000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Aidos Kenzhigulov / Abdulla Mamay v Maciej Kolodziejczyk / Julian Rzihauschek, men's doubles, qualifying round 1",
@@ -1705,26 +1715,6 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttemdoublesrnd1000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Anav Gupta / Nandan Naresh v Eusebio Vos / Alvaro Fuentes, men's doubles, qualifying round 1",
-      "start": "2026-11-23T14:00:00Z",
-      "end": "2026-11-23T14:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMDOUBLES-----------RND1000500----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemdoublesrnd1000700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Hwang Jinha / Ma Yeongmin v Choi Jiwook / Jang Hanjae, men's doubles, qualifying round 1",
-      "start": "2026-11-23T14:35:00Z",
-      "end": "2026-11-23T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMDOUBLES-----------RND1000700----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3352-ttemdoublesrnd1000800",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Bakdaulet Akimali / Irisbek Artukmetov v Yoan Velichkov / Ivan Hencl, men's doubles, qualifying round 1",
@@ -1733,26 +1723,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMDOUBLES-----------RND1000800----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttewdoublesrnd1000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Darya Kisel / Hannah Silcock v Kathe De Meyer / Lotte Nuyttens, women's doubles, qualifying round 1",
-      "start": "2026-11-23T14:35:00Z",
-      "end": "2026-11-23T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWDOUBLES-----------RND1000200----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttewdoublesrnd1000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lilou Massart / Julie Van Hauwaert v Choi Haeeun / Kim Hayeong, women's doubles, qualifying round 1",
-      "start": "2026-11-23T14:35:00Z",
-      "end": "2026-11-23T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWDOUBLES-----------RND1000500----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttewdoublesrnd1000700",
@@ -1765,14 +1735,34 @@
       "detail": "Table 5"
     },
     {
-      "id": "wtt-3377-ttemteamu19fnl00010000",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Chinese Taipei Table Tennis Association 7 v Chinese Table Tennis Association 6, u19 boys' teams, final",
-      "start": "2026-11-23T15:00:00Z",
-      "end": "2026-11-23T17:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMTEAM-----------U19FNL-00010000--------",
-      "detail": "Table 2"
+      "id": "wtt-3352-ttewdoublesrnd1000200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Darya Kisel / Hannah Silcock v Kathe De Meyer / Lotte Nuyttens, women's doubles, qualifying round 1",
+      "start": "2026-11-23T14:35:00Z",
+      "end": "2026-11-23T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWDOUBLES-----------RND1000200----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttemdoublesrnd1000700",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Hwang Jinha / Ma Yeongmin v Choi Jiwook / Jang Hanjae, men's doubles, qualifying round 1",
+      "start": "2026-11-23T14:35:00Z",
+      "end": "2026-11-23T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMDOUBLES-----------RND1000700----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttewdoublesrnd1000500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Lilou Massart / Julie Van Hauwaert v Choi Haeeun / Kim Hayeong, women's doubles, qualifying round 1",
+      "start": "2026-11-23T14:35:00Z",
+      "end": "2026-11-23T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWDOUBLES-----------RND1000500----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3377-ttewteamu19fnl00010000",
@@ -1783,6 +1773,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWTEAM-----------U19FNL-00010000--------",
       "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttemteamu19fnl00010000",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Chinese Taipei Table Tennis Association 7 v Chinese Table Tennis Association 6, u19 boys' teams, final",
+      "start": "2026-11-23T15:00:00Z",
+      "end": "2026-11-23T17:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMTEAM-----------U19FNL-00010000--------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttemsinglesgp01000300",
@@ -2085,6 +2085,26 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3352-ttemsinglesgp03000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Julian Rzihauschek, men's singles, group 3",
+      "start": "2026-11-23T18:05:00Z",
+      "end": "2026-11-23T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP03000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp03000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Milo De Boer v Ma Yeongjun, men's singles, group 3",
+      "start": "2026-11-23T18:05:00Z",
+      "end": "2026-11-23T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP03000400----------",
+      "detail": "Table 2"
+    },
+    {
       "id": "wtt-3352-ttewsinglesgp01000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Hanka Kodet v Kim Hayeong, women's singles, group 1",
@@ -2123,26 +2143,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP02000200----------",
       "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp03000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Julian Rzihauschek, men's singles, group 3",
-      "start": "2026-11-23T18:05:00Z",
-      "end": "2026-11-23T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP03000300----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp03000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Milo De Boer v Ma Yeongjun, men's singles, group 3",
-      "start": "2026-11-23T18:05:00Z",
-      "end": "2026-11-23T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP03000400----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttewsinglesgp05000200",
