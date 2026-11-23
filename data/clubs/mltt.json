@@ -1,7 +1,7 @@
 {
  "id": "mltt",
  "auto": true,
- "updated": "2026-11-23T01:04:00Z",
+ "updated": "2026-11-23T01:34:00Z",
  "season": "2026-27",
  "source": {
   "name": "MLTT",
@@ -60,13 +60,13 @@
      },
      {
       "team": "New York Slice",
-      "p": 8,
+      "p": 9,
       "w": 0,
-      "l": 8,
-      "for": 48,
-      "against": 120,
+      "l": 9,
+      "for": 53,
+      "against": 136,
       "pos": 5,
-      "diff": -72
+      "diff": -83
      }
     ]
    },
@@ -85,13 +85,13 @@
      },
      {
       "team": "Portland Paddlers",
-      "p": 8,
-      "w": 4,
+      "p": 9,
+      "w": 5,
       "l": 4,
-      "for": 83,
-      "against": 85,
+      "for": 99,
+      "against": 90,
       "pos": 2,
-      "diff": -2
+      "diff": 9
      },
      {
       "team": "Bay Area Blasters",
@@ -522,7 +522,7 @@
     5,
     16
    ],
-   "status": "live",
+   "status": "finished",
    "venue": "Portland"
   },
   {
