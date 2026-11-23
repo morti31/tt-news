@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T12:34:00Z",
+  "updated": "2026-11-23T13:06:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1625,6 +1625,26 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3352-ttewsinglesgp05000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Hannah Silcock v Kathe De Meyer, women's singles, group 5",
+      "start": "2026-11-23T11:30:00Z",
+      "end": "2026-11-23T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP05000100----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp08000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Vivien Scholz v Ananya Donekal, women's singles, group 8",
+      "start": "2026-11-23T11:30:00Z",
+      "end": "2026-11-23T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP08000100----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3352-ttewsinglesgp03000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Moon Chowon v Lana Benko, women's singles, group 3",
@@ -1665,26 +1685,6 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp05000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Hannah Silcock v Kathe De Meyer, women's singles, group 5",
-      "start": "2026-11-23T11:30:00Z",
-      "end": "2026-11-23T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP05000100----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp08000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Vivien Scholz v Ananya Donekal, women's singles, group 8",
-      "start": "2026-11-23T11:30:00Z",
-      "end": "2026-11-23T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP08000100----------",
-      "detail": "Table 5"
-    },
-    {
       "id": "wtt-3352-ttewsinglesgp02000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Ulyana Miashchanskaya v Agnes Svensson, women's singles, group 2",
@@ -1693,16 +1693,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP02000100----------",
       "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp10000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Sampada Bhiwandkar v Maria Girlea, women's singles, group 10",
-      "start": "2026-11-23T12:00:00Z",
-      "end": "2026-11-23T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP10000200----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttewsinglesgp04000100",
@@ -1715,6 +1705,16 @@
       "detail": "Table 1"
     },
     {
+      "id": "wtt-3352-ttewsinglesgp07000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Tiffany Ke v Dobrila Jorguseska, women's singles, group 7",
+      "start": "2026-11-23T12:00:00Z",
+      "end": "2026-11-23T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP07000100----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3352-ttewsinglesgp10000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Agathe Avezou v Chengyuan Wang, women's singles, group 10",
@@ -1725,14 +1725,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp07000100",
+      "id": "wtt-3352-ttewsinglesgp10000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Tiffany Ke v Dobrila Jorguseska, women's singles, group 7",
+      "name": "WTT Feeder Düsseldorf II: Sampada Bhiwandkar v Maria Girlea, women's singles, group 10",
       "start": "2026-11-23T12:00:00Z",
       "end": "2026-11-23T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP07000100----------",
-      "detail": "Table 4"
+      "code": "TTEWSINGLES-----------GP10000200----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttemdoublesrnd1000100",
