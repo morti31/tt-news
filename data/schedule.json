@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T15:36:00Z",
+  "updated": "2026-11-23T16:06:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1785,26 +1785,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp08000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Uros Ninkovic v Lee Seongmin, men's singles, group 8",
-      "start": "2026-11-23T15:10:00Z",
-      "end": "2026-11-23T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP08000300----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp08000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Fumiya Igarashi v Max Radiven, men's singles, group 8",
-      "start": "2026-11-23T15:10:00Z",
-      "end": "2026-11-23T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP08000400----------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3352-ttemsinglesgp01000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Alberto Mino v Benno Oehme, men's singles, group 1",
@@ -1813,16 +1793,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP01000300----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp02000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Norbert Tauler v Aidos Kenzhigulov, men's singles, group 2",
-      "start": "2026-11-23T15:10:00Z",
-      "end": "2026-11-23T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP02000300----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttemsinglesgp02000400",
@@ -1843,6 +1813,36 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP01000400----------",
       "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp02000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Norbert Tauler v Aidos Kenzhigulov, men's singles, group 2",
+      "start": "2026-11-23T15:10:00Z",
+      "end": "2026-11-23T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP02000300----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp08000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Uros Ninkovic v Lee Seongmin, men's singles, group 8",
+      "start": "2026-11-23T15:10:00Z",
+      "end": "2026-11-23T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP08000300----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp08000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Fumiya Igarashi v Max Radiven, men's singles, group 8",
+      "start": "2026-11-23T15:10:00Z",
+      "end": "2026-11-23T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP08000400----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttemsinglesgp06000400",
