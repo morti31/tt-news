@@ -1,0 +1,18 @@
+# Full-text site search (tools/build_search.py). Built after tools/build_site.py in the deploy workflow:
+#   npx --yes pagefind@1.5.2
+# Only pages marked data-pagefind-body are indexed (build_site.page() and build_chop.page() mark them).
+site: .
+output_path: pagefind
+force_language: en
+exclude_selectors:
+  - ".article-side"
+  - ".more-news"
+  - ".more-wide"
+  - ".article-sources"
+  - ".crumbs"
+  - ".ad"
+  - ".ad-wrap"
+  - ".subnav"
+  - ".topics"
+  - "script"
+  - "noscript"

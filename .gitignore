@@ -29,3 +29,8 @@ data/tag-redirects.json
 data/names-live.json
 data/lead.json
 /404.html
+
+# Site search (tools/build_search.py, Pagefind)
+search-index.json
+/search.html
+/pagefind/

@@ -99,7 +99,12 @@ def day(iso):
     return f"{d.day} {d:%b %Y}"
 
 
+SEARCHABLE = re.compile(r"^/(defender/.+|legends\.html|glossary\.html|reading\.html)$")   # pages in site search (build_search.py)
+
+
 def page(title, desc, path, body, active=""):
+    sx = SEARCHABLE.match(path or "")
+    sx_head = '<meta data-pagefind-filter="section[content]" content="The Chop">' if sx else ""
     nav = "".join(f'<a href="{BASE}{href}"{" aria-current=\"page\"" if k == active else ""}>{lab}</a>'
                   for k, href, lab in (("home", "/", "Home"), ("videos", "/videos.html", "Videos"), ("rankings", "/defenders.html", "Defenders"),
                                        ("calendar", "/calendar.html", "Calendar"), ("reading", "/reading.html", "Reading"),
@@ -113,17 +118,19 @@ def page(title, desc, path, body, active=""):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Figtree:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
-<link rel="stylesheet" href="{BASE}/chop.css?v={VER}">
+<link rel="stylesheet" href="{BASE}/chop.css?v={VER}"><link rel="stylesheet" href="/search.css">{sx_head}
 <script src="{ELEVEN}/consent.js" defer></script>
 </head><body>
 <header class="ch-mast"><div class="ch-wrap ch-mast-in">
 <a class="ch-mark" href="{BASE}/" aria-label="The Chop home"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" class="ch-mark-ball"/><path d="M6 27 34 13" class="ch-mark-cut"/></svg><span>The Chop</span></a>
-<nav class="ch-nav" aria-label="Sections">{nav}</nav></div></header>
-<main class="ch-wrap">{body}</main>
+<nav class="ch-nav" aria-label="Sections">{nav}</nav>
+<a class="sx-btn" href="{BASE}/search.html" data-search-open aria-label="Search The Chop and Eleven"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span>Search</span></a></div></header>
+<main class="ch-wrap"{" data-pagefind-body" if sx else ""}>{body}</main>
 <footer class="ch-foot"><div class="ch-wrap"><p><b>The Chop</b> follows the defenders of table tennis: the choppers, the blockers and the players who win from the back of the court. It writes no news of its own; every story here links to the publication that wrote it.</p>
 <p>Rankings, results and fixtures from <a href="{ELEVEN}/">Eleven</a>, which takes them from World Table Tennis and the leagues. <a href="{BASE}/glossary.html">Glossary</a> · <a href="{ELEVEN}/contact.html">Contact</a> · <a href="{ELEVEN}/privacy.html">Privacy and cookies</a> · <a href="{ELEVEN}/privacy.html" data-consent-open>Privacy settings</a></p></div></footer>
 {def_dialog()}
 <script src="{BASE}/chop.js?v={VER}" defer></script>
+<script src="/search.js" defer></script>
 </body></html>"""
 
 
@@ -749,6 +756,18 @@ def build():
 </aside></div>"""
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(page(
         "The Chop: choppers and defensive table tennis", "Choppers and defenders in table tennis: rankings, form, fixtures and the best writing about them.", "/", hbody, "home"))
+
+    # ---- Search: the same full-text index as Eleven (search.js and /pagefind/ are served from Eleven's root on this host too)
+    sbody = """<section class="ch-head"><h1>Search</h1><p class="ch-lede">Defenders, writing and terms on The Chop, plus Eleven's stories, players and tournaments.</p></section>
+<div class="sx-page" id="search-page"><form class="sx-form" action="/search.html" method="get" role="search">
+<label class="sx-visually-hidden" for="sx-q">Search</label>
+<input id="sx-q" name="q" type="search" placeholder="Search defenders, players, stories..." autocomplete="off" enterkeyhint="search">
+<button type="submit">Search</button></form>
+<div id="sx-quick"></div><div class="sx-filters" id="sx-filters" role="group" aria-label="Filter results"></div>
+<p class="sx-count" id="sx-count" aria-live="polite"></p><ol class="sx-results" id="sx-results"></ol>
+<button class="sx-more" id="sx-more" type="button" hidden>Show more results</button></div>"""
+    open(os.path.join(OUT, "search.html"), "w", encoding="utf-8").write(
+        page("Search | The Chop", "Search The Chop and Eleven.", "/search.html", sbody).replace("<head>", '<head><meta name="robots" content="noindex,follow">', 1))
 
     # ---- 404: served by Cloudflare for any missing address on the subdomain (wrangler.jsonc "not_found_handling")
     nbody = f"""<section class="ch-head"><h1>Sorry, we can't find that page</h1><p class="ch-lede">It may have moved, or the address may have a typo.</p></section>

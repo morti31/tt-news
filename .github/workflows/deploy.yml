@@ -42,6 +42,9 @@ jobs:
       - name: Build the site
         if: steps.skip.outputs.skip != 'true'
         run: python3 tools/build_site.py
+      - name: Build the search index
+        if: steps.skip.outputs.skip != 'true'
+        run: npx --yes pagefind@1.5.2
       - name: Deploy to Cloudflare
         if: steps.skip.outputs.skip != 'true'
         run: npx --yes wrangler@4 deploy
