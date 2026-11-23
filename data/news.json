@@ -1,7 +1,223 @@
 {
-  "updated": "2026-11-23T00:55:00Z",
+  "updated": "2026-11-23T04:15:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "world-youth-championships-2026-u19-team-semi-finals-wen-ruibo-jiang-yiyi-china-taiwan",
+      "kind": "Update",
+      "category": "International",
+      "date": "2026-11-23",
+      "published": "2026-11-23T04:15:00Z",
+      "headline": "Wen Ruibo and Jiang Yiyi win twice each as China reach both U19 team finals at the World Youth Championships",
+      "summary": "China beat Japan 3-2 in the U19 boys' semi-finals and France 3-1 in the girls', and meet Taiwan and Japan in Monday's finals in Istanbul.",
+      "body": [
+        "China's U19 boys came from 2-1 down to beat the defending champions Japan 3-2 in the team semi-finals at the ITTF World Youth Championships in Istanbul, with the world No 13 Wen Ruibo winning both his matches. Wen beat Kohaku Nakano 3-1 in the opener and, with China a match from going out after defeats for Li Hechen and Zhou Guanhong, dropped 12 points in a 3-0 win over Shunto Iwaida. Li then beat Nakano 3-2 in the decider, taking the fifth game 11-8.",
+        "Japan's second win came from Yuta Ito, who beat Zhou 3-0. Ito turned 17 last week, days after [beating Sora Matsushima in the T.League](/news/tleague-2026-27-yuta-ito-beats-sora-matsushima-kinoshita-okayama.html). Wen, 19, knocked out Wang Chuqin at [WTT Champions Frankfurt](/news/wtt-champions-frankfurt-2026-day3-review.html) this month.",
+        "China's girls beat France 3-1, with Jiang Yiyi, who turned 16 last week, winning both her singles without dropping a game; Li Yihui lost the second match 3-2. They meet Japan, who beat the United States 3-0, in the U19 girls' final.",
+        "Taiwan reached their first U19 boys' team final by beating India, last year's finalists, 3-0. Hung Che-Yen came from 2-1 down to win the opener in five games, winning the last two 12-10, before Lin Chin-Ting and Yang Hao-Jen won in four and three. Both U19 finals start at 3pm UK time on Monday 23 November; the championships end on 26 November."
+      ],
+      "matches": [
+        {
+          "label": "Men's U19 team semi-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "China",
+              "nat": "CHN"
+            },
+            {
+              "name": "Japan",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "rubbers": [
+            {
+              "sides": [
+                {
+                  "name": "Wen Ruibo"
+                },
+                {
+                  "name": "Kohaku Nakano"
+                }
+              ],
+              "score": [
+                3,
+                1
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Li Hechen"
+                },
+                {
+                  "name": "Shunto Iwaida"
+                }
+              ],
+              "score": [
+                2,
+                3
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Zhou Guanhong"
+                },
+                {
+                  "name": "Yuta Ito"
+                }
+              ],
+              "score": [
+                0,
+                3
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Wen Ruibo"
+                },
+                {
+                  "name": "Shunto Iwaida"
+                }
+              ],
+              "score": [
+                3,
+                0
+              ],
+              "games": [
+                [
+                  11,
+                  2
+                ],
+                [
+                  11,
+                  5
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            },
+            {
+              "sides": [
+                {
+                  "name": "Li Hechen"
+                },
+                {
+                  "name": "Kohaku Nakano"
+                }
+              ],
+              "score": [
+                3,
+                2
+              ],
+              "games": [
+                [
+                  6,
+                  11
+                ],
+                [
+                  11,
+                  6
+                ],
+                [
+                  11,
+                  8
+                ],
+                [
+                  7,
+                  11
+                ],
+                [
+                  11,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Women's U19 team semi-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "China",
+              "nat": "CHN"
+            },
+            {
+              "name": "France",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ]
+        },
+        {
+          "label": "Men's U19 team semi-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Taiwan",
+              "nat": "TPE"
+            },
+            {
+              "name": "India",
+              "nat": "IND"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ]
+        },
+        {
+          "label": "Women's U19 team semi-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Japan",
+              "nat": "JPN"
+            },
+            {
+              "name": "United States",
+              "nat": "USA"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Sohu (Chinese): Wen Ruibo wins two as China beat Japan to reach the U19 boys' final",
+          "url": "https://m.sohu.com/a/1105066828_122344180"
+        },
+        {
+          "name": "Sohu (Chinese): World Youth Championships results and 23 November schedule",
+          "url": "https://m.sohu.com/a/1105141099_801690"
+        },
+        {
+          "name": "Sohu (Chinese): Four Chinese team finals at the World Youth Championships",
+          "url": "https://www.sohu.com/a/1105105865_121606677"
+        },
+        {
+          "name": "ETtoday (Chinese): Taiwan U19 boys sweep India to reach the final",
+          "url": "https://sports.ettoday.net/news/3276750"
+        }
+      ],
+      "lang": "Chinese"
+    },
     {
       "id": "liam-pitchford-first-bundesliga-defeat-duda-bergneustadt-win-at-grenzau",
       "category": "Clubs",
@@ -496,7 +712,8 @@
           "name": "Tischtennis Bundesliga: Bad Königshofen v Bad Homburg, match page (German)",
           "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f67856a4-876c-4481-8eb9-854142d1eeb2"
         }
-      ]
+      ],
+      "top": true
     },
     {
       "id": "dttbl-women-2026-27-weinheim-dachau-draw-weil-lee-debut",
@@ -709,7 +926,7 @@
       "summary": "India beat the hosts Türkiye 3-0 and Taiwan beat Brazil 3-0 in the U19 boys' team quarter-finals, so the two meet for a place in the final.",
       "body": [
         "India are guaranteed a medal in the U19 boys' team event at the ITTF World Youth Championships in Istanbul after beating Türkiye 3-0 in the quarter-finals on Sunday. Priyanuj Bhattacharyya and Abhinandh Pradhivadhi both came from a game down to win 3-1, and Balamurugan Rajasekaran won the third match 11-8 in the fifth game against Muhammet Atakul.",
-        "Taiwan, bronze medallists last year, beat Brazil 3-0 without losing a game in the first two matches and play India in the semi-finals. They were led by Hung Jhe-Yan and Yang Hao-Jen, who were both named in Taiwan's senior national team at the national trials last week. Brazil had knocked out South Korea, last year's bronze medallists, 3-1 in the last 16.",
+        "Taiwan, bronze medallists last year, beat Brazil 3-0 without losing a game in the first two matches and play India in the semi-finals. They were led by Hung Che-Yen and Yang Hao-Jen, who were both named in Taiwan's senior national team at the national trials last week. Brazil had knocked out South Korea, last year's bronze medallists, 3-1 in the last 16.",
         "In the U19 girls' team quarter-finals, India lost 3-0 to France and Taiwan lost 3-1 to the United States, the Pan American youth champions. The championships run until 26 November."
       ],
       "sources": [
@@ -721,7 +938,8 @@
           "name": "Liberty Times (Chinese): Taiwan sweep Brazil to reach the U19 boys' semi-finals",
           "url": "https://sports.ltn.com.tw/news/breakingnews/5649820"
         }
-      ]
+      ],
+      "modified": "2026-11-23T04:15:00Z"
     },
     {
       "id": "fang-bo-china-young-players-fewer-role-models-interview",
@@ -1010,8 +1228,7 @@
           "title": "Dorr and Yuan vs Togami and Odo, mixed doubles final",
           "channel": "World Table Tennis"
         }
-      ],
-      "top": true
+      ]
     },
     {
       "id": "wtt-star-contender-muscat-2026-day6-preview",
