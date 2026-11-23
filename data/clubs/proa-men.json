@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-11T12:30:00Z",
+ "updated": "2026-11-23T00:40:00Z",
  "season": "2026-27",
- "status": "Regular season, after matchday 5 (10 November)",
+ "status": "Regular season, after matchday 6 (22 November); matchday 7 on Tuesday 24 November",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -22,82 +22,82 @@
      {
       "pos": 1,
       "team": "SPO Rouen",
-      "p": 5,
+      "p": 6,
       "w": 5,
-      "l": 0,
-      "pts": 20
+      "l": 1,
+      "pts": 21
      },
      {
       "pos": 2,
       "team": "GV Hennebont",
-      "p": 5,
+      "p": 6,
       "w": 4,
-      "l": 1,
-      "pts": 18
+      "l": 2,
+      "pts": 20
      },
      {
-      "pos": 3,
-      "team": "Bruille",
-      "p": 5,
-      "w": 4,
+      "pos": 2,
+      "team": "Loire Nord TT (Roanne)",
+      "p": 6,
+      "w": 5,
       "l": 1,
-      "pts": 17
+      "pts": 20
      },
      {
       "pos": 4,
-      "team": "Loire Nord TT (Roanne)",
-      "p": 5,
+      "team": "Bruille",
+      "p": 6,
       "w": 4,
-      "l": 1,
-      "pts": 16
+      "l": 2,
+      "pts": 19
      },
      {
       "pos": 5,
       "team": "TFTT Thorigné-Fouillard",
-      "p": 5,
-      "w": 2,
+      "p": 6,
+      "w": 3,
       "l": 3,
-      "pts": 11
+      "pts": 15
      },
      {
       "pos": 6,
       "team": "Alliance Nîmes/Montpellier",
-      "p": 5,
-      "w": 1,
+      "p": 6,
+      "w": 2,
       "l": 4,
-      "pts": 10
-     },
-     {
-      "pos": 7,
-      "team": "La Romagne",
-      "p": 5,
-      "w": 1,
-      "l": 4,
-      "pts": 8
+      "pts": 14
      },
      {
       "pos": 7,
       "team": "Loups d'Angers",
-      "p": 5,
-      "w": 2,
+      "p": 6,
+      "w": 3,
       "l": 3,
-      "pts": 8
+      "pts": 12
      },
      {
       "pos": 7,
       "team": "TT Saint-Denis",
-      "p": 5,
-      "w": 2,
+      "p": 6,
+      "w": 3,
       "l": 3,
+      "pts": 12
+     },
+     {
+      "pos": 9,
+      "team": "La Romagne",
+      "p": 6,
+      "w": 1,
+      "l": 5,
       "pts": 8
      },
      {
       "pos": 10,
       "team": "Chartres",
-      "p": 5,
+      "p": 6,
       "w": 0,
-      "l": 5,
-      "pts": 4
+      "l": 6,
+      "pts": 5
      }
     ]
    }
@@ -387,22 +387,100 @@
    "round": "Matchday 5"
   },
   {
+   "when": "2026-11-22T16:00:00Z",
+   "home": "Loire Nord TT (Roanne)",
+   "away": "SPO Rouen",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 6"
+  },
+  {
+   "when": "2026-11-22T17:00:00Z",
+   "home": "Alliance Nîmes/Montpellier",
+   "away": "GV Hennebont",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
+   "round": "Matchday 6"
+  },
+  {
+   "when": "2026-11-22T16:30:00Z",
+   "home": "Bruille",
+   "away": "TT Saint-Denis",
+   "score": [
+    2,
+    3
+   ],
+   "status": "finished",
+   "round": "Matchday 6"
+  },
+  {
+   "when": "2026-11-22T16:00:00Z",
+   "home": "TFTT Thorigné-Fouillard",
+   "away": "Chartres",
+   "score": [
+    3,
+    1
+   ],
+   "status": "finished",
+   "round": "Matchday 6"
+  },
+  {
+   "when": "2026-11-22T15:00:00Z",
+   "home": "Loups d'Angers",
+   "away": "La Romagne",
+   "score": [
+    3,
+    0
+   ],
+   "status": "finished",
+   "round": "Matchday 6"
+  },
+  {
    "when": "2026-11-24T18:30:00Z",
    "home": "SPO Rouen",
    "away": "Alliance Nîmes/Montpellier",
    "score": null,
    "status": "scheduled",
-   "round": "Matchday 6",
-   "venue": "Rouen"
+   "round": "Matchday 7",
+   "venue": "Kindarena, Rouen"
   },
   {
-   "when": "2026-11-22T00:00:00Z",
-   "date_only": true,
-   "home": "Loups d'Angers",
-   "away": "La Romagne",
+   "when": "2026-11-24T18:30:00Z",
+   "home": "GV Hennebont",
+   "away": "Bruille",
    "score": null,
    "status": "scheduled",
-   "round": "Matchday 6"
+   "round": "Matchday 7"
+  },
+  {
+   "when": "2026-11-24T18:00:00Z",
+   "home": "Chartres",
+   "away": "Loire Nord TT (Roanne)",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7"
+  },
+  {
+   "when": "2026-11-24T18:30:00Z",
+   "home": "La Romagne",
+   "away": "TFTT Thorigné-Fouillard",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7"
+  },
+  {
+   "when": "2026-11-24T18:00:00Z",
+   "home": "TT Saint-Denis",
+   "away": "Loups d'Angers",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 7"
   }
  ],
  "sources": [
@@ -433,6 +511,22 @@
   {
    "name": "11EDGE: Pro A men, matchday 5 results",
    "url": "https://11edge.io/"
+  },
+  {
+   "name": "SPO Rouen: Pro A table after matchday 6 (FFTT)",
+   "url": "https://sporouen-tennisdetable.fr/classement-pro-a/"
+  },
+  {
+   "name": "SPO Rouen: Roanne 3-1 SPO Rouen",
+   "url": "https://sporouen-tennisdetable.fr/roanne-3-1-spo-rouen-premiere-defaite-de-la-saison-en-pro-a/"
+  },
+  {
+   "name": "Midi Libre: Nîmes-Montpellier 3-2 Hennebont",
+   "url": "https://www.midilibre.fr/2026/11/22/une-equipe-fortement-diminuee-sans-les-freres-lebrun-lalliance-nimes-montpellier-realise-un-coup-de-maitre-et-fait-tomber-le-cador-hennebont-13666194.php"
+  },
+  {
+   "name": "FFTT: Pro A men 2026-27 calendar",
+   "url": "https://www.fftt.com/wp-content/uploads/2026/07/calendrier-pro-a-messieurs-2026-2027-v2.pdf"
   }
  ]
 }

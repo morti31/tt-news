@@ -1,7 +1,318 @@
 {
-  "updated": "2026-11-22T18:40:00Z",
+  "updated": "2026-11-23T00:55:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "liam-pitchford-first-bundesliga-defeat-duda-bergneustadt-win-at-grenzau",
+      "category": "Clubs",
+      "kind": "Update",
+      "league": "bundesliga",
+      "date": "2026-11-22",
+      "published": "2026-11-23T00:50:00Z",
+      "headline": "Liam Pitchford loses his first Bundesliga singles of the season as Benedikt Duda leads Bergneustadt to win at Grenzau",
+      "summary": "Benedikt Duda beat England's Liam Pitchford 3-1 on Sunday to end his unbeaten Bundesliga season and give TTC Bergneustadt a 3-1 win at TTC Grenzau.",
+      "score": "3-1",
+      "body": [
+        "England's Liam Pitchford lost a Tischtennis Bundesliga singles match for the first time this season on Sunday, beaten 11-9, 11-9, 13-15, 11-7 by Germany's Benedikt Duda as TTC Bergneustadt won 3-1 at TTC Grenzau.",
+        "Pitchford, 33 and the world No 136, had won his first six league singles for Grenzau, including a 3-2 win over Cedric Meissner from two games down earlier in the tie (5-11, 7-11, 11-9, 11-8, 11-9). Duda, the world No 38, had already beaten Maciej Kubik 3-1, and Belgium's Adrien Rassenfosse beat Feng Yi-Hsin 6-11, 13-11, 11-8, 11-9 to put Bergneustadt 2-1 up before the fourth match.",
+        "The win lifts Bergneustadt to ninth, level on six points with Grenzau and TTC Fulda-Maberzell. Pitchford came through qualifying to win [WTT Feeder Vila Nova de Gaia](/news/liam-pitchford-wins-wtt-feeder-vila-nova-de-gaia-2026-fu-yu.html) earlier this month.",
+        "Grenzau's next league match is at Borussia Dortmund on 14 December (6pm UK). The table is on Eleven's [Bundesliga page](/clubs/bundesliga.html)."
+      ],
+      "sources": [
+        {
+          "name": "TTBL (German): TTC Grenzau v TTC Bergneustadt",
+          "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/6599d0fd-8df7-4a7f-a009-74843689b89f"
+        },
+        {
+          "name": "TTBL (German): Düsseldorf gewinnt Spitzenspiel gegen Saarbrücken, Fan und Pitchford verlieren erstmals",
+          "url": "https://www.ttbl.de/"
+        }
+      ],
+      "matches": [
+        {
+          "label": "Bundesliga, matchday 9",
+          "event": "Tischtennis Bundesliga",
+          "sides": [
+            {
+              "name": "Benedikt Duda",
+              "nat": "GER"
+            },
+            {
+              "name": "Liam Pitchford",
+              "nat": "ENG"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        },
+        {
+          "label": "Bundesliga, matchday 9",
+          "event": "Tischtennis Bundesliga",
+          "sides": [
+            {
+              "name": "TTC Grenzau",
+              "nat": "GER"
+            },
+            {
+              "name": "TTC Bergneustadt",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            1,
+            3
+          ]
+        }
+      ],
+      "league_table": {
+        "comp": "ttbl",
+        "label": "Tischtennis Bundesliga table",
+        "as_of": "After Sunday's matches, 22 November 2026",
+        "page": "/clubs/bundesliga.html",
+        "table": {
+          "columns": [
+            "p",
+            "w",
+            "l",
+            "games",
+            "pts"
+          ],
+          "groups": [
+            {
+              "name": null,
+              "rows": [
+                {
+                  "pos": 1,
+                  "team": "Borussia Düsseldorf",
+                  "p": 9,
+                  "w": 9,
+                  "l": 0,
+                  "for": 27,
+                  "against": 6,
+                  "diff": 21,
+                  "pts": 18
+                },
+                {
+                  "pos": 2,
+                  "team": "TTF Ochsenhausen",
+                  "p": 8,
+                  "w": 6,
+                  "l": 2,
+                  "for": 19,
+                  "against": 12,
+                  "diff": 7,
+                  "pts": 12
+                },
+                {
+                  "pos": 3,
+                  "team": "1. FC Saarbrücken",
+                  "p": 9,
+                  "w": 6,
+                  "l": 3,
+                  "for": 20,
+                  "against": 14,
+                  "diff": 6,
+                  "pts": 12
+                },
+                {
+                  "pos": 4,
+                  "team": "Werder Bremen",
+                  "p": 8,
+                  "w": 5,
+                  "l": 3,
+                  "for": 18,
+                  "against": 16,
+                  "diff": 2,
+                  "pts": 10
+                },
+                {
+                  "pos": 5,
+                  "team": "TTC Bad Homburg",
+                  "p": 9,
+                  "w": 5,
+                  "l": 4,
+                  "for": 19,
+                  "against": 20,
+                  "diff": -1,
+                  "pts": 10
+                },
+                {
+                  "pos": 6,
+                  "team": "Borussia Dortmund",
+                  "p": 8,
+                  "w": 4,
+                  "l": 4,
+                  "for": 15,
+                  "against": 15,
+                  "diff": 0,
+                  "pts": 8
+                },
+                {
+                  "pos": 7,
+                  "team": "Post SV Mühlhausen",
+                  "p": 8,
+                  "w": 4,
+                  "l": 4,
+                  "for": 16,
+                  "against": 17,
+                  "diff": -1,
+                  "pts": 8
+                },
+                {
+                  "pos": 8,
+                  "team": "TTC Fulda-Maberzell",
+                  "p": 9,
+                  "w": 3,
+                  "l": 6,
+                  "for": 19,
+                  "against": 20,
+                  "diff": -1,
+                  "pts": 6
+                },
+                {
+                  "pos": 9,
+                  "team": "TTC Bergneustadt",
+                  "p": 9,
+                  "w": 3,
+                  "l": 6,
+                  "for": 19,
+                  "against": 22,
+                  "diff": -3,
+                  "pts": 6
+                },
+                {
+                  "pos": 10,
+                  "team": "TTC Grenzau",
+                  "p": 9,
+                  "w": 3,
+                  "l": 6,
+                  "for": 16,
+                  "against": 24,
+                  "diff": -8,
+                  "pts": 6
+                },
+                {
+                  "pos": 11,
+                  "team": "TSV Bad Königshofen",
+                  "p": 9,
+                  "w": 2,
+                  "l": 7,
+                  "for": 15,
+                  "against": 24,
+                  "diff": -9,
+                  "pts": 4
+                },
+                {
+                  "pos": 12,
+                  "team": "ASC Grünwettersbach",
+                  "p": 9,
+                  "w": 2,
+                  "l": 7,
+                  "for": 12,
+                  "against": 25,
+                  "diff": -13,
+                  "pts": 4
+                }
+              ]
+            }
+          ],
+          "note": "Two points for a win. Places 1 to 4 go through to the play-offs."
+        },
+        "round": {
+          "name": "Matchday 9",
+          "matches": [
+            {
+              "when": "2026-11-21T14:00:00Z",
+              "home": "TSV Bad Königshofen",
+              "away": "TTC Bad Homburg",
+              "score": [
+                2,
+                3
+              ],
+              "status": "finished",
+              "round": "Matchday 9"
+            },
+            {
+              "when": "2026-11-22T14:00:00Z",
+              "home": "ASC Grünwettersbach",
+              "away": "TTC Fulda-Maberzell",
+              "score": [
+                0,
+                3
+              ],
+              "status": "finished",
+              "round": "Matchday 9"
+            },
+            {
+              "when": "2026-11-22T14:30:00Z",
+              "home": "1. FC Saarbrücken",
+              "away": "Borussia Düsseldorf",
+              "score": [
+                1,
+                3
+              ],
+              "status": "finished",
+              "round": "Matchday 9"
+            },
+            {
+              "when": "2026-11-22T16:00:00Z",
+              "home": "TTC Grenzau",
+              "away": "TTC Bergneustadt",
+              "score": [
+                1,
+                3
+              ],
+              "status": "finished",
+              "round": "Matchday 9"
+            },
+            {
+              "when": "2026-11-23T17:30:00Z",
+              "home": "Post SV Mühlhausen",
+              "away": "Borussia Dortmund",
+              "status": "scheduled",
+              "round": "Matchday 9"
+            },
+            {
+              "when": "2026-11-23T18:00:00Z",
+              "home": "TTF Ochsenhausen",
+              "away": "Werder Bremen",
+              "status": "scheduled",
+              "round": "Matchday 9"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pro-a-men-2026-27-matchday-6-roanne-end-rouen-unbeaten-start-nimes-beat-hennebont",
+      "category": "Clubs",
+      "league": "pro-a",
+      "lang": "French",
+      "date": "2026-11-22",
+      "published": "2026-11-23T00:45:00Z",
+      "headline": "Xu Haidong, ranked 428th, beats Thibault Poret as Roanne end SPO Rouen's unbeaten Pro A start",
+      "summary": "Roanne beat the champions SPO Rouen 3-1 on the sixth matchday of the French men's Pro A, and Nîmes/Montpellier beat Hennebont 3-2 without the Lebrun brothers."
+    },
     {
       "id": "ttbl-2026-27-matchday-9-ionescu-beats-fan-zhendong",
       "category": "Clubs",

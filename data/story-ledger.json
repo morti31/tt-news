@@ -11990,6 +11990,752 @@
      "channel": "World Table Tennis"
     }
    ]
+  },
+  "liam-pitchford-first-bundesliga-defeat-duda-bergneustadt-win-at-grenzau": {
+   "id": "liam-pitchford-first-bundesliga-defeat-duda-bergneustadt-win-at-grenzau",
+   "category": "Clubs",
+   "kind": "Update",
+   "league": "bundesliga",
+   "date": "2026-11-22",
+   "published": "2026-11-23T00:50:00Z",
+   "headline": "Liam Pitchford loses his first Bundesliga singles of the season as Benedikt Duda leads Bergneustadt to win at Grenzau",
+   "summary": "Benedikt Duda beat England's Liam Pitchford 3-1 on Sunday to end his unbeaten Bundesliga season and give TTC Bergneustadt a 3-1 win at TTC Grenzau.",
+   "score": "3-1",
+   "body": [
+    "England's Liam Pitchford lost a Tischtennis Bundesliga singles match for the first time this season on Sunday, beaten 11-9, 11-9, 13-15, 11-7 by Germany's Benedikt Duda as TTC Bergneustadt won 3-1 at TTC Grenzau.",
+    "Pitchford, 33 and the world No 136, had won his first six league singles for Grenzau, including a 3-2 win over Cedric Meissner from two games down earlier in the tie (5-11, 7-11, 11-9, 11-8, 11-9). Duda, the world No 38, had already beaten Maciej Kubik 3-1, and Belgium's Adrien Rassenfosse beat Feng Yi-Hsin 6-11, 13-11, 11-8, 11-9 to put Bergneustadt 2-1 up before the fourth match.",
+    "The win lifts Bergneustadt to ninth, level on six points with Grenzau and TTC Fulda-Maberzell. Pitchford came through qualifying to win [WTT Feeder Vila Nova de Gaia](/news/liam-pitchford-wins-wtt-feeder-vila-nova-de-gaia-2026-fu-yu.html) earlier this month.",
+    "Grenzau's next league match is at Borussia Dortmund on 14 December (6pm UK). The table is on Eleven's [Bundesliga page](/clubs/bundesliga.html)."
+   ],
+   "sources": [
+    {
+     "name": "TTBL (German): TTC Grenzau v TTC Bergneustadt",
+     "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/6599d0fd-8df7-4a7f-a009-74843689b89f"
+    },
+    {
+     "name": "TTBL (German): Düsseldorf gewinnt Spitzenspiel gegen Saarbrücken, Fan und Pitchford verlieren erstmals",
+     "url": "https://www.ttbl.de/"
+    }
+   ],
+   "matches": [
+    {
+     "label": "Bundesliga, matchday 9",
+     "event": "Tischtennis Bundesliga",
+     "sides": [
+      {
+       "name": "Benedikt Duda",
+       "nat": "GER"
+      },
+      {
+       "name": "Liam Pitchford",
+       "nat": "ENG"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       13,
+       15
+      ],
+      [
+       11,
+       7
+      ]
+     ]
+    },
+    {
+     "label": "Bundesliga, matchday 9",
+     "event": "Tischtennis Bundesliga",
+     "sides": [
+      {
+       "name": "TTC Grenzau",
+       "nat": "GER"
+      },
+      {
+       "name": "TTC Bergneustadt",
+       "nat": "GER"
+      }
+     ],
+     "score": [
+      1,
+      3
+     ]
+    }
+   ],
+   "league_table": {
+    "comp": "ttbl",
+    "label": "Tischtennis Bundesliga table",
+    "as_of": "After Sunday's matches, 22 November 2026",
+    "page": "/clubs/bundesliga.html",
+    "table": {
+     "columns": [
+      "p",
+      "w",
+      "l",
+      "games",
+      "pts"
+     ],
+     "groups": [
+      {
+       "name": null,
+       "rows": [
+        {
+         "pos": 1,
+         "team": "Borussia Düsseldorf",
+         "p": 9,
+         "w": 9,
+         "l": 0,
+         "for": 27,
+         "against": 6,
+         "diff": 21,
+         "pts": 18
+        },
+        {
+         "pos": 2,
+         "team": "TTF Ochsenhausen",
+         "p": 8,
+         "w": 6,
+         "l": 2,
+         "for": 19,
+         "against": 12,
+         "diff": 7,
+         "pts": 12
+        },
+        {
+         "pos": 3,
+         "team": "1. FC Saarbrücken",
+         "p": 9,
+         "w": 6,
+         "l": 3,
+         "for": 20,
+         "against": 14,
+         "diff": 6,
+         "pts": 12
+        },
+        {
+         "pos": 4,
+         "team": "Werder Bremen",
+         "p": 8,
+         "w": 5,
+         "l": 3,
+         "for": 18,
+         "against": 16,
+         "diff": 2,
+         "pts": 10
+        },
+        {
+         "pos": 5,
+         "team": "TTC Bad Homburg",
+         "p": 9,
+         "w": 5,
+         "l": 4,
+         "for": 19,
+         "against": 20,
+         "diff": -1,
+         "pts": 10
+        },
+        {
+         "pos": 6,
+         "team": "Borussia Dortmund",
+         "p": 8,
+         "w": 4,
+         "l": 4,
+         "for": 15,
+         "against": 15,
+         "diff": 0,
+         "pts": 8
+        },
+        {
+         "pos": 7,
+         "team": "Post SV Mühlhausen",
+         "p": 8,
+         "w": 4,
+         "l": 4,
+         "for": 16,
+         "against": 17,
+         "diff": -1,
+         "pts": 8
+        },
+        {
+         "pos": 8,
+         "team": "TTC Fulda-Maberzell",
+         "p": 9,
+         "w": 3,
+         "l": 6,
+         "for": 19,
+         "against": 20,
+         "diff": -1,
+         "pts": 6
+        },
+        {
+         "pos": 9,
+         "team": "TTC Bergneustadt",
+         "p": 9,
+         "w": 3,
+         "l": 6,
+         "for": 19,
+         "against": 22,
+         "diff": -3,
+         "pts": 6
+        },
+        {
+         "pos": 10,
+         "team": "TTC Grenzau",
+         "p": 9,
+         "w": 3,
+         "l": 6,
+         "for": 16,
+         "against": 24,
+         "diff": -8,
+         "pts": 6
+        },
+        {
+         "pos": 11,
+         "team": "TSV Bad Königshofen",
+         "p": 9,
+         "w": 2,
+         "l": 7,
+         "for": 15,
+         "against": 24,
+         "diff": -9,
+         "pts": 4
+        },
+        {
+         "pos": 12,
+         "team": "ASC Grünwettersbach",
+         "p": 9,
+         "w": 2,
+         "l": 7,
+         "for": 12,
+         "against": 25,
+         "diff": -13,
+         "pts": 4
+        }
+       ]
+      }
+     ],
+     "note": "Two points for a win. Places 1 to 4 go through to the play-offs."
+    },
+    "round": {
+     "name": "Matchday 9",
+     "matches": [
+      {
+       "when": "2026-11-21T14:00:00Z",
+       "home": "TSV Bad Königshofen",
+       "away": "TTC Bad Homburg",
+       "score": [
+        2,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 9"
+      },
+      {
+       "when": "2026-11-22T14:00:00Z",
+       "home": "ASC Grünwettersbach",
+       "away": "TTC Fulda-Maberzell",
+       "score": [
+        0,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 9"
+      },
+      {
+       "when": "2026-11-22T14:30:00Z",
+       "home": "1. FC Saarbrücken",
+       "away": "Borussia Düsseldorf",
+       "score": [
+        1,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 9"
+      },
+      {
+       "when": "2026-11-22T16:00:00Z",
+       "home": "TTC Grenzau",
+       "away": "TTC Bergneustadt",
+       "score": [
+        1,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 9"
+      },
+      {
+       "when": "2026-11-23T17:30:00Z",
+       "home": "Post SV Mühlhausen",
+       "away": "Borussia Dortmund",
+       "status": "scheduled",
+       "round": "Matchday 9"
+      },
+      {
+       "when": "2026-11-23T18:00:00Z",
+       "home": "TTF Ochsenhausen",
+       "away": "Werder Bremen",
+       "status": "scheduled",
+       "round": "Matchday 9"
+      }
+     ]
+    }
+   }
+  },
+  "pro-a-men-2026-27-matchday-6-roanne-end-rouen-unbeaten-start-nimes-beat-hennebont": {
+   "id": "pro-a-men-2026-27-matchday-6-roanne-end-rouen-unbeaten-start-nimes-beat-hennebont",
+   "category": "Clubs",
+   "league": "pro-a",
+   "lang": "French",
+   "date": "2026-11-22",
+   "published": "2026-11-23T00:45:00Z",
+   "headline": "Xu Haidong, ranked 428th, beats Thibault Poret as Roanne end SPO Rouen's unbeaten Pro A start",
+   "summary": "Roanne beat the champions SPO Rouen 3-1 on the sixth matchday of the French men's Pro A, and Nîmes/Montpellier beat Hennebont 3-2 without the Lebrun brothers."
+  },
+  "ttbl-2026-27-matchday-9-ionescu-beats-fan-zhendong": {
+   "id": "ttbl-2026-27-matchday-9-ionescu-beats-fan-zhendong",
+   "category": "Clubs",
+   "league": "bundesliga",
+   "date": "2026-11-22",
+   "published": "2026-11-22T18:40:00Z",
+   "headline": "Eduard Ionescu hands Fan Zhendong his first Bundesliga defeat but Düsseldorf win at Saarbrücken",
+   "summary": "The Romanian beat the Olympic champion 3-1 for Fan's first league singles defeat this season, but Düsseldorf won 3-1 at Saarbrücken to stay perfect after nine matches.",
+   "tags": [
+    "Fan Zhendong",
+    "Eduard Ionescu"
+   ],
+   "matches": [
+    {
+     "label": "Matchday 9",
+     "event": "Tischtennis Bundesliga",
+     "sides": [
+      {
+       "name": "1. FC Saarbrücken",
+       "nat": "GER"
+      },
+      {
+       "name": "Borussia Düsseldorf",
+       "nat": "GER"
+      }
+     ],
+     "score": [
+      1,
+      3
+     ],
+     "rubbers": [
+      {
+       "sides": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        },
+        {
+         "name": "Anton Källberg",
+         "nat": "SWE"
+        }
+       ],
+       "score": [
+        2,
+        3
+       ],
+       "games": [
+        [
+         10,
+         12
+        ],
+        [
+         11,
+         6
+        ],
+        [
+         11,
+         9
+        ],
+        [
+         7,
+         11
+        ],
+        [
+         7,
+         11
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Eduard Ionescu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Fan Zhendong",
+         "nat": "CHN"
+        }
+       ],
+       "score": [
+        3,
+        1
+       ],
+       "games": [
+        [
+         11,
+         9
+        ],
+        [
+         11,
+         8
+        ],
+        [
+         8,
+         11
+        ],
+        [
+         11,
+         8
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Alvaro Robles",
+         "nat": "ESP"
+        },
+        {
+         "name": "Kanak Jha",
+         "nat": "USA"
+        }
+       ],
+       "score": [
+        2,
+        3
+       ],
+       "games": [
+        [
+         11,
+         8
+        ],
+        [
+         11,
+         2
+        ],
+        [
+         9,
+         11
+        ],
+        [
+         7,
+         11
+        ],
+        [
+         8,
+         11
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Patrick Franziska",
+         "nat": "GER"
+        },
+        {
+         "name": "Fan Zhendong",
+         "nat": "CHN"
+        }
+       ],
+       "score": [
+        0,
+        3
+       ],
+       "games": [
+        [
+         12,
+         14
+        ],
+        [
+         7,
+         11
+        ],
+        [
+         7,
+         11
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "Tischtennis Bundesliga: Saarbrücken v Düsseldorf, match page (German)",
+     "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/b8ca604c-c521-4774-9ba7-b40c7d3e5ad1"
+    },
+    {
+     "name": "Tischtennis Bundesliga: Bad Königshofen v Bad Homburg, match page (German)",
+     "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f67856a4-876c-4481-8eb9-854142d1eeb2"
+    }
+   ]
+  },
+  "dttbl-women-2026-27-weinheim-dachau-draw-weil-lee-debut": {
+   "id": "dttbl-women-2026-27-weinheim-dachau-draw-weil-lee-debut",
+   "kind": "Update",
+   "category": "Clubs",
+   "league": "bundesliga",
+   "date": "2026-11-22",
+   "published": "2026-11-22T16:10:00Z",
+   "headline": "Weinheim stay top of the women's Bundesliga after a 5-5 draw at Dachau, as three of Sunday's matches end level",
+   "summary": "TTC Weinheim beat Fürstenfeldbruck 6-0 on Saturday and drew 5-5 at TSV Dachau, the runners-up, on Sunday, to stay top of the women's Bundesliga on game difference.",
+   "body": [
+    "TTC Weinheim lead the women's Bundesliga after a weekend double-header: a 6-0 win at TuS Fürstenfeldbruck on Saturday and a 5-5 draw at TSV Dachau on Sunday. Both clubs have nine points, Weinheim from five matches and Dachau from six, with Weinheim ahead on game difference.",
+    "Fürstenfeldbruck were without Chantal Mantz and Iryna Motsyk, both injured, and rested Huang Yu-Chiao on Saturday, playing three players from their third-division side. Dachau needed to come from 4-2 down to beat ESV Weil 6-4 on Saturday, with Sabine Winter, the world No 11, winning both her singles; Hong Kong's Lee Hoi Man made her debut for Weil and won a doubles.",
+    "All three of Sunday's matches were drawn 5-5: Dachau against Weinheim, Fürstenfeldbruck against TG Langenselbold and SV DJK Kolbermoor, playing their first league match for eight weeks, against Weil. Kolbermoor are third and unbeaten with seven points from four matches. The table is on Eleven's [Bundesliga page](/clubs/bundesliga.html)."
+   ],
+   "sources": [
+    {
+     "name": "Tischtennis.de (German): Weil sell themselves dearly, Weinheim ruthless",
+     "url": "https://www.tischtennis.de/news/weil-verkauft-sich-teuer-weinheim-ohne-gnade.html"
+    },
+    {
+     "name": "DTTB click-TT: 1. Bundesliga Damen table and results (German)",
+     "url": "https://dttb.click-tt.de/cgi-bin/WebObjects/nuLigaTTDE.woa/wa/groupPage?championship=DTTB+26/27&group=518223"
+    }
+   ],
+   "lang": "German",
+   "league_table": {
+    "comp": "dttbl-women",
+    "label": "Women's Bundesliga table",
+    "as_of": "After the weekend's matches, 22 November",
+    "page": "/clubs/bundesliga.html",
+    "table": {
+     "columns": [
+      "p",
+      "w",
+      "d",
+      "l",
+      "games",
+      "pts"
+     ],
+     "groups": [
+      {
+       "name": null,
+       "rows": [
+        {
+         "pos": 1,
+         "team": "TTC Weinheim",
+         "p": 5,
+         "w": 4,
+         "d": 1,
+         "l": 0,
+         "for": 29,
+         "against": 9,
+         "diff": 20,
+         "pts": 9
+        },
+        {
+         "pos": 2,
+         "team": "TSV Dachau",
+         "p": 6,
+         "w": 4,
+         "d": 1,
+         "l": 1,
+         "for": 30,
+         "against": 19,
+         "diff": 11,
+         "pts": 9
+        },
+        {
+         "pos": 3,
+         "team": "SV DJK Kolbermoor",
+         "p": 4,
+         "w": 3,
+         "d": 1,
+         "l": 0,
+         "for": 23,
+         "against": 13,
+         "diff": 10,
+         "pts": 7
+        },
+        {
+         "pos": 4,
+         "team": "TTC Berlin Eastside",
+         "p": 5,
+         "w": 3,
+         "d": 0,
+         "l": 2,
+         "for": 23,
+         "against": 16,
+         "diff": 7,
+         "pts": 6
+        },
+        {
+         "pos": 5,
+         "team": "TG Langenselbold",
+         "p": 6,
+         "w": 2,
+         "d": 1,
+         "l": 3,
+         "for": 23,
+         "against": 26,
+         "diff": -3,
+         "pts": 5
+        },
+        {
+         "pos": 6,
+         "team": "TuS Fürstenfeldbruck",
+         "p": 5,
+         "w": 1,
+         "d": 1,
+         "l": 3,
+         "for": 15,
+         "against": 25,
+         "diff": -10,
+         "pts": 3
+        },
+        {
+         "pos": 7,
+         "team": "ESV Weil",
+         "p": 5,
+         "w": 0,
+         "d": 1,
+         "l": 4,
+         "for": 14,
+         "against": 29,
+         "diff": -15,
+         "pts": 1
+        },
+        {
+         "pos": 8,
+         "team": "TTG Bingen/Münster-Sarmsheim",
+         "p": 4,
+         "w": 0,
+         "d": 0,
+         "l": 4,
+         "for": 4,
+         "against": 24,
+         "diff": -20,
+         "pts": 0
+        }
+       ]
+      }
+     ],
+     "note": "Two points for a win, one for a draw."
+    },
+    "round": {
+     "name": "This weekend's matches",
+     "matches": [
+      {
+       "when": "2026-11-21T14:00:00Z",
+       "home": "TSV Dachau",
+       "away": "ESV Weil",
+       "score": [
+        6,
+        4
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-21T16:30:00Z",
+       "home": "TuS Fürstenfeldbruck",
+       "away": "TTC Weinheim",
+       "score": [
+        0,
+        6
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-22T09:30:00Z",
+       "home": "TuS Fürstenfeldbruck",
+       "away": "TG Langenselbold",
+       "score": [
+        5,
+        5
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-22T13:00:00Z",
+       "home": "TSV Dachau",
+       "away": "TTC Weinheim",
+       "score": [
+        5,
+        5
+       ],
+       "status": "finished"
+      },
+      {
+       "when": "2026-11-22T13:00:00Z",
+       "home": "SV DJK Kolbermoor",
+       "away": "ESV Weil",
+       "score": [
+        5,
+        5
+       ],
+       "status": "finished"
+      }
+     ]
+    }
+   }
+  },
+  "world-youth-championships-2026-u19-team-quarter-finals-india-taiwan": {
+   "id": "world-youth-championships-2026-u19-team-quarter-finals-india-taiwan",
+   "kind": "Update",
+   "category": "International",
+   "date": "2026-11-22",
+   "published": "2026-11-22T12:30:00Z",
+   "headline": "India and Taiwan reach the U19 boys' team semi-finals at the World Youth Championships in Istanbul",
+   "summary": "India beat the hosts Türkiye 3-0 and Taiwan beat Brazil 3-0 in the U19 boys' team quarter-finals, so the two meet for a place in the final.",
+   "body": [
+    "India are guaranteed a medal in the U19 boys' team event at the ITTF World Youth Championships in Istanbul after beating Türkiye 3-0 in the quarter-finals on Sunday. Priyanuj Bhattacharyya and Abhinandh Pradhivadhi both came from a game down to win 3-1, and Balamurugan Rajasekaran won the third match 11-8 in the fifth game against Muhammet Atakul.",
+    "Taiwan, bronze medallists last year, beat Brazil 3-0 without losing a game in the first two matches and play India in the semi-finals. They were led by Hung Jhe-Yan and Yang Hao-Jen, who were both named in Taiwan's senior national team at the national trials last week. Brazil had knocked out South Korea, last year's bronze medallists, 3-1 in the last 16.",
+    "In the U19 girls' team quarter-finals, India lost 3-0 to France and Taiwan lost 3-1 to the United States, the Pan American youth champions. The championships run until 26 November."
+   ],
+   "sources": [
+    {
+     "name": "IndiaSportsHub: India assure first medal at ITTF Youth Worlds",
+     "url": "https://www.indiasportshub.com/articles/india-assure-first-medal-at-ittf-youth-worlds-as-u19-boys-storm-into-semifinals-with-3-0-win-over-t-rkiye"
+    },
+    {
+     "name": "Liberty Times (Chinese): Taiwan sweep Brazil to reach the U19 boys' semi-finals",
+     "url": "https://sports.ltn.com.tw/news/breakingnews/5649820"
+    }
+   ]
+  },
+  "fang-bo-china-young-players-fewer-role-models-interview": {
+   "id": "fang-bo-china-young-players-fewer-role-models-interview",
+   "kind": "Update",
+   "category": "International",
+   "date": "2026-11-22",
+   "published": "2026-11-22T10:00:00Z",
+   "headline": "Fang Bo says China's young players have fewer senior players to learn from than his generation did",
+   "summary": "A week after winning WTT Contender Istanbul at 34, Fang Bo said in a video interview that the national team's young players lack the role models and hard sparring he grew up with.",
+   "body": [
+    "Fang Bo, who won [WTT Contender Istanbul](/news/wtt-contender-istanbul-2026-finals-fang-bo-honoka-hashimoto-titles.html) last Sunday seven months into his comeback, said China's young players have fewer senior players to learn from than he did. He was speaking in a video interview with the presenter Zhou Yu that was shared on Sina.",
+    "Fang, 34, said that in his time in the national team he could study players such as Ma Lin, Wang Liqin and Wang Hao and later Ma Long and Zhang Jike, and that today's young players lack both that and the same intensity of sparring. His advice to them was: \"Give it everything, don't be afraid of any difficulty, and whatever happens, have a clear conscience\" (translated from Chinese).",
+    "His comments came as no Chinese player reached a final at [WTT Star Contender Muscat](/news/wtt-star-contender-muscat-2026-finals-honoka-hashimoto-shunsuke-togami-titles.html), where Japan won four of the five titles. He withdrew from Muscat during qualifying to have treatment on an injury."
+   ],
+   "sources": [
+    {
+     "name": "Sina (Chinese): Fang Bo says young national team players have fewer seniors to learn from",
+     "url": "https://k.sina.com.cn/article_7879923909_m1d5ae18c503301rags.html"
+    },
+    {
+     "name": "Sina (Chinese): Fang Bo on the state of China's men's team",
+     "url": "https://k.sina.com.cn/article_7879923909_m1d5ae18c503301raa6.html"
+    }
+   ],
+   "lang": "Chinese"
   }
  }
 }
