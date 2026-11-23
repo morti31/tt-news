@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T16:06:00Z",
+  "updated": "2026-11-23T16:37:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1855,16 +1855,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp16000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Yoan Velichkov v Robert Podar, men's singles, group 16",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP16000300----------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3352-ttemsinglesgp16000400",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Carlo Rossi v Per Gevers, men's singles, group 16",
@@ -1873,16 +1863,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP16000400----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp09000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Albert Vilardell v Alessi Massart, men's singles, group 9",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP09000300----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesgp06000300",
@@ -1895,6 +1875,16 @@
       "detail": "Table 5"
     },
     {
+      "id": "wtt-3352-ttemsinglesgp09000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Albert Vilardell v Alessi Massart, men's singles, group 9",
+      "start": "2026-11-23T15:45:00Z",
+      "end": "2026-11-23T16:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP09000300----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3352-ttemsinglesgp09000400",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Botond Varga v Dragos Bujor, men's singles, group 9",
@@ -1903,6 +1893,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP09000400----------",
       "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp16000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Yoan Velichkov v Robert Podar, men's singles, group 16",
+      "start": "2026-11-23T15:45:00Z",
+      "end": "2026-11-23T16:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP16000300----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttemsinglesgp07000300",
