@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T12:06:00Z",
+  "updated": "2026-11-23T12:34:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1525,6 +1525,26 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3352-ttemsinglesgp15000200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Martin Friis v Anton Andersson, men's singles, group 15",
+      "start": "2026-11-23T11:00:00Z",
+      "end": "2026-11-23T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP15000200----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp11000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Choi Nahyun v Darya Kisel, women's singles, group 11",
+      "start": "2026-11-23T11:00:00Z",
+      "end": "2026-11-23T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP11000100----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3352-ttemsinglesgp16000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Yoan Velichkov v Per Gevers, men's singles, group 16",
@@ -1565,24 +1585,24 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp11000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Choi Nahyun v Darya Kisel, women's singles, group 11",
-      "start": "2026-11-23T11:00:00Z",
-      "end": "2026-11-23T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP11000100----------",
-      "detail": "Table 5"
+      "id": "wtt-3377-ttexdoublesu198fnl000800",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Priyanuj Bhattacharyya / Syndrela Das v Li Hechen / Yao Ruixuan, u19 mixed doubles, last 16",
+      "start": "2026-11-23T11:15:00Z",
+      "end": "2026-11-23T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEXDOUBLES--------U198FNL000800----------",
+      "detail": "Table 3"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp15000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Martin Friis v Anton Andersson, men's singles, group 15",
-      "start": "2026-11-23T11:00:00Z",
-      "end": "2026-11-23T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP15000200----------",
-      "detail": "Table 3"
+      "id": "wtt-3377-ttexdoublesu198fnl000600",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Antoine Noirault / Leana Hochart v Li Ki Ho / Su Tsz Tung, u19 mixed doubles, last 16",
+      "start": "2026-11-23T11:15:00Z",
+      "end": "2026-11-23T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEXDOUBLES--------U198FNL000600----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3377-ttexdoublesu198fnl000700",
@@ -1605,26 +1625,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3377-ttexdoublesu198fnl000800",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Priyanuj Bhattacharyya / Syndrela Das v Li Hechen / Yao Ruixuan, u19 mixed doubles, last 16",
-      "start": "2026-11-23T11:15:00Z",
-      "end": "2026-11-23T11:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U198FNL000800----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttexdoublesu198fnl000600",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Antoine Noirault / Leana Hochart v Li Ki Ho / Su Tsz Tung, u19 mixed doubles, last 16",
-      "start": "2026-11-23T11:15:00Z",
-      "end": "2026-11-23T11:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U198FNL000600----------",
-      "detail": "Table 4"
-    },
-    {
       "id": "wtt-3352-ttewsinglesgp03000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Moon Chowon v Lana Benko, women's singles, group 3",
@@ -1645,16 +1645,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp05000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Hannah Silcock v Kathe De Meyer, women's singles, group 5",
-      "start": "2026-11-23T11:30:00Z",
-      "end": "2026-11-23T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP05000100----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3352-ttewsinglesgp06000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Alice Nilsson v Emine Ernst, women's singles, group 6",
@@ -1663,6 +1653,26 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP06000100----------",
       "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp01000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Lotte Nuyttens v Kim Hayeong, women's singles, group 1",
+      "start": "2026-11-23T11:30:00Z",
+      "end": "2026-11-23T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP01000100----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesgp05000100",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Hannah Silcock v Kathe De Meyer, women's singles, group 5",
+      "start": "2026-11-23T11:30:00Z",
+      "end": "2026-11-23T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------GP05000100----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttewsinglesgp08000100",
@@ -1675,13 +1685,13 @@
       "detail": "Table 5"
     },
     {
-      "id": "wtt-3352-ttewsinglesgp01000100",
+      "id": "wtt-3352-ttewsinglesgp02000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lotte Nuyttens v Kim Hayeong, women's singles, group 1",
-      "start": "2026-11-23T11:30:00Z",
-      "end": "2026-11-23T12:00:00Z",
+      "name": "WTT Feeder Düsseldorf II: Ulyana Miashchanskaya v Agnes Svensson, women's singles, group 2",
+      "start": "2026-11-23T12:00:00Z",
+      "end": "2026-11-23T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP01000100----------",
+      "code": "TTEWSINGLES-----------GP02000100----------",
       "detail": "Table 6"
     },
     {
@@ -1723,16 +1733,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------GP07000100----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesgp02000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Ulyana Miashchanskaya v Agnes Svensson, women's singles, group 2",
-      "start": "2026-11-23T12:00:00Z",
-      "end": "2026-11-23T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------GP02000100----------",
-      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttemdoublesrnd1000100",
@@ -2985,6 +2985,24 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3377-ttexdoublesu19qfnl000400",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Lee Hyeonho / Heo Yerim v Li Hechen / Yao Ruixuan, u19 mixed doubles, quarterfinal",
+      "start": "2026-11-24T12:30:00Z",
+      "end": "2026-11-24T13:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEXDOUBLES--------U19QFNL000400----------"
+    },
+    {
+      "id": "wtt-3377-ttexdoublesu19qfnl000300",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Shunto Iwaida / Mao Takamori v Antoine Noirault / Leana Hochart, u19 mixed doubles, quarterfinal",
+      "start": "2026-11-24T12:30:00Z",
+      "end": "2026-11-24T13:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEXDOUBLES--------U19QFNL000300----------"
+    },
+    {
       "id": "wtt-3377-ttexdoublesu19qfnl000200",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Patryk Zyworonek / Koharu Itagaki v Wen Ruibo / Jiang Yiyi, u19 mixed doubles, quarterfinal",
@@ -2992,24 +3010,6 @@
       "end": "2026-11-24T13:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEXDOUBLES--------U19QFNL000200----------"
-    },
-    {
-      "id": "wtt-3377-ttexdoublesu19qfnl000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Mixed Doubles, Quarterfinal, Match 3",
-      "start": "2026-11-24T12:30:00Z",
-      "end": "2026-11-24T13:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U19QFNL000300----------"
-    },
-    {
-      "id": "wtt-3377-ttexdoublesu19qfnl000400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Mixed Doubles, Quarterfinal, Match 4",
-      "start": "2026-11-24T12:30:00Z",
-      "end": "2026-11-24T13:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U19QFNL000400----------"
     },
     {
       "id": "wtt-3377-ttexdoublesu19qfnl000100",
