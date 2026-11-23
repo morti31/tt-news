@@ -3,6 +3,7 @@
 Called from build_site.py. Input: data/rankings.json (from tools/rankings.py). Output: the page body.
 """
 import html, json, os
+import datetime as dt
 import explainers
 import components
 import ranking_moves
@@ -134,9 +135,14 @@ def body(R, items, links=None):
                 f'{table(key, title)}</section>')
 
     dlabel = D.get("label", "")
+
+    def pub(d):
+        return f'{dt.date.fromisoformat(d["date"]).strftime("%A")} {dt.date.fromisoformat(d["date"]).day} {dt.date.fromisoformat(d["date"]).strftime("%B %Y")}, week {d["week"]}' if d.get("date") and d.get("week") else ""
+    pubs = " ".join(f"<strong>{n} last published:</strong> {pub(d)}." for n, d in (("Singles", R), ("Doubles", D)) if pub(d))
     return f"""<main class="wrap rk">
 <section class="sched-head"><div><h1>World rankings</h1>
-<p class="lede">The official ITTF world rankings: every ranked player in singles ({len(R["men"]):,} men and {len(R["women"]):,} women) and the top {max(len(D.get(x, [])) for x in ("women", "men", "mixed")) or 200} pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p></div></section>
+<p class="lede">The official ITTF world rankings: every ranked player in singles ({len(R["men"]):,} men and {len(R["women"]):,} women) and the top {max(len(D.get(x, [])) for x in ("women", "men", "mixed")) or 200} pairs in doubles, with points and this week's movement. Select a player for their <a href="/players/">full profile</a>.</p>
+{f'<p class="small rk-pub">{pubs}</p>' if pubs else ""}</div></section>
 {explainers.block(explainers.pick(["rankings"]), "top").replace('class="xp ', 'data-xk="s" class="xp ', 1)}{explainers.block(explainers.pick(["rankings-doubles", "rankings"]), "top").replace('class="xp ', 'data-xk="d" hidden class="xp ', 1).replace('id="xp-top-h"', 'id="xp-top-hd"').replace('"xp-top-h"', '"xp-top-hd"') if D.get("men") else ""}
 <div class="rk-bar-top">
   <div class="pl-tabs" role="tablist" aria-label="Rankings"><button role="tab" data-g="women" aria-selected="true">Women</button><button role="tab" data-g="men" aria-selected="false">Men</button>{'<button role="tab" data-g="mixed" aria-selected="false">Mixed doubles</button>' if D.get("mixed") else ""}</div>
