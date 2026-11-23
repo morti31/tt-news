@@ -1708,3 +1708,10 @@ b.ev-major { display: inline-block; background: #c9a03a; color: #111; padding: 2
 .article-table { margin: 28px 0; }
 .article-table h2 { font-size: 20px; margin: 0 0 4px; }
 .article-table .small-label { display: block; margin: 0 0 10px; }
+
+/* Watch live card: the stream link covers the card, with the event page link underneath */
+.score-card.watch-card { position: relative; }
+.score-card.watch-card .wc-stream { color: inherit; text-decoration: none; display: block; }
+.score-card.watch-card .wc-stream::after { content: ""; position: absolute; inset: 0; }
+.score-card.watch-card .wc-sub { position: relative; z-index: 1; display: block; margin-top: 5px; padding-top: 4px; border-top: 1px solid rgba(255,255,255,.35); color: #fff; font-size: 13px; text-decoration: none; }
+.score-card.watch-card .wc-sub:hover { text-decoration: underline; }

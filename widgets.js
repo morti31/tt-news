@@ -84,7 +84,7 @@ window.ElevenStream = function (el) {
       const [head, ...rest] = e.name.split(", ");
       const title = head.replace(/^ETTU /, ""), stage = rest.join(", ");
       const sub = t.sub === "Latest report" || !stage ? t.sub : stage;
-      return `<a class="score-card live-card" href="${esc(t.url)}"${t.ext ? ' target="_blank" rel="noopener"' : ""}>
+      return `<a class="score-card live-card" data-url="${esc(t.url)}" href="${esc(t.url)}"${t.ext ? ' target="_blank" rel="noopener"' : ""}>
         <span class="ev"><span class="live-dot"></span>On now</span>
         <span class="row won"><span>${esc(title)}</span></span>
         <span class="row"><span>${esc(sub)}</span></span></a>`;
@@ -198,13 +198,19 @@ window.ElevenStream = function (el) {
           } catch (e) {}
         }
         if (!extra.length && !onHome) return;
-        const on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
+        let on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
+        const watched = new Set();
         for (const hub of liveHubs) {
           try {
             const st = await fetch(`/api/stream?q=${encodeURIComponent(hub.stream_q || hub.city)}`).then((r) => r.json());
-            if (st.status === "live" && !onHome && !(hub.champions && hub.champions.length)) on.unshift(`<a class="score-card watch-card" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a>`);
+            if (st.status === "live" && !onHome && !(hub.champions && hub.champions.length)) {
+              watched.add(hub.url);
+              on.unshift(`<div class="score-card watch-card"><a class="wc-stream" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a><a class="wc-sub" href="${esc(hub.url)}">Draw, results and schedule</a></div>`);
+            }
           } catch (e) {}
         }
+        // An event with a live stream gets no separate "On now" card: its Watch live card links to the draw, results and schedule
+        on = on.filter((c) => !c.includes("live-card") || ![...watched].some((u) => c.includes(`data-url="${esc(u)}"`)));
         const html = on.concat(extra, cards.filter((c) => !c.includes("live-card"))).join("");
         if ($("ticker").dataset.h !== html) { $("ticker").dataset.h = html; $("ticker").innerHTML = html; }   // no redraw when unchanged
         $("ticker").closest(".ticker").hidden = !html;
