@@ -2,7 +2,7 @@
  "event": "WTT Feeder Düsseldorf II",
  "wtt_event_id": "3352",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352&selectedTab=Draws",
- "updated": "2026-11-24T18:12:00Z",
+ "updated": "2026-11-24T19:42:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -34,7 +34,8 @@
          "name": "Lam Yee Lok",
          "nat": "HKG"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:35:00Z"
       },
       {
        "players": [
@@ -46,7 +47,8 @@
          "name": "Moon Chowon",
          "nat": "KOR"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:10:00Z"
       },
       {
        "players": [
@@ -84,7 +86,8 @@
          "name": "Yuan Wan",
          "nat": "GER"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:10:00Z"
       },
       {
        "players": [
@@ -96,7 +99,8 @@
          "name": "Ivana Malobabic",
          "nat": "CRO"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:35:00Z"
       },
       {
        "players": [
@@ -136,7 +140,8 @@
          "name": "Adina Diaconu",
          "nat": "ROU"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:10:00Z"
       },
       {
        "players": [
@@ -148,7 +153,8 @@
          "name": "Sabina Surjan",
          "nat": "SRB"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:45:00Z"
       },
       {
        "players": [
@@ -186,7 +192,8 @@
          "name": "Choi Haeeun",
          "nat": "KOR"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:45:00Z"
       },
       {
        "players": [
@@ -198,7 +205,8 @@
          "name": "Josephina Neumann",
          "nat": "GER"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:35:00Z"
       },
       {
        "players": [
@@ -238,7 +246,8 @@
          "name": "Lilou Massart",
          "nat": "BEL"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:10:00Z"
       },
       {
        "players": [
@@ -250,7 +259,8 @@
          "name": "Camille Lutz",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:45:00Z"
       },
       {
        "players": [
@@ -288,7 +298,8 @@
          "name": "Zhu Chengzhu",
          "nat": "HKG"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:45:00Z"
       },
       {
        "players": [
@@ -300,7 +311,8 @@
          "name": "Veronika Matiunina",
          "nat": "UKR"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:45:00Z"
       },
       {
        "players": [
@@ -340,7 +352,8 @@
          "name": "Izabela Lupulesku",
          "nat": "SRB"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:45:00Z"
       },
       {
        "players": [
@@ -352,7 +365,8 @@
          "name": "Julie Van Hauwaert",
          "nat": "BEL"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:35:00Z"
       },
       {
        "players": [
@@ -390,7 +404,8 @@
          "name": "Sara Tokic",
          "nat": "SLO"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:10:00Z"
       },
       {
        "players": [
@@ -402,7 +417,8 @@
          "name": "Clio Barcenas",
          "nat": "MEX"
         }
-       ]
+       ],
+       "when": "2026-11-25T10:10:00Z"
       },
       {
        "players": [
@@ -706,8 +722,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Rafael De Las Heras",
+         "nat": "ESP"
         },
         {
          "name": "Andrei Istrate",
@@ -758,8 +774,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Maciej Kolodziejczyk",
+         "nat": "AUT"
         },
         {
          "name": "Daniel Berzosa",
@@ -770,8 +786,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Mael Van Dessel",
+         "nat": "LUX"
         },
         {
          "name": "Juan Perez",
@@ -824,8 +840,8 @@
          "nat": "KOR"
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Miguel Pantoja",
+         "nat": "ESP"
         }
        ]
       },
@@ -860,8 +876,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Nikon Shutov",
+         "nat": "BLR"
         },
         {
          "name": "Sanzhar Zhubanov",
@@ -872,8 +888,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Fumiya Igarashi",
+         "nat": "JPN"
         },
         {
          "name": "Niagol Stoyanov",
@@ -966,8 +982,8 @@
          "nat": "ESP"
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Lee Seungsoo",
+         "nat": "KOR"
         }
        ]
       },
@@ -978,8 +994,8 @@
          "nat": "USA"
         },
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Botond Varga",
+         "nat": "HUN"
         }
        ]
       },
@@ -1012,8 +1028,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Alvaro Fuentes",
+         "nat": "CHI"
         },
         {
          "name": "Martin Allegro",
@@ -1024,8 +1040,8 @@
       {
        "players": [
         {
-         "name": "",
-         "nat": "DEF"
+         "name": "Martin Buch",
+         "nat": "DEN"
         },
         {
          "name": "Jang Hanjae",
@@ -1621,7 +1637,8 @@
          "name": "Dimitrije Levajac / Izabela Lupulesku",
          "nat": "SRB"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:00:00Z"
       },
       {
        "players": [
@@ -1635,7 +1652,8 @@
          "nat": "MEX",
          "seed": 8
         }
-       ]
+       ],
+       "when": "2026-11-25T09:00:00Z"
       },
       {
        "players": [
@@ -1648,7 +1666,8 @@
          "name": "Maciej Kolodziejczyk / Karoline Mischek-Colucci",
          "nat": "AUT"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:00:00Z"
       },
       {
        "players": [
@@ -1661,7 +1680,8 @@
          "nat": "KOR",
          "seed": 6
         }
-       ]
+       ],
+       "when": "2026-11-25T09:00:00Z"
       },
       {
        "players": [
@@ -1674,7 +1694,8 @@
          "name": "Nikon Shutov / Lizaveta Tsimashkova",
          "nat": "BLR"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:35:00Z"
       },
       {
        "players": [
@@ -1687,7 +1708,8 @@
          "nat": "BEL",
          "seed": 3
         }
-       ]
+       ],
+       "when": "2026-11-25T09:00:00Z"
       },
       {
        "players": [
@@ -1699,7 +1721,8 @@
          "name": "Ivan Hencl / Dora Cosic",
          "nat": "CRO"
         }
-       ]
+       ],
+       "when": "2026-11-25T09:00:00Z"
       },
       {
        "players": [
@@ -1712,7 +1735,8 @@
          "nat": "KOR",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-25T09:35:00Z"
       }
      ]
     },
