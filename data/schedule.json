@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T17:12:00Z",
+  "updated": "2026-11-24T17:42:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -903,66 +903,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWTEAM-----------U19FNL-00010000--------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp07000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Ma Yeongmin v Elias Sjogren, men's singles, group 7",
-      "start": "2026-11-23T16:20:00Z",
-      "end": "2026-11-23T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP07000300----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp13000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Tom Closset v Gavin Yuan, men's singles, group 13",
-      "start": "2026-11-23T16:20:00Z",
-      "end": "2026-11-23T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP13000400----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp13000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Thiago Monteiro v Temirlan Jiyenbayev, men's singles, group 13",
-      "start": "2026-11-23T16:20:00Z",
-      "end": "2026-11-23T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP13000300----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp05000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Nishant Lebaka v Heorhi Kunats, men's singles, group 5",
-      "start": "2026-11-23T16:20:00Z",
-      "end": "2026-11-23T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP05000400----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp05000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Martin Buch v Edouard Valenet, men's singles, group 5",
-      "start": "2026-11-23T16:20:00Z",
-      "end": "2026-11-23T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP05000300----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp07000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Anav Gupta v Sam Boccard, men's singles, group 7",
-      "start": "2026-11-23T16:20:00Z",
-      "end": "2026-11-23T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP07000400----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttemsinglesgp14000300",
@@ -2075,6 +2015,26 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3352-ttewsinglesqer000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Lana Benko v Julie Van Hauwaert, women's singles, qualification",
+      "start": "2026-11-24T16:40:00Z",
+      "end": "2026-11-24T17:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------QER-000400----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesqer000700",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Kornelija Riliskyte v Kathe De Meyer, women's singles, qualification",
+      "start": "2026-11-24T16:40:00Z",
+      "end": "2026-11-24T17:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------QER-000700----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3352-ttewsinglesqer000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Alice Nilsson v Agathe Avezou, women's singles, qualification",
@@ -2093,26 +2053,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------QER-000100----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Kornelija Riliskyte v Kathe De Meyer, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000700----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lana Benko v Julie Van Hauwaert, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000400----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3377-ttexdoublesu19sfnl000100",
