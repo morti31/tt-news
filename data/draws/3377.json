@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-23T17:37:00Z",
+ "updated": "2026-11-24T08:40:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -690,7 +690,9 @@
          "nat": "GER/POR"
         }
        ],
-       "when": "2026-11-24T08:00:00Z"
+       "when": "2026-11-24T08:00:00Z",
+       "score": "3-0 (11:2,11:1,11:6,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -780,7 +782,11 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Su Tsz Tung / Mak Ming Shum",
+         "nat": "HKG",
+         "seed": 6
+        },
         null
        ],
        "when": "2026-11-24T14:45:00Z"
@@ -849,7 +855,9 @@
          "nat": "ITA"
         }
        ],
-       "when": "2026-11-24T08:00:00Z"
+       "when": "2026-11-24T08:00:00Z",
+       "score": "3-1 (11:2,10:12,11:5,11:7,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -863,7 +871,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-24T08:00:00Z"
+       "when": "2026-11-24T08:00:00Z",
+       "score": "3-0 (11:3,11:9,11:3,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -956,8 +966,15 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Wen Ruibo / Li Hechen",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Shunto Iwaida / Kohaku Nakano",
+         "nat": "JPN"
+        }
        ],
        "when": "2026-11-24T14:45:00Z"
       },
