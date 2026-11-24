@@ -1,0 +1,7 @@
+# Feeds and calendar files are for readers and apps, not search results (Search Console flagged feed.xml as a duplicate page)
+/feed.xml
+  X-Robots-Tag: noindex
+/calendar.ics
+  X-Robots-Tag: noindex
+/events/*.ics
+  X-Robots-Tag: noindex
