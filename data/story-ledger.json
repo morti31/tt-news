@@ -14074,6 +14074,98 @@
      "name": "WTT: World Youth Championships 2026, official results (event 3377)",
      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
     }
+   ]
+  },
+  "world-youth-championships-2026-u19-mixed-doubles-semi-finals-all-china-final": {
+   "id": "world-youth-championships-2026-u19-mixed-doubles-semi-finals-all-china-final",
+   "kind": "Update",
+   "category": "International",
+   "date": "2026-11-24",
+   "published": "2026-11-24T20:25:00Z",
+   "event": "world-youth-championships-2026",
+   "headline": "China guarantee the U19 mixed doubles title at the World Youth Championships as both pairs beat Japan in the semi-finals",
+   "summary": "Wen Ruibo and Jiang Yiyi will play Li Hechen and Yao Ruixuan in an all-Chinese U19 mixed doubles final in Istanbul on Thursday after both pairs beat Japanese opponents on Tuesday evening.",
+   "body": [
+    "China will win the U19 mixed doubles at the World Youth Championships in Istanbul after Wen Ruibo and Jiang Yiyi beat Japan's Kohaku Nakano and Aoba Takahashi 11-9, 11-5, 11-6, and the second seeds, Li Hechen and Yao Ruixuan, beat Shunto Iwaida and Mao Takamori 11-5, 11-7, 10-12, 11-7 in the semi-finals on Tuesday.",
+    "Wen and Jiang needed only 23 minutes. Li and Yao dropped the third game against Iwaida and Takamori, who had [come through a deciding game against France's Antoine Noirault and Leana Hochart](/news/world-youth-championships-2026-u19-mixed-doubles-quarter-finals-china-japan-medals.html) in the quarter-finals, but closed it out 11-7 in the fourth. Both Japanese pairs take bronze.",
+    "Wen, the world No 14 and the most highly ranked player in Istanbul, already has a team gold from [China's win over Taiwan on Monday](/news/world-youth-championships-2026-u19-team-finals-china-beat-taiwan-japan.html) and is guaranteed a third medal in the boys' doubles, where he and Li are the top seeds. The other two boys' doubles quarter-finals finished after Eleven's earlier report: Kazakhstan's Alan Kurmangaliyev and Iran's Benyamin Faraji, the third seeds, beat India's sixth seeds, Abhinandh Pradhivadhi and Priyanuj Bhattacharyya, 11-9, 8-11, 7-11, 18-16, 11-9, and South Korea's Kim Daehwan and Lee Hyeonho beat Taiwan's Hung Che-Yen and Lin Chin-Ting 13-11, 11-9, 9-11, 12-10.",
+    "The U19 singles start on Wednesday with the last 32 from about midday UK time. The doubles semi-finals are on Thursday from about 2.30pm UK time, with Wen and Li against Nathan Pilard and Noirault, and Kurmangaliyev and Faraji against Kim and Lee; the mixed doubles final follows at about 5pm. Times are approximate; live scores and the draws are on Eleven's [event page](/events/world-youth-championships-2026.html)."
+   ],
+   "matches": [
+    {
+     "label": "U19 mixed doubles, semi-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Wen Ruibo / Jiang Yiyi",
+       "nat": "CHN"
+      },
+      {
+       "name": "Kohaku Nakano / Aoba Takahashi",
+       "nat": "JPN"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "U19 mixed doubles, semi-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Li Hechen / Yao Ruixuan",
+       "nat": "CHN"
+      },
+      {
+       "name": "Shunto Iwaida / Mao Takamori",
+       "nat": "JPN"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       11,
+       5
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       7
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "WTT: World Youth Championships 2026, official results (event 3377)",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
+    }
    ],
    "top": true
   }
