@@ -13172,8 +13172,7 @@
      "name": "ITTF world ranking",
      "url": "https://www.worldtabletennis.com/rankings"
     }
-   ],
-   "top": true
+   ]
   },
   "ttbl-2026-27-matchday-9-werder-bremen-win-at-ochsenhausen-muhlhausen-beat-dortmund": {
    "id": "ttbl-2026-27-matchday-9-werder-bremen-win-at-ochsenhausen-muhlhausen-beat-dortmund",
@@ -13839,6 +13838,244 @@
      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
     }
    ]
+  },
+  "world-youth-championships-2026-u19-mixed-doubles-quarter-finals-china-japan-medals": {
+   "id": "world-youth-championships-2026-u19-mixed-doubles-quarter-finals-china-japan-medals",
+   "category": "International",
+   "date": "2026-11-24",
+   "published": "2026-11-24T16:20:00Z",
+   "event": "world-youth-championships-2026",
+   "headline": "China and Japan fill the U19 mixed doubles semi-finals at the World Youth Championships as India's top seeds fall",
+   "summary": "Kohaku Nakano and Aoba Takahashi beat Abhinandh Pradhivadhi and Divyanshi Bhowmick in straight games, leaving two Chinese and two Japanese pairs in the U19 mixed doubles medal places in Istanbul.",
+   "matches": [
+    {
+     "label": "U19 mixed doubles, quarter-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Kohaku Nakano / Aoba Takahashi",
+       "nat": "JPN"
+      },
+      {
+       "name": "Abhinandh Pradhivadhi / Divyanshi Bhowmick",
+       "nat": "IND"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       5
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       11,
+       8
+      ]
+     ]
+    },
+    {
+     "label": "U19 mixed doubles, quarter-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Shunto Iwaida / Mao Takamori",
+       "nat": "JPN"
+      },
+      {
+       "name": "Antoine Noirault / Leana Hochart",
+       "nat": "FRA"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "games": [
+      [
+       2,
+       11
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ]
+     ]
+    },
+    {
+     "label": "Women's U19 doubles, quarter-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Leana Hochart / Alexia Nodin",
+       "nat": "FRA"
+      },
+      {
+       "name": "Su Tsz Tung / Mak Ming Shum",
+       "nat": "HKG"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "games": [
+      [
+       11,
+       9
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       11,
+       9
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       9
+      ]
+     ]
+    },
+    {
+     "label": "Men's U19 doubles, quarter-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Wen Ruibo / Li Hechen",
+       "nat": "CHN"
+      },
+      {
+       "name": "Shunto Iwaida / Kohaku Nakano",
+       "nat": "JPN"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       9
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       4
+      ]
+     ]
+    },
+    {
+     "label": "Men's U19 doubles, quarter-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Nathan Pilard / Antoine Noirault",
+       "nat": "FRA"
+      },
+      {
+       "name": "Enrique Rios / Ramon Vila",
+       "nat": "PUR/DOM"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "games": [
+      [
+       11,
+       6
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "Women's U19 doubles, quarter-final",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Jiang Yiyi / Yao Ruixuan",
+       "nat": "CHN"
+      },
+      {
+       "name": "Zlata Terekhova / Eseniia Shirokova",
+       "nat": "RUS"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       5,
+       11
+      ],
+      [
+       13,
+       11
+      ],
+      [
+       11,
+       4
+      ],
+      [
+       12,
+       10
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "WTT: World Youth Championships 2026, official results (event 3377)",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
+    }
+   ],
+   "top": true
   }
  }
 }
