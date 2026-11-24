@@ -107,7 +107,7 @@ def fallback_poster(a):
 def event_organiser(ev):
     """Who runs the event, for the structured data (Google warns when it is missing)."""
     words = f'{ev.get("series", "")} {ev.get("name", "")}'
-    if re.search(r"\bWTT\b|Smash|Champions|Contender|Feeder|WTT Finals", words):
+    if re.search(r"\bWTT\b|\bSmash\b|\bChampions\b|\bContender\b|\bFeeder\b", words):
         return {"name": "World Table Tennis", "url": "https://www.worldtabletennis.com/"}
     if re.search(r"World (?:Team |Youth |Para )?Championships|World Cup|Mixed Team|ITTF", words):
         return {"name": "International Table Tennis Federation", "url": "https://www.ittf.com/"}
