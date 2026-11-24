@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-24T10:10:00Z",
+ "updated": "2026-11-24T10:24:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -984,7 +984,9 @@
          "nat": "TPE"
         }
        ],
-       "when": "2026-11-24T09:30:00Z"
+       "when": "2026-11-24T09:30:00Z",
+       "score": "2-3 (6:11,11:7,11:13,11:7,9:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -998,7 +1000,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-24T09:30:00Z"
+       "when": "2026-11-24T09:30:00Z",
+       "score": "3-1 (7:11,12:10,11:4,11:3,0:0)",
+       "winner": 0
       }
      ]
     },
@@ -1050,8 +1054,14 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Hung Che-Yen / Lin Chin-Ting",
+         "nat": "TPE"
+        },
+        {
+         "name": "Kim Daehwan / Lee Hyeonho",
+         "nat": "KOR"
+        }
        ],
        "when": "2026-11-24T15:15:00Z"
       }

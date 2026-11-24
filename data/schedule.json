@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T10:10:00Z",
+  "updated": "2026-11-24T10:24:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2235,16 +2235,6 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3377-ttewdoublesu198fnl000800",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Busra Demir / Aybuke Simsek v Jiang Yiyi / Yao Ruixuan, u19 girls' doubles, last 16",
-      "start": "2026-11-24T09:30:00Z",
-      "end": "2026-11-24T10:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U198FNL000800----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3377-ttemdoublesu198fnl000700",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Aditya Sareen / Chulong Nie v Hung Che-Yen / Lin Chin-Ting, u19 boys' doubles, last 16",
@@ -2265,44 +2255,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp05000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Martin Buch v Nishant Lebaka, men's singles, group 5",
-      "start": "2026-11-24T09:40:00Z",
-      "end": "2026-11-24T10:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP05000500----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp04000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Eusebio Vos v Tom Scholtes, men's singles, group 4",
-      "start": "2026-11-24T09:40:00Z",
-      "end": "2026-11-24T10:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP04000500----------",
+      "id": "wtt-3377-ttewdoublesu198fnl000800",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Busra Demir / Aybuke Simsek v Jiang Yiyi / Yao Ruixuan, u19 girls' doubles, last 16",
+      "start": "2026-11-24T09:30:00Z",
+      "end": "2026-11-24T10:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWDOUBLES--------U198FNL000800----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp04000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Sebastian Bedoya v Louis Laine, men's singles, group 4",
-      "start": "2026-11-24T09:40:00Z",
-      "end": "2026-11-24T10:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP04000600----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp05000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Edouard Valenet v Heorhi Kunats, men's singles, group 5",
-      "start": "2026-11-24T09:40:00Z",
-      "end": "2026-11-24T10:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP05000600----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesgp06000500",
@@ -2323,6 +2283,46 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP06000600----------",
       "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp04000500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Eusebio Vos v Tom Scholtes, men's singles, group 4",
+      "start": "2026-11-24T09:40:00Z",
+      "end": "2026-11-24T10:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP04000500----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp05000600",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Edouard Valenet v Heorhi Kunats, men's singles, group 5",
+      "start": "2026-11-24T09:40:00Z",
+      "end": "2026-11-24T10:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP05000600----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp05000500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Martin Buch v Nishant Lebaka, men's singles, group 5",
+      "start": "2026-11-24T09:40:00Z",
+      "end": "2026-11-24T10:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP05000500----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp04000600",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Sebastian Bedoya v Louis Laine, men's singles, group 4",
+      "start": "2026-11-24T09:40:00Z",
+      "end": "2026-11-24T10:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP04000600----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttemsinglesgp07000500",
@@ -2735,6 +2735,16 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3377-ttemdoublesu19qfnl000400",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Hung Che-Yen / Lin Chin-Ting v Kim Daehwan / Lee Hyeonho, u19 boys' doubles, quarterfinal",
+      "start": "2026-11-24T15:15:00Z",
+      "end": "2026-11-24T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMDOUBLES--------U19QFNL000400----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3377-ttewdoublesu19qfnl000400",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Zlata Terekhova / Eseniia Shirokova v Jiang Yiyi / Yao Ruixuan, u19 girls' doubles, quarterfinal",
@@ -2743,16 +2753,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWDOUBLES--------U19QFNL000400----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttemdoublesu19qfnl000400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Boys' Doubles, Quarterfinal, Match 4",
-      "start": "2026-11-24T15:15:00Z",
-      "end": "2026-11-24T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U19QFNL000400----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3377-ttewdoublesu19qfnl000300",
