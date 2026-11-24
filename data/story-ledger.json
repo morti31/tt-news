@@ -13671,6 +13671,174 @@
      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
     }
    ]
+  },
+  "world-youth-championships-2026-u19-doubles-last-16-hana-goda-istrate-arpas-out": {
+   "id": "world-youth-championships-2026-u19-doubles-last-16-hana-goda-istrate-arpas-out",
+   "kind": "Update",
+   "category": "International",
+   "date": "2026-11-24",
+   "published": "2026-11-24T12:15:00Z",
+   "event": "world-youth-championships-2026",
+   "headline": "World No 21 Hana Goda and the second seeds Istrate and Arpas go out of the U19 doubles at the World Youth Championships",
+   "summary": "Japan's Mao Takamori and Aoba Takahashi beat Goda and Bianca Mei-Rosu, and South Korea's Kim Daehwan and Lee Hyeonho knocked out the boys' second seeds, as seven seeded pairs fell in the U19 doubles last 16 in Istanbul.",
+   "body": [
+    "Japan's Mao Takamori and Aoba Takahashi beat the fifth seeds, Egypt's Hana Goda and Romania's Bianca Mei-Rosu, 8-11, 11-7, 11-7, 11-6 in the last 16 of the U19 girls' doubles at the World Youth Championships in Istanbul on Tuesday. Goda, the African champion, is ranked 21st in the senior world rankings, far higher than anyone else in the girls' draw.",
+    "Seven of the 16 seeded pairs went out. Taiwan's Wu Ying Syuan and Wu Jia-En beat India's third seeds, Syndrela Das and Divyanshi Bhowmick, 12-10, 11-2, 9-11, 11-8. In the boys' event South Korea's Kim Daehwan and Lee Hyeonho lost the first game to the second seeds, Robert Istrate and Samuel Arpas, then won the next three, the last two 11-4, 11-3. Japan's Shunto Iwaida and Kohaku Nakano beat the seventh seeds, Emanuel Otalvaro and Steven Moreno, 11-3, 11-9, 11-3, three weeks after Otalvaro [beat Li Hechen at the Youth Olympic Games](/news/youth-olympic-games-dakar-2026-otalvaro-beats-li-hechen-china-no-medal.html).",
+    "China's pairs are through. The top seeds Wen Ruibo and Li Hechen beat Italy's Francesco Trevisan and Danilo Faso 11-2, 10-12, 11-5, 11-7, and the girls' second seeds, Jiang Yiyi and Yao Ruixuan, beat the home pair Busra Demir and Aybuke Simsek 11-3, 5-11, 11-5, 11-8. The boys' fifth and eighth seeds and the girls' seventh seeds also lost, while Kazakhstan's Alan Kurmangaliyev and Iran's Benyamin Faraji, the boys' third seeds, came from two games down to beat Poland's Samuel Michna and Patryk Zyworonek 3-2.",
+    "The doubles quarter-finals start at about 3.15pm UK time, with Wen and Li against Iwaida and Nakano, and Takamori and Takahashi against the Wus. The U19 mixed doubles quarter-finals are from 12.30pm and the semi-finals at about 5pm. Times are approximate; live scores and the draws are on Eleven's [event page](/events/world-youth-championships-2026.html)."
+   ],
+   "matches": [
+    {
+     "label": "Women's U19 doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Mao Takamori / Aoba Takahashi",
+       "nat": "JPN"
+      },
+      {
+       "name": "Hana Goda / Bianca Mei-Rosu",
+       "nat": "EGY/ROU"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       8,
+       11
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "Men's U19 doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Kim Daehwan / Lee Hyeonho",
+       "nat": "KOR"
+      },
+      {
+       "name": "Robert Istrate / Samuel Arpas",
+       "nat": "ROU/SVK"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       7,
+       11
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       11,
+       4
+      ],
+      [
+       11,
+       3
+      ]
+     ]
+    },
+    {
+     "label": "Women's U19 doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Wu Ying Syuan / Wu Jia-En",
+       "nat": "TPE"
+      },
+      {
+       "name": "Syndrela Das / Divyanshi Bhowmick",
+       "nat": "IND"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       12,
+       10
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       8
+      ]
+     ]
+    },
+    {
+     "label": "Men's U19 doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Wen Ruibo / Li Hechen",
+       "nat": "CHN"
+      },
+      {
+       "name": "Francesco Trevisan / Danilo Faso",
+       "nat": "ITA"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       11,
+       2
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       11,
+       7
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "WTT: World Youth Championships Istanbul 2026, results and draws",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
+    }
+   ]
   }
  }
 }
