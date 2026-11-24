@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T16:42:00Z",
+  "updated": "2026-11-24T17:12:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -903,66 +903,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWTEAM-----------U19FNL-00010000--------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp06000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Irisbek Artukmetov v Daniil Vitorski, men's singles, group 6",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP06000400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp16000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Carlo Rossi v Per Gevers, men's singles, group 16",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP16000400----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp06000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Iskender Kharki v Lleyton Ullmann, men's singles, group 6",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP06000300----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp09000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Albert Vilardell v Alessi Massart, men's singles, group 9",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP09000300----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp09000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Botond Varga v Dragos Bujor, men's singles, group 9",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP09000400----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp16000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Yoan Velichkov v Robert Podar, men's singles, group 16",
-      "start": "2026-11-23T15:45:00Z",
-      "end": "2026-11-23T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP16000300----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttemsinglesgp07000300",
@@ -2015,6 +1955,16 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3377-ttemdoublesu19qfnl000300",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Alan Kurmangaliyev / Benyamin Faraji v Abhinandh Pradhivadhi / Priyanuj Bhattacharyya, u19 boys' doubles, quarterfinal",
+      "start": "2026-11-24T15:15:00Z",
+      "end": "2026-11-24T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMDOUBLES--------U19QFNL000300----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3377-ttemdoublesu19qfnl000400",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Hung Che-Yen / Lin Chin-Ting v Kim Daehwan / Lee Hyeonho, u19 boys' doubles, quarterfinal",
@@ -2043,16 +1993,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWDOUBLES--------U19QFNL000300----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttemdoublesu19qfnl000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Alan Kurmangaliyev / Benyamin Faraji v Abhinandh Pradhivadhi / Priyanuj Bhattacharyya, u19 boys' doubles, quarterfinal",
-      "start": "2026-11-24T15:15:00Z",
-      "end": "2026-11-24T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U19QFNL000300----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttewdoublesrnd2000400",
@@ -2095,6 +2035,16 @@
       "detail": "Table 1"
     },
     {
+      "id": "wtt-3352-ttemdoublesrnd2000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Choi Jiwook / Jang Hanjae v Yoan Velichkov / Ivan Hencl, men's doubles, qualifying round 2",
+      "start": "2026-11-24T16:05:00Z",
+      "end": "2026-11-24T16:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMDOUBLES-----------RND2000400----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3352-ttemdoublesrnd2000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Eusebio Vos / Alvaro Fuentes v Sam Boccard / Barish Moullet, men's doubles, qualifying round 2",
@@ -2125,14 +2075,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemdoublesrnd2000400",
+      "id": "wtt-3352-ttewsinglesqer000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Choi Jiwook / Jang Hanjae v Yoan Velichkov / Ivan Hencl, men's doubles, qualifying round 2",
-      "start": "2026-11-24T16:05:00Z",
-      "end": "2026-11-24T16:40:00Z",
+      "name": "WTT Feeder Düsseldorf II: Alice Nilsson v Agathe Avezou, women's singles, qualification",
+      "start": "2026-11-24T16:40:00Z",
+      "end": "2026-11-24T17:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMDOUBLES-----------RND2000400----------",
-      "detail": "Table 4"
+      "code": "TTEWSINGLES-----------QER-000200----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttewsinglesqer000100",
@@ -2143,16 +2093,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------QER-000100----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Alice Nilsson v Agathe Avezou, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000200----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttewsinglesqer000700",
@@ -2656,7 +2596,7 @@
     {
       "id": "wtt-3377-ttemdoublesu19sfnl000200",
       "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Boys' Doubles, Semifinal, Match 2",
+      "name": "World Youth Championships Istanbul: Alan Kurmangaliyev / Benyamin Faraji v Kim Daehwan / Lee Hyeonho, u19 boys' doubles, semifinal",
       "start": "2026-11-26T15:00:00Z",
       "end": "2026-11-26T15:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
