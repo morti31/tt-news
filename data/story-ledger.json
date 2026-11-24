@@ -13493,6 +13493,184 @@
      "url": "https://www.ttbl.de/bundesliga/tabelle"
     }
    ]
+  },
+  "world-rankings-2026-week-48-togami-hashimoto-lin-shidong": {
+   "id": "world-rankings-2026-week-48-togami-hashimoto-lin-shidong",
+   "category": "International",
+   "date": "2026-11-24",
+   "published": "2026-11-24T04:40:00Z",
+   "headline": "Hashimoto and Togami climb after Muscat titles as Lin Shidong returns to the world top 10",
+   "summary": "Shunsuke Togami rises to 11th and Honoka Hashimoto to 13th in the week 48 world ranking, while Lin Shidong moves back into the men's top 10 at the expense of Alexis Lebrun.",
+   "sources": [
+    {
+     "name": "ITTF world ranking, week 48 (WTT)",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ]
+  },
+  "world-youth-championships-2026-u19-mixed-doubles-last-16-iwaida-takamori-arpas-berzosa": {
+   "id": "world-youth-championships-2026-u19-mixed-doubles-last-16-iwaida-takamori-arpas-berzosa",
+   "kind": "Update",
+   "category": "International",
+   "date": "2026-11-24",
+   "published": "2026-11-24T04:46:00Z",
+   "event": "world-youth-championships-2026",
+   "headline": "Japan's Shunto Iwaida and Mao Takamori win a game 11-0 to knock out the third seeds at the World Youth Championships",
+   "summary": "Iwaida and Takamori beat Slovakia's Samuel Arpas and Spain's Maria Berzosa 11-3, 11-4, 11-0 to reach the U19 mixed doubles quarter-finals in Istanbul, where both Chinese pairs and India's top seeds are also through.",
+   "body": [
+    "Japan's Shunto Iwaida and Mao Takamori dropped seven points in beating the third seeds, Slovakia's Samuel Arpas and Spain's Maria Berzosa, 11-3, 11-4, 11-0 in the last 16 of the U19 mixed doubles at the World Youth Championships in Istanbul on Monday. Takamori is also the second seed in the U19 girls' singles.",
+    "Two other seeded pairs went out. France's Antoine Noirault and Leana Hochart came from a game down to beat Hong Kong's Li Ki Ho and Su Tsz Tung, the fifth seeds, 3-1. South Korea's Lee Hyeonho and Heo Yerim knocked out Taiwan's sixth seeds, Hung Che-Yen and Wu Ying Syuan, in the last 32, winning the deciding game 15-13, then beat Australia's Aditya Sareen and Constantina Psihogios 3-0.",
+    "China's two pairs are through. Wen Ruibo, the world No 14, and Jiang Yiyi beat the fourth seeds, Romania's Robert Istrate and Bianca Mei-Rosu, 11-6, 13-11, 11-8, a day after both won U19 team titles. The second seeds Li Hechen and Yao Ruixuan needed five games to beat India's Priyanuj Bhattacharyya and Syndrela Das, taking the decider 11-6. India's top seeds, Abhinandh Pradhivadhi and Divyanshi Bhowmick, lost the first game 11-4 to Taiwan's Lin Chin-Ting and Wu Jia-En before winning in four.",
+    "The quarter-finals start at 12.30pm UK time on Tuesday 24 November: Pradhivadhi and Bhowmick v Kohaku Nakano and Aoba Takahashi (Japan), Patryk Zyworonek and Koharu Itagaki (Poland and Germany) v Wen and Jiang, Iwaida and Takamori v Noirault and Hochart, and Lee and Heo v Li and Yao. Wen and Jiang are also the top seeds in the U19 singles; results and the draws are on Eleven's [event page](/events/world-youth-championships-2026.html)."
+   ],
+   "matches": [
+    {
+     "label": "U19 mixed doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Shunto Iwaida / Mao Takamori",
+       "nat": "JPN"
+      },
+      {
+       "name": "Samuel Arpas / Maria Berzosa",
+       "nat": "SVK"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       4
+      ],
+      [
+       11,
+       0
+      ]
+     ]
+    },
+    {
+     "label": "U19 mixed doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Wen Ruibo / Jiang Yiyi",
+       "nat": "CHN"
+      },
+      {
+       "name": "Robert Istrate / Bianca Mei-Rosu",
+       "nat": "ROU"
+      }
+     ],
+     "score": [
+      3,
+      0
+     ],
+     "games": [
+      [
+       11,
+       6
+      ],
+      [
+       13,
+       11
+      ],
+      [
+       11,
+       8
+      ]
+     ]
+    },
+    {
+     "label": "U19 mixed doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Li Hechen / Yao Ruixuan",
+       "nat": "CHN"
+      },
+      {
+       "name": "Priyanuj Bhattacharyya / Syndrela Das",
+       "nat": "IND"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "games": [
+      [
+       12,
+       10
+      ],
+      [
+       6,
+       11
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       5,
+       11
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "U19 mixed doubles, last 16",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Antoine Noirault / Leana Hochart",
+       "nat": "FRA"
+      },
+      {
+       "name": "Li Ki Ho / Su Tsz Tung",
+       "nat": "HKG"
+      }
+     ],
+     "score": [
+      3,
+      1
+     ],
+     "games": [
+      [
+       10,
+       12
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       8
+      ]
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "WTT: World Youth Championships Istanbul 2026, results and draws",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
+    }
+   ]
   }
  }
 }
