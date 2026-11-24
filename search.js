@@ -15,6 +15,7 @@
 
   // Addresses: Eleven's are stored as paths, The Chop's in full. On The Chop's host, Eleven's need the full address.
   function link(u) {
+    u = u.replace(/\/index\.html$/, "/").replace(/\.html(?=$|[?#])/, "");   // clean addresses, as the sites publish them
     if (u.startsWith(CHOP_URL)) return onChop ? u.slice(CHOP_URL.length) || "/" : u;
     if (u.startsWith("/defensive/")) return onChop ? u.slice(10) : CHOP_URL + u.slice(10);   // Pagefind's paths for Chop pages
     return onChop && u.startsWith("/") ? ELEVEN + u : u;
@@ -102,7 +103,7 @@
       box = document.createElement("div");
       box.id = "sx-pop";
       box.className = "sx-pop";
-      box.innerHTML = `<div class="sx-pop-in"><form action="/search.html" method="get" role="search">
+      box.innerHTML = `<div class="sx-pop-in"><form action="/search" method="get" role="search">
 <label class="sx-visually-hidden" for="sx-pop-q">Search</label>
 <input id="sx-pop-q" name="q" type="search" placeholder="${onChop ? "Search defenders, players, stories..." : "Search players, events, stories..."}" autocomplete="off" enterkeyhint="search">
 <button type="button" class="sx-close" aria-label="Close search">Close</button></form>

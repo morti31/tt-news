@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T13:08Z",
+ "updated": "2026-11-24T13:29Z",
  "days": 4,
  "upsets": [
   {
@@ -31,27 +31,48 @@
    ]
   },
   {
-   "when": "2026-11-19T14:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
+   "when": "2026-11-23T17:30:00Z",
+   "competition": "Bundesliga: Post SV Mühlhausen v BV Borussia 09 Dortmund",
    "round": "",
    "winner": {
-    "name": "Sun Yang",
-    "rank": 134,
-    "age": 18
+    "name": "Ovidiu Ionescu",
+    "rank": 156,
+    "age": 37
    },
    "loser": {
-    "name": "Darko Jorgic",
-    "rank": 15,
-    "age": 28
+    "name": "João Geraldo",
+    "rank": 40,
+    "age": 31
    },
    "score": "3-1",
-   "games": "13-11,11-9,9-11,11-5",
-   "url": "",
+   "games": "11-7,6-11,11-8,12-10",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/08dee040-b5d0-4bea-a08e-5d7654859edc",
    "labels": [],
-   "level": "upset",
+   "level": "notable",
    "angles": [
-    "10-year age gap"
+    "winner is 37"
    ]
+  },
+  {
+   "when": "2026-11-23T18:00:00Z",
+   "competition": "Bundesliga: TTF Liebherr Ochsenhausen v SV Werder Bremen",
+   "round": "",
+   "winner": {
+    "name": "Irvin Bertrand",
+    "rank": 901,
+    "age": null
+   },
+   "loser": {
+    "name": "Iulian Chirita",
+    "rank": 70,
+    "age": 20
+   },
+   "score": "3-1",
+   "games": "11-9,11-6,5-11,11-8",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f3c06fee-1f57-470c-b71a-b0c1b4780309",
+   "labels": [],
+   "level": "notable",
+   "angles": []
   }
  ],
  "matches": [
@@ -81,107 +102,44 @@
    "level": "shock"
   },
   {
-   "when": "2026-11-19T14:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
+   "when": "2026-11-23T17:30:00Z",
+   "competition": "Bundesliga: Post SV Mühlhausen v BV Borussia 09 Dortmund",
    "round": "",
    "winner": {
-    "name": "Sun Yang",
-    "rank": 134,
-    "age": 18
+    "name": "Ovidiu Ionescu",
+    "rank": 156,
+    "age": 37
    },
    "loser": {
-    "name": "Darko Jorgic",
-    "rank": 15,
-    "age": 28
+    "name": "João Geraldo",
+    "rank": 40,
+    "age": 31
    },
    "score": "3-1",
-   "games": "13-11,11-9,9-11,11-5",
-   "url": "",
+   "games": "11-7,6-11,11-8,12-10",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/08dee040-b5d0-4bea-a08e-5d7654859edc",
    "labels": [],
-   "level": "upset"
+   "level": "notable"
   },
   {
-   "when": "2026-11-20T06:00:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
+   "when": "2026-11-23T18:00:00Z",
+   "competition": "Bundesliga: TTF Liebherr Ochsenhausen v SV Werder Bremen",
    "round": "",
    "winner": {
-    "name": "Satsuki Odo",
-    "rank": 10,
-    "age": 22
+    "name": "Irvin Bertrand",
+    "rank": 901,
+    "age": null
    },
    "loser": {
-    "name": "Audrey Zarif",
-    "rank": 86,
-    "age": 28
+    "name": "Iulian Chirita",
+    "rank": 70,
+    "age": 20
    },
-   "score": "3-0",
-   "games": "11-9,11-3,13-11",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T12:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Satsuki Odo",
-    "rank": 10,
-    "age": 22
-   },
-   "loser": {
-    "name": "Kim Nayeong",
-    "rank": 35,
-    "age": 21
-   },
-   "score": "3-0",
-   "games": "11-5,11-6,11-6",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-19T13:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Shunsuke Togami",
-    "rank": 11,
-    "age": 25
-   },
-   "loser": {
-    "name": "Manav Thakkar",
-    "rank": 47,
-    "age": 26
-   },
-   "score": "3-0",
-   "games": "11-6,11-4,11-5",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    }
-   ],
-   "level": null
+   "score": "3-1",
+   "games": "11-9,11-6,5-11,11-8",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f3c06fee-1f57-470c-b71a-b0c1b4780309",
+   "labels": [],
+   "level": "notable"
   },
   {
    "when": "2026-11-20T15:05:00Z",
@@ -259,64 +217,6 @@
    "level": null
   },
   {
-   "when": "2026-11-20T07:45:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Honoka Hashimoto",
-    "rank": 13,
-    "age": 28
-   },
-   "loser": {
-    "name": "Kim Seongjin",
-    "rank": 69,
-    "age": 21
-   },
-   "score": "3-0",
-   "games": "11-1,11-7,11-6",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T11:00:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Honoka Hashimoto",
-    "rank": 13,
-    "age": 28
-   },
-   "loser": {
-    "name": "Cheng I-Ching",
-    "rank": 33,
-    "age": 34
-   },
-   "score": "3-0",
-   "games": "11-7,11-3,11-5",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-21T13:30:00Z",
    "competition": "WTT Star Contender Muscat 2026",
    "round": "final",
@@ -337,85 +237,6 @@
     {
      "label": "streak",
      "detail": "10th win in a row"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T06:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Oh Junsung",
-    "rank": 17,
-    "age": 20
-   },
-   "loser": {
-    "name": "Lim Jonghoon",
-    "rank": 31,
-    "age": 29
-   },
-   "score": "3-2",
-   "games": "16-14,11-8,14-16,5-11,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Miyu Nagasaki",
-    "rank": 17,
-    "age": 24
-   },
-   "loser": {
-    "name": "Xiaoxin Yang",
-    "rank": 72,
-    "age": 38
-   },
-   "score": "3-0",
-   "games": "12-10,11-1,11-3",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T12:45:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Oh Junsung",
-    "rank": 17,
-    "age": 20
-   },
-   "loser": {
-    "name": "Vladimir Sidorenko",
-    "rank": 19,
-    "age": 24
-   },
-   "score": "3-0",
-   "games": "11-9,11-9,11-6",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
     }
    ],
    "level": null
@@ -454,313 +275,6 @@
    "level": null
   },
   {
-   "when": "2026-11-20T06:00:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Joo Cheonhui",
-    "rank": 18,
-    "age": 24
-   },
-   "loser": {
-    "name": "Wang Xiaotong",
-    "rank": 74,
-    "age": 26
-   },
-   "score": "3-2",
-   "games": "7-11,11-7,5-11,11-8,11-9",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 11-9"
-    },
-    {
-     "label": "scare",
-     "detail": "No 18 pushed to a decider by No 74"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T13:20:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Bernadette Szőcs",
-    "rank": 19,
-    "age": 31
-   },
-   "loser": {
-    "name": "Joo Cheonhui",
-    "rank": 18,
-    "age": 24
-   },
-   "score": "3-1",
-   "games": "11-8,12-10,7-11,11-7",
-   "url": "",
-   "labels": [
-    {
-     "label": "revenge",
-     "detail": "revenge for defeat at WTT Contender Istanbul 2026 (2026-11)"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-19T13:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Bernadette Szőcs",
-    "rank": 19,
-    "age": 31
-   },
-   "loser": {
-    "name": "Wei Jingming",
-    "rank": 172,
-    "age": 17
-   },
-   "score": "3-2",
-   "games": "7-11,14-16,11-9,11-6,11-4",
-   "url": "",
-   "labels": [
-    {
-     "label": "comeback",
-     "detail": "reverse sweep: 0-2 to 3-2"
-    },
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 19 pushed to a decider by No 172"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T06:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Bernadette Szőcs",
-    "rank": 19,
-    "age": 31
-   },
-   "loser": {
-    "name": "Sachi Aoki",
-    "rank": 55,
-    "age": 19
-   },
-   "score": "3-0",
-   "games": "11-9,11-4,11-6",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    },
-    {
-     "label": "revenge",
-     "detail": "revenge for defeat at WTT Star Contender Ljubljana 2026 Presented by I Feel Slovenia (2026-06)"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:45:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Vladimir Sidorenko",
-    "rank": 19,
-    "age": 24
-   },
-   "loser": {
-    "name": "Iulian Chirita",
-    "rank": 70,
-    "age": 20
-   },
-   "score": "3-2",
-   "games": "9-11,11-9,8-11,11-6,11-4",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 19 pushed to a decider by No 70"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Chen Yuanyu",
-    "rank": 24,
-    "age": 21
-   },
-   "loser": {
-    "name": "Hiroto Shinozuka",
-    "rank": 20,
-    "age": 22
-   },
-   "score": "3-0",
-   "games": "11-9,11-7,11-0",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "11-0 game",
-     "detail": "won a game 11-0"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:45:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Dimitrij Ovtcharov",
-    "rank": 21,
-    "age": 38
-   },
-   "loser": {
-    "name": "Kwon Hyuk",
-    "rank": 83,
-    "age": 18
-   },
-   "score": "3-0",
-   "games": "11-8,11-6,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    },
-    {
-     "label": "routine",
-     "detail": ""
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T06:00:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Cheng I-Ching",
-    "rank": 33,
-    "age": 34
-   },
-   "loser": {
-    "name": "Sakura Yokoi",
-    "rank": 22,
-    "age": 22
-   },
-   "score": "3-0",
-   "games": "11-2,11-5,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:45:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Flavien Coton",
-    "rank": 23,
-    "age": 18
-   },
-   "loser": {
-    "name": "Tomislav Pucar",
-    "rank": 26,
-    "age": 30
-   },
-   "score": "3-1",
-   "games": "6-11,12-10,11-4,11-5",
-   "url": "",
-   "labels": [
-    {
-     "label": "revenge",
-     "detail": "revenge for defeat at WTT Champions Frankfurt 2026 (2026-11)"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T11:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Park Ganghyeon",
-    "rank": 38,
-    "age": 30
-   },
-   "loser": {
-    "name": "Flavien Coton",
-    "rank": 23,
-    "age": 18
-   },
-   "score": "3-2",
-   "games": "11-9,2-11,11-7,9-11,11-8",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Kaho Akae",
-    "rank": 26,
-    "age": 22
-   },
-   "loser": {
-    "name": "Qin Yuxuan",
-    "rank": 24,
-    "age": 20
-   },
-   "score": "3-0",
-   "games": "11-6,11-2,11-3",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-20T14:30:00Z",
    "competition": "WTT Star Contender Muscat 2026",
    "round": "quarter-final",
@@ -785,35 +299,6 @@
     {
      "label": "scare",
      "detail": "No 24 pushed to a decider by No 74"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T07:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Kim Nayeong",
-    "rank": 35,
-    "age": 21
-   },
-   "loser": {
-    "name": "Elizabet Abraamian",
-    "rank": 25,
-    "age": 23
-   },
-   "score": "3-2",
-   "games": "4-11,9-11,11-9,11-8,14-12",
-   "url": "",
-   "labels": [
-    {
-     "label": "comeback",
-     "detail": "reverse sweep: 0-2 to 3-2"
-    },
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 14-12"
     }
    ],
    "level": null
@@ -848,22 +333,22 @@
    "level": null
   },
   {
-   "when": "2026-11-19T14:45:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
+   "when": "2026-11-23T17:30:00Z",
+   "competition": "Bundesliga: Post SV Mühlhausen v BV Borussia 09 Dortmund",
    "round": "",
    "winner": {
-    "name": "Tomislav Pucar",
-    "rank": 26,
-    "age": 30
-   },
-   "loser": {
-    "name": "Huang Youzheng",
-    "rank": 59,
+    "name": "Wim Verdonschot",
+    "rank": 41,
     "age": 21
    },
+   "loser": {
+    "name": "Ovidiu Ionescu",
+    "rank": 156,
+    "age": 37
+   },
    "score": "3-2",
-   "games": "6-11,5-11,11-8,12-10,11-9",
-   "url": "",
+   "games": "6-11,9-11,11-7,11-1,11-8",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/08dee040-b5d0-4bea-a08e-5d7654859edc",
    "labels": [
     {
      "label": "comeback",
@@ -871,136 +356,11 @@
     },
     {
      "label": "edged",
-     "detail": "five-game thriller, decider 11-9"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-19T14:10:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Cheng I-Ching",
-    "rank": 33,
-    "age": 34
-   },
-   "loser": {
-    "name": "Maria Xiao",
-    "rank": 58,
-    "age": 32
-   },
-   "score": "3-2",
-   "games": "11-8,8-11,3-11,11-8,11-3",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T06:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Park Ganghyeon",
-    "rank": 38,
-    "age": 30
-   },
-   "loser": {
-    "name": "Sun Yang",
-    "rank": 134,
-    "age": 18
-   },
-   "score": "3-2",
-   "games": "11-6,10-12,11-7,12-14,11-5",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
      "detail": "five-game thriller"
     },
     {
      "label": "scare",
-     "detail": "No 38 pushed to a decider by No 134"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T06:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Yuan Licen",
-    "rank": 74,
-    "age": 26
-   },
-   "loser": {
-    "name": "Li Tianyang",
-    "rank": 42,
-    "age": 19
-   },
-   "score": "3-2",
-   "games": "8-11,11-8,11-5,5-11,12-10",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 12-10"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-19T13:35:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Wang Xiaotong",
-    "rank": 74,
-    "age": 26
-   },
-   "loser": {
-    "name": "Elizabeta Samara",
-    "rank": 43,
-    "age": 37
-   },
-   "score": "3-1",
-   "games": "16-14,5-11,20-18,12-10",
-   "url": "",
-   "labels": [
-    {
-     "label": "ground out",
-     "detail": "51 minutes, 3 deuce games"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-19T15:55:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "",
-   "winner": {
-    "name": "Kim Seongjin",
-    "rank": 69,
-    "age": 21
-   },
-   "loser": {
-    "name": "Yeh Yi-Tian",
-    "rank": 49,
-    "age": 18
-   },
-   "score": "3-2",
-   "games": "11-7,11-8,3-11,8-11,12-10",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 12-10"
+     "detail": "No 41 pushed to a decider by No 156"
     }
    ],
    "level": null
@@ -1030,6 +390,35 @@
     {
      "label": "scare",
      "detail": "No 56 pushed to a decider by No unranked"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-23T18:00:00Z",
+   "competition": "Bundesliga: TTF Liebherr Ochsenhausen v SV Werder Bremen",
+   "round": "",
+   "winner": {
+    "name": "Kirill Gerassimenko",
+    "rank": 62,
+    "age": 29
+   },
+   "loser": {
+    "name": "Tiago Abiodun",
+    "rank": 189,
+    "age": 18
+   },
+   "score": "3-2",
+   "games": "4-11,11-7,13-11,8-11,11-6",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f3c06fee-1f57-470c-b71a-b0c1b4780309",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    },
+    {
+     "label": "scare",
+     "detail": "No 62 pushed to a decider by No 189"
     }
    ],
    "level": null
@@ -1147,6 +536,60 @@
    "level": null
   },
   {
+   "when": "2026-11-23T18:05:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Lee Seungsoo",
+    "rank": 208,
+    "age": 15
+   },
+   "loser": {
+    "name": "Julian Rzihauschek",
+    "rank": 437,
+    "age": 18
+   },
+   "score": "3-2",
+   "games": "11-13,11-8,14-12,10-12,11-8",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    },
+    {
+     "label": "ground out",
+     "detail": "37 minutes, 3 deuce games"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T09:05:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Lee Seungsoo",
+    "rank": 208,
+    "age": 15
+   },
+   "loser": {
+    "name": "Milo De Boer",
+    "rank": 379,
+    "age": 22
+   },
+   "score": "3-2",
+   "games": "13-11,11-3,9-11,9-11,11-5",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T10:00:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1171,6 +614,31 @@
     {
      "label": "scare",
      "detail": "No 212 pushed to a decider by No unranked"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-23T15:10:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Aidos Kenzhigulov",
+    "rank": 421,
+    "age": 26
+   },
+   "loser": {
+    "name": "Norbert Tauler",
+    "rank": 212,
+    "age": 23
+   },
+   "score": "3-0",
+   "games": "11-8,11-9,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
     }
    ],
    "level": null
@@ -1230,6 +698,35 @@
    "level": null
   },
   {
+   "when": "2026-11-24T09:40:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Irisbek Artukmetov",
+    "rank": 362,
+    "age": 24
+   },
+   "loser": {
+    "name": "Iskender Kharki",
+    "rank": 246,
+    "age": 23
+   },
+   "score": "3-2",
+   "games": "8-11,2-11,11-7,11-9,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "comeback",
+     "detail": "reverse sweep: 0-2 to 3-2"
+    },
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 11-9"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T09:00:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1284,6 +781,31 @@
    "level": null
   },
   {
+   "when": "2026-11-23T18:05:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Kim Hayeong",
+    "rank": 510,
+    "age": 28
+   },
+   "loser": {
+    "name": "Hanka Kodet",
+    "rank": 259,
+    "age": 16
+   },
+   "score": "3-2",
+   "games": "11-5,8-11,9-11,11-5,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 11-9"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T09:30:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1308,6 +830,85 @@
     {
      "label": "routine",
      "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-23T15:45:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Albert Vilardell",
+    "rank": 270,
+    "age": 24
+   },
+   "loser": {
+    "name": "Alessi Massart",
+    "rank": 485,
+    "age": 21
+   },
+   "score": "3-0",
+   "games": "11-7,11-3,11-8",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-23T18:05:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Kim Eunseo",
+    "rank": 271,
+    "age": 18
+   },
+   "loser": {
+    "name": "Agnes Svensson",
+    "rank": 527,
+    "age": 19
+   },
+   "score": "3-0",
+   "games": "12-10,11-9,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-23T18:05:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Lana Benko",
+    "rank": 638,
+    "age": 16
+   },
+   "loser": {
+    "name": "Eva Brito",
+    "rank": 272,
+    "age": 31
+   },
+   "score": "3-0",
+   "games": "11-5,11-7,11-5",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
     }
    ],
    "level": null
@@ -1338,6 +939,35 @@
    "level": null
   },
   {
+   "when": "2026-11-23T18:40:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Elise Pujol",
+    "rank": 277,
+    "age": 19
+   },
+   "loser": {
+    "name": "Kathe De Meyer",
+    "rank": 655,
+    "age": 17
+   },
+   "score": "3-0",
+   "games": "11-7,11-7,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T08:30:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1363,6 +993,35 @@
    "level": null
   },
   {
+   "when": "2026-11-23T17:30:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Mael Van Dessel",
+    "rank": 278,
+    "age": 21
+   },
+   "loser": {
+    "name": "Ivan Hencl",
+    "rank": 491,
+    "age": 20
+   },
+   "score": "3-0",
+   "games": "11-8,11-7,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T10:00:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1378,6 +1037,35 @@
    },
    "score": "3-0",
    "games": "11-7,11-7,11-3",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-23T16:55:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Rafael De Las Heras",
+    "rank": 281,
+    "age": 26
+   },
+   "loser": {
+    "name": "Armaan Dalamal",
+    "rank": 492,
+    "age": 20
+   },
+   "score": "3-0",
+   "games": "11-2,11-7,11-8",
    "url": "",
    "labels": [
     {
@@ -1417,6 +1105,31 @@
    "level": null
   },
   {
+   "when": "2026-11-23T16:20:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Temirlan Jiyenbayev",
+    "rank": 464,
+    "age": 20
+   },
+   "loser": {
+    "name": "Thiago Monteiro",
+    "rank": 282,
+    "age": 45
+   },
+   "score": "3-2",
+   "games": "11-4,7-11,9-11,12-10,11-6",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T10:30:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1444,6 +1157,35 @@
     }
    ],
    "level": null
+  },
+  {
+   "when": "2026-11-23T16:55:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Miguel Pantoja",
+    "rank": 291,
+    "age": 22
+   },
+   "loser": {
+    "name": "Abdulla Mamay",
+    "rank": 511,
+    "age": 20
+   },
+   "score": "3-2",
+   "games": "14-16,6-11,11-6,12-10,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "comeback",
+     "detail": "reverse sweep: 0-2 to 3-2"
+    },
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 11-9"
+    }
+   ],
+   "level": null
   }
  ],
  "ties": [
@@ -1468,6 +1210,34 @@
    "loser": "ASC Grünwettersbach",
    "score": "3-0",
    "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/d21f28f5-e813-4cad-9427-8c01fbb73267",
+   "labels": [
+    {
+     "label": "team whitewash",
+     "detail": "3-0"
+    }
+   ]
+  },
+  {
+   "when": "2026-11-23T17:30:00Z",
+   "competition": "Bundesliga",
+   "winner": "Post SV Mühlhausen",
+   "loser": "BV Borussia 09 Dortmund",
+   "score": "3-2",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/08dee040-b5d0-4bea-a08e-5d7654859edc",
+   "labels": [
+    {
+     "label": "final rubber",
+     "detail": "decided in the last rubber"
+    }
+   ]
+  },
+  {
+   "when": "2026-11-23T18:00:00Z",
+   "competition": "Bundesliga",
+   "winner": "SV Werder Bremen",
+   "loser": "TTF Liebherr Ochsenhausen",
+   "score": "3-0",
+   "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f3c06fee-1f57-470c-b71a-b0c1b4780309",
    "labels": [
     {
      "label": "team whitewash",
