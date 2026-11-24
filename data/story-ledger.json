@@ -13174,6 +13174,325 @@
     }
    ],
    "top": true
+  },
+  "ttbl-2026-27-matchday-9-werder-bremen-win-at-ochsenhausen-muhlhausen-beat-dortmund": {
+   "id": "ttbl-2026-27-matchday-9-werder-bremen-win-at-ochsenhausen-muhlhausen-beat-dortmund",
+   "category": "Clubs",
+   "league": "bundesliga",
+   "date": "2026-11-23",
+   "published": "2026-11-24T00:40:00Z",
+   "headline": "Werder Bremen win 3-0 at Ochsenhausen to go third in the Bundesliga as Mühlhausen beat Dortmund",
+   "summary": "Bremen took third place from their hosts, who were without Shunsuke Togami, while Mühlhausen came through the deciding doubles for a fourth win in a row.",
+   "tags": [
+    "Werder Bremen",
+    "TTF Ochsenhausen"
+   ],
+   "matches": [
+    {
+     "label": "Matchday 9",
+     "event": "Tischtennis Bundesliga",
+     "sides": [
+      {
+       "name": "TTF Ochsenhausen",
+       "nat": "GER"
+      },
+      {
+       "name": "Werder Bremen",
+       "nat": "GER"
+      }
+     ],
+     "score": [
+      0,
+      3
+     ],
+     "rubbers": [
+      {
+       "sides": [
+        {
+         "name": "Iulian Chirita",
+         "nat": "ROU"
+        },
+        {
+         "name": "Irvin Bertrand",
+         "nat": "FRA"
+        }
+       ],
+       "score": [
+        1,
+        3
+       ],
+       "games": [
+        [
+         9,
+         11
+        ],
+        [
+         6,
+         11
+        ],
+        [
+         11,
+         5
+        ],
+        [
+         8,
+         11
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Tiago Abiodun",
+         "nat": "POR"
+        },
+        {
+         "name": "Kirill Gerassimenko",
+         "nat": "KAZ"
+        }
+       ],
+       "score": [
+        2,
+        3
+       ],
+       "games": [
+        [
+         11,
+         4
+        ],
+        [
+         7,
+         11
+        ],
+        [
+         11,
+         13
+        ],
+        [
+         11,
+         8
+        ],
+        [
+         6,
+         11
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Daniel Berzosa",
+         "nat": "ESP"
+        },
+        {
+         "name": "Mattias Karlsson",
+         "nat": "SWE"
+        }
+       ],
+       "score": [
+        1,
+        3
+       ],
+       "games": [
+        [
+         8,
+         11
+        ],
+        [
+         11,
+         4
+        ],
+        [
+         9,
+         11
+        ],
+        [
+         2,
+         11
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Matchday 9",
+     "event": "Tischtennis Bundesliga",
+     "sides": [
+      {
+       "name": "Post SV Mühlhausen",
+       "nat": "GER"
+      },
+      {
+       "name": "Borussia Dortmund",
+       "nat": "GER"
+      }
+     ],
+     "score": [
+      3,
+      2
+     ],
+     "rubbers": [
+      {
+       "sides": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU"
+        },
+        {
+         "name": "João Geraldo",
+         "nat": "POR"
+        }
+       ],
+       "score": [
+        3,
+        1
+       ],
+       "games": [
+        [
+         11,
+         7
+        ],
+        [
+         6,
+         11
+        ],
+        [
+         11,
+         8
+        ],
+        [
+         12,
+         10
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR"
+        },
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER"
+        }
+       ],
+       "score": [
+        1,
+        3
+       ],
+       "games": [
+        [
+         7,
+         11
+        ],
+        [
+         4,
+         11
+        ],
+        [
+         11,
+         7
+        ],
+        [
+         8,
+         11
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Steffen Mengel",
+         "nat": "GER"
+        },
+        {
+         "name": "Adam Szudi",
+         "nat": "HUN"
+        }
+       ],
+       "score": [
+        3,
+        1
+       ],
+       "games": [
+        [
+         8,
+         11
+        ],
+        [
+         14,
+         12
+        ],
+        [
+         12,
+         10
+        ],
+        [
+         11,
+         5
+        ]
+       ]
+      },
+      {
+       "sides": [
+        {
+         "name": "Ovidiu Ionescu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Wim Verdonschot",
+         "nat": "GER"
+        }
+       ],
+       "score": [
+        2,
+        3
+       ],
+       "games": [
+        [
+         11,
+         6
+        ],
+        [
+         11,
+         9
+        ],
+        [
+         7,
+         11
+        ],
+        [
+         1,
+         11
+        ],
+        [
+         8,
+         11
+        ]
+       ]
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "name": "Tischtennis Bundesliga: Ochsenhausen v Bremen, match page (German)",
+     "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/f3c06fee-1f57-470c-b71a-b0c1b4780309"
+    },
+    {
+     "name": "Tischtennis Bundesliga: Mühlhausen v Dortmund, match page (German)",
+     "url": "https://www.ttbl.de/bundesliga/gameday/2026-2027/9/08dee040-b5d0-4bea-a08e-5d7654859edc"
+    },
+    {
+     "name": "Tischtennis Bundesliga: Bremen übernimmt Platz drei von Ochsenhausen (German)",
+     "url": "https://www.ttbl.de/news/post/6b04b1f0b76ef500014b2c16"
+    },
+    {
+     "name": "Tischtennis Bundesliga: table",
+     "url": "https://www.ttbl.de/bundesliga/tabelle"
+    }
+   ]
   }
  }
 }

@@ -799,8 +799,8 @@ def build(page, site, tag_items, hubs, R, roster, tg):
         # Search wording: people search "<name> ranking", "<name> age" and "<name> table tennis" (Search Console, Nov 2026)
         title = (f'{p["name"]}: world ranking No. {rk["rank"]}, results and profile | Eleven' if rk
                  else f'{p["name"]}: world ranking, results and profile | Eleven')
-        who = f'{p["name"]} ({p.get("nat")}{f", age {a_}" if a_ else ""})'
-        desc = (f'{who} is world No. {rk["rank"]} in table tennis' if rk else f'{who}: table tennis world ranking')
+        who_line = f'{p["name"]} ({p.get("nat")}{f", age {a_}" if a_ else ""})'
+        desc = (f'{who_line} is world No. {rk["rank"]} in table tennis' if rk else f'{who_line}: table tennis world ranking')
         desc += ', with recent results, season-by-season record, titles, head to heads and news.'
         person = {"@context": "https://schema.org", "@type": "ProfilePage", "url": f"{site}/players/{p['slug']}.html",
                   "mainEntity": {k: v for k, v in {"@type": "Person", "name": p["name"], "birthDate": born or None,
