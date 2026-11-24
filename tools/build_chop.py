@@ -136,6 +136,19 @@ def page(title, desc, path, body, active=""):
 
 VER = "1"
 
+# Cloudflare serves /defender/x.html at /defender/x and redirects the .html form (307), so every address The Chop
+# publishes (canonical, sitemap, links, including links to Eleven) uses the clean form, as Eleven's do.
+CLEAN_RE = re.compile(r"(?<=[\"'(=\s>])((?:https://(?:defensive\.)?eleventabletennis\.com)?/(?:[\w\-]+/)*)([\w\-]+)\.html")
+
+
+def clean_chop(files=None):
+    paths = [os.path.join(OUT, f) for f in files] if files else glob.glob(os.path.join(OUT, "**", "*.html"), recursive=True)
+    for f in paths:
+        t = open(f, encoding="utf-8").read()
+        c = CLEAN_RE.sub(lambda m: m.group(1) + ("" if m.group(2) == "index" else m.group(2)), t)
+        if c != t:
+            open(f, "w", encoding="utf-8").write(c)
+
 
 def build():
     global VER
@@ -778,10 +791,12 @@ def build():
     for nf_name in ("404.html", "not-found.html"):   # worker.js serves not-found.html for missing pages on the subdomain
         open(os.path.join(OUT, nf_name), "w", encoding="utf-8").write(nf_html)
 
+    clean_chop()
     urls = ["/", "/defenders.html", "/calendar.html", "/reading.html", "/legends.html", "/glossary.html"] + vurls + [f'/defender/{slug(p["name"])}.html' for p in players]
     open(os.path.join(OUT, "chop-sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + "".join(f"<url><loc>{SITE}{u}</loc><lastmod>{today}</lastmod></url>" for u in urls) + "</urlset>")
+    clean_chop(["chop-sitemap.xml"])
     return len(players), len(allinks)
 
 

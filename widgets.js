@@ -59,7 +59,7 @@ window.ElevenStream = function (el) {
     // Club competitions on now link to their league page on Eleven; WTT events without a page link to WTT
     const LEAGUE_PAGE = [[/Champions League/i, "champions-league"], [/Super League/i, "super-league"], [/T\.? ?League/i, "t-league"], [/TTBL|Bundesliga/i, "bundesliga"],
       [/Pro A\b/i, "pro-a"], [/British (?:Clubs? )?League/i, "british-league"], [/MLTT|Major League/i, "mltt"], [/\bUTT\b|Ultimate Table Tennis/i, "utt"]];
-    const leaguePage = (e) => { if (hubs[e.id] || !/club|league/i.test(`${e.series} ${e.type}`)) return null; const m = LEAGUE_PAGE.find(([rx]) => rx.test(e.name)); return m ? `/clubs/${m[1]}.html` : null; };
+    const leaguePage = (e) => { if (hubs[e.id] || !/club|league/i.test(`${e.series} ${e.type}`)) return null; const m = LEAGUE_PAGE.find(([rx]) => rx.test(e.name)); return m ? `/clubs/${m[1]}` : null; };
     // Where an "On now" card goes, best first: Eleven's event page, Eleven's league page, Eleven's latest story on the
     // event, then (WTT events only) WTT's live scores, else Eleven's schedule. Never WTT for events WTT doesn't run.
     const core = (n) => n.split(", ")[0].replace(/^ETTU /, "").replace(/\s+(Men|Women|Mixed)$/i, "").toLowerCase();
@@ -73,9 +73,9 @@ window.ElevenStream = function (el) {
       const lp = leaguePage(e);
       if (lp) return { url: lp, sub: "Fixtures and results" };
       const st = storyFor(e);
-      if (st) return { url: `/news/${st.id}.html`, sub: "Latest report" };
+      if (st) return { url: `/news/${st.id}`, sub: "Latest report" };
       if (e.series === "WTT") return { url: news.live_results_url || "https://www.worldtabletennis.com/", sub: "Live scores on WTT", ext: true };
-      return { url: "/schedule.html", sub: [e.city, e.country].filter(Boolean).join(", ") || "On the schedule" };
+      return { url: "/schedule", sub: [e.city, e.country].filter(Boolean).join(", ") || "On the schedule" };
     };
     const cards = events.filter((e) => e.start <= today && e.end >= today && !over(e.id)).map((e) => {
       const t = target(e);
@@ -112,17 +112,17 @@ window.ElevenStream = function (el) {
       // League "On now" cards (Fixtures and results) appear only on days that league has a match; no separate "Next" fixture cards
       const playing = new Set(rows.filter((r) => r.when.slice(0, 10) === today).map((r) => r.lg));
       for (let k = cards.length - 1; k >= 0; k--) {
-        const m = /class="score-card live-card" href="\/clubs\/([^".]+)\.html"/.exec(cards[k]);
+        const m = /class="score-card live-card" href="\/clubs\/([^".]+)(?:\.html)?"/.exec(cards[k]);
         if (m && !playing.has(m[1])) cards.splice(k, 1);
       }
       done.forEach((r) => {
         const hw = r.score[0] > r.score[1];
-        clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}.html"><span class="ev" title="${esc(r.round)}">${esc(label(r))}</span><span class="where">${esc(r.round)}</span>
+        clubCards.push(`<a class="score-card" href="/clubs/${esc(r.lg)}"><span class="ev" title="${esc(r.round)}">${esc(label(r))}</span><span class="where">${esc(r.round)}</span>
         <span class="row${hw ? " won" : ""}"><span>${esc(r.home)}</span><b>${r.score[0]}</b></span><span class="row${hw ? "" : " won"}"><span>${esc(r.away)}</span><b>${r.score[1]}</b></span><span class="done-at">${esc(new Date(r.when).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", ...(r.day ? { timeZone: "UTC" } : {}) }))}</span></a>`);
       });
       // Bundesliga ties about to start or in play: a card that clublive.js fills with the live score (hidden until there is one)
       rows.filter((r) => r.lg === "bundesliga" && !r.score && !r.day && stamp(r) - 6e5 <= nowMs && nowMs <= stamp(r) + 5 * 36e5).forEach((r) => {
-        clubCards.unshift(`<a class="score-card" hidden data-cl="${esc(r.when)}" data-home="${esc(r.home)}" href="/clubs/bundesliga.html"><span class="ev">Bundesliga</span><span class="where">${esc(r.round)}</span>
+        clubCards.unshift(`<a class="score-card" hidden data-cl="${esc(r.when)}" data-home="${esc(r.home)}" href="/clubs/bundesliga"><span class="ev">Bundesliga</span><span class="where">${esc(r.round)}</span>
         <span class="row"><span>${esc(r.home)}</span><b>0</b></span><span class="row"><span>${esc(r.away)}</span><b>0</b></span></a>`);
       });
     } catch (e) {}
@@ -272,7 +272,7 @@ window.ElevenStream = function (el) {
     const pageOf = (e) => {
       if (hubs[e.id]) return hubs[e.id].url;
       const m = /club|league/i.test(`${e.series} ${e.type} ${e.name}`) && LEAGUES.find(([rx]) => rx.test(e.name));
-      return m ? `/clubs/${m[1]}.html` : null;
+      return m ? `/clubs/${m[1]}` : null;
     };
     $("events").innerHTML = upcoming.map((e) => {
       const now = e.start <= today;

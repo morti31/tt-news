@@ -104,6 +104,18 @@ def fallback_poster(a):
     return f"{SITE}/{p}" if os.path.exists(os.path.join(ROOT, p)) else None
 
 
+def event_organiser(ev):
+    """Who runs the event, for the structured data (Google warns when it is missing)."""
+    words = f'{ev.get("series", "")} {ev.get("name", "")}'
+    if re.search(r"\bWTT\b|Smash|Champions|Contender|Feeder|WTT Finals", words):
+        return {"name": "World Table Tennis", "url": "https://www.worldtabletennis.com/"}
+    if re.search(r"World (?:Team |Youth |Para )?Championships|World Cup|Mixed Team|ITTF", words):
+        return {"name": "International Table Tennis Federation", "url": "https://www.ittf.com/"}
+    if re.search(r"European|Europe Top|ETTU", words):
+        return {"name": "European Table Tennis Union", "url": "https://www.ettu.org/"}
+    return None
+
+
 def event_ld(ev, poster):
     """SportsEvent structured data for a tournament page."""
     if not ev.get("start"):
@@ -116,6 +128,9 @@ def event_ld(ev, poster):
     if known:
         ld["location"] = {"@type": "Place", "name": ev.get("venue") or ev["city"],
                           "address": {"@type": "PostalAddress", "addressLocality": ev["city"], "addressCountry": ev["country"]}}
+    org = event_organiser(ev)
+    if org:
+        ld["organizer"] = {"@type": "SportsOrganization", **org}
     if poster:
         ld["image"] = [SITE + poster]
     return f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
@@ -1029,7 +1044,8 @@ def main():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     sm += "".join(f"  <url><loc>{e(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8").write(sm)
-    open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n")
+    open(os.path.join(ROOT, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\nSitemap: {SITE}/news-sitemap.xml\n"
+                                                                   "Sitemap: https://defensive.eleventabletennis.com/chop-sitemap.xml\n")
     # Google News sitemap: every story from the last two days, quick updates included
     cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=2)
     recent = [a for a in arts + brief_urls if dt.datetime.fromisoformat(a.get("published", a["date"] + "T09:00:00Z").replace("Z", "+00:00")) >= cutoff]
@@ -1339,8 +1355,9 @@ def clean_url(text):
 
 
 def clean_urls():
-    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "privacy.html", "corrections.html", "calendar.ics")]
-    for d in ("news", "events", "features", "guide", "tag", "players"):
+    files = [os.path.join(ROOT, f) for f in ("sitemap.xml", "news-sitemap.xml", "feed.xml", "rankings.html", "about.html", "contact.html", "privacy.html",
+                                             "corrections.html", "calendar.ics", "search.html", "index.html", "schedule.html", "404.html")]
+    for d in ("news", "events", "features", "guide", "tag", "players", "clubs"):
         files += glob.glob(os.path.join(ROOT, d, "*.html")) + glob.glob(os.path.join(ROOT, d, "*.ics"))
     files += [os.path.join(ROOT, "data", f) for f in ("article-index.json", "event-index.json", "top-stories.json", "lead.json", "features.json", "tags.json")]
     for f in files:
@@ -1390,7 +1407,7 @@ def version_assets():
     """Browsers keep styles.css and the scripts for a long time, so a fix could stay invisible to returning readers.
     Every page names each file with a short hash of its contents (/widgets.js?v=ab12cd34): a changed file gets a new address."""
     import hashlib
-    names = ("styles.css", "widgets.js", "live.js", "app.js", "fixtures.js", "matchpop.js", "schedule.js", "localtime.js")
+    names = ("styles.css", "widgets.js", "live.js", "app.js", "fixtures.js", "matchpop.js", "schedule.js", "localtime.js", "search.js", "search.css")
     ver = {n: hashlib.md5(open(os.path.join(ROOT, n), "rb").read()).hexdigest()[:8] for n in names if os.path.exists(os.path.join(ROOT, n))}
     rx = re.compile(r'((?:src|href)=")(/?)(' + "|".join(re.escape(n) for n in ver) + r')(?:\?v=\w+)?(")')
     files = glob.glob(os.path.join(ROOT, "*.html"))
