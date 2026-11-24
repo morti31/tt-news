@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T07:10:00Z",
+  "updated": "2026-11-24T07:40:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2745,24 +2745,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3377-ttexdoublesu19qfnl000400",
+      "id": "wtt-3377-ttexdoublesu19qfnl000300",
       "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Lee Hyeonho / Heo Yerim v Li Hechen / Yao Ruixuan, u19 mixed doubles, quarterfinal",
+      "name": "World Youth Championships Istanbul: Shunto Iwaida / Mao Takamori v Antoine Noirault / Leana Hochart, u19 mixed doubles, quarterfinal",
       "start": "2026-11-24T12:30:00Z",
       "end": "2026-11-24T13:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U19QFNL000400----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3377-ttexdoublesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Patryk Zyworonek / Koharu Itagaki v Wen Ruibo / Jiang Yiyi, u19 mixed doubles, quarterfinal",
-      "start": "2026-11-24T12:30:00Z",
-      "end": "2026-11-24T13:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U19QFNL000200----------",
-      "detail": "Table 3"
+      "code": "TTEXDOUBLES--------U19QFNL000300----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3377-ttexdoublesu19qfnl000100",
@@ -2775,14 +2765,24 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3377-ttexdoublesu19qfnl000300",
+      "id": "wtt-3377-ttexdoublesu19qfnl000200",
       "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Shunto Iwaida / Mao Takamori v Antoine Noirault / Leana Hochart, u19 mixed doubles, quarterfinal",
+      "name": "World Youth Championships Istanbul: Patryk Zyworonek / Koharu Itagaki v Wen Ruibo / Jiang Yiyi, u19 mixed doubles, quarterfinal",
       "start": "2026-11-24T12:30:00Z",
       "end": "2026-11-24T13:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEXDOUBLES--------U19QFNL000300----------",
-      "detail": "Table 1"
+      "code": "TTEXDOUBLES--------U19QFNL000200----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3377-ttexdoublesu19qfnl000400",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Lee Hyeonho / Heo Yerim v Li Hechen / Yao Ruixuan, u19 mixed doubles, quarterfinal",
+      "start": "2026-11-24T12:30:00Z",
+      "end": "2026-11-24T13:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEXDOUBLES--------U19QFNL000400----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttewsinglesgp05000300",
