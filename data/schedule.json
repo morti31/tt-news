@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T10:40:00Z",
+  "updated": "2026-11-24T11:11:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1003,66 +1003,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEXDOUBLES--------U19R32-001000----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp02000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Norbert Tauler v Michael Tauber, men's singles, group 2",
-      "start": "2026-11-23T10:00:00Z",
-      "end": "2026-11-23T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP02000100----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp12000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Rafael De Las Heras v Gene Wantz, men's singles, group 12",
-      "start": "2026-11-23T10:00:00Z",
-      "end": "2026-11-23T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP12000100----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp10000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Nikon Shutov v Noa Dahlstrom, men's singles, group 10",
-      "start": "2026-11-23T10:00:00Z",
-      "end": "2026-11-23T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP10000200----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp02000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Zsolt Peto v Aidos Kenzhigulov, men's singles, group 2",
-      "start": "2026-11-23T10:00:00Z",
-      "end": "2026-11-23T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP02000200----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp10000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara v Aaron Sahr, men's singles, group 10",
-      "start": "2026-11-23T10:00:00Z",
-      "end": "2026-11-23T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP10000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp12000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: William Bergenblock v Armaan Dalamal, men's singles, group 12",
-      "start": "2026-11-23T10:00:00Z",
-      "end": "2026-11-23T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP12000200----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttemsinglesgp14000200",
@@ -2265,6 +2205,36 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3352-ttemsinglesgp09000500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Albert Vilardell v Botond Varga, men's singles, group 9",
+      "start": "2026-11-24T10:15:00Z",
+      "end": "2026-11-24T10:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP09000500----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp07000600",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Elias Sjogren v Sam Boccard, men's singles, group 7",
+      "start": "2026-11-24T10:15:00Z",
+      "end": "2026-11-24T10:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP07000600----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesgp09000600",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Alessi Massart v Dragos Bujor, men's singles, group 9",
+      "start": "2026-11-24T10:15:00Z",
+      "end": "2026-11-24T10:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------GP09000600----------",
+      "detail": "Table 6"
+    },
+    {
       "id": "wtt-3352-ttemsinglesgp07000500",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Ma Yeongmin v Anav Gupta, men's singles, group 7",
@@ -2293,36 +2263,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------GP08000500----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp07000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Elias Sjogren v Sam Boccard, men's singles, group 7",
-      "start": "2026-11-24T10:15:00Z",
-      "end": "2026-11-24T10:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP07000600----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp09000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Albert Vilardell v Botond Varga, men's singles, group 9",
-      "start": "2026-11-24T10:15:00Z",
-      "end": "2026-11-24T10:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP09000500----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp09000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Alessi Massart v Dragos Bujor, men's singles, group 9",
-      "start": "2026-11-24T10:15:00Z",
-      "end": "2026-11-24T10:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP09000600----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttemsinglesgp10000500",
