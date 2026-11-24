@@ -6550,16 +6550,17 @@
   {
    "id": "wtt-contender-france-2027",
    "schedule_id": "wtt-contender-france-2027",
-   "name": "WTT Contender France",
+   "name": "WTT Contender Lille",
    "group": "WTT Series",
    "tier": "contender",
    "series": "WTT Contender",
-   "city": "France",
+   "city": "Lille",
    "country": "France",
    "year": "2027",
    "start": "2027-02-02",
    "end": "2027-02-07",
-   "events": "Singles, doubles and mixed doubles"
+   "events": "Singles, doubles and mixed doubles",
+   "coords": "50.63° N  3.06° E"
   },
   {
    "id": "wtt-contender-india-2027",
