@@ -28,7 +28,8 @@ jobs:
             case "$U" in
               *wtt-website-api*) curl -s -m 25 -o "$i.body" -w "%{http_code}" -H "Origin: https://www.worldtabletennis.com" -H "Referer: https://www.worldtabletennis.com/" "$U" > "$i.status" || true;;
               *) if [ "$M" = post ]; then curl -s -L -m 25 -A "$UA" -X POST -H "Content-Type: application/json" -d '{}' -o "$i.body" -w "%{http_code}" "$U" > "$i.status" || true
-                 else curl -s -L -m 25 -A "$UA" -H "Accept-Language: en-GB,en;q=0.9" -o "$i.body" -w "%{http_code}" "$U" > "$i.status" || true; fi;;
+                 else curl -s -L -m 25 -A "$UA" -H "Accept-Language: en-GB,en;q=0.9" -o "$i.body" -w "%{http_code}" "$U" > "$i.status" || true
+                      curl -s -o /dev/null -m 25 -A "$UA" -w "%{http_code} %{redirect_url}" "$U" > "$i.first" || true; fi;;
             esac
             touch "$i.body"
             case "$q" in http*) case "$q" in *wtt*|*workers.dev*) ;; *) gzip -9 "$i.body" || true;; esac;; esac
