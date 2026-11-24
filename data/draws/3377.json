@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-24T09:10:00Z",
+ "updated": "2026-11-24T09:40:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -722,7 +722,9 @@
          "nat": "TPE"
         }
        ],
-       "when": "2026-11-24T08:30:00Z"
+       "when": "2026-11-24T08:30:00Z",
+       "score": "1-3 (10:12,2:11,11:9,8:11,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -752,7 +754,9 @@
          "nat": "NZL/RSA"
         }
        ],
-       "when": "2026-11-24T09:00:00Z"
+       "when": "2026-11-24T09:00:00Z",
+       "score": "3-0 (11:4,11:1,11:2,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -800,7 +804,10 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Wu Ying Syuan / Wu Jia-En",
+         "nat": "TPE"
+        },
         {
          "name": "Mao Takamori / Aoba Takahashi",
          "nat": "JPN"
@@ -810,7 +817,11 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Zlata Terekhova / Eseniia Shirokova",
+         "nat": "RUS",
+         "seed": 8
+        },
         null
        ],
        "when": "2026-11-24T15:15:00Z"
@@ -929,7 +940,9 @@
          "nat": "POL"
         }
        ],
-       "when": "2026-11-24T09:00:00Z"
+       "when": "2026-11-24T09:00:00Z",
+       "score": "3-2 (8:11,8:11,11:8,11:9,11:3)",
+       "winner": 0
       },
       {
        "players": [
@@ -1008,7 +1021,11 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Alan Kurmangaliyev / Benyamin Faraji",
+         "nat": "KAZ/IRI",
+         "seed": 3
+        },
         null
        ],
        "when": "2026-11-24T15:15:00Z"
