@@ -306,3 +306,22 @@ window.ElevenStream = function (el) {
     });
   }
 })();
+
+// "3 hours ago" on timestamps marked data-ago (Top stories); the built text stays as the fallback.
+(() => {
+  const els = document.querySelectorAll("time[data-ago]");
+  if (!els.length) return;
+  const ago = (iso) => {
+    const m = Math.round((Date.now() - new Date(iso)) / 60000);
+    if (!(m >= 0)) return null;
+    if (m < 1) return "Just now";
+    if (m < 60) return `${m} minute${m === 1 ? "" : "s"} ago`;
+    const h = Math.floor(m / 60);
+    if (h < 24) return `${h} hour${h === 1 ? "" : "s"} ago`;
+    const d = Math.floor(h / 24);
+    return d < 7 ? `${d} day${d === 1 ? "" : "s"} ago` : null;
+  };
+  const run = () => els.forEach((t) => { const a = ago(t.getAttribute("datetime")); if (a) t.textContent = a; });
+  run();
+  setInterval(run, 60000);
+})();

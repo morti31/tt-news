@@ -769,7 +769,7 @@ def article_page(a, others, brief=False):
     pool = [i for i in STORIES if i["id"] != cur and i["slug"] != a["slug"]]
     tops = [i for i in TOP if i["id"] != cur and i["slug"] != a["slug"]][:5]
     rest = related(cur, a, pool)
-    tops_html = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a><span class="meta">{short_when(i["published"])}</span></li>' for i in tops)
+    tops_html = "".join(f'<li><a href="{i["url"]}">{e(i["title"])}</a><time class="meta" data-ago datetime="{i["published"]}">{short_when(i["published"])}</time></li>' for i in tops)
     ev0 = event_of(a)
     seen = {ev0["id"]} if ev0 else set()   # this story's own poster is already at the top
     more_html = "".join(
