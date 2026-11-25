@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T16:47:00Z",
+ "updated": "2026-11-25T17:17:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -208,7 +208,9 @@
          "nat": "IND"
         }
        ],
-       "when": "2026-11-25T16:30:00Z"
+       "when": "2026-11-25T16:30:00Z",
+       "score": "1-4 (11:9,6:11,6:11,8:11,9:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -250,7 +252,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-25T17:15:00Z"
+       "when": "2026-11-25T17:15:00Z",
+       "score": "0-4 (7:11,6:11,2:11,2:11,0:0,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -337,11 +341,15 @@
          "nat": "CHN",
          "seed": 6
         }
-       ]
+       ],
+       "when": "2026-11-26T10:15:00Z"
       },
       {
        "players": [
-        null,
+        {
+         "name": "Syndrela Das",
+         "nat": "IND"
+        },
         {
          "name": "Wu Jia-En",
          "nat": "TPE"
@@ -351,7 +359,11 @@
       {
        "players": [
         null,
-        null
+        {
+         "name": "Mao Takamori",
+         "nat": "JPN",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -619,7 +631,9 @@
          "nat": "EGY"
         }
        ],
-       "when": "2026-11-25T16:30:00Z"
+       "when": "2026-11-25T16:30:00Z",
+       "score": "4-0 (11:6,11:7,11:4,11:6,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -730,7 +744,8 @@
          "name": "Antoine Noirault",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-26T10:15:00Z"
       },
       {
        "players": [
@@ -747,7 +762,11 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Li Hechen",
+         "nat": "CHN",
+         "seed": 6
+        },
         null
        ]
       },
