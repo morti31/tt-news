@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T14:47:00Z",
+ "updated": "2026-11-25T14:55:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -512,7 +512,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-25T14:15:00Z"
+       "when": "2026-11-25T14:15:00Z",
+       "score": "4-3 (11:9,6:11,9:11,11:8,9:11,11:3,11:3)",
+       "winner": 0
       },
       {
        "players": [
@@ -673,7 +675,10 @@
          "name": "Wassim Essid",
          "nat": "TUN"
         },
-        null
+        {
+         "name": "Chulong Nie",
+         "nat": "AUS"
+        }
        ]
       },
       {
