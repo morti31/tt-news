@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T13:46:00Z",
+ "updated": "2026-11-25T14:16:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -99,7 +99,9 @@
          "nat": "GER"
         }
        ],
-       "when": "2026-11-25T13:30:00Z"
+       "when": "2026-11-25T13:30:00Z",
+       "score": "4-2 (11:13,15:17,11:7,11:8,11:9,11:9,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -252,7 +254,8 @@
          "name": "Alexia Nodin",
          "nat": "FRA"
         }
-       ]
+       ],
+       "when": "2026-11-26T09:30:00Z"
       },
       {
        "players": [
@@ -265,7 +268,8 @@
          "nat": "TPE",
          "seed": 5
         }
-       ]
+       ],
+       "when": "2026-11-26T09:30:00Z"
       },
       {
        "players": [
@@ -274,7 +278,10 @@
          "nat": "IND",
          "seed": 8
         },
-        null
+        {
+         "name": "Natalia Bogdanowicz",
+         "nat": "POL"
+        }
        ]
       },
       {
@@ -463,7 +470,9 @@
          "nat": "JPN"
         }
        ],
-       "when": "2026-11-25T13:30:00Z"
+       "when": "2026-11-25T13:30:00Z",
+       "score": "0-4 (6:11,8:11,6:11,5:11,0:0,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -616,7 +625,8 @@
          "name": "Steven Moreno",
          "nat": "PUR"
         }
-       ]
+       ],
+       "when": "2026-11-26T09:30:00Z"
       },
       {
        "players": [
@@ -628,7 +638,8 @@
          "name": "Kenan Kahraman",
          "nat": "TUR"
         }
-       ]
+       ],
+       "when": "2026-11-26T09:30:00Z"
       },
       {
        "players": [
@@ -637,7 +648,10 @@
          "nat": "IND",
          "seed": 8
         },
-        null
+        {
+         "name": "Shunto Iwaida",
+         "nat": "JPN"
+        }
        ]
       },
       {
