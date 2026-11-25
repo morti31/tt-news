@@ -161,12 +161,6 @@ window.ElevenStream = function (el) {
       cards.splice(0, cards.length, ...cards.filter((c) => ![...names].some((n) => c.includes(`title="${esc(n)}"`))));
       $("ticker").innerHTML = cards.join("");
     }
-    // Home page with an event on: the "On now" panel carries the live scores, so the strip waits for them
-    // rather than showing "On now" link cards that are swapped out a moment later
-    if (liveHubs.length && ["/", "/index.html"].includes(location.pathname) && liveHubs.some((h) => !(h.champions || []).length && h.start <= today && h.end >= today) && window.__panelHigh !== false) {
-      $("ticker").innerHTML = clubCards.join("");   // the "On now" panel carries the WTT scores; club results stay in the strip
-      $("ticker").closest(".ticker").hidden = !clubCards.length;
-    }
     if (liveHubs.length) {
       // "Women's singles, round of 32" -> "Women's singles R32", so the label fits the card
       const short = (l) => String(l).replace(/, (?:round of|last) (\d+)/i, " R$1").replace(/, quarter-?finals?/i, " QF").replace(/, semi-?finals?/i, " SF").replace(/, final$/i, " final");
@@ -183,7 +177,6 @@ window.ElevenStream = function (el) {
         if (document.hidden) return;
         // Per event: live matches, the next two fixtures, the last two results, then (from the
         // quarter-finals) every semi-final and final, then older results
-        const onHome = !!$("onnow") && document.body.classList.contains("has-onnow") && !document.body.classList.contains("onnow-low");   // panel low down: the strip at the top works as on every other page
         let extra = [];
         for (const hub of liveHubs) {
           try {
@@ -191,19 +184,17 @@ window.ElevenStream = function (el) {
             const F = window.ElevenFixtures;
             const fx = F ? await F.get(hub, d).catch(() => ({ next: [], knock: [] })) : { next: [], knock: [] };
             const res = (d.results || []).slice(0, 10).map((m) => mcard(m, hub));
-            // On the homepage the "on now" panel already shows all but the older results
-            if (onHome) { extra = extra.concat(res.slice(2)); continue; }
             extra = extra.concat((d.live || []).map((m) => mcard(m, hub)), fx.next.map((x) => F.card(x, hub, { prefix: "Next · ", where: true })), res.slice(0, 2),
               ...fx.knock.map((k) => k.items.map((x) => F.card(x, hub, { where: true }))), res.slice(2));
           } catch (e) {}
         }
-        if (!extra.length && !onHome) return;
-        let on = onHome ? [] : cards.filter((c) => c.includes("live-card"));
+        if (!extra.length) return;
+        let on = cards.filter((c) => c.includes("live-card"));
         const watched = new Set();
         for (const hub of liveHubs) {
           try {
             const st = await fetch(`/api/stream?q=${encodeURIComponent(hub.stream_q || hub.city)}`).then((r) => r.json());
-            if (st.status === "live" && !onHome && !(hub.champions && hub.champions.length)) {
+            if (st.status === "live" && !(hub.champions && hub.champions.length)) {
               watched.add(hub.url);
               on.unshift(`<div class="score-card watch-card"><a class="wc-stream" href="${esc(hub.url)}#stream"><span class="ev"><span class="live-dot"></span>Watch live</span><span class="where">${esc(hub.name)}</span><span class="row won"><span>Stream from the arena</span><b>▶</b></span></a><a class="wc-sub" href="${esc(hub.url)}">Draw, results and schedule</a></div>`);
             }
