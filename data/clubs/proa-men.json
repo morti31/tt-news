@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-25T01:00:00Z",
+ "updated": "2026-11-25T20:50:00Z",
  "season": "2026-27",
- "status": "Regular season, matchday 7 played on 24 November (scores of three matches and the table to be confirmed); matchday 8 on 14 December",
+ "status": "Regular season, matchday 7 played on 24 November (Chartres forfeited their 3-2 win over Roanne; the score of Saint-Denis v Angers and the table after matchday 7 to be confirmed); matchday 8 on 14 December",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -457,7 +457,10 @@
    "when": "2026-11-24T18:30:00Z",
    "home": "GV Hennebont",
    "away": "Bruille",
-   "score": null,
+   "score": [
+    3,
+    1
+   ],
    "status": "finished",
    "round": "Matchday 7"
   },
@@ -466,17 +469,21 @@
    "home": "Chartres",
    "away": "Loire Nord TT (Roanne)",
    "score": [
-    3,
-    2
+    0,
+    3
    ],
    "status": "finished",
-   "round": "Matchday 7"
+   "round": "Matchday 7",
+   "note": "Chartres won 3-2 on the night but forfeited the match for breaking the rules on double licences; Roanne were awarded the points (FFTT)."
   },
   {
    "when": "2026-11-24T18:30:00Z",
    "home": "La Romagne",
    "away": "TFTT Thorigné-Fouillard",
-   "score": null,
+   "score": [
+    2,
+    3
+   ],
    "status": "finished",
    "round": "Matchday 7"
   },
@@ -550,6 +557,10 @@
   {
    "name": "L'Écho Républicain: Chartres 3-2 Roanne",
    "url": "https://www.lechorepublicain.fr/chartres-28000/sports/tennis-de-table-proa-le-cchartres-tt-signe-lexploit-face-a-roanne_15090833/"
+  },
+  {
+   "name": "FFTT (French): Pro A, les premières grandes confrontations redistribuent les cartes",
+   "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-premieres-grandes-confrontations-redistribuent-les-cartes/"
   }
  ]
 }

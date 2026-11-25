@@ -14168,8 +14168,7 @@
      "name": "WTT: World Youth Championships 2026, official results (event 3377)",
      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Results"
     }
-   ],
-   "top": true
+   ]
   },
   "world-youth-championships-2026-day5-preview": {
    "id": "world-youth-championships-2026-day5-preview",
@@ -14207,7 +14206,7 @@
    "body": [
     "Félix and Alexis Lebrun won their singles as Alliance Nîmes/Montpellier beat the Pro A leaders and defending champions SPO Rouen 3-0 at the Kindarena on Tuesday night, in front of 5,276 spectators, a record crowd for a Pro A match. The match was sold out.",
     "Félix, the world No 3, beat Rouen's No 1, the world No 22 Thibault Poret, 3-1, and Alexis, the world No 10, beat Esteban Dorr 3-1. It was Alexis's first Pro A match of the season; he withdrew injured from WTT Champions Frankfurt this month. Antoine Hachard finished the match by beating Alexandre Robinot 3-0, and Nîmes/Montpellier dropped only two games all night. \"We were very happy to come back to this hall, which brings back wonderful memories,\" Félix told Midi Libre (translated from French); the brothers won the 2025 title at the Kindarena against Hennebont.",
-    "In the night's other matches, Chartres, bottom and without a win, beat Loire Nord TT (Roanne) 3-2, two days after Roanne had ended Rouen's unbeaten start; Bence Majoros won the opening match for Chartres. Loups d'Angers came from behind to win at TT Saint-Denis, GV Hennebont beat Bruille, and TFTT Thorigné-Fouillard won at La Romagne after more than three hours for their first away win of the season. The scores of those three matches and the updated table will be added once they are confirmed.",
+    "In the night's other matches, Chartres, bottom and without a win, beat Loire Nord TT (Roanne) 3-2 two days after Roanne had ended Rouen's unbeaten start, but the result was later overturned and the points awarded to Roanne because Chartres broke the rules on double licences ([more here](/news/pro-a-men-2026-27-chartres-forfeit-roanne-double-licence.html)). GV Hennebont beat Bruille 3-1, TFTT Thorigné-Fouillard won 3-2 at La Romagne after more than three hours for their first away win of the season, and Loups d'Angers came from behind to win at TT Saint-Denis. The score of that match and the updated table will be added once they are confirmed.",
     "The brothers now join France for the Mixed Team World Cup in Chengdu, which starts on Sunday 29 November. Rouen's next Pro A match is at Bruille on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
    ],
    "matches": [
@@ -14262,12 +14261,16 @@
     {
      "name": "Ouest-France (French): Thorigné-Fouillard rentre en vainqueur de La Romagne",
      "url": "https://www.ouest-france.fr/sport/tennis-de-table/stella-sport-la-romagne/apres-plus-de-3-heures-thorigne-fouillard-rentre-en-vainqueur-de-la-romagne-et-signe-un-premier-succes-a-lexterieur-c4c3b2a0-e7e4-11f1-86c1-70195b4d2e52"
+    },
+    {
+     "name": "FFTT (French): Pro A, les premières grandes confrontations redistribuent les cartes",
+     "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-premieres-grandes-confrontations-redistribuent-les-cartes/"
     }
    ],
    "league_table": {
     "comp": "proa-men",
     "label": "Pro A men's table",
-    "as_of": "After matchday 6, 22 November 2026 (matchday 7 table to follow)",
+    "as_of": "After matchday 6; the table after matchday 7 is still to be confirmed",
     "page": "/clubs/pro-a.html",
     "table": {
      "columns": [
@@ -14373,8 +14376,8 @@
        "home": "Chartres",
        "away": "Loire Nord TT (Roanne)",
        "score": [
-        3,
-        2
+        0,
+        3
        ],
        "status": "finished",
        "round": "Matchday 7"
@@ -14401,6 +14404,10 @@
        "when": "2026-11-24T18:30:00Z",
        "home": "GV Hennebont",
        "away": "Bruille",
+       "score": [
+        3,
+        1
+       ],
        "status": "finished",
        "round": "Matchday 7"
       },
@@ -14408,12 +14415,446 @@
        "when": "2026-11-24T18:30:00Z",
        "home": "La Romagne",
        "away": "TFTT Thorigné-Fouillard",
+       "score": [
+        2,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 7"
+      }
+     ]
+    }
+   },
+   "modified": "2026-11-25T20:50:00Z"
+  },
+  "pro-a-men-2026-27-chartres-forfeit-roanne-double-licence": {
+   "id": "pro-a-men-2026-27-chartres-forfeit-roanne-double-licence",
+   "kind": "Update",
+   "category": "Clubs",
+   "league": "pro-a",
+   "lang": "French",
+   "date": "2026-11-25",
+   "published": "2026-11-25T20:50:00Z",
+   "headline": "Chartres lose their first Pro A win of the season as Roanne are awarded the match over a double-licence breach",
+   "summary": "Chartres's 3-2 win over Loire Nord TT (Roanne) on Tuesday has been overturned because the club broke the rules on double licences, and Roanne now share the Pro A lead with Hennebont.",
+   "body": [
+    "Chartres, bottom of Pro A, have been stripped of their 3-2 home win over Loire Nord TT (Roanne) on Tuesday, their first of the season, for breaking the rules on double licences. The French federation (FFTT) said the points go to Roanne instead.",
+    "The FFTT did not name the player concerned. Bence Majoros had won the opening match for Chartres on the night.",
+    "The ruling gives Roanne two wins in matchdays six and seven, after they ended SPO Rouen's unbeaten start on 22 November, and they share first place with GV Hennebont, who beat Bruille 3-1 on Tuesday. TFTT Thorigné-Fouillard won 3-2 at La Romagne, and Alliance Nîmes/Montpellier won 3-0 at Rouen in front of a record Pro A crowd of 5,276.",
+    "Loups d'Angers also won at TT Saint-Denis. Matchday eight is on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
+   ],
+   "sources": [
+    {
+     "name": "FFTT (French): Pro A, les premières grandes confrontations redistribuent les cartes",
+     "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-premieres-grandes-confrontations-redistribuent-les-cartes/"
+    },
+    {
+     "name": "L'Écho Républicain (French): le C'Chartres TT signe l'exploit face à Roanne",
+     "url": "https://www.lechorepublicain.fr/chartres-28000/sports/tennis-de-table-proa-le-cchartres-tt-signe-lexploit-face-a-roanne_15090833/"
+    }
+   ],
+   "league_table": {
+    "comp": "proa-men",
+    "label": "Pro A men's table",
+    "as_of": "After matchday 6; the table after matchday 7 is still to be confirmed",
+    "page": "/clubs/pro-a.html",
+    "table": {
+     "columns": [
+      "p",
+      "w",
+      "l",
+      "pts"
+     ],
+     "groups": [
+      {
+       "name": null,
+       "rows": [
+        {
+         "pos": 1,
+         "team": "SPO Rouen",
+         "p": 6,
+         "w": 5,
+         "l": 1,
+         "pts": 21
+        },
+        {
+         "pos": 2,
+         "team": "GV Hennebont",
+         "p": 6,
+         "w": 4,
+         "l": 2,
+         "pts": 20
+        },
+        {
+         "pos": 2,
+         "team": "Loire Nord TT (Roanne)",
+         "p": 6,
+         "w": 5,
+         "l": 1,
+         "pts": 20
+        },
+        {
+         "pos": 4,
+         "team": "Bruille",
+         "p": 6,
+         "w": 4,
+         "l": 2,
+         "pts": 19
+        },
+        {
+         "pos": 5,
+         "team": "TFTT Thorigné-Fouillard",
+         "p": 6,
+         "w": 3,
+         "l": 3,
+         "pts": 15
+        },
+        {
+         "pos": 6,
+         "team": "Alliance Nîmes/Montpellier",
+         "p": 6,
+         "w": 2,
+         "l": 4,
+         "pts": 14
+        },
+        {
+         "pos": 7,
+         "team": "Loups d'Angers",
+         "p": 6,
+         "w": 3,
+         "l": 3,
+         "pts": 12
+        },
+        {
+         "pos": 7,
+         "team": "TT Saint-Denis",
+         "p": 6,
+         "w": 3,
+         "l": 3,
+         "pts": 12
+        },
+        {
+         "pos": 9,
+         "team": "La Romagne",
+         "p": 6,
+         "w": 1,
+         "l": 5,
+         "pts": 8
+        },
+        {
+         "pos": 10,
+         "team": "Chartres",
+         "p": 6,
+         "w": 0,
+         "l": 6,
+         "pts": 5
+        }
+       ]
+      }
+     ],
+     "note": "Pro A awards points for each team match according to the score, so teams with the same record can have different totals."
+    },
+    "round": {
+     "name": "Matchday 7",
+     "matches": [
+      {
+       "when": "2026-11-24T18:00:00Z",
+       "home": "Chartres",
+       "away": "Loire Nord TT (Roanne)",
+       "score": [
+        0,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:00:00Z",
+       "home": "TT Saint-Denis",
+       "away": "Loups d'Angers",
+       "status": "finished",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:30:00Z",
+       "home": "SPO Rouen",
+       "away": "Alliance Nîmes/Montpellier",
+       "score": [
+        0,
+        3
+       ],
+       "status": "finished",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:30:00Z",
+       "home": "GV Hennebont",
+       "away": "Bruille",
+       "score": [
+        3,
+        1
+       ],
+       "status": "finished",
+       "round": "Matchday 7"
+      },
+      {
+       "when": "2026-11-24T18:30:00Z",
+       "home": "La Romagne",
+       "away": "TFTT Thorigné-Fouillard",
+       "score": [
+        2,
+        3
+       ],
        "status": "finished",
        "round": "Matchday 7"
       }
      ]
     }
    }
+  },
+  "mixed-team-world-cup-2026-shinozuka-out-kawakami-japan-squad": {
+   "id": "mixed-team-world-cup-2026-shinozuka-out-kawakami-japan-squad",
+   "kind": "Update",
+   "category": "International",
+   "event": "mixed-team-world-cup-2026",
+   "lang": "Japanese",
+   "date": "2026-11-25",
+   "published": "2026-11-25T20:45:00Z",
+   "headline": "Hiroto Shinozuka pulls out of the Mixed Team World Cup and 17-year-old Ryuusei Kawakami replaces him in Japan's squad",
+   "summary": "Japan have replaced the world No 20 Hiroto Shinozuka with the Youth Olympic champion Ryuusei Kawakami for the Mixed Team World Cup in Chengdu, which starts on Sunday.",
+   "body": [
+    "Hiroto Shinozuka, the world No 20, has withdrawn from Japan's squad for the Mixed Team World Cup in Chengdu, and Ryuusei Kawakami, 17, takes his place. The Japan Table Tennis Association announced the change on Wednesday. No reason has been given.",
+    "Shinozuka's last match was his last-16 defeat by Chen Yuanyu at WTT Star Contender Muscat on 20 November, which WTT's official result records as 11-9, 11-7, 11-0; Rallys reported that he retired during the match. He also missed WTT Champions Frankfurt this month with an injury.",
+    "Kawakami, ranked 63rd, won the boys' singles and, with Miku Matsushima, [the mixed doubles at the Youth Olympic Games in Dakar](/news/youth-olympic-games-dakar-2026-kawakami-matsushima-mixed-doubles-gold.html) this month, beating Colombia's Emanuel Otalvaro 4-2 in the singles final. He joins Sora Matsushima, Tomokazu Harimoto and Shunsuke Togami in the men's team; the women are Miwa Harimoto, Hina Hayata, Satsuki Odo and Honoka Hashimoto.",
+    "Japan were runners-up to China last year. The tournament runs from Sunday 29 November to 6 December, and Eleven's [guide to the field](/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html) has every squad."
+   ],
+   "sources": [
+    {
+     "name": "Rallys (Japanese): Ryuusei Kawakami replaces Hiroto Shinozuka in Japan's Mixed Team World Cup squad",
+     "url": "https://rallys.online/topic/international/261125mixedteamworldcupkawakami/"
+    },
+    {
+     "name": "Rallys (Japanese): Shinozuka withdraws injured from WTT Champions Frankfurt",
+     "url": "https://rallys.online/topic/international/261103wttchampionsfrankfurtshinozukakiken/"
+    },
+    {
+     "name": "WTT: WTT Star Contender Muscat official results (event 3256)",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3256"
+    },
+    {
+     "name": "ITTF world ranking, week 48",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ]
+  },
+  "world-youth-championships-2026-day5-review": {
+   "id": "world-youth-championships-2026-day5-review",
+   "kind": "Review",
+   "day": 5,
+   "category": "International",
+   "date": "2026-11-25",
+   "published": "2026-11-25T20:40:00Z",
+   "event": "world-youth-championships-2026",
+   "draw": "3377",
+   "top": true,
+   "headline": "World Youth Championships day five: three boys' seeds fall as Syndrela Das knocks out Sally Moyland",
+   "summary": "Australia's Chulong Nie and Aditya Sareen beat the third and seventh seeds from behind, Turkey's Kenan Kahraman knocked out the fifth seed and India's Syndrela Das beat Sally Moyland in the U19 singles last 32.",
+   "sources": [
+    {
+     "name": "WTT: World Youth Championships 2026, schedule, draws and official results (event 3377)",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377"
+    },
+    {
+     "name": "ITTF world ranking, week 48",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ],
+   "matches": [
+    {
+     "label": "Women's U19 singles, last 32",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Syndrela Das",
+       "nat": "IND"
+      },
+      {
+       "name": "Sally Moyland",
+       "nat": "USA"
+      }
+     ],
+     "score": [
+      4,
+      1
+     ],
+     "games": [
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       11,
+       9
+      ]
+     ]
+    },
+    {
+     "label": "Men's U19 singles, last 32",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Chulong Nie",
+       "nat": "AUS"
+      },
+      {
+       "name": "Alan Kurmangaliyev",
+       "nat": "KAZ"
+      }
+     ],
+     "score": [
+      4,
+      3
+     ],
+     "games": [
+      [
+       11,
+       9
+      ],
+      [
+       6,
+       11
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       8
+      ],
+      [
+       9,
+       11
+      ],
+      [
+       11,
+       3
+      ],
+      [
+       11,
+       3
+      ]
+     ]
+    },
+    {
+     "label": "Women's U19 singles, last 32",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Heo Yerim",
+       "nat": "KOR"
+      },
+      {
+       "name": "Aoba Takahashi",
+       "nat": "JPN"
+      }
+     ],
+     "score": [
+      4,
+      3
+     ],
+     "games": [
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       6,
+       11
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       2,
+       11
+      ],
+      [
+       7,
+       11
+      ],
+      [
+       11,
+       6
+      ]
+     ]
+    },
+    {
+     "label": "Men's U19 singles, last 32",
+     "event": "World Youth Championships, Istanbul",
+     "sides": [
+      {
+       "name": "Aditya Sareen",
+       "nat": "AUS"
+      },
+      {
+       "name": "Lin Chin-Ting",
+       "nat": "TPE"
+      }
+     ],
+     "score": [
+      4,
+      3
+     ],
+     "games": [
+      [
+       7,
+       11
+      ],
+      [
+       10,
+       12
+      ],
+      [
+       12,
+       10
+      ],
+      [
+       7,
+       11
+      ],
+      [
+       11,
+       7
+      ],
+      [
+       11,
+       5
+      ],
+      [
+       11,
+       8
+      ]
+     ]
+    }
+   ]
   }
  }
 }
