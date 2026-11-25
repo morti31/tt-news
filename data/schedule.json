@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T17:17:00Z",
+  "updated": "2026-11-25T17:47:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -885,46 +885,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttewdoublesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Su Tsz Tung / Mak Ming Shum v Leana Hochart / Alexia Nodin, u19 girls' doubles, quarterfinal",
-      "start": "2026-11-24T14:45:00Z",
-      "end": "2026-11-24T15:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U19QFNL000200----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3377-ttewdoublesu19qfnl000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Jeong Yein / Heo Yerim v Sally Moyland / Lilian Ma, u19 girls' doubles, quarterfinal",
-      "start": "2026-11-24T14:45:00Z",
-      "end": "2026-11-24T15:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U19QFNL000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttemdoublesu19qfnl000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Wen Ruibo / Li Hechen v Shunto Iwaida / Kohaku Nakano, u19 boys' doubles, quarterfinal",
-      "start": "2026-11-24T14:45:00Z",
-      "end": "2026-11-24T15:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U19QFNL000100----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttemdoublesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Enrique Rios / Ramon Vila v Nathan Pilard / Antoine Noirault, u19 boys' doubles, quarterfinal",
-      "start": "2026-11-24T14:45:00Z",
-      "end": "2026-11-24T15:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U19QFNL000200----------",
-      "detail": "Table 2"
-    },
-    {
       "id": "wtt-3377-ttemdoublesu19qfnl000300",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Alan Kurmangaliyev / Benyamin Faraji v Abhinandh Pradhivadhi / Priyanuj Bhattacharyya, u19 boys' doubles, quarterfinal",
@@ -963,46 +923,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWDOUBLES--------U19QFNL000300----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lana Benko v Julie Van Hauwaert, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000400----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Kornelija Riliskyte v Kathe De Meyer, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000700----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Alice Nilsson v Agathe Avezou, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000200----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesqer000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Kim Hayeong v Lizaveta Tsimashkova, women's singles, qualification",
-      "start": "2026-11-24T16:40:00Z",
-      "end": "2026-11-24T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------QER-000100----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3377-ttexdoublesu19sfnl000100",
@@ -1985,6 +1905,16 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3377-ttemsinglesu19r32001400",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Robert Istrate v Francesco Trevisan, u19 boys' singles, last 32",
+      "start": "2026-11-25T16:30:00Z",
+      "end": "2026-11-25T17:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19R32-001400----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3377-ttemsinglesu19r32001300",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Li Hechen v Yassin Gaber, u19 boys' singles, last 32",
@@ -2015,14 +1945,24 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19r32001400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Robert Istrate v Francesco Trevisan, u19 boys' singles, last 32",
-      "start": "2026-11-25T16:30:00Z",
+      "id": "wtt-3352-ttewsinglesr32000700",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Tsai Yun-En v Choi Haeeun, women's singles, last 32",
+      "start": "2026-11-25T16:40:00Z",
       "end": "2026-11-25T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-001400----------",
-      "detail": "Table 1"
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------R32-000700----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesr32000900",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Sachi Aoki v Lilou Massart, women's singles, last 32",
+      "start": "2026-11-25T16:40:00Z",
+      "end": "2026-11-25T17:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------R32-000900----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttewsinglesr32000600",
@@ -2065,24 +2005,34 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttewsinglesr32000700",
+      "id": "wtt-3352-ttewsinglesr32001500",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Tsai Yun-En v Choi Haeeun, women's singles, last 32",
-      "start": "2026-11-25T16:40:00Z",
-      "end": "2026-11-25T17:15:00Z",
+      "name": "WTT Feeder Düsseldorf II: Lee Seungeun v Sara Tokic, women's singles, last 32",
+      "start": "2026-11-25T17:15:00Z",
+      "end": "2026-11-25T17:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R32-000700----------",
-      "detail": "Table 3"
+      "code": "TTEWSINGLES-----------R32-001500----------",
+      "detail": "Table 5"
     },
     {
-      "id": "wtt-3352-ttewsinglesr32000900",
+      "id": "wtt-3352-ttewsinglesr32001300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Sachi Aoki v Lilou Massart, women's singles, last 32",
-      "start": "2026-11-25T16:40:00Z",
-      "end": "2026-11-25T17:15:00Z",
+      "name": "WTT Feeder Düsseldorf II: Shan Xiaona v Darya Kisel, women's singles, last 32",
+      "start": "2026-11-25T17:15:00Z",
+      "end": "2026-11-25T17:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R32-000900----------",
-      "detail": "Table 5"
+      "code": "TTEWSINGLES-----------R32-001300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesr32001400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Ryu Hanna v Hana Arapovic, women's singles, last 32",
+      "start": "2026-11-25T17:15:00Z",
+      "end": "2026-11-25T17:50:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------R32-001400----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttewsinglesr32001600",
@@ -2105,16 +2055,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttewsinglesr32001300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Shan Xiaona v Darya Kisel, women's singles, last 32",
-      "start": "2026-11-25T17:15:00Z",
-      "end": "2026-11-25T17:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R32-001300----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3352-ttewsinglesr32001100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Lee Daeun v Zhu Chengzhu, women's singles, last 32",
@@ -2125,24 +2065,14 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3352-ttewsinglesr32001400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Ryu Hanna v Hana Arapovic, women's singles, last 32",
+      "id": "wtt-3377-ttewsinglesu19r32001500",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Constantina Psihogios v Rochica Sonday, u19 girls' singles, last 32",
       "start": "2026-11-25T17:15:00Z",
-      "end": "2026-11-25T17:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R32-001400----------",
+      "end": "2026-11-25T18:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U19R32-001500----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesr32001500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lee Seungeun v Sara Tokic, women's singles, last 32",
-      "start": "2026-11-25T17:15:00Z",
-      "end": "2026-11-25T17:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R32-001500----------",
-      "detail": "Table 5"
     },
     {
       "id": "wtt-3377-ttewsinglesu19r32001600",
@@ -2173,16 +2103,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEMSINGLES--------U19R32-001500----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19r32001500",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Constantina Psihogios v Rochica Sonday, u19 girls' singles, last 32",
-      "start": "2026-11-25T17:15:00Z",
-      "end": "2026-11-25T18:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19R32-001500----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesr32000100",
@@ -2385,6 +2305,16 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3377-ttewsinglesu198fnl000700",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Syndrela Das v Wu Jia-En, u19 girls' singles, last 16",
+      "start": "2026-11-26T09:30:00Z",
+      "end": "2026-11-26T10:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U198FNL000700----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3377-ttemsinglesu198fnl000200",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Hung Che-Yen v Kenan Kahraman, u19 boys' singles, last 16",
@@ -2415,14 +2345,24 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3377-ttewsinglesu198fnl000200",
+      "id": "wtt-3377-ttewsinglesu198fnl000800",
       "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Bianca Mei-Rosu v Wu Ying Syuan, u19 girls' singles, last 16",
-      "start": "2026-11-26T09:30:00Z",
-      "end": "2026-11-26T10:15:00Z",
+      "name": "World Youth Championships Istanbul: Constantina Psihogios v Mao Takamori, u19 girls' singles, last 16",
+      "start": "2026-11-26T10:15:00Z",
+      "end": "2026-11-26T11:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U198FNL000200----------",
-      "detail": "Table 4"
+      "code": "TTEWSINGLES--------U198FNL000800----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu198fnl000700",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Li Hechen v Francesco Trevisan, u19 boys' singles, last 16",
+      "start": "2026-11-26T10:15:00Z",
+      "end": "2026-11-26T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U198FNL000700----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3377-ttewsinglesu198fnl000600",
@@ -2483,6 +2423,46 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWSINGLES--------U198FNL000500----------",
       "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3377-ttewsinglesu198fnl000200",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Bianca Mei-Rosu v Wu Ying Syuan, u19 girls' singles, last 16",
+      "start": "2026-11-26T11:45:00Z",
+      "end": "2026-11-26T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U198FNL000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu198fnl000800",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: U19 Boys' Singles, Round of 16, Match 8",
+      "start": "2026-11-26T11:45:00Z",
+      "end": "2026-11-26T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U198FNL000800----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu198fnl000400",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Wassim Essid v Chulong Nie, u19 boys' singles, last 16",
+      "start": "2026-11-26T11:45:00Z",
+      "end": "2026-11-26T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U198FNL000400----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3377-ttewsinglesu198fnl000300",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Divyanshi Bhowmick v Natalia Bogdanowicz, u19 girls' singles, last 16",
+      "start": "2026-11-26T11:45:00Z",
+      "end": "2026-11-26T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U198FNL000300----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3377-ttemdoublesu19sfnl000100",
