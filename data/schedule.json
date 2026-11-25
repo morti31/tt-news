@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T12:16:00Z",
+  "updated": "2026-11-25T12:46:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -885,96 +885,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttemdoublesu198fnl000700",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Aditya Sareen / Chulong Nie v Hung Che-Yen / Lin Chin-Ting, u19 boys' doubles, last 16",
-      "start": "2026-11-24T09:30:00Z",
-      "end": "2026-11-24T10:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U198FNL000700----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3377-ttemdoublesu198fnl000800",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Kim Daehwan / Lee Hyeonho v Robert Istrate / Samuel Arpas, u19 boys' doubles, last 16",
-      "start": "2026-11-24T09:30:00Z",
-      "end": "2026-11-24T10:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U198FNL000800----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewdoublesu198fnl000800",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Busra Demir / Aybuke Simsek v Jiang Yiyi / Yao Ruixuan, u19 girls' doubles, last 16",
-      "start": "2026-11-24T09:30:00Z",
-      "end": "2026-11-24T10:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U198FNL000800----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp14000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Abdulla Mamay v Christopher Kraemer, men's singles, group 14",
-      "start": "2026-11-24T11:25:00Z",
-      "end": "2026-11-24T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP14000600----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp14000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Miguel Pantoja v Bakdaulet Akimali, men's singles, group 14",
-      "start": "2026-11-24T11:25:00Z",
-      "end": "2026-11-24T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP14000500----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp13000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Thiago Monteiro v Tom Closset, men's singles, group 13",
-      "start": "2026-11-24T11:25:00Z",
-      "end": "2026-11-24T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP13000500----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp15000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Maciej Kolodziejczyk v Martin Friis, men's singles, group 15",
-      "start": "2026-11-24T11:25:00Z",
-      "end": "2026-11-24T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP15000500----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp13000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Temirlan Jiyenbayev v Gavin Yuan, men's singles, group 13",
-      "start": "2026-11-24T11:25:00Z",
-      "end": "2026-11-24T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP13000600----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp15000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Anton Andersson v Barish Moullet, men's singles, group 15",
-      "start": "2026-11-24T11:25:00Z",
-      "end": "2026-11-24T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP15000600----------",
-      "detail": "Table 6"
-    },
-    {
       "id": "wtt-3352-ttewsinglesgp03000300",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Eva Brito v Moon Chowon, women's singles, group 3",
@@ -1805,24 +1715,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemsinglesr64001800",
+      "id": "wtt-3352-ttemsinglesr64002700",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Nikon Shutov v Sanzhar Zhubanov, men's singles, last 64",
+      "name": "WTT Feeder Düsseldorf II: Nandan Naresh v Botond Varga, men's singles, last 64",
       "start": "2026-11-25T11:55:00Z",
       "end": "2026-11-25T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-001800----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr64001500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Choi Jiwook v Miguel Pantoja, men's singles, last 64",
-      "start": "2026-11-25T11:55:00Z",
-      "end": "2026-11-25T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-001500----------",
-      "detail": "Table 2"
+      "code": "TTEMSINGLES-----------R64-002700----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesr64001400",
@@ -1833,16 +1733,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------R64-001400----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr64002700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Nandan Naresh v Botond Varga, men's singles, last 64",
-      "start": "2026-11-25T11:55:00Z",
-      "end": "2026-11-25T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-002700----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesr64001000",
@@ -1865,23 +1755,23 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19r32000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Ramon Vila v Steven Moreno, u19 boys' singles, last 32",
-      "start": "2026-11-25T12:00:00Z",
-      "end": "2026-11-25T12:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-000200----------",
-      "detail": "Table 1"
+      "id": "wtt-3352-ttemsinglesr64001800",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Nikon Shutov v Sanzhar Zhubanov, men's singles, last 64",
+      "start": "2026-11-25T11:55:00Z",
+      "end": "2026-11-25T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------R64-001800----------",
+      "detail": "Table 3"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19r32000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Wen Ruibo v Danilo Faso, u19 boys' singles, last 32",
-      "start": "2026-11-25T12:00:00Z",
-      "end": "2026-11-25T12:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-000100----------",
+      "id": "wtt-3352-ttemsinglesr64001500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Choi Jiwook v Miguel Pantoja, men's singles, last 64",
+      "start": "2026-11-25T11:55:00Z",
+      "end": "2026-11-25T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------R64-001500----------",
       "detail": "Table 2"
     },
     {
@@ -1903,6 +1793,26 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWSINGLES--------U19R32-000200----------",
       "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu19r32000100",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Wen Ruibo v Danilo Faso, u19 boys' singles, last 32",
+      "start": "2026-11-25T12:00:00Z",
+      "end": "2026-11-25T12:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19R32-000100----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu19r32000200",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Ramon Vila v Steven Moreno, u19 boys' singles, last 32",
+      "start": "2026-11-25T12:00:00Z",
+      "end": "2026-11-25T12:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19R32-000200----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3352-ttewdoubles8fnl000100",

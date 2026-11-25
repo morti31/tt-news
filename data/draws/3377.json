@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-24T18:42:00Z",
+ "updated": "2026-11-25T12:46:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -22,7 +22,9 @@
          "nat": "USA"
         }
        ],
-       "when": "2026-11-25T12:00:00Z"
+       "when": "2026-11-25T12:00:00Z",
+       "score": "4-1 (6:11,11:3,11:8,11:9,12:10,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -35,7 +37,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-25T12:00:00Z"
+       "when": "2026-11-25T12:00:00Z",
+       "score": "0-4 (3:11,8:11,1:11,7:11,0:0,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -233,8 +237,15 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Jiang Yiyi",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Alexia Nodin",
+         "nat": "FRA"
+        }
        ]
       },
       {
@@ -358,7 +369,9 @@
          "nat": "ITA"
         }
        ],
-       "when": "2026-11-25T12:00:00Z"
+       "when": "2026-11-25T12:00:00Z",
+       "score": "4-0 (11:3,11:5,11:8,11:2,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -569,7 +582,11 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 1
+        },
         null
        ]
       },
