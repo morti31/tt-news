@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T12:46:00Z",
+ "updated": "2026-11-25T13:16:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -52,7 +52,9 @@
          "nat": "ALG"
         }
        ],
-       "when": "2026-11-25T12:45:00Z"
+       "when": "2026-11-25T12:45:00Z",
+       "score": "4-0 (11:9,11:3,11:7,12:10,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -66,7 +68,9 @@
          "seed": 5
         }
        ],
-       "when": "2026-11-25T12:45:00Z"
+       "when": "2026-11-25T12:45:00Z",
+       "score": "0-4 (4:11,5:11,5:11,4:11,0:0,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -250,8 +254,15 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Bianca Mei-Rosu",
+         "nat": "ROU"
+        },
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
        ]
       },
       {
@@ -384,7 +395,9 @@
          "nat": "PUR"
         }
        ],
-       "when": "2026-11-25T12:00:00Z"
+       "when": "2026-11-25T12:00:00Z",
+       "score": "3-4 (5:11,11:9,9:11,5:11,11:9,12:10,1:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -397,7 +410,9 @@
          "nat": "POL"
         }
        ],
-       "when": "2026-11-25T12:45:00Z"
+       "when": "2026-11-25T12:45:00Z",
+       "score": "4-0 (11:5,11:4,11:9,11:5,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -587,12 +602,18 @@
          "nat": "CHN",
          "seed": 1
         },
-        null
+        {
+         "name": "Steven Moreno",
+         "nat": "PUR"
+        }
        ]
       },
       {
        "players": [
-        null,
+        {
+         "name": "Hung Che-Yen",
+         "nat": "TPE"
+        },
         null
        ]
       },
