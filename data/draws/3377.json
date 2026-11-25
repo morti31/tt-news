@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T13:16:00Z",
+ "updated": "2026-11-25T13:46:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -84,7 +84,9 @@
          "nat": "RUS"
         }
        ],
-       "when": "2026-11-25T13:30:00Z"
+       "when": "2026-11-25T13:30:00Z",
+       "score": "4-0 (11:8,11:8,11:8,11:2,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -267,7 +269,11 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 8
+        },
         null
        ]
       },
@@ -426,7 +432,9 @@
          "seed": 5
         }
        ],
-       "when": "2026-11-25T12:45:00Z"
+       "when": "2026-11-25T12:45:00Z",
+       "score": "4-0 (13:11,11:9,12:10,11:5,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -440,7 +448,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-25T13:30:00Z"
+       "when": "2026-11-25T13:30:00Z",
+       "score": "4-0 (11:7,11:9,11:9,12:10,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -614,12 +624,19 @@
          "name": "Hung Che-Yen",
          "nat": "TPE"
         },
-        null
+        {
+         "name": "Kenan Kahraman",
+         "nat": "TUR"
+        }
        ]
       },
       {
        "players": [
-        null,
+        {
+         "name": "Abhinandh Pradhivadhi",
+         "nat": "IND",
+         "seed": 8
+        },
         null
        ]
       },
