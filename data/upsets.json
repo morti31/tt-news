@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T13:29Z",
+ "updated": "2026-11-25T11:33Z",
  "days": 4,
  "upsets": [
   {
@@ -142,56 +142,6 @@
    "level": "notable"
   },
   {
-   "when": "2026-11-20T15:05:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Shunsuke Togami",
-    "rank": 11,
-    "age": 25
-   },
-   "loser": {
-    "name": "Dimitrij Ovtcharov",
-    "rank": 21,
-    "age": 38
-   },
-   "score": "3-0",
-   "games": "12-10,11-9,15-13",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0, 2 of the games went to deuce"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-21T07:40:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "semi-final",
-   "winner": {
-    "name": "Shunsuke Togami",
-    "rank": 11,
-    "age": 25
-   },
-   "loser": {
-    "name": "Chen Yuanyu",
-    "rank": 24,
-    "age": 21
-   },
-   "score": "3-0",
-   "games": "11-6,12-10,11-3",
-   "url": "",
-   "labels": [
-    {
-     "label": "sweep",
-     "detail": "3-0"
-    }
-   ],
-   "level": null
-  },
-  {
    "when": "2026-11-22T14:30:00Z",
    "competition": "Bundesliga: 1. FC Saarbrücken-TT v Borussia Düsseldorf",
    "round": "",
@@ -237,68 +187,6 @@
     {
      "label": "streak",
      "detail": "10th win in a row"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T13:55:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Kaho Akae",
-    "rank": 26,
-    "age": 22
-   },
-   "loser": {
-    "name": "Miyu Nagasaki",
-    "rank": 17,
-    "age": 24
-   },
-   "score": "3-2",
-   "games": "9-11,7-11,11-3,11-2,13-11",
-   "url": "",
-   "labels": [
-    {
-     "label": "comeback",
-     "detail": "reverse sweep: 0-2 to 3-2"
-    },
-    {
-     "label": "edged",
-     "detail": "five-game thriller, decider 13-11"
-    },
-    {
-     "label": "revenge",
-     "detail": "revenge for defeat at WTT Contender Panagyurishte 2026 Presented by ASAREL (2026-09)"
-    }
-   ],
-   "level": null
-  },
-  {
-   "when": "2026-11-20T14:30:00Z",
-   "competition": "WTT Star Contender Muscat 2026",
-   "round": "quarter-final",
-   "winner": {
-    "name": "Chen Yuanyu",
-    "rank": 24,
-    "age": 21
-   },
-   "loser": {
-    "name": "Yuan Licen",
-    "rank": 74,
-    "age": 26
-   },
-   "score": "3-2",
-   "games": "3-11,11-8,7-11,11-6,11-5",
-   "url": "",
-   "labels": [
-    {
-     "label": "edged",
-     "detail": "five-game thriller"
-    },
-    {
-     "label": "scare",
-     "detail": "No 24 pushed to a decider by No 74"
     }
    ],
    "level": null
@@ -669,6 +557,60 @@
    "level": null
   },
   {
+   "when": "2026-11-24T10:15:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Ma Yeongmin",
+    "rank": 245,
+    "age": 15
+   },
+   "loser": {
+    "name": "Anav Gupta",
+    "rank": 354,
+    "age": 18
+   },
+   "score": "3-0",
+   "games": "11-8,11-9,11-5",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T17:50:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Nikon Shutov",
+    "rank": 349,
+    "age": 19
+   },
+   "loser": {
+    "name": "Ma Yeongmin",
+    "rank": 245,
+    "age": 15
+   },
+   "score": "3-0",
+   "games": "11-6,11-4,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T09:00:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -781,6 +723,31 @@
    "level": null
   },
   {
+   "when": "2026-11-24T18:25:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Martin Buch",
+    "rank": 255,
+    "age": 26
+   },
+   "loser": {
+    "name": "Alvaro Fuentes",
+    "rank": 403,
+    "age": 20
+   },
+   "score": "3-2",
+   "games": "11-8,8-11,11-9,12-14,11-4",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T18:05:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -801,6 +768,56 @@
     {
      "label": "edged",
      "detail": "five-game thriller, decider 11-9"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T12:00:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Hanka Kodet",
+    "rank": 259,
+    "age": 16
+   },
+   "loser": {
+    "name": "Lotte Nuyttens",
+    "rank": 505,
+    "age": 17
+   },
+   "score": "3-2",
+   "games": "11-5,9-11,5-11,11-4,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T17:15:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Hanka Kodet",
+    "rank": 259,
+    "age": 16
+   },
+   "loser": {
+    "name": "Elise Pujol",
+    "rank": 277,
+    "age": 19
+   },
+   "score": "3-2",
+   "games": "11-7,11-9,3-11,7-11,12-10",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 12-10"
     }
    ],
    "level": null
@@ -830,6 +847,31 @@
     {
      "label": "routine",
      "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T10:15:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Fumiya Igarashi",
+    "rank": 353,
+    "age": 27
+   },
+   "loser": {
+    "name": "Uros Ninkovic",
+    "rank": 269,
+    "age": 19
+   },
+   "score": "3-0",
+   "games": "11-6,11-5,11-2",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
     }
    ],
    "level": null
@@ -889,6 +931,64 @@
    "level": null
   },
   {
+   "when": "2026-11-24T12:00:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Kim Eunseo",
+    "rank": 271,
+    "age": 18
+   },
+   "loser": {
+    "name": "Ulyana Miashchanskaya",
+    "rank": 493,
+    "age": 20
+   },
+   "score": "3-0",
+   "games": "11-5,11-7,11-6",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T17:15:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Kim Eunseo",
+    "rank": 271,
+    "age": 18
+   },
+   "loser": {
+    "name": "Elinor Davidov",
+    "rank": 987,
+    "age": 19
+   },
+   "score": "3-0",
+   "games": "11-8,11-7,11-5",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T18:05:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -904,6 +1004,31 @@
    },
    "score": "3-0",
    "games": "11-5,11-7,11-5",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T12:00:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Moon Chowon",
+    "rank": 419,
+    "age": 19
+   },
+   "loser": {
+    "name": "Eva Brito",
+    "rank": 272,
+    "age": 31
+   },
+   "score": "3-0",
+   "games": "11-4,11-6,11-9",
    "url": "",
    "labels": [
     {
@@ -939,6 +1064,31 @@
    "level": null
   },
   {
+   "when": "2026-11-24T12:00:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Aleksandra Michalak",
+    "rank": 418,
+    "age": 25
+   },
+   "loser": {
+    "name": "Lorena Morsch",
+    "rank": 273,
+    "age": 18
+   },
+   "score": "3-0",
+   "games": "11-8,11-8,12-10",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T18:40:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -954,6 +1104,35 @@
    },
    "score": "3-0",
    "games": "11-7,11-7,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T12:35:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Elise Pujol",
+    "rank": 277,
+    "age": 19
+   },
+   "loser": {
+    "name": "Hannah Silcock",
+    "rank": 404,
+    "age": 19
+   },
+   "score": "3-0",
+   "games": "11-4,11-8,11-6",
    "url": "",
    "labels": [
     {
@@ -1022,6 +1201,35 @@
    "level": null
   },
   {
+   "when": "2026-11-24T10:50:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Mael Van Dessel",
+    "rank": 278,
+    "age": 21
+   },
+   "loser": {
+    "name": "Alex Naumi",
+    "rank": 332,
+    "age": 25
+   },
+   "score": "3-2",
+   "games": "10-12,16-14,3-11,11-6,12-10",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller, decider 12-10"
+    },
+    {
+     "label": "ground out",
+     "detail": "46 minutes, 3 deuce games"
+    }
+   ],
+   "level": null
+  },
+  {
    "when": "2026-11-23T10:00:00Z",
    "competition": "WTT Feeder Düsseldorf II 2026",
    "round": "",
@@ -1066,6 +1274,64 @@
    },
    "score": "3-0",
    "games": "11-2,11-7,11-8",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T10:50:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Rafael De Las Heras",
+    "rank": 281,
+    "age": 26
+   },
+   "loser": {
+    "name": "William Bergenblock",
+    "rank": 326,
+    "age": 19
+   },
+   "score": "3-1",
+   "games": "11-6,11-5,8-11,11-9",
+   "url": "",
+   "labels": [
+    {
+     "label": "ground out",
+     "detail": "70 minutes"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T18:25:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Rafael De Las Heras",
+    "rank": 281,
+    "age": 26
+   },
+   "loser": {
+    "name": "Aidos Kenzhigulov",
+    "rank": 421,
+    "age": 26
+   },
+   "score": "3-0",
+   "games": "11-9,11-8,11-4",
    "url": "",
    "labels": [
     {
@@ -1183,6 +1449,60 @@
     {
      "label": "edged",
      "detail": "five-game thriller, decider 11-9"
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T11:25:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Miguel Pantoja",
+    "rank": 291,
+    "age": 22
+   },
+   "loser": {
+    "name": "Bakdaulet Akimali",
+    "rank": 315,
+    "age": 25
+   },
+   "score": "3-0",
+   "games": "11-6,11-8,11-8",
+   "url": "",
+   "labels": [
+    {
+     "label": "sweep",
+     "detail": "3-0"
+    },
+    {
+     "label": "routine",
+     "detail": ""
+    }
+   ],
+   "level": null
+  },
+  {
+   "when": "2026-11-24T18:25:00Z",
+   "competition": "WTT Feeder Düsseldorf II 2026",
+   "round": "",
+   "winner": {
+    "name": "Maciej Kolodziejczyk",
+    "rank": 294,
+    "age": 25
+   },
+   "loser": {
+    "name": "Yoan Velichkov",
+    "rank": 310,
+    "age": 19
+   },
+   "score": "3-2",
+   "games": "12-10,11-6,10-12,9-11,11-7",
+   "url": "",
+   "labels": [
+    {
+     "label": "edged",
+     "detail": "five-game thriller"
     }
    ],
    "level": null
