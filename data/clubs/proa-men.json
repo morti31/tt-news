@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-23T00:40:00Z",
+ "updated": "2026-11-25T01:00:00Z",
  "season": "2026-27",
- "status": "Regular season, after matchday 6 (22 November); matchday 7 on Tuesday 24 November",
+ "status": "Regular season, matchday 7 played on 24 November (scores of three matches and the table to be confirmed); matchday 8 on 14 December",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -445,8 +445,11 @@
    "when": "2026-11-24T18:30:00Z",
    "home": "SPO Rouen",
    "away": "Alliance Nîmes/Montpellier",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    0,
+    3
+   ],
+   "status": "finished",
    "round": "Matchday 7",
    "venue": "Kindarena, Rouen"
   },
@@ -455,15 +458,18 @@
    "home": "GV Hennebont",
    "away": "Bruille",
    "score": null,
-   "status": "scheduled",
+   "status": "finished",
    "round": "Matchday 7"
   },
   {
    "when": "2026-11-24T18:00:00Z",
    "home": "Chartres",
    "away": "Loire Nord TT (Roanne)",
-   "score": null,
-   "status": "scheduled",
+   "score": [
+    3,
+    2
+   ],
+   "status": "finished",
    "round": "Matchday 7"
   },
   {
@@ -471,7 +477,7 @@
    "home": "La Romagne",
    "away": "TFTT Thorigné-Fouillard",
    "score": null,
-   "status": "scheduled",
+   "status": "finished",
    "round": "Matchday 7"
   },
   {
@@ -479,8 +485,17 @@
    "home": "TT Saint-Denis",
    "away": "Loups d'Angers",
    "score": null,
-   "status": "scheduled",
+   "status": "finished",
    "round": "Matchday 7"
+  },
+  {
+   "when": "2026-12-14T12:00:00Z",
+   "home": "Bruille",
+   "away": "SPO Rouen",
+   "score": null,
+   "status": "scheduled",
+   "round": "Matchday 8",
+   "date_only": true
   }
  ],
  "sources": [
@@ -527,6 +542,14 @@
   {
    "name": "FFTT: Pro A men 2026-27 calendar",
    "url": "https://www.fftt.com/wp-content/uploads/2026/07/calendrier-pro-a-messieurs-2026-2027-v2.pdf"
+  },
+  {
+   "name": "Midi Libre: SPO Rouen 0-3 Nîmes/Montpellier",
+   "url": "https://www.midilibre.fr/2026/11/24/lanmtt-portee-par-les-freres-lebrun-simpose-a-rouen-avec-un-nouveau-record-daffluence-battu-en-pro-a-de-tennis-de-table-13669590.php"
+  },
+  {
+   "name": "L'Écho Républicain: Chartres 3-2 Roanne",
+   "url": "https://www.lechorepublicain.fr/chartres-28000/sports/tennis-de-table-proa-le-cchartres-tt-signe-lexploit-face-a-roanne_15090833/"
   }
  ]
 }
