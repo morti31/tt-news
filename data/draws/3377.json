@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T17:47:00Z",
+ "updated": "2026-11-25T18:17:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -669,7 +669,9 @@
          "nat": "PUR"
         }
        ],
-       "when": "2026-11-25T17:15:00Z"
+       "when": "2026-11-25T17:15:00Z",
+       "score": "4-1 (11:6,10:12,11:5,11:6,11:6,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -683,7 +685,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-25T17:15:00Z"
+       "when": "2026-11-25T17:15:00Z",
+       "score": "0-4 (7:11,11:13,8:11,4:11,0:0,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -787,8 +791,15 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Priyanuj Bhattacharyya",
+         "nat": "IND"
+        },
+        {
+         "name": "Emanuel Otalvaro",
+         "nat": "COL",
+         "seed": 2
+        }
        ],
        "when": "2026-11-26T11:45:00Z"
       }
