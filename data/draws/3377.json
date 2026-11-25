@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T14:16:00Z",
+ "updated": "2026-11-25T14:47:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -114,7 +114,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-25T14:15:00Z"
+       "when": "2026-11-25T14:15:00Z",
+       "score": "3-4 (7:11,5:11,11:6,5:11,11:2,11:7,6:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -128,7 +130,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-25T14:15:00Z"
+       "when": "2026-11-25T14:15:00Z",
+       "score": "0-4 (2:11,9:11,3:11,7:11,0:0,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -286,8 +290,15 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Heo Yerim",
+         "nat": "KOR"
+        },
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 3
+        }
        ]
       },
       {
@@ -485,7 +496,9 @@
          "nat": "TUN"
         }
        ],
-       "when": "2026-11-25T14:15:00Z"
+       "when": "2026-11-25T14:15:00Z",
+       "score": "3-4 (15:13,8:11,12:10,9:11,11:8,6:11,7:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -656,7 +669,10 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Wassim Essid",
+         "nat": "TUN"
+        },
         null
        ]
       },

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T14:16:00Z",
+  "updated": "2026-11-25T14:47:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1905,6 +1905,26 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3377-ttemsinglesu19r32000700",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Ivan Kahn v Wassim Essid, u19 boys' singles, last 32",
+      "start": "2026-11-25T14:15:00Z",
+      "end": "2026-11-25T15:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19R32-000700----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3377-ttewsinglesu19r32000700",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Aoba Takahashi v Heo Yerim, u19 girls' singles, last 32",
+      "start": "2026-11-25T14:15:00Z",
+      "end": "2026-11-25T15:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U19R32-000700----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3377-ttewsinglesu19r32000800",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Mak Ming Shum v Hana Goda, u19 girls' singles, last 32",
@@ -1923,26 +1943,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEMSINGLES--------U19R32-000800----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19r32000700",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Aoba Takahashi v Heo Yerim, u19 girls' singles, last 32",
-      "start": "2026-11-25T14:15:00Z",
-      "end": "2026-11-25T15:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19R32-000700----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19r32000700",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Ivan Kahn v Wassim Essid, u19 boys' singles, last 32",
-      "start": "2026-11-25T14:15:00Z",
-      "end": "2026-11-25T15:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-000700----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3377-ttemsinglesu19r32000900",
