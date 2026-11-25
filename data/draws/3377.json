@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-25T14:55:00Z",
+ "updated": "2026-11-25T16:47:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -146,7 +146,9 @@
          "nat": "POR"
         }
        ],
-       "when": "2026-11-25T15:00:00Z"
+       "when": "2026-11-25T15:00:00Z",
+       "score": "4-0 (11:5,11:3,11:4,11:5,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -159,7 +161,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-25T15:00:00Z"
+       "when": "2026-11-25T15:00:00Z",
+       "score": "1-4 (4:11,9:11,7:11,12:10,3:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -172,7 +176,9 @@
          "nat": "RUS"
         }
        ],
-       "when": "2026-11-25T15:45:00Z"
+       "when": "2026-11-25T15:45:00Z",
+       "score": "3-4 (6:11,11:9,4:11,11:7,6:11,11:5,9:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -186,7 +192,9 @@
          "seed": 6
         }
        ],
-       "when": "2026-11-25T15:45:00Z"
+       "when": "2026-11-25T15:45:00Z",
+       "score": "0-4 (6:11,6:11,6:11,11:13,0:0,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -213,7 +221,9 @@
          "nat": "TPE"
         }
        ],
-       "when": "2026-11-25T16:30:00Z"
+       "when": "2026-11-25T16:30:00Z",
+       "score": "0-4 (6:11,10:12,4:11,4:11,0:0,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -299,24 +309,43 @@
          "nat": "EGY",
          "seed": 3
         }
+       ],
+       "when": "2026-11-26T11:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Su Tsz Tung",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Leana Hochart",
+         "nat": "FRA"
+        }
+       ],
+       "when": "2026-11-26T11:00:00Z"
+      },
+      {
+       "players": [
+        {
+         "name": "Eseniia Shirokova",
+         "nat": "RUS"
+        },
+        {
+         "name": "Yao Ruixuan",
+         "nat": "CHN",
+         "seed": 6
+        }
        ]
       },
       {
        "players": [
         null,
-        null
-       ]
-      },
-      {
-       "players": [
-        null,
-        null
-       ]
-      },
-      {
-       "players": [
-        null,
-        null
+        {
+         "name": "Wu Jia-En",
+         "nat": "TPE"
+        }
        ]
       },
       {
@@ -528,7 +557,9 @@
          "nat": "TUR"
         }
        ],
-       "when": "2026-11-25T15:00:00Z"
+       "when": "2026-11-25T15:00:00Z",
+       "score": "4-2 (8:11,11:6,11:7,14:12,9:11,11:5,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -541,7 +572,9 @@
          "nat": "SVK"
         }
        ],
-       "when": "2026-11-25T15:00:00Z"
+       "when": "2026-11-25T15:00:00Z",
+       "score": "4-1 (11:9,11:5,11:13,11:9,11:8,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -554,7 +587,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-25T15:45:00Z"
+       "when": "2026-11-25T15:45:00Z",
+       "score": "4-1 (9:11,11:8,11:9,11:9,11:7,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -568,7 +603,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-25T15:45:00Z"
+       "when": "2026-11-25T15:45:00Z",
+       "score": "4-3 (7:11,10:12,12:10,7:11,11:7,11:5,11:8)",
+       "winner": 0
       },
       {
        "players": [
@@ -667,7 +704,8 @@
          "name": "Shunto Iwaida",
          "nat": "JPN"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:00:00Z"
       },
       {
        "players": [
@@ -683,15 +721,29 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Li Ki Ho",
+         "nat": "HKG",
+         "seed": 4
+        },
+        {
+         "name": "Antoine Noirault",
+         "nat": "FRA"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Samuel Michna",
+         "nat": "POL"
+        },
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS"
+        }
+       ],
+       "when": "2026-11-26T11:00:00Z"
       },
       {
        "players": [
