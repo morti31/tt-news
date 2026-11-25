@@ -2,7 +2,7 @@
  "event": "WTT Feeder Düsseldorf II",
  "wtt_event_id": "3352",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352&selectedTab=Draws",
- "updated": "2026-11-25T20:18:00Z",
+ "updated": "2026-11-25T20:48:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -1626,7 +1626,8 @@
          "name": "Mizuki Oikawa",
          "nat": "JPN"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:20:00Z"
       },
       {
        "players": [
@@ -1638,7 +1639,8 @@
          "name": "Mihai Bobocica",
          "nat": "ITA"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:20:00Z"
       },
       {
        "players": [
@@ -1651,7 +1653,8 @@
          "name": "Juan Perez",
          "nat": "ESP"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:20:00Z"
       },
       {
        "players": [
@@ -1663,7 +1666,8 @@
          "name": "Choi Jiwook",
          "nat": "KOR"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:55:00Z"
       },
       {
        "players": [
@@ -1676,7 +1680,8 @@
          "name": "Niagol Stoyanov",
          "nat": "ITA"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:55:00Z"
       },
       {
        "players": [
@@ -1689,7 +1694,8 @@
          "nat": "EGY",
          "seed": 3
         }
-       ]
+       ],
+       "when": "2026-11-26T11:55:00Z"
       },
       {
        "players": [
@@ -1702,7 +1708,8 @@
          "name": "Botond Varga",
          "nat": "HUN"
         }
-       ]
+       ],
+       "when": "2026-11-26T11:55:00Z"
       },
       {
        "players": [
@@ -1715,7 +1722,8 @@
          "nat": "GER",
          "seed": 2
         }
-       ]
+       ],
+       "when": "2026-11-26T11:20:00Z"
       }
      ]
     },
@@ -2385,7 +2393,9 @@
          "seed": 7
         }
        ],
-       "when": "2026-11-25T19:35:00Z"
+       "when": "2026-11-25T19:35:00Z",
+       "score": "2-3 (8:11,12:10,11:13,11:6,8:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -2416,7 +2426,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-25T19:35:00Z"
+       "when": "2026-11-25T19:35:00Z",
+       "score": "3-1 (11:13,11:7,11:4,12:10,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -2430,7 +2442,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-25T19:35:00Z"
+       "when": "2026-11-25T19:35:00Z",
+       "score": "3-2 (9:11,13:11,9:11,11:5,11:8)",
+       "winner": 0
       }
      ]
     },
@@ -2439,19 +2453,32 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Andre Bertelsmeier / Yuan Wan",
+         "nat": "GER",
+         "seed": 7
+        },
         {
          "name": "Yiu Kwan To / Zhu Chengzhu",
          "nat": "HKG",
          "seed": 4
         }
-       ]
+       ],
+       "when": "2026-11-26T12:30:00Z"
       },
       {
        "players": [
-        null,
-        null
-       ]
+        {
+         "name": "Maciej Kubik / Aleksandra Michalak",
+         "nat": "POL",
+         "seed": 5
+        },
+        {
+         "name": "Wim Verdonschot / Shan Xiaona",
+         "nat": "GER"
+        }
+       ],
+       "when": "2026-11-26T12:30:00Z"
       }
      ]
     },
