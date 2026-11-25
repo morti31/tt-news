@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T18:47:00Z",
+  "updated": "2026-11-25T19:18:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -903,46 +903,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEXDOUBLES--------U19SFNL000200----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesqer000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Miguel Pantoja v Louis Laine, men's singles, qualification",
-      "start": "2026-11-24T17:50:00Z",
-      "end": "2026-11-24T18:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------QER-000600----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesqer000700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Temirlan Jiyenbayev v Mael Van Dessel, men's singles, qualification",
-      "start": "2026-11-24T17:50:00Z",
-      "end": "2026-11-24T18:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------QER-000700----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesqer000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Fumiya Igarashi v Irisbek Artukmetov, men's singles, qualification",
-      "start": "2026-11-24T17:50:00Z",
-      "end": "2026-11-24T18:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------QER-000200----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesqer000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Nikon Shutov v Ma Yeongmin, men's singles, qualification",
-      "start": "2026-11-24T17:50:00Z",
-      "end": "2026-11-24T18:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------QER-000400----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttemsinglesqer000500",
@@ -2085,16 +2045,6 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3352-ttemsinglesr32001200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Steffen Mengel v Youssef Abdelaziz, men's singles, last 32",
-      "start": "2026-11-25T18:25:00Z",
-      "end": "2026-11-25T19:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-001200----------",
-      "detail": "Table 6"
-    },
-    {
       "id": "wtt-3352-ttemsinglesr32000700",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Filip Zeljko v Panagiotis Gionis, men's singles, last 32",
@@ -2105,14 +2055,14 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3352-ttemsinglesr32000200",
+      "id": "wtt-3352-ttemsinglesr32001100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Tom Schweiger v Mizuki Oikawa, men's singles, last 32",
+      "name": "WTT Feeder Düsseldorf II: Cedric Meissner v Fanbo Meng, men's singles, last 32",
       "start": "2026-11-25T18:25:00Z",
       "end": "2026-11-25T19:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-000200----------",
-      "detail": "Table 2"
+      "code": "TTEMSINGLES-----------R32-001100----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3352-ttemsinglesr32000900",
@@ -2135,14 +2085,24 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3352-ttemsinglesr32001100",
+      "id": "wtt-3352-ttemsinglesr32000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Cedric Meissner v Fanbo Meng, men's singles, last 32",
+      "name": "WTT Feeder Düsseldorf II: Tom Schweiger v Mizuki Oikawa, men's singles, last 32",
       "start": "2026-11-25T18:25:00Z",
       "end": "2026-11-25T19:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-001100----------",
-      "detail": "Table 5"
+      "code": "TTEMSINGLES-----------R32-000200----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesr32001200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Steffen Mengel v Youssef Abdelaziz, men's singles, last 32",
+      "start": "2026-11-25T18:25:00Z",
+      "end": "2026-11-25T19:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------R32-001200----------",
+      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttemsinglesr32001300",
