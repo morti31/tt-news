@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-25T21:15:00Z",
+ "updated": "2026-11-25T21:30:00Z",
  "season": "2026-27",
- "status": "Regular season, matchday 7 played on 24 November (Chartres forfeited their 3-2 win over Roanne; the table after matchday 7 is to be confirmed); matchday 8 on 14 December",
+ "status": "Regular season, matchday 7 played on 24 November (Chartres forfeited their 3-2 win over Roanne); matchday 8 on 14 December",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -21,83 +21,83 @@
     "rows": [
      {
       "pos": 1,
-      "team": "SPO Rouen",
-      "p": 6,
-      "w": 5,
-      "l": 1,
-      "pts": 21
-     },
-     {
-      "pos": 2,
-      "team": "GV Hennebont",
-      "p": 6,
-      "w": 4,
-      "l": 2,
-      "pts": 20
-     },
-     {
-      "pos": 2,
       "team": "Loire Nord TT (Roanne)",
-      "p": 6,
-      "w": 5,
+      "p": 7,
+      "w": 6,
       "l": 1,
-      "pts": 20
+      "pts": 24
+     },
+     {
+      "pos": 1,
+      "team": "GV Hennebont",
+      "p": 7,
+      "w": 5,
+      "l": 2,
+      "pts": 24
+     },
+     {
+      "pos": 3,
+      "team": "SPO Rouen",
+      "p": 7,
+      "w": 5,
+      "l": 2,
+      "pts": 21
      },
      {
       "pos": 4,
       "team": "Bruille",
-      "p": 6,
+      "p": 7,
       "w": 4,
-      "l": 2,
-      "pts": 19
+      "l": 3,
+      "pts": 20
      },
      {
       "pos": 5,
       "team": "TFTT Thorigné-Fouillard",
-      "p": 6,
-      "w": 3,
+      "p": 7,
+      "w": 4,
       "l": 3,
-      "pts": 15
+      "pts": 19
      },
      {
       "pos": 6,
       "team": "Alliance Nîmes/Montpellier",
-      "p": 6,
-      "w": 2,
+      "p": 7,
+      "w": 3,
       "l": 4,
-      "pts": 14
+      "pts": 18
      },
      {
       "pos": 7,
       "team": "Loups d'Angers",
-      "p": 6,
-      "w": 3,
+      "p": 7,
+      "w": 4,
       "l": 3,
-      "pts": 12
+      "pts": 16
      },
      {
-      "pos": 7,
+      "pos": 8,
       "team": "TT Saint-Denis",
-      "p": 6,
+      "p": 7,
       "w": 3,
-      "l": 3,
-      "pts": 12
+      "l": 4,
+      "pts": 14
      },
      {
       "pos": 9,
       "team": "La Romagne",
-      "p": 6,
+      "p": 7,
       "w": 1,
-      "l": 5,
-      "pts": 8
+      "l": 6,
+      "pts": 10
      },
      {
       "pos": 10,
       "team": "Chartres",
-      "p": 6,
+      "p": 7,
       "w": 0,
-      "l": 6,
-      "pts": 5
+      "l": 7,
+      "pts": 4
      }
     ]
    }
@@ -425,10 +425,11 @@
    "away": "Chartres",
    "score": [
     3,
-    1
+    0
    ],
    "status": "finished",
-   "round": "Matchday 6"
+   "round": "Matchday 6",
+   "note": "Played as a 3-1 win for Thorigné-Fouillard; the FFTT's results graphic lists it as a 3-0 award (marked with an asterisk, no reason given)."
   },
   {
    "when": "2026-11-22T15:00:00Z",
@@ -568,6 +569,10 @@
   {
    "name": "11EDGE: Pro A men matchday 7 results (cross-check)",
    "url": "https://11edge.io/"
+  },
+  {
+   "name": "FFTT: Pro A men table and results after matchday 7",
+   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
   }
  ]
 }

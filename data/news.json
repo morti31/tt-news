@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T21:15:00Z",
+ "updated": "2026-11-25T21:30:00Z",
  "live_results_url": "https://www.worldtabletennis.com/",
  "stories": [
   {
@@ -15,7 +15,7 @@
    "body": [
     "Chartres, bottom of Pro A, have been stripped of their 3-2 home win over Loire Nord TT (Roanne) on Tuesday, their first of the season, for breaking the rules on double licences. The French federation (FFTT) said the points go to Roanne instead.",
     "The FFTT did not name the player concerned. Bence Majoros had won the opening match for Chartres on the night.",
-    "The ruling gives Roanne two wins in matchdays six and seven, after they ended SPO Rouen's unbeaten start on 22 November, and they share first place with GV Hennebont, who beat Bruille 3-1 on Tuesday. TFTT Thorigné-Fouillard won 3-2 at La Romagne, and Alliance Nîmes/Montpellier won 3-0 at Rouen in front of a record Pro A crowd of 5,276.",
+    "The ruling gives Roanne six wins from seven and a share of first place on 24 points with GV Hennebont, who beat Bruille 3-1 on Tuesday; SPO Rouen are third on 21. Chartres, still without a point from a win, are bottom on four. The FFTT's results graphic also marks Thorigné-Fouillard's matchday six win over Chartres, reported as 3-1, as a 3-0 award, without giving a reason. TFTT Thorigné-Fouillard won 3-2 at La Romagne on Tuesday, and Alliance Nîmes/Montpellier won 3-0 at Rouen in front of a record Pro A crowd of 5,276.",
     "Loups d'Angers won 3-2 at TT Saint-Denis after trailing 2-0: Bastien Rembert and Joé Seyfried won in straight games and Lilian Bardet took the deciding rubber 3-1. Matchday eight is on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
    ],
    "sources": [
@@ -30,12 +30,16 @@
     {
      "name": "11EDGE: Pro A men matchday 7 results",
      "url": "https://11edge.io/"
+    },
+    {
+     "name": "FFTT: Pro A men table and results after matchday 7",
+     "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
     }
    ],
    "league_table": {
     "comp": "proa-men",
     "label": "Pro A men's table",
-    "as_of": "After matchday 6; the table after matchday 7 is still to be confirmed",
+    "as_of": "After matchday 7, 24 November 2026",
     "page": "/clubs/pro-a.html",
     "table": {
      "columns": [
@@ -50,83 +54,83 @@
        "rows": [
         {
          "pos": 1,
-         "team": "SPO Rouen",
-         "p": 6,
-         "w": 5,
-         "l": 1,
-         "pts": 21
-        },
-        {
-         "pos": 2,
-         "team": "GV Hennebont",
-         "p": 6,
-         "w": 4,
-         "l": 2,
-         "pts": 20
-        },
-        {
-         "pos": 2,
          "team": "Loire Nord TT (Roanne)",
-         "p": 6,
-         "w": 5,
+         "p": 7,
+         "w": 6,
          "l": 1,
-         "pts": 20
+         "pts": 24
+        },
+        {
+         "pos": 1,
+         "team": "GV Hennebont",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 24
+        },
+        {
+         "pos": 3,
+         "team": "SPO Rouen",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 21
         },
         {
          "pos": 4,
          "team": "Bruille",
-         "p": 6,
+         "p": 7,
          "w": 4,
-         "l": 2,
-         "pts": 19
+         "l": 3,
+         "pts": 20
         },
         {
          "pos": 5,
          "team": "TFTT Thorigné-Fouillard",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 15
+         "pts": 19
         },
         {
          "pos": 6,
          "team": "Alliance Nîmes/Montpellier",
-         "p": 6,
-         "w": 2,
+         "p": 7,
+         "w": 3,
          "l": 4,
-         "pts": 14
+         "pts": 18
         },
         {
          "pos": 7,
          "team": "Loups d'Angers",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 12
+         "pts": 16
         },
         {
-         "pos": 7,
+         "pos": 8,
          "team": "TT Saint-Denis",
-         "p": 6,
+         "p": 7,
          "w": 3,
-         "l": 3,
-         "pts": 12
+         "l": 4,
+         "pts": 14
         },
         {
          "pos": 9,
          "team": "La Romagne",
-         "p": 6,
+         "p": 7,
          "w": 1,
-         "l": 5,
-         "pts": 8
+         "l": 6,
+         "pts": 10
         },
         {
          "pos": 10,
          "team": "Chartres",
-         "p": 6,
+         "p": 7,
          "w": 0,
-         "l": 6,
-         "pts": 5
+         "l": 7,
+         "pts": 4
         }
        ]
       }
@@ -194,7 +198,7 @@
      ]
     }
    },
-   "modified": "2026-11-25T21:15:00Z"
+   "modified": "2026-11-25T21:30:00Z"
   },
   {
    "id": "mixed-team-world-cup-2026-shinozuka-out-kawakami-japan-squad",
@@ -476,7 +480,7 @@
    "body": [
     "Félix and Alexis Lebrun won their singles as Alliance Nîmes/Montpellier beat the Pro A leaders and defending champions SPO Rouen 3-0 at the Kindarena on Tuesday night, in front of 5,276 spectators, a record crowd for a Pro A match. The match was sold out.",
     "Félix, the world No 3, beat Rouen's No 1, the world No 22 Thibault Poret, 3-1, and Alexis, the world No 10, beat Esteban Dorr 3-1. It was Alexis's first Pro A match of the season; he withdrew injured from WTT Champions Frankfurt this month. Antoine Hachard finished the match by beating Alexandre Robinot 3-0, and Nîmes/Montpellier dropped only two games all night. \"We were very happy to come back to this hall, which brings back wonderful memories,\" Félix told Midi Libre (translated from French); the brothers won the 2025 title at the Kindarena against Hennebont.",
-    "In the night's other matches, Chartres, bottom and without a win, beat Loire Nord TT (Roanne) 3-2 two days after Roanne had ended Rouen's unbeaten start, but the result was later overturned and the points awarded to Roanne because Chartres broke the rules on double licences ([more here](/news/pro-a-men-2026-27-chartres-forfeit-roanne-double-licence.html)). GV Hennebont beat Bruille 3-1, TFTT Thorigné-Fouillard won 3-2 at La Romagne after more than three hours for their first away win of the season, and Loups d'Angers won 3-2 at TT Saint-Denis from 2-0 down. The updated table will be added once it is confirmed.",
+    "In the night's other matches, Chartres, bottom and without a win, beat Loire Nord TT (Roanne) 3-2 two days after Roanne had ended Rouen's unbeaten start, but the result was later overturned and the points awarded to Roanne because Chartres broke the rules on double licences ([more here](/news/pro-a-men-2026-27-chartres-forfeit-roanne-double-licence.html)). GV Hennebont beat Bruille 3-1, TFTT Thorigné-Fouillard won 3-2 at La Romagne after more than three hours for their first away win of the season, and Loups d'Angers won 3-2 at TT Saint-Denis from 2-0 down. Rouen drop to third on 21 points, behind Roanne and Hennebont on 24, and Nîmes/Montpellier are sixth on 18.",
     "The brothers now join France for the Mixed Team World Cup in Chengdu, which starts on Sunday 29 November. Rouen's next Pro A match is at Bruille on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
    ],
    "matches": [
@@ -539,12 +543,16 @@
     {
      "name": "11EDGE: Pro A men matchday 7 results",
      "url": "https://11edge.io/"
+    },
+    {
+     "name": "FFTT: Pro A men table and results after matchday 7",
+     "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
     }
    ],
    "league_table": {
     "comp": "proa-men",
     "label": "Pro A men's table",
-    "as_of": "After matchday 6; the table after matchday 7 is still to be confirmed",
+    "as_of": "After matchday 7, 24 November 2026",
     "page": "/clubs/pro-a.html",
     "table": {
      "columns": [
@@ -559,83 +567,83 @@
        "rows": [
         {
          "pos": 1,
-         "team": "SPO Rouen",
-         "p": 6,
-         "w": 5,
-         "l": 1,
-         "pts": 21
-        },
-        {
-         "pos": 2,
-         "team": "GV Hennebont",
-         "p": 6,
-         "w": 4,
-         "l": 2,
-         "pts": 20
-        },
-        {
-         "pos": 2,
          "team": "Loire Nord TT (Roanne)",
-         "p": 6,
-         "w": 5,
+         "p": 7,
+         "w": 6,
          "l": 1,
-         "pts": 20
+         "pts": 24
+        },
+        {
+         "pos": 1,
+         "team": "GV Hennebont",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 24
+        },
+        {
+         "pos": 3,
+         "team": "SPO Rouen",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 21
         },
         {
          "pos": 4,
          "team": "Bruille",
-         "p": 6,
+         "p": 7,
          "w": 4,
-         "l": 2,
-         "pts": 19
+         "l": 3,
+         "pts": 20
         },
         {
          "pos": 5,
          "team": "TFTT Thorigné-Fouillard",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 15
+         "pts": 19
         },
         {
          "pos": 6,
          "team": "Alliance Nîmes/Montpellier",
-         "p": 6,
-         "w": 2,
+         "p": 7,
+         "w": 3,
          "l": 4,
-         "pts": 14
+         "pts": 18
         },
         {
          "pos": 7,
          "team": "Loups d'Angers",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 12
+         "pts": 16
         },
         {
-         "pos": 7,
+         "pos": 8,
          "team": "TT Saint-Denis",
-         "p": 6,
+         "p": 7,
          "w": 3,
-         "l": 3,
-         "pts": 12
+         "l": 4,
+         "pts": 14
         },
         {
          "pos": 9,
          "team": "La Romagne",
-         "p": 6,
+         "p": 7,
          "w": 1,
-         "l": 5,
-         "pts": 8
+         "l": 6,
+         "pts": 10
         },
         {
          "pos": 10,
          "team": "Chartres",
-         "p": 6,
+         "p": 7,
          "w": 0,
-         "l": 6,
-         "pts": 5
+         "l": 7,
+         "pts": 4
         }
        ]
       }
@@ -703,7 +711,7 @@
      ]
     }
    },
-   "modified": "2026-11-25T21:15:00Z"
+   "modified": "2026-11-25T21:30:00Z"
   },
   {
    "id": "world-youth-championships-2026-u19-mixed-doubles-semi-finals-all-china-final",
