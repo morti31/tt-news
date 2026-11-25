@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T11:46:00Z",
+  "updated": "2026-11-25T12:16:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -885,46 +885,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttemdoublesu198fnl000600",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Yassin Gaber / Ivan Kahn v Abhinandh Pradhivadhi / Priyanuj Bhattacharyya, u19 boys' doubles, last 16",
-      "start": "2026-11-24T09:00:00Z",
-      "end": "2026-11-24T09:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U198FNL000600----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttewdoublesu198fnl000400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Natalia Bogdanowicz / Karolina Holda v Leana Hochart / Alexia Nodin, u19 girls' doubles, last 16",
-      "start": "2026-11-24T09:00:00Z",
-      "end": "2026-11-24T09:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U198FNL000400----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttemdoublesu198fnl000500",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Alan Kurmangaliyev / Benyamin Faraji v Samuel Michna / Patryk Zyworonek, u19 boys' doubles, last 16",
-      "start": "2026-11-24T09:00:00Z",
-      "end": "2026-11-24T09:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMDOUBLES--------U198FNL000500----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttewdoublesu198fnl000700",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Zlata Terekhova / Eseniia Shirokova v Tracey Hsia / Rochica Sonday, u19 girls' doubles, last 16",
-      "start": "2026-11-24T09:00:00Z",
-      "end": "2026-11-24T09:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U198FNL000700----------",
-      "detail": "Table 4"
-    },
-    {
       "id": "wtt-3377-ttemdoublesu198fnl000700",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Aditya Sareen / Chulong Nie v Hung Che-Yen / Lin Chin-Ting, u19 boys' doubles, last 16",
@@ -953,66 +913,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWDOUBLES--------U198FNL000800----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp12000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Rafael De Las Heras v William Bergenblock, men's singles, group 12",
-      "start": "2026-11-24T10:50:00Z",
-      "end": "2026-11-24T11:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP12000500----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp11000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Mael Van Dessel v Alex Naumi, men's singles, group 11",
-      "start": "2026-11-24T10:50:00Z",
-      "end": "2026-11-24T11:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP11000500----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp10000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Noa Dahlstrom v Aaron Sahr, men's singles, group 10",
-      "start": "2026-11-24T10:50:00Z",
-      "end": "2026-11-24T11:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP10000600----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp10000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara v Nikon Shutov, men's singles, group 10",
-      "start": "2026-11-24T10:50:00Z",
-      "end": "2026-11-24T11:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP10000500----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp11000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Ivan Hencl v Peter Alestedt, men's singles, group 11",
-      "start": "2026-11-24T10:50:00Z",
-      "end": "2026-11-24T11:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP11000600----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp12000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Armaan Dalamal v Gene Wantz, men's singles, group 12",
-      "start": "2026-11-24T10:50:00Z",
-      "end": "2026-11-24T11:25:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP12000600----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3352-ttemsinglesgp14000600",
@@ -1845,6 +1745,36 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3352-ttemsinglesr64000700",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Yuhi Sakai v Mihai Bobocica, men's singles, last 64",
+      "start": "2026-11-25T11:20:00Z",
+      "end": "2026-11-25T11:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------R64-000700----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesr64000200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Abdel-Kader Salifou v Yiu Kwan To, men's singles, last 64",
+      "start": "2026-11-25T11:20:00Z",
+      "end": "2026-11-25T11:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------R64-000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3352-ttemsinglesr64002200",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Satoshi Aida v Fanbo Meng, men's singles, last 64",
+      "start": "2026-11-25T11:20:00Z",
+      "end": "2026-11-25T11:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------R64-002200----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3352-ttemsinglesr64001100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Mael Van Dessel v Juan Perez, men's singles, last 64",
@@ -1875,44 +1805,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemsinglesr64000200",
+      "id": "wtt-3352-ttemsinglesr64001800",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Abdel-Kader Salifou v Yiu Kwan To, men's singles, last 64",
-      "start": "2026-11-25T11:20:00Z",
-      "end": "2026-11-25T11:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-000200----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr64000700",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Yuhi Sakai v Mihai Bobocica, men's singles, last 64",
-      "start": "2026-11-25T11:20:00Z",
-      "end": "2026-11-25T11:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-000700----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr64002200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Satoshi Aida v Fanbo Meng, men's singles, last 64",
-      "start": "2026-11-25T11:20:00Z",
-      "end": "2026-11-25T11:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-002200----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr64001400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Josh Chua v Panagiotis Gionis, men's singles, last 64",
+      "name": "WTT Feeder Düsseldorf II: Nikon Shutov v Sanzhar Zhubanov, men's singles, last 64",
       "start": "2026-11-25T11:55:00Z",
       "end": "2026-11-25T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-001400----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------R64-001800----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttemsinglesr64001500",
@@ -1925,14 +1825,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemsinglesr64001800",
+      "id": "wtt-3352-ttemsinglesr64001400",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Nikon Shutov v Sanzhar Zhubanov, men's singles, last 64",
+      "name": "WTT Feeder Düsseldorf II: Josh Chua v Panagiotis Gionis, men's singles, last 64",
       "start": "2026-11-25T11:55:00Z",
       "end": "2026-11-25T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R64-001800----------",
-      "detail": "Table 3"
+      "code": "TTEMSINGLES-----------R64-001400----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3352-ttemsinglesr64002700",
