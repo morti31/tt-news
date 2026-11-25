@@ -1,9 +1,9 @@
 {
  "id": "proa-men",
  "auto": false,
- "updated": "2026-11-25T20:50:00Z",
+ "updated": "2026-11-25T21:15:00Z",
  "season": "2026-27",
- "status": "Regular season, matchday 7 played on 24 November (Chartres forfeited their 3-2 win over Roanne; the score of Saint-Denis v Angers and the table after matchday 7 to be confirmed); matchday 8 on 14 December",
+ "status": "Regular season, matchday 7 played on 24 November (Chartres forfeited their 3-2 win over Roanne; the table after matchday 7 is to be confirmed); matchday 8 on 14 December",
  "source": {
   "name": "FFTT",
   "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
@@ -491,7 +491,10 @@
    "when": "2026-11-24T18:00:00Z",
    "home": "TT Saint-Denis",
    "away": "Loups d'Angers",
-   "score": null,
+   "score": [
+    2,
+    3
+   ],
    "status": "finished",
    "round": "Matchday 7"
   },
@@ -561,6 +564,10 @@
   {
    "name": "FFTT (French): Pro A, les premières grandes confrontations redistribuent les cartes",
    "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-premieres-grandes-confrontations-redistribuent-les-cartes/"
+  },
+  {
+   "name": "11EDGE: Pro A men matchday 7 results (cross-check)",
+   "url": "https://11edge.io/"
   }
  ]
 }
