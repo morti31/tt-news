@@ -78,11 +78,11 @@ The site is static. All content lives in `data/news.json`; `index.html`, `styles
 
 ## What is not news
 
-Eleven covers table tennis as sport. Before writing anything, ask whether a reader who follows the sport would want it as news. If not, don't publish it, even as a quick update, and don't put it in `PENDING.md`.
+Eleven covers table tennis as sport. Before writing anything, ask whether a reader who follows the sport would want it as news. If clearly not, don't publish it, even as a quick update, and don't put it in `PENDING.md`.
 
 - **Never publish personal-life stories**: marriages, engagements, births, relationships, divorces, family news, celebrity gossip, fashion, social media chatter, or a player's life away from the table, however widely other outlets run them. They count only when they change something in the sport (a retirement, a withdrawal, a change of association, a comeback) and then the story is that change, not the personal event. Obituaries of people who shaped the sport are the exception (UPDATE.md, step 3; the Ken Green piece is the model).
 - **Never publish routine administration or small local items**: umpire and coach qualifications, sponsorship calls, club social news, regional or domestic competitions below national-championship level (outside England's own pages, where national championships and national league news count), exam results, partner announcements, and anything a reader would not search for.
-- **The test for a quick update**: it names a result, ranking, selection, withdrawal, injury, signing, rule change, schedule change or major award at a level Eleven covers (WTT, ITTF and continental events, national senior championships, the leagues in Club leagues), and it would still matter next week. When unsure, leave it out: a quiet run is better than a thin story.
+- **The test for a quick update**: it names a result, ranking, selection, withdrawal, injury, signing, rule change, schedule change or major award at a level Eleven covers (WTT, ITTF and continental events, national senior championships, the leagues in Club leagues), and it would still matter next week. When unsure whether something is big enough or too personal, never drop it silently: don't publish it, but put it to Tom the way the age rule does. Write the lead (who, what, sources) as a `PUT TO TOM` line in `PENDING.md` and list it in the run's closing message with a one-line reason, and publish it only if he says yes. Things that clearly fail the tests above (a marriage, an exam pass) are left out without asking.
 - **Ex-players** are news only for a role in the sport (coaching, federation posts, a comeback, a death), never for their private life.
 
 ## Search Console (content decisions)
