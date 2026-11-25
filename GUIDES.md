@@ -8,6 +8,7 @@ The shelves and planned titles are in `data/guides/plan.json`. A written guide i
 
 1. Pull `main`. Pick the next three titles in `plan.json`, in shelf order, that don't yet have a file in `data/guides/`.
 2. Research each from primary sources first: the ITTF Statutes and Handbook, the WTT website, Table Tennis England, manufacturers' own specification pages for equipment. Use secondary sources only to add context, and name them.
+   - **Rules**: the ITTF Statutes 2026 are in the repo as text at `docs/ittf-statutes-2026.txt` (the Laws are chapter 2, the Regulations for international competitions chapter 3), because the ITTF's PDF often can't be fetched. Check every rule, number and law reference in a guide against it, and cite it in `sources` as "ITTF Statutes 2026 (Laws ...)" with the ITTF's URL, https://db.ittf.com/sites/default/files/public/2026-02/2026_Statutes_v1_consolidated_clean.pdf. When the ITTF publishes a new edition, replace the file with the new text (`pdftotext -layout`), rename it for the year and update this line.
 3. Write, build (`python3 tools/build_site.py`), check each page renders, then commit to `main` with a message like "Guides: <title>, <title>, <title>" and push (if the push is rejected, `git pull --rebase origin main` and push again). Guides go live with no approval step, so check every fact and number against its source before committing.
 
 ## How to write them
