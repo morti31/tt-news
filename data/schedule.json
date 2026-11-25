@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T09:46:00Z",
+  "updated": "2026-11-25T10:16:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1005,66 +1005,6 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3352-ttemsinglesgp03000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Lee Seungsoo v Milo De Boer, men's singles, group 3",
-      "start": "2026-11-24T09:05:00Z",
-      "end": "2026-11-24T09:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP03000500----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp01000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Alberto Mino v Alvaro Fuentes, men's singles, group 1",
-      "start": "2026-11-24T09:05:00Z",
-      "end": "2026-11-24T09:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP01000500----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp01000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Benno Oehme v Michal Gawlas, men's singles, group 1",
-      "start": "2026-11-24T09:05:00Z",
-      "end": "2026-11-24T09:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP01000600----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp03000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Julian Rzihauschek v Ma Yeongjun, men's singles, group 3",
-      "start": "2026-11-24T09:05:00Z",
-      "end": "2026-11-24T09:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP03000600----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp02000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Norbert Tauler v Zsolt Peto, men's singles, group 2",
-      "start": "2026-11-24T09:05:00Z",
-      "end": "2026-11-24T09:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP02000500----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesgp02000600",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Aidos Kenzhigulov v Michael Tauber, men's singles, group 2",
-      "start": "2026-11-24T09:05:00Z",
-      "end": "2026-11-24T09:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------GP02000600----------",
-      "detail": "Table 4"
-    },
-    {
       "id": "wtt-3377-ttemdoublesu198fnl000700",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Aditya Sareen / Chulong Nie v Hung Che-Yen / Lin Chin-Ting, u19 boys' doubles, last 16",
@@ -1925,16 +1865,6 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3352-ttewsinglesr64001500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Audrey Zarif v Josephina Neumann, women's singles, last 64",
-      "start": "2026-11-25T09:35:00Z",
-      "end": "2026-11-25T10:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R64-001500----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3352-ttewsinglesr64000200",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Agathe Avezou v Lam Yee Lok, women's singles, last 64",
@@ -1945,14 +1875,14 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3352-ttewsinglesr64002700",
+      "id": "wtt-3352-ttexdoubles8fnl000800",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Ryu Hanna v Julie Van Hauwaert, women's singles, last 64",
+      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara / Shuohan Men v Choi Jiwook / Lee Daeun, mixed doubles, last 16",
       "start": "2026-11-25T09:35:00Z",
       "end": "2026-11-25T10:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R64-002700----------",
-      "detail": "Table 5"
+      "code": "TTEXDOUBLES-----------8FNL000800----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3352-ttewsinglesr64000700",
@@ -1965,6 +1895,16 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3352-ttewsinglesr64002700",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Ryu Hanna v Julie Van Hauwaert, women's singles, last 64",
+      "start": "2026-11-25T09:35:00Z",
+      "end": "2026-11-25T10:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------R64-002700----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3352-ttexdoubles8fnl000500",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Maciej Kubik / Aleksandra Michalak v Nikon Shutov / Lizaveta Tsimashkova, mixed doubles, last 16",
@@ -1975,14 +1915,24 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3352-ttexdoubles8fnl000800",
+      "id": "wtt-3352-ttewsinglesr64001500",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Gabrielius Camara / Shuohan Men v Choi Jiwook / Lee Daeun, mixed doubles, last 16",
+      "name": "WTT Feeder Düsseldorf II: Audrey Zarif v Josephina Neumann, women's singles, last 64",
       "start": "2026-11-25T09:35:00Z",
       "end": "2026-11-25T10:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEXDOUBLES-----------8FNL000800----------",
-      "detail": "Table 2"
+      "code": "TTEWSINGLES-----------R64-001500----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3352-ttewsinglesr64001000",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Karoline Mischek-Colucci v Adina Diaconu, women's singles, last 64",
+      "start": "2026-11-25T10:10:00Z",
+      "end": "2026-11-25T10:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEWSINGLES-----------R64-001000----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttewsinglesr64000300",
@@ -2003,16 +1953,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------R64-003100----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttewsinglesr64001000",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Karoline Mischek-Colucci v Adina Diaconu, women's singles, last 64",
-      "start": "2026-11-25T10:10:00Z",
-      "end": "2026-11-25T10:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------R64-001000----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttewsinglesr64000600",
