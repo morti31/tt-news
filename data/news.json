@@ -1,7 +1,244 @@
 {
-  "updated": "2026-11-26T16:15:00Z",
+  "updated": "2026-11-26T20:35:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "world-youth-championships-2026-day6-review",
+      "kind": "Review",
+      "day": 6,
+      "category": "International",
+      "date": "2026-11-26",
+      "published": "2026-11-26T20:35:00Z",
+      "event": "world-youth-championships-2026",
+      "draw": "3377",
+      "top": true,
+      "headline": "World Youth Championships day six: Wen Ruibo and Jiang Yiyi win mixed gold as two fourth seeds fall",
+      "summary": "China's Wen Ruibo and Jiang Yiyi beat Li Hechen and Yao Ruixuan 3-1 for the U19 mixed doubles title in Istanbul, and France's Antoine Noirault and Leana Hochart knocked out fourth seeds in the singles.",
+      "sources": [
+        {
+          "name": "WTT: World Youth Championships 2026, schedule, draws and official results (event 3377)",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377"
+        },
+        {
+          "name": "ITTF world ranking, week 48",
+          "url": "https://www.worldtabletennis.com/rankings"
+        },
+        {
+          "name": "WANA News Agency: Iran wins bronze medal in World Youth Table Tennis doubles",
+          "url": "https://wanaen.com/iran-wins-bronze-medal-in-world-youth-table-tennis-doubles/"
+        },
+        {
+          "name": "Dicodusport (French): Deux médailles de bronze et une finale, les doubles tricolores font le plein aux Mondiaux jeunes",
+          "url": "https://dicodusport.fr/blog/deux-medailles-de-bronze-et-une-finale-les-doubles-tricolores-font-le-plein-aux-mondiaux-jeunes-de-tennis-de-table/"
+        }
+      ],
+      "matches": [
+        {
+          "label": "Mixed U19 doubles, final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Wen Ruibo / Jiang Yiyi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Li Hechen / Yao Ruixuan",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Women's U19 singles, last 16",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Yao Ruixuan",
+              "nat": "CHN"
+            },
+            {
+              "name": "Eseniia Shirokova",
+              "nat": "RUS"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              8
+            ]
+          ]
+        },
+        {
+          "label": "Men's U19 singles, last 16",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Antoine Noirault",
+              "nat": "FRA"
+            },
+            {
+              "name": "Li Ki Ho",
+              "nat": "HKG"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Women's U19 singles, last 16",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Leana Hochart",
+              "nat": "FRA"
+            },
+            {
+              "name": "Su Tsz Tung",
+              "nat": "HKG"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              12,
+              14
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's U19 singles, last 16",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Hung Che-Yen",
+              "nat": "TPE"
+            },
+            {
+              "name": "Kenan Kahraman",
+              "nat": "TUR"
+            }
+          ],
+          "score": [
+            4,
+            1
+          ],
+          "games": [
+            [
+              12,
+              14
+            ],
+            [
+              12,
+              10
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        }
+      ]
+    },
     {
       "id": "pro-a-men-2026-27-john-oyebode-excluded-chartres-two-forfeits",
       "kind": "Update",
@@ -560,7 +797,6 @@
       "published": "2026-11-25T20:40:00Z",
       "event": "world-youth-championships-2026",
       "draw": "3377",
-      "top": true,
       "headline": "World Youth Championships day five: three boys' seeds fall as Syndrela Das knocks out Sally Moyland",
       "summary": "Australia's Chulong Nie and Aditya Sareen beat the third and seventh seeds from behind, Turkey's Kenan Kahraman knocked out the fifth seed and India's Syndrela Das beat Sally Moyland in the U19 singles last 32.",
       "sources": [
