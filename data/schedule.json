@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T19:53:00Z",
+  "updated": "2026-11-26T20:23:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -885,46 +885,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19r32001400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Robert Istrate v Francesco Trevisan, u19 boys' singles, last 32",
-      "start": "2026-11-25T16:30:00Z",
-      "end": "2026-11-25T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-001400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19r32001300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Li Hechen v Yassin Gaber, u19 boys' singles, last 32",
-      "start": "2026-11-25T16:30:00Z",
-      "end": "2026-11-25T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-001300----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19r32001300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Sally Moyland v Syndrela Das, u19 girls' singles, last 32",
-      "start": "2026-11-25T16:30:00Z",
-      "end": "2026-11-25T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19R32-001300----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19r32001400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Busra Demir v Wu Jia-En, u19 girls' singles, last 32",
-      "start": "2026-11-25T16:30:00Z",
-      "end": "2026-11-25T17:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19R32-001400----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3377-ttemsinglesu19r32001600",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Kohaku Nakano v Emanuel Otalvaro, u19 boys' singles, last 32",
@@ -963,46 +923,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWSINGLES--------U19R32-001600----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr32001300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Alvaro Robles v Lee Seungsoo, men's singles, last 32",
-      "start": "2026-11-25T19:00:00Z",
-      "end": "2026-11-25T19:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-001300----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr32000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Mihai Bobocica v Kwon Hyuk, men's singles, last 32",
-      "start": "2026-11-25T19:00:00Z",
-      "end": "2026-11-25T19:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-000400----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr32001400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Botond Varga v Kay Stumper, men's singles, last 32",
-      "start": "2026-11-25T19:00:00Z",
-      "end": "2026-11-25T19:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-001400----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3352-ttemsinglesr32000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Rogelio Castro v Rafael De Las Heras, men's singles, last 32",
-      "start": "2026-11-25T19:00:00Z",
-      "end": "2026-11-25T19:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------R32-000300----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3352-ttexdoublesqfnl000100",
