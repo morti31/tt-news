@@ -66,6 +66,41 @@ GN = [
     ("en", "site:butterflyonline.com OR site:mltt.com OR site:tabletennisdaily.com when:3d", "hl=en-GB&gl=GB&ceid=GB:en"),
 ]
 
+
+# Sport and politics: stories from general news and sport outlets that can reach table tennis without naming it
+# (sanctions on Russian athletes, IOC and government decisions, funding, visas, doping and governance rows).
+# Only headlines that pass POLICY_RE are kept, and the digest lists them under their own heading.
+POLICY_GN = [
+    ("policy", "sanctions Russian OR Belarusian athletes sport when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "IOC OR \"International Olympic Committee\" Russia OR Belarus flag OR neutral when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "site:theguardian.com sport Russia OR sanctions OR IOC OR doping OR governance when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "site:bbc.co.uk sport Russia OR sanctions OR IOC OR doping OR governance when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "site:nytimes.com/athletic Olympic OR IOC OR sanctions OR governance when:2d", "hl=en-US&gl=US&ceid=US:en"),
+    ("policy", "site:reuters.com sport Russia OR sanctions OR IOC OR doping when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "site:apnews.com sports Russia OR sanctions OR IOC OR doping when:2d", "hl=en-US&gl=US&ceid=US:en"),
+    ("policy", "site:euobserver.com sport OR athletes OR sanctions when:3d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "site:politico.eu sport OR athletes OR Olympic when:3d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "site:espn.com Olympic OR IOC OR sanctions OR doping when:2d", "hl=en-US&gl=US&ceid=US:en"),
+    ("policy", "Russian athletes ban OR return OR neutral Olympic OR federation when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "WADA OR CAS OR \"Court of Arbitration for Sport\" ruling when:2d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "sports minister OR government sport funding OR visa athletes when:3d", "hl=en-GB&gl=GB&ceid=GB:en"),
+    ("policy", "Russland Sportler Sanktionen OR Olympia OR IOC when:2d", "hl=de&gl=DE&ceid=DE:de"),
+    ("policy", "sportifs russes sanctions OR CIO OR neutres when:2d", "hl=fr&gl=FR&ceid=FR:fr"),
+    ("policy", "俄罗斯 运动员 制裁 OR 国际奥委会 when:2d", "hl=zh-CN&gl=CN&ceid=CN:zh-Hans"),
+]
+POLICY_FEEDS = [
+    "https://feeds.bbci.co.uk/sport/rss.xml",
+    "https://www.theguardian.com/sport/rss",
+    "https://www.insidethegames.biz/rss/news",
+    "https://www.playthegame.org/rss/",
+    "https://euobserver.com/rss.xml",
+    "https://www.politico.eu/feed/",
+    "https://www.espn.com/espn/rss/news",
+]
+POLICY_RE = re.compile(r"sanction|\bbans?\b|banned|\bflags?\b|neutral|\bIOC\b|Olympic Committee|Russia|Belarus|Ukrain|\bvisas?\b|funding|government|minister|"
+                       r"doping|WADA|\bCAS\b|Court of Arbitration|corruption|investigation|boycott|governing bod|federation|scandal|abuse|"
+                       r"\bEU\b|European Commission|Parliament|\bUN\b|human rights|俄罗斯|制裁|奥委会|Russland|Sanktion|russes|sanctions", re.I)
+
 # Sites' own feeds (WordPress sites publish /feed/). Failures are recorded, not fatal.
 FEEDS = [
     "https://www.ittf.com/feed/",
@@ -227,10 +262,14 @@ def main(outdir):
     cutoff = now - dt.timedelta(hours=HOURS)
     items, status = {}, []
 
-    def add(rows):
+    def add(rows, policy=False):
         for r in rows:
             if not r["title"] or not r["url"]:
                 continue
+            if policy:
+                if not POLICY_RE.search(r["title"]):
+                    continue
+                r["section"] = "policy"
             d = when(r["published"])
             if d and d < cutoff:
                 continue
@@ -251,6 +290,22 @@ def main(outdir):
             for r in rows:
                 r["source"] = r["source"] or urllib.parse.urlparse(url).netloc
             add(rows); status.append({"source": url, "ok": True, "items": len(rows)})
+        except Exception as e:
+            status.append({"source": url, "ok": False, "error": str(e)[:120]})
+
+    for lang, q, params in POLICY_GN:
+        url = "https://news.google.com/rss/search?q=" + urllib.parse.quote(q) + "&" + params
+        try:
+            rows = parse(get(url), f"Google News (policy): {q}")
+            add(rows, True); status.append({"source": f"gn policy {q}", "ok": True, "items": len(rows)})
+        except Exception as e:
+            status.append({"source": f"gn policy {q}", "ok": False, "error": str(e)[:120]})
+    for url in POLICY_FEEDS:
+        try:
+            rows = parse(get(url), url)
+            for r in rows:
+                r["source"] = r["source"] or urllib.parse.urlparse(url).netloc
+            add(rows, True); status.append({"source": url, "ok": True, "items": len(rows)})
         except Exception as e:
             status.append({"source": url, "ok": False, "error": str(e)[:120]})
 
@@ -286,10 +341,17 @@ def main(outdir):
     json.dump(wtt, open(os.path.join(outdir, "wtt.json"), "w", encoding="utf-8"), ensure_ascii=False)
     with open(os.path.join(outdir, "digest.md"), "w", encoding="utf-8") as f:
         f.write(f"# News scan {now:%Y-%m-%d %H:%M} UTC, last {HOURS} hours, {len(rows)} headlines\n\n")
-        for r in rows:
+        def line(r):
             real = f" | real: {r['real_url']}" if r.get("real_url") else ""
             read = " | text in pages.json" if r["url"] in pages else ""
             f.write(f"- {r['published']} | {r['source']} | {r['title']} | {r['url']}{real}{read}\n")
+        for r in rows:
+            if r.get("section") != "policy":
+                line(r)
+        pol = [r for r in rows if r.get("section") == "policy"]
+        f.write(f"\n## Sport and politics ({len(pol)} headlines from general news and sport outlets; keep only those that reach table tennis, e.g. sanctions on Russian athletes, IOC or government decisions, funding, visas, doping or governance)\n\n")
+        for r in pol:
+            line(r)
         f.write("\n## Source status\n\n")
         for s in status:
             f.write(f"- {'ok ' if s['ok'] else 'FAIL'} {s['source']} {s.get('items', s.get('bytes', ''))} {s.get('error', '')}\n")
