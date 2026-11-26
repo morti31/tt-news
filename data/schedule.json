@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:20:00Z",
+  "updated": "2026-11-26T08:51:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2225,16 +2225,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3352-ttemdoublesqfnl000300",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Tom Closset / Alessi Massart v Diego Lillo / Rafael De Las Heras, men's doubles, quarterfinal",
-      "start": "2026-11-26T09:35:00Z",
-      "end": "2026-11-26T10:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMDOUBLES-----------QFNL000300----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3352-ttemdoublesqfnl000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Martin Allegro / Adrien Rassenfosse v Kay Stumper / Fanbo Meng, men's doubles, quarterfinal",
@@ -2243,6 +2233,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMDOUBLES-----------QFNL000100----------",
       "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3352-ttemdoublesqfnl000300",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Tom Closset / Alessi Massart v Diego Lillo / Rafael De Las Heras, men's doubles, quarterfinal",
+      "start": "2026-11-26T09:35:00Z",
+      "end": "2026-11-26T10:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMDOUBLES-----------QFNL000300----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3352-ttewsingles8fnl000500",
@@ -2485,6 +2485,16 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3352-ttemsingles8fnl000500",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Sathiyan Gnanasekaran v Niagol Stoyanov, men's singles, last 16",
+      "start": "2026-11-26T11:55:00Z",
+      "end": "2026-11-26T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------8FNL000500----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3352-ttemsingles8fnl000600",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Fanbo Meng v Youssef Abdelaziz, men's singles, last 16",
@@ -2513,16 +2523,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------8FNL000400----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3352-ttemsingles8fnl000500",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Sathiyan Gnanasekaran v Niagol Stoyanov, men's singles, last 16",
-      "start": "2026-11-26T11:55:00Z",
-      "end": "2026-11-26T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------8FNL000500----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3352-ttexdoublessfnl000200",
@@ -2595,15 +2595,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19qfnl000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Boys' Singles, Quarterfinal, Match 1",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T11:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000100----------"
-    },
-    {
       "id": "wtt-3377-ttewsinglesu19qfnl000100",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: U19 Girls' Singles, Quarterfinal, Match 1",
@@ -2611,6 +2602,15 @@
       "end": "2026-11-27T11:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWSINGLES--------U19QFNL000100----------"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu19qfnl000100",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: U19 Boys' Singles, Quarterfinal, Match 1",
+      "start": "2026-11-27T07:00:00Z",
+      "end": "2026-11-27T11:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19QFNL000100----------"
     },
     {
       "id": "wtt-3377-ttemsinglesu19qfnl000200",
