@@ -1,7 +1,7 @@
 {
  "id": "dttbl-women",
  "auto": true,
- "updated": "2026-11-26T07:50:00Z",
+ "updated": "2026-11-26T08:50:00Z",
  "season": "2026-27",
  "source": {
   "name": "DTTB click-TT",
@@ -164,21 +164,21 @@
   },
   {
    "when": "2026-09-27T12:00:00Z",
-   "home": "TSV Dachau",
-   "away": "TG Langenselbold",
-   "score": [
-    6,
-    2
-   ],
-   "status": "finished"
-  },
-  {
-   "when": "2026-09-27T12:00:00Z",
    "home": "TTC Weinheim",
    "away": "ESV Weil",
    "score": [
     6,
     1
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-09-27T12:00:00Z",
+   "home": "TSV Dachau",
+   "away": "TG Langenselbold",
+   "score": [
+    6,
+    2
    ],
    "status": "finished"
   },
@@ -234,21 +234,21 @@
   },
   {
    "when": "2026-11-08T13:00:00Z",
-   "home": "TTC Weinheim",
-   "away": "TTC Berlin Eastside",
-   "score": [
-    6,
-    1
-   ],
-   "status": "finished"
-  },
-  {
-   "when": "2026-11-08T13:00:00Z",
    "home": "TSV Dachau",
    "away": "TuS Fürstenfeldbruck",
    "score": [
     6,
     2
+   ],
+   "status": "finished"
+  },
+  {
+   "when": "2026-11-08T13:00:00Z",
+   "home": "TTC Weinheim",
+   "away": "TTC Berlin Eastside",
+   "score": [
+    6,
+    1
    ],
    "status": "finished"
   },
