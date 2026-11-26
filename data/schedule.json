@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T07:51:00Z",
+  "updated": "2026-11-26T08:20:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2613,6 +2613,15 @@
       "code": "TTEWSINGLES--------U19QFNL000100----------"
     },
     {
+      "id": "wtt-3377-ttemsinglesu19qfnl000200",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: U19 Boys' Singles, Quarterfinal, Match 2",
+      "start": "2026-11-27T07:00:00Z",
+      "end": "2026-11-27T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19QFNL000200----------"
+    },
+    {
       "id": "wtt-3377-ttewsinglesu19qfnl000200",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: U19 Girls' Singles, Quarterfinal, Match 2",
@@ -2640,15 +2649,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEMDOUBLES--------U19FNL-000100----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Boys' Singles, Quarterfinal, Match 2",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000200----------"
     },
     {
       "id": "wtt-3377-ttemsinglesu19qfnl000300",
