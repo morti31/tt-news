@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-26T11:51:00Z",
+ "updated": "2026-11-26T12:21:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -291,7 +291,9 @@
          "seed": 5
         }
        ],
-       "when": "2026-11-26T11:45:00Z"
+       "when": "2026-11-26T11:45:00Z",
+       "score": "1-4 (4:11,5:11,6:11,11:5,7:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -305,7 +307,9 @@
          "nat": "POL"
         }
        ],
-       "when": "2026-11-26T11:45:00Z"
+       "when": "2026-11-26T11:45:00Z",
+       "score": "4-3 (8:11,11:8,11:9,11:5,9:11,9:11,11:5)",
+       "winner": 0
       },
       {
        "players": [
@@ -335,7 +339,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-26T11:00:00Z"
+       "when": "2026-11-26T11:00:00Z",
+       "score": "1-4 (9:11,6:11,9:11,14:12,9:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -396,12 +402,20 @@
          "nat": "CHN",
          "seed": 1
         },
-        null
+        {
+         "name": "Wu Ying Syuan",
+         "nat": "TPE",
+         "seed": 5
+        }
        ]
       },
       {
        "players": [
-        null,
+        {
+         "name": "Divyanshi Bhowmick",
+         "nat": "IND",
+         "seed": 8
+        },
         {
          "name": "Hana Goda",
          "nat": "EGY",
@@ -411,7 +425,10 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Leana Hochart",
+         "nat": "FRA"
+        },
         {
          "name": "Yao Ruixuan",
          "nat": "CHN",
@@ -781,7 +798,9 @@
          "nat": "AUS"
         }
        ],
-       "when": "2026-11-26T11:45:00Z"
+       "when": "2026-11-26T11:45:00Z",
+       "score": "4-1 (8:11,11:8,12:10,11:8,12:10,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -842,7 +861,7 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-26T11:45:00Z"
+       "when": "2026-11-26T12:00:00Z"
       }
      ]
     },
@@ -868,7 +887,10 @@
          "name": "Shunto Iwaida",
          "nat": "JPN"
         },
-        null
+        {
+         "name": "Wassim Essid",
+         "nat": "TUN"
+        }
        ]
       },
       {
