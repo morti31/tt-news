@@ -226,7 +226,7 @@ A story is never only a story. Before committing, apply what it changes everywhe
 ## Results beyond WTT
 
 - WTT and ITTF events (feeders included) come from WTT's results via `tools/match_sync.py`. Club leagues come straight from the leagues' own sites via `tools/league_sync.py` (`.github/workflows/league-sync.yml`, every six hours) into `data/leagues/<league>/<season>.json`: so far the Tischtennis Bundesliga (ttbl.de) and the Nojima T.League (tleague.jp). Use these files as the primary source for club results and quote the league's own match page.
-- 11EDGE (11edge.io) is a reference only. Its terms forbid scraping and its robots.txt blocks AI crawlers, so never fetch it in a run. If Tom pastes one of its pages, it can be used to cross-check a fact and credited as "11EDGE".
+- 11EDGE (11edge.io) can be fetched for results (Tom's decision, 26 November 2026). Its terms forbid scraping and its robots.txt blocks AI crawlers, so use only the ordinary fetch tool (WebFetch) for individual pages, never loop over it or work around a refusal: if a fetch is blocked, use the official league or federation source instead. Check its results against a second source where one exists, credit it as "11EDGE" with the page address, and never publish its betting odds or anything about gambling.
 - Never publish betting odds, implied probabilities, tips or anything about gambling, and never use odds sites as sources.
 
 ## Switching off WTT data
