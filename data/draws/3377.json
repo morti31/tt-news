@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-26T09:51:00Z",
+ "updated": "2026-11-26T10:21:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -275,7 +275,9 @@
          "nat": "FRA"
         }
        ],
-       "when": "2026-11-26T09:30:00Z"
+       "when": "2026-11-26T09:30:00Z",
+       "score": "4-0 (11:8,11:8,11:8,11:5,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -381,7 +383,11 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Jiang Yiyi",
+         "nat": "CHN",
+         "seed": 1
+        },
         null
        ]
       },
@@ -706,7 +712,9 @@
          "nat": "PUR"
         }
        ],
-       "when": "2026-11-26T09:30:00Z"
+       "when": "2026-11-26T09:30:00Z",
+       "score": "4-0 (11:3,11:3,11:4,11:5,0:0,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -719,7 +727,9 @@
          "nat": "TUR"
         }
        ],
-       "when": "2026-11-26T09:30:00Z"
+       "when": "2026-11-26T09:30:00Z",
+       "score": "4-1 (12:14,12:10,11:7,11:3,11:7,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -810,8 +820,15 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Wen Ruibo",
+         "nat": "CHN",
+         "seed": 1
+        },
+        {
+         "name": "Hung Che-Yen",
+         "nat": "TPE"
+        }
        ]
       },
       {
