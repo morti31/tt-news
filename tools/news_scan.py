@@ -92,11 +92,12 @@ POLICY_FEEDS = [
     "https://feeds.bbci.co.uk/sport/rss.xml",
     "https://www.theguardian.com/sport/rss",
     "https://www.insidethegames.biz/rss/news",
-    "https://www.playthegame.org/rss/",
-    "https://euobserver.com/rss.xml",
     "https://www.politico.eu/feed/",
-    "https://www.espn.com/espn/rss/news",
 ]
+NOISE_RE = re.compile(r"AFCON|Senegal|Morocco|Premier League|Champions League|Man City|Arsenal|Hakimi|transfer|NFL|NBA|MLB|NHL|cricket|rugby", re.I)
+# a headline must also name sport (the general outlets carry far more politics than sport)
+SPORT_RE = re.compile(r"sport|athlete|olympi|paralympi|\bIOC\b|FIFA|UEFA|\bCAS\b|WADA|doping|federation|tournament|championship|"
+                      r"world cup|games\b|team|player|club|league|\bflag|table tennis|ping pong|体育|运动|奥委会|Sport|Olympia|sportifs|CIO", re.I)
 POLICY_RE = re.compile(r"sanction|\bbans?\b|banned|\bflags?\b|neutral|\bIOC\b|Olympic Committee|Russia|Belarus|Ukrain|\bvisas?\b|funding|government|minister|"
                        r"doping|WADA|\bCAS\b|Court of Arbitration|corruption|investigation|boycott|governing bod|federation|scandal|abuse|"
                        r"\bEU\b|European Commission|Parliament|\bUN\b|human rights|俄罗斯|制裁|奥委会|Russland|Sanktion|russes|sanctions", re.I)
@@ -267,7 +268,7 @@ def main(outdir):
             if not r["title"] or not r["url"]:
                 continue
             if policy:
-                if not POLICY_RE.search(r["title"]):
+                if not (POLICY_RE.search(r["title"]) and SPORT_RE.search(r["title"])) or NOISE_RE.search(r["title"]):
                     continue
                 r["section"] = "policy"
             d = when(r["published"])
@@ -330,7 +331,15 @@ def main(outdir):
 
     rows = sorted(items.values(), key=lambda r: r["published"], reverse=True)
     try:
-        pages = fetch_pages(rows, status)
+        pol_seen = 0
+        fetch_rows = []
+        for r in rows:
+            if r.get("section") == "policy":
+                pol_seen += 1
+                if pol_seen > 12:
+                    continue
+            fetch_rows.append(r)
+        pages = fetch_pages(fetch_rows, status)
     except Exception as e:
         pages = {}
         status.append({"source": "page text", "ok": False, "error": str(e)[:120]})
