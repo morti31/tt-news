@@ -14206,7 +14206,7 @@
    "body": [
     "Félix and Alexis Lebrun won their singles as Alliance Nîmes/Montpellier beat the Pro A leaders and defending champions SPO Rouen 3-0 at the Kindarena on Tuesday night, in front of 5,276 spectators, a record crowd for a Pro A match. The match was sold out.",
     "Félix, the world No 3, beat Rouen's No 1, the world No 22 Thibault Poret, 3-1, and Alexis, the world No 10, beat Esteban Dorr 3-1. It was Alexis's first Pro A match of the season; he withdrew injured from WTT Champions Frankfurt this month. Antoine Hachard finished the match by beating Alexandre Robinot 3-0, and Nîmes/Montpellier dropped only two games all night. \"We were very happy to come back to this hall, which brings back wonderful memories,\" Félix told Midi Libre (translated from French); the brothers won the 2025 title at the Kindarena against Hennebont.",
-    "In the night's other matches, Chartres, bottom and without a win, beat Loire Nord TT (Roanne) 3-2 two days after Roanne had ended Rouen's unbeaten start, but the result was later overturned and the points awarded to Roanne because Chartres broke the rules on double licences ([more here](/news/pro-a-men-2026-27-chartres-forfeit-roanne-double-licence.html)). GV Hennebont beat Bruille 3-1, TFTT Thorigné-Fouillard won 3-2 at La Romagne after more than three hours for their first away win of the season, and Loups d'Angers came from behind to win at TT Saint-Denis. The score of that match and the updated table will be added once they are confirmed.",
+    "In the night's other matches, Chartres, bottom and without a win, beat Loire Nord TT (Roanne) 3-2 two days after Roanne had ended Rouen's unbeaten start, but the result was later overturned and the points awarded to Roanne because Chartres broke the rules on double licences ([more here](/news/pro-a-men-2026-27-chartres-forfeit-roanne-double-licence.html)). GV Hennebont beat Bruille 3-1, TFTT Thorigné-Fouillard won 3-2 at La Romagne after more than three hours for their first away win of the season, and Loups d'Angers won 3-2 at TT Saint-Denis from 2-0 down. Rouen drop to third on 21 points, behind Roanne and Hennebont on 24, and Nîmes/Montpellier are sixth on 18.",
     "The brothers now join France for the Mixed Team World Cup in Chengdu, which starts on Sunday 29 November. Rouen's next Pro A match is at Bruille on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
    ],
    "matches": [
@@ -14265,12 +14265,20 @@
     {
      "name": "FFTT (French): Pro A, les premières grandes confrontations redistribuent les cartes",
      "url": "https://www.fftt.com/actualites/pro-a-pro-b/pro-a-les-premieres-grandes-confrontations-redistribuent-les-cartes/"
+    },
+    {
+     "name": "11EDGE: Pro A men matchday 7 results",
+     "url": "https://11edge.io/"
+    },
+    {
+     "name": "FFTT: Pro A men table and results after matchday 7",
+     "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
     }
    ],
    "league_table": {
     "comp": "proa-men",
     "label": "Pro A men's table",
-    "as_of": "After matchday 6; the table after matchday 7 is still to be confirmed",
+    "as_of": "After matchday 7, 24 November 2026",
     "page": "/clubs/pro-a.html",
     "table": {
      "columns": [
@@ -14285,83 +14293,83 @@
        "rows": [
         {
          "pos": 1,
-         "team": "SPO Rouen",
-         "p": 6,
-         "w": 5,
-         "l": 1,
-         "pts": 21
-        },
-        {
-         "pos": 2,
-         "team": "GV Hennebont",
-         "p": 6,
-         "w": 4,
-         "l": 2,
-         "pts": 20
-        },
-        {
-         "pos": 2,
          "team": "Loire Nord TT (Roanne)",
-         "p": 6,
-         "w": 5,
+         "p": 7,
+         "w": 6,
          "l": 1,
-         "pts": 20
+         "pts": 24
+        },
+        {
+         "pos": 1,
+         "team": "GV Hennebont",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 24
+        },
+        {
+         "pos": 3,
+         "team": "SPO Rouen",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 21
         },
         {
          "pos": 4,
          "team": "Bruille",
-         "p": 6,
+         "p": 7,
          "w": 4,
-         "l": 2,
-         "pts": 19
+         "l": 3,
+         "pts": 20
         },
         {
          "pos": 5,
          "team": "TFTT Thorigné-Fouillard",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 15
+         "pts": 19
         },
         {
          "pos": 6,
          "team": "Alliance Nîmes/Montpellier",
-         "p": 6,
-         "w": 2,
+         "p": 7,
+         "w": 3,
          "l": 4,
-         "pts": 14
+         "pts": 18
         },
         {
          "pos": 7,
          "team": "Loups d'Angers",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 12
+         "pts": 16
         },
         {
-         "pos": 7,
+         "pos": 8,
          "team": "TT Saint-Denis",
-         "p": 6,
+         "p": 7,
          "w": 3,
-         "l": 3,
-         "pts": 12
+         "l": 4,
+         "pts": 14
         },
         {
          "pos": 9,
          "team": "La Romagne",
-         "p": 6,
+         "p": 7,
          "w": 1,
-         "l": 5,
-         "pts": 8
+         "l": 6,
+         "pts": 10
         },
         {
          "pos": 10,
          "team": "Chartres",
-         "p": 6,
+         "p": 7,
          "w": 0,
-         "l": 6,
-         "pts": 5
+         "l": 7,
+         "pts": 4
         }
        ]
       }
@@ -14386,6 +14394,10 @@
        "when": "2026-11-24T18:00:00Z",
        "home": "TT Saint-Denis",
        "away": "Loups d'Angers",
+       "score": [
+        2,
+        3
+       ],
        "status": "finished",
        "round": "Matchday 7"
       },
@@ -14425,7 +14437,7 @@
      ]
     }
    },
-   "modified": "2026-11-25T20:50:00Z"
+   "modified": "2026-11-25T21:30:00Z"
   },
   "pro-a-men-2026-27-chartres-forfeit-roanne-double-licence": {
    "id": "pro-a-men-2026-27-chartres-forfeit-roanne-double-licence",
@@ -14440,8 +14452,8 @@
    "body": [
     "Chartres, bottom of Pro A, have been stripped of their 3-2 home win over Loire Nord TT (Roanne) on Tuesday, their first of the season, for breaking the rules on double licences. The French federation (FFTT) said the points go to Roanne instead.",
     "The FFTT did not name the player concerned. Bence Majoros had won the opening match for Chartres on the night.",
-    "The ruling gives Roanne two wins in matchdays six and seven, after they ended SPO Rouen's unbeaten start on 22 November, and they share first place with GV Hennebont, who beat Bruille 3-1 on Tuesday. TFTT Thorigné-Fouillard won 3-2 at La Romagne, and Alliance Nîmes/Montpellier won 3-0 at Rouen in front of a record Pro A crowd of 5,276.",
-    "Loups d'Angers also won at TT Saint-Denis. Matchday eight is on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
+    "The ruling gives Roanne six wins from seven and a share of first place on 24 points with GV Hennebont, who beat Bruille 3-1 on Tuesday; SPO Rouen are third on 21. Chartres, still without a point from a win, are bottom on four. The FFTT's results graphic also marks Thorigné-Fouillard's matchday six win over Chartres, reported as 3-1, as a 3-0 award, without giving a reason. TFTT Thorigné-Fouillard won 3-2 at La Romagne on Tuesday, and Alliance Nîmes/Montpellier won 3-0 at Rouen in front of a record Pro A crowd of 5,276.",
+    "Loups d'Angers won 3-2 at TT Saint-Denis after trailing 2-0: Bastien Rembert and Joé Seyfried won in straight games and Lilian Bardet took the deciding rubber 3-1. Matchday eight is on 14 December. Results are on Eleven's [Pro A page](/clubs/pro-a.html)."
    ],
    "sources": [
     {
@@ -14451,12 +14463,20 @@
     {
      "name": "L'Écho Républicain (French): le C'Chartres TT signe l'exploit face à Roanne",
      "url": "https://www.lechorepublicain.fr/chartres-28000/sports/tennis-de-table-proa-le-cchartres-tt-signe-lexploit-face-a-roanne_15090833/"
+    },
+    {
+     "name": "11EDGE: Pro A men matchday 7 results",
+     "url": "https://11edge.io/"
+    },
+    {
+     "name": "FFTT: Pro A men table and results after matchday 7",
+     "url": "https://www.fftt.com/championnats-pro-a-pro-b/"
     }
    ],
    "league_table": {
     "comp": "proa-men",
     "label": "Pro A men's table",
-    "as_of": "After matchday 6; the table after matchday 7 is still to be confirmed",
+    "as_of": "After matchday 7, 24 November 2026",
     "page": "/clubs/pro-a.html",
     "table": {
      "columns": [
@@ -14471,83 +14491,83 @@
        "rows": [
         {
          "pos": 1,
-         "team": "SPO Rouen",
-         "p": 6,
-         "w": 5,
-         "l": 1,
-         "pts": 21
-        },
-        {
-         "pos": 2,
-         "team": "GV Hennebont",
-         "p": 6,
-         "w": 4,
-         "l": 2,
-         "pts": 20
-        },
-        {
-         "pos": 2,
          "team": "Loire Nord TT (Roanne)",
-         "p": 6,
-         "w": 5,
+         "p": 7,
+         "w": 6,
          "l": 1,
-         "pts": 20
+         "pts": 24
+        },
+        {
+         "pos": 1,
+         "team": "GV Hennebont",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 24
+        },
+        {
+         "pos": 3,
+         "team": "SPO Rouen",
+         "p": 7,
+         "w": 5,
+         "l": 2,
+         "pts": 21
         },
         {
          "pos": 4,
          "team": "Bruille",
-         "p": 6,
+         "p": 7,
          "w": 4,
-         "l": 2,
-         "pts": 19
+         "l": 3,
+         "pts": 20
         },
         {
          "pos": 5,
          "team": "TFTT Thorigné-Fouillard",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 15
+         "pts": 19
         },
         {
          "pos": 6,
          "team": "Alliance Nîmes/Montpellier",
-         "p": 6,
-         "w": 2,
+         "p": 7,
+         "w": 3,
          "l": 4,
-         "pts": 14
+         "pts": 18
         },
         {
          "pos": 7,
          "team": "Loups d'Angers",
-         "p": 6,
-         "w": 3,
+         "p": 7,
+         "w": 4,
          "l": 3,
-         "pts": 12
+         "pts": 16
         },
         {
-         "pos": 7,
+         "pos": 8,
          "team": "TT Saint-Denis",
-         "p": 6,
+         "p": 7,
          "w": 3,
-         "l": 3,
-         "pts": 12
+         "l": 4,
+         "pts": 14
         },
         {
          "pos": 9,
          "team": "La Romagne",
-         "p": 6,
+         "p": 7,
          "w": 1,
-         "l": 5,
-         "pts": 8
+         "l": 6,
+         "pts": 10
         },
         {
          "pos": 10,
          "team": "Chartres",
-         "p": 6,
+         "p": 7,
          "w": 0,
-         "l": 6,
-         "pts": 5
+         "l": 7,
+         "pts": 4
         }
        ]
       }
@@ -14572,6 +14592,10 @@
        "when": "2026-11-24T18:00:00Z",
        "home": "TT Saint-Denis",
        "away": "Loups d'Angers",
+       "score": [
+        2,
+        3
+       ],
        "status": "finished",
        "round": "Matchday 7"
       },
@@ -14610,7 +14634,8 @@
       }
      ]
     }
-   }
+   },
+   "modified": "2026-11-25T21:30:00Z"
   },
   "mixed-team-world-cup-2026-shinozuka-out-kawakami-japan-squad": {
    "id": "mixed-team-world-cup-2026-shinozuka-out-kawakami-japan-squad",
@@ -14853,6 +14878,87 @@
        8
       ]
      ]
+    }
+   ]
+  },
+  "mixed-team-world-cup-2026-taiwan-hung-jing-kai-huang-yu-jie-replace-lin-yun-ju-cheng-i-ching": {
+   "id": "mixed-team-world-cup-2026-taiwan-hung-jing-kai-huang-yu-jie-replace-lin-yun-ju-cheng-i-ching",
+   "category": "International",
+   "kind": "Update",
+   "lang": "Chinese",
+   "event": "mixed-team-world-cup-2026",
+   "date": "2026-11-26",
+   "published": "2026-11-26T12:30:00Z",
+   "headline": "Hung Jing-Kai and Huang Yu-Jie replace Lin Yun-Ju and Cheng I-Ching in Taiwan's Mixed Team World Cup squad",
+   "summary": "Taiwan will take a full squad of four men and four women to the Mixed Team World Cup after the ITTF agreed to late replacements for Lin Yun-Ju and Cheng I-Ching, the Liberty Times reported.",
+   "body": [
+    "Taiwan will play the Mixed Team World Cup in Chengdu with a full squad of eight after the ITTF accepted Hung Jing-Kai and Huang Yu-Jie as replacements for Lin Yun-Ju and Cheng I-Ching, the Liberty Times reported on Thursday. The team fly to China on Friday; the tournament starts on Sunday 29 November.",
+    "The paper said the ITTF had first refused any change because Lin and Cheng withdrew on 11 and 12 November, after the 9 November deadline for squad changes. When Japan were allowed to replace Hiroto Shinozuka, who the paper said was injured, with [Ryuusei Kawakami on Wednesday](/news/mixed-team-world-cup-2026-shinozuka-out-kawakami-japan-squad.html), the Chinese Taipei Table Tennis Association asked again and was told a replacement would be accepted with medical evidence. It submitted injury certificates for Lin and Cheng on Thursday. Eleven [reported Lin's withdrawal](/news/mixed-team-world-cup-2026-lin-yun-ju-cheng-i-ching-withdraw-taiwan-six-players.html) on 19 November, when the ITTF's entry list still included Cheng.",
+    "Hung, 19 and ranked 120th, is Taiwan's fifth-ranked man and [took the last men's place at the national team trials](/news/yang-hao-jen-hung-jing-kai-taiwan-national-team-trials-2026.html) this month. Huang, the world No 47, was called up as 10th in the national women's ranking: the paper said the players ranked sixth and seventh, Chien Tung-Chuan and Tsai Yun-En, are entered at the WTT Feeder in Gdansk, which starts on 28 November, and the eighth and ninth, Li Yu-Jhun and Cheng Hsien-Tzu, had other commitments.",
+    "Hung joins Feng Yi-Hsin, Kuo Guan-Hong and Hsu Hsien-Chia in the men's team, and Huang joins Peng Yu-han, Yeh Yi-Tian and Wu Ying Syuan. The ITTF had not published an updated player list that Eleven could open by Thursday afternoon. Eleven's [guide to the field](/news/mixed-team-world-cup-2026-entry-list-squads-format-schedule-chengdu.html) has every squad."
+   ],
+   "sources": [
+    {
+     "name": "Liberty Times (Chinese): Hung Jing-Kai and Huang Yu-Jie added to Taiwan's Mixed Team World Cup squad at the last minute",
+     "url": "https://sports.ltn.com.tw/news/breakingnews/5654412"
+    },
+    {
+     "name": "Yahoo Sports Taiwan (Chinese): the same Liberty Times report",
+     "url": "https://tw.sports.yahoo.com/news/%E6%A1%8C%E7%90%83-%E9%81%AD%E7%96%91%E9%9B%99%E6%A8%99%E5%BE%8C%E5%A4%A7%E8%BD%89%E5%BD%8E-%E6%B4%AA%E6%95%AC%E6%84%B7-%E9%BB%83%E6%84%89%E5%81%BC%E5%A3%93%E7%B7%9A%E9%81%9E%E8%A3%9C%E6%B7%B7%E5%9C%98%E4%B8%96%E7%95%8C%E7%9B%83-084729523.html"
+    },
+    {
+     "name": "ITTF world ranking, week 48",
+     "url": "https://www.worldtabletennis.com/rankings"
+    }
+   ]
+  },
+  "peter-simpson-england-coach-obituary-2026": {
+   "id": "peter-simpson-england-coach-obituary-2026",
+   "category": "England",
+   "date": "2026-11-26",
+   "published": "2026-11-26T12:25:00Z",
+   "headline": "Peter Simpson, the England coach who guided John Hilton to the 1980 European title, dies aged 92",
+   "summary": "Peter Simpson, England's national coach and non-playing captain through the late 1970s and early 1980s, has died at 92.",
+   "sources": [
+    {
+     "name": "Table Tennis England: Obituary: England coach Peter Simpson",
+     "url": "https://www.tabletennisengland.co.uk/news/2026/obituary-england-coach-peter-simpson/"
+    }
+   ]
+  },
+  "eu-sanctions-draft-russian-athletes-table-tennis-flags-events": {
+   "id": "eu-sanctions-draft-russian-athletes-table-tennis-flags-events",
+   "category": "International",
+   "date": "2026-11-26",
+   "published": "2026-11-26T08:36:00Z",
+   "headline": "EU sanctions draft would bar Russian flag and team athletes from events in Europe, including table tennis",
+   "summary": "A leaked draft of EU sanctions would let Russians compete in the EU only as neutrals, with no flag, which could reach WTT Contenders, Feeders, the Singles World Cup in Montpellier and possibly club play.",
+   "sources": [
+    {
+     "name": "EUobserver: Exclusive, details leaked of EU plan to cancel Russian sports in Europe",
+     "url": "https://euobserver.com/251647/exclusive-details-leaked-of-eu-plan-to-cancel-russian-sports-in-europe-including-trump-jr-s-boxing-pal/"
+    }
+   ]
+  },
+  "world-youth-championships-2026-day6-preview": {
+   "id": "world-youth-championships-2026-day6-preview",
+   "kind": "Preview",
+   "day": 6,
+   "category": "International",
+   "date": "2026-11-26",
+   "published": "2026-11-26T08:17:00Z",
+   "event": "world-youth-championships-2026",
+   "draw": "3377",
+   "headline": "World Youth Championships day six preview: all-Chinese mixed doubles final as the U19 singles reach the last 16",
+   "summary": "China's two pairs play for the U19 mixed doubles title at about 5pm UK time on Thursday, after a morning of singles in which Wen Ruibo meets Steven Moreno and Hana Goda plays Heo Yerim.",
+   "sources": [
+    {
+     "name": "WTT: World Youth Championships 2026, schedule, draws and official results (event 3377)",
+     "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377"
+    },
+    {
+     "name": "ITTF world ranking, week 48",
+     "url": "https://www.worldtabletennis.com/rankings"
     }
    ]
   }
