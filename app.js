@@ -197,25 +197,38 @@
   async function renderWatch() {
     const started = Object.values(hubs).filter((h) => h.start && h.start <= today && h.stream_q && !h.minor)
       .sort((a, b) => b.start.localeCompare(a.start));
-    // The event on now first, then the latest big events, so a gap in WTT's feed never brings back a weeks-old event
-    const tries = [onHub, ...started].filter((h, i, a) => h && a.indexOf(h) === i).slice(0, 3);
-    for (const target of tries) {
+    // Four clips, newest first, women and men in turn
+    const pickFour = (vids) => {
+      const w = vids.filter((v) => v.gender === "W"), m = vids.filter((v) => v.gender !== "W");
+      const pick = [];
+      for (let i = 0; pick.length < Math.min(4, vids.length) && i <= 16; i++) {
+        const v = (i % 2 ? m : w)[Math.floor(i / 2)] || (i % 2 ? w : m)[Math.floor(i / 2)];
+        if (v && !pick.includes(v)) pick.push(v);
+      }
+      return pick;
+    };
+    // 1. The event on now, live from WTT's YouTube channel through the worker (fresher than the saved file)
+    if (onHub) {
       try {
-        const q = target.stream_q || `${target.city} ${target.year}`;
-        const d = await fetch(`/api/highlights?q=${encodeURIComponent(q)}`).then((r) => r.json());
+        const d = await fetch(`/api/highlights?q=${encodeURIComponent(onHub.stream_q || `${onHub.city} ${onHub.year}`)}`).then((r) => r.json());
         const vids = (d.videos || []).filter((v) => v.id);
-        if (vids.length >= 2) {
-          const w = vids.filter((v) => v.gender === "W"), m = vids.filter((v) => v.gender !== "W");
-          const pick = [];
-          for (let i = 0; pick.length < Math.min(4, vids.length); i++) {   // newest first, women and men in turn
-            const v = (i % 2 ? m : w)[Math.floor(i / 2)] || (i % 2 ? w : m)[Math.floor(i / 2)];
-            if (v && !pick.includes(v)) pick.push(v);
-            if (i > 16) break;
-          }
-          return drawWatch(pick, target);
-        }
-      } catch (e) { /* try the next event */ }
+        if (vids.length >= 2) return drawWatch(pickFour(vids), onHub);
+      } catch (e) { /* use the saved file */ }
     }
+    // 2. The newest highlights WTT has posted, from data/wtt-highlights.json (saved every 30 minutes by GitHub, since YouTube
+    //    sometimes answers the worker with nothing). The newest clip's hashtag ("WTTMuscat 2026") names the latest tournament.
+    try {
+      const f = await fetch("data/wtt-highlights.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : {}));
+      const all = (f.videos || []).filter((v) => v.id && v.tag);
+      const tag = all.length && all[0].tag;
+      const vids = tag ? all.filter((v) => v.tag === tag) : [];
+      if (vids.length >= 2) {
+        const key = tag.toLowerCase().replace(/\s/g, "");
+        const hub = started.find((h) => key.includes(String(h.city).toLowerCase().replace(/\s/g, "")) && key.includes(String(h.year)));
+        return drawWatch(pickFour(vids), hub || null);
+      }
+    } catch (e) { /* use the hand-picked list */ }
+    // 3. Last resort: the hand-picked list in news.json
     const fresh = plusDays(today, -14);
     const all = (data.highlights || []).filter((v) => v.id && ((onHub && hubs[v.event] === onHub) || v.date >= fresh));
     if (all.length < 2) return;

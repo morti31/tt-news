@@ -28,6 +28,7 @@ jobs:
           # one tick every 10 minutes for 5 hours 30 minutes
           for t in $(seq 0 10 320); do
             [ $((t % 30)) -eq 0 ] && run wtt-sync.yml          # draws, results, order of play, rankings
+            [ $((t % 30)) -eq 20 ] && run highlights-sync.yml  # WTT's newest highlights for the home page's Watch section
             [ $((t % 60)) -eq 0 ] && run club-sync.yml         # Bundesliga, T.League, MLTT, British League and squads
             [ $((t % 60)) -eq 30 ] && run news-scan.yml        # headlines for the news runs
             [ $((t % 180)) -eq 0 ] && run match-sync.yml       # every match result and youth results (The Chop's form and results)

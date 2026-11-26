@@ -275,7 +275,8 @@ const ROUNDS = { F: "final", Final: "final", SF: "semi-final", QF: "quarter-fina
 async function highlights(ctx, q) {
   const words = String(q || "").toLowerCase().split(/[\s,]+/).filter(Boolean);
   const out = [];
-  for (const v of streamList(await page(`${CHANNEL}/videos`, ctx, 1800))) {
+  const list = streamList(await page(`${CHANNEL}/videos`, ctx, 1800));
+  for (const v of list) {
     const parts = v.title.split("|").map((x) => x.trim());
     if (parts.length < 3 || !/ vs /i.test(parts[0]) || /^(LIVE|FULL MATCH)/i.test(v.title)) continue;
     if (words.length && !words.every((w) => v.title.toLowerCase().includes(w))) continue;
@@ -285,7 +286,9 @@ async function highlights(ctx, q) {
     const round = ROUNDS[rest.join(" ")] || rest.join(" ");
     out.push({ id: v.id, title: `${parts[0].replace(/ vs /i, " v ")}, ${ev[1]} ${round}`.trim(), gender: ev[0], channel: "World Table Tennis" });
   }
-  return { videos: out.slice(0, 16) };
+  // detail says when YouTube listed nothing at all (a consent or error page), so an empty answer can be told from "no match";
+  // the home page then uses data/wtt-highlights.json, which GitHub saves every 30 minutes (tools/highlights_sync.py)
+  return { videos: out.slice(0, 16), ...(list.length ? {} : { detail: "YouTube listed no videos" }) };
 }
 
 const json = (data, status = 200, maxAge = 8) =>

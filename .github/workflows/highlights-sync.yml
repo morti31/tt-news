@@ -1,0 +1,27 @@
+name: Highlights sync
+# Saves WTT's newest match highlights to data/wtt-highlights.json for the home page's Watch section (tools/highlights_sync.py).
+# Started every 30 minutes by Pulse. GitHub's runners can read the YouTube channel when Cloudflare's worker sometimes cannot.
+on:
+  schedule:
+    - cron: "23 */2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: highlights-sync
+jobs:
+  highlights:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read WTT's channel
+        run: python3 tools/highlights_sync.py
+      - name: Commit changes
+        run: |
+          git config user.name "Tom Mortimer"
+          git config user.email "tommorti@gmail.com"
+          git add data/wtt-highlights.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "Highlights sync $(date -u +'%Y-%m-%d %H:%M')"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 15; done
+          exit 1
