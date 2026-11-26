@@ -2,7 +2,7 @@
  "event": "WTT Feeder Düsseldorf II",
  "wtt_event_id": "3352",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352&selectedTab=Draws",
- "updated": "2026-11-26T12:21:00Z",
+ "updated": "2026-11-26T12:51:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -1718,7 +1718,9 @@
          "nat": "KOR"
         }
        ],
-       "when": "2026-11-26T11:55:00Z"
+       "when": "2026-11-26T11:55:00Z",
+       "score": "3-0 (12:10,11:8,11:5,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1746,7 +1748,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-26T11:55:00Z"
+       "when": "2026-11-26T11:55:00Z",
+       "score": "3-1 (6:11,11:8,11:3,12:10,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1802,13 +1806,19 @@
          "name": "Juan Perez",
          "nat": "ESP"
         },
-        null
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        }
        ]
       },
       {
        "players": [
         null,
-        null
+        {
+         "name": "Fanbo Meng",
+         "nat": "GER"
+        }
        ]
       },
       {

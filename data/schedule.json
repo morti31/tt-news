@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T12:21:00Z",
+  "updated": "2026-11-26T12:51:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2175,6 +2175,16 @@
       "detail": "Table 1"
     },
     {
+      "id": "wtt-3352-ttemsingles8fnl000400",
+      "event_id": "wtt-feeder-dusseldorf-ii-2026",
+      "name": "WTT Feeder Düsseldorf II: Panagiotis Gionis v Choi Jiwook, men's singles, last 16",
+      "start": "2026-11-26T11:55:00Z",
+      "end": "2026-11-26T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
+      "code": "TTEMSINGLES-----------8FNL000400----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3352-ttemsingles8fnl000600",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Fanbo Meng v Youssef Abdelaziz, men's singles, last 16",
@@ -2203,16 +2213,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEMSINGLES-----------8FNL000700----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3352-ttemsingles8fnl000400",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Panagiotis Gionis v Choi Jiwook, men's singles, last 16",
-      "start": "2026-11-26T11:55:00Z",
-      "end": "2026-11-26T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------8FNL000400----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3377-ttemsinglesu198fnl000800",
@@ -2375,76 +2375,84 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttewsinglesu19qfnl000200",
+      "id": "wtt-3377-ttemsinglesu19qfnl000100",
       "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Divyanshi Bhowmick v Hana Goda, u19 girls' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T14:00:00Z",
+      "name": "World Youth Championships Istanbul: Wen Ruibo v Hung Che-Yen, u19 boys' singles, quarterfinal",
+      "start": "2026-11-27T11:00:00Z",
+      "end": "2026-11-27T11:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19QFNL000200----------"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Shunto Iwaida v Wassim Essid, u19 boys' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T13:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000200----------"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19qfnl000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Leana Hochart v Yao Ruixuan, u19 girls' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T13:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19QFNL000300----------"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19qfnl000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Jiang Yiyi v Wu Ying Syuan, u19 girls' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19QFNL000100----------"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19qfnl000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Antoine Noirault v Aditya Sareen, u19 boys' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000300----------"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19qfnl000400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: U19 Boys' Singles, Quarterfinal, Match 4",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T14:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000400----------"
+      "code": "TTEMSINGLES--------U19QFNL000100----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3377-ttewsinglesu19qfnl000400",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Syndrela Das v Mao Takamori, u19 girls' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
+      "start": "2026-11-27T11:00:00Z",
       "end": "2026-11-27T11:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19QFNL000400----------"
+      "code": "TTEWSINGLES--------U19QFNL000400----------",
+      "detail": "Table 2"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19qfnl000100",
+      "id": "wtt-3377-ttemsinglesu19qfnl000400",
       "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Wen Ruibo v Hung Che-Yen, u19 boys' singles, quarterfinal",
-      "start": "2026-11-27T07:00:00Z",
-      "end": "2026-11-27T11:45:00Z",
+      "name": "World Youth Championships Istanbul: Li Hechen v Emanuel Otalvaro, u19 boys' singles, quarterfinal",
+      "start": "2026-11-27T11:45:00Z",
+      "end": "2026-11-27T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000100----------"
+      "code": "TTEMSINGLES--------U19QFNL000400----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3377-ttewsinglesu19qfnl000300",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Leana Hochart v Yao Ruixuan, u19 girls' singles, quarterfinal",
+      "start": "2026-11-27T11:45:00Z",
+      "end": "2026-11-27T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U19QFNL000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu19qfnl000200",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Shunto Iwaida v Wassim Essid, u19 boys' singles, quarterfinal",
+      "start": "2026-11-27T12:30:00Z",
+      "end": "2026-11-27T13:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19QFNL000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttewsinglesu19qfnl000100",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Jiang Yiyi v Wu Ying Syuan, u19 girls' singles, quarterfinal",
+      "start": "2026-11-27T12:30:00Z",
+      "end": "2026-11-27T13:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U19QFNL000100----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3377-ttewsinglesu19qfnl000200",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Divyanshi Bhowmick v Hana Goda, u19 girls' singles, quarterfinal",
+      "start": "2026-11-27T13:15:00Z",
+      "end": "2026-11-27T14:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEWSINGLES--------U19QFNL000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3377-ttemsinglesu19qfnl000300",
+      "event_id": "world-youth-championships-2026",
+      "name": "World Youth Championships Istanbul: Antoine Noirault v Aditya Sareen, u19 boys' singles, quarterfinal",
+      "start": "2026-11-27T13:15:00Z",
+      "end": "2026-11-27T14:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
+      "code": "TTEMSINGLES--------U19QFNL000300----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3377-ttewdoublesu19fnl000100",
