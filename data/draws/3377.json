@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-26T10:21:00Z",
+ "updated": "2026-11-26T10:51:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -360,7 +360,9 @@
          "nat": "TPE"
         }
        ],
-       "when": "2026-11-26T09:30:00Z"
+       "when": "2026-11-26T09:30:00Z",
+       "score": "4-3 (11:6,11:8,9:11,5:11,12:10,4:11,11:9)",
+       "winner": 0
       },
       {
        "players": [
@@ -374,7 +376,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-26T10:15:00Z"
+       "when": "2026-11-26T10:15:00Z",
+       "score": "1-4 (12:10,7:11,10:12,11:13,3:11,0:0,0:0)",
+       "winner": 1
       }
      ]
     },
@@ -405,8 +409,15 @@
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Syndrela Das",
+         "nat": "IND"
+        },
+        {
+         "name": "Mao Takamori",
+         "nat": "JPN",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -797,7 +808,9 @@
          "nat": "ITA"
         }
        ],
-       "when": "2026-11-26T10:15:00Z"
+       "when": "2026-11-26T10:15:00Z",
+       "score": "4-1 (11:2,6:11,12:10,11:6,11:6,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -845,7 +858,11 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Li Hechen",
+         "nat": "CHN",
+         "seed": 6
+        },
         null
        ]
       }
