@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T15:22:00Z",
+  "updated": "2026-11-26T15:45:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -883,46 +883,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
       "code": "TTEMSINGLES-----------FNL-000100----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19r32000400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Kenan Kahraman v Benyamin Faraji, u19 boys' singles, last 32",
-      "start": "2026-11-25T12:45:00Z",
-      "end": "2026-11-25T13:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-000400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19r32000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Hung Che-Yen v Patryk Zyworonek, u19 boys' singles, last 32",
-      "start": "2026-11-25T12:45:00Z",
-      "end": "2026-11-25T13:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19R32-000300----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19r32000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Bianca Mei-Rosu v Tania Morice, u19 girls' singles, last 32",
-      "start": "2026-11-25T12:45:00Z",
-      "end": "2026-11-25T13:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19R32-000300----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19r32000400",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Tracey Hsia v Wu Ying Syuan, u19 girls' singles, last 32",
-      "start": "2026-11-25T12:45:00Z",
-      "end": "2026-11-25T13:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19R32-000400----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3377-ttemsinglesu19r32000600",

@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-26T12:51:00Z",
+ "updated": "2026-11-26T15:45:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -1434,7 +1434,9 @@
          "seed": 4
         }
        ],
-       "when": "2026-11-26T14:30:00Z"
+       "when": "2026-11-26T14:30:00Z",
+       "score": "3-0 (11:9,11:3,11:3,0:0,0:0)",
+       "winner": 0
       },
       {
        "players": [
@@ -1457,7 +1459,11 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Wen Ruibo / Li Hechen",
+         "nat": "CHN",
+         "seed": 1
+        },
         null
        ],
        "when": "2026-11-27T16:30:00Z"
