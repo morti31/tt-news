@@ -5,11 +5,22 @@
  "gender": "M",
  "born": "2002-02-25",
  "hand": "Right",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "C'Chartres TT",
+   "league": "Pro A",
+   "current": true
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=122051"
+  "https://www.worldtabletennis.com/playerDescription?playerId=122051",
+  "https://www.intensite.net/john-oyebode-exclu-de-pro-a-et-le-c-ctt-sanctionne-par-deux-defaites",
+  "https://www.lechorepublicain.fr/chartres-28000/sports/proa-gros-coup-dur-pour-le-c-chartres-tennis-de-table_15092694/"
  ],
- "checked": "2026-11-06",
- "stub": true
+ "checked": "2026-11-26",
+ "stub": true,
+ "notes": [
+  "Excluded from Pro A for the rest of the 2026-27 season by the French federation in November 2026 for playing a team competition in Ukraine without his club's permission; Chartres were docked two results and said they would discuss ending his contract by mutual agreement."
+ ]
 }
