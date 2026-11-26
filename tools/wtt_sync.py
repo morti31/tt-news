@@ -178,14 +178,14 @@ def auto_hubs(doc, sched, today):
             continue
         a, b = dt.date.fromisoformat(first), dt.date.fromisoformat(last)
         # WTT publishes the order of play a few days at a time, so the last day seen is not the last day of the event:
-        # an event runs at least 4 days (Feeder) or 6 (the rest), and never shrinks below what a page already says
+        # an event runs at least 5 days (Feeder: 24 of 41 recent ones ran five, most of the rest four) or 6 (the rest), and never shrinks below what a page already says
         # The minimum length counts from the event's real first day: WTT drops past days from the order of play, so its first
         # day seen moves forward each day, and counting from it pushed Istanbul's end from 15 to 19 November, a day per day.
         # The page's own end date is no floor either (that kept the drift); the calendar's end date and WTT's own are.
         sch_ev0 = sch.get(slug(re.sub(r"\s*\b20\d\d\b.*$", "", re.sub(r"\s+(Presented|Powered) [Bb]y.*$", "", name)).strip()) + "-" + year.group(1))
         known_start = [dt.date.fromisoformat(x) for x in (info.get("start"), (mine or {}).get("start"), (sch_ev0 or {}).get("start")) if x]
         a = min([a] + known_start)
-        b = max(b, a + dt.timedelta(days=3 if m.group(1).lower() == "feeder" else 5))
+        b = max(b, a + dt.timedelta(days=4 if m.group(1).lower() == "feeder" else 5))
         set_end = [dt.date.fromisoformat(x) for x in ((sch_ev0 or {}).get("end"), info.get("end")) if x]
         if set_end:   # the calendar or WTT says when it ends: never run past that (plus a day for a late final), never stop before what WTT has scheduled
             b = max(dt.date.fromisoformat(last), min(b, max(set_end) + dt.timedelta(days=1)))
