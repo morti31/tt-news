@@ -430,8 +430,14 @@ export default {
       const id = url.searchParams.get("event") || "", code = url.searchParams.get("code") || "";
       if (!/^\d{1,6}$/.test(id) || !/^[A-Z0-9-]{10,60}$/.test(code)) return json({ error: "event and code are required" }, 400);
       try {
+        // The finished reply is cached at the edge (5 s while live, 5 min once final): many readers of one match cost one computation
+        const key = new Request(`https://eleven.internal/match-out/${id}/${code}`), cache = caches.default;
+        const hit = await cache.match(key);
+        if (hit) return new Response(hit.body, { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=5" } });
         const d = await matchDetail(id, code, ctx, env, url.origin);
-        return json(d, 200, d.status === "live" ? 5 : 300);
+        const ttl = d.status === "live" ? 5 : 300;
+        ctx.waitUntil(cache.put(key, new Response(JSON.stringify(d), { headers: { "Content-Type": "application/json", "Cache-Control": `max-age=${ttl}` } })));
+        return json(d, 200, ttl);
       } catch (err) {
         return json({ error: "Match data is unavailable right now", detail: String(err.message || err) }, 502, 5);
       }
