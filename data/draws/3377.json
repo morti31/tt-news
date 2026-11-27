@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-27T13:58:00Z",
+ "updated": "2026-11-27T14:28:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -941,7 +941,9 @@
          "nat": "AUS"
         }
        ],
-       "when": "2026-11-27T13:15:00Z"
+       "when": "2026-11-27T13:15:00Z",
+       "score": "3-4 (11:7,11:13,11:7,8:11,11:13,11:8,1:11)",
+       "winner": 1
       },
       {
        "players": [
@@ -981,7 +983,10 @@
       },
       {
        "players": [
-        null,
+        {
+         "name": "Aditya Sareen",
+         "nat": "AUS"
+        },
         {
          "name": "Li Hechen",
          "nat": "CHN",
