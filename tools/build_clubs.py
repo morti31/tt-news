@@ -256,25 +256,11 @@ def league_page(lg, stories, now):
     return body, season
 
 
-def hub(stories, now):
-    cards, allres, allfix = [], [], []
+def latest(now):
+    """The club game's latest results and next fixtures across every league, as two HTML blocks (results, fixtures).
+    Used on the Club game hub and the Tournaments page's Club fixtures tab."""
+    allres, allfix = [], []
     for lg in LEAGUES:
-        comps = [(tag, title, load(cid)) for cid, tag, title in lg["comps"]]
-        mini = []
-        for tag, title, d in comps:
-            g = [g for g in ((d or {}).get("table") or {}).get("groups") or [] if g.get("rows")]
-            rows = g[0]["rows"][:3] if g else []
-            def val(r):
-                if r.get("pts") is not None:
-                    return f'<b>{r["pts"]}</b>'
-                if r.get("w") is not None and r.get("l") is not None:
-                    return f'<b>{r["w"]}-{r["l"]}</b>'
-                return ""
-            lis = "".join(f'<li><span>{r["pos"]}</span><em>{e(r["team"])}</em>{val(r)}</li>' for r in rows)
-            mini.append(f'<div><h4>{e(tag)}</h4><ol>{lis}</ol></div>' if lis else f'<div><h4>{e(tag)}</h4><p class="cl-none">{e((d or {}).get("status") or "")}</p></div>')
-        cards.append(f'''<li class="cl-card" style="--tier:{lg["colour"]}"><a href="/clubs/{lg["slug"]}.html">
-<span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span><h3>{e(lg["name"])}</h3>
-<p class="cl-status">{e(status_of(lg))}</p><div class="cl-mini{" one" if len(comps) == 1 else ""}">{"".join(mini)}</div><span class="cl-more">Tables, results and fixtures</span></a></li>''')
         for m, tag in merged(lg, "results", 8, now):
             allres.append((m, tag, lg))
         for m, tag in merged(lg, "fixtures", 8, now):
@@ -305,6 +291,29 @@ def hub(stories, now):
                 last = day
             out.append(match_row(m, None, lab((m, tag, lg))).replace('<li class="cl-m', f'<li style="--tier:{lg["colour"]}" class="cl-m', 1))
         return "".join(out) + ("</ol>" if out else "")
+    return block(allres), block(allfix)
+
+
+def hub(stories, now):
+    cards = []
+    for lg in LEAGUES:
+        comps = [(tag, title, load(cid)) for cid, tag, title in lg["comps"]]
+        mini = []
+        for tag, title, d in comps:
+            g = [g for g in ((d or {}).get("table") or {}).get("groups") or [] if g.get("rows")]
+            rows = g[0]["rows"][:3] if g else []
+            def val(r):
+                if r.get("pts") is not None:
+                    return f'<b>{r["pts"]}</b>'
+                if r.get("w") is not None and r.get("l") is not None:
+                    return f'<b>{r["w"]}-{r["l"]}</b>'
+                return ""
+            lis = "".join(f'<li><span>{r["pos"]}</span><em>{e(r["team"])}</em>{val(r)}</li>' for r in rows)
+            mini.append(f'<div><h4>{e(tag)}</h4><ol>{lis}</ol></div>' if lis else f'<div><h4>{e(tag)}</h4><p class="cl-none">{e((d or {}).get("status") or "")}</p></div>')
+        cards.append(f'''<li class="cl-card" style="--tier:{lg["colour"]}"><a href="/clubs/{lg["slug"]}.html">
+<span class="ev-group"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span> {e(lg["country"])}</span><h3>{e(lg["name"])}</h3>
+<p class="cl-status">{e(status_of(lg))}</p><div class="cl-mini{" one" if len(comps) == 1 else ""}">{"".join(mini)}</div><span class="cl-more">Tables, results and fixtures</span></a></li>''')
+    res_html, fix_html = latest(now)
     clubs_news = [s for s in stories if s.get("category") == "Clubs"]
     chips = "".join(f'<a href="/clubs/{lg["slug"]}.html"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span>{e(lg["name"])}</a>' for lg in LEAGUES)
     return f'''<main class="wrap cl-page">
@@ -312,8 +321,8 @@ def hub(stories, now):
 <nav class="cl-chips" aria-label="Leagues">{chips}</nav>
 {explainers.combined(explainers.pick(["clubs"]), explainers.analysis(words=explainers.HUB_WORDS["clubs"], keys=["page:clubs"], n=2), "top")}
 <div class="cl-hub-top">
-<section class="hub-sec" id="results"><h2 class="section-title">Latest results</h2>{block(allres) or '<p class="cl-none">No club results in the last 10 days.</p>'}</section>
-<section class="hub-sec" id="fixtures"><h2 class="section-title">Coming up</h2>{block(allfix) or '<p class="cl-none">No club fixtures published at the moment.</p>'}
+<section class="hub-sec" id="results"><h2 class="section-title">Latest results</h2>{res_html or '<p class="cl-none">No club results in the last 10 days.</p>'}</section>
+<section class="hub-sec" id="fixtures"><h2 class="section-title">Coming up</h2>{fix_html or '<p class="cl-none">No club fixtures published at the moment.</p>'}
 <p class="small"><span data-tz-note>Times are UK time.</span></p></section></div>
 <section class="hub-sec" id="leagues"><h2 class="section-title">Leagues</h2><ul class="cl-cards">{"".join(cards)}</ul></section>
 {f'<section class="hub-sec" id="news"><h2 class="section-title">Club news</h2>{news_list(clubs_news, 12)}</section>' if clubs_news else ""}

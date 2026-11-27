@@ -429,21 +429,35 @@ def index_page(data, today):
     past_html = year_nav + "".join(f'<section class="hub-sec ev-year ev-sec" id="y{y}"><h2 class="section-title">{y} <span class="ev-count">{len(evs)} event{"s" if len(evs) != 1 else ""}</span></h2>{months(evs)}</section>'
                                    for y, evs in years.items())
 
+    import build_clubs
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    res_html, fix_html = build_clubs.latest(now_utc)
+    res_html = res_html or '<p class="cl-none">No club results in the last 10 days.</p>'
+    fix_html = fix_html or '<p class="cl-none">No club fixtures published at the moment.</p>'
+    chips = "".join(f'<a href="/clubs/{lg["slug"]}.html"><span class="fi fi-{lg["flag"]}" aria-hidden="true"></span>{e(lg["name"])}</a>' for lg in build_clubs.LEAGUES)
+    clubs_html = (f'<p class="small">Results and fixtures from the club leagues Eleven covers. For tables, squads and every match of the season, pick a league.</p>'
+                  f'<nav class="cl-chips" aria-label="Leagues">{chips}</nav>'
+                  f'<div class="cl-hub-top"><section class="hub-sec" id="club-results"><h2 class="section-title">Latest results</h2>{res_html}</section>'
+                  f'<section class="hub-sec" id="club-fixtures"><h2 class="section-title">Coming up</h2>{fix_html}'
+                  f'<p class="small"><span data-tz-note>Times are UK time.</span> Times can change, so check with the clubs before travelling.</p></section></div>'
+                  f'<p><a class="panel-link" href="/clubs/">All club tables, results and fixtures</a></p>')
     filt = "".join(f'<button data-g="{e(g)}" aria-pressed="false">{e(g)}</button>' for g in groups)
     order = ["WTT Grand Smash", "WTT Finals", "WTT Champions", "WTT Star Contender", "WTT Contender", "WTT Feeder"]
     present = {ev.get("series") for ev in data["events"] if ev["group"] == "WTT Series"}
     levels = "".join(f'<button data-s="{e(x)}" aria-pressed="false">{e(x.replace("WTT ", "", 1))}</button>' for x in order if x in present)
     return f"""<main class="wrap">
-<section class="sched-head"><div><h1>Tournaments</h1><p class="lede">Draws, results, schedules and news for every tournament.</p></div></section>
+<section class="sched-head"><div><h1>Tournaments</h1><p class="lede">Draws, results, schedules and news for every tournament.</p>
+<p class="ev-intro">Listed below are the international tournaments: the majors (Grand Smashes, the World Championships, World Cups, World Youth Championships and the Olympic Games), the rest of the WTT Series (WTT Champions, Star Contenders, Contenders, Feeders and the WTT Finals) and the continental championships. Club fixtures and results are in the <a href="#clubs" data-tab-link="clubs">Club fixtures</a> tab, and each league's tables, results and fixtures are in <a href="/clubs/">Club game</a>.</p></div></section>
 {explainers.block(explainers.pick(["events"]), "top")}
 {components.tour_tabs("upcoming")}
-<div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
-<div class="toggle sched-filter ev-levels" role="group" aria-label="Filter WTT events by level" hidden><button data-s="" aria-pressed="true">All WTT</button>{levels}</div>
+<div class="ev-filters"><div class="toggle sched-filter ev-filter" role="group" aria-label="Filter events"><button data-g="" aria-pressed="true">All</button>{filt}</div>
+<div class="toggle sched-filter ev-levels" role="group" aria-label="Filter WTT events by level" hidden><button data-s="" aria-pressed="true">All WTT</button>{levels}</div></div>
 <div class="ev-panel" id="upcoming">{upcoming}</div>
 <div class="ev-panel" id="past" hidden>{past_html}<p class="hub-empty ev-none" hidden>No events of this kind that year.</p></div>
+<div class="ev-panel" id="clubs" hidden>{clubs_html}</div>
 <p class="hub-empty ev-none-up" hidden>No upcoming events of this kind yet.</p>
 {explainers.analysis_block(explainers.analysis(words=explainers.HUB_WORDS["events"], keys=["page:events"], n=2), title="Go deeper")}
-<p class="small">The full calendar, including club competitions, is on the <a href="/schedule.html">schedule</a>.</p>
+<p class="small">The <a href="/schedule.html">full calendar</a> has every tournament and club competition date, and you can add it to your own calendar.</p>
 </main>
 <script>
 let G = "", S = "", Y = "", T = "upcoming";
@@ -451,7 +465,7 @@ const levels = document.querySelector(".ev-levels");
 const years = [...document.querySelectorAll(".ev-year")], ytabs = [...document.querySelectorAll(".ev-years a")];
 function fromHash() {{
   const h = location.hash.slice(1);
-  if (h === "past" || years.some((s) => s.id === h)) T = "past"; else if (h === "upcoming" || !h) T = "upcoming";
+  if (h === "past" || years.some((s) => s.id === h)) T = "past"; else if (h === "clubs") T = "clubs"; else if (h === "upcoming" || !h) T = "upcoming";
   if (years.some((s) => s.id === h)) Y = h;
   if (!Y && years[0]) Y = years[0].id;
 }}
@@ -459,6 +473,8 @@ function apply() {{
   document.querySelectorAll(".ev-tabs a[data-tab]").forEach((a) => a.setAttribute("aria-selected", String(a.dataset.tab === T)));
   document.getElementById("upcoming").hidden = T !== "upcoming";
   document.getElementById("past").hidden = T !== "past";
+  document.getElementById("clubs").hidden = T !== "clubs";
+  document.querySelector(".ev-filters").hidden = T === "clubs";
   levels.hidden = G !== "WTT Series";
   document.querySelectorAll(".ev-filter button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.g === G)));
   levels.querySelectorAll("button").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.s === S)));
@@ -478,6 +494,10 @@ function apply() {{
 }}
 document.querySelectorAll(".ev-tabs a[data-tab]").forEach((a) => a.addEventListener("click", (ev) => {{
   ev.preventDefault(); T = a.dataset.tab; history.replaceState(null, "", "#" + T); apply();
+}}));
+document.querySelectorAll("a[data-tab-link]").forEach((a) => a.addEventListener("click", (ev) => {{
+  ev.preventDefault(); T = a.dataset.tabLink; history.replaceState(null, "", "#" + T); apply();
+  document.querySelector(".ev-tabs").scrollIntoView({{ behavior: "smooth", block: "start" }});
 }}));
 ytabs.forEach((a) => a.addEventListener("click", (ev) => {{
   ev.preventDefault(); Y = a.getAttribute("href").slice(1); history.replaceState(null, "", "#" + Y); apply();

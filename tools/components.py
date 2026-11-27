@@ -326,10 +326,13 @@ SUBNAVS = {"events": [("/events/", "Tournaments"), ("/schedule.html", "Schedule 
 
 
 def tour_tabs(cur):
-    """The Tournaments section's tabs: Upcoming and Past (the events index, switched by its script) and Full calendar (the schedule)."""
-    tabs = (("upcoming", "/events/#upcoming", "Upcoming"), ("past", "/events/#past", "Past events"), ("calendar", "/schedule.html", "Full calendar"))
+    """The Tournaments section's tabs: Upcoming, Past and Club fixtures (the events index, switched by its script) and Full calendar (the schedule)."""
+    tabs = (("upcoming", "/events/#upcoming", "Upcoming"), ("past", "/events/#past", "Past events"), ("clubs", "/events/#clubs", "Club fixtures"),
+            ("calendar", "/schedule.html", "Full calendar"))
+    short = {"past": "Past", "clubs": "Clubs", "calendar": "Calendar"}   # labels on phones, so four tabs fit on one line
+    label = lambda k, t: f'<span class="t-long">{t}</span><span class="t-short">{short[k]}</span>' if k in short else t
     return ('<nav class="ev-tabs" aria-label="Tournaments">' + "".join(
-        f'<a href="{u}"{f' data-tab="{k}"' if k != "calendar" else ""} aria-selected="{str(k == cur).lower()}"{' aria-current="page"' if k == cur else ""}>{t}</a>'
+        f'<a href="{u}"{f' data-tab="{k}"' if k != "calendar" else ""} aria-selected="{str(k == cur).lower()}"{' aria-current="page"' if k == cur else ""}>{label(k, t)}</a>'
         for k, u, t in tabs) + "</nav>")
 
 
