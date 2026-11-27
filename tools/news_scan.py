@@ -343,6 +343,36 @@ def main(outdir):
     except Exception as e:
         pages = {}
         status.append({"source": "page text", "ok": False, "error": str(e)[:120]})
+
+    # needrun.json: lets a scheduled news run stop before reading anything when there is nothing to do.
+    # quiet = few new headlines since data/news.json's "updated", no WTT result finished since, and no session about to start or just ended.
+    try:
+        root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+        upd = when(json.load(open(os.path.join(root, "data", "news.json"), encoding="utf-8")).get("updated", "")) or cutoff
+        new_items = sum(1 for r in rows if r.get("section") != "policy" and (when(r["published"]) or cutoff) > upd)
+        new_policy = sum(1 for r in rows if r.get("section") == "policy" and (when(r["published"]) or cutoff) > upd)
+        wtt_new = 0
+        for k, v in wtt.items():
+            if k.endswith("/results"):
+                for x in (v or []):
+                    mc = x.get("match_card") or {}
+                    end = when(str((mc.get("matchDateTime") or {}).get("endDateUTC") or x.get("ActualEndDate") or ""))
+                    if end and end > upd:
+                        wtt_new += 1
+        sched = json.load(open(os.path.join(root, "data", "schedule.json"), encoding="utf-8"))
+        soon = 0
+        for f in sched.get("fixtures", []):
+            st = when(f.get("start") or "")
+            if st and now - dt.timedelta(hours=2) <= st <= now + dt.timedelta(hours=3):
+                soon += 1
+        age_h = round((now - upd).total_seconds() / 3600, 1)
+        quiet = new_items <= 5 and wtt_new == 0 and soon == 0 and age_h < 6 and new_policy <= 2
+        os.makedirs(outdir, exist_ok=True)
+        json.dump({"generated": now.strftime("%Y-%m-%dT%H:%MZ"), "news_updated": upd.strftime("%Y-%m-%dT%H:%MZ"), "hours_since_update": age_h,
+                   "new_headlines": new_items, "new_policy_headlines": new_policy, "new_wtt_results": wtt_new, "fixtures_within_window": soon, "quiet": quiet},
+                  open(os.path.join(outdir, "needrun.json"), "w"), indent=1)
+    except Exception as e:
+        status.append({"source": "needrun", "ok": False, "error": str(e)[:120]})
     os.makedirs(outdir, exist_ok=True)
     json.dump(pages, open(os.path.join(outdir, "pages.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     json.dump({"generated": now.strftime("%Y-%m-%dT%H:%MZ"), "window_hours": HOURS, "items": rows, "status": status},
