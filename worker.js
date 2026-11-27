@@ -54,13 +54,26 @@ function utc(s) {
 
 // World ranking by ITTF id, from the site's own data/rankings.json (top 100 men and women).
 // Players outside the top 100, and doubles pairs, get no rank.
+
+// Static data files (rankings, schedule) are parsed once per minute per isolate, not on every request:
+// parsing them on each /api/live call was what pushed the Worker past Cloudflare's CPU limit.
+const MEMO = {};
+async function assetJson(env, origin, path, ttl = 60000) {
+  const m = MEMO[path], now = Date.now();
+  if (m && now - m.t < ttl) return m.v;
+  const v = await (await env.ASSETS.fetch(new Request(origin + path))).json();
+  MEMO[path] = { t: now, v };
+  return v;
+}
+
 async function rankMap(env, origin, ctx) {
   try {
-    const r = await env.ASSETS.fetch(new Request(origin + "/data/rankings.json"));
-    if (!r.ok) return {};
-    const data = await r.json();
+    const m = MEMO.rankmap;
+    if (m && Date.now() - m.t < 300000) return m.v;
+    const data = await assetJson(env, origin, "/data/rankings.json", 300000);
     const out = {};
     for (const g of ["men", "women"]) for (const p of data[g] || []) if (p.ittf_id) out[String(p.ittf_id)] = p.rank;
+    MEMO.rankmap = { t: Date.now(), v: out };
     return out;
   } catch (e) {
     return {};
@@ -118,7 +131,7 @@ async function cached(url, ctx, ttl) {
 // One table in use at the event: its cards name the venue instead of "Table 1"
 async function oneTable(eventId, env, origin) {
   try {
-    const sched = await (await env.ASSETS.fetch(new Request(origin + "/data/schedule.json"))).json();
+    const sched = await assetJson(env, origin, "/data/schedule.json");
     const t = new Set((sched.fixtures || []).filter((f) => f.id.startsWith(`wtt-${eventId}-`) && f.detail).map((f) => f.detail));
     return t.size === 1;
   } catch (e) { return false; }
@@ -144,7 +157,7 @@ async function live(eventId, ctx, env, origin, all = false) {
   // list are read from their own match card, so every page shows the same score
   try {
     const seen = new Set(liveNow.concat(results).map((m) => String(m.code).replace(/-/g, "").toLowerCase()));
-    const sched = await (await env.ASSETS.fetch(new Request(origin + "/data/schedule.json"))).json();
+    const sched = await assetJson(env, origin, "/data/schedule.json");
     const t = Date.now();
     const missing = (sched.fixtures || []).filter((f) => f.id.startsWith(`wtt-${eventId}-`) && f.start && Date.parse(f.start) < t - 12 * 6e4 && Date.parse(f.start) > t - 36 * 36e5
       && !seen.has(f.id.slice(`wtt-${eventId}-`.length))).sort((a, b) => b.start.localeCompare(a.start)).slice(0, 12);
@@ -402,7 +415,13 @@ export default {
       const id = url.searchParams.get("event") || "";
       if (!/^\d{1,6}$/.test(id)) return json({ error: "event must be a WTT event id" }, 400);
       try {
-        return json(await live(id, ctx, env, url.origin, url.searchParams.get("all") === "1"));
+        // The finished reply is cached at the edge for 6 seconds, so a crowd of readers costs one computation, not one each
+        const all = url.searchParams.get("all") === "1", key = new Request(`https://eleven.internal/live-out/${id}/${all ? 1 : 0}`), cache = caches.default;
+        const hit = await cache.match(key);
+        if (hit) return new Response(hit.body, { headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "public, max-age=8" } });
+        const out = await live(id, ctx, env, url.origin, all);
+        ctx.waitUntil(cache.put(key, new Response(JSON.stringify(out), { headers: { "Content-Type": "application/json", "Cache-Control": "max-age=6" } })));
+        return json(out);
       } catch (err) {
         return json({ error: "Live data is unavailable right now", detail: String(err.message || err) }, 502, 5);
       }
