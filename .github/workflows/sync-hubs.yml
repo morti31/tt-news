@@ -1,6 +1,6 @@
 name: Sync event pages
 # Every upcoming WTT event on the schedule gets an event page (tools/sync_hubs.py), with its poster drawn
-# (tools/posters.py --missing). Started by Pulse every few hours and by hand; does nothing when nothing is missing.
+# (tools/posters.py --missing). Started by the health-check scheduled task and by hand; does nothing when nothing is missing.
 on:
   workflow_dispatch:
 permissions:
