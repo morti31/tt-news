@@ -5,11 +5,22 @@
  "gender": "M",
  "born": "2005-07-01",
  "hand": "Right",
- "clubs": [],
+ "clubs": [
+  {
+   "club": "TTC RhönSprudel Fulda-Maberzell",
+   "league": "Tischtennis Bundesliga",
+   "from": "2026",
+   "to": "2026"
+  }
+ ],
  "honours": [],
  "sources": [
-  "https://www.worldtabletennis.com/playerDescription?playerId=135394"
+  "https://www.worldtabletennis.com/playerDescription?playerId=135394",
+  "http://ttbl.de/news/post/transfer-coup-fuer-den-ttc-rhoensprudel-fulda-maberzell-ex-vizeweltmeister-fang-bo-verstaerkt-die-osthessen"
  ],
  "checked": "2026-11-10",
- "stub": true
+ "stub": true,
+ "notes": [
+  "In November 2026 TTC RhönSprudel Fulda-Maberzell said he was leaving the club at his own request after half a season; Fang Bo takes his place for the second half of the 2026-27 Tischtennis Bundesliga season."
+ ]
 }
