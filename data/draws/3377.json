@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-27T15:28:00Z",
+ "updated": "2026-11-27T16:58:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -1270,7 +1270,9 @@
          "seed": 2
         }
        ],
-       "when": "2026-11-27T16:00:00Z"
+       "when": "2026-11-27T16:00:00Z",
+       "score": "1-3 (6:11,9:11,11:7,9:11,0:0)",
+       "winner": 1
       }
      ]
     }
