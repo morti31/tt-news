@@ -345,7 +345,7 @@ def main(outdir):
         status.append({"source": "page text", "ok": False, "error": str(e)[:120]})
 
     # needrun.json: lets a scheduled news run stop before reading anything when there is nothing to do.
-    # quiet = few new headlines since data/news.json's "updated", no WTT result finished since, and no session about to start or just ended.
+    # quiet = at most 25 new headlines since data/news.json's "updated", no WTT result finished since, and no session about to start or just ended.
     try:
         root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
         upd = when(json.load(open(os.path.join(root, "data", "news.json"), encoding="utf-8")).get("updated", "")) or cutoff
@@ -366,7 +366,7 @@ def main(outdir):
             if st and now - dt.timedelta(hours=2) <= st <= now + dt.timedelta(hours=3):
                 soon += 1
         age_h = round((now - upd).total_seconds() / 3600, 1)
-        quiet = new_items <= 5 and wtt_new == 0 and soon == 0 and age_h < 6 and new_policy <= 2
+        quiet = new_items <= 25 and wtt_new == 0 and soon == 0 and age_h < 6 and new_policy <= 5
         os.makedirs(outdir, exist_ok=True)
         json.dump({"generated": now.strftime("%Y-%m-%dT%H:%MZ"), "news_updated": upd.strftime("%Y-%m-%dT%H:%MZ"), "hours_since_update": age_h,
                    "new_headlines": new_items, "new_policy_headlines": new_policy, "new_wtt_results": wtt_new, "fixtures_within_window": soon, "quiet": quiet},
