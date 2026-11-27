@@ -25,6 +25,11 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           run() { gh workflow run "$1" -R "$REPO" --ref main && echo "$(date -u +%H:%M) started $1" || echo "$(date -u +%H:%M) could not start $1"; }
+          # A deploy every 30 minutes while a tournament is on (live scores, draws and results change); otherwise hourly.
+          # Each full build takes about 14 minutes of runner time, so this halves it on quiet days.
+          live_now() {
+            gh api "repos/$REPO/contents/data/schedule.json" -H "Accept: application/vnd.github.raw" 2>/dev/null | python3 <(gh api "repos/$REPO/contents/tools/live_now.py" -H "Accept: application/vnd.github.raw") || echo yes
+          }
           # one tick every 10 minutes for 5 hours 30 minutes
           for t in $(seq 0 10 320); do
             [ $((t % 30)) -eq 0 ] && run wtt-sync.yml          # draws, results, order of play, rankings
@@ -33,7 +38,9 @@ jobs:
             [ $((t % 60)) -eq 30 ] && run news-scan.yml        # headlines for the news runs
             [ $((t % 180)) -eq 0 ] && run match-sync.yml       # every match result and youth results (The Chop's form and results)
             [ $((t % 180)) -eq 90 ] && run chop-videos.yml     # The Chop's videos
-            [ $((t % 30)) -eq 10 ] && run deploy.yml           # build and deploy to Cloudflare
+            if [ $((t % 30)) -eq 10 ]; then                    # build and deploy to Cloudflare
+              if [ $((t % 60)) -eq 10 ] || [ "$(live_now)" = yes ]; then run deploy.yml; else echo "$(date -u +%H:%M) no tournament on: deploy skipped"; fi
+            fi
             [ "$t" -eq 0 ] && run league-sync.yml              # league player results
             sleep 600
           done

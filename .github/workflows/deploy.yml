@@ -39,6 +39,11 @@ jobs:
         if: steps.skip.outputs.skip != 'true'
         with:
           python-version: "3.12"
+      - uses: actions/cache@v4
+        if: steps.skip.outputs.skip != 'true'
+        with:
+          path: ~/.npm
+          key: npm-pagefind-1.5.2-wrangler-4
       - name: Build the site
         if: steps.skip.outputs.skip != 'true'
         run: python3 tools/build_site.py
