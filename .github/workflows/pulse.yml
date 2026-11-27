@@ -38,6 +38,7 @@ jobs:
             [ $((t % 60)) -eq 30 ] && run news-scan.yml        # headlines for the news runs
             [ $((t % 180)) -eq 0 ] && run match-sync.yml       # every match result and youth results (The Chop's form and results)
             [ $((t % 180)) -eq 90 ] && run chop-videos.yml     # The Chop's videos
+            [ $((t % 180)) -eq 60 ] && run sync-hubs.yml        # an event page for every WTT event on the schedule
             if [ $((t % 30)) -eq 10 ]; then                    # build and deploy to Cloudflare
               if [ $((t % 60)) -eq 10 ] || [ "$(live_now)" = yes ]; then run deploy.yml; else echo "$(date -u +%H:%M) no tournament on: deploy skipped"; fi
             fi

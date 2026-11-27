@@ -7023,6 +7023,22 @@
    "auto": true,
    "schedule_id": "wtt-feeder-gdansk-2026",
    "utc_offset": 1
+  },
+  {
+   "id": "wtt-champions-shanghai-2027",
+   "schedule_id": "wtt-champions-shanghai-2027",
+   "name": "WTT Champions Shanghai",
+   "group": "WTT Series",
+   "tier": "champions",
+   "series": "WTT Champions",
+   "city": "Shanghai",
+   "country": "China",
+   "venue": "Shanghai Oriental Sports Center",
+   "year": "2027",
+   "start": "2027-01-19",
+   "end": "2027-01-24",
+   "events": "Men's and women's singles",
+   "coords": "31.23° N  121.47° E"
   }
  ]
 }
