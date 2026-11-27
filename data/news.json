@@ -1,7 +1,500 @@
 {
-  "updated": "2026-11-27T12:30:00Z",
+  "updated": "2026-11-27T17:45:00Z",
   "live_results_url": "https://www.worldtabletennis.com/",
   "stories": [
+    {
+      "id": "world-youth-championships-2026-day7-review",
+      "kind": "Review",
+      "day": 7,
+      "category": "International",
+      "date": "2026-11-27",
+      "published": "2026-11-27T17:45:00Z",
+      "event": "world-youth-championships-2026",
+      "draw": "3377",
+      "top": true,
+      "headline": "World Youth Championships day seven: Wen Ruibo and Jiang Yiyi win third golds as Hochart beats Yao Ruixuan",
+      "summary": "China won both under-19 doubles titles in Istanbul on Friday, giving Wen Ruibo and Jiang Yiyi a third gold each, as France's Leana Hochart beat Yao Ruixuan to reach the girls' singles semi-finals.",
+      "sources": [
+        {
+          "name": "WTT: World Youth Championships 2026, schedule, draws and official results (event 3377)",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3377"
+        },
+        {
+          "name": "ITTF world ranking, week 48",
+          "url": "https://www.worldtabletennis.com/rankings"
+        },
+        {
+          "name": "Sohu (Chinese): 世青赛单打四强产生！国乒8进7",
+          "url": "https://m.sohu.com/a/1107353098_120828774"
+        }
+      ],
+      "matches": [
+        {
+          "label": "Women's U19 doubles, final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Jiang Yiyi / Yao Ruixuan",
+              "nat": "CHN"
+            },
+            {
+              "name": "Jeong Yein / Heo Yerim",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Men's U19 doubles, final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Wen Ruibo / Li Hechen",
+              "nat": "CHN"
+            },
+            {
+              "name": "Kim Daehwan / Lee Hyeonho",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            0
+          ],
+          "games": [
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Women's U19 singles, quarter-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Leana Hochart",
+              "nat": "FRA"
+            },
+            {
+              "name": "Yao Ruixuan",
+              "nat": "CHN"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              4,
+              11
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Men's U19 singles, quarter-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Li Hechen",
+              "nat": "CHN"
+            },
+            {
+              "name": "Emanuel Otalvaro",
+              "nat": "COL"
+            }
+          ],
+          "score": [
+            4,
+            2
+          ],
+          "games": [
+            [
+              11,
+              13
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        },
+        {
+          "label": "Women's U19 singles, quarter-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Jiang Yiyi",
+              "nat": "CHN"
+            },
+            {
+              "name": "Wu Ying Syuan",
+              "nat": "TPE"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              9,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        },
+        {
+          "label": "Men's U19 singles, quarter-final",
+          "event": "World Youth Championships, Istanbul",
+          "sides": [
+            {
+              "name": "Aditya Sareen",
+              "nat": "AUS"
+            },
+            {
+              "name": "Antoine Noirault",
+              "nat": "FRA"
+            }
+          ],
+          "score": [
+            4,
+            3
+          ],
+          "games": [
+            [
+              7,
+              11
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              7,
+              11
+            ],
+            [
+              11,
+              8
+            ],
+            [
+              13,
+              11
+            ],
+            [
+              8,
+              11
+            ],
+            [
+              11,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wtt-feeder-dusseldorf-ii-2026-bertelsmeier-shan-xiaona-titles",
+      "kind": "Update",
+      "category": "International",
+      "event": "wtt-feeder-dusseldorf-ii-2026",
+      "date": "2026-11-27",
+      "published": "2026-11-27T17:20:00Z",
+      "headline": "Andre Bertelsmeier and Shan Xiaona win WTT Feeder Düsseldorf II singles titles for Germany",
+      "summary": "Andre Bertelsmeier beat his Germany teammate Wim Verdonschot 3-1 in the men's final at WTT Feeder Düsseldorf II, and 43-year-old Shan Xiaona came from two games down to beat Japan's Asuka Sasao 3-2.",
+      "body": [
+        "Germany's Andre Bertelsmeier won the men's singles at WTT Feeder Düsseldorf II on Friday, beating his doubles partner Wim Verdonschot 11-6, 14-12, 4-11, 11-5, and Shan Xiaona, 43, won the women's title from two games down against Japan's Asuka Sasao, 11-13, 6-11, 11-6, 11-9, 11-5.",
+        "Bertelsmeier, 21 and the world No 57, reached his first WTT singles final in Eleven's records and did not drop a game in the semi-final, beating India's Sathiyan Gnanasekaran 11-7, 11-7, 11-9. Verdonschot, the world No 41 and top German in the draw, needed five games against Greece's Panagiotis Gionis. The two had already won the men's doubles together on Thursday, beating Belgium's Martin Allegro and Adrien Rassenfosse 3-1.",
+        "Shan, the world No 76, won this event's women's singles in 2022 and beat Japan's Rin Mende 11-9, 11-7, 11-8 in Friday morning's semi-final. Sasao, 26 and ranked 102nd, led the final 2-0 before Shan won three games in a row in 47 minutes. Shan also won the mixed doubles with Verdonschot, beating Bertelsmeier and Yuan Wan 11-6, 11-4, 10-12, 15-13, and Wan won the women's doubles with Thailand's Orawan Paranang, beating South Korea's Ryu Hanna and Choi Nahyun 3-1.",
+        "Feeder events are the lowest tier of the WTT Series. The next, WTT Feeder Gdansk, starts on Saturday. Results and the full draws are on Eleven's [event page](/events/wtt-feeder-dusseldorf-ii-2026.html)."
+      ],
+      "sources": [
+        {
+          "name": "WTT: WTT Feeder Düsseldorf II 2026, official results (event 3352)",
+          "url": "https://www.worldtabletennis.com/eventInfo?eventId=3352"
+        },
+        {
+          "name": "ITTF world ranking, week 48",
+          "url": "https://www.worldtabletennis.com/rankings"
+        }
+      ],
+      "matches": [
+        {
+          "label": "Men's singles, final",
+          "event": "WTT Feeder Düsseldorf II",
+          "sides": [
+            {
+              "name": "Andre Bertelsmeier",
+              "nat": "GER"
+            },
+            {
+              "name": "Wim Verdonschot",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              14,
+              12
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Women's singles, final",
+          "event": "WTT Feeder Düsseldorf II",
+          "sides": [
+            {
+              "name": "Shan Xiaona",
+              "nat": "GER"
+            },
+            {
+              "name": "Asuka Sasao",
+              "nat": "JPN"
+            }
+          ],
+          "score": [
+            3,
+            2
+          ],
+          "games": [
+            [
+              11,
+              13
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              9
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        },
+        {
+          "label": "Mixed doubles, final",
+          "event": "WTT Feeder Düsseldorf II",
+          "sides": [
+            {
+              "name": "Wim Verdonschot / Shan Xiaona",
+              "nat": "GER"
+            },
+            {
+              "name": "Andre Bertelsmeier / Yuan Wan",
+              "nat": "GER"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              11,
+              6
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              15,
+              13
+            ]
+          ]
+        },
+        {
+          "label": "Men's doubles, final",
+          "event": "WTT Feeder Düsseldorf II",
+          "sides": [
+            {
+              "name": "Andre Bertelsmeier / Wim Verdonschot",
+              "nat": "GER"
+            },
+            {
+              "name": "Martin Allegro / Adrien Rassenfosse",
+              "nat": "BEL"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              11,
+              9
+            ]
+          ]
+        },
+        {
+          "label": "Women's doubles, final",
+          "event": "WTT Feeder Düsseldorf II",
+          "sides": [
+            {
+              "name": "Orawan Paranang / Yuan Wan",
+              "nat": "THA/GER"
+            },
+            {
+              "name": "Ryu Hanna / Choi Nahyun",
+              "nat": "KOR"
+            }
+          ],
+          "score": [
+            3,
+            1
+          ],
+          "games": [
+            [
+              13,
+              11
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              11,
+              6
+            ]
+          ]
+        }
+      ]
+    },
     {
       "id": "ttbl-2026-27-fang-bo-signs-fulda-maberzell",
       "category": "Clubs",
@@ -56,7 +549,6 @@
       "published": "2026-11-26T20:35:00Z",
       "event": "world-youth-championships-2026",
       "draw": "3377",
-      "top": true,
       "headline": "World Youth Championships day six: Wen Ruibo and Jiang Yiyi win mixed gold as two fourth seeds fall",
       "summary": "China's Wen Ruibo and Jiang Yiyi beat Li Hechen and Yao Ruixuan 3-1 for the U19 mixed doubles title in Istanbul, and France's Antoine Noirault and Leana Hochart knocked out fourth seeds in the singles.",
       "sources": [
@@ -14731,6 +15223,67 @@
   ],
   "results": [
     {
+      "event": "WTT Star Contender Muscat",
+      "ended": "2026-11-21",
+      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3256",
+      "matches": [
+        {
+          "round": "Women's singles final",
+          "winner": "Honoka Hashimoto (JPN)",
+          "loser": "Kaho Akae (JPN)",
+          "score": "4-2"
+        },
+        {
+          "round": "Men's singles final",
+          "winner": "Shunsuke Togami (JPN)",
+          "loser": "Park Ganghyeon (KOR)",
+          "score": "4-1"
+        },
+        {
+          "round": "Women's doubles final",
+          "winner": "Satsuki Odo / Sakura Yokoi (JPN)",
+          "loser": "Kim Nayeong / Joo Cheonhui (KOR)",
+          "score": "3-0"
+        },
+        {
+          "round": "Men's doubles final",
+          "winner": "Lim Jonghoon / Oh Junsung (KOR)",
+          "loser": "Manav Thakkar / Manush Shah (IND)",
+          "score": "3-1"
+        },
+        {
+          "round": "Mixed doubles final",
+          "winner": "Shunsuke Togami / Satsuki Odo (JPN)",
+          "loser": "Esteban Dorr / Jia Nan Yuan (FRA)",
+          "score": "3-1"
+        },
+        {
+          "round": "Women's singles semi-final",
+          "winner": "Kaho Akae (JPN)",
+          "loser": "Satsuki Odo (JPN)",
+          "score": "3-1"
+        },
+        {
+          "round": "Women's singles semi-final",
+          "winner": "Honoka Hashimoto (JPN)",
+          "loser": "Bernadette Szőcs (ROU)",
+          "score": "3-1"
+        },
+        {
+          "round": "Men's singles semi-final",
+          "winner": "Shunsuke Togami (JPN)",
+          "loser": "Chen Yuanyu (CHN)",
+          "score": "3-0"
+        },
+        {
+          "round": "Men's singles semi-final",
+          "winner": "Park Ganghyeon (KOR)",
+          "loser": "Oh Junsung (KOR)",
+          "score": "3-1"
+        }
+      ]
+    },
+    {
       "event": "WTT Contender Istanbul",
       "ended": "2026-11-15",
       "url": "https://www.worldtabletennis.com/eventInfo?eventId=3257",
@@ -14831,49 +15384,6 @@
           "winner": "Patrick Franziska (GER)",
           "loser": "Shunsuke Togami (JPN)",
           "score": "4-2"
-        }
-      ]
-    },
-    {
-      "event": "WTT Champions Montpellier",
-      "ended": "2026-11-01",
-      "url": "https://www.worldtabletennis.com/eventInfo?eventId=3250",
-      "matches": [
-        {
-          "round": "Women's singles final",
-          "winner": "Sun Yingsha (CHN)",
-          "loser": "Kuai Man (CHN)",
-          "score": "4-1"
-        },
-        {
-          "round": "Men's singles final",
-          "winner": "Jang Woojin (KOR)",
-          "loser": "Patrick Franziska (GER)",
-          "score": "4-3"
-        },
-        {
-          "round": "Women's singles semi-final",
-          "winner": "Sun Yingsha (CHN)",
-          "loser": "Wang Yidi (CHN)",
-          "score": "4-3"
-        },
-        {
-          "round": "Women's singles semi-final",
-          "winner": "Kuai Man (CHN)",
-          "loser": "Chen Yi (CHN)",
-          "score": "4-2"
-        },
-        {
-          "round": "Men's singles semi-final",
-          "winner": "Jang Woojin (KOR)",
-          "loser": "Hugo Calderano (BRA)",
-          "score": "4-3"
-        },
-        {
-          "round": "Men's singles semi-final",
-          "winner": "Patrick Franziska (GER)",
-          "loser": "Truls Moregard (SWE)",
-          "score": "4-3"
         }
       ]
     }
