@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T16:58:00Z",
+  "updated": "2026-11-27T17:29:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2574,12 +2574,120 @@
       "source": "https://www.ittf.com/tournament/3378/ITTF%20Mixed%20Team%20World%20Cup%20Chengdu%202026/"
     },
     {
+      "id": "wtt-3269-ttexdoublesrnd2000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 1",
+      "start": "2026-11-29T08:00:00Z",
+      "end": "2026-11-29T08:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND2000100----------"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd2000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 2",
+      "start": "2026-11-29T08:00:00Z",
+      "end": "2026-11-29T08:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND2000200----------"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd2000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 3",
+      "start": "2026-11-29T08:00:00Z",
+      "end": "2026-11-29T08:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND2000300----------"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd2000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 4",
+      "start": "2026-11-29T08:00:00Z",
+      "end": "2026-11-29T08:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND2000400----------"
+    },
+    {
       "id": "mixed-team-world-cup-2026-s2",
       "event_id": "mixed-team-world-cup-2026",
       "name": "Mixed Team World Cup: Group stage, session 2",
       "start": "2026-11-29T09:30:00Z",
       "end": "2026-11-29T13:30:00Z",
       "source": "https://www.ittf.com/tournament/3378/ITTF%20Mixed%20Team%20World%20Cup%20Chengdu%202026/"
+    },
+    {
+      "id": "wtt-3269-ttewdoublesrnd2000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Women's Doubles, Qualifying Round 2, Match 1",
+      "start": "2026-11-29T16:00:00Z",
+      "end": "2026-11-29T16:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWDOUBLES-----------RND2000100----------"
+    },
+    {
+      "id": "wtt-3269-ttewdoublesrnd2000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Women's Doubles, Qualifying Round 2, Match 2",
+      "start": "2026-11-29T16:00:00Z",
+      "end": "2026-11-29T16:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWDOUBLES-----------RND2000200----------"
+    },
+    {
+      "id": "wtt-3269-ttewdoublesrnd2000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Women's Doubles, Qualifying Round 2, Match 3",
+      "start": "2026-11-29T16:00:00Z",
+      "end": "2026-11-29T16:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWDOUBLES-----------RND2000300----------"
+    },
+    {
+      "id": "wtt-3269-ttewdoublesrnd2000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Women's Doubles, Qualifying Round 2, Match 4",
+      "start": "2026-11-29T16:00:00Z",
+      "end": "2026-11-29T16:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWDOUBLES-----------RND2000400----------"
+    },
+    {
+      "id": "wtt-3269-ttemdoublesrnd2000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Men's Doubles, Qualifying Round 2, Match 4",
+      "start": "2026-11-29T16:35:00Z",
+      "end": "2026-11-29T17:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND2000400----------"
+    },
+    {
+      "id": "wtt-3269-ttemdoublesrnd2000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Men's Doubles, Qualifying Round 2, Match 3",
+      "start": "2026-11-29T16:35:00Z",
+      "end": "2026-11-29T17:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND2000300----------"
+    },
+    {
+      "id": "wtt-3269-ttemdoublesrnd2000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Men's Doubles, Qualifying Round 2, Match 2",
+      "start": "2026-11-29T16:35:00Z",
+      "end": "2026-11-29T17:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND2000200----------"
+    },
+    {
+      "id": "wtt-3269-ttemdoublesrnd2000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Men's Doubles, Qualifying Round 2, Match 1",
+      "start": "2026-11-29T16:35:00Z",
+      "end": "2026-11-29T17:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND2000100----------"
     },
     {
       "id": "mixed-team-world-cup-2026-s3",
