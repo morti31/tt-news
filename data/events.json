@@ -6997,9 +6997,32 @@
    "events": "Under-19 teams, singles and doubles",
    "coords": "41.01° N  28.98° E",
    "live": true,
-   "wtt_id": "3377", "draw": "3377", "age": "U19", "level": "World Youth Championships (under-19)",
+   "wtt_id": "3377",
+   "draw": "3377",
+   "age": "U19",
+   "level": "World Youth Championships (under-19)",
    "utc_offset": 3,
    "stream_q": "World Youth Championships"
+  },
+  {
+   "id": "wtt-feeder-gdansk-2026",
+   "name": "WTT Feeder Gdansk",
+   "group": "WTT Series",
+   "tier": "contender",
+   "series": "WTT Feeder",
+   "level": "WTT Feeder",
+   "city": "Gdansk",
+   "country": "Poland",
+   "year": "2026",
+   "start": "2026-11-28",
+   "end": "2026-12-02",
+   "events": "Mixed doubles",
+   "live": true,
+   "wtt_id": "3269",
+   "draw": "3269",
+   "auto": true,
+   "schedule_id": "wtt-feeder-gdansk-2026",
+   "utc_offset": 1
   }
  ]
 }
