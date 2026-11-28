@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T08:02:00Z",
+  "updated": "2026-11-28T08:32:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1066,26 +1066,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3269-ttexdoublesrnd1000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Samuel Michna / Katarzyna Rajkowska v Nathan Lam / Jade Huynh, mixed doubles, qualifying round 1",
-      "start": "2026-11-28T08:00:00Z",
-      "end": "2026-11-28T08:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND1000400----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3269-ttexdoublesrnd1000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Johan Havsteen / Mille Stoffregen v Stepan Brhel / Pauline Chasselin, mixed doubles, qualifying round 1",
-      "start": "2026-11-28T08:00:00Z",
-      "end": "2026-11-28T08:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND1000200----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3269-ttexdoublesrnd1000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Heorhi Kunats / Ulyana Miashchanskaya v Albert Vilardell / Silvia Coll, mixed doubles, qualifying round 1",
@@ -1104,6 +1084,26 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWSINGLES-----------GP02000100----------",
       "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd1000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Samuel Michna / Katarzyna Rajkowska v Nathan Lam / Jade Huynh, mixed doubles, qualifying round 1",
+      "start": "2026-11-28T08:00:00Z",
+      "end": "2026-11-28T08:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND1000400----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd1000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Johan Havsteen / Mille Stoffregen v Stepan Brhel / Pauline Chasselin, mixed doubles, qualifying round 1",
+      "start": "2026-11-28T08:00:00Z",
+      "end": "2026-11-28T08:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND1000200----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttexdoublesrnd1000500",
@@ -2406,7 +2406,7 @@
     {
       "id": "wtt-3269-ttexdoublesrnd2000200",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 2",
+      "name": "WTT Feeder Gdansk: Albert Vilardell / Silvia Coll v Samuel Michna / Katarzyna Rajkowska, mixed doubles, qualifying round 2",
       "start": "2026-11-29T08:00:00Z",
       "end": "2026-11-29T08:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
