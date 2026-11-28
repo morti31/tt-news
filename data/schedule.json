@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T19:05:00Z",
+  "updated": "2026-11-28T19:35:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -2046,6 +2046,16 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp07000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Steffen Mengel v Johan Havsteen, men's singles, group 7",
+      "start": "2026-11-28T18:05:00Z",
+      "end": "2026-11-28T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP07000400----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp07000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Ylane Batix v Bakdaulet Akimali, men's singles, group 7",
@@ -2096,44 +2106,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp07000400",
+      "id": "wtt-3269-ttemsinglesgp15000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Steffen Mengel v Johan Havsteen, men's singles, group 7",
-      "start": "2026-11-28T18:05:00Z",
-      "end": "2026-11-28T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP07000400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp05000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Albert Vilardell v Lee Seongmin, men's singles, group 5",
+      "name": "WTT Feeder Gdansk: Denis Dorcescu v Sanzhar Zhubanov, men's singles, group 15",
       "start": "2026-11-28T18:40:00Z",
       "end": "2026-11-28T19:15:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP05000400----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp10000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Iskender Kharki v Benno Oehme, men's singles, group 10",
-      "start": "2026-11-28T18:40:00Z",
-      "end": "2026-11-28T19:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP10000400----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp12000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Horia Stefan Ursut v Radim Moravek, men's singles, group 12",
-      "start": "2026-11-28T18:40:00Z",
-      "end": "2026-11-28T19:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP12000400----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP15000400----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttemsinglesgp14000300",
@@ -2146,6 +2126,36 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp10000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Iskender Kharki v Benno Oehme, men's singles, group 10",
+      "start": "2026-11-28T18:40:00Z",
+      "end": "2026-11-28T19:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP10000400----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp05000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Albert Vilardell v Lee Seongmin, men's singles, group 5",
+      "start": "2026-11-28T18:40:00Z",
+      "end": "2026-11-28T19:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP05000400----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp12000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Horia Stefan Ursut v Radim Moravek, men's singles, group 12",
+      "start": "2026-11-28T18:40:00Z",
+      "end": "2026-11-28T19:15:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP12000400----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp16000400",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: David Szantosi v Irisbek Artukmetov, men's singles, group 16",
@@ -2156,14 +2166,14 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp15000400",
+      "id": "wtt-3269-ttemsinglesgp06000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Denis Dorcescu v Sanzhar Zhubanov, men's singles, group 15",
-      "start": "2026-11-28T18:40:00Z",
-      "end": "2026-11-28T19:15:00Z",
+      "name": "WTT Feeder Gdansk: Clement Laine v Patryk Zyworonek, men's singles, group 6",
+      "start": "2026-11-28T19:15:00Z",
+      "end": "2026-11-28T19:50:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP15000400----------",
-      "detail": "Table 5"
+      "code": "TTEMSINGLES-----------GP06000400----------",
+      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttemsinglesgp03000300",
@@ -2174,16 +2184,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP03000300----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp06000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Clement Laine v Patryk Zyworonek, men's singles, group 6",
-      "start": "2026-11-28T19:15:00Z",
-      "end": "2026-11-28T19:50:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP06000400----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemsinglesgp16000300",
