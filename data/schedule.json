@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T11:03:00Z",
+  "updated": "2026-11-28T11:33:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -896,26 +896,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3352-ttewsinglessfnl000100",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Yuan Wan v Asuka Sasao, women's singles, semifinal",
-      "start": "2026-11-27T09:35:00Z",
-      "end": "2026-11-27T10:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------SFNL000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3352-ttemsinglessfnl000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Sathiyan Gnanasekaran v Andre Bertelsmeier, men's singles, semifinal",
-      "start": "2026-11-27T10:10:00Z",
-      "end": "2026-11-27T10:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEMSINGLES-----------SFNL000200----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3352-ttemsinglessfnl000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Wim Verdonschot v Panagiotis Gionis, men's singles, semifinal",
@@ -1386,16 +1366,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp03000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mykhailo Lovha v Ondrej Kveton, men's singles, group 3",
-      "start": "2026-11-28T10:30:00Z",
-      "end": "2026-11-28T11:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP03000200----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp02000200",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Rafael De Las Heras v Maciej Kolodziejczyk, men's singles, group 2",
@@ -1404,16 +1374,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP02000200----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp03000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Niagol Stoyanov v Jan Mrugala, men's singles, group 3",
-      "start": "2026-11-28T10:30:00Z",
-      "end": "2026-11-28T11:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP03000100----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3269-ttemsinglesgp04000100",
@@ -1426,16 +1386,6 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp04000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mael Van Dessel v Andrea Puppo, men's singles, group 4",
-      "start": "2026-11-28T10:30:00Z",
-      "end": "2026-11-28T11:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP04000200----------",
-      "detail": "Table 5"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp05000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Yiu Kwan To v Lee Seongmin, men's singles, group 5",
@@ -1446,14 +1396,44 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp05000200",
+      "id": "wtt-3269-ttemsinglesgp03000100",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Albert Vilardell v Carlo Rossi, men's singles, group 5",
+      "name": "WTT Feeder Gdansk: Niagol Stoyanov v Jan Mrugala, men's singles, group 3",
+      "start": "2026-11-28T10:30:00Z",
+      "end": "2026-11-28T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP03000100----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp03000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mykhailo Lovha v Ondrej Kveton, men's singles, group 3",
+      "start": "2026-11-28T10:30:00Z",
+      "end": "2026-11-28T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP03000200----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp04000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mael Van Dessel v Andrea Puppo, men's singles, group 4",
+      "start": "2026-11-28T10:30:00Z",
+      "end": "2026-11-28T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP04000200----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp06000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Clement Laine v Martin Friis, men's singles, group 6",
       "start": "2026-11-28T11:00:00Z",
       "end": "2026-11-28T11:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP05000200----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP06000200----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttemsinglesgp06000100",
@@ -1466,14 +1446,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp06000200",
+      "id": "wtt-3269-ttemsinglesgp05000200",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Clement Laine v Martin Friis, men's singles, group 6",
+      "name": "WTT Feeder Gdansk: Albert Vilardell v Carlo Rossi, men's singles, group 5",
       "start": "2026-11-28T11:00:00Z",
       "end": "2026-11-28T11:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP06000200----------",
-      "detail": "Table 3"
+      "code": "TTEMSINGLES-----------GP05000200----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemsinglesgp07000100",
