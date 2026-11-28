@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T12:33:00Z",
+  "updated": "2026-11-28T13:03:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1476,6 +1476,36 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp08000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Martin Buch v Tom Closset, men's singles, group 8",
+      "start": "2026-11-28T11:30:00Z",
+      "end": "2026-11-28T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP08000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp10000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Iskender Kharki v Muizz Adegoke, men's singles, group 10",
+      "start": "2026-11-28T11:30:00Z",
+      "end": "2026-11-28T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP10000200----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp10000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mihai Bobocica v Benno Oehme, men's singles, group 10",
+      "start": "2026-11-28T11:30:00Z",
+      "end": "2026-11-28T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP10000100----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp11000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Tiago Abiodun v Francesco Trevisan, men's singles, group 11",
@@ -1506,44 +1536,24 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp08000200",
+      "id": "wtt-3269-ttemsinglesgp14000100",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Martin Buch v Tom Closset, men's singles, group 8",
-      "start": "2026-11-28T11:30:00Z",
-      "end": "2026-11-28T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP08000200----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp10000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mihai Bobocica v Benno Oehme, men's singles, group 10",
-      "start": "2026-11-28T11:30:00Z",
-      "end": "2026-11-28T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP10000100----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp10000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Iskender Kharki v Muizz Adegoke, men's singles, group 10",
-      "start": "2026-11-28T11:30:00Z",
-      "end": "2026-11-28T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP10000200----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp11000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Ma Yeongmin v Carlos Franco, men's singles, group 11",
+      "name": "WTT Feeder Gdansk: Lee Seungsoo v Samuel Michna, men's singles, group 14",
       "start": "2026-11-28T12:00:00Z",
       "end": "2026-11-28T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP11000200----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP14000100----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp12000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Horia Stefan Ursut v Peter Hribar, men's singles, group 12",
+      "start": "2026-11-28T12:00:00Z",
+      "end": "2026-11-28T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP12000200----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttemsinglesgp12000100",
@@ -1556,14 +1566,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp12000200",
+      "id": "wtt-3269-ttemsinglesgp11000200",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Horia Stefan Ursut v Peter Hribar, men's singles, group 12",
+      "name": "WTT Feeder Gdansk: Ma Yeongmin v Carlos Franco, men's singles, group 11",
       "start": "2026-11-28T12:00:00Z",
       "end": "2026-11-28T12:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP12000200----------",
-      "detail": "Table 3"
+      "code": "TTEMSINGLES-----------GP11000200----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemsinglesgp13000100",
@@ -1584,16 +1594,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP13000200----------",
       "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp14000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Lee Seungsoo v Samuel Michna, men's singles, group 14",
-      "start": "2026-11-28T12:00:00Z",
-      "end": "2026-11-28T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP14000100----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttemsinglesgp14000200",
