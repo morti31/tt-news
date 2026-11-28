@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T17:34:00Z",
+  "updated": "2026-11-28T18:05:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1936,6 +1936,46 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp06000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Juan Perez v Martin Friis, men's singles, group 6",
+      "start": "2026-11-28T16:55:00Z",
+      "end": "2026-11-28T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP06000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp05000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Yiu Kwan To v Carlo Rossi, men's singles, group 5",
+      "start": "2026-11-28T16:55:00Z",
+      "end": "2026-11-28T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP05000300----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd1000800",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Michal Gawlas / Natalia Bogdanowicz v Ondrej Kveton / Shuohan Men, mixed doubles, qualifying round 1",
+      "start": "2026-11-28T16:55:00Z",
+      "end": "2026-11-28T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND1000800----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd1000700",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Jang Hanjae / Kim Seongjin v Ma Yeongjun / Choi Haeeun, mixed doubles, qualifying round 1",
+      "start": "2026-11-28T16:55:00Z",
+      "end": "2026-11-28T17:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND1000700----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp15000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Norbert Tauler v Botond Varga, men's singles, group 15",
@@ -1954,46 +1994,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEXDOUBLES-----------RND1000600----------",
       "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp06000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Juan Perez v Martin Friis, men's singles, group 6",
-      "start": "2026-11-28T16:55:00Z",
-      "end": "2026-11-28T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP06000300----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttexdoublesrnd1000800",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Michal Gawlas / Natalia Bogdanowicz v Ondrej Kveton / Shuohan Men, mixed doubles, qualifying round 1",
-      "start": "2026-11-28T16:55:00Z",
-      "end": "2026-11-28T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND1000800----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp05000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Yiu Kwan To v Carlo Rossi, men's singles, group 5",
-      "start": "2026-11-28T16:55:00Z",
-      "end": "2026-11-28T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP05000300----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3269-ttexdoublesrnd1000700",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Jang Hanjae / Kim Seongjin v Ma Yeongjun / Choi Haeeun, mixed doubles, qualifying round 1",
-      "start": "2026-11-28T16:55:00Z",
-      "end": "2026-11-28T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND1000700----------",
-      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttemsinglesgp08000300",
@@ -2276,7 +2276,7 @@
     {
       "id": "wtt-3269-ttexdoublesrnd2000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 4",
+      "name": "WTT Feeder Gdansk: Jang Hanjae / Kim Seongjin v Michal Gawlas / Natalia Bogdanowicz, mixed doubles, qualifying round 2",
       "start": "2026-11-29T08:00:00Z",
       "end": "2026-11-29T08:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
