@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T18:05:00Z",
+  "updated": "2026-11-28T18:27:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1996,16 +1996,6 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp08000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Romain Brard v Tom Closset, men's singles, group 8",
-      "start": "2026-11-28T17:30:00Z",
-      "end": "2026-11-28T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP08000300----------",
-      "detail": "Table 4"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp08000400",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Martin Buch v Sebastian Bedoya, men's singles, group 8",
@@ -2014,6 +2004,26 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP08000400----------",
       "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp13000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Satoshi Aida v Jiri Martinko, men's singles, group 13",
+      "start": "2026-11-28T17:30:00Z",
+      "end": "2026-11-28T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP13000300----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp08000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Romain Brard v Tom Closset, men's singles, group 8",
+      "start": "2026-11-28T17:30:00Z",
+      "end": "2026-11-28T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP08000300----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3269-ttemsinglesgp09000300",
@@ -2044,16 +2054,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP14000400----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp13000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Satoshi Aida v Jiri Martinko, men's singles, group 13",
-      "start": "2026-11-28T17:30:00Z",
-      "end": "2026-11-28T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP13000300----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3269-ttemsinglesgp07000400",
