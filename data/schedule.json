@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T13:03:00Z",
+  "updated": "2026-11-28T13:33:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1536,6 +1536,36 @@
       "detail": "Table 2"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp11000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Ma Yeongmin v Carlos Franco, men's singles, group 11",
+      "start": "2026-11-28T12:00:00Z",
+      "end": "2026-11-28T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP11000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp13000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Laurens Devos v Jiri Martinko, men's singles, group 13",
+      "start": "2026-11-28T12:00:00Z",
+      "end": "2026-11-28T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP13000200----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp13000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Satoshi Aida v Tommaso Giovannetti, men's singles, group 13",
+      "start": "2026-11-28T12:00:00Z",
+      "end": "2026-11-28T12:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP13000100----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp14000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Lee Seungsoo v Samuel Michna, men's singles, group 14",
@@ -1566,34 +1596,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp11000200",
+      "id": "wtt-3269-ttewdoublesrnd1000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Ma Yeongmin v Carlos Franco, men's singles, group 11",
-      "start": "2026-11-28T12:00:00Z",
-      "end": "2026-11-28T12:30:00Z",
+      "name": "WTT Feeder Gdansk: Elinor Davidov / Eva Brito v Alexandra Chiriacova / Sara Tokic, women's doubles, qualifying round 1",
+      "start": "2026-11-28T12:30:00Z",
+      "end": "2026-11-28T13:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP11000200----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp13000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Satoshi Aida v Tommaso Giovannetti, men's singles, group 13",
-      "start": "2026-11-28T12:00:00Z",
-      "end": "2026-11-28T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP13000100----------",
+      "code": "TTEWDOUBLES-----------RND1000400----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp13000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Laurens Devos v Jiri Martinko, men's singles, group 13",
-      "start": "2026-11-28T12:00:00Z",
-      "end": "2026-11-28T12:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP13000200----------",
-      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttemsinglesgp14000200",
@@ -1624,16 +1634,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWDOUBLES-----------RND1000300----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttewdoublesrnd1000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Elinor Davidov / Eva Brito v Alexandra Chiriacova / Sara Tokic, women's doubles, qualifying round 1",
-      "start": "2026-11-28T12:30:00Z",
-      "end": "2026-11-28T13:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWDOUBLES-----------RND1000400----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3269-ttemsinglesgp16000200",
@@ -1676,6 +1676,16 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3269-ttewsinglesgp06000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Lam Yee Lok v Camila Moscoso, women's singles, group 6",
+      "start": "2026-11-28T13:30:00Z",
+      "end": "2026-11-28T14:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP06000200----------",
+      "detail": "Table 6"
+    },
+    {
       "id": "wtt-3269-ttewsinglesgp03000200",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Ivana Malobabic v Angelina Romanovskaya, women's singles, group 3",
@@ -1684,16 +1694,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWSINGLES-----------GP03000200----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp06000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Lam Yee Lok v Camila Moscoso, women's singles, group 6",
-      "start": "2026-11-28T13:30:00Z",
-      "end": "2026-11-28T14:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP06000200----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttewsinglesgp07000200",
@@ -2948,22 +2948,22 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttewdoublesrnd2000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Women's Doubles, Qualifying Round 2, Match 1",
-      "start": "2026-11-29T16:00:00Z",
-      "end": "2026-11-29T16:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWDOUBLES-----------RND2000100----------"
-    },
-    {
       "id": "wtt-3269-ttewdoublesrnd2000200",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Women's Doubles, Qualifying Round 2, Match 2",
+      "name": "WTT Feeder Gdansk: Choi Haeeun / Kim Eunseo v Alexandra Chiriacova / Sara Tokic, women's doubles, qualifying round 2",
       "start": "2026-11-29T16:00:00Z",
       "end": "2026-11-29T16:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWDOUBLES-----------RND2000200----------"
+    },
+    {
+      "id": "wtt-3269-ttewdoublesrnd2000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Agnes Svensson / Alice Nilsson v Martine Toftaker / Mille Stoffregen, women's doubles, qualifying round 2",
+      "start": "2026-11-29T16:00:00Z",
+      "end": "2026-11-29T16:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWDOUBLES-----------RND2000100----------"
     },
     {
       "id": "wtt-3269-ttewdoublesrnd2000300",
