@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T17:04:00Z",
+  "updated": "2026-11-28T17:34:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1876,6 +1876,26 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp04000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Diego Lillo v Andrea Puppo, men's singles, group 4",
+      "start": "2026-11-28T16:20:00Z",
+      "end": "2026-11-28T16:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP04000300----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp02000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Martin Allegro v Maciej Kolodziejczyk, men's singles, group 2",
+      "start": "2026-11-28T16:20:00Z",
+      "end": "2026-11-28T16:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP02000300----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp03000400",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Mykhailo Lovha v Jan Mrugala, men's singles, group 3",
@@ -1916,24 +1936,24 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp02000300",
+      "id": "wtt-3269-ttemsinglesgp15000300",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Martin Allegro v Maciej Kolodziejczyk, men's singles, group 2",
-      "start": "2026-11-28T16:20:00Z",
-      "end": "2026-11-28T16:55:00Z",
+      "name": "WTT Feeder Gdansk: Norbert Tauler v Botond Varga, men's singles, group 15",
+      "start": "2026-11-28T16:55:00Z",
+      "end": "2026-11-28T17:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP02000300----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP15000300----------",
+      "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp04000300",
+      "id": "wtt-3269-ttexdoublesrnd1000600",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Diego Lillo v Andrea Puppo, men's singles, group 4",
-      "start": "2026-11-28T16:20:00Z",
-      "end": "2026-11-28T16:55:00Z",
+      "name": "WTT Feeder Gdansk: Lee Seongmin / Ryu Hanna v Clement Laine / Elinor Davidov, mixed doubles, qualifying round 1",
+      "start": "2026-11-28T16:55:00Z",
+      "end": "2026-11-28T17:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP04000300----------",
-      "detail": "Table 5"
+      "code": "TTEXDOUBLES-----------RND1000600----------",
+      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttemsinglesgp06000300",
@@ -1974,26 +1994,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEXDOUBLES-----------RND1000700----------",
       "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3269-ttexdoublesrnd1000600",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Lee Seongmin / Ryu Hanna v Clement Laine / Elinor Davidov, mixed doubles, qualifying round 1",
-      "start": "2026-11-28T16:55:00Z",
-      "end": "2026-11-28T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND1000600----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp15000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Norbert Tauler v Botond Varga, men's singles, group 15",
-      "start": "2026-11-28T16:55:00Z",
-      "end": "2026-11-28T17:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP15000300----------",
-      "detail": "Table 2"
     },
     {
       "id": "wtt-3269-ttemsinglesgp08000300",
@@ -2274,13 +2274,24 @@
       "source": "https://www.ittf.com/tournament/3378/ITTF%20Mixed%20Team%20World%20Cup%20Chengdu%202026/"
     },
     {
-      "id": "wtt-3269-ttexdoublesrnd2000300",
+      "id": "wtt-3269-ttexdoublesrnd2000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 3",
+      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 4",
       "start": "2026-11-29T08:00:00Z",
       "end": "2026-11-29T08:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND2000300----------"
+      "code": "TTEXDOUBLES-----------RND2000400----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttexdoublesrnd2000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Hwang Jinha / Choi Nahyun v Lee Seongmin / Ryu Hanna, mixed doubles, qualifying round 2",
+      "start": "2026-11-29T08:00:00Z",
+      "end": "2026-11-29T08:35:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEXDOUBLES-----------RND2000300----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3269-ttexdoublesrnd2000200",
@@ -2289,7 +2300,8 @@
       "start": "2026-11-29T08:00:00Z",
       "end": "2026-11-29T08:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND2000200----------"
+      "code": "TTEXDOUBLES-----------RND2000200----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttexdoublesrnd2000100",
@@ -2298,16 +2310,8 @@
       "start": "2026-11-29T08:00:00Z",
       "end": "2026-11-29T08:35:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND2000100----------"
-    },
-    {
-      "id": "wtt-3269-ttexdoublesrnd2000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mixed Doubles, Qualifying Round 2, Match 4",
-      "start": "2026-11-29T08:00:00Z",
-      "end": "2026-11-29T08:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEXDOUBLES-----------RND2000400----------"
+      "code": "TTEXDOUBLES-----------RND2000100----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3269-ttewsinglesgp01000300",
