@@ -2,7 +2,7 @@
  "event": "WTT Feeder Gdansk",
  "wtt_event_id": "3269",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269&selectedTab=Draws",
- "updated": "2026-11-27T16:28:00Z",
+ "updated": "2026-11-28T16:34:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -444,50 +444,106 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Chien Tung-Chuan / Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Shuohan Men / Vivien Scholz",
+         "nat": "NED/LUX"
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Park Gahyeon / Lee Seungeun",
+         "nat": "KOR",
+         "seed": 3
+        },
+        {
+         "name": "Sarah De Nutte / Debora Vivarelli",
+         "nat": "LUX/ITA",
+         "seed": 5
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        },
+        {
+         "name": "Aleksandra Michalak / Ilona Sztwiertnia",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Natalia Bogdanowicz / Katarzyna Rajkowska",
+         "nat": "POL"
+        },
+        {
+         "name": "Jade Huynh / Rachel Moret",
+         "nat": "FRA/SUI",
+         "seed": 6
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Anais Salpin / Pauline Chasselin",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Camille Lutz / Audrey Zarif",
+         "nat": "FRA",
+         "seed": 4
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Sarvinoz Mirkadirova / Zauresh Akasheva",
+         "nat": "KAZ"
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Ainhoa Cristobal / Silvia Coll",
+         "nat": "ESP",
+         "seed": 8
+        },
+        {
+         "name": "Kim Seongjin / Lee Daeun",
+         "nat": "KOR",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -559,50 +615,106 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Léo de Nodrest / Lilian Bardet",
+         "nat": "FRA",
+         "seed": 1
+        },
+        {
+         "name": "John Oyebode / Carlo Rossi",
+         "nat": "ITA",
+         "seed": 8
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Heorhi Kunats / Nikon Shutov",
+         "nat": "BLR"
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Luka Mladenovic / Mael Van Dessel",
+         "nat": "LUX",
+         "seed": 4
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Hugo Deschamps / Alexis Kouraichi",
+         "nat": "FRA",
+         "seed": 7
+        },
+        {
+         "name": "Gustavo Gomez / Stepan Brhel",
+         "nat": "CHI/CZE",
+         "seed": 5
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Miguel Pantoja / Norbert Tauler",
+         "nat": "ESP"
+        },
+        {
+         "name": "Michal Gawlas / Mateusz Sakowicz",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        },
+        {
+         "name": "Daniel Berzosa / Juan Perez",
+         "nat": "ESP",
+         "seed": 3
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        },
+        {
+         "name": "Botond Varga / David Szantosi",
+         "nat": "HUN"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Rafael De Las Heras / Diego Lillo",
+         "nat": "ESP",
+         "seed": 6
+        },
+        {
+         "name": "Vincent Picard / Yiu Kwan To",
+         "nat": "FRA/HKG",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -674,50 +786,106 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Choi Jiwook / Lee Daeun",
+         "nat": "KOR",
+         "seed": 1
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Mykhailo Lovha / Nikoleta Puchovanova",
+         "nat": "SVK",
+         "seed": 5
+        },
+        {
+         "name": "Vladislav Ursu / Alexandra Chiriacova",
+         "nat": "MDA",
+         "seed": 7
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Yiu Kwan To / Zhu Chengzhu",
+         "nat": "HKG",
+         "seed": 3
+        },
+        {
+         "name": "Sanzhar Zhubanov / Zauresh Akasheva",
+         "nat": "KAZ"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Sathiyan Gnanasekaran / Sreeja Akula",
+         "nat": "IND"
+        },
+        {
+         "name": "Nikon Shutov / Lizaveta Tsimashkova",
+         "nat": "BLR"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Ma Yeongmin / Kim Eunseo",
+         "nat": "KOR",
+         "seed": 6
+        },
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Mael Van Dessel / Sarah De Nutte",
+         "nat": "LUX",
+         "seed": 8
+        },
+        {
+         "name": "Niagol Stoyanov / Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 4
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        },
+        {
+         "name": "Patryk Zyworonek / Aleksandra Michalak",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "DEF",
+         "nat": "DEF"
+        },
+        {
+         "name": "John Oyebode / Gaia Monfardini",
+         "nat": "ITA",
+         "seed": 2
+        }
        ]
       }
      ]

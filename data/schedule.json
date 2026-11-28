@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T16:04:00Z",
+  "updated": "2026-11-28T16:34:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -896,26 +896,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttemsinglesu19qfnl000300",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Antoine Noirault v Aditya Sareen, u19 boys' singles, quarterfinal",
-      "start": "2026-11-27T13:15:00Z",
-      "end": "2026-11-27T14:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000300----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttewsinglesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Divyanshi Bhowmick v Hana Goda, u19 girls' singles, quarterfinal",
-      "start": "2026-11-27T13:15:00Z",
-      "end": "2026-11-27T14:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19QFNL000200----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3352-ttewsinglesfnl000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Asuka Sasao v Shan Xiaona, women's singles, final",
@@ -1786,6 +1766,16 @@
       "detail": "Table 1"
     },
     {
+      "id": "wtt-3269-ttewsinglesgp13000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Pauline Chasselin v Ilona Sztwiertnia, women's singles, group 13",
+      "start": "2026-11-28T15:10:00Z",
+      "end": "2026-11-28T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP13000400----------",
+      "detail": "Table 3"
+    },
+    {
       "id": "wtt-3269-ttewsinglesgp13000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Eva Brito v Ananya Donekal, women's singles, group 13",
@@ -1836,24 +1826,24 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp13000400",
+      "id": "wtt-3269-ttewsinglesgp16000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Pauline Chasselin v Ilona Sztwiertnia, women's singles, group 13",
-      "start": "2026-11-28T15:10:00Z",
-      "end": "2026-11-28T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP13000400----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp15000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Jade Huynh v Yuan Ito, women's singles, group 15",
+      "name": "WTT Feeder Gdansk: Aikaterini Toliou v Maria Girlea, women's singles, group 16",
       "start": "2026-11-28T15:45:00Z",
       "end": "2026-11-28T16:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP15000400----------",
-      "detail": "Table 1"
+      "code": "TTEWSINGLES-----------GP16000400----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp01000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Samuel Arpas v Daniil Vitorski, men's singles, group 1",
+      "start": "2026-11-28T15:45:00Z",
+      "end": "2026-11-28T16:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP01000400----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttewsinglesgp16000300",
@@ -1866,16 +1856,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp16000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Aikaterini Toliou v Maria Girlea, women's singles, group 16",
-      "start": "2026-11-28T15:45:00Z",
-      "end": "2026-11-28T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP16000400----------",
-      "detail": "Table 3"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp01000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Joao Monteiro v Miguel Pantoja, men's singles, group 1",
@@ -1886,14 +1866,14 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp01000400",
+      "id": "wtt-3269-ttewsinglesgp15000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Samuel Arpas v Daniil Vitorski, men's singles, group 1",
+      "name": "WTT Feeder Gdansk: Jade Huynh v Yuan Ito, women's singles, group 15",
       "start": "2026-11-28T15:45:00Z",
       "end": "2026-11-28T16:20:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP01000400----------",
-      "detail": "Table 5"
+      "code": "TTEWSINGLES-----------GP15000400----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemsinglesgp02000300",
