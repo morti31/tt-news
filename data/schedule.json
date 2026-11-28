@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T10:33:00Z",
+  "updated": "2026-11-28T11:03:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1326,24 +1326,14 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp15000200",
+      "id": "wtt-3269-ttemsinglesgp01000200",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Jade Huynh v Elinor Davidov, women's singles, group 15",
+      "name": "WTT Feeder Gdansk: Samuel Arpas v Miguel Pantoja, men's singles, group 1",
       "start": "2026-11-28T10:00:00Z",
       "end": "2026-11-28T10:30:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP15000200----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp07000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Silvia Coll v Agnes Svensson, women's singles, group 7",
-      "start": "2026-11-28T10:00:00Z",
-      "end": "2026-11-28T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP07000100----------",
-      "detail": "Table 2"
+      "code": "TTEMSINGLES-----------GP01000200----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttewsinglesgp13000200",
@@ -1366,16 +1356,6 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp01000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Samuel Arpas v Miguel Pantoja, men's singles, group 1",
-      "start": "2026-11-28T10:00:00Z",
-      "end": "2026-11-28T10:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP01000200----------",
-      "detail": "Table 5"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp02000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Martin Allegro v Eitay Shushan, men's singles, group 2",
@@ -1384,6 +1364,36 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP02000100----------",
       "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3269-ttewsinglesgp15000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Jade Huynh v Elinor Davidov, women's singles, group 15",
+      "start": "2026-11-28T10:00:00Z",
+      "end": "2026-11-28T10:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP15000200----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttewsinglesgp07000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Silvia Coll v Agnes Svensson, women's singles, group 7",
+      "start": "2026-11-28T10:00:00Z",
+      "end": "2026-11-28T10:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP07000100----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp03000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mykhailo Lovha v Ondrej Kveton, men's singles, group 3",
+      "start": "2026-11-28T10:30:00Z",
+      "end": "2026-11-28T11:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP03000200----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttemsinglesgp02000200",
@@ -1404,16 +1414,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP03000100----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp03000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mykhailo Lovha v Ondrej Kveton, men's singles, group 3",
-      "start": "2026-11-28T10:30:00Z",
-      "end": "2026-11-28T11:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP03000200----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttemsinglesgp04000100",
