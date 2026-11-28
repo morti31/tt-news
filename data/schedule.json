@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T15:04:00Z",
+  "updated": "2026-11-28T15:34:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -896,26 +896,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3377-ttewsinglesu19qfnl000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Jiang Yiyi v Wu Ying Syuan, u19 girls' singles, quarterfinal",
-      "start": "2026-11-27T12:30:00Z",
-      "end": "2026-11-27T13:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWSINGLES--------U19QFNL000100----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3377-ttemsinglesu19qfnl000200",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Shunto Iwaida v Wassim Essid, u19 boys' singles, quarterfinal",
-      "start": "2026-11-27T12:30:00Z",
-      "end": "2026-11-27T13:15:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEMSINGLES--------U19QFNL000200----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3377-ttemsinglesu19qfnl000300",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Antoine Noirault v Aditya Sareen, u19 boys' singles, quarterfinal",
@@ -1736,26 +1716,6 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttemdoublesrnd1000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Lee Seongmin / Ma Yeongjun v Ondrej Kveton / Jiri Martinko, men's doubles, qualifying round 1",
-      "start": "2026-11-28T14:35:00Z",
-      "end": "2026-11-28T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMDOUBLES-----------RND1000200----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3269-ttemdoublesrnd1000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Moosa Ahmed / Muizz Adegoke v Hwang Jinha / Ma Yeongmin, men's doubles, qualifying round 1",
-      "start": "2026-11-28T14:35:00Z",
-      "end": "2026-11-28T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMDOUBLES-----------RND1000400----------",
-      "detail": "Table 6"
-    },
-    {
       "id": "wtt-3269-ttewsinglesgp01000200",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Debora Vivarelli v Karolina Holda, women's singles, group 1",
@@ -1764,16 +1724,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWSINGLES-----------GP01000200----------",
       "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp11000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Choi Haeeun v Malamatenia Papadimitriou, women's singles, group 11",
-      "start": "2026-11-28T14:35:00Z",
-      "end": "2026-11-28T15:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP11000300----------",
-      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemdoublesrnd1000300",
@@ -1796,6 +1746,36 @@
       "detail": "Table 5"
     },
     {
+      "id": "wtt-3269-ttewsinglesgp11000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Choi Haeeun v Malamatenia Papadimitriou, women's singles, group 11",
+      "start": "2026-11-28T14:35:00Z",
+      "end": "2026-11-28T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP11000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttemdoublesrnd1000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Lee Seongmin / Ma Yeongjun v Ondrej Kveton / Jiri Martinko, men's doubles, qualifying round 1",
+      "start": "2026-11-28T14:35:00Z",
+      "end": "2026-11-28T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND1000200----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3269-ttemdoublesrnd1000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Moosa Ahmed / Muizz Adegoke v Hwang Jinha / Ma Yeongmin, men's doubles, qualifying round 1",
+      "start": "2026-11-28T14:35:00Z",
+      "end": "2026-11-28T15:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND1000400----------",
+      "detail": "Table 6"
+    },
+    {
       "id": "wtt-3377-ttewsinglesu19fnl000100",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Hana Goda v Leana Hochart, u19 girls' singles, final",
@@ -1804,6 +1784,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWSINGLES--------U19FNL-000100----------",
       "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttewsinglesgp15000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Tania Plaian v Elinor Davidov, women's singles, group 15",
+      "start": "2026-11-28T15:10:00Z",
+      "end": "2026-11-28T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP15000300----------",
+      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttewsinglesgp12000400",
@@ -1854,16 +1844,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWSINGLES-----------GP14000400----------",
       "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp15000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Tania Plaian v Elinor Davidov, women's singles, group 15",
-      "start": "2026-11-28T15:10:00Z",
-      "end": "2026-11-28T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP15000300----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttewsinglesgp15000400",
@@ -2934,6 +2914,15 @@
       "code": "TTEWDOUBLES-----------RND2000400----------"
     },
     {
+      "id": "wtt-3269-ttemdoublesrnd2000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Samuel Michna / Jan Mrugala v Hwang Jinha / Ma Yeongmin, men's doubles, qualifying round 2",
+      "start": "2026-11-29T16:35:00Z",
+      "end": "2026-11-29T17:10:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMDOUBLES-----------RND2000200----------"
+    },
+    {
       "id": "wtt-3269-ttemdoublesrnd2000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Mykhailo Lovha / Samuel Arpas v Ondrej Kveton / Jiri Martinko, men's doubles, qualifying round 2",
@@ -2941,15 +2930,6 @@
       "end": "2026-11-29T17:10:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMDOUBLES-----------RND2000100----------"
-    },
-    {
-      "id": "wtt-3269-ttemdoublesrnd2000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Men's Doubles, Qualifying Round 2, Match 2",
-      "start": "2026-11-29T16:35:00Z",
-      "end": "2026-11-29T17:10:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMDOUBLES-----------RND2000200----------"
     },
     {
       "id": "wtt-3269-ttemdoublesrnd2000400",
