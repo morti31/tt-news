@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T18:35:00Z",
+  "updated": "2026-11-28T19:05:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -903,16 +903,6 @@
       "end": "2026-11-27T16:05:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
       "code": "TTEWSINGLES-----------FNL-000100----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3377-ttewdoublesu19fnl000100",
-      "event_id": "world-youth-championships-2026",
-      "name": "World Youth Championships Istanbul: Jeong Yein / Heo Yerim v Jiang Yiyi / Yao Ruixuan, u19 girls' doubles, final",
-      "start": "2026-11-27T16:00:00Z",
-      "end": "2026-11-27T16:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
-      "code": "TTEWDOUBLES--------U19FNL-000100----------",
       "detail": "Table 1"
     },
     {
@@ -1996,6 +1986,16 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp14000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Hugo Deschamps v Samuel Michna, men's singles, group 14",
+      "start": "2026-11-28T17:30:00Z",
+      "end": "2026-11-28T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP14000400----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp12000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Choi Jiwook v Peter Hribar, men's singles, group 12",
@@ -2046,26 +2046,6 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp14000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Hugo Deschamps v Samuel Michna, men's singles, group 14",
-      "start": "2026-11-28T17:30:00Z",
-      "end": "2026-11-28T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP14000400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp07000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Steffen Mengel v Johan Havsteen, men's singles, group 7",
-      "start": "2026-11-28T18:05:00Z",
-      "end": "2026-11-28T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP07000400----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp07000300",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Ylane Batix v Bakdaulet Akimali, men's singles, group 7",
@@ -2076,24 +2056,14 @@
       "detail": "Table 3"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp10000300",
+      "id": "wtt-3269-ttemsinglesgp09000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mihai Bobocica v Muizz Adegoke, men's singles, group 10",
+      "name": "WTT Feeder Gdansk: Adam Klajber v Loic Stoll, men's singles, group 9",
       "start": "2026-11-28T18:05:00Z",
       "end": "2026-11-28T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP10000300----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp11000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Tiago Abiodun v Carlos Franco, men's singles, group 11",
-      "start": "2026-11-28T18:05:00Z",
-      "end": "2026-11-28T18:40:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP11000300----------",
-      "detail": "Table 4"
+      "code": "TTEMSINGLES-----------GP09000400----------",
+      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttemsinglesgp11000400",
@@ -2106,14 +2076,34 @@
       "detail": "Table 5"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp09000400",
+      "id": "wtt-3269-ttemsinglesgp11000300",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Adam Klajber v Loic Stoll, men's singles, group 9",
+      "name": "WTT Feeder Gdansk: Tiago Abiodun v Carlos Franco, men's singles, group 11",
       "start": "2026-11-28T18:05:00Z",
       "end": "2026-11-28T18:40:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP09000400----------",
-      "detail": "Table 6"
+      "code": "TTEMSINGLES-----------GP11000300----------",
+      "detail": "Table 4"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp10000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Mihai Bobocica v Muizz Adegoke, men's singles, group 10",
+      "start": "2026-11-28T18:05:00Z",
+      "end": "2026-11-28T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP10000300----------",
+      "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp07000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Steffen Mengel v Johan Havsteen, men's singles, group 7",
+      "start": "2026-11-28T18:05:00Z",
+      "end": "2026-11-28T18:40:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP07000400----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemsinglesgp05000400",
