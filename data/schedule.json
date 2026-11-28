@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T12:03:00Z",
+  "updated": "2026-11-28T12:33:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1416,6 +1416,36 @@
       "detail": "Table 3"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp07000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Steffen Mengel v Bakdaulet Akimali, men's singles, group 7",
+      "start": "2026-11-28T11:00:00Z",
+      "end": "2026-11-28T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP07000200----------",
+      "detail": "Table 5"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp05000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Albert Vilardell v Carlo Rossi, men's singles, group 5",
+      "start": "2026-11-28T11:00:00Z",
+      "end": "2026-11-28T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP05000200----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp07000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Ylane Batix v Johan Havsteen, men's singles, group 7",
+      "start": "2026-11-28T11:00:00Z",
+      "end": "2026-11-28T11:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP07000100----------",
+      "detail": "Table 4"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp08000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Romain Brard v Sebastian Bedoya, men's singles, group 8",
@@ -1446,44 +1476,24 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp05000200",
+      "id": "wtt-3269-ttemsinglesgp11000100",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Albert Vilardell v Carlo Rossi, men's singles, group 5",
-      "start": "2026-11-28T11:00:00Z",
-      "end": "2026-11-28T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP05000200----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp07000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Ylane Batix v Johan Havsteen, men's singles, group 7",
-      "start": "2026-11-28T11:00:00Z",
-      "end": "2026-11-28T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP07000100----------",
-      "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp07000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Steffen Mengel v Bakdaulet Akimali, men's singles, group 7",
-      "start": "2026-11-28T11:00:00Z",
-      "end": "2026-11-28T11:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP07000200----------",
-      "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp08000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Martin Buch v Tom Closset, men's singles, group 8",
+      "name": "WTT Feeder Gdansk: Tiago Abiodun v Francesco Trevisan, men's singles, group 11",
       "start": "2026-11-28T11:30:00Z",
       "end": "2026-11-28T12:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP08000200----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP11000100----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp09000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Adam Klajber v William Bergenblock, men's singles, group 9",
+      "start": "2026-11-28T11:30:00Z",
+      "end": "2026-11-28T12:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP09000200----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttemsinglesgp09000100",
@@ -1496,14 +1506,14 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp09000200",
+      "id": "wtt-3269-ttemsinglesgp08000200",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Adam Klajber v William Bergenblock, men's singles, group 9",
+      "name": "WTT Feeder Gdansk: Martin Buch v Tom Closset, men's singles, group 8",
       "start": "2026-11-28T11:30:00Z",
       "end": "2026-11-28T12:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP09000200----------",
-      "detail": "Table 3"
+      "code": "TTEMSINGLES-----------GP08000200----------",
+      "detail": "Table 1"
     },
     {
       "id": "wtt-3269-ttemsinglesgp10000100",
@@ -1524,16 +1534,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP10000200----------",
       "detail": "Table 5"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp11000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Tiago Abiodun v Francesco Trevisan, men's singles, group 11",
-      "start": "2026-11-28T11:30:00Z",
-      "end": "2026-11-28T12:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP11000100----------",
-      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttemsinglesgp11000200",
@@ -1603,7 +1603,7 @@
       "end": "2026-11-28T13:00:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP14000200----------",
-      "detail": "Table 1"
+      "detail": "Table 6"
     },
     {
       "id": "wtt-3269-ttewdoublesrnd1000200",
@@ -1636,6 +1636,16 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp16000200",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: David Szantosi v Fumiya Igarashi, men's singles, group 16",
+      "start": "2026-11-28T13:00:00Z",
+      "end": "2026-11-28T13:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP16000200----------",
+      "detail": "Table 5"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp15000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Norbert Tauler v Sanzhar Zhubanov, men's singles, group 15",
@@ -1664,16 +1674,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP16000100----------",
       "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp16000200",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: David Szantosi v Fumiya Igarashi, men's singles, group 16",
-      "start": "2026-11-28T13:00:00Z",
-      "end": "2026-11-28T13:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP16000200----------",
-      "detail": "Table 4"
     },
     {
       "id": "wtt-3269-ttewsinglesgp03000200",
