@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T15:34:00Z",
+  "updated": "2026-11-28T16:04:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1786,14 +1786,14 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp15000300",
+      "id": "wtt-3269-ttewsinglesgp13000300",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Tania Plaian v Elinor Davidov, women's singles, group 15",
+      "name": "WTT Feeder Gdansk: Eva Brito v Ananya Donekal, women's singles, group 13",
       "start": "2026-11-28T15:10:00Z",
       "end": "2026-11-28T15:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP15000300----------",
-      "detail": "Table 6"
+      "code": "TTEWSINGLES-----------GP13000300----------",
+      "detail": "Table 2"
     },
     {
       "id": "wtt-3269-ttewsinglesgp12000400",
@@ -1806,24 +1806,14 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp13000300",
+      "id": "wtt-3269-ttewsinglesgp14000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Eva Brito v Ananya Donekal, women's singles, group 13",
+      "name": "WTT Feeder Gdansk: Lizaveta Tsimashkova v Alicja Lebek, women's singles, group 14",
       "start": "2026-11-28T15:10:00Z",
       "end": "2026-11-28T15:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP13000300----------",
-      "detail": "Table 2"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp13000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Pauline Chasselin v Ilona Sztwiertnia, women's singles, group 13",
-      "start": "2026-11-28T15:10:00Z",
-      "end": "2026-11-28T15:45:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP13000400----------",
-      "detail": "Table 3"
+      "code": "TTEWSINGLES-----------GP14000400----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttewsinglesgp14000300",
@@ -1836,14 +1826,24 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp14000400",
+      "id": "wtt-3269-ttewsinglesgp15000300",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Lizaveta Tsimashkova v Alicja Lebek, women's singles, group 14",
+      "name": "WTT Feeder Gdansk: Tania Plaian v Elinor Davidov, women's singles, group 15",
       "start": "2026-11-28T15:10:00Z",
       "end": "2026-11-28T15:45:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP14000400----------",
-      "detail": "Table 5"
+      "code": "TTEWSINGLES-----------GP15000300----------",
+      "detail": "Table 6"
+    },
+    {
+      "id": "wtt-3269-ttewsinglesgp13000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Pauline Chasselin v Ilona Sztwiertnia, women's singles, group 13",
+      "start": "2026-11-28T15:10:00Z",
+      "end": "2026-11-28T15:45:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP13000400----------",
+      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttewsinglesgp15000400",
