@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T16:34:00Z",
+  "updated": "2026-11-28T17:04:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1826,6 +1826,16 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3269-ttewsinglesgp15000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Jade Huynh v Yuan Ito, women's singles, group 15",
+      "start": "2026-11-28T15:45:00Z",
+      "end": "2026-11-28T16:20:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP15000400----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3269-ttewsinglesgp16000400",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Aikaterini Toliou v Maria Girlea, women's singles, group 16",
@@ -1866,24 +1876,24 @@
       "detail": "Table 4"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp15000400",
+      "id": "wtt-3269-ttemsinglesgp03000400",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Jade Huynh v Yuan Ito, women's singles, group 15",
-      "start": "2026-11-28T15:45:00Z",
-      "end": "2026-11-28T16:20:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP15000400----------",
-      "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp02000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Martin Allegro v Maciej Kolodziejczyk, men's singles, group 2",
+      "name": "WTT Feeder Gdansk: Mykhailo Lovha v Jan Mrugala, men's singles, group 3",
       "start": "2026-11-28T16:20:00Z",
       "end": "2026-11-28T16:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP02000300----------",
-      "detail": "Table 1"
+      "code": "TTEMSINGLES-----------GP03000400----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp13000400",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Laurens Devos v Tommaso Giovannetti, men's singles, group 13",
+      "start": "2026-11-28T16:20:00Z",
+      "end": "2026-11-28T16:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP13000400----------",
+      "detail": "Table 4"
     },
     {
       "id": "wtt-3269-ttemsinglesgp02000400",
@@ -1896,26 +1906,6 @@
       "detail": "Table 2"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp03000400",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Mykhailo Lovha v Jan Mrugala, men's singles, group 3",
-      "start": "2026-11-28T16:20:00Z",
-      "end": "2026-11-28T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP03000400----------",
-      "detail": "Table 3"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp04000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Diego Lillo v Andrea Puppo, men's singles, group 4",
-      "start": "2026-11-28T16:20:00Z",
-      "end": "2026-11-28T16:55:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP04000300----------",
-      "detail": "Table 5"
-    },
-    {
       "id": "wtt-3269-ttemsinglesgp04000400",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Mael Van Dessel v Noa Dahlstrom, men's singles, group 4",
@@ -1926,14 +1916,24 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttemsinglesgp13000400",
+      "id": "wtt-3269-ttemsinglesgp02000300",
       "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Laurens Devos v Tommaso Giovannetti, men's singles, group 13",
+      "name": "WTT Feeder Gdansk: Martin Allegro v Maciej Kolodziejczyk, men's singles, group 2",
       "start": "2026-11-28T16:20:00Z",
       "end": "2026-11-28T16:55:00Z",
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP13000400----------",
-      "detail": "Table 4"
+      "code": "TTEMSINGLES-----------GP02000300----------",
+      "detail": "Table 1"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp04000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Diego Lillo v Andrea Puppo, men's singles, group 4",
+      "start": "2026-11-28T16:20:00Z",
+      "end": "2026-11-28T16:55:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP04000300----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttemsinglesgp06000300",

@@ -2,7 +2,7 @@
  "event": "WTT Feeder Gdansk",
  "wtt_event_id": "3269",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269&selectedTab=Draws",
- "updated": "2026-11-28T16:34:00Z",
+ "updated": "2026-11-28T17:04:00Z",
  "events": {
   "women": {
    "name": "Women's singles",
@@ -12,98 +12,202 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Chien Tung-Chuan",
+         "nat": "TPE",
+         "seed": 1
+        },
+        {
+         "name": "Park Gahyeon",
+         "nat": "KOR"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Katarzyna Rajkowska",
+         "nat": "POL"
+        },
+        {
+         "name": "Lee Seungeun",
+         "nat": "KOR"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Natalia Bogdanowicz",
+         "nat": "POL"
+        },
+        {
+         "name": "Sarah De Nutte",
+         "nat": "LUX"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Tsai Yun-En",
+         "nat": "TPE",
+         "seed": 8
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Kim Seongjin",
+         "nat": "KOR",
+         "seed": 4
+        },
+        {
+         "name": "Ryu Hanna",
+         "nat": "KOR"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Paulina Krzysiek",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Aleksandra Michalak",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Audrey Zarif",
+         "nat": "FRA",
+         "seed": 7
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Giorgia Piccolin",
+         "nat": "ITA",
+         "seed": 6
+        },
+        {
+         "name": "Asuka Sasao",
+         "nat": "JPN"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Zauresh Akasheva",
+         "nat": "KAZ"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Rachel Moret",
+         "nat": "SUI"
+        },
+        {
+         "name": "",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Camille Lutz",
+         "nat": "FRA"
+        },
+        {
+         "name": "Sreeja Akula",
+         "nat": "IND",
+         "seed": 3
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Xiaoxin Yang",
+         "nat": "MON",
+         "seed": 5
+        },
+        {
+         "name": "Lee Daeun",
+         "nat": "KOR"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Claire Picard",
+         "nat": "FRA"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Gaia Monfardini",
+         "nat": "ITA"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Rin Mende",
+         "nat": "JPN"
+        },
+        {
+         "name": "Sachi Aoki",
+         "nat": "JPN",
+         "seed": 2
+        }
        ]
       }
      ]
@@ -228,98 +332,202 @@
      "matches": [
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Csaba Andras",
+         "nat": "HUN",
+         "seed": 1
+        },
+        {
+         "name": "Lilian Bardet",
+         "nat": "FRA"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Esteban Dorr",
+         "nat": "FRA"
+        },
+        {
+         "name": "",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Kay Stumper",
+         "nat": "GER"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Mizuki Oikawa",
+         "nat": "JPN"
+        },
+        {
+         "name": "Kwon Hyuk",
+         "nat": "KOR",
+         "seed": 7
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Marcos Freitas",
+         "nat": "POR",
+         "seed": 4
+        },
+        {
+         "name": "",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Cedric Meissner",
+         "nat": "GER"
+        },
+        {
+         "name": "Michal Gawlas",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Panagiotis Gionis",
+         "nat": "GRE"
+        },
+        {
+         "name": "Luka Mladenovic",
+         "nat": "LUX"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Vladislav Ursu",
+         "nat": "MDA",
+         "seed": 6
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Sathiyan Gnanasekaran",
+         "nat": "IND",
+         "seed": 5
+        },
+        {
+         "name": "",
+         "nat": "DEF"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Gustavo Gomez",
+         "nat": "CHI"
+        },
+        {
+         "name": "Yuhi Sakai",
+         "nat": "JPN"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Alexis Kouraichi",
+         "nat": "FRA"
+        },
+        {
+         "name": "Vincent Picard",
+         "nat": "FRA"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "Mateusz Sakowicz",
+         "nat": "POL"
+        },
+        {
+         "name": "Deni Kozul",
+         "nat": "SLO",
+         "seed": 3
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "John Oyebode",
+         "nat": "ITA",
+         "seed": 8
+        },
+        {
+         "name": "Samuel Kulczycki",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Matteo Mutti",
+         "nat": "ITA"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Jakub Dyjas",
+         "nat": "POL"
+        }
        ]
       },
       {
        "players": [
-        null,
-        null
+        {
+         "name": "",
+         "nat": "DEF"
+        },
+        {
+         "name": "Léo de Nodrest",
+         "nat": "FRA",
+         "seed": 2
+        }
        ]
       }
      ]
