@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T18:27:00Z",
+  "updated": "2026-11-28T18:35:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -1996,6 +1996,26 @@
       "detail": "Table 6"
     },
     {
+      "id": "wtt-3269-ttemsinglesgp12000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Choi Jiwook v Peter Hribar, men's singles, group 12",
+      "start": "2026-11-28T17:30:00Z",
+      "end": "2026-11-28T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP12000300----------",
+      "detail": "Table 3"
+    },
+    {
+      "id": "wtt-3269-ttemsinglesgp09000300",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Daniel Berzosa v William Bergenblock, men's singles, group 9",
+      "start": "2026-11-28T17:30:00Z",
+      "end": "2026-11-28T18:05:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEMSINGLES-----------GP09000300----------",
+      "detail": "Table 6"
+    },
+    {
       "id": "wtt-3269-ttemsinglesgp08000400",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Martin Buch v Sebastian Bedoya, men's singles, group 8",
@@ -2024,26 +2044,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEMSINGLES-----------GP08000300----------",
       "detail": "Table 4"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp09000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Daniel Berzosa v William Bergenblock, men's singles, group 9",
-      "start": "2026-11-28T17:30:00Z",
-      "end": "2026-11-28T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP09000300----------",
-      "detail": "Table 6"
-    },
-    {
-      "id": "wtt-3269-ttemsinglesgp12000300",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Choi Jiwook v Peter Hribar, men's singles, group 12",
-      "start": "2026-11-28T17:30:00Z",
-      "end": "2026-11-28T18:05:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEMSINGLES-----------GP12000300----------",
-      "detail": "Table 3"
     },
     {
       "id": "wtt-3269-ttemsinglesgp14000400",
