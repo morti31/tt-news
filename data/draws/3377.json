@@ -2,7 +2,7 @@
  "event": "World Youth Championships Istanbul",
  "wtt_event_id": "3377",
  "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377&selectedTab=Draws",
- "updated": "2026-11-28T09:32:00Z",
+ "updated": "2026-11-28T10:18:00Z",
  "events": {
   "women": {
    "name": "U19 Girls' Singles",
@@ -479,7 +479,9 @@
          "seed": 3
         }
        ],
-       "when": "2026-11-28T09:15:00Z"
+       "when": "2026-11-28T09:15:00Z",
+       "score": "1-4 (5:11,16:14,9:11,7:11,5:11,0:0,0:0)",
+       "winner": 1
       },
       {
        "players": [
@@ -502,7 +504,11 @@
      "matches": [
       {
        "players": [
-        null,
+        {
+         "name": "Hana Goda",
+         "nat": "EGY",
+         "seed": 3
+        },
         null
        ],
        "when": "2026-11-28T14:45:00Z"

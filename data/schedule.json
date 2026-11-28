@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T10:03:00Z",
+  "updated": "2026-11-28T10:18:00Z",
   "note": "Dates from the ITTF/WTT, ETTU, T.League, TTBL and CTTSL calendars; WTT Champions, Star Contender, Contender and Finals for 2026 and 2027 checked 11 November 2026. Organisers may amend dates.",
   "events": [
     {
@@ -896,16 +896,6 @@
       "detail": "Table 1"
     },
     {
-      "id": "wtt-3352-ttewsinglessfnl000200",
-      "event_id": "wtt-feeder-dusseldorf-ii-2026",
-      "name": "WTT Feeder Düsseldorf II: Rin Mende v Shan Xiaona, women's singles, semifinal",
-      "start": "2026-11-27T09:00:00Z",
-      "end": "2026-11-27T09:35:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3352",
-      "code": "TTEWSINGLES-----------SFNL000200----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3352-ttewsinglessfnl000100",
       "event_id": "wtt-feeder-dusseldorf-ii-2026",
       "name": "WTT Feeder Düsseldorf II: Yuan Wan v Asuka Sasao, women's singles, semifinal",
@@ -1206,6 +1196,16 @@
       "detail": "Table 4"
     },
     {
+      "id": "wtt-3269-ttewsinglesgp09000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Miriam Carnovale v Nikoleta Puchovanova, women's singles, group 9",
+      "start": "2026-11-28T09:00:00Z",
+      "end": "2026-11-28T09:30:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP09000100----------",
+      "detail": "Table 1"
+    },
+    {
       "id": "wtt-3269-ttewsinglesgp12000100",
       "event_id": "wtt-feeder-gdansk-2026",
       "name": "WTT Feeder Gdansk: Kim Eunseo v Martine Toftaker, women's singles, group 12",
@@ -1256,16 +1256,6 @@
       "detail": "Table 6"
     },
     {
-      "id": "wtt-3269-ttewsinglesgp09000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Miriam Carnovale v Nikoleta Puchovanova, women's singles, group 9",
-      "start": "2026-11-28T09:00:00Z",
-      "end": "2026-11-28T09:30:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP09000100----------",
-      "detail": "Table 1"
-    },
-    {
       "id": "wtt-3377-ttewsinglesu19sfnl000100",
       "event_id": "world-youth-championships-2026",
       "name": "World Youth Championships Istanbul: Jiang Yiyi v Hana Goda, u19 girls' singles, semifinal",
@@ -1284,6 +1274,16 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3377",
       "code": "TTEWSINGLES--------U19SFNL000200----------",
       "detail": "Table 2"
+    },
+    {
+      "id": "wtt-3269-ttewsinglesgp15000100",
+      "event_id": "wtt-feeder-gdansk-2026",
+      "name": "WTT Feeder Gdansk: Tania Plaian v Yuan Ito, women's singles, group 15",
+      "start": "2026-11-28T09:30:00Z",
+      "end": "2026-11-28T10:00:00Z",
+      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
+      "code": "TTEWSINGLES-----------GP15000100----------",
+      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttewsinglesgp14000100",
@@ -1324,16 +1324,6 @@
       "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
       "code": "TTEWSINGLES-----------GP11000200----------",
       "detail": "Table 1"
-    },
-    {
-      "id": "wtt-3269-ttewsinglesgp15000100",
-      "event_id": "wtt-feeder-gdansk-2026",
-      "name": "WTT Feeder Gdansk: Tania Plaian v Yuan Ito, women's singles, group 15",
-      "start": "2026-11-28T09:30:00Z",
-      "end": "2026-11-28T10:00:00Z",
-      "source": "https://www.worldtabletennis.com/eventInfo?eventId=3269",
-      "code": "TTEWSINGLES-----------GP15000100----------",
-      "detail": "Table 5"
     },
     {
       "id": "wtt-3269-ttewsinglesgp07000100",
